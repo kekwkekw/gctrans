@@ -3,11 +3,13 @@ name: Update Translation
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 5 * * *'
+    - cron: '30 5 * * *'  # 매일 새벽 5:30 (UTC 기준) 실행
 
 jobs:
   update-translation:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # git push를 위해 쓰기 권한 필요
 
     steps:
       - name: Record time
@@ -15,12 +17,6 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Fetch GalTransl
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git clone https://github.com/anosu/GalTransl.git
 
       - name: Setup python
         uses: actions/setup-python@v5
@@ -30,50 +26,66 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
-          pip install -r GalTransl/requirements.txt
+          # 기존 requirements.txt 설치 (UnityPy, httpx 등)
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # 번역 스크립트용 라이브러리 추가 설치
+          pip install deep-translator
 
-      - name: Update original files
-        run: python scripts/run.py ${{ secrets.GALTRANSL_TOKEN }} ${{ vars.GALTRANSL_ENDPOINT }} ${{ vars.GALTRANSL_MODEL_NAME }}
+      # 1. 게임 서버에서 최신 파일 다운로드 (update.py 실행)
+      # 주의: gpt.py가 OpenAI 키를 필요로 하지만, 이름 번역을 건너뛰거나
+      # 더미 키를 넣어도 update.py의 파일 다운로드는 작동할 수 있습니다.
+      # 만약 update.py에서 에러가 난다면 gpt.py를 비활성화해야 합니다.
+      - name: Update original files (Download from Game Server)
+        env:
+           # update.py가 인자를 필요로 하므로 더미 값이라도 넣어줍니다.
+           # 실제로는 gpt.py를 수정하여 이름 번역을 패스하는 게 가장 좋습니다.
+           GALTRANSL_TOKEN: "dummy_token" 
+           GALTRANSL_ENDPOINT: "dummy_endpoint"
+           GALTRANSL_MODEL_NAME: "dummy_model"
+        run: python run.py
 
+      # 2. 업데이트된 파일이 있는지 확인
       - name: Check input files
         id: check
         run: |
           DIR="GalTransl/sampleProject/gt_input"
+          # 폴더가 없거나 비어있으면 업데이트 없음
           if [ ! -d "$DIR" ] || [ -z "$(ls -A "$DIR")" ]; then
-            echo "No update"
+            echo "No update found."
             echo "update=false" >> "$GITHUB_OUTPUT"
           else
+            echo "New files found. Starting translation..."
             echo "update=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Copy project dictionary
+      # 3. 한국어 번역 스크립트 실행 (GalTransl 대체)
+      - name: Run Korean Translation Script
         if: steps.check.outputs.update == 'true'
-        run: cp 项目GPT字典.txt GalTransl/sampleProject/项目GPT字典.txt
+        run: python scripts/translate_script.py
 
-      - name: Run GalTransl
-        if: steps.check.outputs.update == 'true'
-        run: python main.py ${{ secrets.GALTRANSL_TOKEN }} ${{ vars.GALTRANSL_ENDPOINT }} ${{ vars.GALTRANSL_MODEL_NAME }}
-        working-directory: ./GalTransl
-
+      # 4. 번역된 결과 합치기 (merge.py 실행)
       - name: Merge translated files
         if: steps.check.outputs.update == 'true'
         run: python scripts/merge.py
 
-      - name: Commit
+      # 5. 변경 사항 커밋 및 푸시
+      - name: Commit changes
         id: commit
         run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
           git add .
           if git diff-index --quiet HEAD --; then
             echo "No changes to commit."
             echo "diff=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "Auto-update translation"
+            git commit -m "Auto-update Korean translation"
             echo "diff=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Push
+      - name: Push changes
         if: steps.commit.outputs.diff == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
