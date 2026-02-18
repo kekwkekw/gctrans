@@ -42,7 +42,7 @@ jobs:
            GALTRANSL_TOKEN: "dummy_token" 
            GALTRANSL_ENDPOINT: "dummy_endpoint"
            GALTRANSL_MODEL_NAME: "dummy_model"
-        run: python run.py
+        run: python scripts/run.py
 
       # 2. 업데이트된 파일이 있는지 확인
       - name: Check input files
