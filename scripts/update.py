@@ -121,8 +121,8 @@ class Updater:
 
             print(f'Downloaded: {script_name}')
 
-        if len(new_names):
-            self.translate_names(list(new_names))
+       # if len(new_names):
+            #self.translate_names(list(new_names))
 
     def update_quest(self):
         quest_dict = {
