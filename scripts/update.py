@@ -94,7 +94,11 @@ class Updater:
 
     def update_novels(self):
         new_names = set()
-        existed_novels = os.listdir(self.translation_dir / 'novels')
+        
+        novels_dir = self.translation_dir / 'novels'
+        novels_dir.mkdir(parents=True, exist_ok=True)
+        
+        existed_novels = os.listdir(novels_dir)
         assetbundles = self.client.get(f'{self.BASE_URL}/files/manifest/webgl/r18/assetbundle.json').json()
         for asset in assetbundles['d']:
             asset_name = asset['n']
