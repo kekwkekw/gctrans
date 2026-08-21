@@ -1,2 +1,2 @@
-# GirlsCreaionR Translation
+# GirlsCreationR KR CDN
 .
