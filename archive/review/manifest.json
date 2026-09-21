@@ -1,0 +1,30 @@
+{
+  "schema": "gc-public-archive-pages-pilot-v0.2",
+  "archive": "Girls' Creation Translation Knowledge Layer",
+  "range": "R35 pilot",
+  "version": "0.2.0-pilot",
+  "generated_date": "2026-09-21",
+  "data_mode": "mixed-json-html",
+  "authoritative": false,
+  "privacy": "public-sanitized",
+  "notes": [
+    "GitHub Pages/정적 호스팅 실기 검증 전용 공개 파일럿.",
+    "R35 JSON payload와 legacy HTML fallback만 포함한다.",
+    "authoritative checkpoint가 아니며 전체 R1-R35 배포본도 아니다."
+  ],
+  "rounds": [
+    {
+      "id": "R35",
+      "order": 35,
+      "title": "저주의 반지와 신부들 + 하얀 황소를 쫓아서",
+      "kind": "원본 상세",
+      "source_path": "./data/R35.json",
+      "scope": "12화 · 839항목",
+      "status": "v2 최종 완료",
+      "detail_level": "full",
+      "searchable_text": "R35 저주의 반지와 신부들 + 하얀 황소를 쫓아서 원본 상세 12화 · 839항목 v2 최종 완료",
+      "payload_type": "review_json",
+      "fallback_path": "./legacy/R35.html"
+    }
+  ]
+}

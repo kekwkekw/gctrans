@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>걸크리 R35 공개 검수 아카이브 · CDN Viewer</title>
+<style>
+:root{--bg:#eef2f7;--card:#fff;--ink:#162033;--muted:#69778b;--line:#d8e0ea;--blue:#3155c6;--green:#197044;--amber:#9a6800;--red:#a43838}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg)}
+header{background:linear-gradient(135deg,#17233f,#30477f);color:#fff;padding:22px 26px}.eyebrow{font-size:11px;letter-spacing:.13em;font-weight:800;opacity:.78}
+h1{margin:5px 0 7px;font-size:27px}header p{margin:0;max-width:1100px;color:#e7ecff;line-height:1.55;font-size:13px}
+.badges{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.badge{font-size:11px;border:1px solid #ffffff32;background:#ffffff14;border-radius:999px;padding:4px 8px}
+.notice{margin:13px 16px;background:#fff9e9;border:1px solid #ecd99d;border-left:5px solid #d19a18;border-radius:9px;padding:10px 13px;font-size:12px;line-height:1.55}
+.shell{display:grid;grid-template-columns:340px minmax(0,1fr);gap:13px;padding:0 16px 16px;height:calc(100vh - 210px);min-height:620px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden}.tools{padding:12px;border-bottom:1px solid var(--line);background:#fbfcfe}
+.tools input{width:100%;padding:9px 10px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}.meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.pill{font-size:10px;border-radius:999px;padding:3px 7px;background:#eef2ff;color:#304c9a}.pill.warn{background:#fff2d2;color:var(--amber)}.pill.good{background:#e8f7ee;color:var(--green)}
+.list{height:calc(100% - 90px);overflow:auto;padding:6px}.item{display:grid;grid-template-columns:48px minmax(0,1fr);gap:2px 8px;width:100%;border:0;border-bottom:1px solid #e9edf2;background:#fff;text-align:left;padding:9px;cursor:pointer;color:inherit}
+.item:hover{background:#f7f9ff}.item.active{background:#edf2ff;border-left:4px solid var(--blue);padding-left:5px}.item b{grid-row:1/4;font-size:16px;color:#263a77}.item span{font-size:12px;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.item small{font-size:10px;color:var(--muted)}
+.kind-full{color:var(--green)!important}.kind-summary{color:var(--amber)!important}.emptyList{padding:18px;color:var(--muted)}
+.viewerHead{height:64px;display:flex;align-items:center;gap:8px;padding:9px 13px;border-bottom:1px solid var(--line);background:#fbfcff}.viewerHead h2{font-size:16px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.viewerHead a{font-size:11px;text-decoration:none;color:var(--blue);border:1px solid #cad5e2;border-radius:7px;padding:6px 8px;background:#fff}.status{font-size:10px;border-radius:999px;padding:4px 8px;background:#e8f7ee;color:var(--green);font-weight:800}.status.summary{background:#fff2d2;color:var(--amber)}
+#viewer{width:100%;height:calc(100% - 64px);border:0;background:#fff}.error{padding:22px;line-height:1.6}.error b{color:var(--red)}
+.jsonView{height:calc(100% - 64px);overflow:hidden;background:#fff}.jsonTools{padding:10px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:#fbfcff}
+.jsonTools input[type=search]{min-width:260px;flex:1;padding:8px 9px;border:1px solid #cbd5e1;border-radius:7px}.jsonTools select,.jsonTools button{padding:7px 8px;border:1px solid #cbd5e1;border-radius:7px;background:#fff}.jsonTools label{font-size:12px;color:var(--muted)}
+.jsonMeta{display:flex;gap:6px;flex-wrap:wrap;padding:8px 10px;border-bottom:1px solid var(--line)}.jsonPill{font-size:10px;padding:3px 7px;border-radius:999px;background:#eef2ff;color:#304c9a}
+.tableWrap{height:calc(100% - 91px);overflow:auto}table{border-collapse:collapse;width:100%;font-size:12px}th{position:sticky;top:0;background:#f5f7fb;z-index:1;text-align:left;padding:8px;border-bottom:1px solid var(--line)}td{vertical-align:top;padding:8px;border-bottom:1px solid #e9edf2;line-height:1.45}
+tr.changed{background:#fffdf4}tr.titleRow{background:#f7fbff}.pre{white-space:pre-wrap;min-width:160px}.idcell{white-space:pre-wrap;font-family:ui-monospace,monospace;color:#516174}.muted{color:#9aa5b4}.proposal{border-left:3px solid #d8a327;padding-left:7px;margin-bottom:6px}.pid{font-weight:800;color:#815d00;font-size:10px}.empty{text-align:center;color:var(--muted);padding:28px}
+footer{text-align:center;color:var(--muted);font-size:10px;padding:0 14px 14px}
+[hidden]{display:none!important}
+@media(max-width:850px){.shell{grid-template-columns:1fr;height:auto}.panel:first-child{height:350px}.panel:last-child{height:780px}header{padding:18px 14px}.notice{margin:10px}.shell{padding:0 10px 10px}h1{font-size:23px}.jsonTools input[type=search]{min-width:100%}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">GIRLS' CREATION · PUBLIC REVIEW ARCHIVE · CDN VIEWER v0.2</div><h1>R35 공개 검수 아카이브</h1>
+<p>뷰어와 검수 데이터를 분리한 혼합형 버전입니다. R35는 JSON을 직접 렌더링하고, 아직 변환하지 않은 이 페이지는 R35 JSON 로딩과 fallback 동작만 검증하는 공개 배포 파일럿입니다.</p>
+<div class="badges"><span class="badge" id="range">manifest 로딩 중</span><span class="badge">Lazy load</span><span class="badge">R35 JSON pilot</span><span class="badge">정본 checkpoint와 별개</span></div></header>
+<div class="notice"><b>v0.2 파일럿:</b> R35의 839개 검수 행은 <code>data/R35.json</code>으로 분리되었습니다. JSON 로딩이 실패하면 자동으로 기존 R35 HTML로 fallback합니다.</div>
+<main class="shell">
+<section class="panel"><div class="tools"><input id="q" type="search" placeholder="R번호 · 이벤트 · 캐릭터 · 상태 검색"><div class="meta"><span class="pill" id="count">0 rounds</span><span class="pill warn" id="summaryCount">0 summary</span><span class="pill good" id="jsonCount">0 JSON</span></div></div><div class="list" id="list"></div></section>
+<section class="panel">
+<div class="viewerHead"><h2 id="title">라운드를 선택하세요</h2><span id="kind" class="status">READY</span><a id="dataLink" href="#" target="_blank" rel="noopener" hidden>JSON</a><a id="open" href="#" target="_blank" rel="noopener">새 창</a></div>
+<iframe id="viewer" title="라운드 상세 검수"></iframe>
+<div id="jsonView" class="jsonView" hidden>
+  <div class="jsonTools"><input id="jq" type="search" placeholder="JP · KO · 화자 · proposal · 검수 메모 검색"><select id="jtype"><option value="">전체 종류</option><option value="title">제목</option><option value="body">본문</option><option value="speaker">화자 교정</option></select><label><input id="jchanged" type="checkbox"> 변경 후보만</label><button id="jclear" type="button">초기화</button><span id="jshown" class="pill">0</span></div>
+  <div id="jmeta" class="jsonMeta"></div>
+  <div class="tableWrap"><table><thead><tr><th>ID/raw</th><th>종류</th><th>JP 원문</th><th>화자</th><th>관찰 KO</th><th>후보</th><th>검수 메모</th></tr></thead><tbody id="jtbody"></tbody></table></div>
+</div>
+<div id="error" class="error" hidden><b>manifest를 불러오지 못했습니다.</b><br>정적 웹 호스팅에서 사용하거나 로컬 HTTP 서버로 열어 주세요.</div>
+</section>
+</main>
+<footer>공개 배포 실기용 Viewer v0.2 · R35 JSON 파일럿</footer>
+<script src="./app.js"></script>
+</body></html>
