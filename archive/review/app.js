@@ -83,7 +83,7 @@ function renderJson(){
   if(!rows.length){const tr=document.createElement('tr');const td=document.createElement('td');td.colSpan=7;td.className='empty';td.textContent='검색 결과 없음';tr.appendChild(td);jtbody.appendChild(tr)}
 }
 function renderMeta(meta){
-  const pairs=[['검수',meta.reviewed],['본문',meta.body],['제목',meta.titles],['신규 제안',meta.new_proposals],['재확인',meta.reconfirmed],['남은 큐',meta.remaining_queue]];
+  const pairs=[['검수',meta.reviewed],['본문',meta.body],['제목',meta.titles],['신규 제안',meta.new_proposals],['재확인',meta.reconfirmed],['high',meta.high],['medium',meta.medium],['남은 큐',meta.remaining_queue]].filter(([,v])=>v!==undefined&&v!==null);
   jmeta.replaceChildren();
   for(const [k,v] of pairs){const s=document.createElement('span');s.className='jsonPill';s.textContent=`${k} ${v??'—'}`;jmeta.appendChild(s)}
 }

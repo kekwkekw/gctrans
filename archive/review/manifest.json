@@ -1,18 +1,45 @@
 {
-  "schema": "gc-public-archive-pages-pilot-v0.2",
+  "schema": "gc-public-archive-pages-pilot-v0.3",
   "archive": "Girls' Creation Translation Knowledge Layer",
-  "range": "R35 pilot",
-  "version": "0.2.0-pilot",
+  "range": "R17 · R18 · R35",
+  "version": "0.3.0-pilot",
   "generated_date": "2026-09-21",
   "data_mode": "mixed-json-html",
   "authoritative": false,
   "privacy": "public-sanitized",
   "notes": [
-    "GitHub Pages/정적 호스팅 실기 검증 전용 공개 파일럿.",
-    "R35 JSON payload와 legacy HTML fallback만 포함한다.",
-    "authoritative checkpoint가 아니며 전체 R1-R35 배포본도 아니다."
+    "공개 검수 아카이브의 증분 JSON 전환 파일럿.",
+    "R17, R18, R35는 JSON payload를 뷰어가 직접 렌더링한다.",
+    "각 JSON은 원본 공개 상세 HTML을 legacy fallback으로 보존한다.",
+    "authoritative translation checkpoint를 대체하지 않는다."
   ],
   "rounds": [
+    {
+      "id": "R17",
+      "order": 17,
+      "title": "렘브란트 개인 스토리",
+      "kind": "원본 상세",
+      "source_path": "./data/R17.json",
+      "scope": "8화 · 694항목",
+      "status": "의미 1차 검수 완료",
+      "detail_level": "full",
+      "searchable_text": "R17 렘브란트 개인 스토리 원본 상세 8화 694항목 의미 1차 검수 완료",
+      "payload_type": "review_json",
+      "fallback_path": "./legacy/R17.html"
+    },
+    {
+      "id": "R18",
+      "order": 18,
+      "title": "렘브란트 개인 스토리",
+      "kind": "원본 상세",
+      "source_path": "./data/R18.json",
+      "scope": "8화 · 653항목",
+      "status": "의미 1차 검수 완료",
+      "detail_level": "full",
+      "searchable_text": "R18 렘브란트 개인 스토리 원본 상세 8화 653항목 의미 1차 검수 완료",
+      "payload_type": "review_json",
+      "fallback_path": "./legacy/R18.html"
+    },
     {
       "id": "R35",
       "order": 35,

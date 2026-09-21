@@ -1,15 +1,14 @@
-# Girls' Creation R35 Pages Pilot
+# Girls' Creation 공개 검수 아카이브 Viewer v0.3
 
-공개 정적 호스팅에서 JSON fetch/render/fallback을 실기 확인하기 위한 최소 배포 브랜치다.
+기존 걸크리 CDN과 같은 `main` Pages 배포 안에서 `/archive/review/` 경로로 제공되는 공개 검수 아카이브다.
 
-현재 트리에는 공개용 파일만 존재한다.
+## JSON 전환 완료
+- R17: 694행 / 신규 58 / 기존 재확인 7
+- R18: 653행 / 신규 57 / 기존 재확인 1
+- R35: 839행 / proposal 47
 
-- index.html
-- app.js
-- manifest.json
-- data/R35.json
-- legacy/R35.html
-- .nojekyll
+각 라운드는 `data/Rxx.json`을 직접 렌더링하고, JSON 로딩 실패 시 `legacy/Rxx.html`로 fallback한다.
 
-R35 JSON은 839행이며 기존 공개 R35 HTML의 embedded JSON과 exact PASS 상태에서 가져왔다.
-이 브랜치는 전체 R1~R35 공개본이 아니며 authoritative translation checkpoint도 아니다.
+R17/R18은 구형 상세 HTML의 `article.row` DOM을 구조화 JSON으로 변환했으며, 행 수·제안 수·제목 수·JP/KO/판정 누락 검증을 통과한 것만 게시한다.
+
+이 아카이브는 공개 탐색/공유용이며 authoritative translation checkpoint를 대체하지 않는다.
