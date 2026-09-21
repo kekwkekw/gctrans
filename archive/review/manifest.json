@@ -1,19 +1,78 @@
 {
-  "schema": "gc-public-archive-pages-pilot-v0.8",
+  "schema": "gc-public-archive-pages-pilot-v0.9",
   "archive": "Girls' Creation Translation Knowledge Layer",
-  "range": "R5 · R6 · R7 · R8 · R9 · R10 · R11 · R12 · R13 · R14 · R15 · R16 · R17 · R18 · R35",
-  "version": "0.8.0-pilot",
+  "range": "R1~R18 · R35",
+  "version": "0.9.0-pilot",
   "generated_date": "2026-09-22",
-  "data_mode": "mixed-json-html",
+  "data_mode": "typed-json-with-legacy",
   "authoritative": false,
   "privacy": "public-sanitized",
   "notes": [
-    "공개 검수 아카이브의 증분 JSON 전환 파일럿.",
-    "R5~R18 및 R35를 JSON payload로 직접 렌더링한다.",
-    "각 JSON은 기존 공개 상세 HTML을 legacy fallback으로 보존한다.",
-    "authoritative translation checkpoint를 대체하지 않는다."
+    "R1 alignment, R2 R3 내장 참조, R3 boundary/proposal ledger, R4 MAIN/REVIEW/CONTEXT bundle.",
+    "R5~R18 및 R35의 기존 review JSON을 유지한다.",
+    "19 structured entries / 18 JSON files; R2는 독립 source가 아니다.",
+    "공개 탐색용 역사적 검수 기록이며 authoritative translation checkpoint를 대체하지 않는다."
   ],
   "rounds": [
+    {
+      "id": "R1",
+      "order": 1,
+      "title": "파일럿 메시지 alignment checkpoint",
+      "kind": "파일럿 메시지 alignment",
+      "payload_type": "alignment_json",
+      "source_path": "./data/R01.json",
+      "fallback_path": "./legacy/R01.html",
+      "detail_level": "full",
+      "scope": "3개 이야기 · 280 메시지",
+      "status": "메시지 경계 검수 · 의미 판정 없음",
+      "searchable_text": "R1 파일럿 메시지 alignment checkpoint 파일럿 메시지 alignment 3개 이야기 · 280 메시지 메시지 경계 검수 · 의미 판정 없음 "
+    },
+    {
+      "id": "R2",
+      "order": 2,
+      "title": "R3에 보존된 R2 문구 제안",
+      "kind": "R3 내장 검수 기록",
+      "payload_type": "embedded_reference",
+      "embedded_in": "R3",
+      "embedded_source_path": "./data/R03.json",
+      "embedded_record_id": "R2-W001",
+      "fallback_path": "./legacy/R03.html",
+      "detail_level": "embedded",
+      "scope": "공개 lineage 1건 · 독립 R02 source 없음",
+      "status": "R3 embedded · 미적용",
+      "searchable_text": "R2 R3에 보존된 R2 문구 제안 R3 내장 검수 기록 공개 lineage 1건 · 독립 R02 source 없음 R3 embedded · 미적용 R2-W001"
+    },
+    {
+      "id": "R3",
+      "order": 3,
+      "title": "경계 검수와 미적용 문구 제안",
+      "kind": "경계 검수 · proposal ledger",
+      "payload_type": "ledger_json",
+      "source_path": "./data/R03.json",
+      "fallback_path": "./legacy/R03.html",
+      "detail_level": "full",
+      "scope": "경계 2건 · proposal 88건",
+      "status": "R1/R2/R3 lineage · 미적용",
+      "searchable_text": "R3 경계 검수와 미적용 문구 제안 경계 검수 · proposal ledger 경계 2건 · proposal 88건 R1/R2/R3 lineage · 미적용 "
+    },
+    {
+      "id": "R4",
+      "order": 4,
+      "title": "메인 1장 검수 checkpoint",
+      "kind": "메인 1장 · review/context bundle",
+      "payload_type": "bundle_json",
+      "source_path": "./data/R04.json",
+      "fallback_path": "./legacy/R04_MAIN.html",
+      "fallback_paths": {
+        "MAIN": "./legacy/R04_MAIN.html",
+        "REVIEW": "./legacy/R04_REVIEW.html",
+        "CONTEXT": "./legacy/R04_CONTEXT.html"
+      },
+      "detail_level": "full",
+      "scope": "MAIN 1102 · REVIEW 133 · CONTEXT 92",
+      "status": "1장 검수 · context 초안 · 미적용",
+      "searchable_text": "R4 메인 1장 검수 checkpoint 메인 1장 · review/context bundle MAIN 1102 · REVIEW 133 · CONTEXT 92 1장 검수 · context 초안 · 미적용 "
+    },
     {
       "id": "R5",
       "order": 5,

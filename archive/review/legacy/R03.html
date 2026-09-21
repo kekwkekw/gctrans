@@ -1,0 +1,536 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>걸크리 R3 검수</title><style>
+body{font-family:system-ui,sans-serif;line-height:1.7;max-width:1100px;margin:40px auto;padding:0 22px;background:#f5f7fa;color:#1b2433}
+header,section{background:white;padding:24px;margin:18px 0;border:1px solid #d8dfe8;border-radius:12px}
+h1,h2,h3{line-height:1.35}pre{white-space:pre-wrap;word-break:break-word;font:inherit;background:#f2f4f7;padding:14px}
+code{overflow-wrap:anywhere}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:650px){.pair{grid-template-columns:1fr}body{margin:20px auto}}
+input{font:inherit;width:96%;padding:10px;border:1px solid #99a9bc}b,strong{color:#183d64}
+</style><header><h1>걸크리 R3 — 경계 검수와 미적용 문구 제안</h1>
+<p>잠정 묶음 256구간 / 현재 분할 1,564그룹 경계 검토 완료. <strong>전체 의미·말투·게임 실행·배포 승인은 아닙니다.</strong></p>
+<p>원문 변경 0. 아래 제안 88건은 R1 12건 + R3 75건 + Battle R2 1건이며 모두 미적용입니다.
+역주 2곳도 현재 원문에 남겨 두고 최종 출력 처리를 보류했습니다.</p>
+<p>브라우저의 Ctrl+F로 ID나 문구를 찾을 수 있습니다. 네트워크 연결이나 설치는 필요하지 않습니다.</p></header>
+<section><h2>40200742 / run 0</h2><p>[5, 1] → <strong>[4, 2]</strong></p><p>가상 후보 [5,1]은 잘못됨. 일본어 「ぎゅむっ」는 K0 독백이 아니라 K1 첫 줄 &#x27;규뭇&#x27;에 있다. 독백 네 개와 발성·창고 독백 두 개로 재배치.</p><details><summary>일본어와 한국어 원문</summary><pre>1: （……あやしーおとこのひとがいるのは、ほんとうなのです。\n　ブグローさまの考えすぎなんかじゃないのです。\n　それはくーちゃん、知ってるのです）
+
+2: （でも、相談なんておおごとなのです。\n　ほかのみなさんもまきこんでしまうのです。\n　美術館の、おにーちゃんのことだって……）
+
+3: （くーちゃんはたたかえるし、自分でどーにかできるのです。\n　“フシンシャ”が近くにいるなら、やっつけるチャンスなのです）
+
+4: （ブグローさまがフシンシャをくーちゃんに近づけないようにするなら、\n　あえてみずから、フシンシャにつかまってやればいーのです）
+
+5: 「ぎゅむっ」
+
+6: （フシンシャにかつがれて、ほーり出されたのは倉庫だったのです。\n　気絶してるフリしてよーすを見ます）</pre><p><code>135710256:s002:b0001</code></p><pre>(...... 수상한 남자가 있는 건, 정말인 거에요.
+부그로 님의 지나친 생각이 아닌 거에요.
+그건 쿠-쨩, 알고 있는 거에요)
+(하지만, 상담하는 건 일이 커지는 거에요.
+다른분들도 휘말리는 거에요.
+미술관의, 오빠도......)
+(쿠-쨩은 싸울 수 있고, 스스로 어떻게든 할 수 있는 거에요.
+&quot;수상한 사람&quot; 이 근처에 있다면, 해치울 찬스인 거에요)
+(부그로 님이 수상한 사람을 쿠-쨩에게 다가오게 하지 않도록 한다면,
+일부러 몸소, 수상한 사람에게 잡혀버리면 되는 거에요)</pre><p><code>135710256:s002:b0002</code></p><pre>규뭇
+(수상한 사람에게 잡혀서, 내팽개쳐진 곳은 창고였던 거에요.
+기절한 척을 하고 상황을 보겠어요)</pre></details></section><section><h2>11010902 / run 0</h2><p>[1, 1, 6, 2, 1, 1, 1, 1, 1, 1, 1] → <strong>[1, 2, 5, 2, 1, 1, 1, 1, 1, 1, 1]</strong></p><p>기존 [1,1,6,...]는 무언 대사 J2를 다음 블록에 붙였다. 실제 말줄임표는 K1의 마지막 줄에 있다. K1=[J1,J2], K2=[J3..J7]로 수정하고 산소비노의 기다리는 싸움에 대한 독백은 2+3+2+2+3줄로 나눈다.</p><details><summary>일본어와 한국어 원문</summary><pre>1: 「はぁ……館長たち、無事に辿りつけましたかね……。\n　処刑とやらを阻止できていればいいんですが……」
+
+2: 「この天才美少女アルテ様抜きじゃ、苦戦は必至でしょうね。\n　足さえ怪我してなければ、今頃はそんな不届きな連中、\n　小指１本でまとめて蹴散らしていたんですが」
+
+3: 「…………」
+
+4: 「普段ならこのへんで館長がツッコミを入れてくるんですけど、\n　いないとなんだか調子が狂いますね……」
+
+5: 「自分の意思で留守番をすることはあっても、\n　行きたいのに行けないってことは、\n　そういえば今まであまりなかった気がします」
+
+6: 「……サンソヴィーノも、いつもこういう気持ちなんですかね。\n　信じて見送る側になるのは、けっこう歯がゆいです」
+
+7: 「美術館に戻ると、いつも笑顔で出迎えてくれますけど、\n　あれもサンソヴィーノなりの戦いなのかもしれませんね」
+
+8: 「私たちが帰れる場所を守って、しっかり整えること。\n　戦いに疲れた私たちを、笑顔で出迎えて安心させること。\n　それが、この場にいながらできる戦いなのかも……」
+
+9: 「ここにいれば、館長たちが帰ってきた時すぐわかりますよね。\n　私の姿を見せて、安心させてあげるとしましょう」
+
+10: 「ついでに、たまには特別なお出迎えもしてあげましょうか。\n　サンソヴィーノを参考にするなら……」
+
+11: 「おかえりなさいませ、館長様！」
+
+12: 「……いや、ないですね。\n　いくら私がなんでもできる天才美少女だといっても、\n　さすがに、らしくなさすぎます」
+
+13: （……らしくない？\n　記憶がないのに“自分らしい”なんて概念あるんでしょうか？）
+
+14: （それだけ、美術館で暮らす自分自身が、\n　私にとって当たり前になってるってことなんですかね……）
+
+15: 「うん。いつも通りの私でいいでしょう」
+
+16: 「もし館長たちが疲れたり落ち込んだりして帰ってきても、\n　普段と変わらない私が、こうしてここにいる。\n　その方が、周りにとっても励みになりますね」
+
+17: 「さて、そうと決まったら、少しでも早く怪我が治るように、\n　安静にして帰りを待っていましょうか……」</pre><p><code>132737818:s001:b0028</code></p><pre>하아...... 관장 님들, 무사히 도착했을까요......
+처형이란 걸 저지할 수 있으면 좋겠는데요......</pre><p><code>132737818:s001:b0029</code></p><pre>이 천재 미소녀 아르테 님 빼곤, 고전하는 것은 당연하겠죠.
+다리만 다치지 않았으면, 지금쯤 그런 괘씸한 녀석들,
+새끼 손가락 하나로 싸잡아서 처리해버렸을 테지만요
+............</pre><p><code>132737818:s001:b0030</code></p><pre>평소라면 이쯤에서 관장 님이 태클을 넣을 텐데요,
+없으면 어쩐지 컨디션이 나빠지네요......
+제 의지로 나가지 않을 때는 있지만,
+가고 싶은데 갈 수 없는 일은,
+그러고보니 지금까지 그다지 없었던 느낌이 드네요
+...... 산소비노도, 언제나 이런 마음이었을까요.
+믿고 배웅하는 측이 되는 건, 제법 답답하네요
+미술관에 돌아오면, 언제나 웃는 얼굴로 마중해주지만,
+그것도 산소비노 나름의 싸움일지도 모르겠네요
+저희가 돌아올 장소를 지키고, 제대로 정돈하는 것.
+싸움에 지친 우리를, 웃는 얼굴로 맞이해서 안심시키는 것.
+그게, 이 자리에 있으면서 할 수 있는 싸움일지도......</pre><p><code>132737818:s001:b0031</code></p><pre>여기 있으면, 관장 님 일행이 돌아왔을 때 바로 알 수 있겠죠.
+제 모습을 보여주고, 안심시켜주도록 하죠
+덤으로, 가끔은 특별한 마중도 해줄까요.
+산소비노를 참고한다면......</pre><p><code>132737818:s001:b0032</code></p><pre>어서오세요, 관장 님!</pre><p><code>132737818:s001:b0033</code></p><pre>...... 아니, 아니네요.
+아무리 제가 뭐든 할 수 있는 천재 미소녀라고 해도,
+역시, 너무 저답지 않아요</pre><p><code>132737818:s001:b0034</code></p><pre>(...... 답지 않아?
+기억이 없는데 &quot;저다움&quot; 같은 개념이 있는 걸까요?)</pre><p><code>132737818:s001:b0035</code></p><pre>(그만큼, 미술관에서 지내는 제 자신이,
+저에게 있어 당연한 것이 되었다는 거려나요......)</pre><p><code>132737818:s001:b0036</code></p><pre>응. 평소대로의 저로 괜찮겠죠</pre><p><code>132737818:s001:b0037</code></p><pre>만약 관장 님 일행이 지치거나 침울해져서 돌아오더라도,
+평소와 다름없는 제가, 이렇게 여기 있는 것.
+그 편이, 주위에도 격려가 되겠죠</pre><p><code>132737818:s001:b0038</code></p><pre>그럼, 그렇게 정해졌다면, 조금이라도 빨리 다친게 나을 수 있게,
+안정을 취하고 귀가를 기다릴까요......</pre></details></section><section class="finding"><h3>R1-L01 · 10010101</h3>
+<p><code>113654569:s001:b0035</code> · meaning_specificity</p>
+<pre lang="ja">一緒にいるのは彼女――ゴッホが描いた絵画から\n生まれたイマージュのネイト。\n心配性の世話焼きでゴッホの身を常に案じている。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>선화</pre></div>
+<div><b>미적용 제안</b><pre>그림</pre></div></div>
+<p>絵画는 여기서 그림/회화이며 원문이 선화라는 세부 기법을 지정하지 않는다.</p></section><section class="finding"><h3>R1-L02 · 10010101</h3>
+<p><code>113654569:s001:b0044</code> · meaning_shift</p>
+<pre lang="ja">「きっとそう。だから助けてなんてもらえない」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>도와달라고 할 수 없어</pre></div>
+<div><b>미적용 제안</b><pre>도움을 받을 수 없어</pre></div></div>
+<p>助けてなんてもらえない는 도움을 받을 수 없다는 비관이다. 도움 요청 자체를 할 수 없다는 문장과는 초점이 다르다.</p></section><section class="finding"><h3>R1-L03 · 10010101</h3>
+<p><code>113654569:s001:b0049</code> · meaning_shift</p>
+<pre lang="ja">用事があるというゴッホとネイトは遠慮気味に端に。\nついてきただけのアルテは中央に堂々と腰掛けた――</pre>
+<div class="pair"><div><b>원문 보존</b><pre>고심 끝에 끝 부분에</pre></div>
+<div><b>미적용 제안</b><pre>조심스럽게 가장자리에</pre></div></div>
+<p>遠慮気味는 주저하거나 조심스러운 태도이며 오래 고민했다는 뜻이 아니다.</p></section><section class="finding"><h3>R1-L04 · 10010101</h3>
+<p><code>113654569:s001:b0060</code> · partial_omission</p>
+<pre lang="ja">「ずっと捜してるけど、自宅にもいないし、連絡もつかない。\n　置手紙や手がかりもないの」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>뭔가 써 놓고 가지도 않았어</pre></div>
+<div><b>미적용 제안</b><pre>남긴 쪽지도, 단서도 없어</pre></div></div>
+<p>置手紙や手がかり 두 요소 가운데 단서(手がかり)가 현재 한국어에서 명시적으로 빠져 있다.</p></section><section class="finding"><h3>R1-L05 · 10010101</h3>
+<p><code>113654569:s001:b0063</code> · typo</p>
+<pre lang="ja">「この天才が言うので間違いありません」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>전재님</pre></div>
+<div><b>미적용 제안</b><pre>천재님</pre></div></div>
+<p>天才의 한국어 표기 오기.</p></section><section class="finding"><h3>R1-L06 · 10010101</h3>
+<p><code>113654569:s001:b0056</code> · inline_gloss_policy</p>
+<pre lang="ja">「画商としても立派に身を立てている\n　立派な妹さんだったし、よく覚えているよ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>(예술가의 그림을 파는 사람)</pre></div>
+<div><b>미적용 제안</b><pre></pre></div></div>
+<p>일본어에 없는 용어 풀이가 한국어 괄호 안에 추가되어 있다. 삭제/유지 정책 결정 전에는 원문 그대로 보존한다.</p></section><section class="finding"><h3>R1-L07 · 22000601</h3>
+<p><code>118735634:s001:b0014</code> · meaning_nuance</p>
+<pre lang="ja">「警備員いらずの美術館、といえば聞こえはいいけど――」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>경비원이 없는 미술관</pre></div>
+<div><b>미적용 제안</b><pre>경비원이 필요 없는 미술관</pre></div></div>
+<p>いらず는 필요하지 않다는 의미이다. 이어지는 말장난의 뜻을 보존하려면 단순 부재와 구분해야 한다.</p></section><section class="finding"><h3>R1-L08 · 22000601</h3>
+<p><code>118735634:s001:b0023</code> · typo</p>
+<pre lang="ja">見落としがないか注意しつつ、ゆっくりと歩を進める。\n不審者以外にも観覧者が残した忘れ物があるかもしれないし、\n美術品になんらかの異変が生じている可能性もある。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>분신물</pre></div>
+<div><b>미적용 제안</b><pre>분실물</pre></div></div>
+<p>忘れ物 문맥상 분실물의 오기로 보인다.</p></section><section class="finding"><h3>R1-L09 · 22000601</h3>
+<p><code>118735634:s001:b0039</code> · grammar</p>
+<pre lang="ja">「まさか、幽霊の類……？」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>유령의 같은거</pre></div>
+<div><b>미적용 제안</b><pre>유령 같은 거</pre></div></div>
+<p>幽霊の類에 대응하는 한국어 조사 결합이 어색하다.</p></section><section class="finding"><h3>R1-L10 · 40106011</h3>
+<p><code>118501704:s001:b0054</code> · typo</p>
+<pre lang="ja">「とりあえず、屋敷の主人が死の芸術を隠していた部屋も見てみるか。\n　場所は教えてもらってある」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>저택의 죽인이</pre></div>
+<div><b>미적용 제안</b><pre>저택의 주인이</pre></div></div>
+<p>屋敷の主人의 주인 표기 오기.</p></section><section class="finding"><h3>R1-L11 · 40106011</h3>
+<p><code>118501704:s001:b0061</code> · meaning_shift</p>
+<pre lang="ja">急に音がして、驚く。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>울린다</pre></div>
+<div><b>미적용 제안</b><pre>놀란다</pre></div></div>
+<p>驚く는 소리를 듣고 놀란다는 뜻이다. 현재 한국어의 울린다는 동작이 바뀌었다.</p></section><section class="finding"><h3>R1-L12 · 40106011</h3>
+<p><code>118501704:s001:b0080</code> · typo</p>
+<pre lang="ja">「や、やりましたね、館長さん！\n　お、思った通りこの屋敷には、まだ隠し部屋があったんです」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>해, 해했네요</pre></div>
+<div><b>미적용 제안</b><pre>해, 해냈네요</pre></div></div>
+<p>やりましたね 문맥의 말더듬 자체는 유지하되 해했네요의 오기 교정을 제안한다.</p></section><section class="finding"><h3>R3-W001 · 40106022</h3>
+<p><code>118585089:s002:b0009</code> · TYPO</p>
+<pre lang="ja">「ご、ごめんなさい。偉そうなことを言ってしまいました」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>주재 넘는 말을 했어요</pre></div>
+<div><b>미적용 제안</b><pre>주제넘은 말을 했어요</pre></div></div>
+<p>偉そうなこと에 대응하는 한국어 관용 표현의 오기. 본문에는 미적용.</p></section><section class="finding"><h3>R3-W002 · 40106032</h3>
+<p><code>118656573:s002:b0048</code> · MEANING_AND_REDUNDANCY</p>
+<pre lang="ja">潤んだ上目づかいの瞳と目が合い、\n彼女の考えていることが、なぜか手に取るようにわかった気がした。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>그녀가 생각하는 것이, 어째선지 생각하는걸 알 것 같은 기분이 들었다.</pre></div>
+<div><b>미적용 제안</b><pre>그녀가 무슨 생각을 하는지, 어째선지 손에 잡힐 듯 알 것 같았다.</pre></div></div>
+<p>手に取るように의 명료함이 빠지고 생각한다는 말이 중복됨. 경계는 정상.</p></section><section class="finding"><h3>R3-W003 · 40106061</h3>
+<p><code>120127092:s001:b0071</code> · AGENCY</p>
+<pre lang="ja">「あ、あたしらしくもないです。\n　自分との時間に集中してもらえずに嫉妬してしまうなんて……」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>저와 함께하는 시간에 집중하지 못하게 하고 질투해버리다니......</pre></div>
+<div><b>미적용 제안</b><pre>저와 함께하는 시간에 집중해주지 않는다고 질투해버리다니......</pre></div></div>
+<p>集中してもらえず는 관장이 집중해주지 않음을 가리킨다. 한국어는 자신이 집중을 방해한 것처럼 읽힌다.</p></section><section class="finding"><h3>R3-W004 · 40112012</h3>
+<p><code>123518573:s002:b0008</code> · TYPO</p>
+<pre lang="ja">「あのふたり――おそらく姉妹だろう。鼻の形がよく似ていた。\n　しかし肉付きは背の低い方……妹の方がよかった。\n　スレンダーな姉の方は高い身長を生かしたパンツルックだったね」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>코 헝태가 아주 비슷했어.</pre></div>
+<div><b>미적용 제안</b><pre>코 형태가 아주 비슷했어.</pre></div></div>
+<p>鼻の形에 대응하는 형태의 오기; 후보로만 기록.</p></section><section class="finding"><h3>R3-W005 · 40112061</h3>
+<p><code>128378968:s001:b0019</code> · PERSON_RELATION_MISTRANSLATION</p>
+<pre lang="ja">「商家の奥方でね。\n　ある程度は裕福だが、かといって藝術家を楽々支援できるほど\n　富にあふれるわけでもない」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>상가 안쪽에서 말이야.</pre></div>
+<div><b>미적용 제안</b><pre>상인 집안의 부인이거든.</pre></div></div>
+<p>商家の奥方는 위치가 아니라 폴린의 신분/가족 관계다. glossary·관계 추출에서 상가 내부로 해석하지 않도록 별도 경고.</p></section><section class="finding"><h3>R3-W006 · 40200491</h3>
+<p><code>128961914:s001:b0055</code> · MEANING</p>
+<pre lang="ja">「館長の時間はとても大切なものです。\n　館長の努力や実力を実らせるための大切な時間です」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>관장 님의 노력과 실력을 쌓기 위한 소중한 시간이에요</pre></div>
+<div><b>미적용 제안</b><pre>관장 님의 노력과 실력이 결실을 맺도록 하는 소중한 시간이에요</pre></div></div>
+<p>実らせる는 누적보다 결실/성과를 뜻함. 경계와 별도 문구 검토 후보.</p></section><section class="finding"><h3>R3-W007 · 40104011</h3>
+<p><code>130210961:s001:b0021</code> · TYPO</p>
+<pre lang="ja">「最初から妖怪に通じている者は多くないだろうからね。\n　謎が妖怪の仕業だと教えるのが、探偵としてのわたしの役目なんだ。\n　うっかりしていたよ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>가르켜주는</pre></div>
+<div><b>미적용 제안</b><pre>가르쳐주는</pre></div></div>
+<p>教える에 대응하는 동사의 오기.</p></section><section class="finding"><h3>R3-W008 · 40200742</h3>
+<p><code>135710256:s002:b0010</code> · IDIOM</p>
+<pre lang="ja">（あきらめも、たちも、どっちも悪いへんたいさんなのです。\n　……ブグローさまとは、ぜんぜんちがうのです）</pre>
+<div class="pair"><div><b>원문 보존</b><pre>체념하는 것도, 하는 짓도, 전부 나쁜 변태 씨인 거에요.</pre></div>
+<div><b>미적용 제안</b><pre>포기할 줄도 모르고, 행실도 나쁜 변태 씨인 거에요.</pre></div></div>
+<p>あきらめが悪い는 포기하지 않는 집요함을 말함. 직역 때문에 뜻이 불명료해졌다.</p></section><section class="finding"><h3>R3-W009 · 40106092</h3>
+<p><code>148476660:s002:b0026</code> · SUBJECT_RELATION</p>
+<pre lang="ja">「で、ですからあの子には、ぬいぐるみをくれたこと以外でも、\n　感謝していて……。\n　よ、喜んで帰ってもらえて、良かったと思っています」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>그, 그러니까 저 애는, 봉제인형을 준 것 외에도,
+감사하고 있어서......</pre></div>
+<div><b>미적용 제안</b><pre>그, 그러니까 저 애에게는, 봉제인형을 준 것 외에도,
+감사하고 있어서......</pre></div></div>
+<p>あの子には感謝していて는 렘브란트가 아이에게 감사한다는 뜻. 주제 표지가 감사의 주체를 바꾸어 읽힐 수 있다.</p></section><section class="finding"><h3>R3-W010 · 40112091</h3>
+<p><code>163426864:s001:b0024</code> · NEGATION_SCOPE</p>
+<pre lang="ja">「決して、わたしがこの晴れ着美少女見放題空間から\n　帰りたくないせいではないよ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>결단코, 내가 이 하레기 미소녀 뷔페 공간에서
+돌아가고 싶지 않은게 아니라고</pre></div>
+<div><b>미적용 제안</b><pre>결코, 내가 이 하레기 미소녀 뷔페 공간에서
+돌아가기 싫어서 그러는 건 아니라고</pre></div></div>
+<p>帰りたくないせいではない는 귀가 의향이 아니라 행동의 이유를 부정하는 변명. せい가 빠져 부정 범위가 달라짐.</p></section><section class="finding"><h3>R3-W011 · 40112092</h3>
+<p><code>163426864:s002:b0010</code> · IDIOM</p>
+<pre lang="ja">「いやぁ……もう最高だったね！\n　何度“いやエッロ……”と口に出てしまったことか！\n　朝まで穴のあくほど鑑賞し倒してしまったよ！」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>아침까지 구멍이 뚫릴 정도로 감상하고 쓰러져버렸다고!</pre></div>
+<div><b>미적용 제안</b><pre>아침까지 구멍이 뚫릴 정도로 실컷 감상했다고!</pre></div></div>
+<p>鑑賞し倒す의 倒す는 철저히/실컷 한다는 보조적 용법. 쓰러지는 사건을 뜻하지 않음.</p></section><section class="finding"><h3>R3-W012 · 21003202</h3>
+<p><code>135168365:s001:b0043</code> · NAME_TYPO</p>
+<pre lang="ja">「ブグローさま……そうだったのですか……」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>부르고 님</pre></div>
+<div><b>미적용 제안</b><pre>부그로 님</pre></div></div>
+<p>동일 원문의 ブグロー를 잘못 전사한 단일 오기; 전역 개명 아님.</p></section><section class="finding"><h3>R3-W013 · 22001905</h3>
+<p><code>137102735:s001:b0079</code> · IDIOM</p>
+<pre lang="ja">（それにあたしとしても、\n　最後の最後までこの人に花を持たせるのは、不本意に思えてきました）</pre>
+<div class="pair"><div><b>원문 보존</b><pre>최후의 마지막까지 이 사람에게 꽃을 쥐어주는 것은, 바라지 않다고 생각되기 시작했어요</pre></div>
+<div><b>미적용 제안</b><pre>마지막까지 이 사람에게 공을 돌려주는 것은, 내키지 않는다고 생각하기 시작했어요</pre></div></div>
+<p>花を持たせる는 여기서 마지막 활약/공을 상대에게 양보한다는 뜻. 실제 꽃 전달로 관계 데이터에 넣지 않는다.</p></section><section class="finding"><h3>R3-W014 · 22001906</h3>
+<p><code>137104026:s001:b0033</code> · TYPO</p>
+<pre lang="ja">呪いが解けたことで、やっと日常が戻ってきた。\n寝ていたぶんの筋力の衰えなどはあったが、\nそれも数日の鍛錬で回復。今日からやっと本調子で仕事ができる。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>드디어 이상이 돌아왔다.</pre></div>
+<div><b>미적용 제안</b><pre>드디어 일상이 돌아왔다.</pre></div></div>
+<p>日常에 대응하는 일상의 오기; 이상이라는 새 설정으로 추출하지 않도록 주의.</p></section><section class="finding"><h3>R3-W015 · 20002605</h3>
+<p><code>156465929:s001:b0056</code> · AGENCY</p>
+<pre lang="ja">（……この店主、死の芸術を壊されて逆上していましたけど、\n　もう店内に残っていたのは駄作ばかりだということを、\n　理解していなかったんでしょうか？）</pre>
+<div class="pair"><div><b>원문 보존</b><pre>이 점주, 죽음의 예술을 부숴서 흥분했었는데,</pre></div>
+<div><b>미적용 제안</b><pre>이 점주, 죽음의 예술이 파괴당해서 격분했었는데,</pre></div></div>
+<p>壊されて逆上는 점주가 직접 파괴한 것이 아니라 자신의 작품이 파괴당해 격분한 상황.</p></section><section class="finding"><h3>R3-W016 · 20003306</h3>
+<p><code>176471785:s006:b0013</code> · TYPO</p>
+<pre lang="ja">「そ、そこへ、人々の欲深い願いが過度に集中した結果、\n　死の芸術の下地になってしまった……。\n　お、おそらく、そんなところじゃないでしょうか」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>욕심스러운 소운이</pre></div>
+<div><b>미적용 제안</b><pre>욕심스러운 소원이</pre></div></div>
+<p>願い에 대응하는 소원의 오기; 별도 제안으로만 기록.</p></section><section class="finding"><h3>R3-W017 · 22003303</h3>
+<p><code>180675058:s003:b0055</code> · TYPO</p>
+<pre lang="ja">モリゾはドリンクサービスや列の整備をしながらも、\n応援する俺の横でたびたび解説を入れてくれる。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>드링크 서비스나 중 절리를 하면서도</pre></div>
+<div><b>미적용 제안</b><pre>드링크 서비스나 줄 정리를 하면서도</pre></div></div>
+<p>列の整備의 대응 구절에 중 절리 오기; 본문은 변경하지 않는다.</p></section><section class="finding"><h3>R3-W018 · 10010106</h3>
+<p><code>114065612:s001:b0037</code> · MODALITY</p>
+<pre lang="ja">「ゴッホさん……」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>정말로 이제 찾지 않아도 된다면</pre></div>
+<div><b>미적용 제안</b><pre>정말로 이제 찾고 싶지 않다면</pre></div></div>
+<p>探したくない는 필요성의 부재가 아니라 의지의 부재다. 원문에 없는 의무 의미를 바로잡는 제안.</p></section><section class="finding"><h3>R3-W019 · 10010207</h3>
+<p><code>114956560:s001:b0028</code> · IDIOM_DIRECTION</p>
+<pre lang="ja">「ただ適当に血肉の画材をぶちまけたような乱雑さ。\n　技量はなく、しかも混沌に振り切れているわけでもなく、\n　半端な思い切りのなさが透けて見えます」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>심지어 혼돈에서 벗어난 것도 아니고</pre></div>
+<div><b>미적용 제안</b><pre>그렇다고 혼돈을 끝까지 밀어붙인 것도 아니고</pre></div></div>
+<p>混沌に振り切れているわけでもなく는 혼돈에서 빠져나옴이 아니라 혼돈 쪽으로 끝까지 치우치지도 못함을 말한다.</p></section><section class="finding"><h3>R3-W020 · 10010307</h3>
+<p><code>115966715:s001:b0035</code> · AGENCY_REVERSAL</p>
+<pre lang="ja">「その花をまとった人は\n　最初は男性を抱きかかえようとしていたのですが、\n　抵抗されて刺した……というように見えました」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>저항하다가 찔렸다</pre></div>
+<div><b>미적용 제안</b><pre>남성이 저항하자 찌른</pre></div></div>
+<p>抵抗されて刺した는 꽃을 두른 자가 저항을 받고 남성을 찌른 것으로 보였다는 말이다. 현재 번역은 찌른 주체와 피동 관계를 뒤집는다.</p></section><section class="finding"><h3>R3-W021 · 10010607</h3>
+<p><code>117626643:s001:b0023</code> · TYPO</p>
+<pre lang="ja">「この企みの気に入っているところはね。\n　誰かが作戦の欠陥に気づいたとしても、\n　異を唱えづらい状況を作り出せるところなんだ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>이의를 제기하지 어려운</pre></div>
+<div><b>미적용 제안</b><pre>이의를 제기하기 어려운</pre></div></div>
+<p>異を唱えづらい의 한국어 오기 제안.</p></section><section class="finding"><h3>R3-W022 · 10010708</h3>
+<p><code>118099345:s001:b0003</code> · WORD_OMISSION</p>
+<pre lang="ja">「みんな自分の目で景色を見るとき、遠近法とか考えなくないっすか？\n　ここが消失点だな～とか思いながら生活してんすか？\n　まあ私はしてますけど……」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>여기가 소실점이네~ 라던가 생각하면서 생각함까?</pre></div>
+<div><b>미적용 제안</b><pre>여기가 소실점이네~ 라던가 생각하면서 생활함까?</pre></div></div>
+<p>生活してんすか의 생활 의미가 중복된 생각으로 치환됐다. 말투는 유지한 최소 수정 제안.</p></section><section class="finding"><h3>R3-W023 · 11010804</h3>
+<p><code>122449365:s001:b0082</code> · SEMANTIC_TONE</p>
+<pre lang="ja">「どうも、レンブラントさん。今日も見事な散財ぶりでしたな。\n　いつもありがとうございます。\n　まったく、潤沢な資金があるのはうらやましい限りですよ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>오늘도 멋진 수완이군요.</pre></div>
+<div><b>미적용 제안</b><pre>오늘도 호쾌하게 돈을 쓰셨군요.</pre></div></div>
+<p>散財ぶり는 수완 평가가 아니라 돈을 흥청 쓴 데 대한 빈정거림이다. 뒤의 潤沢な資金 및 독백과도 대응한다. 문구 제안만 기록.</p></section><section class="finding"><h3>R3-W024 · 10010908</h3>
+<p><code>132643318:s001:b0017</code> · TYPO</p>
+<pre lang="ja">「その芸術品と同じ時代に生まれなかったというだけで、\n　もう本来の美しさを見られない人がいるなんて……。\n　そんなの、悲しいじゃないですか」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>태어나지 안았다는</pre></div>
+<div><b>미적용 제안</b><pre>태어나지 않았다는</pre></div></div>
+<p>生まれなかった의 한국어 활용 오기.</p></section><section class="finding"><h3>R3-W025 · 10010909</h3>
+<p><code>132643975:s001:b0031</code> · AGENCY_IDIOM</p>
+<pre lang="ja">「だが、その先ですがりついた答えに、お前は逆に取りつかれた。\n　唯一絶対の真理を自分だけが知っていて、\n　それを理解できない奴らは全員バカだと思うことにした」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>그 후에 알아낸 대답에, 넌 역으로 매달렸어.</pre></div>
+<div><b>미적용 제안</b><pre>그 끝에서 매달린 답에, 넌 오히려 사로잡혔어.</pre></div></div>
+<p>すがりついた答えに逆に取りつかれた는 의지하던 답에 거꾸로 사로잡힘이다. 현재 번역의 알아낸 답/매달림은 그 역전을 약화한다.</p></section><section class="finding"><h3>R3-W026 · 10011003</h3>
+<p><code>142252215:s001:b0014</code> · TYPO</p>
+<pre lang="ja">「アルテ……そうですね、言われてみるとそう読めないこともないです。\n　見る人間によって解釈が変わる……」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>해석이이 바뀌는</pre></div>
+<div><b>미적용 제안</b><pre>해석이 바뀌는</pre></div></div>
+<p>解釈が変わる의 한국어 조사 중복.</p></section><section class="finding"><h3>R3-W027 · 40106012</h3>
+<p><code>118501704:s002:b0020</code> · NAME_TYPO</p>
+<pre lang="ja">思わず身体が動いていた。\nレンブラントを抱えて飛び退いたのだ。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>림브란트를</pre></div>
+<div><b>미적용 제안</b><pre>렘브란트를</pre></div></div>
+<p>명시된 レンブラント 화자의 표준 표기와 불일치하는 본문 오기. 일괄 변경하지 않고 제안한다.</p></section><section class="finding"><h3>R3-W028 · 40200442</h3>
+<p><code>120928424:s002:b0007</code> · UNREALIZED_DESIRE</p>
+<pre lang="ja">「会場でも館長とたくさんお話ししたかったんだけど、\n　今日のドナちゃんは色んな人にご挨拶しなきゃいけないみたいで、\n　ローリエだけ勝手にフラフラするわけにはいかなかったし……」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>회장에서도 관장과 많이 이야기 했었지만,</pre></div>
+<div><b>미적용 제안</b><pre>회장에서도 관장과 많이 이야기하고 싶었지만,</pre></div></div>
+<p>お話ししたかった는 실제로 대화했다는 회상이 아니라 원했던 일이다. 뒤의 마음대로 움직일 수 없었음과 연결한다.</p></section><section class="finding"><h3>R3-W029 · 40106041</h3>
+<p><code>123328991:s001:b0041</code> · TYPO</p>
+<pre lang="ja">「ありがとう。そして……悪いが、よろしく頼む。\n　だが……くれぐれも気をつけてくれ。\n　レンブラントの安全が第一だ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>렘브란트의 안정이</pre></div>
+<div><b>미적용 제안</b><pre>렘브란트의 안전이</pre></div></div>
+<p>安全의 대응 명사 오기. 통째 재번역하지 않는다.</p></section><section class="finding"><h3>R3-W030 · 40200741</h3>
+<p><code>135710256:s001:b0034</code> · FALSE_FRIEND</p>
+<pre lang="ja">ブグローの表情と声のトーンは神妙なそれに変わっており、\n話の腰を折るのも憚られる。\nクピドのことは気になるが……まぁ、あとで本人に聞いてみるか。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>부그로의 표정과 목소리 톤은 신묘하게 변해서,</pre></div>
+<div><b>미적용 제안</b><pre>부그로의 표정과 목소리 톤은 진지하게 변해서,</pre></div></div>
+<p>神妙는 이 문맥에서 신비로움이 아니라 진지하고 엄숙한 태도다.</p></section><section class="finding"><h3>R3-W031 · 40200742</h3>
+<p><code>135710256:s002:b0078</code> · TYPO</p>
+<pre lang="ja">「今後は問題が発生したら、ちゃんと相談すること！\n　いいな！？」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>문제가 생가면</pre></div>
+<div><b>미적용 제안</b><pre>문제가 생기면</pre></div></div>
+<p>발생하다의 한국어 활용 오기.</p></section><section class="finding"><h3>R3-W032 · 40200802</h3>
+<p><code>144720009:s002:b0048</code> · IDIOM</p>
+<pre lang="ja">ローリエがそう言うなら、彼女の自主性を尊重しよう。\n少なくとも音をあげるまでは付き合うことに決めた。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>적어도 말을 걸 때까지는 같이 있기로 정했다.</pre></div>
+<div><b>미적용 제안</b><pre>적어도 못 하겠다고 할 때까지는 함께하기로 정했다.</pre></div></div>
+<p>音をあげる는 단순 말을 걸다가 아니라 힘들어 못 견디겠다고 하다/항복하다. 로리에의 자주적 도전에 대한 대응.</p></section><section class="finding"><h3>R3-W033 · 40106132</h3>
+<p><code>178921327:s002:b0010</code> · SCENE_LIGHTING</p>
+<pre lang="ja">七夕祭りで賑わうエグゾティ地区に到着した頃には、\nきらびやかな装飾が宵闇に映える時間帯になっていた。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>반짝이는 장식이 저녁 노을에 빛나는 시간대</pre></div>
+<div><b>미적용 제안</b><pre>반짝이는 장식이 저녁 어둠 속에 돋보이는 시간대</pre></div></div>
+<p>宵闇に映える는 노을빛이 아니라 저녁 어둠을 배경으로 장식이 돋보이는 장면이다.</p></section><section class="finding"><h3>R3-W034 · 21002006</h3>
+<p><code>120383801:s001:b0051</code> · DUPLICATE_PHRASE</p>
+<pre lang="ja">驚きつつさらに周囲を見回すと、中庭に出されたテーブルの上に\nさまざまな食事や飲み物が置かれていることに気づく。\n一際目を引くのは薔薇の細工が美しい豪華なケーキだ。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>안뜰에 안뜰에 나와있는</pre></div>
+<div><b>미적용 제안</b><pre>안뜰에 나와있는</pre></div></div>
+<p>동일 어구 안뜰에 중복. 경계 대응과 무관한 최소 수정 제안.</p></section><section class="finding"><h3>R3-W035 · 20001501</h3>
+<p><code>125241908:s001:b0038</code> · TRANSLATOR_NOTE_IN_BODY</p>
+<pre lang="ja">――玉石混淆の情報を精査し、目星をつけ、\n場合によっては現場に赴く。\nそれが“死の芸術コレクター”たる彼女の（裏の）日常だ。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>(옥석혼효(玉石混淆) : 좋은 것(옥)과 안좋은 것(석)이 한데 섞여 있음)</pre></div>
+<div><b>미적용 제안</b><pre>[번역자 설명으로 별도 보존 검토]</pre></div></div>
+<p>이 마지막 한국어 줄은 원문 메시지에 없는 용어 풀이이다. 지금은 문자 범위 보존을 위해 해당 블록에 남기며, 최종 게임 출력에서 제외할지는 별도 결정해야 한다.</p></section><section class="finding"><h3>R3-W036 · 22001001</h3>
+<p><code>126721421:s001:b0053</code> · VERB_MISTRANSLATION</p>
+<pre lang="ja">あくまでも役割分担だということを理解して、\nその場ではそう答えたものの、\nやはり待つしかないというのは不安になる。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>거기선 그렇게 웃었지만,</pre></div>
+<div><b>미적용 제안</b><pre>거기선 그렇게 대답했지만,</pre></div></div>
+<p>そう答えた는 대답했다는 의미이며 웃었다는 동작이 아니다. 경계는 유지하고 문구 교정 제안만 남긴다.</p></section><section class="finding"><h3>R3-W037 · 22001006</h3>
+<p><code>126726368:s001:b0035</code> · TYPO</p>
+<pre lang="ja">あの弁護士は元芸術家で、死の芸術家にもツテがあり、\n貴族の詐欺行為に必要な死の芸術を調達していたのだという。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>변화사</pre></div>
+<div><b>미적용 제안</b><pre>변호사</pre></div></div>
+<p>弁護士에 대응하는 한국어 표기의 오탈자 후보.</p></section><section class="finding"><h3>R3-W038 · 22001601</h3>
+<p><code>129308577:s001:b0084</code> · TYPO</p>
+<pre lang="ja">「つまらんのはそっちくま！\n　雑魚敵日常戦闘騒動ノーサンキューくま！\n　こーすればもっともーっと盛り上がるくまー！」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>잡몹 일상 전투 소통</pre></div>
+<div><b>미적용 제안</b><pre>잡몹 일상 전투 소동</pre></div></div>
+<p>騒動은 소동이다. 현재 손번역 문구는 수정하지 않는다.</p></section><section class="finding"><h3>R3-W039 · 22001605</h3>
+<p><code>129562659:s001:b0037</code> · TRANSLATOR_NOTE_IN_BODY</p>
+<pre lang="ja">「みんな揃ってワイワイ、エクストリームお祭りバトル！\n　いくっくまー！」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>(보오로 : 과자의 일종)</pre></div>
+<div><b>미적용 제안</b><pre>[번역자 설명으로 별도 보존 검토]</pre></div></div>
+<p>원문 메시지에 없는 보오로 설명이 한국어 끝에 붙었다. 경계 기록은 원문을 보존하되 최종 게임 출력에서는 별도 분리 검토가 필요하다.</p></section><section class="finding"><h3>R3-W040 · 21003201</h3>
+<p><code>135160959:s001:b0029</code> · TYPO</p>
+<pre lang="ja">「い、いや、しかしだね。\n　今日は荷物をたくさん抱えることになりそうなんだ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>잔득</pre></div>
+<div><b>미적용 제안</b><pre>잔뜩</pre></div></div>
+<p>짐을 많이 든다는 대사의 표기 오탈자 후보.</p></section><section class="finding"><h3>R3-W041 · 22001905</h3>
+<p><code>137102735:s001:b0045</code> · TYPO</p>
+<pre lang="ja">――レンブラントの仮説は、両方の指輪の構造によって立証された。\nふたつの指輪は、互いのデコボコがきっちりと噛み合うように\n設計されていたのだ。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>받물리도록</pre></div>
+<div><b>미적용 제안</b><pre>맞물리도록</pre></div></div>
+<p>噛み合う에 해당하는 표기가 받물리도록으로 되어 있다.</p></section><section class="finding"><h3>R3-W042 · 22001905</h3>
+<p><code>137102735:s001:b0065</code> · TYPO_OR_CONNECTIVE</p>
+<pre lang="ja">（だってあたしにはそもそも、\n　強すぎるほどの闇がこびりついていますからね）</pre>
+<div class="pair"><div><b>원문 보존</b><pre>그럴게 저에겐 애초에,</pre></div>
+<div><b>미적용 제안</b><pre>그야 저에겐 애초에,</pre></div></div>
+<p>だって는 앞 문장의 이유를 드는 연결이며 그럴게는 문맥상 맞지 않는다.</p></section><section class="finding"><h3>R3-W043 · 20002105</h3>
+<p><code>141609525:s001:b0050</code> · TYPO</p>
+<pre lang="ja">「まぁ、犯人については、\n　暑さをなんとかしてから考えるしかないか……」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>생각한 수 밖에</pre></div>
+<div><b>미적용 제안</b><pre>생각할 수 밖에</pre></div></div>
+<p>서술의 활용 어미 오탈자 후보. 공백 등 일반 맞춤법 일괄 교정은 하지 않는다.</p></section><section class="finding"><h3>R3-W044 · 21003802</h3>
+<p><code>154586247:s001:b0037</code> · PROPER_NAME_TYPO</p>
+<pre lang="ja">「アテネスには、様々な文化が流入してきているわ……。\n　文化的タブーの異なる人々が同じ街に暮らしていることもあるし、\n　性の扱いについては慎重になっている……」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>이테네스엔</pre></div>
+<div><b>미적용 제안</b><pre>아테네스엔</pre></div></div>
+<p>アテネス 표기가 동일 블록 뒤쪽 아테네스와도 달라진 오탈자 후보.</p></section><section class="finding"><h3>R3-W045 · 20002801</h3>
+<p><code>162402114:s001:b0003</code> · TYPO</p>
+<pre lang="ja">とある藝術家から購入した絵画を、\n作者本人の元まで受け取りに来たアンジェラ。\n用件を終えた彼女は、目の前の藝術家に気まずそうに尋ねた。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>뭍는다</pre></div>
+<div><b>미적용 제안</b><pre>묻는다</pre></div></div>
+<p>尋ねた에 대응하는 묻다의 표기 오탈자 후보.</p></section><section class="finding"><h3>R3-W046 · 20002804</h3>
+<p><code>162402114:s004:b0032</code> · TYPO</p>
+<pre lang="ja">そんな彼女を無理やりに説得しても、良い結果にならないだろう。\nどう声をかけるべきか悩んでいると、\n話を一通り聞いたレンブラントが、おずおずと口を開いた。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>않겠찌</pre></div>
+<div><b>미적용 제안</b><pre>않겠지</pre></div></div>
+<p>서술 종결 어미 표기 오탈자 후보.</p></section><section class="finding"><h3>R3-W047 · 20003101</h3>
+<p><code>170067709:s001:b0020</code> · SCOPE_MISTRANSLATION</p>
+<pre lang="ja">「わたしもこれだけじゃわからなかったんだけど……。\n　もしもイタズラじゃないなら、\n　こういうことをするのは裏社会の人間よね」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>나도 이것만큼은 모르겠는데</pre></div>
+<div><b>미적용 제안</b><pre>나도 이것만으로는 알 수 없었는데</pre></div></div>
+<p>これだけじゃわからなかった는 자료가 이것만으로 불충분했다는 뜻이며 이것만큼은 모른다는 대조가 아니다.</p></section><section class="finding"><h3>R3-W048 · 20003104</h3>
+<p><code>170067709:s004:b0005</code> · TYPO</p>
+<pre lang="ja">「ええい、フェルメールめ……！\n　成り上がり者の分際で貴族のワシに楯突くとは……。\n　かくなる上は、徹底的に叩き潰してやる！」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>주재에</pre></div>
+<div><b>미적용 제안</b><pre>주제에</pre></div></div>
+<p>분수를 가리키는 표현의 오탈자.</p></section><section class="finding"><h3>R3-W049 · 20003105</h3>
+<p><code>170067709:s005:b0010</code> · IDIOM</p>
+<pre lang="ja">「ただ……か、館長、さっきは照れてましたよね？\n　ゴ、ゴッホさんとセザンヌさんに囲まれて、\n　は、鼻の下を伸ばしてました」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>코 밑을 늘리고 계셨어요</pre></div>
+<div><b>미적용 제안</b><pre>헤벌쭉하고 계셨어요</pre></div></div>
+<p>鼻の下を伸ばす는 물리적인 신체 길이가 아니라 들뜬 호색적 표정을 뜻한다. 말더듬 등 최종 표현은 별도 문체 검수.</p></section><section class="finding"><h3>R3-W050 · 20003106</h3>
+<p><code>170067709:s006:b0032</code> · TYPO</p>
+<pre lang="ja">「わたしも、健全なカジノを謳っているからには、\n　新たなギャンブル中毒者を作らないように心がけていくわ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>만들이 않도록</pre></div>
+<div><b>미적용 제안</b><pre>만들지 않도록</pre></div></div>
+<p>부정절의 동사 활용 표기 오탈자.</p></section><section class="finding"><h3>R3-W051 · 20003306</h3>
+<p><code>176471785:s006:b0034</code> · RESULT_MISTRANSLATION</p>
+<pre lang="ja">笹に吊るされていた短冊は死の芸術になったり、\n騒動で落ちてしまったりして減っており、\n祭りの客たちは改めて短冊に願いを込めて笹に吊るし始めた。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>소동으로 떨어져서 망가져서,</pre></div>
+<div><b>미적용 제안</b><pre>소동으로 떨어지기도 해서 수가 줄어들었고,</pre></div></div>
+<p>落ちてしまったりして減っており의 핵심은 수가 줄었다는 것이며 망가졌다는 내용은 명시되지 않는다.</p></section><section class="finding"><h3>R3-W052 · 22003304</h3>
+<p><code>180675058:s004:b0003</code> · TYPO_OR_OBJECT</p>
+<pre lang="ja">初戦に快勝したアルテたちは準決勝でもある２戦目に挑み、\nそこで手強い相手に苦戦していた。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>힘겨운 상태에</pre></div>
+<div><b>미적용 제안</b><pre>강한 상대를 만나</pre></div></div>
+<p>手強い相手는 어려운 상태가 아니라 강한 상대이다.</p></section><section class="finding"><h3>R3-W053 · 22003304</h3>
+<p><code>180675058:s004:b0028</code> · ACTION_MISTRANSLATION</p>
+<pre lang="ja">アルテはレシーブと同時に、ルノワールのほうに向かって猛ダッシュ！\nからの豪快な横っ飛びで地面すれすれ、\n目にも止まらぬ素早い動きで見事レシーブを決めてみせた。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>호쾌한 달리기로 지면을 박차고,</pre></div>
+<div><b>미적용 제안</b><pre>호쾌하게 옆으로 몸을 날려 지면 바로 위에서,</pre></div></div>
+<p>横っ飛びで地面すれすれ는 옆으로 몸을 던져 지면 가까이에서 받는 동작이다. 달리며 지면을 박찬다는 서술과 차이가 있다.</p></section><section class="finding"><h3>R3-W054 · 22003305</h3>
+<p><code>180675058:s005:b0050</code> · TYPO</p>
+<pre lang="ja">出遅れた彼女は、かろうじてボールを上げることしかできなかった。\nボールはそのまま落ちるのかと思われたが、その時――</pre>
+<div class="pair"><div><b>원문 보존</b><pre>겨우시</pre></div>
+<div><b>미적용 제안</b><pre>겨우</pre></div></div>
+<p>한국어 부사 표기의 오탈자 후보.</p></section><section class="finding"><h3>R3-W055 · 99900001</h3>
+<p><code>113515289:s001:b0034</code> · TYPO</p>
+<pre lang="ja">「館長様。アルテさんが一緒とはいえ、\n　そのまま犯罪者に立ち向かうのは危険です」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>위엄해요</pre></div>
+<div><b>미적용 제안</b><pre>위험해요</pre></div></div>
+<p>危険です에 대한 오탈자 후보.</p></section><section class="finding"><h3>R3-W056 · 10010102</h3>
+<p><code>113672243:s001:b0077</code> · PROPER_NAME_TYPO</p>
+<pre lang="ja">「そうだね……テレサちゃんは特に何も……」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>테레세쨩</pre></div>
+<div><b>미적용 제안</b><pre>테레사쨩</pre></div></div>
+<p>テレサ 이름 표기의 오탈자 후보.</p></section><section class="finding"><h3>R3-W057 · 10010102</h3>
+<p><code>113672243:s001:b0090</code> · INTENT_MISTRANSLATION</p>
+<pre lang="ja">「私たちはゴッホのことを“なんか”だなんて思って\n　いませんし、好きで協力してるんです」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>마음대로 협력 하는것 뿐이에요</pre></div>
+<div><b>미적용 제안</b><pre>좋아서 협력하는 거예요</pre></div></div>
+<p>好きで協力している는 자발적 호의로 협력한다는 뜻이며 제멋대로 한다는 의미로 읽히지 않게 검토한다.</p></section><section class="finding"><h3>R3-W058 · 10010103</h3>
+<p><code>113804821:s001:b0097</code> · DIRECTION_OF_COMMUNICATION</p>
+<pre lang="ja">「ゴッホさんの妹さんの件、\n　他の議員たちにも私から話を聞いてみる」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>다른 의원들에게도 내가 이야기 해 둘게</pre></div>
+<div><b>미적용 제안</b><pre>다른 의원들에게도 내가 물어볼게</pre></div></div>
+<p>話を聞いてみる는 상대에게 전해두는 것이 아니라 정보를 물어본다는 방향이다.</p></section><section class="finding"><h3>R3-W059 · 10010103</h3>
+<p><code>113804821:s001:b0105</code> · TYPO</p>
+<pre lang="ja">――プランタン地区で得たものは大きかった。\nだが、依然としてテレサは見つからない――</pre>
+<div class="pair"><div><b>원문 보존</b><pre>찾기 못했다</pre></div>
+<div><b>미적용 제안</b><pre>찾지 못했다</pre></div></div>
+<p>부정 활용의 표기 오탈자.</p></section><section class="finding"><h3>R3-W060 · 10010110</h3>
+<p><code>114230459:s001:b0009</code> · IDIOM</p>
+<pre lang="ja">なので彼女は必然的に死の芸術への造詣が深い。美術館への\n貢献も大きく、誰もが専門家たる彼女に一目置いているのだ。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>주시하고있다</pre></div>
+<div><b>미적용 제안</b><pre>인정하고 있다</pre></div></div>
+<p>一目置く는 경계·주시가 아니라 실력이나 전문성을 인정하는 뜻이다.</p></section><section class="finding"><h3>R3-W061 · 10010202</h3>
+<p><code>114623194:s001:b0041</code> · PAYMENT_VS_RESULT</p>
+<pre lang="ja">「最悪、タダ働きかもしれませんよ？」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>헛수고 일수도</pre></div>
+<div><b>미적용 제안</b><pre>무보수로 일하게 될 수도</pre></div></div>
+<p>タダ働き는 보수 없이 일하는 문제이며 노력이 무효라는 헛수고와 구별된다.</p></section><section class="finding"><h3>R3-W062 · 10010301</h3>
+<p><code>115554469:s001:b0004</code> · TYPO</p>
+<pre lang="ja">男が目を覚ますと見知らぬ部屋で、手錠と鎖で壁に繋がれていた。\n周囲を見渡すと自分のほかにふたりの女性が倒れており、\n自分と同様に手首には手錠が嵌められ、壁に鎖で繋がれている。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>수갑과 사실로</pre></div>
+<div><b>미적용 제안</b><pre>수갑과 사슬로</pre></div></div>
+<p>鎖에 대응하는 사슬 표기가 사실로 잘못되어 있다.</p></section><section class="finding"><h3>R3-W063 · 10010306</h3>
+<p><code>115965736:s001:b0073</code> · CONDITIONAL_TENSE</p>
+<pre lang="ja">「くくくくく。お店の人、気づいたらビックリするでやすねぇ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>눈치채더니 깜짝 놀라버리네요</pre></div>
+<div><b>미적용 제안</b><pre>눈치채면 깜짝 놀라겠네요</pre></div></div>
+<p>気づいたらビックリする는 앞으로 알아챘을 때 놀라겠다는 조건 예측이지 이미 놀랐다는 과거가 아니다.</p></section><section class="finding"><h3>R3-W064 · 10010307</h3>
+<p><code>115966715:s001:b0004</code> · DIRECTION_OF_COMMUNICATION</p>
+<pre lang="ja">アテネス市警を呼び、一通りの説明を受けた我々は外に出た。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>대강의 설명을 전한뒤</pre></div>
+<div><b>미적용 제안</b><pre>대략적인 설명을 들은 뒤</pre></div></div>
+<p>説明を受けた는 설명을 받은 쪽이다. 원문을 수정하지 않고 번역의 방향 차이만 제안한다.</p></section><section class="finding"><h3>R3-W065 · 10010408</h3>
+<p><code>116596958:s001:b0053</code> · TYPO</p>
+<pre lang="ja">「あなたがどんな人なのか、聞いたです。\n　組織で美術品の偽物を作ってきたこと……。\n　偽物しか作れない人なんだってことも」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>조식에서</pre></div>
+<div><b>미적용 제안</b><pre>조직에서</pre></div></div>
+<p>組織에 대응하는 조직의 표기 오탈자.</p></section><section class="finding"><h3>R3-W066 · 10010601</h3>
+<p><code>117372125:s001:b0008</code> · ENTITY_CATEGORY</p>
+<pre lang="ja">「死の芸術家の、ノエミは覚えてるだろ？」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>죽음의 예술인, 노에미</pre></div>
+<div><b>미적용 제안</b><pre>죽음의 예술가인, 노에미</pre></div></div>
+<p>死の芸術家는 작품인 죽음의 예술 자체가 아니라 그것을 만드는 예술가이다.</p></section><section class="finding"><h3>R3-W067 · 10010609</h3>
+<p><code>117847422:s001:b0018</code> · POLARITY_REVERSAL</p>
+<pre lang="ja">「なら、美術館に手を貸してはくれないか？\n　そして一緒に死の芸術家たちと戦ってほしい。\n　戦力はいくらあっても足りないくらいだ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>전력은 얼마나 있더라도 부족하지 않다고</pre></div>
+<div><b>미적용 제안</b><pre>전력은 아무리 있어도 부족할 정도야</pre></div></div>
+<p>いくらあっても足りないくらいだ는 충분하다는 부정형이 아니라 아무리 많아도 모자란다는 취지다.</p></section><section class="finding"><h3>R3-W068 · 10010706</h3>
+<p><code>118097670:s001:b0013</code> · TYPO</p>
+<pre lang="ja">「決まりきった題材や技法が良いんなら、\n　古い作品をずっと見とけば良いんすよ！\n　あー！　また腹がたってきたっす！」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>손재나 기법</pre></div>
+<div><b>미적용 제안</b><pre>소재나 기법</pre></div></div>
+<p>題材に対応する 소재가 손재로 적힌 오탈자 후보.</p></section><section class="finding"><h3>R3-W069 · 10010805</h3>
+<p><code>122285196:s001:b0037</code> · CONTRAST_REVERSAL</p>
+<pre lang="ja">「か、かなりの資金力がある人間じゃないと所有はできません。\n　そういった人間は裏社会の実力者か、\n　表社会の人間でもそれなりの地位にあるはずです」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>뒷사회 사람이라도 나름의 지위가 있을거에요</pre></div>
+<div><b>미적용 제안</b><pre>양지의 사회에 속한 사람이라도 나름의 지위가 있을 거예요</pre></div></div>
+<p>JP의 裏社会の実力者か、表社会の人間でも는 뒷사회/양지의 사회의 대조이다. 두 번째 表社会까지 뒷사회로 옮겨 대조가 소실됐다. 제안만 기록한다.</p></section><section class="finding"><h3>R3-W070 · 10010810</h3>
+<p><code>122446245:s001:b0060</code> · TYPO</p>
+<pre lang="ja">「さて、そろそろ決着をつけようぜ」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>결착을 짖자고</pre></div>
+<div><b>미적용 제안</b><pre>결착을 짓자고</pre></div></div>
+<p>JP 決着をつけように対応。짓다의 활용 오탈자 제안이며 원문은 변경하지 않는다.</p></section><section class="finding"><h3>R3-W071 · 10010906</h3>
+<p><code>132641863:s001:b0046</code> · POLARITY_AND_STANCE</p>
+<pre lang="ja">「……いいでしょう、ミケランジェロさん。\n　そこまで開き直られては、駆け引きするのも馬鹿馬鹿しい。\n　別に難しいことを言われたわけでもありませんしね」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>그렇게까지 정색해서, 흥정하는 것도 대단하네요.</pre></div>
+<div><b>미적용 제안</b><pre>그렇게까지 당당하게 나오니, 흥정하는 것도 우습네요.</pre></div></div>
+<p>JP そこまで開き直られては、駆け引きするのも馬鹿馬鹿しい는 상대의 태도 때문에 흥정이 무의미/우습다는 판단이다. 대단하다는 칭찬 방향으로 옮겨 태도가 반전됐다. 경계와 별개 교정 제안.</p></section><section class="finding"><h3>R3-W072 · 10010906</h3>
+<p><code>132641863:s001:b0037</code> · TYPO</p>
+<pre lang="ja">「すっとぼけるな。お前らにとっても必要なことだろう」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>시미치 떼지 마.</pre></div>
+<div><b>미적용 제안</b><pre>시치미 떼지 마.</pre></div></div>
+<p>JP すっとぼけるな。에 대응하는 한국어 관용구 오탈자.</p></section><section class="finding"><h3>R3-W073 · 10010905</h3>
+<p><code>132560179:s001:b0023</code> · TENSE_TYPO</p>
+<pre lang="ja">「最後に会った日、図書館から出てきたレイアは言っていました。\n　“ついに芸術の真理を見つけた。私は最高の芸術家になれる”……と」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>마지막에 만날 날,</pre></div>
+<div><b>미적용 제안</b><pre>마지막으로 만난 날,</pre></div></div>
+<p>JP 最後に会った日는 과거에 마지막으로 만난 날이다.</p></section><section class="finding"><h3>R3-W074 · 10011107</h3>
+<p><code>158241114:s001:b0037</code> · CAUSATIVE_DIRECTION</p>
+<pre lang="ja">「死の芸術家たちは今まで、ただ奪われてきた。\n　その報いを、全ての者に受けさせる時が来たのだ！！」</pre>
+<div class="pair"><div><b>원문 보존</b><pre>그 보답을, 모든 사람들에게 받을 때가 온 것이다!!</pre></div>
+<div><b>미적용 제안</b><pre>모든 자에게 그 대가를 치르게 할 때가 온 것이다!!</pre></div></div>
+<p>JP その報いを、全ての者に受けさせる는 상대에게 대가를 치르게 하는 사역이다. 기존 문구는 자신이 보답을 받는 방향으로 읽힌다. 원문은 보존하며 교정 제안만 남긴다.</p></section><section class="finding"><h3>R3-W075 · 10011006</h3>
+<p><code>142420837:s001:b0003</code> · PASSIVE_VIEWPOINT</p>
+<pre lang="ja">ノワール地区の最奥部。\n薄暗く、入り組んでおり、ゴミが散乱している。\n人の気配はないが、どこからか常に見られているような気がする。</pre>
+<div class="pair"><div><b>원문 보존</b><pre>어딘가에서 상시 보고 있는 것 같은 기분이 든다.</pre></div>
+<div><b>미적용 제안</b><pre>어딘가에서 누군가가 늘 지켜보고 있는 듯한 기분이 든다.</pre></div></div>
+<p>JP どこからか常に見られている는 자신이 관찰당하는 느낌이다. 기존 문장은 주체가 불분명해 자신이 보고 있는 것으로도 읽힐 수 있다. 제안은 원문의 피관찰 관점을 명확히 한다.</p></section><section class="finding"><h3>BATTLE-R2-W001 · 1001110911</h3>
+<p><code>158243508:s001:b0065</code> · TYPO</p>
+<pre lang="ja"></pre>
+<div class="pair"><div><b>원문 보존</b><pre>이렇게 화난 고흐는 처름 봐요......</pre></div>
+<div><b>미적용 제안</b><pre>이렇게 화난 고흐는 처음 봐요......</pre></div></div>
+<p>명백한 오탈자 후보. 팬 번역 원문과 candidate CDN에는 아직 적용하지 않음.</p></section></html>
