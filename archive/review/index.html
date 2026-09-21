@@ -29,26 +29,36 @@ tr.changed{background:#fffdf4}tr.titleRow{background:#f7fbff}.pre{white-space:pr
 footer{text-align:center;color:var(--muted);font-size:10px;padding:0 14px 14px}
 [hidden]{display:none!important}
 @media(max-width:850px){.shell{grid-template-columns:1fr;height:auto}.panel:first-child{height:350px}.panel:last-child{height:780px}header{padding:18px 14px}.notice{margin:10px}.shell{padding:0 10px 10px}h1{font-size:23px}.jsonTools input[type=search]{min-width:100%}}
+
+.panel:last-child{display:flex;flex-direction:column;min-width:0}.viewerHead{height:auto;min-height:64px;flex-shrink:0;flex-wrap:wrap}.viewerHead h2{flex-basis:180px}.componentLinks{display:flex;gap:6px;flex-wrap:wrap;order:5;flex-basis:100%}
+#viewer{flex:1;min-height:0}.jsonView{display:flex;flex-direction:column;flex:1;min-height:0;height:auto}.tableWrap{flex:1;height:auto;min-height:0}.jsonTools,.jsonMeta{flex-shrink:0}
+.specialView{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}.specialTools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px;border-bottom:1px solid var(--line);background:#fbfcff;flex-shrink:0}.specialTools input,.specialTools select,.specialTools button{font:inherit;font-size:12px;border:1px solid #cbd5e1;background:white;padding:8px;border-radius:7px;max-width:100%;min-width:0}.specialTools input{flex:1;min-width:180px}.specialTools select{flex-shrink:1}
+.specialScroll{flex:1;min-height:0;overflow:auto;padding:12px}.specialNotice{font-size:12px;line-height:1.6;background:#eef2ff;border-radius:8px;padding:10px;margin:0 0 12px;overflow-wrap:anywhere}.specialRecord{border:1px solid var(--line);border-radius:9px;padding:12px;margin-bottom:12px;min-width:0;overflow-wrap:anywhere;background:white}.specialRecord h3{font-size:14px;margin:0 0 8px;color:#263a77}.specialRecord dl{margin:8px 0}.specialPair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.specialField{min-width:0;margin:6px 0}.specialField dt{font-size:11px;font-weight:700;color:var(--muted);margin-bottom:4px}.specialField dd{margin:0;font-size:12px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}.locator{color:#516174}.recordBadge{font-size:11px;color:#815d00;line-height:1.6}.sourceDisclosure{border-top:1px solid var(--line);padding-top:8px;margin-top:8px;font-size:12px;line-height:1.65;overflow-wrap:anywhere}.sourceDisclosure summary{cursor:pointer;color:var(--blue);font-weight:650}.sourceDisclosure pre{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;font:inherit}.sourceDisclosure blockquote{margin:8px 0;padding-left:10px;border-left:3px solid var(--line)}.sourceDisclosure a{color:var(--blue)}
+@media(max-width:600px){.specialPair{grid-template-columns:minmax(0,1fr)}.specialTools input{flex-basis:100%;min-width:0}.specialTools select{max-width:100%;flex:1}.specialScroll{padding:8px}.specialRecord{padding:10px}.viewerHead{gap:6px;padding:8px}.viewerHead h2{flex-basis:100%}.viewerHead .status{max-width:100%;overflow-wrap:anywhere}.jsonTools input[type=search]{width:100%;min-width:0}.jsonTools select{max-width:100%}.componentLinks a{font-size:10px}}
 </style>
 </head>
 <body>
-<header><div class="eyebrow">GIRLS' CREATION · PUBLIC REVIEW ARCHIVE · CDN VIEWER v0.8</div><h1>걸크리 공개 검수 아카이브</h1>
-<p>뷰어와 검수 데이터를 분리한 증분형 아카이브입니다. 현재 R5·R6·R7·R8·R9·R10·R11·R12·R13·R14·R15·R16·R17·R18·R35 상세 검수본을 JSON으로 직접 렌더링하며, 각 원본 HTML은 fallback으로 보존합니다.</p>
-<div class="badges"><span class="badge" id="range">manifest 로딩 중</span><span class="badge">Lazy load</span><span class="badge">R35 JSON pilot</span><span class="badge">정본 checkpoint와 별개</span></div></header>
-<div class="notice"><b>v0.8 증분 전환:</b> R5 71행 · R6 578행 · R7 834행 · R8 611행 · R9 740행 · R10 651행 · R11 799행 · R12 655행 · R13 634행 · R14 674행 · R15 588행 · R16 563행 · R17 694행 · R18 653행 · R35 839행을 외부 JSON payload로 분리했습니다. JSON 로딩 실패 시 각 라운드의 기존 상세 HTML로 자동 fallback합니다.</div>
+<header><div class="eyebrow">GIRLS' CREATION · PUBLIC REVIEW ARCHIVE · CDN VIEWER v0.9</div><h1>걸크리 공개 검수 아카이브</h1>
+<p>R1~R18 및 R35의 공개 검수 기록을 원래 구조에 맞춰 탐색합니다. R2는 R3에 보존된 한 건의 내장 기록이며 독립 원본 round가 아닙니다. 원본 HTML도 함께 보존합니다.</p>
+<div class="badges"><span class="badge" id="range">manifest 로딩 중</span><span class="badge">Lazy load</span><span class="badge">Typed JSON + legacy</span><span class="badge">정본 checkpoint와 별개</span></div></header>
+<div class="notice"><b>v0.9 typed archive:</b> R1 alignment · R2 embedded · R3 boundary/proposal ledger · R4 MAIN/REVIEW/CONTEXT bundle · R5~R18/R35 review JSON. 19개 항목과 18개 JSON 파일입니다. 실제 번역 적용·게임 실행·전역 용어 승인 checkpoint를 대체하지 않습니다. JSON 로딩 실패 시 원본 HTML로 전환합니다.</div>
 <main class="shell">
-<section class="panel"><div class="tools"><input id="q" type="search" placeholder="R번호 · 이벤트 · 캐릭터 · 상태 검색"><div class="meta"><span class="pill" id="count">0 rounds</span><span class="pill warn" id="summaryCount">0 summary</span><span class="pill good" id="jsonCount">0 JSON</span></div></div><div class="list" id="list"></div></section>
+<section class="panel"><div class="tools"><input id="q" type="search" placeholder="R번호 · 이벤트 · 캐릭터 · 상태 검색"><div class="meta"><span class="pill" id="count">0 rounds</span><span class="pill warn" id="summaryCount">0 summary</span><span class="pill good" id="jsonCount">0 structured entries</span></div></div><div class="list" id="list"></div></section>
 <section class="panel">
-<div class="viewerHead"><h2 id="title">라운드를 선택하세요</h2><span id="kind" class="status">READY</span><a id="dataLink" href="#" target="_blank" rel="noopener" hidden>JSON</a><a id="open" href="#" target="_blank" rel="noopener">새 창</a></div>
+<div class="viewerHead"><div id="componentLinks" class="componentLinks" aria-label="R4 원본 문서" hidden></div><h2 id="title">라운드를 선택하세요</h2><span id="kind" class="status">READY</span><a id="dataLink" href="#" target="_blank" rel="noopener" hidden>JSON</a><a id="open" href="#" target="_blank" rel="noopener">새 창</a></div>
 <iframe id="viewer" title="라운드 상세 검수"></iframe>
 <div id="jsonView" class="jsonView" hidden>
   <div class="jsonTools"><input id="jq" type="search" placeholder="JP · KO · 화자 · proposal · 검수 메모 검색"><select id="jtype"><option value="">전체 종류</option><option value="title">제목</option><option value="body">본문</option><option value="speaker">화자 교정</option></select><label><input id="jchanged" type="checkbox"> 변경 후보만</label><button id="jclear" type="button">초기화</button><span id="jshown" class="pill">0</span></div>
   <div id="jmeta" class="jsonMeta"></div>
   <div class="tableWrap"><table><thead><tr><th>ID/raw</th><th>종류</th><th>JP 원문</th><th>화자</th><th>관찰 KO</th><th>후보</th><th>검수 메모</th></tr></thead><tbody id="jtbody"></tbody></table></div>
 </div>
+<div id="specialView" class="specialView" hidden>
+  <div class="specialTools"><input id="sq" type="search" aria-label="특수 기록 검색" placeholder="ID · 원문 · 판정 · locator 검색"><select id="scomponent" aria-label="검수 component"></select><select id="scategory" aria-label="범주 필터" hidden></select><button id="sclear" type="button">초기화</button><span id="sshown" class="pill" aria-live="polite">0</span></div>
+  <div class="specialScroll"><p id="snote" class="specialNotice"></p><div id="srecords"></div><div id="sdocuments"></div></div>
+</div>
 <div id="error" class="error" hidden><b>manifest를 불러오지 못했습니다.</b><br>정적 웹 호스팅에서 사용하거나 로컬 HTTP 서버로 열어 주세요.</div>
 </section>
 </main>
-<footer>공개 검수 아카이브 Viewer v0.8 · R5~R18/R35 JSON</footer>
+<footer>공개 검수 아카이브 Viewer v0.9 · R1~R18 + R35 structured archive · R2 embedded in R3</footer>
 <script src="./app.js"></script>
 </body></html>
