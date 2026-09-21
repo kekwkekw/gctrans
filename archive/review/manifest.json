@@ -1,19 +1,45 @@
 {
-  "schema": "gc-public-archive-pages-pilot-v0.6",
+  "schema": "gc-public-archive-pages-pilot-v0.7",
   "archive": "Girls' Creation Translation Knowledge Layer",
-  "range": "R11 · R12 · R13 · R14 · R15 · R16 · R17 · R18 · R35",
-  "version": "0.6.0-pilot",
+  "range": "R9 · R10 · R11 · R12 · R13 · R14 · R15 · R16 · R17 · R18 · R35",
+  "version": "0.7.0-pilot",
   "generated_date": "2026-09-21",
   "data_mode": "mixed-json-html",
   "authoritative": false,
   "privacy": "public-sanitized",
   "notes": [
     "공개 검수 아카이브의 증분 JSON 전환 파일럿.",
-    "R11~R18 및 R35를 JSON payload로 직접 렌더링한다.",
+    "R9~R18 및 R35를 JSON payload로 직접 렌더링한다.",
     "각 JSON은 기존 공개 상세 HTML을 legacy fallback으로 보존한다.",
     "authoritative translation checkpoint를 대체하지 않는다."
   ],
   "rounds": [
+    {
+      "id": "R9",
+      "order": 9,
+      "title": "메인 5장 의미 검수",
+      "kind": "원본 상세",
+      "source_path": "./data/R09.json",
+      "scope": "10화 · 740항목",
+      "status": "의미 1차 검수 완료",
+      "detail_level": "full",
+      "searchable_text": "R9 메인 5장 의미 검수 원본 상세 10화 · 740항목",
+      "payload_type": "review_json",
+      "fallback_path": "./legacy/R09.html"
+    },
+    {
+      "id": "R10",
+      "order": 10,
+      "title": "메인 6장 의미 검수",
+      "kind": "원본 상세",
+      "source_path": "./data/R10.json",
+      "scope": "10화 · 651항목",
+      "status": "의미 1차 검수 완료",
+      "detail_level": "full",
+      "searchable_text": "R10 메인 6장 의미 검수 원본 상세 10화 · 651항목",
+      "payload_type": "review_json",
+      "fallback_path": "./legacy/R10.html"
+    },
     {
       "id": "R11",
       "order": 11,
