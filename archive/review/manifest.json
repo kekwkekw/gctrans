@@ -1,19 +1,45 @@
 {
-  "schema": "gc-public-archive-pages-pilot-v0.3",
+  "schema": "gc-public-archive-pages-pilot-v0.4",
   "archive": "Girls' Creation Translation Knowledge Layer",
-  "range": "R17 · R18 · R35",
-  "version": "0.3.0-pilot",
+  "range": "R15 · R16 · R17 · R18 · R35",
+  "version": "0.4.0-pilot",
   "generated_date": "2026-09-21",
   "data_mode": "mixed-json-html",
   "authoritative": false,
   "privacy": "public-sanitized",
   "notes": [
     "공개 검수 아카이브의 증분 JSON 전환 파일럿.",
-    "R17, R18, R35는 JSON payload를 뷰어가 직접 렌더링한다.",
-    "각 JSON은 원본 공개 상세 HTML을 legacy fallback으로 보존한다.",
+    "R15, R16, R17, R18, R35를 JSON payload로 직접 렌더링한다.",
+    "각 JSON은 기존 공개 상세 HTML을 legacy fallback으로 보존한다.",
     "authoritative translation checkpoint를 대체하지 않는다."
   ],
   "rounds": [
+    {
+      "id": "R15",
+      "order": 15,
+      "title": "메인 11장 의미 검수",
+      "kind": "원본 상세",
+      "source_path": "./data/R15.json",
+      "scope": "10화 · 588항목",
+      "status": "의미 1차 검수 완료",
+      "detail_level": "full",
+      "searchable_text": "R15 메인 11장 의미 검수 원본 상세 10화 588항목",
+      "payload_type": "review_json",
+      "fallback_path": "./legacy/R15.html"
+    },
+    {
+      "id": "R16",
+      "order": 16,
+      "title": "튜토리얼·막간 + mapped battle",
+      "kind": "원본 상세",
+      "source_path": "./data/R16.json",
+      "scope": "563 source entries",
+      "status": "의미 1차 검수 완료",
+      "detail_level": "full",
+      "searchable_text": "R16 튜토리얼 막간 mapped battle 563 source entries",
+      "payload_type": "review_json",
+      "fallback_path": "./legacy/R16.html"
+    },
     {
       "id": "R17",
       "order": 17,
