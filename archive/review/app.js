@@ -93,12 +93,12 @@ function renderMeta(meta){
   for(const [k,v] of pairs){const s=document.createElement('span');s.className='jsonPill';s.textContent=`${k} ${v??'—'}`;jmeta.appendChild(s)}
 }
 async function loadJsonRound(r,seq){
-  setMode('json');setKind(r,'JSON 로딩 중');S.json=null;jtbody.replaceChildren();jshown.textContent='로딩 중';
+  setMode('json');setKind(r,'JSON 로딩 중');S.json=null;jtbody.replaceChildren();jshown.textContent='로딩 중';recoveryPanel.hidden=true;recoveryPanel.replaceChildren();
   try{
     const res=await fetch(r.source_path,{cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status);
     const payload=await res.json();if(seq!==S.loadSeq)return;
-    if(!Array.isArray(payload.rows))throw new Error('rows missing');
-    S.json=payload;renderMeta(payload.meta||{});setKind(r,r.kind+' · JSON');renderJson();
+    if(!Array.isArray(payload.rows))throw new Error('rows missing');validateReviewMetadata(payload);
+    S.json=payload;renderMeta(payload.meta||{});setKind(r,r.kind+' · JSON');renderJson();renderRecoveryMetadata(payload);
   }catch(e){
     if(seq!==S.loadSeq)return;
     setKind(r,'JSON 실패 · HTML fallback');setMode('html');viewer.src=r.fallback_path||r.source_path;
@@ -308,5 +308,75 @@ function renderSpecial(resetCategory=false){
 sq.addEventListener('input',()=>renderSpecial());sf.addEventListener('change',()=>renderSpecial());
 sc.addEventListener('change',()=>{sq.value='';renderSpecial(true)});
 document.getElementById('sclear').addEventListener('click',()=>{sq.value='';sf.value='';renderSpecial()});
+
+// Optional historical metadata for review_json; local reviewed rows stay separate.
+const recoveryPanel=document.getElementById('recoveryPanel');
+function validateReviewMetadata(p){
+  const fail=ok=>{if(!ok)throw new Error('Invalid historical review metadata')};
+  if(p.holds){
+    fail(Array.isArray(p.holds.local)&&p.holds.local_count===p.holds.local.length&&p.holds.reviewed===false);
+    fail(Number.isInteger(p.holds.inherited?.count)&&p.holds.inherited.count>=0&&Array.isArray(p.holds.inherited.records));
+    fail(p.holds.inherited.records.length<=p.holds.inherited.count);
+    fail(p.holds.local.every(h=>!Object.hasOwn(h,'jp')&&!Object.hasOwn(h,'ko')&&!Object.hasOwn(h,'rationale')&&!Object.hasOwn(h,'proposals')));
+  }
+  if(p.overlays)fail(Array.isArray(p.overlays)&&p.overlays.every(o=>typeof o.source_round==='string'&&o.source_round!==p.round&&o.checkpoint_round===p.round&&Array.isArray(o.rows)&&o.reviewed===o.rows.length));
+  if(p.completion){
+    const c=p.completion;fail(typeof c.eligible_semantic_first_pass_complete==='boolean'&&typeof c.all_original_items_reviewed==='boolean');
+    fail(c.reviewed_nonheld===p.rows.length&&c.target_total===c.reviewed_nonheld+c.explicit_hold&&c.explicit_hold===(p.holds?.local_count||0));
+  }
+  if(p.anomalies)fail(p.anomalies.translation_proposals===false&&Array.isArray(p.anomalies.records));
+}
+function renderRecoveryMetadata(p){
+  recoveryPanel.replaceChildren();recoveryPanel.hidden=!(p.holds||p.overlays||p.completion||p.anomalies);
+  if(recoveryPanel.hidden)return;
+  const overview=element('div','','recoveryOverview');
+  const total=p.meta?.target_total??p.rows.length;
+  overview.appendChild(element('p',`${p.round} 원래 대상 ${total} · 해당 round 검수 ${p.rows.length}`));
+  if(p.holds)overview.appendChild(element('p',`해당 round 보류 ${p.holds.local_count} · 상속 보류 ${p.holds.inherited.count} · 보류는 검수 완료·번역·제안 수에 포함하지 않습니다.`));
+  for(const o of p.overlays||[])overview.appendChild(element('p',`${o.source_round}에서 복귀한 ${o.rows.length}행 · 신규 제안 ${o.new_proposals}건은 ${p.round} 원래 대상 ${total}와 분리된 cross-round overlay입니다.`));
+  if(p.completion){
+    const c=p.completion;
+    overview.appendChild(element('p',`비보류 범위 마감: ${c.eligible_semantic_first_pass_complete?'완료':'미완료'} · 원래 대상 전체 검수: ${c.all_original_items_reviewed?'완료':'아니오'}`, 'completionNotice'));
+    if(c.source_notice)overview.appendChild(element('p',c.source_notice));
+  }
+  if(p.anomalies)overview.appendChild(element('p',`Historical source anomaly ${p.anomalies.records.length}건 · 번역 교정 제안과 별도이며 원문을 자동 수정하지 않습니다.`, 'anomalyNotice'));
+  recoveryPanel.appendChild(overview);
+  const groups=[];
+  if(p.holds?.local.length)groups.push({id:'holds-local',label:'해당 round 보류',records:p.holds.local,type:'hold'});
+  if(p.holds?.inherited.count)groups.push({id:'holds-inherited',label:'상속 보류',records:p.holds.inherited.records,type:'hold',count:p.holds.inherited.count});
+  for(const [i,o] of (p.overlays||[]).entries())groups.push({id:'overlay-'+i,label:o.source_round+' → '+o.checkpoint_round+' 복귀 overlay',records:o.rows,type:'overlay'});
+  if(p.anomalies)groups.push({id:'anomalies',label:'원문 진단 · 번역 proposal 아님',records:p.anomalies.records,type:'anomaly'});
+  if(!groups.length)return;
+  const details=element('details','','recoveryDetails');details.appendChild(element('summary','보류 · overlay · 원문 진단 상세 검색'));
+  const tools=element('div','','recoveryTools'),query=element('input'),select=element('select'),shown=element('span','','pill'),records=element('div','','recoveryRecords');
+  query.type='search';query.id='mq';query.placeholder='별도 기록 검색 · 본문 검색과 분리';query.setAttribute('aria-label','보류 overlay 원문 진단 검색');
+  select.id='mgroup';select.setAttribute('aria-label','별도 기록 범위');shown.id='mshown';records.id='mrecords';
+  for(const g of groups){const option=element('option',g.label+' · '+(g.count??g.records.length));option.value=g.id;select.appendChild(option)}
+  tools.append(query,select,shown);details.append(tools,records);recoveryPanel.appendChild(details);
+  function draw(){
+    const group=groups.find(g=>g.id===select.value)||groups[0],needle=query.value.trim().toLowerCase();
+    const matches=group.records.filter(r=>!needle||JSON.stringify(r).toLowerCase().includes(needle));
+    shown.textContent=`별도 기록 ${matches.length} / ${group.records.length}`;records.replaceChildren();
+    if(!group.records.length&&group.count){records.appendChild(element('p',`상속 보류 ${group.count}개라는 audit 수치만 보존합니다. 이 source에 없는 개별 위치나 본문은 생성하지 않았습니다.`));return}
+    for(const r of matches){
+      const card=element('article','','recoveryRecord');
+      card.dataset.kind=group.type;
+      card.appendChild(element('h3',[r.novel_id,r.raw_index!==undefined?'raw '+r.raw_index:'',r.anomaly_id].filter(Boolean).join(' · ')));
+      if(group.type==='overlay'){
+        addPair(card,r);const dl=element('dl');addField(dl,'복귀 검수 판정',r.rationale);card.appendChild(dl);
+        for(const q of r.proposals||[]){const box=element('div','','proposal');box.appendChild(element('b',[q.id,q.kind,q.field].join(' · ')));box.appendChild(element('p',(q.before||q.after)?q.before+' → '+q.after:'기존 후보 재확인'));if(q.note)box.appendChild(element('p',q.note));card.appendChild(box)}
+      }else if(group.type==='hold'){
+        card.appendChild(element('p','보류 · 미검수 · 본문 미출력','holdNotice'));
+        if(r.reason)card.appendChild(element('p',r.reason));if(r.source_label)card.appendChild(element('p',r.source_label));if(r.source_note)card.appendChild(element('p',r.source_note));
+      }else{
+        card.appendChild(element('p','Historical source note · 번역 correction 아님','anomalyNotice'));
+        const dl=element('dl');for(const [key,value] of Object.entries(r))if(value!==null&&value!==undefined)addField(dl,key,value);card.appendChild(dl);
+      }
+      records.appendChild(card);
+    }
+    if(!matches.length)records.appendChild(element('p','별도 기록 검색 결과 없음'));
+  }
+  query.addEventListener('input',draw);select.addEventListener('change',()=>{query.value='';draw()});draw();
+}
 
 boot();

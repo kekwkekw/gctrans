@@ -35,13 +35,15 @@ footer{text-align:center;color:var(--muted);font-size:10px;padding:0 14px 14px}
 .specialView{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}.specialTools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px;border-bottom:1px solid var(--line);background:#fbfcff;flex-shrink:0}.specialTools input,.specialTools select,.specialTools button{font:inherit;font-size:12px;border:1px solid #cbd5e1;background:white;padding:8px;border-radius:7px;max-width:100%;min-width:0}.specialTools input{flex:1;min-width:180px}.specialTools select{flex-shrink:1}
 .specialScroll{flex:1;min-height:0;overflow:auto;padding:12px}.specialNotice{font-size:12px;line-height:1.6;background:#eef2ff;border-radius:8px;padding:10px;margin:0 0 12px;overflow-wrap:anywhere}.specialRecord{border:1px solid var(--line);border-radius:9px;padding:12px;margin-bottom:12px;min-width:0;overflow-wrap:anywhere;background:white}.specialRecord h3{font-size:14px;margin:0 0 8px;color:#263a77}.specialRecord dl{margin:8px 0}.specialPair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.specialField{min-width:0;margin:6px 0}.specialField dt{font-size:11px;font-weight:700;color:var(--muted);margin-bottom:4px}.specialField dd{margin:0;font-size:12px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}.locator{color:#516174}.recordBadge{font-size:11px;color:#815d00;line-height:1.6}.sourceDisclosure{border-top:1px solid var(--line);padding-top:8px;margin-top:8px;font-size:12px;line-height:1.65;overflow-wrap:anywhere}.sourceDisclosure summary{cursor:pointer;color:var(--blue);font-weight:650}.sourceDisclosure pre{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;font:inherit}.sourceDisclosure blockquote{margin:8px 0;padding-left:10px;border-left:3px solid var(--line)}.sourceDisclosure a{color:var(--blue)}
 @media(max-width:600px){.specialPair{grid-template-columns:minmax(0,1fr)}.specialTools input{flex-basis:100%;min-width:0}.specialTools select{max-width:100%;flex:1}.specialScroll{padding:8px}.specialRecord{padding:10px}.viewerHead{gap:6px;padding:8px}.viewerHead h2{flex-basis:100%}.viewerHead .status{max-width:100%;overflow-wrap:anywhere}.jsonTools input[type=search]{width:100%;min-width:0}.jsonTools select{max-width:100%}.componentLinks a{font-size:10px}}
+
+.recoveryPanel{flex-shrink:1;min-height:0;max-height:48%;overflow:auto;border-bottom:1px solid var(--line);background:#fafbfe;font-size:12px;overflow-wrap:anywhere}.recoveryOverview{padding:8px 10px}.recoveryOverview p{margin:3px 0;line-height:1.5}.completionNotice{font-weight:750;color:#815d00}.anomalyNotice{color:#5f487c;font-weight:650}.recoveryDetails{padding:0 10px 10px}.recoveryDetails>summary{cursor:pointer;color:var(--blue);padding:6px 0;font-weight:650}.recoveryTools{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.recoveryTools input,.recoveryTools select{font:inherit;min-width:0;max-width:100%;padding:7px;border:1px solid var(--line);border-radius:6px}.recoveryTools input{flex:1;flex-basis:180px}.recoveryRecord{padding:10px;background:#fff;border:1px solid var(--line);border-radius:8px;margin:8px 0;overflow-wrap:anywhere}.recoveryRecord h3{margin:0 0 8px;font-size:13px}.holdNotice{color:#815d00}.recoveryRecord[data-kind=anomaly]{border-left:4px solid #a38ebd}.recoveryRecord[data-kind=hold]{border-style:dashed}.recoveryRecord p{white-space:pre-wrap;line-height:1.6}.recoveryRecord .specialPair{margin:8px 0}.recoveryPanel+.tableWrap{min-height:110px}
 </style>
 </head>
 <body>
-<header><div class="eyebrow">GIRLS' CREATION · PUBLIC REVIEW ARCHIVE · CDN VIEWER v0.9</div><h1>걸크리 공개 검수 아카이브</h1>
-<p>R1~R18 및 R35의 공개 검수 기록을 원래 구조에 맞춰 탐색합니다. R2는 R3에 보존된 한 건의 내장 기록이며 독립 원본 round가 아닙니다. 원본 HTML도 함께 보존합니다.</p>
+<header><div class="eyebrow">GIRLS' CREATION · PUBLIC REVIEW ARCHIVE · CDN VIEWER v1.0</div><h1>걸크리 공개 검수 아카이브</h1>
+<p>R1~R35의 공개 검수 기록을 원래 구조에 맞춰 탐색합니다. R2는 R3에 보존된 한 건의 내장 기록이며 독립 원본 round가 아닙니다. 원본 HTML도 함께 보존합니다.</p>
 <div class="badges"><span class="badge" id="range">manifest 로딩 중</span><span class="badge">Lazy load</span><span class="badge">Typed JSON + legacy</span><span class="badge">정본 checkpoint와 별개</span></div></header>
-<div class="notice"><b>v0.9 typed archive:</b> R1 alignment · R2 embedded · R3 boundary/proposal ledger · R4 MAIN/REVIEW/CONTEXT bundle · R5~R18/R35 review JSON. 19개 항목과 18개 JSON 파일입니다. 실제 번역 적용·게임 실행·전역 용어 승인 checkpoint를 대체하지 않습니다. JSON 로딩 실패 시 원본 HTML로 전환합니다.</div>
+<div class="notice"><b>v1.0 typed archive:</b> R1 alignment · R2 embedded · R3 boundary/proposal ledger · R4 MAIN/REVIEW/CONTEXT bundle · R5~R18/R35 기존 review JSON · R19~R34 복구 review JSON. 35개 항목과 34개 JSON 파일이며 R36은 포함하지 않습니다. 보류·다른 round의 복귀 overlay·원문 진단을 검수 본문과 구분합니다. 실제 번역 적용·게임 실행·전역 용어 승인 checkpoint를 대체하지 않습니다. JSON 로딩 실패 시 원본 HTML로 전환합니다.</div>
 <main class="shell">
 <section class="panel"><div class="tools"><input id="q" type="search" placeholder="R번호 · 이벤트 · 캐릭터 · 상태 검색"><div class="meta"><span class="pill" id="count">0 rounds</span><span class="pill warn" id="summaryCount">0 summary</span><span class="pill good" id="jsonCount">0 structured entries</span></div></div><div class="list" id="list"></div></section>
 <section class="panel">
@@ -50,6 +52,7 @@ footer{text-align:center;color:var(--muted);font-size:10px;padding:0 14px 14px}
 <div id="jsonView" class="jsonView" hidden>
   <div class="jsonTools"><input id="jq" type="search" placeholder="JP · KO · 화자 · proposal · 검수 메모 검색"><select id="jtype"><option value="">전체 종류</option><option value="title">제목</option><option value="body">본문</option><option value="speaker">화자 교정</option></select><label><input id="jchanged" type="checkbox"> 변경 후보만</label><button id="jclear" type="button">초기화</button><span id="jshown" class="pill">0</span></div>
   <div id="jmeta" class="jsonMeta"></div>
+  <section id="recoveryPanel" class="recoveryPanel" aria-label="Historical review 상태 및 별도 기록" hidden></section>
   <div class="tableWrap"><table><thead><tr><th>ID/raw</th><th>종류</th><th>JP 원문</th><th>화자</th><th>관찰 KO</th><th>후보</th><th>검수 메모</th></tr></thead><tbody id="jtbody"></tbody></table></div>
 </div>
 <div id="specialView" class="specialView" hidden>
@@ -59,6 +62,6 @@ footer{text-align:center;color:var(--muted);font-size:10px;padding:0 14px 14px}
 <div id="error" class="error" hidden><b>manifest를 불러오지 못했습니다.</b><br>정적 웹 호스팅에서 사용하거나 로컬 HTTP 서버로 열어 주세요.</div>
 </section>
 </main>
-<footer>공개 검수 아카이브 Viewer v0.9 · R1~R18 + R35 structured archive · R2 embedded in R3</footer>
+<footer>공개 검수 아카이브 Viewer v1.0 · R1~R35 structured archive · R2 embedded in R3</footer>
 <script src="./app.js"></script>
 </body></html>
