@@ -1,0 +1,64 @@
+{
+  "record_type": "POST_R36_USER_APPROVAL_RECEIPT",
+  "checkpoint": "gc_POST_R36_MEANING_BASELINE_v1_0",
+  "date_local": "2026-09-23",
+  "parent_source_checkpoint": {
+    "filename": "gc_r36_event12_v1_final01.zip",
+    "sha256": "6a51ca0cf4d1a771e4e00951231a7e581708c45351db9c286eb70d3bf7af85c7"
+  },
+  "parent_adjudication": {
+    "filename": "gc_POST_R36_PRO_ADJUDICATION_v1.zip",
+    "sha256": "c968d1861122e2306da73ea77d2b421a0c0b082967895ed7c75a242cb6cbf172"
+  },
+  "approved_decisions": {
+    "proposal_accept_as_adjudicated": 987,
+    "proposal_accept_amended": 6,
+    "keep_observed": 23,
+    "translator_note_policy_approved": 3,
+    "total_post_r36_decisions_closed": 1019,
+    "effective_story_body_changes_pending_export": 996
+  },
+  "translator_note_policy": {
+    "R3-W035": {
+      "user_decision": "NOTE_POLICY_APPROVED",
+      "production_action": "REMOVE_TRANSLATOR_ANNOTATION_FROM_STORY_BODY",
+      "preservation_destination": "TRANSLATOR_NOTE_REGISTRY",
+      "default_user_visibility": "HIDDEN",
+      "future_visibility": "NONE_BY_DEFAULT",
+      "custom_click_popup_backlog": true,
+      "note": "옥석혼효 풀이를 본문에서 분리하고 역주 원장에 보존한다. 기본 사용자 노출은 하지 않는다."
+    },
+    "R3-W039": {
+      "user_decision": "NOTE_POLICY_APPROVED",
+      "production_action": "REMOVE_TRANSLATOR_ANNOTATION_FROM_STORY_BODY",
+      "preservation_destination": "TRANSLATOR_NOTE_REGISTRY",
+      "default_user_visibility": "HIDDEN",
+      "future_visibility": "TOOLTIP_OR_GLOSSARY_CANDIDATE",
+      "custom_click_popup_backlog": true,
+      "note": "보오로 풀이를 본문에서 분리하고 역주 원장에 보존한다. 향후 툴팁/용어집 노출 후보로만 유지한다."
+    },
+    "R21-M044": {
+      "user_decision": "NOTE_POLICY_APPROVED",
+      "production_action": "REMOVE_TRANSLATOR_WORK_NOTE_FROM_STORY_BODY",
+      "preservation_destination": "AUDIT_HISTORY_ONLY",
+      "default_user_visibility": "NEVER",
+      "future_visibility": "NONE",
+      "custom_click_popup_backlog": false,
+      "note": "*번역 불가 단어로 의역 메모는 본문에서 제거하고 번역 audit/history에만 보존한다."
+    }
+  },
+  "source_anomalies": {
+    "count": 13,
+    "source_mutation_authorized": false,
+    "production_rule": "Observed JP is immutable. Existing/context-correct KO is retained unless a separately approved KO proposal applies."
+  },
+  "explicitly_not_authorized": [
+    "production export",
+    "GitHub read/write/commit/merge",
+    "GCMod version update",
+    "runtime modification",
+    "deployment",
+    "pipeline implementation"
+  ],
+  "click_popup_research": "DEFERRED_BACKLOG"
+}

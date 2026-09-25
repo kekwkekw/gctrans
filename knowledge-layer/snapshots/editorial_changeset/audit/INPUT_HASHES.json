@@ -1,0 +1,22 @@
+{
+  "r36_zip": {
+    "path": "/mnt/data/gc_r36_event12_v1_final01.zip",
+    "size": 265937442,
+    "sha256": "6a51ca0cf4d1a771e4e00951231a7e581708c45351db9c286eb70d3bf7af85c7"
+  },
+  "meaning_zip": {
+    "path": "/mnt/data/gc_POST_R36_MEANING_BASELINE_v1_0.zip",
+    "size": 848292,
+    "sha256": "41b503cd48948558ac24644902ff68d02474882afc1012e2b94a0f72d146164d"
+  },
+  "policy_zip": {
+    "path": "/mnt/data/gc_POST_R36_EDITORIAL_POLICY_PRO_v1_0.zip",
+    "size": 3350896,
+    "sha256": "20f2e1cd7dd702eba1096905f472ec94e31f466b7dbb16559ce23b571bb07bea"
+  },
+  "survey_zip": {
+    "path": "/mnt/data/gc_POST_R36_EDITORIAL_SURVEY_v1_0.zip",
+    "size": 1436222,
+    "sha256": "1ba9a9dfaf0c52469cd286be2efbb8d282f539ea1b3c58e19d6fcab21601c187"
+  }
+}

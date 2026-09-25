@@ -1,0 +1,35 @@
+{
+  "repository": "kekwkekw/gctrans",
+  "pr": 13,
+  "pr_state": "closed",
+  "merged": true,
+  "merge_commit_sha": "9e4bfa9691fe4251096a4aa12155794a182305cd",
+  "previous_main_sha": "340a3d2f5bcc793501887f15237b1095a1b21b7a",
+  "pr_head_sha": "65355c110a0b000ce04ad44905aa7251c91501a9",
+  "merge_tree_sha": "819cc44e402a8030d911cf42b7694e0277e70a85",
+  "pr_head_tree_sha": "819cc44e402a8030d911cf42b7694e0277e70a85",
+  "tree_equal": true,
+  "changed_files": 338,
+  "hold_placeholders": 12,
+  "pages_run_id": 35974594420,
+  "pages_status": "completed",
+  "pages_conclusion": "success",
+  "pages_artifact_id": 10797372255,
+  "pages_artifact_digest": "sha256:2045572ce27128710f28f1dad9d4f20f154b08538b6152e8b408fc5872836fe9",
+  "pages_artifact_validation": {
+    "candidate_files": 338,
+    "byte_identical_to_v1_2": 336,
+    "expected_cleanup_diffs": 2,
+    "missing": 0,
+    "cleanup_files": [
+      "novels/20001501/zh_Hans.json",
+      "novels/22001605/zh_Hans.json"
+    ],
+    "cleanup_exactly_trailing_br_removal": true
+  },
+  "rollback_branch": "rollback/pre-r36-translation-20260924",
+  "rollback_sha": "340a3d2f5bcc793501887f15237b1095a1b21b7a",
+  "battle_sidecar": "DEFERRED_RUNTIME_PREFIX_ID",
+  "speaker_sidecar": "DEFERRED_NAMES_LAYER",
+  "gcmod_binary_change_required_for_regular_novel_release": false
+}

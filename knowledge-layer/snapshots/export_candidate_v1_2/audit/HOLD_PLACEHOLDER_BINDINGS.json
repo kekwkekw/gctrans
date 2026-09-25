@@ -1,0 +1,134 @@
+[
+  {
+    "novel_id": "22001004",
+    "raw_index": 18,
+    "deferred_id": "deferred:r33:22001004:0018",
+    "runtime_key_sha256": "31a1b4de16f5ef82b24f4b52c5ba8715e8e9936da3afcab4139ee4bedd1737cf",
+    "placeholder": "[슬픔과 분노 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "22001004",
+    "raw_index": 27,
+    "deferred_id": "deferred:r33:22001004:0027",
+    "runtime_key_sha256": "a6ad8ebf36e24c7e9215285d7e559a5a0ff7671c585345178656cdadd5362672",
+    "placeholder": "[슬픔과 분노 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "22001004",
+    "raw_index": 28,
+    "deferred_id": "deferred:r33:22001004:0028",
+    "runtime_key_sha256": "7a5447404e7fb7a3a424ece642e5552df4a336122b6f939e517763cba2a5f471",
+    "placeholder": "[슬픔과 분노 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "22001006",
+    "raw_index": 28,
+    "deferred_id": "deferred:r33:22001006:0028",
+    "runtime_key_sha256": "7001d64a96f0bd0f01b772277b1ea83e69a7c97f16aea60b6226ba4e15cfee8c",
+    "placeholder": "[재기를 도와주는 자들 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "22001006",
+    "raw_index": 29,
+    "deferred_id": "deferred:r33:22001006:0029",
+    "runtime_key_sha256": "83c6e4a8635b84e72777a186a236718328c359df379e6a1d5565e5181844725b",
+    "placeholder": "[재기를 도와주는 자들 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "22001006",
+    "raw_index": 30,
+    "deferred_id": "deferred:r33:22001006:0030",
+    "runtime_key_sha256": "14c7331394e92d4fcd12802cedb55835401c070c7b68095d4166181acbef43f6",
+    "placeholder": "[재기를 도와주는 자들 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "40112011",
+    "raw_index": 17,
+    "deferred_id": "deferred:r21:40112011:0017",
+    "runtime_key_sha256": "0c7f6a08611d9ac5a13ab8afdc0cb59274c7107b61ba51e6f8cf9b4313cd75d4",
+    "placeholder": "[끝없는 탐구심 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "40112092",
+    "raw_index": 53,
+    "deferred_id": "deferred:r21:40112092:0053",
+    "runtime_key_sha256": "3fa256342ce6ac7c2fdd80cda66794b85067b60402741dbec4c35f21e258b4f4",
+    "placeholder": "[에로스를 섬기는 무녀 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "40112092",
+    "raw_index": 60,
+    "deferred_id": "deferred:r21:40112092:0060",
+    "runtime_key_sha256": "ca46cc355d5f4362b7e0e8893cff513b63070c308a74e8517527a44f1c7f7f88",
+    "placeholder": "[에로스를 섬기는 무녀 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "40112092",
+    "raw_index": 61,
+    "deferred_id": "deferred:r21:40112092:0061",
+    "runtime_key_sha256": "90ba328c0da4e0e667d6cb4d991f61247adf36c654d81ca04082e1d310cc1475",
+    "placeholder": "[에로스를 섬기는 무녀 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "40112092",
+    "raw_index": 62,
+    "deferred_id": "deferred:r21:40112092:0062",
+    "runtime_key_sha256": "398aca80b704441f1f868ef0e9c51ed7f51a8762166e25b91364934a370def78",
+    "placeholder": "[에로스를 섬기는 무녀 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  },
+  {
+    "novel_id": "40112092",
+    "raw_index": 63,
+    "deferred_id": "deferred:r21:40112092:0063",
+    "runtime_key_sha256": "e4b10e0c4af4bce8418772e996f0ffc96dccd134dd16977f7c98a82b945f8fca",
+    "placeholder": "[에로스를 섬기는 무녀 - 행 보류됨]",
+    "counted_as_reviewed": false,
+    "publish_ready": false,
+    "source_text_included": false,
+    "held_translation_included": false
+  }
+]

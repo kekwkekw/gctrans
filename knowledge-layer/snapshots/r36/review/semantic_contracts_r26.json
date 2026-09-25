@@ -1,0 +1,1676 @@
+[
+  {
+    "contract_id": "contract:r26:newspaper_recollection",
+    "key": "newspaper_recollection",
+    "source_locations": [
+      {
+        "novel_id": "20001401",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 13
+      }
+    ],
+    "assertions": {
+      "request_speaker": "angle",
+      "original_target": "director",
+      "current_listener": "donatello",
+      "angle_currently_present": false
+    },
+    "observation_ko": "앵그르의 과거 부탁을 관장이 현재 도나텔로에게 전한다.",
+    "blocked_overclaim_ko": "앵그르가 현장 도나텔로에게 직접 부탁한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001401"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001401:0009",
+      "ev:r26:20001401:0011",
+      "ev:r26:20001401:0013"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:staff_shortage",
+    "key": "staff_shortage",
+    "source_locations": [
+      {
+        "novel_id": "20001401",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20001406",
+        "raw_index": 7
+      }
+    ],
+    "assertions": {
+      "original_professionals_unavailable": true,
+      "individual_reason_assignment": null,
+      "professional_reporter_edits_later": true
+    },
+    "observation_ko": "처음 두 담당자 모두 착수하지 못했고 나중에 전문 기자가 시간을 내어 정리한다.",
+    "blocked_overclaim_ko": "기자·촬영가별 사유를 임의 배정하거나 끝까지 전문 기자 도움이 없었다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001401",
+      "event_story:20001406"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001401:0010",
+      "ev:r26:20001401:0011",
+      "ev:r26:20001401:0012",
+      "ev:r26:20001406:0007"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:dona_recruitment",
+    "key": "dona_recruitment",
+    "source_locations": [
+      {
+        "novel_id": "20001401",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 21
+      }
+    ],
+    "assertions": {
+      "happened_to_visit_is_joke": true,
+      "director_called_dona": true,
+      "dona_accepts": true
+    },
+    "observation_ko": "관장이 불러 온 도나텔로를 소통 능력 때문에 선택했고 본인이 수락한다.",
+    "blocked_overclaim_ko": "우연히 놀러 와 강제로 맡거나 선정 사유가 전혀 없다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001401"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001401:0016",
+      "ev:r26:20001401:0017",
+      "ev:r26:20001401:0018",
+      "ev:r26:20001401:0021"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:photo_session_not_actual",
+    "key": "photo_session_not_actual",
+    "source_locations": [
+      {
+        "novel_id": "20001401",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 31
+      }
+    ],
+    "assertions": {
+      "bouguereau_girl_session": "joke_and_wish",
+      "actual_assignment": "newspaper_camera"
+    },
+    "observation_ko": "미소녀 촬영회는 부그로의 농담·소망이고 실제 담당은 신문 촬영이다.",
+    "blocked_overclaim_ko": "공식 촬영회가 이미 열렸다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001401"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001401:0025",
+      "ev:r26:20001401:0030",
+      "ev:r26:20001401:0031"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:camera_skill_limited",
+    "key": "camera_skill_limited",
+    "source_locations": [
+      {
+        "novel_id": "20001401",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20001401",
+        "raw_index": 38
+      }
+    ],
+    "assertions": {
+      "initial_choice": "vermeer",
+      "substitute": "bouguereau",
+      "proficiency_not_automatically_professional": true
+    },
+    "observation_ko": "페르메이르의 일정이 맞지 않아 부그로가 대신하며 능력을 과장하지 않는다.",
+    "blocked_overclaim_ko": "부그로를 처음부터 전문 사진가로 확정한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001401"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001401:0032",
+      "ev:r26:20001401:0034",
+      "ev:r26:20001401:0036",
+      "ev:r26:20001401:0038"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:michelangelo_permission",
+    "key": "michelangelo_permission",
+    "source_locations": [
+      {
+        "novel_id": "20001402",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20001402",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20001402",
+        "raw_index": 50
+      }
+    ],
+    "assertions": {
+      "interview_limited": true,
+      "permission_is_not_unlimited_portrait_license": true
+    },
+    "observation_ko": "미켈란젤로의 짧게 하라는 허락은 취재 문맥에 한정한다.",
+    "blocked_overclaim_ko": "허락을 무제한 신체 촬영·공개 동의로 확장한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001402"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001402:0044",
+      "ev:r26:20001402:0046",
+      "ev:r26:20001402:0050"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:body_theory",
+    "key": "body_theory",
+    "source_locations": [
+      {
+        "novel_id": "20001402",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "20001402",
+        "raw_index": 67
+      }
+    ],
+    "assertions": {
+      "speaker": "bouguereau",
+      "art_body_similarity": "speaker_theory",
+      "global_verified_fact": false
+    },
+    "observation_ko": "작품 인물과 화가 체형이 닮는다는 설명은 부그로의 가설이다.",
+    "blocked_overclaim_ko": "검증된 보편 예술 법칙으로 승인한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001402"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001402:0066",
+      "ev:r26:20001402:0067"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:counterfactual_photos",
+    "key": "counterfactual_photos",
+    "source_locations": [
+      {
+        "novel_id": "20001403",
+        "raw_index": 8
+      }
+    ],
+    "assertions": {
+      "more_photos_taken": "counterfactual",
+      "actual_extra_shooting_established": false
+    },
+    "observation_ko": "진짜 자신이었다면 더 찍었을 것이라는 반사실 가정이다.",
+    "blocked_overclaim_ko": "실제로 더 많이 촬영했다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001403"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001403:0008"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:cafe_choice",
+    "key": "cafe_choice",
+    "source_locations": [
+      {
+        "novel_id": "20001403",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20001403",
+        "raw_index": 37
+      }
+    ],
+    "assertions": {
+      "recommended_business": "vermeer_cafe",
+      "photogenic_menu_not_luminous": true,
+      "menu_arranged_for_report": true
+    },
+    "observation_ko": "마네가 권한 카페 메뉴의 映え는 시각·사진 매력이다.",
+    "blocked_overclaim_ko": "마네 가게를 취재하거나 음식이 문자 그대로 빛난다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001403"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001403:0029",
+      "ev:r26:20001403:0037"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:medium_not_permission",
+    "key": "medium_not_permission",
+    "source_locations": [
+      {
+        "novel_id": "20001404",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20001404",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20001404",
+        "raw_index": 53
+      }
+    ],
+    "assertions": {
+      "bouguereau_aesthetic_claim": true,
+      "publication_limit_remains": true,
+      "paper_not_company": true
+    },
+    "observation_ko": "매체에 관한 부그로의 주장은 지면 게재 제한을 없애는 허락이 아니다.",
+    "blocked_overclaim_ko": "예술 주장만으로 모든 사진을 신문에 게재 가능하다고 승인한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001404"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001404:0030",
+      "ev:r26:20001404:0052",
+      "ev:r26:20001404:0053"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:trust_is_director_guess",
+    "key": "trust_is_director_guess",
+    "source_locations": [
+      {
+        "novel_id": "20001405",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20001405",
+        "raw_index": 25
+      }
+    ],
+    "assertions": {
+      "director_interprets_trust": true,
+      "bouguereau_confirmed_motive": false,
+      "dona_is_photo_target": true
+    },
+    "observation_ko": "관장은 도나텔로가 부적절한 촬영을 막아줄 신뢰가 아닐까 해석한다.",
+    "blocked_overclaim_ko": "부그로의 확정된 본심으로 승격하거나 도나텔로가 촬영자라고 한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001405"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001405:0024",
+      "ev:r26:20001405:0025"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:girl_pair_identity",
+    "key": "girl_pair_identity",
+    "source_locations": [
+      {
+        "novel_id": "20001405",
+        "raw_index": 38
+      }
+    ],
+    "assertions": {
+      "sibling_question_answered": false,
+      "exact_age_established": false
+    },
+    "observation_ko": "비슷하게 입은 두 여성에게 자매인지 묻지만 확정 답변은 없다.",
+    "blocked_overclaim_ko": "두 인물을 실제 자매나 특정 나이로 확정한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001405"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001405:0038"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:civic_rescue_camera",
+    "key": "civic_rescue_camera",
+    "source_locations": [
+      {
+        "novel_id": "20001405",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20001405",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "20001405",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "20001405",
+        "raw_index": 77
+      },
+      {
+        "novel_id": "20001406",
+        "raw_index": 10
+      }
+    ],
+    "assertions": {
+      "front_photo_photographer": "director",
+      "subjects": [
+        "donatello",
+        "bouguereau"
+      ],
+      "evacuation_and_following_distinct": true
+    },
+    "observation_ko": "관장이 피난을 돕고 뒤따라가 동료들의 활약을 찍어 1면에 사용한다.",
+    "blocked_overclaim_ko": "부그로가 자기 자신이 싸우는 1면 사진을 촬영한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001405",
+      "event_story:20001406"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001405:0060",
+      "ev:r26:20001405:0063",
+      "ev:r26:20001405:0068",
+      "ev:r26:20001405:0077",
+      "ev:r26:20001406:0010"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:edition_and_hidden_photos",
+    "key": "edition_and_hidden_photos",
+    "source_locations": [
+      {
+        "novel_id": "20001406",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20001406",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20001406",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20001406",
+        "raw_index": 42
+      }
+    ],
+    "assertions": {
+      "newspaper_published": true,
+      "hidden_nonpublished_photos_distinct": true,
+      "consent_not_implied": true
+    },
+    "observation_ko": "완성 신문의 채택 사진과 부그로의 숨긴 비게재 사진은 별개다.",
+    "blocked_overclaim_ko": "발간 사실을 모든 사진의 채택·동의로 해석한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001406"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001406:0007",
+      "ev:r26:20001406:0010",
+      "ev:r26:20001406:0039",
+      "ev:r26:20001406:0042"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:future_photo_assignment",
+    "key": "future_photo_assignment",
+    "source_locations": [
+      {
+        "novel_id": "20001406",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20001406",
+        "raw_index": 65
+      }
+    ],
+    "assertions": {
+      "future_partner_change": "future_talk",
+      "new_edition_completed": false
+    },
+    "observation_ko": "향후 협업 희망과 파트너 교체 이야기를 이미 발행한 차기호로 만들지 않는다.",
+    "blocked_overclaim_ko": "다음 신문과 파트너 변경이 이미 실행됐다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001406"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001406:0058",
+      "ev:r26:20001406:0065"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:rem_secret_documents",
+    "key": "rem_secret_documents",
+    "source_locations": [
+      {
+        "novel_id": "20001501",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20001501",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20001501",
+        "raw_index": 41
+      }
+    ],
+    "assertions": {
+      "director_present": false,
+      "documents_public_route": false,
+      "leak_motive": "rembrandt_inference"
+    },
+    "observation_ko": "비공개 경로 서류를 혼자 읽으며 정보 유출 동기와 신빙성을 추정한다.",
+    "blocked_overclaim_ko": "관장이 정보를 함께 읽거나 유출 동기가 객관 확정이다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001501"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001501:0035",
+      "ev:r26:20001501:0036",
+      "ev:r26:20001501:0041"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:visit_motive_difference",
+    "key": "visit_motive_difference",
+    "source_locations": [
+      {
+        "novel_id": "20001502",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20001502",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20001502",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20001502",
+        "raw_index": 15
+      }
+    ],
+    "assertions": {
+      "public_plan": "shrine_visit",
+      "private_motive_not_shared": true
+    },
+    "observation_ko": "방문 제안에 응하면서도 렘브란트는 개인 목적을 숨긴다.",
+    "blocked_overclaim_ko": "관장이 수집 목적을 알고 함께 계획했다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001502"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001502:0011",
+      "ev:r26:20001502:0012",
+      "ev:r26:20001502:0013",
+      "ev:r26:20001502:0015"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:prayer_public_private",
+    "key": "prayer_public_private",
+    "source_locations": [
+      {
+        "novel_id": "20001502",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "20001502",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 34
+      }
+    ],
+    "assertions": {
+      "public_prayer_statement": "curse",
+      "actual_collecting_wish_private": true,
+      "all_curse_claims_false": false
+    },
+    "observation_ko": "이번 소원의 겉 설명과 내면을 나누되 다른 저주 진술까지 자동 허위화하지 않는다.",
+    "blocked_overclaim_ko": "거짓 소원 하나로 모든 저주·감각 설정을 부정한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001502",
+      "event_story:20001506"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001502:0068",
+      "ev:r26:20001502:0072",
+      "ev:r26:20001506:0034"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:sacred_mirror",
+    "key": "sacred_mirror",
+    "source_locations": [
+      {
+        "novel_id": "20001502",
+        "raw_index": 77
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 6
+      }
+    ],
+    "assertions": {
+      "object": "mirror",
+      "human_body": false,
+      "final_mirror_intact": true
+    },
+    "observation_ko": "御神体는 이 이벤트의 거울이며 사람 몸이 아니다. 끝에는 온전하다.",
+    "blocked_overclaim_ko": "신체를 인체로 해석하거나 깨진 거울이 완성품이 됐다고 한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001502",
+      "event_story:20001504",
+      "event_story:20001505"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001502:0077",
+      "ev:r26:20001504:0022",
+      "ev:r26:20001505:0006"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:guard_participation",
+    "key": "guard_participation",
+    "source_locations": [
+      {
+        "novel_id": "20001503",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20001503",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20001503",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20001503",
+        "raw_index": 21
+      }
+    ],
+    "assertions": {
+      "arte_on_lunch": true,
+      "participation_permitted": true,
+      "guard_abandonment_established": false
+    },
+    "observation_ko": "아르테의 점심 휴식과 허가받은 참가를 경비 무단이탈과 구별한다.",
+    "blocked_overclaim_ko": "아르테가 허가 없이 도망쳐 대회에 나간다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001503"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001503:0013",
+      "ev:r26:20001503:0019",
+      "ev:r26:20001503:0020",
+      "ev:r26:20001503:0021"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:interrupted_final",
+    "key": "interrupted_final",
+    "source_locations": [
+      {
+        "novel_id": "20001503",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20001503",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20001503",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20001503",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20001503",
+        "raw_index": 58
+      }
+    ],
+    "assertions": {
+      "director_eliminated": true,
+      "first_final_finished": false,
+      "police_interruption": true
+    },
+    "observation_ko": "관장은 탈락했고 결승은 경찰 보고로 중단되어 아직 승자가 없다.",
+    "blocked_overclaim_ko": "첫 결승에서 이미 승부가 났다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001503"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001503:0050",
+      "ev:r26:20001503:0055",
+      "ev:r26:20001503:0056",
+      "ev:r26:20001503:0057",
+      "ev:r26:20001503:0058"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:hostage_mirror",
+    "key": "hostage_mirror",
+    "source_locations": [
+      {
+        "novel_id": "20001504",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 20
+      }
+    ],
+    "assertions": {
+      "threatening_agent": "death_artist",
+      "conditional_destruction": true,
+      "mirror_already_destroyed": false
+    },
+    "observation_ko": "접근하면 거울을 깨겠다는 위협 때문에 정면 공격이 위험하다.",
+    "blocked_overclaim_ko": "거울이 이미 깨졌거나 렘브란트가 직접 깨기로 한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001504"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001504:0014",
+      "ev:r26:20001504:0020"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:rem_private_escape_plan",
+    "key": "rem_private_escape_plan",
+    "source_locations": [
+      {
+        "novel_id": "20001504",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 20
+      }
+    ],
+    "assertions": {
+      "escape_help": "considered",
+      "secret_purchase": "desired",
+      "actual_collaboration_established": false
+    },
+    "observation_ko": "도주·완성 후 확보는 렘브란트가 생각한 계획이지 실행된 공모가 아니다.",
+    "blocked_overclaim_ko": "범인과 이미 합의한 공동 작전으로 만든다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001504"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001504:0019",
+      "ev:r26:20001504:0020"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:provocation_not_distraction",
+    "key": "provocation_not_distraction",
+    "source_locations": [
+      {
+        "novel_id": "20001504",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 46
+      }
+    ],
+    "assertions": {
+      "arte_infers_distraction": true,
+      "rem_public_agrees": true,
+      "rem_private_intended_distraction": false,
+      "director_panicked": true
+    },
+    "observation_ko": "도발을 빈틈 만들기로 해석한 아르테와 관장의 오해에 렘브란트가 맞장구친다. 속마음은 부정한다.",
+    "blocked_overclaim_ko": "세 사람이 합의한 구조 작전이며 관장은 침묵했다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001504"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001504:0032",
+      "ev:r26:20001504:0043",
+      "ev:r26:20001504:0044",
+      "ev:r26:20001504:0045",
+      "ev:r26:20001504:0046"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:actual_mirror_recovery",
+    "key": "actual_mirror_recovery",
+    "source_locations": [
+      {
+        "novel_id": "20001504",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 42
+      }
+    ],
+    "assertions": {
+      "recoverer": "arte",
+      "mirror_art_completed": false
+    },
+    "observation_ko": "아르테가 공격해 거울을 회수했다. 거울로 새 죽음의 예술이 완성되기 전이다.",
+    "blocked_overclaim_ko": "렘브란트가 회수하거나 거울 작품이 완성됐다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001504"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001504:0038",
+      "ev:r26:20001504:0040",
+      "ev:r26:20001504:0042"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:surrender_vs_arrest",
+    "key": "surrender_vs_arrest",
+    "source_locations": [
+      {
+        "novel_id": "20001504",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20001504",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 6
+      }
+    ],
+    "assertions": {
+      "surrender": "offered_not_completed",
+      "resistance": true,
+      "arresting_actor": "remaining_police"
+    },
+    "observation_ko": "자수 권유에 범인은 저항했고 이후 남은 경찰이 연행했다.",
+    "blocked_overclaim_ko": "권유를 실제 자수나 예술가 직접 연행으로 바꾼다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001504",
+      "event_story:20001505"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001504:0049",
+      "ev:r26:20001504:0051",
+      "ev:r26:20001505:0006"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:rem_mixed_motives",
+    "key": "rem_mixed_motives",
+    "source_locations": [
+      {
+        "novel_id": "20001505",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 39
+      }
+    ],
+    "assertions": {
+      "jealousy": true,
+      "respect_for_arte": true,
+      "betrayal": "intention",
+      "destroyed_art": "past_actual"
+    },
+    "observation_ko": "질투·좋은 사람이라는 인정·실제 작품 파괴의 분노·배신하려던 자신에 대한 분노가 함께 있다.",
+    "blocked_overclaim_ko": "단순 악의 또는 완전 개심 하나로 환원한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001505"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001505:0033",
+      "ev:r26:20001505:0038",
+      "ev:r26:20001505:0039"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:champion_and_gift",
+    "key": "champion_and_gift",
+    "source_locations": [
+      {
+        "novel_id": "20001505",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 58
+      }
+    ],
+    "assertions": {
+      "champion": "rembrandt",
+      "loser": "arte",
+      "initial_prize_recipient": "rembrandt",
+      "later_gift_recipient": "arte"
+    },
+    "observation_ko": "승자는 렘브란트이며 상품을 받은 뒤 아르테에게 건넨다.",
+    "blocked_overclaim_ko": "상품 소지자를 경기 우승자로 소급한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001505"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001505:0040",
+      "ev:r26:20001505:0042",
+      "ev:r26:20001505:0052",
+      "ev:r26:20001505:0058"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:award_roles",
+    "key": "award_roles",
+    "source_locations": [
+      {
+        "novel_id": "20001505",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 51
+      }
+    ],
+    "assertions": {
+      "director_is_mc_established": false,
+      "mc_is_association_head_established": false
+    },
+    "observation_ko": "관장 소개와 사회자 진행, 자치회장의 증정 역할을 구분한다.",
+    "blocked_overclaim_ko": "관장·사회자·자치회장을 동일 인물로 합친다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001505"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001505:0013",
+      "ev:r26:20001505:0019",
+      "ev:r26:20001505:0051"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:gift_public_private",
+    "key": "gift_public_private",
+    "source_locations": [
+      {
+        "novel_id": "20001505",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20001505",
+        "raw_index": 60
+      }
+    ],
+    "assertions": {
+      "arte_merit_public": true,
+      "prize_disinterest_private": true,
+      "delivery_requested_private": true
+    },
+    "observation_ko": "공개적으로 아르테 공로를 인정하면서 본인은 상품에 관심 없다는 속마음도 있다.",
+    "blocked_overclaim_ko": "순수한 한 동기로만 설명하거나 배송 불평이 공개됐다고 한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001505"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001505:0053",
+      "ev:r26:20001505:0059",
+      "ev:r26:20001505:0060"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:office_next_day",
+    "key": "office_next_day",
+    "source_locations": [
+      {
+        "novel_id": "20001506",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 29
+      }
+    ],
+    "assertions": {
+      "day": "next_day",
+      "installer": "arte",
+      "initial_people": 3,
+      "after_sansovino": 4,
+      "rice_cakes_secondary_prize": true
+    },
+    "observation_ko": "다음 날 아르테가 설치한 코타츠에 세 사람이 있다가 요리한 산소비노가 합류해 넷이 된다.",
+    "blocked_overclaim_ko": "즉일 장면이나 산소비노가 처음부터 모든 말을 들었다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001506"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001506:0008",
+      "ev:r26:20001506:0025",
+      "ev:r26:20001506:0029"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:amnesia_and_texture",
+    "key": "amnesia_and_texture",
+    "source_locations": [
+      {
+        "novel_id": "20001506",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 34
+      }
+    ],
+    "assertions": {
+      "arte_first_taste": "uncertain_due_amnesia",
+      "rem_taste_loss": "self_report",
+      "rem_texture_enjoyment": true
+    },
+    "observation_ko": "처음 먹는 경험의 유보와 맛·식감의 감각 차이를 보존한다.",
+    "blocked_overclaim_ko": "기억 이전 첫 경험을 확정하거나 맛있다는 감각을 렘브란트에게 추가한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001506"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001506:0032",
+      "ev:r26:20001506:0033",
+      "ev:r26:20001506:0034"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:fictional_hearsay",
+    "key": "fictional_hearsay",
+    "source_locations": [
+      {
+        "novel_id": "20001506",
+        "raw_index": 37
+      }
+    ],
+    "assertions": {
+      "evidentiality": "hearsay",
+      "real_world_statistic": false
+    },
+    "observation_ko": "작품 속 동방에 관한 관장의 전언이다. 실제 통계로 확장하지 않는다.",
+    "blocked_overclaim_ko": "현실 의학·안전 통계로 인용하거나 관장 추정으로 바꾼다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001506"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001506:0037"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:otoshidama_condition",
+    "key": "otoshidama_condition",
+    "source_locations": [
+      {
+        "novel_id": "20001506",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 47
+      }
+    ],
+    "assertions": {
+      "gift_money": "conditional_not_paid",
+      "arte_request_retracted": true,
+      "image_age_generalized": false
+    },
+    "observation_ko": "조건을 듣고 철회했으므로 실제 돈 지급이나 수령은 없다.",
+    "blocked_overclaim_ko": "세뱃돈 발언으로 전원 미성년 또는 지급 완료를 확정한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001506"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001506:0043",
+      "ev:r26:20001506:0044",
+      "ev:r26:20001506:0046",
+      "ev:r26:20001506:0047"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:comfort_not_forgiveness",
+    "key": "comfort_not_forgiveness",
+    "source_locations": [
+      {
+        "novel_id": "20001506",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 62
+      }
+    ],
+    "assertions": {
+      "private_motive_disclosed": false,
+      "arte_knows_what_rem_means": false,
+      "director_interpretation": "excess_consideration",
+      "forgiveness_with_full_knowledge": false
+    },
+    "observation_ko": "본심을 모른다고 한 아르테의 격려이며 관장은 사양한다고 추정한다. 렘브란트는 비밀을 유지한다.",
+    "blocked_overclaim_ko": "모든 본심을 알고 용서하고 수집 욕구도 사라졌다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001506"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001506:0051",
+      "ev:r26:20001506:0052",
+      "ev:r26:20001506:0055",
+      "ev:r26:20001506:0056",
+      "ev:r26:20001506:0057",
+      "ev:r26:20001506:0060",
+      "ev:r26:20001506:0062"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  },
+  {
+    "contract_id": "contract:r26:sleep_and_guard_plan",
+    "key": "sleep_and_guard_plan",
+    "source_locations": [
+      {
+        "novel_id": "20001506",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "20001506",
+        "raw_index": 72
+      }
+    ],
+    "assertions": {
+      "rem_sleeps": true,
+      "sansovino_quiet_question_heard": true,
+      "replacement_guard_partner": null,
+      "guard_duty_completed": false,
+      "director_leaves_office": true
+    },
+    "observation_ko": "둘이 실제 잠들고 산소비노의 작은 질문에 관장이 대신 경비를 가겠다고 답한 뒤 나간다. 동행자와 근무 완료는 미확인이다.",
+    "blocked_overclaim_ko": "절대 불면·무응답 독백·특정 동행·근무 완료를 추가한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20001506"
+    ],
+    "evidence_ids": [
+      "ev:r26:20001506:0065",
+      "ev:r26:20001506:0066",
+      "ev:r26:20001506:0067",
+      "ev:r26:20001506:0068",
+      "ev:r26:20001506:0069",
+      "ev:r26:20001506:0072"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R26_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R26"
+    }
+  }
+]

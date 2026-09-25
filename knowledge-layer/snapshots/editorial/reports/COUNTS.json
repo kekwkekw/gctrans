@@ -1,0 +1,51 @@
+{
+  "scope": {
+    "survey_effective_entries": 22859,
+    "survey_occurrences_ellipsis": 10500,
+    "survey_occurrences_dash": 1027,
+    "period_rows_individually_reviewed": 20,
+    "spacing_occurrences_individually_reviewed": 40,
+    "additional_local_boundary_findings": 2,
+    "new_corpus_semantic_review_rows": 0,
+    "parent_queue_changed": false
+  },
+  "ellipsis": {
+    "NORMALIZE_EXISTING_ELLIPSIS_GLYPH": 10489,
+    "PRESERVE_SOURCE_ANOMALY_ROW": 9,
+    "RESTORE_INTERRUPTION_DASH": 2
+  },
+  "dash": {
+    "NORMALIZE_STRUCTURAL_DASH_GLYPH": 963,
+    "PRESERVE_VOCAL_LENGTHENING_OR_SFX": 62,
+    "PRESERVE_SOURCE_ANOMALY_ROW": 2
+  },
+  "period": {
+    "ADD_NARRATION_TERMINAL_PERIOD": 19,
+    "ADD_NARRATOR_QUESTION_MARK": 1
+  },
+  "spacing": {
+    "REMOVE_LOCAL_ATTACHMENT_SPACE": 10,
+    "PRESERVE_RHYTHMIC_OR_SENTENCE_SPACE": 30
+  },
+  "exceptions": {
+    "ellipsis_detailed_records": 131,
+    "dash_detailed_records": 86,
+    "source_anomaly_false_negative_occurrences": 11,
+    "source_anomaly_affected_loci": 7,
+    "ellipsis_length_discrepancies_individually_reviewed": 35,
+    "line_reflow_or_manual_ellipsis_original_records": 86
+  },
+  "recommendations_before_generation_guards": 11486,
+  "recommendations_are_not_an_executable_changeset": true,
+  "approval": {
+    "editorial_user_approval": false,
+    "meaning_1019_approvals_unchanged": true
+  },
+  "protection": {
+    "holds": 12,
+    "source_anomalies": 13,
+    "parentheses_loci": 48,
+    "source_anomaly_keys_modified": 0,
+    "actual_text_mutations": 0
+  }
+}

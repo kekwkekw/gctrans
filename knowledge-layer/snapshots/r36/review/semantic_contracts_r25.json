@@ -1,0 +1,2457 @@
+[
+  {
+    "contract_id": "contract:r25:spring_focalizer",
+    "key": "spring_focalizer",
+    "source_locations": [
+      {
+        "novel_id": "20000601",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "20000602",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20000603",
+        "raw_index": 16
+      }
+    ],
+    "assertions": {
+      "opening_director_witness": false,
+      "director_arrives_episode": 3
+    },
+    "observation_ko": "처음 두 화는 외부 서술이며 관장은 세 번째 화에서 찾아온다.",
+    "blocked_overclaim_ko": "처음부터 관장이 모든 장면을 직접 보았다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000601",
+      "event_story:20000602",
+      "event_story:20000603"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000601:0002",
+      "ev:r25:20000602:0039",
+      "ev:r25:20000603:0016"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:sketch_adult_context",
+    "key": "sketch_adult_context",
+    "source_locations": [
+      {
+        "novel_id": "20000601",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20000601",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20000601",
+        "raw_index": 8
+      }
+    ],
+    "assertions": {
+      "passer_child_is_sketch_target": false,
+      "appearance_only_age_classification": false
+    },
+    "observation_ko": "얇은 옷의 여성을 스케치하는 장면과 어머니에게 말하는 지나가는 아이를 합치지 않는다.",
+    "blocked_overclaim_ko": "지나가는 아이를 스케치 대상으로 확정하거나 외형만으로 연령을 판정한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000601"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000601:0006",
+      "ev:r25:20000601:0007",
+      "ev:r25:20000601:0008"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:manet_rejected_same_work",
+    "key": "manet_rejected_same_work",
+    "source_locations": [
+      {
+        "novel_id": "20000601",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20000601",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 48
+      }
+    ],
+    "assertions": {
+      "artist": "entity:d3a8756cd578814d",
+      "same_previously_rejected_work": true,
+      "new_repainted_work": false,
+      "recognition_scope": "some_circles"
+    },
+    "observation_ko": "낙선한 채 들고 오던 같은 그림이 나중에 일부에서 화제가 된다.",
+    "blocked_overclaim_ko": "새 그림을 그려 곧바로 모두에게 인정받았다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000601",
+      "event_story:20000606"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000601:0038",
+      "ev:r25:20000601:0044",
+      "ev:r25:20000606:0048"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:colleagues_not_pupil",
+    "key": "colleagues_not_pupil",
+    "source_locations": [
+      {
+        "novel_id": "20000602",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20000602",
+        "raw_index": 40
+      }
+    ],
+    "assertions": {
+      "manet_formal_boug_pupil": false,
+      "teachers": [
+        "entity:r20:bouguereau",
+        "entity:r25:allet"
+      ]
+    },
+    "observation_ko": "마네는 부그로의 정식 제자로 확정되지 않으며 교실은 부그로와 알렛이 운영한다.",
+    "blocked_overclaim_ko": "마네가 정식 제자가 되거나 교실을 관장 혼자 운영한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000602"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000602:0032",
+      "ev:r25:20000602:0040"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:allet_distinct",
+    "key": "allet_distinct",
+    "source_locations": [
+      {
+        "novel_id": "20000602",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20000602",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20000603",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20000604",
+        "raw_index": 47
+      }
+    ],
+    "assertions": {
+      "teacher": "entity:r25:allet",
+      "is_rodin": false,
+      "director_initial_assumption": "student",
+      "later_identification": "teacher"
+    },
+    "observation_ko": "アレット는 로댕의 アルレット와 다른 강사다. 관장의 학생 오인과 뒤 소개를 분리한다.",
+    "blocked_overclaim_ko": "알렛을 로댕으로 합치거나 관장의 첫 추정을 실제 학생 신분으로 확정한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000602",
+      "event_story:20000603",
+      "event_story:20000604"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000602:0038",
+      "ev:r25:20000602:0040",
+      "ev:r25:20000603:0015",
+      "ev:r25:20000604:0047"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:aesthetic_doctrines",
+    "key": "aesthetic_doctrines",
+    "source_locations": [
+      {
+        "novel_id": "20000602",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20000602",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20000602",
+        "raw_index": 49
+      }
+    ],
+    "assertions": {
+      "b_school": "personal_advice",
+      "a_realism": "speaker_position",
+      "global_aesthetic_truth": false
+    },
+    "observation_ko": "부그로의 미적 조언과 알렛의 사실주의 주장은 각 화자의 견해로 남긴다.",
+    "blocked_overclaim_ko": "어느 미학이 작품 전체의 객관적 정답이라고 승인한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000602"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000602:0022",
+      "ev:r25:20000602:0048",
+      "ev:r25:20000602:0049"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:classroom_overheard",
+    "key": "classroom_overheard",
+    "source_locations": [
+      {
+        "novel_id": "20000602",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20000602",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "20000602",
+        "raw_index": 64
+      }
+    ],
+    "assertions": {
+      "speaker": "entity:r25:allet",
+      "primary_target": "local:r25:injured_pupil",
+      "b_m_overhear": true,
+      "a_heard_all_staffroom_talk": false
+    },
+    "observation_ko": "강의실의 꾸중을 교무실의 두 사람이 듣는다. 앞선 사담의 청자까지 알렛으로 만들지 않는다.",
+    "blocked_overclaim_ko": "강의실과 교무실의 모든 인물이 모든 대화를 들었다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000602"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000602:0058",
+      "ev:r25:20000602:0063",
+      "ev:r25:20000602:0064"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:outfit_reported_scene",
+    "key": "outfit_reported_scene",
+    "source_locations": [
+      {
+        "novel_id": "20000603",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20000603",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20000603",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20000603",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20000603",
+        "raw_index": 49
+      }
+    ],
+    "assertions": {
+      "past_range": [
+        32,
+        48
+      ],
+      "reporter": "entity:r20:bouguereau",
+      "frame_listener": "entity:828bf1ba73e463a7",
+      "director_witness": false,
+      "boug_final_agreement": true
+    },
+    "observation_ko": "관장 도착 전의 의상 장면을 부그로가 설명하며 부그로는 결국 착용에 동의했다.",
+    "blocked_overclaim_ko": "관장이 앞선 장면을 직접 보았거나 끝까지 거부한 사람에게 강제로 착용시켰다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000603"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000603:0030",
+      "ev:r25:20000603:0031",
+      "ev:r25:20000603:0035",
+      "ev:r25:20000603:0048",
+      "ev:r25:20000603:0049"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:wet_clothes",
+    "key": "wet_clothes",
+    "source_locations": [
+      {
+        "novel_id": "20000603",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "20000603",
+        "raw_index": 66
+      }
+    ],
+    "assertions": {
+      "spilled_drink": "director_inference",
+      "sabotage_confirmed": false,
+      "spare_clothes": false
+    },
+    "observation_ko": "젖은 옷의 원인은 관장의 추측이고 여벌이 없다는 제한이 이어진다.",
+    "blocked_overclaim_ko": "누군가 고의로 옷을 젖게 했다는 사실을 추가한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000603"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000603:0065",
+      "ev:r25:20000603:0066"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:passer_fear",
+    "key": "passer_fear",
+    "source_locations": [
+      {
+        "novel_id": "20000603",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "20000603",
+        "raw_index": 76
+      },
+      {
+        "novel_id": "20000603",
+        "raw_index": 79
+      }
+    ],
+    "assertions": {
+      "request_reason": "fear_of_losing_sight",
+      "new_art_love_confirmed": false
+    },
+    "observation_ko": "행인의 관심 표현은 시력 피해를 피하려는 두려움에서 나온다.",
+    "blocked_overclaim_ko": "피해 공포로 한 말을 순수한 예술 애호로 확정한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000603"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000603:0075",
+      "ev:r25:20000603:0076",
+      "ev:r25:20000603:0079"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:victim_history",
+    "key": "victim_history",
+    "source_locations": [
+      {
+        "novel_id": "20000604",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20000604",
+        "raw_index": 5
+      }
+    ],
+    "assertions": {
+      "prior_indifference_statements": true,
+      "actual_permanent_current_declaration": false
+    },
+    "observation_ko": "피해자들의 과거 공언이 수사 단서이며 아직 범인의 기준 전체를 검증한 것은 아니다.",
+    "blocked_overclaim_ko": "피해 뒤에도 계속 무관심을 선언하거나 단서만으로 범행 원리를 확정한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000604"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000604:0004",
+      "ev:r25:20000604:0005"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:delirious_teacher",
+    "key": "delirious_teacher",
+    "source_locations": [
+      {
+        "novel_id": "20000604",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20000604",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20000604",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 13
+      }
+    ],
+    "assertions": {
+      "intended_teacher": "unresolved_at_utterance",
+      "present_boug_is_actual_teacher_target": false,
+      "later_scolded_pupil_link": true
+    },
+    "observation_ko": "소년의 헛소리 속 선생님이 현장 부그로를 확실히 지칭한다고 만들지 않는다. 뒤에서 알렛에게 꾸중받던 아이와 연결된다.",
+    "blocked_overclaim_ko": "소년이 눈앞의 부그로에게 범행을 자백하거나 용서를 구했다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000604",
+      "event_story:20000606"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000604:0030",
+      "ev:r25:20000604:0031",
+      "ev:r25:20000604:0032",
+      "ev:r25:20000606:0013"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:surrender_request",
+    "key": "surrender_request",
+    "source_locations": [
+      {
+        "novel_id": "20000604",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20000604",
+        "raw_index": 56
+      }
+    ],
+    "assertions": {
+      "requested": "voluntary_surrender",
+      "confession_only": false,
+      "already_surrendered": false
+    },
+    "observation_ko": "부그로의 제안은 자수이며 이 대사만으로 자수가 완료되지는 않는다.",
+    "blocked_overclaim_ko": "자백과 자수를 합치거나 요청을 수락·완료로 처리한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000604"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000604:0053",
+      "ev:r25:20000604:0056"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:envy_vs_fact",
+    "key": "envy_vs_fact",
+    "source_locations": [
+      {
+        "novel_id": "20000604",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20000605",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 52
+      }
+    ],
+    "assertions": {
+      "allet_claim_boug_never_struggled": "accusation",
+      "admiration_and_envy_coexist": true,
+      "boug_reports_criticism": true
+    },
+    "observation_ko": "알렛의 비난, 이전 존경·기쁨, 부그로 자신의 비판 경험은 각각 다른 진술이다.",
+    "blocked_overclaim_ko": "부그로가 아무 어려움도 없었다는 비난을 사실로 승격한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000604",
+      "event_story:20000605",
+      "event_story:20000606"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000604:0058",
+      "ev:r25:20000605:0026",
+      "ev:r25:20000606:0052"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:allet_inner_memory",
+    "key": "allet_inner_memory",
+    "source_locations": [
+      {
+        "novel_id": "20000605",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "20000605",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20000605",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "20000605",
+        "raw_index": 40
+      }
+    ],
+    "assertions": {
+      "focalizer": "entity:r25:allet",
+      "public_confession": false,
+      "parents_are_boug": false,
+      "physical_picture_destruction": false
+    },
+    "observation_ko": "알렛의 내적 회고와 타인에 대한 비난이다. 부그로를 부모로 만들거나 실제 작품 파괴를 추가하지 않는다.",
+    "blocked_overclaim_ko": "관장의 기억·공개 자백·피해자들의 물리적 그림 파괴로 바꾼다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000605"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000605:0001",
+      "ev:r25:20000605:0004",
+      "ev:r25:20000605:0005",
+      "ev:r25:20000605:0040"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:award_advice_unheard",
+    "key": "award_advice_unheard",
+    "source_locations": [
+      {
+        "novel_id": "20000605",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20000605",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20000605",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20000605",
+        "raw_index": 32
+      }
+    ],
+    "assertions": {
+      "allet_heard_entire_advice": false,
+      "award_solves_all": "allet_expectation"
+    },
+    "observation_ko": "알렛이 떠난 뒤에도 조언이 이어진다. 수상이 모든 문제를 해결하리라는 것은 알렛의 기대다.",
+    "blocked_overclaim_ko": "조언 전체를 알렛이 들었고 상이 모든 관심을 보장한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000605"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000605:0028",
+      "ev:r25:20000605:0030",
+      "ev:r25:20000605:0031",
+      "ev:r25:20000605:0032"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:gallery_family_distinct",
+    "key": "gallery_family_distinct",
+    "source_locations": [
+      {
+        "novel_id": "20000605",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20000605",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20000605",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20000604",
+        "raw_index": 26
+      }
+    ],
+    "assertions": {
+      "gallery_child": "local:r25:gallery_child",
+      "injured_child": "local:r25:injured_pupil",
+      "same_child": false
+    },
+    "observation_ko": "전시장의 부자와 시력 피해 소년은 별도 문맥 대상이다. 같은 少年이라는 말만으로 합치지 않는다.",
+    "blocked_overclaim_ko": "모든 소년을 같은 인물로 병합한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000605",
+      "event_story:20000604"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000605:0033",
+      "ev:r25:20000605:0034",
+      "ev:r25:20000605:0036",
+      "ev:r25:20000604:0026"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:sight_not_eyes_removed",
+    "key": "sight_not_eyes_removed",
+    "source_locations": [
+      {
+        "novel_id": "20000605",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 41
+      }
+    ],
+    "assertions": {
+      "loss": "sight",
+      "physical_eyes_removed": false,
+      "victim_sight_recovered_report": true
+    },
+    "observation_ko": "시력 소실과 뒤의 회복을 다룬다. 안구 적출 같은 물리 사건을 추가하지 않는다.",
+    "blocked_overclaim_ko": "시력 소실을 눈 자체가 제거된 사건으로 바꾼다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000605",
+      "event_story:20000606"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000605:0042",
+      "ev:r25:20000606:0041"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:curse_backlash",
+    "key": "curse_backlash",
+    "source_locations": [
+      {
+        "novel_id": "20000606",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 7
+      }
+    ],
+    "assertions": {
+      "blindness_observed": true,
+      "backlash": "boug_probable_explanation",
+      "universal_curse_law": false
+    },
+    "observation_ko": "알렛의 시력 상실과 부그로의 저주 역류 추정을 나눈다.",
+    "blocked_overclaim_ko": "역류 원리를 독립 검증된 보편 법칙으로 올린다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000606"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000606:0006",
+      "ev:r25:20000606:0007"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:student_harm_intent",
+    "key": "student_harm_intent",
+    "source_locations": [
+      {
+        "novel_id": "20000606",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 16
+      }
+    ],
+    "assertions": {
+      "students_harmed": true,
+      "intent_exclusion": "allet_claim",
+      "other_harm_excused": false
+    },
+    "observation_ko": "학생 피해에 알렛은 놀라며 의도가 없었다고 말한다. 이 말이 다른 가해 책임을 없애지는 않는다.",
+    "blocked_overclaim_ko": "학생 피해가 없었다거나 다른 피해까지 모두 무혐의가 된다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000606"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000606:0011",
+      "ev:r25:20000606:0012",
+      "ev:r25:20000606:0014",
+      "ev:r25:20000606:0016"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:co_created_outfit",
+    "key": "co_created_outfit",
+    "source_locations": [
+      {
+        "novel_id": "20000606",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 33
+      }
+    ],
+    "assertions": {
+      "creators": [
+        "entity:r20:bouguereau",
+        "entity:r25:allet"
+      ],
+      "sole_creator_boug": false,
+      "bond": "first_spring_together"
+    },
+    "observation_ko": "두 사람이 처음 함께한 봄에 만든 의상은 공동 작업과 인연의 상징이다.",
+    "blocked_overclaim_ko": "부그로 단독 제작으로 확정한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000606"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000606:0024",
+      "ev:r25:20000606:0033"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:recovery_custody",
+    "key": "recovery_custody",
+    "source_locations": [
+      {
+        "novel_id": "20000606",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 43
+      }
+    ],
+    "assertions": {
+      "others": "recovered",
+      "allet": "gradual_recovery",
+      "prison_visit": true,
+      "early_release": "conditional_future",
+      "already_released": false
+    },
+    "observation_ko": "피해자 회복, 알렛의 점진적 회복, 복역 중 면회, 향후 석방 전망을 분리한다.",
+    "blocked_overclaim_ko": "모두 즉시 회복했고 알렛이 이미 조기 석방됐다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000606"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000606:0041",
+      "ev:r25:20000606:0042",
+      "ev:r25:20000606:0043"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:spring_ending_mood",
+    "key": "spring_ending_mood",
+    "source_locations": [
+      {
+        "novel_id": "20000606",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20000606",
+        "raw_index": 59
+      }
+    ],
+    "assertions": {
+      "sad_reflection_present": true,
+      "last_gaze_interpretation": "manet_inference_corrected",
+      "fanservice_deleted": false
+    },
+    "observation_ko": "슬픔의 성찰과 마지막 시선 오해·농담을 함께 보존한다.",
+    "blocked_overclaim_ko": "슬픈 독백 전체를 가짜로 하거나 후반 농담을 삭제한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000606"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000606:0034",
+      "ev:r25:20000606:0057",
+      "ev:r25:20000606:0058",
+      "ev:r25:20000606:0059"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:closed_beach",
+    "key": "closed_beach",
+    "source_locations": [
+      {
+        "novel_id": "20000901",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20000901",
+        "raw_index": 40
+      }
+    ],
+    "assertions": {
+      "closest_beach_closed": true,
+      "initial_death_art_id": "uncertain"
+    },
+    "observation_ko": "출입금지와 이상 생물에 관한 초기 정보다. 처음부터 정체를 모두 안 것으로 만들지 않는다.",
+    "blocked_overclaim_ko": "초기 보고만으로 유령의 정체와 모든 위험이 확정됐다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000901"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000901:0038",
+      "ev:r25:20000901:0040"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:research_vs_misreading",
+    "key": "research_vs_misreading",
+    "source_locations": [
+      {
+        "novel_id": "20000901",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20000901",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20000901",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "20000901",
+        "raw_index": 64
+      }
+    ],
+    "assertions": {
+      "rem_private_research": true,
+      "others_mission_reading": "interpretation",
+      "heard_private_motive": false
+    },
+    "observation_ko": "렘브란트의 연구 호기심과 주변의 사명감·겸손 해석은 분리한다.",
+    "blocked_overclaim_ko": "주변 해석을 실제 내면으로 확정하거나 독백을 모두가 들었다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000901"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000901:0054",
+      "ev:r25:20000901:0060",
+      "ev:r25:20000901:0063",
+      "ev:r25:20000901:0064"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:angle_stays",
+    "key": "angle_stays",
+    "source_locations": [
+      {
+        "novel_id": "20000901",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20000901",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20000902",
+        "raw_index": 7
+      }
+    ],
+    "assertions": {
+      "angle_leaves_athenes": false,
+      "arte_joins_later": true,
+      "lorie_present": false
+    },
+    "observation_ko": "앵글은 일 때문에 남고 아르테는 다음 화에 합류한다. 로리에의 언급은 동행 사실이 아니다.",
+    "blocked_overclaim_ko": "앵글·로리에까지 해변에 동행했다고 만든다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000901",
+      "event_story:20000902"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000901:0057",
+      "ev:r25:20000901:0059",
+      "ev:r25:20000902:0007"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:play_and_rooms",
+    "key": "play_and_rooms",
+    "source_locations": [
+      {
+        "novel_id": "20000902",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20000902",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20000902",
+        "raw_index": 41
+      }
+    ],
+    "assertions": {
+      "playing_three": [
+        "entity:828bf1ba73e463a7",
+        "entity:17ce5a7d4219b9ef",
+        "entity:ef110f7dc44ba705"
+      ],
+      "arte_in_play_three": false,
+      "director_room": "separate",
+      "women_room": "three_together"
+    },
+    "observation_ko": "함께 논 세 명과 방 배정을 구분한다. 아르테의 휴식과 다른 인원들의 놀이를 합치지 않는다.",
+    "blocked_overclaim_ko": "네 명 전원이 함께 놀거나 관장이 여성들과 같은 방을 쓴다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000902"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000902:0025",
+      "ev:r25:20000902:0040",
+      "ev:r25:20000902:0041"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:sleep_not_never",
+    "key": "sleep_not_never",
+    "source_locations": [
+      {
+        "novel_id": "20000902",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 44
+      }
+    ],
+    "assertions": {
+      "rem_difficulty_sleeping": true,
+      "never_sleeps": false,
+      "voluntary_sleeplessness": false
+    },
+    "observation_ko": "저주로 잠들기 어렵지만 아르테가 깨어나는 모습을 봤다는 말도 있다.",
+    "blocked_overclaim_ko": "잠을 전혀 자지 않거나 임의로 잠을 줄이는 특성으로 만든다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000902",
+      "event_story:20000903"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000902:0045",
+      "ev:r25:20000903:0032",
+      "ev:r25:20000903:0044"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:unknown_night_presence",
+    "key": "unknown_night_presence",
+    "source_locations": [
+      {
+        "novel_id": "20000902",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20000902",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20000902",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20000902",
+        "raw_index": 53
+      }
+    ],
+    "assertions": {
+      "identity": "unresolved",
+      "same_as_adon_confirmed": false,
+      "same_as_sand_art_confirmed": false
+    },
+    "observation_ko": "밤의 기척과 마지막 미상 화자 침묵은 정체를 확정하지 않는다.",
+    "blocked_overclaim_ko": "미상 라벨을 아돈 또는 모래상으로 자동 치환한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000902"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000902:0050",
+      "ev:r25:20000902:0051",
+      "ev:r25:20000902:0052",
+      "ev:r25:20000902:0053"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:rescue_motive",
+    "key": "rescue_motive",
+    "source_locations": [
+      {
+        "novel_id": "20000903",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 25
+      }
+    ],
+    "assertions": {
+      "rescuer": "entity:17ce5a7d4219b9ef",
+      "protected": "entity:ef110f7dc44ba705",
+      "research_regret": true,
+      "genuine_perceived_danger": true,
+      "all_selfish": false
+    },
+    "observation_ko": "연구 대상을 파괴한 아쉬움과 도나텔로가 위험하다고 생각해 즉시 행동한 마음이 모두 있다.",
+    "blocked_overclaim_ko": "모든 행동을 연구 욕심 또는 순수 사명감 하나로 환원한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000903"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000903:0014",
+      "ev:r25:20000903:0019",
+      "ev:r25:20000903:0021",
+      "ev:r25:20000903:0022",
+      "ev:r25:20000903:0025"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:nonattack_limited",
+    "key": "nonattack_limited",
+    "source_locations": [
+      {
+        "novel_id": "20000903",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 40
+      }
+    ],
+    "assertions": {
+      "attack_observed_at_first": false,
+      "future_safety_guaranteed": false
+    },
+    "observation_ko": "초기 비공격 관찰과 이후에도 안전할 보장은 없다는 말을 보존한다.",
+    "blocked_overclaim_ko": "모래 죽음의 예술은 영구 무해하거나 이미 사람을 습격했다고 한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000903",
+      "event_story:20000904"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000903:0011",
+      "ev:r25:20000903:0019",
+      "ev:r25:20000904:0040"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:late_arrival",
+    "key": "late_arrival",
+    "source_locations": [
+      {
+        "novel_id": "20000903",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 31
+      }
+    ],
+    "assertions": {
+      "director_arte_saw_shot": false,
+      "rem_reports_remains": true
+    },
+    "observation_ko": "관장과 아르테는 파괴 뒤 도착해 잔해 설명을 듣는다.",
+    "blocked_overclaim_ko": "둘이 렘브란트의 발사를 처음부터 직접 목격했다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000903"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000903:0027",
+      "ev:r25:20000903:0028",
+      "ev:r25:20000903:0031"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:creator_hypothesis",
+    "key": "creator_hypothesis",
+    "source_locations": [
+      {
+        "novel_id": "20000903",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "20000903",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 4
+      }
+    ],
+    "assertions": {
+      "human_creator": "initial_hypothesis",
+      "sea_spirit": "rem_guess",
+      "ghost": "self_identification",
+      "name_later": "アドン"
+    },
+    "observation_ko": "가설·잘못된 질문·유령 자칭·이름 공개를 단계별로 나눈다.",
+    "blocked_overclaim_ko": "처음부터 바다 정령 아돈이라는 정체가 확정됐다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000903",
+      "event_story:20000904"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000903:0037",
+      "ev:r25:20000903:0065",
+      "ev:r25:20000903:0066",
+      "ev:r25:20000904:0004"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:adon_death",
+    "key": "adon_death",
+    "source_locations": [
+      {
+        "novel_id": "20000904",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 13
+      }
+    ],
+    "assertions": {
+      "first_solo_exhibition": "scheduled_not_held",
+      "death": "accidental_drowning_self_report",
+      "years": "unspecified_several"
+    },
+    "observation_ko": "첫 개인전 전에 우발적으로 익사했다는 자기 보고이며 정확한 연도는 없다.",
+    "blocked_overclaim_ko": "첫 전시 후 사망하거나 자살·살인 피해였다고 추가한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000904"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000904:0006",
+      "ev:r25:20000904:0007",
+      "ev:r25:20000904:0013"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:adon_day_night",
+    "key": "adon_day_night",
+    "source_locations": [
+      {
+        "novel_id": "20000904",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 4
+      }
+    ],
+    "assertions": {
+      "day_conscious": true,
+      "day_action_limited": true,
+      "night_action": true,
+      "day_asleep": false
+    },
+    "observation_ko": "낮에도 보고 느끼지만 활동은 밤에 가능하다는 제한을 여러 후속 보고와 맞춘다.",
+    "blocked_overclaim_ko": "낮에는 의식이 없는데 낮 관람을 봤다는 모순을 만든다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000904",
+      "event_story:20000905",
+      "event_story:20000906"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000904:0017",
+      "ev:r25:20000904:0023",
+      "ev:r25:20000905:0038",
+      "ev:r25:20000906:0004"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:adon_no_body",
+    "key": "adon_no_body",
+    "source_locations": [
+      {
+        "novel_id": "20000904",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 40
+      }
+    ],
+    "assertions": {
+      "physical_body_present": false,
+      "visible_to_group": false,
+      "voice_audible": true,
+      "handsome": "self_claim"
+    },
+    "observation_ko": "모습은 보이지 않지만 소리는 들린다. 신체가 있다면 운다는 조건과 미남 자칭을 구분한다.",
+    "blocked_overclaim_ko": "몸이 보이거나 실제 울었거나 외모를 모두가 확인했다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000904",
+      "event_story:20000905"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000904:0036",
+      "ev:r25:20000905:0039",
+      "ev:r25:20000905:0040"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:ghost_cycle",
+    "key": "ghost_cycle",
+    "source_locations": [
+      {
+        "novel_id": "20000904",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 26
+      }
+    ],
+    "assertions": {
+      "cannot_leave_for_publicity": true,
+      "negative_emotion_cause": "inferred_explanation",
+      "revenge_specific_person": false
+    },
+    "observation_ko": "전시를 못 한 미련과 분노의 악순환이라는 설명이다.",
+    "blocked_overclaim_ko": "특정 개인을 노린 복수나 해변 밖 자유 이동을 사실로 만든다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000904"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000904:0020",
+      "ev:r25:20000904:0021",
+      "ev:r25:20000904:0026"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:research_causality",
+    "key": "research_causality",
+    "source_locations": [
+      {
+        "novel_id": "20000904",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 35
+      }
+    ],
+    "assertions": {
+      "public_praise": true,
+      "private_interest": "because_already_death_art",
+      "future_only_if": false
+    },
+    "observation_ko": "공개된 칭찬과 비공개 연구 이유를 구분하며 이미 변했기 때문이라는 인과를 보존한다.",
+    "blocked_overclaim_ko": "죽음의 예술이 되어야만 앞으로 관심을 갖겠다는 조건으로 바꾼다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000904"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000904:0033",
+      "ev:r25:20000904:0035"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:help_and_permission",
+    "key": "help_and_permission",
+    "source_locations": [
+      {
+        "novel_id": "20000904",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 12
+      }
+    ],
+    "assertions": {
+      "help_possible": "something_in_some_way",
+      "not_first_task_question": true,
+      "prior_group_permission": false,
+      "later_group_trust": true
+    },
+    "observation_ko": "무언가 도울 수 있다는 제안에서 나중에 일행의 협력을 얻는다.",
+    "blocked_overclaim_ko": "관장의 승낙이 이미 있었거나 무엇부터 할지 순서를 묻는 말이다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000904",
+      "event_story:20000905"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000904:0031",
+      "ev:r25:20000904:0048",
+      "ev:r25:20000905:0011",
+      "ev:r25:20000905:0012"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:fans_not_killing",
+    "key": "fans_not_killing",
+    "source_locations": [
+      {
+        "novel_id": "20000904",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20000904",
+        "raw_index": 42
+      }
+    ],
+    "assertions": {
+      "let_fans_die_allowed": false,
+      "intentional_fan_killing_admitted": false
+    },
+    "observation_ko": "팬이 위험해지는 것을 막고 싶다는 말이다. 직접 살해 의도·과거 피해를 추가하지 않는다.",
+    "blocked_overclaim_ko": "팬을 직접 죽이려다 중단했다는 자백이다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000904"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000904:0040",
+      "ev:r25:20000904:0042"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:venue_roles",
+    "key": "venue_roles",
+    "source_locations": [
+      {
+        "novel_id": "20000905",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 29
+      }
+    ],
+    "assertions": {
+      "venue_proposer": "entity:ef110f7dc44ba705",
+      "director_asks_then_helps": true,
+      "director_specialty": "exhibition",
+      "director_directs": [
+        "entity:17ce5a7d4219b9ef",
+        "entity:ef110f7dc44ba705"
+      ]
+    },
+    "observation_ko": "회장 준비를 먼저 제안한 쪽은 도나텔로, 관장은 되묻고 전시 전문가로 함께 준비한다.",
+    "blocked_overclaim_ko": "관장 혼자 회장 아이디어를 냈거나 두 예술가가 관장에게 지시했다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000905"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000905:0021",
+      "ev:r25:20000905:0022",
+      "ev:r25:20000905:0023",
+      "ev:r25:20000905:0025",
+      "ev:r25:20000905:0029"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:safe_exhibit_sequence",
+    "key": "safe_exhibit_sequence",
+    "source_locations": [
+      {
+        "novel_id": "20000905",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 55
+      }
+    ],
+    "assertions": {
+      "dangerous_destroyed": true,
+      "ordinary_preserved": true,
+      "visitors_after_stock": true,
+      "recurrences": "decrease_gradually"
+    },
+    "observation_ko": "위험 작품은 파괴하고 일반 작품만 보존하며 작품을 모은 뒤 관객을 부른다.",
+    "blocked_overclaim_ko": "위험 작품까지 보존하거나 재발이 즉시 사라진다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000905"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000905:0019",
+      "ev:r25:20000905:0020",
+      "ev:r25:20000905:0054",
+      "ev:r25:20000905:0055"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:voice_confirmation",
+    "key": "voice_confirmation",
+    "source_locations": [
+      {
+        "novel_id": "20000905",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 37
+      }
+    ],
+    "assertions": {
+      "director_dona_hear": true,
+      "visual_confirmation": false,
+      "prior_night_heard": false
+    },
+    "observation_ko": "현재 목소리를 관장과 도나텔로도 듣는다. 전날부터 들었다거나 모습을 확인했다는 뜻은 아니다.",
+    "blocked_overclaim_ko": "새 청취 확인을 시각적 신원 확인으로 바꾼다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000905"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000905:0034",
+      "ev:r25:20000905:0036",
+      "ev:r25:20000905:0037"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:group_creation",
+    "key": "group_creation",
+    "source_locations": [
+      {
+        "novel_id": "20000905",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 53
+      }
+    ],
+    "assertions": {
+      "creators": [
+        "entity:r25:adon",
+        "entity:17ce5a7d4219b9ef",
+        "entity:ef110f7dc44ba705"
+      ],
+      "director_is_one_of_three_creators": false,
+      "solo_to_group_exhibition": true
+    },
+    "observation_ko": "세 제작자는 아돈·렘브란트·도나텔로다. 관장은 전시 준비 역할이다.",
+    "blocked_overclaim_ko": "관장이 세 제작자 중 하나이고 아돈은 제작하지 않았다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000905"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000905:0044",
+      "ev:r25:20000905:0045",
+      "ev:r25:20000905:0047",
+      "ev:r25:20000905:0053"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:angle_support",
+    "key": "angle_support",
+    "source_locations": [
+      {
+        "novel_id": "20000905",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 61
+      }
+    ],
+    "assertions": {
+      "request_then_fulfilled": true,
+      "crowd_cause": "director_inference",
+      "live_remote_checked": false
+    },
+    "observation_ko": "앵글이 개방·홍보에 협조하며 사람 수 원인에 관한 관장의 추정은 별도로 남긴다.",
+    "blocked_overclaim_ko": "홍보 한 가지 원인만 독립 검증됐거나 앵글이 직접 해변에 왔다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000905"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000905:0056",
+      "ev:r25:20000905:0057",
+      "ev:r25:20000905:0061"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:rotation",
+    "key": "rotation",
+    "source_locations": [
+      {
+        "novel_id": "20000905",
+        "raw_index": 62
+      }
+    ],
+    "assertions": {
+      "alternating_pair": [
+        "entity:ef110f7dc44ba705",
+        "entity:17ce5a7d4219b9ef"
+      ],
+      "not_separate_rotations": true,
+      "guide_job_added": false
+    },
+    "observation_ko": "두 사람이 번갈아 돌아보고 있다. 따로 교대한 집단이나 관객 안내 임무를 새로 만들지 않는다.",
+    "blocked_overclaim_ko": "두 별개 교대 활동 또는 원문에 없는 안내 직무다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000905"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000905:0062"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:research_disappointment",
+    "key": "research_disappointment",
+    "source_locations": [
+      {
+        "novel_id": "20000905",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "20000905",
+        "raw_index": 68
+      }
+    ],
+    "assertions": {
+      "private_research_regret": true,
+      "director_fatigue": "question",
+      "public_explanation": "different_from_private"
+    },
+    "observation_ko": "원래 목적을 잊었다는 사적 아쉬움과 피로 질문·아돈에 관한 공개 설명을 분리한다.",
+    "blocked_overclaim_ko": "관장이 사적 아쉬움을 이미 알거나 렘브란트가 다 털어놓았다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000905"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000905:0064",
+      "ev:r25:20000905:0067",
+      "ev:r25:20000905:0068"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:different_people",
+    "key": "different_people",
+    "source_locations": [
+      {
+        "novel_id": "20000905",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 14
+      }
+    ],
+    "assertions": {
+      "usual_contrast": "between_two_people",
+      "people_type_metaphor": true,
+      "racial_difference_proven": false,
+      "official_romance": false
+    },
+    "observation_ko": "평소 서로 대조적인 둘의 성향과 함께하며 달라진 마음이다. 인종·연애 설정을 추가하지 않는다.",
+    "blocked_overclaim_ko": "각자가 평소와 반대인 상태이거나 실제 인종 차이·연애 확정이다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000905",
+      "event_story:20000906"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000905:0073",
+      "ev:r25:20000906:0013",
+      "ev:r25:20000906:0014"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:departure_evidence",
+    "key": "departure_evidence",
+    "source_locations": [
+      {
+        "novel_id": "20000906",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 27
+      }
+    ],
+    "assertions": {
+      "wind_observed": true,
+      "no_more_reply": true,
+      "peaceful_departure": "implied",
+      "reincarnation_verified": false,
+      "farewell_heard_by_adon": null
+    },
+    "observation_ko": "바람 뒤 응답이 사라져 떠남이 암시된다. 작별말이 실제 전달됐거나 환생이 확인된 것은 아니다.",
+    "blocked_overclaim_ko": "육체 승천·환생·다음 해 재회가 확인됐다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000906"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000906:0019",
+      "ev:r25:20000906:0021",
+      "ev:r25:20000906:0024",
+      "ev:r25:20000906:0027"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:research_persists",
+    "key": "research_persists",
+    "source_locations": [
+      {
+        "novel_id": "20000906",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 50
+      }
+    ],
+    "assertions": {
+      "closer_to_dona": true,
+      "research_interest_persists": true,
+      "mountain_art": "rumor",
+      "next_trip_executed": false
+    },
+    "observation_ko": "관계가 가까워져도 연구 관심은 남아 있다. 산의 죽음의 예술은 소문이며 여행 완료가 아니다.",
+    "blocked_overclaim_ko": "완전한 성격 개조 또는 다음 사건의 존재·해결이 확인됐다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000906"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000906:0033",
+      "ev:r25:20000906:0049",
+      "ev:r25:20000906:0050"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  },
+  {
+    "contract_id": "contract:r25:arte_left_behind",
+    "key": "arte_left_behind",
+    "source_locations": [
+      {
+        "novel_id": "20000906",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20000906",
+        "raw_index": 59
+      }
+    ],
+    "assertions": {
+      "returning_three": [
+        "entity:828bf1ba73e463a7",
+        "entity:17ce5a7d4219b9ef",
+        "entity:ef110f7dc44ba705"
+      ],
+      "arte_left_beach": false,
+      "director_remembers_exactly": false,
+      "arte_shout_heard_by_group": false,
+      "rescue_shown": false
+    },
+    "observation_ko": "세 사람 귀환과 아르테의 해변 단독 장면이 대비된다. 관장은 아직 무엇을 잊었는지 명시하지 않았다.",
+    "blocked_overclaim_ko": "아르테도 같이 돌아오거나 부름을 듣고 구조했다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20000906"
+    ],
+    "evidence_ids": [
+      "ev:r25:20000906:0044",
+      "ev:r25:20000906:0054",
+      "ev:r25:20000906:0057",
+      "ev:r25:20000906:0059"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R25_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R25",
+      "attempt": "RESTART_FROM_VERIFIED_R24"
+    }
+  }
+]

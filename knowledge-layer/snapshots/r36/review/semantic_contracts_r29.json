@@ -1,0 +1,3399 @@
+[
+  {
+    "contract_id": "contract:r29:threat_document_and_inquiry",
+    "key": "threat_document_and_inquiry",
+    "source_locations": [
+      {
+        "novel_id": "20003101",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20003101",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003101",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20003101",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20003101",
+        "raw_index": 26
+      }
+    ],
+    "assertions": {
+      "document_is_threat": true,
+      "charity_accusation_is_author_claim": true,
+      "vermeer_initially_knew_culprit": false,
+      "recruitment_information": "reported"
+    },
+    "observation_ko": "협박문은 휴업을 요구하며 자선사업을 가장한다고 비난한다. 페르메이르는 글만으로 범인을 알지 못해 문의했고 렘브란트는 모집 정보로 판단한다.",
+    "blocked_overclaim_ko": "협박자의 비난을 서술자의 확정 평가로 삼거나 페르메이르가 처음부터 범인을 알았다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003101"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003101:0013",
+      "ev:r29:20003101:0020",
+      "ev:r29:20003101:0022",
+      "ev:r29:20003101:0025",
+      "ev:r29:20003101:0026"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:employee_substitution_and_source_reversal",
+    "key": "employee_substitution_and_source_reversal",
+    "source_locations": [
+      {
+        "novel_id": "20003101",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20003101",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20003101",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "20003101",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 2
+      }
+    ],
+    "assertions": {
+      "operation_direction": "artists_as_employees",
+      "later_jp_literal_direction": "employees_as_artists",
+      "source_anomaly_ref": "R29-SRC001",
+      "silent_source_correction": false
+    },
+    "observation_ko": "작전은 예술가들이 종업원 역할을 맡는 것이다. 그러나 3106/2 원문은 종업원이 예술가로 분장했다고 역으로 쓰며 KO도 충실히 따른다.",
+    "blocked_overclaim_ko": "원문의 문맥 불일치를 한국어만의 오역으로 분류하거나 JP exact key를 고치지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003101",
+      "event_story:20003103",
+      "event_story:20003106"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003101:0045",
+      "ev:r29:20003101:0046",
+      "ev:r29:20003101:0061",
+      "ev:r29:20003101:0062",
+      "ev:r29:20003103:0002",
+      "ev:r29:20003103:0003",
+      "ev:r29:20003106:0002"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:event_roles_not_age_or_parentage",
+    "key": "event_roles_not_age_or_parentage",
+    "source_locations": [
+      {
+        "novel_id": "20003102",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 35
+      }
+    ],
+    "assertions": {
+      "small_build_proves_age": false,
+      "guardian_role_is_biological_parentage": false,
+      "role_context": "staged_event_security"
+    },
+    "observation_ko": "작은 이마쥬들은 어린 손님에 섞이는 역할이고 아미타·칼페디아는 보호자역이다. 신원·역할·실제 나이와 혈연을 분리한다.",
+    "blocked_overclaim_ko": "작은 체형에서 나이를 정하거나 보호자역을 실제 부모 관계로 승격하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003102",
+      "event_story:20003103"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003102:0004",
+      "ev:r29:20003102:0005",
+      "ev:r29:20003102:0006",
+      "ev:r29:20003102:0007",
+      "ev:r29:20003102:0008",
+      "ev:r29:20003103:0010",
+      "ev:r29:20003103:0011",
+      "ev:r29:20003103:0033",
+      "ev:r29:20003103:0034",
+      "ev:r29:20003103:0035"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:leak_goal_not_success",
+    "key": "leak_goal_not_success",
+    "source_locations": [
+      {
+        "novel_id": "20003101",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 35
+      }
+    ],
+    "assertions": {
+      "leak_occurred": true,
+      "deterrence_succeeded": false,
+      "private_motive": "preserve_collection_route",
+      "motive_publicly_disclosed": false
+    },
+    "observation_ko": "렘브란트는 거래 루트 보존을 위해 경비 정보를 흘렸지만 적은 습격 준비를 멈추지 않았다. 추가 누설 위험을 느낀 뒤 소탕을 받아들인다.",
+    "blocked_overclaim_ko": "단념을 유도한 시도를 성공한 중단으로 쓰거나 거래 의도가 동료에게 공유됐다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003101",
+      "event_story:20003102"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003101:0054",
+      "ev:r29:20003102:0029",
+      "ev:r29:20003102:0030",
+      "ev:r29:20003102:0031",
+      "ev:r29:20003102:0032",
+      "ev:r29:20003102:0033",
+      "ev:r29:20003102:0034",
+      "ev:r29:20003102:0035"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:information_role_copying",
+    "key": "information_role_copying",
+    "source_locations": [
+      {
+        "novel_id": "20003102",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20003102",
+        "raw_index": 51
+      }
+    ],
+    "assertions": {
+      "potential_imitator": "someone_else",
+      "exposure": "feared_not_actual",
+      "private_reason_heard": false
+    },
+    "observation_ko": "정보 수집을 따라 하면 비밀이 드러날지 모른다는 사적 걱정이 공적인 칭찬·조언 뒤에 있다.",
+    "blocked_overclaim_ko": "주어를 지워 렘브란트 자신이 새로 정보 수집을 맡는 상황으로 읽거나 실제 폭로 완료로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003102"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003102:0048",
+      "ev:r29:20003102:0049",
+      "ev:r29:20003102:0050",
+      "ev:r29:20003102:0051"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:darts_cover_story_vs_wall_hit",
+    "key": "darts_cover_story_vs_wall_hit",
+    "source_locations": [
+      {
+        "novel_id": "20003103",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 17
+      }
+    ],
+    "assertions": {
+      "apology": "cover_story",
+      "actual_action": "intentional_deterrence",
+      "impact_target": "wall",
+      "body_penetration": false
+    },
+    "observation_ko": "고흐는 실수인 듯 사과하지만 납치 시도자를 겨냥해 견제했고 다트는 눈앞의 벽에 꽂혔다.",
+    "blocked_overclaim_ko": "우발적 오발만으로 만들거나 남자의 신체를 꿰뚫었다고 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003103"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003103:0016",
+      "ev:r29:20003103:0017"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:card_act_and_heart_object",
+    "key": "card_act_and_heart_object",
+    "source_locations": [
+      {
+        "novel_id": "20003103",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 31
+      }
+    ],
+    "assertions": {
+      "telepathy_confirmed": false,
+      "falling_object": "heart_decoration",
+      "audience_perception": "part_of_show"
+    },
+    "observation_ko": "세잔은 투시하는 듯 연기하고 하트 모양 장식이 남자를 때린다. 관객은 쇼로 즐긴다.",
+    "blocked_overclaim_ko": "실제 투시 능력이나 카드가 무기로 변한 사실로 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003103"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003103:0025",
+      "ev:r29:20003103:0026",
+      "ev:r29:20003103:0027",
+      "ev:r29:20003103:0028",
+      "ev:r29:20003103:0029",
+      "ev:r29:20003103:0030",
+      "ev:r29:20003103:0031"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:lure_no_confirmed_deaths",
+    "key": "lure_no_confirmed_deaths",
+    "source_locations": [
+      {
+        "novel_id": "20003103",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 26
+      }
+    ],
+    "assertions": {
+      "lure_completed": true,
+      "death_from_lure_confirmed": false,
+      "guardian_role_only": true
+    },
+    "observation_ko": "아미타와 칼페디아는 다른 남자들을 뒤편으로 유인한다. 극락·일생 한 번이라는 대사 자체는 사망 확인이 아니다.",
+    "blocked_overclaim_ko": "위협적 유인 대사를 실제 살해나 극락행으로 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003103",
+      "event_story:20003106"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003103:0033",
+      "ev:r29:20003103:0034",
+      "ev:r29:20003103:0035",
+      "ev:r29:20003106:0026"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:kinoe_carte_defeat",
+    "key": "kinoe_carte_defeat",
+    "source_locations": [
+      {
+        "novel_id": "20003103",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 43
+      }
+    ],
+    "assertions": {
+      "winner": "きのえ",
+      "carte_also_lost": true,
+      "no_game_accepted": false
+    },
+    "observation_ko": "키노에는 남자와 캬르트 모두에게 이겼다. 캬르트의 노게임 제안은 승낙·부채 말소로 나타나지 않는다.",
+    "blocked_overclaim_ko": "캬르트가 무패이거나 노게임이 확정됐다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003103"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003103:0036",
+      "ev:r29:20003103:0037",
+      "ev:r29:20003103:0038",
+      "ev:r29:20003103:0039",
+      "ev:r29:20003103:0040",
+      "ev:r29:20003103:0041",
+      "ev:r29:20003103:0042",
+      "ev:r29:20003103:0043"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:escape_report_and_shadowing",
+    "key": "escape_report_and_shadowing",
+    "source_locations": [
+      {
+        "novel_id": "20003103",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20003103",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 21
+      }
+    ],
+    "assertions": {
+      "escape_allowed": true,
+      "shadowing_agent": "テュルプ",
+      "headquarters_discovered": true,
+      "curator_witnessed_hideout": false
+    },
+    "observation_ko": "눈치 빠른 남자의 도주는 보고를 하도록 일부러 놓아준 작전과 이어지며 튤립은 근거지까지 따라간다.",
+    "blocked_overclaim_ko": "렘브란트가 놓친 실수로 단정하거나 도주 직전 이미 보고가 끝났다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003103",
+      "event_story:20003104"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003103:0047",
+      "ev:r29:20003103:0048",
+      "ev:r29:20003103:0049",
+      "ev:r29:20003103:0050",
+      "ev:r29:20003103:0051",
+      "ev:r29:20003103:0052",
+      "ev:r29:20003103:0053",
+      "ev:r29:20003103:0054",
+      "ev:r29:20003103:0055",
+      "ev:r29:20003104:0019",
+      "ev:r29:20003104:0020",
+      "ev:r29:20003104:0021"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:noble_claim_then_killing_order",
+    "key": "noble_claim_then_killing_order",
+    "source_locations": [
+      {
+        "novel_id": "20003104",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 18
+      }
+    ],
+    "assertions": {
+      "initial_intent": "self_exculpatory_claim",
+      "later_killing_order": true,
+      "ordered_deaths_confirmed": false,
+      "mercenaries": "hired_not_bought_people"
+    },
+    "observation_ko": "귀족은 처음에는 평판만 떨어뜨리려 했다고 주장하지만 이후 죽음의 예술을 이용한 살해·파괴를 명령한다.",
+    "blocked_overclaim_ko": "처음의 해명으로 뒤의 명령을 지우거나 명령만으로 모든 살해가 완료됐다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003104"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003104:0007",
+      "ev:r29:20003104:0008",
+      "ev:r29:20003104:0009",
+      "ev:r29:20003104:0010",
+      "ev:r29:20003104:0011",
+      "ev:r29:20003104:0012",
+      "ev:r29:20003104:0013",
+      "ev:r29:20003104:0014",
+      "ev:r29:20003104:0015",
+      "ev:r29:20003104:0016",
+      "ev:r29:20003104:0017",
+      "ev:r29:20003104:0018"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:tulp_no_unilateral_attack",
+    "key": "tulp_no_unilateral_attack",
+    "source_locations": [
+      {
+        "novel_id": "20003104",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003104",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 34
+      }
+    ],
+    "assertions": {
+      "attack_in_hideout_executed": false,
+      "returns_to_report": true,
+      "decision_authority": "レンブラント"
+    },
+    "observation_ko": "튤립은 단독 처리가 가능하다고 생각하지만 렘브란트의 지시를 기다리려고 돌아가 보고한다.",
+    "blocked_overclaim_ko": "속생각의 살해 능력을 실제 단독 습격 결과로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003104",
+      "event_story:20003105"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003104:0019",
+      "ev:r29:20003104:0020",
+      "ev:r29:20003104:0021",
+      "ev:r29:20003105:0028",
+      "ev:r29:20003105:0029",
+      "ev:r29:20003105:0030",
+      "ev:r29:20003105:0031",
+      "ev:r29:20003105:0032",
+      "ev:r29:20003105:0033",
+      "ev:r29:20003105:0034"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:rem_jealousy_and_interrupted_reach",
+    "key": "rem_jealousy_and_interrupted_reach",
+    "source_locations": [
+      {
+        "novel_id": "20003105",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 23
+      }
+    ],
+    "assertions": {
+      "true_private_driver": "jealousy",
+      "curator_full_understanding": false,
+      "embrace_completed": false,
+      "interruption": true
+    },
+    "observation_ko": "렘브란트는 질투 때문에 대화를 요청하고 손을 뻗으려 하지만 응원이 끼어든다. 관장은 발언 의도를 충분히 이해하지 못한다.",
+    "blocked_overclaim_ko": "평온한 작전 회의 명분을 실제 속마음으로 삼거나 손 뻗기를 완료된 포옹으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003105"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003105:0002",
+      "ev:r29:20003105:0003",
+      "ev:r29:20003105:0004",
+      "ev:r29:20003105:0005",
+      "ev:r29:20003105:0006",
+      "ev:r29:20003105:0007",
+      "ev:r29:20003105:0008",
+      "ev:r29:20003105:0009",
+      "ev:r29:20003105:0010",
+      "ev:r29:20003105:0011",
+      "ev:r29:20003105:0012",
+      "ev:r29:20003105:0013",
+      "ev:r29:20003105:0014",
+      "ev:r29:20003105:0015",
+      "ev:r29:20003105:0016",
+      "ev:r29:20003105:0017",
+      "ev:r29:20003105:0018",
+      "ev:r29:20003105:0019",
+      "ev:r29:20003105:0020",
+      "ev:r29:20003105:0021",
+      "ev:r29:20003105:0022",
+      "ev:r29:20003105:0023"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:two_fronts_and_command",
+    "key": "two_fronts_and_command",
+    "source_locations": [
+      {
+        "novel_id": "20003105",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20003105",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 22
+      }
+    ],
+    "assertions": {
+      "field_commander": "館長",
+      "outside_relay": "ラファエロ",
+      "hideout_raid_with": "アングル",
+      "curator_present_at_both": false
+    },
+    "observation_ko": "관장은 현장 방어를 지휘하고 라파엘로는 앵그르 쪽에 상황을 전달해 본거지 단속에 함께한다.",
+    "blocked_overclaim_ko": "현장과 본거지의 행동을 관장 단독 수행·동시 직접 목격으로 합치지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003105",
+      "event_story:20003106"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003105:0033",
+      "ev:r29:20003105:0034",
+      "ev:r29:20003105:0035",
+      "ev:r29:20003105:0036",
+      "ev:r29:20003105:0037",
+      "ev:r29:20003105:0038",
+      "ev:r29:20003105:0039",
+      "ev:r29:20003105:0040",
+      "ev:r29:20003105:0041",
+      "ev:r29:20003105:0042",
+      "ev:r29:20003105:0043",
+      "ev:r29:20003105:0044",
+      "ev:r29:20003105:0045",
+      "ev:r29:20003105:0046",
+      "ev:r29:20003105:0047",
+      "ev:r29:20003105:0048",
+      "ev:r29:20003105:0049",
+      "ev:r29:20003105:0050",
+      "ev:r29:20003105:0051",
+      "ev:r29:20003106:0008",
+      "ev:r29:20003106:0009",
+      "ev:r29:20003106:0010",
+      "ev:r29:20003106:0011",
+      "ev:r29:20003106:0012",
+      "ev:r29:20003106:0013",
+      "ev:r29:20003106:0014",
+      "ev:r29:20003106:0015",
+      "ev:r29:20003106:0016",
+      "ev:r29:20003106:0017",
+      "ev:r29:20003106:0018",
+      "ev:r29:20003106:0019",
+      "ev:r29:20003106:0020",
+      "ev:r29:20003106:0021",
+      "ev:r29:20003106:0022"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:raid_results_not_all_underworld",
+    "key": "raid_results_not_all_underworld",
+    "source_locations": [
+      {
+        "novel_id": "20003106",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 34
+      }
+    ],
+    "assertions": {
+      "report_time": "several_days_later",
+      "entire_underworld_destroyed": false,
+      "retaliation": "possible",
+      "treatment_completed": false
+    },
+    "observation_ko": "며칠 뒤 결과 보고에서 체포·자금원 차단이 설명되나 모든 암시장 소멸이나 잠재 고객의 후속 보복은 확인되지 않는다. 치료는 필요한 과제다.",
+    "blocked_overclaim_ko": "사후 설명을 범죄망 전체 소탕·모든 치료 완료·확정 보복으로 확대하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003106"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003106:0023",
+      "ev:r29:20003106:0024",
+      "ev:r29:20003106:0025",
+      "ev:r29:20003106:0026",
+      "ev:r29:20003106:0027",
+      "ev:r29:20003106:0028",
+      "ev:r29:20003106:0029",
+      "ev:r29:20003106:0030",
+      "ev:r29:20003106:0031",
+      "ev:r29:20003106:0032",
+      "ev:r29:20003106:0033",
+      "ev:r29:20003106:0034"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:bunny_choices_and_unheard_exit",
+    "key": "bunny_choices_and_unheard_exit",
+    "source_locations": [
+      {
+        "novel_id": "20003106",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "20003106",
+        "raw_index": 68
+      }
+    ],
+    "assertions": {
+      "curator_forced_costume": false,
+      "rem_private_motive_distinct": true,
+      "final_calls_heard": true,
+      "departure_despite_calls": true
+    },
+    "observation_ko": "예술가들은 의상을 스스로 선택했다고 말한다. 렘브란트의 공개 이유와 뒤처지고 싶지 않은 속마음을 나누며 관장은 마지막 부름을 듣고도 못 들은 척 떠난다.",
+    "blocked_overclaim_ko": "관장의 강제 의상 명령·완전한 침묵 동의 또는 마지막 부름을 실제로 못 들은 것으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003106"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003106:0035",
+      "ev:r29:20003106:0036",
+      "ev:r29:20003106:0037",
+      "ev:r29:20003106:0038",
+      "ev:r29:20003106:0039",
+      "ev:r29:20003106:0040",
+      "ev:r29:20003106:0041",
+      "ev:r29:20003106:0042",
+      "ev:r29:20003106:0043",
+      "ev:r29:20003106:0044",
+      "ev:r29:20003106:0045",
+      "ev:r29:20003106:0046",
+      "ev:r29:20003106:0047",
+      "ev:r29:20003106:0048",
+      "ev:r29:20003106:0049",
+      "ev:r29:20003106:0050",
+      "ev:r29:20003106:0051",
+      "ev:r29:20003106:0052",
+      "ev:r29:20003106:0053",
+      "ev:r29:20003106:0054",
+      "ev:r29:20003106:0055",
+      "ev:r29:20003106:0056",
+      "ev:r29:20003106:0057",
+      "ev:r29:20003106:0058",
+      "ev:r29:20003106:0059",
+      "ev:r29:20003106:0060",
+      "ev:r29:20003106:0061",
+      "ev:r29:20003106:0062",
+      "ev:r29:20003106:0063",
+      "ev:r29:20003106:0064",
+      "ev:r29:20003106:0065",
+      "ev:r29:20003106:0066",
+      "ev:r29:20003106:0067",
+      "ev:r29:20003106:0068"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:errand_not_planned_date",
+    "key": "errand_not_planned_date",
+    "source_locations": [
+      {
+        "novel_id": "20003301",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 16
+      }
+    ],
+    "assertions": {
+      "initial_task": "requested_shopping",
+      "planned_romantic_date_confirmed": false,
+      "pre_festival_paper_display": true
+    },
+    "observation_ko": "관장은 산소비노에게 부탁받은 장보기에 나왔고 렘브란트가 함께해 달라고 했다. 축제장 종이 배치는 개최 전부터 있었다.",
+    "blocked_overclaim_ko": "동행을 처음부터 합의한 연애 데이트로 만들거나 오늘 이미 축제 본행사가 열렸다고 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003301"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003301:0001",
+      "ev:r29:20003301:0002",
+      "ev:r29:20003301:0003",
+      "ev:r29:20003301:0004",
+      "ev:r29:20003301:0005",
+      "ev:r29:20003301:0006",
+      "ev:r29:20003301:0007",
+      "ev:r29:20003301:0008",
+      "ev:r29:20003301:0009",
+      "ev:r29:20003301:0010",
+      "ev:r29:20003301:0011",
+      "ev:r29:20003301:0012",
+      "ev:r29:20003301:0013",
+      "ev:r29:20003301:0014",
+      "ev:r29:20003301:0015",
+      "ev:r29:20003301:0016"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:wish_misinterpretation",
+    "key": "wish_misinterpretation",
+    "source_locations": [
+      {
+        "novel_id": "20003301",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20003301",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 6
+      }
+    ],
+    "assertions": {
+      "rem_private_wish": "collection",
+      "curator_inferred_wish": "curse_removal",
+      "curator_inference_correct": false,
+      "private_wish_disclosed": false
+    },
+    "observation_ko": "렘브란트가 숨기는 수집 소원과 관장이 짐작하는 저주 해제 소원은 다르다. 관장이 응원해도 정확한 내용을 안 것은 아니다.",
+    "blocked_overclaim_ko": "관장의 오해를 렘브란트가 실제로 말한 소원이나 합의된 이해로 등록하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003301",
+      "event_story:20003302"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003301:0038",
+      "ev:r29:20003301:0050",
+      "ev:r29:20003301:0051",
+      "ev:r29:20003301:0052",
+      "ev:r29:20003301:0053",
+      "ev:r29:20003301:0054",
+      "ev:r29:20003301:0055",
+      "ev:r29:20003301:0056",
+      "ev:r29:20003301:0057",
+      "ev:r29:20003301:0058",
+      "ev:r29:20003301:0059",
+      "ev:r29:20003302:0006"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:weak_art_and_no_hidden_controller_proof",
+    "key": "weak_art_and_no_hidden_controller_proof",
+    "source_locations": [
+      {
+        "novel_id": "20003302",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 33
+      }
+    ],
+    "assertions": {
+      "enemy_strength": "weak",
+      "initial_stealth_suspicion_confirmed": false,
+      "hidden_controller_found": false,
+      "collection_motive_not_altruism": true
+    },
+    "observation_ko": "정체 모를 강한 기척을 의심하다가 실제로는 약한 죽음의 예술을 격파한다. 수집 관점과 관장의 사명감 해석도 구분한다.",
+    "blocked_overclaim_ko": "처음 의심을 실제 은신 능력·강한 적·확인된 배후 조종자로 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003302"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003302:0013",
+      "ev:r29:20003302:0014",
+      "ev:r29:20003302:0015",
+      "ev:r29:20003302:0016",
+      "ev:r29:20003302:0017",
+      "ev:r29:20003302:0018",
+      "ev:r29:20003302:0019",
+      "ev:r29:20003302:0020",
+      "ev:r29:20003302:0021",
+      "ev:r29:20003302:0022",
+      "ev:r29:20003302:0023",
+      "ev:r29:20003302:0024",
+      "ev:r29:20003302:0025",
+      "ev:r29:20003302:0026",
+      "ev:r29:20003302:0027",
+      "ev:r29:20003302:0028",
+      "ev:r29:20003302:0029",
+      "ev:r29:20003302:0030",
+      "ev:r29:20003302:0031",
+      "ev:r29:20003302:0032",
+      "ev:r29:20003302:0033"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:patrol_invitation_and_timing",
+    "key": "patrol_invitation_and_timing",
+    "source_locations": [
+      {
+        "novel_id": "20003302",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20003302",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 33
+      }
+    ],
+    "assertions": {
+      "patrol_at_invitation_completed": false,
+      "visit_time": "daytime_after_noon",
+      "festival_outfit_meeting": "later_evening",
+      "same_scene_all_day": false
+    },
+    "observation_ko": "귀갓길의 축제 동행·경비 계획 뒤 이른 오후 세 사람이 관장을 찾아오고 저녁 만남을 준비한다.",
+    "blocked_overclaim_ko": "계획 수락을 경비 완료로 바꾸거나 이른 오후 방문을 곧바로 밤 축제 장면으로 붙이지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003302",
+      "event_story:20003303"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003302:0034",
+      "ev:r29:20003302:0035",
+      "ev:r29:20003302:0036",
+      "ev:r29:20003302:0037",
+      "ev:r29:20003302:0038",
+      "ev:r29:20003302:0039",
+      "ev:r29:20003302:0040",
+      "ev:r29:20003302:0041",
+      "ev:r29:20003302:0042",
+      "ev:r29:20003302:0043",
+      "ev:r29:20003302:0044",
+      "ev:r29:20003302:0045",
+      "ev:r29:20003302:0046",
+      "ev:r29:20003302:0047",
+      "ev:r29:20003302:0048",
+      "ev:r29:20003302:0049",
+      "ev:r29:20003302:0050",
+      "ev:r29:20003302:0051",
+      "ev:r29:20003302:0052",
+      "ev:r29:20003302:0053",
+      "ev:r29:20003302:0054",
+      "ev:r29:20003302:0055",
+      "ev:r29:20003302:0056",
+      "ev:r29:20003303:0001",
+      "ev:r29:20003303:0002",
+      "ev:r29:20003303:0003",
+      "ev:r29:20003303:0004",
+      "ev:r29:20003303:0005",
+      "ev:r29:20003303:0006",
+      "ev:r29:20003303:0007",
+      "ev:r29:20003303:0008",
+      "ev:r29:20003303:0009",
+      "ev:r29:20003303:0010",
+      "ev:r29:20003303:0011",
+      "ev:r29:20003303:0012",
+      "ev:r29:20003303:0013",
+      "ev:r29:20003303:0014",
+      "ev:r29:20003303:0015",
+      "ev:r29:20003303:0016",
+      "ev:r29:20003303:0017",
+      "ev:r29:20003303:0018",
+      "ev:r29:20003303:0019",
+      "ev:r29:20003303:0020",
+      "ev:r29:20003303:0021",
+      "ev:r29:20003303:0022",
+      "ev:r29:20003303:0023",
+      "ev:r29:20003303:0024",
+      "ev:r29:20003303:0025",
+      "ev:r29:20003303:0026",
+      "ev:r29:20003303:0027",
+      "ev:r29:20003303:0028",
+      "ev:r29:20003303:0029",
+      "ev:r29:20003303:0030",
+      "ev:r29:20003303:0031",
+      "ev:r29:20003303:0032",
+      "ev:r29:20003303:0033"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:yukata_choice_and_murmur",
+    "key": "yukata_choice_and_murmur",
+    "source_locations": [
+      {
+        "novel_id": "20003303",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20003303",
+        "raw_index": 56
+      }
+    ],
+    "assertions": {
+      "row47_exact_hearing": null,
+      "row54_director_heard": true,
+      "outfit_coercion_by_director": false,
+      "preferred_notice_is_private_or_low_voice": true
+    },
+    "observation_ko": "렘브란트는 주저하다 두 사람의 설득을 받아 의상을 고르고, raw47은 정확한 청취 불명이나 raw54는 관장이 인식한 감사다.",
+    "blocked_overclaim_ko": "작은 목소리 두 곳을 전부 못 들은 독백 또는 모두 정확히 들은 고백으로 뭉뚱그리지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003303"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003303:0014",
+      "ev:r29:20003303:0015",
+      "ev:r29:20003303:0016",
+      "ev:r29:20003303:0017",
+      "ev:r29:20003303:0018",
+      "ev:r29:20003303:0019",
+      "ev:r29:20003303:0020",
+      "ev:r29:20003303:0021",
+      "ev:r29:20003303:0022",
+      "ev:r29:20003303:0023",
+      "ev:r29:20003303:0024",
+      "ev:r29:20003303:0025",
+      "ev:r29:20003303:0026",
+      "ev:r29:20003303:0027",
+      "ev:r29:20003303:0028",
+      "ev:r29:20003303:0029",
+      "ev:r29:20003303:0030",
+      "ev:r29:20003303:0031",
+      "ev:r29:20003303:0032",
+      "ev:r29:20003303:0045",
+      "ev:r29:20003303:0046",
+      "ev:r29:20003303:0047",
+      "ev:r29:20003303:0048",
+      "ev:r29:20003303:0049",
+      "ev:r29:20003303:0050",
+      "ev:r29:20003303:0051",
+      "ev:r29:20003303:0052",
+      "ev:r29:20003303:0053",
+      "ev:r29:20003303:0054",
+      "ev:r29:20003303:0055",
+      "ev:r29:20003303:0056"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:shared_food_not_age_inference",
+    "key": "shared_food_not_age_inference",
+    "source_locations": [
+      {
+        "novel_id": "20003304",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 24
+      }
+    ],
+    "assertions": {
+      "age_from_build": false,
+      "growth_description": "self_report",
+      "food_scene": "shared_festival_activity"
+    },
+    "observation_ko": "노점 음식과 동료 관계의 즐거움, 렘브란트가 이미 성장기를 지났다는 자기 설명을 구분한다.",
+    "blocked_overclaim_ko": "체격 비교만으로 어린이 신분을 부여하거나 친구 관계를 유아 취급의 객관 사실로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003304"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003304:0001",
+      "ev:r29:20003304:0002",
+      "ev:r29:20003304:0003",
+      "ev:r29:20003304:0004",
+      "ev:r29:20003304:0005",
+      "ev:r29:20003304:0006",
+      "ev:r29:20003304:0007",
+      "ev:r29:20003304:0008",
+      "ev:r29:20003304:0009",
+      "ev:r29:20003304:0010",
+      "ev:r29:20003304:0011",
+      "ev:r29:20003304:0012",
+      "ev:r29:20003304:0013",
+      "ev:r29:20003304:0014",
+      "ev:r29:20003304:0015",
+      "ev:r29:20003304:0016",
+      "ev:r29:20003304:0017",
+      "ev:r29:20003304:0018",
+      "ev:r29:20003304:0019",
+      "ev:r29:20003304:0020",
+      "ev:r29:20003304:0021",
+      "ev:r29:20003304:0022",
+      "ev:r29:20003304:0023",
+      "ev:r29:20003304:0024"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:shooting_and_single_prize",
+    "key": "shooting_and_single_prize",
+    "source_locations": [
+      {
+        "novel_id": "20003304",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 49
+      }
+    ],
+    "assertions": {
+      "ammo": "cork",
+      "sets": 5,
+      "prizes_taken": 1,
+      "recipient": "館長",
+      "other_two_present_throughout": false
+    },
+    "observation_ko": "렘브란트는 5세트의 코르크 탄으로 경품들을 맞히고 한 개만 받아 관장에게 준다. 세잔·도나텔로는 뒤에 돌아온다.",
+    "blocked_overclaim_ko": "떨어뜨린 경품 전부 반출·실탄 사격·일행 전원의 전 과정 목격으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003304"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003304:0025",
+      "ev:r29:20003304:0026",
+      "ev:r29:20003304:0027",
+      "ev:r29:20003304:0028",
+      "ev:r29:20003304:0029",
+      "ev:r29:20003304:0030",
+      "ev:r29:20003304:0031",
+      "ev:r29:20003304:0032",
+      "ev:r29:20003304:0033",
+      "ev:r29:20003304:0034",
+      "ev:r29:20003304:0035",
+      "ev:r29:20003304:0036",
+      "ev:r29:20003304:0037",
+      "ev:r29:20003304:0038",
+      "ev:r29:20003304:0039",
+      "ev:r29:20003304:0040",
+      "ev:r29:20003304:0041",
+      "ev:r29:20003304:0042",
+      "ev:r29:20003304:0043",
+      "ev:r29:20003304:0044",
+      "ev:r29:20003304:0045",
+      "ev:r29:20003304:0046",
+      "ev:r29:20003304:0047",
+      "ev:r29:20003304:0048",
+      "ev:r29:20003304:0049"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:legend_and_waiting_opinions",
+    "key": "legend_and_waiting_opinions",
+    "source_locations": [
+      {
+        "novel_id": "20003304",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "20003304",
+        "raw_index": 70
+      }
+    ],
+    "assertions": {
+      "legend_is_current_event_fact": false,
+      "waiting_opinions": "hypothetical",
+      "actual_separation_confirmed": false
+    },
+    "observation_ko": "칠석의 강 건너 연인은 전승 이야기로 제시되고 기다림에 대한 각자의 견해는 조건적이다.",
+    "blocked_overclaim_ko": "전승을 이번 사건의 실제 인물관계·미래 이별·기다림 일정으로 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003304"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003304:0057",
+      "ev:r29:20003304:0058",
+      "ev:r29:20003304:0059",
+      "ev:r29:20003304:0060",
+      "ev:r29:20003304:0061",
+      "ev:r29:20003304:0062",
+      "ev:r29:20003304:0063",
+      "ev:r29:20003304:0064",
+      "ev:r29:20003304:0065",
+      "ev:r29:20003304:0066",
+      "ev:r29:20003304:0067",
+      "ev:r29:20003304:0068",
+      "ev:r29:20003304:0069",
+      "ev:r29:20003304:0070"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:two_opinions_not_complaint_endorsement",
+    "key": "two_opinions_not_complaint_endorsement",
+    "source_locations": [
+      {
+        "novel_id": "20003305",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 28
+      }
+    ],
+    "assertions": {
+      "two_opinions": [
+        "ドナテッロ",
+        "セザンヌ"
+      ],
+      "angry_demands_endorsed": false,
+      "loss_is_self_report": true,
+      "backfire_fear_followed_by_escalation": true
+    },
+    "observation_ko": "남자의 도박 손실 주장은 자기 보고이며 두 의견은 도나텔로·세잔의 충고를 가리킨다. 렘브란트의 작은 말은 역효과 우려다.",
+    "blocked_overclaim_ko": "どちら를 불만 남자와 예술가의 양쪽 주장으로 바꿔 억지 요구까지 정론이라고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003305"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003305:0018",
+      "ev:r29:20003305:0019",
+      "ev:r29:20003305:0020",
+      "ev:r29:20003305:0021",
+      "ev:r29:20003305:0022",
+      "ev:r29:20003305:0023",
+      "ev:r29:20003305:0024",
+      "ev:r29:20003305:0025",
+      "ev:r29:20003305:0026",
+      "ev:r29:20003305:0027",
+      "ev:r29:20003305:0028"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:kick_attempt_and_transformation",
+    "key": "kick_attempt_and_transformation",
+    "source_locations": [
+      {
+        "novel_id": "20003305",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 38
+      }
+    ],
+    "assertions": {
+      "kick_completed": false,
+      "intentional_summoning_confirmed": false,
+      "evacuation_agent": "館長",
+      "ignorance": "appearance_and_later_self_report"
+    },
+    "observation_ko": "남자가 조릿대를 차려는 순간 종이가 변하며 그는 모르는 듯 놀란다. 관장은 대피를 유도한다.",
+    "blocked_overclaim_ko": "의도적 주문·완료된 발차기·사람을 노린 공격 의도를 새로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003305"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003305:0029",
+      "ev:r29:20003305:0030",
+      "ev:r29:20003305:0031",
+      "ev:r29:20003305:0032",
+      "ev:r29:20003305:0033",
+      "ev:r29:20003305:0034",
+      "ev:r29:20003305:0035",
+      "ev:r29:20003305:0036",
+      "ev:r29:20003305:0037",
+      "ev:r29:20003305:0038"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:insight_before_explanation",
+    "key": "insight_before_explanation",
+    "source_locations": [
+      {
+        "novel_id": "20003305",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20003305",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 9
+      }
+    ],
+    "assertions": {
+      "details_heard_before_battle": false,
+      "three_artists_fight": true,
+      "explanation_after_defeat": true
+    },
+    "observation_ko": "렘브란트의 알아챘다는 중얼거림 다음에 전투를 마치고 상세한 설명을 듣는다.",
+    "blocked_overclaim_ko": "관장이 중얼거림만으로 모든 원인을 이미 알았다고 하거나 설명이 전투 전에 끝났다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003305",
+      "event_story:20003306"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003305:0039",
+      "ev:r29:20003305:0040",
+      "ev:r29:20003305:0041",
+      "ev:r29:20003305:0042",
+      "ev:r29:20003305:0043",
+      "ev:r29:20003305:0044",
+      "ev:r29:20003306:0004",
+      "ev:r29:20003306:0005",
+      "ev:r29:20003306:0006",
+      "ev:r29:20003306:0007",
+      "ev:r29:20003306:0008",
+      "ev:r29:20003306:0009"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:art_conditions_not_sufficiency",
+    "key": "art_conditions_not_sufficiency",
+    "source_locations": [
+      {
+        "novel_id": "20003306",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 19
+      }
+    ],
+    "assertions": {
+      "all_satisfying_two_factors_transform": false,
+      "unknown_conditions": true,
+      "explanation_speaker": "レンブラント",
+      "global_rule_approved": false
+    },
+    "observation_ko": "렘브란트는 물건을 만드는 힘과 증오의 관련성을 설명하되 둘이 갖춰져도 모두 죽음의 예술이 되는 것은 아니며 미지 조건이 많다고 한정한다.",
+    "blocked_overclaim_ko": "관련 요인을 필요충분 공식이나 확정 세계 전체 생성 규칙으로 승격하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003306"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003306:0009",
+      "ev:r29:20003306:0011",
+      "ev:r29:20003306:0012",
+      "ev:r29:20003306:0013",
+      "ev:r29:20003306:0014",
+      "ev:r29:20003306:0015",
+      "ev:r29:20003306:0016",
+      "ev:r29:20003306:0017",
+      "ev:r29:20003306:0018",
+      "ev:r29:20003306:0019"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:earlier_fragment_and_source_typo",
+    "key": "earlier_fragment_and_source_typo",
+    "source_locations": [
+      {
+        "novel_id": "20003306",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 19
+      }
+    ],
+    "assertions": {
+      "earlier_weak_art": "interpreted_fragment",
+      "source_typo_diagnostic_ref": "R29-SRC002",
+      "ko_individual_form_preserved": true
+    },
+    "observation_ko": "이전 약한 개체와 이번 집단 변화를 전체·일부와 감정 강도의 관계로 해석한다. 固体의 원문 표기는 보존한다.",
+    "blocked_overclaim_ko": "한국어 개체를 고체로 역교정하거나 원문 글자를 조용히 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003306"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003306:0017",
+      "ev:r29:20003306:0018",
+      "ev:r29:20003306:0019"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:remorse_not_completed_reform",
+    "key": "remorse_not_completed_reform",
+    "source_locations": [
+      {
+        "novel_id": "20003306",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 31
+      }
+    ],
+    "assertions": {
+      "harm_intent_denied": "self_report",
+      "remorse": "observed_and_evaluated",
+      "new_job_obtained": false,
+      "new_relationship_obtained": false
+    },
+    "observation_ko": "남자들은 의도하지 않은 결과에 충격받고 충고를 들으며 앞으로의 태도를 약속한다.",
+    "blocked_overclaim_ko": "새 일자리·새 연애 성취나 일생의 성격 개선을 이미 완료한 결과로 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003306"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003306:0023",
+      "ev:r29:20003306:0024",
+      "ev:r29:20003306:0025",
+      "ev:r29:20003306:0026",
+      "ev:r29:20003306:0027",
+      "ev:r29:20003306:0028",
+      "ev:r29:20003306:0029",
+      "ev:r29:20003306:0030",
+      "ev:r29:20003306:0031"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:questioning_not_verdict",
+    "key": "questioning_not_verdict",
+    "source_locations": [
+      {
+        "novel_id": "20003306",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 32
+      }
+    ],
+    "assertions": {
+      "not_imprisoned": "curator_prediction",
+      "final_legal_disposition": null,
+      "questioning": "expected",
+      "actual_sentence_stated": false
+    },
+    "observation_ko": "시경이 이야기를 들을 것이라는 예상과 감옥행은 아닐 것이라는 관장의 추정이다.",
+    "blocked_overclaim_ko": "수감 여부 판결·확정 면책·현장 체포 후 석방 결과로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003306"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003306:0026",
+      "ev:r29:20003306:0031",
+      "ev:r29:20003306:0032"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:heard_murmur_and_poison_metaphor",
+    "key": "heard_murmur_and_poison_metaphor",
+    "source_locations": [
+      {
+        "novel_id": "20003306",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 42
+      }
+    ],
+    "assertions": {
+      "director_heard": true,
+      "poison": "metaphor",
+      "complete_worldview_reversal": false,
+      "tentative_response": true
+    },
+    "observation_ko": "관장은 곁에서 한 렘브란트의 소원·독 비유를 듣는다. 다른 두 사람의 반론에 렘브란트가 조심스럽게 반응한다.",
+    "blocked_overclaim_ko": "작은 말을 모두 사적 독백으로 바꾸거나 비유를 물리적 독·정해진 마법·완전한 가치관 전환으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003306"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003306:0034",
+      "ev:r29:20003306:0035",
+      "ev:r29:20003306:0036",
+      "ev:r29:20003306:0037",
+      "ev:r29:20003306:0038",
+      "ev:r29:20003306:0039",
+      "ev:r29:20003306:0040",
+      "ev:r29:20003306:0041",
+      "ev:r29:20003306:0042"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:papers_diminish_not_break",
+    "key": "papers_diminish_not_break",
+    "source_locations": [
+      {
+        "novel_id": "20003306",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 44
+      }
+    ],
+    "assertions": {
+      "quantity_reduced": true,
+      "all_fallen_papers_broken": false,
+      "existing_proposal": "R3-W051"
+    },
+    "observation_ko": "변하거나 소동에 떨어진 종이 때문에 수가 줄어든다. 파손을 추가한 기존 번역은 R3-W051로 재확인한다.",
+    "blocked_overclaim_ko": "줄어든 결과를 종이가 부서져 망가진 물리적 결과로 대체하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003306"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003306:0043",
+      "ev:r29:20003306:0044"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  },
+  {
+    "contract_id": "contract:r29:final_wishes_not_fulfilled",
+    "key": "final_wishes_not_fulfilled",
+    "source_locations": [
+      {
+        "novel_id": "20003306",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20003306",
+        "raw_index": 53
+      }
+    ],
+    "assertions": {
+      "explicit_final_written_content_speaker": "館長",
+      "rem_final_written_wish": null,
+      "other_two_final_wishes": null,
+      "wish_fulfillment_confirmed": false
+    },
+    "observation_ko": "네 사람이 종이에 마주하며 실제 내용이 명시된 것은 관장의 모두와 함께 지내고 싶다는 소원이다.",
+    "blocked_overclaim_ko": "렘브란트의 최종 작성 내용을 저주 해제나 수집으로 자동 채우거나 소원이 이미 성취됐다고 마감하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20003306"
+    ],
+    "evidence_ids": [
+      "ev:r29:20003306:0045",
+      "ev:r29:20003306:0046",
+      "ev:r29:20003306:0047",
+      "ev:r29:20003306:0048",
+      "ev:r29:20003306:0049",
+      "ev:r29:20003306:0050",
+      "ev:r29:20003306:0051",
+      "ev:r29:20003306:0052",
+      "ev:r29:20003306:0053"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R29_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R29"
+    }
+  }
+]

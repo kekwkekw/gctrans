@@ -1,0 +1,3501 @@
+[
+  {
+    "contract_id": "contract:r36:spring_fishing_training",
+    "key": "spring_fishing_training",
+    "observation_ko": "봄 대회에 앞서 부그로가 사람 드문 샘에서 연습한다. 항구 마을 출신·낚시 취미가 서술과 본인 설명으로 확인된다.",
+    "blocked_overclaim_ko": "정확한 출신 지명·나이·경력 연수·달력 연도를 추가하지 않는다. 낚시→비치 발리볼의 선후는 별도 명시적 회고 근거에 한해 연결한다.",
+    "source_locations": [
+      {
+        "novel_id": "22002801",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 8
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002801:0001",
+      "ev:r36:22002801:0002",
+      "ev:r36:22002801:0004",
+      "ev:r36:22002801:0005",
+      "ev:r36:22002801:0006",
+      "ev:r36:22002801:0034",
+      "ev:r36:22002801:0036",
+      "ev:r36:22002801:0038",
+      "ev:r36:22002802:0008"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ブグロー",
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:unknown_label_first_introduction",
+    "key": "unknown_label_first_introduction",
+    "observation_ko": "샘에서 물건을 낚은 뒤 미상 외침을 듣고 르누아르와 정식으로 인사한다. 서로 작품은 이미 알고 있었다.",
+    "blocked_overclaim_ko": "？？？ 라벨을 소급 교체하지 않는다. 작품 인지를 이전의 직접 친분으로 바꾸지 않고 두 전체 이름을 새 entity로 분리하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002801",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 33
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002801:0019",
+      "ev:r36:22002801:0021",
+      "ev:r36:22002801:0022",
+      "ev:r36:22002801:0026",
+      "ev:r36:22002801:0027",
+      "ev:r36:22002801:0028",
+      "ev:r36:22002801:0029",
+      "ev:r36:22002801:0030",
+      "ev:r36:22002801:0031",
+      "ev:r36:22002801:0033"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ブグロー",
+    "object_source_names": [
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:fantasies_not_literal_ecology",
+    "key": "fantasies_not_literal_ecology",
+    "observation_ko": "부그로는 물건을 두고 즉흥 상상과 우화 농담을 했다가 실제 경위를 듣는다.",
+    "blocked_overclaim_ko": "농담 속 생물·여신·풍습·소유 관계를 세계관 사실로 만들지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002801",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "22002801",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 8
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002801:0014",
+      "ev:r36:22002801:0015",
+      "ev:r36:22002801:0016",
+      "ev:r36:22002801:0017",
+      "ev:r36:22002802:0005",
+      "ev:r36:22002802:0006",
+      "ev:r36:22002802:0007",
+      "ev:r36:22002802:0008"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": null,
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:accident_testimony_then_witness",
+    "key": "accident_testimony_then_witness",
+    "observation_ko": "르누아르는 샘 사고와 평소 불운을 설명한다. 부그로는 처음 의심하지만 직접 장어 사고를 보고 믿게 된다.",
+    "blocked_overclaim_ko": "처음부터 원인을 알았다고 소급하거나 본인 경험과 인물의 확신을 전역적인 저주 작동 원리로 승인하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002802",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 41
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002802:0010",
+      "ev:r36:22002802:0012",
+      "ev:r36:22002802:0013",
+      "ev:r36:22002802:0014",
+      "ev:r36:22002802:0015",
+      "ev:r36:22002802:0016",
+      "ev:r36:22002802:0018",
+      "ev:r36:22002802:0019",
+      "ev:r36:22002802:0020",
+      "ev:r36:22002802:0021",
+      "ev:r36:22002802:0035",
+      "ev:r36:22002802:0036",
+      "ev:r36:22002802:0040",
+      "ev:r36:22002802:0041"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": [
+      "ブグロー"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:joint_eel_lift_and_rescue",
+    "key": "joint_eel_lift_and_rescue",
+    "observation_ko": "둘이 낚싯대를 당겨 큰 장어를 올리고 이후 사고가 생긴다. 도망치던 르누아르가 나무에 부딪혀 기절하고 부그로가 장어를 꺼낸다.",
+    "blocked_overclaim_ko": "한 사람 단독 포획·실제 몸 전체의 물 재입수·제안한 행동의 모두 실현을 추가하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002802",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22002802",
+        "raw_index": 52
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002802:0029",
+      "ev:r36:22002802:0030",
+      "ev:r36:22002802:0032",
+      "ev:r36:22002802:0034",
+      "ev:r36:22002802:0035",
+      "ev:r36:22002802:0036",
+      "ev:r36:22002802:0042",
+      "ev:r36:22002802:0043",
+      "ev:r36:22002802:0044",
+      "ev:r36:22002802:0045",
+      "ev:r36:22002802:0046",
+      "ev:r36:22002802:0049",
+      "ev:r36:22002802:0050",
+      "ev:r36:22002802:0051",
+      "ev:r36:22002802:0052"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ブグロー",
+    "object_source_names": [
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:negotiation_flashback_cover_story",
+    "key": "negotiation_flashback_cover_story",
+    "observation_ko": "미술관에서 참가를 권하는 도중 이전 둘의 협력 교섭이 회상된다. 현재 르누아르는 비밀을 숨기려 빵 이야기로 둘러대고 부그로가 맞장구친다.",
+    "blocked_overclaim_ko": "회상을 두 번째 교섭으로 중복 계산하지 않는다. 관장이 회상·독백을 들었다거나 빵 구조가 실제 사건이라고 하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002803",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 27
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002803:0001",
+      "ev:r36:22002803:0002",
+      "ev:r36:22002803:0013",
+      "ev:r36:22002803:0014",
+      "ev:r36:22002803:0015",
+      "ev:r36:22002803:0018",
+      "ev:r36:22002803:0019",
+      "ev:r36:22002803:0020",
+      "ev:r36:22002803:0021",
+      "ev:r36:22002803:0022",
+      "ev:r36:22002803:0023",
+      "ev:r36:22002803:0024",
+      "ev:r36:22002803:0025",
+      "ev:r36:22002803:0026",
+      "ev:r36:22002803:0027"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": [
+      "ブグロー",
+      "館長"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:fishing_player_support_roles",
+    "key": "fishing_player_support_roles",
+    "observation_ko": "부그로와 관장은 낚싯대를 잡고 르누아르는 가까이에서 지원·응원한다. 본인이 직접 낚시하면 도구 사고가 날 수 있다는 설명이다.",
+    "blocked_overclaim_ko": "세 사람이 대회에 간다는 표현을 세 낚시 선수 등록으로 바꾸거나 지원 수락을 위험·행동 전반의 포괄 동의로 확대하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002803",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 33
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002803:0007",
+      "ev:r36:22002803:0008",
+      "ev:r36:22002803:0009",
+      "ev:r36:22002803:0010",
+      "ev:r36:22002803:0012",
+      "ev:r36:22002803:0017",
+      "ev:r36:22002803:0020",
+      "ev:r36:22002803:0032",
+      "ev:r36:22002803:0034",
+      "ev:r36:22002803:0035",
+      "ev:r36:22002803:0038",
+      "ev:r36:22002803:0043",
+      "ev:r36:22002803:0044",
+      "ev:r36:22002804:0008",
+      "ev:r36:22002804:0011",
+      "ev:r36:22002804:0033"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": [
+      "ブグロー",
+      "館長"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:fishing_rules_prize_prospect",
+    "key": "fishing_rules_prize_prospect",
+    "observation_ko": "대회는 제한 시간 안 가장 큰 물고기를 잡은 사람이 우승하고 경품은 생선을 1년간 정기 배달받는 것이다.",
+    "blocked_overclaim_ko": "마릿수 우승·평생 배달·당일 생선 전량 지급·정확한 수량이나 주기를 추가하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002803",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 39
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002803:0006",
+      "ev:r36:22002803:0029",
+      "ev:r36:22002803:0030",
+      "ev:r36:22002804:0011",
+      "ev:r36:22002806:0025",
+      "ev:r36:22002806:0026",
+      "ev:r36:22002806:0033",
+      "ev:r36:22002806:0037",
+      "ev:r36:22002806:0038",
+      "ev:r36:22002806:0039"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": null,
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:director_inexperienced_protection",
+    "key": "director_inexperienced_protection",
+    "observation_ko": "관장은 초보임을 말하고 기본 지도를 받지만 연습이 부족하다. 참여 동기에는 르누아르 안전도 포함된다.",
+    "blocked_overclaim_ko": "완전 미교육·우승 불가능·안전 보장으로 바꾸지 않는다. 결정적 순간에 강하다는 동료 평가는 객관적 무패 능력이 아니다.",
+    "source_locations": [
+      {
+        "novel_id": "22002803",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22002803",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 3
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002803:0032",
+      "ev:r36:22002803:0035",
+      "ev:r36:22002803:0037",
+      "ev:r36:22002803:0038",
+      "ev:r36:22002803:0039",
+      "ev:r36:22002803:0040",
+      "ev:r36:22002803:0041",
+      "ev:r36:22002803:0042",
+      "ev:r36:22002804:0001",
+      "ev:r36:22002804:0002",
+      "ev:r36:22002804:0003"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "館長",
+    "object_source_names": [
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:poor_catch_hypotheses",
+    "key": "poor_catch_hypotheses",
+    "observation_ko": "대회 초반 해당 자리와 주변에서 입질이 없자 장소 문제·불운 역작용을 의심한다. 르누아르는 혼자 확인하러 나선다.",
+    "blocked_overclaim_ko": "가설을 확정 원인으로 만들지 않는다. 다른 낚시 지점까지 전부 불어였다고 일반화하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002804",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 7
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002804:0015",
+      "ev:r36:22002804:0016",
+      "ev:r36:22002804:0017",
+      "ev:r36:22002804:0020",
+      "ev:r36:22002804:0021",
+      "ev:r36:22002804:0022",
+      "ev:r36:22002804:0023",
+      "ev:r36:22002804:0024",
+      "ev:r36:22002804:0026",
+      "ev:r36:22002804:0027",
+      "ev:r36:22002804:0028",
+      "ev:r36:22002805:0002",
+      "ev:r36:22002805:0006",
+      "ev:r36:22002805:0007"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:underwater_private_discovery_to_report",
+    "key": "underwater_private_discovery_to_report",
+    "observation_ko": "르누아르가 물속을 살펴 움직이는 적을 보고 관장 일행에게 돌아와 알린다. 두 사람은 떨어져 보다가 보고를 확인한다.",
+    "blocked_overclaim_ko": "물속 독백·직접 발견을 관장·부그로의 동시 경험으로 만들지 않고 관장さんたち의 복수 대상을 보존한다.",
+    "source_locations": [
+      {
+        "novel_id": "22002804",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 45
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002804:0030",
+      "ev:r36:22002804:0031",
+      "ev:r36:22002804:0032",
+      "ev:r36:22002804:0033",
+      "ev:r36:22002804:0034",
+      "ev:r36:22002804:0035",
+      "ev:r36:22002804:0036",
+      "ev:r36:22002804:0037",
+      "ev:r36:22002804:0038",
+      "ev:r36:22002804:0039",
+      "ev:r36:22002804:0040",
+      "ev:r36:22002804:0041",
+      "ev:r36:22002804:0042",
+      "ev:r36:22002804:0043",
+      "ev:r36:22002804:0044",
+      "ev:r36:22002804:0045"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": [
+      "館長",
+      "ブグロー"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:pause_not_cancel_and_contact_roles",
+    "key": "pause_not_cancel_and_contact_roles",
+    "observation_ko": "관장은 중지를 고려하나 부그로는 일시중단 후 처치를 제안한다. 관장이 주최자 연락을 맡고 나중에 작전도 따로 전한다.",
+    "blocked_overclaim_ko": "최종 취소·처치 전 재개·관장 직접 합동 마법 사용으로 바꾸지 않는다. 두 연락을 오류로 중복 제거하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002804",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22002804",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 14
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002804:0047",
+      "ev:r36:22002804:0048",
+      "ev:r36:22002804:0049",
+      "ev:r36:22002804:0050",
+      "ev:r36:22002804:0051",
+      "ev:r36:22002804:0052",
+      "ev:r36:22002805:0001",
+      "ev:r36:22002805:0002",
+      "ev:r36:22002805:0003",
+      "ev:r36:22002805:0004",
+      "ev:r36:22002805:0010",
+      "ev:r36:22002805:0011",
+      "ev:r36:22002805:0012",
+      "ev:r36:22002805:0013",
+      "ev:r36:22002805:0014"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "館長",
+    "object_source_names": [
+      "ブグロー",
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:sea_construct_identification",
+    "key": "sea_construct_identification",
+    "observation_ko": "수중 적은 모래와 해초로 이루어진 움직이는 상이라 한눈에 알아보기 어렵다. 이후 해초 공격이 확인된다.",
+    "blocked_overclaim_ko": "평범한 해양 생물·자연물·불특정 형상으로만 바꾸지 않는다. 제작자와 기원은 밝혀지지 않았다.",
+    "source_locations": [
+      {
+        "novel_id": "22002805",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 8
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002805:0019",
+      "ev:r36:22002805:0020",
+      "ev:r36:22002806:0007",
+      "ev:r36:22002806:0008"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": null,
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:water_magic_plan_limited_environment",
+    "key": "water_magic_plan_limited_environment",
+    "observation_ko": "물고기가 보이지 않는 상황을 근거로 물속에 마법을 쏴 적을 육지로 올리는 작전을 채택한다. 잠수 중 마법은 어려울 듯하다는 의견이다.",
+    "blocked_overclaim_ko": "수중 마법 절대 불가·모든 해양 생물 부재·일반 낚시 방식으로 승인하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002805",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 27
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002805:0005",
+      "ev:r36:22002805:0006",
+      "ev:r36:22002805:0007",
+      "ev:r36:22002805:0008",
+      "ev:r36:22002805:0009",
+      "ev:r36:22002805:0010",
+      "ev:r36:22002805:0015",
+      "ev:r36:22002805:0016",
+      "ev:r36:22002805:0023",
+      "ev:r36:22002805:0024",
+      "ev:r36:22002805:0025",
+      "ev:r36:22002805:0027"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": null,
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:public_warning_confirmed_evacuation",
+    "key": "public_warning_confirmed_evacuation",
+    "observation_ko": "두 사람이 참가자에게 접근 금지를 알리고 관장은 이후 주위를 보고 대피 완료를 확인한 뒤 전력 공격을 허용한다.",
+    "blocked_overclaim_ko": "경고만으로 대피 완료를 선취하지 않는다. 독백과 달리 공개 안내 수신은 실제 후속 반응 범위에서 확인한다.",
+    "source_locations": [
+      {
+        "novel_id": "22002805",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 16
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002805:0014",
+      "ev:r36:22002805:0015",
+      "ev:r36:22002805:0016",
+      "ev:r36:22002805:0017",
+      "ev:r36:22002805:0018",
+      "ev:r36:22002805:0042",
+      "ev:r36:22002805:0043",
+      "ev:r36:22002806:0014",
+      "ev:r36:22002806:0015",
+      "ev:r36:22002806:0016"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": null,
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:combined_attack_sequence",
+    "key": "combined_attack_sequence",
+    "observation_ko": "두 예술가가 카운트다운을 이어 함께 공격해 적을 해변으로 올린다. 르누아르가 관장을 보호하고 위축시킨 틈에 부그로가 가세한다.",
+    "blocked_overclaim_ko": "합성 화자 둘을 하나의 새 entity로 만들지 않는다. 물밖으로 꺼낸 직후는 처치 완료가 아니며 적 피해도 거의 없다는 추정이다.",
+    "source_locations": [
+      {
+        "novel_id": "22002805",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22002805",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 2
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002805:0021",
+      "ev:r36:22002805:0022",
+      "ev:r36:22002805:0023",
+      "ev:r36:22002805:0024",
+      "ev:r36:22002805:0025",
+      "ev:r36:22002805:0027",
+      "ev:r36:22002805:0028",
+      "ev:r36:22002805:0029",
+      "ev:r36:22002805:0031",
+      "ev:r36:22002805:0034",
+      "ev:r36:22002805:0037",
+      "ev:r36:22002805:0038",
+      "ev:r36:22002805:0040",
+      "ev:r36:22002805:0041",
+      "ev:r36:22002805:0044",
+      "ev:r36:22002805:0045",
+      "ev:r36:22002806:0001",
+      "ev:r36:22002806:0002"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ブグロー",
+    "object_source_names": [
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:seaweed_harm_help_and_release",
+    "key": "seaweed_harm_help_and_release",
+    "observation_ko": "르누아르가 해초 공격을 받아 묶였고 부그로는 자유롭게 움직였다. 관장과 부그로가 풀어준 뒤 고마워한다.",
+    "blocked_overclaim_ko": "긍정적 평가를 무피해·고의적인 피해 수용·이후 모든 행동에 대한 포괄 동의로 바꾸지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002806",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 12
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002806:0004",
+      "ev:r36:22002806:0005",
+      "ev:r36:22002806:0006",
+      "ev:r36:22002806:0007",
+      "ev:r36:22002806:0008",
+      "ev:r36:22002806:0009",
+      "ev:r36:22002806:0010",
+      "ev:r36:22002806:0011",
+      "ev:r36:22002806:0012"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": [
+      "ブグロー",
+      "館長"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:catch_after_removal_local_pattern",
+    "key": "catch_after_removal_local_pattern",
+    "observation_ko": "적 제거·대회 재개 후 입질이 늘고 큰 물고기가 르누아르 쪽으로 튄다. 그녀는 익숙하게 용기에 넣는다.",
+    "blocked_overclaim_ko": "해당 장면의 반드시라는 반복을 불운의 보편적 예외 없는 법칙으로 만들지 않는다. 배려뿐 아니라 사실이라는 포괄을 배려 부정으로 바꾸지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002806",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 24
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002806:0017",
+      "ev:r36:22002806:0018",
+      "ev:r36:22002806:0019",
+      "ev:r36:22002806:0020",
+      "ev:r36:22002806:0021",
+      "ev:r36:22002806:0022",
+      "ev:r36:22002806:0023",
+      "ev:r36:22002806:0024"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:director_winner_shared_credit",
+    "key": "director_winner_shared_credit",
+    "observation_ko": "거대 참돔을 잡은 관장이 수상자이고 동료들과 공로를 나눈다. 부그로는 낚시꾼으로 아쉽지만 관장 우승에 기뻐한다.",
+    "blocked_overclaim_ko": "우승자 명의·공동 기여·개인 감정의 층위를 섞지 않는다. 관장이 속으로 설명한 불운 이야기를 청중 공개 정보로 만들지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002806",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 45
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002806:0029",
+      "ev:r36:22002806:0030",
+      "ev:r36:22002806:0031",
+      "ev:r36:22002806:0032",
+      "ev:r36:22002806:0033",
+      "ev:r36:22002806:0034",
+      "ev:r36:22002806:0035",
+      "ev:r36:22002806:0036",
+      "ev:r36:22002806:0037",
+      "ev:r36:22002806:0039",
+      "ev:r36:22002806:0040",
+      "ev:r36:22002806:0041",
+      "ev:r36:22002806:0042",
+      "ev:r36:22002806:0043",
+      "ev:r36:22002806:0044",
+      "ev:r36:22002806:0045"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "館長",
+    "object_source_names": [
+      "ブグロー",
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:motive_revealed_not_realized",
+    "key": "motive_revealed_not_realized",
+    "observation_ko": "귀로에서 부그로의 개인적 그림 구상이 밝혀져 두 동료가 반응한다. 르누아르는 취향 차이를 들어 여러 차례 반박한다.",
+    "blocked_overclaim_ko": "작품 구상·자기해명·다른 이의 반론을 구별한다. 실제 모델 섭외·제작·전시 승인·동일 취향 합의로 만들지 않고 구체 묘사를 확장하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002806",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 69
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002806:0047",
+      "ev:r36:22002806:0049",
+      "ev:r36:22002806:0050",
+      "ev:r36:22002806:0051",
+      "ev:r36:22002806:0052",
+      "ev:r36:22002806:0055",
+      "ev:r36:22002806:0056",
+      "ev:r36:22002806:0057",
+      "ev:r36:22002806:0058",
+      "ev:r36:22002806:0060",
+      "ev:r36:22002806:0061",
+      "ev:r36:22002806:0063",
+      "ev:r36:22002806:0064",
+      "ev:r36:22002806:0065",
+      "ev:r36:22002806:0066",
+      "ev:r36:22002806:0067",
+      "ev:r36:22002806:0069"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ブグロー",
+    "object_source_names": [
+      "ルノワール",
+      "館長"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:unsaid_objection_and_future_fish_meal",
+    "key": "unsaid_objection_and_future_fish_meal",
+    "observation_ko": "관장은 전시 반대 의견을 말하려다 삼키고, 나중에 동료들과 보통 그릇에 생선을 먹자고 혼자 정한다. 배송은 아직 기다리는 중이다.",
+    "blocked_overclaim_ko": "말하려던 내용을 실제 발화·관객 승인·이미 배송된 식사로 바꾸지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002806",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 72
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002806:0059",
+      "ev:r36:22002806:0060",
+      "ev:r36:22002806:0061",
+      "ev:r36:22002806:0070",
+      "ev:r36:22002806:0071",
+      "ev:r36:22002806:0072"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "館長",
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:poster_prize_partner_rules",
+    "key": "poster_prize_partner_rules",
+    "observation_ko": "의회 의뢰의 광고에서 두 사람 한 조 토너먼트와 해변 가게 전 메뉴 식사권을 보고 아르테가 참가를 결심한다.",
+    "blocked_overclaim_ko": "광고의 대회 명칭·회차 제목·이벤트 표제를 구별한다. 상품 관심은 참가 동기이며 초반에 상품을 이미 받았다고 하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003301",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 25
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003301:0002",
+      "ev:r36:22003301:0009",
+      "ev:r36:22003301:0012",
+      "ev:r36:22003301:0015",
+      "ev:r36:22003301:0016",
+      "ev:r36:22003301:0017",
+      "ev:r36:22003301:0018",
+      "ev:r36:22003301:0020",
+      "ev:r36:22003306:0022",
+      "ev:r36:22003306:0024",
+      "ev:r36:22003306:0025"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "アルテ",
+    "object_source_names": [
+      "館長"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:partner_refusals_not_incompetence",
+    "key": "partner_refusals_not_incompetence",
+    "observation_ko": "모리조는 앵글의 스태프 의뢰, 라파엘로는 팬 제빵 수업, 도나텔로는 로리에와 농장 도움, 마네는 그림 마감, 부그로는 그림 교실 때문에 동행을 거절한다.",
+    "blocked_overclaim_ko": "선약 때문에 못 가는 것을 실력 부족·거부감으로 바꾸지 않는다. 누구에게나 물은 것은 아니라는 56행을 지우거나 농장·수업을 다른 이벤트와 임의 병합하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003301",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 56
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003301:0028",
+      "ev:r36:22003301:0030",
+      "ev:r36:22003301:0031",
+      "ev:r36:22003301:0039",
+      "ev:r36:22003301:0040",
+      "ev:r36:22003301:0041",
+      "ev:r36:22003301:0048",
+      "ev:r36:22003301:0050",
+      "ev:r36:22003301:0051",
+      "ev:r36:22003301:0055",
+      "ev:r36:22003301:0056"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "アルテ",
+    "object_source_names": [
+      "モリゾ",
+      "ラファエロ",
+      "ドナテッロ",
+      "マネ",
+      "ブグロー"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:manet_listening_request",
+    "key": "manet_listening_request",
+    "observation_ko": "마네는 그림에 대한 비평가 이야기를 아르테가 들어 주길 요청한다.",
+    "blocked_overclaim_ko": "이야기를 듣고 싶다는 요청을 자신이 질문하고 싶다는 말로 뒤집지 않는다. 중단된 비평 내용을 창작하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003301",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 42
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003301:0041",
+      "ev:r36:22003301:0042"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "マネ",
+    "object_source_names": [
+      "アルテ"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:explicit_fishing_before_volleyball",
+    "key": "explicit_fishing_before_volleyball",
+    "observation_ko": "부그로가 르누아르의 낚시 대회 기여를 과거 사례로 들어 아르테에게 추천한다. 낚시에서는 관장이 우승했고 르누아르는 기여자였다.",
+    "blocked_overclaim_ko": "두 이벤트의 선후는 22003301/62의 명시적 회고에 한해 연결한다. ID만으로 연표를 만들거나 연도·정확한 날짜·간격을 추정하지 않는다. 르누아르 단독 낚시 우승으로 바꾸지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22002806",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22002806",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 64
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22002806:0029",
+      "ev:r36:22002806:0033",
+      "ev:r36:22002806:0034",
+      "ev:r36:22002806:0035",
+      "ev:r36:22002806:0036",
+      "ev:r36:22002806:0037",
+      "ev:r36:22002806:0039",
+      "ev:r36:22003301:0057",
+      "ev:r36:22003301:0059",
+      "ev:r36:22003301:0060",
+      "ev:r36:22003301:0061",
+      "ev:r36:22003301:0062",
+      "ev:r36:22003301:0063",
+      "ev:r36:22003301:0064"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ブグロー",
+    "object_source_names": [
+      "ルノワール",
+      "アルテ",
+      "館長"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:unlucky_constitution_continues_no_cure",
+    "key": "unlucky_constitution_continues_no_cure",
+    "observation_ko": "아르테는 체질에 의한 해프닝을 기대해 르누아르를 초대하고 르누아르는 누군가 자신을 필요로 한다는 점에 기뻐한다. 이후에도 불운은 반복된다.",
+    "blocked_overclaim_ko": "이전 낚시 승리 때문에 불행 체질이 치료됐다거나 원하는 상황마다 마음대로 발동·제어한다고 해석하지 않는다. 무례할 수 있는 단정의 주체를 르누아르로 바꾸지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003302",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 29
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003302:0005",
+      "ev:r36:22003302:0006",
+      "ev:r36:22003302:0007",
+      "ev:r36:22003302:0008",
+      "ev:r36:22003302:0009",
+      "ev:r36:22003302:0010",
+      "ev:r36:22003302:0013",
+      "ev:r36:22003302:0014",
+      "ev:r36:22003304:0005",
+      "ev:r36:22003304:0007",
+      "ev:r36:22003304:0010",
+      "ev:r36:22003304:0013",
+      "ev:r36:22003305:0021",
+      "ev:r36:22003305:0027",
+      "ev:r36:22003305:0028",
+      "ev:r36:22003305:0029"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": [
+      "アルテ"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:both_beginners_not_genius_claim_fact",
+    "key": "both_beginners_not_genius_claim_fact",
+    "observation_ko": "첫 랠리에서 아르테가 조금 더 움직이지만 두 사람 모두 초보다. 르누아르는 운동을 하지 않는 평소 습관을 말한다.",
+    "blocked_overclaim_ko": "아르테의 자기 장담을 검증된 천재적 경기력으로 승인하지 않는다. 운동을 하지 않는 것을 생애 한 번도 한 적 없다는 범위로 확대하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003302",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 33
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003302:0007",
+      "ev:r36:22003302:0010",
+      "ev:r36:22003302:0011",
+      "ev:r36:22003302:0023",
+      "ev:r36:22003302:0025",
+      "ev:r36:22003302:0030",
+      "ev:r36:22003302:0031",
+      "ev:r36:22003302:0032",
+      "ev:r36:22003302:0033"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "アルテ",
+    "object_source_names": [
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:mutual_private_consideration_before_coaching",
+    "key": "mutual_private_consideration_before_coaching",
+    "observation_ko": "르누아르는 방해가 될까 사퇴하려 하고 아르테는 자신이 초대한 상대를 버리면 의리가 없다고 속으로 생각한다. 두 사람은 각자 상대를 배려한다.",
+    "blocked_overclaim_ko": "서로의 속마음을 직접 들은 것으로 만들지 않는다. 사퇴 선언이 행정적 기권 완료나 영구 관계 단절이 아니다.",
+    "source_locations": [
+      {
+        "novel_id": "22003302",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 52
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003302:0043",
+      "ev:r36:22003302:0044",
+      "ev:r36:22003302:0045",
+      "ev:r36:22003302:0046",
+      "ev:r36:22003302:0048",
+      "ev:r36:22003302:0049",
+      "ev:r36:22003302:0050",
+      "ev:r36:22003302:0051",
+      "ev:r36:22003302:0052"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "アルテ",
+    "object_source_names": [
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:morisot_coach_staff_not_player",
+    "key": "morisot_coach_staff_not_player",
+    "observation_ko": "모리조는 선수로 짝을 이루는 대신 안뜰 상황을 잠시 지켜본 뒤 코치가 되고 당일에는 서비스·줄 정리와 관전 해설을 맡는다.",
+    "blocked_overclaim_ko": "스태프·코치·해설 역할을 선수 등록으로 합치지 않는다. 안뜰에서 들린 음성은 사적 독백까지 청취했다는 근거가 아니다. 현재 계획·경기 중 잠시 관전·마감 뒤 합류를 구분한다.",
+    "source_locations": [
+      {
+        "novel_id": "22003301",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22003301",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 41
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003301:0030",
+      "ev:r36:22003301:0031",
+      "ev:r36:22003302:0053",
+      "ev:r36:22003302:0054",
+      "ev:r36:22003302:0058",
+      "ev:r36:22003302:0064",
+      "ev:r36:22003303:0041",
+      "ev:r36:22003303:0044",
+      "ev:r36:22003303:0057",
+      "ev:r36:22003303:0058",
+      "ev:r36:22003304:0019",
+      "ev:r36:22003304:0020",
+      "ev:r36:22003305:0049",
+      "ev:r36:22003306:0039",
+      "ev:r36:22003306:0040",
+      "ev:r36:22003306:0041"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "モリゾ",
+    "object_source_names": [
+      "アルテ",
+      "ルノワール",
+      "館長"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:training_commands_montage_achievement",
+    "key": "training_commands_montage_achievement",
+    "observation_ko": "모리조는 100바퀴와 어택 100연발을 지시하고 대회까지 거의 매일 특훈한다. 두 사람은 힘든 훈련을 견딘 뒤 경기력이 나아졌다고 평가한다.",
+    "blocked_overclaim_ko": "모든 지시 숫자를 정확히 완주한 통계로 만들지 않는다. 모리조가 둘처럼 보인다는 피로 섞인 지각은 분신 능력이 아니다. 강훈련을 두 사람 모두 좋아했다고 바꾸지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003302",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 43
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003302:0067",
+      "ev:r36:22003302:0070",
+      "ev:r36:22003302:0071",
+      "ev:r36:22003303:0001",
+      "ev:r36:22003303:0002",
+      "ev:r36:22003303:0004",
+      "ev:r36:22003303:0005",
+      "ev:r36:22003303:0006",
+      "ev:r36:22003303:0007",
+      "ev:r36:22003303:0008",
+      "ev:r36:22003303:0010",
+      "ev:r36:22003303:0011",
+      "ev:r36:22003303:0036",
+      "ev:r36:22003306:0042",
+      "ev:r36:22003306:0043"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "モリゾ",
+    "object_source_names": [
+      "アルテ",
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:director_hears_corridor_and_excuse",
+    "key": "director_hears_corridor_and_excuse",
+    "observation_ko": "관장이 안뜰 소리를 듣고 혼잣말하자 아르테가 반응한다. 모리조가 찾아오자 아르테는 관장과 볼일이 있다고 둘러대지만 관장은 부정한다.",
+    "blocked_overclaim_ko": "관장이 훈련 전부를 본 것으로 소급하지 않는다. 80행의 모리조→관장 절별 청자를 구분하고 볼일이라는 변명을 확정 업무 약속으로 등록하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003302",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 74
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 76
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 77
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 78
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 81
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 82
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 83
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 84
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003302:0073",
+      "ev:r36:22003302:0074",
+      "ev:r36:22003302:0075",
+      "ev:r36:22003302:0076",
+      "ev:r36:22003302:0077",
+      "ev:r36:22003302:0078",
+      "ev:r36:22003302:0079",
+      "ev:r36:22003302:0080",
+      "ev:r36:22003302:0081",
+      "ev:r36:22003302:0082",
+      "ev:r36:22003302:0083",
+      "ev:r36:22003302:0084"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "館長",
+    "object_source_names": [
+      "アルテ",
+      "モリゾ"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:attendance_and_prior_swimsuit_event_limited",
+    "key": "attendance_and_prior_swimsuit_event_limited",
+    "observation_ko": "관장이 응원 약속을 지켜 해변에 왔다. 르누아르는 이 수영복을 관장 앞에서 입는 것은 처음일지도 모르고 이전 콘테스트에 늦어 못 나갔다고 말한다.",
+    "blocked_overclaim_ko": "이 수영복의 첫 공개 가능성과 수영복 일반의 최초 착용을 혼동하지 않는다. 이전 콘테스트를 근거 없이 특정 novelId·연도와 연결하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003302",
+        "raw_index": 85
+      },
+      {
+        "novel_id": "22003302",
+        "raw_index": 86
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 28
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003302:0085",
+      "ev:r36:22003302:0086",
+      "ev:r36:22003303:0012",
+      "ev:r36:22003303:0013",
+      "ev:r36:22003303:0018",
+      "ev:r36:22003303:0021",
+      "ev:r36:22003303:0023",
+      "ev:r36:22003303:0024",
+      "ev:r36:22003303:0028"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": [
+      "館長"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:pair_trust_reassessment_explicit",
+    "key": "pair_trust_reassessment_explicit",
+    "observation_ko": "아르테는 르누아르를 얕봤다고 인정하고 근성을 재평가한다. 르누아르는 함께 노력한 덕분이라고 답하며 서로 신뢰가 깊어진다.",
+    "blocked_overclaim_ko": "교류 이전부터 동일하게 평가했다고 소급하지 않는다. 동료 신뢰를 명시적 연애 합의·영구 말투 변화로 승인하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003303",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 38
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003303:0036",
+      "ev:r36:22003303:0037",
+      "ev:r36:22003303:0038",
+      "ev:r36:22003303:0039",
+      "ev:r36:22003304:0054",
+      "ev:r36:22003304:0061",
+      "ev:r36:22003304:0062",
+      "ev:r36:22003304:0063",
+      "ev:r36:22003305:0039",
+      "ev:r36:22003305:0040",
+      "ev:r36:22003306:0030",
+      "ev:r36:22003306:0031",
+      "ev:r36:22003306:0032",
+      "ev:r36:22003306:0033",
+      "ev:r36:22003306:0038"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "アルテ",
+    "object_source_names": [
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:first_match_pass_attack_strategy",
+    "key": "first_match_pass_attack_strategy",
+    "observation_ko": "첫 경기는 초보 상대에게 스트레이트승이며 르누아르는 패스, 아르테는 이를 받아 공격하는 작전을 활용한다.",
+    "blocked_overclaim_ko": "첫 승리를 대회 우승으로 바꾸지 않는다. 기본 역할은 작전이지 르누아르의 영구 공격 불가 조건이 아니다. 두 번째 터치 공격과 최종 역할 전환을 배제하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003303",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "22003303",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 9
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003303:0049",
+      "ev:r36:22003303:0050",
+      "ev:r36:22003303:0053",
+      "ev:r36:22003303:0055",
+      "ev:r36:22003303:0056",
+      "ev:r36:22003303:0057",
+      "ev:r36:22003303:0059",
+      "ev:r36:22003305:0045",
+      "ev:r36:22003305:0046",
+      "ev:r36:22003305:0058",
+      "ev:r36:22003305:0059",
+      "ev:r36:22003305:0060",
+      "ev:r36:22003306:0001",
+      "ev:r36:22003306:0002",
+      "ev:r36:22003306:0008",
+      "ev:r36:22003306:0009"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "アルテ",
+    "object_source_names": [
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:semifinal_accident_recap_not_new_events",
+    "key": "semifinal_accident_recap_not_new_events",
+    "observation_ko": "두 번째 경기는 준결승이다. 먼저 현재 위기를 보여준 뒤 강풍·해조류·넘어짐으로 모래 구덩이에 갇힌 원인을 되짚는다.",
+    "blocked_overclaim_ko": "회상과 현재를 같은 사고의 두 번 발생으로 합산하지 않는다. 함정은 의도치 않게 생겼고 다른 이벤트 죽음의 예술 공격으로 연결할 근거가 없다.",
+    "source_locations": [
+      {
+        "novel_id": "22003304",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 13
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003304:0001",
+      "ev:r36:22003304:0002",
+      "ev:r36:22003304:0003",
+      "ev:r36:22003304:0004",
+      "ev:r36:22003304:0005",
+      "ev:r36:22003304:0007",
+      "ev:r36:22003304:0009",
+      "ev:r36:22003304:0010",
+      "ev:r36:22003304:0011",
+      "ev:r36:22003304:0012",
+      "ev:r36:22003304:0013"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": null,
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:semifinal_signal_tactic_and_source_timing_guard",
+    "key": "semifinal_signal_tactic_and_source_timing_guard",
+    "observation_ko": "모리조의 조언 뒤 아르테가 손신호를 보내자 르누아르가 이해하고 고개를 끄덕인다. 멀리 서 타구를 유도한 뒤 달려 받아 토스로 연결해 반격한다.",
+    "blocked_overclaim_ko": "관장의 초기 포기 의심을 실제 포기로 확정하지 않는다. 모리조의 속마음과 나중 해설은 구분한다. 31행 레시브 동시와 37행 상대 서브 동시의 충돌은 원문 이상이며 JP exact를 고치지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003304",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 43
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003304:0020",
+      "ev:r36:22003304:0021",
+      "ev:r36:22003304:0022",
+      "ev:r36:22003304:0023",
+      "ev:r36:22003304:0024",
+      "ev:r36:22003304:0025",
+      "ev:r36:22003304:0026",
+      "ev:r36:22003304:0027",
+      "ev:r36:22003304:0028",
+      "ev:r36:22003304:0031",
+      "ev:r36:22003304:0034",
+      "ev:r36:22003304:0036",
+      "ev:r36:22003304:0037",
+      "ev:r36:22003304:0038",
+      "ev:r36:22003304:0039",
+      "ev:r36:22003304:0040",
+      "ev:r36:22003304:0043"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "アルテ",
+    "object_source_names": [
+      "ルノワール",
+      "モリゾ",
+      "館長"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:injury_recognition_care_no_healed_claim",
+    "key": "injury_recognition_care_no_healed_claim",
+    "observation_ko": "르누아르가 먼저 아르테의 부상을 알아차리고 아르테는 발목을 삐었다고 인정한다. 르누아르가 테이핑하며 둘은 결승 출전을 계속하기로 한다.",
+    "blocked_overclaim_ko": "질문·확인·자기보고·처치·참가 의지를 분리한다. 한 경기 괜찮다는 자기평가나 테이핑이 완치를 보장하지 않는다. 르누아르의 자책을 모든 책임의 객관 판정으로 만들지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003304",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "22003304",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 28
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003304:0048",
+      "ev:r36:22003304:0049",
+      "ev:r36:22003304:0050",
+      "ev:r36:22003304:0051",
+      "ev:r36:22003304:0052",
+      "ev:r36:22003304:0053",
+      "ev:r36:22003304:0054",
+      "ev:r36:22003304:0056",
+      "ev:r36:22003304:0057",
+      "ev:r36:22003304:0058",
+      "ev:r36:22003304:0059",
+      "ev:r36:22003304:0060",
+      "ev:r36:22003304:0061",
+      "ev:r36:22003304:0063",
+      "ev:r36:22003305:0009",
+      "ev:r36:22003305:0054",
+      "ev:r36:22003305:0056",
+      "ev:r36:22003306:0026",
+      "ev:r36:22003306:0027",
+      "ev:r36:22003306:0028"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": [
+      "アルテ"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:final_opponents_previous_winners_crowd_opinions",
+    "key": "final_opponents_previous_winners_crowd_opinions",
+    "observation_ko": "결승 상대는 지난해 우승 팀이고 관객A/B는 강한 체격과 풍격 때문에 일찍 승부를 예상한다.",
+    "blocked_overclaim_ko": "선수 이름·작년 연도·상대 실제 체격 두 배를 확정하지 않는다. 관객의 승부가 났다는 평가는 이후 판정과 구별한다. 같은 역할명 관객을 다른 작품과 합치지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003305",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 15
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003305:0001",
+      "ev:r36:22003305:0002",
+      "ev:r36:22003305:0003",
+      "ev:r36:22003305:0004",
+      "ev:r36:22003305:0005",
+      "ev:r36:22003305:0006",
+      "ev:r36:22003305:0007",
+      "ev:r36:22003305:0008",
+      "ev:r36:22003306:0014",
+      "ev:r36:22003306:0015"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": null,
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:face_hits_not_intentional_foul_confirmed",
+    "key": "face_hits_not_intentional_foul_confirmed",
+    "observation_ko": "얼굴에 공이 맞자 아르테는 고의라 항의하지만 상대도 당황하고 모리조는 원래 두 사람 사이를 노렸다고 관찰한다.",
+    "blocked_overclaim_ko": "첫 항의를 공식 고의 가해 판정으로 만들지 않는다. 바람 누적과 특수한 장의 체질 증폭 설명은 모리조의 가설·확신 표현이지 승인된 전역 원리다.",
+    "source_locations": [
+      {
+        "novel_id": "22003305",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 29
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003305:0017",
+      "ev:r36:22003305:0018",
+      "ev:r36:22003305:0019",
+      "ev:r36:22003305:0020",
+      "ev:r36:22003305:0021",
+      "ev:r36:22003305:0022",
+      "ev:r36:22003305:0026",
+      "ev:r36:22003305:0027",
+      "ev:r36:22003305:0028",
+      "ev:r36:22003305:0029"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "モリゾ",
+    "object_source_names": [
+      "アルテ",
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:tactical_choice_and_concern_no_risk_free_rule",
+    "key": "tactical_choice_and_concern_no_risk_free_rule",
+    "observation_ko": "아르테는 위험해서 기권을 제안하고 얼굴을 희생시킬 수 없다고 반대한다. 르누아르가 계속하고 싶어 대회 패스 규칙을 설명하고 새 작전을 제안한다.",
+    "blocked_overclaim_ko": "아르테가 처음부터 얼굴 타격을 강요했다고 바꾸지 않는다. 르누아르의 다치지 않게 할 수 있다는 자기판단을 객관적 안전 보장이나 현실 스포츠·의학 지침으로 확대하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003305",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 40
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003305:0030",
+      "ev:r36:22003305:0031",
+      "ev:r36:22003305:0032",
+      "ev:r36:22003305:0033",
+      "ev:r36:22003305:0034",
+      "ev:r36:22003305:0035",
+      "ev:r36:22003305:0036",
+      "ev:r36:22003305:0037",
+      "ev:r36:22003305:0038",
+      "ev:r36:22003305:0039",
+      "ev:r36:22003305:0040"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "ルノワール",
+    "object_source_names": [
+      "アルテ"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:matchpoint_role_switch_injury_persists",
+    "key": "matchpoint_role_switch_injury_persists",
+    "observation_ko": "새 작전으로 접전을 벌여 역전하고 매치포인트에 이른다. 아르테는 부상 통증 때문인 듯 속도가 떨어져 겨우 공을 올리고 르누아르에게 넘긴다.",
+    "blocked_overclaim_ko": "역전·매치포인트를 최종 승리로 앞당기지 않는다. 통증 원인은 관장의 추정이며 역할 교체가 실제 후속 행동으로 확인된다.",
+    "source_locations": [
+      {
+        "novel_id": "22003305",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22003305",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 9
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003305:0045",
+      "ev:r36:22003305:0046",
+      "ev:r36:22003305:0047",
+      "ev:r36:22003305:0048",
+      "ev:r36:22003305:0049",
+      "ev:r36:22003305:0053",
+      "ev:r36:22003305:0054",
+      "ev:r36:22003305:0055",
+      "ev:r36:22003305:0056",
+      "ev:r36:22003305:0057",
+      "ev:r36:22003305:0058",
+      "ev:r36:22003305:0059",
+      "ev:r36:22003305:0060",
+      "ev:r36:22003306:0001",
+      "ev:r36:22003306:0002",
+      "ev:r36:22003306:0008",
+      "ev:r36:22003306:0009"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "アルテ",
+    "object_source_names": [
+      "ルノワール"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:sunlight_shared_interference_and_referee_verdict",
+    "key": "sunlight_shared_interference_and_referee_verdict",
+    "observation_ko": "강한 햇빛이 비치자 르누아르가 감으로 친 공은 상대도 받지 못한 듯하다. 라인 가까운 공을 심판이 인으로 판정해 두 사람의 우승이 확정된다.",
+    "blocked_overclaim_ko": "선수·관중의 사전 확신이나 눈감은 타구를 예지 능력으로 만들지 않는다. 불운이 사라지거나 상대만 불운을 받은 상황이 아니다. 심판 판정 전에는 승리를 확정하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003306",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 18
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003306:0003",
+      "ev:r36:22003306:0004",
+      "ev:r36:22003306:0005",
+      "ev:r36:22003306:0006",
+      "ev:r36:22003306:0007",
+      "ev:r36:22003306:0008",
+      "ev:r36:22003306:0009",
+      "ev:r36:22003306:0010",
+      "ev:r36:22003306:0011",
+      "ev:r36:22003306:0012",
+      "ev:r36:22003306:0013",
+      "ev:r36:22003306:0014",
+      "ev:r36:22003306:0015",
+      "ev:r36:22003306:0018"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": null,
+    "object_source_names": []
+  },
+  {
+    "contract_id": "contract:r36:meal_prize_realized_and_shared_credit",
+    "key": "meal_prize_realized_and_shared_credit",
+    "observation_ko": "아르테·르누아르 조가 우승해 전 메뉴 식사권을 받고 먹고 마신다. 두 선수는 서로의 배려·노력과 모리조의 훈련·조언에 감사한다.",
+    "blocked_overclaim_ko": "르누아르의 우연이라는 겸손을 모든 노력 무효화로 바꾸지 않는다. 코치·응원자 관장을 선수 우승자로 추가하지 않는다. 낚시의 향후 생선 배송과 이번 식사권 사용을 혼동하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003306",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 43
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003306:0021",
+      "ev:r36:22003306:0022",
+      "ev:r36:22003306:0023",
+      "ev:r36:22003306:0024",
+      "ev:r36:22003306:0025",
+      "ev:r36:22003306:0029",
+      "ev:r36:22003306:0030",
+      "ev:r36:22003306:0031",
+      "ev:r36:22003306:0032",
+      "ev:r36:22003306:0038",
+      "ev:r36:22003306:0041",
+      "ev:r36:22003306:0042",
+      "ev:r36:22003306:0043"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "アルテ",
+    "object_source_names": [
+      "ルノワール",
+      "モリゾ"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:director_teasing_denied",
+    "key": "director_teasing_denied",
+    "observation_ko": "관장은 르누아르가 아르테를 게으르게 봤다고 말해도 된다고 장난친다. 르누아르는 그런 생각을 하지 않았다고 부정하고 아르테는 관장을 제지한다.",
+    "blocked_overclaim_ko": "관장의 농담을 르누아르의 실제 과거 평가로 기록하지 않는다. 전부터 안다고 생각했다는 르누아르의 유보적 자기인식도 확정 인식과 구분한다.",
+    "source_locations": [
+      {
+        "novel_id": "22003306",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 37
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003306:0033",
+      "ev:r36:22003306:0034",
+      "ev:r36:22003306:0035",
+      "ev:r36:22003306:0036",
+      "ev:r36:22003306:0037"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "館長",
+    "object_source_names": [
+      "ルノワール",
+      "アルテ"
+    ]
+  },
+  {
+    "contract_id": "contract:r36:next_year_plan_not_acceptance_or_completion",
+    "key": "next_year_plan_not_acceptance_or_completion",
+    "observation_ko": "업무 뒷정리를 마친 모리조는 부상 회복 후 내년 연속 우승을 위해 다시 훈련하자고 제안한다. 두 사람은 떠나려 하고 모리조가 쫓는다.",
+    "blocked_overclaim_ko": "회복·다음 해 참가·연속 우승·일일 훈련·미완성 옷 마감은 이 결말에서 실행 확정되지 않는다. 내년의 정확한 달력 연도를 추정하거나 선수들이 훈련을 수락했다고 하지 않는다.",
+    "source_locations": [
+      {
+        "novel_id": "22003306",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22003306",
+        "raw_index": 49
+      }
+    ],
+    "evidence_ids": [
+      "ev:r36:22003306:0027",
+      "ev:r36:22003306:0039",
+      "ev:r36:22003306:0040",
+      "ev:r36:22003306:0042",
+      "ev:r36:22003306:0043",
+      "ev:r36:22003306:0044",
+      "ev:r36:22003306:0045",
+      "ev:r36:22003306:0046",
+      "ev:r36:22003306:0047",
+      "ev:r36:22003306:0048",
+      "ev:r36:22003306:0049"
+    ],
+    "global_fact_auto_approved": false,
+    "status": "reviewing",
+    "scope": "R36_REVIEWED_EVENT_ONLY",
+    "subject_source_name": "モリゾ",
+    "object_source_names": [
+      "アルテ",
+      "ルノワール"
+    ]
+  }
+]

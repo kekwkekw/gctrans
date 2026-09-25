@@ -1,0 +1,68 @@
+{
+  "existing_held_count": 12,
+  "positions": [
+    {
+      "novel_id": "22001004",
+      "raw_index": 18
+    },
+    {
+      "novel_id": "22001004",
+      "raw_index": 27
+    },
+    {
+      "novel_id": "22001004",
+      "raw_index": 28
+    },
+    {
+      "novel_id": "22001006",
+      "raw_index": 28
+    },
+    {
+      "novel_id": "22001006",
+      "raw_index": 29
+    },
+    {
+      "novel_id": "22001006",
+      "raw_index": 30
+    },
+    {
+      "novel_id": "40112011",
+      "raw_index": 17
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 53
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 60
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 61
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 62
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 63
+    }
+  ],
+  "body_text_included": false,
+  "shared_block_guard": {
+    "proposal_id": "R33-M016",
+    "block_id": "126724212:s001:b0019",
+    "held_span": [
+      0,
+      74
+    ],
+    "proposal_span": [
+      74,
+      86
+    ],
+    "overlap": false,
+    "whole_block_text_in_packet": false
+  }
+}

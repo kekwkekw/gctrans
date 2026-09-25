@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED_FOR_PRODUCTION",
+  "scope": "GC-MAIN-M1-RC1",
+  "static_validation": "PASS_REPRODUCIBLE_BUILD",
+  "required_before_publish": {
+    "installed_runtime_and_CDN_route_confirmed": false,
+    "runtime_smoke_evidence_received": false,
+    "auto_update_overwrite_protection_confirmed": false,
+    "user_release_candidate_approval": false,
+    "full_production_key_diff_and_rollback_confirmed": false
+  },
+  "notes_ko": [
+    "실행 중인 DLL이 저장소의 GCMod 6.1 백업 소스와 동일한지는 아직 미확인이다.",
+    "GitHub 브랜치 커밋과 실제 사용 중인 CDN 갱신은 같은 동작이라고 가정하지 않는다.",
+    "현재 자동 번역 workflow의 활성 여부와 검수본 보호 조치는 별도 확인한다.",
+    "정본·원본 source·glossary status·기존 queue는 변경하지 않았다.",
+    "현재 운영본 137개 전체의 키 차이·롤백 스냅샷은 아직 미확인이다. 단일 JSON 예시 확인을 전체 비교로 간주하지 않는다."
+  ]
+}

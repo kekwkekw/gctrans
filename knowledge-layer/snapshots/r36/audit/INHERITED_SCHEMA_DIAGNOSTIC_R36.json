@@ -1,0 +1,40 @@
+{
+  "strict_all_terms_status": "KNOWN_INHERITED_WARNINGS",
+  "inherited_warnings": [
+    {
+      "term_id": "term:r23:financier",
+      "term_type": "food"
+    },
+    {
+      "term_id": "term:r23:fritto",
+      "term_type": "food"
+    },
+    {
+      "term_id": "term:r23:height_book",
+      "term_type": "work_title"
+    },
+    {
+      "term_id": "term:r23:earrings",
+      "term_type": "context_term"
+    },
+    {
+      "term_id": "term:r23:pendant",
+      "term_type": "context_term"
+    },
+    {
+      "term_id": "term:r23:water_rps",
+      "term_type": "game"
+    }
+  ],
+  "new_invalid_terms": [],
+  "schema_changed": false,
+  "inherited_terms_changed": false,
+  "automatic_migration_performed": false,
+  "checkpoint": "gc_r36_event12_v1",
+  "review_round": "R36",
+  "newly_added_terms_checked": 15,
+  "actual_all_term_records_checked": 495,
+  "actual_new_term_records_checked": 15,
+  "schema_sha256": "8e8f9dae11cd914ad326e56ba206891d826fe584f43d07d715dc45d74ab54c3c",
+  "current_schema_equals_parent": true
+}

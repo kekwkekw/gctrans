@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "external_unit": "chapter",
+  "internal_unit": "episode",
+  "start_each_episode_at_raw_index": 1,
+  "include_titles": true,
+  "include_rows_absent_from_generic_queue": true,
+  "require_per_row_rationale": true,
+  "require_episode_boundary_validation": true,
+  "require_chapter_consistency_pass": true,
+  "review_completion_is_approval": false,
+  "approval_default": "reviewing",
+  "matching_default": "exact",
+  "source_overwrite_allowed": false,
+  "partial_checkpoint_rule": "completed episodes only; NEXT_STEP first uncompleted episode raw 1",
+  "fallback_batch": "2-3 episodes; only if scope/attention/ambiguity problems actually arise",
+  "accuracy_equality_claim_allowed": false
+}

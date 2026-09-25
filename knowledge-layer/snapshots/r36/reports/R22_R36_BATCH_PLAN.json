@@ -1,0 +1,2013 @@
+{
+  "schema": "handoff_batch_plan_v1",
+  "source_checkpoint_sha256": "f6da7d339c183aeb283f449ed67a32e06bdf9657767c05399c2351a2b88b9ff7",
+  "scope": "currently registered normal-story corpus; planning only, not semantic review",
+  "batches": [
+    {
+      "round": "R22",
+      "label_ko": "세키엔",
+      "category": "character",
+      "novel_ids": [
+        "40104011",
+        "40104012",
+        "40104021",
+        "40104022",
+        "40104031",
+        "40104032",
+        "40104061",
+        "40104062"
+      ],
+      "scenario_count": 8,
+      "source_entries": 694,
+      "general_queue_items": 573,
+      "scenarios": [
+        {
+          "novel_id": "40104011",
+          "body_rows": 82,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 52,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40104012",
+          "body_rows": 79,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 60,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40104021",
+          "body_rows": 121,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 108,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40104022",
+          "body_rows": 72,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 58,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40104031",
+          "body_rows": 129,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 112,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40104032",
+          "body_rows": 67,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 54,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40104061",
+          "body_rows": 60,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 60,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40104062",
+          "body_rows": 76,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 69,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_APPROVED",
+      "body_rows": 686,
+      "title_rows": 8,
+      "outside_queue_body_rows": 113,
+      "semantic_review_checkpoint": "gc_r22_character06"
+    },
+    {
+      "round": "R23",
+      "label_ko": "산소비노 + 로리에",
+      "category": "character",
+      "novel_ids": [
+        "40500101",
+        "40500102",
+        "40500103",
+        "40500104",
+        "40500105",
+        "40200441",
+        "40200442",
+        "40200801",
+        "40200802"
+      ],
+      "scenario_count": 9,
+      "source_entries": 643,
+      "general_queue_items": 522,
+      "scenarios": [
+        {
+          "novel_id": "40500101",
+          "body_rows": 60,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 53,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40500102",
+          "body_rows": 64,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 58,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40500103",
+          "body_rows": 74,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 57,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40500104",
+          "body_rows": 79,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 60,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40500105",
+          "body_rows": 61,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 54,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40200441",
+          "body_rows": 91,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 64,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40200442",
+          "body_rows": 58,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 45,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40200801",
+          "body_rows": 56,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 50,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "40200802",
+          "body_rows": 91,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 81,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_APPROVED",
+      "body_rows": 634,
+      "title_rows": 9,
+      "outside_queue_body_rows": 112,
+      "semantic_review_checkpoint": "gc_r23_character07"
+    },
+    {
+      "round": "R24",
+      "label_ko": "쿠피도 + 에트라 + 네이트",
+      "category": "character",
+      "novel_ids": [
+        "40200741",
+        "40200742",
+        "40200711",
+        "40200712",
+        "40200491",
+        "40200492"
+      ],
+      "scenario_count": 6,
+      "source_entries": 553,
+      "general_queue_items": 416,
+      "scenarios": [
+        {
+          "novel_id": "40200741",
+          "body_rows": 104,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 81,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "40200742",
+          "body_rows": 120,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 90,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "40200711",
+          "body_rows": 85,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 65,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "40200712",
+          "body_rows": 91,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 79,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "40200491",
+          "body_rows": 92,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 58,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "40200492",
+          "body_rows": 55,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 43,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_APPROVED",
+      "body_rows": 547,
+      "title_rows": 6,
+      "outside_queue_body_rows": 131,
+      "completed_checkpoint": "gc_r24_character08",
+      "partial": false
+    },
+    {
+      "round": "R25",
+      "label_ko": "봄에 미쳐버린 꽃 + 여름에 타버린 샌드 아트",
+      "category": "event",
+      "novel_ids": [
+        "20000601",
+        "20000602",
+        "20000603",
+        "20000604",
+        "20000605",
+        "20000606",
+        "20000901",
+        "20000902",
+        "20000903",
+        "20000904",
+        "20000905",
+        "20000906"
+      ],
+      "scenario_count": 12,
+      "source_entries": 781,
+      "general_queue_items": 629,
+      "scenarios": [
+        {
+          "novel_id": "20000601",
+          "body_rows": 68,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 63,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000602",
+          "body_rows": 77,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 70,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000603",
+          "body_rows": 82,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 68,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000604",
+          "body_rows": 74,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 57,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000605",
+          "body_rows": 42,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 28,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000606",
+          "body_rows": 61,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 48,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000901",
+          "body_rows": 64,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 64,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000902",
+          "body_rows": 53,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 43,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000903",
+          "body_rows": 68,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 59,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000904",
+          "body_rows": 48,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 29,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000905",
+          "body_rows": 73,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 59,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20000906",
+          "body_rows": 59,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 41,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE",
+      "body_rows": 769,
+      "title_rows": 12,
+      "outside_queue_body_rows": 140,
+      "semantic_first_pass_complete": true,
+      "semantic_review_started": true,
+      "partial": false
+    },
+    {
+      "round": "R26",
+      "label_ko": "아테네스 신문 + 신춘 하네츠키 대결전",
+      "category": "event",
+      "novel_ids": [
+        "20001401",
+        "20001402",
+        "20001403",
+        "20001404",
+        "20001405",
+        "20001406",
+        "20001501",
+        "20001502",
+        "20001503",
+        "20001504",
+        "20001505",
+        "20001506"
+      ],
+      "scenario_count": 12,
+      "source_entries": 807,
+      "general_queue_items": 655,
+      "scenarios": [
+        {
+          "novel_id": "20001401",
+          "body_rows": 58,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 51,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001402",
+          "body_rows": 73,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 68,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001403",
+          "body_rows": 76,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 70,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001404",
+          "body_rows": 57,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 30,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001405",
+          "body_rows": 77,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 68,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001406",
+          "body_rows": 68,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 56,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001501",
+          "body_rows": 47,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 38,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001502",
+          "body_rows": 87,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 70,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001503",
+          "body_rows": 58,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 54,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001504",
+          "body_rows": 58,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 49,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001505",
+          "body_rows": 64,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 50,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20001506",
+          "body_rows": 72,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 51,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_APPROVED",
+      "body_rows": 795,
+      "title_rows": 12,
+      "outside_queue_body_rows": 140,
+      "semantic_review_started": true,
+      "semantic_first_pass_complete": true,
+      "partial": false
+    },
+    {
+      "round": "R27",
+      "label_ko": "아테네스 납량대회 + 렘브란트의 호쾌한 휴일",
+      "category": "event",
+      "novel_ids": [
+        "20002101",
+        "20002102",
+        "20002103",
+        "20002104",
+        "20002105",
+        "20002106",
+        "20002601",
+        "20002602",
+        "20002603",
+        "20002604",
+        "20002605",
+        "20002606"
+      ],
+      "scenario_count": 12,
+      "source_entries": 755,
+      "general_queue_items": 619,
+      "scenarios": [
+        {
+          "novel_id": "20002101",
+          "body_rows": 58,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 43,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002102",
+          "body_rows": 74,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 66,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002103",
+          "body_rows": 64,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 59,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002104",
+          "body_rows": 68,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 58,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002105",
+          "body_rows": 73,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 54,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002106",
+          "body_rows": 55,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 44,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002601",
+          "body_rows": 37,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 25,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002602",
+          "body_rows": 74,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 67,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002603",
+          "body_rows": 72,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 59,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002604",
+          "body_rows": 51,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 49,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002605",
+          "body_rows": 58,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 55,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002606",
+          "body_rows": 59,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 40,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_APPROVED",
+      "body_rows": 743,
+      "title_rows": 12,
+      "outside_queue_body_rows": 124,
+      "semantic_review_started": true,
+      "semantic_first_pass_complete": true,
+      "partial": false
+    },
+    {
+      "round": "R28",
+      "label_ko": "번뇌 NO NEW YEAR!? + 언해피・페인터",
+      "category": "event",
+      "novel_ids": [
+        "20002701",
+        "20002702",
+        "20002703",
+        "20002704",
+        "20002705",
+        "20002706",
+        "20002801",
+        "20002802",
+        "20002803",
+        "20002804",
+        "20002805",
+        "20002806"
+      ],
+      "scenario_count": 12,
+      "source_entries": 817,
+      "general_queue_items": 679,
+      "scenarios": [
+        {
+          "novel_id": "20002701",
+          "body_rows": 63,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 55,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002702",
+          "body_rows": 63,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 56,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002703",
+          "body_rows": 62,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 55,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002704",
+          "body_rows": 61,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 54,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002705",
+          "body_rows": 74,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 65,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002706",
+          "body_rows": 41,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 39,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002801",
+          "body_rows": 62,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 44,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002802",
+          "body_rows": 76,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 72,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002803",
+          "body_rows": 71,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 66,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002804",
+          "body_rows": 55,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 35,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002805",
+          "body_rows": 98,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 75,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20002806",
+          "body_rows": 79,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 63,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_APPROVED",
+      "body_rows": 805,
+      "title_rows": 12,
+      "outside_queue_body_rows": 126,
+      "semantic_review_started": true,
+      "semantic_first_pass_complete": true,
+      "partial": false
+    },
+    {
+      "round": "R29",
+      "label_ko": "반짝이는 하룻밤의 쇼타임! + 탄자쿠에 소원을 담아서",
+      "category": "event",
+      "novel_ids": [
+        "20003101",
+        "20003102",
+        "20003103",
+        "20003104",
+        "20003105",
+        "20003106",
+        "20003301",
+        "20003302",
+        "20003303",
+        "20003304",
+        "20003305",
+        "20003306"
+      ],
+      "scenario_count": 12,
+      "source_entries": 721,
+      "general_queue_items": 614,
+      "scenarios": [
+        {
+          "novel_id": "20003101",
+          "body_rows": 71,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 60,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003102",
+          "body_rows": 52,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 46,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003103",
+          "body_rows": 55,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 46,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003104",
+          "body_rows": 59,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 44,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003105",
+          "body_rows": 51,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 47,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003106",
+          "body_rows": 68,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 66,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003301",
+          "body_rows": 59,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 51,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003302",
+          "body_rows": 56,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 54,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003303",
+          "body_rows": 68,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 63,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003304",
+          "body_rows": 73,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 65,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003305",
+          "body_rows": 44,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 40,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "20003306",
+          "body_rows": 53,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 32,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_APPROVED",
+      "body_rows": 709,
+      "title_rows": 12,
+      "outside_queue_body_rows": 95,
+      "semantic_review_started": true,
+      "semantic_first_pass_complete": true,
+      "partial": false
+    },
+    {
+      "round": "R30",
+      "label_ko": "사랑의 인연 + 로리에의 스플래시 서머! + 또 한 명의 자화상",
+      "category": "event",
+      "novel_ids": [
+        "21003201",
+        "21003202",
+        "21003501",
+        "21003502",
+        "21003701",
+        "21003702"
+      ],
+      "scenario_count": 6,
+      "source_entries": 562,
+      "general_queue_items": 480,
+      "scenarios": [
+        {
+          "novel_id": "21003201",
+          "body_rows": 132,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 102,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003202",
+          "body_rows": 69,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 57,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003501",
+          "body_rows": 75,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 73,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003502",
+          "body_rows": 98,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 91,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003701",
+          "body_rows": 92,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 83,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003702",
+          "body_rows": 90,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 74,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE",
+      "body_rows": 556,
+      "title_rows": 6,
+      "outside_queue_body_rows": 76,
+      "semantic_review_started": true,
+      "semantic_first_pass_complete": true,
+      "partial": false
+    },
+    {
+      "round": "R31",
+      "label_ko": "친애하는 관장 님께 + NUDE~노출의 미학~",
+      "category": "event",
+      "novel_ids": [
+        "21002001",
+        "21002002",
+        "21002003",
+        "21002004",
+        "21002005",
+        "21002006",
+        "21003801",
+        "21003802",
+        "21003803",
+        "21003804",
+        "21003805",
+        "21003806"
+      ],
+      "scenario_count": 12,
+      "source_entries": 777,
+      "general_queue_items": 671,
+      "scenarios": [
+        {
+          "novel_id": "21002001",
+          "body_rows": 46,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 40,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21002002",
+          "body_rows": 100,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 91,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21002003",
+          "body_rows": 59,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 52,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21002004",
+          "body_rows": 70,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 61,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21002005",
+          "body_rows": 66,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 64,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21002006",
+          "body_rows": 113,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 96,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003801",
+          "body_rows": 43,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 37,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003802",
+          "body_rows": 47,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 43,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003803",
+          "body_rows": 72,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 62,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003804",
+          "body_rows": 56,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 52,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003805",
+          "body_rows": 50,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 38,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "21003806",
+          "body_rows": 43,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 35,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_FINAL_ACCEPTANCE",
+      "body_rows": 765,
+      "title_rows": 12,
+      "outside_queue_body_rows": 94,
+      "semantic_first_pass_complete": true,
+      "semantic_review_started": true,
+      "partial": false,
+      "review_checkpoint": "gc_r31_event07"
+    },
+    {
+      "round": "R32",
+      "label_ko": "세키엔의 요괴(?) 사건부 ~카미카쿠시 편~ + 미드나이트 뮤지엄",
+      "category": "event",
+      "novel_ids": [
+        "22000301",
+        "22000302",
+        "22000303",
+        "22000304",
+        "22000305",
+        "22000306",
+        "22000601",
+        "22000602",
+        "22000603",
+        "22000604",
+        "22000605",
+        "22000606"
+      ],
+      "scenario_count": 12,
+      "source_entries": 691,
+      "general_queue_items": 526,
+      "scenarios": [
+        {
+          "novel_id": "22000301",
+          "body_rows": 62,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 48,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000302",
+          "body_rows": 40,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 35,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000303",
+          "body_rows": 54,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 47,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000304",
+          "body_rows": 50,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 44,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000305",
+          "body_rows": 60,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 49,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000306",
+          "body_rows": 63,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 48,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000601",
+          "body_rows": 65,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 0,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000602",
+          "body_rows": 56,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 49,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000603",
+          "body_rows": 55,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 50,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000604",
+          "body_rows": 50,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 48,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000605",
+          "body_rows": 66,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 58,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        },
+        {
+          "novel_id": "22000606",
+          "body_rows": 58,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 50,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_FINAL_ACCEPTANCE",
+      "body_rows": 679,
+      "title_rows": 12,
+      "outside_queue_body_rows": 153,
+      "semantic_first_pass_complete": true,
+      "semantic_review_started": true,
+      "partial": false,
+      "review_checkpoint": "gc_r32_event08"
+    },
+    {
+      "round": "R33",
+      "label_ko": "미소녀 메이드 분투기 + 괴진! 저주의 호스피털",
+      "category": "event",
+      "novel_ids": [
+        "22001001",
+        "22001002",
+        "22001003",
+        "22001004",
+        "22001005",
+        "22001006",
+        "22001101",
+        "22001102",
+        "22001103",
+        "22001104",
+        "22001105",
+        "22001106"
+      ],
+      "scenario_count": 12,
+      "source_entries": 723,
+      "general_queue_items": 617,
+      "scenarios": [
+        {
+          "novel_id": "22001001",
+          "body_rows": 53,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 49,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 53,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 49,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001002",
+          "body_rows": 51,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 40,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 51,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 40,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001003",
+          "body_rows": 50,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 37,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 50,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 37,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001004",
+          "body_rows": 62,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 53,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": false,
+          "reviewed_body_rows": 59,
+          "title_reviewed": true,
+          "deferred_raw_indices": [
+            18,
+            27,
+            28
+          ],
+          "queue_removed": 53,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001005",
+          "body_rows": 58,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 54,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 58,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 54,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001006",
+          "body_rows": 65,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 55,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": false,
+          "reviewed_body_rows": 62,
+          "title_reviewed": true,
+          "deferred_raw_indices": [
+            28,
+            29,
+            30
+          ],
+          "queue_removed": 52,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001101",
+          "body_rows": 59,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 55,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 59,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 55,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001102",
+          "body_rows": 48,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 34,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 48,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 34,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001103",
+          "body_rows": 87,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 80,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 87,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 80,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001104",
+          "body_rows": 73,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 69,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 73,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 69,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001105",
+          "body_rows": 46,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 43,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 46,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 43,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        },
+        {
+          "novel_id": "22001106",
+          "body_rows": 59,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 48,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 59,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 48,
+          "workflow_complete": true,
+          "eligible_semantic_first_pass_complete": true,
+          "partial": false
+        }
+      ],
+      "execution_status": "CLOSED_ELIGIBLE_SCOPE_WITH_EXPLICIT_DEFERRED",
+      "body_rows": 711,
+      "title_rows": 12,
+      "outside_queue_body_rows": 94,
+      "semantic_review_started": true,
+      "semantic_first_pass_complete": false,
+      "reviewed_source_entries": 717,
+      "remaining_source_entries": 6,
+      "queue_removed": 614,
+      "remaining_general_queue_items": 3,
+      "first_unfinished": null,
+      "new_deferred_locations": [
+        {
+          "novel_id": "22001004",
+          "raw_index": 18
+        },
+        {
+          "novel_id": "22001004",
+          "raw_index": 27
+        },
+        {
+          "novel_id": "22001004",
+          "raw_index": 28
+        },
+        {
+          "novel_id": "22001006",
+          "raw_index": 28
+        },
+        {
+          "novel_id": "22001006",
+          "raw_index": 29
+        },
+        {
+          "novel_id": "22001006",
+          "raw_index": 30
+        }
+      ],
+      "partial": false,
+      "workflow_complete": true,
+      "eligible_semantic_first_pass_complete": true,
+      "remaining_active_source_entries": 0
+    },
+    {
+      "round": "R34",
+      "label_ko": "쿠마로보 군단(콜라보)",
+      "category": "event",
+      "novel_ids": [
+        "22001601",
+        "22001602",
+        "22001603",
+        "22001604",
+        "22001605",
+        "22001606"
+      ],
+      "scenario_count": 6,
+      "source_entries": 668,
+      "general_queue_items": 557,
+      "scenarios": [
+        {
+          "novel_id": "22001601",
+          "body_rows": 156,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 139,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 156,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 139
+        },
+        {
+          "novel_id": "22001602",
+          "body_rows": 139,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 117,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 139,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 117
+        },
+        {
+          "novel_id": "22001603",
+          "body_rows": 103,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 85,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 103,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 85
+        },
+        {
+          "novel_id": "22001604",
+          "body_rows": 109,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 79,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 109,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 79
+        },
+        {
+          "novel_id": "22001605",
+          "body_rows": 55,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 46,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 55,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 46
+        },
+        {
+          "novel_id": "22001606",
+          "body_rows": 100,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 91,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "reviewed_body_rows": 100,
+          "title_reviewed": true,
+          "deferred_raw_indices": [],
+          "queue_removed": 91
+        }
+      ],
+      "execution_status": "REVIEWED_FIRST_PASS_REDO",
+      "body_rows": 662,
+      "title_rows": 6,
+      "outside_queue_body_rows": 105,
+      "semantic_review_started": true,
+      "semantic_first_pass_complete": true,
+      "reviewed_source_entries": 668,
+      "remaining_source_entries": 0,
+      "queue_removed": 557,
+      "remaining_general_queue_items": 0,
+      "first_unfinished": null
+    },
+    {
+      "round": "R35",
+      "label_ko": "저주의 반지와 신부들 + 하얀 황소를 쫓아서",
+      "category": "event",
+      "novel_ids": [
+        "22001901",
+        "22001902",
+        "22001903",
+        "22001904",
+        "22001905",
+        "22001906",
+        "22002301",
+        "22002302",
+        "22002303",
+        "22002304",
+        "22002305",
+        "22002306"
+      ],
+      "scenario_count": 12,
+      "source_entries": 839,
+      "general_queue_items": 679,
+      "scenarios": [
+        {
+          "novel_id": "22001901",
+          "body_rows": 64,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 49,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22001902",
+          "body_rows": 79,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 63,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22001903",
+          "body_rows": 59,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 40,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22001904",
+          "body_rows": 60,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 49,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22001905",
+          "body_rows": 88,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 69,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22001906",
+          "body_rows": 63,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 51,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22002301",
+          "body_rows": 64,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 53,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22002302",
+          "body_rows": 76,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 61,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22002303",
+          "body_rows": 73,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 64,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22002304",
+          "body_rows": 78,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 71,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22002305",
+          "body_rows": 44,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 36,
+          "semantic_review_started": false
+        },
+        {
+          "novel_id": "22002306",
+          "body_rows": 79,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 73,
+          "semantic_review_started": false
+        }
+      ],
+      "execution_status": "PLANNED_NOT_STARTED",
+      "body_rows": 827,
+      "title_rows": 12,
+      "outside_queue_body_rows": 148
+    },
+    {
+      "round": "R36",
+      "label_ko": "아테네스 봄 낚시 대회 + 역경 미라클 어택!",
+      "category": "event",
+      "novel_ids": [
+        "22002801",
+        "22002802",
+        "22002803",
+        "22002804",
+        "22002805",
+        "22002806",
+        "22003301",
+        "22003302",
+        "22003303",
+        "22003304",
+        "22003305",
+        "22003306"
+      ],
+      "scenario_count": 12,
+      "source_entries": 707,
+      "general_queue_items": 595,
+      "scenarios": [
+        {
+          "novel_id": "22002801",
+          "body_rows": 44,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 42,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22002802",
+          "body_rows": 52,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 44,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22002803",
+          "body_rows": 45,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 35,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22002804",
+          "body_rows": 52,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 43,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22002805",
+          "body_rows": 45,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 39,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22002806",
+          "body_rows": 72,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 66,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22003301",
+          "body_rows": 66,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 64,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22003302",
+          "body_rows": 86,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 79,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22003303",
+          "body_rows": 60,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 50,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22003304",
+          "body_rows": 64,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 50,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22003305",
+          "body_rows": 60,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 44,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        },
+        {
+          "novel_id": "22003306",
+          "body_rows": 49,
+          "title_rows": 1,
+          "first_body_raw_index": 1,
+          "general_queue_items": 39,
+          "semantic_review_started": true,
+          "semantic_first_pass_complete": true,
+          "publish_ready": false
+        }
+      ],
+      "execution_status": "SEMANTIC_FIRST_PASS_COMPLETE_NOT_APPROVED",
+      "body_rows": 695,
+      "title_rows": 12,
+      "outside_queue_body_rows": 100,
+      "semantic_review_checkpoint": "gc_r36_event12_v1",
+      "partial": false
+    }
+  ],
+  "totals": {
+    "scenario_count": 155,
+    "source_entries": 10738,
+    "body_rows": 10583,
+    "title_rows": 155,
+    "general_queue_items": 8832,
+    "outside_queue_body_rows": 1751
+  },
+  "additional_existing_deferred_rows": 6,
+  "existing_deferred_rows_in_general_queue": 4,
+  "existing_deferred_rows_outside_general_queue": 2,
+  "r32_correction": "Include 22000601: 65 body rows + 1 title, 0 general-queue records; no complete semantic coverage in the active catalog. R32=12 scenarios/691 source entries/526 queue records.",
+  "current_checkpoint": "gc_r34_event10_redo",
+  "next_round": "R35",
+  "original_plan_preserved_at": "history/handoff_r22/R22_R36_BATCH_PLAN.json",
+  "new_deferred_rows_r33": 6,
+  "effective_deferred_rows_after_r33": 12,
+  "progress_note": "R33 closed eligible717 plus6 deferred; R34 redone668; R35/R36 unstarted. Holds12 unchanged."
+}

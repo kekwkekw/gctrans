@@ -1,0 +1,91 @@
+{
+  "events": [
+    {
+      "event_index": 1,
+      "novel_ids": [
+        "22002801",
+        "22002802",
+        "22002803",
+        "22002804",
+        "22002805",
+        "22002806"
+      ],
+      "reviewed_items": 316,
+      "reviewed_body": 310,
+      "reviewed_titles": 6,
+      "row_review_complete": true,
+      "event_consistency_complete": true,
+      "semantic_contract_refs": [
+        "contract:r36:spring_fishing_training",
+        "contract:r36:unknown_label_first_introduction",
+        "contract:r36:fantasies_not_literal_ecology",
+        "contract:r36:accident_testimony_then_witness",
+        "contract:r36:joint_eel_lift_and_rescue",
+        "contract:r36:negotiation_flashback_cover_story",
+        "contract:r36:fishing_player_support_roles",
+        "contract:r36:fishing_rules_prize_prospect",
+        "contract:r36:director_inexperienced_protection",
+        "contract:r36:poor_catch_hypotheses",
+        "contract:r36:underwater_private_discovery_to_report",
+        "contract:r36:pause_not_cancel_and_contact_roles",
+        "contract:r36:sea_construct_identification",
+        "contract:r36:water_magic_plan_limited_environment",
+        "contract:r36:public_warning_confirmed_evacuation",
+        "contract:r36:combined_attack_sequence",
+        "contract:r36:seaweed_harm_help_and_release",
+        "contract:r36:catch_after_removal_local_pattern",
+        "contract:r36:director_winner_shared_credit",
+        "contract:r36:motive_revealed_not_realized",
+        "contract:r36:unsaid_objection_and_future_fish_meal",
+        "contract:r36:explicit_fishing_before_volleyball"
+      ],
+      "approval_performed": false
+    },
+    {
+      "event_index": 2,
+      "novel_ids": [
+        "22003301",
+        "22003302",
+        "22003303",
+        "22003304",
+        "22003305",
+        "22003306"
+      ],
+      "reviewed_items": 391,
+      "reviewed_body": 385,
+      "reviewed_titles": 6,
+      "row_review_complete": true,
+      "event_consistency_complete": true,
+      "semantic_contract_refs": [
+        "contract:r36:poster_prize_partner_rules",
+        "contract:r36:partner_refusals_not_incompetence",
+        "contract:r36:manet_listening_request",
+        "contract:r36:explicit_fishing_before_volleyball",
+        "contract:r36:unlucky_constitution_continues_no_cure",
+        "contract:r36:both_beginners_not_genius_claim_fact",
+        "contract:r36:mutual_private_consideration_before_coaching",
+        "contract:r36:morisot_coach_staff_not_player",
+        "contract:r36:training_commands_montage_achievement",
+        "contract:r36:director_hears_corridor_and_excuse",
+        "contract:r36:attendance_and_prior_swimsuit_event_limited",
+        "contract:r36:pair_trust_reassessment_explicit",
+        "contract:r36:first_match_pass_attack_strategy",
+        "contract:r36:semifinal_accident_recap_not_new_events",
+        "contract:r36:semifinal_signal_tactic_and_source_timing_guard",
+        "contract:r36:injury_recognition_care_no_healed_claim",
+        "contract:r36:final_opponents_previous_winners_crowd_opinions",
+        "contract:r36:face_hits_not_intentional_foul_confirmed",
+        "contract:r36:tactical_choice_and_concern_no_risk_free_rule",
+        "contract:r36:matchpoint_role_switch_injury_persists",
+        "contract:r36:sunlight_shared_interference_and_referee_verdict",
+        "contract:r36:meal_prize_realized_and_shared_credit",
+        "contract:r36:director_teasing_denied",
+        "contract:r36:next_year_plan_not_acceptance_or_completion"
+      ],
+      "approval_performed": false
+    }
+  ],
+  "cross_event_timeline_contract": "contract:r36:explicit_fishing_before_volleyball",
+  "batch_recomparison_complete": true,
+  "source_original_unchanged": true
+}

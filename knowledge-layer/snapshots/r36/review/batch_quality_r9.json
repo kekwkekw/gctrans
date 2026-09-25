@@ -1,0 +1,11 @@
+{
+  "all_rows_individually_reviewed": 740,
+  "high_risk_reread_groups": 27,
+  "final_proposals_reread": 72,
+  "independent_reviewer": false,
+  "accuracy_equivalence_proven": false,
+  "scope_truncated": false,
+  "unsupported_approval_count": 0,
+  "recommendation": "CONTINUE_ONE_CHAPTER_OUTER_ONE_EPISODE_INNER_WITH_PARTIAL_COMPLETION_SAFETY",
+  "warning_ko": "교정 밀도는 원문 번역의 오류 분포에 영향을 받으므로 정확도 지표로 사용하지 않는다."
+}

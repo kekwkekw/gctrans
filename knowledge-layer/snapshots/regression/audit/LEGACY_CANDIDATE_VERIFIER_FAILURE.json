@@ -1,0 +1,13 @@
+{
+  "returncode": 1,
+  "failure_type": "FileNotFoundError",
+  "first_missing_path": "reports/COUNTS.json",
+  "other_static_missing_references": [
+    "baseline/CURRENT_PRODUCTION_BASELINE.json",
+    "audit/EDITORIAL_RESIDUAL_SCAN.json"
+  ],
+  "missing_is_in_zip": false,
+  "candidate_manifest_hash_mismatches": [],
+  "new_standalone_verifier_in_this_packet": true,
+  "pr_novel_change_required": false
+}

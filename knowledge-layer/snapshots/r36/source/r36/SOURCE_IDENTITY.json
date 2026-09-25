@@ -1,0 +1,29 @@
+{
+  "raw_hashes": {
+    "22002801": "7d402e00d48210d65b66fbff0afdf86ffbfb4ba5de97b61e9d7bd2925f254c88",
+    "22002802": "0daa33ce206f31a301eedd882dcff83df00afd6b07b5534e4d633a8d0e18613f",
+    "22002803": "33db29f687212ce80600d00cc353a0d83c3d770cae53f8951d048deb743253cb",
+    "22002804": "fe0f7348271791f7c3b493da7e00e8eb7ebf3c18aaba675c22ca98f7ef684628",
+    "22002805": "b96d1b163860561d7fced2049131d6480b5da67e6c8da855171f4f1e14d2af49",
+    "22002806": "505f5186a17ed85a31ab23dd7b4b95367ac215eb493f3468ba4343934db05a6b",
+    "22003301": "2952b93790e3ae0be9ef91c5b54a380bd5fb277ebbc3b681c602d9c689dd33ef",
+    "22003302": "1b01ee775c98c76c90004293918b752c3c404814e4aa8a4361c4b05c139b477d",
+    "22003303": "8331eb62e6c1313eb707a063b94669c2fb6c4a8da1b01b7b91d255299ea65712",
+    "22003304": "bfe9f2b89f19109ca5cfa3b4140aa848750754bd037a4e1200c563e9ba1bc631",
+    "22003305": "cb419116adbee467e8e3cabbc5b59a8d903e6a8ba5e35cbf3cc48d22ae574a9d",
+    "22003306": "785e0694f587c55a873e51703d9c7028ecb9d6c994ee5b5aa7fad93b11ce89dd"
+  },
+  "nested_source_sha256": "f9817bfe251796ce4c69fd0e781fe1b72be2cbc1aa2a0920cf44283811ba4657",
+  "source_archive_sha256": "5df5266154c60aeaab24d66fd6cdf4872ed162cf286e388fddc9c3c86835fc00",
+  "snapshot_scope": "707 actually reviewed R36 rows only; complete inherited corpus remains nested",
+  "original_source_unchanged": true,
+  "hand_override_order": [
+    "source/hand_blocks.jsonl",
+    "alignment/working_hand_blocks.jsonl"
+  ],
+  "source_chain": [
+    "source/gc_pro_review_r4.zip",
+    "gc_pro_review_r4/source/r3.zip",
+    "gc_pro_review_r3/source/raw_ordered/<novel_id>.json"
+  ]
+}

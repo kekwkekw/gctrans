@@ -1,0 +1,10 @@
+{
+  "all_rows_individually_reviewed": 588,
+  "final_proposals_reread": 44,
+  "high_risk_key_evidence_groups": 22,
+  "independent_reviewer": false,
+  "accuracy_equivalence_proven": false,
+  "scope_truncated": false,
+  "unsupported_approval_count": 0,
+  "limitations_ko": "자동 검사와 같은 검수자의 재대조는 번역 정답률의 독립 측정이 아니다."
+}

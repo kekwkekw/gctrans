@@ -1,0 +1,122 @@
+{
+  "proposal_total": 1019,
+  "recommendations": {
+    "ACCEPT": 987,
+    "DEFER_POLICY": 3,
+    "KEEP_OBSERVED": 23,
+    "AMEND": 6
+  },
+  "proposed_text_changes_pending_approval": 993,
+  "source_anomalies_adjudicated": 13,
+  "source_anomalies_official_current_verified": 0,
+  "legacy_records": 52,
+  "current_schema_records": 967,
+  "published_excluded": 668,
+  "distinct_proposal_target_locations": 986,
+  "source_snapshot_rows": 1026,
+  "original_dependency_groups": 17,
+  "composed_fields": 954,
+  "multiple_change_fields": 37,
+  "overlapping_selected_target_intervals": 0,
+  "held_shared_field_suppressed": 1,
+  "new_source_corpus_reviewed_items": 0,
+  "R36_completed_items_inherited": 707,
+  "queue_remaining_inherited": 7,
+  "active_queue_remaining_inherited": 0,
+  "held_positions_inherited": 12,
+  "source_updates": 0,
+  "new_approval_records": 0,
+  "new_canonical_proposals": 0,
+  "new_canonical_knowledge_records": 0,
+  "round_counts": {
+    "R1": {
+      "ACCEPT": 6
+    },
+    "R3": {
+      "ACCEPT": 43,
+      "DEFER_POLICY": 2
+    },
+    "BATTLE": {
+      "ACCEPT": 1
+    },
+    "R16": {
+      "ACCEPT": 1
+    },
+    "R17": {
+      "ACCEPT": 58
+    },
+    "R18": {
+      "ACCEPT": 57
+    },
+    "R19": {
+      "ACCEPT": 50,
+      "AMEND": 1
+    },
+    "R20": {
+      "ACCEPT": 43
+    },
+    "R21": {
+      "ACCEPT": 44,
+      "AMEND": 1,
+      "DEFER_POLICY": 1
+    },
+    "R22": {
+      "ACCEPT": 37,
+      "KEEP_OBSERVED": 6
+    },
+    "R23": {
+      "ACCEPT": 42
+    },
+    "R24": {
+      "ACCEPT": 32,
+      "KEEP_OBSERVED": 2
+    },
+    "R25": {
+      "ACCEPT": 61,
+      "KEEP_OBSERVED": 1
+    },
+    "R26": {
+      "ACCEPT": 72,
+      "AMEND": 2
+    },
+    "R27": {
+      "ACCEPT": 68,
+      "KEEP_OBSERVED": 1
+    },
+    "R28": {
+      "ACCEPT": 52,
+      "KEEP_OBSERVED": 2
+    },
+    "R29": {
+      "ACCEPT": 44,
+      "KEEP_OBSERVED": 4
+    },
+    "R30": {
+      "ACCEPT": 27,
+      "AMEND": 1,
+      "KEEP_OBSERVED": 2
+    },
+    "R31": {
+      "ACCEPT": 49,
+      "AMEND": 1
+    },
+    "R32": {
+      "ACCEPT": 36,
+      "KEEP_OBSERVED": 1
+    },
+    "R33": {
+      "ACCEPT": 45
+    },
+    "R34": {
+      "ACCEPT": 39
+    },
+    "R35": {
+      "ACCEPT": 41,
+      "KEEP_OBSERVED": 2
+    },
+    "R36": {
+      "ACCEPT": 39,
+      "KEEP_OBSERVED": 2
+    }
+  }
+}

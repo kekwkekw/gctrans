@@ -1,0 +1,843 @@
+[
+  {
+    "key": "cupido_origin",
+    "creator": "entity:r20:bouguereau",
+    "imago": "entity:r21:cupido",
+    "origin": "painting",
+    "biological_parenthood": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200741:0010",
+      "ev:r24:40200741:0031"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200741",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "40200741",
+        "raw_index": 31
+      }
+    ]
+  },
+  {
+    "key": "cupido_suspicion",
+    "outward_denial": true,
+    "private_prior_knowledge": true,
+    "private_heard_by_director": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200741:0047",
+      "ev:r24:40200742:0001"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200741",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 1
+      }
+    ]
+  },
+  {
+    "key": "cupido_age",
+    "precise_age_inferred": false,
+    "all_imago_adults_inferred": false,
+    "appearance_only_minority_inferred": false,
+    "rebellious_phase_is_simile": true,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200741:0021",
+      "ev:r24:40200741:0029",
+      "ev:r24:40200742:0120"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200741",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "40200741",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 120
+      }
+    ]
+  },
+  {
+    "key": "kidnap_witness_question",
+    "speaker": "local:r24:cupido_noble",
+    "addressee": "local:r24:ruffian",
+    "cupido_private_thought": false,
+    "eyewitness_identity_confirmed": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200742:0007",
+      "ev:r24:40200742:0008",
+      "ev:r24:40200742:0009"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200742",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 9
+      }
+    ]
+  },
+  {
+    "key": "power_limits",
+    "agent": "entity:r21:cupido",
+    "possible_actions_only": true,
+    "degree": "generally_not_guaranteed",
+    "imago_origin": "probably_self_report",
+    "overreaction": true,
+    "always_every_ordinary_request": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200742:0062",
+      "ev:r24:40200742:0064",
+      "ev:r24:40200742:0069",
+      "ev:r24:40200742:0070",
+      "ev:r24:40200742:0074"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200742",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 74
+      }
+    ]
+  },
+  {
+    "key": "custody",
+    "subduer": "entity:r21:cupido",
+    "custodian": "local:r24:officer",
+    "targets": [
+      "local:r24:cupido_noble",
+      "local:r24:ruffian"
+    ],
+    "voluntary_surrender": "intended_not_depicted",
+    "actual_arrest": true,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200742:0046",
+      "ev:r24:40200742:0049",
+      "ev:r24:40200742:0053",
+      "ev:r24:40200742:0054",
+      "ev:r24:40200742:0064"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200742",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 64
+      }
+    ]
+  },
+  {
+    "key": "cupido_secret",
+    "private_fear_of_rejection": true,
+    "director_heard_reason": false,
+    "boug_heard_power_explanation": false,
+    "director_promises_confidentiality": true,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200742:0055",
+      "ev:r24:40200742:0099",
+      "ev:r24:40200742:0100",
+      "ev:r24:40200742:0107"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200742",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 99
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 100
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 107
+      }
+    ]
+  },
+  {
+    "key": "gratitude",
+    "verbal_thanks": true,
+    "hug_depicted": true,
+    "sexual_reward_depicted": false,
+    "suspicion_attributed_to": "entity:r20:bouguereau",
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200742:0103",
+      "ev:r24:40200742:0111",
+      "ev:r24:40200742:0113",
+      "ev:r24:40200742:0114",
+      "ev:r24:40200742:0115"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200742",
+        "raw_index": 103
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 111
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 113
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 114
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 115
+      }
+    ]
+  },
+  {
+    "key": "distinct_nobles",
+    "kidnap_noble": "local:r24:cupido_noble",
+    "commissioner": "local:r24:gogh_commissioner",
+    "same_person_established": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200742:0059",
+      "ev:r24:40200491:0038"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200742",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 38
+      }
+    ]
+  },
+  {
+    "key": "etra_origin",
+    "creator": "entity:b3d62664872b7846",
+    "imago": "entity:r24:etra",
+    "origin": "selfportrait",
+    "same_person": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200711:0007",
+      "ev:r24:40200711:0050",
+      "ev:r24:40200712:0045"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200711",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 45
+      }
+    ]
+  },
+  {
+    "key": "mistaken_address",
+    "street_actual_target": "entity:r24:etra",
+    "street_assumed_identity": "entity:b3d62664872b7846",
+    "reported_museum_actual_target": "entity:b3d62664872b7846",
+    "replace_source_labels": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200711:0042",
+      "ev:r24:40200712:0022"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200711",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 22
+      }
+    ]
+  },
+  {
+    "key": "first_correction_audibility",
+    "heard_by_fan": null,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200711:0050",
+      "ev:r24:40200711:0055"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200711",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 55
+      }
+    ]
+  },
+  {
+    "key": "cookie_roles",
+    "recommender": "entity:828bf1ba73e463a7",
+    "final_chooser": "entity:r24:etra",
+    "shoulder_touch_actor": "entity:828bf1ba73e463a7",
+    "shoulder_touch_recipient": "entity:r24:etra",
+    "credit_recipient": "entity:r24:etra",
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200711:0027",
+      "ev:r24:40200711:0029",
+      "ev:r24:40200711:0031",
+      "ev:r24:40200711:0072",
+      "ev:r24:40200711:0073"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200711",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 73
+      }
+    ]
+  },
+  {
+    "key": "cookie_result",
+    "creative_motivation": "initial_expectation",
+    "actual_followup": "arte_falls_asleep",
+    "painting_completed": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200711:0014",
+      "ev:r24:40200711:0078",
+      "ev:r24:40200711:0080",
+      "ev:r24:40200711:0083"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200711",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 78
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 83
+      }
+    ]
+  },
+  {
+    "key": "reported_scene",
+    "reporter": "entity:b3d62664872b7846",
+    "raw_start": 17,
+    "raw_end": 30,
+    "current_office_primary_audience": [
+      "entity:828bf1ba73e463a7",
+      "entity:r24:etra"
+    ],
+    "director_was_scene_eyewitness": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200712:0016",
+      "ev:r24:40200712:0017",
+      "ev:r24:40200712:0019",
+      "ev:r24:40200712:0022",
+      "ev:r24:40200712:0029",
+      "ev:r24:40200712:0031"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200712",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 31
+      }
+    ]
+  },
+  {
+    "key": "fan_consent",
+    "accepted": false,
+    "utterance": "unfinished",
+    "interveners": [
+      "entity:b3d62664872b7846",
+      "entity:828bf1ba73e463a7"
+    ],
+    "fan_arrested": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200712:0053",
+      "ev:r24:40200712:0056",
+      "ev:r24:40200712:0057",
+      "ev:r24:40200712:0058",
+      "ev:r24:40200712:0060",
+      "ev:r24:40200712:0065"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200712",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 65
+      }
+    ]
+  },
+  {
+    "key": "arte_complaint",
+    "speaker": "entity:b3d62664872b7846",
+    "addressee": "entity:828bf1ba73e463a7",
+    "mentioned": "entity:r24:etra",
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200712:0042"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200712",
+        "raw_index": 42
+      }
+    ]
+  },
+  {
+    "key": "etra_feelings",
+    "loneliness_confession": "direct_to_director",
+    "arte_motive": "private_inference",
+    "formal_romance_established": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200712:0079",
+      "ev:r24:40200712:0080",
+      "ev:r24:40200712:0081",
+      "ev:r24:40200712:0082",
+      "ev:r24:40200712:0089"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200712",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 81
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 82
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 89
+      }
+    ]
+  },
+  {
+    "key": "nate_gogh_monologue",
+    "speaker": "entity:10322a80a2aa84a9",
+    "mode": "audible_self_talk",
+    "mentioned_absent_person": "entity:3749a1ab2e0bbcff",
+    "overhearer": "entity:828bf1ba73e463a7",
+    "gogh_heard": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200491:0011",
+      "ev:r24:40200491:0012",
+      "ev:r24:40200491:0013"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200491",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 13
+      }
+    ]
+  },
+  {
+    "key": "nate_care",
+    "cohabits_with": "entity:3749a1ab2e0bbcff",
+    "wakeup_offset_hours": 2,
+    "absolute_wakeup_hour": null,
+    "childcare_comparison": "director_unspoken_metaphor",
+    "all_imago_duty": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200491:0031",
+      "ev:r24:40200491:0071",
+      "ev:r24:40200491:0080"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200491",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 80
+      }
+    ]
+  },
+  {
+    "key": "astrology",
+    "quoted_result": "行動を変えるべき",
+    "first_interpretation": "distance_from_gogh",
+    "second_interpretation": "talk_to_gogh",
+    "interpretations_by": "entity:10322a80a2aa84a9",
+    "objective_efficacy_confirmed": false,
+    "conversation_content_invented": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200491:0057",
+      "ev:r24:40200491:0060",
+      "ev:r24:40200491:0061",
+      "ev:r24:40200492:0012",
+      "ev:r24:40200492:0013",
+      "ev:r24:40200492:0015"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200491",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 15
+      }
+    ]
+  },
+  {
+    "key": "gogh_creation",
+    "evidence_level": "nate_report",
+    "positive_start": true,
+    "completed": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200491:0091",
+      "ev:r24:40200492:0013",
+      "ev:r24:40200492:0016"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200491",
+        "raw_index": 91
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 16
+      }
+    ]
+  },
+  {
+    "key": "nate_soft_speech",
+    "speaker": "entity:10322a80a2aa84a9",
+    "addressee": "entity:828bf1ba73e463a7",
+    "mode": "soft_direct_speech",
+    "heard_enough_to_respond": true,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200492:0034",
+      "ev:r24:40200492:0035",
+      "ev:r24:40200492:0036"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200492",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 36
+      }
+    ]
+  },
+  {
+    "key": "nate_direct_support",
+    "speaker": "entity:10322a80a2aa84a9",
+    "addressee": "entity:828bf1ba73e463a7",
+    "mode": "direct_speech",
+    "formal_romance_established": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200492:0041",
+      "ev:r24:40200492:0042"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200492",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 42
+      }
+    ]
+  },
+  {
+    "key": "star_metaphor",
+    "literal_species_claim": false,
+    "comparison": "people_as_shining_stars",
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200492:0024",
+      "ev:r24:40200492:0025",
+      "ev:r24:40200492:0026",
+      "ev:r24:40200492:0034"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200492",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 34
+      }
+    ]
+  },
+  {
+    "key": "reward_end",
+    "same_day_assumption": false,
+    "director_eating_depicted": false,
+    "hold_versus_hear": "lift_manjus_not_hear",
+    "gift_manufacturing_details_known": false,
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false,
+    "evidence_ids": [
+      "ev:r24:40200492:0048",
+      "ev:r24:40200492:0050",
+      "ev:r24:40200492:0052",
+      "ev:r24:40200492:0053",
+      "ev:r24:40200492:0055"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200492",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 55
+      }
+    ]
+  }
+]

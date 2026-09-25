@@ -1,0 +1,29 @@
+{
+  "raw_hashes": {
+    "22001901": "cda2477a43beb15bdc42f47403cfbd4c5b6f10e38b1ae807909d8e88d20e8821",
+    "22001902": "6565eb240c226fbd7fb5341089c12bf0d3e089e9296c4b3cde4062f1cb651a43",
+    "22001903": "310a49c1013b9694d75a61ff22e1e60a3d2c1c6ede9da870b9c8a538ef5c8513",
+    "22001904": "0885a088112cf59efda65f3f00376a22e41ebafee33bdc1dbd4106d27c7eca1f",
+    "22001905": "957c6e8e368b3ec4a1806164183af068c083e8cf832b25009d1873cc0caf47c2",
+    "22001906": "21691efbf70fbbfb6d53bfcf95310b68751624f4d908082fdd3d798c7beb7f19",
+    "22002301": "d381359a7a7ff8394e59d54633678da02aa1c87b70e427492d1908a6a6b8b920",
+    "22002302": "201edc45d23c476556747422203dc4d816ffe1afa02743a109185be5400a5c9a",
+    "22002303": "50f1bf90e678a55726d69f31337bb3467476f2201910c63e2b0b83e44c88ccad",
+    "22002304": "79f436581f613777ae227dad3e9027f5c9892d9551187c4945d186754314ce0a",
+    "22002305": "eb87689ebd3ac1c0ac6f8492da08cea20099dbfae3745e226cdc4cf0c66c3e35",
+    "22002306": "ba79ef6dd0e4b651619c457fc182cf3c2918168167a3fdabf4c51f54d7b1bf47"
+  },
+  "nested_source_sha256": "f9817bfe251796ce4c69fd0e781fe1b72be2cbc1aa2a0920cf44283811ba4657",
+  "source_archive_sha256": "5df5266154c60aeaab24d66fd6cdf4872ed162cf286e388fddc9c3c86835fc00",
+  "snapshot_scope": "Only 839 actually reviewed R35 items; original corpus remains nested. Unreviewed hashes are metadata only.",
+  "original_source_unchanged": true,
+  "hand_override_order": [
+    "source/hand_blocks.jsonl",
+    "alignment/working_hand_blocks.jsonl"
+  ],
+  "source_chain": [
+    "source/gc_pro_review_r4.zip",
+    "gc_pro_review_r4/source/r3.zip",
+    "gc_pro_review_r3/source/raw_ordered/<novel_id>.json"
+  ]
+}

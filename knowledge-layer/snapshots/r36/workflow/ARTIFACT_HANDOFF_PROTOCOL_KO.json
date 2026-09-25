@@ -1,0 +1,22 @@
+{
+  "protocol_id": "gc-artifact-handoff-v2",
+  "persistent_registration_is_separate": true,
+  "internal_verifier_proves_handoff": false,
+  "sealed_filename_policy": "Unique _rebuilt / _redo names; never overwrite a sealed artifact.",
+  "gates": [
+    "WORK_COMPLETE",
+    "PACKAGE_BUILT",
+    "VALIDATION_PASS",
+    "PACKAGING_PASS",
+    "HANDOFF_VERIFIED"
+  ],
+  "handoff_pass_requires": [
+    "visible current-conversation file ID for the exact generated artifact",
+    "rehydrated bytes SHA equals external sealed ZIP SHA"
+  ],
+  "when_unavailable": "PENDING; no release or persistent-delivery completion claim. Next batch requires actual input bytes.",
+  "zip_hash_storage": "External files only; self ZIP hash not fixed inside own ZIP.",
+  "fault_cause_status": "UNDETERMINED_PLATFORM_ROOT_CAUSE; cannot infer recompression from one folder prefix.",
+  "fallback": "Optional byte-split transport with ordered sizes and SHA; reconstructed bytes must equal sealed ZIP before extraction.",
+  "translation_publication_authorized": false
+}

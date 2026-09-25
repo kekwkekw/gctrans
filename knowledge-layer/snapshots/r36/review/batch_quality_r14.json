@@ -1,0 +1,11 @@
+{
+  "all_rows_individually_reviewed": 674,
+  "final_proposals_reread": 38,
+  "high_risk_key_evidence_groups": 21,
+  "independent_reviewer": false,
+  "accuracy_equivalence_proven": false,
+  "scope_truncated": false,
+  "unsupported_approval_count": 0,
+  "recommendation": "CONTINUE_CHAPTER_OUTER_EPISODE_INNER_WITH_PARTIAL_COMPLETION_SAFETY",
+  "limitations_ko": "자동 검증은 이미 판정해 기록한 범위·제약의 회귀검사이지 일본어 의미 정답률 측정이 아니다."
+}

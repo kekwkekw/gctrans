@@ -1,0 +1,26 @@
+{
+  "scenario_count": 137,
+  "source_entries": 8487,
+  "body_count": 8351,
+  "title_count": 136,
+  "runtime_unique_keys": 8428,
+  "proposal_dispositions": {
+    "APPLY_RC": 639,
+    "SEPARATE_NOTE_RC": 3,
+    "SUPERSEDED": 2,
+    "KEEP_OBSERVED": 20,
+    "AMEND_AND_APPLY_RC": 4
+  },
+  "applied_existing_proposals": 646,
+  "new_missing_titles": 9,
+  "note_separations": 3,
+  "name_policy_occurrences": 19,
+  "exact_key_resolution_groups": 2,
+  "tagged_rows": 34,
+  "tag_nodes": 35,
+  "ruby_rows": 2,
+  "edited_source_entries": 655,
+  "reviewed_source_rows_not_retranslated": 8487,
+  "main_deferred_rows": 0,
+  "production_gate": "BLOCKED_PENDING_RUNTIME_AND_USER_APPROVAL"
+}

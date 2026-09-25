@@ -1,0 +1,14 @@
+{
+  "scope": "POST_R36_MEANING_DECISION_BASELINE",
+  "WORK": "COMPLETE",
+  "user_decisions_closed": "1019_OF_1019",
+  "all_proposals_accounted": "1687_OF_1687_INCLUDING_MAIN_M1_668_PUBLISHED_HISTORY",
+  "source_anomalies": "13_CARRIED_FORWARD_NO_SOURCE_MUTATION",
+  "translator_notes": "3_POLICY_APPROVED",
+  "remaining_semantic_decision_items": 0,
+  "remaining_source_anomaly_source_corrections": 0,
+  "official_source_rechecks_optional_later": 13,
+  "production_export": "NOT_STARTED_NOT_AUTHORIZED",
+  "punctuation_editorial": "NEXT_STAGE_NOT_STARTED",
+  "click_popup_research": "DEFERRED_BACKLOG"
+}

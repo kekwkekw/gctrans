@@ -1,0 +1,30 @@
+{
+  "decision_id": "workflow:r33:closeout:rebuild1",
+  "operation": "CLOSE_NON_DEFERRED_SCOPE_KEEP_ALL_HOLDS",
+  "authorizing_user_instruction": "신규 6행을 기존 6행처럼 보류하고 총 12행으로 R34 진행; R33 확정 상태를 재생성한 뒤 R34를 처음부터 재검수",
+  "reviewed_items": 717,
+  "original_scope_items": 723,
+  "r33_deferred_items": 6,
+  "effective_deferred_items": 12,
+  "queue_inside_deferred": 7,
+  "queue_outside_deferred": 5,
+  "semantic_content_changed": false,
+  "queue_removed_by_closeout": 0,
+  "held_content_rereviewed": false,
+  "approval_changed": false,
+  "scope_of_supersession": [
+    "old R33 partial workflow lock",
+    "old R34 advance prohibition"
+  ],
+  "does_not_supersede": [
+    "source or observed bytes",
+    "717 original row reviews",
+    "all 12 deferred records",
+    "original strict-schema limitations",
+    "translation approval or production restrictions"
+  ],
+  "historical_row_partial_flags_are_creation_time": true,
+  "old_r34_work_accepted_as_parent": false,
+  "old_expected_sha_not_reused": true,
+  "model_mode_switched_by_assistant": false
+}

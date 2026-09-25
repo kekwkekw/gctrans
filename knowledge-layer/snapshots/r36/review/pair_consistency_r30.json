@@ -1,0 +1,124 @@
+[
+  {
+    "pair_id": "pair:r30:1",
+    "label_ko": "사랑의 인연",
+    "novel_ids": [
+      "21003201",
+      "21003202"
+    ],
+    "body_rows": 201,
+    "title_rows": 2,
+    "all_rows_individually_compared": true,
+    "partial": false,
+    "consistency_result": "REVIEWED_WITH_LOCAL_UNAPPROVED_PROPOSALS",
+    "contracts": [
+      "contract:r30:cupid_name_origin",
+      "contract:r30:nicknames_recipient_specific",
+      "contract:r30:creator_not_biological_age",
+      "contract:r30:temporary_distance_not_move",
+      "contract:r30:cupid_absent_call",
+      "contract:r30:cupid_selfhood_fear",
+      "contract:r30:cupid_battle_cooperation",
+      "contract:r30:bouguereau_apology_past",
+      "contract:r30:requests_refused_after_apology",
+      "contract:r30:dango_gifts_and_overhearing"
+    ],
+    "observations_ko": [
+      "부그로가 천사 이마쥬에게 쿠피도라는 이름을 붙인다. 최초 라벨은 천사 이마쥬다.",
+      "쿠-쨩은 부그로에게 금지하지만 관장에게 요구하는 호칭이다. 나중에는 쿠피도에도 답한다.",
+      "처음 생긴 이마쥬·최근 탄생·아기와 고양이 비유·모녀 싸움 비유를 창작 관계와 분리해 기록한다.",
+      "처음은 오늘 저녁까지 맡는 한시 분리이고 나중의 별거는 정말 괴로울 경우의 선택이다.",
+      "관장이 산 경단을 먹다가 쿠피도가 부그로를 부르려 하지만 부재를 알아차린다.",
+      "쿠피도는 사랑을 기뻐하면서도 이상과 자기 마음을 구별하지 못할까 걱정하고 자기 힘으로 돕고 싶다.",
+      "쿠피도는 부그로가 약화시킨 적을 가려 마무리하며 가세했고 셋이 무사히 교실로 돌아온다.",
+      "부그로는 실망이 아닌 감격과 반성을 밝히며 바쁜 부모·외로운 어린 시절을 말한다. 쿠피도도 사과한다.",
+      "화해 뒤 포옹과 복장 요청은 각각 거절된다.",
+      "첫 포장 경단은 싸움 때문에 전하지 못했고 며칠 뒤 새 경단을 사주러 간다. 관장은 둘의 대화를 듣고 떠난다."
+    ],
+    "no_cross_pair_timeline_inference": true
+  },
+  {
+    "pair_id": "pair:r30:2",
+    "label_ko": "로리에의 스플래시 서머!",
+    "novel_ids": [
+      "21003501",
+      "21003502"
+    ],
+    "body_rows": 173,
+    "title_rows": 2,
+    "all_rows_individually_compared": true,
+    "partial": false,
+    "consistency_result": "REVIEWED_WITH_LOCAL_UNAPPROVED_PROPOSALS",
+    "contracts": [
+      "contract:r30:beach_not_curator_witness",
+      "contract:r30:watermelon_roles_rules",
+      "contract:r30:mother_child_distinct_woman",
+      "contract:r30:secret_tactic_and_left",
+      "contract:r30:device_not_magic_watermelon",
+      "contract:r30:rampage_not_ordered_assault",
+      "contract:r30:joint_finishing_blow",
+      "contract:r30:restitution_and_arrest",
+      "contract:r30:laurier_initiates_share"
+    ],
+    "observations_ko": [
+      "해변은 도나텔로·로리에의 활동이며 관장은 나중에 미술관에서 경위를 듣는다.",
+      "로리에가 참가해 두 번 도전하고 도나텔로는 참가하지 않고 유도한다. 두 기회 뒤 유료 재도전 안내가 있다.",
+      "첫 소년과 어머니는 한 조다. 뒤의 항의 여성은 동일인이라는 근거가 없다.",
+      "도나텔로가 움직임을 관찰해 귓속말로 알리고 로리에가 자기 기준 왼쪽 대각선 앞으로 내려쳐 성공한다.",
+      "모래 속 죽음의 예술이 수박을 이동시켰고 복잡한 지시는 어려웠다는 주최자의 설명이다. 지인에게서 받은 경위도 자기 보고다.",
+      "여성 목소리가 자극이었는지는 추측이고 주최자는 공격을 멈추라 하지만 통제하지 못한다.",
+      "로리에 선행 공격 뒤 마지막은 둘이 호흡을 맞춰 분쇄한다. 부상자는 없다고 도나텔로가 밝힌다.",
+      "환불과 수박 제공으로 참가자들이 납득하지만 경찰은 주최자를 연행한다.",
+      "로리에가 먼저 껴안아 수박을 떨어뜨리고 관장에게 나누자고 제안한다. 나중에 실제 전달·설명이 이어진다."
+    ],
+    "no_cross_pair_timeline_inference": true
+  },
+  {
+    "pair_id": "pair:r30:3",
+    "label_ko": "또 한 명의 자화상",
+    "novel_ids": [
+      "21003701",
+      "21003702"
+    ],
+    "body_rows": 182,
+    "title_rows": 2,
+    "all_rows_individually_compared": true,
+    "partial": false,
+    "consistency_result": "REVIEWED_WITH_LOCAL_UNAPPROVED_PROPOSALS",
+    "contracts": [
+      "contract:r30:exhibition_and_temporal_scope",
+      "contract:r30:image_creation_unknown_mechanism",
+      "contract:r30:etra_identity_labels",
+      "contract:r30:etra_respect_not_uncritical",
+      "contract:r30:michelangelo_and_gogh_reactions",
+      "contract:r30:sanso_schedule_and_meals",
+      "contract:r30:tear_gesture_not_red_eyes",
+      "contract:r30:comparison_insecurity",
+      "contract:r30:parenthetical_delivery_not_auto",
+      "contract:r30:arte_overhearing_scope",
+      "contract:r30:sweat_search_not_certainty",
+      "contract:r30:support_and_art_practice",
+      "contract:r30:murmur_content_not_confirmed",
+      "contract:r30:limited_evaluation_then_future",
+      "contract:r30:cleaning_and_lecture_deferred"
+    ],
+    "observations_ko": [
+      "다른 예술가들의 아르테 그림과 본인의 자화상 전시 뒤 첫 이마쥬를 만들고 에트라라 이름 붙인다.",
+      "관장의 통상 비술은 실패하고 아르테가 손을 내밀어 마력을 내는 듯한 뒤 탄생한다. 원리는 두 사람 모두 설명하지 못한다.",
+      "자화상 이마쥬가 에트라로 이름 공개되고 미켈란젤로는 처음 아르테로 오인한다.",
+      "에트라는 아르테를 존경하지만 게으름을 지적하고 창작을 도우려 한다. 자매 비유는 창작 관계에 대한 비유다.",
+      "미켈란젤로가 화났다는 건 에트라 걱정, 마음에 들었다는 건 관장 해석이다. 고흐는 아첨을 의심하다 과자를 준다.",
+      "에트라는 전날 저녁 들은 일정으로 채소 손질을 맡고 저녁은 둘이 함께 만든다. 다음날 햄버그 계획과 관장의 수리 확인은 별개다.",
+      "도움 제안에 감동한 관장이 눈가를 짚고 에트라가 이유를 묻는다.",
+      "비교 칭찬 뒤 에트라는 자기만의 특별함을 찾으려 몰래 그림을 그린다. 관장은 빈말을 망설인다.",
+      "관장의 직접 위로 속 채소 크기 괄호 덧말은 전달 방식이 명확히 분리되지 않는다.",
+      "관장이 망설이는 중 아르테가 나타나 에트라의 고민에 답한다. 대화를 듣던 듯하나 정확한 시작점은 없다.",
+      "에트라는 땀을 보고 걱정해서 찾았는지 묻고 아르테는 순찰이었다고 부정한다.",
+      "에트라는 특별한 동반자로 인정받고 먼저 안긴 뒤 그림을 더 그리도록 아르테에게 요구한다.",
+      "에트라가 관장의 아르테 감정을 추측하다 말을 접고, 관장은 중얼거림만 지적한다.",
+      "관장은 현재 아는 장점을 말하고 앞으로 더 알고 싶다고 끝까지 설명한다. 에트라는 듣고 기뻐한다.",
+      "이번 주 담당 아르테 대신 에트라가 청소한다. 관장은 설교하러 가려다 우선 도구를 들고 돕기로 한다."
+    ],
+    "no_cross_pair_timeline_inference": true
+  }
+]

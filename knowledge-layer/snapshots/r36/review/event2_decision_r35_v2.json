@@ -1,0 +1,1791 @@
+{
+  "event_id": "event:220023",
+  "novel_ids": [
+    "22002301",
+    "22002302",
+    "22002303",
+    "22002304",
+    "22002305",
+    "22002306"
+  ],
+  "reviewed_items": 420,
+  "body": 414,
+  "titles": 6,
+  "queue_removal_expected": 358,
+  "outside_queue_body": 56,
+  "row_review_complete": true,
+  "event_consistency_complete": true,
+  "final_candidates_recompared_within_event": true,
+  "batch_consistency_complete": false,
+  "contracts": [
+    {
+      "key": "two_paintings_myth_not_real_origin",
+      "observation_ko": "라파엘로 그림은 대천사가 용을 칠 직전이고 렘브란트 그림은 신이 변한 흰 황소가 소녀를 끌고 가는 신화 장면이다.",
+      "blocked_overclaim_ko": "그림의 전투를 실제 사건으로 만들거나 이름 없는 신·소녀에게 외부 신화 이름을 부여하지 않는다. 나중의 소가 이 그림에서 나왔다고 하지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002301",
+          "raw_index": 2
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 3
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 4
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 18
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 19
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 20
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 21
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 22
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 23
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 6
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 7
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 33
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 34
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 54
+        }
+      ],
+      "subjects": [
+        "라파엘로",
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "reluctant_commentary_consent",
+      "observation_ko": "렘브란트는 공개 행사에 처음엔 사양하고 라파엘로의 관객 이해·반응이라는 설득에 짧은 시간이라는 조건으로 동의한다.",
+      "blocked_overclaim_ko": "무조건 동의·강제 확정·마법적 설득으로 바꾸지 않고 관장 기대와 실제 성공 시점을 구분한다.",
+      "source_locations": [
+        {
+          "novel_id": "22002301",
+          "raw_index": 37
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 38
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 39
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 41
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 42
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 43
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 45
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 47
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 48
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 49
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 52
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 53
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 54
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 56
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 57
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 58
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 59
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 60
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 61
+        },
+        {
+          "novel_id": "22002301",
+          "raw_index": 62
+        }
+      ],
+      "subjects": [
+        "렘브란트",
+        "라파엘로"
+      ]
+    },
+    {
+      "key": "turn_order_and_actual_success",
+      "observation_ko": "두 작가가 교대로 해설하며 라파엘로가 먼저, 렘브란트가 뒤다. 라파엘로가 권한 순서를 관장은 걱정했지만 실제 반응은 좋았다.",
+      "blocked_overclaim_ko": "관장의 우려를 실력 불신으로, 라파엘로의 사전 자신감을 미래 결과 확정으로 바꾸지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002302",
+          "raw_index": 1
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 4
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 5
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 6
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 7
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 8
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 9
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 10
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 11
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 12
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 21
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 22
+        }
+      ],
+      "subjects": [
+        "관장",
+        "라파엘로",
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "appearance_reaction_curse_and_adult",
+      "observation_ko": "공개 해설이 드물고 저주를 아는 관객도 적어 렘브란트의 외모에 놀란다. 렘브란트는 다 큰 어른이며 아이가 아니라고 말한다.",
+      "blocked_overclaim_ko": "관객·주민의 겉모습 추측을 실제 미성년 설정으로 승격하지 않는다. 선물 발신 소녀는 별도 인물이고 숫자 나이는 추가하지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002302",
+          "raw_index": 13
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 14
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 15
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 16
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 55
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 56
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 28
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 29
+        }
+      ],
+      "subjects": [
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "costume_direction_and_private_hearing",
+      "observation_ko": "라파엘로가 렘브란트 의상도 기획했고 무대 대비를 의도했다. 관장에게 귀에 말하는 것은 실제 청취되지만 렘브란트의 속마음은 별개다.",
+      "blocked_overclaim_ko": "무대 관객·렘브란트가 귓속말을 모두 들었다거나 관장이 개인 수집욕을 들었다고 하지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002302",
+          "raw_index": 17
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 18
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 19
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 20
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 29
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 31
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 32
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 34
+        }
+      ],
+      "subjects": [
+        "라파엘로",
+        "관장",
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "all_event_dates_gifts_myako",
+      "observation_ko": "수일의 모든 해설 일정이 끝난 뒤 세 사람이 쉰다. 먀코·산소비노가 두 작가 앞으로 온 선물 상자를 전하고 퇴실한다.",
+      "blocked_overclaim_ko": "한 번의 제2회 행사만으로 모든 날짜를 대체하거나 먀코와 안젤라를 성이 같다는 이유로 합치지 않는다. 퇴실 뒤 청취를 계속 부여하지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002302",
+          "raw_index": 1
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 23
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 25
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 26
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 27
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 35
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 36
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 37
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 38
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 39
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 43
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 44
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 45
+        }
+      ],
+      "subjects": [
+        "산소비노",
+        "렘브란트",
+        "라파엘로"
+      ]
+    },
+    {
+      "key": "fan_letter_plush_and_hidden_pleasure",
+      "observation_ko": "편지를 읽으며 관객의 좋은 반응을 알게 되고 소녀가 보낸 소 인형을 발견한다. 렘브란트는 난처해도 부드러운 표정과 실제 포옹을 보인다.",
+      "blocked_overclaim_ko": "편지 내용은 작성자의 평가이며 렘브란트 자신의 자찬이 아니다. 취향 추정·라파엘로의 눈치챘으리라는 서술을 확정된 내면 독해로 바꾸지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002302",
+          "raw_index": 47
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 48
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 49
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 50
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 51
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 52
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 53
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 54
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 55
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 56
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 57
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 58
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 60
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 64
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 65
+        }
+      ],
+      "subjects": [
+        "렘브란트",
+        "라파엘로"
+      ]
+    },
+    {
+      "key": "public_feedback_reciprocal_learning",
+      "observation_ko": "귀갓길 렘브란트는 낯선 관객의 칭찬이 기쁜 경험이었다며 감사한다. 라파엘로도 렘브란트 해설에서 배웠다고 한다.",
+      "blocked_overclaim_ko": "한쪽만 베푸는 관계나 관장이 동석해 들은 말로 바꾸지 않는다. 다음 재회 제안과 직후 우연한 재회는 별도다.",
+      "source_locations": [
+        {
+          "novel_id": "22002302",
+          "raw_index": 66
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 67
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 68
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 69
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 70
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 71
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 72
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 73
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 74
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 75
+        },
+        {
+          "novel_id": "22002302",
+          "raw_index": 76
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 17
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 18
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 19
+        }
+      ],
+      "subjects": [
+        "렘브란트",
+        "라파엘로"
+      ]
+    },
+    {
+      "key": "noir_bull_misclassification_and_theft",
+      "observation_ko": "노와르 자택으로 가던 렘브란트는 소를 죽음의 예술로 의심하고 포획하려다가 인형을 빼앗긴다. 소는 사람을 공격하지 않았다.",
+      "blocked_overclaim_ko": "처음 판단을 최종 정체로 삼거나 인형 강탈을 렘브란트 납치로 바꾸지 않는다. 닮은 그림과 실제 기념상을 병합하지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002303",
+          "raw_index": 1
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 2
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 3
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 4
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 5
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 6
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 7
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 8
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 9
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 10
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 11
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 12
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 13
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 33
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 34
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 54
+        }
+      ],
+      "subjects": [
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "pursuit_mixed_motives",
+      "observation_ko": "렘브란트는 소유물을 빼앗긴 오기와 받은 선물이라는 점을 함께 말하고 라파엘로는 팬의 보물 관점에서 돕는다.",
+      "blocked_overclaim_ko": "렘브란트의 속마음은 라파엘로가 들은 사실이 아니다. 처음부터 오직 팬 사랑 혹은 오직 무관심 하나로 고정하지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002303",
+          "raw_index": 14
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 15
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 22
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 24
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 25
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 26
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 27
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 7
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 8
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 9
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 10
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 17
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 18
+        }
+      ],
+      "subjects": [
+        "렘브란트",
+        "라파엘로"
+      ]
+    },
+    {
+      "key": "exoti_reservation_not_purchase",
+      "observation_ko": "에그조티에서 소가 멈췄을 때 렘브란트는 희귀 화구를 찾고 라파엘로는 소를 감시한다. 렘브란트는 상품 보관만 부탁하고 돌아온다.",
+      "blocked_overclaim_ko": "구매·결제·수령 완료라고 하지 않는다. 두 사람이 동시에 감시를 포기한 것이 아니다.",
+      "source_locations": [
+        {
+          "novel_id": "22002303",
+          "raw_index": 28
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 30
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 31
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 33
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 34
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 35
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 36
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 37
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 38
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 39
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 40
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 41
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 42
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 43
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 44
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 45
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 46
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 47
+        }
+      ],
+      "subjects": [
+        "렘브란트",
+        "라파엘로"
+      ]
+    },
+    {
+      "key": "hiver_bread_and_muffled_speech",
+      "observation_ko": "이베르의 가을 빵 축제에서는 반대로 라파엘로가 가고 렘브란트가 소를 본다. 라파엘로는 빵을 문 발음으로 돌아오고 렘브란트가 뜻을 풀어 말한다.",
+      "blocked_overclaim_ko": "빵을 만든다는 전언과 직접 좋아하는 모습을 본 경험을 구분한다. 먹는 중 발음 늘임을 단순 오기로 전부 정상화하지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002303",
+          "raw_index": 48
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 51
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 52
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 56
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 57
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 58
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 59
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 60
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 61
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 62
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 63
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 67
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 68
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 69
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 71
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 72
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 73
+        }
+      ],
+      "subjects": [
+        "라파엘로",
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "unrelated_wedding_and_future_sketch",
+      "observation_ko": "길에서 만난 신혼 여성은 라파엘로 도움으로 결혼식을 했다고 감사한다. 이어 수면 풍경은 렘브란트의 차기작 참고가 되지만 소를 놓쳐 다른 날 스케치를 계획한다.",
+      "blocked_overclaim_ko": "신혼 여성을 반지 사건의 신부나 라파엘로 배우자로 병합하지 않는다. 스케치가 이미 끝났다는 결과도 만들지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002304",
+          "raw_index": 2
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 3
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 4
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 5
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 6
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 7
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 8
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 9
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 10
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 11
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 13
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 14
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 15
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 16
+        }
+      ],
+      "subjects": [
+        "라파엘로",
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "stop_pattern_hypothesis_not_universal_rule",
+      "observation_ko": "두 사람은 쫓지 않으면 멈추고 좋은 장소로 이끄는 듯한 패턴을 의논한다. 소가 죽음의 예술일 가능성을 낮게 보지만 정체는 모른다.",
+      "blocked_overclaim_ko": "모든 접촉에서 반드시 도망친다는 고정 법칙으로 만들지 않는다. 세잔의 차 권유 후에도 도망가므로 관찰 범위를 제한한다.",
+      "source_locations": [
+        {
+          "novel_id": "22002303",
+          "raw_index": 65
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 66
+        },
+        {
+          "novel_id": "22002303",
+          "raw_index": 67
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 18
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 19
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 20
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 21
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 22
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 23
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 24
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 25
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 26
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 27
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 28
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 29
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 54
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 69
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 71
+        }
+      ],
+      "subjects": [
+        "라파엘로",
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "director_joins_after_supporter_visit",
+      "observation_ko": "관장은 행사 뒤 지원 귀족 용무를 마치고 두 작가를 만난다. 앞의 추격 이야기는 전해 듣고 그 뒤 도망 패턴을 직접 본다.",
+      "blocked_overclaim_ko": "처음 노와르 만남·화구·빵 축제를 관장의 직접 목격으로 소급하지 않는다. 이때부터 세 명의 추격이다.",
+      "source_locations": [
+        {
+          "novel_id": "22002304",
+          "raw_index": 34
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 35
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 36
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 37
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 38
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 40
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 41
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 42
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 43
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 44
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 45
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 46
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 47
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 48
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 49
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 50
+        }
+      ],
+      "subjects": [
+        "관장",
+        "렘브란트",
+        "라파엘로"
+      ]
+    },
+    {
+      "key": "cezanne_tea_smell_no_taste",
+      "observation_ko": "숲에서 야외 스케치 중인 세잔에게 차를 얻는다. 렘브란트는 미각이 없어도 후각으로 안정되고 관장은 맛을 칭찬한다. 세잔은 배웅만 한다.",
+      "blocked_overclaim_ko": "렘브란트의 미각 회복이나 세잔의 추격 합류로 바꾸지 않는다. 세잔은 자세한 사정을 모른다고 밝힌다.",
+      "source_locations": [
+        {
+          "novel_id": "22002304",
+          "raw_index": 53
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 57
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 58
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 59
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 60
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 63
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 64
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 65
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 66
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 67
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 68
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 69
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 71
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 73
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 74
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 75
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 76
+        },
+        {
+          "novel_id": "22002304",
+          "raw_index": 77
+        }
+      ],
+      "subjects": [
+        "렘브란트",
+        "세잔",
+        "관장"
+      ]
+    },
+    {
+      "key": "imagined_dairy_vs_actual_crops",
+      "observation_ko": "목장 입구에서 관장은 우유 1년치와 정기 배송을, 라파엘로는 버터를 상상한다. 실제 다음날 받은 것은 농작물 선물과 숙박이다.",
+      "blocked_overclaim_ko": "상상 보상을 실제 지급으로 만들지 않는다. 미술관 동료들이 현장에 있었다거나 이미 선물을 받았다는 것으로도 바꾸지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002305",
+          "raw_index": 3
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 4
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 5
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 6
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 7
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 8
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 59
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 61
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 62
+        }
+      ],
+      "subjects": [
+        "관장",
+        "라파엘로",
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "ambush_doubt_to_rescue_hypothesis",
+      "observation_ko": "목장에 죽음의 예술이 있어 라파엘로는 유인 함정을 의심하지만 렘브란트는 적의 약함과 소의 호소 같은 시선으로 구조 요청일 수 있다고 추론한다.",
+      "blocked_overclaim_ko": "함정 가설이나 구조 동기를 소가 말한 확정 사실로 승격하지 않는다. 라파엘로가 안심했다고 미상 기원이 모두 밝혀진 것도 아니다.",
+      "source_locations": [
+        {
+          "novel_id": "22002305",
+          "raw_index": 17
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 18
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 20
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 21
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 22
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 23
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 24
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 25
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 26
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 27
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 28
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 29
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 30
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 31
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 32
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 33
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 34
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 35
+        }
+      ],
+      "subjects": [
+        "라파엘로",
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "protect_cows_contain_enemies_divided_roles",
+      "observation_ko": "관장은 목장 소 보호와 주변 민가를 위해 적이 울타리 밖으로 나오지 않게 하라고 지시한다. 두 작가는 전투하고 관장은 소를 대피시킨다.",
+      "blocked_overclaim_ko": "세 사람 모두 같은 전투를 했다고 합치지 않는다. 전투 시작을 처치 완료로, 위협받은 소들을 죽은 소들로 바꾸지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002305",
+          "raw_index": 20
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 35
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 36
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 37
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 38
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 39
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 44
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 1
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 2
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 3
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 4
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 5
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 6
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 7
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 8
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 10
+        }
+      ],
+      "subjects": [
+        "관장",
+        "라파엘로",
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "collecting_experiment_not_performed",
+      "observation_ko": "렘브란트는 같은 성질의 적을 잡아 비공개 실험 시료로 쓸 유혹을 느끼지만 소의 시선 앞에서 빨리 해결하기로 한다. 뒤에는 다음 기회 혼자 잡을 생각도 한다.",
+      "blocked_overclaim_ko": "실험·포획이 이번에 실제 이루어졌다고 하지 않는다. 소가 독백을 읽었다거나 수집 욕구가 영원히 사라졌다고도 하지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002305",
+          "raw_index": 40
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 41
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 42
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 43
+        },
+        {
+          "novel_id": "22002305",
+          "raw_index": 44
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 4
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 50
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 66
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 67
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 68
+        }
+      ],
+      "subjects": [
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "plush_return_and_growing_attachment",
+      "observation_ko": "밤 전투가 끝난 뒤 흰 황소가 인형을 내밀어 렘브란트가 받는다. 렘브란트는 추격하는 동안 점점 애착이 생겼다고 속으로 인정한다.",
+      "blocked_overclaim_ko": "초기 관심 부정과 후반 애착을 오류로 상쇄하지 않는다. 감사 같은 몸짓은 사람 말로 바꾸지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002306",
+          "raw_index": 10
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 11
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 12
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 13
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 14
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 15
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 16
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 17
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 18
+        }
+      ],
+      "subjects": [
+        "렘브란트",
+        "라파엘로"
+      ]
+    },
+    {
+      "key": "villager_revelation_and_local_statue_identity",
+      "observation_ko": "주민이 흰 황소를 흰소님으로 알아보고 온 마을이 소에게 감사해 세운 상이라고 설명한다. 뒤에 실제 상으로 돌아가는 모습을 본다.",
+      "blocked_overclaim_ko": "원래 화자 白い牡牛를 이름 공개 이전부터 교체하지 않는다. 인간·이마쥬·그림 속 신으로 전역 분류하지 않고 이번 움직이는 기념상 문맥으로만 연결한다.",
+      "source_locations": [
+        {
+          "novel_id": "22002306",
+          "raw_index": 21
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 22
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 23
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 24
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 25
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 27
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 30
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 31
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 32
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 33
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 34
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 35
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 36
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 37
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 49
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 52
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 53
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 54
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 56
+        }
+      ],
+      "subjects": []
+    },
+    {
+      "key": "farm_succession_abandonment_and_police_report",
+      "observation_ko": "목장주 사망 후 후계 다툼으로 소가 방치되고 죽음의 예술이 번졌다고 주민이 전한다. 단결해 시경에 신고했으나 대응은 뒤로 밀렸다고 한다.",
+      "blocked_overclaim_ko": "목장주 사인·주민의 적 제작·새 관리자 선정을 만들어내지 않는다. 도시 범죄로 신고 우선순위가 낮았으리라는 관장 추론을 시경 해명으로 바꾸지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002306",
+          "raw_index": 32
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 39
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 40
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 41
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 42
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 43
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 63
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 64
+        }
+      ],
+      "subjects": [
+        "관장"
+      ]
+    },
+    {
+      "key": "choice_of_rembrandt_unresolved",
+      "observation_ko": "소가 구조를 요청해 움직였으리라는 해석에 이어, 인형을 소중히 들어 도움을 기대했을지 라파엘로가 추측한다. 렘브란트는 전례가 없어 알 수 없다고 한다.",
+      "blocked_overclaim_ko": "선정 동기·행운 발생 원리·각성 원인을 확정하지 않는다. 소가 직접 설명했다는 근거도 없다.",
+      "source_locations": [
+        {
+          "novel_id": "22002306",
+          "raw_index": 44
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 45
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 46
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 47
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 49
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 50
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 51
+        }
+      ],
+      "subjects": [
+        "렘브란트",
+        "라파엘로"
+      ]
+    },
+    {
+      "key": "return_statue_prayer_and_next_day",
+      "observation_ko": "렘브란트가 쓰다듬자 소가 울고 기념상으로 돌아간다. 모두 기도하고 마을에서 하룻밤 지낸 다음날 아침 떠난다.",
+      "blocked_overclaim_ko": "사람으로 변신·소멸·봉인 또는 영구 불활성 확정으로 바꾸지 않는다. 귀로 장면을 전투 당일 밤으로 합치지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002306",
+          "raw_index": 49
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 52
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 53
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 54
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 55
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 56
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 57
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 58
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 59
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 60
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 61
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 62
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 63
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 64
+        }
+      ],
+      "subjects": [
+        "렘브란트",
+        "라파엘로",
+        "관장"
+      ]
+    },
+    {
+      "key": "private_future_help_and_capture_motive",
+      "observation_ko": "렘브란트는 상에 다시 문제가 생기면 오라고 조용히 말하며 머리를 쓰다듬는다. 속으로는 다음엔 혼자 적을 잡을 생각이다.",
+      "blocked_overclaim_ko": "외부 발화와 속셈을 섞거나 상이 다시 움직였다고 하지 않는다. 관장이 내면을 듣거나 관객에 공개한 계획도 아니다.",
+      "source_locations": [
+        {
+          "novel_id": "22002306",
+          "raw_index": 65
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 66
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 67
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 68
+        }
+      ],
+      "subjects": [
+        "렘브란트"
+      ]
+    },
+    {
+      "key": "playful_second_theft_bond_not_romance",
+      "observation_ko": "귀갓길 라파엘로가 인형을 다시 가져가는 장난을 치고 렘브란트는 어이없어해도 기쁜 듯하다. 관장은 깊어진 유대를 가장 좋은 결과일지 모른다고 생각한다.",
+      "blocked_overclaim_ko": "두 번째 강탈의 주체를 소로 바꾸지 않고 초기 회수 성공을 취소하지 않는다. 연애 합의·정확한 나이·최종 재반환 완료를 추가하지 않는다.",
+      "source_locations": [
+        {
+          "novel_id": "22002306",
+          "raw_index": 69
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 70
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 71
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 72
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 73
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 74
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 75
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 76
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 77
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 78
+        },
+        {
+          "novel_id": "22002306",
+          "raw_index": 79
+        }
+      ],
+      "subjects": [
+        "라파엘로",
+        "렘브란트",
+        "관장"
+      ]
+    }
+  ],
+  "existing_reconfirmed_ids": [],
+  "new_holds": [],
+  "extra_source_anomalies": [
+    {
+      "anomaly_id": "R35V2-SRC002",
+      "novel_id": "22002303",
+      "raw_index": 69,
+      "kind": "SOURCE_QUOTED_DECODE_TYPO_CANDIDATE",
+      "classification": "LIKELY_TRANSPOSED_SYLLABLES_NOT_FINAL",
+      "jp_exact": "「え、えっと……“すなまい、待たせたね”ですか？\\n　なにもパンを頬張ったまま来なくても……」",
+      "ko_observed": "그, 그게...... \"미안해, 기다렸지\" 인가요?\n그렇게 빵을 입안 가득 넣은채로 오지 않으셔도......",
+      "reason_ko": "빵을 문 68행의 불명확한 발음을 렘브란트가 해독하는 69행 인용에서 すなまい가 쓰였다. すまない의 음절 전도일 가능성이 높지만 의도적 재현·공식 현재 원문은 확인하지 않았다. 68/69는 별도 완전 raw이며 실제 화자·손번역 span이 원형과 일치한다. KO 미안해는 유지한다.",
+      "context_locations": [
+        [
+          "22002303",
+          68
+        ],
+        [
+          "22002303",
+          69
+        ]
+      ],
+      "workflow_state": "SOURCE_ANOMALY_RECORDED",
+      "automatic_correction": false,
+      "source_preserved": true,
+      "translation_proposal_created": false,
+      "linked_translation_proposals": [],
+      "final_adjudication_performed": false,
+      "official_current_game_error_confirmed": false,
+      "evidence_id": "ev:r35v2:22002303:0069",
+      "jp_sha256": "9453802a5109a736c317ec1332179eee148c9662f4231c40a9c7713198c9a116",
+      "resolution": null
+    }
+  ],
+  "completed_at_utc": "2026-09-20T11:03:04.940078+00:00"
+}

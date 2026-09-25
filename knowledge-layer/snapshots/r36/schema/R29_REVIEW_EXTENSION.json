@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "approval_enum_changed": false,
+  "source_anomaly_layer": "review/source_anomalies_r29.jsonl",
+  "source_anomaly_is_sensitive_hold": false,
+  "source_anomaly_auto_corrected": false,
+  "semantic_first_pass_complete_means": "all specified source rows contrasted and individually decided; not approval, not source-error resolution",
+  "speaker_modes": "extension of review metadata only, not schema approval statuses",
+  "speaker_hearing": "intended targets and exact audibility are separate; null means unasserted, not unreviewed",
+  "editorial_is_additive": true
+}

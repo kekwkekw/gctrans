@@ -1,0 +1,35 @@
+[
+  {
+    "proposal_id": "R3-W035",
+    "novel_id": "20001501",
+    "raw_index": 37,
+    "removed": true,
+    "preserved_note_hash": "a96694a766707fc316b0415a2b44deeb84927ba67f513973478e05f431d02895",
+    "preservation_destination": "TRANSLATOR_NOTE_REGISTRY",
+    "default_user_visibility": "HIDDEN",
+    "trailing_br": true,
+    "final_hash": "8c1a16223378ca62d076c7febc3662516eae6014899bd410499271d53edb90c8"
+  },
+  {
+    "proposal_id": "R3-W039",
+    "novel_id": "22001605",
+    "raw_index": 37,
+    "removed": true,
+    "preserved_note_hash": "3b99b2b1ba5d1695d3f3003a62611d745ff5843f4e1ef57c27b5f4c1b2442a4e",
+    "preservation_destination": "TRANSLATOR_NOTE_REGISTRY",
+    "default_user_visibility": "HIDDEN",
+    "trailing_br": true,
+    "final_hash": "ee317926870322fe7304ae5f840ea8694f507e49bd39888fd2b36c4ec2998599"
+  },
+  {
+    "proposal_id": "R21-M044",
+    "novel_id": "40112102",
+    "raw_index": 21,
+    "removed": true,
+    "preserved_note_hash": "03f121e2a44954de466fe4fe39dab11d44c5567108c6d99dcd417a991670f788",
+    "preservation_destination": "AUDIT_HISTORY_ONLY",
+    "default_user_visibility": "NEVER",
+    "trailing_br": false,
+    "final_hash": "9d2352389e3b12e545f519d0f3ca6bbf756c7c7b13af98a389663274685d57f7"
+  }
+]

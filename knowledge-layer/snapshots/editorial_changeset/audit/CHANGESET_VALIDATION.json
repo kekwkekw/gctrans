@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "check_count": 11,
+  "passed": 11,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "operation_count_exact",
+      "status": "PASS",
+      "detail": 11486
+    },
+    {
+      "check": "action_counts_exact",
+      "status": "PASS",
+      "detail": {
+        "NORMALIZE_EXISTING_ELLIPSIS_GLYPH": 10489,
+        "RESTORE_INTERRUPTION_DASH": 2,
+        "NORMALIZE_STRUCTURAL_DASH_GLYPH": 963,
+        "ADD_NARRATION_TERMINAL_PERIOD": 19,
+        "ADD_NARRATOR_QUESTION_MARK": 1,
+        "REMOVE_LOCAL_ATTACHMENT_SPACE": 10,
+        "ADD_INTERNAL_NARRATION_PERIOD": 1,
+        "RECONNECT_REPORTED_CLAUSE_BOUNDARY": 1
+      }
+    },
+    {
+      "check": "effective_preimages_exact",
+      "status": "PASS",
+      "detail": 9056
+    },
+    {
+      "check": "operation_spans_nonoverlapping",
+      "status": "PASS"
+    },
+    {
+      "check": "operations_outside_tags",
+      "status": "PASS"
+    },
+    {
+      "check": "holds_untouched",
+      "status": "PASS"
+    },
+    {
+      "check": "source_anomalies_untouched",
+      "status": "PASS"
+    },
+    {
+      "check": "tag_sequences_unchanged",
+      "status": "PASS",
+      "detail": 9056
+    },
+    {
+      "check": "published_main_m1_bindings_exact",
+      "status": "PASS",
+      "detail": 2952
+    },
+    {
+      "check": "post_m1_original_bindings_resolved",
+      "status": "PASS",
+      "detail": 6104
+    },
+    {
+      "check": "no_export_authority",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "status": "PASS",
+  "check_count": 52,
+  "passed": 52,
+  "failed": 0,
+  "exceptions": [],
+  "baseline_status": "PASS",
+  "baseline_check_count": 77,
+  "method": "52 targeted in-memory corruptions of the actual loaded R36 state; expected named check must return FAIL and no ERROR/exception may count as detection. File-integrity checks are separately run on the full package.",
+  "checks": [
+    {
+      "test": "source_jp",
+      "target_check": "source_rows_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "observed_ko",
+      "target_check": "source_rows_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "source_speaker",
+      "target_check": "source_rows_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "exact_fragment",
+      "target_check": "body_spans_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "raw_identity",
+      "target_check": "raw_hashes_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "source_catalog_jp",
+      "target_check": "catalog_source_identity",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "catalog_approval",
+      "target_check": "no_translation_or_approval",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "catalog_translation",
+      "target_check": "no_translation_or_approval",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "evidence_original",
+      "target_check": "evidence_exact_original",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "evidence_hash",
+      "target_check": "evidence_hashes_and_spans",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "evidence_approval",
+      "target_check": "all_new_evidence_unapproved",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "review_note",
+      "target_check": "row_notes_complete",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "note_source_hash",
+      "target_check": "row_notes_source_binding",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "semantic_anchor",
+      "target_check": "row_anchor_binding",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "target_switch",
+      "target_check": "speakers_and_targets_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "speaker_label_switch",
+      "target_check": "speakers_and_targets_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "false_hearing",
+      "target_check": "hearing_not_overpromoted",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_before",
+      "target_check": "proposal_preimages_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_offset",
+      "target_check": "proposal_preimages_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_hash",
+      "target_check": "proposal_preimages_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_field_hash",
+      "target_check": "proposal_preimages_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_whole_record_hash",
+      "target_check": "proposal_preimages_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_after",
+      "target_check": "proposal_anchor_decisions",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_reason",
+      "target_check": "proposal_anchor_decisions",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_preview",
+      "target_check": "proposal_preview_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_approval",
+      "target_check": "proposal_flags_not_approved",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_applied",
+      "target_check": "proposal_flags_not_approved",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "proposal_evidence",
+      "target_check": "proposal_scope_evidence",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "legacy_scope_silent_change",
+      "target_check": "legacy_reconfirmation_hash_scopes",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "legacy_record_hash",
+      "target_check": "legacy_reconfirmation_hash_scopes",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "legacy_original_after",
+      "target_check": "inherited_proposals_immutable",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "candidate_tail",
+      "target_check": "new_proposals_match_cumulative_tail",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "queue_overdeletion",
+      "target_check": "queue_exact_subtraction",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "queue_removed_identity",
+      "target_check": "queue_state_ids_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "hold_lost",
+      "target_check": "holds_immutable",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "queue_count",
+      "target_check": "queue_counts_match",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "outside_body_count",
+      "target_check": "outside_queue_body_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "first_unfinished_restart",
+      "target_check": "first_unfinished_exact",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "false_partial",
+      "target_check": "completion_not_overclaimed",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "premature_approval",
+      "target_check": "post_r36_not_executed",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "knowledge_old_mutated",
+      "target_check": "inherited_knowledge_immutable",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "new_term_global",
+      "target_check": "new_terms_context_only",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "new_term_approved",
+      "target_check": "new_knowledge_status_scope",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "new_term_enum",
+      "target_check": "new_term_enums",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "new_term_scope",
+      "target_check": "new_terms_context_only",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "new_term_attestation",
+      "target_check": "all_new_terms_attested",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "new_global_claim",
+      "target_check": "contracts_evidence_and_boundary",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "source_anomaly_autofix",
+      "target_check": "source_anomalies_not_autofixed",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "source_anomaly_original",
+      "target_check": "source_anomaly_exact_and_separate",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "github_boundary",
+      "target_check": "approval_runtime_github_boundaries",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "parent_lineage",
+      "target_check": "parent_identity",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    },
+    {
+      "test": "runtime_boundary",
+      "target_check": "approval_runtime_github_boundaries",
+      "target_status": "FAIL",
+      "status": "PASS",
+      "exceptions": [],
+      "only_in_memory": true
+    }
+  ],
+  "elapsed_seconds": 22.904,
+  "package_files_modified": false
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "check_count": 16,
+  "passed": 16,
+  "failed": 0,
+  "failed_checks": [],
+  "checks": {
+    "decisions_1019": true,
+    "unique_decision_ids": true,
+    "changes_996": true,
+    "keep_23": true,
+    "notes_3": true,
+    "anomalies_13": true,
+    "main_m1_668": true,
+    "orig_adjud_1019": true,
+    "decision_partition": true,
+    "all_proposals_accounted": true,
+    "no_source_correction_authorized": true,
+    "no_export_authorized": true,
+    "note_policy_closed": true,
+    "decision_status_closed": true,
+    "counts_match": true,
+    "selected_intervals_no_overlap": true
+  }
+}

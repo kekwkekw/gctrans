@@ -1,0 +1,39 @@
+[
+  {
+    "id": "PR13-RV001",
+    "severity": "DELIVERY_TOOL_REPAIR",
+    "kind": "LEGACY_VERIFIER_INCOMPATIBLE_WITH_V1_2",
+    "finding_ko": "v1.2에 동봉된 verify_candidate.py가 존재하지 않는 reports/COUNTS.json을 참조하여 실제 실행에서 종료 코드 1로 실패한다. 다른 구형 경로 참조도 남아 있다.",
+    "affects": "candidate ZIP verification entrypoint, not the 338 PR JSON bytes",
+    "resolution": "이번 동반 패킷의 독립 읽기 전용 검사기를 제공한다. 원래 ZIP/PR/기존 승인 레코드는 수정하지 않았다.",
+    "needs_translation_change": false
+  },
+  {
+    "id": "PR13-RV002",
+    "severity": "LOW_NONBLOCKING",
+    "kind": "TRAILING_BR_AFTER_NOTE_REMOVAL",
+    "locators": [
+      "20001501/37",
+      "22001605/37"
+    ],
+    "finding_ko": "승인된 역주 문자열만 분리한 결과 두 문장 끝에 <br>가 남아 있다. 역주 내용은 제거됐고 그 앞 스토리 문장은 보존돼 있다.",
+    "resolution": "자동으로 추가 삭제하지 않는다. 실제 게임에서 빈 줄/높이 영향 여부를 확인한 뒤 필요시 이 두 위치만 국소 편집한다.",
+    "runtime_effect_verified": false,
+    "needs_new_semantic_review": false
+  },
+  {
+    "id": "PR13-RV003",
+    "severity": "INFORMATION",
+    "kind": "EXISTING_RUBY_FLATTENING_NOT_NEW_EDITORIAL_REGRESSION",
+    "locators": [
+      "20000605/16",
+      "22002301/62",
+      "40104021/39",
+      "40104021/90",
+      "40106101/29"
+    ],
+    "finding_ko": "Post-M1 5개 원문에 ruby가 있으나 승인 기준의 KO는 일반 텍스트로 뜻 또는 읽기를 전달한다. 이번 editorial이 KO ruby 태그를 삭제한 회귀는 아니다. 원문 key의 ruby는 유지된다.",
+    "resolution": "추가 ruby/UI 처리는 기존 runtime 후속 범위로 남긴다. 전체 source 태그와 KO 태그가 언제나 같다고 확대 주장하지 않는다.",
+    "needs_translation_change": false
+  }
+]

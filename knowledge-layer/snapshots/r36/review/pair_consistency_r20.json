@@ -1,0 +1,105 @@
+[
+  {
+    "novel_ids": [
+      "40112011",
+      "40112012"
+    ],
+    "scope": "NONDEFERRED_ROWS_ONLY",
+    "status": "REVIEWED_ELIGIBLE_CONTEXT_WITH_HOLDS",
+    "deferred_rows": [
+      {
+        "novel_id": "40112011",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "40112011",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "40112011",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "40112011",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "40112012",
+        "raw_index": 31
+      }
+    ],
+    "focus_ko": "강의의 실제 지속과 인물 자기평가·구매, 보류 구간은 지식 근거에서 제외",
+    "global_timeline_assumed": false
+  },
+  {
+    "novel_ids": [
+      "40112021",
+      "40112022"
+    ],
+    "scope": "NONDEFERRED_ROWS_ONLY",
+    "status": "REVIEWED_ELIGIBLE_CONTEXT_WITH_HOLDS",
+    "deferred_rows": [
+      {
+        "novel_id": "40112021",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "40112021",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "40112021",
+        "raw_index": 18
+      }
+    ],
+    "focus_ko": "스케치 연출과 실제 모델, 학생 도움의 방향·말 지칭·동승",
+    "global_timeline_assumed": false
+  },
+  {
+    "novel_ids": [
+      "40112031",
+      "40112032"
+    ],
+    "scope": "NONDEFERRED_ROWS_ONLY",
+    "status": "REVIEWED_ELIGIBLE_CONTEXT_WITH_HOLDS",
+    "deferred_rows": [
+      {
+        "novel_id": "40112032",
+        "raw_index": 62
+      }
+    ],
+    "focus_ko": "강연 요청→수락→성공, 어머니 회고와 자기 해석·인형 비유",
+    "global_timeline_assumed": false
+  },
+  {
+    "novel_ids": [
+      "40112041",
+      "40112042"
+    ],
+    "scope": "NONDEFERRED_ROWS_ONLY",
+    "status": "FIRST_PASS_AND_CONSISTENCY_COMPLETE",
+    "deferred_rows": [],
+    "focus_ko": "자수한 남성과 후속 여성 분리, 수강 수락과 출석 미확인",
+    "global_timeline_assumed": false
+  },
+  {
+    "novel_ids": [
+      "40112051",
+      "40112052"
+    ],
+    "scope": "NONDEFERRED_ROWS_ONLY",
+    "status": "REVIEWED_ELIGIBLE_CONTEXT_WITH_HOLDS",
+    "deferred_rows": [
+      {
+        "novel_id": "40112051",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "40112052",
+        "raw_index": 7
+      }
+    ],
+    "focus_ko": "의류 분실의 추측→확인, 일시적 업무와 사고·통증·병원 제안",
+    "global_timeline_assumed": false
+  }
+]

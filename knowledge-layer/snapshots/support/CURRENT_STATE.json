@@ -1,0 +1,93 @@
+{
+  "document_role": "HANDOVER_STATE_SNAPSHOT_NOT_NEW_APPROVAL_LEDGER",
+  "date_local": "2026-09-25",
+  "timezone": "Asia/Seoul",
+  "repository": "kekwkekw/gctrans",
+  "priority_order": [
+    "A_KNOWLEDGE_GITHUB_PRESERVATION",
+    "B_NAMES_LAYER_FULL_COMPLETION",
+    "C_GCMOD_CDN_PIPELINE"
+  ],
+  "first_response_scope": "A0_READONLY_SOURCE_STATE_DEPENDENCY_INVENTORY",
+  "production": {
+    "main": "9e4bfa9691fe4251096a4aa12155794a182305cd",
+    "pr13_state": "MERGED",
+    "final_pr13_head": "65355c110a0b000ce04ad44905aa7251c91501a9",
+    "previous_main": "340a3d2f5bcc793501887f15237b1095a1b21b7a",
+    "merge_tree": "819cc44e402a8030d911cf42b7694e0277e70a85",
+    "regular_novel_changed_files": 338,
+    "pages_run": 35974594420,
+    "pages_result_in_receipt": "success",
+    "minimum_runtime_gate": "CLOSED_FOR_REGULAR_PR13_SCOPE",
+    "all_scenarios_playtested": false,
+    "two_trailing_br_cleanup": "ALREADY_MERGED"
+  },
+  "meaning": {
+    "r36_reviewed_items": 707,
+    "active_semantic_queue": 0,
+    "cumulative_proposals": 1687,
+    "main_m1_dispositions": 668,
+    "post_r36_user_decisions": 1019,
+    "effective_changeset": 996,
+    "regular_semantic_and_note_applications": 993,
+    "battle_semantic_corrections_deferred": 2,
+    "speaker_label_correction_deferred": 1,
+    "held_rows": 12,
+    "source_anomalies": 13,
+    "term_records": 495,
+    "approved_terms": 1,
+    "reviewing_terms": 492,
+    "conflict_terms": 2,
+    "inherited_term_type_warnings": 6
+  },
+  "editorial": {
+    "historical_policy_zip_status": "recommendations_not_applied_user_approval_pending_at_authoring",
+    "current_regular_novel_state": "USER_APPROVED_AND_MERGED_IN_PR13",
+    "canonical_policy_zip_mutated": false,
+    "vocal_sfx_occurrences_protected": 62
+  },
+  "names": {
+    "pr": 14,
+    "state": "OPEN_DRAFT_UNMERGED",
+    "branch": "review/name-layer-speaker-r34r-20260924",
+    "head": "64b37e571f9af25aedb529b99da5a656bc9b4536",
+    "mapping_count_in_pr": 1,
+    "last_completed_work": "4-A",
+    "4A_status_from_historical_validation": "PASS_WITH_DOCUMENTED_SOURCE_LIMITATIONS",
+    "4A_source_count": 34,
+    "4A_raw_pair_count": 17024,
+    "4A_unique_jp_key_count": 305,
+    "4A_source_limitations": [
+      "R3",
+      "R4",
+      "R16",
+      "R21"
+    ],
+    "4A_overlay_applied": false,
+    "4A_dedup_conflict_resolution": false,
+    "4A_original_bytes_in_support_pack": false,
+    "next_after_A": "4-B_EXACT_DEDUP_OVERLAY_AND_CONFLICT_AUDIT"
+  },
+  "not_implemented_as_of_handover": [
+    "knowledge_github_preservation",
+    "names_full_coverage_completion",
+    "new_gcmod_cdn_migration",
+    "pipeline_v2"
+  ],
+  "readability_levels_to_verify_later": [
+    "knowledge_query",
+    "names_resume",
+    "full_original_export_rebuild"
+  ],
+  "authority": {
+    "current_turn_github_writes": false,
+    "first_response_github_writes": false,
+    "global_term_approval_by_handover": false,
+    "merge_deploy_runtime_requires_scoped_instruction": true
+  },
+  "sources": [
+    "audit/SOURCE_INDEX.json",
+    "audit/LIVE_GITHUB_SNAPSHOT.json",
+    "references/NAMES_4A_RESUME_NOTE_KO.md"
+  ]
+}

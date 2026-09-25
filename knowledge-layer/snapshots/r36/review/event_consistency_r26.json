@@ -1,0 +1,70 @@
+[
+  {
+    "event": "event:200014",
+    "novel_ids": [
+      "20001401",
+      "20001402",
+      "20001403",
+      "20001404",
+      "20001405",
+      "20001406"
+    ],
+    "all_rows_reviewed": true,
+    "partial": false,
+    "contract_keys": [
+      "newspaper_recollection",
+      "staff_shortage",
+      "dona_recruitment",
+      "photo_session_not_actual",
+      "camera_skill_limited",
+      "michelangelo_permission",
+      "body_theory",
+      "counterfactual_photos",
+      "cafe_choice",
+      "medium_not_permission",
+      "trust_is_director_guess",
+      "girl_pair_identity",
+      "civic_rescue_camera",
+      "edition_and_hidden_photos",
+      "future_photo_assignment"
+    ],
+    "summary_ko": "과거 의뢰→제한된 취재 허락→사진의 의미 탐색→시민 보호 촬영→발간과 비게재 사진의 구분을 재대조했다."
+  },
+  {
+    "event": "event:200015",
+    "novel_ids": [
+      "20001501",
+      "20001502",
+      "20001503",
+      "20001504",
+      "20001505",
+      "20001506"
+    ],
+    "all_rows_reviewed": true,
+    "partial": false,
+    "contract_keys": [
+      "rem_secret_documents",
+      "visit_motive_difference",
+      "prayer_public_private",
+      "sacred_mirror",
+      "guard_participation",
+      "interrupted_final",
+      "hostage_mirror",
+      "rem_private_escape_plan",
+      "provocation_not_distraction",
+      "actual_mirror_recovery",
+      "surrender_vs_arrest",
+      "rem_mixed_motives",
+      "champion_and_gift",
+      "award_roles",
+      "gift_public_private",
+      "office_next_day",
+      "amnesia_and_texture",
+      "fictional_hearsay",
+      "otoshidama_condition",
+      "comfort_not_forgiveness",
+      "sleep_and_guard_plan"
+    ],
+    "summary_ko": "비밀 수집 동기와 겉 해석, 거울 회수의 실제 주체, 중단·재개 결승의 우승자와 선물, 다음 날 위로와 여전한 비밀을 구분했다."
+  }
+]

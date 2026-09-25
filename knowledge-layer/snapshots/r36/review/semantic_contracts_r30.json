@@ -1,0 +1,2377 @@
+[
+  {
+    "contract_id": "contract:r30:cupid_name_origin",
+    "key": "cupid_name_origin",
+    "source_locations": [
+      {
+        "novel_id": "21003201",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 5
+      }
+    ],
+    "assertions": {
+      "namer": "ブグロー",
+      "named": "クピド",
+      "original_label": "天使のイマージュ",
+      "source_label_overwritten": false
+    },
+    "observation_ko": "부그로가 천사 이마쥬에게 쿠피도라는 이름을 붙인다. 최초 라벨은 천사 이마쥬다.",
+    "blocked_overclaim_ko": "이름 공개 전 source 라벨을 바꾸거나 새 동명이인 entity를 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003201"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003201:0002",
+      "ev:r30:21003201:0003",
+      "ev:r30:21003201:0004",
+      "ev:r30:21003201:0005"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:nicknames_recipient_specific",
+    "key": "nicknames_recipient_specific",
+    "source_locations": [
+      {
+        "novel_id": "21003201",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 118
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 119
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 120
+      }
+    ],
+    "assertions": {
+      "bouguereau_ku_chan_request": "do_not_use",
+      "curator_ku_chan_request": "use",
+      "later_cupido_name_answered": true,
+      "global_rule": false
+    },
+    "observation_ko": "쿠-쨩은 부그로에게 금지하지만 관장에게 요구하는 호칭이다. 나중에는 쿠피도에도 답한다.",
+    "blocked_overclaim_ko": "쿠-땅/쿠-쨩을 전역 통일하거나 모든 화자에게 같은 요청으로 적용하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003201"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003201:0013",
+      "ev:r30:21003201:0015",
+      "ev:r30:21003201:0042",
+      "ev:r30:21003201:0043",
+      "ev:r30:21003201:0044",
+      "ev:r30:21003201:0118",
+      "ev:r30:21003201:0119",
+      "ev:r30:21003201:0120"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:creator_not_biological_age",
+    "key": "creator_not_biological_age",
+    "source_locations": [
+      {
+        "novel_id": "21003201",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 63
+      }
+    ],
+    "assertions": {
+      "creator": "ブグロー",
+      "image": "クピド",
+      "first_image_in_this_context": true,
+      "biological_parenthood_confirmed": false,
+      "numeric_age": null
+    },
+    "observation_ko": "처음 생긴 이마쥬·최근 탄생·아기와 고양이 비유·모녀 싸움 비유를 창작 관계와 분리해 기록한다.",
+    "blocked_overclaim_ko": "실제 출산·혈연·구체 나이로 치환하거나 모든 이마쥬 성인을 가정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003201",
+      "event_story:21003202"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003201:0030",
+      "ev:r30:21003201:0048",
+      "ev:r30:21003201:0049",
+      "ev:r30:21003201:0050",
+      "ev:r30:21003201:0069",
+      "ev:r30:21003202:0039",
+      "ev:r30:21003202:0040",
+      "ev:r30:21003202:0048",
+      "ev:r30:21003202:0063"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:temporary_distance_not_move",
+    "key": "temporary_distance_not_move",
+    "source_locations": [
+      {
+        "novel_id": "21003201",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 99
+      }
+    ],
+    "assertions": {
+      "initial_until": "same_day_evening",
+      "temporary_museum_care": true,
+      "later_separate_living": "conditional_option",
+      "permanent_move_confirmed": false
+    },
+    "observation_ko": "처음은 오늘 저녁까지 맡는 한시 분리이고 나중의 별거는 정말 괴로울 경우의 선택이다.",
+    "blocked_overclaim_ko": "첫 제안을 영구 별거 결정으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003201"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003201:0054",
+      "ev:r30:21003201:0056",
+      "ev:r30:21003201:0057",
+      "ev:r30:21003201:0059",
+      "ev:r30:21003201:0064",
+      "ev:r30:21003201:0099"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:cupid_absent_call",
+    "key": "cupid_absent_call",
+    "source_locations": [
+      {
+        "novel_id": "21003201",
+        "raw_index": 77
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 81
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 82
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 86
+      }
+    ],
+    "assertions": {
+      "snack_buyer": "館長",
+      "called_but_absent": "ブグロー",
+      "call_completed": false,
+      "absent_target_heard": false,
+      "confession_prompted_by_curator": false
+    },
+    "observation_ko": "관장이 산 경단을 먹다가 쿠피도가 부그로를 부르려 하지만 부재를 알아차린다.",
+    "blocked_overclaim_ko": "부그로가 그 호명을 듣고 답하거나 경단을 함께 먹었다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003201"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003201:0077",
+      "ev:r30:21003201:0079",
+      "ev:r30:21003201:0080",
+      "ev:r30:21003201:0081",
+      "ev:r30:21003201:0082",
+      "ev:r30:21003201:0086"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:cupid_selfhood_fear",
+    "key": "cupid_selfhood_fear",
+    "source_locations": [
+      {
+        "novel_id": "21003201",
+        "raw_index": 97
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 101
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 104
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 106
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 107
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 110
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 111
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 112
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 114
+      },
+      {
+        "novel_id": "21003201",
+        "raw_index": 117
+      }
+    ],
+    "assertions": {
+      "love_recognized_by_cupid": true,
+      "rejection": "feared_not_observed",
+      "wish_to_help": "own_strength",
+      "causal_explanation_scope": "curator_interpretation"
+    },
+    "observation_ko": "쿠피도는 사랑을 기뻐하면서도 이상과 자기 마음을 구별하지 못할까 걱정하고 자기 힘으로 돕고 싶다.",
+    "blocked_overclaim_ko": "실제로 미움·유기당했다거나 불안의 해석을 모든 인물의 보편 진단으로 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003201"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003201:0097",
+      "ev:r30:21003201:0101",
+      "ev:r30:21003201:0104",
+      "ev:r30:21003201:0106",
+      "ev:r30:21003201:0107",
+      "ev:r30:21003201:0110",
+      "ev:r30:21003201:0111",
+      "ev:r30:21003201:0112",
+      "ev:r30:21003201:0114",
+      "ev:r30:21003201:0117"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:cupid_battle_cooperation",
+    "key": "cupid_battle_cooperation",
+    "source_locations": [
+      {
+        "novel_id": "21003202",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 30
+      }
+    ],
+    "assertions": {
+      "reinforcement": "クピド",
+      "prior_damage": "ブグロー",
+      "selection": "weakened_targets",
+      "bouguereau_reports_uninjured": true,
+      "full_single_attacker_victory": false
+    },
+    "observation_ko": "쿠피도는 부그로가 약화시킨 적을 가려 마무리하며 가세했고 셋이 무사히 교실로 돌아온다.",
+    "blocked_overclaim_ko": "쿠피도 혼자 모든 적을 처음부터 격파하거나 부그로가 다쳤다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003202"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003202:0010",
+      "ev:r30:21003202:0015",
+      "ev:r30:21003202:0019",
+      "ev:r30:21003202:0021",
+      "ev:r30:21003202:0026",
+      "ev:r30:21003202:0028",
+      "ev:r30:21003202:0029",
+      "ev:r30:21003202:0030"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:bouguereau_apology_past",
+    "key": "bouguereau_apology_past",
+    "source_locations": [
+      {
+        "novel_id": "21003202",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 49
+      }
+    ],
+    "assertions": {
+      "bouguereau_response": "moved_and_apologetic",
+      "childhood_evidence": "self_report",
+      "cupid_apologizes": true,
+      "creator_angry_from_start": "denied_by_speaker"
+    },
+    "observation_ko": "부그로는 실망이 아닌 감격과 반성을 밝히며 바쁜 부모·외로운 어린 시절을 말한다. 쿠피도도 사과한다.",
+    "blocked_overclaim_ko": "과거를 관장의 직접 목격이나 모든 보호 행동의 객관적 진단으로 올리지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003202"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003202:0037",
+      "ev:r30:21003202:0039",
+      "ev:r30:21003202:0040",
+      "ev:r30:21003202:0042",
+      "ev:r30:21003202:0043",
+      "ev:r30:21003202:0046",
+      "ev:r30:21003202:0049"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:requests_refused_after_apology",
+    "key": "requests_refused_after_apology",
+    "source_locations": [
+      {
+        "novel_id": "21003202",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 57
+      }
+    ],
+    "assertions": {
+      "hug_requested": true,
+      "hug_consent": false,
+      "clothing_request_accepted": false,
+      "blanket_consent": false
+    },
+    "observation_ko": "화해 뒤 포옹과 복장 요청은 각각 거절된다.",
+    "blocked_overclaim_ko": "화해를 모든 요청에 대한 포괄 동의나 포옹 실행으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003202"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003202:0048",
+      "ev:r30:21003202:0052",
+      "ev:r30:21003202:0053",
+      "ev:r30:21003202:0055",
+      "ev:r30:21003202:0056",
+      "ev:r30:21003202:0057"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:dango_gifts_and_overhearing",
+    "key": "dango_gifts_and_overhearing",
+    "source_locations": [
+      {
+        "novel_id": "21003202",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "21003202",
+        "raw_index": 69
+      }
+    ],
+    "assertions": {
+      "first_gift_delivery_completed": false,
+      "later_treat": "different_day",
+      "curator_heard_pair": true,
+      "curator_joined_pair": false,
+      "rebellion_fully_ended": false
+    },
+    "observation_ko": "첫 포장 경단은 싸움 때문에 전하지 못했고 며칠 뒤 새 경단을 사주러 간다. 관장은 둘의 대화를 듣고 떠난다.",
+    "blocked_overclaim_ko": "두 간식을 같은 전달 완료로 합치거나 관장이 대화에 끼어들었다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003202"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003202:0001",
+      "ev:r30:21003202:0058",
+      "ev:r30:21003202:0059",
+      "ev:r30:21003202:0060",
+      "ev:r30:21003202:0061",
+      "ev:r30:21003202:0064",
+      "ev:r30:21003202:0065",
+      "ev:r30:21003202:0067",
+      "ev:r30:21003202:0068",
+      "ev:r30:21003202:0069"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:beach_not_curator_witness",
+    "key": "beach_not_curator_witness",
+    "source_locations": [
+      {
+        "novel_id": "21003501",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 88
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 89
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 94
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 96
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 98
+      }
+    ],
+    "assertions": {
+      "beach_protagonists": [
+        "ドナテッロ",
+        "ローリエ"
+      ],
+      "curator_beach_presence_confirmed": false,
+      "curator_evidence_later": "oral_report_over_watermelon"
+    },
+    "observation_ko": "해변은 도나텔로·로리에의 활동이며 관장은 나중에 미술관에서 경위를 듣는다.",
+    "blocked_overclaim_ko": "관장을 앞선 모든 해변 장면의 동행·직접 목격자로 소급하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003501",
+      "event_story:21003502"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003501:0001",
+      "ev:r30:21003501:0012",
+      "ev:r30:21003501:0014",
+      "ev:r30:21003502:0088",
+      "ev:r30:21003502:0089",
+      "ev:r30:21003502:0094",
+      "ev:r30:21003502:0096",
+      "ev:r30:21003502:0098"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:watermelon_roles_rules",
+    "key": "watermelon_roles_rules",
+    "source_locations": [
+      {
+        "novel_id": "21003501",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 3
+      }
+    ],
+    "assertions": {
+      "striker": "ローリエ",
+      "guide": "ドナテッロ",
+      "donatello_registered": false,
+      "included_attempts": 2,
+      "extra_attempts_require_fee": true
+    },
+    "observation_ko": "로리에가 참가해 두 번 도전하고 도나텔로는 참가하지 않고 유도한다. 두 기회 뒤 유료 재도전 안내가 있다.",
+    "blocked_overclaim_ko": "도나텔로도 별도 참가했다고 만들거나 두 번째 기회를 추가 유료 도전과 합치지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003501",
+      "event_story:21003502"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003501:0034",
+      "ev:r30:21003501:0038",
+      "ev:r30:21003501:0049",
+      "ev:r30:21003501:0053",
+      "ev:r30:21003501:0054",
+      "ev:r30:21003501:0057",
+      "ev:r30:21003501:0059",
+      "ev:r30:21003502:0001",
+      "ev:r30:21003502:0003"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:mother_child_distinct_woman",
+    "key": "mother_child_distinct_woman",
+    "source_locations": [
+      {
+        "novel_id": "21003501",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 44
+      }
+    ],
+    "assertions": {
+      "boy_mother_relationship": "explicit",
+      "later_complainant_same_mother_confirmed": false,
+      "anonymous_roles_global_identity": false
+    },
+    "observation_ko": "첫 소년과 어머니는 한 조다. 뒤의 항의 여성은 동일인이라는 근거가 없다.",
+    "blocked_overclaim_ko": "모든 여성·어머니 라벨을 합치거나 로리에의 혈연 관계로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003501",
+      "event_story:21003502"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003501:0044",
+      "ev:r30:21003501:0045",
+      "ev:r30:21003501:0047",
+      "ev:r30:21003502:0040",
+      "ev:r30:21003502:0042",
+      "ev:r30:21003502:0044"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:secret_tactic_and_left",
+    "key": "secret_tactic_and_left",
+    "source_locations": [
+      {
+        "novel_id": "21003501",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "21003501",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 27
+      }
+    ],
+    "assertions": {
+      "plan_designer": "ドナテッロ",
+      "whisper_target": "ローリエ",
+      "striker": "ローリエ",
+      "strike_direction": "striker_front_left",
+      "preparation_action": "raise_club",
+      "first_round_success": false,
+      "second_round_success": true
+    },
+    "observation_ko": "도나텔로가 움직임을 관찰해 귓속말로 알리고 로리에가 자기 기준 왼쪽 대각선 앞으로 내려쳐 성공한다.",
+    "blocked_overclaim_ko": "막대를 치켜드는 준비와 실제 내려치기를 합치거나 작전을 주최자도 들었다고 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003501",
+      "event_story:21003502"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003501:0069",
+      "ev:r30:21003501:0070",
+      "ev:r30:21003501:0075",
+      "ev:r30:21003502:0005",
+      "ev:r30:21003502:0007",
+      "ev:r30:21003502:0008",
+      "ev:r30:21003502:0017",
+      "ev:r30:21003502:0018",
+      "ev:r30:21003502:0021",
+      "ev:r30:21003502:0026",
+      "ev:r30:21003502:0027"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:device_not_magic_watermelon",
+    "key": "device_not_magic_watermelon",
+    "source_locations": [
+      {
+        "novel_id": "21003502",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 36
+      }
+    ],
+    "assertions": {
+      "controller_object": "separate_artwork_under_sand",
+      "watermelon_itself_artwork": false,
+      "acquired_from": "acquaintance",
+      "self_creation_confirmed": false,
+      "debt_transaction_settlement_exact_form": null
+    },
+    "observation_ko": "모래 속 죽음의 예술이 수박을 이동시켰고 복잡한 지시는 어려웠다는 주최자의 설명이다. 지인에게서 받은 경위도 자기 보고다.",
+    "blocked_overclaim_ko": "수박 자체가 죽음의 예술이라고 하거나 주최자가 직접 만들었다고 단정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003502"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003502:0030",
+      "ev:r30:21003502:0031",
+      "ev:r30:21003502:0032",
+      "ev:r30:21003502:0033",
+      "ev:r30:21003502:0035",
+      "ev:r30:21003502:0036"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:rampage_not_ordered_assault",
+    "key": "rampage_not_ordered_assault",
+    "source_locations": [
+      {
+        "novel_id": "21003502",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 53
+      }
+    ],
+    "assertions": {
+      "trigger": "narrative_hypothesis",
+      "organizer_assault_order_confirmed": false,
+      "organizer_stop_order": true,
+      "stop_order_succeeded": false,
+      "organizer_asks_rescue": true
+    },
+    "observation_ko": "여성 목소리가 자극이었는지는 추측이고 주최자는 공격을 멈추라 하지만 통제하지 못한다.",
+    "blocked_overclaim_ko": "폭주를 주최자의 확인된 공격 명령·계획으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003502"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003502:0041",
+      "ev:r30:21003502:0046",
+      "ev:r30:21003502:0047",
+      "ev:r30:21003502:0048",
+      "ev:r30:21003502:0049",
+      "ev:r30:21003502:0050",
+      "ev:r30:21003502:0053"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:joint_finishing_blow",
+    "key": "joint_finishing_blow",
+    "source_locations": [
+      {
+        "novel_id": "21003502",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 72
+      }
+    ],
+    "assertions": {
+      "initial_attacker": "ローリエ",
+      "finishers": [
+        "ドナテッロ",
+        "ローリエ"
+      ],
+      "no_injuries_reported": true,
+      "single_finisher": false
+    },
+    "observation_ko": "로리에 선행 공격 뒤 마지막은 둘이 호흡을 맞춰 분쇄한다. 부상자는 없다고 도나텔로가 밝힌다.",
+    "blocked_overclaim_ko": "전투 전부를 단독 최종 격파나 확인된 부상 사건으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003502"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003502:0055",
+      "ev:r30:21003502:0056",
+      "ev:r30:21003502:0057",
+      "ev:r30:21003502:0059",
+      "ev:r30:21003502:0060",
+      "ev:r30:21003502:0061",
+      "ev:r30:21003502:0064",
+      "ev:r30:21003502:0072"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:restitution_and_arrest",
+    "key": "restitution_and_arrest",
+    "source_locations": [
+      {
+        "novel_id": "21003502",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 76
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 78
+      }
+    ],
+    "assertions": {
+      "police_custody": true,
+      "restitution_offered": true,
+      "participants_accept": true,
+      "police_taken_away": true,
+      "legal_sentence": null,
+      "release_confirmed": false
+    },
+    "observation_ko": "환불과 수박 제공으로 참가자들이 납득하지만 경찰은 주최자를 연행한다.",
+    "blocked_overclaim_ko": "배상 수락을 형량·판결·면책·석방 확정으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003502"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003502:0066",
+      "ev:r30:21003502:0067",
+      "ev:r30:21003502:0069",
+      "ev:r30:21003502:0070",
+      "ev:r30:21003502:0075",
+      "ev:r30:21003502:0076",
+      "ev:r30:21003502:0078"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:laurier_initiates_share",
+    "key": "laurier_initiates_share",
+    "source_locations": [
+      {
+        "novel_id": "21003502",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 83
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 84
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 85
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 86
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 87
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 90
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 93
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 94
+      },
+      {
+        "novel_id": "21003502",
+        "raw_index": 98
+      }
+    ],
+    "assertions": {
+      "hug_initiator": "ローリエ",
+      "hug_target": "ドナテッロ",
+      "share_proposer": "ローリエ",
+      "later_delivery_and_report": true
+    },
+    "observation_ko": "로리에가 먼저 껴안아 수박을 떨어뜨리고 관장에게 나누자고 제안한다. 나중에 실제 전달·설명이 이어진다.",
+    "blocked_overclaim_ko": "포옹 주체를 뒤집거나 관장이 처음부터 경품을 요청했다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003502"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003502:0079",
+      "ev:r30:21003502:0083",
+      "ev:r30:21003502:0084",
+      "ev:r30:21003502:0085",
+      "ev:r30:21003502:0086",
+      "ev:r30:21003502:0087",
+      "ev:r30:21003502:0090",
+      "ev:r30:21003502:0093",
+      "ev:r30:21003502:0094",
+      "ev:r30:21003502:0098"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:exhibition_and_temporal_scope",
+    "key": "exhibition_and_temporal_scope",
+    "source_locations": [
+      {
+        "novel_id": "21003701",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 35
+      }
+    ],
+    "assertions": {
+      "first_work_scope": "since_arriving_museum",
+      "selfportrait_artist": "アルテ",
+      "name_giver": "アルテ",
+      "new_canonical_entity_required": false,
+      "cross_event_order_from_id": false
+    },
+    "observation_ko": "다른 예술가들의 아르테 그림과 본인의 자화상 전시 뒤 첫 이마쥬를 만들고 에트라라 이름 붙인다.",
+    "blocked_overclaim_ko": "자화상을 생애 최초 그림으로 확대하거나 기존 에트라와 별도 entity·ID 기반 공통 연대를 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003701",
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003701:0001",
+      "ev:r30:21003701:0002",
+      "ev:r30:21003701:0009",
+      "ev:r30:21003701:0011",
+      "ev:r30:21003701:0038",
+      "ev:r30:21003702:0035"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:image_creation_unknown_mechanism",
+    "key": "image_creation_unknown_mechanism",
+    "source_locations": [
+      {
+        "novel_id": "21003701",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 28
+      }
+    ],
+    "assertions": {
+      "curator_standard_attempt_succeeded": false,
+      "arte_hand_contact_confirmed": false,
+      "arte_emission": "observed_as_appearing",
+      "image_birth_observed": true,
+      "mechanism_known": false,
+      "generalized_reproducible_ability": false
+    },
+    "observation_ko": "관장의 통상 비술은 실패하고 아르테가 손을 내밀어 마력을 내는 듯한 뒤 탄생한다. 원리는 두 사람 모두 설명하지 못한다.",
+    "blocked_overclaim_ko": "실제 접촉·완성된 새로운 비술·다른 작품에도 재현되는 규칙을 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003701"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003701:0017",
+      "ev:r30:21003701:0019",
+      "ev:r30:21003701:0020",
+      "ev:r30:21003701:0022",
+      "ev:r30:21003701:0023",
+      "ev:r30:21003701:0024",
+      "ev:r30:21003701:0025",
+      "ev:r30:21003701:0026",
+      "ev:r30:21003701:0027",
+      "ev:r30:21003701:0028"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:etra_identity_labels",
+    "key": "etra_identity_labels",
+    "source_locations": [
+      {
+        "novel_id": "21003701",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 41
+      }
+    ],
+    "assertions": {
+      "pre_name_label": "自画像のイマージュ",
+      "identified_entity": "エトラ",
+      "michelangelo_initial_address_surface": "アルテ",
+      "michelangelo_actual_target": "エトラ",
+      "age_from_appearance": null
+    },
+    "observation_ko": "자화상 이마쥬가 에트라로 이름 공개되고 미켈란젤로는 처음 아르테로 오인한다.",
+    "blocked_overclaim_ko": "원래 익명 라벨을 바꾸거나 실제 청자를 아르테로 해석하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003701"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003701:0029",
+      "ev:r30:21003701:0032",
+      "ev:r30:21003701:0033",
+      "ev:r30:21003701:0035",
+      "ev:r30:21003701:0038",
+      "ev:r30:21003701:0040",
+      "ev:r30:21003701:0041"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:etra_respect_not_uncritical",
+    "key": "etra_respect_not_uncritical",
+    "source_locations": [
+      {
+        "novel_id": "21003701",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 60
+      }
+    ],
+    "assertions": {
+      "respects_creator": true,
+      "criticizes_idleness": true,
+      "biological_sisterhood_confirmed": false
+    },
+    "observation_ko": "에트라는 아르테를 존경하지만 게으름을 지적하고 창작을 도우려 한다. 자매 비유는 창작 관계에 대한 비유다.",
+    "blocked_overclaim_ko": "모든 행동을 무조건 승인하거나 생물학적 자매라고 등록하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003701",
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003701:0044",
+      "ev:r30:21003701:0045",
+      "ev:r30:21003701:0046",
+      "ev:r30:21003702:0050",
+      "ev:r30:21003702:0051",
+      "ev:r30:21003702:0053",
+      "ev:r30:21003702:0055",
+      "ev:r30:21003702:0060"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:michelangelo_and_gogh_reactions",
+    "key": "michelangelo_and_gogh_reactions",
+    "source_locations": [
+      {
+        "novel_id": "21003701",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 61
+      }
+    ],
+    "assertions": {
+      "michelangelo_anger": "question_not_fact",
+      "curator_positive_interpretation": true,
+      "gogh_flattery_suspicion": "not_confirmed_intent",
+      "gogh_snack_given": true,
+      "future_more_snacks_delivered": false
+    },
+    "observation_ko": "미켈란젤로가 화났다는 건 에트라 걱정, 마음에 들었다는 건 관장 해석이다. 고흐는 아첨을 의심하다 과자를 준다.",
+    "blocked_overclaim_ko": "에트라의 실제 아첨 의도나 확정 치유·미래 과자 전달을 만들어내지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003701"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003701:0048",
+      "ev:r30:21003701:0049",
+      "ev:r30:21003701:0050",
+      "ev:r30:21003701:0055",
+      "ev:r30:21003701:0056",
+      "ev:r30:21003701:0057",
+      "ev:r30:21003701:0059",
+      "ev:r30:21003701:0060",
+      "ev:r30:21003701:0061"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:sanso_schedule_and_meals",
+    "key": "sanso_schedule_and_meals",
+    "source_locations": [
+      {
+        "novel_id": "21003701",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 76
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 15
+      }
+    ],
+    "assertions": {
+      "schedule_source": "heard_previous_dinner",
+      "prep_volunteer": "エトラ",
+      "dinner_cooks": [
+        "エトラ",
+        "サンソヴィーノ"
+      ],
+      "hamburger_time": "next_day_plan",
+      "curator_task": "repair_locations_check"
+    },
+    "observation_ko": "에트라는 전날 저녁 들은 일정으로 채소 손질을 맡고 저녁은 둘이 함께 만든다. 다음날 햄버그 계획과 관장의 수리 확인은 별개다.",
+    "blocked_overclaim_ko": "초능력 정보 취득·오늘 햄버그 완료·에트라 단독 전체 요리를 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003701",
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003701:0066",
+      "ev:r30:21003701:0068",
+      "ev:r30:21003701:0069",
+      "ev:r30:21003701:0070",
+      "ev:r30:21003701:0071",
+      "ev:r30:21003701:0073",
+      "ev:r30:21003701:0075",
+      "ev:r30:21003701:0076",
+      "ev:r30:21003702:0001",
+      "ev:r30:21003702:0014",
+      "ev:r30:21003702:0015"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:tear_gesture_not_red_eyes",
+    "key": "tear_gesture_not_red_eyes",
+    "source_locations": [
+      {
+        "novel_id": "21003701",
+        "raw_index": 83
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 84
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 85
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 86
+      }
+    ],
+    "assertions": {
+      "observed_gesture": "press_inner_eye_area",
+      "red_eyes_explicitly_stated": false,
+      "emotion_stated_by_curator": "moved"
+    },
+    "observation_ko": "도움 제안에 감동한 관장이 눈가를 짚고 에트라가 이유를 묻는다.",
+    "blocked_overclaim_ko": "원래 손동작을 눈이 붉어졌다는 현상만으로 대체하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003701"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003701:0083",
+      "ev:r30:21003701:0084",
+      "ev:r30:21003701:0085",
+      "ev:r30:21003701:0086"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:comparison_insecurity",
+    "key": "comparison_insecurity",
+    "source_locations": [
+      {
+        "novel_id": "21003701",
+        "raw_index": 87
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 88
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 89
+      },
+      {
+        "novel_id": "21003701",
+        "raw_index": 91
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 29
+      }
+    ],
+    "assertions": {
+      "etra_view": "comparison_based_praise",
+      "secret_drawing_motive": "own_special_quality",
+      "permanent_lack_of_talent_confirmed": false,
+      "curator_unsaid_reassurance_spoken": false
+    },
+    "observation_ko": "비교 칭찬 뒤 에트라는 자기만의 특별함을 찾으려 몰래 그림을 그린다. 관장은 빈말을 망설인다.",
+    "blocked_overclaim_ko": "칭찬자 모두의 의도를 열등감 설명 하나로 확정하거나 말하려던 위로를 이미 전달했다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003701",
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003701:0087",
+      "ev:r30:21003701:0088",
+      "ev:r30:21003701:0089",
+      "ev:r30:21003701:0091",
+      "ev:r30:21003702:0013",
+      "ev:r30:21003702:0025",
+      "ev:r30:21003702:0026",
+      "ev:r30:21003702:0027",
+      "ev:r30:21003702:0028",
+      "ev:r30:21003702:0029"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:parenthetical_delivery_not_auto",
+    "key": "parenthetical_delivery_not_auto",
+    "source_locations": [
+      {
+        "novel_id": "21003702",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 16
+      }
+    ],
+    "assertions": {
+      "overall_mode": "direct_dialogue_with_parenthetical_aside",
+      "parenthetical_delivery": "unspecified",
+      "parenthetical_heard": null,
+      "whole_row_private_thought": false
+    },
+    "observation_ko": "관장의 직접 위로 속 채소 크기 괄호 덧말은 전달 방식이 명확히 분리되지 않는다.",
+    "blocked_overclaim_ko": "행 전체를 독백으로 만들거나 괄호 내용이 확실히 들렸다/안 들렸다고 단정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003702:0014",
+      "ev:r30:21003702:0015",
+      "ev:r30:21003702:0016"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:arte_overhearing_scope",
+    "key": "arte_overhearing_scope",
+    "source_locations": [
+      {
+        "novel_id": "21003702",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 37
+      }
+    ],
+    "assertions": {
+      "arte_heard_conversation_inferred": true,
+      "listening_start_raw": null,
+      "curator_private_thoughts_heard": false,
+      "arte_reassurance_received": true
+    },
+    "observation_ko": "관장이 망설이는 중 아르테가 나타나 에트라의 고민에 답한다. 대화를 듣던 듯하나 정확한 시작점은 없다.",
+    "blocked_overclaim_ko": "밤의 모든 대화·관장의 내면까지 아르테가 알았다고 소급하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003702:0029",
+      "ev:r30:21003702:0030",
+      "ev:r30:21003702:0031",
+      "ev:r30:21003702:0032",
+      "ev:r30:21003702:0033",
+      "ev:r30:21003702:0035",
+      "ev:r30:21003702:0036",
+      "ev:r30:21003702:0037"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:sweat_search_not_certainty",
+    "key": "sweat_search_not_certainty",
+    "source_locations": [
+      {
+        "novel_id": "21003702",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 46
+      }
+    ],
+    "assertions": {
+      "sweat_observed": true,
+      "search_motive": "question",
+      "arte_stated_reason": "voluntary_patrol",
+      "objective_motive_confirmed": false,
+      "curator_rarely_observed_patrol": true
+    },
+    "observation_ko": "에트라는 땀을 보고 걱정해서 찾았는지 묻고 아르테는 순찰이었다고 부정한다.",
+    "blocked_overclaim_ko": "아르테의 속마음이나 실제 순찰 수행을 독립적으로 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003702:0042",
+      "ev:r30:21003702:0043",
+      "ev:r30:21003702:0044",
+      "ev:r30:21003702:0045",
+      "ev:r30:21003702:0046"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:support_and_art_practice",
+    "key": "support_and_art_practice",
+    "source_locations": [
+      {
+        "novel_id": "21003702",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 60
+      }
+    ],
+    "assertions": {
+      "hug_initiator": "エトラ",
+      "hug_target": "アルテ",
+      "staying_request_accepted": true,
+      "painting_practice_request": true,
+      "new_masterpiece_completed": false
+    },
+    "observation_ko": "에트라는 특별한 동반자로 인정받고 먼저 안긴 뒤 그림을 더 그리도록 아르테에게 요구한다.",
+    "blocked_overclaim_ko": "불안이 풀린 것을 그림 기술 완성·무조건 복종으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003702:0035",
+      "ev:r30:21003702:0036",
+      "ev:r30:21003702:0039",
+      "ev:r30:21003702:0040",
+      "ev:r30:21003702:0041",
+      "ev:r30:21003702:0050",
+      "ev:r30:21003702:0051",
+      "ev:r30:21003702:0052",
+      "ev:r30:21003702:0055",
+      "ev:r30:21003702:0059",
+      "ev:r30:21003702:0060"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:murmur_content_not_confirmed",
+    "key": "murmur_content_not_confirmed",
+    "source_locations": [
+      {
+        "novel_id": "21003702",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 74
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 75
+      }
+    ],
+    "assertions": {
+      "murmur_noticed": true,
+      "exact_content_heard": null,
+      "curator_arte_romance_agreed": false,
+      "next_direct_question_about": "エトラ"
+    },
+    "observation_ko": "에트라가 관장의 아르테 감정을 추측하다 말을 접고, 관장은 중얼거림만 지적한다.",
+    "blocked_overclaim_ko": "관장이 정확한 미완성 추측을 이해하거나 연애 관계에 동의한 것으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003702:0067",
+      "ev:r30:21003702:0070",
+      "ev:r30:21003702:0071",
+      "ev:r30:21003702:0072",
+      "ev:r30:21003702:0074",
+      "ev:r30:21003702:0075"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:limited_evaluation_then_future",
+    "key": "limited_evaluation_then_future",
+    "source_locations": [
+      {
+        "novel_id": "21003702",
+        "raw_index": 76
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 77
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 78
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 81
+      }
+    ],
+    "assertions": {
+      "current_evaluation_limited": true,
+      "future_knowing_wish": true,
+      "whole_answer_heard": true,
+      "romantic_commitment_confirmed": false
+    },
+    "observation_ko": "관장은 현재 아는 장점을 말하고 앞으로 더 알고 싶다고 끝까지 설명한다. 에트라는 듣고 기뻐한다.",
+    "blocked_overclaim_ko": "현재 한정 평가를 전면 거절이나 연애 승낙으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003702:0076",
+      "ev:r30:21003702:0077",
+      "ev:r30:21003702:0078",
+      "ev:r30:21003702:0079",
+      "ev:r30:21003702:0080",
+      "ev:r30:21003702:0081"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  },
+  {
+    "contract_id": "contract:r30:cleaning_and_lecture_deferred",
+    "key": "cleaning_and_lecture_deferred",
+    "source_locations": [
+      {
+        "novel_id": "21003702",
+        "raw_index": 84
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 85
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 86
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 87
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 88
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 89
+      },
+      {
+        "novel_id": "21003702",
+        "raw_index": 90
+      }
+    ],
+    "assertions": {
+      "assigned_this_week": "アルテ",
+      "actual_cleaner": "エトラ",
+      "arte_napping": "etra_report",
+      "curator_tools_taken": true,
+      "lecture_executed": false,
+      "lecture_permanently_cancelled": false
+    },
+    "observation_ko": "이번 주 담당 아르테 대신 에트라가 청소한다. 관장은 설교하러 가려다 우선 도구를 들고 돕기로 한다.",
+    "blocked_overclaim_ko": "설교가 실제 끝났거나 영구 취소됐다고 만들거나 낮잠으로 새 작품이 완성됐다고 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:21003702"
+    ],
+    "evidence_ids": [
+      "ev:r30:21003702:0084",
+      "ev:r30:21003702:0085",
+      "ev:r30:21003702:0086",
+      "ev:r30:21003702:0087",
+      "ev:r30:21003702:0088",
+      "ev:r30:21003702:0089",
+      "ev:r30:21003702:0090"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R30_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R30"
+    }
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "scope": "Dependencies explicitly referenced by supplied original records but not included in this handover support ZIP; not a claim that all Library storage was exhaustively searched",
+  "items": [
+    {
+      "filename": "gc_POST_R36_EDITORIAL_CHANGESET_v1_0.zip",
+      "sha256": "afe9ca955aee5ab219990bddb72f0c63262930fe9890b65be45b371de7324535",
+      "size_bytes": 4393022,
+      "source": "gc_PR13_PRO_REGRESSION_REVIEW_v1_0/audit/INPUT_IDENTITIES.json",
+      "needed_for": "full original editorial composition/export replay; not a blocker to Knowledge inventory"
+    },
+    {
+      "filename": "gc_POST_R36_EXPORT_APPLY_CANDIDATE_v1_2_HOLD_PLACEHOLDERS.zip",
+      "sha256": "72a19cfdf351ba4f4c3c6b07e3c285bca7241ce15efd5069228c2a9cef7a3708",
+      "size_bytes": 3125551,
+      "source": "gc_PR13_PRO_REGRESSION_REVIEW_v1_0/audit/INPUT_IDENTITIES.json",
+      "needed_for": "replay of original standalone candidate verifier; not a substitute for final merged production"
+    },
+    {
+      "filename": "gc_names_layer_4A_checkpoint_v1.zip",
+      "sha256": null,
+      "size_bytes": 376941,
+      "source": "Library listing and 4-A reports",
+      "needed_for": "4-B resume using exactly the original 4-A raw ledger",
+      "materialization": "attempted and failed; only state summary bundled"
+    },
+    {
+      "filename": "gc_names_layer_4A_checkpoint.zip",
+      "sha256": null,
+      "size_bytes": 416502,
+      "source": "Library listing; earlier unsuffixed variant",
+      "needed_for": "fallback lineage comparison only; not automatically preferred to v1"
+    }
+  ]
+}

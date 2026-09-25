@@ -1,0 +1,25 @@
+{
+  "nested_source_sha256": "f9817bfe251796ce4c69fd0e781fe1b72be2cbc1aa2a0920cf44283811ba4657",
+  "raw_hashes": {
+    "22000301": "e41db3c75358ac3189bc54f4fe9b5c95b4e276596755d21d915af426ee719d91",
+    "22000302": "524e43431f8be9db7d1b8a44a2829e97072461c3f92b18c8582a694323b6d894",
+    "22000303": "2678f857434fc61e2cd1cefd5af2fdaf6066e6112c969ccaf5fccc5d95bb15e5",
+    "22000304": "b7124df9bb5ab5b180b8c9470d2e8d77acf003d4a266918a635503f907fa5351",
+    "22000305": "fd488c572049830c5d48770e41b67b2f163a4e97206deabdc6c2f2cbe78a286a",
+    "22000306": "283b78188ade7f79f41f98f5c32d945c0607112f93a377d357f52de5d7852bd8",
+    "22000601": "8015c07c28a4960aefa34047010458b12fe0a1320afb9cff20f680c2e5c9e0c9",
+    "22000602": "721b8eb007f419f2d88bbecf07e9e03a106f605e6933ca5bba8a1bec0da3c91d",
+    "22000603": "27c4503615c16c11b685c6f58ad7b633edd91191dfd5777754b065394f947b0b",
+    "22000604": "00ec5721111a2847535b92ee36ca19cbc8ae1420f64cdc817d731ec33b5b6aa9",
+    "22000605": "d5af5a280325900c0efa541053411dc09a258ee631df2d707ad0be6cd7d07aeb",
+    "22000606": "a4a2a26b00c3f0fc67afa827a639d6e69157e0381c8a32adb14a5b191e554467"
+  },
+  "original_archive_sha256": "5df5266154c60aeaab24d66fd6cdf4872ed162cf286e388fddc9c3c86835fc00",
+  "source_chain": [
+    "source/gc_pro_review_r4.zip",
+    "gc_pro_review_r4/source/r3.zip",
+    "gc_pro_review_r3/source/raw_ordered/<novel_id>.json"
+  ],
+  "hand_override_precedence": "alignment/working_hand_blocks.jsonl after source/hand_blocks.jsonl",
+  "snapshot_scope": "R32_ONLY_NOT_FULL_CORPUS"
+}

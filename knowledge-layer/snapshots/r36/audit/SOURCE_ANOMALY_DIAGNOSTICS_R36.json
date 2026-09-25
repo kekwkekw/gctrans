@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "new_anomalies": 1,
+  "checks": [
+    {
+      "check": "raw_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "reader_mapping_and_span_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "join_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "context_timing_compared",
+      "status": "PASS"
+    },
+    {
+      "check": "jp_ko_not_autofixed",
+      "status": "PASS"
+    }
+  ],
+  "current_official_game_source_checked": false,
+  "source_anomaly_ids": [
+    "R36-SRC001"
+  ]
+}

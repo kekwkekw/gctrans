@@ -1,0 +1,23 @@
+{
+  "canonical_entities_added": 0,
+  "source_scope_exact": [
+    "40106011",
+    "40106012",
+    "40106021",
+    "40106022",
+    "40106031",
+    "40106032",
+    "40106041",
+    "40106042"
+  ],
+  "first_episode_queue_zero_but_115_entries_required": true,
+  "same_rembrandt_existing_entity": "entity:17ce5a7d4219b9ef",
+  "tulip_existing_entity": "entity:9c5f2c647fdc0d15",
+  "tulip_gallery_knowledge": "NOT_KNOWN_EXPLICIT_40106042_RAW3",
+  "rembrandt_sleep_end": "AWAKE_EXPLICIT_40106042_RAW65",
+  "director_recovery": "SYMPTOMS_APPEAR_GONE_40106042_RAW48_49",
+  "new_painting_after_candles": "INTENTION_ONLY_40106032_RAW47",
+  "honorific_proposal": "40106022_RAW68_LOCAL_REVIEWING_MEDIUM",
+  "chronology": "PAIR_ORDER_PRESERVED_NO_GLOBAL_CHRONOLOGY_INFERRED",
+  "borrowed_h_dark_text_included": false
+}

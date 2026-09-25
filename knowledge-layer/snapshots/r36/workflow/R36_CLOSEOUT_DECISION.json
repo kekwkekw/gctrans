@@ -1,0 +1,12 @@
+{
+  "scope": "R36 707 original rows",
+  "WORK": "COMPLETE",
+  "approval_performed": false,
+  "editorial_pass_performed": false,
+  "export_performed": false,
+  "runtime_verified": false,
+  "new_holds": 0,
+  "preserved_holds": 12,
+  "first_unfinished": null,
+  "next_step_file": "reports/NEXT_STEP.json"
+}

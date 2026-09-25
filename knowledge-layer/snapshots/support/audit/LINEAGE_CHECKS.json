@@ -1,0 +1,17 @@
+{
+  "scope": "byte and explicit identity checks, not independent semantic judgement",
+  "checks": [
+    {
+      "check": "meaning_parent_R36_SHA_matches_uploaded_R36",
+      "passed": true
+    },
+    {
+      "check": "meaning_parent_adjudication_SHA_matches_uploaded_adjudication",
+      "passed": true
+    },
+    {
+      "check": "meaning_preserved_adjudications_bytes_equal_adjudication_ledger",
+      "passed": true
+    }
+  ]
+}

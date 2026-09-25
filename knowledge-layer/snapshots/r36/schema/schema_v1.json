@@ -1,0 +1,67 @@
+{
+  "schema_name": "GirlsCreation Korean Translation Knowledge Layer",
+  "schema_version": 1,
+  "principles": [
+    "Knowledge layer is independent from GCMod/XUnity runtime outputs.",
+    "Canonical entities, surface references, terms, source entries, context groups, speech profiles, relationships, and guards are separate records.",
+    "Exact/context-aware matching is the default. Substring replacement is never implied by a term record.",
+    "category describes text usage; context_group describes texts that should be understood together.",
+    "status and confidence are independent axes.",
+    "R4 story evidence is migrated as reviewing/candidate unless an explicit user policy already approves a choice."
+  ],
+  "status_enum": [
+    "candidate",
+    "reviewing",
+    "approved",
+    "deprecated",
+    "conflict"
+  ],
+  "confidence_enum": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "match_enum": [
+    "exact"
+  ],
+  "entity_type_enum": [
+    "character",
+    "location",
+    "organization"
+  ],
+  "term_type_enum": [
+    "character",
+    "location",
+    "organization",
+    "system_term",
+    "role",
+    "occupation",
+    "technique",
+    "ability",
+    "nickname",
+    "common_term"
+  ],
+  "category_enum": [
+    "story",
+    "story_title",
+    "battle_story",
+    "home_voice",
+    "character_story",
+    "event_story",
+    "master_name",
+    "master_description",
+    "skill_name",
+    "skill_description",
+    "ui",
+    "system_message"
+  ],
+  "source_tier_enum": [
+    "game_story",
+    "game_master",
+    "official",
+    "fan_translation",
+    "user_policy",
+    "pro_review",
+    "community_reference"
+  ]
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "key": "tea_service",
+    "actor": "entity:828bf1ba73e463a7",
+    "recipient": "entity:7d6e324cfe8dbd65",
+    "event": "served_tea",
+    "evidence_level": "depicted_action_and_retrospective",
+    "evidence_ids": [
+      "ev:r23:40500102:0022",
+      "ev:r23:40500105:0013"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "consultation",
+    "advisor": "entity:828bf1ba73e463a7",
+    "requester": "entity:ef110f7dc44ba705",
+    "evidence_level": "retrospective",
+    "evidence_ids": [
+      "ev:r23:40200441:0003",
+      "ev:r23:40200441:0065"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "earrings",
+    "creator": "entity:828bf1ba73e463a7",
+    "initial_intended_recipient": "entity:ef110f7dc44ba705",
+    "later_wearers": [
+      "entity:ef110f7dc44ba705",
+      "entity:849aaa528c945d18"
+    ],
+    "pair_count": 1,
+    "sharing_evidence_level": "lorier_report",
+    "evidence_ids": [
+      "ev:r23:40200441:0081",
+      "ev:r23:40200441:0083",
+      "ev:r23:40200442:0020",
+      "ev:r23:40200442:0031",
+      "ev:r23:40200442:0033"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "pendant",
+    "creator": "entity:849aaa528c945d18",
+    "recipient": "entity:828bf1ba73e463a7",
+    "form": "pendant_not_earrings",
+    "evidence_level": "direct_report_and_depicted_gift",
+    "evidence_ids": [
+      "ev:r23:40200442:0018",
+      "ev:r23:40200442:0023",
+      "ev:r23:40200442:0025",
+      "ev:r23:40200442:0029"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "lorier_feeling",
+    "speaker": "entity:849aaa528c945d18",
+    "about": "entity:828bf1ba73e463a7",
+    "utterance_mode": "private_monologue",
+    "heard_by_director": false,
+    "uncertainty_preserved": true,
+    "formal_romance_established": false,
+    "evidence_ids": [
+      "ev:r23:40200802:0057",
+      "ev:r23:40200802:0058"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "sansovino_feeling",
+    "speaker": "entity:7d6e324cfe8dbd65",
+    "target": "entity:828bf1ba73e463a7",
+    "utterance_mode": "direct_speech",
+    "answer_interrupted": true,
+    "formal_romance_established": false,
+    "evidence_ids": [
+      "ev:r23:40500105:0033",
+      "ev:r23:40500105:0036",
+      "ev:r23:40500105:0038",
+      "ev:r23:40500105:0039"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "family_misidentification",
+    "claimant": "local:r23:pool_mother",
+    "claimed_father": "entity:828bf1ba73e463a7",
+    "claimed_child": "entity:849aaa528c945d18",
+    "claim_level": "mistaken_inference",
+    "actual_parent_relationship": false,
+    "evidence_ids": [
+      "ev:r23:40200802:0027",
+      "ev:r23:40200802:0038"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "quiet_denial",
+    "speaker": "entity:849aaa528c945d18",
+    "utterance_mode": "quiet_utterance",
+    "heard_by_director": null,
+    "evidence_ids": [
+      "ev:r23:40200802:0037",
+      "ev:r23:40200802:0038"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "rps_outcome",
+    "director_hand": "rock",
+    "lorier_hand": "paper",
+    "winner": "entity:849aaa528c945d18",
+    "another_splash_depicted": true,
+    "evidence_ids": [
+      "ev:r23:40200802:0068",
+      "ev:r23:40200802:0070",
+      "ev:r23:40200802:0071",
+      "ev:r23:40200802:0072"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "police",
+    "event": "someone_may_call_police",
+    "modality": "hypothetical_risk",
+    "actual_report": false,
+    "actual_arrest": false,
+    "global_police_name_resolved": false,
+    "evidence_ids": [
+      "ev:r23:40200801:0054"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "gate",
+    "action_reported": "closed",
+    "lock_confirmed": false,
+    "evidence_level": "lorier_self_report",
+    "evidence_ids": [
+      "ev:r23:40200801:0039"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "angela_overhearing",
+    "listener": "entity:6848b12a30dac239",
+    "starts_after": "workroom_exit",
+    "evidence_level": "later_self_report",
+    "replaces_earlier_primary_audience": false,
+    "evidence_ids": [
+      "ev:r23:40500104:0048",
+      "ev:r23:40500104:0072"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "age_scope",
+    "sansovino_growth_period_past_self_report": true,
+    "precise_ages_inferred": false,
+    "lorier_age_determined_from_appearance": false,
+    "all_imago_adults_inferred": false,
+    "evidence_ids": [
+      "ev:r23:40500104:0054",
+      "ev:r23:40200802:0027",
+      "ev:r23:40200802:0055"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  },
+  {
+    "key": "future_meal",
+    "fish_caught": true,
+    "fritto_eating_depicted": false,
+    "plan_not_result": true,
+    "evidence_ids": [
+      "ev:r23:40500105:0026",
+      "ev:r23:40500105:0051",
+      "ev:r23:40500105:0061"
+    ],
+    "status": "reviewing",
+    "context_only": true,
+    "global_fact_approved": false
+  }
+]

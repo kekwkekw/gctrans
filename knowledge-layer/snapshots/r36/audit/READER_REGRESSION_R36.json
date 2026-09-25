@@ -1,0 +1,896 @@
+{
+  "status": "PASS",
+  "check_count": 177,
+  "passed": 177,
+  "failed": 0,
+  "exceptions": [],
+  "scenarios_compared": 159,
+  "rows_compared": 11059,
+  "parent_reader_sha256": "3ecaca8e3f414d60d6119acaf23ebade54ab44feaac62fafc8460fbff65c570d",
+  "reader_sha256": "3ecaca8e3f414d60d6119acaf23ebade54ab44feaac62fafc8460fbff65c570d",
+  "source_modified": false,
+  "new_semantic_review_of_previous_batches": false,
+  "method": "Actual unchanged preserved R35 reader versus current R36 reader for all prior regression scenarios, R35 and R36; compare every returned row, twelve R36 snapshots, raw hashes, hand overrides, mappings/titles and titleless raw0 sentinel. No historical semantic review is claimed.",
+  "checks": [
+    {
+      "check": "unchanged_40104011",
+      "status": "PASS",
+      "compared_rows": 83
+    },
+    {
+      "check": "unchanged_40104012",
+      "status": "PASS",
+      "compared_rows": 80
+    },
+    {
+      "check": "unchanged_40104021",
+      "status": "PASS",
+      "compared_rows": 122
+    },
+    {
+      "check": "unchanged_40104022",
+      "status": "PASS",
+      "compared_rows": 73
+    },
+    {
+      "check": "unchanged_40104031",
+      "status": "PASS",
+      "compared_rows": 130
+    },
+    {
+      "check": "unchanged_40104032",
+      "status": "PASS",
+      "compared_rows": 68
+    },
+    {
+      "check": "unchanged_40104061",
+      "status": "PASS",
+      "compared_rows": 61
+    },
+    {
+      "check": "unchanged_40104062",
+      "status": "PASS",
+      "compared_rows": 77
+    },
+    {
+      "check": "unchanged_40500101",
+      "status": "PASS",
+      "compared_rows": 61
+    },
+    {
+      "check": "unchanged_40500102",
+      "status": "PASS",
+      "compared_rows": 65
+    },
+    {
+      "check": "unchanged_40500103",
+      "status": "PASS",
+      "compared_rows": 75
+    },
+    {
+      "check": "unchanged_40500104",
+      "status": "PASS",
+      "compared_rows": 80
+    },
+    {
+      "check": "unchanged_40500105",
+      "status": "PASS",
+      "compared_rows": 62
+    },
+    {
+      "check": "unchanged_40200441",
+      "status": "PASS",
+      "compared_rows": 92
+    },
+    {
+      "check": "unchanged_40200442",
+      "status": "PASS",
+      "compared_rows": 59
+    },
+    {
+      "check": "unchanged_40200801",
+      "status": "PASS",
+      "compared_rows": 57
+    },
+    {
+      "check": "unchanged_40200802",
+      "status": "PASS",
+      "compared_rows": 92
+    },
+    {
+      "check": "unchanged_40200741",
+      "status": "PASS",
+      "compared_rows": 105
+    },
+    {
+      "check": "unchanged_40200742",
+      "status": "PASS",
+      "compared_rows": 121
+    },
+    {
+      "check": "unchanged_40200711",
+      "status": "PASS",
+      "compared_rows": 86
+    },
+    {
+      "check": "unchanged_40200712",
+      "status": "PASS",
+      "compared_rows": 92
+    },
+    {
+      "check": "unchanged_40200491",
+      "status": "PASS",
+      "compared_rows": 93
+    },
+    {
+      "check": "unchanged_40200492",
+      "status": "PASS",
+      "compared_rows": 56
+    },
+    {
+      "check": "unchanged_99900001",
+      "status": "PASS",
+      "compared_rows": 72
+    },
+    {
+      "check": "unchanged_99900002",
+      "status": "PASS",
+      "compared_rows": 17
+    },
+    {
+      "check": "unchanged_10010101",
+      "status": "PASS",
+      "compared_rows": 102
+    },
+    {
+      "check": "unchanged_10010102",
+      "status": "PASS",
+      "compared_rows": 130
+    },
+    {
+      "check": "unchanged_20000601",
+      "status": "PASS",
+      "compared_rows": 69
+    },
+    {
+      "check": "unchanged_20000602",
+      "status": "PASS",
+      "compared_rows": 78
+    },
+    {
+      "check": "unchanged_20000603",
+      "status": "PASS",
+      "compared_rows": 83
+    },
+    {
+      "check": "unchanged_20000604",
+      "status": "PASS",
+      "compared_rows": 75
+    },
+    {
+      "check": "unchanged_20000605",
+      "status": "PASS",
+      "compared_rows": 43
+    },
+    {
+      "check": "unchanged_20000606",
+      "status": "PASS",
+      "compared_rows": 62
+    },
+    {
+      "check": "unchanged_20000901",
+      "status": "PASS",
+      "compared_rows": 65
+    },
+    {
+      "check": "unchanged_20000902",
+      "status": "PASS",
+      "compared_rows": 54
+    },
+    {
+      "check": "unchanged_20000903",
+      "status": "PASS",
+      "compared_rows": 69
+    },
+    {
+      "check": "unchanged_20000904",
+      "status": "PASS",
+      "compared_rows": 49
+    },
+    {
+      "check": "unchanged_20000905",
+      "status": "PASS",
+      "compared_rows": 74
+    },
+    {
+      "check": "unchanged_20000906",
+      "status": "PASS",
+      "compared_rows": 60
+    },
+    {
+      "check": "unchanged_20001401",
+      "status": "PASS",
+      "compared_rows": 59
+    },
+    {
+      "check": "unchanged_20001402",
+      "status": "PASS",
+      "compared_rows": 74
+    },
+    {
+      "check": "unchanged_20001403",
+      "status": "PASS",
+      "compared_rows": 77
+    },
+    {
+      "check": "unchanged_20001404",
+      "status": "PASS",
+      "compared_rows": 58
+    },
+    {
+      "check": "unchanged_20001405",
+      "status": "PASS",
+      "compared_rows": 78
+    },
+    {
+      "check": "unchanged_20001406",
+      "status": "PASS",
+      "compared_rows": 69
+    },
+    {
+      "check": "unchanged_20001501",
+      "status": "PASS",
+      "compared_rows": 48
+    },
+    {
+      "check": "unchanged_20001502",
+      "status": "PASS",
+      "compared_rows": 88
+    },
+    {
+      "check": "unchanged_20001503",
+      "status": "PASS",
+      "compared_rows": 59
+    },
+    {
+      "check": "unchanged_20001504",
+      "status": "PASS",
+      "compared_rows": 59
+    },
+    {
+      "check": "unchanged_20001505",
+      "status": "PASS",
+      "compared_rows": 65
+    },
+    {
+      "check": "unchanged_20001506",
+      "status": "PASS",
+      "compared_rows": 73
+    },
+    {
+      "check": "unchanged_20002101",
+      "status": "PASS",
+      "compared_rows": 59
+    },
+    {
+      "check": "unchanged_20002102",
+      "status": "PASS",
+      "compared_rows": 75
+    },
+    {
+      "check": "unchanged_20002103",
+      "status": "PASS",
+      "compared_rows": 65
+    },
+    {
+      "check": "unchanged_20002104",
+      "status": "PASS",
+      "compared_rows": 69
+    },
+    {
+      "check": "unchanged_20002105",
+      "status": "PASS",
+      "compared_rows": 74
+    },
+    {
+      "check": "unchanged_20002106",
+      "status": "PASS",
+      "compared_rows": 56
+    },
+    {
+      "check": "unchanged_20002601",
+      "status": "PASS",
+      "compared_rows": 38
+    },
+    {
+      "check": "unchanged_20002602",
+      "status": "PASS",
+      "compared_rows": 75
+    },
+    {
+      "check": "unchanged_20002603",
+      "status": "PASS",
+      "compared_rows": 73
+    },
+    {
+      "check": "unchanged_20002604",
+      "status": "PASS",
+      "compared_rows": 52
+    },
+    {
+      "check": "unchanged_20002605",
+      "status": "PASS",
+      "compared_rows": 59
+    },
+    {
+      "check": "unchanged_20002606",
+      "status": "PASS",
+      "compared_rows": 60
+    },
+    {
+      "check": "unchanged_20002701",
+      "status": "PASS",
+      "compared_rows": 64
+    },
+    {
+      "check": "unchanged_20002702",
+      "status": "PASS",
+      "compared_rows": 64
+    },
+    {
+      "check": "unchanged_20002703",
+      "status": "PASS",
+      "compared_rows": 63
+    },
+    {
+      "check": "unchanged_20002704",
+      "status": "PASS",
+      "compared_rows": 62
+    },
+    {
+      "check": "unchanged_20002705",
+      "status": "PASS",
+      "compared_rows": 75
+    },
+    {
+      "check": "unchanged_20002706",
+      "status": "PASS",
+      "compared_rows": 42
+    },
+    {
+      "check": "unchanged_20002801",
+      "status": "PASS",
+      "compared_rows": 63
+    },
+    {
+      "check": "unchanged_20002802",
+      "status": "PASS",
+      "compared_rows": 77
+    },
+    {
+      "check": "unchanged_20002803",
+      "status": "PASS",
+      "compared_rows": 72
+    },
+    {
+      "check": "unchanged_20002804",
+      "status": "PASS",
+      "compared_rows": 56
+    },
+    {
+      "check": "unchanged_20002805",
+      "status": "PASS",
+      "compared_rows": 99
+    },
+    {
+      "check": "unchanged_20002806",
+      "status": "PASS",
+      "compared_rows": 80
+    },
+    {
+      "check": "unchanged_20003101",
+      "status": "PASS",
+      "compared_rows": 72
+    },
+    {
+      "check": "unchanged_20003102",
+      "status": "PASS",
+      "compared_rows": 53
+    },
+    {
+      "check": "unchanged_20003103",
+      "status": "PASS",
+      "compared_rows": 56
+    },
+    {
+      "check": "unchanged_20003104",
+      "status": "PASS",
+      "compared_rows": 60
+    },
+    {
+      "check": "unchanged_20003105",
+      "status": "PASS",
+      "compared_rows": 52
+    },
+    {
+      "check": "unchanged_20003106",
+      "status": "PASS",
+      "compared_rows": 69
+    },
+    {
+      "check": "unchanged_20003301",
+      "status": "PASS",
+      "compared_rows": 60
+    },
+    {
+      "check": "unchanged_20003302",
+      "status": "PASS",
+      "compared_rows": 57
+    },
+    {
+      "check": "unchanged_20003303",
+      "status": "PASS",
+      "compared_rows": 69
+    },
+    {
+      "check": "unchanged_20003304",
+      "status": "PASS",
+      "compared_rows": 74
+    },
+    {
+      "check": "unchanged_20003305",
+      "status": "PASS",
+      "compared_rows": 45
+    },
+    {
+      "check": "unchanged_20003306",
+      "status": "PASS",
+      "compared_rows": 54
+    },
+    {
+      "check": "unchanged_21003201",
+      "status": "PASS",
+      "compared_rows": 133
+    },
+    {
+      "check": "unchanged_21003202",
+      "status": "PASS",
+      "compared_rows": 70
+    },
+    {
+      "check": "unchanged_21003501",
+      "status": "PASS",
+      "compared_rows": 76
+    },
+    {
+      "check": "unchanged_21003502",
+      "status": "PASS",
+      "compared_rows": 99
+    },
+    {
+      "check": "unchanged_21003701",
+      "status": "PASS",
+      "compared_rows": 93
+    },
+    {
+      "check": "unchanged_21003702",
+      "status": "PASS",
+      "compared_rows": 91
+    },
+    {
+      "check": "unchanged_21002001",
+      "status": "PASS",
+      "compared_rows": 47
+    },
+    {
+      "check": "unchanged_21002002",
+      "status": "PASS",
+      "compared_rows": 101
+    },
+    {
+      "check": "unchanged_21002003",
+      "status": "PASS",
+      "compared_rows": 60
+    },
+    {
+      "check": "unchanged_21002004",
+      "status": "PASS",
+      "compared_rows": 71
+    },
+    {
+      "check": "unchanged_21002005",
+      "status": "PASS",
+      "compared_rows": 67
+    },
+    {
+      "check": "unchanged_21002006",
+      "status": "PASS",
+      "compared_rows": 114
+    },
+    {
+      "check": "unchanged_21003801",
+      "status": "PASS",
+      "compared_rows": 44
+    },
+    {
+      "check": "unchanged_21003802",
+      "status": "PASS",
+      "compared_rows": 48
+    },
+    {
+      "check": "unchanged_21003803",
+      "status": "PASS",
+      "compared_rows": 73
+    },
+    {
+      "check": "unchanged_21003804",
+      "status": "PASS",
+      "compared_rows": 57
+    },
+    {
+      "check": "unchanged_21003805",
+      "status": "PASS",
+      "compared_rows": 51
+    },
+    {
+      "check": "unchanged_21003806",
+      "status": "PASS",
+      "compared_rows": 44
+    },
+    {
+      "check": "unchanged_22000301",
+      "status": "PASS",
+      "compared_rows": 63
+    },
+    {
+      "check": "unchanged_22000302",
+      "status": "PASS",
+      "compared_rows": 41
+    },
+    {
+      "check": "unchanged_22000303",
+      "status": "PASS",
+      "compared_rows": 55
+    },
+    {
+      "check": "unchanged_22000304",
+      "status": "PASS",
+      "compared_rows": 51
+    },
+    {
+      "check": "unchanged_22000305",
+      "status": "PASS",
+      "compared_rows": 61
+    },
+    {
+      "check": "unchanged_22000306",
+      "status": "PASS",
+      "compared_rows": 64
+    },
+    {
+      "check": "unchanged_22000601",
+      "status": "PASS",
+      "compared_rows": 66
+    },
+    {
+      "check": "unchanged_22000602",
+      "status": "PASS",
+      "compared_rows": 57
+    },
+    {
+      "check": "unchanged_22000603",
+      "status": "PASS",
+      "compared_rows": 56
+    },
+    {
+      "check": "unchanged_22000604",
+      "status": "PASS",
+      "compared_rows": 51
+    },
+    {
+      "check": "unchanged_22000605",
+      "status": "PASS",
+      "compared_rows": 67
+    },
+    {
+      "check": "unchanged_22000606",
+      "status": "PASS",
+      "compared_rows": 59
+    },
+    {
+      "check": "unchanged_22001001",
+      "status": "PASS",
+      "compared_rows": 54
+    },
+    {
+      "check": "unchanged_22001002",
+      "status": "PASS",
+      "compared_rows": 52
+    },
+    {
+      "check": "unchanged_22001003",
+      "status": "PASS",
+      "compared_rows": 51
+    },
+    {
+      "check": "unchanged_22001004",
+      "status": "PASS",
+      "compared_rows": 63
+    },
+    {
+      "check": "unchanged_22001005",
+      "status": "PASS",
+      "compared_rows": 59
+    },
+    {
+      "check": "unchanged_22001006",
+      "status": "PASS",
+      "compared_rows": 66
+    },
+    {
+      "check": "unchanged_22001101",
+      "status": "PASS",
+      "compared_rows": 60
+    },
+    {
+      "check": "unchanged_22001102",
+      "status": "PASS",
+      "compared_rows": 49
+    },
+    {
+      "check": "unchanged_22001103",
+      "status": "PASS",
+      "compared_rows": 88
+    },
+    {
+      "check": "unchanged_22001104",
+      "status": "PASS",
+      "compared_rows": 74
+    },
+    {
+      "check": "unchanged_22001105",
+      "status": "PASS",
+      "compared_rows": 47
+    },
+    {
+      "check": "unchanged_22001106",
+      "status": "PASS",
+      "compared_rows": 60
+    },
+    {
+      "check": "unchanged_22001601",
+      "status": "PASS",
+      "compared_rows": 157
+    },
+    {
+      "check": "unchanged_22001602",
+      "status": "PASS",
+      "compared_rows": 140
+    },
+    {
+      "check": "unchanged_22001603",
+      "status": "PASS",
+      "compared_rows": 104
+    },
+    {
+      "check": "unchanged_22001604",
+      "status": "PASS",
+      "compared_rows": 110
+    },
+    {
+      "check": "unchanged_22001605",
+      "status": "PASS",
+      "compared_rows": 56
+    },
+    {
+      "check": "unchanged_22001606",
+      "status": "PASS",
+      "compared_rows": 101
+    },
+    {
+      "check": "unchanged_22001901",
+      "status": "PASS",
+      "compared_rows": 65
+    },
+    {
+      "check": "unchanged_22001902",
+      "status": "PASS",
+      "compared_rows": 80
+    },
+    {
+      "check": "unchanged_22001903",
+      "status": "PASS",
+      "compared_rows": 60
+    },
+    {
+      "check": "unchanged_22001904",
+      "status": "PASS",
+      "compared_rows": 61
+    },
+    {
+      "check": "unchanged_22001905",
+      "status": "PASS",
+      "compared_rows": 89
+    },
+    {
+      "check": "unchanged_22001906",
+      "status": "PASS",
+      "compared_rows": 64
+    },
+    {
+      "check": "unchanged_22002301",
+      "status": "PASS",
+      "compared_rows": 65
+    },
+    {
+      "check": "unchanged_22002302",
+      "status": "PASS",
+      "compared_rows": 77
+    },
+    {
+      "check": "unchanged_22002303",
+      "status": "PASS",
+      "compared_rows": 74
+    },
+    {
+      "check": "unchanged_22002304",
+      "status": "PASS",
+      "compared_rows": 79
+    },
+    {
+      "check": "unchanged_22002305",
+      "status": "PASS",
+      "compared_rows": 45
+    },
+    {
+      "check": "unchanged_22002306",
+      "status": "PASS",
+      "compared_rows": 80
+    },
+    {
+      "check": "unchanged_22002801",
+      "status": "PASS",
+      "compared_rows": 45
+    },
+    {
+      "check": "unchanged_22002802",
+      "status": "PASS",
+      "compared_rows": 53
+    },
+    {
+      "check": "unchanged_22002803",
+      "status": "PASS",
+      "compared_rows": 46
+    },
+    {
+      "check": "unchanged_22002804",
+      "status": "PASS",
+      "compared_rows": 53
+    },
+    {
+      "check": "unchanged_22002805",
+      "status": "PASS",
+      "compared_rows": 46
+    },
+    {
+      "check": "unchanged_22002806",
+      "status": "PASS",
+      "compared_rows": 73
+    },
+    {
+      "check": "unchanged_22003301",
+      "status": "PASS",
+      "compared_rows": 67
+    },
+    {
+      "check": "unchanged_22003302",
+      "status": "PASS",
+      "compared_rows": 87
+    },
+    {
+      "check": "unchanged_22003303",
+      "status": "PASS",
+      "compared_rows": 61
+    },
+    {
+      "check": "unchanged_22003304",
+      "status": "PASS",
+      "compared_rows": 65
+    },
+    {
+      "check": "unchanged_22003305",
+      "status": "PASS",
+      "compared_rows": 61
+    },
+    {
+      "check": "unchanged_22003306",
+      "status": "PASS",
+      "compared_rows": 50
+    },
+    {
+      "check": "reader_bytes_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "r36_snapshot_22002801",
+      "status": "PASS",
+      "compared_rows": 45
+    },
+    {
+      "check": "r36_snapshot_22002802",
+      "status": "PASS",
+      "compared_rows": 53
+    },
+    {
+      "check": "r36_snapshot_22002803",
+      "status": "PASS",
+      "compared_rows": 46
+    },
+    {
+      "check": "r36_snapshot_22002804",
+      "status": "PASS",
+      "compared_rows": 53
+    },
+    {
+      "check": "r36_snapshot_22002805",
+      "status": "PASS",
+      "compared_rows": 46
+    },
+    {
+      "check": "r36_snapshot_22002806",
+      "status": "PASS",
+      "compared_rows": 73
+    },
+    {
+      "check": "r36_snapshot_22003301",
+      "status": "PASS",
+      "compared_rows": 67
+    },
+    {
+      "check": "r36_snapshot_22003302",
+      "status": "PASS",
+      "compared_rows": 87
+    },
+    {
+      "check": "r36_snapshot_22003303",
+      "status": "PASS",
+      "compared_rows": 61
+    },
+    {
+      "check": "r36_snapshot_22003304",
+      "status": "PASS",
+      "compared_rows": 65
+    },
+    {
+      "check": "r36_snapshot_22003305",
+      "status": "PASS",
+      "compared_rows": 61
+    },
+    {
+      "check": "r36_snapshot_22003306",
+      "status": "PASS",
+      "compared_rows": 50
+    },
+    {
+      "check": "raw_hashes",
+      "status": "PASS"
+    },
+    {
+      "check": "nested_source_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "hand_override_values",
+      "status": "PASS"
+    },
+    {
+      "check": "mapping_and_titles",
+      "status": "PASS"
+    },
+    {
+      "check": "titleless_raw0_preserved",
+      "status": "PASS"
+    }
+  ],
+  "elapsed_seconds": 4.416
+}

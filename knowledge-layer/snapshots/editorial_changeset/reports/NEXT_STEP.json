@@ -1,0 +1,12 @@
+{
+  "next": "Apply meaning decisions + this editorial changeset to latest authorized production baseline only after explicit export authorization and fresh preimage revalidation.",
+  "requires_pro": false,
+  "recommended_mode": "VERY_HIGH",
+  "export_authorized": false,
+  "before_export": [
+    "check latest published/working production preimages",
+    "compose 996 meaning decisions and 11486 editorial operations deterministically",
+    "preserve source/anomaly/hold ledgers",
+    "validate runtime tags and output JSON"
+  ]
+}

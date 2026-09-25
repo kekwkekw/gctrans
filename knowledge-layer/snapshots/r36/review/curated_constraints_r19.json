@@ -1,0 +1,33 @@
+{
+  "source_scope_exact": [
+    "40106091",
+    "40106092",
+    "40106101",
+    "40106102",
+    "40106111",
+    "40106112",
+    "40106121",
+    "40106122",
+    "40106131",
+    "40106132"
+  ],
+  "new_named_entities": [
+    "entity:r19:renoir"
+  ],
+  "new_direct_speech_profiles": 0,
+  "renoir_direct_speech_profile_allowed": false,
+  "room_101_scene": "IMAGINED_52_53_THEN_ACTUAL_CAFE",
+  "room_131_scene": "ACTUAL_ENTRY_29_30",
+  "cafe_tulp": "RECALLED_18_19",
+  "quiet_wish": "INAUDIBLE_MURMUR_40106102_42",
+  "seed": "PLANTED_NOT_GERMINATED",
+  "bunny_comparison": "IMAGINATION_NOT_CONTACT",
+  "cezanne_window": "DECEPTION_NOT_PRESENCE",
+  "tanabata_paper": "BLANK_NOT_REWRITTEN",
+  "date": "MUTUAL_ACKNOWLEDGEMENT_OF_THIS_OUTING_NOT_FORMAL_COUPLE",
+  "sleep": "DIRECTOR_GUESS_NOT_SLEEP_CONFIRMED",
+  "wish_poison": "SIMILE_NOT_REAL_POISON",
+  "rembrandt_total_cure": false,
+  "source_h_or_alternate_included": false,
+  "multiblock_join": "SOURCE_PROVIDED_SEPARATOR_PRESERVED"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "gc_names_layer_4A_manifest_v1",
+  "stage": "4-A",
+  "summary": {
+    "canonical_source_count": 34,
+    "source_pass_count": 30,
+    "source_limitation_count": 4,
+    "parse_error_count": 0,
+    "raw_pair_count": 17024,
+    "unique_speaker_jp_count": 305,
+    "duplicate_provenance_key_count": 0,
+    "missing_required_field_count": 0,
+    "source_copy_error_count": 0,
+    "conflict_count": null,
+    "conflict_status": "DEFERRED_TO_4B",
+    "source_limitation_rounds": [
+      "R3",
+      "R4",
+      "R16",
+      "R21"
+    ]
+  },
+  "files": [
+    {
+      "name": "speaker_pairs_raw.jsonl",
+      "size_bytes": 7132555,
+      "sha256": "f6f8af68b7ca7e009fd475c63fac90ae5c526e6aac92bb722e814f3a325fb0fe"
+    },
+    {
+      "name": "speaker_pairs_raw.csv",
+      "size_bytes": 3129541,
+      "sha256": "b319d31b6077499dc6beed201498a5082a3b1ecd2e1c9051291a612fdf4ba70e"
+    },
+    {
+      "name": "source_extraction_audit.json",
+      "size_bytes": 16323,
+      "sha256": "408d3b4e72fa709d891f1351bf52cdbee923f1fec7f72fd9b9ac66eaf5a8d141"
+    },
+    {
+      "name": "schema_adapter_report.md",
+      "size_bytes": 4131,
+      "sha256": "0c48fb96536e3daa69fc1e13196072b0be906884f680331c80d8cfd695bc4849"
+    },
+    {
+      "name": "README_4A_KO.md",
+      "size_bytes": 853,
+      "sha256": "ba67b6420aca543a8c2640d945de2b40ff2188f82811527d19614933b0b3d807"
+    },
+    {
+      "name": "VALIDATION_4A.json",
+      "size_bytes": 8367,
+      "sha256": "ea78c79f5775e588c6b40a1f8c72cdfd87173ff774d55ec262f282639782972f"
+    }
+  ],
+  "status": "PASS_WITH_DOCUMENTED_SOURCE_LIMITATIONS"
+}

@@ -1,0 +1,11 @@
+{
+  "all_rows_individually_reviewed": 651,
+  "high_risk_reread_groups": 27,
+  "final_proposals_reread": 52,
+  "independent_reviewer": false,
+  "accuracy_equivalence_proven": false,
+  "scope_truncated": false,
+  "unsupported_approval_count": 0,
+  "recommendation": "CONTINUE_ONE_CHAPTER_OUTER_ONE_EPISODE_INNER_WITH_PARTIAL_COMPLETION_SAFETY",
+  "warning_ko": "교정 건수/근거 개수로 정확도 동등성을 주장하지 않는다. 실제 연결·누락 문제가 있으면 다음 회차의 범위를 줄인다."
+}

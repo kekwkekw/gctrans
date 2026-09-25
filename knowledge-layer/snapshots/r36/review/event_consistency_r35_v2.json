@@ -1,0 +1,96 @@
+{
+  "events": [
+    {
+      "event_id": "event:220019",
+      "novel_ids": [
+        "22001901",
+        "22001902",
+        "22001903",
+        "22001904",
+        "22001905",
+        "22001906"
+      ],
+      "reviewed_items": 419,
+      "body": 413,
+      "titles": 6,
+      "queue_removal_expected": 321,
+      "outside_queue_body": 92,
+      "row_review_complete": true,
+      "event_consistency_complete": true,
+      "final_candidates_recompared_within_event": true,
+      "batch_consistency_complete": false,
+      "existing_reconfirmed_ids": [
+        "R3-W013",
+        "R3-W014",
+        "R3-W041",
+        "R3-W042"
+      ],
+      "new_holds": [],
+      "source_anomaly_decision": {
+        "candidate": "married_then_fiance",
+        "record": true,
+        "classification": "SOURCE_TEMPORAL_DESIGNATION_AMBIGUITY",
+        "verdict": null,
+        "note": "앞서 결혼했다고 서술한 여성의 상대를 뒤에서 婚約者라고 칭한다. 혼인 이전 호칭의 유지일 가능성이 있어 확정 오류로 다루지 않는다. raw13·16은 서로 다른 완전 대사이고 각각의 화자·hand span·묶음이 원형과 일치한다. 번역 약혼자는 유지하며 JP키를 고치지 않는다."
+      },
+      "completed_at_utc": "2026-09-20T09:42:48.104397+00:00"
+    },
+    {
+      "event_id": "event:220023",
+      "novel_ids": [
+        "22002301",
+        "22002302",
+        "22002303",
+        "22002304",
+        "22002305",
+        "22002306"
+      ],
+      "reviewed_items": 420,
+      "body": 414,
+      "titles": 6,
+      "queue_removal_expected": 358,
+      "outside_queue_body": 56,
+      "row_review_complete": true,
+      "event_consistency_complete": true,
+      "final_candidates_recompared_within_event": true,
+      "batch_consistency_complete": false,
+      "existing_reconfirmed_ids": [],
+      "new_holds": [],
+      "extra_source_anomalies": [
+        {
+          "anomaly_id": "R35V2-SRC002",
+          "novel_id": "22002303",
+          "raw_index": 69,
+          "kind": "SOURCE_QUOTED_DECODE_TYPO_CANDIDATE",
+          "classification": "LIKELY_TRANSPOSED_SYLLABLES_NOT_FINAL",
+          "jp_exact": "「え、えっと……“すなまい、待たせたね”ですか？\\n　なにもパンを頬張ったまま来なくても……」",
+          "ko_observed": "그, 그게...... \"미안해, 기다렸지\" 인가요?\n그렇게 빵을 입안 가득 넣은채로 오지 않으셔도......",
+          "reason_ko": "빵을 문 68행의 불명확한 발음을 렘브란트가 해독하는 69행 인용에서 すなまい가 쓰였다. すまない의 음절 전도일 가능성이 높지만 의도적 재현·공식 현재 원문은 확인하지 않았다. 68/69는 별도 완전 raw이며 실제 화자·손번역 span이 원형과 일치한다. KO 미안해는 유지한다.",
+          "context_locations": [
+            [
+              "22002303",
+              68
+            ],
+            [
+              "22002303",
+              69
+            ]
+          ],
+          "workflow_state": "SOURCE_ANOMALY_RECORDED",
+          "automatic_correction": false,
+          "source_preserved": true,
+          "translation_proposal_created": false,
+          "linked_translation_proposals": [],
+          "final_adjudication_performed": false,
+          "official_current_game_error_confirmed": false,
+          "evidence_id": "ev:r35v2:22002303:0069",
+          "jp_sha256": "9453802a5109a736c317ec1332179eee148c9662f4231c40a9c7713198c9a116",
+          "resolution": null
+        }
+      ],
+      "completed_at_utc": "2026-09-20T11:03:04.940078+00:00"
+    }
+  ],
+  "batch_complete": true,
+  "event_local_timelines_only": true
+}
