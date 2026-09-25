@@ -1,0 +1,314 @@
+{
+  "holds": [
+    {
+      "novel_id": "22001004",
+      "raw_index": 18
+    },
+    {
+      "novel_id": "22001004",
+      "raw_index": 27
+    },
+    {
+      "novel_id": "22001004",
+      "raw_index": 28
+    },
+    {
+      "novel_id": "22001006",
+      "raw_index": 28
+    },
+    {
+      "novel_id": "22001006",
+      "raw_index": 29
+    },
+    {
+      "novel_id": "22001006",
+      "raw_index": 30
+    },
+    {
+      "novel_id": "40112011",
+      "raw_index": 17
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 53
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 60
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 61
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 62
+    },
+    {
+      "novel_id": "40112092",
+      "raw_index": 63
+    }
+  ],
+  "source_anomalies": [
+    {
+      "novel_id": "20003106",
+      "raw_index": 2,
+      "anomaly_id": "R29-SRC001"
+    },
+    {
+      "novel_id": "20003306",
+      "raw_index": 18,
+      "anomaly_id": "R29-SRC002"
+    },
+    {
+      "novel_id": "21003803",
+      "raw_index": 46,
+      "anomaly_id": "R31-SRC001"
+    },
+    {
+      "novel_id": "21003804",
+      "raw_index": 29,
+      "anomaly_id": "R31-SRC002"
+    },
+    {
+      "novel_id": "21003805",
+      "raw_index": 32,
+      "anomaly_id": "R31-SRC003"
+    },
+    {
+      "novel_id": "22000306",
+      "raw_index": 53,
+      "anomaly_id": "R32-SRC001"
+    },
+    {
+      "novel_id": "22000604",
+      "raw_index": 33,
+      "anomaly_id": "R32-SRC002"
+    },
+    {
+      "novel_id": "22001105",
+      "raw_index": 9,
+      "anomaly_id": "R33-SRC001"
+    },
+    {
+      "novel_id": "22001105",
+      "raw_index": 32,
+      "anomaly_id": "R33-SRC002"
+    },
+    {
+      "novel_id": "22001602",
+      "raw_index": 31,
+      "anomaly_id": "R34R-SRC001"
+    },
+    {
+      "novel_id": "22001904",
+      "raw_index": 16,
+      "anomaly_id": "R35V2-SRC001"
+    },
+    {
+      "novel_id": "22002303",
+      "raw_index": 69,
+      "anomaly_id": "R35V2-SRC002"
+    },
+    {
+      "novel_id": "22003304",
+      "raw_index": 31,
+      "anomaly_id": "R36-SRC001"
+    }
+  ],
+  "parentheses_rows": [
+    {
+      "novel_id": "20001506",
+      "raw_index": 60
+    },
+    {
+      "novel_id": "20002601",
+      "raw_index": 4
+    },
+    {
+      "novel_id": "20002601",
+      "raw_index": 5
+    },
+    {
+      "novel_id": "20002601",
+      "raw_index": 6
+    },
+    {
+      "novel_id": "20002601",
+      "raw_index": 7
+    },
+    {
+      "novel_id": "20002601",
+      "raw_index": 17
+    },
+    {
+      "novel_id": "20002601",
+      "raw_index": 18
+    },
+    {
+      "novel_id": "20002602",
+      "raw_index": 31
+    },
+    {
+      "novel_id": "20002602",
+      "raw_index": 32
+    },
+    {
+      "novel_id": "20002605",
+      "raw_index": 54
+    },
+    {
+      "novel_id": "20002605",
+      "raw_index": 55
+    },
+    {
+      "novel_id": "20002606",
+      "raw_index": 8
+    },
+    {
+      "novel_id": "20002606",
+      "raw_index": 10
+    },
+    {
+      "novel_id": "20002606",
+      "raw_index": 27
+    },
+    {
+      "novel_id": "20002606",
+      "raw_index": 28
+    },
+    {
+      "novel_id": "20002606",
+      "raw_index": 48
+    },
+    {
+      "novel_id": "20002606",
+      "raw_index": 50
+    },
+    {
+      "novel_id": "20002801",
+      "raw_index": 43
+    },
+    {
+      "novel_id": "20002801",
+      "raw_index": 44
+    },
+    {
+      "novel_id": "20003101",
+      "raw_index": 68
+    },
+    {
+      "novel_id": "20003101",
+      "raw_index": 69
+    },
+    {
+      "novel_id": "20003102",
+      "raw_index": 29
+    },
+    {
+      "novel_id": "20003102",
+      "raw_index": 30
+    },
+    {
+      "novel_id": "20003304",
+      "raw_index": 6
+    },
+    {
+      "novel_id": "21003801",
+      "raw_index": 8
+    },
+    {
+      "novel_id": "21003801",
+      "raw_index": 9
+    },
+    {
+      "novel_id": "22002804",
+      "raw_index": 26
+    },
+    {
+      "novel_id": "22002804",
+      "raw_index": 27
+    },
+    {
+      "novel_id": "22003305",
+      "raw_index": 9
+    },
+    {
+      "novel_id": "22003305",
+      "raw_index": 10
+    },
+    {
+      "novel_id": "40106101",
+      "raw_index": 49
+    },
+    {
+      "novel_id": "40106101",
+      "raw_index": 50
+    },
+    {
+      "novel_id": "40106102",
+      "raw_index": 10
+    },
+    {
+      "novel_id": "40106102",
+      "raw_index": 11
+    },
+    {
+      "novel_id": "40106102",
+      "raw_index": 33
+    },
+    {
+      "novel_id": "40106102",
+      "raw_index": 34
+    },
+    {
+      "novel_id": "40106111",
+      "raw_index": 61
+    },
+    {
+      "novel_id": "40106111",
+      "raw_index": 63
+    },
+    {
+      "novel_id": "40106131",
+      "raw_index": 13
+    },
+    {
+      "novel_id": "40106131",
+      "raw_index": 14
+    },
+    {
+      "novel_id": "40106131",
+      "raw_index": 26
+    },
+    {
+      "novel_id": "40106131",
+      "raw_index": 27
+    },
+    {
+      "novel_id": "40106132",
+      "raw_index": 18
+    },
+    {
+      "novel_id": "40106132",
+      "raw_index": 19
+    },
+    {
+      "novel_id": "40106132",
+      "raw_index": 76
+    },
+    {
+      "novel_id": "40106132",
+      "raw_index": 78
+    },
+    {
+      "novel_id": "40106132",
+      "raw_index": 81
+    },
+    {
+      "novel_id": "40106132",
+      "raw_index": 82
+    }
+  ],
+  "no_held_body_reproduced": true
+}

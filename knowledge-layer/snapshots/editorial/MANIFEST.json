@@ -1,0 +1,181 @@
+{
+  "hash_algorithm": "SHA256",
+  "manifest_excludes_self": true,
+  "files": [
+    {
+      "path": "COMPLETION.json",
+      "size": 901,
+      "sha256": "9c39776cd5454ba51a0f4d5662b4c588d20b0d2c15083ec481220b02824ceccb"
+    },
+    {
+      "path": "EDITORIAL_POLICY_RECOMMENDATIONS.json",
+      "size": 4523,
+      "sha256": "d787d00ef6acd9e65d1e3718e6e0d6982392aeed1e494198966d7cae35a3090f"
+    },
+    {
+      "path": "NEXT_STEP.json",
+      "size": 425,
+      "sha256": "b9ed303401f7802400bc559208cca6cb140cb6d740ddc38ccb766a030fd38445"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "size": 1396,
+      "sha256": "3b4e99162e2b0fa11dd0b4053361b241919c85c7f292fdeed70bb9a06c86c25d"
+    },
+    {
+      "path": "README_KO.md",
+      "size": 2071,
+      "sha256": "f54ae797e8164154ffa371a3147e68715acdcaa4abb94cb7083d02832a6d8c5d"
+    },
+    {
+      "path": "REVIEW.html",
+      "size": 488839,
+      "sha256": "3ffca25dab0fef1236c61d4b809ff44d003f30a649e8679bb32e61e586b9139b"
+    },
+    {
+      "path": "START_HERE.md",
+      "size": 319,
+      "sha256": "b36d3f7877f4e60ba84488af8a841e16b3f33564afcd7bffc1345285879175e0"
+    },
+    {
+      "path": "USER_ACCEPTANCE_BRIEF_KO.md",
+      "size": 2960,
+      "sha256": "ed10df9d7813dd4c7d1dbc7ad69d47c45bdc6a67161fd2820333cd80a679dd14"
+    },
+    {
+      "path": "audit/EXECUTION_NOTES.json",
+      "size": 2764,
+      "sha256": "4480a340ec43639d13f310e66a8d902e8bdd12c7e22b5a3c760ee371d1aed11d"
+    },
+    {
+      "path": "audit/HTML_DESKTOP.png",
+      "size": 115298,
+      "sha256": "c3ecdb36ec01c50fef1208a3a7042e86fb7d33fddd91938295eb0b5b1d5ce094"
+    },
+    {
+      "path": "audit/HTML_MOBILE.png",
+      "size": 83977,
+      "sha256": "863191bfa068614f1946cae629941c514821a8b54a2b78b279fe026633837dca"
+    },
+    {
+      "path": "audit/HTML_TESTS.json",
+      "size": 2444,
+      "sha256": "944cce06535dd83b874a2ccefd8fd27edb7d0d435803f13ac4a21706673469eb"
+    },
+    {
+      "path": "audit/HTML_TESTS_FIRST_ATTEMPT.json",
+      "size": 2357,
+      "sha256": "41245d10c311056e15c76dedcedbb47823de700529962e5387349b11c607230e"
+    },
+    {
+      "path": "audit/INPUT_IMMUTABILITY.json",
+      "size": 1115,
+      "sha256": "f4628285ee69c19188a03054a84bf67e586ed8d7cfe80a4c7afea7b13dfd3e9b"
+    },
+    {
+      "path": "audit/INPUT_VERIFICATION.json",
+      "size": 2298,
+      "sha256": "1d8d99ad6506c95af024e7105d1af7f25d1ba330f1066065fe061b8db478524d"
+    },
+    {
+      "path": "audit/MUTATION_TESTS.json",
+      "size": 4381,
+      "sha256": "408b90453e5d98223c44fc37f57e8f2f5189068a8df975500ed4b4c29b2b810d"
+    },
+    {
+      "path": "audit/STRUCTURE_PRESEAL.json",
+      "size": 3654,
+      "sha256": "e8e0396ba75baf0124f81d836a51c5acc1a0125daae557ad6b3e18e69020c196"
+    },
+    {
+      "path": "audit/SURVEY_CORRECTIONS.json",
+      "size": 2565,
+      "sha256": "bf821cf9e6d7612f75b2567d13482a8ac11ea50ab802ace317155cb04f8cdc37"
+    },
+    {
+      "path": "audit/VIRTUAL_COMPOSITION.json",
+      "size": 413,
+      "sha256": "188c96649fc13fc0cf7d453e2ca26cb524b9921f72f6fa5aa22576368dda3347"
+    },
+    {
+      "path": "audit/run_html_checks.py",
+      "size": 4747,
+      "sha256": "c8a0b675d5a5866d6ac076e824cddb65d65e2c6dc1edfab39f0e6fc4c5383ff2"
+    },
+    {
+      "path": "audit/run_mutation_checks.py",
+      "size": 2921,
+      "sha256": "1caed4635defcd3070c65a83424b55dad7f098a49b74e9087bd1457cfe2fb4b2"
+    },
+    {
+      "path": "evidence/CONTEXT_EXCERPTS.jsonl",
+      "size": 36063,
+      "sha256": "107cf8a1b5439d9a1af1862a7cc748c74fc64d64f0c8fa91168a9d4a8605f7f7"
+    },
+    {
+      "path": "evidence/EDITORIAL_SURVEY_ORIGINAL.zip",
+      "size": 1436222,
+      "sha256": "1ba9a9dfaf0c52469cd286be2efbb8d282f539ea1b3c58e19d6fcab21601c187"
+    },
+    {
+      "path": "evidence/EXCEPTION_DETAILS_217.jsonl",
+      "size": 369316,
+      "sha256": "1d0a87eff450973bbaa02bda0ea56b648b68d0c7fcd3ae54651de83e3e2ea8e4"
+    },
+    {
+      "path": "evidence/HTML_CASES.json",
+      "size": 550867,
+      "sha256": "30f651660f355289cdbc7507af4a2a3f9bfb352a8fa8cecd338aca8457d96f91"
+    },
+    {
+      "path": "evidence/INHERITED_EDITORIAL_RESIDUAL_ORIGINAL.json",
+      "size": 611,
+      "sha256": "e0f717da9b1a733a8780294c4f9811d82d0e18f7ab3809313dbff1498a69da5f"
+    },
+    {
+      "path": "evidence/PROTECTED_LOCATORS.json",
+      "size": 5292,
+      "sha256": "b8d0dec109ce7fa7a440784f19ba7d57845ed8cd8f52e1432f6f04e776503d73"
+    },
+    {
+      "path": "records/DASH_RECOMMENDATIONS_1027.jsonl",
+      "size": 1360335,
+      "sha256": "aaf83dbce77377f180c6b8a1f2ab2cb53eb6987da6c98a466772051d7a5c05e8"
+    },
+    {
+      "path": "records/ELLIPSIS_RECOMMENDATIONS_10500.jsonl",
+      "size": 13850879,
+      "sha256": "150b55f560db98d03c41272447f723d857e0b7fdb9890a89db96d89415ddc80e"
+    },
+    {
+      "path": "records/LOCAL_BOUNDARY_RECOMMENDATIONS_2.jsonl",
+      "size": 3061,
+      "sha256": "280e8630f5dc8a13cf5b816564c465c9b99ab583fd45fa2f0dd579a4bcb12f59"
+    },
+    {
+      "path": "records/PERIOD_RECOMMENDATIONS_20.jsonl",
+      "size": 30434,
+      "sha256": "cf12e79ed42331db648031d9ee81b351232f9f63374a16fdc4c4df3a4a148823"
+    },
+    {
+      "path": "records/SPACING_RECOMMENDATIONS_40.jsonl",
+      "size": 58228,
+      "sha256": "57aa2a1ccec52b83d31c4d48f12c4d5530fc3eb83caae241c7240b93c423b9a2"
+    },
+    {
+      "path": "reports/COUNTS.json",
+      "size": 1535,
+      "sha256": "de7c3d2b504a953873027c27c63018173fc7cf9c232e8c57ee94d966358c2676"
+    },
+    {
+      "path": "reports/REPORT_KO.md",
+      "size": 13430,
+      "sha256": "5954b59ad8ec43a5aece7605c731f09a4633788c98a1545369b73a4a6a645970"
+    },
+    {
+      "path": "verify_policy.py",
+      "size": 13640,
+      "sha256": "49a0bcfcd45b8721227abc503894a00eaba773ddec7b4409bfdb15e072377b1f"
+    }
+  ]
+}

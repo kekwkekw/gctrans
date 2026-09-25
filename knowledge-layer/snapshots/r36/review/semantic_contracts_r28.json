@@ -1,0 +1,2362 @@
+[
+  {
+    "contract_id": "contract:r28:no_knock_permission",
+    "key": "no_knock_permission",
+    "source_locations": [
+      {
+        "novel_id": "20002701",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 10
+      }
+    ],
+    "assertions": {
+      "standing_permission": false,
+      "director_denial": true
+    },
+    "observation_ko": "보티첼리의 노크 불필요 주장을 관장이 말한 적도 생각한 적도 없다고 직접 부정한다.",
+    "blocked_overclaim_ko": "주장을 관장의 상시 출입 허락으로 승인하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002701"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002701:0006",
+      "ev:r28:20002701:0007",
+      "ev:r28:20002701:0008",
+      "ev:r28:20002701:0009",
+      "ev:r28:20002701:0010"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:coincidental_joint_visit",
+    "key": "coincidental_joint_visit",
+    "source_locations": [
+      {
+        "novel_id": "20002701",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 21
+      }
+    ],
+    "assertions": {
+      "planned_joint_visit": false,
+      "romance_formalized": false
+    },
+    "observation_ko": "각자 방문하다 입구에서 만난 두 사람이 서로를 견제한다.",
+    "blocked_overclaim_ko": "사전 공동 약속이나 공식 연인·독점 관계를 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002701"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002701:0017",
+      "ev:r28:20002701:0018",
+      "ev:r28:20002701:0019",
+      "ev:r28:20002701:0020",
+      "ev:r28:20002701:0021"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:temporary_miko",
+    "key": "temporary_miko",
+    "source_locations": [
+      {
+        "novel_id": "20002701",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 53
+      }
+    ],
+    "assertions": {
+      "role": "temporary_miko",
+      "permanent_conversion": false
+    },
+    "observation_ko": "아르테의 전년도 경비 인연과 이번 임시 무녀 일을 구분한다.",
+    "blocked_overclaim_ko": "두 사람이 무녀로 전업했거나 모든 근무를 마쳤다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002701"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002701:0045",
+      "ev:r28:20002701:0046",
+      "ev:r28:20002701:0049",
+      "ev:r28:20002701:0053"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:shy_not_unskilled",
+    "key": "shy_not_unskilled",
+    "source_locations": [
+      {
+        "novel_id": "20002701",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20002701",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 4
+      }
+    ],
+    "assertions": {
+      "reason": "out_of_character",
+      "performance": "accomplished"
+    },
+    "observation_ko": "부그로는 춤이 성격에 맞지 않아 쑥스러워하지만 연습했고 공연도 훌륭하다.",
+    "blocked_overclaim_ko": "ガラじゃない를 무능력·연습 불참으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002701",
+      "event_story:20002702"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002701:0055",
+      "ev:r28:20002701:0056",
+      "ev:r28:20002701:0057",
+      "ev:r28:20002702:0004"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:wind_incident_report",
+    "key": "wind_incident_report",
+    "source_locations": [
+      {
+        "novel_id": "20002702",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 19
+      }
+    ],
+    "assertions": {
+      "reporter": "arte",
+      "director_witness": false
+    },
+    "observation_ko": "의상 사고와 무반응은 아르테가 보고했고 관장은 평소 성향을 근거로 놀란다.",
+    "blocked_overclaim_ko": "관장이 노출이나 무반응을 직접 목격한 것으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002702"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002702:0016",
+      "ev:r28:20002702:0017",
+      "ev:r28:20002702:0018",
+      "ev:r28:20002702:0019"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:dance_cause_hypothesis",
+    "key": "dance_cause_hypothesis",
+    "source_locations": [
+      {
+        "novel_id": "20002702",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 7
+      }
+    ],
+    "assertions": {
+      "dance_cause_confirmed": false,
+      "memory_diagnosis_confirmed": false
+    },
+    "observation_ko": "부그로의 청정함 자기 느낌과 주변의 무녀춤 원인설은 가설 단계다.",
+    "blocked_overclaim_ko": "춤이 확정 원인이거나 관장의 기억 장애 진단이 확정됐다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002702",
+      "event_story:20002703"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002702:0031",
+      "ev:r28:20002702:0043",
+      "ev:r28:20002703:0003",
+      "ev:r28:20002703:0004",
+      "ev:r28:20002703:0007"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:whisper_hearing",
+    "key": "whisper_hearing",
+    "source_locations": [
+      {
+        "novel_id": "20002702",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 55
+      }
+    ],
+    "assertions": {
+      "rodin_director_heard": true,
+      "botticelli_murmur_heard_by_director": true
+    },
+    "observation_ko": "로댕·관장의 소곤거림은 서로 듣고, 보티첼리의 작은 말도 관장이 듣고 속으로 고민한다.",
+    "blocked_overclaim_ko": "작은 말을 무조건 안 들린 독백으로 처리하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002702"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002702:0033",
+      "ev:r28:20002702:0034",
+      "ev:r28:20002702:0035",
+      "ev:r28:20002702:0054",
+      "ev:r28:20002702:0055"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:temporary_observation",
+    "key": "temporary_observation",
+    "source_locations": [
+      {
+        "novel_id": "20002702",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "20002702",
+        "raw_index": 63
+      }
+    ],
+    "assertions": {
+      "watchful_waiting": true,
+      "cure_complete": false
+    },
+    "observation_ko": "당장 피해가 보이지 않아 보내고 다음날 의논한다.",
+    "blocked_overclaim_ko": "이때 치료가 끝났거나 미래 위험이 없다고 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002702"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002702:0056",
+      "ev:r28:20002702:0060",
+      "ev:r28:20002702:0061",
+      "ev:r28:20002702:0062",
+      "ev:r28:20002702:0063"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:cupido_report",
+    "key": "cupido_report",
+    "source_locations": [
+      {
+        "novel_id": "20002703",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 24
+      }
+    ],
+    "assertions": {
+      "reporter": "cupido",
+      "subject": "bouguereau",
+      "painting_subject": "distinguished_mature_man"
+    },
+    "observation_ko": "쿠피도는 배려하는 태도와 중후한 남성 그림을 보고한다.",
+    "blocked_overclaim_ko": "관장의 아침 작업 직접 목격이나 남성 모델의 구체 신원을 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002703"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002703:0019",
+      "ev:r28:20002703:0021",
+      "ev:r28:20002703:0022",
+      "ev:r28:20002703:0024"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:cooperation_not_arrest",
+    "key": "cooperation_not_arrest",
+    "source_locations": [
+      {
+        "novel_id": "20002703",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20002703",
+        "raw_index": 61
+      }
+    ],
+    "assertions": {
+      "arte_role": "duty_replacement",
+      "legal_arrest": false,
+      "restoration_complete": false
+    },
+    "observation_ko": "로댕과 보티첼리가 아르테를 데려와 근무를 대신하게 하고 부그로 협력을 얻는다.",
+    "blocked_overclaim_ko": "법적 체포나 해결 완료로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002703"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002703:0055",
+      "ev:r28:20002703:0057",
+      "ev:r28:20002703:0059",
+      "ev:r28:20002703:0060",
+      "ev:r28:20002703:0061"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:staged_stall_tests",
+    "key": "staged_stall_tests",
+    "source_locations": [
+      {
+        "novel_id": "20002704",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 27
+      }
+    ],
+    "assertions": {
+      "staged": true,
+      "owner_consulted": true,
+      "first_response": "cold_weather_concern"
+    },
+    "observation_ko": "보티첼리가 꾸민 상황과 노점 주인에게 미리 설명한 시도를 구분한다. 부그로는 추위를 걱정한다.",
+    "blocked_overclaim_ko": "실제 회복이나 주인 몰래 영업 방해로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002704"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002704:0012",
+      "ev:r28:20002704:0016",
+      "ev:r28:20002704:0021",
+      "ev:r28:20002704:0025",
+      "ev:r28:20002704:0027"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:botticelli_private_jealousy",
+    "key": "botticelli_private_jealousy",
+    "source_locations": [
+      {
+        "novel_id": "20002704",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 31
+      }
+    ],
+    "assertions": {
+      "director_heard": false,
+      "rodin_heard": false,
+      "mode": "private_thought"
+    },
+    "observation_ko": "다른 여자의 모습을 관장에게 보이고 싶지 않다는 보티첼리의 독백을 동료들은 모른다.",
+    "blocked_overclaim_ko": "직접 고백이나 관장·로댕의 독심으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002704"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002704:0028",
+      "ev:r28:20002704:0029",
+      "ev:r28:20002704:0030",
+      "ev:r28:20002704:0031"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:wordplay_no_restore",
+    "key": "wordplay_no_restore",
+    "source_locations": [
+      {
+        "novel_id": "20002704",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20002704",
+        "raw_index": 61
+      }
+    ],
+    "assertions": {
+      "restored": false,
+      "final_response": "technical_appraisal"
+    },
+    "observation_ko": "끊긴 음절 뒤 기술 평가로 고쳐 말하며 자극 실험은 실패한다.",
+    "blocked_overclaim_ko": "말끝의 기대만으로 에로스 회복을 확정하거나 언어유희를 삭제하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002704"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002704:0052",
+      "ev:r28:20002704:0053",
+      "ev:r28:20002704:0057",
+      "ev:r28:20002704:0061"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:arte_counterexample",
+    "key": "arte_counterexample",
+    "source_locations": [
+      {
+        "novel_id": "20002705",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 16
+      }
+    ],
+    "assertions": {
+      "counterexample": "arte_unchanged",
+      "cause_reconsidered": true
+    },
+    "observation_ko": "같이 춤춘 아르테는 그대로여서 로댕이 무녀춤 단독 원인설의 문제를 지적한다.",
+    "blocked_overclaim_ko": "아르테도 번뇌가 사라졌다고 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002705"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002705:0011",
+      "ev:r28:20002705:0013",
+      "ev:r28:20002705:0015",
+      "ev:r28:20002705:0016"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:tray_accident_report",
+    "key": "tray_accident_report",
+    "source_locations": [
+      {
+        "novel_id": "20002705",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 33
+      }
+    ],
+    "assertions": {
+      "reporter": "arte",
+      "timing": "before_performance",
+      "director_witness": false
+    },
+    "observation_ko": "공연 전 손이 미끄러져 들고 있던 공물대를 부그로 머리에 부딪쳤다는 아르테의 보고와 부그로의 흐린 기억이다.",
+    "blocked_overclaim_ko": "관장의 목격이나 기억이 완전 복구된 자백으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002705"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002705:0029",
+      "ev:r28:20002705:0031",
+      "ev:r28:20002705:0032",
+      "ev:r28:20002705:0033"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:no_second_blow",
+    "key": "no_second_blow",
+    "source_locations": [
+      {
+        "novel_id": "20002705",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 42
+      }
+    ],
+    "assertions": {
+      "second_strike_performed": false,
+      "rejected": true
+    },
+    "observation_ko": "다시 부딪치자는 로댕의 말은 거부됐고 관장은 공물대의 특성을 의심한다.",
+    "blocked_overclaim_ko": "머리를 두 번째로 때렸거나 단순 뇌진탕 치료를 한 것으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002705"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002705:0040",
+      "ev:r28:20002705:0041",
+      "ev:r28:20002705:0042"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:arte_help_apology_plan",
+    "key": "arte_help_apology_plan",
+    "source_locations": [
+      {
+        "novel_id": "20002705",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 52
+      }
+    ],
+    "assertions": {
+      "arte_sought_help": true,
+      "director_apology_completed": false
+    },
+    "observation_ko": "탓하지 않겠다던 관장이 탓하지만 아르테가 신주에게 도움을 청했음을 알고 사과를 계획한다.",
+    "blocked_overclaim_ko": "도주만 했다거나 관장의 사과가 이미 전달됐다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002705"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002705:0027",
+      "ev:r28:20002705:0034",
+      "ev:r28:20002705:0035",
+      "ev:r28:20002705:0049",
+      "ev:r28:20002705:0051",
+      "ev:r28:20002705:0052"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:priest_offering_explanation",
+    "key": "priest_offering_explanation",
+    "source_locations": [
+      {
+        "novel_id": "20002705",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 62
+      }
+    ],
+    "assertions": {
+      "speaker": "shrine_priest",
+      "evidentiality": "explanation_with_condition",
+      "ritual_proposed": true
+    },
+    "observation_ko": "신주가 강한 정신성이 공물로 바쳐졌을 가능성을 설명하고 의식을 제안한다.",
+    "blocked_overclaim_ko": "현실 종교 법칙이나 춤 단독 정화의 확정으로 확대하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002705"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002705:0053",
+      "ev:r28:20002705:0055",
+      "ev:r28:20002705:0056",
+      "ev:r28:20002705:0060",
+      "ev:r28:20002705:0062"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:ritual_consent_and_watchers",
+    "key": "ritual_consent_and_watchers",
+    "source_locations": [
+      {
+        "novel_id": "20002705",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "20002705",
+        "raw_index": 74
+      }
+    ],
+    "assertions": {
+      "consent": "bouguereau",
+      "watchers": [
+        "director",
+        "rodin",
+        "botticelli"
+      ],
+      "arte_presence_confirmed": false
+    },
+    "observation_ko": "부그로가 주변 사람을 위해 의식을 수락하고 관장·로댕·보티첼리가 지켜본다.",
+    "blocked_overclaim_ko": "아르테가 이미 돌아와 의식 전체를 보았다고 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002705"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002705:0064",
+      "ev:r28:20002705:0065",
+      "ev:r28:20002705:0069",
+      "ev:r28:20002705:0072",
+      "ev:r28:20002705:0073",
+      "ev:r28:20002705:0074"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:restored_not_xray",
+    "key": "restored_not_xray",
+    "source_locations": [
+      {
+        "novel_id": "20002706",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 21
+      }
+    ],
+    "assertions": {
+      "old_disposition_returned": true,
+      "xray_power_confirmed": false,
+      "complete_memory": false
+    },
+    "observation_ko": "의식 뒤 예전 성향이 돌아왔지만 기억은 흐리며 투시는 과장된 느낌이다.",
+    "blocked_overclaim_ko": "투시 능력 획득이나 완전 기억 회복을 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002706"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002706:0007",
+      "ev:r28:20002706:0012",
+      "ev:r28:20002706:0019",
+      "ev:r28:20002706:0020",
+      "ev:r28:20002706:0021"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:hug_initiators",
+    "key": "hug_initiators",
+    "source_locations": [
+      {
+        "novel_id": "20002706",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 30
+      }
+    ],
+    "assertions": {
+      "initiators": [
+        "rodin",
+        "botticelli"
+      ],
+      "target": "bouguereau",
+      "words_received": null
+    },
+    "observation_ko": "로댕과 보티첼리가 먼저 껴안고 환영하지만 흥분한 부그로에게 말이 제대로 닿는지는 불확실하다.",
+    "blocked_overclaim_ko": "부그로가 먼저 둘을 붙잡았다고 하거나 모든 말을 들었다고 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002706"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002706:0025",
+      "ev:r28:20002706:0027",
+      "ev:r28:20002706:0028",
+      "ev:r28:20002706:0029",
+      "ev:r28:20002706:0030"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:private_prayer_and_return",
+    "key": "private_prayer_and_return",
+    "source_locations": [
+      {
+        "novel_id": "20002706",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20002706",
+        "raw_index": 41
+      }
+    ],
+    "assertions": {
+      "prayer_public": false,
+      "underwear_color_confirmed": false,
+      "arte_returns_later": true
+    },
+    "observation_ko": "관장의 속기도와 부그로의 확인 욕구, 뒤에 돌아온 아르테로 생긴 소란을 구분한다.",
+    "blocked_overclaim_ko": "소원이 상대에게 들렸거나 속옷 색이 확정됐다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002706"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002706:0034",
+      "ev:r28:20002706:0036",
+      "ev:r28:20002706:0037",
+      "ev:r28:20002706:0038",
+      "ev:r28:20002706:0041"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:angela_liaison",
+    "key": "angela_liaison",
+    "source_locations": [
+      {
+        "novel_id": "20002801",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20002801",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002801",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20002801",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20002801",
+        "raw_index": 32
+      }
+    ],
+    "assertions": {
+      "liaison": "angela",
+      "director_prior_face_meeting": false,
+      "detail_known": false
+    },
+    "observation_ko": "안젤라가 연락 창구이고 관장은 아직 대면하지 않았다. 이유를 캐묻지 않은 배려를 전언과 구분한다.",
+    "blocked_overclaim_ko": "관장이 초반 방문 현장을 목격하거나 안젤라가 상세 체질을 알아냈다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002801"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002801:0007",
+      "ev:r28:20002801:0016",
+      "ev:r28:20002801:0022",
+      "ev:r28:20002801:0030",
+      "ev:r28:20002801:0032"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:rem_hypothesis_not_diagnosis",
+    "key": "rem_hypothesis_not_diagnosis",
+    "source_locations": [
+      {
+        "novel_id": "20002801",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20002801",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20002801",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20002801",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20002801",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20002801",
+        "raw_index": 48
+      }
+    ],
+    "assertions": {
+      "curse_confirmed": false,
+      "heard_original_visit": false,
+      "alternatives_retained": true
+    },
+    "observation_ko": "렘브란트는 들은 대강의 정보로 가설을 냈고 허약함 등 대안도 있다. 겉모습으로 진단하지 않는다.",
+    "blocked_overclaim_ko": "저주 확정이나 건강함의 확정으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002801"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002801:0034",
+      "ev:r28:20002801:0038",
+      "ev:r28:20002801:0042",
+      "ev:r28:20002801:0044",
+      "ev:r28:20002801:0047",
+      "ev:r28:20002801:0048"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:flower_help_direction",
+    "key": "flower_help_direction",
+    "source_locations": [
+      {
+        "novel_id": "20002802",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 38
+      }
+    ],
+    "assertions": {
+      "requester": "shop_owner",
+      "first_helper": "donatello",
+      "additional_helpers": [
+        "director",
+        "rembrandt"
+      ],
+      "prior_owner_permission_for_extra": null
+    },
+    "observation_ko": "허리를 다친 주인이 도나텔로에게 부탁했고 도나텔로가 방문자들에게 일을 권한다.",
+    "blocked_overclaim_ko": "도나텔로가 다른 도우미를 주인에게 부탁했거나 주인의 사전 허가가 명시됐다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002802"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002802:0019",
+      "ev:r28:20002802:0031",
+      "ev:r28:20002802:0033",
+      "ev:r28:20002802:0038"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:renoir_identity_aside",
+    "key": "renoir_identity_aside",
+    "source_locations": [
+      {
+        "novel_id": "20002802",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 57
+      }
+    ],
+    "assertions": {
+      "self_name": "キュティピエ・ルノワール",
+      "spoken_aside_confirmed": false,
+      "telepathy_confirmed": false,
+      "eye_contact": true
+    },
+    "observation_ko": "이름을 듣고 얼굴을 연결하며 관장·렘브란트가 눈을 맞추고 끄덕인다. 괄호 교환의 음성 여부는 불명확하다.",
+    "blocked_overclaim_ko": "처음부터 얼굴을 알았다거나 실제 텔레파시·속삭임이 명시됐다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002802"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002802:0024",
+      "ev:r28:20002802:0052",
+      "ev:r28:20002802:0055",
+      "ev:r28:20002802:0056",
+      "ev:r28:20002802:0057"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:unresolved_parenthetical_question",
+    "key": "unresolved_parenthetical_question",
+    "source_locations": [
+      {
+        "novel_id": "20002802",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "20002802",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "20002804",
+        "raw_index": 12
+      }
+    ],
+    "assertions": {
+      "aside_delivery": "unspecified",
+      "others_heard": null,
+      "curse_absence_proved": false,
+      "audible_name_present": "donatello",
+      "exclusive_basis_identified": false
+    },
+    "observation_ko": "괄호 질문·응답의 전달 방식은 미상이며 르누아르는 꽃집에서 일행이 대화하는 것을 듣고 신분을 짐작했다고 말한다.",
+    "blocked_overclaim_ko": "괄호 내용 전부를 르누아르가 들었거나 저주가 없다고 판정한 것으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002802",
+      "event_story:20002804"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002802:0062",
+      "ev:r28:20002802:0063",
+      "ev:r28:20002802:0068",
+      "ev:r28:20002802:0072",
+      "ev:r28:20002804:0012"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:shop_repair_permission",
+    "key": "shop_repair_permission",
+    "source_locations": [
+      {
+        "novel_id": "20002803",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20002803",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20002803",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002803",
+        "raw_index": 17
+      }
+    ],
+    "assertions": {
+      "owner_gender_text": "female",
+      "leaving_authorized": true,
+      "helpers_count": 3
+    },
+    "observation_ko": "여성 가게 주인이 수리로 영업을 닫고 세 사람에게 손님 확인을 부탁한다.",
+    "blocked_overclaim_ko": "세 사람이 무단으로 가게를 비우거나 서로 다른 신사 신주와 동일 인물이라고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002803"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002803:0011",
+      "ev:r28:20002803:0014",
+      "ev:r28:20002803:0016",
+      "ev:r28:20002803:0017"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:repellent_not_insecticide",
+    "key": "repellent_not_insecticide",
+    "source_locations": [
+      {
+        "novel_id": "20002803",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20002803",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20002803",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20002803",
+        "raw_index": 50
+      }
+    ],
+    "assertions": {
+      "rescuer": "donatello",
+      "effect": "repel",
+      "insects_killed_attested": false,
+      "stung_attested": false
+    },
+    "observation_ko": "르누아르는 침을 피하고 도나텔로가 꽃에 기피제를 뿌려 벌들을 쫓는다.",
+    "blocked_overclaim_ko": "벌을 죽였거나 르누아르가 이미 벌침에 다쳤다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002803"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002803:0045",
+      "ev:r28:20002803:0047",
+      "ev:r28:20002803:0049",
+      "ev:r28:20002803:0050"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:misfortune_reports_not_causes",
+    "key": "misfortune_reports_not_causes",
+    "source_locations": [
+      {
+        "novel_id": "20002803",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20002803",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "20002804",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "20002804",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20002804",
+        "raw_index": 28
+      }
+    ],
+    "assertions": {
+      "recurrent_accidents_reported": true,
+      "business_closure_causation_proven": false
+    },
+    "observation_ko": "잦은 사고와 폐업·공격 경험은 본인 보고와 조건적 추정이다.",
+    "blocked_overclaim_ko": "르누아르가 실제로 공방과 학교를 폐업시킨 원인이라고 단정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002803",
+      "event_story:20002804"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002803:0059",
+      "ev:r28:20002803:0062",
+      "ev:r28:20002804:0022",
+      "ev:r28:20002804:0026",
+      "ev:r28:20002804:0028"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:tour_not_membership",
+    "key": "tour_not_membership",
+    "source_locations": [
+      {
+        "novel_id": "20002804",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20002804",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20002804",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20002804",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 51
+      }
+    ],
+    "assertions": {
+      "tour_accepted": true,
+      "membership_accepted_at_tour": false
+    },
+    "observation_ko": "첫 수락은 견학만이며 견학 뒤에도 소속은 일단 거절한다.",
+    "blocked_overclaim_ko": "견학 수락을 정식 입단으로 소급하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002804",
+      "event_story:20002805"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002804:0015",
+      "ev:r28:20002804:0042",
+      "ev:r28:20002804:0050",
+      "ev:r28:20002804:0051",
+      "ev:r28:20002805:0002",
+      "ev:r28:20002805:0051"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:rem_curse_and_private_research",
+    "key": "rem_curse_and_private_research",
+    "source_locations": [
+      {
+        "novel_id": "20002804",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20002804",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20002804",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 45
+      }
+    ],
+    "assertions": {
+      "self_curse_public": true,
+      "research_motive_private": true,
+      "renoir_curse_confirmed": false
+    },
+    "observation_ko": "렘브란트는 자기 저주를 직접 설명하지만 르누아르 연구에 대한 관심은 속마음이다.",
+    "blocked_overclaim_ko": "공개 연구 동의·동일 저주 확정·도움 전부가 거짓이라는 단일 결론으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002804",
+      "event_story:20002806"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002804:0041",
+      "ev:r28:20002804:0043",
+      "ev:r28:20002804:0054",
+      "ev:r28:20002806:0044",
+      "ev:r28:20002806:0045"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:future_clothing_gift",
+    "key": "future_clothing_gift",
+    "source_locations": [
+      {
+        "novel_id": "20002805",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 22
+      }
+    ],
+    "assertions": {
+      "maker": "renoir",
+      "recipient": "cezanne",
+      "gift_completed": false
+    },
+    "observation_ko": "르누아르가 세잔에게 옷을 만들어 주고 싶다고 제안하고 세잔이 조건부로 받겠다고 한다.",
+    "blocked_overclaim_ko": "이미 만든 옷을 전달한 사실로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002805"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002805:0020",
+      "ev:r28:20002805:0021",
+      "ev:r28:20002805:0022"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:honorific_not_sister",
+    "key": "honorific_not_sister",
+    "source_locations": [
+      {
+        "novel_id": "20002805",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 33
+      }
+    ],
+    "assertions": {
+      "biological_sisters": false,
+      "address_request": true,
+      "unambiguous_approval": false
+    },
+    "observation_ko": "르누아르의 언니 호칭 요청과 앵그르의 당황한 응답이다.",
+    "blocked_overclaim_ko": "실제 자매 관계나 명시적 영구 호칭 승인을 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002805"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002805:0029",
+      "ev:r28:20002805:0031",
+      "ev:r28:20002805:0032",
+      "ev:r28:20002805:0033"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:room_priority_and_prayer_gesture",
+    "key": "room_priority_and_prayer_gesture",
+    "source_locations": [
+      {
+        "novel_id": "20002805",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 41
+      }
+    ],
+    "assertions": {
+      "booking_record_verified": false,
+      "renoir_gesture": "own_hands_together",
+      "other_hand_contact": false
+    },
+    "observation_ko": "미켈란젤로와 라파엘의 선점 주장이 과거로 늘어나고 르누아르는 자신의 두 손을 모아 감격한다.",
+    "blocked_overclaim_ko": "예약 장부가 확인됐거나 다른 사람 손을 붙잡았다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002805"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002805:0034",
+      "ev:r28:20002805:0035",
+      "ev:r28:20002805:0036",
+      "ev:r28:20002805:0037",
+      "ev:r28:20002805:0040",
+      "ev:r28:20002805:0041"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:quiet_introduction_plan",
+    "key": "quiet_introduction_plan",
+    "source_locations": [
+      {
+        "novel_id": "20002805",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 63
+      }
+    ],
+    "assertions": {
+      "plan_heard_by": [
+        "rembrandt",
+        "donatello"
+      ],
+      "renoir_heard_plan": false
+    },
+    "observation_ko": "관장은 소개 계획을 렘브란트와 도나텔로에게만 작게 말한 뒤 무란을 소개한다.",
+    "blocked_overclaim_ko": "르누아르가 사전 계획을 이미 들었다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002805"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002805:0054",
+      "ev:r28:20002805:0055",
+      "ev:r28:20002805:0056",
+      "ev:r28:20002805:0057",
+      "ev:r28:20002805:0063"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:moulin_creator_not_child",
+    "key": "moulin_creator_not_child",
+    "source_locations": [
+      {
+        "novel_id": "20002805",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 70
+      }
+    ],
+    "assertions": {
+      "creator": "renoir",
+      "image": "moulin",
+      "biological_child": false,
+      "newly_born_now": false,
+      "deliberate_concealment": false
+    },
+    "observation_ko": "무란은 구입했던 르누아르 그림에서 이미 태어났고 르누아르는 이번에 알았다.",
+    "blocked_overclaim_ko": "생물학적 숨겨둔 아이·이때 새 탄생·의도적 은폐로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002805"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002805:0063",
+      "ev:r28:20002805:0065",
+      "ev:r28:20002805:0066",
+      "ev:r28:20002805:0069",
+      "ev:r28:20002805:0070"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:positive_consideration_only",
+    "key": "positive_consideration_only",
+    "source_locations": [
+      {
+        "novel_id": "20002805",
+        "raw_index": 76
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 82
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 86
+      }
+    ],
+    "assertions": {
+      "membership_final": false,
+      "reply_pending": true,
+      "misfortune_cured": false
+    },
+    "observation_ko": "함께하면 불행도 줄지 모른다는 추측 뒤 르누아르는 긍정적으로 검토해 답하겠다며 귀가한다.",
+    "blocked_overclaim_ko": "이때 가입 확정이나 이마쥬로 체질이 치료됐다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002805"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002805:0076",
+      "ev:r28:20002805:0079",
+      "ev:r28:20002805:0082",
+      "ev:r28:20002805:0086"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:rescue_prediction_not_law",
+    "key": "rescue_prediction_not_law",
+    "source_locations": [
+      {
+        "novel_id": "20002805",
+        "raw_index": 89
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 90
+      },
+      {
+        "novel_id": "20002805",
+        "raw_index": 98
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 9
+      }
+    ],
+    "assertions": {
+      "danger_occurred": true,
+      "fortune_debt_law_proven": false,
+      "prophecy_power": false
+    },
+    "observation_ko": "렘브란트의 불길한 예감 뒤 위험이 실제 발생하지만 행복의 대가라는 법칙은 르누아르의 추측이다.",
+    "blocked_overclaim_ko": "운의 반동 법칙·정확한 예지 능력을 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002805",
+      "event_story:20002806"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002805:0089",
+      "ev:r28:20002805:0090",
+      "ev:r28:20002805:0098",
+      "ev:r28:20002806:0008",
+      "ev:r28:20002806:0009"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:moulin_first_rescue",
+    "key": "moulin_first_rescue",
+    "source_locations": [
+      {
+        "novel_id": "20002806",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 23
+      }
+    ],
+    "assertions": {
+      "first_rescuer": "moulin",
+      "director_arrives_later": true,
+      "flashback": [
+        16,
+        17,
+        18
+      ],
+      "second_prediction": false
+    },
+    "observation_ko": "무란이 걱정해 먼저 달려와 적을 격파하고 관장 일행은 나중에 도착한다. 앞선 예감 장면은 회상이다.",
+    "blocked_overclaim_ko": "관장·도나텔로·렘브란트가 먼저 격파했거나 같은 예언을 두 번 했다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002806"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002806:0007",
+      "ev:r28:20002806:0012",
+      "ev:r28:20002806:0014",
+      "ev:r28:20002806:0015",
+      "ev:r28:20002806:0018",
+      "ev:r28:20002806:0021",
+      "ev:r28:20002806:0023"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:mutual_aid_membership",
+    "key": "mutual_aid_membership",
+    "source_locations": [
+      {
+        "novel_id": "20002806",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 41
+      }
+    ],
+    "assertions": {
+      "membership_accepted_at": "20002806/38",
+      "reciprocal_help": true,
+      "hand_offered_by": "director"
+    },
+    "observation_ko": "치료를 받으며 기쁨을 느끼고 상호 도움을 권유받은 뒤 르누아르가 정식으로 소속을 수락한다.",
+    "blocked_overclaim_ko": "혼자만 일방적으로 보호받아야 하거나 앞선 견학 때부터 가입했다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002806"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002806:0024",
+      "ev:r28:20002806:0027",
+      "ev:r28:20002806:0030",
+      "ev:r28:20002806:0035",
+      "ev:r28:20002806:0036",
+      "ev:r28:20002806:0038",
+      "ev:r28:20002806:0041"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:later_not_cured",
+    "key": "later_not_cured",
+    "source_locations": [
+      {
+        "novel_id": "20002806",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 78
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 79
+      }
+    ],
+    "assertions": {
+      "time": "later_day",
+      "misfortune_cured": false,
+      "curse_confirmed": false,
+      "happiness_present": true
+    },
+    "observation_ko": "후일 정식 소속 모임에서 개선을 앞으로의 목표로 두고 행복해한다.",
+    "blocked_overclaim_ko": "행복한 결말을 불행 체질 완치나 저주의 확정으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002806"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002806:0042",
+      "ev:r28:20002806:0044",
+      "ev:r28:20002806:0045",
+      "ev:r28:20002806:0053",
+      "ev:r28:20002806:0078",
+      "ev:r28:20002806:0079"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  },
+  {
+    "contract_id": "contract:r28:shati_creator_refusal_snacks",
+    "key": "shati_creator_refusal_snacks",
+    "source_locations": [
+      {
+        "novel_id": "20002806",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "20002806",
+        "raw_index": 74
+      }
+    ],
+    "assertions": {
+      "creator": "renoir",
+      "image": "shati",
+      "petting_accepted": false,
+      "all_snacks_taken": true,
+      "snacks_recovered_attested": false
+    },
+    "observation_ko": "샤티도 르누아르 그림의 이마쥬이며 쓰다듬기 요청은 거절하고 과자를 전부 가져간다. 무란이 뒤쫓는다.",
+    "blocked_overclaim_ko": "친자·허락된 쓰다듬기·몇 개만 받은 과자·회수 완료를 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002806"
+    ],
+    "evidence_ids": [
+      "ev:r28:20002806:0060",
+      "ev:r28:20002806:0061",
+      "ev:r28:20002806:0063",
+      "ev:r28:20002806:0067",
+      "ev:r28:20002806:0069",
+      "ev:r28:20002806:0072",
+      "ev:r28:20002806:0074"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R28_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R28"
+    }
+  }
+]

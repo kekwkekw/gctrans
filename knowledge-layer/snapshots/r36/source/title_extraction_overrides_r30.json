@@ -1,0 +1,74 @@
+[
+  {
+    "novel_id": "21003201",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [사랑의 인연은 누구를 위해] 1화 - [반항기 천사]",
+    "start": 30,
+    "end": 36,
+    "observed_title": "반항기 천사",
+    "legacy_extracted_title": "사랑의 인연은 누구를 위해] 1화 - [반항기 천사",
+    "preimage_sha256": "ae0bc6b7347707ac56171191436632972614776ca944bddf05d88f72ff3e6062",
+    "translation_changed": false
+  },
+  {
+    "novel_id": "21003202",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [사랑의 인연은 누구를 위해] 2화 - [인연의 징조]",
+    "start": 30,
+    "end": 36,
+    "observed_title": "인연의 징조",
+    "legacy_extracted_title": "사랑의 인연은 누구를 위해] 2화 - [인연의 징조",
+    "preimage_sha256": "1e3b849e7bba62de754c430ec4fdb0f2d7b8a69c625651d4bf39d042c280684d",
+    "translation_changed": false
+  },
+  {
+    "novel_id": "21003501",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [로리에의 스플래시 서머!] 1화 - [시작, 수박 깨기 대회!]",
+    "start": 29,
+    "end": 42,
+    "observed_title": "시작, 수박 깨기 대회!",
+    "legacy_extracted_title": "로리에의 스플래시 서머!] 1화 - [시작, 수박 깨기 대회!",
+    "preimage_sha256": "0e49202e96989eacdc5d67275ab9089664cccaeb5da4ba2fd2a3480ab0fa833d",
+    "translation_changed": false
+  },
+  {
+    "novel_id": "21003502",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [로리에의 스플래시 서머!] 2화 - [용감한 소녀들]",
+    "start": 29,
+    "end": 36,
+    "observed_title": "용감한 소녀들",
+    "legacy_extracted_title": "로리에의 스플래시 서머!] 2화 - [용감한 소녀들",
+    "preimage_sha256": "c6361fde09e9a38a98f390243790d8cc3039f732a22641cbf8a66ce26c2bfff7",
+    "translation_changed": false
+  },
+  {
+    "novel_id": "21003701",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [또 한 명의 자화상] 1화 - [자화상 이마쥬]",
+    "start": 26,
+    "end": 33,
+    "observed_title": "자화상 이마쥬",
+    "legacy_extracted_title": "또 한 명의 자화상] 1화 - [자화상 이마쥬",
+    "preimage_sha256": "a6ba284f803f73bdb73d5941f78e6238be6862cee8e79598e687128081975dbb",
+    "translation_changed": false
+  },
+  {
+    "novel_id": "21003702",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [또 한 명의 자화상] 2화 - [두 명의 천재 미소녀]",
+    "start": 26,
+    "end": 37,
+    "observed_title": "두 명의 천재 미소녀",
+    "legacy_extracted_title": "또 한 명의 자화상] 2화 - [두 명의 천재 미소녀",
+    "preimage_sha256": "3f5e317d95ae474b3088a89c0efa6c5ad2924c90ec908e91c5d9449eb4fb998c",
+    "translation_changed": false
+  }
+]

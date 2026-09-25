@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "items": [
+    {
+      "novel_id": "22002801",
+      "jp_title": "真っ白な獲物",
+      "ko_title_observed": "새하얀 사냥감",
+      "original_post_heading_ko": "이벤트 번역 [아테네스 봄 낚시 대회]",
+      "original_section_heading_ko": "1화 [새하얀 사냥감]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22002802",
+      "jp_title": "泉での顛末",
+      "ko_title_observed": "샘에서의 전말",
+      "original_post_heading_ko": "이벤트 번역 [아테네스 봄 낚시 대회]",
+      "original_section_heading_ko": "2화 [샘에서의 전말]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22002803",
+      "jp_title": "大会の参加者は……？",
+      "ko_title_observed": "대회의 참가자는......?",
+      "original_post_heading_ko": "이벤트 번역 [아테네스 봄 낚시 대회]",
+      "original_section_heading_ko": "3화 [대회의 참가자는......?]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22002804",
+      "jp_title": "不可解な不漁",
+      "ko_title_observed": "이해할 수 없는 불어(不漁)",
+      "original_post_heading_ko": "이벤트 번역 [아테네스 봄 낚시 대회]",
+      "original_section_heading_ko": "4화 [이해할 수 없는 불어(不漁)]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22002805",
+      "jp_title": "獲物を引きずり出せ！",
+      "ko_title_observed": "사냥감을 끌어내라!",
+      "original_post_heading_ko": "이벤트 번역 [아테네스 봄 낚시 대회]",
+      "original_section_heading_ko": "5화 [사냥감을 끌어내라!]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22002806",
+      "jp_title": "ブグローの純粋な野望",
+      "ko_title_observed": "부그로의 순수한 야망",
+      "original_post_heading_ko": "이벤트 번역 [아테네스 봄 낚시 대회]",
+      "original_section_heading_ko": "6화 [부그로의 순수한 야망]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22003301",
+      "jp_title": "食べ放題の誘惑",
+      "ko_title_observed": "무한 리필의 유혹",
+      "original_post_heading_ko": "이벤트 번역 [역경 미라클 어택!]",
+      "original_section_heading_ko": "1화 [무한 리필의 유혹]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22003302",
+      "jp_title": "行き詰まりと特訓",
+      "ko_title_observed": "한계와 특훈",
+      "original_post_heading_ko": "이벤트 번역 [역경 미라클 어택!]",
+      "original_section_heading_ko": "2화 [한계와 특훈]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22003303",
+      "jp_title": "いよいよ大会当日",
+      "ko_title_observed": "마침내 대회 당일",
+      "original_post_heading_ko": "이벤트 번역 [역경 미라클 어택!]",
+      "original_section_heading_ko": "3화 [마침내 대회 당일]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22003304",
+      "jp_title": "波乱の準決勝",
+      "ko_title_observed": "파란의 준결승",
+      "original_post_heading_ko": "이벤트 번역 [역경 미라클 어택!]",
+      "original_section_heading_ko": "4화 [파란의 준결승]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22003305",
+      "jp_title": "不運と機転",
+      "ko_title_observed": "불운과 기지",
+      "original_post_heading_ko": "이벤트 번역 [역경 미라클 어택!]",
+      "original_section_heading_ko": "5화 [불운과 기지]",
+      "extraction_override_added": false
+    },
+    {
+      "novel_id": "22003306",
+      "jp_title": "奇跡のアタック",
+      "ko_title_observed": "기적의 어택",
+      "original_post_heading_ko": "이벤트 번역 [역경 미라클 어택!]",
+      "original_section_heading_ko": "6화 [기적의 어택]",
+      "extraction_override_added": false
+    }
+  ],
+  "event_full_jp_title_master_not_supplied": true,
+  "note_ko": "원래 한국어 게시물 전체 표제와 실제 일본어 회차 제목을 확인했다. 별도 일본어 이벤트 마스터 표제는 이 원형에 없으므로 새로 추정하지 않았다."
+}

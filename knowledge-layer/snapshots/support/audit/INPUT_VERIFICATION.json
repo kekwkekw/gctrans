@@ -1,0 +1,155 @@
+{
+  "date_local": "2026-09-25",
+  "verification": "BYTE_INTEGRITY_ONLY",
+  "archives": [
+    {
+      "uploaded_filename": "gc_POST_R36_EDITORIAL_POLICY_PRO_v1_0(1).zip",
+      "size_bytes": 3350896,
+      "sha256": "20f2e1cd7dd702eba1096905f472ec94e31f466b7dbb16559ce23b571bb07bea",
+      "verification_scope": "outer SHA256; all ZIP members read to EOF for CRC; listed top-level manifest entries SHA256/size checked; no semantic review or runtime test",
+      "internal_root": "gc_POST_R36_EDITORIAL_POLICY_PRO_v1_0",
+      "zip_file_members": 36,
+      "uncompressed_bytes": 18466040,
+      "unsafe_paths_or_symlinks": [],
+      "duplicate_paths": false,
+      "crc_all_members": "PASS",
+      "manifest": "MANIFEST.json",
+      "manifest_entries": 35,
+      "manifest_matches": 35,
+      "manifest_failures": [],
+      "manifest_unlisted_paths": [
+        "MANIFEST.json"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.17
+    },
+    {
+      "uploaded_filename": "gc_POST_R36_MEANING_BASELINE_v1_0(1).zip",
+      "size_bytes": 848292,
+      "sha256": "41b503cd48948558ac24644902ff68d02474882afc1012e2b94a0f72d146164d",
+      "verification_scope": "outer SHA256; all ZIP members read to EOF for CRC; listed top-level manifest entries SHA256/size checked; no semantic review or runtime test",
+      "internal_root": "gc_POST_R36_MEANING_BASELINE_v1_0",
+      "zip_file_members": 22,
+      "uncompressed_bytes": 7073651,
+      "unsafe_paths_or_symlinks": [],
+      "duplicate_paths": false,
+      "crc_all_members": "PASS",
+      "manifest": "MANIFEST.json",
+      "manifest_entries": 21,
+      "manifest_matches": 21,
+      "manifest_failures": [],
+      "manifest_unlisted_paths": [
+        "MANIFEST.json"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.04
+    },
+    {
+      "uploaded_filename": "gc_POST_R36_PRO_ADJUDICATION_v1(2).zip",
+      "size_bytes": 1961410,
+      "sha256": "c968d1861122e2306da73ea77d2b421a0c0b082967895ed7c75a242cb6cbf172",
+      "verification_scope": "outer SHA256; all ZIP members read to EOF for CRC; listed top-level manifest entries SHA256/size checked; no semantic review or runtime test",
+      "internal_root": "gc_POST_R36_PRO_ADJUDICATION_v1",
+      "zip_file_members": 38,
+      "uncompressed_bytes": 10407341,
+      "unsafe_paths_or_symlinks": [],
+      "duplicate_paths": false,
+      "crc_all_members": "PASS",
+      "manifest": "MANIFEST.json",
+      "manifest_entries": 37,
+      "manifest_matches": 37,
+      "manifest_failures": [],
+      "manifest_unlisted_paths": [
+        "MANIFEST.json"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.08
+    },
+    {
+      "uploaded_filename": "gc_PR13_PRO_REGRESSION_REVIEW_v1_0(1).zip",
+      "size_bytes": 2041102,
+      "sha256": "572e3cbee72ba60741a4273b423e0b592a654629f2debecee3be72d58e543eb6",
+      "verification_scope": "outer SHA256; all ZIP members read to EOF for CRC; listed top-level manifest entries SHA256/size checked; no semantic review or runtime test",
+      "internal_root": "gc_PR13_PRO_REGRESSION_REVIEW_v1_0",
+      "zip_file_members": 22,
+      "uncompressed_bytes": 6584958,
+      "unsafe_paths_or_symlinks": [],
+      "duplicate_paths": false,
+      "crc_all_members": "PASS",
+      "manifest": "PACKAGE_MANIFEST.json",
+      "manifest_entries": 21,
+      "manifest_matches": 21,
+      "manifest_failures": [],
+      "manifest_unlisted_paths": [
+        "PACKAGE_MANIFEST.json"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.07
+    },
+    {
+      "uploaded_filename": "gc_R36_PRODUCTION_MERGE_RECEIPT_v1_0(2).zip",
+      "size_bytes": 2242,
+      "sha256": "e4057d8a42bf70a47a2d7d19be0de9d51553fdfef9628dcb0b8d2eb6b8f328c0",
+      "verification_scope": "outer SHA256; all ZIP members read to EOF for CRC; listed top-level manifest entries SHA256/size checked; no semantic review or runtime test",
+      "internal_root": "gc_R36_PRODUCTION_MERGE_RECEIPT_v1_0",
+      "zip_file_members": 3,
+      "uncompressed_bytes": 3057,
+      "unsafe_paths_or_symlinks": [],
+      "duplicate_paths": false,
+      "crc_all_members": "PASS",
+      "manifest": "MANIFEST.json",
+      "manifest_entries": 2,
+      "manifest_matches": 2,
+      "manifest_failures": [],
+      "manifest_unlisted_paths": [
+        "MANIFEST.json"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "uploaded_filename": "gc_legacy_recovery_candidates_20260925.zip",
+      "size_bytes": 57970,
+      "sha256": "d6a4d3fe08b63035de4ee7f43f01f9babbe19802d959fe308f096c1efc6e1fec",
+      "verification_scope": "outer SHA256; all ZIP members read to EOF for CRC; listed top-level manifest entries SHA256/size checked; no semantic review or runtime test",
+      "internal_root": "gc_legacy_recovery_candidates_20260925",
+      "zip_file_members": 16,
+      "uncompressed_bytes": 231139,
+      "unsafe_paths_or_symlinks": [],
+      "duplicate_paths": false,
+      "crc_all_members": "PASS",
+      "manifest": "PACKAGE_MANIFEST.json",
+      "manifest_entries": 15,
+      "manifest_matches": 15,
+      "manifest_failures": [],
+      "manifest_unlisted_paths": [
+        "PACKAGE_MANIFEST.json"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.01
+    },
+    {
+      "uploaded_filename": "gc_r36_event12_v1_final01(1).zip",
+      "size_bytes": 265937442,
+      "sha256": "6a51ca0cf4d1a771e4e00951231a7e581708c45351db9c286eb70d3bf7af85c7",
+      "verification_scope": "outer SHA256; all ZIP members read to EOF for CRC; listed top-level manifest entries SHA256/size checked; no semantic review or runtime test",
+      "internal_root": "gc_r36_event12_v1",
+      "zip_file_members": 6065,
+      "uncompressed_bytes": 1551096652,
+      "unsafe_paths_or_symlinks": [],
+      "duplicate_paths": false,
+      "crc_all_members": "PASS",
+      "manifest": "SHA256SUMS.txt",
+      "manifest_entries": 6062,
+      "manifest_matches": 6062,
+      "manifest_failures": [],
+      "manifest_unlisted_paths": [
+        "SHA256SUMS.txt",
+        "reports/FILE_MANIFEST_R36.json",
+        "reports/VALIDATION.json"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 13.43
+    }
+  ]
+}

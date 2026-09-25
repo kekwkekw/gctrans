@@ -1,0 +1,388 @@
+[
+  {
+    "unit_id": "character_pair:4020074",
+    "unit_type": "two_episode_pair",
+    "novel_ids": [
+      "40200741",
+      "40200742"
+    ],
+    "label_ko": "쿠피도 1·2화",
+    "review_stage": "R24_UNIT_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "부그로의 의심·겉 부인·속 인정·실제 납치를 연결했다. 부탁 능력의 제한·기원 유보·과잉 작동, 계획된 자수와 실제 제압·체포, 비밀 약속과 부그로의 뒤늦은 오해를 구분했다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200741",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "40200741",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "40200741",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "40200741",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "40200741",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "40200741",
+        "raw_index": 95
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 99
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 100
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 113
+      },
+      {
+        "novel_id": "40200742",
+        "raw_index": 114
+      }
+    ],
+    "evidence_ids": [
+      "ev:r24:40200741:0010",
+      "ev:r24:40200741:0038",
+      "ev:r24:40200741:0047",
+      "ev:r24:40200741:0054",
+      "ev:r24:40200741:0064",
+      "ev:r24:40200741:0095",
+      "ev:r24:40200742:0001",
+      "ev:r24:40200742:0006",
+      "ev:r24:40200742:0007",
+      "ev:r24:40200742:0049",
+      "ev:r24:40200742:0054",
+      "ev:r24:40200742:0062",
+      "ev:r24:40200742:0064",
+      "ev:r24:40200742:0069",
+      "ev:r24:40200742:0099",
+      "ev:r24:40200742:0100",
+      "ev:r24:40200742:0113",
+      "ev:r24:40200742:0114"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  },
+  {
+    "unit_id": "character_pair:4020071",
+    "unit_type": "two_episode_pair",
+    "novel_ids": [
+      "40200711",
+      "40200712"
+    ],
+    "label_ko": "에트라 1·2화",
+    "review_stage": "R24_UNIT_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "자화상에서 태어난 별도 인물과 아르테 오인을 구분했다. 추천자·선택자·어깨를 만지는 주체, 과거 접수 장면의 전언, 승낙 전 공동 개입, 공유한 시간의 고백과 마지막 사적 추측을 재대조했다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200711",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "40200711",
+        "raw_index": 83
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 81
+      },
+      {
+        "novel_id": "40200712",
+        "raw_index": 89
+      }
+    ],
+    "evidence_ids": [
+      "ev:r24:40200711:0007",
+      "ev:r24:40200711:0029",
+      "ev:r24:40200711:0031",
+      "ev:r24:40200711:0042",
+      "ev:r24:40200711:0044",
+      "ev:r24:40200711:0050",
+      "ev:r24:40200711:0055",
+      "ev:r24:40200711:0073",
+      "ev:r24:40200711:0083",
+      "ev:r24:40200712:0016",
+      "ev:r24:40200712:0022",
+      "ev:r24:40200712:0031",
+      "ev:r24:40200712:0042",
+      "ev:r24:40200712:0056",
+      "ev:r24:40200712:0057",
+      "ev:r24:40200712:0060",
+      "ev:r24:40200712:0063",
+      "ev:r24:40200712:0067",
+      "ev:r24:40200712:0080",
+      "ev:r24:40200712:0081",
+      "ev:r24:40200712:0089"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  },
+  {
+    "unit_id": "character_pair:4020049",
+    "unit_type": "two_episode_pair",
+    "novel_ids": [
+      "40200491",
+      "40200492"
+    ],
+    "label_ko": "네이트 1·2화",
+    "review_stage": "R24_UNIT_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "다툼이라는 관장 추정과 실제 슬럼프, 생활 지원·들린 중얼거림과 부재한 고흐, 점괘와 두 해석, 제작 시작과 미완 결과, 별 비유·직접 지지 표현·보상 장면의 시간 유보를 연결했다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200491",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "40200491",
+        "raw_index": 91
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "40200492",
+        "raw_index": 53
+      }
+    ],
+    "evidence_ids": [
+      "ev:r24:40200491:0011",
+      "ev:r24:40200491:0012",
+      "ev:r24:40200491:0013",
+      "ev:r24:40200491:0031",
+      "ev:r24:40200491:0035",
+      "ev:r24:40200491:0057",
+      "ev:r24:40200491:0061",
+      "ev:r24:40200491:0064",
+      "ev:r24:40200491:0071",
+      "ev:r24:40200491:0080",
+      "ev:r24:40200491:0091",
+      "ev:r24:40200492:0010",
+      "ev:r24:40200492:0012",
+      "ev:r24:40200492:0013",
+      "ev:r24:40200492:0015",
+      "ev:r24:40200492:0024",
+      "ev:r24:40200492:0034",
+      "ev:r24:40200492:0036",
+      "ev:r24:40200492:0041",
+      "ev:r24:40200492:0048",
+      "ev:r24:40200492:0052",
+      "ev:r24:40200492:0053"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  }
+]

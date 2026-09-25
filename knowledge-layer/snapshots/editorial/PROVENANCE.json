@@ -1,0 +1,38 @@
+{
+  "role": "EDITORIAL_POLICY_RECOMMENDATION_COMPANION",
+  "version": "v1.0",
+  "baseline_date": "2026-09-23",
+  "inputs": {
+    "gc_POST_R36_EDITORIAL_SURVEY_v1_0.zip": {
+      "size": 1436222,
+      "sha256": "1ba9a9dfaf0c52469cd286be2efbb8d282f539ea1b3c58e19d6fcab21601c187",
+      "files": 15,
+      "crc_bad": null
+    },
+    "gc_POST_R36_MEANING_BASELINE_v1_0.zip": {
+      "size": 848292,
+      "sha256": "41b503cd48948558ac24644902ff68d02474882afc1012e2b94a0f72d146164d",
+      "files": 22,
+      "crc_bad": null
+    },
+    "gc_POST_R36_PRO_ADJUDICATION_v1.zip": {
+      "size": 1961410,
+      "sha256": "c968d1861122e2306da73ea77d2b421a0c0b082967895ed7c75a242cb6cbf172",
+      "files": 38,
+      "crc_bad": null
+    },
+    "gc_r36_event12_v1_final01.zip": {
+      "size": 265937442,
+      "sha256": "6a51ca0cf4d1a771e4e00951231a7e581708c45351db9c286eb70d3bf7af85c7"
+    }
+  },
+  "catalog_source": "gc_r36_event12_v1/catalog plus nested raw and dedicated battle alignment",
+  "effective_baseline": "Main M1 local published RC1 runtime values plus post-M1 approved meaning baseline virtual composition",
+  "schema_migration": false,
+  "source_reader_changed": false,
+  "production_modified": false,
+  "new_canonical_proposal_ids_created": false,
+  "record_locators": "original survey filename/line; not canonical IDs",
+  "editorial_user_approval": false,
+  "user_receipt": "UNCONFIRMED"
+}

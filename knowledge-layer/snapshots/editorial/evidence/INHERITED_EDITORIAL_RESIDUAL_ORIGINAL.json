@@ -1,0 +1,18 @@
+{
+  "created_proposal": false,
+  "changed_observed": false,
+  "items": [
+    {
+      "novel_id": "40112062",
+      "raw_index": 122,
+      "block_id": "128378968:s002:b0116",
+      "related_proposals": [
+        "R21-M011",
+        "R21-M012"
+      ],
+      "observation_ko": "기뻐했다. 다음 줄의 고 들었다.라는 분리는 부모 관찰형에 이미 있다. 이번 이름·입꼬리 교정으로 새로 생긴 문제가 아니다.",
+      "next_scope": "SEPARATE_PUNCTUATION_EDITORIAL_PASS",
+      "source_row_sha256": "097a8df7f07cd245b7530f9427bacd7dda114eba66f0f9b238d560fd127773af"
+    }
+  ]
+}

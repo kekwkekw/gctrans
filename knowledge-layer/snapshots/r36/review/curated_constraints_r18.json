@@ -1,0 +1,30 @@
+{
+  "source_scope_exact": [
+    "40106051",
+    "40106052",
+    "40106061",
+    "40106062",
+    "40106071",
+    "40106072",
+    "40106081",
+    "40106082"
+  ],
+  "new_named_entities": [
+    "entity:r18:vermeer",
+    "entity:r18:botticelli"
+  ],
+  "only_new_direct_speech_profile": "profile:r18:vermeer",
+  "botticelli_direct_speech_profile_allowed": false,
+  "robbery_initial": "ASSAULT_NOT_ABDUCTION",
+  "arrest": "HANDCUFFS_NOT_VERDICT",
+  "water_curse": "SIMILE_NOT_CURE",
+  "cheek_ink": "DECORATION_NOT_GAME_LOSS",
+  "kimono_result": "BUSINESS_OWNER_REPORTED_SUCCESS",
+  "collector_late_dialogue": "RECALLED_40106082_53_54",
+  "trade": "ARTWORK_FOR_PARTNER_RING_ACTUALLY_TRANSFERRED",
+  "specific_ring_cure": "NARRATOR_CONFIRMED_40106082_63",
+  "rembrandt_total_cure": false,
+  "emotional_resolution": "CHOICE_WITH_CURRENT_LINGERING_DESIRE",
+  "name_clarity_proposals_count": 9,
+  "source_h_or_alternate_included": false
+}

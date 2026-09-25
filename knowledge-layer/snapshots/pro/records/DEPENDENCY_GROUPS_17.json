@@ -1,0 +1,316 @@
+{
+  "groups": [
+    {
+      "group_id": "GROUP-01",
+      "proposal_ids": [
+        "R1-L08",
+        "R32-M017"
+      ],
+      "recommendations": {
+        "R1-L08": "ACCEPT",
+        "R32-M017": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-02",
+      "proposal_ids": [
+        "R22-M030",
+        "R22-M038",
+        "R22-M039"
+      ],
+      "recommendations": {
+        "R22-M030": "ACCEPT",
+        "R22-M038": "ACCEPT",
+        "R22-M039": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [
+        {
+          "from": "R22-M030",
+          "to": "R22-M038"
+        },
+        {
+          "from": "R22-M030",
+          "to": "R22-M039"
+        },
+        {
+          "from": "R22-M038",
+          "to": "R22-M030"
+        },
+        {
+          "from": "R22-M038",
+          "to": "R22-M039"
+        },
+        {
+          "from": "R22-M039",
+          "to": "R22-M030"
+        },
+        {
+          "from": "R22-M039",
+          "to": "R22-M038"
+        }
+      ],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-03",
+      "proposal_ids": [
+        "R22-M032",
+        "R22-M033"
+      ],
+      "recommendations": {
+        "R22-M032": "ACCEPT",
+        "R22-M033": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [
+        {
+          "from": "R22-M032",
+          "to": "R22-M033"
+        },
+        {
+          "from": "R22-M033",
+          "to": "R22-M032"
+        }
+      ],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-04",
+      "proposal_ids": [
+        "R22-M037",
+        "R22-M042"
+      ],
+      "recommendations": {
+        "R22-M037": "KEEP_OBSERVED",
+        "R22-M042": "KEEP_OBSERVED"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [
+        {
+          "from": "R22-M037",
+          "to": "R22-M042"
+        },
+        {
+          "from": "R22-M042",
+          "to": "R22-M037"
+        }
+      ],
+      "reason_ko": "술을 만든 장인이라는 문맥으로 직업이 충분히 특정된다. 양조 장인으로의 확장은 두 후보 모두 채택하지 않는다."
+    },
+    {
+      "group_id": "GROUP-05",
+      "proposal_ids": [
+        "R23-M017",
+        "R23-M018"
+      ],
+      "recommendations": {
+        "R23-M017": "ACCEPT",
+        "R23-M018": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-06",
+      "proposal_ids": [
+        "R24-M018",
+        "R24-M019"
+      ],
+      "recommendations": {
+        "R24-M018": "ACCEPT",
+        "R24-M019": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-07",
+      "proposal_ids": [
+        "R25-M009",
+        "R25-M010"
+      ],
+      "recommendations": {
+        "R25-M009": "ACCEPT",
+        "R25-M010": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-08",
+      "proposal_ids": [
+        "R26-M001",
+        "R26-M002"
+      ],
+      "recommendations": {
+        "R26-M001": "ACCEPT",
+        "R26-M002": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-09",
+      "proposal_ids": [
+        "R26-M016",
+        "R26-M017"
+      ],
+      "recommendations": {
+        "R26-M016": "ACCEPT",
+        "R26-M017": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-10",
+      "proposal_ids": [
+        "R26-M037",
+        "R26-M038"
+      ],
+      "recommendations": {
+        "R26-M037": "ACCEPT",
+        "R26-M038": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-11",
+      "proposal_ids": [
+        "R26-M063",
+        "R26-M064"
+      ],
+      "recommendations": {
+        "R26-M063": "ACCEPT",
+        "R26-M064": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-12",
+      "proposal_ids": [
+        "R26-M067",
+        "R26-M068",
+        "R26-M069"
+      ],
+      "recommendations": {
+        "R26-M067": "AMEND",
+        "R26-M068": "ACCEPT",
+        "R26-M069": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "당부 문장의 물음표를 포함해 R26-M067을 수정하고, 전언·수량 비교 후보 둘은 함께 유지한다. 현실의 통계·안전 지식으로 승격하지 않는다."
+    },
+    {
+      "group_id": "GROUP-13",
+      "proposal_ids": [
+        "R27-M021",
+        "R27-M022"
+      ],
+      "recommendations": {
+        "R27-M021": "ACCEPT",
+        "R27-M022": "KEEP_OBSERVED"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "관련 후보이지 필수 의존 관계는 아니다. 세개→세게 오기만 채택하고 풀릴 것 같아의 문맥 의역은 유지한다."
+    },
+    {
+      "group_id": "GROUP-14",
+      "proposal_ids": [
+        "R27-M024",
+        "R27-M025"
+      ],
+      "recommendations": {
+        "R27-M024": "ACCEPT",
+        "R27-M025": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-15",
+      "proposal_ids": [
+        "R27-M040",
+        "R27-M041"
+      ],
+      "recommendations": {
+        "R27-M040": "ACCEPT",
+        "R27-M041": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-16",
+      "proposal_ids": [
+        "R33-M018",
+        "R33-M019"
+      ],
+      "recommendations": {
+        "R33-M018": "ACCEPT",
+        "R33-M019": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [
+        {
+          "from": "R33-M019",
+          "to": "R33-M018"
+        }
+      ],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    },
+    {
+      "group_id": "GROUP-17",
+      "proposal_ids": [
+        "R34R-M030",
+        "R34R-M031",
+        "R34R-M032",
+        "R34R-M033"
+      ],
+      "recommendations": {
+        "R34R-M030": "ACCEPT",
+        "R34R-M031": "ACCEPT",
+        "R34R-M032": "ACCEPT",
+        "R34R-M033": "ACCEPT"
+      },
+      "semantic_group_review_completed": true,
+      "automatic_application": false,
+      "dependency_edges": [],
+      "reason_ko": "구성 후보의 원문·대상·의존 관계를 함께 검토했다. 구체적 한국어 판정 근거는 각 proposal_id의 결정 레코드에 보존한다."
+    }
+  ],
+  "historical_group_ids_preserved": true
+}

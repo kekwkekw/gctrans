@@ -1,0 +1,36 @@
+{
+  "source_scope_exact": [
+    "40112011",
+    "40112012",
+    "40112021",
+    "40112022",
+    "40112031",
+    "40112032",
+    "40112041",
+    "40112042",
+    "40112051",
+    "40112052"
+  ],
+  "reviewed_entries": 680,
+  "deferred_rows": 11,
+  "new_named_entities": [
+    "entity:r20:bouguereau"
+  ],
+  "new_direct_profiles": [
+    "profile:r20:bouguereau"
+  ],
+  "riding_help_direction": "STUDENT_HELPS_BOUGUEREAU",
+  "she_in_riding": "HORSE_NOT_HUMAN",
+  "lecture": "COMPLETED_SUCCESSFULLY",
+  "mother_evaluation": "RETROSPECTIVE_INFERENCE",
+  "doll": "PURCHASED_NOT_ALIVE",
+  "two_followers": "DISTINCT_MALE_AND_FEMALE",
+  "man_surrender": "ACTUAL_AFTER_STATED_INTENT",
+  "male_motive": "DIRECTOR_HYPOTHESIS",
+  "class_invitation": "ACCEPTED_NOT_ATTENDANCE_SHOWN",
+  "missing_garment": "SAN_REPORTS_MIXED_WITH_HERS",
+  "fall": "CAUGHT_WITH_NECK_PAIN_NOT_UNCONSCIOUS",
+  "hospital": "PROPOSED_NOT_VISITED",
+  "source_h_or_alternate_included": false,
+  "deferred_semantic_completion": false
+}

@@ -1,0 +1,105 @@
+{
+  "events": {
+    "200031": "쇼 계획·병력 분산 제안·실제 유인·현장 방어와 본거지 체포·며칠 뒤 보고회를 분리했다. 렘브란트의 정보 누설/개인 거래 이해관계/질투와 동료들의 신뢰를 분리하며 보호자역 이마쥬를 실제 부모나 특정 연령으로 확정하지 않는다. 첫 도주자는 합의한 추적 대상, 남은 자객은 체포. 재공격은 귀족 강요이고 튈프가 보고한 뒤 라파엘로 연락·앵글 및 시경 체포로 이어진다. 거의 무사/일부 자금원 차단/사회복귀 및 예방 계획의 범위를 유지한다. 20003106/2 원문 방향 불일치는 번역 오류와 별도 기록.",
+    "200033": "심부름 동행→축제 전 조릿대 견학→약한 작품 발견과 경비 계획→축제 첫날 옷 선택과 순찰→불만자의 소란·변화→협력 격파→가설 설명·시경 연행·소원 작성 참여 순서다. 관장의 저주해제 소원 추측은 실제 렘브란트의 수집 욕심과 다르다. 작품 제작과 공격적 감정은 관련 경향이지 보편 필요충분조건으로 확정하지 않는다. 조릿대 발차기는 시도이며 남자 조종 범행으로 확정하지 않는다. 관장의 수감 없을 것이라는 예상과 실제 경찰 연행을 분리한다. 렘브란트의 성숙한 자의식·미각 저주·감촉 즐거움·마지막 유보적 위로 수락을 각각 보존한다. 최종 소원은 관장 것만 명시됐다."
+  },
+  "contract_ids": [
+    "contract:r29:threat_document_and_inquiry",
+    "contract:r29:employee_substitution_and_source_reversal",
+    "contract:r29:event_roles_not_age_or_parentage",
+    "contract:r29:leak_goal_not_success",
+    "contract:r29:information_role_copying",
+    "contract:r29:darts_cover_story_vs_wall_hit",
+    "contract:r29:card_act_and_heart_object",
+    "contract:r29:lure_no_confirmed_deaths",
+    "contract:r29:kinoe_carte_defeat",
+    "contract:r29:escape_report_and_shadowing",
+    "contract:r29:noble_claim_then_killing_order",
+    "contract:r29:tulp_no_unilateral_attack",
+    "contract:r29:rem_jealousy_and_interrupted_reach",
+    "contract:r29:two_fronts_and_command",
+    "contract:r29:raid_results_not_all_underworld",
+    "contract:r29:bunny_choices_and_unheard_exit",
+    "contract:r29:errand_not_planned_date",
+    "contract:r29:wish_misinterpretation",
+    "contract:r29:weak_art_and_no_hidden_controller_proof",
+    "contract:r29:patrol_invitation_and_timing",
+    "contract:r29:yukata_choice_and_murmur",
+    "contract:r29:shared_food_not_age_inference",
+    "contract:r29:shooting_and_single_prize",
+    "contract:r29:legend_and_waiting_opinions",
+    "contract:r29:two_opinions_not_complaint_endorsement",
+    "contract:r29:kick_attempt_and_transformation",
+    "contract:r29:insight_before_explanation",
+    "contract:r29:art_conditions_not_sufficiency",
+    "contract:r29:earlier_fragment_and_source_typo",
+    "contract:r29:remorse_not_completed_reform",
+    "contract:r29:questioning_not_verdict",
+    "contract:r29:heard_murmur_and_poison_metaphor",
+    "contract:r29:papers_diminish_not_break",
+    "contract:r29:final_wishes_not_fulfilled"
+  ],
+  "partial": false,
+  "all_titles_and_raw_read": true,
+  "cross_event_chronology_inferred": false,
+  "source_anomalies_not_translation_failures": [
+    {
+      "anomaly_id": "R29-SRC001",
+      "novel_id": "20003106",
+      "raw_index": 2,
+      "kind": "SOURCE_CONTEXT_DIRECTION_CONFLICT",
+      "jp_exact": "「ま、まさか……なにか変だと思ったら……。\\n　従業員が藝術家に扮していただけでなく、\\n　客までイマージュだったなんて……」",
+      "ko_observed": "서, 설마...... 뭔가 이상하다 생각했는데......\n종업원이 예술가로 변장한 것뿐만 아니라,\n고객까지 이마쥬였다니......",
+      "reason_ko": "이 행 원문은 직원이 예술가로 변장했다고 적으며 KO는 원문과 일치한다. 20003101/46,61,62 및 20003103/2,3의 작전은 예술가가 직원 역할을 하는 방향이다. 번역 오류와 원문 자체 불일치를 분리한다.",
+      "context_locations": [
+        [
+          "20003101",
+          46
+        ],
+        [
+          "20003101",
+          61
+        ],
+        [
+          "20003101",
+          62
+        ],
+        [
+          "20003103",
+          2
+        ],
+        [
+          "20003103",
+          3
+        ]
+      ],
+      "workflow_state": "SOURCE_ANOMALY_RECORDED",
+      "automatic_correction": false,
+      "source_preserved": true,
+      "translation_proposal_created": false
+    },
+    {
+      "anomaly_id": "R29-SRC002",
+      "novel_id": "20003306",
+      "raw_index": 18,
+      "kind": "SOURCE_ORTHOGRAPHY_CONTEXT_NOTE",
+      "jp_exact": "「せ、先日、会場近くであたしたちが倒した死の芸術のように、\\n　これまでも、弱い憎しみに反応した弱い固体は発生していました。\\n　あ、あれが変な感じがしたのは、全体のごく一部だったからなんです」",
+      "ko_observed": "어, 얼마전, 회장 근처에서 저희가 쓰러뜨린 죽음의 예술처럼,\n지금까지도, 약한 증오에 반응한 약한 개체는 발생했었어요.\n그, 그게 이상한 느낌이었던 것은, 전체의 극히 일부였기 때문이에요",
+      "reason_ko": "원문은 弱い固体라 적었으나 앞뒤는 약한 죽음의 예술 개체를 말한다. KO의 개체는 이 문맥과 일치한다. 個体 오기 가능성만 기록하고 JP 표기나 KO를 고치지 않는다.",
+      "context_locations": [
+        [
+          "20003302",
+          25
+        ],
+        [
+          "20003306",
+          18
+        ]
+      ],
+      "workflow_state": "SOURCE_ANOMALY_RECORDED",
+      "automatic_correction": false,
+      "source_preserved": true,
+      "translation_proposal_created": false
+    }
+  ]
+}

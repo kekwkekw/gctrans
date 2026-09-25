@@ -1,0 +1,97 @@
+{
+  "document_role": "EDITORIAL_POLICY_RECOMMENDATIONS_NOT_APPLIED",
+  "user_approved": false,
+  "source_schema_migration": false,
+  "source_checkpoint": "gc_r36_event12_v1_final01.zip",
+  "source_checkpoint_sha256": "6a51ca0cf4d1a771e4e00951231a7e581708c45351db9c286eb70d3bf7af85c7",
+  "meaning_baseline_sha256": "41b503cd48948558ac24644902ff68d02474882afc1012e2b94a0f72d146164d",
+  "survey_sha256": "1ba9a9dfaf0c52469cd286be2efbb8d282f539ea1b3c58e19d6fcab21601c187",
+  "existing_meaning_and_note_approvals_unchanged": true,
+  "policy_recommendations": [
+    {
+      "id": "ELLIPSIS_GLYPH",
+      "glyph": "…",
+      "codepoint": "U+2026",
+      "recommendation_ko": "JP/KO의 대응 어구별 run을 고정하고 JP의 … 개수를 보존한다. 6점=항상2자라는 전역 규칙이나 점개수 반올림은 금지한다.",
+      "allow_odd_source_run_lengths": true,
+      "add_missing_source_only_runs": false,
+      "line_index_equality_is_not_alignment_proof": true,
+      "requires_user_acceptance": true
+    },
+    {
+      "id": "STRUCTURAL_DASH_GLYPH",
+      "glyph": "―",
+      "codepoint": "U+2015",
+      "recommendation_ko": "서술 연결·삽입·전환·발화 절단으로 판정된 대시는 ―로 통일하고 JP run 길이를 보존한다. ……나 장음으로 재해석하지 않는다.",
+      "source_variants": [
+        "―",
+        "─",
+        "—"
+      ],
+      "vocal_or_sfx_runs_preserved": 62,
+      "keep_word_internal_lengthening": true,
+      "requires_user_acceptance": true
+    },
+    {
+      "id": "NARRATION_TERMINAL_PERIOD",
+      "recommendation_ko": "고우선 20행을 개별 판정: 19행은 . 추가, 40106032/raw20은 서술자의 자문에 ? 권고. 제목·대사에 일괄 추가하지 않는다.",
+      "terminal_period_count": 19,
+      "narrator_question_count": 1,
+      "requires_user_acceptance": true
+    },
+    {
+      "id": "DIALOGUE_PERIOD",
+      "recommendation_ko": "대사 끝 무마침표 관행을 유지한다. 기존 !/?의 순서·개수, 말줄임표·중단 부호를 전역 추가·삭제하지 않는다.",
+      "blanket_insertion": false,
+      "blanket_removal": false,
+      "requires_user_acceptance": true
+    },
+    {
+      "id": "STRUCTURAL_PROTECTION",
+      "recommendation_ko": "기존 보류12행과 원문이상13위치를 정본 ID로 보호한다. 클릭/루비/태그속성 내부는 제외하고, 태그 밖 텍스트는 태그열 불변·span 재대조를 통과한 경우만 후속 후보로 만든다. raw 괄호 불균형48행은 병합그룹/이웃raw 확인 전 자동 확정하지 않는다.",
+      "authority": "meaning-baseline anomaly source_locator + R36 deferred registry, not survey booleans",
+      "no_global_replace": true,
+      "requires_user_acceptance": true
+    },
+    {
+      "id": "LOCAL_SPACING_ADJUDICATION",
+      "recommendation_ko": "기존 공백 의심40회 중 명시 목록10회의 부호 결합 공백만 제거를 권고한다. 나머지30회의 문장·쉼·말더듬 경계는 보존한다.",
+      "scope": "ONLY_40_SURVEY_OCCURRENCES",
+      "requires_user_acceptance": true
+    }
+  ],
+  "explicit_semantic_punctuation_cases": [
+    {
+      "survey_file": "01_ELLIPSIS_OCCURRENCES.jsonl",
+      "line": 7572,
+      "loc": "10010209/raw26",
+      "recommendation": "...... → ――; attack interrupts speech"
+    },
+    {
+      "survey_file": "01_ELLIPSIS_OCCURRENCES.jsonl",
+      "line": 10238,
+      "loc": "99900001/raw27",
+      "recommendation": "... → ――; event transition/interruption"
+    }
+  ],
+  "local_boundary_cases": [
+    {
+      "key": "99900001/raw3/internal_narration_boundary",
+      "recommendation": "Insert . immediately before existing <br>; preserve tag."
+    },
+    {
+      "key": "40112062/raw122/inherited_reported_clause_boundary",
+      "recommendation": "기뻐했다.\\n고 들었다. → 기뻐했다고 들었다.; retain reported-information framing."
+    }
+  ],
+  "runtime_caveat": "Glyph/codepoint count changes can alter font appearance, line wrapping and typewriter progression. This policy does not prove equal on-screen timing or runtime support.",
+  "publication_boundary": "Use local published RC1 receipt as baseline; current remote HEAD not queried. Revalidate latest authorized production preimage before export; no overwrite from old observed.",
+  "authority_granted_by_this_document": {
+    "approved": false,
+    "export": false,
+    "github": false,
+    "gcmod": false,
+    "runtime": false,
+    "deployment": false
+  }
+}

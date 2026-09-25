@@ -1,0 +1,72 @@
+[
+  {
+    "event_prefix": "200021",
+    "novel_ids": [
+      "20002101",
+      "20002102",
+      "20002103",
+      "20002104",
+      "20002105",
+      "20002106"
+    ],
+    "all_rows_reviewed": true,
+    "contract_keys": [
+      "painting_not_person",
+      "ice_not_petting",
+      "folklore_hypothesis",
+      "courtyard_idea_roles",
+      "gogh_participation",
+      "morisot_training_motive",
+      "temporary_cooling",
+      "underwear_unconfirmed",
+      "council_authorization",
+      "water_helpers",
+      "participants_notice",
+      "volunteer_relief",
+      "first_dig_roles",
+      "measurement_limits",
+      "distributed_search",
+      "dona_before_morisot",
+      "core_emerges",
+      "final_guard_roles",
+      "exhaustion_not_death",
+      "heat_case_report",
+      "repeat_party_denied"
+    ]
+  },
+  {
+    "event_prefix": "200026",
+    "novel_ids": [
+      "20002601",
+      "20002602",
+      "20002603",
+      "20002604",
+      "20002605",
+      "20002606"
+    ],
+    "all_rows_reviewed": true,
+    "contract_keys": [
+      "losses_and_budget",
+      "appearance_not_age",
+      "cezanne_guard_job",
+      "private_customer_threat",
+      "discount_replaced_by_gifts",
+      "covert_investigation_roles",
+      "rival_noble_reasoning",
+      "two_businesses",
+      "self_exposure_risk",
+      "message_and_wife_departure",
+      "rescue_trace_vs_witness",
+      "unexpected_director_arrival",
+      "entry_team_and_pretext",
+      "two_subjugators",
+      "arrest_and_return",
+      "unilateral_purchase_flashback",
+      "thanks_and_private_guilt",
+      "art_supplies_gift",
+      "future_shopping_acceptance",
+      "possible_departure_not_decision",
+      "feeling_covered_not_discarded"
+    ]
+  }
+]

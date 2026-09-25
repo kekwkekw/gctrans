@@ -1,0 +1,22 @@
+[
+  {
+    "novel_id": "10010102",
+    "source_text": "「ひ……っ」",
+    "raw_indices": [
+      47,
+      64
+    ],
+    "candidate_text_ko": "히익......",
+    "reason_ko": "같은 시나리오 안의 동일 일본어 감탄을 하나의 exact key로 표현해야 하므로 의미가 같은 감탄 길이를 이 두 위치에서만 통일한다. 원래 두 관찰형은 source에 보존한다."
+  },
+  {
+    "novel_id": "99900001",
+    "source_text": "「…………」",
+    "raw_indices": [
+      69,
+      70
+    ],
+    "candidate_text_ko": "............",
+    "reason_ko": "같은 시나리오·동일 source의 침묵 부호를 같은 길이로 통일한다. 임의 last-write-wins를 사용하지 않는다."
+  }
+]

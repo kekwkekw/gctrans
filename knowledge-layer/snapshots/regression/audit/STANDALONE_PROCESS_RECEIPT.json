@@ -1,0 +1,21 @@
+{
+  "returncode": 0,
+  "stderr": "",
+  "stdout": {
+    "status": "PASS",
+    "candidate_zip_sha256": "72a19cfdf351ba4f4c3c6b07e3c285bca7241ce15efd5069228c2a9cef7a3708",
+    "expected_head": "c6cb609be7a77748986f5ee3fad0ed95435c415a",
+    "regular_files": 338,
+    "independently_reconstructed_nonheld_row_positions": 22846,
+    "hold_placeholders": 12,
+    "checks": [
+      "CANDIDATE_ZIP_AND_ALL_MANIFEST_FILES",
+      "INDEPENDENT_EXPECTED_ROW_HASHES_22846",
+      "HELD_KEY_BINDINGS_12"
+    ],
+    "linguistic_review_performed_by_this_script": false,
+    "network_access": false,
+    "repo_modified": false
+  },
+  "invocation": "python -S -B tools/verify_candidate_readonly.py --candidate-zip <v1.2 ZIP>"
+}

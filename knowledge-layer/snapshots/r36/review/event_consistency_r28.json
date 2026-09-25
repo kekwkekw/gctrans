@@ -1,0 +1,73 @@
+[
+  {
+    "event_prefix": "200027",
+    "novel_ids": [
+      "20002701",
+      "20002702",
+      "20002703",
+      "20002704",
+      "20002705",
+      "20002706"
+    ],
+    "all_rows_reviewed": true,
+    "contract_keys": [
+      "no_knock_permission",
+      "coincidental_joint_visit",
+      "temporary_miko",
+      "shy_not_unskilled",
+      "wind_incident_report",
+      "dance_cause_hypothesis",
+      "whisper_hearing",
+      "temporary_observation",
+      "cupido_report",
+      "cooperation_not_arrest",
+      "staged_stall_tests",
+      "botticelli_private_jealousy",
+      "wordplay_no_restore",
+      "arte_counterexample",
+      "tray_accident_report",
+      "no_second_blow",
+      "arte_help_apology_plan",
+      "priest_offering_explanation",
+      "ritual_consent_and_watchers",
+      "restored_not_xray",
+      "hug_initiators",
+      "private_prayer_and_return"
+    ]
+  },
+  {
+    "event_prefix": "200028",
+    "novel_ids": [
+      "20002801",
+      "20002802",
+      "20002803",
+      "20002804",
+      "20002805",
+      "20002806"
+    ],
+    "all_rows_reviewed": true,
+    "contract_keys": [
+      "angela_liaison",
+      "rem_hypothesis_not_diagnosis",
+      "flower_help_direction",
+      "renoir_identity_aside",
+      "unresolved_parenthetical_question",
+      "shop_repair_permission",
+      "repellent_not_insecticide",
+      "misfortune_reports_not_causes",
+      "tour_not_membership",
+      "rem_curse_and_private_research",
+      "future_clothing_gift",
+      "honorific_not_sister",
+      "room_priority_and_prayer_gesture",
+      "quiet_introduction_plan",
+      "moulin_creator_not_child",
+      "positive_consideration_only",
+      "rescue_prediction_not_law",
+      "moulin_first_rescue",
+      "mutual_aid_membership",
+      "later_not_cured",
+      "shati_creator_refusal_snacks"
+    ]
+  }
+]

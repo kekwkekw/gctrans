@@ -1,0 +1,155 @@
+{
+  "release_id": "GC-MAIN-M1-RC1",
+  "status": "PASS",
+  "check_count": 36,
+  "passed": 36,
+  "failed": 0,
+  "scope": "Static source/provenance, deterministic build, exact mapping, curated decisions and closed release gates. Not game runtime, independent translation accuracy, or publication approval.",
+  "checks": [
+    {
+      "name": "candidate_and_source_approval_contract",
+      "passed": true
+    },
+    {
+      "name": "deterministic_compiler_preimages_boundaries_and_decisions",
+      "passed": true
+    },
+    {
+      "name": "original_raw_catalog_coverage",
+      "passed": true
+    },
+    {
+      "name": "original_JP_and_speaker_exact",
+      "passed": true
+    },
+    {
+      "name": "137_scenarios_8487_entries_8351_body_136_titles",
+      "passed": true
+    },
+    {
+      "name": "no_synthetic_tutorial_title",
+      "passed": true
+    },
+    {
+      "name": "queue_zero_interlude_not_skipped",
+      "passed": true
+    },
+    {
+      "name": "main_scope_no_character_event_battle",
+      "passed": true
+    },
+    {
+      "name": "no_scope_overlap_with_character_holds",
+      "passed": true
+    },
+    {
+      "name": "candidate_entries_not_translation_approvals",
+      "passed": true
+    },
+    {
+      "name": "catalog_candidate_ids_one_to_one",
+      "passed": true
+    },
+    {
+      "name": "candidate_file_rebuild_exact",
+      "passed": true
+    },
+    {
+      "name": "key_index_rebuild_exact",
+      "passed": true
+    },
+    {
+      "name": "build_summary_rebuild_exact",
+      "passed": true
+    },
+    {
+      "name": "preimage_report_rebuild_exact",
+      "passed": true
+    },
+    {
+      "name": "separated_notes_exactly_three",
+      "passed": true
+    },
+    {
+      "name": "35_markup_nodes_34_rows_preserved",
+      "passed": true
+    },
+    {
+      "name": "markup_attributes_match_each_source",
+      "passed": true
+    },
+    {
+      "name": "two_original_JP_ruby_readings_retained",
+      "passed": true
+    },
+    {
+      "name": "key_normalization_only_literal_newline",
+      "passed": true
+    },
+    {
+      "name": "no_empty_or_unhandled_newline_values",
+      "passed": true
+    },
+    {
+      "name": "every_source_entry_maps_back_to_dictionary",
+      "passed": true
+    },
+    {
+      "name": "no_silent_conflicting_duplicate_keys",
+      "passed": true
+    },
+    {
+      "name": "main_has_no_generated_deferred_markers",
+      "passed": true
+    },
+    {
+      "name": "proposal_dispositions_total_and_applied",
+      "passed": true
+    },
+    {
+      "name": "new_title_candidates_source_attested",
+      "passed": true
+    },
+    {
+      "name": "source_bound_spelling_19_only",
+      "passed": true
+    },
+    {
+      "name": "open_conflicts_and_policies_preserved",
+      "passed": true
+    },
+    {
+      "name": "655_changed_rows_vs_hand_baseline",
+      "passed": true
+    },
+    {
+      "name": "deploy_exactly_allowlisted_137_novels",
+      "passed": true
+    },
+    {
+      "name": "every_deploy_dictionary_rebuild_exact",
+      "passed": true
+    },
+    {
+      "name": "deploy_file_hashes_match",
+      "passed": true
+    },
+    {
+      "name": "no_false_production_ready_manifest",
+      "passed": true
+    },
+    {
+      "name": "production_gates_remain_closed",
+      "passed": true
+    },
+    {
+      "name": "manifest_covers_exact_file_set",
+      "passed": true
+    },
+    {
+      "name": "manifest_all_hashes_match",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

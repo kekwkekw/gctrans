@@ -1,0 +1,19 @@
+{
+  "pr": 13,
+  "state": "open",
+  "draft": true,
+  "merged": false,
+  "mergeable": true,
+  "commits": 1,
+  "changed_files": 338,
+  "base_sha": "340a3d2f5bcc793501887f15237b1095a1b21b7a",
+  "head_sha": "c6cb609be7a77748986f5ee3fad0ed95435c415a",
+  "fresh_final_get_pr_info": true,
+  "checked_at_utc": "2026-09-23T19:26:25.238217+00:00",
+  "WORK": "APPROVAL_TRACE_AND_FOCUSED_REGRESSION_REVIEW_COMPLETE",
+  "VALIDATION": "PASS_WITH_LEGACY_VERIFIER_FAILURE_SEPARATELY_RECORDED",
+  "GITHUB_WRITE": "NOT_EXECUTED_IN_THIS_TURN",
+  "DEPLOYMENT": "NOT_EXECUTED",
+  "HANDOFF": "FILES_CREATED_FOR_THIS_CONVERSATION",
+  "USER_RECEIPT": "UNCONFIRMED"
+}

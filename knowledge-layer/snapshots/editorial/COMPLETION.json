@@ -1,0 +1,22 @@
+{
+  "WORK": "EDITORIAL_POLICY_ADJUDICATION_COMPLETE",
+  "current_review_scope": {
+    "survey_effective_entries": 22859,
+    "survey_occurrences_ellipsis": 10500,
+    "survey_occurrences_dash": 1027,
+    "period_rows_individually_reviewed": 20,
+    "spacing_occurrences_individually_reviewed": 40,
+    "additional_local_boundary_findings": 2,
+    "new_corpus_semantic_review_rows": 0,
+    "parent_queue_changed": false
+  },
+  "VALIDATION": "CORE40_PASS_MUTATION14_PASS_HTML28_PASS",
+  "PACKAGING": "SEE_EXTERNAL_PACKAGING_RECEIPT",
+  "HANDOFF": "FILES_CREATED_NOT_DURABLE_LIBRARY_REGISTRATION",
+  "USER_RECEIPT": "UNCONFIRMED",
+  "EDITORIAL_USER_APPROVAL": "PENDING",
+  "meaning_baseline_decisions_unchanged": true,
+  "applied_editorial_changes": 0,
+  "production_exported": false,
+  "next": "User policy acceptance, then high-effort safe changeset generation with original-block rebase and guards"
+}

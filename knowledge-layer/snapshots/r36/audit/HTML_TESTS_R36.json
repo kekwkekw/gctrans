@@ -1,0 +1,299 @@
+{
+  "status": "PASS",
+  "check_count": 69,
+  "passed": 69,
+  "failed": 0,
+  "exceptions": [],
+  "html_sha256": "ad1d3f867c55585f9bbccab5d92140acaa1b59a2798c270738f8c4651b9dc45c",
+  "method": "The container administrator blocks file:// navigation. Actual final HTML bytes were read from disk then loaded as a fresh document with set_content in /usr/bin/chromium; all 707 JP/KO/labels compared to snapshot, all episode and speaker filters exercised, search/reset/first-last plus 390px and 360px viewports tested. Synthetic hostile-tag escaping is a separate fixture, not corpus content.",
+  "file_protocol_navigation": "NOT_VERIFIED_ADMINISTRATOR_BLOCKED",
+  "windows_browser_runtime": "NOT_RUN",
+  "screenshots": [
+    "audit/html_screenshots_r36/01_desktop_all.png",
+    "audit/html_screenshots_r36/02_candidate_filter.png",
+    "audit/html_screenshots_r36/03_legacy_reconfirmation.png",
+    "audit/html_screenshots_r36/04_desktop_last.png",
+    "audit/html_screenshots_r36/05_mobile_all.png",
+    "audit/html_screenshots_r36/06_mobile_last.png"
+  ],
+  "checks": [
+    {
+      "check": "utf8_and_doctype",
+      "status": "PASS"
+    },
+    {
+      "check": "viewport_meta",
+      "status": "PASS"
+    },
+    {
+      "check": "no_innerHTML_or_eval",
+      "status": "PASS"
+    },
+    {
+      "check": "offline_no_external_assets",
+      "status": "PASS"
+    },
+    {
+      "check": "actual_document_bytes_load",
+      "status": "PASS"
+    },
+    {
+      "check": "all_707_rows",
+      "status": "PASS"
+    },
+    {
+      "check": "45_candidate_sections",
+      "status": "PASS"
+    },
+    {
+      "check": "first_key",
+      "status": "PASS"
+    },
+    {
+      "check": "last_key",
+      "status": "PASS"
+    },
+    {
+      "check": "all_JP_text_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "all_KO_observed_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "all_keys_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "all_speaker_labels_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "source_tags_are_not_DOM_children",
+      "status": "PASS"
+    },
+    {
+      "check": "desktop_no_horizontal_overflow",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22002801",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22002802",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22002803",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22002804",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22002805",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22002806",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22003301",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22003302",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22003303",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22003304",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22003305",
+      "status": "PASS"
+    },
+    {
+      "check": "novel_filter_22003306",
+      "status": "PASS"
+    },
+    {
+      "check": "title_filter_12",
+      "status": "PASS"
+    },
+    {
+      "check": "body_filter_695",
+      "status": "PASS"
+    },
+    {
+      "check": "queue_filter_595",
+      "status": "PASS"
+    },
+    {
+      "check": "outside_including_titles_112",
+      "status": "PASS"
+    },
+    {
+      "check": "outside_body_100",
+      "status": "PASS"
+    },
+    {
+      "check": "affected_rows_44",
+      "status": "PASS"
+    },
+    {
+      "check": "no_candidate_rows_663",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_アルテ",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_ドナテッロ",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_ブグロー",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_ブグロー＆ルノワール",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_マネ",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_モリゾ",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_ラファエロ",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_ルノワール",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_主催者",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_審判",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_死の芸術",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_観客Ａ",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_観客Ｂ",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_館長",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_filter_？？？",
+      "status": "PASS"
+    },
+    {
+      "check": "blank_speaker_filter",
+      "status": "PASS"
+    },
+    {
+      "check": "search_new_proposal",
+      "status": "PASS"
+    },
+    {
+      "check": "search_legacy_proposal",
+      "status": "PASS"
+    },
+    {
+      "check": "search_JP_title",
+      "status": "PASS"
+    },
+    {
+      "check": "compound_filter_empty",
+      "status": "PASS"
+    },
+    {
+      "check": "reset_all_controls",
+      "status": "PASS"
+    },
+    {
+      "check": "last_navigation",
+      "status": "PASS"
+    },
+    {
+      "check": "first_navigation",
+      "status": "PASS"
+    },
+    {
+      "check": "mobile_390_no_overflow",
+      "status": "PASS"
+    },
+    {
+      "check": "mobile_390_stacked_columns",
+      "status": "PASS"
+    },
+    {
+      "check": "mobile_390_707_rows",
+      "status": "PASS"
+    },
+    {
+      "check": "mobile_390_last_navigation",
+      "status": "PASS"
+    },
+    {
+      "check": "mobile_360_no_overflow",
+      "status": "PASS"
+    },
+    {
+      "check": "mobile_360_stacked_columns",
+      "status": "PASS"
+    },
+    {
+      "check": "mobile_360_707_rows",
+      "status": "PASS"
+    },
+    {
+      "check": "mobile_360_last_navigation",
+      "status": "PASS"
+    },
+    {
+      "check": "no_page_errors",
+      "status": "PASS"
+    },
+    {
+      "check": "no_network_requests",
+      "status": "PASS",
+      "requests": []
+    },
+    {
+      "check": "synthetic_hostile_tag_text_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "synthetic_hostile_tags_not_executed",
+      "status": "PASS"
+    }
+  ],
+  "elapsed_seconds": 22.215
+}

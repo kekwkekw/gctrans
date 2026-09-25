@@ -1,0 +1,23 @@
+{
+  "raw_hashes": {
+    "22001601": "054e0797673094bdb0f145130c710ab0b93f2ded82c2e599371b7b5bd5bbb0fb",
+    "22001602": "9f2c99415de0a1f00d292cfab8dd11f7b2e82939451722ee3577936dbe5f3664",
+    "22001603": "e2a2087bcd6d5ef5a7577621c06c2135b1c5c665c0922394c3efef1bea020182",
+    "22001604": "7bc3ca5c63cb1ca3182874e618c53ca38a9ccbc69f8601d72302851012917a1f",
+    "22001605": "6b0b099f06cdfe2e7e7f03661edab5b4f86fe7f5f9312583f8e714ecf414fb2f",
+    "22001606": "1bf89d0ecc89b84913aa6cbcf2f79af9b4b91d695ecc6fcff7ddbb28fb736ee6"
+  },
+  "nested_source_sha256": "f9817bfe251796ce4c69fd0e781fe1b72be2cbc1aa2a0920cf44283811ba4657",
+  "source_archive_sha256": "5df5266154c60aeaab24d66fd6cdf4872ed162cf286e388fddc9c3c86835fc00",
+  "snapshot_scope": "R34 redo 668 selected original items; not full corpus",
+  "original_source_unchanged": true,
+  "hand_override_order": [
+    "source/hand_blocks.jsonl",
+    "alignment/working_hand_blocks.jsonl"
+  ],
+  "source_chain": [
+    "source/gc_pro_review_r4.zip",
+    "gc_pro_review_r4/source/r3.zip",
+    "gc_pro_review_r3/source/raw_ordered/<novel_id>.json"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "nested_source_sha256": "f9817bfe251796ce4c69fd0e781fe1b72be2cbc1aa2a0920cf44283811ba4657",
+  "raw_hashes": {
+    "22001001": "7fd2d43e60a85e5b2f4bfe5eac0bb465b92f98e933a5b5fd49a96155959cab97",
+    "22001002": "7c323f525dfa2c8516abc158b39d04d30697932ac4c04bc8d38156469e8c56ff",
+    "22001003": "70de674f3bd01ee845721de27d8af1f74e484ba560f634698f230ed07de63b42",
+    "22001004": "23b871fc73aef7b68631acfc419130f9fc23da64285492e9e6c23371596b5da0",
+    "22001005": "51aecd532a32f6deecb9190b13f82daef031cbb481ba9306b9e62ca71aa9acc4",
+    "22001006": "c8b14a3abfb2c2ec5577d5500064ac6ada0579c896b149be6f1f74d7c87d3576",
+    "22001101": "3ff654be6c1fc848e73259a32961e2290fbfae35b690e0108fb45b304b9085fb",
+    "22001102": "9851d64f8027329d8ab34025056dbc74eabbb0976c4a73ea3f16995098476b31",
+    "22001103": "c733d06e36287a1abb5f8ba4feab2901c2623513d5c0fc35e694f87d449b6375",
+    "22001104": "d365ed5669e06f26f16ccfd2f064c28ca8cf138b52911a3c5f9c6a033d6c71d2",
+    "22001105": "3e46e8092f1d0704b5e1439a388ee6955f6467ecb138268fa053ab6eded887c4",
+    "22001106": "b2b60183013fb84cb42b549b99121c9761163e1e21cdf517ac6865cffd5c6a94"
+  },
+  "original_archive_sha256": "5df5266154c60aeaab24d66fd6cdf4872ed162cf286e388fddc9c3c86835fc00",
+  "source_chain": [
+    "source/gc_pro_review_r4.zip",
+    "gc_pro_review_r4/source/r3.zip",
+    "gc_pro_review_r3/source/raw_ordered/<novel_id>.json"
+  ],
+  "hand_override_precedence": "alignment/working_hand_blocks.jsonl after source/hand_blocks.jsonl",
+  "snapshot_scope": "R33_REVIEWED_717_ONLY_NOT_FULL_CORPUS",
+  "deferred_not_copied_to_snapshot": [
+    {
+      "novel_id": "22001004",
+      "raw_index": 18
+    },
+    {
+      "novel_id": "22001004",
+      "raw_index": 27
+    },
+    {
+      "novel_id": "22001004",
+      "raw_index": 28
+    },
+    {
+      "novel_id": "22001006",
+      "raw_index": 28
+    },
+    {
+      "novel_id": "22001006",
+      "raw_index": 29
+    },
+    {
+      "novel_id": "22001006",
+      "raw_index": 30
+    }
+  ]
+}

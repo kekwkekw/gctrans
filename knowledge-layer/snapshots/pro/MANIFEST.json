@@ -1,0 +1,191 @@
+{
+  "manifest_scope": "all package files except MANIFEST.json itself",
+  "file_count_excluding_manifest": 37,
+  "files": [
+    {
+      "path": "README_KO.md",
+      "size_bytes": 2063,
+      "sha256": "fc4ac27a46b9017528c78143e6c6e8627b8631f146aab5f8639c294da48effa4"
+    },
+    {
+      "path": "REVIEW.html",
+      "size_bytes": 1750486,
+      "sha256": "bf2f10f2ab456ce1cec0ecdad683bea3d693792885829f8e908f5c9fa659da03"
+    },
+    {
+      "path": "audit/ANOMALY_WORKLOG.jsonl",
+      "size_bytes": 8752,
+      "sha256": "f3cb78d7daf2faa68f1f82afe000c05e9739ca7f439d66d7586f5d2de3103a02"
+    },
+    {
+      "path": "audit/ASSEMBLY_NOTE.json",
+      "size_bytes": 815,
+      "sha256": "5c4f073385092c90e049db40bc32e9fdf3e2e8f67e0e5156d1b53f91c682e6c9"
+    },
+    {
+      "path": "audit/AUTHORED_DECISIONS_WORKLOG.jsonl",
+      "size_bytes": 377067,
+      "sha256": "58ea478c54c1df76536f2823aff6fcb9a895517425a3ec9219c86e8e2e4b9dcb"
+    },
+    {
+      "path": "audit/HTML_DESKTOP.png",
+      "size_bytes": 97574,
+      "sha256": "409d5210ec3cbc1dd9adaf100c960a4b710901d19f1d54decf12b5d73bfee791"
+    },
+    {
+      "path": "audit/HTML_MOBILE.png",
+      "size_bytes": 61285,
+      "sha256": "3ab5315d937617543ad28b8e6a70725b3e8b9224e2fb25ba618e4a0684ead8e5"
+    },
+    {
+      "path": "audit/HTML_TEST.stderr.txt",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "audit/HTML_TEST.stdout.txt",
+      "size_bytes": 832,
+      "sha256": "0eabd131273edf68b421b8c0e9f62e07b6b7e26d240aa9f3e2b191b688f7f1ce"
+    },
+    {
+      "path": "audit/HTML_VALIDATION.json",
+      "size_bytes": 2370,
+      "sha256": "4a4330d722de29cc01bb58c97a85b7d7357bf44c95035058a441a0fc1c80cd00"
+    },
+    {
+      "path": "audit/INPUT_IMMUTABILITY.json",
+      "size_bytes": 929,
+      "sha256": "8534bbb3c4819632fa6bfd661bff620fc3ff11d8a79192babb3f4b49cea9af33"
+    },
+    {
+      "path": "audit/INPUT_PREFLIGHT.json",
+      "size_bytes": 600,
+      "sha256": "ffdf01e613e42477d7bf9deb408fce4f8f67ce12e1968be126dc1027453afab9"
+    },
+    {
+      "path": "audit/PRELIMINARY_VALIDATION_SCOPE_MISMATCH.json",
+      "size_bytes": 3719,
+      "sha256": "6843d81ac1badc15fab8e052e59bc8e0fd6ab54559e28d9acf1d3b98cbeaffb4"
+    },
+    {
+      "path": "audit/R36_PARENT_VERIFIER_ACTUAL.json",
+      "size_bytes": 7234,
+      "sha256": "40f3e85be71053565191feee21f941b750c087bbc9a5423b4a690f68e55c9648"
+    },
+    {
+      "path": "audit/REVIEW_SCOPE.json",
+      "size_bytes": 33536,
+      "sha256": "ff8ccef20d91c1f9682d22ac593b771c6a896856e78144acbb531a80fbfb7ad9"
+    },
+    {
+      "path": "audit/SOURCE_COMPARISON_LOG_1019.jsonl",
+      "size_bytes": 491141,
+      "sha256": "00340e2fc2c7045df897217ea9cdb224a4d3d6b80b2b908bbd52f6418296efd8"
+    },
+    {
+      "path": "audit/STRUCTURE_VALIDATION.json",
+      "size_bytes": 3719,
+      "sha256": "44ac4df75856e8292ada7099efc1db1d68b1a61da21d6d44ee14cbc78a71be09"
+    },
+    {
+      "path": "audit/STRUCTURE_VALIDATION.stderr.txt",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "audit/reviewer_reason_revisions.jsonl",
+      "size_bytes": 597,
+      "sha256": "e593ecfd3f61cd6587df6e9b413ffc3d4ecf4ca0ba8f6b65d7555c226a5d656a"
+    },
+    {
+      "path": "evidence/EXTERNAL_CHECKS.json",
+      "size_bytes": 1483,
+      "sha256": "e0fea3353e9852217f6ff74eaf672e49eef344fe2e4b903fed3441f87332dd48"
+    },
+    {
+      "path": "evidence/HELD_BOUNDARIES.json",
+      "size_bytes": 1121,
+      "sha256": "5458933406134d3c4403631663b9d84019b4d3d5437ec2bdbbffa5e30a315619"
+    },
+    {
+      "path": "evidence/MAIN_M1_EXCLUDED_668.jsonl",
+      "size_bytes": 218918,
+      "sha256": "922cbd0d1071ca5e4af3d81eb9690afca7aa50ae27f89e5d18f7e184b492a4c8"
+    },
+    {
+      "path": "evidence/ORIGINAL_PROPOSALS_1019.jsonl",
+      "size_bytes": 1306129,
+      "sha256": "640bfe1848813131255bd8ca0530de8b75c87928473829f8f629b7bc7c9516ff"
+    },
+    {
+      "path": "evidence/SOURCE_ROWS.jsonl",
+      "size_bytes": 1155107,
+      "sha256": "11a14fff6e8c971077abc90875ef28fa30b1ea5786c6ec21b90f67443870ea07"
+    },
+    {
+      "path": "records/ADDITIONAL_SEMANTIC_LINKS.json",
+      "size_bytes": 799,
+      "sha256": "bc896141e41a2df2a8e1ac9fa7d6408bf6524448dd797b5d5b3d8c1966dede49"
+    },
+    {
+      "path": "records/ADJUDICATIONS_1019.jsonl",
+      "size_bytes": 4092305,
+      "sha256": "0fec62ae9ecf6f02c658bdc24a6817731a815d5d5c0a96945da4c32ae3c461e5"
+    },
+    {
+      "path": "records/COMPOSITION_PREVIEWS_954.jsonl",
+      "size_bytes": 686197,
+      "sha256": "3e302ff0d5fad8e2f7c3d8c46117a1babf01460101eb6925e91b32a6bbf94435"
+    },
+    {
+      "path": "records/DEPENDENCY_GROUPS_17.json",
+      "size_bytes": 9788,
+      "sha256": "5e0837c587fd74aa13aaa80d5d12f3c35f3cada72c5fe58552b99167d564d454"
+    },
+    {
+      "path": "records/INHERITED_EDITORIAL_RESIDUAL.json",
+      "size_bytes": 611,
+      "sha256": "e0f717da9b1a733a8780294c4f9811d82d0e18f7ab3809313dbff1498a69da5f"
+    },
+    {
+      "path": "records/SOURCE_ANOMALIES_13.jsonl",
+      "size_bytes": 29545,
+      "sha256": "ee916d6bd2a33046ffc57c8a513a448755a286b7ad8fee5386128160850c87e3"
+    },
+    {
+      "path": "reports/COMPLETION.json",
+      "size_bytes": 840,
+      "sha256": "92fff2e45f660591dd275c0be7a062e3c9cfc0ad9eda66130cedbd350217c702"
+    },
+    {
+      "path": "reports/COUNTS.json",
+      "size_bytes": 2289,
+      "sha256": "a6f462f8e13450dcb2c029aa78b8c591a8eebfec30c63d813b643746f6da6835"
+    },
+    {
+      "path": "reports/NEXT_STEP.json",
+      "size_bytes": 678,
+      "sha256": "7c62d3bdaa848154b8f4efaff9c03aa73a146abafd6fb000d3be46b8a8ad79cb"
+    },
+    {
+      "path": "reports/PROVENANCE.json",
+      "size_bytes": 840,
+      "sha256": "00538f2692b9bd0e4e894c59caeb5d07e974c7b21f81e4a7c6c2ffd82cdb5415"
+    },
+    {
+      "path": "reports/REPORT_KO.md",
+      "size_bytes": 25651,
+      "sha256": "a72ce7c21ea5be6d497908a00144dc95a92b485c8df7cf4df6a0f2f037d37e32"
+    },
+    {
+      "path": "reports/USER_ACCEPTANCE_BRIEF_KO.md",
+      "size_bytes": 10191,
+      "sha256": "93e95521e11493f96130433f9fe3840fc892368823ebdef72c5c6df5f9fb4c32"
+    },
+    {
+      "path": "verify_adjudication.py",
+      "size_bytes": 15736,
+      "sha256": "ca952d3302f5964db9bd988ba197cf63c98e82fe75d1faeae9798429caa701e3"
+    }
+  ]
+}

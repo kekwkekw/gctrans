@@ -1,0 +1,20 @@
+{
+  "all_cumulative_proposals": 1687,
+  "main_m1_historical_dispositions": 668,
+  "post_r36_user_decisions": 1019,
+  "all_proposals_with_disposition_or_user_decision": 1687,
+  "post_r36": {
+    "approve_original": 987,
+    "approve_amended": 6,
+    "keep_observed": 23,
+    "note_policy_approved": 3,
+    "effective_story_body_changes_pending_export": 996,
+    "decision_open": 0
+  },
+  "source_anomalies_carried": 13,
+  "source_anomalies_official_current_verified": 0,
+  "source_mutations_authorized": 0,
+  "inherited_explicit_holds": 12,
+  "active_semantic_queue": 0,
+  "r36_reviewed_items": 707
+}

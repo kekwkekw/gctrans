@@ -1,0 +1,382 @@
+[
+  {
+    "pair_id": "character_pair:4010401",
+    "novel_ids": [
+      "40104011",
+      "40104012"
+    ],
+    "review_stage": "R22_PAIR_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "그림 배포 사과에서 밤 소리 추적으로 연결된다. 요괴·저주 가설은 실제 조각 행위·자백과 분리하고 예정 작품을 완성된 적으로 만들지 않았다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40104011",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "40104011",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "40104011",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "40104011",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "40104011",
+        "raw_index": 82
+      },
+      {
+        "novel_id": "40104012",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "40104012",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "40104012",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "40104012",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "40104012",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "40104012",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "40104012",
+        "raw_index": 76
+      }
+    ],
+    "evidence_ids": [
+      "ev:r22:40104011:0031",
+      "ev:r22:40104011:0060",
+      "ev:r22:40104011:0068",
+      "ev:r22:40104011:0075",
+      "ev:r22:40104011:0082",
+      "ev:r22:40104012:0025",
+      "ev:r22:40104012:0026",
+      "ev:r22:40104012:0051",
+      "ev:r22:40104012:0053",
+      "ev:r22:40104012:0057",
+      "ev:r22:40104012:0066",
+      "ev:r22:40104012:0076"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  },
+  {
+    "pair_id": "character_pair:4010402",
+    "novel_ids": [
+      "40104021",
+      "40104022"
+    ],
+    "review_stage": "R22_PAIR_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "같은 모녀의 재방문과 새 만쥬를 확인했다. 아이 거짓말·관장의 선의 추측·세키엔의 관장 오인을 분리하고 자백 이후 반성과 위로까지 대조했다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40104021",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "40104021",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "40104021",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "40104021",
+        "raw_index": 111
+      },
+      {
+        "novel_id": "40104021",
+        "raw_index": 115
+      },
+      {
+        "novel_id": "40104021",
+        "raw_index": 118
+      },
+      {
+        "novel_id": "40104022",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "40104022",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "40104022",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "40104022",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "40104022",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "40104022",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "40104022",
+        "raw_index": 50
+      }
+    ],
+    "evidence_ids": [
+      "ev:r22:40104021:0044",
+      "ev:r22:40104021:0079",
+      "ev:r22:40104021:0080",
+      "ev:r22:40104021:0111",
+      "ev:r22:40104021:0115",
+      "ev:r22:40104021:0118",
+      "ev:r22:40104022:0015",
+      "ev:r22:40104022:0016",
+      "ev:r22:40104022:0018",
+      "ev:r22:40104022:0020",
+      "ev:r22:40104022:0022",
+      "ev:r22:40104022:0042",
+      "ev:r22:40104022:0050"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  },
+  {
+    "pair_id": "character_pair:4010403",
+    "novel_ids": [
+      "40104031",
+      "40104032"
+    ],
+    "review_stage": "R22_PAIR_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "자기 마력 소동→동의한 훈련→실전 구조를 구분했다. 제한된 능력을 무제한으로 만들지 않고 마지막 독백은 관장에게 들리지 않은 상태로 유지했다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40104031",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "40104031",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "40104031",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "40104031",
+        "raw_index": 99
+      },
+      {
+        "novel_id": "40104031",
+        "raw_index": 106
+      },
+      {
+        "novel_id": "40104031",
+        "raw_index": 107
+      },
+      {
+        "novel_id": "40104031",
+        "raw_index": 118
+      },
+      {
+        "novel_id": "40104031",
+        "raw_index": 119
+      },
+      {
+        "novel_id": "40104031",
+        "raw_index": 126
+      },
+      {
+        "novel_id": "40104032",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "40104032",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "40104032",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "40104032",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "40104032",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "40104032",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "40104032",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "40104032",
+        "raw_index": 67
+      }
+    ],
+    "evidence_ids": [
+      "ev:r22:40104031:0047",
+      "ev:r22:40104031:0048",
+      "ev:r22:40104031:0053",
+      "ev:r22:40104031:0099",
+      "ev:r22:40104031:0106",
+      "ev:r22:40104031:0107",
+      "ev:r22:40104031:0118",
+      "ev:r22:40104031:0119",
+      "ev:r22:40104031:0126",
+      "ev:r22:40104032:0002",
+      "ev:r22:40104032:0026",
+      "ev:r22:40104032:0039",
+      "ev:r22:40104032:0040",
+      "ev:r22:40104032:0062",
+      "ev:r22:40104032:0065",
+      "ev:r22:40104032:0066",
+      "ev:r22:40104032:0067"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  },
+  {
+    "pair_id": "character_pair:4010406",
+    "novel_ids": [
+      "40104061",
+      "40104062"
+    ],
+    "review_stage": "R22_PAIR_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "주문자는 세키엔이며 수송 피해 전언·인간 개입 추론·잠입 거짓말·부분 회수·별도 답례를 연결했다. 새 술 평가 유보와 직접 호감을 서로 다른 진술로 보존했다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40104061",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "40104061",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "40104061",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "40104061",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "40104062",
+        "raw_index": 76
+      }
+    ],
+    "evidence_ids": [
+      "ev:r22:40104061:0020",
+      "ev:r22:40104061:0042",
+      "ev:r22:40104061:0054",
+      "ev:r22:40104061:0056",
+      "ev:r22:40104062:0025",
+      "ev:r22:40104062:0047",
+      "ev:r22:40104062:0050",
+      "ev:r22:40104062:0052",
+      "ev:r22:40104062:0053",
+      "ev:r22:40104062:0054",
+      "ev:r22:40104062:0057",
+      "ev:r22:40104062:0071",
+      "ev:r22:40104062:0075",
+      "ev:r22:40104062:0076"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  }
+]

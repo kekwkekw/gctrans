@@ -1,0 +1,109 @@
+{
+  "files_excluding_manifest": [
+    {
+      "path": "FINDINGS.json",
+      "size": 1970,
+      "sha256": "18e3fe42f7247f865144595ab9280890ae25d57f6490b6f32257c2ac3557ab8a"
+    },
+    {
+      "path": "README_KO.md",
+      "size": 1469,
+      "sha256": "cccd75a771acdcf4fb11cd9d057ebe73b89c01a1692fe9e5c1170236c5757675"
+    },
+    {
+      "path": "REPORT_KO.md",
+      "size": 12136,
+      "sha256": "22c3d8985185bd3445edfc75b4355b0544a7206e11aac250b5ea77137ef6c96f"
+    },
+    {
+      "path": "REVIEW_RESULT.json",
+      "size": 2258,
+      "sha256": "0f1567906d00fb45d02b693272a620daf80b15d26e27ddb513ed06331d2f8edd"
+    },
+    {
+      "path": "audit/EXPECTED_CANDIDATE.json",
+      "size": 90196,
+      "sha256": "0fa7423afa933e3aa8b245efba800932bc5e7a21b87b8f3304b5a19f41b8f495"
+    },
+    {
+      "path": "audit/FINAL_PR_STATE.json",
+      "size": 642,
+      "sha256": "7958496567126b6cea40719c4d14a638de4ed2a9083f7bf4013b3faf2b6581c9"
+    },
+    {
+      "path": "audit/FRESH_REMOTE_BLOB_CHECKS.json",
+      "size": 3162,
+      "sha256": "da66586da4e75171533cdd83e20f0516e0d913a12da384112445b8aecd144a4b"
+    },
+    {
+      "path": "audit/INPUT_IDENTITIES.json",
+      "size": 942,
+      "sha256": "6a4f87916d35af2e65f8827e513ac5c434287c6b2f5f5c15fcede0924b3fcb2c"
+    },
+    {
+      "path": "audit/INPUT_IMMUTABILITY.json",
+      "size": 734,
+      "sha256": "93a6ac6afe43f4bfb21223d809314c14e31a2d55282f6a4351a4cb6a530cf6cd"
+    },
+    {
+      "path": "audit/LEGACY_CANDIDATE_VERIFIER_FAILURE.json",
+      "size": 403,
+      "sha256": "604860c044bbccc9c8b684ba815e4a21276ff91e38fad5fab49d614d3877e297"
+    },
+    {
+      "path": "audit/NEGATIVE_TEST.json",
+      "size": 211,
+      "sha256": "bbe4a7d83df80f03f5b2c64fb325e8f4793ebe920687a639a3e229c951da9085"
+    },
+    {
+      "path": "audit/PROTECTION_CHECKS.json",
+      "size": 11491,
+      "sha256": "237cf3b7a9088fedf44cf5e0ebc3b5de8f2283b5c0f23e65a765f3b0381faeef"
+    },
+    {
+      "path": "audit/STANDALONE_PROCESS_RECEIPT.json",
+      "size": 711,
+      "sha256": "8e9498bbb3159721eff54d35bff1165c40601e6151984186a2bc46f7708afbd9"
+    },
+    {
+      "path": "audit/STANDALONE_VERIFIER_RESULT.json",
+      "size": 536,
+      "sha256": "cf65ea0ccdde95aec7ef82b977368619ed76fc0044c5eb37a4b279a2c3a88b9e"
+    },
+    {
+      "path": "audit/VERIFIER_FIRST_RUN_ENVIRONMENT_NOTE.json",
+      "size": 1016,
+      "sha256": "14ac044ac0bc258f195aabc654f8f1d9f5679ef2a3d3d1fd33c6f5c99d7269b6"
+    },
+    {
+      "path": "records/FOCUSED_REVIEW_LOG.jsonl",
+      "size": 24889,
+      "sha256": "da33c99eee6bfc654970506f174f920327da8b9bea2307f8f75b7d3930347003"
+    },
+    {
+      "path": "records/INDEPENDENT_ROW_RECONSTRUCTION.jsonl",
+      "size": 6074117,
+      "sha256": "0443fe052a21022ee5d2c6a9f4c473a1aaf8359ee291e9667122f8f89afed90a"
+    },
+    {
+      "path": "records/NOTE_SEPARATION_3.json",
+      "size": 1243,
+      "sha256": "e0a3258781b7f4c26dd200ffe04bafab8520c3c780e111d16f4b3bd0b857ba83"
+    },
+    {
+      "path": "records/SEMANTIC_APPLICATIONS_996.jsonl",
+      "size": 336732,
+      "sha256": "800ed345886d70b51720a67d299b4b052272c35eaec21686d08927e1b2311dcb"
+    },
+    {
+      "path": "records/VOCAL_LENGTHENING_62.json",
+      "size": 9920,
+      "sha256": "0ed97e1fcada4dfb1defb20c3a99e161a81a3bfcb6ae642d1f2d8c217bcfd376"
+    },
+    {
+      "path": "tools/verify_candidate_readonly.py",
+      "size": 6697,
+      "sha256": "451d6135aa5e34ee7fa0bfbe8ba0ad1335a87b2b8fe78ddcc30f56631d555b11"
+    }
+  ]
+}

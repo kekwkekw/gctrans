@@ -1,0 +1,32 @@
+{
+  "review_round": "R5_10010201",
+  "novel_id": "10010201",
+  "chapter": 2,
+  "episode": 1,
+  "title_jp": "忍び寄る魔手",
+  "title_ko_original": "살며시 다가오는 마의 손",
+  "body_rows_reviewed": 70,
+  "title_rows_reviewed": 1,
+  "alignment_groups_reviewed": 68,
+  "generic_queue_groups_completed": 66,
+  "previous_boundary_reviewed_rows_now_semantically_reviewed": [
+    24,
+    25,
+    33,
+    34
+  ],
+  "new_findings": 7,
+  "clear_meaning_or_target_corrections": 2,
+  "modality_preservation_recommendations": 1,
+  "orthography_or_particle_corrections": 4,
+  "new_annotation_separation_proposals": 0,
+  "major_semantic_omissions_found": 0,
+  "title_correction_proposals": 0,
+  "style_observations_not_forced_to_edits": 1,
+  "format_observations_not_semantic_omissions": 1,
+  "body_rows_with_no_correction_proposal": 63,
+  "all_edits_unapplied": true,
+  "publish_ready": false,
+  "runtime_verified": false,
+  "review_note_ko": "본문 raw1~70 및 제목 raw0를 모두 대조했다. 손번역의 어색한 표현을 무조건 자연화하지 않았고, 59행 초면 인사의 존대→반말 전환은 관찰만 남겼다. 58행 click 태그는 포맷 QA로 분리했다. 발견하지 못한 오류가 없음을 보증하는 최종 승인/실기 검증은 아니다."
+}

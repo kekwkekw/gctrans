@@ -1,0 +1,32 @@
+[
+  {
+    "file": "gc_POST_R36_EXPORT_APPLY_CANDIDATE_v1_2_HOLD_PLACEHOLDERS.zip",
+    "sha256": "72a19cfdf351ba4f4c3c6b07e3c285bca7241ce15efd5069228c2a9cef7a3708",
+    "bytes": 3125551,
+    "files": 357
+  },
+  {
+    "file": "gc_POST_R36_PRO_ADJUDICATION_v1.zip",
+    "sha256": "c968d1861122e2306da73ea77d2b421a0c0b082967895ed7c75a242cb6cbf172",
+    "bytes": 1961410,
+    "files": 38
+  },
+  {
+    "file": "gc_POST_R36_MEANING_BASELINE_v1_0.zip",
+    "sha256": "41b503cd48948558ac24644902ff68d02474882afc1012e2b94a0f72d146164d",
+    "bytes": 848292,
+    "files": 22
+  },
+  {
+    "file": "gc_POST_R36_EDITORIAL_CHANGESET_v1_0.zip",
+    "sha256": "afe9ca955aee5ab219990bddb72f0c63262930fe9890b65be45b371de7324535",
+    "bytes": 4393022,
+    "files": 21
+  },
+  {
+    "file": "gc_POST_R36_EDITORIAL_POLICY_PRO_v1_0.zip",
+    "sha256": "20f2e1cd7dd702eba1096905f472ec94e31f466b7dbb16559ce23b571bb07bea",
+    "bytes": 3350896,
+    "files": 36
+  }
+]

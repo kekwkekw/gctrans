@@ -1,0 +1,359 @@
+{
+  "status": "PASS",
+  "check_count": 86,
+  "passed": 86,
+  "failed": 0,
+  "exceptions": [],
+  "checks": [
+    {
+      "check": "parent_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "checkpoint_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "scope_order_complete_episodes",
+      "status": "PASS"
+    },
+    {
+      "check": "row_counts",
+      "status": "PASS"
+    },
+    {
+      "check": "source_rows_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_hashes_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "title_rows_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "body_spans_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "catalog_counts_actual",
+      "status": "PASS"
+    },
+    {
+      "check": "catalog_source_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "no_translation_or_approval",
+      "status": "PASS"
+    },
+    {
+      "check": "evidence_unique",
+      "status": "PASS"
+    },
+    {
+      "check": "evidence_exact_original",
+      "status": "PASS"
+    },
+    {
+      "check": "evidence_hashes_and_spans",
+      "status": "PASS"
+    },
+    {
+      "check": "row_notes_complete",
+      "status": "PASS"
+    },
+    {
+      "check": "row_notes_source_binding",
+      "status": "PASS"
+    },
+    {
+      "check": "row_anchor_binding",
+      "status": "PASS"
+    },
+    {
+      "check": "speakers_and_targets_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "hearing_not_overpromoted",
+      "status": "PASS"
+    },
+    {
+      "check": "proposal_ids_no_duplicates",
+      "status": "PASS"
+    },
+    {
+      "check": "inherited_proposals_immutable",
+      "status": "PASS"
+    },
+    {
+      "check": "proposal_preimages_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "proposal_span_within_source",
+      "status": "PASS"
+    },
+    {
+      "check": "proposal_scope_evidence",
+      "status": "PASS"
+    },
+    {
+      "check": "proposal_flags_not_approved",
+      "status": "PASS"
+    },
+    {
+      "check": "proposal_anchor_decisions",
+      "status": "PASS"
+    },
+    {
+      "check": "proposal_preview_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "candidate_nonoverlap_including_legacy",
+      "status": "PASS"
+    },
+    {
+      "check": "legacy_reconfirmation_hash_scopes",
+      "status": "PASS"
+    },
+    {
+      "check": "findings_linked_and_counted",
+      "status": "PASS"
+    },
+    {
+      "check": "row_finding_links_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "queue_exact_subtraction",
+      "status": "PASS"
+    },
+    {
+      "check": "queue_counts_match",
+      "status": "PASS"
+    },
+    {
+      "check": "queue_state_ids_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "holds_immutable",
+      "status": "PASS"
+    },
+    {
+      "check": "holds_queue_partition",
+      "status": "PASS"
+    },
+    {
+      "check": "outside_queue_body_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "resume_scope_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "first_unfinished_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "completion_not_overclaimed",
+      "status": "PASS"
+    },
+    {
+      "check": "provenance_completion_match",
+      "status": "PASS"
+    },
+    {
+      "check": "post_r36_not_executed",
+      "status": "PASS"
+    },
+    {
+      "check": "events_match_reviewed_scopes",
+      "status": "PASS"
+    },
+    {
+      "check": "contracts_evidence_and_boundary",
+      "status": "PASS"
+    },
+    {
+      "check": "inherited_knowledge_immutable",
+      "status": "PASS"
+    },
+    {
+      "check": "knowledge_counts_actual",
+      "status": "PASS"
+    },
+    {
+      "check": "knowledge_ids_unique",
+      "status": "PASS"
+    },
+    {
+      "check": "new_knowledge_status_scope",
+      "status": "PASS"
+    },
+    {
+      "check": "new_knowledge_evidence_resolves",
+      "status": "PASS"
+    },
+    {
+      "check": "new_term_enums",
+      "status": "PASS"
+    },
+    {
+      "check": "new_terms_context_only",
+      "status": "PASS"
+    },
+    {
+      "check": "existing_approval_conflicts_policy_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "speaker_entities_resolve",
+      "status": "PASS"
+    },
+    {
+      "check": "audience_entities_resolve",
+      "status": "PASS"
+    },
+    {
+      "check": "local_no_global_merge",
+      "status": "PASS"
+    },
+    {
+      "check": "contexts_preserved_plus_current",
+      "status": "PASS"
+    },
+    {
+      "check": "new_context_coverage",
+      "status": "PASS"
+    },
+    {
+      "check": "source_anomalies_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "source_anomalies_not_autofixed",
+      "status": "PASS"
+    },
+    {
+      "check": "editorial_only_deferred",
+      "status": "PASS"
+    },
+    {
+      "check": "approval_runtime_github_boundaries",
+      "status": "PASS"
+    },
+    {
+      "check": "new_rows_exact_707_and_outside100",
+      "status": "PASS"
+    },
+    {
+      "check": "queue_partition_per_episode",
+      "status": "PASS"
+    },
+    {
+      "check": "new_proposals_match_cumulative_tail",
+      "status": "PASS"
+    },
+    {
+      "check": "proposal_counts_actual",
+      "status": "PASS"
+    },
+    {
+      "check": "all_new_evidence_unapproved",
+      "status": "PASS"
+    },
+    {
+      "check": "all_new_terms_attested",
+      "status": "PASS"
+    },
+    {
+      "check": "existing_entities_profiles_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "no_new_schema_or_status_enum",
+      "status": "PASS"
+    },
+    {
+      "check": "source_anomaly_exact_and_separate",
+      "status": "PASS"
+    },
+    {
+      "check": "no_new_editorial_or_holds",
+      "status": "PASS"
+    },
+    {
+      "check": "review_status_matches_candidates",
+      "status": "PASS"
+    },
+    {
+      "check": "narration_and_inner_mode_boundaries",
+      "status": "PASS"
+    },
+    {
+      "check": "clause_audiences_and_hearing_evidence",
+      "status": "PASS"
+    },
+    {
+      "check": "contract_ids_and_cross_event_timeline",
+      "status": "PASS"
+    },
+    {
+      "check": "event_totals_and_completion",
+      "status": "PASS"
+    },
+    {
+      "check": "next_scope_has_no_r36_restart",
+      "status": "PASS"
+    },
+    {
+      "check": "actual_mutation_receipt_pass",
+      "status": "PASS"
+    },
+    {
+      "check": "actual_reader_receipt_pass",
+      "status": "PASS"
+    },
+    {
+      "check": "actual_html_receipt_pass",
+      "status": "PASS"
+    },
+    {
+      "check": "parent_files_preserved_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest_all_hashes_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest_membership_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "file_paths_safe",
+      "status": "PASS"
+    },
+    {
+      "check": "active_paths_exist",
+      "status": "PASS"
+    },
+    {
+      "check": "source_reader_bound",
+      "status": "PASS"
+    }
+  ],
+  "reviewed_items": 707,
+  "partial": false,
+  "limitations": [
+    "Structural and traceability checks do not prove every linguistic judgement correct.",
+    "No user acceptance, Windows/game runtime, external publication or durable delivery proof."
+  ]
+}

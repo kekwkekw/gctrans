@@ -1,0 +1,233 @@
+{
+  "release_id": "GC-MAIN-M1",
+  "release_date": "2026-09-17",
+  "source_checkpoint": "gc_r21_character05.zip",
+  "source_checkpoint_sha256": "f6da7d339c183aeb283f449ed67a32e06bdf9657767c05399c2351a2b88b9ff7",
+  "release_candidate": "GC-MAIN-M1-RC1",
+  "release_candidate_sha256": "4d13741e456d60c19a9d2d98f17ce0a3ca1ba9f638eb0bf5ba62423aadd1067c",
+  "rollback_base_commit": "b5dcc8e3e034f7bbc1d596ab43043eacc206c380",
+  "scope": {
+    "novel_files": 137,
+    "source_entries": 8487,
+    "runtime_keys": 8428,
+    "main_chapters": "1-11",
+    "tutorials": 2,
+    "interludes": 19,
+    "battle_included": false,
+    "deferred_rows": 0
+  },
+  "runtime_smoke": {
+    "status": "PASS",
+    "verified_by_user": true,
+    "checks": [
+      {
+        "novel_id": "10010101",
+        "checks": [
+          "title",
+          "opening",
+          "multi-JP span",
+          "click dictionary open"
+        ]
+      },
+      {
+        "novel_id": "10010102",
+        "checks": [
+          "duplicate exact key at raw47/raw64"
+        ]
+      },
+      {
+        "novel_id": "99900001",
+        "checks": [
+          "duplicate silence exact key at raw69/raw70"
+        ]
+      },
+      {
+        "novel_id": "99900002",
+        "checks": [
+          "titleless tutorial body"
+        ]
+      },
+      {
+        "novel_id": "11010101",
+        "checks": [
+          "new interlude title"
+        ]
+      },
+      {
+        "novel_id": "10010603",
+        "checks": [
+          "ruby rendering"
+        ]
+      }
+    ],
+    "not_required_for_gate": [
+      "11010902 queue-zero interlude runtime spot-check",
+      "10010903 second ruby spot-check"
+    ]
+  },
+  "known_followups": [
+    {
+      "id": "scenario_choices",
+      "status": "OPEN",
+      "summary": "GCMod does not currently translate scenario choice labels before XUnity typewriter interception; add a choice hook without changing branch IDs."
+    },
+    {
+      "id": "click_dictionary_body",
+      "status": "OPEN",
+      "summary": "Click dictionary title/description currently falls through to XUnity; investigate CDN/master source and direct GCMod translation."
+    },
+    {
+      "id": "ruby_reading_localization",
+      "status": "OPEN",
+      "summary": "Two ruby reading attributes intentionally retain Japanese readings; decide later whether Korean readings should replace them."
+    },
+    {
+      "id": "pipeline_v2",
+      "status": "PLANNED",
+      "summary": "Legacy crawler/LM Studio/merge workflow is temporary and will be replaced after glossary/Knowledge Layer finalization."
+    }
+  ],
+  "novel_ids": [
+    "10010101",
+    "10010102",
+    "10010103",
+    "10010104",
+    "10010105",
+    "10010106",
+    "10010107",
+    "10010108",
+    "10010109",
+    "10010110",
+    "10010111",
+    "10010112",
+    "10010113",
+    "10010114",
+    "10010201",
+    "10010202",
+    "10010203",
+    "10010204",
+    "10010205",
+    "10010206",
+    "10010207",
+    "10010208",
+    "10010209",
+    "10010210",
+    "10010301",
+    "10010302",
+    "10010303",
+    "10010304",
+    "10010305",
+    "10010306",
+    "10010307",
+    "10010308",
+    "10010309",
+    "10010310",
+    "10010311",
+    "10010401",
+    "10010402",
+    "10010403",
+    "10010404",
+    "10010405",
+    "10010406",
+    "10010407",
+    "10010408",
+    "10010409",
+    "10010410",
+    "10010501",
+    "10010502",
+    "10010503",
+    "10010504",
+    "10010505",
+    "10010506",
+    "10010507",
+    "10010508",
+    "10010509",
+    "10010510",
+    "10010601",
+    "10010602",
+    "10010603",
+    "10010604",
+    "10010605",
+    "10010606",
+    "10010607",
+    "10010608",
+    "10010609",
+    "10010610",
+    "10010701",
+    "10010702",
+    "10010703",
+    "10010704",
+    "10010705",
+    "10010706",
+    "10010707",
+    "10010708",
+    "10010709",
+    "10010710",
+    "10010801",
+    "10010802",
+    "10010803",
+    "10010804",
+    "10010805",
+    "10010806",
+    "10010807",
+    "10010808",
+    "10010809",
+    "10010810",
+    "10010811",
+    "10010901",
+    "10010902",
+    "10010903",
+    "10010904",
+    "10010905",
+    "10010906",
+    "10010907",
+    "10010908",
+    "10010909",
+    "10010910",
+    "10011001",
+    "10011002",
+    "10011003",
+    "10011004",
+    "10011005",
+    "10011006",
+    "10011007",
+    "10011008",
+    "10011009",
+    "10011010",
+    "10011101",
+    "10011102",
+    "10011103",
+    "10011104",
+    "10011105",
+    "10011106",
+    "10011107",
+    "10011108",
+    "10011109",
+    "10011110",
+    "11010101",
+    "11010201",
+    "11010301",
+    "11010401",
+    "11010501",
+    "11010601",
+    "11010701",
+    "11010801",
+    "11010802",
+    "11010803",
+    "11010804",
+    "11010805",
+    "11010901",
+    "11010902",
+    "11010903",
+    "11010904",
+    "11010905",
+    "11011001",
+    "11011101",
+    "99900001",
+    "99900002"
+  ],
+  "notes": [
+    "R22 remains deferred until this production release is closed.",
+    "Legacy scheduled auto-translation is disabled in this release; manual workflow remains only as fallback until pipeline v2."
+  ]
+}

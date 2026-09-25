@@ -1,0 +1,3334 @@
+[
+  {
+    "contract_id": "contract:r34r:exhibition_and_rejected_entry",
+    "key": "exhibition_and_rejected_entry",
+    "source_locations": [
+      {
+        "novel_id": "22001601",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 58
+      }
+    ],
+    "observation_ko": "동물 모티프 기획전에는 시민 출품도 있지만 문제의 곰 그림은 선정품으로 확인되지 않는다. 남자는 출품 거절을 겪었고 도나텔로는 과거 감상과 위험한 제작 소문을 나눠 전한다.",
+    "blocked_overclaim_ko": "미선정 작품 보호를 선정 승인으로, 작품 감상을 객관 품질로, 위험 소문을 확인된 제작 사실로 만들지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001601"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001601:0005",
+      "ev:r34r:22001601:0010",
+      "ev:r34r:22001601:0014",
+      "ev:r34r:22001601:0015",
+      "ev:r34r:22001601:0022",
+      "ev:r34r:22001601:0023",
+      "ev:r34r:22001601:0024",
+      "ev:r34r:22001601:0050",
+      "ev:r34r:22001601:0052",
+      "ev:r34r:22001601:0054",
+      "ev:r34r:22001601:0056",
+      "ev:r34r:22001601:0057",
+      "ev:r34r:22001601:0058"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:raised_fist_intercepted",
+    "key": "raised_fist_intercepted",
+    "source_locations": [
+      {
+        "novel_id": "22001601",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 39
+      }
+    ],
+    "observation_ko": "남자가 그림을 때리려고 주먹을 치켜들고 관장이 팔을 잡아 막는다. 그림은 나중에 이 보호에 감사한다.",
+    "blocked_overclaim_ko": "주먹을 이미 휘둘러 그림을 때리거나 파손한 것으로 바꾸지 않는다. 가정된 파손을 실제 사건으로 세지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001601",
+      "event_story:22001603"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001601:0040",
+      "ev:r34r:22001601:0041",
+      "ev:r34r:22001601:0042",
+      "ev:r34r:22001601:0043",
+      "ev:r34r:22001601:0044",
+      "ev:r34r:22001601:0045",
+      "ev:r34r:22001603:0037",
+      "ev:r34r:22001603:0038",
+      "ev:r34r:22001603:0039"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:anger_art_conversion_evacuation",
+    "key": "anger_art_conversion_evacuation",
+    "source_locations": [
+      {
+        "novel_id": "22001601",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 74
+      }
+    ],
+    "observation_ko": "거절과 모욕 뒤 작품들이 죽음의 예술로 변하고 관장은 대피를 지시한다.",
+    "blocked_overclaim_ko": "모욕을 관장의 객관 능력 평가로 승인하지 않고, 대피 명령과 대피 완료를 구분한다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001601"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001601:0063",
+      "ev:r34r:22001601:0065",
+      "ev:r34r:22001601:0067",
+      "ev:r34r:22001601:0069",
+      "ev:r34r:22001601:0070",
+      "ev:r34r:22001601:0071",
+      "ev:r34r:22001601:0072",
+      "ev:r34r:22001601:0073",
+      "ev:r34r:22001601:0074"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:two_arrivals_two_disappearances",
+    "key": "two_arrivals_two_disappearances",
+    "source_locations": [
+      {
+        "novel_id": "22001601",
+        "raw_index": 81
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 82
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 83
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 85
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 89
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 96
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 98
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 99
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 100
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 103
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 104
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 105
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 106
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 108
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 111
+      }
+    ],
+    "observation_ko": "카틀레아와 요시노가 그림에서 나타나고 아르테·고흐가 빨려 들어간다. 남자는 뒤의 이동은 자신이 한 일이 아니라고 한다.",
+    "blocked_overclaim_ko": "두 방문자와 사라진 두 사람의 목적지를 일대일로 배정하거나 남자가 모든 현상을 통제했다고 하지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001601"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001601:0081",
+      "ev:r34r:22001601:0082",
+      "ev:r34r:22001601:0083",
+      "ev:r34r:22001601:0085",
+      "ev:r34r:22001601:0089",
+      "ev:r34r:22001601:0096",
+      "ev:r34r:22001601:0098",
+      "ev:r34r:22001601:0099",
+      "ev:r34r:22001601:0100",
+      "ev:r34r:22001601:0103",
+      "ev:r34r:22001601:0104",
+      "ev:r34r:22001601:0105",
+      "ev:r34r:22001601:0106",
+      "ev:r34r:22001601:0108",
+      "ev:r34r:22001601:0111"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:conditional_cattleya_help",
+    "key": "conditional_cattleya_help",
+    "source_locations": [
+      {
+        "novel_id": "22001601",
+        "raw_index": 121
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 122
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 130
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 131
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 132
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 133
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 134
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 136
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 137
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 138
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 140
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 141
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 142
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 156
+      }
+    ],
+    "observation_ko": "요시노가 협력하고 카틀레아는 처음 거리를 두다가 귀환 가능성의 위험을 듣고 사태 수습을 돕기로 한다.",
+    "blocked_overclaim_ko": "카틀레아의 처음부터 자발적인 무조건 협력·영구 합류를 만들지 않고 그림의 경고를 검증된 법칙으로 쓰지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001601"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001601:0121",
+      "ev:r34r:22001601:0122",
+      "ev:r34r:22001601:0130",
+      "ev:r34r:22001601:0131",
+      "ev:r34r:22001601:0132",
+      "ev:r34r:22001601:0133",
+      "ev:r34r:22001601:0134",
+      "ev:r34r:22001601:0136",
+      "ev:r34r:22001601:0137",
+      "ev:r34r:22001601:0138",
+      "ev:r34r:22001601:0140",
+      "ev:r34r:22001601:0141",
+      "ev:r34r:22001601:0142",
+      "ev:r34r:22001601:0156"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:villain_imagined_quote",
+    "key": "villain_imagined_quote",
+    "source_locations": [
+      {
+        "novel_id": "22001601",
+        "raw_index": 145
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 146
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 147
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 149
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 150
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 151
+      }
+    ],
+    "observation_ko": "남자는 미래에 관장이 칭찬하고 자기에게 매달릴 것이라 상상한다. 이어 자기 작품들에게 가세를 명령한다.",
+    "blocked_overclaim_ko": "상상 속 관장 발언을 실제 채용·칭찬 약속으로, 현재 관장을 해당 장면 청자로 만들지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001601"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001601:0145",
+      "ev:r34r:22001601:0146",
+      "ev:r34r:22001601:0147",
+      "ev:r34r:22001601:0149",
+      "ev:r34r:22001601:0150",
+      "ev:r34r:22001601:0151"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:names_shop_and_unknown_origins",
+    "key": "names_shop_and_unknown_origins",
+    "source_locations": [
+      {
+        "novel_id": "22001602",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 53
+      }
+    ],
+    "observation_ko": "요시노는 니시키의 소메이야에서 옷을 만드는 사람이라고 소개한다. 카틀레아는 그곳을 모른다. 서로 초면이며 이름 공개와 원래 화자 라벨은 별개다.",
+    "blocked_overclaim_ko": "니시키를 확정 국가로 덧붙이거나 소메이야를 사람인 재단사로 옮기지 않는다. 외부 작품 설정·숫자 연령을 보충하지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001602",
+      "event_story:22001606"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001602:0024",
+      "ev:r34r:22001602:0025",
+      "ev:r34r:22001602:0026",
+      "ev:r34r:22001602:0027",
+      "ev:r34r:22001602:0028",
+      "ev:r34r:22001602:0029",
+      "ev:r34r:22001602:0031",
+      "ev:r34r:22001602:0032",
+      "ev:r34r:22001602:0033",
+      "ev:r34r:22001602:0034",
+      "ev:r34r:22001602:0035",
+      "ev:r34r:22001602:0036",
+      "ev:r34r:22001606:0052",
+      "ev:r34r:22001606:0053"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:harmonia_analogy_revised",
+    "key": "harmonia_analogy_revised",
+    "source_locations": [
+      {
+        "novel_id": "22001601",
+        "raw_index": 94
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 95
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 96
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 48
+      }
+    ],
+    "observation_ko": "이전 하르모니아 교류와 비슷하다는 첫 판단은 방문자들의 서로 다른 출신과 초면 관계로 재검토된다.",
+    "blocked_overclaim_ko": "처음의 똑같다는 말을 끝까지 사실로 고정하거나 회상 인용의 쿠마리자를 현재 집무실 발화자로 넣지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001601",
+      "event_story:22001602"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001601:0094",
+      "ev:r34r:22001601:0095",
+      "ev:r34r:22001601:0096",
+      "ev:r34r:22001602:0027",
+      "ev:r34r:22001602:0029",
+      "ev:r34r:22001602:0041",
+      "ev:r34r:22001602:0042",
+      "ev:r34r:22001602:0043",
+      "ev:r34r:22001602:0044",
+      "ev:r34r:22001602:0045",
+      "ev:r34r:22001602:0047",
+      "ev:r34r:22001602:0048"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:protection_and_physical_distance",
+    "key": "protection_and_physical_distance",
+    "source_locations": [
+      {
+        "novel_id": "22001602",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 20
+      }
+    ],
+    "observation_ko": "로댕은 강한 힘으로부터 관장을 걱정하며 카틀레아는 가까우면 다칠 수 있다고 경고한다. 관장은 임시 보호를 제안하고 같은 동료 걱정에 호소한다.",
+    "blocked_overclaim_ko": "경고를 고의 공격 의도로, 보호 제안을 당사자의 무조건 동의로, 로댕의 잠정 이해를 완전한 경계 해제로 바꾸지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001602",
+      "event_story:22001603"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001602:0014",
+      "ev:r34r:22001602:0016",
+      "ev:r34r:22001602:0018",
+      "ev:r34r:22001602:0019",
+      "ev:r34r:22001602:0021",
+      "ev:r34r:22001602:0050",
+      "ev:r34r:22001602:0051",
+      "ev:r34r:22001602:0054",
+      "ev:r34r:22001602:0055",
+      "ev:r34r:22001602:0056",
+      "ev:r34r:22001602:0059",
+      "ev:r34r:22001602:0060",
+      "ev:r34r:22001602:0061",
+      "ev:r34r:22001602:0063",
+      "ev:r34r:22001602:0064",
+      "ev:r34r:22001602:0065",
+      "ev:r34r:22001603:0017",
+      "ev:r34r:22001603:0018",
+      "ev:r34r:22001603:0019",
+      "ev:r34r:22001603:0020"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:promised_return_and_private_fears",
+    "key": "promised_return_and_private_fears",
+    "source_locations": [
+      {
+        "novel_id": "22001602",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 85
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 86
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 88
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 89
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 90
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 91
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 92
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 93
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 94
+      }
+    ],
+    "observation_ko": "귀환 방법은 모르지만 관장이 돕겠다고 약속한다. 요시노의 밝음과 두려움, 카틀레아의 소중한 상대에 대한 속마음은 함께 존재한다.",
+    "blocked_overclaim_ko": "귀환 약속을 이행 완료로, 카틀레아 속생각을 다른 인물의 청취로 만들지 않는다. 관장이 든든해졌다는 말의 평가 방향을 유지한다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001602"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001602:0049",
+      "ev:r34r:22001602:0050",
+      "ev:r34r:22001602:0068",
+      "ev:r34r:22001602:0069",
+      "ev:r34r:22001602:0085",
+      "ev:r34r:22001602:0086",
+      "ev:r34r:22001602:0088",
+      "ev:r34r:22001602:0089",
+      "ev:r34r:22001602:0090",
+      "ev:r34r:22001602:0091",
+      "ev:r34r:22001602:0092",
+      "ev:r34r:22001602:0093",
+      "ev:r34r:22001602:0094"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:theft_report_address_and_split",
+    "key": "theft_report_address_and_split",
+    "source_locations": [
+      {
+        "novel_id": "22001602",
+        "raw_index": 95
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 96
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 98
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 99
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 102
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 103
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 106
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 108
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 111
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 112
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 113
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 114
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 115
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 116
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 117
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 118
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 119
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 120
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 121
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 122
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 124
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 125
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 126
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 129
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 131
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 134
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 135
+      }
+    ],
+    "observation_ko": "그림을 남자가 가져갔다는 보고와 공모 주소로 수색을 계획한다. 집은 관장·도나텔로·카틀레아, 거리는 로댕·요시노가 맡는다. 카틀레아는 판단권자의 위치가 분명한 편의성을 든다.",
+    "blocked_overclaim_ko": "추격 실패를 관장의 직접 목격으로, 楽를 즐거움으로, 친밀감에 관한 도나텔로의 추측을 확정된 카틀레아의 동기로 쓰지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001602"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001602:0095",
+      "ev:r34r:22001602:0096",
+      "ev:r34r:22001602:0098",
+      "ev:r34r:22001602:0099",
+      "ev:r34r:22001602:0102",
+      "ev:r34r:22001602:0103",
+      "ev:r34r:22001602:0106",
+      "ev:r34r:22001602:0108",
+      "ev:r34r:22001602:0111",
+      "ev:r34r:22001602:0112",
+      "ev:r34r:22001602:0113",
+      "ev:r34r:22001602:0114",
+      "ev:r34r:22001602:0115",
+      "ev:r34r:22001602:0116",
+      "ev:r34r:22001602:0117",
+      "ev:r34r:22001602:0118",
+      "ev:r34r:22001602:0119",
+      "ev:r34r:22001602:0120",
+      "ev:r34r:22001602:0121",
+      "ev:r34r:22001602:0122",
+      "ev:r34r:22001602:0124",
+      "ev:r34r:22001602:0125",
+      "ev:r34r:22001602:0126",
+      "ev:r34r:22001602:0129",
+      "ev:r34r:22001602:0131",
+      "ev:r34r:22001602:0134",
+      "ev:r34r:22001602:0135"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:villain_belief_not_robot_ontology",
+    "key": "villain_belief_not_robot_ontology",
+    "source_locations": [
+      {
+        "novel_id": "22001603",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 89
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 94
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 95
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 102
+      }
+    ],
+    "observation_ko": "남자는 로봇을 신의 사자로 믿고 자신이 부릴 자격이 있다고 생각한다. 거리로 들어온 뒤 그림이 돌아왔다고 말한다.",
+    "blocked_overclaim_ko": "신의 기원과 실제 전권을 객관 사실로 만들거나 그림이 거리로 들어왔다는 독립 이동 경로를 추가하지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001603"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001603:0002",
+      "ev:r34r:22001603:0004",
+      "ev:r34r:22001603:0005",
+      "ev:r34r:22001603:0006",
+      "ev:r34r:22001603:0007",
+      "ev:r34r:22001603:0008",
+      "ev:r34r:22001603:0010",
+      "ev:r34r:22001603:0011",
+      "ev:r34r:22001603:0089",
+      "ev:r34r:22001603:0094",
+      "ev:r34r:22001603:0095",
+      "ev:r34r:22001603:0102"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:unlocked_outer_locked_inner",
+    "key": "unlocked_outer_locked_inner",
+    "source_locations": [
+      {
+        "novel_id": "22001603",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 27
+      }
+    ],
+    "observation_ko": "집 입구는 잠겨 있지 않았지만 안쪽 방은 잠겨 있다. 그림은 내부를 경고하나 일행이 안을 본 장면은 없다.",
+    "blocked_overclaim_ko": "열쇠 물체가 열리거나 잠겼다고 옮기지 않고, 내부 경고를 일행의 직접 발견으로 바꾸지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001603"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001603:0012",
+      "ev:r34r:22001603:0014",
+      "ev:r34r:22001603:0017",
+      "ev:r34r:22001603:0018",
+      "ev:r34r:22001603:0020",
+      "ev:r34r:22001603:0021",
+      "ev:r34r:22001603:0022",
+      "ev:r34r:22001603:0024",
+      "ev:r34r:22001603:0025",
+      "ev:r34r:22001603:0027"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:picture_substitution_and_cutoff",
+    "key": "picture_substitution_and_cutoff",
+    "source_locations": [
+      {
+        "novel_id": "22001603",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 41
+      }
+    ],
+    "observation_ko": "그림이 이름과 이동 방법을 말하며 숲 위치를 흘린다. 설명 요구는 중간에 끊긴다.",
+    "blocked_overclaim_ko": "뭐든 가능하다는 주장을 전능으로 승인하거나 説め――를 오기로 자동 완성하지 않는다. 축제마저 끝난다는 가정을 축제 이전으로 바꾸지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001603"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001603:0029",
+      "ev:r34r:22001603:0030",
+      "ev:r34r:22001603:0031",
+      "ev:r34r:22001603:0032",
+      "ev:r34r:22001603:0033",
+      "ev:r34r:22001603:0034",
+      "ev:r34r:22001603:0035",
+      "ev:r34r:22001603:0037",
+      "ev:r34r:22001603:0039",
+      "ev:r34r:22001603:0040",
+      "ev:r34r:22001603:0041"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:attributed_wish_denied",
+    "key": "attributed_wish_denied",
+    "source_locations": [
+      {
+        "novel_id": "22001603",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 73
+      }
+    ],
+    "observation_ko": "쿠마리자가 관장의 소원을 안다고 주장해 의상을 바꾼다. 도나텔로가 이유를 의심하지만 관장은 그 욕망을 부정한다.",
+    "blocked_overclaim_ko": "그림의 대신 인용을 관장의 실제 요청이나 동의로 바꾸지 않는다. 의상 변화에 실신·상해·성적 행동을 덧붙이지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001603"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001603:0044",
+      "ev:r34r:22001603:0045",
+      "ev:r34r:22001603:0046",
+      "ev:r34r:22001603:0047",
+      "ev:r34r:22001603:0048",
+      "ev:r34r:22001603:0050",
+      "ev:r34r:22001603:0053",
+      "ev:r34r:22001603:0054",
+      "ev:r34r:22001603:0055",
+      "ev:r34r:22001603:0059",
+      "ev:r34r:22001603:0060",
+      "ev:r34r:22001603:0061",
+      "ev:r34r:22001603:0062",
+      "ev:r34r:22001603:0064",
+      "ev:r34r:22001603:0066",
+      "ev:r34r:22001603:0067",
+      "ev:r34r:22001603:0068",
+      "ev:r34r:22001603:0069",
+      "ev:r34r:22001603:0070",
+      "ev:r34r:22001603:0073"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:two_costume_pairs_remote_change",
+    "key": "two_costume_pairs_remote_change",
+    "source_locations": [
+      {
+        "novel_id": "22001603",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 76
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 78
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 81
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 82
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 83
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 84
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 85
+      }
+    ],
+    "observation_ko": "집의 도나텔로·카틀레아와 거리의 로댕·요시노가 각각 짝 의상이다. 거리조는 당시 그림을 만나지 않았다고 한다.",
+    "blocked_overclaim_ko": "네 사람 모두 같은 옷이라고 합치거나 거리조와 그림의 직접 만남을 만들지 않는다. 외형 유사와 제작 방식 차이를 모순으로 고치지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001603"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001603:0053",
+      "ev:r34r:22001603:0060",
+      "ev:r34r:22001603:0075",
+      "ev:r34r:22001603:0076",
+      "ev:r34r:22001603:0078",
+      "ev:r34r:22001603:0079",
+      "ev:r34r:22001603:0080",
+      "ev:r34r:22001603:0081",
+      "ev:r34r:22001603:0082",
+      "ev:r34r:22001603:0083",
+      "ev:r34r:22001603:0084",
+      "ev:r34r:22001603:0085"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:aside_hearing_limited",
+    "key": "aside_hearing_limited",
+    "source_locations": [
+      {
+        "novel_id": "22001603",
+        "raw_index": 90
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 91
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 92
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 93
+      }
+    ],
+    "observation_ko": "쿠마리자가 작은 불평을 하고 남자는 무엇이라 했는지 묻다가 침묵을 받자 잘못 들었나 생각한다.",
+    "blocked_overclaim_ko": "작은 말을 전부 무발성 독백으로 만들지 않고 남자가 정확한 내용을 들었다고도 하지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001603"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001603:0090",
+      "ev:r34r:22001603:0091",
+      "ev:r34r:22001603:0092",
+      "ev:r34r:22001603:0093"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:memory_flashback_then_days_later",
+    "key": "memory_flashback_then_days_later",
+    "source_locations": [
+      {
+        "novel_id": "22001603",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 59
+      }
+    ],
+    "observation_ko": "4화 도입은 의상 변화 때 도나텔로가 겪은 기억으로 돌아간다. 8행에서 며칠 뒤 현재가 되고 관장은 빛이 한순간이었다고 기억한다.",
+    "blocked_overclaim_ko": "같은 변화가 두 번 발생했다고 세지 않는다. 미상 기억 목소리 라벨과 도나텔로의 카틀레아 추정을 분리한다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001603",
+      "event_story:22001604"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001603:0050",
+      "ev:r34r:22001603:0054",
+      "ev:r34r:22001603:0055",
+      "ev:r34r:22001603:0059",
+      "ev:r34r:22001604:0001",
+      "ev:r34r:22001604:0002",
+      "ev:r34r:22001604:0003",
+      "ev:r34r:22001604:0004",
+      "ev:r34r:22001604:0005",
+      "ev:r34r:22001604:0006",
+      "ev:r34r:22001604:0007",
+      "ev:r34r:22001604:0008",
+      "ev:r34r:22001604:0050",
+      "ev:r34r:22001604:0051",
+      "ev:r34r:22001604:0052",
+      "ev:r34r:22001604:0053",
+      "ev:r34r:22001604:0054",
+      "ev:r34r:22001604:0056",
+      "ev:r34r:22001604:0058",
+      "ev:r34r:22001604:0059"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:private_hypothesis_not_full_memory",
+    "key": "private_hypothesis_not_full_memory",
+    "source_locations": [
+      {
+        "novel_id": "22001604",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 80
+      }
+    ],
+    "observation_ko": "단편을 본 도나텔로는 접촉 제약과 불안·외로움을 추정한다. 관장은 거리 관찰과 연결하며 둘은 사생활을 배려한다.",
+    "blocked_overclaim_ko": "정확한 기전이나 과거 전체를 확인했다고 하거나 카틀레아의 직접 고백으로 바꾸지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001604"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001604:0056",
+      "ev:r34r:22001604:0058",
+      "ev:r34r:22001604:0060",
+      "ev:r34r:22001604:0061",
+      "ev:r34r:22001604:0062",
+      "ev:r34r:22001604:0063",
+      "ev:r34r:22001604:0064",
+      "ev:r34r:22001604:0065",
+      "ev:r34r:22001604:0067",
+      "ev:r34r:22001604:0068",
+      "ev:r34r:22001604:0079",
+      "ev:r34r:22001604:0080"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:corridor_rodin_overhearing",
+    "key": "corridor_rodin_overhearing",
+    "source_locations": [
+      {
+        "novel_id": "22001604",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 74
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 76
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 77
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 78
+      }
+    ],
+    "observation_ko": "관장과 도나텔로가 복도에서 따로 이야기하고 로댕이 일부를 듣고 합류한다. 로댕이 겪은 것은 요시노의 기억처럼 보이는 경험이다.",
+    "blocked_overclaim_ko": "청취 시작점이나 카틀레아·요시노의 청취를 만들지 않는다. 로댕이 카틀레아 기억을 직접 봤다고 바꾸지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001604"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001604:0044",
+      "ev:r34r:22001604:0045",
+      "ev:r34r:22001604:0046",
+      "ev:r34r:22001604:0047",
+      "ev:r34r:22001604:0048",
+      "ev:r34r:22001604:0069",
+      "ev:r34r:22001604:0070",
+      "ev:r34r:22001604:0071",
+      "ev:r34r:22001604:0072",
+      "ev:r34r:22001604:0073",
+      "ev:r34r:22001604:0074",
+      "ev:r34r:22001604:0075",
+      "ev:r34r:22001604:0076",
+      "ev:r34r:22001604:0077",
+      "ev:r34r:22001604:0078"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:analysis_roles_and_speech_repair",
+    "key": "analysis_roles_and_speech_repair",
+    "source_locations": [
+      {
+        "novel_id": "22001604",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 42
+      }
+    ],
+    "observation_ko": "요시노가 분해하고 로댕이 정확하게 돕는다. 카틀레아는 쉬러 가며 로댕은 자신의 추정 말투를 직접 의향으로 고친다.",
+    "blocked_overclaim_ko": "카틀레아의 분석 참여나 관장의 기계 지식 습득을 추가하지 않는다. 로댕 한 번의 말고침을 전역 말투 교정으로 승인하지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001604"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001604:0018",
+      "ev:r34r:22001604:0020",
+      "ev:r34r:22001604:0022",
+      "ev:r34r:22001604:0024",
+      "ev:r34r:22001604:0025",
+      "ev:r34r:22001604:0026",
+      "ev:r34r:22001604:0027",
+      "ev:r34r:22001604:0028",
+      "ev:r34r:22001604:0031",
+      "ev:r34r:22001604:0032",
+      "ev:r34r:22001604:0033",
+      "ev:r34r:22001604:0034",
+      "ev:r34r:22001604:0035",
+      "ev:r34r:22001604:0036",
+      "ev:r34r:22001604:0038",
+      "ev:r34r:22001604:0039",
+      "ev:r34r:22001604:0040",
+      "ev:r34r:22001604:0041",
+      "ev:r34r:22001604:0042"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:dummy_and_head_weakness_limits",
+    "key": "dummy_and_head_weakness_limits",
+    "source_locations": [
+      {
+        "novel_id": "22001604",
+        "raw_index": 82
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 84
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 85
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 86
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 87
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 88
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 89
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 90
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 91
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 92
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 93
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 94
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 95
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 96
+      }
+    ],
+    "observation_ko": "몸통 파열은 더미이고 중요한 동력부·기어는 머리 중앙이라는 분석이다. 전투는 쉬워져도 반복 출현·그림 회수·귀환은 남아 있다.",
+    "blocked_overclaim_ko": "분석만으로 사건 해결이나 귀환 완료를 세지 않고 파열 자체를 없던 일로 만들지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001604"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001604:0082",
+      "ev:r34r:22001604:0084",
+      "ev:r34r:22001604:0085",
+      "ev:r34r:22001604:0086",
+      "ev:r34r:22001604:0087",
+      "ev:r34r:22001604:0088",
+      "ev:r34r:22001604:0089",
+      "ev:r34r:22001604:0090",
+      "ev:r34r:22001604:0091",
+      "ev:r34r:22001604:0092",
+      "ev:r34r:22001604:0093",
+      "ev:r34r:22001604:0094",
+      "ev:r34r:22001604:0095",
+      "ev:r34r:22001604:0096"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:siege_and_voluntary_appearance",
+    "key": "siege_and_voluntary_appearance",
+    "source_locations": [
+      {
+        "novel_id": "22001604",
+        "raw_index": 97
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 98
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 99
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 100
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 101
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 102
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 103
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 104
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 105
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 106
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 107
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 108
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 109
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 6
+      }
+    ],
+    "observation_ko": "의사당 포위 보고와 남자의 미술관 출두가 함께 전해진다. 광장 도착 후 출두 당시의 경위를 회상한다.",
+    "blocked_overclaim_ko": "자진 출두를 단순 방문·전장 체포로 바꾸지 않고, 산소비노의 포위 보고를 직접 목격으로 만들지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001604",
+      "event_story:22001605"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001604:0097",
+      "ev:r34r:22001604:0098",
+      "ev:r34r:22001604:0099",
+      "ev:r34r:22001604:0100",
+      "ev:r34r:22001604:0101",
+      "ev:r34r:22001604:0102",
+      "ev:r34r:22001604:0103",
+      "ev:r34r:22001604:0104",
+      "ev:r34r:22001604:0105",
+      "ev:r34r:22001604:0106",
+      "ev:r34r:22001604:0107",
+      "ev:r34r:22001604:0108",
+      "ev:r34r:22001604:0109",
+      "ev:r34r:22001605:0003",
+      "ev:r34r:22001605:0004",
+      "ev:r34r:22001605:0005",
+      "ev:r34r:22001605:0006"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:capture_injury_and_intended_audience",
+    "key": "capture_injury_and_intended_audience",
+    "source_locations": [
+      {
+        "novel_id": "22001605",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 23
+      }
+    ],
+    "observation_ko": "트렌티나·후타바가 남자를 제압했지만 상처는 원래 있었다고 한다. 남자는 그림의 해고와 로봇 공격을 전하며 관장에게 말하고 싶다고 항의한다.",
+    "blocked_overclaim_ko": "이마쥬 둘이 전신 상처를 냈다고 단정하지 않는다. 의도 청자 관장과 실제 끼어든 동료들을 구별한다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001605"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001605:0007",
+      "ev:r34r:22001605:0008",
+      "ev:r34r:22001605:0009",
+      "ev:r34r:22001605:0010",
+      "ev:r34r:22001605:0011",
+      "ev:r34r:22001605:0012",
+      "ev:r34r:22001605:0013",
+      "ev:r34r:22001605:0014",
+      "ev:r34r:22001605:0015",
+      "ev:r34r:22001605:0016",
+      "ev:r34r:22001605:0017",
+      "ev:r34r:22001605:0018",
+      "ev:r34r:22001605:0019",
+      "ev:r34r:22001605:0020",
+      "ev:r34r:22001605:0021",
+      "ev:r34r:22001605:0022",
+      "ev:r34r:22001605:0023"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:police_plan_and_present_square",
+    "key": "police_plan_and_present_square",
+    "source_locations": [
+      {
+        "novel_id": "22001605",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 28
+      }
+    ],
+    "observation_ko": "미술관 회상에서 경찰 인계를 지시·수락한 뒤 27행에서 광장 현재로 돌아온다.",
+    "blocked_overclaim_ko": "경찰 인계 완료를 수락만으로 만들지 않고 회상 속 남자·트렌티나·후타바·산소비노를 광장 전투 동행자로 넣지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001605"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001605:0006",
+      "ev:r34r:22001605:0024",
+      "ev:r34r:22001605:0025",
+      "ev:r34r:22001605:0026",
+      "ev:r34r:22001605:0027",
+      "ev:r34r:22001605:0028"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:robot_wordplay_and_annotation",
+    "key": "robot_wordplay_and_annotation",
+    "source_locations": [
+      {
+        "novel_id": "22001604",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 37
+      }
+    ],
+    "observation_ko": "쿠마로보·쿠마보로·쿠마보오로의 변형과 한국어 풀이가 관찰된다. 기존 R3-W039는 풀이 분리 정책 승인이 필요한 상태다.",
+    "blocked_overclaim_ko": "고의 이름 변형을 전역 정규화하지 않는다. 한국어 주석을 일본어 발화에서 나온 정보로 만들거나 미리 삭제·승인하지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001604",
+      "event_story:22001605"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001604:0011",
+      "ev:r34r:22001605:0031",
+      "ev:r34r:22001605:0033",
+      "ev:r34r:22001605:0034",
+      "ev:r34r:22001605:0035",
+      "ev:r34r:22001605:0036",
+      "ev:r34r:22001605:0037"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:battle_pledges_and_evacuation",
+    "key": "battle_pledges_and_evacuation",
+    "source_locations": [
+      {
+        "novel_id": "22001605",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 55
+      }
+    ],
+    "observation_ko": "일행이 맞서 싸우며 각자의 거처로 돌아갈 결의를 말한다. 주민 피난 완료가 명시된 뒤 마무리 공격을 선언한다.",
+    "blocked_overclaim_ko": "그 애들·그 사람의 구체 신원과 연애 관계를 추가하지 않는다. 공격 선언만으로 귀환 완료를 세지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001605"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001605:0039",
+      "ev:r34r:22001605:0040",
+      "ev:r34r:22001605:0041",
+      "ev:r34r:22001605:0042",
+      "ev:r34r:22001605:0043",
+      "ev:r34r:22001605:0044",
+      "ev:r34r:22001605:0045",
+      "ev:r34r:22001605:0051",
+      "ev:r34r:22001605:0052",
+      "ev:r34r:22001605:0053",
+      "ev:r34r:22001605:0054",
+      "ev:r34r:22001605:0055"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:picture_own_festival_wish",
+    "key": "picture_own_festival_wish",
+    "source_locations": [
+      {
+        "novel_id": "22001603",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "22001603",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 50
+      }
+    ],
+    "observation_ko": "쿠마리자는 남자 선정이 실패였고 짝 의상 전투를 보는 일이 즐겁다고 말한다. 관장은 결국 그림의 욕망이었다고 반박한다.",
+    "blocked_overclaim_ko": "앞서 관장에게 돌린 소원 주장을 사실로 승인하지 않는다. 축제의 華를 기개로 바꾸거나 전체 참가자가 즐겼다고 하지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001603",
+      "event_story:22001605"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001603:0044",
+      "ev:r34r:22001603:0062",
+      "ev:r34r:22001603:0067",
+      "ev:r34r:22001603:0073",
+      "ev:r34r:22001605:0046",
+      "ev:r34r:22001605:0047",
+      "ev:r34r:22001605:0048",
+      "ev:r34r:22001605:0049",
+      "ev:r34r:22001605:0050"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:victory_not_release_from_responsibility",
+    "key": "victory_not_release_from_responsibility",
+    "source_locations": [
+      {
+        "novel_id": "22001606",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 2
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 21
+      }
+    ],
+    "observation_ko": "합동 격파 뒤에도 귀환과 소동 책임은 남는다. 관장의 파괴 예시는 농담이고 작품 무죄 주장은 부정된다.",
+    "blocked_overclaim_ko": "수프·풀스윙을 실제 집행으로 만들지 않고, 죽음의 예술이 아닌 듯하다는 관찰을 확정 감정·무죄로 바꾸지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001606"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001606:0001",
+      "ev:r34r:22001606:0002",
+      "ev:r34r:22001606:0003",
+      "ev:r34r:22001606:0004",
+      "ev:r34r:22001606:0005",
+      "ev:r34r:22001606:0006",
+      "ev:r34r:22001606:0007",
+      "ev:r34r:22001606:0008",
+      "ev:r34r:22001606:0010",
+      "ev:r34r:22001606:0012",
+      "ev:r34r:22001606:0014",
+      "ev:r34r:22001606:0015",
+      "ev:r34r:22001606:0017",
+      "ev:r34r:22001606:0018",
+      "ev:r34r:22001606:0019",
+      "ev:r34r:22001606:0020",
+      "ev:r34r:22001606:0021"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:distinct_voices_and_apology",
+    "key": "distinct_voices_and_apology",
+    "source_locations": [
+      {
+        "novel_id": "22001606",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 36
+      }
+    ],
+    "observation_ko": "그림에서 새로운 목소리가 들리고 베어코와 흑베어코 라벨이 제시된다. 꾸짖는 쪽·변명하는 쪽·원래 그림의 라벨을 구별한다.",
+    "blocked_overclaim_ko": "미상·쿠마리자·흑베어코를 전역 동의어로 병합하거나 원래 라벨을 소급 변경하지 않는다. 구체 체벌 장면·숫자 나이를 만들지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001606"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001606:0022",
+      "ev:r34r:22001606:0023",
+      "ev:r34r:22001606:0024",
+      "ev:r34r:22001606:0025",
+      "ev:r34r:22001606:0026",
+      "ev:r34r:22001606:0027",
+      "ev:r34r:22001606:0028",
+      "ev:r34r:22001606:0029",
+      "ev:r34r:22001606:0030",
+      "ev:r34r:22001606:0031",
+      "ev:r34r:22001606:0032",
+      "ev:r34r:22001606:0033",
+      "ev:r34r:22001606:0034",
+      "ev:r34r:22001606:0035",
+      "ev:r34r:22001606:0036"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:return_promise_departure_not_home_witness",
+    "key": "return_promise_departure_not_home_witness",
+    "source_locations": [
+      {
+        "novel_id": "22001606",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 96
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 97
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 98
+      }
+    ],
+    "observation_ko": "베어코의 약속 뒤 두 방문자가 포털로 떠난다. 관장 일행은 떠남을 보지만 원래 세계의 환영 장면은 보지 않는다.",
+    "blocked_overclaim_ko": "관장의 위로를 다른 세계 도착 보고로 바꾸지 않고 목소리가 끊긴 뒤의 요청 수신을 확정하지 않는다. 저주 농담은 실제 상태가 아니다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001606"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001606:0038",
+      "ev:r34r:22001606:0039",
+      "ev:r34r:22001606:0040",
+      "ev:r34r:22001606:0041",
+      "ev:r34r:22001606:0042",
+      "ev:r34r:22001606:0043",
+      "ev:r34r:22001606:0044",
+      "ev:r34r:22001606:0045",
+      "ev:r34r:22001606:0046",
+      "ev:r34r:22001606:0047",
+      "ev:r34r:22001606:0048",
+      "ev:r34r:22001606:0049",
+      "ev:r34r:22001606:0050",
+      "ev:r34r:22001606:0059",
+      "ev:r34r:22001606:0060",
+      "ev:r34r:22001606:0096",
+      "ev:r34r:22001606:0097",
+      "ev:r34r:22001606:0098"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:outfit_request_conditional_reunion",
+    "key": "outfit_request_conditional_reunion",
+    "source_locations": [
+      {
+        "novel_id": "22001606",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 58
+      }
+    ],
+    "observation_ko": "요시노는 맞춘 옷을 소중히 하라고 하고 재회하면 가게 이용을 청한다. 카틀레아도 만에 하나 만나면 이야기하겠다고 한다.",
+    "blocked_overclaim_ko": "실제 의상 회수·재회·주문·무조건 친밀 관계를 추가하지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001606"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001606:0051",
+      "ev:r34r:22001606:0052",
+      "ev:r34r:22001606:0053",
+      "ev:r34r:22001606:0054",
+      "ev:r34r:22001606:0055",
+      "ev:r34r:22001606:0056",
+      "ev:r34r:22001606:0057",
+      "ev:r34r:22001606:0058"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:actual_return_different_hug_responses",
+    "key": "actual_return_different_hug_responses",
+    "source_locations": [
+      {
+        "novel_id": "22001606",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 63
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 74
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 75
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 76
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 77
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 78
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 79
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 81
+      }
+    ],
+    "observation_ko": "아르테·고흐가 실제 돌아오고 관장은 둘을 안는다. 아르테는 버둥거리고 고흐는 매달린다.",
+    "blocked_overclaim_ko": "로댕 말버릇 때문에 실제 귀환 관찰을 취소하거나 둘의 포옹 반응을 동일한 수락으로 합치지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001606"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001606:0061",
+      "ev:r34r:22001606:0062",
+      "ev:r34r:22001606:0063",
+      "ev:r34r:22001606:0064",
+      "ev:r34r:22001606:0065",
+      "ev:r34r:22001606:0066",
+      "ev:r34r:22001606:0067",
+      "ev:r34r:22001606:0068",
+      "ev:r34r:22001606:0069",
+      "ev:r34r:22001606:0070",
+      "ev:r34r:22001606:0071",
+      "ev:r34r:22001606:0072",
+      "ev:r34r:22001606:0073",
+      "ev:r34r:22001606:0074",
+      "ev:r34r:22001606:0075",
+      "ev:r34r:22001606:0076",
+      "ev:r34r:22001606:0077",
+      "ev:r34r:22001606:0078",
+      "ev:r34r:22001606:0079",
+      "ev:r34r:22001606:0080",
+      "ev:r34r:22001606:0081"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:cleanup_then_planned_dinner",
+    "key": "cleanup_then_planned_dinner",
+    "source_locations": [
+      {
+        "novel_id": "22001606",
+        "raw_index": 82
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 83
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 84
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 85
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 86
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 87
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 88
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 89
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 90
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 91
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 92
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 93
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 94
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 95
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 96
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 97
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 98
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 99
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 100
+      }
+    ],
+    "observation_ko": "뒤풀이 식사는 수습 후의 제안이다. 실제로는 투덜거리는 아르테도 일하고 일행이 수습하며 안도와 쓸쓸함을 느낀다.",
+    "blocked_overclaim_ko": "식사·보고회·수습 전체를 완료로 쓰지 않고 성장 농담을 숫자 나이나 다른 세계 수련 성과로 만들지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001606"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001606:0082",
+      "ev:r34r:22001606:0083",
+      "ev:r34r:22001606:0084",
+      "ev:r34r:22001606:0085",
+      "ev:r34r:22001606:0086",
+      "ev:r34r:22001606:0087",
+      "ev:r34r:22001606:0088",
+      "ev:r34r:22001606:0089",
+      "ev:r34r:22001606:0090",
+      "ev:r34r:22001606:0091",
+      "ev:r34r:22001606:0092",
+      "ev:r34r:22001606:0093",
+      "ev:r34r:22001606:0094",
+      "ev:r34r:22001606:0095",
+      "ev:r34r:22001606:0096",
+      "ev:r34r:22001606:0097",
+      "ev:r34r:22001606:0098",
+      "ev:r34r:22001606:0099",
+      "ev:r34r:22001606:0100"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  },
+  {
+    "contract_id": "contract:r34r:event_only_timeline_and_local_identity",
+    "key": "event_only_timeline_and_local_identity",
+    "source_locations": [
+      {
+        "novel_id": "22001601",
+        "raw_index": 94
+      },
+      {
+        "novel_id": "22001601",
+        "raw_index": 95
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 92
+      },
+      {
+        "novel_id": "22001602",
+        "raw_index": 138
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "22001604",
+        "raw_index": 74
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "22001605",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 96
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 98
+      },
+      {
+        "novel_id": "22001606",
+        "raw_index": 100
+      }
+    ],
+    "observation_ko": "이전 교류·변신 기억·며칠 뒤·출두 회상·귀환은 이 이벤트 안의 상대 순서로 연결한다. 소중한 상대와 낯선 목소리는 밝혀진 범위만 둔다.",
+    "blocked_overclaim_ko": "ID로 공통 달력이나 외부 작품 설정을 만들지 않는다. 외모·소녀·옛 추억·복장으로 현재 연령을 일괄 확정하지 않는다.",
+    "evidence_level": "context_attested_with_modality",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:22001601",
+      "event_story:22001602",
+      "event_story:22001604",
+      "event_story:22001605",
+      "event_story:22001606"
+    ],
+    "evidence_ids": [
+      "ev:r34r:22001601:0094",
+      "ev:r34r:22001601:0095",
+      "ev:r34r:22001602:0092",
+      "ev:r34r:22001602:0138",
+      "ev:r34r:22001604:0001",
+      "ev:r34r:22001604:0008",
+      "ev:r34r:22001604:0074",
+      "ev:r34r:22001605:0006",
+      "ev:r34r:22001605:0027",
+      "ev:r34r:22001605:0043",
+      "ev:r34r:22001606:0064",
+      "ev:r34r:22001606:0072",
+      "ev:r34r:22001606:0096",
+      "ev:r34r:22001606:0098",
+      "ev:r34r:22001606:0100"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R34_REDO_REVIEWED_EVENT_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R34_REDO"
+    }
+  }
+]

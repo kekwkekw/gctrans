@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "regular_novel_files": 338,
+  "unchanged_from_v1_0": 334,
+  "hold_placeholder_novels": 4,
+  "hold_placeholder_rows": 12,
+  "hold_text_included": false,
+  "review_state_changed": false,
+  "approval_state_changed": false,
+  "modified_files": [
+    {
+      "novel_id": "22001004",
+      "placeholder_rows": 3,
+      "old_sha256": "cea340f602b9a808f0c1122b361888eceddf512eaadc5987cd2a003b885fe495",
+      "new_sha256": "35a3a5d55a5c9b4f1f33838beb182ae9ace4651c871420c8b3cdffdd85c7bed5"
+    },
+    {
+      "novel_id": "22001006",
+      "placeholder_rows": 3,
+      "old_sha256": "ebf765d2aabef866569c8ed1adca03b23f90116de25ab5dd24b8ae8b4bf8f5fd",
+      "new_sha256": "851bce84f31931a458e529ae739697b92d9ed7b30459e8d1f357a79e9676ed33"
+    },
+    {
+      "novel_id": "40112011",
+      "placeholder_rows": 1,
+      "old_sha256": "bb4acca75d75361da1c3ddd05dc8b891ec8821382f5fffc263d96bb5961cccfa",
+      "new_sha256": "33b34d037fbd7be0547e75e8aa56b3fe12b6fd0c86197d47f9d42c1b86874204"
+    },
+    {
+      "novel_id": "40112092",
+      "placeholder_rows": 5,
+      "old_sha256": "218c1700538c03ece51b54cbe932b55ce8503938f6a18e575c7d6bcc32996f48",
+      "new_sha256": "823904bb76665ee44d174a821a9428a6e8b037ff41249759e217adf029c4261d"
+    }
+  ]
+}

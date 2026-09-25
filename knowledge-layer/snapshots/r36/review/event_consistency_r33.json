@@ -1,0 +1,122 @@
+{
+  "events": [
+    {
+      "event_key": "event:220010",
+      "label_ko": "미소녀 메이드 분투기",
+      "novel_ids": [
+        "22001001",
+        "22001002",
+        "22001003",
+        "22001004",
+        "22001005",
+        "22001006"
+      ],
+      "scope_items": 345,
+      "reviewed_items": 339,
+      "deferred_locations": [
+        {
+          "novel_id": "22001004",
+          "raw_index": 18
+        },
+        {
+          "novel_id": "22001004",
+          "raw_index": 27
+        },
+        {
+          "novel_id": "22001004",
+          "raw_index": 28
+        },
+        {
+          "novel_id": "22001006",
+          "raw_index": 28
+        },
+        {
+          "novel_id": "22001006",
+          "raw_index": 29
+        },
+        {
+          "novel_id": "22001006",
+          "raw_index": 30
+        }
+      ],
+      "semantic_first_pass_complete": false,
+      "partial": true,
+      "consistency_review_performed_on_nondeferred_rows": true,
+      "contract_ids": [
+        "contract:r33:coordinated_infiltration_not_accidental_debt",
+        "contract:r33:lawyer_contract_and_watchful_support",
+        "contract:r33:maid_work_report_and_trust_in_progress",
+        "contract:r33:hospitality_not_unlimited_consent",
+        "contract:r33:headmaid_coercion_and_voluntary_reemployment",
+        "contract:r33:young_maid_safety_boundary_without_age_invention",
+        "contract:r33:overhearing_targets_and_conspiracy_claims",
+        "contract:r33:maid_clue_and_hidden_room_investigation",
+        "contract:r33:fake_breakage_and_real_exception",
+        "contract:r33:trap_escape_and_police_contingency",
+        "contract:r33:confession_arrest_and_reports_not_verdict",
+        "contract:r33:release_reemployment_and_return_home",
+        "contract:r33:cafe_plan_and_roleplay_boundaries",
+        "contract:r33:cross_event_no_global_calendar_or_age"
+      ],
+      "unresolved_source_anomalies": [],
+      "no_cross_event_calendar_inferred": true,
+      "no_candidate_approved": true
+    },
+    {
+      "event_key": "event:220011",
+      "label_ko": "괴진! 저주의 호스피털",
+      "novel_ids": [
+        "22001101",
+        "22001102",
+        "22001103",
+        "22001104",
+        "22001105",
+        "22001106"
+      ],
+      "scope_items": 378,
+      "reviewed_items": 378,
+      "deferred_locations": [],
+      "semantic_first_pass_complete": true,
+      "partial": false,
+      "consistency_review_performed_on_nondeferred_rows": true,
+      "contract_ids": [
+        "contract:r33:secret_collection_and_untried_drug",
+        "contract:r33:three_memories_and_false_child_identity",
+        "contract:r33:whisper_denial_and_false_premise",
+        "contract:r33:help_offer_unaccepted_departure",
+        "contract:r33:selective_office_report_and_parentheses",
+        "contract:r33:hospital_information_not_cure_guarantee",
+        "contract:r33:nonverbal_appeal_and_three_person_trip",
+        "contract:r33:residents_reports_and_suspicion",
+        "contract:r33:curiosity_surveillance_and_night_transition",
+        "contract:r33:forced_entry_not_praise",
+        "contract:r33:dark_silhouette_and_treatment_metaphor",
+        "contract:r33:hidden_affinity_and_limited_hearing",
+        "contract:r33:search_without_map_and_changing_impression",
+        "contract:r33:smoke_exposure_resistance_and_shelter",
+        "contract:r33:private_trial_and_limited_success",
+        "contract:r33:leak_stopped_before_cure",
+        "contract:r33:rescue_and_morisot_recovery_claim",
+        "contract:r33:diary_deterioration_and_patient_scope_conflict",
+        "contract:r33:samples_gratitude_and_curator_cure",
+        "contract:r33:village_concealment_and_future_disclosure",
+        "contract:r33:voluntary_research_and_absent_tulp",
+        "contract:r33:training_proposal_not_agreement",
+        "contract:r33:cross_event_no_global_calendar_or_age"
+      ],
+      "unresolved_source_anomalies": [
+        "R33-SRC001",
+        "R33-SRC002"
+      ],
+      "no_cross_event_calendar_inferred": true,
+      "no_candidate_approved": true
+    }
+  ],
+  "batch_partial": true,
+  "first_unfinished": {
+    "novel_id": "22001004",
+    "raw_index": 18
+  },
+  "candidate_recomparison": "audit/FINAL_CANDIDATE_RECOMPARISON_R33.json",
+  "no_global_age_or_identity_inference": true
+}

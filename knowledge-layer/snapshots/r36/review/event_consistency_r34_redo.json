@@ -1,0 +1,74 @@
+{
+  "events": [
+    {
+      "event_key": "event:220016",
+      "label_ko": "터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단",
+      "novel_ids": [
+        "22001601",
+        "22001602",
+        "22001603",
+        "22001604",
+        "22001605",
+        "22001606"
+      ],
+      "scope_items": 668,
+      "reviewed_items": 668,
+      "deferred_locations": [],
+      "semantic_first_pass_complete": true,
+      "partial": false,
+      "contract_ids": [
+        "contract:r34r:exhibition_and_rejected_entry",
+        "contract:r34r:raised_fist_intercepted",
+        "contract:r34r:anger_art_conversion_evacuation",
+        "contract:r34r:two_arrivals_two_disappearances",
+        "contract:r34r:conditional_cattleya_help",
+        "contract:r34r:villain_imagined_quote",
+        "contract:r34r:names_shop_and_unknown_origins",
+        "contract:r34r:harmonia_analogy_revised",
+        "contract:r34r:protection_and_physical_distance",
+        "contract:r34r:promised_return_and_private_fears",
+        "contract:r34r:theft_report_address_and_split",
+        "contract:r34r:villain_belief_not_robot_ontology",
+        "contract:r34r:unlocked_outer_locked_inner",
+        "contract:r34r:picture_substitution_and_cutoff",
+        "contract:r34r:attributed_wish_denied",
+        "contract:r34r:two_costume_pairs_remote_change",
+        "contract:r34r:aside_hearing_limited",
+        "contract:r34r:memory_flashback_then_days_later",
+        "contract:r34r:private_hypothesis_not_full_memory",
+        "contract:r34r:corridor_rodin_overhearing",
+        "contract:r34r:analysis_roles_and_speech_repair",
+        "contract:r34r:dummy_and_head_weakness_limits",
+        "contract:r34r:siege_and_voluntary_appearance",
+        "contract:r34r:capture_injury_and_intended_audience",
+        "contract:r34r:police_plan_and_present_square",
+        "contract:r34r:robot_wordplay_and_annotation",
+        "contract:r34r:battle_pledges_and_evacuation",
+        "contract:r34r:picture_own_festival_wish",
+        "contract:r34r:victory_not_release_from_responsibility",
+        "contract:r34r:distinct_voices_and_apology",
+        "contract:r34r:return_promise_departure_not_home_witness",
+        "contract:r34r:outfit_request_conditional_reunion",
+        "contract:r34r:actual_return_different_hug_responses",
+        "contract:r34r:cleanup_then_planned_dinner",
+        "contract:r34r:event_only_timeline_and_local_identity"
+      ],
+      "unresolved_source_anomalies": [
+        "R34R-SRC001"
+      ]
+    }
+  ],
+  "batch_partial": false,
+  "first_unfinished": null,
+  "review_order": [
+    "row",
+    "event",
+    "batch",
+    "candidate_recomparison",
+    "old_result_crosscheck_after_independent_pass",
+    "final_source_recomparison"
+  ],
+  "crosscheck": "audit/OLD_R34_COMPARISON.json",
+  "no_cross_event_calendar": true,
+  "no_candidate_approved": true
+}

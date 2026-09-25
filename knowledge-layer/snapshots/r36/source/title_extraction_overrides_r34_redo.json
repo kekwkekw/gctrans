@@ -1,0 +1,74 @@
+[
+  {
+    "novel_id": "22001601",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "start": 45,
+    "end": 65,
+    "before": "이벤트 번역 [터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 1화 - [꽃, 열차, 예술...... 로봇!?]",
+    "observed_title": "꽃, 열차, 예술...... 로봇!?",
+    "translation_changed": false,
+    "preimage_sha256": "db144a63c15ca558db5cfa9ed8eb0699bd431ef08f54b0c786d26371798e6dd9",
+    "legacy_extracted_title": "터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 1화 - [꽃, 열차, 예술...... 로봇!?"
+  },
+  {
+    "novel_id": "22001602",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "start": 45,
+    "end": 55,
+    "before": "이벤트 번역 [터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 2화 - [기묘한 회화의 행방]",
+    "observed_title": "기묘한 회화의 행방",
+    "translation_changed": false,
+    "preimage_sha256": "5c8a3ac568d86640e7a36ba9335b93963cdcab91642b0847e762a081b93bf467",
+    "legacy_extracted_title": "터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 2화 - [기묘한 회화의 행방"
+  },
+  {
+    "novel_id": "22001603",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "start": 45,
+    "end": 58,
+    "before": "이벤트 번역 [터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 3화 - [쿠마리자에게 들킨 소원?]",
+    "observed_title": "쿠마리자에게 들킨 소원?",
+    "translation_changed": false,
+    "preimage_sha256": "eb1d36095d3c37a5aa7006fe40c2e38cfc1c129a13d55b2ca7108529079d08b2",
+    "legacy_extracted_title": "터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 3화 - [쿠마리자에게 들킨 소원?"
+  },
+  {
+    "novel_id": "22001604",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "start": 45,
+    "end": 55,
+    "before": "이벤트 번역 [터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 4화 - [엿보인 정경(情景)]",
+    "observed_title": "엿보인 정경(情景)",
+    "translation_changed": false,
+    "preimage_sha256": "61f398f08f654dab313ba386c512970c1d94668522284418c4877dcbd67a1f7a",
+    "legacy_extracted_title": "터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 4화 - [엿보인 정경(情景)"
+  },
+  {
+    "novel_id": "22001605",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "start": 45,
+    "end": 61,
+    "before": "이벤트 번역 [터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 5화 - [축제다! 배틀이다! 폭발이다!]",
+    "observed_title": "축제다! 배틀이다! 폭발이다!",
+    "translation_changed": false,
+    "preimage_sha256": "e1e3f3aaccebec0ab5acb80171d7e4555e1833d2346401dd3da99960f46d1af6",
+    "legacy_extracted_title": "터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 5화 - [축제다! 배틀이다! 폭발이다!"
+  },
+  {
+    "novel_id": "22001606",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "start": 45,
+    "end": 61,
+    "before": "이벤트 번역 [터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 6화 - [대단원 같은(다만 쿠마 제외)]",
+    "observed_title": "대단원 같은(다만 쿠마 제외)",
+    "translation_changed": false,
+    "preimage_sha256": "1aee413e32b1b027c8f469188b945c4afa564a3c4410e31aff11158f519bc39f",
+    "legacy_extracted_title": "터져올라라 몽환 미술관 VS 수수께끼의 쿠마로보 군단] 6화 - [대단원 같은(다만 쿠마 제외)"
+  }
+]

@@ -1,0 +1,351 @@
+{
+  "schema": "gc_names_layer_4A_validation_v1",
+  "stage": "4-A",
+  "status": "PASS_WITH_DOCUMENTED_SOURCE_LIMITATIONS",
+  "summary": {
+    "canonical_source_count": 34,
+    "canonical_source_present_count": 34,
+    "canonical_source_hash_match_count": 34,
+    "source_pass_count": 30,
+    "source_limitation_count": 4,
+    "source_limitation_rounds": [
+      "R3",
+      "R4",
+      "R16",
+      "R21"
+    ],
+    "parse_error_count": 0,
+    "raw_pair_count": 17024,
+    "csv_pair_count": 17024,
+    "unique_speaker_jp_count": 305,
+    "missing_required_field_count": 0,
+    "duplicate_source_item_key_count": 0,
+    "conflict_count": null,
+    "conflict_status": "DEFERRED_TO_4B"
+  },
+  "checks": {
+    "all_34_sources_present": true,
+    "all_34_source_hashes_match_audit": true,
+    "jsonl_parseable": true,
+    "jsonl_csv_row_count_match": true,
+    "raw_pair_count_matches_audit": true,
+    "unique_speaker_jp_matches_audit": true,
+    "required_fields_complete": true,
+    "source_item_keys_unique": true,
+    "core_manifest_hashes_match": true,
+    "repository_mutation_performed": false,
+    "post_r36_overlay_applied": false,
+    "dedup_or_conflict_resolution_performed": false
+  },
+  "source_checks": [
+    {
+      "round": "R3",
+      "source_file": "REVIEW_R3.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "SOURCE_LIMITATION"
+    },
+    {
+      "round": "R4",
+      "source_file": "REVIEW_R4.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "SOURCE_LIMITATION"
+    },
+    {
+      "round": "R5",
+      "source_file": "gc_r5_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R6",
+      "source_file": "gc_r6_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R7",
+      "source_file": "gc_r7_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R8",
+      "source_file": "gc_r8_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R9",
+      "source_file": "gc_r9_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R10",
+      "source_file": "gc_r10_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R11",
+      "source_file": "gc_r11_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R12",
+      "source_file": "gc_r12_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R13",
+      "source_file": "gc_r13_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R14",
+      "source_file": "gc_r14_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R15",
+      "source_file": "gc_r15_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R16",
+      "source_file": "gc_r16_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "SOURCE_LIMITATION"
+    },
+    {
+      "round": "R17",
+      "source_file": "gc_r17_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R18",
+      "source_file": "gc_r18_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R19",
+      "source_file": "gc_r19_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R20",
+      "source_file": "gc_r20_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R21",
+      "source_file": "gc_r21_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "SOURCE_LIMITATION"
+    },
+    {
+      "round": "R22",
+      "source_file": "gc_r22_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R23",
+      "source_file": "gc_r23_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R24",
+      "source_file": "gc_r24_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R25",
+      "source_file": "gc_r25_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R26",
+      "source_file": "gc_r26_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R27",
+      "source_file": "gc_r27_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R28",
+      "source_file": "gc_r28_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R29",
+      "source_file": "gc_r29_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R30",
+      "source_file": "gc_r30_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R31",
+      "source_file": "gc_r31_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R32",
+      "source_file": "gc_r32_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R33",
+      "source_file": "gc_r33_rebuilt_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R34",
+      "source_file": "gc_r34_rework01_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R35",
+      "source_file": "gc_r35_v2_review.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    },
+    {
+      "round": "R36",
+      "source_file": "gc_R36_REVIEW.html",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true,
+      "status": "PASS"
+    }
+  ],
+  "core_manifest_hash_checks": [
+    {
+      "name": "speaker_pairs_raw.jsonl",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "speaker_pairs_raw.csv",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "source_extraction_audit.json",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "schema_adapter_report.md",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "README_4A_KO.md",
+      "present": true,
+      "size_match": true,
+      "sha256_match": true
+    }
+  ],
+  "notes": [
+    "SOURCE_LIMITATION is a canonical-source structure limitation, not a parser failure.",
+    "R3/R4/R16/R21 do not expose both JP and observed KO speaker labels in the canonical review artifact; missing counterparts were not inferred.",
+    "4-B must use speaker_pairs_raw.jsonl as the input checkpoint and keep these limitations explicit."
+  ]
+}

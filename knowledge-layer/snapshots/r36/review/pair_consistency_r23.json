@@ -1,0 +1,346 @@
+[
+  {
+    "unit_id": "character_arc:405001",
+    "unit_type": "five_episode_arc",
+    "novel_ids": [
+      "40500101",
+      "40500102",
+      "40500103",
+      "40500104",
+      "40500105"
+    ],
+    "label_ko": "산소비노 5화 연속 문맥",
+    "review_stage": "R23_UNIT_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "01~04의 실제 사건을05화 회상으로 연결했다. 차 주체, 간병의 명분과 진심, 체구와 전문성, 직접 호감과 답변 중단을 구분했다. 5화를 가짜 두 편 쌍으로 자르거나 모두 같은 날짜로 만들지 않았다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40500101",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "40500101",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "40500102",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "40500102",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "40500102",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "40500103",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "40500103",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "40500103",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "40500104",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "40500104",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "40500104",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "40500105",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "40500105",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "40500105",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "40500105",
+        "raw_index": 22
+      },
+      {
+        "novel_id": "40500105",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "40500105",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "40500105",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "40500105",
+        "raw_index": 58
+      }
+    ],
+    "evidence_ids": [
+      "ev:r23:40500101:0005",
+      "ev:r23:40500101:0025",
+      "ev:r23:40500102:0013",
+      "ev:r23:40500102:0022",
+      "ev:r23:40500102:0034",
+      "ev:r23:40500103:0029",
+      "ev:r23:40500103:0040",
+      "ev:r23:40500103:0072",
+      "ev:r23:40500104:0054",
+      "ev:r23:40500104:0067",
+      "ev:r23:40500104:0072",
+      "ev:r23:40500105:0012",
+      "ev:r23:40500105:0013",
+      "ev:r23:40500105:0018",
+      "ev:r23:40500105:0022",
+      "ev:r23:40500105:0033",
+      "ev:r23:40500105:0038",
+      "ev:r23:40500105:0051",
+      "ev:r23:40500105:0058"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  },
+  {
+    "unit_id": "character_pair:4020044",
+    "unit_type": "two_episode_pair",
+    "novel_ids": [
+      "40200441",
+      "40200442"
+    ],
+    "label_ko": "로리에 돌 선물 1·2화",
+    "review_stage": "R23_UNIT_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "상담 방향, 우발 투척, 돌의 의인화와 실제 성질 설명, 귀걸이·펜던트의 서로 다른 제작자와 선물 경로를 재대조했다. R3-W028은 중복 없이 재확인했다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200441",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "40200441",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "40200441",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "40200441",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "40200441",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "40200441",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "40200441",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "40200441",
+        "raw_index": 73
+      },
+      {
+        "novel_id": "40200441",
+        "raw_index": 83
+      },
+      {
+        "novel_id": "40200442",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "40200442",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "40200442",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "40200442",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "40200442",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "40200442",
+        "raw_index": 45
+      }
+    ],
+    "evidence_ids": [
+      "ev:r23:40200441:0003",
+      "ev:r23:40200441:0021",
+      "ev:r23:40200441:0052",
+      "ev:r23:40200441:0053",
+      "ev:r23:40200441:0064",
+      "ev:r23:40200441:0065",
+      "ev:r23:40200441:0072",
+      "ev:r23:40200441:0073",
+      "ev:r23:40200441:0083",
+      "ev:r23:40200442:0008",
+      "ev:r23:40200442:0020",
+      "ev:r23:40200442:0023",
+      "ev:r23:40200442:0025",
+      "ev:r23:40200442:0033",
+      "ev:r23:40200442:0045"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  },
+  {
+    "unit_id": "character_pair:4020080",
+    "unit_type": "two_episode_pair",
+    "novel_ids": [
+      "40200801",
+      "40200802"
+    ],
+    "label_ko": "로리에 수영장 1·2화",
+    "review_stage": "R23_UNIT_RECONCILIATION",
+    "all_titles_and_body_reviewed": true,
+    "pair_split": false,
+    "conclusion_ko": "접수·분류의 분담 실행, 인용 호칭과 실제 손님, 타인의 부녀 오해, 모친→자기 딸, 작은 발화와 개인 독백을 구분했다. R3-W032를 재확인했고 보였다를 단순 부호 교정으로 새 제안하지 않았다.",
+    "checks": [
+      "speaker_target_and_identity",
+      "hypothesis_report_fact_lie",
+      "plan_vs_realized_outcome",
+      "terms_title_and_original_labels",
+      "proposal_cross_episode_dependencies",
+      "source_boundaries_and_complete_coverage"
+    ],
+    "source_locations": [
+      {
+        "novel_id": "40200801",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "40200801",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "40200801",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "40200801",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "40200801",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "40200801",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "40200801",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "40200801",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 80
+      },
+      {
+        "novel_id": "40200802",
+        "raw_index": 84
+      }
+    ],
+    "evidence_ids": [
+      "ev:r23:40200801:0016",
+      "ev:r23:40200801:0018",
+      "ev:r23:40200801:0028",
+      "ev:r23:40200801:0030",
+      "ev:r23:40200801:0031",
+      "ev:r23:40200801:0033",
+      "ev:r23:40200801:0036",
+      "ev:r23:40200801:0054",
+      "ev:r23:40200802:0027",
+      "ev:r23:40200802:0029",
+      "ev:r23:40200802:0038",
+      "ev:r23:40200802:0051",
+      "ev:r23:40200802:0057",
+      "ev:r23:40200802:0058",
+      "ev:r23:40200802:0068",
+      "ev:r23:40200802:0072",
+      "ev:r23:40200802:0080",
+      "ev:r23:40200802:0084"
+    ],
+    "translation_approval": false,
+    "runtime_tested": false
+  }
+]

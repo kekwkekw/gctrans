@@ -1,0 +1,26 @@
+{
+  "scope": "POST_R36_PROPOSAL_AND_ANOMALY_ADJUDICATION",
+  "WORK": "COMPLETE_1019_OF_1019_PLUS_13_ANOMALIES",
+  "first_unadjudicated_proposal": null,
+  "counts": {
+    "ACCEPT": 987,
+    "DEFER_POLICY": 3,
+    "KEEP_OBSERVED": 23,
+    "AMEND": 6
+  },
+  "R36_semantic_review_still_complete": true,
+  "new_user_approval": false,
+  "new_export": false,
+  "VALIDATION": "STRUCTURE_37_OF_37_PLUS_HTML_27_OF_27",
+  "PACKAGING": "USE_EXTERNAL_FINAL_RECEIPT",
+  "HANDOFF": "FILES_CREATED_NOT_DURABLE_LIBRARY_REGISTRATION",
+  "USER_RECEIPT": "UNCONFIRMED",
+  "remaining_policy_decisions": [
+    "R3-W035",
+    "R3-W039",
+    "R21-M044"
+  ],
+  "next_step": "USER_ACCEPTANCE_OF_ADVISORY_RESULTS_AND_TRANSLATOR_NOTE_POLICY",
+  "not_a_production_update": true,
+  "input_immutability": "PASS_6065_PARENT_FILES_PLUS_15_PREP_FILES_AND_BOTH_INPUT_ZIPS"
+}

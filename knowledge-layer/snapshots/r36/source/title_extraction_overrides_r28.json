@@ -1,0 +1,80 @@
+[
+  {
+    "novel_id": "20002701",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [번뇌 NO NEW YEAR!?] 1화 - [하레기와 무녀복]",
+    "preimage_sha256": "1a86f89c9b35121087865106458231b4f2ff737d44510f052c4f766e228a303d",
+    "start": 32,
+    "end": 40,
+    "observed_title": "하레기와 무녀복",
+    "legacy_extracted_title": "번뇌 NO NEW YEAR!?] 1화 - [하레기와 무녀복",
+    "translation_changed": false,
+    "scope": "R28_EXPLICIT_ID_TITLE_OBSERVATION_ONLY"
+  },
+  {
+    "novel_id": "20002702",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [번뇌 NO NEW YEAR!?] 2화 - [부그로의 이변]",
+    "preimage_sha256": "5026ce0e44b5456184df94252e1583160998ba93607e697adc31eeedf4a62f56",
+    "start": 32,
+    "end": 39,
+    "observed_title": "부그로의 이변",
+    "legacy_extracted_title": "번뇌 NO NEW YEAR!?] 2화 - [부그로의 이변",
+    "translation_changed": false,
+    "scope": "R28_EXPLICIT_ID_TITLE_OBSERVATION_ONLY"
+  },
+  {
+    "novel_id": "20002703",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [번뇌 NO NEW YEAR!?] 3화 - [잃어버린 번뇌!?]",
+    "preimage_sha256": "ace9d84a654ce3905e26526800e5392cf8922065d58373556c868ba100cd8b77",
+    "start": 32,
+    "end": 41,
+    "observed_title": "잃어버린 번뇌!?",
+    "legacy_extracted_title": "번뇌 NO NEW YEAR!?] 3화 - [잃어버린 번뇌!?",
+    "translation_changed": false,
+    "scope": "R28_EXPLICIT_ID_TITLE_OBSERVATION_ONLY"
+  },
+  {
+    "novel_id": "20002704",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [번뇌 NO NEW YEAR!?] 4화 - [에로스를 되찾아라!]",
+    "preimage_sha256": "fd79507ff2870af7b26ec2ce588115f27da03b40f5a7fa832245621e64e3e372",
+    "start": 32,
+    "end": 42,
+    "observed_title": "에로스를 되찾아라!",
+    "legacy_extracted_title": "번뇌 NO NEW YEAR!?] 4화 - [에로스를 되찾아라!",
+    "translation_changed": false,
+    "scope": "R28_EXPLICIT_ID_TITLE_OBSERVATION_ONLY"
+  },
+  {
+    "novel_id": "20002705",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [번뇌 NO NEW YEAR!?] 5화 - [설마했던 공물]",
+    "preimage_sha256": "338b8661fb31080fbb64288537d73b547e4fee1bc76ba55fadf1137573e3ee1d",
+    "start": 32,
+    "end": 39,
+    "observed_title": "설마했던 공물",
+    "legacy_extracted_title": "번뇌 NO NEW YEAR!?] 5화 - [설마했던 공물",
+    "translation_changed": false,
+    "scope": "R28_EXPLICIT_ID_TITLE_OBSERVATION_ONLY"
+  },
+  {
+    "novel_id": "20002706",
+    "raw_index": 0,
+    "source_field": "arca_title_ko",
+    "before": "이벤트 번역 [번뇌 NO NEW YEAR!?] 6화 - [번뇌의 귀환]",
+    "preimage_sha256": "c669eec97b0c23905e6b627fbaca0216f9b5eeecc42e29d2c77b9eb0487b5c92",
+    "start": 32,
+    "end": 38,
+    "observed_title": "번뇌의 귀환",
+    "legacy_extracted_title": "번뇌 NO NEW YEAR!?] 6화 - [번뇌의 귀환",
+    "translation_changed": false,
+    "scope": "R28_EXPLICIT_ID_TITLE_OBSERVATION_ONLY"
+  }
+]

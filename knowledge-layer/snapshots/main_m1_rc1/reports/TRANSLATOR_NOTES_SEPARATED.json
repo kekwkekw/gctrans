@@ -1,0 +1,53 @@
+[
+  {
+    "proposal_id": "R1-L06",
+    "novel_id": "10010101",
+    "raw_indices": [
+      69
+    ],
+    "translator_note_ko": "(예술가의 그림을 파는 사람)",
+    "source_target": {
+      "surface": "source/hand_blocks.jsonl",
+      "block_id": "113654569:s001:b0056",
+      "start": 41,
+      "end": 57,
+      "before": "(예술가의 그림을 파는 사람)",
+      "preimage_sha256": "fbf4f1d3d0f784b97b13597c8a2f5b8d4958f56e2c5ca858fe52ed2356f038d0"
+    },
+    "action": "omitted_from_game_text_only"
+  },
+  {
+    "proposal_id": "R4-M002",
+    "novel_id": "10010102",
+    "raw_indices": [
+      9
+    ],
+    "translator_note_ko": "(예술가의 그림을 파는 사람)",
+    "source_target": {
+      "surface": "source/hand_blocks.jsonl",
+      "block_id": "113672243:s001:b0009",
+      "start": 51,
+      "end": 67,
+      "before": "(예술가의 그림을 파는 사람)",
+      "preimage_sha256": "57fc760b2db8ba9c0caa72e29cd1c71f6c4ff4020916ae38e67a56db4a7c3c9c"
+    },
+    "action": "omitted_from_game_text_only"
+  },
+  {
+    "proposal_id": "R4-M009",
+    "novel_id": "10010104",
+    "raw_indices": [
+      3
+    ],
+    "translator_note_ko": "(일본 에도시대 판화 중 하나인 우키요에를 그리는 사람)",
+    "source_target": {
+      "surface": "source/hand_blocks.jsonl",
+      "block_id": "113879333:s001:b0004",
+      "start": 5,
+      "end": 36,
+      "before": "(일본 에도시대 판화 중 하나인 우키요에를 그리는 사람)",
+      "preimage_sha256": "92a9ad612c9bd96de4a8743f53373a450873409c85f7842130db18f722ec4793"
+    },
+    "action": "omitted_from_game_text_only"
+  }
+]

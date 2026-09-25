@@ -1,0 +1,15 @@
+[
+  {
+    "proposal_id": "R34R-M007",
+    "source_locators": [
+      "22001601/89"
+    ],
+    "observed_speaker_label": "수산한 남자 바꿔서 죽음의 예술가",
+    "candidate_speaker_label": "수상한 남자 바꿔서 죽음의 예술가",
+    "fragment_before": "수산한",
+    "fragment_after": "수상한",
+    "runtime_mapping_status": "PENDING_GCMOD_OR_NAME_LAYER_MAPPING",
+    "runtime_verified": false,
+    "deploy_authorized": false
+  }
+]

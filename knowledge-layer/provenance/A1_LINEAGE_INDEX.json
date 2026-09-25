@@ -1,0 +1,28 @@
+{
+  "document_role": "A1_GENERATED_LINEAGE_INDEX_NOT_AUTHORITY",
+  "generated_from_verified_archives": {
+    "r36": "6a51ca0cf4d1a771e4e00951231a7e581708c45351db9c286eb70d3bf7af85c7",
+    "meaning": "41b503cd48948558ac24644902ff68d02474882afc1012e2b94a0f72d146164d",
+    "editorial_survey": "1ba9a9dfaf0c52469cd286be2efbb8d282f539ea1b3c58e19d6fcab21601c187",
+    "editorial_policy": "20f2e1cd7dd702eba1096905f472ec94e31f466b7dbb16559ce23b571bb07bea",
+    "editorial_changeset": "afe9ca955aee5ab219990bddb72f0c63262930fe9890b65be45b371de7324535",
+    "export_candidate_v1_2": "72a19cfdf351ba4f4c3c6b07e3c285bca7241ce15efd5069228c2a9cef7a3708",
+    "pr13_regression": "572e3cbee72ba60741a4273b423e0b592a654629f2debecee3be72d58e543eb6",
+    "production_merge_receipt": "e4057d8a42bf70a47a2d7d19be0de9d51553fdfef9628dcb0b8d2eb6b8f328c0"
+  },
+  "lineage": [
+    "R36",
+    "Meaning baseline",
+    "Editorial survey (survey-only)",
+    "Editorial policy",
+    "Approved editorial changeset",
+    "Export candidate v1.2",
+    "PR13 post-PRO cleanup",
+    "Merged production main"
+  ],
+  "authority_notes": [
+    "Survey and historical recommendation files retain their original approval flags; this index does not promote them.",
+    "Export candidate v1.2 deploy JSON is not current production; final main after PR13 is authoritative production.",
+    "Names 4-A remains a resume checkpoint only; no 4-B dedup/approval has been performed."
+  ]
+}

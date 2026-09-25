@@ -1,0 +1,2419 @@
+[
+  {
+    "contract_id": "contract:r27:painting_not_person",
+    "key": "painting_not_person",
+    "source_locations": [
+      {
+        "novel_id": "20002101",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20002101",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 17
+      }
+    ],
+    "assertions": {
+      "affected": "painting_and_paint",
+      "actual_model_injury": false
+    },
+    "observation_ko": "더위로 부그로의 그림 작업과 물감에 문제가 생겼다. 실제 모델의 신체가 파괴된 사건이 아니다.",
+    "blocked_overclaim_ko": "회화 훼손을 쿠피도 실제 신체 손상으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002101",
+      "event_story:20002102"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002101:0003",
+      "ev:r27:20002101:0018",
+      "ev:r27:20002102:0016",
+      "ev:r27:20002102:0017"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:ice_not_petting",
+    "key": "ice_not_petting",
+    "source_locations": [
+      {
+        "novel_id": "20002101",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20002101",
+        "raw_index": 21
+      },
+      {
+        "novel_id": "20002101",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20002101",
+        "raw_index": 24
+      }
+    ],
+    "assertions": {
+      "source_condition": "limp",
+      "petting_action_attested": false
+    },
+    "observation_ko": "폴라가 축 늘어진 곰들을 보고 얼음을 더 만들지 묻는다. 쓰다듬는 동작이 아니라 상태 묘사다.",
+    "blocked_overclaim_ko": "ぐでぐで를 실제 쓰담쓰담 행동으로 등록하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002101"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002101:0020",
+      "ev:r27:20002101:0021",
+      "ev:r27:20002101:0023",
+      "ev:r27:20002101:0024"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:folklore_hypothesis",
+    "key": "folklore_hypothesis",
+    "source_locations": [
+      {
+        "novel_id": "20002101",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20002101",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20002101",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20002101",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20002101",
+        "raw_index": 53
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 64
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 67
+      }
+    ],
+    "assertions": {
+      "initial_cause": "sekien_hypothesis",
+      "yokai_confirmed": false,
+      "later_cause": "death_art_fragment"
+    },
+    "observation_ko": "세키엔의 히요리보 원인설은 요괴를 기대하는 가설이며 죽음의 예술 조각 발견 후 요괴가 아님을 받아들인다.",
+    "blocked_overclaim_ko": "히요리보의 실제 등장이나 도시 폭염 원인 확정을 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002101",
+      "event_story:20002104"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002101:0033",
+      "ev:r27:20002101:0034",
+      "ev:r27:20002101:0036",
+      "ev:r27:20002101:0038",
+      "ev:r27:20002101:0053",
+      "ev:r27:20002104:0064",
+      "ev:r27:20002104:0067"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:courtyard_idea_roles",
+    "key": "courtyard_idea_roles",
+    "source_locations": [
+      {
+        "novel_id": "20002101",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 5
+      }
+    ],
+    "assertions": {
+      "sprinkling_proposer": "sekien",
+      "water_party_proposer": "bouguereau",
+      "cleanup_order": "sansovino"
+    },
+    "observation_ko": "세키엔의 물 뿌리기 제안과 부그로의 물놀이 행사 발안은 다른 단계이며 이후 산소비노가 원상복구를 요구한다.",
+    "blocked_overclaim_ko": "세키엔이 처음부터 수영복 행사를 기획했거나 청소가 임의 취소됐다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002101",
+      "event_story:20002103"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002101:0054",
+      "ev:r27:20002103:0003",
+      "ev:r27:20002103:0005"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:gogh_participation",
+    "key": "gogh_participation",
+    "source_locations": [
+      {
+        "novel_id": "20002102",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 63
+      }
+    ],
+    "assertions": {
+      "gogh_excluded": false,
+      "permission_context": "after_initial_surprise"
+    },
+    "observation_ko": "고흐의 걱정과 시즈쿠의 갑작스런 물 끼얹기 이후 대화·수락을 구분하고 고흐의 참여를 배제하지 않는다.",
+    "blocked_overclaim_ko": "놀람을 행사 전체의 거부나 고흐에 대한 따돌림 결과로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002102"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002102:0051",
+      "ev:r27:20002102:0054",
+      "ev:r27:20002102:0057",
+      "ev:r27:20002102:0058",
+      "ev:r27:20002102:0059",
+      "ev:r27:20002102:0061",
+      "ev:r27:20002102:0063"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:morisot_training_motive",
+    "key": "morisot_training_motive",
+    "source_locations": [
+      {
+        "novel_id": "20002102",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20002102",
+        "raw_index": 48
+      }
+    ],
+    "assertions": {
+      "morisot_motive": "training",
+      "rembrandt_motive": "private_frustration",
+      "shared_private_motive": false
+    },
+    "observation_ko": "모리조는 수압을 수련으로 받아들이길 원하고 렘브란트는 평소 울분을 표적으로 풀려 한다.",
+    "blocked_overclaim_ko": "둘의 동일 동기나 렘브란트의 속마음이 상대에게 전달됐다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002102"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002102:0044",
+      "ev:r27:20002102:0046",
+      "ev:r27:20002102:0047",
+      "ev:r27:20002102:0048"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:temporary_cooling",
+    "key": "temporary_cooling",
+    "source_locations": [
+      {
+        "novel_id": "20002103",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 24
+      }
+    ],
+    "assertions": {
+      "first_relief": "temporary",
+      "persistent_resolution": false
+    },
+    "observation_ko": "잠깐 서늘해진 뒤 다음날 폭염이 돌아온다. 세키엔은 효과 지속의 원인을 계속 의심한다.",
+    "blocked_overclaim_ko": "첫 안뜰 행사만으로 영구 해결했다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002103"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002103:0013",
+      "ev:r27:20002103:0015",
+      "ev:r27:20002103:0016",
+      "ev:r27:20002103:0024"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:underwear_unconfirmed",
+    "key": "underwear_unconfirmed",
+    "source_locations": [
+      {
+        "novel_id": "20002103",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 44
+      }
+    ],
+    "assertions": {
+      "actual_color_confirmed": false
+    },
+    "observation_ko": "산소비노의 속옷을 둘러싼 말은 질문·장난이며 실제 색을 확인한 답변으로 채우지 않는다.",
+    "blocked_overclaim_ko": "미확인 속옷 색·노출·동의를 확정 정보로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002103"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002103:0035",
+      "ev:r27:20002103:0036",
+      "ev:r27:20002103:0037",
+      "ev:r27:20002103:0038",
+      "ev:r27:20002103:0039",
+      "ev:r27:20002103:0041",
+      "ev:r27:20002103:0042",
+      "ev:r27:20002103:0043",
+      "ev:r27:20002103:0044"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:council_authorization",
+    "key": "council_authorization",
+    "source_locations": [
+      {
+        "novel_id": "20002103",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20002103",
+        "raw_index": 61
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 9
+      }
+    ],
+    "assertions": {
+      "event_authorized": true,
+      "unanimous_vote": false
+    },
+    "observation_ko": "도시 물놀이 대회는 의회 공인 행사로 진행된다. 앞선 관장의 불가능 예상과 실제 승인 결과를 구분한다.",
+    "blocked_overclaim_ko": "의회 만장일치나 무허가 도시 행사로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002103",
+      "event_story:20002104"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002103:0057",
+      "ev:r27:20002103:0058",
+      "ev:r27:20002103:0059",
+      "ev:r27:20002103:0061",
+      "ev:r27:20002104:0003",
+      "ev:r27:20002104:0009"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:water_helpers",
+    "key": "water_helpers",
+    "source_locations": [
+      {
+        "novel_id": "20002104",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 17
+      }
+    ],
+    "assertions": {
+      "helpers": "artists_and_water_skilled_images",
+      "creator_inference": false
+    },
+    "observation_ko": "예술가와 물 능력이 있는 이마쥬들의 지원으로 행사를 운영한다. 각각의 말투·능력 언급을 실제 문맥에 제한한다.",
+    "blocked_overclaim_ko": "모든 지원자의 창작자·나이·전역 능력 등급을 추정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002104"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002104:0011",
+      "ev:r27:20002104:0012",
+      "ev:r27:20002104:0013",
+      "ev:r27:20002104:0014",
+      "ev:r27:20002104:0015",
+      "ev:r27:20002104:0016",
+      "ev:r27:20002104:0017"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:participants_notice",
+    "key": "participants_notice",
+    "source_locations": [
+      {
+        "novel_id": "20002104",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 20
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 23
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 24
+      }
+    ],
+    "assertions": {
+      "venue_notice": true,
+      "consent_scope": "present_participants",
+      "women_A_B_accept_water": true
+    },
+    "observation_ko": "미리 공지했고 이 자리에 있는 참가자들은 젖을 각오가 있다. 두 여성의 물 끼얹기 수락도 각각 확인된다.",
+    "blocked_overclaim_ko": "온 도시 주민의 포괄 동의나 모든 농담의 공식 승인을 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002104"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002104:0018",
+      "ev:r27:20002104:0019",
+      "ev:r27:20002104:0020",
+      "ev:r27:20002104:0023",
+      "ev:r27:20002104:0024"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:volunteer_relief",
+    "key": "volunteer_relief",
+    "source_locations": [
+      {
+        "novel_id": "20002104",
+        "raw_index": 37
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 39
+      }
+    ],
+    "assertions": {
+      "relieved_group": "director_and_companions",
+      "replacement": "council_volunteers"
+    },
+    "observation_ko": "의회 자원 참여자들이 뒷일을 맡고 관장 일행이 쉬어도 된다는 허가다. 관장은 세키엔을 찾아간다.",
+    "blocked_overclaim_ko": "관장 한 명만 쉬도록 허가됐거나 정규 의회 전원 배치로 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002104"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002104:0037",
+      "ev:r27:20002104:0038",
+      "ev:r27:20002104:0039"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:first_dig_roles",
+    "key": "first_dig_roles",
+    "source_locations": [
+      {
+        "novel_id": "20002104",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 60
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 62
+      },
+      {
+        "novel_id": "20002104",
+        "raw_index": 63
+      }
+    ],
+    "assertions": {
+      "digger": "sekien",
+      "attacker": "bouguereau",
+      "cooling_observed": true
+    },
+    "observation_ko": "세키엔은 삽으로 발굴하고 쭈그린 세키엔 대신 부그로가 공격해 조각을 파괴한다. 주변 냉각은 실제 관찰이다.",
+    "blocked_overclaim_ko": "이 단계에서 세키엔이 공격자를 엄호한 최종전과 역할을 뒤섞지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002104"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002104:0051",
+      "ev:r27:20002104:0052",
+      "ev:r27:20002104:0059",
+      "ev:r27:20002104:0060",
+      "ev:r27:20002104:0062",
+      "ev:r27:20002104:0063"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:measurement_limits",
+    "key": "measurement_limits",
+    "source_locations": [
+      {
+        "novel_id": "20002105",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 19
+      }
+    ],
+    "assertions": {
+      "method": "temperature_and_map",
+      "global_precision_claim": false
+    },
+    "observation_ko": "세키엔은 온도 측정과 지도에서 열원 위치를 좁혔다. 안뜰 흔적과 다른 지구 발굴의 증거를 구분한다.",
+    "blocked_overclaim_ko": "지도 화살표를 근거 없는 정확한 매설 좌표나 전역 탐지 능력으로 확장하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002105"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002105:0003",
+      "ev:r27:20002105:0012",
+      "ev:r27:20002105:0013",
+      "ev:r27:20002105:0014",
+      "ev:r27:20002105:0016",
+      "ev:r27:20002105:0017",
+      "ev:r27:20002105:0019"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:distributed_search",
+    "key": "distributed_search",
+    "source_locations": [
+      {
+        "novel_id": "20002105",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 31
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 46
+      }
+    ],
+    "assertions": {
+      "director_eyewitness_all": false,
+      "museum_destroyed": false,
+      "arte_target": "death_art_at_museum"
+    },
+    "observation_ko": "각 지역에서 예술가들이 조각을 찾아 제거하는 분산 장면이다. 박물관의 아르테가 파괴한 것은 미술관이 아니라 그곳의 죽음의 예술이다.",
+    "blocked_overclaim_ko": "관장이 모든 현장을 직접 보았거나 미술관 건물 자체가 파괴됐다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002105"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002105:0028",
+      "ev:r27:20002105:0031",
+      "ev:r27:20002105:0034",
+      "ev:r27:20002105:0038",
+      "ev:r27:20002105:0040",
+      "ev:r27:20002105:0044",
+      "ev:r27:20002105:0046"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:dona_before_morisot",
+    "key": "dona_before_morisot",
+    "source_locations": [
+      {
+        "novel_id": "20002105",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 40
+      }
+    ],
+    "assertions": {
+      "destroyer": "donatello",
+      "morisot_completed_attack": false
+    },
+    "observation_ko": "도나텔로가 모리조가 싸우기 전에 조각을 제거해 모리조가 아쉬워한다.",
+    "blocked_overclaim_ko": "모리조의 직접 격파 실적으로 합치지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002105"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002105:0038",
+      "ev:r27:20002105:0039",
+      "ev:r27:20002105:0040"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:core_emerges",
+    "key": "core_emerges",
+    "source_locations": [
+      {
+        "novel_id": "20002105",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 66
+      }
+    ],
+    "assertions": {
+      "fragment_total_known": false,
+      "core_exposed_by_digging": false
+    },
+    "observation_ko": "조각 수가 미확인인 가운데 본체가 먼저 나타난다. 분노를 원인으로 읽는 세키엔 해석과 현장 관찰을 나눈다.",
+    "blocked_overclaim_ko": "이미 모든 조각 수를 알고 발굴해서 본체를 꺼냈다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002105"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002105:0047",
+      "ev:r27:20002105:0059",
+      "ev:r27:20002105:0065",
+      "ev:r27:20002105:0066"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:final_guard_roles",
+    "key": "final_guard_roles",
+    "source_locations": [
+      {
+        "novel_id": "20002105",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "20002105",
+        "raw_index": 72
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 3
+      }
+    ],
+    "assertions": {
+      "support": "sekien",
+      "finisher": "bouguereau"
+    },
+    "observation_ko": "최종전에는 세키엔이 부그로를 돕고 부그로의 일격으로 본체를 제압한다. 첫 발굴 당시 엄호 관계와 구분한다.",
+    "blocked_overclaim_ko": "첫 발굴과 최종전의 행동 역할을 같은 문장으로 합치지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002105",
+      "event_story:20002106"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002105:0071",
+      "ev:r27:20002105:0072",
+      "ev:r27:20002106:0001",
+      "ev:r27:20002106:0003"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:exhaustion_not_death",
+    "key": "exhaustion_not_death",
+    "source_locations": [
+      {
+        "novel_id": "20002106",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 13
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 26
+      }
+    ],
+    "assertions": {
+      "permanent_death": false,
+      "later_return": true
+    },
+    "observation_ko": "부그로는 열기와 전투로 지쳐 돌봄을 받고 이후 다시 모습을 보인다.",
+    "blocked_overclaim_ko": "사망·영구 부상·현실 의료 처치 효과를 추정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002106"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002106:0010",
+      "ev:r27:20002106:0011",
+      "ev:r27:20002106:0013",
+      "ev:r27:20002106:0014",
+      "ev:r27:20002106:0024",
+      "ev:r27:20002106:0026"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:heat_case_report",
+    "key": "heat_case_report",
+    "source_locations": [
+      {
+        "novel_id": "20002106",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 18
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 20
+      }
+    ],
+    "assertions": {
+      "criminal_account": "police_to_sekien_to_director",
+      "director_saw_disposal": false
+    },
+    "observation_ko": "도시는 정상 여름 기온으로 돌아가며 범인의 경위는 경찰에게 들은 세키엔의 보고로 전달된다.",
+    "blocked_overclaim_ko": "관장이 범인의 폐기 행위를 직접 보았거나 미제시 이름·판결을 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002106"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002106:0015",
+      "ev:r27:20002106:0016",
+      "ev:r27:20002106:0017",
+      "ev:r27:20002106:0018",
+      "ev:r27:20002106:0020"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:repeat_party_denied",
+    "key": "repeat_party_denied",
+    "source_locations": [
+      {
+        "novel_id": "20002106",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20002106",
+        "raw_index": 55
+      }
+    ],
+    "assertions": {
+      "repeat_event_approved": false,
+      "director_last_line": "unrealized_retrospective"
+    },
+    "observation_ko": "다시 행사하자는 제안은 거절되고 일행은 떠난다. 마지막 관장의 회고성 아쉬움은 새 허가가 아니다.",
+    "blocked_overclaim_ko": "새 행사 실제 개최나 모델 동의 자동 연장으로 처리하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002106"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002106:0024",
+      "ev:r27:20002106:0032",
+      "ev:r27:20002106:0035",
+      "ev:r27:20002106:0042",
+      "ev:r27:20002106:0043",
+      "ev:r27:20002106:0046",
+      "ev:r27:20002106:0049",
+      "ev:r27:20002106:0055"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:losses_and_budget",
+    "key": "losses_and_budget",
+    "source_locations": [
+      {
+        "novel_id": "20002601",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20002601",
+        "raw_index": 4
+      },
+      {
+        "novel_id": "20002601",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20002601",
+        "raw_index": 7
+      },
+      {
+        "novel_id": "20002601",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20002601",
+        "raw_index": 11
+      }
+    ],
+    "assertions": {
+      "budget_problem": "no_use_not_no_money",
+      "normal_shopping_chosen": true
+    },
+    "observation_ko": "소장품 손실과 수집 경로 축소가 렘브란트를 괴롭힌다. 돈이 있으나 쓸 곳이 없고 이번에는 보통 쇼핑을 택한다.",
+    "blocked_overclaim_ko": "빈곤·지불 불능이나 관장을 도운 선택 자체의 후회로 단정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002601"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002601:0003",
+      "ev:r27:20002601:0004",
+      "ev:r27:20002601:0006",
+      "ev:r27:20002601:0007",
+      "ev:r27:20002601:0009",
+      "ev:r27:20002601:0011"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:appearance_not_age",
+    "key": "appearance_not_age",
+    "source_locations": [
+      {
+        "novel_id": "20002601",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20002601",
+        "raw_index": 30
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 3
+      }
+    ],
+    "assertions": {
+      "age_inferred_from_appearance": false,
+      "unknown_label_preserved": true
+    },
+    "observation_ko": "렘브란트는 어린아이로 오해받는 접객을 불편해한다. 여성점원？은 이후 세잔으로 드러나지만 원본 미공개 라벨을 보존한다.",
+    "blocked_overclaim_ko": "외모로 실제 미성년 확정 또는 과거 라벨 소급 치환을 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002601",
+      "event_story:20002602"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002601:0029",
+      "ev:r27:20002601:0030",
+      "ev:r27:20002602:0003"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:cezanne_guard_job",
+    "key": "cezanne_guard_job",
+    "source_locations": [
+      {
+        "novel_id": "20002602",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 56
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 11
+      }
+    ],
+    "assertions": {
+      "harassed_party": "cezanne_relatives_shop",
+      "cover_role": "clerk",
+      "actual_role": "protection"
+    },
+    "observation_ko": "세잔은 친척 가게의 괴롭힘 때문에 점원처럼 일하며 경호한다. 피해자 쪽과 가해자 쪽을 구분한다.",
+    "blocked_overclaim_ko": "세잔 가게가 상대를 괴롭히는 능동 주체로 바뀌지 않게 한다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002602",
+      "event_story:20002604"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002602:0055",
+      "ev:r27:20002602:0056",
+      "ev:r27:20002602:0058",
+      "ev:r27:20002604:0010",
+      "ev:r27:20002604:0011"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:private_customer_threat",
+    "key": "private_customer_threat",
+    "source_locations": [
+      {
+        "novel_id": "20002602",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 62
+      }
+    ],
+    "assertions": {
+      "exact_threat_hearers": [
+        "violent_customer"
+      ],
+      "cezanne_knows_words": false,
+      "manager_knows_words": false
+    },
+    "observation_ko": "렘브란트의 조용한 위협은 해당 남자만 듣는다. 세잔은 무슨 말을 했는지 묻고 점장은 흐름을 봤다고만 한다.",
+    "blocked_overclaim_ko": "점장 또는 세잔이 위협의 정확한 내용을 들었다고 확정하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002602"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002602:0045",
+      "ev:r27:20002602:0047",
+      "ev:r27:20002602:0049",
+      "ev:r27:20002602:0050",
+      "ev:r27:20002602:0051",
+      "ev:r27:20002602:0062"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:discount_replaced_by_gifts",
+    "key": "discount_replaced_by_gifts",
+    "source_locations": [
+      {
+        "novel_id": "20002602",
+        "raw_index": 65
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 69
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 71
+      },
+      {
+        "novel_id": "20002602",
+        "raw_index": 74
+      }
+    ],
+    "assertions": {
+      "discount_accepted": false,
+      "extras_accepted": true,
+      "exact_family_genealogy_confirmed": false
+    },
+    "observation_ko": "감사 할인은 탕진 목적에 맞지 않아 렘브란트가 사양하고 아내의 덤 제안을 수락한다. 포셔는 관찰된 세잔 호칭이다.",
+    "blocked_overclaim_ko": "할인 완료·부부 양쪽의 정확한 혈연 계보·포샤 전역 승인을 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002602"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002602:0065",
+      "ev:r27:20002602:0066",
+      "ev:r27:20002602:0067",
+      "ev:r27:20002602:0069",
+      "ev:r27:20002602:0070",
+      "ev:r27:20002602:0071",
+      "ev:r27:20002602:0074"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:covert_investigation_roles",
+    "key": "covert_investigation_roles",
+    "source_locations": [
+      {
+        "novel_id": "20002603",
+        "raw_index": 14
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 15
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 50
+      }
+    ],
+    "assertions": {
+      "distraction": "rembrandt",
+      "investigator": "tyulp",
+      "contracts_brought": "some",
+      "director_commands": false
+    },
+    "observation_ko": "렘브란트가 실제 쇼핑으로 접객 주의를 끌고 튈프가 지하를 조사해 계약서 일부를 가져온다. 흔적을 남기지 말라는 부탁은 파괴 말장난으로 받아들인다.",
+    "blocked_overclaim_ko": "관장이 이 조사를 지휘하거나 계약서 전부를 압수했다고 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002603"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002603:0014",
+      "ev:r27:20002603:0015",
+      "ev:r27:20002603:0016",
+      "ev:r27:20002603:0017",
+      "ev:r27:20002603:0042",
+      "ev:r27:20002603:0050"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:rival_noble_reasoning",
+    "key": "rival_noble_reasoning",
+    "source_locations": [
+      {
+        "novel_id": "20002603",
+        "raw_index": 26
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 37
+      }
+    ],
+    "assertions": {
+      "supplier_threat_proven": false,
+      "noble_expertise": "self_claim",
+      "rembrandt_assessment": "private"
+    },
+    "observation_ko": "귀족 점주는 단골과 거래처 유지가 방해라고 주장하며 협박을 추측한다. 렘브란트는 이를 실패 뒤 역원한으로 본다.",
+    "blocked_overclaim_ko": "경쟁 가게 협박을 독립적 사실이나 현실 법적 영업방해로 승인하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002603"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002603:0026",
+      "ev:r27:20002603:0032",
+      "ev:r27:20002603:0033",
+      "ev:r27:20002603:0035",
+      "ev:r27:20002603:0037"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:two_businesses",
+    "key": "two_businesses",
+    "source_locations": [
+      {
+        "novel_id": "20002603",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 59
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 61
+      }
+    ],
+    "assertions": {
+      "death_art_trade": "inferred_from_contracts",
+      "clothing_quality_real": true,
+      "cover_only_confirmed": false
+    },
+    "observation_ko": "계약서로 판매 활동을 읽고 옷가게가 위장 겸 실제 수익 사업일 것이라고 추론한다.",
+    "blocked_overclaim_ko": "단순 물리적 은신처나 모든 옷이 위장 상품뿐인 가게로 축소하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002603"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002603:0052",
+      "ev:r27:20002603:0055",
+      "ev:r27:20002603:0058",
+      "ev:r27:20002603:0059",
+      "ev:r27:20002603:0061"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:self_exposure_risk",
+    "key": "self_exposure_risk",
+    "source_locations": [
+      {
+        "novel_id": "20002603",
+        "raw_index": 66
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 67
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 68
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 70
+      },
+      {
+        "novel_id": "20002603",
+        "raw_index": 71
+      }
+    ],
+    "assertions": {
+      "shared_buyer_recognized": true,
+      "rembrandt_exposure": "possible_not_actual",
+      "prearranged_complicity": false
+    },
+    "observation_ko": "공통 바이어 이름 때문에 조사 파급을 걱정하는 렘브란트가 위해 계획도 알고 행동한다.",
+    "blocked_overclaim_ko": "이미 체포된 렘브란트·사전 범행 공모·오직 타인 구원만의 동기를 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002603"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002603:0066",
+      "ev:r27:20002603:0067",
+      "ev:r27:20002603:0068",
+      "ev:r27:20002603:0070",
+      "ev:r27:20002603:0071"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:message_and_wife_departure",
+    "key": "message_and_wife_departure",
+    "source_locations": [
+      {
+        "novel_id": "20002604",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 28
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 29
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 36
+      }
+    ],
+    "assertions": {
+      "original_recipient": "cezanne",
+      "additional_listener": "director",
+      "manager_stays": true,
+      "wife_already_out": true
+    },
+    "observation_ko": "세잔 앞으로 온 긴급 경고를 관장도 듣고 아내가 이미 외출했음을 알아 뒤쫓는다. 점장은 가게에 남는다.",
+    "blocked_overclaim_ko": "가족 전체가 경고 전에 안전하게 귀환했거나 점장도 추적했다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002604"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002604:0024",
+      "ev:r27:20002604:0025",
+      "ev:r27:20002604:0028",
+      "ev:r27:20002604:0029",
+      "ev:r27:20002604:0032",
+      "ev:r27:20002604:0036"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:rescue_trace_vs_witness",
+    "key": "rescue_trace_vs_witness",
+    "source_locations": [
+      {
+        "novel_id": "20002604",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20002604",
+        "raw_index": 51
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 1
+      }
+    ],
+    "assertions": {
+      "attack_eyewitness_director": false,
+      "wife_dead": false,
+      "rembrandt_waits": true
+    },
+    "observation_ko": "관장 일행은 쓰러진 아내와 잔해를 보고 렘브란트 전투를 추정한다. 먼저 아내를 데려다준 뒤 합류하고 렘브란트는 가게 앞에서 기다린다.",
+    "blocked_overclaim_ko": "공격 순간 직접 목격·확정 사망·무리한 단독 돌입으로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002604",
+      "event_story:20002605"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002604:0043",
+      "ev:r27:20002604:0044",
+      "ev:r27:20002604:0047",
+      "ev:r27:20002604:0048",
+      "ev:r27:20002604:0049",
+      "ev:r27:20002604:0051",
+      "ev:r27:20002605:0001"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:unexpected_director_arrival",
+    "key": "unexpected_director_arrival",
+    "source_locations": [
+      {
+        "novel_id": "20002605",
+        "raw_index": 3
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 5
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 13
+      }
+    ],
+    "assertions": {
+      "director_expected_by_rembrandt": false,
+      "collection_secret_disclosed": false
+    },
+    "observation_ko": "렘브란트는 세잔만 기대했으나 관장도 와서 놀란다. 기척 감지·계획 발견 설명은 하지만 자기 비밀 목적은 말하지 않는다.",
+    "blocked_overclaim_ko": "관장 합류를 처음부터 설계했거나 숨은 구매를 자백했다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002605"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002605:0003",
+      "ev:r27:20002605:0005",
+      "ev:r27:20002605:0006",
+      "ev:r27:20002605:0010",
+      "ev:r27:20002605:0012",
+      "ev:r27:20002605:0013"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:entry_team_and_pretext",
+    "key": "entry_team_and_pretext",
+    "source_locations": [
+      {
+        "novel_id": "20002605",
+        "raw_index": 16
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 17
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 19
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 32
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 34
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 35
+      }
+    ],
+    "assertions": {
+      "entry_team": [
+        "director",
+        "cezanne",
+        "rembrandt"
+      ],
+      "tyulp_task": "call_police",
+      "search_reason": "negotiation_pretext"
+    },
+    "observation_ko": "튈프가 경찰을 부르는 동안 관장·세잔·렘브란트 세 명이 들어가 안전 수색을 교섭 명분으로 쓴다.",
+    "blocked_overclaim_ko": "튈프 포함 네 명 돌입이나 전적으로 무혐의라 믿은 방문으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002605"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002605:0016",
+      "ev:r27:20002605:0017",
+      "ev:r27:20002605:0019",
+      "ev:r27:20002605:0032",
+      "ev:r27:20002605:0034",
+      "ev:r27:20002605:0035"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:two_subjugators",
+    "key": "two_subjugators",
+    "source_locations": [
+      {
+        "novel_id": "20002605",
+        "raw_index": 42
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 45
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20002605",
+        "raw_index": 58
+      }
+    ],
+    "assertions": {
+      "art_destroyer": "cezanne",
+      "owner_subduer": "rembrandt",
+      "director_hit": false,
+      "owner_anger": "own_goods_destroyed_passive"
+    },
+    "observation_ko": "세잔이 죽음의 예술을 일소하고, 관장이 세잔을 보호하려 선 사이 렘브란트가 점주를 제압한다. 점주는 자기 상품이 파괴돼 격분했다.",
+    "blocked_overclaim_ko": "점주가 직접 작품을 부숴 흥분하거나 관장이 타격을 입었다고 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002605"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002605:0042",
+      "ev:r27:20002605:0044",
+      "ev:r27:20002605:0045",
+      "ev:r27:20002605:0047",
+      "ev:r27:20002605:0050",
+      "ev:r27:20002605:0054",
+      "ev:r27:20002605:0058"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:arrest_and_return",
+    "key": "arrest_and_return",
+    "source_locations": [
+      {
+        "novel_id": "20002605",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 1
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 2
+      }
+    ],
+    "assertions": {
+      "arrest_confirmed": true,
+      "shop_closed": true,
+      "sentence_specified": false
+    },
+    "observation_ko": "경찰 인계 이후 조사로 거래가 드러나 체포·폐점되고 세잔은 일상으로 복귀한다.",
+    "blocked_overclaim_ko": "형량·전체 거래망 적발·모든 인물 무죄 판결을 추가하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002605",
+      "event_story:20002606"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002605:0058",
+      "ev:r27:20002606:0001",
+      "ev:r27:20002606:0002"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:unilateral_purchase_flashback",
+    "key": "unilateral_purchase_flashback",
+    "source_locations": [
+      {
+        "novel_id": "20002606",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 8
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 9
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 10
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 11
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 12
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 13
+      }
+    ],
+    "assertions": {
+      "buyer": "rembrandt",
+      "owner_consent_attested": false,
+      "director_witnessed": false,
+      "flashback_private": true,
+      "cash_evidence": "reported"
+    },
+    "observation_ko": "구조 뒤 렘브란트가 좋은 작품을 골라 돈을 남기고 미리 옮긴 행위가 회상과 서술로 드러난다. 현금은 거래 증거로 쓰였다는 전언이 있다.",
+    "blocked_overclaim_ko": "점주가 동의한 정식 거래·경찰 허가·관장 목격으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002606"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002606:0006",
+      "ev:r27:20002606:0008",
+      "ev:r27:20002606:0009",
+      "ev:r27:20002606:0010",
+      "ev:r27:20002606:0011",
+      "ev:r27:20002606:0012",
+      "ev:r27:20002606:0013"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:thanks_and_private_guilt",
+    "key": "thanks_and_private_guilt",
+    "source_locations": [
+      {
+        "novel_id": "20002606",
+        "raw_index": 24
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 25
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 27
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 28
+      }
+    ],
+    "assertions": {
+      "cezanne_knows_purchase": false,
+      "help_real": true,
+      "rembrandt_guilt": "receiving_thanks_context"
+    },
+    "observation_ko": "세잔이 구체적 도움을 감사하자 렘브란트는 숨은 구매 탓에 거리낌을 느낀다. 행동을 모두 순수 선의 또는 모두 무효한 도움으로 환원하지 않는다.",
+    "blocked_overclaim_ko": "세잔이 비밀을 알고 용서하거나 렘브란트가 구매 자체를 완전히 뉘우쳤다고 하지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002606"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002606:0024",
+      "ev:r27:20002606:0025",
+      "ev:r27:20002606:0027",
+      "ev:r27:20002606:0028"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:art_supplies_gift",
+    "key": "art_supplies_gift",
+    "source_locations": [
+      {
+        "novel_id": "20002603",
+        "raw_index": 6
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 33
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 35
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 36
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 37
+      }
+    ],
+    "assertions": {
+      "forgotten_purchase": true,
+      "gift": "art_materials",
+      "cezanne_knew_purchase_status": false
+    },
+    "observation_ko": "렘브란트가 사려다 사건 때문에 잊은 화구를 세잔이 기억하고 선물한다. 세잔은 중복 여부를 몰랐다.",
+    "blocked_overclaim_ko": "렘브란트의 기존 화구 구매 완료·확정 중복·현금 선물로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002603",
+      "event_story:20002606"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002603:0006",
+      "ev:r27:20002606:0033",
+      "ev:r27:20002606:0035",
+      "ev:r27:20002606:0036",
+      "ev:r27:20002606:0037"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:future_shopping_acceptance",
+    "key": "future_shopping_acceptance",
+    "source_locations": [
+      {
+        "novel_id": "20002606",
+        "raw_index": 38
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 39
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 40
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 41
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 43
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 44
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 45
+      }
+    ],
+    "assertions": {
+      "future_plan_accepted": true,
+      "shopping_together_completed": false,
+      "romance_confirmed": false
+    },
+    "observation_ko": "함께 쇼핑하자는 제안을 자연스럽게 수락하고 같이 계획을 세우려 한다. 아직 미래 일정이다.",
+    "blocked_overclaim_ko": "공동 쇼핑 완료나 세잔의 제안 거절로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002606"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002606:0038",
+      "ev:r27:20002606:0039",
+      "ev:r27:20002606:0040",
+      "ev:r27:20002606:0041",
+      "ev:r27:20002606:0043",
+      "ev:r27:20002606:0044",
+      "ev:r27:20002606:0045"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:possible_departure_not_decision",
+    "key": "possible_departure_not_decision",
+    "source_locations": [
+      {
+        "novel_id": "20002606",
+        "raw_index": 46
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 47
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 48
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 49
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 50
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 51
+      }
+    ],
+    "assertions": {
+      "departure_decided": false,
+      "near_term_date": false,
+      "director_addressee": false
+    },
+    "observation_ko": "렘브란트는 관계가 변할 가능성과 가치가 사라질 조건을 사적으로 상상하다 아픔을 느낀다.",
+    "blocked_overclaim_ko": "실제 미술관 탈퇴·임박한 확정 이별·관장에게 전달된 결별 선언으로 바꾸지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002606"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002606:0046",
+      "ev:r27:20002606:0047",
+      "ev:r27:20002606:0048",
+      "ev:r27:20002606:0049",
+      "ev:r27:20002606:0050",
+      "ev:r27:20002606:0051"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  },
+  {
+    "contract_id": "contract:r27:feeling_covered_not_discarded",
+    "key": "feeling_covered_not_discarded",
+    "source_locations": [
+      {
+        "novel_id": "20002606",
+        "raw_index": 52
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 54
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 55
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 57
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 58
+      },
+      {
+        "novel_id": "20002606",
+        "raw_index": 59
+      }
+    ],
+    "assertions": {
+      "cezanne_reads_thoughts": false,
+      "feeling_discarded": false,
+      "fully_resolved_now": false
+    },
+    "observation_ko": "세잔은 표정만 보고 즐거운 현재를 권하고 렘브란트는 소중한 감정을 덮되 버리지는 않는다. 직면은 먼 미래로 남는다.",
+    "blocked_overclaim_ko": "세잔의 독심·완전한 감정 포기·이번 화의 최종 감정 해결로 만들지 않는다.",
+    "global_fact_auto_approved": false,
+    "context_groups": [
+      "event_story:20002606"
+    ],
+    "evidence_ids": [
+      "ev:r27:20002606:0052",
+      "ev:r27:20002606:0054",
+      "ev:r27:20002606:0055",
+      "ev:r27:20002606:0057",
+      "ev:r27:20002606:0058",
+      "ev:r27:20002606:0059"
+    ],
+    "status": "reviewing",
+    "confidence": "high",
+    "scope": "R27_REVIEWED_CONTEXTS_ONLY",
+    "source_tiers": [
+      "game_story",
+      "fan_translation",
+      "pro_review"
+    ],
+    "provenance": {
+      "review_round": "R27"
+    }
+  }
+]

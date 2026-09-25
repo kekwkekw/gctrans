@@ -1,0 +1,36 @@
+{
+  "hq_branch_separation": {
+    "hq_local_id": "local:main09:hq",
+    "branch_local_id": "local:main09:branch_officer",
+    "police_entity_id": "entity:87f068021c6ec4dc",
+    "final_confirmation_entry": "story:10010905:raw:0001"
+  },
+  "quote_identity": {
+    "entry_id": "story:10010905:raw:0031",
+    "actual_speaker": "entity:828bf1ba73e463a7",
+    "quoted_speaker": "entity:2b10a95900819b0d"
+  },
+  "statue_plan": {
+    "right_creator": "entity:ac03defc343f2b9c",
+    "left_creator": "entity:7d6e324cfe8dbd65",
+    "right_local_id": "local:main09:statue_right",
+    "left_local_id": "local:main09:statue_left",
+    "completed": false
+  },
+  "knights_cooperation": {
+    "permanent_alliance": false,
+    "davinci_direct_permission_confirmed": false,
+    "temporary_promise_relationship": "relationship:1346ba7df23eab33"
+  },
+  "death_topic": {
+    "distinction_entry": "story:10010908:raw:0041",
+    "correction_entry": "story:10010909:raw:0044",
+    "source_literal": "死は芸術への昇華"
+  },
+  "first_meeting_flashback": {
+    "novel_id": "10010908",
+    "raw_start": 2,
+    "raw_end": 22,
+    "identified_at_raw": 23
+  }
+}

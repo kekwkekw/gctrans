@@ -1,0 +1,436 @@
+[
+  {
+    "novel_id": "40112082",
+    "raw_index": 37,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "40112101",
+    "raw_index": 49,
+    "token": "------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "40200741",
+    "raw_index": 3,
+    "token": "--",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "20000902",
+    "raw_index": 1,
+    "token": "----",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "20000903",
+    "raw_index": 9,
+    "token": "--",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "20000903",
+    "raw_index": 9,
+    "token": "--",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "20000906",
+    "raw_index": 59,
+    "token": "------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "20002104",
+    "raw_index": 1,
+    "token": "--",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "20002104",
+    "raw_index": 1,
+    "token": "--",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "21003202",
+    "raw_index": 68,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "21003501",
+    "raw_index": 64,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "21003502",
+    "raw_index": 16,
+    "token": "--",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "21003502",
+    "raw_index": 38,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "21003502",
+    "raw_index": 61,
+    "token": "----",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22000301",
+    "raw_index": 23,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22000302",
+    "raw_index": 17,
+    "token": "-----",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22000603",
+    "raw_index": 53,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22000604",
+    "raw_index": 23,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22000605",
+    "raw_index": 32,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22001601",
+    "raw_index": 76,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22001601",
+    "raw_index": 112,
+    "token": "--",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22001603",
+    "raw_index": 22,
+    "token": "----",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22001606",
+    "raw_index": 35,
+    "token": "--",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22003302",
+    "raw_index": 72,
+    "token": "----",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "22003302",
+    "raw_index": 83,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010103",
+    "raw_index": 123,
+    "token": "------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010104",
+    "raw_index": 62,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010105",
+    "raw_index": 53,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010105",
+    "raw_index": 54,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010105",
+    "raw_index": 74,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010106",
+    "raw_index": 8,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010106",
+    "raw_index": 9,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010106",
+    "raw_index": 36,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010107",
+    "raw_index": 3,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010107",
+    "raw_index": 34,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010107",
+    "raw_index": 38,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010107",
+    "raw_index": 45,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010107",
+    "raw_index": 45,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010107",
+    "raw_index": 57,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010110",
+    "raw_index": 14,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010203",
+    "raw_index": 2,
+    "token": "--",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010301",
+    "raw_index": 94,
+    "token": "------------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010301",
+    "raw_index": 94,
+    "token": "------------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010301",
+    "raw_index": 96,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010301",
+    "raw_index": 96,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010306",
+    "raw_index": 109,
+    "token": "---------------------------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010308",
+    "raw_index": 21,
+    "token": "--------------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010308",
+    "raw_index": 34,
+    "token": "------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010308",
+    "raw_index": 35,
+    "token": "------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010310",
+    "raw_index": 32,
+    "token": "---------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010311",
+    "raw_index": 110,
+    "token": "------------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010801",
+    "raw_index": 34,
+    "token": "-------------------------------------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010801",
+    "raw_index": 71,
+    "token": "-------------------------------------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010802",
+    "raw_index": 31,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010802",
+    "raw_index": 31,
+    "token": "---",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010802",
+    "raw_index": 34,
+    "token": "-----",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010802",
+    "raw_index": 34,
+    "token": "-----",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010804",
+    "raw_index": 33,
+    "token": "-------------------------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010807",
+    "raw_index": 58,
+    "token": "------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010808",
+    "raw_index": 62,
+    "token": "--------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10010808",
+    "raw_index": 65,
+    "token": "--------",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  },
+  {
+    "novel_id": "10011001",
+    "raw_index": 42,
+    "token": "-----",
+    "exact_preserved": true,
+    "policy": "PRESERVE_VOCAL_LENGTHENING_OR_SFX"
+  }
+]

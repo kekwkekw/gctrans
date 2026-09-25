@@ -1,0 +1,103 @@
+{
+  "record_type": "published_release_receipt",
+  "release_id": "GC-MAIN-M1",
+  "record_date": "2026-09-17",
+  "repository": "kekwkekw/gctrans",
+  "production_branch": "main",
+  "production_commit": "008c23540931be62fbe11814d4735be9629c9b33",
+  "production_tree": "24f1ed4dbe0323559b13796d782f61f2696c3f76",
+  "commit_message": "Publish reviewed GC main story M1",
+  "parent_commit": "b5dcc8e3e034f7bbc1d596ab43043eacc206c380",
+  "rollback_branch": "rollback/pre-main-m1-20260917",
+  "release_branch": "release/main-m1-20260917",
+  "source_checkpoint": "gc_r21_character05.zip",
+  "source_checkpoint_sha256": "f6da7d339c183aeb283f449ed67a32e06bdf9657767c05399c2351a2b88b9ff7",
+  "release_candidate": "gc_main_m1_rc1.zip",
+  "release_candidate_sha256": "4d13741e456d60c19a9d2d98f17ce0a3ca1ba9f638eb0bf5ba62423aadd1067c",
+  "scope": {
+    "novel_json_files": 137,
+    "source_entries": 8487,
+    "runtime_keys": 8428,
+    "body_rows": 8351,
+    "title_rows": 136,
+    "main_chapters": "1-11",
+    "regular_episodes": 116,
+    "tutorials": 2,
+    "interludes": 19,
+    "battle": false,
+    "character_event": false,
+    "deferred_rows": 0
+  },
+  "published_paths": "novels/{novel_id}/zh_Hans.json only; 137 files per staging compare",
+  "release_manifest_committed_to_repository": false,
+  "source_checkpoint_modified_by_release": false,
+  "workflow_files_modified_by_release": false,
+  "legacy_scripts_modified_by_release": false,
+  "user_local_development_repository_modified": false,
+  "user_reports_legacy_autotranslation_action_disabled": true,
+  "github_pages": {
+    "run_id": 35213872626,
+    "head_sha": "008c23540931be62fbe11814d4735be9629c9b33",
+    "status": "completed",
+    "conclusion": "success",
+    "completed_at_utc": "2026-09-17T11:06:20Z"
+  },
+  "smoke_test": {
+    "status": "PASS_REPRESENTATIVE_SAMPLES",
+    "performed_by": "user",
+    "environment": "local test CDN serving RC1; installed GCMod 6.1 custom environment",
+    "samples": {
+      "10010101": [
+        "title",
+        "opening",
+        "JP/KO split progression",
+        "click=9 opens dictionary"
+      ],
+      "10010102": [
+        "same exact-key occurrences raw47/raw64",
+        "reported size variation"
+      ],
+      "99900001": [
+        "same silence raw69/raw70"
+      ],
+      "99900002": [
+        "raw0 body without generated title"
+      ],
+      "11010101": [
+        "new title"
+      ],
+      "10010603": [
+        "ruby display without literal markup"
+      ]
+    },
+    "not_playtested": [
+      "11010902",
+      "10010903"
+    ],
+    "progress_limit": "user had progressed through chapter 8",
+    "all_137_scenarios_playtested": false,
+    "production_cdn_full_game_retest_after_switch_reported": false
+  },
+  "cdn_base_url": "https://kekwkekw.github.io/gctrans",
+  "verification_basis": {
+    "main_ref_rechecked_in_handoff": true,
+    "rollback_ref_rechecked_in_handoff": true,
+    "deployment_and_diff_verified_in_prior_publish_step": true,
+    "all_137_cdn_response_bytes_rechecked_in_handoff": false,
+    "read_only_handoff_no_new_commit": true
+  },
+  "sources": {
+    "main_ref": "https://api.github.com/repos/kekwkekw/gctrans/git/ref/heads/main",
+    "rollback_ref": "https://api.github.com/repos/kekwkekw/gctrans/git/ref/heads/rollback/pre-main-m1-20260917",
+    "pages_run": "https://api.github.com/repos/kekwkekw/gctrans/actions/runs/35213872626",
+    "commit": "https://github.com/kekwkekw/gctrans/commit/008c23540931be62fbe11814d4735be9629c9b33"
+  },
+  "followups": [
+    "scenario choice labels: whole-string hook/source mapping, preserve branch IDs",
+    "click dictionary title and description: currently XUnity, research future CDN support",
+    "ruby reading localization policy: Japanese reading attributes retained",
+    "battle novel runtime and 6 new civilian lines remain separate holds",
+    "source-sync/translation/validation/CDN pipeline v2 is planned, not implemented"
+  ],
+  "interpretation": "The RC1 historical reports still state unpublished/runtime-unverified. This receipt records the later user-authorized publication; do not edit historical R21/RC1 to retroactively approve all records."
+}
