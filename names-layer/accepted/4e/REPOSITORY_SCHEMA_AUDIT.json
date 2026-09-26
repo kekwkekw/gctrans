@@ -1,0 +1,31 @@
+{
+  "main": {
+    "sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+    "tree": "1a748fb02a4ab5db712a17d4dc5aca873efc15af"
+  },
+  "local_head": "12f6285692530ecb4316883cf70439bb1cabe7ca",
+  "local_tree_equals_remote_main": true,
+  "paths_read": [
+    {
+      "path": "scripts/utils.py",
+      "git_blob": "fa474ff00ba4eea686475e66ed9843caf3971655",
+      "sha256": "6d5fcf9656ae87b46467aa6fd493b6ea904bb612333bd0b93b62fc8bd180afe5"
+    },
+    {
+      "path": "knowledge-layer/snapshots/names4a/schema_adapter_report.md",
+      "git_blob": "07fc4b42c28c37072f5d9117585404853a77b762",
+      "sha256": "0c48fb96536e3daa69fc1e13196072b0be906884f680331c80d8cfd695bc4849"
+    },
+    {
+      "path": "knowledge-layer/snapshots/r36/schema/schema_v1.json",
+      "git_blob": "a6cdacf3a8ed346023e69aab6353f75863a0522f",
+      "sha256": "8e8f9dae11cd914ad326e56ba206891d826fe584f43d07d715dc45d74ab54c3c"
+    }
+  ],
+  "existing_names_accepted_ledger": false,
+  "existing_main_names_directory": false,
+  "knowledge_layer_path": "knowledge-layer/",
+  "design": "Add separate local accepted schema referencing immutable historical source objects; no Knowledge schema/state modifications.",
+  "candidate_serialization": "scripts/utils.py convention: UTF-8 ensure_ascii=false, indent=4, insertion order, no final newline",
+  "accepted_row_order": "unchanged Batch09 cumulative order"
+}

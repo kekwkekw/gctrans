@@ -1,0 +1,21 @@
+{
+  "exact_previews_reviewed": 17,
+  "states_preserved": {
+    "reviewing": 16,
+    "conflict": 1
+  },
+  "underlying_full_records_exhaustively_read": false,
+  "other_knowledge_not_claimed_absent": true,
+  "guards_by_key": {
+    "使用人": "사용인을 유지한다. 현재 JP의 명령을 수행하는 일꾼 역할과 R20의 reviewing 제안 사용인을 관찰 고용자와 구분한다. Knowledge를 승인하지 않는다.",
+    "議長": "의장을 유지한다. 다른 장의 네리나 reference나 의장 님/당신 address를 현재 speaker identity나 승인값으로 가져오지 않는다.",
+    "お姉さん": "MAIN_CHAPTER_4 address 목록을 단일 이름 번역으로 정렬 대응하지 않는다. 아가씨는 잠정 generic label이며 문맥 검증이 아니다.",
+    "署長": "서장을 유지한다. 본인이 상대를 부른 비르지니아 님을 speaker 이름에 전용하지 않고 catalog의 관찰과 address 필드 역할을 구분한다.",
+    "アテネス市警": "Names 표시 아테네스 시경을 유지한다. MAIN_CHAPTER_1_ONLY의 아테네스 경찰청/경찰 term conflict는 해결하지 않으며 전역 용어 교정으로 확장하지 않는다.",
+    "不審な男改め死の芸術家": "evs_22001601 raw L413은 남자가 실제로 죽음의 예술가로 변한 상황을 설명한다. 改め의 라벨 전환을 ‘…가 된’으로 자연화하며 두 역할을 모두 남긴다. 기존 R34R-M007의 수산한→수상한 승인과 완전히 별개의 신규 권고다."
+  },
+  "existing_approved_overlay_scope": "R34R-M007: 수산한→수상한 only",
+  "new_naturalization_inherits_existing_approval": false,
+  "term_conflict_resolved": false,
+  "global_glossary_promoted": false
+}

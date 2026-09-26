@@ -1,0 +1,29 @@
+{
+  "new_exact_knowledge_preview_records": 6,
+  "keys_with_exact_previews": 3,
+  "preview_state_counts": {
+    "reviewing": 6
+  },
+  "no_linked_previews_does_not_prove_absent_knowledge": true,
+  "knowledge_reviewing_or_conflict_promoted": false,
+  "global_term_conflicts_resolved": 0,
+  "original_approved_overlay_retained_not_expanded": true,
+  "inherited_reference": "inherited/BATCH08_EVIDENCE_ROLE_GUARDS.json",
+  "role_guards": [
+    {
+      "speaker_jp": "使用人",
+      "guard_ko": "proposed_translation=사용인과 observed_translations=고용자를 구분했다. 고용된 사람이라는 현재 JP 문맥을 우선하여 사용인을 제안하며 R20 term의 reviewing 상태를 승격하지 않는다."
+    },
+    {
+      "speaker_jp": "議長",
+      "guard_ko": "의장 님/당신은 address 값이다. 다른 장의 네리나 참조는 scope 밖인 현재 hmn 화자의 실명 승인으로 사용할 수 없다. 현재 라벨에는 직함 의장만 제안한다."
+    },
+    {
+      "speaker_jp": "お姉さん",
+      "guard_ko": "로댕 씨/엄마/언니/여동생 목록은 여러 address_source_forms의 관찰값이다. 단일 お姉さん 이름과 1:1 대응시키지 않는다. 잘린 현재 문맥을 보완한 완전한 근거로도 계산하지 않는다."
+    }
+  ],
+  "historical_chinese_values_used": false,
+  "complete_underlying_knowledge_records_refetched": 0,
+  "preview_review_member": "KNOWLEDGE_PREVIEW_REVIEW_6.jsonl"
+}

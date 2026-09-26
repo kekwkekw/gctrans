@@ -1,0 +1,132 @@
+{
+  "hash_algorithm": "SHA256",
+  "manifest_excludes_self": true,
+  "role": "QA_PROPOSALS_AND_SOURCE_PRESERVATION_NOT_APPROVAL",
+  "files": [
+    {
+      "path": "ACCEPTANCE_PLAN.json",
+      "size_bytes": 30588,
+      "sha256": "94e17b644f2b8595dcae0d3c259e92c37af668d6bcc8e4a861574070dae8f47f"
+    },
+    {
+      "path": "CONTEXT_LIMITATIONS.json",
+      "size_bytes": 3145,
+      "sha256": "e151c68545e37f22d1361f36344249a45757932fbefeca0ae194fa144ffc327a"
+    },
+    {
+      "path": "CUMULATIVE_RECOMMENDATIONS_1070.jsonl",
+      "size_bytes": 2964727,
+      "sha256": "c1f7ebd24c5d0f35a4018b05e61751d0e34a218abac9943fa2f4527a4d392a29"
+    },
+    {
+      "path": "EVIDENCE_ROLE_GUARDS.json",
+      "size_bytes": 1744,
+      "sha256": "7198c9e8e617b834774f5b62b004629e6cbdd2ca671fed42d2b1bd520e853e20"
+    },
+    {
+      "path": "INPUT_VERIFICATION.json",
+      "size_bytes": 2066,
+      "sha256": "87f4efcfa2cac514c351a3f0474fd56b31da362fd60b96672b41c201ef5c93be"
+    },
+    {
+      "path": "KNOWLEDGE_PREVIEW_REVIEW_17.jsonl",
+      "size_bytes": 27438,
+      "sha256": "2943379100489ebbb77a2c893037b5ba308dff4438caf25c028f9d3b9c6dd03b"
+    },
+    {
+      "path": "LEXICAL_CHOICES.json",
+      "size_bytes": 9564,
+      "sha256": "1fa6e8ba28dd7eab24c7e7feae636be3df2acd8e521c0c082021065bc2804eda"
+    },
+    {
+      "path": "NEXT_STEP_KO.md",
+      "size_bytes": 1618,
+      "sha256": "843167caa5004cf0123f68ae1d2e81a07f3fe7433f35c747694e203171478031"
+    },
+    {
+      "path": "QA_AMENDMENTS_5.jsonl",
+      "size_bytes": 8994,
+      "sha256": "65cb906a29a4fd8a068c89103f78007f51d3b1c48c69b811f1353148fd62a0a8"
+    },
+    {
+      "path": "QA_FINDINGS_78.jsonl",
+      "size_bytes": 85953,
+      "sha256": "b503be65186c7a116a93b84ccc1b3cace3d30d4db64f2ba910ce0cc03191f38c"
+    },
+    {
+      "path": "QA_SIGNAL_TRIAGE_345.jsonl",
+      "size_bytes": 235835,
+      "sha256": "873e605e1ecdb6cdaf7b1f35f872ad2108f6c75a709fd1f00af1339bc1c1c111"
+    },
+    {
+      "path": "QA_SOURCE_REFERENCES_78.jsonl",
+      "size_bytes": 389023,
+      "sha256": "01af192902d17ba4c7d0f68511de1b4a207e63b0cb3a6a357d7755d332f1823b"
+    },
+    {
+      "path": "QA_SURFACE_SCREEN_1070.jsonl",
+      "size_bytes": 494039,
+      "sha256": "8fff4c82d6753af7f480bf1a12a2ea8f6c663cad9d8596150abfb34bf028fce2"
+    },
+    {
+      "path": "REPORT_KO.md",
+      "size_bytes": 6213,
+      "sha256": "00af8b9f7adaf81932b97845116723aab55ef0946dd184337c912057027a34c5"
+    },
+    {
+      "path": "REVIEW_DECISIONS_KO.md",
+      "size_bytes": 47687,
+      "sha256": "844e2e812c4a64504c63d6175797ad39c935d234fa4c3550aa58f6cd4ffc23b3"
+    },
+    {
+      "path": "REVIEW_SCOPE.json",
+      "size_bytes": 2217,
+      "sha256": "099384b33d9e8be8416abd9e060ec3ae51a798334e258a9e29d37fa89bc15442"
+    },
+    {
+      "path": "STRUCTURAL_AND_DEPENDENCY_AUDIT.json",
+      "size_bytes": 88637,
+      "sha256": "d5707a68440f78ad30fd1b238a5ab5e9a52be5dbd5670784b50f9680030a4b62"
+    },
+    {
+      "path": "TARGET_UNIVERSE_LOCK.json",
+      "size_bytes": 2079,
+      "sha256": "db5c8948594f6f1d99d59cca185c3ef86adbd2709cb8479fce88a4329499d5c6"
+    },
+    {
+      "path": "USER_ACCEPTANCE_CHOICES_KO.md",
+      "size_bytes": 2953,
+      "sha256": "b5eaae49b77e78b710835ca6c15c51b7bfd91f2f6e3b93c898db6a0871273b35"
+    },
+    {
+      "path": "VALIDATION_FINAL_QA.json",
+      "size_bytes": 2248,
+      "sha256": "b8d7ca4b56a3c63bcbf2369ea11867afcfcb48c6bc45298d067d9ffa2a88c55f"
+    },
+    {
+      "path": "VERIFIER_SELF_TESTS.json",
+      "size_bytes": 2864,
+      "sha256": "50c9ac5bdc55884f0804f4d97fbd9be89ea2bd530e1c753f2837ef23f5b6a12a"
+    },
+    {
+      "path": "baseline/BATCH09.zip",
+      "size_bytes": 1586009,
+      "sha256": "075b1556272a65bf8b436465fd778011f124e287104fd28a713652452bd804aa"
+    },
+    {
+      "path": "baseline/FINAL_QA_QUEUE.json",
+      "size_bytes": 16409,
+      "sha256": "819d19982fcf6d5bd88ef33fc2b6ec3f1f0891749d7f4e53eb550dff8aa3de12"
+    },
+    {
+      "path": "baseline/QA_SIGNAL_INDEX.jsonl",
+      "size_bytes": 196775,
+      "sha256": "dd3e27a7f741c4814e52648c842b671d693c5cc464439d76206486829de9231f"
+    },
+    {
+      "path": "tools/verify_final_qa.py",
+      "size_bytes": 22224,
+      "sha256": "5e23c81d620e167716d5b2fe69b7277903532c5c95bd4aaade3ac9e0ae5eda7b"
+    }
+  ]
+}

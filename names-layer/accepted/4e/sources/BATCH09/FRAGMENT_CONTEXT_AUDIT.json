@@ -1,0 +1,120 @@
+{
+  "searched_source": "CONTEXT_WINDOWS.jsonl",
+  "source_sha256": "66a0eacdae8f5fa75222dca97dab68a16f4f923b6b80939c452ef41b798a73af",
+  "search_method": "Exact equality of supplied row speaker_jp fields across supplied compact-window records; not a semantic rereview of all rows.",
+  "searched_exact_keys": [
+    "おばさん",
+    "お姉さん",
+    "画材屋店主",
+    "若者"
+  ],
+  "matches": [
+    {
+      "owner_key": "おばさん",
+      "speaker_jp": "おばさん",
+      "context_id": "ctx:529ce3a2aa7df666894d",
+      "context_record_line_1based": 9,
+      "script_name": "btl_10011109_45",
+      "script_sha256": "d6bd9f9be23a20317bcec789207f439e826d8909225c87d6d9ea8e08573ad842",
+      "raw_line_1based": 7,
+      "truncated": true,
+      "excerpt_sha256": "4c9df0134ccdeabdd32cc4eacf6f9e3becdede577121197994a2431944905124",
+      "source_full_sha256": "277843f8db43f6fb7bdc1481adeb937105eec9e540b2e22c2659044baa1d0f5a"
+    },
+    {
+      "owner_key": "お姉さん",
+      "speaker_jp": "お姉さん",
+      "context_id": "ctx:4dd17c7c7cab14e447c6",
+      "context_record_line_1based": 10,
+      "script_name": "btl_10011109_44",
+      "script_sha256": "0f6f6aa06b3b189453ba317f3ef1ac481e0834e611daadb60ecfb9d8ed6135f7",
+      "raw_line_1based": 7,
+      "truncated": true,
+      "excerpt_sha256": "b35c51c07aefe49ffd39187c4148276392c2f2645d4126445a8b608f82cf470f",
+      "source_full_sha256": "29ef34ac4b9d026a6a03e8ec4c43d2d10a9257e2ecc7083890dbb3caa2ba95c7"
+    },
+    {
+      "owner_key": "画材屋店主",
+      "speaker_jp": "画材屋店主",
+      "context_id": "ctx:c373e54f3e1a0e031368",
+      "context_record_line_1based": 788,
+      "script_name": "btl_10011109_46",
+      "script_sha256": "b90390f242d55431920923ff9295f47a335c5eebde9e6a90dac21fd142fbbd5e",
+      "raw_line_1based": 7,
+      "truncated": true,
+      "excerpt_sha256": "1afc6f9e9d225d10b1440c8e5573295a94e0d3506c5f446f7859d784c94601b6",
+      "source_full_sha256": "f9c183346f73155e9da71f8762866d5d0eeae73ea5c7b71cfb26406c7461b4e1"
+    },
+    {
+      "owner_key": "若者",
+      "speaker_jp": "若者",
+      "context_id": "ctx:31fd92d95a86dbc0a0e0",
+      "context_record_line_1based": 866,
+      "script_name": "btl_10011109_42",
+      "script_sha256": "0ba6d95019a82dfe497beb2c3d2298074c037cee205d068c0b6364d7aa40e8e9",
+      "raw_line_1based": 7,
+      "truncated": true,
+      "excerpt_sha256": "4b32af16e4e268d26003dc0a0e57454a9dbb9dff457a0c48e4254c3b80000102",
+      "source_full_sha256": "7102ea9dbc764a1bd9a5f374f8ee2fc8f6819ede3bd8818676c3ca75394ddfb2"
+    }
+  ],
+  "complete_alternative_rows_found": 0,
+  "truncated_rows": [
+    {
+      "speaker_jp": "おばさん",
+      "context_id": "ctx:529ce3a2aa7df666894d",
+      "script_name": "btl_10011109_45",
+      "raw_line_1based": 7,
+      "excerpt_sha256": "4c9df0134ccdeabdd32cc4eacf6f9e3becdede577121197994a2431944905124",
+      "source_full_sha256": "277843f8db43f6fb7bdc1481adeb937105eec9e540b2e22c2659044baa1d0f5a",
+      "excerpt_codepoints": 25,
+      "source_full_codepoints": 51,
+      "used_as_complete_context": false,
+      "missing_text_restored": false
+    },
+    {
+      "speaker_jp": "お姉さん",
+      "context_id": "ctx:4dd17c7c7cab14e447c6",
+      "script_name": "btl_10011109_44",
+      "raw_line_1based": 7,
+      "excerpt_sha256": "b35c51c07aefe49ffd39187c4148276392c2f2645d4126445a8b608f82cf470f",
+      "source_full_sha256": "29ef34ac4b9d026a6a03e8ec4c43d2d10a9257e2ecc7083890dbb3caa2ba95c7",
+      "excerpt_codepoints": 17,
+      "source_full_codepoints": 35,
+      "used_as_complete_context": false,
+      "missing_text_restored": false
+    },
+    {
+      "speaker_jp": "画材屋店主",
+      "context_id": "ctx:c373e54f3e1a0e031368",
+      "script_name": "btl_10011109_46",
+      "raw_line_1based": 7,
+      "excerpt_sha256": "1afc6f9e9d225d10b1440c8e5573295a94e0d3506c5f446f7859d784c94601b6",
+      "source_full_sha256": "f9c183346f73155e9da71f8762866d5d0eeae73ea5c7b71cfb26406c7461b4e1",
+      "excerpt_codepoints": 21,
+      "source_full_codepoints": 43,
+      "used_as_complete_context": false,
+      "missing_text_restored": false
+    },
+    {
+      "speaker_jp": "若者",
+      "context_id": "ctx:31fd92d95a86dbc0a0e0",
+      "script_name": "btl_10011109_42",
+      "raw_line_1based": 7,
+      "excerpt_sha256": "4b32af16e4e268d26003dc0a0e57454a9dbb9dff457a0c48e4254c3b80000102",
+      "source_full_sha256": "7102ea9dbc764a1bd9a5f374f8ee2fc8f6819ede3bd8818676c3ca75394ddfb2",
+      "excerpt_codepoints": 14,
+      "source_full_codepoints": 29,
+      "used_as_complete_context": false,
+      "missing_text_restored": false
+    }
+  ],
+  "raw_bundle_or_live_cdn_retrieval": false,
+  "missing_text_reconstructed": false,
+  "unresolved_full_context_keys": [
+    "おばさん",
+    "お姉さん",
+    "画材屋店主",
+    "若者"
+  ]
+}

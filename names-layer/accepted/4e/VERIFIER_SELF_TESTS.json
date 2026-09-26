@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "positive_control": "PASS",
+  "negative_tests": [
+    {
+      "case": "accepted_and_candidate_consistent_but_unapproved_value",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "accepted value disagrees with authority",
+      "output_manifest_rehashed_for_semantic_test": true
+    },
+    {
+      "case": "removed_context_limitation_flag",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "context limitation flags removed/changed",
+      "output_manifest_rehashed_for_semantic_test": true
+    },
+    {
+      "case": "historical_approval_rewrite",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "old provenance silently rewritten",
+      "output_manifest_rehashed_for_semantic_test": true
+    },
+    {
+      "case": "duplicate_candidate_json_key",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "duplicate JSON object key: '泥棒Ａ'",
+      "output_manifest_rehashed_for_semantic_test": true
+    },
+    {
+      "case": "fullwidth_source_key_changed",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "exact target coverage mismatch",
+      "output_manifest_rehashed_for_semantic_test": true
+    },
+    {
+      "case": "immutable_source_bytes_changed",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "included source mismatch",
+      "output_manifest_rehashed_for_semantic_test": true
+    },
+    {
+      "case": "output_hash_mismatch",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "output hash/size mismatch: names/zh_Hans.json",
+      "output_manifest_rehashed_for_semantic_test": false
+    }
+  ],
+  "negative_tests_passed": 7,
+  "original_checkpoint_bytes_modified_by_test": 0,
+  "tests_run_only_in_isolated_scratch_copy": true
+}

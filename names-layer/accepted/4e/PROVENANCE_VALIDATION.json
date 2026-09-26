@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source_ledger_records_preserved": 1070,
+  "workbench_records_preserved": 1070,
+  "source_line_hash_matches": 1070,
+  "amendment_baseline_line_hash_matches": 5,
+  "old_provenance_silently_rewritten": 0,
+  "historical_chinese_values_used_as_korean_source": 0,
+  "knowledge_reviewing_or_conflict_upgraded_to_approved": 0,
+  "knowledge_scope_expansion": 0,
+  "r34r_m007_new_full_value_uses_new_acceptance_event": true,
+  "all_six_limitations_retained": true,
+  "raw_observations_mutated": 0
+}

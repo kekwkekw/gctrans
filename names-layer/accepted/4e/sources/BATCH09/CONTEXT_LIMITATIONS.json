@@ -1,0 +1,45 @@
+{
+  "new_keys": 54,
+  "new_keys_with_provided_windows": 54,
+  "new_keys_with_at_least_one_complete_window": 50,
+  "new_partial_context_only_keys": [
+    "おばさん",
+    "お姉さん",
+    "画材屋店主",
+    "若者"
+  ],
+  "new_partial_context_only_count": 4,
+  "new_windows": 85,
+  "complete_new_windows": 81,
+  "new_truncated_windows": 4,
+  "new_truncated_rows": 4,
+  "new_context_rows_including_overlap": 405,
+  "new_complete_row_hash_matches": 401,
+  "distinct_new_script_sha_raw_line_pairs": 348,
+  "inherited_surface_only_keys": [
+    "少年A",
+    "少年B"
+  ],
+  "inherited_surface_only_count": 2,
+  "inherited_partially_truncated_window_keys": [
+    "女の子",
+    "おじさん"
+  ],
+  "inherited_limitations_resolved_this_batch": false,
+  "cumulative_with_supplied_jp_context_review": 1068,
+  "cumulative_with_at_least_one_complete_window": 1064,
+  "cumulative_partial_context_only_keys": [
+    "おばさん",
+    "お姉さん",
+    "画材屋店主",
+    "若者"
+  ],
+  "cumulative_surface_only_context_excluded": 2,
+  "partially_truncated_but_other_complete_windows_available_keys": [
+    "女の子",
+    "おじさん"
+  ],
+  "source_note_ko": "신규 54개 중 50개는 온전한 제공 창이 있고 4개는 잘린 단독 창만 있다. 원문 label은 온전하므로 잠정 표시명은 제안하되 이 4개의 문맥 검증은 미해소다. 기존 두 surface-only 및 두 부분 잘림 제한도 그대로 승계한다. 전체 스토리를 읽거나 빠진 본문을 복원하지 않았다.",
+  "inherited_reference": "inherited/BATCH08_CONTEXT_LIMITATIONS.json",
+  "fragment_audit_member": "FRAGMENT_CONTEXT_AUDIT.json"
+}

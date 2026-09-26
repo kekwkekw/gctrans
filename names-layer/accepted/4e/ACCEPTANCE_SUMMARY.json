@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "target": 1070,
+  "accepted": 1070,
+  "unchanged_recommendations_including_limited": 1065,
+  "unchanged_regular": 1059,
+  "qa01_amendments_applied": 5,
+  "context_limitations_preserved": 6,
+  "duplicate_source_keys": 0,
+  "missing_target": 0,
+  "extra_target": 0,
+  "empty_jp": 0,
+  "empty_ko": 0,
+  "source_key_normalization": 0,
+  "unresolved_acceptance": 0,
+  "production_state": "PRODUCTION_CANDIDATE",
+  "runtime_verified": false,
+  "production_deployed": false,
+  "merged": false
+}

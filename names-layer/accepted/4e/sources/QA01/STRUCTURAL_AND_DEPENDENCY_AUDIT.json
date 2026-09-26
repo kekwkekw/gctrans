@@ -1,0 +1,2579 @@
+{
+  "source": "IMMUTABLE_BASELINE_PLUS_UNAPPLIED_QA_PROPOSALS",
+  "joint_label_count": 74,
+  "fullwidth_joint_count": 69,
+  "literal_fullwidth_base_matches": 65,
+  "joints": [
+    {
+      "speaker_jp": "原始藝術Ａ＆Ｂ",
+      "recommended_ko": "원시 예술A & B",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "原始藝術Ａ",
+        "Ｂ"
+      ],
+      "literal_base_output_match": false,
+      "review_basis": "CURRENT_JP_WINDOW_PLUS_EXISTING_REASON",
+      "source_context_ref_key": "原始藝術Ａ＆Ｂ",
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "クピド＆ブグロー（オルタ）",
+      "recommended_ko": "쿠피도 & 부그로(얼터)",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "クピド",
+        "ブグロー（オルタ）"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "原始藝術Ｂ＆Ｃ",
+      "recommended_ko": "원시 예술B & C",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "原始藝術Ｂ",
+        "Ｃ"
+      ],
+      "literal_base_output_match": false,
+      "review_basis": "CURRENT_JP_WINDOW_PLUS_EXISTING_REASON",
+      "source_context_ref_key": "原始藝術Ｂ＆Ｃ",
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "セザンヌ＆オルタ",
+      "recommended_ko": "세잔 & 얼터",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "セザンヌ",
+        "オルタ"
+      ],
+      "literal_base_output_match": false,
+      "review_basis": "CURRENT_JP_WINDOW_PLUS_EXISTING_REASON",
+      "source_context_ref_key": "セザンヌ＆オルタ",
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "魔女＆狼",
+      "recommended_ko": "마녀 & 늑대",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "魔女",
+        "狼"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ツァオ＆グラマンシュ",
+      "recommended_ko": "차오 & 그라만슈",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ツァオ",
+        "グラマンシュ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ミケランジェロ＆ラファエロ",
+      "recommended_ko": "미켈란젤로 & 라파엘로",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ミケランジェロ",
+        "ラファエロ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ドナテッロ＆ロダン",
+      "recommended_ko": "도나텔로 & 로댕",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ドナテッロ",
+        "ロダン"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ゴッホ＆ロダン",
+      "recommended_ko": "고흐 & 로댕",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ゴッホ",
+        "ロダン"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ルナーリヤ＆クレプスキュル",
+      "recommended_ko": "루나리아 & 크레퓌스퀼",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ルナーリヤ",
+        "クレプスキュル"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ソワ＆ポン",
+      "recommended_ko": "소와 & 퐁",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ソワ",
+        "ポン"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "アングル＆モリゾ",
+      "recommended_ko": "앵글 & 모리조",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "アングル",
+        "モリゾ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "カトレア＆ドナテッロ",
+      "recommended_ko": "카틀레아 & 도나텔로",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "カトレア",
+        "ドナテッロ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ゴッホ＆セザンヌ",
+      "recommended_ko": "고흐 & 세잔",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ゴッホ",
+        "セザンヌ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "フォルジェール＆アルノン",
+      "recommended_ko": "폴제르 & 아르논",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "フォルジェール",
+        "アルノン"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ブグロー＆ルノワール",
+      "recommended_ko": "부그로 & 르누아르",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ブグロー",
+        "ルノワール"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "マネ＆セザンヌ",
+      "recommended_ko": "마네 & 세잔",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "マネ",
+        "セザンヌ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ラファエロ＆セキエン",
+      "recommended_ko": "라파엘로 & 세키엔",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ラファエロ",
+        "セキエン"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ラファエロ＆フェルメール",
+      "recommended_ko": "라파엘로 & 페르메르",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ラファエロ",
+        "フェルメール"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ヴィーナス＆クインズウェイ",
+      "recommended_ko": "비너스 & 퀸즈웨이",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ヴィーナス",
+        "クインズウェイ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ベア子＆黒ベア子",
+      "recommended_ko": "베어코 & 흑베어코",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ベア子",
+        "黒ベア子"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "クレプスキュル＆ツァオ",
+      "recommended_ko": "크레퓌스퀼 & 차오",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "クレプスキュル",
+        "ツァオ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ドナテッロ＆カトレア",
+      "recommended_ko": "도나텔로 & 카틀레아",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ドナテッロ",
+        "カトレア"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "マティア＆ヴァルンボン",
+      "recommended_ko": "마티아 & 바룬본",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "マティア",
+        "ヴァルンボン"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ラファ&ミケ",
+      "recommended_ko": "라파 & 미케",
+      "fullwidth_ampersand": false,
+      "components_if_literal_fullwidth_split": null,
+      "literal_base_output_match": false,
+      "review_basis": "CURRENT_JP_WINDOW_PLUS_EXISTING_REASON",
+      "source_context_ref_key": "ラファ&ミケ",
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "男性＆女性",
+      "recommended_ko": "남성 & 여성",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "男性",
+        "女性"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "きのえ＆こうえん",
+      "recommended_ko": "키노에 & 코엔",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "きのえ",
+        "こうえん"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "くれない＆クレプスキュル",
+      "recommended_ko": "쿠레나이 & 크레퓌스퀼",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "くれない",
+        "クレプスキュル"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "アリアベル＆フィーア",
+      "recommended_ko": "아리아벨 & 피아",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "アリアベル",
+        "フィーア"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "アルテ＆ゴッホ",
+      "recommended_ko": "아르테 & 고흐",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "アルテ",
+        "ゴッホ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "アルテ＆館長",
+      "recommended_ko": "아르테 & 관장",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "アルテ",
+        "館長"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "アングル＆ロダン",
+      "recommended_ko": "앵글 & 로댕",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "アングル",
+        "ロダン"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "アンプルーラ＆ナヴィア",
+      "recommended_ko": "안프룰라 & 나비아",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "アンプルーラ",
+        "ナヴィア"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "カラヴァッジオ＆デューラー",
+      "recommended_ko": "카라바조 & 뒤러",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "カラヴァッジオ",
+        "デューラー"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "キャルト＆マネ",
+      "recommended_ko": "캬르트 & 마네",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "キャルト",
+        "マネ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "キャルト＆ミアヌ",
+      "recommended_ko": "캬르트 & 미아누",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "キャルト",
+        "ミアヌ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "クラン＆クピド",
+      "recommended_ko": "크란 & 쿠피도",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "クラン",
+        "クピド"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "クレプスキュル＆ペルシク",
+      "recommended_ko": "크레퓌스퀼 & 페르시크",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "クレプスキュル",
+        "ペルシク"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "グラマンシュ＆ツァオ",
+      "recommended_ko": "그라만슈 & 차오",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "グラマンシュ",
+        "ツァオ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ゴッホ＆ネイト",
+      "recommended_ko": "고흐 & 네이트",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ゴッホ",
+        "ネイト"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "シーブル＆クレプスキュル",
+      "recommended_ko": "시블 & 크레퓌스퀼",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "シーブル",
+        "クレプスキュル"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "スニューウ＆レオニー",
+      "recommended_ko": "스뉴 & 레오니",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "スニューウ",
+        "レオニー"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "セキエン＆シズク",
+      "recommended_ko": "세키엔 & 시즈쿠",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "セキエン",
+        "シズク"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "セキエン＆ミケランジェロ",
+      "recommended_ko": "세키엔 & 미켈란젤로",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "セキエン",
+        "ミケランジェロ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "セザンヌ＆キャルト",
+      "recommended_ko": "세잔 & 캬르트",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "セザンヌ",
+        "キャルト"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "セザンヌ＆館長",
+      "recommended_ko": "세잔 & 관장",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "セザンヌ",
+        "館長"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "セッシュウ＆ミケランジェロ",
+      "recommended_ko": "셋슈 & 미켈란젤로",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "セッシュウ",
+        "ミケランジェロ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ツァオ＆アルノン",
+      "recommended_ko": "차오 & 아르논",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ツァオ",
+        "アルノン"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ドナテッロ＆ブグロー",
+      "recommended_ko": "도나텔로 & 부그로",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ドナテッロ",
+        "ブグロー"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ドナテッロ＆ローリエ",
+      "recommended_ko": "도나텔로 & 로리에",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ドナテッロ",
+        "ローリエ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ドナテッロ＆館長",
+      "recommended_ko": "도나텔로 & 관장",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ドナテッロ",
+        "館長"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "フィリス＆エスティー",
+      "recommended_ko": "필리스 & 에스티",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "フィリス",
+        "エスティー"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "フェルメール&ロダン",
+      "recommended_ko": "페르메르 & 로댕",
+      "fullwidth_ampersand": false,
+      "components_if_literal_fullwidth_split": null,
+      "literal_base_output_match": false,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "フェルメール＆アングル",
+      "recommended_ko": "페르메르 & 앵글",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "フェルメール",
+        "アングル"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "フェルメール＆ブグロー",
+      "recommended_ko": "페르메르 & 부그로",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "フェルメール",
+        "ブグロー"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "フェルメール＆宝石商",
+      "recommended_ko": "페르메르 & 보석상",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "フェルメール",
+        "宝石商"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "マティア＆アンゲリカ",
+      "recommended_ko": "마티아 & 안젤리카",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "マティア",
+        "アンゲリカ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "マティア＆館長",
+      "recommended_ko": "마티아 & 관장",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "マティア",
+        "館長"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "マネ＆パーシュース",
+      "recommended_ko": "마네 & 파슈스",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "マネ",
+        "パーシュース"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ヨシノ＆ロダン",
+      "recommended_ko": "요시노 & 로댕",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ヨシノ",
+        "ロダン"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ラファエロ＆アングル",
+      "recommended_ko": "라파엘로 & 앵글",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ラファエロ",
+        "アングル"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ラファエロ＆レンブラント",
+      "recommended_ko": "라파엘로 & 렘브란트",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ラファエロ",
+        "レンブラント"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ロダン＆ヨシノ",
+      "recommended_ko": "로댕 & 요시노",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ロダン",
+        "ヨシノ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ロダン＆女将",
+      "recommended_ko": "로댕 & 여주인",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "ロダン",
+        "女将"
+      ],
+      "literal_base_output_match": false,
+      "review_basis": "CURRENT_JP_WINDOW_PLUS_EXISTING_REASON",
+      "source_context_ref_key": "ロダン＆女将",
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "乱獲者ＡとＢ",
+      "recommended_ko": "남획꾼A와 B",
+      "fullwidth_ampersand": false,
+      "components_if_literal_fullwidth_split": null,
+      "literal_base_output_match": false,
+      "review_basis": "CURRENT_JP_WINDOW_PLUS_EXISTING_REASON",
+      "source_context_ref_key": "乱獲者ＡとＢ",
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "男の子＆女の子",
+      "recommended_ko": "남자아이 & 여자아이",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "男の子",
+        "女の子"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "盗賊＆ミケランジェロ",
+      "recommended_ko": "도적 & 미켈란젤로",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "盗賊",
+        "ミケランジェロ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "貴族＆ならず者",
+      "recommended_ko": "귀족 & 무뢰한",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "貴族",
+        "ならず者"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "館長＆アルテ",
+      "recommended_ko": "관장 & 아르테",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "館長",
+        "アルテ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "館長＆センナ",
+      "recommended_ko": "관장 & 센나",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "館長",
+        "センナ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "館長＆ドナテッロ",
+      "recommended_ko": "관장 & 도나텔로",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "館長",
+        "ドナテッロ"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "館長＆パルル",
+      "recommended_ko": "관장 & 파루루",
+      "fullwidth_ampersand": true,
+      "components_if_literal_fullwidth_split": [
+        "館長",
+        "パルル"
+      ],
+      "literal_base_output_match": true,
+      "review_basis": "SURFACE_COMPONENTS_AND_EXISTING_REASON",
+      "source_context_ref_key": null,
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "セキエン・ゴッホ",
+      "recommended_ko": "세키엔 & 고흐",
+      "fullwidth_ampersand": false,
+      "components_if_literal_fullwidth_split": null,
+      "literal_base_output_match": false,
+      "review_basis": "CURRENT_JP_WINDOW_PLUS_EXISTING_REASON",
+      "source_context_ref_key": "セキエン・ゴッホ",
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    },
+    {
+      "speaker_jp": "ドナテッロ・ラファエロ",
+      "recommended_ko": "도나텔로 & 라파엘로",
+      "fullwidth_ampersand": false,
+      "components_if_literal_fullwidth_split": null,
+      "literal_base_output_match": false,
+      "review_basis": "CURRENT_JP_WINDOW_PLUS_EXISTING_REASON",
+      "source_context_ref_key": "ドナテッロ・ラファエロ",
+      "decision": "RETAIN",
+      "order_preserved": true,
+      "global_punctuation_rewrite": false
+    }
+  ],
+  "plural_count": 34,
+  "plurals": [
+    {
+      "speaker_jp": "アルノンたち",
+      "recommended_ko": "아르논 일행",
+      "literal_base_jp": "アルノン",
+      "baseline_base_ko": "아르논",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "アングルたち",
+      "recommended_ko": "앵글 일행",
+      "literal_base_jp": "アングル",
+      "baseline_base_ko": "앵글",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "イマージュたち",
+      "recommended_ko": "이마쥬들",
+      "literal_base_jp": "イマージュ",
+      "baseline_base_ko": null,
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "クマロボたち",
+      "recommended_ko": "곰 로봇들",
+      "literal_base_jp": "クマロボ",
+      "baseline_base_ko": "곰 로봇",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "クレプスキュルたち",
+      "recommended_ko": "크레퓌스퀼 일행",
+      "literal_base_jp": "クレプスキュル",
+      "baseline_base_ko": "크레퓌스퀼",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "グラマンシュたち",
+      "recommended_ko": "그라만슈 일행",
+      "literal_base_jp": "グラマンシュ",
+      "baseline_base_ko": "그라만슈",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "シズクたち",
+      "recommended_ko": "시즈쿠 일행",
+      "literal_base_jp": "シズク",
+      "baseline_base_ko": "시즈쿠",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "ツァオたち",
+      "recommended_ko": "차오 일행",
+      "literal_base_jp": "ツァオ",
+      "baseline_base_ko": "차오",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "ドナテッロたち",
+      "recommended_ko": "도나텔로 일행",
+      "literal_base_jp": "ドナテッロ",
+      "baseline_base_ko": "도나텔로",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "フィリスたち",
+      "recommended_ko": "필리스 일행",
+      "literal_base_jp": "フィリス",
+      "baseline_base_ko": "필리스",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "フェルメールたち",
+      "recommended_ko": "페르메르 일행",
+      "literal_base_jp": "フェルメール",
+      "baseline_base_ko": "페르메르",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "ベートーヴェンたち",
+      "recommended_ko": "베토벤 일행",
+      "literal_base_jp": "ベートーヴェン",
+      "baseline_base_ko": "베토벤",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": "ベートーヴェンたち",
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "ミケランジェロたち",
+      "recommended_ko": "미켈란젤로 일행",
+      "literal_base_jp": "ミケランジェロ",
+      "baseline_base_ko": "미켈란젤로",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "ルナーリヤたち",
+      "recommended_ko": "루나리아 일행",
+      "literal_base_jp": "ルナーリヤ",
+      "baseline_base_ko": "루나리아",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "住人たち",
+      "recommended_ko": "주민들",
+      "literal_base_jp": "住人",
+      "baseline_base_ko": null,
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "元クマロボたち",
+      "recommended_ko": "곰 로봇이었던 존재들",
+      "literal_base_jp": "元クマロボ",
+      "baseline_base_ko": "곰 로봇이었던 존재",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": "元クマロボたち",
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "原始藝術たち",
+      "recommended_ko": "원시 예술들",
+      "literal_base_jp": "原始藝術",
+      "baseline_base_ko": "원시 예술",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "堕天死の芸術たち",
+      "recommended_ko": "타락한 죽음의 예술들",
+      "literal_base_jp": "堕天死の芸術",
+      "baseline_base_ko": "타락한 죽음의 예술",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": "堕天死の芸術たち",
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "子どもたち",
+      "recommended_ko": "아이들",
+      "literal_base_jp": "子ども",
+      "baseline_base_ko": "아이",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "子供たち",
+      "recommended_ko": "아이들",
+      "literal_base_jp": "子供",
+      "baseline_base_ko": "아이",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "少年たち",
+      "recommended_ko": "소년들",
+      "literal_base_jp": "少年",
+      "baseline_base_ko": "소년",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "従業員たち",
+      "recommended_ko": "종업원들",
+      "literal_base_jp": "従業員",
+      "baseline_base_ko": "종업원",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "死の芸術たち",
+      "recommended_ko": "죽음의 예술들",
+      "literal_base_jp": "死の芸術",
+      "baseline_base_ko": "죽음의 예술",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "死天使たち",
+      "recommended_ko": "죽음의 천사들",
+      "literal_base_jp": "死天使",
+      "baseline_base_ko": "죽음의 천사",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "牛たち",
+      "recommended_ko": "소들",
+      "literal_base_jp": "牛",
+      "baseline_base_ko": null,
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "猿の木像たち",
+      "recommended_ko": "원숭이 목상들",
+      "literal_base_jp": "猿の木像",
+      "baseline_base_ko": "원숭이 목상",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "生徒たち",
+      "recommended_ko": "학생들",
+      "literal_base_jp": "生徒",
+      "baseline_base_ko": "학생",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "男たち",
+      "recommended_ko": "남자들",
+      "literal_base_jp": "男",
+      "baseline_base_ko": "남자",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "盗賊たち",
+      "recommended_ko": "도적들",
+      "literal_base_jp": "盗賊",
+      "baseline_base_ko": "도적",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "羊たち",
+      "recommended_ko": "양들",
+      "literal_base_jp": "羊",
+      "baseline_base_ko": null,
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "観客たち",
+      "recommended_ko": "관객들",
+      "literal_base_jp": "観客",
+      "baseline_base_ko": null,
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "赤ちゃんクマロボたち",
+      "recommended_ko": "아기 곰 로봇들",
+      "literal_base_jp": "赤ちゃんクマロボ",
+      "baseline_base_ko": "아기 곰 로봇",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": "赤ちゃんクマロボたち",
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "野盗たち",
+      "recommended_ko": "도적들",
+      "literal_base_jp": "野盗",
+      "baseline_base_ko": "도적",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    },
+    {
+      "speaker_jp": "騎士団　騎士たち",
+      "recommended_ko": "기사단 기사들",
+      "literal_base_jp": "騎士団　騎士",
+      "baseline_base_ko": "기사단 기사",
+      "review_basis": "EXISTING_REASON_AND_SURFACE_PLUS_TARGETED_CONTEXT_WHERE_REFERENCED",
+      "context_ref_key": null,
+      "global_tachi_rule_applied": false
+    }
+  ],
+  "suffix_links": [
+    {
+      "speaker_jp": "ならず者Ａ",
+      "base_jp": "ならず者",
+      "base_ko": "무뢰한",
+      "recommended_ko": "무뢰한A",
+      "expected_from_baseline_base": "무뢰한A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "ならず者Ｂ",
+      "base_jp": "ならず者",
+      "base_ko": "무뢰한",
+      "recommended_ko": "무뢰한B",
+      "expected_from_baseline_base": "무뢰한B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "ギャングA",
+      "base_jp": "ギャング",
+      "base_ko": "갱",
+      "recommended_ko": "갱A",
+      "expected_from_baseline_base": "갱A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "ギャングB",
+      "base_jp": "ギャング",
+      "base_ko": "갱",
+      "recommended_ko": "갱B",
+      "expected_from_baseline_base": "갱B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "ファンの女性Ａ",
+      "base_jp": "ファンの女性",
+      "base_ko": "여성 팬",
+      "recommended_ko": "여성 팬A",
+      "expected_from_baseline_base": "여성 팬A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "ファンの女性Ｂ",
+      "base_jp": "ファンの女性",
+      "base_ko": "여성 팬",
+      "recommended_ko": "여성 팬B",
+      "expected_from_baseline_base": "여성 팬B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "ラファエロのファンＡ",
+      "base_jp": "ラファエロのファン",
+      "base_ko": "라파엘로의 팬",
+      "recommended_ko": "라파엘로의 팬A",
+      "expected_from_baseline_base": "라파엘로의 팬A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "ラファエロのファンＢ",
+      "base_jp": "ラファエロのファン",
+      "base_ko": "라파엘로의 팬",
+      "recommended_ko": "라파엘로의 팬B",
+      "expected_from_baseline_base": "라파엘로의 팬B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "下級騎士A",
+      "base_jp": "下級騎士",
+      "base_ko": "하급 기사",
+      "recommended_ko": "하급 기사A",
+      "expected_from_baseline_base": "하급 기사A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "下級騎士B",
+      "base_jp": "下級騎士",
+      "base_ko": "하급 기사",
+      "recommended_ko": "하급 기사B",
+      "expected_from_baseline_base": "하급 기사B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "下級騎士C",
+      "base_jp": "下級騎士",
+      "base_ko": "하급 기사",
+      "recommended_ko": "하급 기사C",
+      "expected_from_baseline_base": "하급 기사C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "下級騎士D",
+      "base_jp": "下級騎士",
+      "base_ko": "하급 기사",
+      "recommended_ko": "하급 기사D",
+      "expected_from_baseline_base": "하급 기사D",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "侵入者A",
+      "base_jp": "侵入者",
+      "base_ko": "침입자",
+      "recommended_ko": "침입자A",
+      "expected_from_baseline_base": "침입자A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "侵入者B",
+      "base_jp": "侵入者",
+      "base_ko": "침입자",
+      "recommended_ko": "침입자B",
+      "expected_from_baseline_base": "침입자B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "原始藝術Ａ",
+      "base_jp": "原始藝術",
+      "base_ko": "원시 예술",
+      "recommended_ko": "원시 예술A",
+      "expected_from_baseline_base": "원시 예술A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "原始藝術Ｂ",
+      "base_jp": "原始藝術",
+      "base_ko": "원시 예술",
+      "recommended_ko": "원시 예술B",
+      "expected_from_baseline_base": "원시 예술B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "原始藝術Ｃ",
+      "base_jp": "原始藝術",
+      "base_ko": "원시 예술",
+      "recommended_ko": "원시 예술C",
+      "expected_from_baseline_base": "원시 예술C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "原始藝術Ｄ",
+      "base_jp": "原始藝術",
+      "base_ko": "원시 예술",
+      "recommended_ko": "원시 예술D",
+      "expected_from_baseline_base": "원시 예술D",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "原始藝術Ｅ",
+      "base_jp": "原始藝術",
+      "base_ko": "원시 예술",
+      "recommended_ko": "원시 예술E",
+      "expected_from_baseline_base": "원시 예술E",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "原始藝術Ｆ",
+      "base_jp": "原始藝術",
+      "base_ko": "원시 예술",
+      "recommended_ko": "원시 예술F",
+      "expected_from_baseline_base": "원시 예술F",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "原始藝術Ｇ",
+      "base_jp": "原始藝術",
+      "base_ko": "원시 예술",
+      "recommended_ko": "원시 예술G",
+      "expected_from_baseline_base": "원시 예술G",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "参加者の女性Ａ",
+      "base_jp": "参加者の女性",
+      "base_ko": "여성 참가자",
+      "recommended_ko": "여성 참가자A",
+      "expected_from_baseline_base": "여성 참가자A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "参加者の女性Ｂ",
+      "base_jp": "参加者の女性",
+      "base_ko": "여성 참가자",
+      "recommended_ko": "여성 참가자B",
+      "expected_from_baseline_base": "여성 참가자B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "女性客Ａ",
+      "base_jp": "女性客",
+      "base_ko": "여성 손님",
+      "recommended_ko": "여성 손님A",
+      "expected_from_baseline_base": "여성 손님A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "女性客Ｂ",
+      "base_jp": "女性客",
+      "base_ko": "여성 손님",
+      "recommended_ko": "여성 손님B",
+      "expected_from_baseline_base": "여성 손님B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "女性芸術家Ａ",
+      "base_jp": "女性芸術家",
+      "base_ko": "여성 예술가",
+      "recommended_ko": "여성 예술가A",
+      "expected_from_baseline_base": "여성 예술가A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "女性芸術家Ｂ",
+      "base_jp": "女性芸術家",
+      "base_ko": "여성 예술가",
+      "recommended_ko": "여성 예술가B",
+      "expected_from_baseline_base": "여성 예술가B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "女Ａ",
+      "base_jp": "女",
+      "base_ko": "여자",
+      "recommended_ko": "여자A",
+      "expected_from_baseline_base": "여자A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "女Ｂ",
+      "base_jp": "女",
+      "base_ko": "여자",
+      "recommended_ko": "여자B",
+      "expected_from_baseline_base": "여자B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "少年A",
+      "base_jp": "少年",
+      "base_ko": "소년",
+      "recommended_ko": "소년A",
+      "expected_from_baseline_base": "소년A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "少年B",
+      "base_jp": "少年",
+      "base_ko": "소년",
+      "recommended_ko": "소년B",
+      "expected_from_baseline_base": "소년B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "少年Ａ",
+      "base_jp": "少年",
+      "base_ko": "소년",
+      "recommended_ko": "소년A",
+      "expected_from_baseline_base": "소년A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "少年Ｂ",
+      "base_jp": "少年",
+      "base_ko": "소년",
+      "recommended_ko": "소년B",
+      "expected_from_baseline_base": "소년B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "市民A",
+      "base_jp": "市民",
+      "base_ko": "시민",
+      "recommended_ko": "시민A",
+      "expected_from_baseline_base": "시민A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "市民B",
+      "base_jp": "市民",
+      "base_ko": "시민",
+      "recommended_ko": "시민B",
+      "expected_from_baseline_base": "시민B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "市民C",
+      "base_jp": "市民",
+      "base_ko": "시민",
+      "recommended_ko": "시민C",
+      "expected_from_baseline_base": "시민C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "市民Ａ",
+      "base_jp": "市民",
+      "base_ko": "시민",
+      "recommended_ko": "시민A",
+      "expected_from_baseline_base": "시민A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "市民Ｂ",
+      "base_jp": "市民",
+      "base_ko": "시민",
+      "recommended_ko": "시민B",
+      "expected_from_baseline_base": "시민B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "市民Ｃ",
+      "base_jp": "市民",
+      "base_ko": "시민",
+      "recommended_ko": "시민C",
+      "expected_from_baseline_base": "시민C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "怪しい男Ａ",
+      "base_jp": "怪しい男",
+      "base_ko": "수상한 남자",
+      "recommended_ko": "수상한 남자A",
+      "expected_from_baseline_base": "수상한 남자A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "怪しい男Ｂ",
+      "base_jp": "怪しい男",
+      "base_ko": "수상한 남자",
+      "recommended_ko": "수상한 남자B",
+      "expected_from_baseline_base": "수상한 남자B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "怪しい男Ｃ",
+      "base_jp": "怪しい男",
+      "base_ko": "수상한 남자",
+      "recommended_ko": "수상한 남자C",
+      "expected_from_baseline_base": "수상한 남자C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "怪しげな男Ａ",
+      "base_jp": "怪しげな男",
+      "base_ko": "수상쩍은 남자",
+      "recommended_ko": "수상한 남자A",
+      "expected_from_baseline_base": "수상쩍은 남자A",
+      "baseline_match": false,
+      "match_if_amendments_accepted": true,
+      "classification": "RESOLVED_ONLY_IF_AMENDMENTS_ACCEPTED",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "怪しげな男Ｂ",
+      "base_jp": "怪しげな男",
+      "base_ko": "수상쩍은 남자",
+      "recommended_ko": "수상한 남자B",
+      "expected_from_baseline_base": "수상쩍은 남자B",
+      "baseline_match": false,
+      "match_if_amendments_accepted": true,
+      "classification": "RESOLVED_ONLY_IF_AMENDMENTS_ACCEPTED",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "来客A",
+      "base_jp": "来客",
+      "base_ko": "방문객",
+      "recommended_ko": "손님A",
+      "expected_from_baseline_base": "방문객A",
+      "baseline_match": false,
+      "match_if_amendments_accepted": false,
+      "classification": "INTENTIONAL_CONTEXT_VARIANT",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "来客B",
+      "base_jp": "来客",
+      "base_ko": "방문객",
+      "recommended_ko": "손님B",
+      "expected_from_baseline_base": "방문객B",
+      "baseline_match": false,
+      "match_if_amendments_accepted": false,
+      "classification": "INTENTIONAL_CONTEXT_VARIANT",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "来客C",
+      "base_jp": "来客",
+      "base_ko": "방문객",
+      "recommended_ko": "손님C",
+      "expected_from_baseline_base": "방문객C",
+      "baseline_match": false,
+      "match_if_amendments_accepted": false,
+      "classification": "INTENTIONAL_CONTEXT_VARIANT",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "来客D",
+      "base_jp": "来客",
+      "base_ko": "방문객",
+      "recommended_ko": "손님D",
+      "expected_from_baseline_base": "방문객D",
+      "baseline_match": false,
+      "match_if_amendments_accepted": false,
+      "classification": "INTENTIONAL_CONTEXT_VARIANT",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "死の芸術Ａ",
+      "base_jp": "死の芸術",
+      "base_ko": "죽음의 예술",
+      "recommended_ko": "죽음의 예술A",
+      "expected_from_baseline_base": "죽음의 예술A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "死の芸術Ｂ",
+      "base_jp": "死の芸術",
+      "base_ko": "죽음의 예술",
+      "recommended_ko": "죽음의 예술B",
+      "expected_from_baseline_base": "죽음의 예술B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "生徒B",
+      "base_jp": "生徒",
+      "base_ko": "학생",
+      "recommended_ko": "학생B",
+      "expected_from_baseline_base": "학생B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "生徒Ａ",
+      "base_jp": "生徒",
+      "base_ko": "학생",
+      "recommended_ko": "학생A",
+      "expected_from_baseline_base": "학생A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "生徒Ｂ",
+      "base_jp": "生徒",
+      "base_ko": "학생",
+      "recommended_ko": "학생B",
+      "expected_from_baseline_base": "학생B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "男の声Ａ",
+      "base_jp": "男の声",
+      "base_ko": "남자 목소리",
+      "recommended_ko": "남자 목소리A",
+      "expected_from_baseline_base": "남자 목소리A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "男の声Ｂ",
+      "base_jp": "男の声",
+      "base_ko": "남자 목소리",
+      "recommended_ko": "남자 목소리B",
+      "expected_from_baseline_base": "남자 목소리B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "男性芸術家Ａ",
+      "base_jp": "男性芸術家",
+      "base_ko": "남성 예술가",
+      "recommended_ko": "남성 예술가A",
+      "expected_from_baseline_base": "남성 예술가A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "花ゾンビＡ",
+      "base_jp": "花ゾンビ",
+      "base_ko": "꽃 좀비",
+      "recommended_ko": "꽃 좀비A",
+      "expected_from_baseline_base": "꽃 좀비A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "花ゾンビＢ",
+      "base_jp": "花ゾンビ",
+      "base_ko": "꽃 좀비",
+      "recommended_ko": "꽃 좀비B",
+      "expected_from_baseline_base": "꽃 좀비B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "芸術犯罪者Ａ",
+      "base_jp": "芸術犯罪者",
+      "base_ko": "예술 범죄자",
+      "recommended_ko": "예술 범죄자A",
+      "expected_from_baseline_base": "예술 범죄자A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "芸術犯罪者Ｂ",
+      "base_jp": "芸術犯罪者",
+      "base_ko": "예술 범죄자",
+      "recommended_ko": "예술 범죄자B",
+      "expected_from_baseline_base": "예술 범죄자B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "芸術犯罪者Ｃ",
+      "base_jp": "芸術犯罪者",
+      "base_ko": "예술 범죄자",
+      "recommended_ko": "예술 범죄자C",
+      "expected_from_baseline_base": "예술 범죄자C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "街の人Ａ",
+      "base_jp": "街の人",
+      "base_ko": "거리의 사람",
+      "recommended_ko": "거리의 사람A",
+      "expected_from_baseline_base": "거리의 사람A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "街の人Ｂ",
+      "base_jp": "街の人",
+      "base_ko": "거리의 사람",
+      "recommended_ko": "거리의 사람B",
+      "expected_from_baseline_base": "거리의 사람B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "街の人Ｃ",
+      "base_jp": "街の人",
+      "base_ko": "거리의 사람",
+      "recommended_ko": "거리의 사람C",
+      "expected_from_baseline_base": "거리의 사람C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "街の人Ｄ",
+      "base_jp": "街の人",
+      "base_ko": "거리의 사람",
+      "recommended_ko": "거리의 사람D",
+      "expected_from_baseline_base": "거리의 사람D",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "誘拐犯A",
+      "base_jp": "誘拐犯",
+      "base_ko": "유괴범",
+      "recommended_ko": "납치범A",
+      "expected_from_baseline_base": "유괴범A",
+      "baseline_match": false,
+      "match_if_amendments_accepted": true,
+      "classification": "RESOLVED_ONLY_IF_AMENDMENTS_ACCEPTED",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "誘拐犯B",
+      "base_jp": "誘拐犯",
+      "base_ko": "유괴범",
+      "recommended_ko": "납치범B",
+      "expected_from_baseline_base": "유괴범B",
+      "baseline_match": false,
+      "match_if_amendments_accepted": true,
+      "classification": "RESOLVED_ONLY_IF_AMENDMENTS_ACCEPTED",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "警吏Ａ",
+      "base_jp": "警吏",
+      "base_ko": "경찰",
+      "recommended_ko": "경찰A",
+      "expected_from_baseline_base": "경찰A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "警吏Ｂ",
+      "base_jp": "警吏",
+      "base_ko": "경찰",
+      "recommended_ko": "경찰B",
+      "expected_from_baseline_base": "경찰B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "警吏Ｃ",
+      "base_jp": "警吏",
+      "base_ko": "경찰",
+      "recommended_ko": "경찰C",
+      "expected_from_baseline_base": "경찰C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "貴婦人A",
+      "base_jp": "貴婦人",
+      "base_ko": "귀부인",
+      "recommended_ko": "귀부인A",
+      "expected_from_baseline_base": "귀부인A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "貴婦人B",
+      "base_jp": "貴婦人",
+      "base_ko": "귀부인",
+      "recommended_ko": "귀부인B",
+      "expected_from_baseline_base": "귀부인B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "赤ちゃんクマロボＡ",
+      "base_jp": "赤ちゃんクマロボ",
+      "base_ko": "아기 곰 로봇",
+      "recommended_ko": "아기 곰 로봇A",
+      "expected_from_baseline_base": "아기 곰 로봇A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "赤ちゃんクマロボＢ",
+      "base_jp": "赤ちゃんクマロボ",
+      "base_ko": "아기 곰 로봇",
+      "recommended_ko": "아기 곰 로봇B",
+      "expected_from_baseline_base": "아기 곰 로봇B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "通りすがりの女性Ａ",
+      "base_jp": "通りすがりの女性",
+      "base_ko": "지나가던 여성",
+      "recommended_ko": "지나가던 여성A",
+      "expected_from_baseline_base": "지나가던 여성A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "通りすがりの女性Ｂ",
+      "base_jp": "通りすがりの女性",
+      "base_ko": "지나가던 여성",
+      "recommended_ko": "지나가던 여성B",
+      "expected_from_baseline_base": "지나가던 여성B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "通行人A",
+      "base_jp": "通行人",
+      "base_ko": "통행인",
+      "recommended_ko": "통행인A",
+      "expected_from_baseline_base": "통행인A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "通行人B",
+      "base_jp": "通行人",
+      "base_ko": "통행인",
+      "recommended_ko": "통행인B",
+      "expected_from_baseline_base": "통행인B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "通行人C",
+      "base_jp": "通行人",
+      "base_ko": "통행인",
+      "recommended_ko": "통행인C",
+      "expected_from_baseline_base": "통행인C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "通行人Ａ",
+      "base_jp": "通行人",
+      "base_ko": "통행인",
+      "recommended_ko": "통행인A",
+      "expected_from_baseline_base": "통행인A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "通行人Ｂ",
+      "base_jp": "通行人",
+      "base_ko": "통행인",
+      "recommended_ko": "통행인B",
+      "expected_from_baseline_base": "통행인B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "野盗A",
+      "base_jp": "野盗",
+      "base_ko": "도적",
+      "recommended_ko": "도적A",
+      "expected_from_baseline_base": "도적A",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "野盗B",
+      "base_jp": "野盗",
+      "base_ko": "도적",
+      "recommended_ko": "도적B",
+      "expected_from_baseline_base": "도적B",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    },
+    {
+      "speaker_jp": "野盗C",
+      "base_jp": "野盗",
+      "base_ko": "도적",
+      "recommended_ko": "도적C",
+      "expected_from_baseline_base": "도적C",
+      "baseline_match": true,
+      "match_if_amendments_accepted": true,
+      "classification": "EXACT_OUTPUT_MATCH",
+      "source_keys_mutated": false
+    }
+  ],
+  "suffix_link_count": 84,
+  "initial_suffix_display_differences": 8,
+  "resolved_edges_only_if_3_related_amendments_accepted": 4,
+  "intentional_visitor_variants": 4,
+  "unknown_bracket_whitespace_labels": [
+    {
+      "speaker_jp": "アルテ（オルタ）",
+      "recommended_ko": "아르테(얼터)",
+      "exact_utf8_sha256": "dd43f7b1b87506066b961a75fd3963eba5b836f00b74603a9adcd9e588df38d4",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "アングル（オルタ）",
+      "recommended_ko": "앵글(얼터)",
+      "exact_utf8_sha256": "0fe3d48ce78c6ef1f1067ef90616ec208750b953e3357af7797a51f3721ad06c",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "アングル？",
+      "recommended_ko": "앵글?",
+      "exact_utf8_sha256": "f8382ca93fad164c80ee7a82f68364aa4f5c07f3d5d9e6865822584130b549f1",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "クピド＆ブグロー（オルタ）",
+      "recommended_ko": "쿠피도 & 부그로(얼터)",
+      "exact_utf8_sha256": "7fd84b0dbc0c5e15b2aadb1d3f1f414187e32abdd682ae5c25ffcaae106d9134",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "クレプスキュル？",
+      "recommended_ko": "크레퓌스퀼?",
+      "exact_utf8_sha256": "3d4a589627bf94e27db080fbd0ca592c4e8c831d2c1397d5eddd6a841cf9373a",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "ゴッホ（オルタ）",
+      "recommended_ko": "고흐(얼터)",
+      "exact_utf8_sha256": "5ee437fe7d870c46b664f2da6e84c00c1d3ab81da25f2fd7b36c95ec25422d53",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "セキエン（オルタ）",
+      "recommended_ko": "세키엔(얼터)",
+      "exact_utf8_sha256": "54aaf495a5e7c1891e23b12f04dde09419366a0d444b6959a06a6979982ffc0f",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "セザンヌ（オルタ）",
+      "recommended_ko": "세잔(얼터)",
+      "exact_utf8_sha256": "0c60f5b41e0f85121fb6c94e2867f33245a588cbecd330c2cbd376fc389e4bd5",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "ドナテッロ（オルタ）",
+      "recommended_ko": "도나텔로(얼터)",
+      "exact_utf8_sha256": "84d27785daa97104f63ee148dd1a1cef796df9cfd77f1a912b00d3e67943c392",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "パパ（仮）",
+      "recommended_ko": "아빠(가칭)",
+      "exact_utf8_sha256": "b870573707b85712c7d0967a3c837f1793c30bf7f144fbd74e23868a09f5e407",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "フラワーマン（二代目）",
+      "recommended_ko": "플라워맨(2대)",
+      "exact_utf8_sha256": "f5fe8504ad69f0dd38bc0ec5a8de82f84da5492afbe5e1581acc34b406d411a5",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "ブグロー（オルタ）",
+      "recommended_ko": "부그로(얼터)",
+      "exact_utf8_sha256": "05f8ff7a76ce92c3f7be6af9c5f480314bbbc4667446e7cd95dec707cca6fa4d",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "マネ（オルタ）",
+      "recommended_ko": "마네(얼터)",
+      "exact_utf8_sha256": "a65afff077637d2ddcf20477fe5e9dfe910b163d7c9d4fe7f9100cd909fdce3c",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "ミケランジェロ（オルタ）",
+      "recommended_ko": "미켈란젤로(얼터)",
+      "exact_utf8_sha256": "dbd16afabb57f6a1129c603e7188aeba31e7bc09b4c7e993aa7803dab57e55d4",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "レンブラント（オルタ）",
+      "recommended_ko": "렘브란트(얼터)",
+      "exact_utf8_sha256": "40c84970ec4f64a1f1c3f2ca7bb93928df9d77dc936bda343d0c59850215472b",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "ロダン（オルタ）",
+      "recommended_ko": "로댕(얼터)",
+      "exact_utf8_sha256": "3891966c67d9eeaf8b69a37751d51e4b763caf884bc3f1790d8c4d4acbf7cb67",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "ロダン？",
+      "recommended_ko": "로댕?",
+      "exact_utf8_sha256": "7ad5e822703e2966a72a2d87cb905bde0e8f608963793743a6c39767d1e2b1ed",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "侵入者？",
+      "recommended_ko": "침입자?",
+      "exact_utf8_sha256": "3e333b52782b2ae6f15c9162bf816c555211472d37b2230535301b6e4f28b401",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "女性店員？",
+      "recommended_ko": "여성 점원?",
+      "exact_utf8_sha256": "6b1457fdbdd94963087f0de1ebc2b60c3d4769798f4f9e5bdaf2388bac3b8447",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "少女？",
+      "recommended_ko": "소녀?",
+      "exact_utf8_sha256": "619fce269e805f55bf55fe9cb5ce10c0d27a90784033c19af77674a20b26920b",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "幽霊？",
+      "recommended_ko": "유령?",
+      "exact_utf8_sha256": "a6cf3c48d7f86c9a0a63b5699e0112e909419f2240dd754a53feebca260185f9",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "暴食の影？",
+      "recommended_ko": "폭식의 그림자?",
+      "exact_utf8_sha256": "67f67bb53eef86a280bce5ad52f7012cb89031f641e80759c6fd4b696f1332b9",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "死の芸術？",
+      "recommended_ko": "죽음의 예술?",
+      "exact_utf8_sha256": "22c4ef0347b1466f39dcf891a07c7110d4b0656ba1b74129675898326f71cf0b",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "死天使？",
+      "recommended_ko": "죽음의 천사?",
+      "exact_utf8_sha256": "97cb67abb320e94f9d6c8e38edad7b7d5739536585f70d53cdb0e2aadab56844",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "猿？",
+      "recommended_ko": "원숭이?",
+      "exact_utf8_sha256": "e4c08d179b137bfdfd715c745a18f7b2f307b9d7d13c3ed91982bf594c30a595",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "騎士団　騎士",
+      "recommended_ko": "기사단 기사",
+      "exact_utf8_sha256": "57104b30701938fb9d5b1b8aae33be8779f5c887217394818317459de73115f5",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "騎士団　騎士たち",
+      "recommended_ko": "기사단 기사들",
+      "exact_utf8_sha256": "d897eff43c1cc04daa69d0c3305504b286ac22d156dacb78639feb2cd417c1e0",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "？？？",
+      "recommended_ko": "???",
+      "exact_utf8_sha256": "3fe3a9d5ff5031b4a1a9f594cb565c8f7ef7186527690676d3e3ef2f40304c71",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "？？？？",
+      "recommended_ko": "????",
+      "exact_utf8_sha256": "1403dda4480502e678950d207f3d835c24fdcb4c3a62c4e54e41af47797683ef",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    },
+    {
+      "speaker_jp": "？？？？？？",
+      "recommended_ko": "??????",
+      "exact_utf8_sha256": "071a8605136b32133d2019488a26de0e05dae5565071e2c23c23d73f0d1e5d11",
+      "decision": "RETAIN_EXACT_KEY_AND_EXISTING_LABEL_SCOPE",
+      "identity_inferred": false
+    }
+  ],
+  "exact_variant_pairs": [
+    {
+      "keys": [
+        "ラぺ",
+        "ラペ"
+      ],
+      "values": [
+        "라페",
+        "라페"
+      ]
+    },
+    {
+      "keys": [
+        "子どもの声",
+        "子供の声"
+      ],
+      "values": [
+        "아이의 목소리",
+        "아이의 목소리"
+      ]
+    }
+  ],
+  "D_middle_dot_A_is_joint": false,
+  "source_normalizations": 0,
+  "alias_or_identity_merges": 0
+}

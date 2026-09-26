@@ -1,0 +1,20 @@
+{
+  "scripts/crypto.py": {
+    "commit": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+    "blob": "accb93a003e966886c430da3ece2836026fd8cda",
+    "sha256": "75ca470daaf36d6020ceea979b57b15727bf066e72c50e36636b92d1664d8f06",
+    "size_bytes": 1213
+  },
+  "scripts/parse.py": {
+    "commit": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+    "blob": "b0174508a1abf778534d6edd9a896f2546d6d7af",
+    "sha256": "fbf78e23cbfb2d950c6978ecc1c221444777d291446fc2e32a8cb797e0c8fb8a",
+    "size_bytes": 819
+  },
+  "scripts/update.py": {
+    "commit": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+    "blob": "3a58f025ed5ed11e12cdddff991102d71a84cf4d",
+    "sha256": "6644de05f932de487e069fd566f895fb4fb244b4f83421850387128168d4e20e",
+    "size_bytes": 5691
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "started_utc": "2026-09-26T11:29:17.132772+00:00",
+  "finished_utc": "2026-09-26T11:29:26.160332+00:00",
+  "mode": "FULL",
+  "manifest_sha256": "62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+  "selected_assets": 1972,
+  "download_status_counts": {
+    "DOWNLOADED": 1972
+  },
+  "content_status_counts": {
+    "CONFIRMED_NOVEL_SCRIPT": 1864,
+    "REJECTED_NON_SCRIPT_TEXTASSETS": 19,
+    "REJECTED_NO_TEXTASSET": 89
+  },
+  "http_status_counts": {
+    "200": 1972
+  },
+  "confirmed_script_assets": 1864,
+  "confirmed_textassets": 1864,
+  "parsed_rows": 138822,
+  "blank_name_rows": 33752,
+  "exact_keys": 1070,
+  "stop": false,
+  "repository_mutation": 0,
+  "dependency_versions": {
+    "python": "3.12.14",
+    "UnityPy": "1.10.18",
+    "httpx": "0.27.2"
+  },
+  "source_code_identities": {
+    "scripts/crypto.py": {
+      "commit": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+      "blob": "accb93a003e966886c430da3ece2836026fd8cda",
+      "sha256": "75ca470daaf36d6020ceea979b57b15727bf066e72c50e36636b92d1664d8f06",
+      "size_bytes": 1213
+    },
+    "scripts/parse.py": {
+      "commit": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+      "blob": "b0174508a1abf778534d6edd9a896f2546d6d7af",
+      "sha256": "fbf78e23cbfb2d950c6978ecc1c221444777d291446fc2e32a8cb797e0c8fb8a",
+      "size_bytes": 819
+    },
+    "scripts/update.py": {
+      "commit": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+      "blob": "3a58f025ed5ed11e12cdddff991102d71a84cf4d",
+      "sha256": "6644de05f932de487e069fd566f895fb4fb244b4f83421850387128168d4e20e",
+      "size_bytes": 5691
+    }
+  },
+  "this_audit_bundle_network_requests": 0,
+  "historical_http_status_note": "http_status_counts and DOWNLOADED reflect verified cache metadata from 4-C2, not fresh bundle GETs. The manifest was freshly fetched; all matching bundles were rehashed and reparsed."
+}

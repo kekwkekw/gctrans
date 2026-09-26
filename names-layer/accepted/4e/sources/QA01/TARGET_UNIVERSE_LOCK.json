@@ -1,0 +1,43 @@
+{
+  "schema": "gc_names_frozen_target_4D0_v1",
+  "target_snapshot_id": "gc-u3-sha256:62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+  "manifest_url": "https://cdn-r18.gc.dmmgames.com/files/manifest/webgl/r18/assetbundle.json",
+  "fetch_utc": "2026-09-25 11:45:49 UTC",
+  "fetch_utc_precise": "2026-09-25T11:45:49.335666+00:00",
+  "manifest_sha256": "62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+  "exact_key_count": 1070,
+  "exact_keyset_sha256": "d1eaf05bc068195c4f678097d080fd5b4db7aca36c3159b81bfc7b52d594cae7",
+  "keyset_digest_encoding": "UTF-8 compact JSON array sorted by exact UTF-8 key bytes",
+  "4C2_package_sha256": "78434af32aa15d387f8968317889edaf092fcaa603db959d6744327f1beaa5bc",
+  "4B_package_sha256": "9c950509587e1dcf0953f3197c44e7e86a6db3a84bd9753d6a4dfd664e8f8033",
+  "source_main_sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+  "parser_code_identity": {
+    "scripts/crypto.py": {
+      "commit": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+      "blob": "accb93a003e966886c430da3ece2836026fd8cda",
+      "sha256": "75ca470daaf36d6020ceea979b57b15727bf066e72c50e36636b92d1664d8f06",
+      "size_bytes": 1213
+    },
+    "scripts/parse.py": {
+      "commit": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+      "blob": "b0174508a1abf778534d6edd9a896f2546d6d7af",
+      "sha256": "fbf78e23cbfb2d950c6978ecc1c221444777d291446fc2e32a8cb797e0c8fb8a",
+      "size_bytes": 819
+    },
+    "scripts/update.py": {
+      "commit": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+      "blob": "3a58f025ed5ed11e12cdddff991102d71a84cf4d",
+      "sha256": "6644de05f932de487e069fd566f895fb4fb244b4f83421850387128168d4e20e",
+      "size_bytes": 5691
+    }
+  },
+  "confirmed_script_assets": 1864,
+  "parsed_rows": 138822,
+  "blank_speaker_rows": 33752,
+  "source_status": "CURRENT_UNIVERSE_CONFIRMED",
+  "frozen": true,
+  "live_manifest_refresh_allowed_during_review": false,
+  "publication_requires_separate_delta_audit": true,
+  "semantic_decisions_in_this_stage": false,
+  "production_publication_authorized_by_this_stage": false
+}

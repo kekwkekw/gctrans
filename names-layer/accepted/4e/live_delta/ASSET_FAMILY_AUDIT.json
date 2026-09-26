@@ -1,0 +1,715 @@
+{
+  "manifest_sha256": "62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+  "total_assets": 22684,
+  "exclusive_classification_counts": {
+    "UNRELATED": 19974,
+    "OTHER_SCRIPT_NOVEL_NAMING": 738,
+    "NOVEL_SCRIPT_RELATED_ADDITIONAL": 118,
+    "EXISTING_PATTERN_MATCH": 1854
+  },
+  "novel_script_related_total": 1078,
+  "existing_pattern": "notinit/[^/]*/\\w{3}_(\\d{8}|\\d{5,6}).dmm",
+  "candidate_count": 1972,
+  "candidate_declared_bytes": 545801472,
+  "deduplication": "Exact (asset path, manifest h) identity",
+  "duplicate_candidate_pairs": 0,
+  "duplicate_candidate_hashes": 0,
+  "additional_script_candidates_outside_union": [],
+  "other_related_families": [
+    {
+      "family": "notinit/image_novel_background",
+      "count": 277,
+      "declared_bytes": 85118896,
+      "representatives": [
+        "notinit/image_novel_background/abg111.dmm",
+        "notinit/image_novel_background/abg122.dmm",
+        "notinit/image_novel_background/abg111133.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Image/texture/atlas resource family naming; no scenario TextAsset naming evidence.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "notinit/image_novel_banner",
+      "count": 59,
+      "declared_bytes": 1743632,
+      "representatives": [
+        "notinit/image_novel_banner/nb0.dmm",
+        "notinit/image_novel_banner/nb101.dmm",
+        "notinit/image_novel_banner/nb102.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Image/texture/atlas resource family naming; no scenario TextAsset naming evidence.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "notinit/image_novel_effect_image",
+      "count": 3,
+      "declared_bytes": 171840,
+      "representatives": [
+        "notinit/image_novel_effect_image/nei3005301.dmm",
+        "notinit/image_novel_effect_image/nei3005302.dmm",
+        "notinit/image_novel_effect_image/nei3005303.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Image/texture/atlas resource family naming; no scenario TextAsset naming evidence.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "notinit/image_novel_transition",
+      "count": 26,
+      "declared_bytes": 1530832,
+      "representatives": [
+        "notinit/image_novel_transition/tra01.dmm",
+        "notinit/image_novel_transition/tra01a.dmm",
+        "notinit/image_novel_transition/tra02.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Image/texture/atlas resource family naming; no scenario TextAsset naming evidence.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "notinit/image_tutorial",
+      "count": 4,
+      "declared_bytes": 8911520,
+      "representatives": [
+        "notinit/image_tutorial/novel_1.dmm",
+        "notinit/image_tutorial/novel_2.dmm",
+        "notinit/image_tutorial/novel_3.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Image/texture/atlas resource family naming; no scenario TextAsset naming evidence.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "notinit/novel_emote",
+      "count": 17,
+      "declared_bytes": 1580048,
+      "representatives": [
+        "notinit/novel_emote/01joy.dmm",
+        "notinit/novel_emote/02ikari.dmm",
+        "notinit/novel_emote/03question.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Novel presentation emote/prefab family naming, not a scenario script family.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "notinit/novel_prefab",
+      "count": 25,
+      "declared_bytes": 4837568,
+      "representatives": [
+        "notinit/novel_prefab/cross_fade.dmm",
+        "notinit/novel_prefab/novel_effect01.dmm",
+        "notinit/novel_prefab/novel_effect02.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Novel presentation emote/prefab family naming, not a scenario script family.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "notinit/novel_texture",
+      "count": 14,
+      "declared_bytes": 390736,
+      "representatives": [
+        "notinit/novel_texture/nit5001061.dmm",
+        "notinit/novel_texture/nit5001101.dmm",
+        "notinit/novel_texture/nit5001102.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Image/texture/atlas resource family naming; no scenario TextAsset naming evidence.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "notinit/novelchara_main_r18",
+      "count": 205,
+      "declared_bytes": 11971775824,
+      "representatives": [
+        "notinit/novelchara_main_r18/hmr_40101001_image.dmm",
+        "notinit/novelchara_main_r18/hmr_40101023_image.dmm",
+        "notinit/novelchara_main_r18/hmr_40101033_image.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Image companion suffix _image; scene script with same prefix/stem is independently selected when present.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "notinit/novelchara_sub_r18",
+      "count": 94,
+      "declared_bytes": 5782436144,
+      "representatives": [
+        "notinit/novelchara_sub_r18/hsr_40200013_image.dmm",
+        "notinit/novelchara_sub_r18/hsr_40200023_image.dmm",
+        "notinit/novelchara_sub_r18/hsr_40200033_image.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Image companion suffix _image; scene script with same prefix/stem is independently selected when present.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "popup",
+      "count": 8,
+      "declared_bytes": 1285200,
+      "representatives": [
+        "popup/popup_memory_description.dmm",
+        "popup/popup_novel_age_limit.dmm",
+        "popup/popup_novel_character_select.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Unity UI popup/scene resource family naming, not scenario data file naming.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "scene",
+      "count": 3,
+      "declared_bytes": 2152528,
+      "representatives": [
+        "scene/scene_character_novel.dmm",
+        "scene/scene_novel.dmm",
+        "scene/scene_quest_novel.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Unity UI popup/scene resource family naming, not scenario data file naming.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "sound/se",
+      "count": 1,
+      "declared_bytes": 23520,
+      "representatives": [
+        "sound/se/novel.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Sound effect family naming.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    },
+    {
+      "family": "sprite_atlas",
+      "count": 2,
+      "declared_bytes": 2418800,
+      "representatives": [
+        "sprite_atlas/novel_adv_sprite_atlas.dmm",
+        "sprite_atlas/novel_sprite_atlas.dmm"
+      ],
+      "classification": "EXCLUDED_PRESENTATION_RESOURCE_BY_NAMING",
+      "reason": "Image/texture/atlas resource family naming; no scenario TextAsset naming evidence.",
+      "content_inspected": false,
+      "source": "Pinned manifest path names; no semantic judgment of speaker keys"
+    }
+  ],
+  "family_counts": [
+    {
+      "family": "",
+      "count": 22
+    },
+    {
+      "family": "battle",
+      "count": 2
+    },
+    {
+      "family": "battle/common",
+      "count": 2
+    },
+    {
+      "family": "dungeon",
+      "count": 3
+    },
+    {
+      "family": "image_adv_chara_big_icon",
+      "count": 449
+    },
+    {
+      "family": "image_adv_chara_icon",
+      "count": 454
+    },
+    {
+      "family": "image_art_piece",
+      "count": 79
+    },
+    {
+      "family": "image_decoration",
+      "count": 92
+    },
+    {
+      "family": "image_enemy",
+      "count": 381
+    },
+    {
+      "family": "image_equipment_icon",
+      "count": 188
+    },
+    {
+      "family": "image_factor_icon",
+      "count": 235
+    },
+    {
+      "family": "image_inspiration_icon",
+      "count": 43
+    },
+    {
+      "family": "image_item_icon",
+      "count": 1312
+    },
+    {
+      "family": "image_item_small_icon",
+      "count": 1311
+    },
+    {
+      "family": "image_memory_icon",
+      "count": 161
+    },
+    {
+      "family": "image_navi_chara_full",
+      "count": 1
+    },
+    {
+      "family": "image_sub_unit_banner",
+      "count": 93
+    },
+    {
+      "family": "image_sub_unit_full",
+      "count": 92
+    },
+    {
+      "family": "image_sub_unit_icon",
+      "count": 92
+    },
+    {
+      "family": "image_sub_unit_sd",
+      "count": 92
+    },
+    {
+      "family": "image_sub_unit_wide",
+      "count": 92
+    },
+    {
+      "family": "image_tutorial_chara_icon",
+      "count": 6
+    },
+    {
+      "family": "image_unit_banner",
+      "count": 205
+    },
+    {
+      "family": "image_unit_full",
+      "count": 204
+    },
+    {
+      "family": "image_unit_icon",
+      "count": 204
+    },
+    {
+      "family": "museum_visitor_texture",
+      "count": 140
+    },
+    {
+      "family": "notinit/battle/field",
+      "count": 27
+    },
+    {
+      "family": "notinit/battle/sound/se/battle",
+      "count": 1
+    },
+    {
+      "family": "notinit/battle/sound/se/effect",
+      "count": 1
+    },
+    {
+      "family": "notinit/battle/sound/se/system",
+      "count": 1
+    },
+    {
+      "family": "notinit/battle/sound/se/unit",
+      "count": 330
+    },
+    {
+      "family": "notinit/battle/sound/voice/unit",
+      "count": 437
+    },
+    {
+      "family": "notinit/battle/ultimate_bg",
+      "count": 1
+    },
+    {
+      "family": "notinit/dungeon/field",
+      "count": 5
+    },
+    {
+      "family": "notinit/dungeon/sound/se",
+      "count": 1
+    },
+    {
+      "family": "notinit/dungeon/top",
+      "count": 5
+    },
+    {
+      "family": "notinit/gacha/gacha_movie",
+      "count": 15
+    },
+    {
+      "family": "notinit/gacha/gacha_slide_movie",
+      "count": 480
+    },
+    {
+      "family": "notinit/gacha/image_gacha_appeal",
+      "count": 823
+    },
+    {
+      "family": "notinit/gacha/image_gacha_step_up_information",
+      "count": 234
+    },
+    {
+      "family": "notinit/gacha/prefab_gacha_slide",
+      "count": 9
+    },
+    {
+      "family": "notinit/image_active_skill_icon",
+      "count": 193
+    },
+    {
+      "family": "notinit/image_big_banner",
+      "count": 403
+    },
+    {
+      "family": "notinit/image_box_gacha_banner",
+      "count": 12
+    },
+    {
+      "family": "notinit/image_box_gacha_logo",
+      "count": 12
+    },
+    {
+      "family": "notinit/image_day_of_week_quest_banner",
+      "count": 20
+    },
+    {
+      "family": "notinit/image_enemy_banner",
+      "count": 175
+    },
+    {
+      "family": "notinit/image_event_achievement",
+      "count": 144
+    },
+    {
+      "family": "notinit/image_event_button",
+      "count": 143
+    },
+    {
+      "family": "notinit/image_event_logo",
+      "count": 143
+    },
+    {
+      "family": "notinit/image_event_raid_boss_pin",
+      "count": 17
+    },
+    {
+      "family": "notinit/image_event_raid_label",
+      "count": 7
+    },
+    {
+      "family": "notinit/image_event_tutorial",
+      "count": 331
+    },
+    {
+      "family": "notinit/image_gacha_background",
+      "count": 63
+    },
+    {
+      "family": "notinit/image_home_custom_background",
+      "count": 29
+    },
+    {
+      "family": "notinit/image_home_custom_memory",
+      "count": 12
+    },
+    {
+      "family": "notinit/image_login_bonus_item_icon",
+      "count": 7
+    },
+    {
+      "family": "notinit/image_memory",
+      "count": 161
+    },
+    {
+      "family": "notinit/image_memory_big",
+      "count": 161
+    },
+    {
+      "family": "notinit/image_memory_small",
+      "count": 161
+    },
+    {
+      "family": "notinit/image_mission",
+      "count": 9
+    },
+    {
+      "family": "notinit/image_new_face_movie_text",
+      "count": 112
+    },
+    {
+      "family": "notinit/image_novel_background",
+      "count": 277
+    },
+    {
+      "family": "notinit/image_novel_banner",
+      "count": 59
+    },
+    {
+      "family": "notinit/image_novel_effect_image",
+      "count": 3
+    },
+    {
+      "family": "notinit/image_novel_transition",
+      "count": 26
+    },
+    {
+      "family": "notinit/image_preregistration_chara_detail",
+      "count": 70
+    },
+    {
+      "family": "notinit/image_preregistration_chara_icon",
+      "count": 52
+    },
+    {
+      "family": "notinit/image_preregistration_chara_unrelease",
+      "count": 8
+    },
+    {
+      "family": "notinit/image_preregistration_chara_word",
+      "count": 99
+    },
+    {
+      "family": "notinit/image_quest_chapter_stage_select",
+      "count": 10
+    },
+    {
+      "family": "notinit/image_quest_chapter_top",
+      "count": 12
+    },
+    {
+      "family": "notinit/image_quest_place",
+      "count": 12
+    },
+    {
+      "family": "notinit/image_shop_footer_banner",
+      "count": 2
+    },
+    {
+      "family": "notinit/image_small_banner",
+      "count": 1138
+    },
+    {
+      "family": "notinit/image_sp_mission_big_banner",
+      "count": 4
+    },
+    {
+      "family": "notinit/image_sp_mission_small_banner",
+      "count": 8
+    },
+    {
+      "family": "notinit/image_sub_unit_get_back",
+      "count": 92
+    },
+    {
+      "family": "notinit/image_tips_back_ground",
+      "count": 3
+    },
+    {
+      "family": "notinit/image_tutorial",
+      "count": 107
+    },
+    {
+      "family": "notinit/image_unit_get_back",
+      "count": 204
+    },
+    {
+      "family": "notinit/image_x_campaign",
+      "count": 2
+    },
+    {
+      "family": "notinit/novel_emote",
+      "count": 17
+    },
+    {
+      "family": "notinit/novel_prefab",
+      "count": 25
+    },
+    {
+      "family": "notinit/novel_script",
+      "count": 1078
+    },
+    {
+      "family": "notinit/novel_texture",
+      "count": 14
+    },
+    {
+      "family": "notinit/novelchara_main",
+      "count": 408
+    },
+    {
+      "family": "notinit/novelchara_main_r18",
+      "count": 409
+    },
+    {
+      "family": "notinit/novelchara_sub",
+      "count": 189
+    },
+    {
+      "family": "notinit/novelchara_sub_r18",
+      "count": 187
+    },
+    {
+      "family": "notinit/prefab_athenes_record_background",
+      "count": 7
+    },
+    {
+      "family": "notinit/prefab_home_background",
+      "count": 39
+    },
+    {
+      "family": "notinit/prefab_login_bonus",
+      "count": 210
+    },
+    {
+      "family": "notinit/prefab_login_bonus_background",
+      "count": 2
+    },
+    {
+      "family": "notinit/prefab_raid_boss_background",
+      "count": 1
+    },
+    {
+      "family": "notinit/raid/sound/se",
+      "count": 1
+    },
+    {
+      "family": "notinit/raid/sound/se/unit",
+      "count": 5
+    },
+    {
+      "family": "notinit/sd_character",
+      "count": 738
+    },
+    {
+      "family": "notinit/sd_character_battle",
+      "count": 735
+    },
+    {
+      "family": "notinit/sd_character_login_bonus",
+      "count": 10
+    },
+    {
+      "family": "notinit/sd_character_raid_boss",
+      "count": 13
+    },
+    {
+      "family": "notinit/standing_spine",
+      "count": 439
+    },
+    {
+      "family": "notinit/voice/atelier",
+      "count": 31
+    },
+    {
+      "family": "notinit/voice/chara_get",
+      "count": 305
+    },
+    {
+      "family": "notinit/voice/enhance",
+      "count": 212
+    },
+    {
+      "family": "notinit/voice/master/login_bonus_character_actions",
+      "count": 641
+    },
+    {
+      "family": "notinit/voice/master/navi_character_box_gacha_words",
+      "count": 100
+    },
+    {
+      "family": "notinit/voice/master/navi_character_profile_words",
+      "count": 17
+    },
+    {
+      "family": "notinit/voice/master/navi_character_sp_mission_words",
+      "count": 1
+    },
+    {
+      "family": "notinit/voice/master/sub_unit_words",
+      "count": 1442
+    },
+    {
+      "family": "notinit/voice/master/unit_words",
+      "count": 1646
+    },
+    {
+      "family": "notinit/voice/shop_time_sale",
+      "count": 1
+    },
+    {
+      "family": "notinit/voice/subunitdetail",
+      "count": 93
+    },
+    {
+      "family": "notinit/voice/unitdetail",
+      "count": 34
+    },
+    {
+      "family": "popup",
+      "count": 229
+    },
+    {
+      "family": "prefab_museum_background",
+      "count": 10
+    },
+    {
+      "family": "prefab_museum_effect",
+      "count": 14
+    },
+    {
+      "family": "prefab_quest_map",
+      "count": 1
+    },
+    {
+      "family": "scene",
+      "count": 28
+    },
+    {
+      "family": "sound/bgm",
+      "count": 67
+    },
+    {
+      "family": "sound/common_se",
+      "count": 416
+    },
+    {
+      "family": "sound/se",
+      "count": 7
+    },
+    {
+      "family": "sound/voice",
+      "count": 1
+    },
+    {
+      "family": "sprite_atlas",
+      "count": 29
+    },
+    {
+      "family": "tutorial_movie",
+      "count": 4
+    }
+  ]
+}
