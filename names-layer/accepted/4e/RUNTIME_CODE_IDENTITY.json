@@ -1,0 +1,23 @@
+{
+  "source_main": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+  "files": [
+    {
+      "path": "GCMod-cs파일백업/GCMod-6.1.0-updated/Patch.cs",
+      "git_blob": "5dcf805a596e79190cc6dcf9c6054ba35b01fde6",
+      "sha256": "32902460e984a125a518f9467cbc626bbdf8b23b5e2b5802b64b74bd3d493293"
+    },
+    {
+      "path": "GCMod-cs파일백업/GCMod-6.1.0-updated/Translation.cs",
+      "git_blob": "0e414a586cae9ef2ce9ad807a23adc38e2c8bd59",
+      "sha256": "8bc908420e8461d82301aafccaed8339036f77ff7675288480cbd80e77d90f91"
+    }
+  ],
+  "exact_dictionary_lookup": true,
+  "requires_translation_enabled": true,
+  "requires_novel_in_translation_dictionary": true,
+  "SetName_lines": [
+    223,
+    244
+  ],
+  "live_runtime_verified": false
+}

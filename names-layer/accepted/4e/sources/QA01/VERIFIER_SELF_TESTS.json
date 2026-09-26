@@ -1,0 +1,100 @@
+{
+  "execution_status": "COMPLETED",
+  "actual_tests_run": 8,
+  "blocked": 8,
+  "all_blocked": true,
+  "source_package_mutated": false,
+  "test_copies_removed": true,
+  "manifest_regenerated_for_all_cases": true,
+  "cases": [
+    {
+      "test": "BASELINE_BYTE_CHANGE",
+      "manifest_regenerated_after_mutation": true,
+      "returncode": 1,
+      "blocked": true,
+      "verifier_result": {
+        "result": "FAIL",
+        "error": "Baseline ledger bytes changed",
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "test": "UNAUTHORIZED_NEW_APPROVAL",
+      "manifest_regenerated_after_mutation": true,
+      "returncode": 1,
+      "blocked": true,
+      "verifier_result": {
+        "result": "FAIL",
+        "error": "Approval boundary: 誘拐犯/new_user_approval_granted",
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "test": "EXACT_JP_FULLWIDTH_NORMALIZED",
+      "manifest_regenerated_after_mutation": true,
+      "returncode": 1,
+      "blocked": true,
+      "verifier_result": {
+        "result": "FAIL",
+        "error": "Amendment exact key change",
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "test": "CONTEXT_SOURCE_RAW_LINE_CHANGED",
+      "manifest_regenerated_after_mutation": true,
+      "returncode": 1,
+      "blocked": true,
+      "verifier_result": {
+        "result": "FAIL",
+        "error": "Window source mismatch: おじさん/current_raw_line_1based",
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "test": "FRAGMENT_MARKED_CONTEXT_COMPLETE",
+      "manifest_regenerated_after_mutation": true,
+      "returncode": 1,
+      "blocked": true,
+      "verifier_result": {
+        "result": "FAIL",
+        "error": "Limited context silently accepted/complete",
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "test": "REVIEWING_KNOWLEDGE_PROMOTED_APPROVED",
+      "manifest_regenerated_after_mutation": true,
+      "returncode": 1,
+      "blocked": true,
+      "verifier_result": {
+        "result": "FAIL",
+        "error": "Knowledge evidence or state changed",
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "test": "NATURALIZATION_INHERITS_OLD_APPROVAL",
+      "manifest_regenerated_after_mutation": true,
+      "returncode": 1,
+      "blocked": true,
+      "verifier_result": {
+        "result": "FAIL",
+        "error": "Prior approval incorrectly inherited",
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "test": "FULL_1070_CONTEXT_REVIEW_FALSE_CLAIM",
+      "manifest_regenerated_after_mutation": true,
+      "returncode": 1,
+      "blocked": true,
+      "verifier_result": {
+        "result": "FAIL",
+        "error": "False QA completeness/approval: all_1070_contexts_reread",
+        "error_type": "ValueError"
+      }
+    }
+  ],
+  "verifier_sha256": "5e23c81d620e167716d5b2fe69b7277903532c5c95bd4aaade3ac9e0ae5eda7b"
+}

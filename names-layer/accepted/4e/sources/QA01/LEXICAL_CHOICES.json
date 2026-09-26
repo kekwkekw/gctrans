@@ -1,0 +1,170 @@
+{
+  "choices": [
+    {
+      "speaker_jp": "クロト",
+      "qa_default_ko": "쿠로토",
+      "reason_ko": "쿠로토를 기본 수락안으로 유지하고 크로토 대안도 남긴다. 제공 name label만으로 관장·실존/신화 인물로 바꾸지 않으며 공식 한국어 표기를 확인한 것으로 쓰지 않는다.",
+      "inherited_alternatives_ko": [
+        "크로토"
+      ],
+      "inherited_uncertainty_notes_ko": [
+        "공식 한국어명과 원어 철자는 제공 자료에서 확인되지 않는다. 크로토는 압축된 음역 대안이며 선택 전 사용자 acceptance가 필요하다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "孤児院の寮母",
+      "qa_default_ko": "고아원 보모",
+      "reason_ko": "아이들을 인솔하고 생활을 돌보는 역할이 제공 창에서 뒷받침되므로 고아원 보모를 유지 권고한다. 사감은 직책 중심 대안으로 보존하되 원장·교사·수녀로 바꾸지 않는다.",
+      "inherited_alternatives_ko": [
+        "고아원 사감"
+      ],
+      "inherited_uncertainty_notes_ko": [
+        "寮母의 생활 돌봄 역할을 보모로 풀었다. 사감이라는 직책 중심 대안은 최종 어휘 QA에서 비교할 수 있다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "後輩ちゃん",
+      "qa_default_ko": "후배쨩",
+      "reason_ko": "이번에는 후배쨩을 유지 권고한다. 친근한 ちゃん을 보존하고 기존 미쨩과 출력 문체를 연결한다. 나이·성별·친족 관계를 추론하거나 전역 경칭 정책을 만들지 않는다.",
+      "inherited_alternatives_ko": [],
+      "inherited_uncertainty_notes_ko": [
+        "쨩 표기는 기존 ミーちゃん의 미쨩과 연결한 미승인 권고다. 자연화 대안 후배를 채택할 경우 호칭 뉘앙스가 생략됨을 별도 수락해야 하며 나이·성별·학교 소속은 추정하지 않는다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "ミーちゃん",
+      "qa_default_ko": "미쨩",
+      "reason_ko": "인물/존재의 애칭형 label을 미쨩으로 유지한다. 後輩ちゃん과의 쨩 문체 연계는 출력값 선택이지 원문 정규화나 모든 ちゃん의 일괄 규칙이 아니다.",
+      "inherited_alternatives_ko": [],
+      "inherited_uncertainty_notes_ko": [
+        "미짱 등 접미사 표기 대안은 있을 수 있으나 이번에는 기존 미쨩을 유지하며 전역 경칭 정책을 변경하지 않는다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "堕天死の芸術",
+      "qa_default_ko": "타락한 죽음의 예술",
+      "reason_ko": "타락한 죽음의 예술을 기본 수락안으로 유지한다. 堕天死의 원문 문자와 死の芸術의 표시를 지키고 타천한 대안은 함께 남기되 실제 천사 외형을 새로 확정하지 않는다.",
+      "inherited_alternatives_ko": [],
+      "inherited_uncertainty_notes_ko": [
+        "원문은 堕天使가 아니라 堕天死の芸術이다. 이를 오자로 고치거나 천사 외형·정체를 확정하지 않는다. 타천한 죽음의 예술은 의미 보존형 대안이며 말장난의 한국어 재현은 최종 어휘 QA 대상으로 남긴다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "堕天死の芸術たち",
+      "qa_default_ko": "타락한 죽음의 예술들",
+      "reason_ko": "단수 권고의 타락한 죽음의 예술에 복수를 연결한 타락한 죽음의 예술들을 유지한다. 단수 선택이 바뀌면 이 복수형도 같은 수락 그룹에서 처리해야 한다.",
+      "inherited_alternatives_ko": [],
+      "inherited_uncertainty_notes_ko": [
+        "단수의 타락한/타천한 어휘 및 말장난 QA는 미해결 상태로 승계한다. 향후 단수 표기를 바꾸면 복수형도 함께 검토해야 한다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "元クマロボ",
+      "qa_default_ko": "곰 로봇이었던 존재",
+      "reason_ko": "곰 로봇이었던 존재를 유지한다. 아기 상태로 변하는 제공 장면의 이전 상태를 보존한다. 전직·원본으로 줄이지 않으며 실제 UI 너비 검사는 별도다.",
+      "inherited_alternatives_ko": [
+        "전 곰 로봇"
+      ],
+      "inherited_uncertainty_notes_ko": [
+        "이전 상태가 드러나도록 풀어 쓴 잠정 표시다. 최종 UI 길이와 자연스러운 축약은 QA 대상이며 runtime에서 확인하지 않았다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "元クマロボたち",
+      "qa_default_ko": "곰 로봇이었던 존재들",
+      "reason_ko": "곰 로봇이었던 존재들을 유지한다. 이전 상태와 복수를 보존하고 단수와 같은 표현 선택을 공유한다. UI 길이·잘림은 검증되지 않았다.",
+      "inherited_alternatives_ko": [
+        "전 곰 로봇들"
+      ],
+      "inherited_uncertainty_notes_ko": [
+        "단수 元クマロボ의 최종 어휘 선택이 바뀌면 이 복수 라벨도 함께 QA해야 한다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "模倣中原始藝術",
+      "qa_default_ko": "모방 중인 원시 예술",
+      "reason_ko": "모방 중인 원시 예술을 유지한다. 中의 진행 상태는 보존하고 구체적인 모방 대상은 제공 창으로 특정하지 않는다.",
+      "inherited_alternatives_ko": [],
+      "inherited_uncertainty_notes_ko": [
+        "제공 두 창만으로 무엇을 모방하는지 특정하지 않는다. 모방 대상의 실명은 추가하지 않는다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "模倣野苺",
+      "qa_default_ko": "모방된 산딸기",
+      "reason_ko": "모방된 산딸기를 유지한다. 현재 창의 모방된 野苺라는 설명과 이름을 몰라 붙인 별도 野苺 호칭을 함께 확인했으며 실명 콘프레즈로 소급 치환하지 않는다.",
+      "inherited_alternatives_ko": [
+        "산딸기 모방체"
+      ],
+      "inherited_uncertainty_notes_ko": [
+        "관련 N04의 野苺를 이번 배치 추가 anchor로 검수했다. 모방 상태와 후일 실명 라벨은 별개로 남긴다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "野苺",
+      "qa_default_ko": "산딸기",
+      "reason_ko": "산딸기는 이름을 몰라 붙인 임시 호칭으로 유지한다. 이후 자칭 이름과 같은 key로 합치지 않는다.",
+      "inherited_alternatives_ko": [],
+      "inherited_uncertainty_notes_ko": [
+        "작중 이름을 몰라 사용한 호칭이라는 제공 문맥에 따른 권고다. 공식 작품명 번역이나 한국어 정식 인명이라고 주장하지 않는다. 모방형과 실명 key는 분리한다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "ビキニの死の芸術",
+      "qa_default_ko": "비키니 죽음의 예술",
+      "reason_ko": "비키니와 죽음의 예술 두 구성어만으로 이루어진 현재 표시를 유지한다. 제공 전투 창은 착용/재료/형상을 구분하지 않으므로 그 관계가 확인되었다고 쓰지 않는다.",
+      "inherited_alternatives_ko": [],
+      "inherited_uncertainty_notes_ko": [
+        "제공 창에서는 비키니 자체가 작품인지 비키니를 입은 형상인지 확정되지 않는다. 따라서 비키니 차림의/비키니 모양의로 좁히지 않은 잠정 표기이며 외형 관계는 미확정이다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "チョコの死の芸術",
+      "qa_default_ko": "초콜릿 죽음의 예술",
+      "reason_ko": "초콜릿 죽음의 예술을 유지한다. 초콜릿 재료/형상 및 인접 인물의 범인 추측을 speaker 이름에 넣지 않는다.",
+      "inherited_alternatives_ko": [],
+      "inherited_uncertainty_notes_ko": [
+        "초콜릿으로 만들어졌는지, 초콜릿 형상인지를 제공 창만으로 확정하지 않는다. 관련 대형 라벨과 함께 최종 어휘 QA한다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "大型チョコの死の芸術",
+      "qa_default_ko": "대형 초콜릿 죽음의 예술",
+      "reason_ko": "대형 초콜릿 죽음의 예술을 유지한다. 대형 수식을 지키되 본체/환각 추측이나 재료를 라벨에 추가하지 않는다.",
+      "inherited_alternatives_ko": [],
+      "inherited_uncertainty_notes_ko": [
+        "초콜릿 수식의 재료/형상 관계는 제공 창에서 확정하지 않는다. 단수 일반형과 연결한 표시 권고다."
+      ],
+      "official_korean_name_verified": false,
+      "accepted": false
+    }
+  ],
+  "other_existing_alternatives": "Preserved byte-identically in cumulative; all 345 signals triaged, not 345 errors.",
+  "external_research_used": false
+}

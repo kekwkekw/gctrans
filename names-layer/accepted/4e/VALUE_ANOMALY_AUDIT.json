@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "control_character_anomalies": [],
+  "han_character_values": [],
+  "kana_character_values": [],
+  "non_hangul_values": [
+    {
+      "speaker_jp": "？？？",
+      "value": "???"
+    },
+    {
+      "speaker_jp": "？？？？",
+      "value": "????"
+    },
+    {
+      "speaker_jp": "？？？？？？",
+      "value": "??????"
+    },
+    {
+      "speaker_jp": "D・A",
+      "value": "D・A"
+    }
+  ],
+  "method": "Unicode range/category checks are mechanical anomaly screens, not language or identity adjudication. Middle dot and punctuation/Latin-only accepted values are listed without automatic rejection. Values copied solely from accepted Batch09 recommendations plus five QA01 amendments.",
+  "historical_chinese_values_used_as_korean_source": 0,
+  "values_automatically_changed_by_scan": 0
+}

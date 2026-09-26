@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "accepted_candidate_formal_validation": "PASS",
+  "exact_coverage": 1070,
+  "roundtrip": 1070,
+  "amendments": 5,
+  "limitations": 6,
+  "source_key_modifications": 0,
+  "repo_status_unchanged": true
+}

@@ -1,0 +1,427 @@
+{
+  "repository": "kekwkekw/gctrans",
+  "queried_utc": "2026-09-26T11:24:57.199Z",
+  "main": {
+    "sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+    "tree": "1a748fb02a4ab5db712a17d4dc5aca873efc15af"
+  },
+  "pr14": {
+    "number": 14,
+    "url": "https://github.com/kekwkekw/gctrans/pull/14",
+    "title": "Add minimal reviewed Korean names layer",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "head": "64b37e571f9af25aedb529b99da5a656bc9b4536",
+    "head_ref": "review/name-layer-speaker-r34r-20260924",
+    "base": "9e4bfa9691fe4251096a4aa12155794a182305cd",
+    "base_ref": "main",
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "changed_files": 1,
+    "updated_at": "2026-09-24T09:43:55Z",
+    "files": [
+      {
+        "path": "names/zh_Hans.json",
+        "status": "added",
+        "blob": "4393ecaf77702802600032ff97d10e6a98827c45"
+      }
+    ]
+  },
+  "branches": [
+    {
+      "name": "archive/r01-r04-special-v09-codex-20260922",
+      "sha": "ceaf8d1cd70a85f639e8cc087511b3568fbc4ab7"
+    },
+    {
+      "name": "archive/r05-r08-json-codex-20260922",
+      "sha": "d93aa58b36db8f33bbed648379fa0d09d4f02d91"
+    },
+    {
+      "name": "archive/r09-r10-json-codex-20260922",
+      "sha": "429ff3d89f88d4755f8489261f88d49373cb9f57"
+    },
+    {
+      "name": "archive/r09-r10-relay-20260921",
+      "sha": "8ebfdf2c3fda4abdcc477d13b7b5fc72d77f2282"
+    },
+    {
+      "name": "archive/r11-r12-json-codex-20260921",
+      "sha": "4e86470c8696b4025c8f0c708e6ef6a43e123485"
+    },
+    {
+      "name": "archive/r13-r14-json-20260921",
+      "sha": "5f7939452db62da53687fd6020a98626791d3529"
+    },
+    {
+      "name": "archive/r15-r16-json-20260921",
+      "sha": "8a286b40a4485bdd3b6a3a9b19b8dd228e2c60eb"
+    },
+    {
+      "name": "archive/r17-r18-json-20260921",
+      "sha": "38f64b4a7c44f2623b5ee2efdc1b5acd66adf658"
+    },
+    {
+      "name": "archive/r19-r34-v10-codex-20260922",
+      "sha": "67ed8c3f8898b2c1bd947e8d9310767f403ed187"
+    },
+    {
+      "name": "archive/r35-review-pilot-20260921",
+      "sha": "fc3be82ac46f5beb17ab41a82aacf4ddffe823a2"
+    },
+    {
+      "name": "codex-bridge-probe-2-20260921",
+      "sha": "65ed25eb86f4c7ef01bbefc3a4d266e8ec33a92b"
+    },
+    {
+      "name": "codex-bridge-probe-20260921",
+      "sha": "2e3e3db821fc60947ee037207526101b7546e48e"
+    },
+    {
+      "name": "main",
+      "sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1"
+    },
+    {
+      "name": "preserve/knowledge-layer-a2-20260925",
+      "sha": "12f6285692530ecb4316883cf70439bb1cabe7ca"
+    },
+    {
+      "name": "release/main-m1-20260917",
+      "sha": "008c23540931be62fbe11814d4735be9629c9b33"
+    },
+    {
+      "name": "review/name-layer-speaker-r34r-20260924",
+      "sha": "64b37e571f9af25aedb529b99da5a656bc9b4536"
+    },
+    {
+      "name": "review/post-r36-meaning-editorial-20260924",
+      "sha": "65355c110a0b000ce04ad44905aa7251c91501a9"
+    },
+    {
+      "name": "rollback/pre-main-m1-20260917",
+      "sha": "b5dcc8e3e034f7bbc1d596ab43043eacc206c380"
+    },
+    {
+      "name": "rollback/pre-r36-translation-20260924",
+      "sha": "340a3d2f5bcc793501887f15237b1095a1b21b7a"
+    },
+    {
+      "name": "validation-20260902",
+      "sha": "fd0b92f563997f3d3f56d7a14293815ed7be211d"
+    }
+  ],
+  "recent_names_commits": [
+    {
+      "sha": "b0c1dea2cc52ee6bfd5ff29f08537dc89d7b5969",
+      "date": "2026-02-18T15:13:56Z",
+      "message": "Delete names directory"
+    },
+    {
+      "sha": "600d843070b306300ecdaa05d9751ef687155f25",
+      "date": "2026-02-17T06:46:35Z",
+      "message": "Auto-update translation"
+    },
+    {
+      "sha": "3f16dbff4ff6355c1c140df4c6283af6827447bc",
+      "date": "2026-02-10T07:06:05Z",
+      "message": "Auto-update translation"
+    },
+    {
+      "sha": "d95de6f5e322a626c9b7b7c19b48714f6803cb83",
+      "date": "2026-01-30T06:51:21Z",
+      "message": "Auto-update translation"
+    },
+    {
+      "sha": "4da4c3cf4dec098ae777b616f4a4b97a15d3f088",
+      "date": "2026-01-20T08:03:55Z",
+      "message": "update dict"
+    },
+    {
+      "sha": "12ccc4973565f8c4e7f9caf82231384ed1ec5bd9",
+      "date": "2026-01-13T06:15:30Z",
+      "message": "Auto-update translation"
+    },
+    {
+      "sha": "b54d0ca24220f835866eb1b934af5d777918f486",
+      "date": "2025-12-25T06:19:17Z",
+      "message": "Auto-update translation"
+    },
+    {
+      "sha": "d31385f5b73e5cc82bd2379d3e0b860a1cf9b6ac",
+      "date": "2025-12-15T06:42:15Z",
+      "message": "Auto-update translation"
+    },
+    {
+      "sha": "20629b2e2e145b6649cac6ddaf8016a40b301bbb",
+      "date": "2025-11-28T06:43:00Z",
+      "message": "Auto-update translation"
+    },
+    {
+      "sha": "d61dc0c7e533035cff57e03168d138cf3d682a0c",
+      "date": "2025-11-17T06:32:52Z",
+      "message": "Auto-update translation"
+    }
+  ],
+  "open_prs": [
+    {
+      "number": 14,
+      "title": "Add minimal reviewed Korean names layer",
+      "head": "64b37e571f9af25aedb529b99da5a656bc9b4536",
+      "ref": "review/name-layer-speaker-r34r-20260924",
+      "draft": true
+    },
+    {
+      "number": 8,
+      "title": "R10/R9 public archive relay batch",
+      "head": "8ebfdf2c3fda4abdcc477d13b7b5fc72d77f2282",
+      "ref": "archive/r09-r10-relay-20260921",
+      "draft": true
+    },
+    {
+      "number": 7,
+      "title": "Codex bridge probe 2 (do not merge)",
+      "head": "65ed25eb86f4c7ef01bbefc3a4d266e8ec33a92b",
+      "ref": "codex-bridge-probe-2-20260921",
+      "draft": true
+    },
+    {
+      "number": 6,
+      "title": "Codex bridge probe (do not merge)",
+      "head": "2e3e3db821fc60947ee037207526101b7546e48e",
+      "ref": "codex-bridge-probe-20260921",
+      "draft": true
+    }
+  ],
+  "root_tree": [
+    {
+      "path": "!!!!!!!!!!!!!!!!!!!최근로그.txt",
+      "type": "blob",
+      "sha": "0a3eccc58d510bfa3d6555da7a2d6bcf0c090800"
+    },
+    {
+      "path": ".github",
+      "type": "tree",
+      "sha": "df5bd64d4c6294858fa553f7b406dccb4e7edd2b"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "sha": "655bbf54683a9e3493161317e19d2c3cd48427b3"
+    },
+    {
+      "path": "GCMod-cs파일백업",
+      "type": "tree",
+      "sha": "3fb3ffb83a58c840990de8c5fa1d0fe1affe3c76"
+    },
+    {
+      "path": "README.md",
+      "type": "blob",
+      "sha": "1b6086cae092fae67a19baafaeb601d41435b0a8"
+    },
+    {
+      "path": "app.js",
+      "type": "blob",
+      "sha": "4da750895fbadb262965453030b391441928f5a1"
+    },
+    {
+      "path": "archive",
+      "type": "tree",
+      "sha": "83197f4d50f4410ed2631bf7a83a10da75a7d4fb"
+    },
+    {
+      "path": "dicts",
+      "type": "tree",
+      "sha": "d4cb5abe38fbafde425c70731d59c8be2066e218"
+    },
+    {
+      "path": "knowledge-layer",
+      "type": "tree",
+      "sha": "3cc179b153618366d34ba98bbd43c99eabca7c71"
+    },
+    {
+      "path": "novels",
+      "type": "tree",
+      "sha": "3de981bb0e68ce30e9bdfed491e79f927f7383b5"
+    },
+    {
+      "path": "package-lock.json",
+      "type": "blob",
+      "sha": "a19a3ce8e040b9b4330016390878e8b5f367546d"
+    },
+    {
+      "path": "package.json",
+      "type": "blob",
+      "sha": "28205ab0709dfbba57c277abce19fb9fd7e18e4b"
+    },
+    {
+      "path": "run_all.bat",
+      "type": "blob",
+      "sha": "2c54cc358002510a152ac18c208387d3eddf8947"
+    },
+    {
+      "path": "scripts",
+      "type": "tree",
+      "sha": "276c00bf07eba465a11e6b5aa5a30afea2cb3621"
+    },
+    {
+      "path": "vercel.json",
+      "type": "blob",
+      "sha": "db0d4e94aaad441215b4bfdcf650ced787118324"
+    },
+    {
+      "path": "words",
+      "type": "tree",
+      "sha": "ff32b55ca68817a666e551dfa2ac066cf752f43f"
+    },
+    {
+      "path": "项目GPT字典.txt",
+      "type": "blob",
+      "sha": "cde2172696193f86f29d7cb399a805fb34e79ea1"
+    }
+  ],
+  "actions": {
+    "queried_utc": "2026-09-26T11:32:50.071Z",
+    "runs": [
+      {
+        "id": 36125238921,
+        "name": "pages build and deployment",
+        "sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-25T10:40:22Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/36125238921"
+      },
+      {
+        "id": 35974594420,
+        "name": "pages build and deployment",
+        "sha": "9e4bfa9691fe4251096a4aa12155794a182305cd",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-24T08:19:48Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/35974594420"
+      },
+      {
+        "id": 35902457074,
+        "name": "Apply staged Post-R36 translation candidate",
+        "sha": "1493406a7a000841e8fdbf9ffe13c76225f03008",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-23T18:26:19Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/35902457074"
+      },
+      {
+        "id": 35902282817,
+        "name": "Apply staged Post-R36 translation candidate",
+        "sha": "931ca490fcbf299125f23b79737b62d22724ec2a",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "created_at": "2026-09-23T18:24:50Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/35902282817"
+      },
+      {
+        "id": 35684118497,
+        "name": "pages build and deployment",
+        "sha": "340a3d2f5bcc793501887f15237b1095a1b21b7a",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-22T03:42:06Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/35684118497"
+      },
+      {
+        "id": 35635916953,
+        "name": "pages build and deployment",
+        "sha": "ee892e4ba20d1d2b2b65c61518b23409a09755a8",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-21T18:03:23Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/35635916953"
+      },
+      {
+        "id": 35628438757,
+        "name": "pages build and deployment",
+        "sha": "69ea0d567a7024ec74cdd38fc9dafcc4499c6353",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-21T16:53:03Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/35628438757"
+      },
+      {
+        "id": 35624983437,
+        "name": "pages build and deployment",
+        "sha": "cb43d5a41a38ccc34e627e061e1c12910987f809",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-21T16:20:37Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/35624983437"
+      },
+      {
+        "id": 35604545703,
+        "name": "pages build and deployment",
+        "sha": "ecc726b43a89eb4ff6a0404d483455eddc4d28d9",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-21T13:16:25Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/35604545703"
+      },
+      {
+        "id": 35599589455,
+        "name": "pages build and deployment",
+        "sha": "a162dc903abcad830fa122e5c016ec241ac086e6",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-21T12:26:53Z",
+        "html_url": "https://github.com/kekwkekw/gctrans/actions/runs/35599589455"
+      }
+    ]
+  },
+  "mutations_performed": {
+    "branch": 0,
+    "commit": 0,
+    "push": 0,
+    "pr": 0,
+    "merge": 0,
+    "workflow_dispatch": 0,
+    "deployment": 0
+  },
+  "pr14_comparison_with_current_main": {
+    "url": "https://api.github.com/repos/kekwkekw/gctrans/compare/6c9be9e795a6ce686f35a6ccaec4481066b240e1...64b37e571f9af25aedb529b99da5a656bc9b4536",
+    "queried_utc": "2026-09-26T11:30:43.673908+00:00",
+    "status": "diverged",
+    "ahead_by": 1,
+    "behind_by": 2,
+    "merge_base": "9e4bfa9691fe4251096a4aa12155794a182305cd",
+    "files": [
+      {
+        "path": "names/zh_Hans.json",
+        "status": "added",
+        "blob": "4393ecaf77702802600032ff97d10e6a98827c45"
+      }
+    ]
+  },
+  "note_pr_base_sha": "PR API base.sha still reports 9e4bfa...; current main was independently queried as 6c9be9...; compare current main vs PR head is ahead 1 / behind 2. Neither ref was modified.",
+  "final_recheck": {
+    "checked_utc": "2026-09-26T11:40:22.339Z",
+    "main_sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+    "main_tree": "1a748fb02a4ab5db712a17d4dc5aca873efc15af",
+    "pr14": {
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "64b37e571f9af25aedb529b99da5a656bc9b4536",
+      "base": "9e4bfa9691fe4251096a4aa12155794a182305cd",
+      "mergeable": true,
+      "changed_files": 1
+    },
+    "unchanged_from_initial": true
+  }
+}

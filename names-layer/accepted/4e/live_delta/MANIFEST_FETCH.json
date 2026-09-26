@@ -1,0 +1,14 @@
+{
+  "url": "https://cdn-r18.gc.dmmgames.com/files/manifest/webgl/r18/assetbundle.json",
+  "http_status": 200,
+  "fetch_utc": "2026-09-26T11:29:01.551652+00:00",
+  "sha256": "62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+  "bytes": 3504147,
+  "total_assets": 22684,
+  "headers": {
+    "Content-Type": "application/json",
+    "Last-Modified": "Mon, 31 Aug 2026 05:03:59 GMT",
+    "Date": "Sat, 26 Sep 2026 11:29:02 GMT",
+    "ETag": "\"3b05bd3d8f050f7290e007e6c8573952\""
+  }
+}

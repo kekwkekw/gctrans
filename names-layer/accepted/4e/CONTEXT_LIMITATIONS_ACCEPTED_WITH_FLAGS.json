@@ -1,0 +1,589 @@
+{
+  "event_id": "GC-NAMES-4E-USER-ACCEPTANCE-QA01-ALL1070",
+  "count": 6,
+  "display_values_accepted": true,
+  "context_limitations_resolved": false,
+  "rows": [
+    {
+      "speaker_jp": "おばさん",
+      "accepted_ko": "아주머니",
+      "acceptance_status": "USER_ACCEPTED_WITH_EVIDENCE_LIMITATION",
+      "limitation_flag": "PARTIAL_EXCERPT_ONLY",
+      "context_complete": false,
+      "historical_qa_limitation": {
+        "speaker_jp": "おばさん",
+        "recommended_ko": "아주머니",
+        "category": "PARTIAL_EXCERPT_ONLY",
+        "context_complete": false,
+        "limitation_resolved_this_qa": false,
+        "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+        "source_ref_key": "おばさん",
+        "explicit_acceptance_of_limitation_required": true,
+        "accepted": false
+      },
+      "historical_semantic_record": {
+        "schema": "gc_names_semantic_decision_batch_v1",
+        "batch_id": "GC-NAMES-4D1-B09",
+        "batch_local_decision_id": "B09-030",
+        "source_key_id": "key:d4b1fb0ff24dba09e8dc",
+        "speaker_jp": "おばさん",
+        "speaker_jp_utf8_sha256": "d4b1fb0ff24dba09e8dc2c20412e8c02b01a504afafc030bb326106aaff4792d",
+        "target_snapshot_id": "gc-u3-sha256:62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+        "workbench_zip_sha256": "96c5a464eb11a2373d1d5ee9ad4776e95754c22ada0c739fab842dbbb3e47ca3",
+        "source_main_sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+        "source_master_line_1based": 9,
+        "source_master_record_sha256_including_eol": "031e7618a0dbe58abfb08fe05d83a71bc7fd5c76e458df2dc426ad71e758801a",
+        "original_primary_packet": "PACKET_N04",
+        "cohort": "NEW_CURRENT",
+        "observed_ko_variants": [],
+        "observed_variant_counts": {},
+        "input_candidate_ko": null,
+        "input_candidate_source": null,
+        "input_candidate_status": "NO_4B_OR_SUPPLEMENT_CANDIDATE",
+        "recommended_ko": "아주머니",
+        "reason_ko": "완전한 source label과 남아 있는 응원 문구만으로 일상적인 여성 호칭을 잠정 옮긴다. 기존 가게 아주머니의 어휘만 참고하며 혈연·가게 역할·정확한 나이는 추가하지 않는다.",
+        "uncertainty_notes_ko": [
+          "btl_10011109_45 raw L7 한 줄이 중간에서 잘려 있다. supplied compact-window corpus에서 이 exact speaker의 온전한 다른 행은 찾지 못했다. 문맥 검증은 미해소이며 누락 부분을 복원하지 않았다."
+        ],
+        "alternatives_ko": [],
+        "review_tags": [
+          "PARTIAL_CONTEXT_ONLY",
+          "CONTEXT_QA_REQUIRED",
+          "KINSHIP_NOT_ASSUMED"
+        ],
+        "display_dependency_keys": [
+          "店のおばさん",
+          "おじさん"
+        ],
+        "decision_kind": "PROPOSE_NEW",
+        "review_status": "SEMANTIC_RECOMMENDATION_PENDING_USER_ACCEPTANCE",
+        "semantic_resolution_status": "PROVISIONAL_SURFACE_WITH_PARTIAL_CONTEXT_QA_REQUIRED",
+        "scope": "EXACT_SPEAKER_SURFACE_KEY_ONLY_NOT_ENTITY_OR_BODY_REWRITE",
+        "review_basis": {
+          "label_read": true,
+          "supplied_jp_context_windows_read": [
+            "ctx:529ce3a2aa7df666894d"
+          ],
+          "supplied_context_window_count": 1,
+          "complete_context_window_ids": [],
+          "all_runtime_occurrences_read": false,
+          "full_story_read": false,
+          "untruncated_source_retrieved": false,
+          "supplied_jp_excerpts_all_untruncated": false,
+          "truncated_window_ids": [
+            "ctx:529ce3a2aa7df666894d"
+          ],
+          "truncated_window_used_as_complete_context": false,
+          "context_excluded": false,
+          "no_context_reason": null,
+          "knowledge_records_exhaustively_semantically_reviewed": false,
+          "specifically_inspected_knowledge_link_ids": [],
+          "knowledge_link_previews_are_not_full_underlying_records": true,
+          "inspected_preview_fields": [],
+          "knowledge_scope_note_ko": "이 exact key에 workbench가 연결한 Knowledge preview는 0개다. 전체 Knowledge에 관련 기록이 없다는 판단은 아니다.",
+          "primary_packet_scope": true,
+          "additional_related_anchor_scope": false,
+          "production_ko_context_used_as_name_approval": false,
+          "all_production_ko_contexts_read": false,
+          "supplemental_context_source_keys_read": [],
+          "supplemental_context_window_ids_read": [],
+          "supplemental_context_is_not_reprocessing_or_reapproval": true,
+          "context_coverage_class": "PARTIAL_EXCERPT_ONLY",
+          "partial_excerpt_used_only_as_limited_context": true,
+          "additional_context_required_for_full_context_qa": true
+        },
+        "inherited_speaker_approval": null,
+        "existing_approved_lexical_evidence_refs": [],
+        "prior_chatgpt_adjudication": null,
+        "user_approval_status": "PENDING_USER_ACCEPTANCE",
+        "new_user_approval_granted": false,
+        "production_publication_authorized": false,
+        "final_ko": null,
+        "runtime_verified": false,
+        "hold_content_reviewed": false,
+        "original_observation_mutated": false,
+        "global_glossary_promoted": false,
+        "same_identity_as_other_key_inferred": false
+      }
+    },
+    {
+      "speaker_jp": "お姉さん",
+      "accepted_ko": "아가씨",
+      "acceptance_status": "USER_ACCEPTED_WITH_EVIDENCE_LIMITATION",
+      "limitation_flag": "PARTIAL_EXCERPT_ONLY",
+      "context_complete": false,
+      "historical_qa_limitation": {
+        "speaker_jp": "お姉さん",
+        "recommended_ko": "아가씨",
+        "category": "PARTIAL_EXCERPT_ONLY",
+        "context_complete": false,
+        "limitation_resolved_this_qa": false,
+        "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+        "source_ref_key": "お姉さん",
+        "explicit_acceptance_of_limitation_required": true,
+        "accepted": false
+      },
+      "historical_semantic_record": {
+        "schema": "gc_names_semantic_decision_batch_v1",
+        "batch_id": "GC-NAMES-4D1-B09",
+        "batch_local_decision_id": "B09-031",
+        "source_key_id": "key:45f3c2335c06e445a089",
+        "speaker_jp": "お姉さん",
+        "speaker_jp_utf8_sha256": "45f3c2335c06e445a0895bb511f943e7a6c4a78ff92c6e8dcddbbe734ea092e0",
+        "target_snapshot_id": "gc-u3-sha256:62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+        "workbench_zip_sha256": "96c5a464eb11a2373d1d5ee9ad4776e95754c22ada0c739fab842dbbb3e47ca3",
+        "source_main_sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+        "source_master_line_1based": 10,
+        "source_master_record_sha256_including_eol": "8fde132b0f8f9923e08de16f55b269023d5cccc87e6a6f6fbf24bce39d2f5131",
+        "original_primary_packet": "PACKET_N04",
+        "cohort": "NEW_CURRENT",
+        "observed_ko_variants": [],
+        "observed_variant_counts": {},
+        "input_candidate_ko": null,
+        "input_candidate_source": null,
+        "input_candidate_status": "NO_4B_OR_SUPPLEMENT_CANDIDATE",
+        "recommended_ko": "아가씨",
+        "reason_ko": "온전한 source label お姉さん과 잘린 미술관 응원 문구만 확인했다. 비친족 일반 호칭의 잠정 표시로 아가씨를 제안하고, 기존 점원 아가씨는 어휘 참고로만 사용한다.",
+        "uncertainty_notes_ko": [
+          "btl_10011109_44 raw L7의 유일한 문맥이 잘렸다. 관계·호칭 대상 성별·혼인 여부는 확인할 수 없으므로 언니/누나나 특정 인물로 확정하지 않는다.",
+          "연결된 MAIN_CHAPTER_4의 reviewing address 목록은 로댕 씨·엄마·언니·여동생을 묶고 있어 お姉さん 단일 화자의 번역값이 아니다. 최종 호칭은 문맥 QA와 acceptance 전까지 잠정이다."
+        ],
+        "alternatives_ko": [
+          "젊은 여성"
+        ],
+        "review_tags": [
+          "PARTIAL_CONTEXT_ONLY",
+          "CONTEXT_QA_REQUIRED",
+          "KNOWLEDGE_ROLE_GUARD",
+          "KINSHIP_NOT_ASSUMED"
+        ],
+        "display_dependency_keys": [
+          "店員のお姉さん"
+        ],
+        "decision_kind": "PROPOSE_NEW",
+        "review_status": "SEMANTIC_RECOMMENDATION_PENDING_USER_ACCEPTANCE",
+        "semantic_resolution_status": "PROVISIONAL_SURFACE_WITH_PARTIAL_CONTEXT_QA_REQUIRED",
+        "scope": "EXACT_SPEAKER_SURFACE_KEY_ONLY_NOT_ENTITY_OR_BODY_REWRITE",
+        "review_basis": {
+          "label_read": true,
+          "supplied_jp_context_windows_read": [
+            "ctx:4dd17c7c7cab14e447c6"
+          ],
+          "supplied_context_window_count": 1,
+          "complete_context_window_ids": [],
+          "all_runtime_occurrences_read": false,
+          "full_story_read": false,
+          "untruncated_source_retrieved": false,
+          "supplied_jp_excerpts_all_untruncated": false,
+          "truncated_window_ids": [
+            "ctx:4dd17c7c7cab14e447c6"
+          ],
+          "truncated_window_used_as_complete_context": false,
+          "context_excluded": false,
+          "no_context_reason": null,
+          "knowledge_records_exhaustively_semantically_reviewed": false,
+          "specifically_inspected_knowledge_link_ids": [
+            "ke:b207c1d06031cb54742a"
+          ],
+          "knowledge_link_previews_are_not_full_underlying_records": true,
+          "inspected_preview_fields": [
+            "evidence_type",
+            "exact_field",
+            "exact_value",
+            "ko_fields",
+            "state",
+            "review_status",
+            "scope",
+            "record_notes",
+            "name_approval_inferred"
+          ],
+          "knowledge_scope_note_ko": "로댕 씨/엄마/언니/여동생 목록은 여러 address_source_forms의 관찰값이다. 단일 お姉さん 이름과 1:1 대응시키지 않는다. 잘린 현재 문맥을 보완한 완전한 근거로도 계산하지 않는다.",
+          "primary_packet_scope": true,
+          "additional_related_anchor_scope": false,
+          "production_ko_context_used_as_name_approval": false,
+          "all_production_ko_contexts_read": false,
+          "supplemental_context_source_keys_read": [],
+          "supplemental_context_window_ids_read": [],
+          "supplemental_context_is_not_reprocessing_or_reapproval": true,
+          "context_coverage_class": "PARTIAL_EXCERPT_ONLY",
+          "partial_excerpt_used_only_as_limited_context": true,
+          "additional_context_required_for_full_context_qa": true
+        },
+        "inherited_speaker_approval": null,
+        "existing_approved_lexical_evidence_refs": [],
+        "prior_chatgpt_adjudication": null,
+        "user_approval_status": "PENDING_USER_ACCEPTANCE",
+        "new_user_approval_granted": false,
+        "production_publication_authorized": false,
+        "final_ko": null,
+        "runtime_verified": false,
+        "hold_content_reviewed": false,
+        "original_observation_mutated": false,
+        "global_glossary_promoted": false,
+        "same_identity_as_other_key_inferred": false
+      }
+    },
+    {
+      "speaker_jp": "少年A",
+      "accepted_ko": "소년A",
+      "acceptance_status": "USER_ACCEPTED_WITH_EVIDENCE_LIMITATION",
+      "limitation_flag": "SURFACE_ONLY_CONTEXT_EXCLUDED",
+      "context_complete": false,
+      "historical_qa_limitation": {
+        "speaker_jp": "少年A",
+        "recommended_ko": "소년A",
+        "category": "SURFACE_ONLY_CONTEXT_EXCLUDED",
+        "context_complete": false,
+        "limitation_resolved_this_qa": false,
+        "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+        "source_ref_key": "少年A",
+        "explicit_acceptance_of_limitation_required": true,
+        "accepted": false
+      },
+      "historical_semantic_record": {
+        "schema": "gc_names_semantic_decision_batch_v1",
+        "batch_id": "GC-NAMES-4D1-B01",
+        "batch_local_decision_id": "B01-007",
+        "source_key_id": "key:0ca072dbd3ac8a7dc812",
+        "speaker_jp": "少年A",
+        "speaker_jp_utf8_sha256": "0ca072dbd3ac8a7dc812bfa28e12200212f030a054d144b757d440290fea99a8",
+        "target_snapshot_id": "gc-u3-sha256:62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+        "workbench_zip_sha256": "96c5a464eb11a2373d1d5ee9ad4776e95754c22ada0c739fab842dbbb3e47ca3",
+        "source_main_sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+        "source_master_line_1based": 578,
+        "source_master_record_sha256_including_eol": "869963364220b74bd44b9eec7755f6245cb1b049a4853ed65511b37d668f8ae1",
+        "original_primary_packet": "PACKET_S01",
+        "cohort": "OBSERVED_CURRENT",
+        "observed_ko_variants": [
+          "소년A"
+        ],
+        "observed_variant_counts": {
+          "소년A": {
+            "raw_4a_observation_count": 0,
+            "supplement_observation_count": 4,
+            "combined_unique_locator_pair_count": 4
+          }
+        },
+        "input_candidate_ko": "소년A",
+        "input_candidate_source": "U1_SOURCE_LIMITATION_SUPPLEMENT",
+        "input_candidate_status": "SINGLE_OBSERVED_SUPPLEMENT_CANDIDATE",
+        "recommended_ko": "소년A",
+        "decision_kind": "LABEL_ONLY",
+        "review_status": "SURFACE_ONLY_CONTEXT_EXCLUDED",
+        "reason_ko": "표면의 소년과 ASCII A만 대응시킨 기존 후보 유지 권고. hold scene 문맥은 제외되어 읽지 않았고 장면 검수·보류 해제를 뜻하지 않는다.",
+        "uncertainty_notes_ko": [
+          "workbench에서 문맥이 제외됨. 표면 라벨 번역 제안만 했으며, 해당 장면·보류 행·전각 유사 key의 동일성을 검수 또는 승인하지 않음."
+        ],
+        "scope": "EXACT_SPEAKER_SURFACE_KEY_ONLY_NOT_ENTITY_OR_BODY_REWRITE",
+        "review_basis": {
+          "label_read": true,
+          "supplied_jp_context_windows_read": [],
+          "supplied_context_window_count": 0,
+          "all_runtime_occurrences_read": false,
+          "full_story_read": false,
+          "untruncated_source_retrieved": false,
+          "context_excluded": true,
+          "no_context_reason": "No eligible non-held context under the documented locator/hold rules; not evidence of absent game context.",
+          "knowledge_records_exhaustively_semantically_reviewed": false,
+          "specifically_inspected_knowledge_link_ids": []
+        },
+        "inherited_speaker_approval": null,
+        "existing_approved_lexical_evidence_refs": [],
+        "prior_chatgpt_adjudication": null,
+        "user_approval_status": "PENDING_USER_ACCEPTANCE",
+        "new_user_approval_granted": false,
+        "production_publication_authorized": false,
+        "final_ko": null,
+        "runtime_verified": false,
+        "hold_content_reviewed": false,
+        "original_observation_mutated": false,
+        "global_glossary_promoted": false,
+        "same_identity_as_other_key_inferred": false
+      }
+    },
+    {
+      "speaker_jp": "少年B",
+      "accepted_ko": "소년B",
+      "acceptance_status": "USER_ACCEPTED_WITH_EVIDENCE_LIMITATION",
+      "limitation_flag": "SURFACE_ONLY_CONTEXT_EXCLUDED",
+      "context_complete": false,
+      "historical_qa_limitation": {
+        "speaker_jp": "少年B",
+        "recommended_ko": "소년B",
+        "category": "SURFACE_ONLY_CONTEXT_EXCLUDED",
+        "context_complete": false,
+        "limitation_resolved_this_qa": false,
+        "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+        "source_ref_key": "少年B",
+        "explicit_acceptance_of_limitation_required": true,
+        "accepted": false
+      },
+      "historical_semantic_record": {
+        "schema": "gc_names_semantic_decision_batch_v1",
+        "batch_id": "GC-NAMES-4D1-B01",
+        "batch_local_decision_id": "B01-008",
+        "source_key_id": "key:e03cd371cb7c1049633c",
+        "speaker_jp": "少年B",
+        "speaker_jp_utf8_sha256": "e03cd371cb7c1049633ce64afdcf2eba54075b7ef469cf2e64fbb47a59d54263",
+        "target_snapshot_id": "gc-u3-sha256:62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+        "workbench_zip_sha256": "96c5a464eb11a2373d1d5ee9ad4776e95754c22ada0c739fab842dbbb3e47ca3",
+        "source_main_sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+        "source_master_line_1based": 579,
+        "source_master_record_sha256_including_eol": "68dc919355402d68934b5a73aebc56172774b58b56c3c4ed59943ae30ae4a9ea",
+        "original_primary_packet": "PACKET_S01",
+        "cohort": "OBSERVED_CURRENT",
+        "observed_ko_variants": [
+          "소년B"
+        ],
+        "observed_variant_counts": {
+          "소년B": {
+            "raw_4a_observation_count": 0,
+            "supplement_observation_count": 3,
+            "combined_unique_locator_pair_count": 3
+          }
+        },
+        "input_candidate_ko": "소년B",
+        "input_candidate_source": "U1_SOURCE_LIMITATION_SUPPLEMENT",
+        "input_candidate_status": "SINGLE_OBSERVED_SUPPLEMENT_CANDIDATE",
+        "recommended_ko": "소년B",
+        "decision_kind": "LABEL_ONLY",
+        "review_status": "SURFACE_ONLY_CONTEXT_EXCLUDED",
+        "reason_ko": "표면의 소년과 ASCII B만 대응시킨 기존 후보 유지 권고. hold scene 문맥은 제외되어 읽지 않았고 장면 검수·보류 해제를 뜻하지 않는다.",
+        "uncertainty_notes_ko": [
+          "workbench에서 문맥이 제외됨. 표면 라벨 번역 제안만 했으며, 해당 장면·보류 행·전각 유사 key의 동일성을 검수 또는 승인하지 않음."
+        ],
+        "scope": "EXACT_SPEAKER_SURFACE_KEY_ONLY_NOT_ENTITY_OR_BODY_REWRITE",
+        "review_basis": {
+          "label_read": true,
+          "supplied_jp_context_windows_read": [],
+          "supplied_context_window_count": 0,
+          "all_runtime_occurrences_read": false,
+          "full_story_read": false,
+          "untruncated_source_retrieved": false,
+          "context_excluded": true,
+          "no_context_reason": "No eligible non-held context under the documented locator/hold rules; not evidence of absent game context.",
+          "knowledge_records_exhaustively_semantically_reviewed": false,
+          "specifically_inspected_knowledge_link_ids": []
+        },
+        "inherited_speaker_approval": null,
+        "existing_approved_lexical_evidence_refs": [],
+        "prior_chatgpt_adjudication": null,
+        "user_approval_status": "PENDING_USER_ACCEPTANCE",
+        "new_user_approval_granted": false,
+        "production_publication_authorized": false,
+        "final_ko": null,
+        "runtime_verified": false,
+        "hold_content_reviewed": false,
+        "original_observation_mutated": false,
+        "global_glossary_promoted": false,
+        "same_identity_as_other_key_inferred": false
+      }
+    },
+    {
+      "speaker_jp": "画材屋店主",
+      "accepted_ko": "화구점 주인",
+      "acceptance_status": "USER_ACCEPTED_WITH_EVIDENCE_LIMITATION",
+      "limitation_flag": "PARTIAL_EXCERPT_ONLY",
+      "context_complete": false,
+      "historical_qa_limitation": {
+        "speaker_jp": "画材屋店主",
+        "recommended_ko": "화구점 주인",
+        "category": "PARTIAL_EXCERPT_ONLY",
+        "context_complete": false,
+        "limitation_resolved_this_qa": false,
+        "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+        "source_ref_key": "画材屋店主",
+        "explicit_acceptance_of_limitation_required": true,
+        "accepted": false
+      },
+      "historical_semantic_record": {
+        "schema": "gc_names_semantic_decision_batch_v1",
+        "batch_id": "GC-NAMES-4D1-B09",
+        "batch_local_decision_id": "B09-050",
+        "source_key_id": "key:975014e68c82cb10bd8a",
+        "speaker_jp": "画材屋店主",
+        "speaker_jp_utf8_sha256": "975014e68c82cb10bd8a0098176292431183a3499cf993bbfec9f702f68cd92f",
+        "target_snapshot_id": "gc-u3-sha256:62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+        "workbench_zip_sha256": "96c5a464eb11a2373d1d5ee9ad4776e95754c22ada0c739fab842dbbb3e47ca3",
+        "source_main_sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+        "source_master_line_1based": 788,
+        "source_master_record_sha256_including_eol": "04da7f87c394e3f5f24f82f88414d61d77ac9941c7df03b8822b94cc6cd2180e",
+        "original_primary_packet": "PACKET_N04",
+        "cohort": "NEW_CURRENT",
+        "observed_ko_variants": [],
+        "observed_variant_counts": {},
+        "input_candidate_ko": null,
+        "input_candidate_source": null,
+        "input_candidate_status": "NO_4B_OR_SUPPLEMENT_CANDIDATE",
+        "recommended_ko": "화구점 주인",
+        "reason_ko": "화구를 파는 가게의 주인이라는 온전한 source label로 잠정 옮긴다. 남아 있는 응원 문구는 제한적으로만 참고하고 기존 다른 가게 주인과 동일인으로 합치지 않는다.",
+        "uncertainty_notes_ko": [
+          "btl_10011109_46 raw L7이 잘렸으며 이 exact speaker의 온전한 다른 compact row는 찾지 못했다. 업종과 주인이라는 표면 역할 외의 문맥은 미해소다."
+        ],
+        "alternatives_ko": [
+          "미술용품점 주인"
+        ],
+        "review_tags": [
+          "PARTIAL_CONTEXT_ONLY",
+          "CONTEXT_QA_REQUIRED",
+          "ROLE_DISTINCTION"
+        ],
+        "display_dependency_keys": [
+          "店主"
+        ],
+        "decision_kind": "PROPOSE_NEW",
+        "review_status": "SEMANTIC_RECOMMENDATION_PENDING_USER_ACCEPTANCE",
+        "semantic_resolution_status": "PROVISIONAL_SURFACE_WITH_PARTIAL_CONTEXT_QA_REQUIRED",
+        "scope": "EXACT_SPEAKER_SURFACE_KEY_ONLY_NOT_ENTITY_OR_BODY_REWRITE",
+        "review_basis": {
+          "label_read": true,
+          "supplied_jp_context_windows_read": [
+            "ctx:c373e54f3e1a0e031368"
+          ],
+          "supplied_context_window_count": 1,
+          "complete_context_window_ids": [],
+          "all_runtime_occurrences_read": false,
+          "full_story_read": false,
+          "untruncated_source_retrieved": false,
+          "supplied_jp_excerpts_all_untruncated": false,
+          "truncated_window_ids": [
+            "ctx:c373e54f3e1a0e031368"
+          ],
+          "truncated_window_used_as_complete_context": false,
+          "context_excluded": false,
+          "no_context_reason": null,
+          "knowledge_records_exhaustively_semantically_reviewed": false,
+          "specifically_inspected_knowledge_link_ids": [],
+          "knowledge_link_previews_are_not_full_underlying_records": true,
+          "inspected_preview_fields": [],
+          "knowledge_scope_note_ko": "이 exact key에 workbench가 연결한 Knowledge preview는 0개다. 전체 Knowledge에 관련 기록이 없다는 판단은 아니다.",
+          "primary_packet_scope": true,
+          "additional_related_anchor_scope": false,
+          "production_ko_context_used_as_name_approval": false,
+          "all_production_ko_contexts_read": false,
+          "supplemental_context_source_keys_read": [],
+          "supplemental_context_window_ids_read": [],
+          "supplemental_context_is_not_reprocessing_or_reapproval": true,
+          "context_coverage_class": "PARTIAL_EXCERPT_ONLY",
+          "partial_excerpt_used_only_as_limited_context": true,
+          "additional_context_required_for_full_context_qa": true
+        },
+        "inherited_speaker_approval": null,
+        "existing_approved_lexical_evidence_refs": [],
+        "prior_chatgpt_adjudication": null,
+        "user_approval_status": "PENDING_USER_ACCEPTANCE",
+        "new_user_approval_granted": false,
+        "production_publication_authorized": false,
+        "final_ko": null,
+        "runtime_verified": false,
+        "hold_content_reviewed": false,
+        "original_observation_mutated": false,
+        "global_glossary_promoted": false,
+        "same_identity_as_other_key_inferred": false
+      }
+    },
+    {
+      "speaker_jp": "若者",
+      "accepted_ko": "젊은이",
+      "acceptance_status": "USER_ACCEPTED_WITH_EVIDENCE_LIMITATION",
+      "limitation_flag": "PARTIAL_EXCERPT_ONLY",
+      "context_complete": false,
+      "historical_qa_limitation": {
+        "speaker_jp": "若者",
+        "recommended_ko": "젊은이",
+        "category": "PARTIAL_EXCERPT_ONLY",
+        "context_complete": false,
+        "limitation_resolved_this_qa": false,
+        "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+        "source_ref_key": "若者",
+        "explicit_acceptance_of_limitation_required": true,
+        "accepted": false
+      },
+      "historical_semantic_record": {
+        "schema": "gc_names_semantic_decision_batch_v1",
+        "batch_id": "GC-NAMES-4D1-B09",
+        "batch_local_decision_id": "B09-053",
+        "source_key_id": "key:2b04e4c6f0fde327ab2b",
+        "speaker_jp": "若者",
+        "speaker_jp_utf8_sha256": "2b04e4c6f0fde327ab2b4f316ba965d2854e239509dd04a1eabf4f4e89309edb",
+        "target_snapshot_id": "gc-u3-sha256:62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+        "workbench_zip_sha256": "96c5a464eb11a2373d1d5ee9ad4776e95754c22ada0c739fab842dbbb3e47ca3",
+        "source_main_sha": "6c9be9e795a6ce686f35a6ccaec4481066b240e1",
+        "source_master_line_1based": 866,
+        "source_master_record_sha256_including_eol": "586a3f49105ef6be0f677d663b2bc0182a4d1ff8139be444e82b7b870e0646df",
+        "original_primary_packet": "PACKET_N04",
+        "cohort": "NEW_CURRENT",
+        "observed_ko_variants": [],
+        "observed_variant_counts": {},
+        "input_candidate_ko": null,
+        "input_candidate_source": null,
+        "input_candidate_status": "NO_4B_OR_SUPPLEMENT_CANDIDATE",
+        "recommended_ko": "젊은이",
+        "reason_ko": "원문 若者의 연령대 수식만 성별을 특정하지 않는 젊은이로 잠정 옮긴다. 잘린 응원 문구로 정확한 나이·성별·기존 청년 라벨과의 인물 동일성을 만들지 않는다.",
+        "uncertainty_notes_ko": [
+          "btl_10011109_42 raw L7의 단독 문맥이 잘렸다. 같은 exact speaker의 온전한 다른 제공 행은 없으며 문맥 제한은 미해소다."
+        ],
+        "alternatives_ko": [],
+        "review_tags": [
+          "PARTIAL_CONTEXT_ONLY",
+          "CONTEXT_QA_REQUIRED",
+          "AGE_GENDER_NOT_INFERRED"
+        ],
+        "display_dependency_keys": [
+          "青年",
+          "若い男"
+        ],
+        "decision_kind": "PROPOSE_NEW",
+        "review_status": "SEMANTIC_RECOMMENDATION_PENDING_USER_ACCEPTANCE",
+        "semantic_resolution_status": "PROVISIONAL_SURFACE_WITH_PARTIAL_CONTEXT_QA_REQUIRED",
+        "scope": "EXACT_SPEAKER_SURFACE_KEY_ONLY_NOT_ENTITY_OR_BODY_REWRITE",
+        "review_basis": {
+          "label_read": true,
+          "supplied_jp_context_windows_read": [
+            "ctx:31fd92d95a86dbc0a0e0"
+          ],
+          "supplied_context_window_count": 1,
+          "complete_context_window_ids": [],
+          "all_runtime_occurrences_read": false,
+          "full_story_read": false,
+          "untruncated_source_retrieved": false,
+          "supplied_jp_excerpts_all_untruncated": false,
+          "truncated_window_ids": [
+            "ctx:31fd92d95a86dbc0a0e0"
+          ],
+          "truncated_window_used_as_complete_context": false,
+          "context_excluded": false,
+          "no_context_reason": null,
+          "knowledge_records_exhaustively_semantically_reviewed": false,
+          "specifically_inspected_knowledge_link_ids": [],
+          "knowledge_link_previews_are_not_full_underlying_records": true,
+          "inspected_preview_fields": [],
+          "knowledge_scope_note_ko": "이 exact key에 workbench가 연결한 Knowledge preview는 0개다. 전체 Knowledge에 관련 기록이 없다는 판단은 아니다.",
+          "primary_packet_scope": true,
+          "additional_related_anchor_scope": false,
+          "production_ko_context_used_as_name_approval": false,
+          "all_production_ko_contexts_read": false,
+          "supplemental_context_source_keys_read": [],
+          "supplemental_context_window_ids_read": [],
+          "supplemental_context_is_not_reprocessing_or_reapproval": true,
+          "context_coverage_class": "PARTIAL_EXCERPT_ONLY",
+          "partial_excerpt_used_only_as_limited_context": true,
+          "additional_context_required_for_full_context_qa": true
+        },
+        "inherited_speaker_approval": null,
+        "existing_approved_lexical_evidence_refs": [],
+        "prior_chatgpt_adjudication": null,
+        "user_approval_status": "PENDING_USER_ACCEPTANCE",
+        "new_user_approval_granted": false,
+        "production_publication_authorized": false,
+        "final_ko": null,
+        "runtime_verified": false,
+        "hold_content_reviewed": false,
+        "original_observation_mutated": false,
+        "global_glossary_promoted": false,
+        "same_identity_as_other_key_inferred": false
+      }
+    }
+  ],
+  "other_historical_limitations_note": "All baseline review_basis, uncertainty notes, flags and workbench metadata remain in each accepted row. Six keys are the explicit acceptance group; other partial-window notes are not erased."
+}

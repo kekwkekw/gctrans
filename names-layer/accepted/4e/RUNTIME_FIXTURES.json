@@ -1,0 +1,847 @@
+{
+  "status": "NOT_RUN",
+  "fixtures": [
+    {
+      "category": "일반 캐릭터 이름",
+      "speaker_jp": "アルテ",
+      "expected_ko": "아르테",
+      "locator": {
+        "speaker_jp": "アルテ",
+        "script_id": "2f933dfa76d9531238c485c9f63b6c1538833ff48d30d0a7b2862cadf9108882",
+        "script_name": "btl_10011109_11",
+        "asset_path": "notinit/novel_script/btl_10011109_11.dmm",
+        "textasset_path_id": 3887904603155815697,
+        "message_index_0based": 1,
+        "raw_line_1based": 17,
+        "command": "message",
+        "manifest_h": "ad0b1312717aeb3add1c5c9365493d9d",
+        "bundle_sha256": "cd42ebecb8b6c2b3d01e9a6536b7b405d70fcb1fb8e2949fa0869e8e4d2046f2",
+        "script_sha256": "b4e3a6f107be5c354933cfad823a8075472946b59fac3f9dea26b2f1e7cf8bbb"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "신규 고유명 음역",
+      "speaker_jp": "クインズウェイ",
+      "expected_ko": "퀸즈웨이",
+      "locator": {
+        "speaker_jp": "クインズウェイ",
+        "script_id": "5009e856b5227f3d3214d860e94d3d30821dd8fb7b5da4ad21bffb7667ad87f1",
+        "script_name": "evs_22002901",
+        "asset_path": "notinit/novel_script/evs_22002901.dmm",
+        "textasset_path_id": -6081021871247523188,
+        "message_index_0based": 78,
+        "raw_line_1based": 340,
+        "command": "message",
+        "manifest_h": "ceaca157f824fa9fceaab686177b76b0",
+        "bundle_sha256": "d2151600f554b8c13470b67c2bade5a4c67c0e90d1f510861a33c12357a88dd3",
+        "script_sha256": "71c3623c2bda7410a3f2357806886c08e326bb7f445d41130e35406fed406d79"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "신규 고유명 음역",
+      "speaker_jp": "ヴィーナス",
+      "expected_ko": "비너스",
+      "locator": {
+        "speaker_jp": "ヴィーナス",
+        "script_id": "5009e856b5227f3d3214d860e94d3d30821dd8fb7b5da4ad21bffb7667ad87f1",
+        "script_name": "evs_22002901",
+        "asset_path": "notinit/novel_script/evs_22002901.dmm",
+        "textasset_path_id": -6081021871247523188,
+        "message_index_0based": 77,
+        "raw_line_1based": 330,
+        "command": "message",
+        "manifest_h": "ceaca157f824fa9fceaab686177b76b0",
+        "bundle_sha256": "d2151600f554b8c13470b67c2bade5a4c67c0e90d1f510861a33c12357a88dd3",
+        "script_sha256": "71c3623c2bda7410a3f2357806886c08e326bb7f445d41130e35406fed406d79"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "신규 고유명 음역",
+      "speaker_jp": "ギャング",
+      "expected_ko": "갱",
+      "locator": {
+        "speaker_jp": "ギャング",
+        "script_id": "f4ced93e3df60e2bce0d0579c538dd1597b0607910caec17fc869dbd45d95066",
+        "script_name": "evs_20003205",
+        "asset_path": "notinit/novel_script/evs_20003205.dmm",
+        "textasset_path_id": -3882016757550596295,
+        "message_index_0based": 56,
+        "raw_line_1based": 190,
+        "command": "message",
+        "manifest_h": "30658d6f3c9903779c4cc3c46835e37f",
+        "bundle_sha256": "df5004cf0b6858240bfdc3a89b0936a7078566e9ae909c80f63f168c99118e55",
+        "script_sha256": "ad755c130a3c18011a3a86bc0cacd6641ae2f76fc21973cb91e043a6462ddf58"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "익명 role label",
+      "speaker_jp": "誘拐犯",
+      "expected_ko": "납치범",
+      "locator": {
+        "speaker_jp": "誘拐犯",
+        "script_id": "d72da2975b56ed7ea88ab7188ac3438cac1d36b4dd6d457c6b62d4c79010211c",
+        "script_name": "evs_20002305",
+        "asset_path": "notinit/novel_script/evs_20002305.dmm",
+        "textasset_path_id": 108471109221871452,
+        "message_index_0based": 55,
+        "raw_line_1based": 271,
+        "command": "message",
+        "manifest_h": "6755456b44bf0f284fef08cdbdb0f4f2",
+        "bundle_sha256": "1af366224b65f41054ab32bf56d42576ad0c6c9face8ff68582d4f6e42189329",
+        "script_sha256": "6d385cdf4d404d3d1b0b7ee00977bc2313e0de40f4aee1815b8f22f8a43c70d5"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "익명 role label",
+      "speaker_jp": "若者",
+      "expected_ko": "젊은이",
+      "locator": {
+        "speaker_jp": "若者",
+        "script_id": "b989243368c34413429ea9cadfda24e4288c5a57b1fb9574080d8a0209a1aa96",
+        "script_name": "btl_10011109_42",
+        "asset_path": "notinit/novel_script/btl_10011109_42.dmm",
+        "textasset_path_id": 4978527150170229349,
+        "message_index_0based": 0,
+        "raw_line_1based": 7,
+        "command": "message",
+        "manifest_h": "c504c27eef3e922e2eb289e555fb7ad3",
+        "bundle_sha256": "c9d6d92fc1c3bee8881f5f7886c15fd2b485fcdeacde59728fcb09990e7e706b",
+        "script_sha256": "0ba6d95019a82dfe497beb2c3d2298074c037cee205d068c0b6364d7aa40e8e9"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "물음표 / mystery",
+      "speaker_jp": "？？？",
+      "expected_ko": "???",
+      "locator": {
+        "speaker_jp": "？？？",
+        "script_id": "1d0ffcaf8bb800383362f1fdea2f1aa5fcac67614b4fdf0be358129f4975d1c4",
+        "script_name": "evs_20000103",
+        "asset_path": "notinit/novel_script/evs_20000103.dmm",
+        "textasset_path_id": -8153238172014227183,
+        "message_index_0based": 10,
+        "raw_line_1based": 33,
+        "command": "message",
+        "manifest_h": "32f4710e8eb1e0ae365bff89bdadc6a4",
+        "bundle_sha256": "f5d1221f5a5ef3582fde18a7cb77175bfe3c169dc6d6009f9fb218df4139973e",
+        "script_sha256": "1ee521221ace2076da145c50554c5de6404d30f30954f4ee40c13eddd403a9ec"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "물음표 / mystery",
+      "speaker_jp": "？？？？",
+      "expected_ko": "????",
+      "locator": {
+        "speaker_jp": "？？？？",
+        "script_id": "bfd9acb4b76e5ad8b77eee92ffff1fb2d971f51d97db4d6c3024708fb1b29d90",
+        "script_name": "evs_20000805",
+        "asset_path": "notinit/novel_script/evs_20000805.dmm",
+        "textasset_path_id": 258442399857116219,
+        "message_index_0based": 9,
+        "raw_line_1based": 59,
+        "command": "message",
+        "manifest_h": "2e95602f5cf62a2b00598e1b9fbef87d",
+        "bundle_sha256": "46681d263804127e7dd01a5ac2f5af1843e01827421a7a4bbf61a33144e89222",
+        "script_sha256": "a814697908e637d05ebe2afc073155cfb982865600029ebefaab113fce44c96a"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "물음표 / mystery",
+      "speaker_jp": "猿？",
+      "expected_ko": "원숭이?",
+      "locator": {
+        "speaker_jp": "猿？",
+        "script_id": "831e10ce47cd0945cd36efdc9a5748b60b43fcacd04db3c833751493fe8c41cf",
+        "script_name": "evs_20002401",
+        "asset_path": "notinit/novel_script/evs_20002401.dmm",
+        "textasset_path_id": 4799053420108661782,
+        "message_index_0based": 3,
+        "raw_line_1based": 14,
+        "command": "message",
+        "manifest_h": "9dc56fbc1d494ca53268361fd3f98980",
+        "bundle_sha256": "c4f0d456a2d0d75d794ebefa65a1a4c6b183c3fca38cf8036d13f8b57815f08d",
+        "script_sha256": "362972adbbdbf65913a26136e86b9f2c06376e77ce61a431e6bc64ad61fa5cd4"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "물음표 / mystery",
+      "speaker_jp": "？？？？？？",
+      "expected_ko": "??????",
+      "locator": {
+        "speaker_jp": "？？？？？？",
+        "script_id": "17366c266a6daf159bd1992b22708a6a9d6164411b36854d5d3cb4ad5a6c978f",
+        "script_name": "evs_23000101",
+        "asset_path": "notinit/novel_script/evs_23000101.dmm",
+        "textasset_path_id": 2724862603475730523,
+        "message_index_0based": 3,
+        "raw_line_1based": 9,
+        "command": "message",
+        "manifest_h": "9bf30cda295686fc0db5814801a94bd7",
+        "bundle_sha256": "d28dc95804665947b473bde0a2ba81d5eb4ac41d055471642708e5c0306e8b70",
+        "script_sha256": "4de0d882b252ec83520c39b9d51d1b5050cd059841725670d540e62088a10f26"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "물음표 / mystery",
+      "speaker_jp": "謎の男",
+      "expected_ko": "수수께끼의 남자",
+      "locator": {
+        "speaker_jp": "謎の男",
+        "script_id": "848632c2864b364ee925e00633ce027e0bacde4f2681209bc29483e1e3484ddd",
+        "script_name": "evs_22000504",
+        "asset_path": "notinit/novel_script/evs_22000504.dmm",
+        "textasset_path_id": -1416975030537534680,
+        "message_index_0based": 27,
+        "raw_line_1based": 78,
+        "command": "message",
+        "manifest_h": "8514e5771fb49dbcc0998548de20fa84",
+        "bundle_sha256": "402538debd2243ab3742302234e3f8816fa8dc02a29256adf54a9f5f1706e856",
+        "script_sha256": "4997c28bfbc7c5d8150ccd2f7038ce2718ae230d3469fe532d0ff7cc46007f66"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "얼터 / 전환",
+      "speaker_jp": "クピド＆ブグロー（オルタ）",
+      "expected_ko": "쿠피도 & 부그로(얼터)",
+      "locator": {
+        "speaker_jp": "クピド＆ブグロー（オルタ）",
+        "script_id": "147d1669563e92ce5215c4e62f99d3f737ec6a2ed69a00685fd13acf046dbf43",
+        "script_name": "hmn_40112111",
+        "asset_path": "notinit/novelchara_main/hmn_40112111.dmm",
+        "textasset_path_id": -407487481434862770,
+        "message_index_0based": 31,
+        "raw_line_1based": 70,
+        "command": "message",
+        "manifest_h": "c3fc98f33eb46940bbc28b22aa5b12c7",
+        "bundle_sha256": "08cd67691385b51578ebe7797204df9df9f6bad68f742b5c96415cd9517a71ad",
+        "script_sha256": "4f88a7aec3e2c7d7f1e846ef3d629076514835c29a82a1d260e503889c6e288d"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "얼터 / 전환",
+      "speaker_jp": "ゴッホ（オルタ）",
+      "expected_ko": "고흐(얼터)",
+      "locator": {
+        "speaker_jp": "ゴッホ（オルタ）",
+        "script_id": "88e1228e79ca07ff877853edf041adbfa49befffd27a7d7f0068784fd7fe7730",
+        "script_name": "evs_29000401",
+        "asset_path": "notinit/novel_script/evs_29000401.dmm",
+        "textasset_path_id": -249977834092219127,
+        "message_index_0based": 39,
+        "raw_line_1based": 233,
+        "command": "message",
+        "manifest_h": "2e307adbd70971ae1834c9f6763a48d0",
+        "bundle_sha256": "2dc304d3011418432885133ad955d669dd3b51bc1cc4da86e71ff11d27ca7f87",
+        "script_sha256": "6929f06404cdb6295a9ae13bc2338c884c4d617a99dcc9daa9abc0c2ecc9c98c"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "얼터 / 전환",
+      "speaker_jp": "ロダン（オルタ）",
+      "expected_ko": "로댕(얼터)",
+      "locator": {
+        "speaker_jp": "ロダン（オルタ）",
+        "script_id": "ebd665de9a16a66904fcadbbe137b4357526607685edf4033e1cc83b0ceb07bb",
+        "script_name": "evs_29000901",
+        "asset_path": "notinit/novel_script/evs_29000901.dmm",
+        "textasset_path_id": 8945702734854897940,
+        "message_index_0based": 35,
+        "raw_line_1based": 195,
+        "command": "message",
+        "manifest_h": "b67c45fe8d556b9a55be1bdf168d3e48",
+        "bundle_sha256": "a6654ed3961b115a82856a88ee07fd739fcdde60ad654e99b84e76751caae9f3",
+        "script_sha256": "562cbd2b078b8491941e3e6a50934d5d297514e6e2f6a304c17de4bb694795ba"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "공동 화자",
+      "speaker_jp": "原始藝術Ａ＆Ｂ",
+      "expected_ko": "원시 예술A & B",
+      "locator": {
+        "speaker_jp": "原始藝術Ａ＆Ｂ",
+        "script_id": "92565ab616e837a55b78559065123530a783751f53c3a7cb5506d762aa5a9055",
+        "script_name": "evs_21000853",
+        "asset_path": "notinit/novel_script/evs_21000853.dmm",
+        "textasset_path_id": -93467309161796067,
+        "message_index_0based": 27,
+        "raw_line_1based": 177,
+        "command": "message",
+        "manifest_h": "66c9cc0bfa0f620d37ea2636342506bc",
+        "bundle_sha256": "78e32bab26931e8f9a0fca3be38bff6cfe661c08a05a06fce6af472467bbd671",
+        "script_sha256": "224f1c5da6816579db3599068067d2bf139503b00eb806d5d1e168800f54c9b9"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "공동 화자",
+      "speaker_jp": "クピド＆ブグロー（オルタ）",
+      "expected_ko": "쿠피도 & 부그로(얼터)",
+      "locator": {
+        "speaker_jp": "クピド＆ブグロー（オルタ）",
+        "script_id": "147d1669563e92ce5215c4e62f99d3f737ec6a2ed69a00685fd13acf046dbf43",
+        "script_name": "hmn_40112111",
+        "asset_path": "notinit/novelchara_main/hmn_40112111.dmm",
+        "textasset_path_id": -407487481434862770,
+        "message_index_0based": 31,
+        "raw_line_1based": 70,
+        "command": "message",
+        "manifest_h": "c3fc98f33eb46940bbc28b22aa5b12c7",
+        "bundle_sha256": "08cd67691385b51578ebe7797204df9df9f6bad68f742b5c96415cd9517a71ad",
+        "script_sha256": "4f88a7aec3e2c7d7f1e846ef3d629076514835c29a82a1d260e503889c6e288d"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "공동 화자",
+      "speaker_jp": "原始藝術Ｂ＆Ｃ",
+      "expected_ko": "원시 예술B & C",
+      "locator": {
+        "speaker_jp": "原始藝術Ｂ＆Ｃ",
+        "script_id": "80039cdb1b3279ee306a3d56d191cd57436ac8bbd787f4150e9a175bac561905",
+        "script_name": "evs_21000703",
+        "asset_path": "notinit/novel_script/evs_21000703.dmm",
+        "textasset_path_id": 2998439327932949421,
+        "message_index_0based": 57,
+        "raw_line_1based": 303,
+        "command": "message",
+        "manifest_h": "021b90e47c8fb9551e778d58734b1f6c",
+        "bundle_sha256": "652518f98abcbada566f40cb352546c2079f73e5bae9b19cbf0ff15aceb4b206",
+        "script_sha256": "6a8760b0a98ae10b6e022d07bd582f46dbc91f61cca3f4777b28ccc519af3f54"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "전각 A/B/C",
+      "speaker_jp": "泥棒Ａ",
+      "expected_ko": "도둑A",
+      "locator": {
+        "speaker_jp": "泥棒Ａ",
+        "script_id": "65867c1ccb00935c2ca75fe0aa1352c625cc1b1796cc066c600933f82172a5c3",
+        "script_name": "mas_99900001",
+        "asset_path": "notinit/novel_script/mas_99900001.dmm",
+        "textasset_path_id": -1937686796711939074,
+        "message_index_0based": 58,
+        "raw_line_1based": 202,
+        "command": "msgvoicesync",
+        "manifest_h": "90a4dd4d4fc849c23bfb1ccd2c9e40f7",
+        "bundle_sha256": "c12036b02d197723cd9aac610c843a747af60ce70b3aa36e27fb2bda2dd85d48",
+        "script_sha256": "ec9880e4399016fc4bf3cc15e52d168ff56d23d11b53ee04c1f6b438068f8b44"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "전각 A/B/C",
+      "speaker_jp": "原始藝術Ａ＆Ｂ",
+      "expected_ko": "원시 예술A & B",
+      "locator": {
+        "speaker_jp": "原始藝術Ａ＆Ｂ",
+        "script_id": "92565ab616e837a55b78559065123530a783751f53c3a7cb5506d762aa5a9055",
+        "script_name": "evs_21000853",
+        "asset_path": "notinit/novel_script/evs_21000853.dmm",
+        "textasset_path_id": -93467309161796067,
+        "message_index_0based": 27,
+        "raw_line_1based": 177,
+        "command": "message",
+        "manifest_h": "66c9cc0bfa0f620d37ea2636342506bc",
+        "bundle_sha256": "78e32bab26931e8f9a0fca3be38bff6cfe661c08a05a06fce6af472467bbd671",
+        "script_sha256": "224f1c5da6816579db3599068067d2bf139503b00eb806d5d1e168800f54c9b9"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "전각 A/B/C",
+      "speaker_jp": "原始藝術Ｂ＆Ｃ",
+      "expected_ko": "원시 예술B & C",
+      "locator": {
+        "speaker_jp": "原始藝術Ｂ＆Ｃ",
+        "script_id": "80039cdb1b3279ee306a3d56d191cd57436ac8bbd787f4150e9a175bac561905",
+        "script_name": "evs_21000703",
+        "asset_path": "notinit/novel_script/evs_21000703.dmm",
+        "textasset_path_id": 2998439327932949421,
+        "message_index_0based": 57,
+        "raw_line_1based": 303,
+        "command": "message",
+        "manifest_h": "021b90e47c8fb9551e778d58734b1f6c",
+        "bundle_sha256": "652518f98abcbada566f40cb352546c2079f73e5bae9b19cbf0ff15aceb4b206",
+        "script_sha256": "6a8760b0a98ae10b6e022d07bd582f46dbc91f61cca3f4777b28ccc519af3f54"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "たち 복수 / 일행",
+      "speaker_jp": "死の芸術たち",
+      "expected_ko": "죽음의 예술들",
+      "locator": {
+        "speaker_jp": "死の芸術たち",
+        "script_id": "3f4a01663aaabaee667ace19c4a75266ba610ae8e35fcbe068a50a817a8e73de",
+        "script_name": "evs_20001906",
+        "asset_path": "notinit/novel_script/evs_20001906.dmm",
+        "textasset_path_id": -9177570026367591114,
+        "message_index_0based": 1,
+        "raw_line_1based": 26,
+        "command": "message",
+        "manifest_h": "892348be8132fcd682960bcff23a6938",
+        "bundle_sha256": "88cd08e477d8eb2746176032f3f3ad239677dfa368417294da03106da986376d",
+        "script_sha256": "1b1ce30a2f636adcb51540c0f54c210084efecd1b00f56de2d157af1cebdf424"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "たち 복수 / 일행",
+      "speaker_jp": "クマロボたち",
+      "expected_ko": "곰 로봇들",
+      "locator": {
+        "speaker_jp": "クマロボたち",
+        "script_id": "27132e5c68686335685d0aaabc12a4f211de0450e1f0f01ded4635af9836e13a",
+        "script_name": "evs_22001601",
+        "asset_path": "notinit/novel_script/evs_22001601.dmm",
+        "textasset_path_id": -173607487124364799,
+        "message_index_0based": 114,
+        "raw_line_1based": 551,
+        "command": "message",
+        "manifest_h": "eba5a88943677c430b6f4e7312a08f36",
+        "bundle_sha256": "1dd9d8c69820affaf4ead719d284df68346db118d0e96c5f714b19ae5ede4d18",
+        "script_sha256": "b5ef46b2555d2ec720e6f63680269298507b669693a5dabd5130460e2ffc87de"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "たち 복수 / 일행",
+      "speaker_jp": "生徒たち",
+      "expected_ko": "학생들",
+      "locator": {
+        "speaker_jp": "生徒たち",
+        "script_id": "2f40a4dd8b0a83a3ff2bd38f47706a59e139f044e25a5d2d7d89f487a8349e4a",
+        "script_name": "evs_20003005",
+        "asset_path": "notinit/novel_script/evs_20003005.dmm",
+        "textasset_path_id": 8217549430667133988,
+        "message_index_0based": 44,
+        "raw_line_1based": 109,
+        "command": "message",
+        "manifest_h": "fe8bc7a45f2e11bf5261137be21d3dd1",
+        "bundle_sha256": "88e03a8eeddbf8ec11406b81deed21fd3fbb70f5703eb018bfc614a20f0b99af",
+        "script_sha256": "3d8ae712b38f501654d379b76afdfdf8b66d3550e1528604058068985264762c"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "죽음의 예술 계열",
+      "speaker_jp": "死の芸術Ａ",
+      "expected_ko": "죽음의 예술A",
+      "locator": {
+        "speaker_jp": "死の芸術Ａ",
+        "script_id": "13d56e3203f33c9a41433c08e9bbfb3fefcf7e04d2a581f022f12623a35c1250",
+        "script_name": "mas_10010102",
+        "asset_path": "notinit/novel_script/mas_10010102.dmm",
+        "textasset_path_id": -5526661231581029423,
+        "message_index_0based": 111,
+        "raw_line_1based": 343,
+        "command": "message",
+        "manifest_h": "e5735ef562c255a2365e8fc9138e13a0",
+        "bundle_sha256": "019e72f03c1c5cf09a36c81944e40d56d816f8a565237dfdf2b9993b47b3db43",
+        "script_sha256": "4e1e34a0e9ed2543ce2073bb8bd4733429fa47a68535c8eb61718d8b7fb91483"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "죽음의 예술 계열",
+      "speaker_jp": "死の芸術Ｂ",
+      "expected_ko": "죽음의 예술B",
+      "locator": {
+        "speaker_jp": "死の芸術Ｂ",
+        "script_id": "13d56e3203f33c9a41433c08e9bbfb3fefcf7e04d2a581f022f12623a35c1250",
+        "script_name": "mas_10010102",
+        "asset_path": "notinit/novel_script/mas_10010102.dmm",
+        "textasset_path_id": -5526661231581029423,
+        "message_index_0based": 112,
+        "raw_line_1based": 350,
+        "command": "message",
+        "manifest_h": "e5735ef562c255a2365e8fc9138e13a0",
+        "bundle_sha256": "019e72f03c1c5cf09a36c81944e40d56d816f8a565237dfdf2b9993b47b3db43",
+        "script_sha256": "4e1e34a0e9ed2543ce2073bb8bd4733429fa47a68535c8eb61718d8b7fb91483"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "죽음의 예술 계열",
+      "speaker_jp": "死の芸術",
+      "expected_ko": "죽음의 예술",
+      "locator": {
+        "speaker_jp": "死の芸術",
+        "script_id": "976bc1999ba7bd245849a319dc4049f28e1f5aa4f2c32f696b4cc2b765169b1f",
+        "script_name": "evs_20000205",
+        "asset_path": "notinit/novel_script/evs_20000205.dmm",
+        "textasset_path_id": 4513236844498637599,
+        "message_index_0based": 38,
+        "raw_line_1based": 110,
+        "command": "message",
+        "manifest_h": "f190365f3884f1b0eeb25155adbd950f",
+        "bundle_sha256": "b9d977cec1dd5e1cc761acffacf81e1a00254924eb1805840c203c2f54f0e3c2",
+        "script_sha256": "2aef7c8de942299f39df0b59bf5f5146282ca163d964f31107a51b971e8e4657"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "QA01 amendment 5건",
+      "speaker_jp": "誘拐犯",
+      "expected_ko": "납치범",
+      "locator": {
+        "speaker_jp": "誘拐犯",
+        "script_id": "d72da2975b56ed7ea88ab7188ac3438cac1d36b4dd6d457c6b62d4c79010211c",
+        "script_name": "evs_20002305",
+        "asset_path": "notinit/novel_script/evs_20002305.dmm",
+        "textasset_path_id": 108471109221871452,
+        "message_index_0based": 55,
+        "raw_line_1based": 271,
+        "command": "message",
+        "manifest_h": "6755456b44bf0f284fef08cdbdb0f4f2",
+        "bundle_sha256": "1af366224b65f41054ab32bf56d42576ad0c6c9face8ff68582d4f6e42189329",
+        "script_sha256": "6d385cdf4d404d3d1b0b7ee00977bc2313e0de40f4aee1815b8f22f8a43c70d5"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "QA01 amendment 5건",
+      "speaker_jp": "怪しげな男Ａ",
+      "expected_ko": "수상쩍은 남자A",
+      "locator": {
+        "speaker_jp": "怪しげな男Ａ",
+        "script_id": "6e15f4dcdb92d36ad7fbe61a17606f023d83cd970a3936e47ac674ceb0901744",
+        "script_name": "mas_10010111",
+        "asset_path": "notinit/novel_script/mas_10010111.dmm",
+        "textasset_path_id": 4874241170496784360,
+        "message_index_0based": 18,
+        "raw_line_1based": 92,
+        "command": "message",
+        "manifest_h": "89c526de49d1086b97bbee8b4490e89b",
+        "bundle_sha256": "d54100625e056d389e1d6b2f4936462136c49048c837c6db7c6fe8a309ded479",
+        "script_sha256": "1fcf7aa16db7469c024628166f2e0cad4a66d0bc9b3c30a438f18a3cdff55b8c"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "QA01 amendment 5건",
+      "speaker_jp": "怪しげな男Ｂ",
+      "expected_ko": "수상쩍은 남자B",
+      "locator": {
+        "speaker_jp": "怪しげな男Ｂ",
+        "script_id": "6e15f4dcdb92d36ad7fbe61a17606f023d83cd970a3936e47ac674ceb0901744",
+        "script_name": "mas_10010111",
+        "asset_path": "notinit/novel_script/mas_10010111.dmm",
+        "textasset_path_id": 4874241170496784360,
+        "message_index_0based": 20,
+        "raw_line_1based": 95,
+        "command": "message",
+        "manifest_h": "89c526de49d1086b97bbee8b4490e89b",
+        "bundle_sha256": "d54100625e056d389e1d6b2f4936462136c49048c837c6db7c6fe8a309ded479",
+        "script_sha256": "1fcf7aa16db7469c024628166f2e0cad4a66d0bc9b3c30a438f18a3cdff55b8c"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "QA01 amendment 5건",
+      "speaker_jp": "義妹",
+      "expected_ko": "양부모 집의 여동생",
+      "locator": {
+        "speaker_jp": "義妹",
+        "script_id": "f8b057ab3c9afa3bccdbbdb15c6315dcda70f8f84f07f805d090c86a389dfd7b",
+        "script_name": "mas_11010604",
+        "asset_path": "notinit/novel_script/mas_11010604.dmm",
+        "textasset_path_id": -3055557915978227095,
+        "message_index_0based": 3,
+        "raw_line_1based": 36,
+        "command": "msgvoicesync",
+        "manifest_h": "b921911d08906d525cbc1e2f8b0987fe",
+        "bundle_sha256": "8cc81b664c38438207d9424f560edb5431f25a58ec40a30cdac529e5189f6c80",
+        "script_sha256": "aa4d8957359a935bb15de67df07d69b9bebbcc2e21676f1f13070cb86faedc74"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "QA01 amendment 5건",
+      "speaker_jp": "不審な男改め死の芸術家",
+      "expected_ko": "죽음의 예술가가 된 수상한 남자",
+      "locator": {
+        "speaker_jp": "不審な男改め死の芸術家",
+        "script_id": "27132e5c68686335685d0aaabc12a4f211de0450e1f0f01ded4635af9836e13a",
+        "script_name": "evs_22001601",
+        "asset_path": "notinit/novel_script/evs_22001601.dmm",
+        "textasset_path_id": -173607487124364799,
+        "message_index_0based": 89,
+        "raw_line_1based": 412,
+        "command": "message",
+        "manifest_h": "eba5a88943677c430b6f4e7312a08f36",
+        "bundle_sha256": "1dd9d8c69820affaf4ead719d284df68346db118d0e96c5f714b19ae5ede4d18",
+        "script_sha256": "b5ef46b2555d2ec720e6f63680269298507b669693a5dabd5130460e2ffc87de"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "R34R-M007",
+      "speaker_jp": "不審な男改め死の芸術家",
+      "expected_ko": "죽음의 예술가가 된 수상한 남자",
+      "locator": {
+        "speaker_jp": "不審な男改め死の芸術家",
+        "script_id": "27132e5c68686335685d0aaabc12a4f211de0450e1f0f01ded4635af9836e13a",
+        "script_name": "evs_22001601",
+        "asset_path": "notinit/novel_script/evs_22001601.dmm",
+        "textasset_path_id": -173607487124364799,
+        "message_index_0based": 89,
+        "raw_line_1based": 412,
+        "command": "message",
+        "manifest_h": "eba5a88943677c430b6f4e7312a08f36",
+        "bundle_sha256": "1dd9d8c69820affaf4ead719d284df68346db118d0e96c5f714b19ae5ede4d18",
+        "script_sha256": "b5ef46b2555d2ec720e6f63680269298507b669693a5dabd5130460e2ffc87de"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "문맥 제한 6건",
+      "speaker_jp": "おばさん",
+      "expected_ko": "아주머니",
+      "locator": {
+        "speaker_jp": "おばさん",
+        "script_id": "7642b0f70ffb81b8d98f37278a2a1012885ae5aca5edce54ee9bb9106297630f",
+        "script_name": "btl_10011109_45",
+        "asset_path": "notinit/novel_script/btl_10011109_45.dmm",
+        "textasset_path_id": -8051398973436338583,
+        "message_index_0based": 0,
+        "raw_line_1based": 7,
+        "command": "message",
+        "manifest_h": "6b143b50e67592a5dfda4de99e624754",
+        "bundle_sha256": "824df868b44cd134cb93611b67d2e60dd7d08bdbeaf2569e1fcbc50efe653407",
+        "script_sha256": "d6bd9f9be23a20317bcec789207f439e826d8909225c87d6d9ea8e08573ad842"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "문맥 제한 6건",
+      "speaker_jp": "お姉さん",
+      "expected_ko": "아가씨",
+      "locator": {
+        "speaker_jp": "お姉さん",
+        "script_id": "d214b04e1e45abac1fce1f07fb05c564b34b42f61682a2b16cc6169f7f74c5d7",
+        "script_name": "btl_10011109_44",
+        "asset_path": "notinit/novel_script/btl_10011109_44.dmm",
+        "textasset_path_id": 2549863660271410848,
+        "message_index_0based": 0,
+        "raw_line_1based": 7,
+        "command": "message",
+        "manifest_h": "52e56143845a908d2f1d95b72c08c932",
+        "bundle_sha256": "581b2ef64121f0620a6a04ea2f223fc6eff19c8f67d5525729b66dd559e59843",
+        "script_sha256": "0f6f6aa06b3b189453ba317f3ef1ac481e0834e611daadb60ecfb9d8ed6135f7"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "문맥 제한 6건",
+      "speaker_jp": "少年A",
+      "expected_ko": "소년A",
+      "locator": {
+        "speaker_jp": "少年A",
+        "script_id": "12e6366326fa1991d4ae7e55b769636f0a5f2007abbdde87f9533534e3fa505f",
+        "script_name": "hmn_40112092",
+        "asset_path": "notinit/novelchara_main/hmn_40112092.dmm",
+        "textasset_path_id": 6133513216501681419,
+        "message_index_0based": 38,
+        "raw_line_1based": 104,
+        "command": "message",
+        "manifest_h": "e1ffe0a7b420d61303ac443145004b12",
+        "bundle_sha256": "9a238131347a0a09536d35875518e8f09763dad43b0dde5cdd032f4dd7269c36",
+        "script_sha256": "a285060fc8220db56a24e2913ed15c6cb166b1226670c535abbbadbf6c198569"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "문맥 제한 6건",
+      "speaker_jp": "少年B",
+      "expected_ko": "소년B",
+      "locator": {
+        "speaker_jp": "少年B",
+        "script_id": "12e6366326fa1991d4ae7e55b769636f0a5f2007abbdde87f9533534e3fa505f",
+        "script_name": "hmn_40112092",
+        "asset_path": "notinit/novelchara_main/hmn_40112092.dmm",
+        "textasset_path_id": 6133513216501681419,
+        "message_index_0based": 35,
+        "raw_line_1based": 99,
+        "command": "message",
+        "manifest_h": "e1ffe0a7b420d61303ac443145004b12",
+        "bundle_sha256": "9a238131347a0a09536d35875518e8f09763dad43b0dde5cdd032f4dd7269c36",
+        "script_sha256": "a285060fc8220db56a24e2913ed15c6cb166b1226670c535abbbadbf6c198569"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "문맥 제한 6건",
+      "speaker_jp": "画材屋店主",
+      "expected_ko": "화구점 주인",
+      "locator": {
+        "speaker_jp": "画材屋店主",
+        "script_id": "782af87a905e4888112f95be923fe01f5f5b036a6a2c58a8f706fd964793e17b",
+        "script_name": "btl_10011109_46",
+        "asset_path": "notinit/novel_script/btl_10011109_46.dmm",
+        "textasset_path_id": 924714827932265273,
+        "message_index_0based": 0,
+        "raw_line_1based": 7,
+        "command": "message",
+        "manifest_h": "fb582c5ad97fb04febf6bb85cf47d8d7",
+        "bundle_sha256": "3e6781e23168c9c62aada564a7f5dcd78fc5748b799614ac68a5d22f3e55a372",
+        "script_sha256": "b90390f242d55431920923ff9295f47a335c5eebde9e6a90dac21fd142fbbd5e"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "문맥 제한 6건",
+      "speaker_jp": "若者",
+      "expected_ko": "젊은이",
+      "locator": {
+        "speaker_jp": "若者",
+        "script_id": "b989243368c34413429ea9cadfda24e4288c5a57b1fb9574080d8a0209a1aa96",
+        "script_name": "btl_10011109_42",
+        "asset_path": "notinit/novel_script/btl_10011109_42.dmm",
+        "textasset_path_id": 4978527150170229349,
+        "message_index_0based": 0,
+        "raw_line_1based": 7,
+        "command": "message",
+        "manifest_h": "c504c27eef3e922e2eb289e555fb7ad3",
+        "bundle_sha256": "c9d6d92fc1c3bee8881f5f7886c15fd2b485fcdeacde59728fcb09990e7e706b",
+        "script_sha256": "0ba6d95019a82dfe497beb2c3d2298074c037cee205d068c0b6364d7aa40e8e9"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "구별되는 exact key",
+      "speaker_jp": "ラぺ",
+      "expected_ko": "라페",
+      "locator": {
+        "speaker_jp": "ラぺ",
+        "script_id": "2e3c280969154718afa408c5bf26fe5a432439eed6e085916d15cc91b621f46a",
+        "script_name": "dns_314005",
+        "asset_path": "notinit/novel_script/dns_314005.dmm",
+        "textasset_path_id": -6011988273611654889,
+        "message_index_0based": 0,
+        "raw_line_1based": 10,
+        "command": "message",
+        "manifest_h": "e0e9d1215eeabf66dd1c2eec3414fd42",
+        "bundle_sha256": "cad02f9c1273dbb18ecc2336bca13a3fb5aeecefe6792644805808ac2006c2a2",
+        "script_sha256": "793c839ade568392e2c77432727d65eaf6e08e00b8c227e418bc0db2ef412e5f"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "구별되는 exact key",
+      "speaker_jp": "ラペ",
+      "expected_ko": "라페",
+      "locator": {
+        "speaker_jp": "ラペ",
+        "script_id": "6d776ad8b47c1bf500008ffd0a5f45a5ffae99798ae144d0e578e92e6b2ef033",
+        "script_name": "evs_21000204",
+        "asset_path": "notinit/novel_script/evs_21000204.dmm",
+        "textasset_path_id": -4729548951341801959,
+        "message_index_0based": 5,
+        "raw_line_1based": 31,
+        "command": "message",
+        "manifest_h": "08113a1032d60fa882f904fd5c3e80f7",
+        "bundle_sha256": "995fd4bd054a90d443da6c3756b6d2dbca0bd449113dad54fb3539e73c15efaf",
+        "script_sha256": "ec62b2cf7b75c58d9ddea0f508f6af7549f2fb70ccf946a576eb1cfe6989aca6"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "구별되는 exact key",
+      "speaker_jp": "子どもの声",
+      "expected_ko": "아이의 목소리",
+      "locator": {
+        "speaker_jp": "子どもの声",
+        "script_id": "e86750e47efdec7ea450be2cfb75739b04fd9cd2a9eb71196979105461666728",
+        "script_name": "hsn_40200542",
+        "asset_path": "notinit/novelchara_sub/hsn_40200542.dmm",
+        "textasset_path_id": -264475282100021422,
+        "message_index_0based": 20,
+        "raw_line_1based": 57,
+        "command": "message",
+        "manifest_h": "5a69e031cdf61c9dd30ccecac3726ec8",
+        "bundle_sha256": "ce5b42e46dbaebbbf747a978e2d751f0f7a5a8010bae08f18bc5b156a3cc5f9c",
+        "script_sha256": "fbd03e7f1a2f2c2d60fd18c432d9bfcee7b3c83ea05039629d342de084d7d680"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    },
+    {
+      "category": "구별되는 exact key",
+      "speaker_jp": "子供の声",
+      "expected_ko": "아이의 목소리",
+      "locator": {
+        "speaker_jp": "子供の声",
+        "script_id": "47b1de952281995bdd35d5303edcb3093b6c54901fb814e352d800c4e20026df",
+        "script_name": "evs_20002903",
+        "asset_path": "notinit/novel_script/evs_20002903.dmm",
+        "textasset_path_id": -5583833712489174288,
+        "message_index_0based": 62,
+        "raw_line_1based": 166,
+        "command": "message",
+        "manifest_h": "1661a35c56355ebe9caa6c7ebd0ff633",
+        "bundle_sha256": "dedfb246b3818863329b8ff51c8838d767f7f0c2223080ed45de75a76ac886f2",
+        "script_sha256": "d9187155ffc40dd5e170010e84e26f9030362b0cba44e39cd69d4d8f875885dd"
+      },
+      "status": "NOT_RUN",
+      "notes": "Locator identifies source occurrence; does not authorize recovery of held context."
+    }
+  ],
+  "unmapped_fallback_required": true,
+  "full_restart_required": true
+}

@@ -1,0 +1,81 @@
+{
+  "source_key_normalization_count": 0,
+  "unicode_normalization_count": 0,
+  "punctuation_or_whitespace_normalization_count": 0,
+  "alias_or_identity_merge_count": 0,
+  "all_new_exact_key_utf8_hashes_in": "DECISIONS_54.jsonl",
+  "same_output_distinct_keys": [
+    {
+      "keys": [
+        "子どもの声",
+        "子供の声"
+      ],
+      "recommended_ko": "아이의 목소리",
+      "same_identity_inferred": false,
+      "source_keys_merged": false
+    },
+    {
+      "keys": [
+        "住民の女性",
+        "住民女性"
+      ],
+      "recommended_ko": "여성 주민",
+      "same_identity_inferred": false,
+      "source_keys_merged": false
+    },
+    {
+      "keys": [
+        "市民の女性",
+        "女性市民"
+      ],
+      "recommended_ko": "여성 시민",
+      "same_identity_inferred": false,
+      "source_keys_merged": false
+    }
+  ],
+  "new_orthographic_guard": {
+    "exact_keys": [
+      "子どもの声",
+      "子供の声"
+    ],
+    "codepoints": {
+      "子どもの声": [
+        "U+5B50",
+        "U+3069",
+        "U+3082",
+        "U+306E",
+        "U+58F0"
+      ],
+      "子供の声": [
+        "U+5B50",
+        "U+4F9B",
+        "U+306E",
+        "U+58F0"
+      ]
+    },
+    "normalization_performed": false
+  },
+  "inherited_kana_guard": {
+    "exact_keys": [
+      "ラぺ",
+      "ラペ"
+    ],
+    "both_preserved": true,
+    "same_identity_inferred": false
+  },
+  "inherited_reference": "inherited/BATCH08_EXACT_KEY_GUARDS.json",
+  "no_identity_substitution_keys": [
+    "アルテに似た少女",
+    "謎の女",
+    "夢の中の声",
+    "議長",
+    "クロト"
+  ],
+  "claim_or_previous_state_preserved_keys": [
+    "パパ候補者",
+    "パパを自称する者",
+    "パパ願望を抱く者",
+    "元クマロボ",
+    "元クマロボたち"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "inputs": [
+    {
+      "label": "4D0",
+      "package": "gc_names_layer_4D0_workbench.zip",
+      "sha256": "96c5a464eb11a2373d1d5ee9ad4776e95754c22ada0c739fab842dbbb3e47ca3",
+      "crc": "PASS",
+      "manifest": "PASS",
+      "manifest_files": 89,
+      "archive_files": 90,
+      "manifest_sha256": "14a2204e59b82ded64edf1cca9d9e5e53551a70320a43d18deb6fb526b93b0ae"
+    },
+    {
+      "label": "BATCH09",
+      "package": "gc_names_layer_4D1_semantic_batch09.zip",
+      "sha256": "075b1556272a65bf8b436465fd778011f124e287104fd28a713652452bd804aa",
+      "crc": "PASS",
+      "manifest": "PASS",
+      "manifest_files": 71,
+      "archive_files": 72,
+      "manifest_sha256": "04bbd61437a2a3f950e2231961d6a1652095f306eb1b059bf692934468938bbc"
+    },
+    {
+      "label": "QA01",
+      "package": "gc_names_layer_4D1_final_qa01.zip",
+      "sha256": "75506f9d9d2aeb4d30e958760500eccdc8d050438b14b29c418a9f57e2bb0a71",
+      "crc": "PASS",
+      "manifest": "PASS",
+      "manifest_files": 25,
+      "archive_files": 26,
+      "manifest_sha256": "869199ca8e32f7e7f06411eff752ba0daed950fcc894b48bf29266bce573719d"
+    }
+  ],
+  "cumulative_qa_copy_identical": true,
+  "embedded_batch09_identity_match": true,
+  "frozen_locks_identical": true,
+  "master_line_hashes_verified": 1070,
+  "qa_amendment_baseline_line_hashes_verified": 5,
+  "acceptance_plan_groups_exact_disjoint_cover": true
+}

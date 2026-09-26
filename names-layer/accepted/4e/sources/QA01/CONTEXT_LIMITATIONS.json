@@ -1,0 +1,90 @@
+{
+  "limited_keys": [
+    {
+      "speaker_jp": "少年A",
+      "recommended_ko": "소년A",
+      "category": "SURFACE_ONLY_CONTEXT_EXCLUDED",
+      "context_complete": false,
+      "limitation_resolved_this_qa": false,
+      "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+      "source_ref_key": "少年A",
+      "explicit_acceptance_of_limitation_required": true,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "少年B",
+      "recommended_ko": "소년B",
+      "category": "SURFACE_ONLY_CONTEXT_EXCLUDED",
+      "context_complete": false,
+      "limitation_resolved_this_qa": false,
+      "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+      "source_ref_key": "少年B",
+      "explicit_acceptance_of_limitation_required": true,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "おばさん",
+      "recommended_ko": "아주머니",
+      "category": "PARTIAL_EXCERPT_ONLY",
+      "context_complete": false,
+      "limitation_resolved_this_qa": false,
+      "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+      "source_ref_key": "おばさん",
+      "explicit_acceptance_of_limitation_required": true,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "お姉さん",
+      "recommended_ko": "아가씨",
+      "category": "PARTIAL_EXCERPT_ONLY",
+      "context_complete": false,
+      "limitation_resolved_this_qa": false,
+      "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+      "source_ref_key": "お姉さん",
+      "explicit_acceptance_of_limitation_required": true,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "画材屋店主",
+      "recommended_ko": "화구점 주인",
+      "category": "PARTIAL_EXCERPT_ONLY",
+      "context_complete": false,
+      "limitation_resolved_this_qa": false,
+      "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+      "source_ref_key": "画材屋店主",
+      "explicit_acceptance_of_limitation_required": true,
+      "accepted": false
+    },
+    {
+      "speaker_jp": "若者",
+      "recommended_ko": "젊은이",
+      "category": "PARTIAL_EXCERPT_ONLY",
+      "context_complete": false,
+      "limitation_resolved_this_qa": false,
+      "review_mode": "LIMITATION_METADATA_REVIEW_ONLY",
+      "source_ref_key": "若者",
+      "explicit_acceptance_of_limitation_required": true,
+      "accepted": false
+    }
+  ],
+  "partial_windows_with_other_complete_context": [
+    "女の子",
+    "おじさん"
+  ],
+  "baseline_categories": {
+    "at_least_one_complete_window": 1064,
+    "fragment_only": 4,
+    "surface_only_excluded": 2
+  },
+  "missing_held_text_restored": false,
+  "live_context_fetched": false,
+  "underlying_full_script_accessed": false,
+  "fragment_alternative_audit": "Inherited Batch09 FRAGMENT_CONTEXT_AUDIT.json; predecessor verifier rerun against unchanged supplied workbench, no live-source claim.",
+  "all_context_limitations_resolved": false,
+  "label_semantic_relations_not_specified": [
+    "ビキニの死の芸術: 着用/材質/形状",
+    "チョコの死の芸術 and 大型チョコの死の芸術: material/form",
+    "模倣中原始藝術: imitation target"
+  ],
+  "runtime_ui_width_verified": false
+}

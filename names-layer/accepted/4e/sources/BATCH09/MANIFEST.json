@@ -1,0 +1,362 @@
+{
+  "hash_algorithm": "SHA256",
+  "manifest_excludes_self": true,
+  "document_role": "BATCH09_OUTPUT_BYTE_MANIFEST_NOT_APPROVAL",
+  "files": [
+    {
+      "path": "CANDIDATE_DELTA.json",
+      "size_bytes": 11957,
+      "sha256": "29ad9a7c971bd218a93467c55f9420423204adfbd2578c0b32238338d0eb57f7"
+    },
+    {
+      "path": "CODEX_HANDOFF_KO.md",
+      "size_bytes": 1276,
+      "sha256": "4dd723659d4338df904c3573504c87d8f1e2c7c391a21399acbd5ef3ed4e2616"
+    },
+    {
+      "path": "CONTEXT_LIMITATIONS.json",
+      "size_bytes": 1661,
+      "sha256": "df064b3964933111f3145b90785ced4814109445c05c0ff7495fcba0e905f418"
+    },
+    {
+      "path": "CUMULATIVE_RECOMMENDATIONS_1070.jsonl",
+      "size_bytes": 2964727,
+      "sha256": "c1f7ebd24c5d0f35a4018b05e61751d0e34a218abac9943fa2f4527a4d392a29"
+    },
+    {
+      "path": "DECISIONS_54.jsonl",
+      "size_bytes": 181572,
+      "sha256": "7086182922c78577851c6ad9851f86e7db9f7b64d54de216f323a21514b32280"
+    },
+    {
+      "path": "DISPLAY_DEPENDENCIES.json",
+      "size_bytes": 47394,
+      "sha256": "f00aadc50df2f47f1aa0a5787605617a47fb86b1b3bdbce6c4e758e4cba588e2"
+    },
+    {
+      "path": "EVIDENCE_ROLE_GUARDS.json",
+      "size_bytes": 1460,
+      "sha256": "18ad63570a126bcc1d667734f9af6de3d230ec853b240a5c5e045c43f42618e0"
+    },
+    {
+      "path": "EXACT_KEY_GUARDS.json",
+      "size_bytes": 1835,
+      "sha256": "2c6e706e1101bf3e20d9a9de35f1b96e552c8ea15f09ad7cd79438c345a70d3a"
+    },
+    {
+      "path": "EXTERNAL_CHECK_STATUS.json",
+      "size_bytes": 441,
+      "sha256": "72f2c42d5bf777969961b248dce572c8e08a9394209ab4a0770d4c4aa9431b01"
+    },
+    {
+      "path": "FINAL_QA_HANDOFF_KO.md",
+      "size_bytes": 5941,
+      "sha256": "86c93c4a3b92ab77df38c924143d58c7a67ca5eb497b14a626daf2b9b87b12fc"
+    },
+    {
+      "path": "FINAL_QA_QUEUE.json",
+      "size_bytes": 16409,
+      "sha256": "819d19982fcf6d5bd88ef33fc2b6ec3f1f0891749d7f4e53eb550dff8aa3de12"
+    },
+    {
+      "path": "FRAGMENT_CONTEXT_AUDIT.json",
+      "size_bytes": 4838,
+      "sha256": "e3f28daed163f50581deb59dc004bf3c24b7e0cb390a7098101171210bfd13c5"
+    },
+    {
+      "path": "INPUT_VERIFICATION.json",
+      "size_bytes": 12364,
+      "sha256": "c70f66f24b8b89d6efc845fc8a16129efbd7fbd300e59f0872869660e3a0292a"
+    },
+    {
+      "path": "KNOWLEDGE_PREVIEW_REVIEW_6.jsonl",
+      "size_bytes": 11448,
+      "sha256": "c0c6b984ce7a5bcdf8eda1d2aac724e179966898b1ed83867113b20e782f6ac2"
+    },
+    {
+      "path": "LEXICAL_VARIANT_REVIEW.json",
+      "size_bytes": 17366,
+      "sha256": "6b35070346bb82abc594a546625b77b6cadd29d60c6988ee5837a2ef01814db8"
+    },
+    {
+      "path": "MANUAL_DECISIONS_54.json",
+      "size_bytes": 30282,
+      "sha256": "48750c7e278e8ee471b9b7d279e871dbd9a78ebe05578aedc1cca909a68e092e"
+    },
+    {
+      "path": "NEXT_STEP.json",
+      "size_bytes": 1091,
+      "sha256": "d0f7fd17ecf5ecdbdefe92b174ee85fe7b481a82d5e4febfe244c39555c3ed6e"
+    },
+    {
+      "path": "PACKET_PROGRESS.json",
+      "size_bytes": 43463,
+      "sha256": "98bf00fac98d30776167546ba414ff586f54755be6683c3835ce0ed99f2e5cdf"
+    },
+    {
+      "path": "PACKET_SOURCE_CHECKS.json",
+      "size_bytes": 682,
+      "sha256": "7417b7a3fe6eb4444f6b669b191ca0b5f271118c4d750432bfc4a20a0365af18"
+    },
+    {
+      "path": "PENDING_KEYS_0.jsonl",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "QA_SIGNAL_INDEX.jsonl",
+      "size_bytes": 196775,
+      "sha256": "dd3e27a7f741c4814e52648c842b671d693c5cc464439d76206486829de9231f"
+    },
+    {
+      "path": "REPORT_KO.md",
+      "size_bytes": 9182,
+      "sha256": "e2954f68501f0fad2c5028cf1b60d0a83ad53166ef4cb036737a79800631d667"
+    },
+    {
+      "path": "REVIEW_DECISIONS_KO.md",
+      "size_bytes": 63643,
+      "sha256": "5377afe5d32ba8930583711400334c119a69d6f4a7b7f4ce89779d73224aa4d9"
+    },
+    {
+      "path": "REVIEW_SCOPE.json",
+      "size_bytes": 4372,
+      "sha256": "c75dbba5bad806def0a16d0664e79f34fb2744891fa69aebd84612a65028764a"
+    },
+    {
+      "path": "SOURCE_FORMAT_NOTES.json",
+      "size_bytes": 332,
+      "sha256": "5c892ff7bd4186f5540e6c9e238ec21daeb2120ac5327272d0dba3abf0fa4909"
+    },
+    {
+      "path": "SOURCE_REFERENCES_54.jsonl",
+      "size_bytes": 278220,
+      "sha256": "c3804d0361687f2d2ef833968c01b4e3cf62a8d17b05dab37a81602e5406abaf"
+    },
+    {
+      "path": "START_HERE.md",
+      "size_bytes": 1654,
+      "sha256": "f34ef5afc6da7e574bb3dfc5ddf523d5dc2f5da6c5390f09668d07b7a6c4824c"
+    },
+    {
+      "path": "TARGET_UNIVERSE_LOCK.json",
+      "size_bytes": 2079,
+      "sha256": "db5c8948594f6f1d99d59cca185c3ef86adbd2709cb8479fce88a4329499d5c6"
+    },
+    {
+      "path": "VALIDATION_4D1.json",
+      "size_bytes": 3546,
+      "sha256": "b82742744a3853ec745d853820a63f13ee00233260bc558099e41e4843aa2c8c"
+    },
+    {
+      "path": "VERIFIER_SELF_TESTS.json",
+      "size_bytes": 6213,
+      "sha256": "61a53e7288f5c0f0dc978c529f057a4fab1f9c0a2ed85294fad9ef1c4b4dbcbb"
+    },
+    {
+      "path": "inherited/BATCH05_CONTEXT_LIMITATIONS.json",
+      "size_bytes": 803,
+      "sha256": "d2ae868302de3855db3a58bf6a00058cf5aebc9d688fee1766b5717798634b50"
+    },
+    {
+      "path": "inherited/BATCH05_CUMULATIVE_627.jsonl",
+      "size_bytes": 1629570,
+      "sha256": "653dc976f72055627c1553223f973327aa7c05c318bb5d0ef962719ba7666e59"
+    },
+    {
+      "path": "inherited/BATCH05_DISPLAY_DEPENDENCIES.json",
+      "size_bytes": 9735,
+      "sha256": "9b7c559e5af8f4304ab256e6c19633497a384682a8f46a2d54c0279565d49946"
+    },
+    {
+      "path": "inherited/BATCH05_EVIDENCE_ROLE_GUARDS.json",
+      "size_bytes": 13156,
+      "sha256": "0d84fc45c9a79d16e2a4891e2940b5b9f3e931315d1afadc8f892db4a4e4abb4"
+    },
+    {
+      "path": "inherited/BATCH05_EXACT_KEY_GUARDS.json",
+      "size_bytes": 8283,
+      "sha256": "22d71d77a008cf6a74f00d62e1a68e9533abef1e80eddab466b81482033fa618"
+    },
+    {
+      "path": "inherited/BATCH05_LEXICAL_VARIANT_REVIEW.json",
+      "size_bytes": 11044,
+      "sha256": "8ed13bdf2ac727c5a4b5499423991005e3ffbe79fb95f925ce640abfa4e4174e"
+    },
+    {
+      "path": "inherited/BATCH05_REVIEW_SCOPE.json",
+      "size_bytes": 3275,
+      "sha256": "9d6b39f4265ee0b9e807723b527b5c0b942bec9c068c0d1d39a51c94f8847b97"
+    },
+    {
+      "path": "inherited/BATCH06_CONTEXT_LIMITATIONS.json",
+      "size_bytes": 1783,
+      "sha256": "06c33f90a79bd958f95b3b806820c87171336e86516f8d6a994aaa1ff235f2f8"
+    },
+    {
+      "path": "inherited/BATCH06_CUMULATIVE_752.jsonl",
+      "size_bytes": 1996627,
+      "sha256": "a2d84b881e098556bfb76439fb0d1adadaebc6e5131d55dcf5fb79b8c020e0eb"
+    },
+    {
+      "path": "inherited/BATCH06_DISPLAY_DEPENDENCIES.json",
+      "size_bytes": 11944,
+      "sha256": "a2f1fbfbcb9511f258c5aa204434ec10586d5e6426ccbea856654525d7f281fd"
+    },
+    {
+      "path": "inherited/BATCH06_EVIDENCE_ROLE_GUARDS.json",
+      "size_bytes": 1569,
+      "sha256": "218c280e3483bd89aab3182d3aa4b5351b6c8d0fa74796d03382878bf8301864"
+    },
+    {
+      "path": "inherited/BATCH06_EXACT_KEY_GUARDS.json",
+      "size_bytes": 2189,
+      "sha256": "64506a71503ea772e85ab682baa0ce1a9d7d77ad95df3523db0b11abc31572ce"
+    },
+    {
+      "path": "inherited/BATCH06_LEXICAL_VARIANT_REVIEW.json",
+      "size_bytes": 12093,
+      "sha256": "728230d27223dbf69ead3c49da86b2449cd8d215a26a1f18d2ac2e3ebb66f37f"
+    },
+    {
+      "path": "inherited/BATCH06_PACKET_PROGRESS.json",
+      "size_bytes": 48846,
+      "sha256": "9c32690f521bafac8909426b4fe2366923b8b9a8d670a647f7d9b8de9ca9a63a"
+    },
+    {
+      "path": "inherited/BATCH06_PENDING_KEYS_318.jsonl",
+      "size_bytes": 79200,
+      "sha256": "505968b20d727e1c41fb55d3433e14c9c9ab1c0333e86795561d82c36011f0ba"
+    },
+    {
+      "path": "inherited/BATCH06_REVIEW_SCOPE.json",
+      "size_bytes": 3516,
+      "sha256": "89e2e739deb94b18a66a69cf62cb972486477fcae44d66404a873d53eca7f2ec"
+    },
+    {
+      "path": "inherited/BATCH07_CONTEXT_LIMITATIONS.json",
+      "size_bytes": 1533,
+      "sha256": "c3ab1d3ebf1dcc912ed0c510041177af3e2e4058facc2b74877f4c45edf3b516"
+    },
+    {
+      "path": "inherited/BATCH07_CUMULATIVE_892.jsonl",
+      "size_bytes": 2405990,
+      "sha256": "d1ffa1d7b02219f12988f5666ff656b868d19bc101062670f6e9b4bfe8dc657a"
+    },
+    {
+      "path": "inherited/BATCH07_DISPLAY_DEPENDENCIES.json",
+      "size_bytes": 92385,
+      "sha256": "312997108e220ac56646344adc777f6915225e47887e5f4f3c4c4370c3320824"
+    },
+    {
+      "path": "inherited/BATCH07_EVIDENCE_ROLE_GUARDS.json",
+      "size_bytes": 1853,
+      "sha256": "77dd85266509e30c8f3cd2fe1a7d52c537af3ea246186ea4c0eb398e22fab5f4"
+    },
+    {
+      "path": "inherited/BATCH07_EXACT_KEY_GUARDS.json",
+      "size_bytes": 4337,
+      "sha256": "9d03f32a04af24b9c9caeb2cf941a62ae14e32d9a3deeb75136c9bd803ae3d39"
+    },
+    {
+      "path": "inherited/BATCH07_LEXICAL_VARIANT_REVIEW.json",
+      "size_bytes": 12063,
+      "sha256": "811ce76d45f9326f44c3cd696016be7e402a9c927ccd6b50fcf683f7237f800d"
+    },
+    {
+      "path": "inherited/BATCH07_PACKET_PROGRESS.json",
+      "size_bytes": 44995,
+      "sha256": "393059eba1cc92c0836e0ca40e90a231b6fbf29dfa98be0a80755c3546edbba3"
+    },
+    {
+      "path": "inherited/BATCH07_PENDING_KEYS_178.jsonl",
+      "size_bytes": 43814,
+      "sha256": "55c72b0ef224414f0d687c1b75da2dfcec95cea93ca592da1a1f2be9faf3d453"
+    },
+    {
+      "path": "inherited/BATCH07_REVIEW_SCOPE.json",
+      "size_bytes": 3939,
+      "sha256": "a26c33f37b5ffe6673c1c7c54d4177061ba080b296f892fcbb01b12cc5cf5bb7"
+    },
+    {
+      "path": "inherited/BATCH07_SOURCE_FORMAT_NOTES.json",
+      "size_bytes": 1847,
+      "sha256": "26200f21762ce023d46e1ba32b0b4c2d7e3096b33bfe63884fe219d37f56f7b3"
+    },
+    {
+      "path": "inherited/BATCH08_CONTEXT_LIMITATIONS.json",
+      "size_bytes": 3749,
+      "sha256": "b6b2cdc65438e652a01a4558d3ad2c6b58db32d172bba65524010693d2ca1616"
+    },
+    {
+      "path": "inherited/BATCH08_CUMULATIVE_1016.jsonl",
+      "size_bytes": 2783155,
+      "sha256": "bba90afe3618c77b563e69c6fb81a636075c3430f84086ce3f4455e40e4c87d0"
+    },
+    {
+      "path": "inherited/BATCH08_DISPLAY_DEPENDENCIES.json",
+      "size_bytes": 63066,
+      "sha256": "5f18804813a42f09018e6a9e1eecd9d97f8c4d5dc523a571ff64ef31eb871347"
+    },
+    {
+      "path": "inherited/BATCH08_EVIDENCE_ROLE_GUARDS.json",
+      "size_bytes": 1229,
+      "sha256": "6d0261f82f6e31b3c51dded65ae5a63eaa5f97be6c0f35d7b0101807b50e9f01"
+    },
+    {
+      "path": "inherited/BATCH08_EXACT_KEY_GUARDS.json",
+      "size_bytes": 2335,
+      "sha256": "a0b21dac5b33321e4d111c5a263576a88fa6d42ecb90ee031490e850a3ee9007"
+    },
+    {
+      "path": "inherited/BATCH08_LEXICAL_VARIANT_REVIEW.json",
+      "size_bytes": 20352,
+      "sha256": "e21705874ec5fc82f0b1fa4c201000deb4edd6b8e81b4aca768444fc97746efb"
+    },
+    {
+      "path": "inherited/BATCH08_NEXT_STEP.json",
+      "size_bytes": 511,
+      "sha256": "16e683b217d8e9b257249fa97fce9fb9914a6486b6184b5e2bb174e168e6d202"
+    },
+    {
+      "path": "inherited/BATCH08_PACKET_PROGRESS.json",
+      "size_bytes": 41583,
+      "sha256": "dd18053deeaaac50d0b0b3b39494cbe03530c876f709e54e85e2ca008a8e19c6"
+    },
+    {
+      "path": "inherited/BATCH08_PENDING_KEYS_54.jsonl",
+      "size_bytes": 12876,
+      "sha256": "3428bd28e1d95009084f85ee3422fccaac1365998b267a13548522da391161c0"
+    },
+    {
+      "path": "inherited/BATCH08_REPORT_KO.md",
+      "size_bytes": 8510,
+      "sha256": "4d2fc4da9d52adac1f6885d8bfceb29a85b32c1ff5ec13fa153c8def752b1416"
+    },
+    {
+      "path": "inherited/BATCH08_REVIEW_SCOPE.json",
+      "size_bytes": 4447,
+      "sha256": "675a4b9b01bd73d694b8a972c12825ce7fc4714a964a735234039028b1721f1e"
+    },
+    {
+      "path": "inherited/BATCH08_SOURCE_FORMAT_NOTES.json",
+      "size_bytes": 245,
+      "sha256": "5b6790f135b6a44ebca59ea13d5f7906e3722cf69923a564ece5257fb63f3399"
+    },
+    {
+      "path": "inherited/BATCH08_SUPPLEMENTAL_CONTEXT_REFERENCES_2.jsonl",
+      "size_bytes": 10557,
+      "sha256": "adb4517c2932599b4561d453510a8d2d172b15e00b4b601c4ff8f4e0c6c0c754"
+    },
+    {
+      "path": "inherited/BATCH08_SUPPLEMENTAL_CONTEXT_SCOPE.json",
+      "size_bytes": 777,
+      "sha256": "5b3564b56c8b4fe7e4b436310b35534d8c65abd2d1e303e8fc20c801e13993fd"
+    },
+    {
+      "path": "tools/verify_batch.py",
+      "size_bytes": 41131,
+      "sha256": "7cbfb92730105910acf0bfade301f560a4a2846bdd2d48ffea5e21c094992cc9"
+    }
+  ]
+}

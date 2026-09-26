@@ -1,0 +1,46 @@
+{
+  "schema": "gc_names_user_acceptance_event_v1",
+  "event_id": "GC-NAMES-4E-USER-ACCEPTANCE-QA01-ALL1070",
+  "authority": "CURRENT_USER_REQUEST_EXPLICIT_ACCEPTANCE",
+  "reported_user_statement": "모두 수락",
+  "recorded_utc": "2026-09-26T11:28:34.982270+00:00",
+  "original_acceptance_timestamp": null,
+  "original_timestamp_note": "Not supplied; recorded_utc is the Codex recording time, not an invented historical approval time.",
+  "scope": "EXACT_NAMES_DISPLAY_VALUES_ONLY",
+  "target_snapshot_id": "gc-u3-sha256:62355171145edc1a19d8e88e9f2def46fa0e9a23f46c8c295742c168ac0be44d",
+  "target_count": 1070,
+  "unchanged_without_special_limitation": 1059,
+  "qa01_amendments": 5,
+  "accepted_with_context_limitations": 6,
+  "accepted_existing_recommendations": 1065,
+  "all_accepted": true,
+  "evidence_completeness_promoted": false,
+  "knowledge_approval_promoted": false,
+  "runtime_verified": false,
+  "production_deployed": false,
+  "merge_authorized": false,
+  "authority_record": "USER_ACCEPTANCE_RECORD_KO.md",
+  "qa01_package_sha256": "75506f9d9d2aeb4d30e958760500eccdc8d050438b14b29c418a9f57e2bb0a71",
+  "amendments": {
+    "誘拐犯": "납치범",
+    "怪しげな男Ａ": "수상쩍은 남자A",
+    "怪しげな男Ｂ": "수상쩍은 남자B",
+    "義妹": "양부모 집의 여동생",
+    "不審な男改め死の芸術家": "죽음의 예술가가 된 수상한 남자"
+  },
+  "context_limited_keys": [
+    "おばさん",
+    "お姉さん",
+    "少年A",
+    "少年B",
+    "画材屋店主",
+    "若者"
+  ],
+  "r34r_m007_boundary": {
+    "historical_approved_change": "수산한 → 수상한",
+    "historical_effective_value": "수상한 남자 바꿔서 죽음의 예술가",
+    "new_accepted_full_value": "죽음의 예술가가 된 수상한 남자",
+    "new_full_value_authority": "GC-NAMES-4E-USER-ACCEPTANCE-QA01-ALL1070",
+    "retroactive_historical_approval": false
+  }
+}
