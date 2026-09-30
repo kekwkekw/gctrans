@@ -16,7 +16,7 @@ BASE_URL = "https://cdn-r18.gc.dmmgames.com"
 ASSET_PATH = "/secure/data/production/webgl/resources/"
 ASSETBUNDLE_MANIFEST = "/files/manifest/webgl/r18/assetbundle.json"
 MASTER_MANIFEST = "/files/manifest/webgl/r18/master.json"
-NOVEL_PATTERN = re.compile(r"notinit/[^/]+/\\w{3}_(\\d{8}|\\d{5,6})\\.dmm$")
+NOVEL_PATTERN = re.compile(r"notinit/[^/]+/\w{3}_(\d{8}|\d{5,6})\.dmm$")
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / os.environ.get("CRAWL_OUTPUT_DIR", "crawl_out")
