@@ -1,0 +1,178 @@
+[
+  {
+    "jp": "ボシュ",
+    "ko": "보스",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "CREATE_ENTITY_OVERLAY",
+    "target_ref": "entity:post20260930:bosch",
+    "do_not_infer_stable_identity": false
+  },
+  {
+    "jp": "ボシュに憧れる男",
+    "ko": "보스를 동경하는 남자",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "ボシュのアンチ",
+    "ko": "보스의 안티",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "ボシュのファン",
+    "ko": "보스의 팬",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "ブグローの生徒",
+    "ko": "부그로의 학생",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "怖いもの好きの少年",
+    "ko": "무서운 걸 좋아하는 소년",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "ファンシー好きの少女",
+    "ko": "귀여운 걸 좋아하는 소녀",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "見物人の女性",
+    "ko": "여성 구경꾼",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "街の人A",
+    "ko": "거리의 사람A",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "街の人B",
+    "ko": "거리의 사람B",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "迷い猫",
+    "ko": "길 잃은 고양이",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "LOCAL_NONHUMAN_SPEAKER_LABEL_NO_GLOBAL_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "猫の飼い主",
+    "ko": "고양이 주인",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "野良猫",
+    "ko": "길고양이",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "LOCAL_NONHUMAN_SPEAKER_LABEL_NO_GLOBAL_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "カフェ店員",
+    "ko": "카페 점원",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "ROLE_OR_CONTEXT_SPEAKER_LABEL_NO_STABLE_ENTITY",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  },
+  {
+    "jp": "フェルメール（オルタ）",
+    "ko": "페르메르(얼터)",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "CREATE_VARIANT_ENTITY_OVERLAY",
+    "target_ref": "entity:post20260930:vermeer_alter",
+    "do_not_infer_stable_identity": false
+  },
+  {
+    "jp": "パルル＆館長",
+    "ko": "파루루 & 관장",
+    "user_approved": true,
+    "canonical_written": true,
+    "canonical_source": "names/zh_Hans.json",
+    "canonical_commit": "f2661c168c25625338e01439ca137ca085b75966",
+    "action": "COMPOSITE_SPEAKER_LABEL_NO_ENTITY_CREATION",
+    "target_ref": null,
+    "do_not_infer_stable_identity": true
+  }
+]

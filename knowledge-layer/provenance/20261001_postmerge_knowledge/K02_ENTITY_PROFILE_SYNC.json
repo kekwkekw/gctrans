@@ -1,0 +1,114 @@
+{
+  "schema": "gc-knowledge-entity-profile-sync-v1",
+  "base_snapshot": "r36",
+  "r36_mutated": false,
+  "canonical_names_commit": "f2661c168c25625338e01439ca137ca085b75966",
+  "new_entity_overlays": [
+    {
+      "entity_id": "entity:post20260930:bosch",
+      "source_name": "ボシュ",
+      "canonical_ko": "보스",
+      "full_source_name_observed": "ヒイロ・ボシュ",
+      "full_ko_observed": "히이로 보스",
+      "name_status": "approved",
+      "entity_fact_status": "reviewing",
+      "guard": "do not import real-world Bosch biography/name/age; full name is only the game-source observation"
+    },
+    {
+      "entity_id": "entity:post20260930:vermeer_alter",
+      "source_name": "フェルメール（オルタ）",
+      "canonical_ko": "페르메르(얼터)",
+      "variant_of": "entity:r18:vermeer",
+      "name_status": "approved",
+      "entity_fact_status": "reviewing",
+      "guard": "separate entity/profile overlay; do not auto-inherit base Vermeer speech, relationships, biography, or all permissions"
+    }
+  ],
+  "new_profile_overlays": [
+    {
+      "profile_id": "profile:post20260930:bosch",
+      "entity_ref": "entity:post20260930:bosch",
+      "status": "reviewing",
+      "sources": [
+        "B01-local-bosch-voice",
+        "B02-bosch-voice",
+        "C03-bosch-current-voice",
+        "C06-local-bosch-address"
+      ]
+    },
+    {
+      "profile_id": "profile:post20260930:vermeer_alter",
+      "entity_ref": "entity:post20260930:vermeer_alter",
+      "status": "reviewing",
+      "sources": [
+        "C04-alter-voice"
+      ]
+    }
+  ],
+  "existing_profile_extension_targets": [
+    {
+      "profile_ref": "profile:3586b603e8de7293",
+      "subject": "マネ",
+      "candidate_id": "C03-manet-voice",
+      "status": "reviewing"
+    },
+    {
+      "profile_ref": "profile:bb404e65c0f6a082",
+      "subject": "セキエン",
+      "candidate_id": "C03-sekien-voice",
+      "status": "reviewing"
+    },
+    {
+      "profile_ref": "profile:r18:vermeer",
+      "subject": "フェルメール",
+      "candidate_id": "C04-original-voice",
+      "status": "reviewing"
+    },
+    {
+      "profile_ref": "profile:cffc08cf3e7e0a2d",
+      "subject": "スキッピオ",
+      "candidate_id": "C05-scipio-speech",
+      "status": "reviewing"
+    },
+    {
+      "profile_ref": "profile:a1c2749a0e6fa9e2",
+      "subject": "ラファエロ",
+      "candidate_id": "C05-raphael-inclusion",
+      "status": "reviewing"
+    },
+    {
+      "profile_ref": "profile:0c27a08a3f9e5305",
+      "subject": "アルテ",
+      "candidate_id": "C06-local-arte-voice-and-care",
+      "status": "reviewing"
+    }
+  ],
+  "existing_entity_relation_extension_targets": [
+    {
+      "entity_ref": "entity:r27:gartelste",
+      "subject": "ガルテルステ",
+      "candidate_id": "B01-local-gartelste-origin",
+      "status": "reviewing"
+    },
+    {
+      "entity_ref": "entity:cffc08cf3e7e0a2d",
+      "subject": "スキッピオ",
+      "candidate_id": "C05-origin-and-sister-simile",
+      "status": "reviewing"
+    }
+  ],
+  "historical_display_sync": [
+    {
+      "entity_ref": "entity:r18:vermeer",
+      "canonical_display_from_names": "페르메르",
+      "historical_profile_observed": "페르메이르",
+      "action": "render canonical; preserve historical evidence record unchanged"
+    },
+    {
+      "entity_ref": "entity:cffc08cf3e7e0a2d",
+      "canonical_display_from_names": "스키피오",
+      "historical_profile_observed": "스킵피오",
+      "action": "render canonical; preserve historical evidence record unchanged"
+    }
+  ]
+}

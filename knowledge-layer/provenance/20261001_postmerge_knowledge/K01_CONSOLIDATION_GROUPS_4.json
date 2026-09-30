@@ -1,0 +1,274 @@
+[
+  {
+    "group_id": "bosch_name",
+    "members": [
+      "B01-local-bosch-name",
+      "B02-bosch-name"
+    ],
+    "target": "entity:post20260930:bosch",
+    "action": "canonical name is approved; entity facts remain reviewing",
+    "evidence_union": [
+      {
+        "novel_id": "20003602",
+        "parsed_index": 17
+      },
+      {
+        "novel_id": "40118011",
+        "parsed_index": 1,
+        "source_sha256": "4a72d766c7a3be2eda03eb580988f909c80c3cd59b5ac1f11f6f5fd070162023"
+      },
+      {
+        "novel_id": "40118032",
+        "parsed_index": 65,
+        "source_sha256": "f1f015065b25c642178006edbef5dc8efb41b1ad4d953ba9c3e511f62b5a1127"
+      }
+    ],
+    "status": "reviewing",
+    "global_promoted": false
+  },
+  {
+    "group_id": "bosch_speech",
+    "members": [
+      "B01-local-bosch-voice",
+      "B02-bosch-voice",
+      "C03-bosch-current-voice",
+      "C06-local-bosch-address"
+    ],
+    "target": "profile:post20260930:bosch",
+    "action": "merge overlapping general-scenario speech/address evidence into one reviewing profile overlay",
+    "evidence_union": [
+      {
+        "novel_id": "20003602",
+        "parsed_index": 20
+      },
+      {
+        "novel_id": "20003602",
+        "parsed_index": 63
+      },
+      {
+        "novel_id": "20003603",
+        "parsed_index": 1
+      },
+      {
+        "novel_id": "20003605",
+        "parsed_index": 44
+      },
+      {
+        "novel_id": "20003605",
+        "parsed_index": 65
+      },
+      {
+        "novel_id": "20003605",
+        "parsed_index": 68
+      },
+      {
+        "novel_id": "20003605",
+        "parsed_index": 83
+      },
+      {
+        "novel_id": "20003605",
+        "parsed_index": 94
+      },
+      {
+        "novel_id": "40118011",
+        "parsed_index": 23,
+        "source_sha256": "3ba1c06753397fece566df38fcae9d278ec03017f21b19b2723d61e2fc7e4b99"
+      },
+      {
+        "novel_id": "40118011",
+        "parsed_index": 37,
+        "source_sha256": "decf6886957580ad0ba4403ab96c118b8dca2ab484126b5c0746f33bbbcbb4a2"
+      },
+      {
+        "novel_id": "40118012",
+        "parsed_index": 53,
+        "source_sha256": "cf15507998d947d0080169fba185ede888a6894e11dfcc5252251eb088a161a2"
+      },
+      {
+        "novel_id": "40118022",
+        "parsed_index": 49,
+        "source_sha256": "06ab092ad45c3a065281b1b004cee4251cc176db90d1179cd3aa04aa2fded379"
+      },
+      {
+        "novel_id": "40118032",
+        "parsed_index": 35,
+        "source_sha256": "5e3984fab54e25ec29c4fe4476eda257cd1144c8f441b0c55c8e3252bfba5604"
+      },
+      {
+        "novel_id": "40118032",
+        "parsed_index": 46,
+        "source_sha256": "cf2828b048a22801482d66e28d3c9c41fea61159ddd14b89daea9f4913528460"
+      },
+      {
+        "novel_id": "22003504",
+        "parsed_index": 53,
+        "speaker_jp": "ボシュ",
+        "source_sha256": "8ba438680ed751e6fd19adf3cea48f693ef45236a9aeff10b516176bf0427e5e"
+      },
+      {
+        "novel_id": "22003505",
+        "parsed_index": 18,
+        "speaker_jp": "ボシュ",
+        "source_sha256": "38b127da2e31e651cd08eaac00ca411d25bb29aa4ef982dac6432bfa6d716279"
+      },
+      {
+        "novel_id": "22003505",
+        "parsed_index": 64,
+        "speaker_jp": "ボシュ",
+        "source_sha256": "ce8cbc53514fce139652189a797a3dcd410b2e3e4486fbddcc87496f941cbd1d"
+      },
+      {
+        "novel_id": "22003505",
+        "parsed_index": 70,
+        "speaker_jp": "ボシュ",
+        "source_sha256": "bbbc6f3e2999a5c0e54121144d2ebad30c32912995c911b30f77c1c7aa8cb6dd"
+      },
+      {
+        "novel_id": "22003505",
+        "parsed_index": 71,
+        "speaker_jp": "ボシュ",
+        "source_sha256": "2aebb977921dfd8216796525ae52db5502ea6655268fce6747a2c86e30cd5486"
+      },
+      {
+        "novel_id": "40101142",
+        "parsed_index": 41,
+        "speaker_jp": "ボシュ",
+        "jp_sha256": "6ba49265456a8e21f40e300404797580582473e8997d212961d0c0ef5585ad4f"
+      },
+      {
+        "novel_id": "40101142",
+        "parsed_index": 47,
+        "speaker_jp": "ボシュ",
+        "jp_sha256": "19b94012c47e2cf74387a43c3ac37ad5863889fc0dedf9c49c4a8d8e099e4431"
+      }
+    ],
+    "status": "reviewing",
+    "global_promoted": false
+  },
+  {
+    "group_id": "gartelste_speech",
+    "members": [
+      "B01-local-gartelste-voice",
+      "B02-gartelste-voice"
+    ],
+    "target": "entity:r27:gartelste",
+    "action": "existing entity; create reviewing profile extension overlay rather than mutate R36",
+    "evidence_union": [
+      {
+        "novel_id": "20003601",
+        "parsed_index": 43
+      },
+      {
+        "novel_id": "20003601",
+        "parsed_index": 54
+      },
+      {
+        "novel_id": "20003602",
+        "parsed_index": 66
+      },
+      {
+        "novel_id": "20003602",
+        "parsed_index": 68
+      },
+      {
+        "novel_id": "20003605",
+        "parsed_index": 86
+      },
+      {
+        "novel_id": "40118021",
+        "parsed_index": 14,
+        "source_sha256": "733e5e8e1f6a3a1da69d39503eb7ce47a1148abef9af72d5349d026b580d5ca4"
+      },
+      {
+        "novel_id": "40118021",
+        "parsed_index": 18,
+        "source_sha256": "a9b42cff1b7b5d3bf3e324b2f93cf983fd7dbc6af9cd3f7e0a085f88850c5e20"
+      },
+      {
+        "novel_id": "40118021",
+        "parsed_index": 21,
+        "source_sha256": "9170900589ec8504da448bf9ea0cffaa695c186a879a0ab3ca446beb9bcb9cfe"
+      },
+      {
+        "novel_id": "40118021",
+        "parsed_index": 25,
+        "source_sha256": "e16875cf8c2d40b84118155b6b7100fc1239ff768cb8f88a47ac00a359421b0d"
+      },
+      {
+        "novel_id": "40118021",
+        "parsed_index": 31,
+        "source_sha256": "ae3fa0ccb0f2072b7457748bb2070086b777e8e7d7b802fa7b70e905500c5035"
+      }
+    ],
+    "status": "reviewing",
+    "global_promoted": false
+  },
+  {
+    "group_id": "bosch_aesthetics",
+    "members": [
+      "B01-local-bosch-aesthetics",
+      "B02-aesthetic-and-exceptions"
+    ],
+    "target": "claim-guard:post20260930:bosch-aesthetics",
+    "action": "merge later explicit exception into the same scoped guard; not a global world fact",
+    "evidence_union": [
+      {
+        "novel_id": "20003602",
+        "parsed_index": 28
+      },
+      {
+        "novel_id": "20003604",
+        "parsed_index": 16
+      },
+      {
+        "novel_id": "20003605",
+        "parsed_index": 69
+      },
+      {
+        "novel_id": "20003605",
+        "parsed_index": 74
+      },
+      {
+        "novel_id": "20003605",
+        "parsed_index": 83
+      },
+      {
+        "novel_id": "40118022",
+        "parsed_index": 49,
+        "source_sha256": "06ab092ad45c3a065281b1b004cee4251cc176db90d1179cd3aa04aa2fded379"
+      },
+      {
+        "novel_id": "40118022",
+        "parsed_index": 51,
+        "source_sha256": "3e40063e5833c19baeb654bb755895eaaf0f8530974847af63e741b065a925cb"
+      },
+      {
+        "novel_id": "40118022",
+        "parsed_index": 54,
+        "source_sha256": "90a58a0f1382038022d7ee6a79f5acd3cad09c30aa75038a174ee63dac5daa2a"
+      },
+      {
+        "novel_id": "40118022",
+        "parsed_index": 56,
+        "source_sha256": "a6d734414b0b3c6e6cbc0ae7e653fcb735df637207981fe5f7fbdf65c2acd2dd"
+      },
+      {
+        "novel_id": "40118022",
+        "parsed_index": 57,
+        "source_sha256": "42e086ce17d33cd1cd5932cf2111c7a2d72f3fd7c661a1cfa0737df3506a8dac"
+      },
+      {
+        "novel_id": "40118032",
+        "parsed_index": 33,
+        "source_sha256": "7223a9d0636104cd11b6362482426abda2633d9fa70306e4f27e44ea9d125ef3"
+      },
+      {
+        "novel_id": "40118032",
+        "parsed_index": 34,
+        "source_sha256": "9c62cab86fa885011c7ad2e92503e7b4814bd672cad9610e512a8a2bbc52904c"
+      }
+    ],
+    "status": "reviewing",
+    "global_promoted": false
+  }
+]
