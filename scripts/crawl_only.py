@@ -167,6 +167,18 @@ def main() -> None:
                 "see crawl_out/audit/duplicate_novel_ids.json"
             )
 
+        if assetbundle.get("d") and not novel_assets:
+            write_json(
+                OUTPUT_DIR / "audit" / "novel_pattern_no_matches.json",
+                {
+                    "assetbundle_entries": len(assetbundle.get("d", [])),
+                    "novel_pattern": NOVEL_PATTERN.pattern,
+                },
+            )
+            raise RuntimeError(
+                "Official asset manifest was fetched but no novel assets matched the crawler pattern"
+            )
+
         missing_from_manifest = [novel_id for novel_id in forced_ids if novel_id not in novel_assets]
         if missing_from_manifest:
             write_json(
