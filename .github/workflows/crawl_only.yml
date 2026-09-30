@@ -1,0 +1,74 @@
+name: Crawl Only - Official Scenario Assets
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_ids:
+        description: "Optional novel IDs to force-crawl (comma/space separated). Leave blank for new IDs only."
+        required: false
+        default: ""
+        type: string
+      max_candidates:
+        description: "Safety limit for candidate count. Set 0 for unlimited."
+        required: true
+        default: "200"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: crawl-only-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    name: Crawl official DMM scenario assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install crawler dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Crawl official scenario assets only
+        env:
+          CRAWL_SOURCE_IDS: ${{ inputs.source_ids }}
+          CRAWL_MAX_CANDIDATES: ${{ inputs.max_candidates }}
+          CRAWL_OUTPUT_DIR: crawl_out
+        run: python scripts/crawl_only.py
+
+      - name: Verify crawler did not modify tracked repository files
+        run: |
+          git diff --exit-code
+          git diff --cached --exit-code
+
+      - name: Publish crawl summary
+        if: always()
+        run: |
+          if [ -f crawl_out/SUMMARY.md ]; then
+            cat crawl_out/SUMMARY.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload crawl artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gctrans-crawl-only-${{ github.run_id }}-${{ github.run_attempt }}
+          path: crawl_out/
+          if-no-files-found: error
+          retention-days: 7
