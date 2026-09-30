@@ -16,7 +16,7 @@ BASE_URL = "https://cdn-r18.gc.dmmgames.com"
 ASSET_PATH = "/secure/data/production/webgl/resources/"
 ASSETBUNDLE_MANIFEST = "/files/manifest/webgl/r18/assetbundle.json"
 MASTER_MANIFEST = "/files/manifest/webgl/r18/master.json"
-NOVEL_PATTERN = re.compile(r"notinit/[^/]+/\\w{3}_(\\d{8}|\\d{5,6})\\.dmm$")
+NOVEL_PATTERN = re.compile(r"notinit/[^/]+/\w{3}_(\d{8}|\d{5,6})\.dmm$")
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / os.environ.get("CRAWL_OUTPUT_DIR", "crawl_out")
@@ -165,6 +165,18 @@ def main() -> None:
             raise RuntimeError(
                 "Duplicate novel IDs detected in official asset manifest; "
                 "see crawl_out/audit/duplicate_novel_ids.json"
+            )
+
+        if assetbundle.get("d") and not novel_assets:
+            write_json(
+                OUTPUT_DIR / "audit" / "novel_pattern_no_matches.json",
+                {
+                    "assetbundle_entries": len(assetbundle.get("d", [])),
+                    "novel_pattern": NOVEL_PATTERN.pattern,
+                },
+            )
+            raise RuntimeError(
+                "Official asset manifest was fetched but no novel assets matched the crawler pattern"
             )
 
         missing_from_manifest = [novel_id for novel_id in forced_ids if novel_id not in novel_assets]
