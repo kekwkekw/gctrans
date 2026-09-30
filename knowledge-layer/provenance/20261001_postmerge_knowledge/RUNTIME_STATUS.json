@@ -1,0 +1,11 @@
+{
+  "schema": "gc-runtime-status-v1",
+  "status": "INCONCLUSIVE",
+  "observed": "some smoke-tested scenes showed line-break pressure/overflow-like behavior",
+  "suspected_contributor": "current Korean font is substantially heavier/wider than original; user plans font replacement",
+  "translation_linebreak_fault_confirmed": false,
+  "runtime_pass_confirmed": false,
+  "runtime_fail_confirmed": false,
+  "pipeline_baseline_advance_allowed": false,
+  "knowledge_k01_k02_allowed": true
+}

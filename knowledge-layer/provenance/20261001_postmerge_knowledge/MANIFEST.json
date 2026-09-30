@@ -1,0 +1,42 @@
+{
+  "schema": "gc-k-checkpoint-package-manifest-v1",
+  "files": [
+    {
+      "name": "README_KO.md",
+      "sha256": "4dc87c3981e227adcf7f3a669958fa724884868925ab65f406ef38c0f578ae23",
+      "size": 2096
+    },
+    {
+      "name": "CHECKPOINT.json",
+      "sha256": "8ccc027f5403cf2a7e9fca7df1dfa60e3e5265154747c89e5079b55d36b589b8",
+      "size": 1648
+    },
+    {
+      "name": "K01_CANDIDATE_ADJUDICATION_57.json",
+      "sha256": "1bcd564805b9bf8edc306dedfd4f978684736675d2458397bcf6b2fef1762d3c",
+      "size": 28185
+    },
+    {
+      "name": "K01_CONSOLIDATION_GROUPS_4.json",
+      "sha256": "417586a449fea322817a379bb25700f73af8879b5771a36447c0fe9293e6aba6",
+      "size": 7735
+    },
+    {
+      "name": "K02_NAMES_CANONICAL_SYNC_16.json",
+      "sha256": "b6f8b1c6f2c8853f1ed9c1c33d28e590ab3d59d1ea056adb63f2cdebc5014334",
+      "size": 6007
+    },
+    {
+      "name": "K02_ENTITY_PROFILE_SYNC.json",
+      "sha256": "bf8748f7f8384af55b872b23f8f316f4b7a5529700568188dfb04bedbf4bcf31",
+      "size": 3585
+    },
+    {
+      "name": "RUNTIME_STATUS.json",
+      "sha256": "b1e208226886e92b7f4979e335f22b282f8ced6b329279b5f0694791a53179f3",
+      "size": 486
+    }
+  ],
+  "omitted_source_copy": "SOURCE_LOCAL_KNOWLEDGE_CANDIDATES_57.json",
+  "omission_reason": "source candidates already preserved in parent FINAL_PRO package; avoid duplicate repo payload"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "gc-knowledge-postmerge-checkpoint-v1",
+  "status": "K01_K02_COMPLETE_RUNTIME_UNRESOLVED",
+  "base_knowledge_snapshot": "knowledge-layer/snapshots/r36",
+  "translation_merge_commit": "f2661c168c25625338e01439ca137ca085b75966",
+  "source_crawl_run": 36726264989,
+  "source_crawl_artifact": 11102981128,
+  "names_main_count": 1086,
+  "names_main_blob_sha": "f535c11384eff6cbdb3b3a1e9ad79f38070d07f6",
+  "approved_new_names": 16,
+  "knowledge_input_candidates": 57,
+  "logical_candidate_units_after_dedup": 51,
+  "consolidation_groups": 4,
+  "new_conflicts_introduced": 0,
+  "existing_open_conflicts_unchanged": [
+    "conflict:character-name:angle",
+    "conflict:organization:athenes-police"
+  ],
+  "knowledge_global_promotions": 0,
+  "r36_mutated": false,
+  "pipeline_baseline_advanced": false,
+  "runtime_status": "INCONCLUSIVE",
+  "action_counts": {
+    "CONSOLIDATE_CANONICAL_NAME_LINKED_NEW_ENTITY": 2,
+    "CONSOLIDATE_NEW_PROFILE_CANDIDATE": 4,
+    "CONSOLIDATE_LINKED_EXISTING_ENTITY_NEW_PROFILE": 2,
+    "EXTEND_EXISTING_ENTITY_RELATION_CANDIDATE": 2,
+    "KEEP_LOCAL_SCOPED_CLAIM_OR_GUARD": 31,
+    "CONSOLIDATE_LOCAL_CLAIM_GUARD": 2,
+    "EXTEND_EXISTING_PROFILE_CANDIDATE": 6,
+    "KEEP_LOCAL_RELATION_OR_ADDRESS_CANDIDATE": 5,
+    "KEEP_LOCAL_ENTITY_GUARD_CANDIDATE": 1,
+    "NEW_VARIANT_ENTITY_CANDIDATE": 1,
+    "NEW_VARIANT_PROFILE_CANDIDATE": 1
+  },
+  "parent_final_pro_review_zip_sha256": "de74ba1ebb264468c6b2eed0c537ec7014c27a4ef12ae757d5b6fc27ab658b88",
+  "source_candidates_origin": "GC_20260930_FINAL_PRO_REVIEW_v1/context/LOCAL_KNOWLEDGE_CANDIDATES_ALL_57.json",
+  "source_candidates_copied_into_repo": false
+}
