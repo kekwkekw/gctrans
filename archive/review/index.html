@@ -9,7 +9,7 @@
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg)}
 header{background:linear-gradient(135deg,#17233f,#30477f);color:#fff;padding:22px 26px}.eyebrow{font-size:11px;letter-spacing:.13em;font-weight:800;opacity:.78}
 h1{margin:5px 0 7px;font-size:27px}header p{margin:0;max-width:1100px;color:#e7ecff;line-height:1.55;font-size:13px}
-.badges{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.badge{font-size:11px;border:1px solid #ffffff32;background:#ffffff14;border-radius:999px;padding:4px 8px}
+.badges{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.badge{font-size:11px;border:1px solid #ffffff32;background:#ffffff14;border-radius:999px;padding:4px 8px}.badgeLink{color:#fff;text-decoration:none;font-weight:750}.badgeLink:hover{background:#ffffff24}
 .notice{margin:13px 16px;background:#fff9e9;border:1px solid #ecd99d;border-left:5px solid #d19a18;border-radius:9px;padding:10px 13px;font-size:12px;line-height:1.55}
 .shell{display:grid;grid-template-columns:340px minmax(0,1fr);gap:13px;padding:0 16px 16px;height:calc(100vh - 210px);min-height:620px}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden}.tools{padding:12px;border-bottom:1px solid var(--line);background:#fbfcfe}
@@ -42,7 +42,7 @@ footer{text-align:center;color:var(--muted);font-size:10px;padding:0 14px 14px}
 <body>
 <header><div class="eyebrow">GIRLS' CREATION · PUBLIC REVIEW ARCHIVE · CDN VIEWER v1.0</div><h1>걸크리 공개 검수 아카이브</h1>
 <p>R1~R35의 공개 검수 기록을 원래 구조에 맞춰 탐색합니다. R2는 R3에 보존된 한 건의 내장 기록이며 독립 원본 round가 아닙니다. 원본 HTML도 함께 보존합니다.</p>
-<div class="badges"><span class="badge" id="range">manifest 로딩 중</span><span class="badge">Lazy load</span><span class="badge">Typed JSON + legacy</span><span class="badge">정본 checkpoint와 별개</span></div></header>
+<div class="badges"><span class="badge" id="range">manifest 로딩 중</span><span class="badge">Lazy load</span><span class="badge">Typed JSON + legacy</span><span class="badge">정본 checkpoint와 별개</span><a class="badge badgeLink" href="./accepted/chapter12/">12장 최종 수락 번역 보기</a></div></header>
 <div class="notice"><b>v1.0 typed archive:</b> R1 alignment · R2 embedded · R3 boundary/proposal ledger · R4 MAIN/REVIEW/CONTEXT bundle · R5~R18/R35 기존 review JSON · R19~R34 복구 review JSON. 35개 항목과 34개 JSON 파일이며 R36은 포함하지 않습니다. 보류·다른 round의 복귀 overlay·원문 진단을 검수 본문과 구분합니다. 실제 번역 적용·게임 실행·전역 용어 승인 checkpoint를 대체하지 않습니다. JSON 로딩 실패 시 원본 HTML로 전환합니다.</div>
 <main class="shell">
 <section class="panel"><div class="tools"><input id="q" type="search" placeholder="R번호 · 이벤트 · 캐릭터 · 상태 검색"><div class="meta"><span class="pill" id="count">0 rounds</span><span class="pill warn" id="summaryCount">0 summary</span><span class="pill good" id="jsonCount">0 structured entries</span></div></div><div class="list" id="list"></div></section>
