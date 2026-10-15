@@ -1,0 +1,3045 @@
+{
+  "locale": "ko",
+  "resources": [
+    {
+      "disposition": "translate",
+      "id": "ui.battle.REQUIRED-PASSION.e07467870f14eefd",
+      "jp": "必要熱情",
+      "kind": "template_label",
+      "ko": "필요 열정",
+      "role": "necessary_passion_title_only"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-001dbe4c0f2ce889.afa91ed8051092ec",
+      "jp": "射程",
+      "kind": "literal",
+      "ko": "사거리",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-0074246c620744c8.44bc8328ef3ffe1e",
+      "jp": "エネミー情報",
+      "kind": "literal",
+      "ko": "적 정보",
+      "role": "battle-caption-b02"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-023e40df30c04164.86096363c2a752b7",
+      "jp": "<color=#8d807a>or</color>右<cspace=-0.1em>ダブルクリック</cspace>",
+      "kind": "literal",
+      "ko": "<color=#8d807a>또는</color> 오른쪽 <cspace=-0.1em>더블 클릭</cspace>",
+      "role": "battle-caption-b03_or_b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-07b3039ec4754028.9a3e586f705dcdb1",
+      "jp": "移動",
+      "kind": "literal",
+      "ko": "이동",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-087515fab898cacb.8b4497f84424bdd5",
+      "jp": "バトル詳細",
+      "kind": "literal",
+      "ko": "전투 상세",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-0abd91f3c8af114d.a00e6317513480d2",
+      "jp": "技法",
+      "kind": "literal",
+      "ko": "기법",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-0e6def937f1b8657.2a00bf0a69872282",
+      "jp": "技法/インスピレーション",
+      "kind": "literal",
+      "ko": "기법/영감",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-10e181aad1287191.1f5bfe4f1fa0fd04",
+      "jp": "カスタム設定",
+      "kind": "literal",
+      "ko": "사용자 설정",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-1771aeba51a8d2f9.d20798ca8bdf3c34",
+      "jp": "必要熱情",
+      "kind": "literal",
+      "ko": "필요 열정",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-192ce6d2be72c345.af5a56b62fdec8d4",
+      "jp": "歩行",
+      "kind": "literal",
+      "ko": "보행",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-1984ca8d02574e55.0a770f7abc381a4c",
+      "jp": "必要熱情",
+      "kind": "literal",
+      "ko": "필요 열정",
+      "role": "battle-caption-b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-1b1147cda6d8b233.a2703223ad68394d",
+      "jp": "OFFにするとスキル演出を省略します",
+      "kind": "literal",
+      "ko": "OFF로 설정하면 스킬 연출을 생략합니다.",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-1bed323673ccea4a.301b63c3af5a2f10",
+      "jp": "命中",
+      "kind": "literal",
+      "ko": "명중",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-217790bdf0a20c99.eb9982c5132d9f0d",
+      "jp": "設定保存",
+      "kind": "literal",
+      "ko": "설정 저장",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-23ce361f8d8e448a.77e11618e9903fcc",
+      "jp": "感電",
+      "kind": "literal",
+      "ko": "감전",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-28b7507b6a155326.1733f41c0614690d",
+      "jp": "ありません",
+      "kind": "literal",
+      "ko": "없음",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-2c87cdb122e65e0f.4e747a23fa380212",
+      "jp": "範囲",
+      "kind": "literal",
+      "ko": "범위",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-32b567d6a6f924fe.cce671b8c8cde167",
+      "jp": "パッシブ",
+      "kind": "literal",
+      "ko": "패시브",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-3327ff8ad3f02f15.4b6876420c468941",
+      "jp": "物理",
+      "kind": "literal",
+      "ko": "물리",
+      "role": "battle-caption-b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-3407eadead7c2c5a.6ba486c6841a6062",
+      "jp": "待機",
+      "kind": "literal",
+      "ko": "대기",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-3de973caa5eb8c93.a81dd6fe51fa2086",
+      "jp": "インストラクション表示",
+      "kind": "literal",
+      "ko": "조작 안내 표시",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-3f0db01ed5351081.c9b56420e27954a1",
+      "jp": "カスタム設定時に有効になります",
+      "kind": "literal",
+      "ko": "사용자 설정일 때 적용됩니다",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-40707dec5fe3e3c1.af309d5d32344d13",
+      "jp": "技法/インスピレーション",
+      "kind": "literal",
+      "ko": "기법/영감",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-40c0ad5377d5ae28.1571a29707db14d7",
+      "jp": "猛毒",
+      "kind": "literal",
+      "ko": "맹독",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-4200500923aa1acd.7948f0d97f65af71",
+      "jp": "必殺",
+      "kind": "literal",
+      "ko": "필살",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-42ebadaab7566244.bae84defa5f1fdfd",
+      "jp": "弱点<cspace=-0.1em>エレメント</cspace>",
+      "kind": "literal",
+      "ko": "약점<cspace=-0.1em>원소</cspace>",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-43f16e1330e660d9.f828a788b024ca61",
+      "jp": "再戦する",
+      "kind": "literal",
+      "ko": "재전투",
+      "role": "battle-caption-b07"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-45970e77bc8b3a9d.7bf3d4ad587023e5",
+      "jp": "系統\r\n傾向\n",
+      "kind": "literal",
+      "ko": "계열\r\n성향\n",
+      "role": "battle-caption-b02"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-469b3e3cb2477c65.c4d6a91d0c8f7378",
+      "jp": "演出\nON",
+      "kind": "literal",
+      "ko": "연출\nON",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-4828d6947230d40a.894bad2cce5c45a7",
+      "jp": "移動先を選択するか移動経路を現在位置からなぞって指定してください",
+      "kind": "literal",
+      "ko": "이동할 곳을 선택하거나 현재 위치에서 이동 경로를 그려 주세요.",
+      "role": "battle-caption-b03_or_b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-49e85a17c252896e.99f3fabb6da9820e",
+      "jp": "OFFにするとスキル演出を省略します",
+      "kind": "literal",
+      "ko": "OFF로 설정하면 스킬 연출을 생략합니다.",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-4cfb7d8ee4b7e5fc.ca15c8ba241cba10",
+      "jp": "物理",
+      "kind": "literal",
+      "ko": "물리",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-4e9a169ba11fb7d4.db26aca6500e6874",
+      "jp": "カスタム設定時に有効になります",
+      "kind": "literal",
+      "ko": "사용자 설정일 때 적용됩니다",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-52c4dcda1ac3b584.d09b6a5b5dc22157",
+      "jp": "回避",
+      "kind": "literal",
+      "ko": "회피",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-539cf42c38fcef24.dfb9879c8aad37ea",
+      "jp": "2倍速",
+      "kind": "literal",
+      "ko": "2배속",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-551a1901f6df6da6.2842dc0379689121",
+      "jp": "抵抗",
+      "kind": "literal",
+      "ko": "저항",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-59818beaaec3c397.172664ec8be908ba",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-5a218ebdbfd1fcfb.7a7641a0b73fb4a9",
+      "jp": "推奨戦闘力",
+      "kind": "literal",
+      "ko": "권장 전투력",
+      "role": "battle-caption-b02"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-5ddf7bcaba12e5ca.e2e82a52e2cfb7c1",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-5e46421020f235d8.a5471766f41b7238",
+      "jp": "所持スキル",
+      "kind": "literal",
+      "ko": "보유 스킬",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-724da5126c6d4b4b.8779b5d4195e752f",
+      "jp": "次のRANKまで",
+      "kind": "literal",
+      "ko": "다음 RANK까지",
+      "role": "battle-caption-b07"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-75d025fb8c3a0e96.a808b872ba95a5fa",
+      "jp": "必殺",
+      "kind": "literal",
+      "ko": "필살",
+      "role": "battle-caption-b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-78257e77c2bcf125.9d89a55acf86a288",
+      "jp": "コンティニュー不可",
+      "kind": "literal",
+      "ko": "이어하기 불가",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-7d9515c8fb79797d.b8502ecdb876d0aa",
+      "jp": "リトライ",
+      "kind": "literal",
+      "ko": "재도전",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-8227ce76aa29461b.516ec77accfd5e58",
+      "jp": "設定保存",
+      "kind": "literal",
+      "ko": "설정 저장",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-8813c33f6ff406d5.9a13e38fc9be4a30",
+      "jp": "移動経路をなぞるか発動範囲を選択してください",
+      "kind": "literal",
+      "ko": "이동 경로를 그리거나 발동 범위를 선택해 주세요.",
+      "role": "battle-caption-b03_or_b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-8850beb042fc968b.61a79d14cc525c35",
+      "jp": "このバトルではメモリーを編成できません",
+      "kind": "literal",
+      "ko": "이 전투에서는 메모리를 편성할 수 없습니다",
+      "role": "battle-caption-b02"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-88796ce6e19f9375.f94e55d83c01121c",
+      "jp": "クールタイム",
+      "kind": "literal",
+      "ko": "쿨타임",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-8c32f0edea7391a6.fb9cbf4bf4ee53f7",
+      "jp": "設定",
+      "kind": "literal",
+      "ko": "설정",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-8c99ff8d45978b5d.96a205aa9dc6c138",
+      "jp": "水",
+      "kind": "literal",
+      "ko": "물",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-8dca5aa92883523f.ac9d64cd98d86d99",
+      "jp": "クールタイム",
+      "kind": "literal",
+      "ko": "쿨타임",
+      "role": "battle-caption-b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-8efebf0eac498ddc.a143e7f10515c4cc",
+      "jp": "報酬",
+      "kind": "literal",
+      "ko": "보상",
+      "role": "battle-caption-b02"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-9018e46feae52de2.1e5583a5ab02b2cd",
+      "jp": "バトル詳細",
+      "kind": "literal",
+      "ko": "전투 상세",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-9b8292e17ba0d979.701aefe524082cdf",
+      "jp": "火傷",
+      "kind": "literal",
+      "ko": "화상",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-a127affb89b1cc53.38ba5f863c7ff155",
+      "jp": "範囲",
+      "kind": "literal",
+      "ko": "범위",
+      "role": "battle-caption-b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-a6e49d297481cd81.642750f79d1cc3ff",
+      "jp": "設定",
+      "kind": "literal",
+      "ko": "설정",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-a6f99c1b43d847cc.e1c77056ca9d3ac1",
+      "jp": "気絶",
+      "kind": "literal",
+      "ko": "기절",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-ac91f9887362599c.43a3cab369139d29",
+      "jp": "カスタム設定",
+      "kind": "literal",
+      "ko": "사용자 설정",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-adf25127a280363a.9e1ed35738fdc78a",
+      "jp": "熱情",
+      "kind": "literal",
+      "ko": "열정",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-b14d00b895a87b4a.3bffd398b7df123b",
+      "jp": "次へ",
+      "kind": "literal",
+      "ko": "다음",
+      "role": "battle-caption-b07"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-b223dcb5c4e20be4.1fcab7b49f53ce36",
+      "jp": "撤退",
+      "kind": "literal",
+      "ko": "후퇴",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-b231ce5dce64b5c5.68b1871f3cd17aae",
+      "jp": "技法",
+      "kind": "literal",
+      "ko": "기법",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-b350068b5ba83b6b.687836eed0b8b428",
+      "jp": "スキル演出省略",
+      "kind": "literal",
+      "ko": "스킬 연출 생략",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-b6baa4d794943d86.1ddcd598020d1549",
+      "jp": "命中",
+      "kind": "literal",
+      "ko": "명중",
+      "role": "battle-caption-b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-bae875e954ee93ca.bc9c05e10e1d41bc",
+      "jp": "体力",
+      "kind": "literal",
+      "ko": "체력",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-bc6b1ef6c3703d3c.a61ddd18c2a6a00b",
+      "jp": "待機",
+      "kind": "literal",
+      "ko": "대기",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-c5d839c6f7137888.3d6bee064e85762a",
+      "jp": "睡眠",
+      "kind": "literal",
+      "ko": "수면",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-c6b3d37e03ebe264.32a36919d25a578e",
+      "jp": "系統",
+      "kind": "literal",
+      "ko": "계열",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-cd6bd9a3487c2a3a.77b02cda4fb84127",
+      "jp": "技法",
+      "kind": "literal",
+      "ko": "기법",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-d6a054121028ca39.e60d30827e5fcd6b",
+      "jp": "技法",
+      "kind": "literal",
+      "ko": "기법",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-db1840c7948bba61.54177cbe8456b074",
+      "jp": "クリアランク",
+      "kind": "literal",
+      "ko": "클리어 등급",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-dca1f3ca2728b07e.b97b1fa209a0f02b",
+      "jp": "射程",
+      "kind": "literal",
+      "ko": "사거리",
+      "role": "battle-caption-b04"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-de57bde87ee43b4c.4a7b35305c11d2b8",
+      "jp": "物理",
+      "kind": "literal",
+      "ko": "물리",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-e070e8d268dbdf21.726be06934ac9410",
+      "jp": "受流",
+      "kind": "literal",
+      "ko": "흘리기",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-e26cff2c84efa456.bce613171c09df2f",
+      "jp": "スキル演出省略",
+      "kind": "literal",
+      "ko": "스킬 연출 생략",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-e552403323eb76ce.afdc4161e655809e",
+      "jp": "技法",
+      "kind": "literal",
+      "ko": "기법",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-e81653eff73acd66.874e3066aef56940",
+      "jp": "チーム戦闘力",
+      "kind": "literal",
+      "ko": "팀 전투력",
+      "role": "battle-caption-b02"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-f013e6b49019f2e3.393501ecc5be24d0",
+      "jp": "通常攻撃",
+      "kind": "literal",
+      "ko": "일반 공격",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-f3fbaa2f8ffda44f.0f437400951724a9",
+      "jp": "インストラクション表示",
+      "kind": "literal",
+      "ko": "조작 안내 표시",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-f7dda06f0ce6cdec.f34c357f7aa7811a",
+      "jp": "獲得した報酬",
+      "kind": "literal",
+      "ko": "획득 보상",
+      "role": "battle-caption-b07"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-f92d64495be59e19.7924c2edb7b559fb",
+      "jp": "入魂\nON",
+      "kind": "literal",
+      "ko": "입혼\nON",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-f98cccf914c2665a.7e016cb9b8630c43",
+      "jp": "コンティニュー不可",
+      "kind": "literal",
+      "ko": "이어하기 불가",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-fb3660e5db853923.dbdbb39a04f6760c",
+      "jp": "出撃する",
+      "kind": "literal",
+      "ko": "출격",
+      "role": "battle-caption-b02"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-fcf8c836d9aa6c56.94252cc6a2455403",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-fd328fda7d3df616.3e6fa0921d6c1484",
+      "jp": "影縫",
+      "kind": "literal",
+      "ko": "그림자 묶기",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI16-BIND-ff055e2ffb9bc79e.c8e30b94d06dde1f",
+      "jp": "技法",
+      "kind": "literal",
+      "ko": "기법",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S001-60d628f9d5d9.fa562998bf8c9658",
+      "jp": "誘惑",
+      "kind": "literal",
+      "ko": "유혹",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S002-84d5ea34a761.bf8962a87e49fc65",
+      "jp": "停滞",
+      "kind": "literal",
+      "ko": "정체",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S003-38c305822364.4201c09ad3cbc7eb",
+      "jp": "呪い",
+      "kind": "literal",
+      "ko": "저주",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S004-b04b91886a82.b67480a2ca41c126",
+      "jp": "物理の刻印",
+      "kind": "literal",
+      "ko": "물리의 각인",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S005-4ba4c4b3d9dd.0cb5c657399b3632",
+      "jp": "炎の刻印",
+      "kind": "literal",
+      "ko": "불의 각인",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S006-f9148c27a702.fa33a92d7c624b17",
+      "jp": "水の刻印",
+      "kind": "literal",
+      "ko": "물의 각인",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S007-6022a71bc839.914ab5f7a6b7cf12",
+      "jp": "風の刻印",
+      "kind": "literal",
+      "ko": "바람의 각인",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S008-083fdda7a32b.a6e380d372725f6d",
+      "jp": "雷の刻印",
+      "kind": "literal",
+      "ko": "번개의 각인",
+      "role": "battle-caption-b01"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S009-31664047a398.f62e3f542e2c6be8",
+      "jp": "演出\nOFF",
+      "kind": "literal",
+      "ko": "연출\nOFF",
+      "role": "battle-caption-b03"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S010-3a23f9e966ac.50bae5b01a17744e",
+      "jp": "ＯＮにすると行動毎に操作説明が表示されます",
+      "kind": "literal",
+      "ko": "ON으로 설정하면 행동할 때마다 조작 안내가 표시됩니다.",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S011-cc4f3cf2418c.7cd4ffc5dee6c278",
+      "jp": "移動決定確認省略",
+      "kind": "literal",
+      "ko": "이동 확인 생략",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S012-128274841b29.8d793ddde5d7c64a",
+      "jp": "ONにすると移動操作時に確認表示を省略します",
+      "kind": "literal",
+      "ko": "ON으로 설정하면 이동 조작 시 확인 표시를 생략합니다.",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S013-cdaa74063e9f.ab73d103017efc32",
+      "jp": "入魂操作形式選択",
+      "kind": "literal",
+      "ko": "입혼 조작 방식",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S014-40fb529d1e49.53b64dac24008dd7",
+      "jp": "入魂の操作方法を変更できます",
+      "kind": "literal",
+      "ko": "입혼 조작 방식을 변경할 수 있습니다.",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S015-8b3c5b730d5f.c94af247ff59b485",
+      "jp": "絶技",
+      "kind": "literal",
+      "ko": "절기",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S016-58f069e18c2f.53e1353cae4ed41a",
+      "jp": "エネミースキル",
+      "kind": "literal",
+      "ko": "적 스킬",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S017-76f17a6472a3.1f950de1049f8035",
+      "jp": "スライド操作時",
+      "kind": "literal",
+      "ko": "슬라이드 조작 시",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI17-S018-9ac3514eb2ec.7e9a77f45efc8cd6",
+      "jp": "セレクト操作時",
+      "kind": "literal",
+      "ko": "선택 조작 시",
+      "role": "battle-caption-b06"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI18-B05-UI16-BIND-32b567d6a6f924fe.e9ba0e49d82b0908",
+      "jp": "パッシブ",
+      "kind": "literal",
+      "ko": "패시브",
+      "role": "battle-caption-b05"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.battle.UI18-B05-UI16-BIND-c6b3d37e03ebe264.de55c45a8873cb21",
+      "jp": "系統",
+      "kind": "literal",
+      "ko": "계열",
+      "role": "battle-caption-b05"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K001.ab01f790e3f909a0",
+      "jp": "アクセサリ",
+      "kind": "literal",
+      "ko": "액세서리",
+      "role": "accessory_header"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K002.9058a69786552e0d",
+      "jp": "腕部",
+      "kind": "literal",
+      "ko": "팔",
+      "role": "accessory_part_arm"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K003.8c309b365e15a8d8",
+      "jp": "装備中",
+      "kind": "literal",
+      "ko": "장착 중",
+      "role": "accessory_equipped_badge"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K004.e7cdb22daaa2dc00",
+      "jp": "物理",
+      "kind": "literal",
+      "ko": "물리",
+      "role": "skill_damage_type_physical"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K005.5129b4658ff2919c",
+      "jp": "キャラクター",
+      "kind": "literal",
+      "ko": "캐릭터",
+      "role": "character_page_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K006.403c077dd1c6a322",
+      "jp": "パレッ<cspace=-0.15em>ト</cspace>",
+      "kind": "literal",
+      "ko": "팔레트",
+      "markup_policy": "omit-cspace-v1",
+      "role": "character_palette"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K007.5c0a61ee3d825a37",
+      "jp": "藝術家",
+      "kind": "literal",
+      "ko": "예술가",
+      "role": "character_artist_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K008.506d7b64d7c86185",
+      "jp": "<cspace=-0.05\nem>イマージュ</cspace>",
+      "kind": "literal",
+      "ko": "이마쥬",
+      "markup_policy": "omit-cspace-v1",
+      "role": "character_imaju_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K009.cb2aa66b76a66a52",
+      "jp": "<cspace=-0.15em>メモリー</cspace>",
+      "kind": "literal",
+      "ko": "메모리",
+      "markup_policy": "omit-cspace-v1",
+      "role": "character_memory"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K010.dc6c2b313d024f4d",
+      "jp": "プロフィール",
+      "kind": "literal",
+      "ko": "프로필",
+      "role": "profile_tab"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K011.edb0fb0842b4242d",
+      "jp": "スタイル",
+      "kind": "literal",
+      "ko": "스타일",
+      "role": "profile_style_tab"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K012.346a3630e3fc7920",
+      "jp": "ボイス",
+      "kind": "literal",
+      "ko": "보이스",
+      "role": "profile_voice_tab"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K013.cd7e8ff1f89e9328",
+      "jp": "CV：非公開",
+      "kind": "literal",
+      "ko": "CV：비공개",
+      "role": "profile_cv_undisclosed_full_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K014.da39efb6f1560cd9",
+      "jp": "ショップ",
+      "kind": "literal",
+      "ko": "상점",
+      "role": "shop_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K015.deaddb86704275ae",
+      "jp": "交換可能",
+      "kind": "literal",
+      "ko": "교환 가능",
+      "role": "exchange_available_badge"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K016.12f9f2280617e209",
+      "jp": "素材選択",
+      "kind": "literal",
+      "ko": "재료 선택",
+      "role": "exchange_material_select_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K017.c0d1bd82c7f8af63",
+      "jp": "所持数",
+      "kind": "literal",
+      "ko": "보유 수",
+      "role": "exchange_input_owned_count_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K018.bc5cd2b37e5d30f6",
+      "jp": "所持数",
+      "kind": "literal",
+      "ko": "보유 수",
+      "role": "exchange_output_owned_count_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K019.192a5d848e867fcf",
+      "jp": "入手数",
+      "kind": "literal",
+      "ko": "획득 수",
+      "role": "exchange_acquired_count_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K020.45c8b452431a9b89",
+      "jp": "銀貨",
+      "kind": "literal",
+      "ko": "은화",
+      "role": "shop_currency_silver"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K021.2f4734fea02e90e6",
+      "jp": "スキップ確認",
+      "kind": "literal",
+      "ko": "건너뛰기 확인",
+      "role": "skip_confirm_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K022.00f315368c95ce9c",
+      "jp": "キャンセル",
+      "kind": "literal",
+      "ko": "취소",
+      "role": "skip_cancel_button"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K023.5a94389318fabedd",
+      "jp": "スキップ",
+      "kind": "literal",
+      "ko": "건너뛰기",
+      "role": "skip_execute_button_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K024.ee245256870856a3",
+      "jp": "ソート",
+      "kind": "literal",
+      "ko": "정렬",
+      "role": "equipment_sort_heading"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K025.389f97997468c1ba",
+      "jp": "キャンセル",
+      "kind": "literal",
+      "ko": "취소",
+      "role": "equipment_sort_cancel"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.captions.UI13-K026.41a8e9586828559d",
+      "jp": "適用",
+      "kind": "literal",
+      "ko": "적용",
+      "role": "equipment_sort_apply_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C003.b043fb1d53d9cfb4",
+      "jp": "調度品",
+      "kind": "literal",
+      "ko": "비품",
+      "role": "item_tab_furnishing"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C003.ceec69c379a5d23c",
+      "jp": "調度品",
+      "kind": "literal",
+      "ko": "비품",
+      "role": "item_tab_furnishing"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C004.8ffacb0419bebda6",
+      "jp": "その他",
+      "kind": "literal",
+      "ko": "기타",
+      "role": "item_tab_other"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C004.97a17c6b32c30fbb",
+      "jp": "その他",
+      "kind": "literal",
+      "ko": "기타",
+      "role": "item_tab_other"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C006.d0e13059340ae130",
+      "jp": "レベル",
+      "kind": "literal",
+      "ko": "레벨",
+      "role": "accessory_level"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C007.d837cf50e8aa7d5b",
+      "jp": "レアリティ",
+      "kind": "literal",
+      "ko": "레어도",
+      "role": "accessory_rarity"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C008.e142f60b5f85175c",
+      "jp": "限界突破",
+      "kind": "literal",
+      "ko": "한계 돌파",
+      "role": "accessory_limitbreak"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C011.6fad01608f3ee407",
+      "jp": "体力",
+      "kind": "literal",
+      "ko": "체력",
+      "role": "accessory_stat_hp"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C012.ab6e78019280ff51",
+      "jp": "攻撃",
+      "kind": "literal",
+      "ko": "공격",
+      "role": "accessory_stat_attack"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C013.2fe404c74de5f40b",
+      "jp": "防御",
+      "kind": "literal",
+      "ko": "방어",
+      "role": "accessory_stat_defense"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C014.97fe925b017f240c",
+      "jp": "精神",
+      "kind": "literal",
+      "ko": "정신",
+      "role": "accessory_stat_spirit"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C015.2972ed10de17b7b7",
+      "jp": "器用",
+      "kind": "literal",
+      "ko": "기교",
+      "role": "accessory_stat_dexterity"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C016.154f5c6f6426f4c8",
+      "jp": "敏捷",
+      "kind": "literal",
+      "ko": "민첩",
+      "role": "accessory_stat_agility"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C017.02096328392f2b60",
+      "jp": "幸運",
+      "kind": "literal",
+      "ko": "행운",
+      "role": "accessory_stat_luck"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C018.7e9bb6a4d949e863",
+      "jp": "移動",
+      "kind": "literal",
+      "ko": "이동",
+      "role": "accessory_stat_movement"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C019.2df5e0872cd7794c",
+      "jp": "一括分解",
+      "kind": "literal",
+      "ko": "일괄 분해",
+      "role": "accessory_bulk_dismantle"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C020.c8a9b4b32c4f60e7",
+      "jp": "獲得場所検索",
+      "kind": "literal",
+      "ko": "획득처 검색",
+      "role": "accessory_get_location"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C021.9f4e0276de5802ac",
+      "jp": "分解",
+      "kind": "literal",
+      "ko": "분해",
+      "role": "accessory_dismantle"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C022.607847e8eea2204d",
+      "jp": "強化",
+      "kind": "literal",
+      "ko": "강화",
+      "role": "accessory_enhance"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C022.928cdb850350b2d4",
+      "jp": "強化",
+      "kind": "literal",
+      "ko": "강화",
+      "role": "accessory_enhance"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C022.de19907a9c70d0ec",
+      "jp": "強化",
+      "kind": "literal",
+      "ko": "강화",
+      "role": "accessory_enhance"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C023.83402c754267acfb",
+      "jp": "限界突破",
+      "kind": "literal",
+      "ko": "한계 돌파",
+      "role": "accessory_limitbreak_button"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C025.d502c2a0fd175a96",
+      "jp": "技法詳細",
+      "kind": "literal",
+      "ko": "기법 상세",
+      "role": "skill_popup_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C026.6083ab1185da9e2d",
+      "jp": "レベル",
+      "kind": "literal",
+      "ko": "레벨",
+      "role": "skill_level"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C027.e61ddd29153bbf56",
+      "jp": "所持スタイル",
+      "kind": "literal",
+      "ko": "보유 스타일",
+      "role": "skill_owner_style"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C029.95859e286970a57c",
+      "jp": "命中補正",
+      "kind": "literal",
+      "ko": "명중 보정",
+      "role": "skill_accuracy_modifier"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C030.21f09f8fe983b345",
+      "jp": "必殺補正",
+      "kind": "literal",
+      "ko": "필살 보정",
+      "role": "skill_critical_modifier"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C031.d041add182e059ff",
+      "jp": "必要熱情",
+      "kind": "literal",
+      "ko": "필요 열정",
+      "role": "skill_required_passion"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C032.ded37e7c9891df18",
+      "jp": "クールタイム",
+      "kind": "literal",
+      "ko": "쿨타임",
+      "role": "skill_cooldown"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C033.43b7bd7f5e0f291f",
+      "jp": "射程",
+      "kind": "literal",
+      "ko": "사거리",
+      "role": "skill_range"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C034.5ca6a56ec887cb0c",
+      "jp": "範囲",
+      "kind": "literal",
+      "ko": "범위",
+      "role": "skill_area"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C035.07ae9fdcf85a1134",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "skill_close"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C035.25621f32b55e074d",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "skill_close"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C036.eea12a8f381898fd",
+      "jp": "ログインボーナス",
+      "kind": "literal",
+      "ko": "로그인 보너스",
+      "role": "menu_login_bonus"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C037.7b17a2eb995c1ad6",
+      "jp": "回想",
+      "kind": "literal",
+      "ko": "회상",
+      "role": "menu_recollection"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C037.ecad33a68fc12825",
+      "jp": "回想",
+      "kind": "literal",
+      "ko": "회상",
+      "role": "menu_recollection"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C038.2be6373decbd8a5e",
+      "jp": "アイテム一覧",
+      "kind": "literal",
+      "ko": "아이템 목록",
+      "role": "menu_item_list"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C039.bbc6c0300194dff4",
+      "jp": "執務室",
+      "kind": "literal",
+      "ko": "집무실",
+      "role": "menu_office"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C040.fad3063bf9c949aa",
+      "jp": "辞典",
+      "kind": "literal",
+      "ko": "용어 사전",
+      "role": "menu_dictionary"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C041.676f4d0b6f82b820",
+      "jp": "オプション",
+      "kind": "literal",
+      "ko": "옵션",
+      "role": "menu_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C042.16010eba54471f0b",
+      "jp": "ヘルプ",
+      "kind": "literal",
+      "ko": "도움말",
+      "role": "menu_help"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C043.3c452e88c05c1bc7",
+      "jp": "シリアルコード入力",
+      "kind": "literal",
+      "ko": "시리얼 코드 입력",
+      "role": "menu_serial_code"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C044.ca608c3f166d54c3",
+      "jp": "タイトルへ",
+      "kind": "literal",
+      "ko": "타이틀로",
+      "role": "menu_title_return"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C047.07f643c1861a3f2f",
+      "jp": "強化",
+      "kind": "literal",
+      "ko": "강화",
+      "role": "artist_enhance"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C048.7b41f709e5fe030a",
+      "jp": "交流",
+      "kind": "literal",
+      "ko": "교류",
+      "role": "artist_communication"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C049.f5161ca639d8c6db",
+      "jp": "名簿",
+      "kind": "literal",
+      "ko": "명부",
+      "role": "artist_roster"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C050.5beffe1382e66653",
+      "jp": "強化",
+      "kind": "literal",
+      "ko": "강화",
+      "role": "imaju_enhance"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C051.2d769ed06ff35715",
+      "jp": "交流",
+      "kind": "literal",
+      "ko": "교류",
+      "role": "imaju_communication"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C052.9a1c2ac7be3af225",
+      "jp": "図録",
+      "kind": "literal",
+      "ko": "도록",
+      "role": "imaju_catalog"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C053.a234088a9168cef7",
+      "jp": "一覧",
+      "kind": "literal",
+      "ko": "목록",
+      "role": "imaju_list"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C060.e79964ba8f9ec1ba",
+      "jp": "誕生日",
+      "kind": "literal",
+      "ko": "생일",
+      "role": "profile_birth_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C061.69384689ef9870c4",
+      "jp": "身長",
+      "kind": "literal",
+      "ko": "키",
+      "role": "profile_height_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C062.1893bb91b6d617b8",
+      "jp": "サイズ",
+      "kind": "literal",
+      "ko": "사이즈",
+      "role": "profile_size_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C064.669da5ea69a51a1a",
+      "jp": "変更",
+      "kind": "literal",
+      "ko": "변경",
+      "role": "profile_change_button"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C069.14d8efffcf1b67c5",
+      "jp": "変換内容",
+      "kind": "literal",
+      "ko": "변환 내용",
+      "role": "exchange_conversion_result_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C073.2ee9f4019abbee8c",
+      "jp": "素材選択解除",
+      "kind": "literal",
+      "ko": "재료 선택 해제",
+      "role": "exchange_material_deselect"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C074.72f0b6f75183cb69",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "exchange_close"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C074.b25773d3f4265d00",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "exchange_close"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.chrome.UI11-C075.d11b251e8422ad1b",
+      "jp": "変換",
+      "kind": "literal",
+      "ko": "변환",
+      "role": "exchange_convert_button"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-001.4d579c3b3eb52df7",
+      "jp": "技法強化アイテム",
+      "kind": "literal",
+      "ko": "기법 강화 아이템",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-002.92d72e3b84f476b7",
+      "jp": "藝術家経験値アップアイテム",
+      "kind": "literal",
+      "ko": "예술가 경험치 아이템",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-003.28558453f928ff0b",
+      "jp": "イマージュ経験値アップアイテム",
+      "kind": "literal",
+      "ko": "이마쥬 경험치 아이템",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-004.097555176c8444fe",
+      "jp": "装備制限",
+      "kind": "literal",
+      "ko": "장착 제한",
+      "role": "filter_heading"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-005.7403b990ad0b6418",
+      "jp": "あり",
+      "kind": "literal",
+      "ko": "있음",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-006.68203f235e572ed8",
+      "jp": "なし",
+      "kind": "literal",
+      "ko": "없음",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-007.75683c7ad8dfc567",
+      "jp": "アクセサリ",
+      "kind": "literal",
+      "ko": "액세서리",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-008.c9fdd970e72a2ff9",
+      "jp": "インスピレーション",
+      "kind": "literal",
+      "ko": "영감",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-009.0b93e80fd87b21cc",
+      "jp": "ステータス",
+      "kind": "literal",
+      "ko": "능력치",
+      "role": "filter_heading"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-010.2ed8ba597cd1b5fe",
+      "jp": "体力",
+      "kind": "literal",
+      "ko": "체력",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-011.81e118e51daac7a5",
+      "jp": "攻撃",
+      "kind": "literal",
+      "ko": "공격",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-012.e276889b6e79f785",
+      "jp": "防御",
+      "kind": "literal",
+      "ko": "방어",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-013.8d754490d306af84",
+      "jp": "精神",
+      "kind": "literal",
+      "ko": "정신",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-014.5d918ac9590c6346",
+      "jp": "器用",
+      "kind": "literal",
+      "ko": "기교",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-015.5206428c515116e3",
+      "jp": "敏捷",
+      "kind": "literal",
+      "ko": "민첩",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-016.f559663704e4a373",
+      "jp": "幸運",
+      "kind": "literal",
+      "ko": "행운",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-017.0a51da1f5dc26df8",
+      "jp": "部位(アクセサリ)",
+      "kind": "literal",
+      "ko": "부위(액세서리)",
+      "role": "filter_heading"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-018.d3dc1aa188bcc45a",
+      "jp": "頭部",
+      "kind": "literal",
+      "ko": "머리",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-019.6528241d186c503d",
+      "jp": "腕部",
+      "kind": "literal",
+      "ko": "팔",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-020.ade00322c12fc446",
+      "jp": "胴体",
+      "kind": "literal",
+      "ko": "몸통",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-021.70a009a3a9b33f6c",
+      "jp": "特殊",
+      "kind": "literal",
+      "ko": "특수",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-022.cf5f71653bebc398",
+      "jp": "結晶武器",
+      "kind": "literal",
+      "ko": "결정 무기",
+      "role": "filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-023.ed60db5162c9889d",
+      "jp": "属性(インスピレーション)",
+      "kind": "literal",
+      "ko": "속성(영감)",
+      "role": "filter_heading"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-024.042a9a189c76db88",
+      "jp": "レベル",
+      "kind": "literal",
+      "ko": "레벨",
+      "role": "equipment_sort_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-025.effae5d8e96fb035",
+      "jp": "体力",
+      "kind": "literal",
+      "ko": "체력",
+      "role": "equipment_sort_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-026.1ec9f3cda3b39b62",
+      "jp": "攻撃",
+      "kind": "literal",
+      "ko": "공격",
+      "role": "equipment_sort_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-027.d27eff686e183bb2",
+      "jp": "防御",
+      "kind": "literal",
+      "ko": "방어",
+      "role": "equipment_sort_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-028.1db5fa6016dd2834",
+      "jp": "精神",
+      "kind": "literal",
+      "ko": "정신",
+      "role": "equipment_sort_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-029.67162d9d64eaa305",
+      "jp": "器用",
+      "kind": "literal",
+      "ko": "기교",
+      "role": "equipment_sort_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-030.7d4dbb9e8f3cece6",
+      "jp": "敏捷",
+      "kind": "literal",
+      "ko": "민첩",
+      "role": "equipment_sort_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-031.9b65d80635d16728",
+      "jp": "幸運",
+      "kind": "literal",
+      "ko": "행운",
+      "role": "equipment_sort_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI10-SEM-032.10867b180fe697a6",
+      "jp": "移動",
+      "kind": "literal",
+      "ko": "이동",
+      "role": "equipment_sort_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI9-REUSE-ELEMENT-1.cc5966693fbf7102",
+      "jp": "カーマイン",
+      "kind": "master_ref",
+      "master_ref": {
+        "exact_jp": "カーマイン",
+        "field": "ml_value[]",
+        "table": "mTextConfig"
+      },
+      "role": "element_filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI9-REUSE-ELEMENT-2.f074d48822ab26d6",
+      "jp": "セルリアン",
+      "kind": "master_ref",
+      "master_ref": {
+        "exact_jp": "セルリアン",
+        "field": "ml_value[]",
+        "table": "mTextConfig"
+      },
+      "role": "element_filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI9-REUSE-ELEMENT-3.4eaf00ad1cc2845e",
+      "jp": "ビリジアン",
+      "kind": "master_ref",
+      "master_ref": {
+        "exact_jp": "ビリジアン",
+        "field": "ml_value[]",
+        "table": "mTextConfig"
+      },
+      "role": "element_filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI9-REUSE-ELEMENT-4.c7811577ce1b33bf",
+      "jp": "アイボリー",
+      "kind": "master_ref",
+      "master_ref": {
+        "exact_jp": "アイボリー",
+        "field": "ml_value[]",
+        "table": "mTextConfig"
+      },
+      "role": "element_filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI9-REUSE-ELEMENT-5.56d95c792659aa51",
+      "jp": "バイオレット",
+      "kind": "master_ref",
+      "master_ref": {
+        "exact_jp": "バイオレット",
+        "field": "ml_value[]",
+        "table": "mTextConfig"
+      },
+      "role": "element_filter_option"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI9-SEM-CATEGORY-SHORT.8eb2436ce4e0e74c",
+      "jp": "カテゴリ",
+      "kind": "literal",
+      "ko": "카테고리",
+      "role": "filter_heading"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.consumers.UI9-SEM-LAST-UPDATE-EMPTY-GENERATED.d39db4ac4a21510f",
+      "jp": "最終更新日：----/--/-- --:--",
+      "kind": "literal",
+      "ko": "최종 업데이트: ----/--/-- --:--",
+      "role": "option_last_update_empty_fallback"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S01.7abab2c43f361144",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S02.2529f390c35d2d76",
+      "jp": "受け取り",
+      "kind": "literal",
+      "ko": "수령",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S03.88053d9bc5241d7b",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S04.067929ba1bb375c8",
+      "jp": "受け取り",
+      "kind": "literal",
+      "ko": "수령",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S05.e0859c4fc3f75d16",
+      "jp": "挑戦",
+      "kind": "literal",
+      "ko": "도전",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S06.1f51992de0e55677",
+      "jp": "一括受け取り",
+      "kind": "literal",
+      "ko": "일괄 수령",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S07.76895b4322aa33f6",
+      "jp": "挑戦",
+      "kind": "literal",
+      "ko": "도전",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S08.293b28af077f3dc5",
+      "jp": "取得順",
+      "kind": "literal",
+      "ko": "획득순",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S09.189dd8d4b729f3f7",
+      "jp": "未受取の贈り物",
+      "kind": "literal",
+      "ko": "미수령 선물",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S10.223f2973db71b419",
+      "jp": "絞り込み",
+      "kind": "literal",
+      "ko": "필터",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S11.37dea3f632af67b9",
+      "jp": "絞り込み",
+      "kind": "literal",
+      "ko": "필터",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S12.115f4869044ba963",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S13.54c208087f0610aa",
+      "jp": "一括受取",
+      "kind": "literal",
+      "ko": "일괄 수령",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI2-S14.d08f6924a7dd437f",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI3-DYNAMIC.2918fd7171d973ad",
+      "jp": "[憧憬と不信のハロウィンログインボーナス]報酬",
+      "kind": "literal",
+      "ko": "[동경과 불신의 할로윈 로그인 보너스] 보상",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI3-DYNAMIC.72dc5ed421c12ef8",
+      "jp": "[ハロウィンSPログインボーナス]報酬",
+      "kind": "literal",
+      "ko": "[할로윈 SP 로그인 보너스] 보상",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S001.591601e94010bdff",
+      "jp": "VOICE",
+      "kind": "literal",
+      "ko": "음성",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S002.b65f0ad561487ba2",
+      "jp": "設定保存",
+      "kind": "literal",
+      "ko": "설정 저장",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S003.c964436ccad3a76c",
+      "jp": "通知",
+      "kind": "literal",
+      "ko": "알림",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S004.fd8060fb3175161b",
+      "jp": "フルスクリーン",
+      "kind": "literal",
+      "ko": "전체 화면",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S006.03a10f5b860ad170",
+      "jp": "即時表示",
+      "kind": "literal",
+      "ko": "즉시 표시",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S007.28d65b6cef415a9a",
+      "jp": "一括ダウンロード",
+      "kind": "literal",
+      "ko": "일괄 다운로드",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S009.0e154b17af6878e9",
+      "jp": "オプション",
+      "kind": "literal",
+      "ko": "설정",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S010.8e39100ff72ccacd",
+      "jp": "解像度",
+      "kind": "literal",
+      "ko": "해상도",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S011.e416dff51557362b",
+      "jp": "ミュート",
+      "kind": "literal",
+      "ko": "음소거",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S012.9c41e752195d7cc4",
+      "jp": "サウンド・テキスト",
+      "kind": "literal",
+      "ko": "사운드·텍스트",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S016.caffc765f6740f04",
+      "jp": "ミュート",
+      "kind": "literal",
+      "ko": "음소거",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S017.ed2756af3b007bfb",
+      "jp": "サウンド/テキスト全体",
+      "kind": "literal",
+      "ko": "사운드/텍스트 전체",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S018.c3664186147df1e2",
+      "jp": "一括ダウンロード",
+      "kind": "literal",
+      "ko": "일괄 다운로드",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S019.a34ab66b67b308b6",
+      "jp": "サウンド",
+      "kind": "literal",
+      "ko": "사운드",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S020.3e802ea466421fea",
+      "jp": "リセット",
+      "kind": "literal",
+      "ko": "초기화",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S022.5d581f6d8508d9f7",
+      "jp": "有償",
+      "kind": "literal",
+      "ko": "유료",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S024.c82f449b9360b18a",
+      "jp": "RANK",
+      "kind": "literal",
+      "ko": "랭크",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S025.a332293e0cd84712",
+      "jp": "通知",
+      "kind": "literal",
+      "ko": "알림",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S026.bf25b39c3cd83ab2",
+      "jp": "画面モード",
+      "kind": "literal",
+      "ko": "화면 모드",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S027.b86589616ab3826f",
+      "jp": "総合戦闘力",
+      "kind": "literal",
+      "ko": "종합 전투력",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S028.a26e468b7032574f",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S029.1c2ddc64aa6bfba2",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S030.6195d0501420150d",
+      "jp": "ミュート",
+      "kind": "literal",
+      "ko": "음소거",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S032.eb5faa1a6cb253eb",
+      "jp": "OK",
+      "kind": "literal",
+      "ko": "확인",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S033.dfe3c522de966bcf",
+      "jp": "表示速度",
+      "kind": "literal",
+      "ko": "표시 속도",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S034.34b18b16bba41f9a",
+      "jp": "ストーリーのボイスダウンロード",
+      "kind": "literal",
+      "ko": "스토리 음성 다운로드",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S035.035869e74eae5b4a",
+      "jp": "ミュート",
+      "kind": "literal",
+      "ko": "음소거",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S036.800c589c7e678e4d",
+      "jp": "ウインドウ",
+      "kind": "literal",
+      "ko": "창 모드",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S037.1149afdd5aa3ef6b",
+      "jp": "未取得のデータをまとめてダウンロードすることで、\r\n新規シナリオ再生時などで個別のダウンロードをする必要がなくなります。\r\n\r\n　※通信環境のよい場所で通信してください\r\n　※Wi-Fi環境でのダウンロードをおすすめします",
+      "kind": "literal",
+      "ko": "아직 받지 않은 데이터를 한꺼번에 다운로드하면,\r\n새 시나리오를 재생할 때 등에 데이터를 따로 다운로드할 필요가 없습니다.\r\n\r\n　※통신 상태가 좋은 곳에서 이용해 주세요\r\n　※Wi-Fi 환경에서 다운로드하는 것을 권장합니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S038.7d0e68b3f681144e",
+      "jp": "感情資源増量中！",
+      "kind": "literal",
+      "ko": "감정 자원 증가 중!",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S039.7a09e594e218592d",
+      "jp": "テキスト",
+      "kind": "literal",
+      "ko": "텍스트",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S040.e2642e2a608b8409",
+      "jp": "ストーリー中の男性ボイス",
+      "kind": "literal",
+      "ko": "스토리의 남성 음성",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S042.43c8d47dca3db9b8",
+      "jp": "<cspace=-0.15em>ショップ</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>상점</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S043.eb0326814330cce8",
+      "jp": "<cspace=-0.15em>キャラクター</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>캐릭터</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S044.8a67f3ac03e9737a",
+      "jp": "<cspace=-0.15em>ガチャ</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>가챠</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S045.357184d5fe1a5960",
+      "jp": "ダンジョン",
+      "kind": "literal",
+      "ko": "던전",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S047.663c6cc818c12f28",
+      "jp": "編成",
+      "kind": "literal",
+      "ko": "편성",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S048.59912de57ae9ccbd",
+      "jp": "工房",
+      "kind": "literal",
+      "ko": "공방",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S049.9582ab65bd3a83ec",
+      "jp": "<cspace=-0.15em>ミュージアム</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>미술관</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S050.d4cd69ad2a8d4555",
+      "jp": "<cspace=-0.15em>クエスト</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>퀘스트</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S051.5c642088b2ae4bb2",
+      "jp": "<cspace=-0.15em>ガチャ</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>가챠</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S052.bb1f3411c8ea8822",
+      "jp": "<cspace=-0.15em>ショップ</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>상점</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S053.70af70fc2fbdde9c",
+      "jp": "<cspace=-0.15em>キャラクター</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>캐릭터</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S054.ae2e7cc58d5f23f2",
+      "jp": "<cspace=-0.15em>ガチャ</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>가챠</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S055.2588b84dd38618b3",
+      "jp": "ダンジョン",
+      "kind": "literal",
+      "ko": "던전",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S056.ac3976fb95e8d544",
+      "jp": "編成",
+      "kind": "literal",
+      "ko": "편성",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S057.cddacf3035e0874f",
+      "jp": "工房",
+      "kind": "literal",
+      "ko": "공방",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S058.867815076d90ee02",
+      "jp": "<cspace=-0.15em>ミュージアム</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>미술관</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S059.c28135c61e298935",
+      "jp": "<cspace=-0.15em>クエスト</cspace>",
+      "kind": "literal",
+      "ko": "<cspace=-0.15em>퀘스트</cspace>",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S060.27ebff684fd7b2b9",
+      "jp": "イベントボーナス",
+      "kind": "literal",
+      "ko": "이벤트 보너스",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S061.33d788eeb33b407f",
+      "jp": "ソート",
+      "kind": "literal",
+      "ko": "정렬",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S062.90fddac0550fbbb6",
+      "jp": "レアリティチェックで選択可能になります",
+      "kind": "literal",
+      "ko": "레어도를 체크하면 선택할 수 있습니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S064.6f1d983fdb2ba8e8",
+      "jp": "全て選択解除",
+      "kind": "literal",
+      "ko": "전체 선택 해제",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S065.738b88d0cbcd449a",
+      "jp": "適用",
+      "kind": "literal",
+      "ko": "적용",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S066.186f9c9d693c999d",
+      "jp": "カテゴリー",
+      "kind": "literal",
+      "ko": "카테고리",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S067.91ba5d51851f78bc",
+      "jp": "キャンセル",
+      "kind": "literal",
+      "ko": "취소",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S068.eb4bd1f941cfb426",
+      "jp": "未満",
+      "kind": "literal",
+      "ko": "미만",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S070.4a58b6a94c06df55",
+      "jp": "レアリティチェックで選択可能になります",
+      "kind": "literal",
+      "ko": "레어도를 체크하면 선택할 수 있습니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S071.6d87fa5d810325f8",
+      "jp": "藝術家",
+      "kind": "literal",
+      "ko": "예술가",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S072.c144d2b625d7f934",
+      "jp": "レアリティチェックで選択可能になります",
+      "kind": "literal",
+      "ko": "레어도를 체크하면 선택할 수 있습니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S073.0169f2074efc3c61",
+      "jp": "スタイルの属性",
+      "kind": "literal",
+      "ko": "스타일 속성",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S074.762a47f65ae46ef7",
+      "jp": "絞り込み",
+      "kind": "literal",
+      "ko": "필터",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S075.2c3ad66a78a0e6e2",
+      "jp": "限界突破済を非表示",
+      "kind": "literal",
+      "ko": "한계 돌파 완료 항목 숨기기",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S076.4eae2214e0b42cb6",
+      "jp": "レアリティチェックで選択可能になります",
+      "kind": "literal",
+      "ko": "레어도를 체크하면 선택할 수 있습니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S077.9575c8d002763baf",
+      "jp": "OK",
+      "kind": "literal",
+      "ko": "확인",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S078.5d644f67c42df46b",
+      "jp": "※チェックのないレアリティのポテンシャルを所持しているイマージュは表示されません",
+      "kind": "literal",
+      "ko": "※체크하지 않은 레어도의 포텐셜을 보유한 이마쥬는 표시되지 않습니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S079.764f674615395fb0",
+      "jp": "レアリティチェックで選択可能になります",
+      "kind": "literal",
+      "ko": "레어도를 체크하면 선택할 수 있습니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S080.abcbbceb3315165e",
+      "jp": "スタイルの属性",
+      "kind": "literal",
+      "ko": "스타일 속성",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S081.351f13d4fc89da35",
+      "jp": "レアリティチェックで選択可能になります",
+      "kind": "literal",
+      "ko": "레어도를 체크하면 선택할 수 있습니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S082.09f9cb636f7503ad",
+      "jp": "レアリティチェックで選択可能になります",
+      "kind": "literal",
+      "ko": "레어도를 체크하면 선택할 수 있습니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S083.8414c018d09d9e8c",
+      "jp": "レアリティ",
+      "kind": "literal",
+      "ko": "레어도",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S084.80694e540c3f8564",
+      "jp": "レアリティ",
+      "kind": "literal",
+      "ko": "레어도",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S085.a38b49f27321ec8a",
+      "jp": "全て選択",
+      "kind": "literal",
+      "ko": "전체 선택",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S086.aa6905c346951223",
+      "jp": "レアリティチェックで選択可能になります",
+      "kind": "literal",
+      "ko": "레어도를 체크하면 선택할 수 있습니다",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S087.d78fe2b3cd7716b4",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S088.defc963ad73b5b80",
+      "jp": "属性",
+      "kind": "literal",
+      "ko": "속성",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S089.81d2e251a577e714",
+      "jp": "初期化",
+      "kind": "literal",
+      "ko": "초기화",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI4-S090.993f27eb636e3467",
+      "jp": "属性",
+      "kind": "literal",
+      "ko": "속성",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI6-FILTER-CheckBox.f8b7e5a5947eed1b",
+      "jp": "レアリティ",
+      "kind": "literal",
+      "ko": "레어도",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI6-FILTER-Toggle.a652c84237dbfb9f",
+      "jp": "レアリティ",
+      "kind": "literal",
+      "ko": "레어도",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI6-SORT-UI4-M015.2281dac335ad852a",
+      "jp": "レアリティ",
+      "kind": "literal",
+      "ko": "레어도",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI6-SORT-UI4-M018.1875e3c33a139bad",
+      "jp": "属性順",
+      "kind": "literal",
+      "ko": "속성순",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI6-SORT-UI4-M019.9b33c915e0b400f3",
+      "jp": "入手順",
+      "kind": "literal",
+      "ko": "획득순",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI6-UI4-M006-OWNED_CATEGORY_FRAME_TEXT.f7bdf2106ceccebd",
+      "jp": "藝晶石",
+      "kind": "literal",
+      "ko": "예정석",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI6-UI4-M006-OWNED_CATEGORY_SECTION_TITLE.e6ea1f95626fbc82",
+      "jp": "藝晶石",
+      "kind": "literal",
+      "ko": "예정석",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI6-UI4-M007-OWNED_CATEGORY_FRAME_TEXT.528a9fd6a125bebe",
+      "jp": "セット",
+      "kind": "literal",
+      "ko": "세트",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.core.UI6-UI4-M007-OWNED_CATEGORY_SECTION_TITLE.7e0a3e5abffa1305",
+      "jp": "セット",
+      "kind": "literal",
+      "ko": "세트",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J001.904a6f0141602d5b",
+      "jp": "強化素材",
+      "kind": "literal",
+      "ko": "강화 재료",
+      "role": "item_tab_enhancement"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J002.487faf34833cedb8",
+      "jp": "命鏡/オーブ",
+      "kind": "literal",
+      "ko": "명경/오브",
+      "role": "item_tab_orb_mirror"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J003.ef688858f1a88ec1",
+      "jp": "調度品",
+      "kind": "literal",
+      "ko": "비품",
+      "role": "item_tab_furnishing"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J004.5e98d8015e397fd0",
+      "jp": "その他",
+      "kind": "literal",
+      "ko": "기타",
+      "role": "item_tab_other"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J005.26111e5358314404",
+      "jp": "アクセサリ",
+      "kind": "literal",
+      "ko": "액세서리",
+      "role": "accessory_header"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J006.485edb79bea85ddc",
+      "jp": "パッシブLv",
+      "kind": "literal",
+      "ko": "패시브 Lv",
+      "role": "accessory_passive_level"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J007.52afd9a1ef713796",
+      "jp": "腕部",
+      "kind": "literal",
+      "ko": "팔",
+      "role": "accessory_part_arm"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J008.2df5e0872cd7794c",
+      "jp": "一括分解",
+      "kind": "literal",
+      "ko": "일괄 분해",
+      "role": "accessory_bulk_dismantle"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J009.8c309b365e15a8d8",
+      "jp": "装備中",
+      "kind": "literal",
+      "ko": "장착 중",
+      "role": "accessory_equipped_badge"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J010.7701513aa05462cb",
+      "jp": "物理",
+      "kind": "literal",
+      "ko": "물리",
+      "role": "skill_damage_type_physical"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J011.5129b4658ff2919c",
+      "jp": "キャラクター",
+      "kind": "literal",
+      "ko": "캐릭터",
+      "role": "character_page_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J012.c3036bda275f80a2",
+      "jp": "パレット",
+      "kind": "literal",
+      "ko": "팔레트",
+      "role": "character_palette"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J013.e7647dd811738ab1",
+      "jp": "藝術家",
+      "kind": "literal",
+      "ko": "예술가",
+      "role": "character_artist_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J014.6030b10ad107230a",
+      "jp": "イマージュ",
+      "kind": "literal",
+      "ko": "이마쥬",
+      "role": "character_imaju_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J015.07ae5d5ad211e923",
+      "jp": "メモリー",
+      "kind": "literal",
+      "ko": "메모리",
+      "role": "character_memory"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J016.dc6c2b313d024f4d",
+      "jp": "プロフィール",
+      "kind": "literal",
+      "ko": "프로필",
+      "role": "profile_tab"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J017.edb0fb0842b4242d",
+      "jp": "スタイル",
+      "kind": "literal",
+      "ko": "스타일",
+      "role": "profile_style_tab"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J018.346a3630e3fc7920",
+      "jp": "ボイス",
+      "kind": "literal",
+      "ko": "보이스",
+      "role": "profile_voice_tab"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J019.e79964ba8f9ec1ba",
+      "jp": "誕生日",
+      "kind": "literal",
+      "ko": "생일",
+      "role": "profile_birth_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J020.69384689ef9870c4",
+      "jp": "身長",
+      "kind": "literal",
+      "ko": "키",
+      "role": "profile_height_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J021.1893bb91b6d617b8",
+      "jp": "サイズ",
+      "kind": "literal",
+      "ko": "사이즈",
+      "role": "profile_size_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J022.bdd2741106d83815",
+      "jp": "CV：非公開",
+      "kind": "literal",
+      "ko": "CV：비공개",
+      "role": "profile_cv_undisclosed_full_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J023.669da5ea69a51a1a",
+      "jp": "変更",
+      "kind": "literal",
+      "ko": "변경",
+      "role": "profile_change_button"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J024.da39efb6f1560cd9",
+      "jp": "ショップ",
+      "kind": "literal",
+      "ko": "상점",
+      "role": "shop_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J025.f659c5553d09897b",
+      "jp": "交換可能",
+      "kind": "literal",
+      "ko": "교환 가능",
+      "role": "exchange_available_badge"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J026.ede3cc426e3a0c43",
+      "jp": "命鏡変換\r\n\r\n",
+      "kind": "literal",
+      "ko": "명경 변환\r\n\r\n",
+      "role": "exchange_conversion_title_exact_crlf"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J027.12f9f2280617e209",
+      "jp": "素材選択",
+      "kind": "literal",
+      "ko": "재료 선택",
+      "role": "exchange_material_select_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J028.11adb9dab3cbb77b",
+      "jp": "所持数",
+      "kind": "literal",
+      "ko": "보유 수",
+      "role": "exchange_input_owned_count_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J029.bc5cd2b37e5d30f6",
+      "jp": "所持数",
+      "kind": "literal",
+      "ko": "보유 수",
+      "role": "exchange_output_owned_count_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J030.192a5d848e867fcf",
+      "jp": "入手数",
+      "kind": "literal",
+      "ko": "획득 수",
+      "role": "exchange_acquired_count_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J031.2ee9f4019abbee8c",
+      "jp": "素材選択解除",
+      "kind": "literal",
+      "ko": "재료 선택 해제",
+      "role": "exchange_material_deselect"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J032.45c8b452431a9b89",
+      "jp": "銀貨",
+      "kind": "literal",
+      "ko": "은화",
+      "role": "shop_currency_silver"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J033.2f4734fea02e90e6",
+      "jp": "スキップ確認",
+      "kind": "literal",
+      "ko": "건너뛰기 확인",
+      "role": "skip_confirm_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J034.00f315368c95ce9c",
+      "jp": "キャンセル",
+      "kind": "literal",
+      "ko": "취소",
+      "role": "skip_cancel_button"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J035.5a94389318fabedd",
+      "jp": "スキップ",
+      "kind": "literal",
+      "ko": "건너뛰기",
+      "role": "skip_execute_button_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J036.5c606cface53e6ff",
+      "jp": "閉じる",
+      "kind": "literal",
+      "ko": "닫기",
+      "role": "annotation_close_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-J037.526ad069b30b261f",
+      "jp": "オーブ・下位命鏡・無名の命鏡を藝術家の命鏡に変換できます",
+      "kind": "literal",
+      "ko": "오브·하위 명경·무명의 명경을 예술가의 명경으로 변환할 수 있습니다.",
+      "role": "exchange_conversion_help"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.residuals.UI12-U1-001.6242e5f107c76fd3",
+      "jp": "オーブ・下位命鏡・無名の命鏡を藝術家の命鏡に変換できます",
+      "kind": "literal",
+      "ko": "오브·하위 명경·무명의 명경을 예술가의 명경으로 변환할 수 있습니다.",
+      "role": "exchange_conversion_help"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.story.UI10-SEM-033.311fda2bc41b634b",
+      "jp": "芸術都市について訊ねる",
+      "kind": "literal",
+      "ko": "예술 도시에 대해 묻는다",
+      "role": "story_choice_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.story.UI10-SEM-034.993e512da2f40d8c",
+      "jp": "美術館について訊ねる",
+      "kind": "literal",
+      "ko": "미술관에 대해 묻는다",
+      "role": "story_choice_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.story.UI10-SEM-035.d6ec7439325ad5fc",
+      "jp": "死の芸術について訊ねる",
+      "kind": "literal",
+      "ko": "죽음의 예술에 대해 묻는다",
+      "role": "story_choice_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.story.UI10-SEM-036.a8a5bda852d17e79",
+      "jp": "聞きたいことは聞けた",
+      "kind": "literal",
+      "ko": "궁금한 건 다 들었다",
+      "role": "story_choice_label"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.story.UI10-SEM-037.75beacb20106c46a",
+      "jp": "辞典",
+      "kind": "literal",
+      "ko": "용어 사전",
+      "role": "keyword_dictionary_heading"
+    }
+  ],
+  "schema_version": 1
+}

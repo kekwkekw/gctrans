@@ -1,368 +1,198 @@
-import hashlib
+"""NG03 adapter for the existing crawl_only known WebGL/R18 endpoints.
+
+Default action observes metadata without mass acquisition. Incremental asset
+acquisition is explicit --acquire and bounded by the existing candidate limit.
+PC uses only an explicitly named local asset; no URL substitution or search.
+"""
+import argparse
 import json
 import os
-import re
-import time
-from datetime import datetime, timezone
+import sys
 from pathlib import Path
 
-import httpx
-
-from crypto import get_url_params
-from parse import parse_bundle, parse_script
-
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+# Direct workflow entrypoint shares the sibling tools import root with Update CLI.
+# Never rely on a previous workspace or caller-owned PYTHONPATH.
+sys.path.insert(0, str(ROOT / "tools"))
+from tools.update.source_scan import (SourceProfile, UnityTextExtractor, MasterTableExtractor,
+    atomic_json, digest, parse_source_ids, scan_inventory, normalize_inventory, MAX_ASSET_BYTES)
+from tools.update.source_http import fetch_bytes, fetch_json
+from tools.update.novel_bridge import create_intake_references
+from scripts.crypto import get_url_params, decrypt_master_text, private_helper
 
 BASE_URL = "https://cdn-r18.gc.dmmgames.com"
 ASSET_PATH = "/secure/data/production/webgl/resources/"
 ASSETBUNDLE_MANIFEST = "/files/manifest/webgl/r18/assetbundle.json"
 MASTER_MANIFEST = "/files/manifest/webgl/r18/master.json"
-NOVEL_PATTERN = re.compile(r"notinit/[^/]+/\w{3}_(\d{8}|\d{5,6})\.dmm$")
-
-ROOT = Path(__file__).resolve().parents[1]
-OUTPUT_DIR = ROOT / os.environ.get("CRAWL_OUTPUT_DIR", "crawl_out")
 
 
-def write_json(path: Path, data) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="\n") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+def existing_novel_ids():
+    legacy = {p.parent.name for p in (ROOT / "novels").glob("*/zh_Hans.json") if p.parent.name.isdigit()}
+    ko = {p.stem for p in (ROOT / "translations/ko/novels").glob("*.json") if p.stem.isdigit()}
+    return legacy, ko, legacy | ko
 
 
-def sha256_bytes(data: bytes) -> str:
-    return hashlib.sha256(data).hexdigest()
+def parser():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--platform", choices=("WebGL", "PC"), default="WebGL")
+    p.add_argument("--lane", choices=("Novel", "Master", "UI"), default="Novel")
+    p.add_argument("--state-root", type=Path, default=ROOT / "source-state")
+    p.add_argument("--raw-root", type=Path, default=ROOT / "private-source-cache")
+    p.add_argument("--output", type=Path, default=ROOT / "source-out/scan.json")
+    p.add_argument("--inventory", type=Path, help="Saved known inventory; offline replay")
+    p.add_argument("--acquire", action="store_true")
+    p.add_argument("--source-ids", default=os.environ.get("CRAWL_SOURCE_IDS", ""))
+    p.add_argument("--max-candidates", type=int, default=int(os.environ.get("CRAWL_MAX_CANDIDATES", "200")))
+    p.add_argument("--local-asset", type=Path)
+    p.add_argument("--asset-key", help="Explicit existing locator for a selected PC cache asset")
+    p.add_argument("--textasset-name", help="Exact name from an established adapter for multiple TextAssets")
+    p.add_argument("--partial", action="store_true")
+    p.add_argument("--integrity", action="store_true", help="Explicit byte verification; ordinary owned warm scan is metadata-only")
+    p.add_argument("--master-field-scope", type=Path, default=ROOT / "contracts/master-source-fields-v1.json",
+                   help="Finite table/runtime-field selector, no translation dictionary values")
+    return p
 
 
-def sha256_json(data) -> str:
-    payload = json.dumps(
-        data,
-        ensure_ascii=False,
-        separators=(",", ":"),
-        sort_keys=False,
-    ).encode("utf-8")
-    return sha256_bytes(payload)
-
-
-def fetch_json(client: httpx.Client, url: str, attempts: int = 3):
-    last_error = None
-    for attempt in range(1, attempts + 1):
-        try:
-            response = client.get(url)
-            response.raise_for_status()
-            return response.json()
-        except Exception as exc:
-            last_error = exc
-            if attempt == attempts:
-                break
-            time.sleep(attempt * 2)
-    raise RuntimeError(f"Failed to fetch JSON after {attempts} attempts: {url}") from last_error
-
-
-def fetch_bytes(
-    client: httpx.Client,
-    url: str,
-    *,
-    params: dict[str, str | int] | None = None,
-    attempts: int = 3,
-) -> bytes:
-    last_error = None
-    for attempt in range(1, attempts + 1):
-        try:
-            response = client.get(url, params=params)
-            response.raise_for_status()
-            return response.content
-        except Exception as exc:
-            last_error = exc
-            if attempt == attempts:
-                break
-            time.sleep(attempt * 2)
-    raise RuntimeError(f"Failed to fetch asset after {attempts} attempts: {url}") from last_error
-
-
-def existing_novel_ids() -> tuple[set[str], set[str], set[str]]:
-    legacy = set()
-    legacy_root = ROOT / "novels"
-    if legacy_root.exists():
-        for path in legacy_root.glob("*/zh_Hans.json"):
-            if path.parent.name.isdigit():
-                legacy.add(path.parent.name)
-
-    ko7 = set()
-    ko7_root = ROOT / "translations" / "ko" / "novels"
-    if ko7_root.exists():
-        for path in ko7_root.glob("*.json"):
-            if path.stem.isdigit():
-                ko7.add(path.stem)
-
-    return legacy, ko7, legacy | ko7
-
-
-def parse_source_ids(raw: str) -> list[str]:
-    if not raw.strip():
-        return []
-    ids = []
-    seen = set()
-    for item in re.split(r"[\\s,;]+", raw.strip()):
-        if not item:
-            continue
-        if not item.isdigit():
-            raise ValueError(f"Invalid source id: {item!r}")
-        if item not in seen:
-            seen.add(item)
-            ids.append(item)
-    return ids
-
-
-def main() -> None:
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    forced_ids = parse_source_ids(os.environ.get("CRAWL_SOURCE_IDS", ""))
-    max_candidates = int(os.environ.get("CRAWL_MAX_CANDIDATES", "200"))
-    if max_candidates < 0:
-        raise ValueError("CRAWL_MAX_CANDIDATES must be >= 0")
-
-    legacy_ids, ko7_ids, existing_ids = existing_novel_ids()
-
-    generated_at = datetime.now(timezone.utc).isoformat()
-    run_context = {
-        "repository": os.environ.get("GITHUB_REPOSITORY"),
-        "repository_sha": os.environ.get("GITHUB_SHA"),
-        "repository_ref": os.environ.get("GITHUB_REF"),
-        "workflow": os.environ.get("GITHUB_WORKFLOW"),
-        "run_id": os.environ.get("GITHUB_RUN_ID"),
-        "run_attempt": os.environ.get("GITHUB_RUN_ATTEMPT"),
-        "actor": os.environ.get("GITHUB_ACTOR"),
-    }
-
-    with httpx.Client(
-        timeout=httpx.Timeout(90.0, connect=30.0),
-        follow_redirects=True,
-        headers={"User-Agent": "gctrans-crawl-only/1.0"},
-    ) as client:
-        assetbundle = fetch_json(client, f"{BASE_URL}{ASSETBUNDLE_MANIFEST}")
-        master_manifest = fetch_json(client, f"{BASE_URL}{MASTER_MANIFEST}")
-
-        write_json(OUTPUT_DIR / "manifests" / "assetbundle.json", assetbundle)
-        write_json(OUTPUT_DIR / "manifests" / "master.json", master_manifest)
-
-        novel_assets: dict[str, dict] = {}
-        duplicate_ids: dict[str, list[str]] = {}
-
-        for asset in assetbundle.get("d", []):
-            asset_name = asset.get("n", "")
-            match = NOVEL_PATTERN.match(asset_name)
-            if not match:
-                continue
-
-            novel_id = match.group(1)
-            if novel_id in novel_assets:
-                duplicate_ids.setdefault(novel_id, [novel_assets[novel_id]["n"]]).append(asset_name)
-                continue
-            novel_assets[novel_id] = asset
-
-        if duplicate_ids:
-            write_json(OUTPUT_DIR / "audit" / "duplicate_novel_ids.json", duplicate_ids)
-            raise RuntimeError(
-                "Duplicate novel IDs detected in official asset manifest; "
-                "see crawl_out/audit/duplicate_novel_ids.json"
-            )
-
-        if assetbundle.get("d") and not novel_assets:
-            write_json(
-                OUTPUT_DIR / "audit" / "novel_pattern_no_matches.json",
-                {
-                    "assetbundle_entries": len(assetbundle.get("d", [])),
-                    "novel_pattern": NOVEL_PATTERN.pattern,
-                },
-            )
-            raise RuntimeError(
-                "Official asset manifest was fetched but no novel assets matched the crawler pattern"
-            )
-
-        missing_from_manifest = [novel_id for novel_id in forced_ids if novel_id not in novel_assets]
-        if missing_from_manifest:
-            write_json(
-                OUTPUT_DIR / "audit" / "forced_ids_missing_from_manifest.json",
-                missing_from_manifest,
-            )
-            raise RuntimeError(
-                "Requested source IDs were not found in the official asset manifest: "
-                + ", ".join(missing_from_manifest)
-            )
-
-        if forced_ids:
-            candidate_ids = forced_ids
-            selection_mode = "forced_source_ids"
+def run(args):
+    external_metrics = {"external_source_reads": 0, "external_source_read_bytes": 0,
+                        "external_source_hash_calls": 0, "external_source_hash_bytes": 0}
+    forced = parse_source_ids(args.source_ids)
+    _, _, existing = existing_novel_ids()
+    profile = SourceProfile(args.platform, "R18", args.lane,
+                            "vendor-d-n-h-s-v1" if args.platform == "WebGL" else "pc-explicit-local-cache-v1")
+    if args.platform == "PC" and (not args.local_asset or not args.asset_key):
+        result = scan_inventory(profile, None, state_root=args.state_root, raw_root=args.raw_root,
+                                observation_error="PC_SOURCE_LOCATOR_REQUIRED")
+        publish_intake(result,args)
+        atomic_json(args.output, result)
+        return result
+    if args.lane == "UI" and not args.asset_key:
+        result = scan_inventory(profile, None, state_root=args.state_root, raw_root=args.raw_root,
+                                observation_error="UI_SUPPORTED_SOURCE_LOCATOR_REQUIRED")
+        publish_intake(result,args)
+        atomic_json(args.output, result)
+        return result
+    extractor = None
+    if args.acquire:
+        if args.lane == "Master":
+            helper = private_helper()
+            scope = json.loads(args.master_field_scope.read_text(encoding="utf-8-sig"))
+            if scope.get("schema") != "gc-master-source-field-selectors-v1" or not isinstance(scope.get("fields"), list):
+                raise ValueError("MASTER_FIELD_SELECTOR")
+            tables = {}
+            for selector in scope["fields"]:
+                if not isinstance(selector, dict) or set(selector) != {"table", "runtime_field"}:
+                    raise ValueError("MASTER_FIELD_SELECTOR")
+                tables.setdefault(selector["table"], []).append(selector["runtime_field"])
+            extractor = MasterTableExtractor(decrypt_master_text, helper.ng03_helper_sha256, tables=tables)
         else:
-            candidate_ids = sorted(set(novel_assets) - existing_ids)
-            selection_mode = "missing_from_repository"
-
-        if max_candidates and len(candidate_ids) > max_candidates:
-            write_json(
-                OUTPUT_DIR / "audit" / "candidate_limit_exceeded.json",
-                {
-                    "candidate_count": len(candidate_ids),
-                    "max_candidates": max_candidates,
-                    "candidate_ids": candidate_ids,
-                },
-            )
-            raise RuntimeError(
-                f"Safety limit exceeded: {len(candidate_ids)} candidates > {max_candidates}. "
-                "Increase max_candidates explicitly if this is expected."
-            )
-
-        items = []
-        failed = []
-
-        for index, novel_id in enumerate(candidate_ids, start=1):
-            asset = novel_assets[novel_id]
-            asset_name = asset["n"]
-            asset_hash = asset["h"]
-            asset_path = f"{ASSET_PATH}{asset_name}"
-            params = get_url_params(asset_path, asset_hash)
-
-            print(f"[{index}/{len(candidate_ids)}] Crawling {novel_id}: {asset_name}")
-
+            selections = {args.asset_key: args.textasset_name} if args.asset_key and args.textasset_name else None
+            extractor = UnityTextExtractor(selections)
+    if args.platform == "PC":
+        path = args.local_asset.absolute()
+        # A saved inventory replay is explicit and does not claim a fresh external
+        # PC observation. A newly observed external file is always read/hashed.
+        if args.inventory:
+            inventory = json.loads(args.inventory.read_bytes())
+        else:
+            if not path.is_file() or path.is_symlink():
+                raise ValueError("PC_SOURCE_LOCATOR_REQUIRED")
+            if path.stat().st_size > MAX_ASSET_BYTES:
+                raise ValueError("SOURCE_RAW_SIZE")
+            raw = path.read_bytes()
+            external_metrics["external_source_reads"] += 1
+            external_metrics["external_source_read_bytes"] += len(raw)
+            external_metrics["external_source_hash_calls"] += 1
+            external_metrics["external_source_hash_bytes"] += len(raw)
+            inventory = {"d": [{"n": args.asset_key, "h": digest(raw), "s": len(raw)}]}
+        def fetch(item):
+            if item["asset_key"] != args.asset_key or not path.is_file() or path.is_symlink():
+                raise ValueError("PC_SOURCE_LOCATOR_REQUIRED")
+            with path.open("rb") as stream:
+                acquired = stream.read(MAX_ASSET_BYTES + 1)
+            external_metrics["external_source_reads"] += 1
+            external_metrics["external_source_read_bytes"] += len(acquired)
+            external_metrics["external_source_hash_calls"] += 1
+            external_metrics["external_source_hash_bytes"] += len(acquired)
+            if len(acquired) > MAX_ASSET_BYTES or digest(acquired) != item["vendor_token"]:
+                raise ValueError("PC_SOURCE_IDENTITY_CHANGED")
+            return acquired
+        result = scan_inventory(profile, inventory, state_root=args.state_root, raw_root=args.raw_root,
+                                fetch_asset=fetch if args.acquire else None, extractor=extractor, existing_ids=existing,
+                                forced_ids=forced, complete=False, max_candidates=args.max_candidates,
+                                integrity_scan=args.integrity)
+    else:
+        import httpx
+        with httpx.Client(timeout=httpx.Timeout(90.0, connect=30.0), follow_redirects=False,
+                          headers={"User-Agent": "gctrans-crawl-only/2.0-ng03"}) as client:
             try:
-                bundle_bytes = fetch_bytes(
-                    client,
-                    f"{BASE_URL}{asset_path}",
-                    params=params,
-                )
-                parsed = parse_bundle(bundle_bytes)
-                if not parsed:
-                    raise RuntimeError("No TextAsset found in bundle")
+                if args.inventory and args.inventory.stat().st_size > MAX_ASSET_BYTES:
+                    raise ValueError("SOURCE_METADATA_SIZE")
+                inventory = json.loads(args.inventory.read_bytes()) if args.inventory else fetch_json(
+                    client, BASE_URL + (MASTER_MANIFEST if args.lane == "Master" else ASSETBUNDLE_MANIFEST))
+            except (ValueError, OSError, httpx.HTTPError):
+                result = scan_inventory(profile, None, state_root=args.state_root, raw_root=args.raw_root,
+                                        observation_error="SOURCE_METADATA_OBSERVATION_FAILED")
+                publish_intake(result,args)
+                atomic_json(args.output, result)
+                return result
+            if not args.acquire and not (args.state_root / (profile.key + ".json")).exists():
+                existing |= {i["source_id"] for i in normalize_inventory(inventory, args.lane)["items"]}
+            if args.lane == "UI":
+                selected = [item for item in inventory.get("d", []) if item.get("n") == args.asset_key]
+                if not selected:
+                    raise ValueError("UI_SUPPORTED_SOURCE_LOCATOR_REQUIRED")
+                inventory = {"d": selected}
+            def fetch(item):
+                asset_path = ASSET_PATH + item["asset_key"]
+                return fetch_bytes(client, BASE_URL + asset_path, params=get_url_params(asset_path, item["vendor_token"]))
+            result = scan_inventory(profile, inventory, state_root=args.state_root, raw_root=args.raw_root,
+                                    fetch_asset=fetch if args.acquire else None, extractor=extractor,
+                                    existing_ids=existing, forced_ids=forced, complete=not args.partial and args.lane != "UI",
+                                    max_candidates=args.max_candidates, integrity_scan=args.integrity)
+    result["external_observation_metrics"] = external_metrics
+    publish_intake(result,args)
+    if "lane_diff" in result:
+        result["lane_diff"]["novel_bridge_refs"] = [r["bridge_ref"] for r in result["sourceSnapshot"]["novel"] if r["bridge_ref"]]
+    atomic_json(args.output, result)
+    return result
 
-                script_name, script_text = parsed
-                messages = parse_script(script_text)
-                output_path = OUTPUT_DIR / "novels" / f"{novel_id}.json"
-                write_json(output_path, messages)
 
-                speakers = sorted(
-                    {
-                        str(message.get("name"))
-                        for message in messages
-                        if message.get("name")
-                    }
-                )
-                title = None
-                for message in messages:
-                    if message.get("name") == "" and message.get("message"):
-                        title = message["message"]
-                        break
+def publish_intake(result,args):
+    result['raw_acquisition_status']='PARTIAL_FAILED' if result['metrics']['failed'] else 'ACQUIRED_OR_REEXTRACTED' if result['metrics']['materialized'] else 'OWNED_METADATA_REUSE_NOT_BYTE_VERIFIED_THIS_SCAN' if result['metrics']['metadata_only_reuse'] else 'NOT_ACQUIRED'
+    intake = create_intake_references(result["sourceSnapshot"], args.output.with_name("novel-intake.json"))
+    from tools.update.intake_work import reconcile
+    actionable=reconcile(result["sourceSnapshot"],intake,args.state_root)
+    atomic_json(args.output.with_name("actionable-intake.json"),actionable)
+    result["actionable_intake"]={"path":"actionable-intake.json","new_work":actionable["new_work"],"actionable":len(actionable["actionable"]),"held":actionable["held"],"completed":actionable["completed"]}
+    result["novel_intake"] = {"path": "novel-intake.json", "references": len(intake["references"]),
+                              "kind":"ELIGIBLE_REFERENCE_CATALOG_NOT_WORK_QUEUE", "status": "EXISTING_WB_INPUTS_REQUIRED" if intake["references"] else "NO_MATERIALIZED_NOVEL"}
 
-                items.append(
-                    {
-                        "novel_id": novel_id,
-                        "selection_reason": (
-                            "forced"
-                            if forced_ids
-                            else "missing_from_repository"
-                        ),
-                        "asset_name": asset_name,
-                        "asset_manifest_hash": asset_hash,
-                        "bundle_sha256": sha256_bytes(bundle_bytes),
-                        "script_name": script_name,
-                        "parsed_sha256": sha256_json(messages),
-                        "message_count": len(messages),
-                        "speaker_count": len(speakers),
-                        "speakers": speakers,
-                        "title": title,
-                        "output_file": output_path.relative_to(OUTPUT_DIR).as_posix(),
-                    }
-                )
-            except Exception as exc:
-                failed.append(
-                    {
-                        "novel_id": novel_id,
-                        "asset_name": asset_name,
-                        "error": f"{type(exc).__name__}: {exc}",
-                    }
-                )
+def args_acquired(result):
+    return result["metrics"].get("materialized",0)>0
 
-        manifest = {
-            "schema": "gctrans-crawl-only-v1",
-            "generated_at_utc": generated_at,
-            "source": {
-                "base_url": BASE_URL,
-                "assetbundle_manifest": ASSETBUNDLE_MANIFEST,
-                "master_manifest": MASTER_MANIFEST,
-                "assetbundle_manifest_sha256": sha256_json(assetbundle),
-                "master_manifest_sha256": sha256_json(master_manifest),
-            },
-            "run": run_context,
-            "selection": {
-                "mode": selection_mode,
-                "forced_source_ids": forced_ids,
-                "max_candidates": max_candidates,
-            },
-            "repository_inventory": {
-                "legacy_6_1_novel_ids": len(legacy_ids),
-                "gcmod7_ko_novel_ids": len(ko7_ids),
-                "union_existing_novel_ids": len(existing_ids),
-            },
-            "official_inventory": {
-                "assetbundle_entries": len(assetbundle.get("d", [])),
-                "novel_assets": len(novel_assets),
-            },
-            "crawl_result": {
-                "candidate_count": len(candidate_ids),
-                "success_count": len(items),
-                "failure_count": len(failed),
-                "candidate_ids": candidate_ids,
-                "successful_ids": [item["novel_id"] for item in items],
-                "failed_ids": [item["novel_id"] for item in failed],
-            },
-            "items": items,
-            "failures": failed,
-        }
-        write_json(OUTPUT_DIR / "CRAWL_MANIFEST.json", manifest)
-        (OUTPUT_DIR / "NEW_IDS.txt").write_text(
-            "\n".join(candidate_ids) + ("\n" if candidate_ids else ""),
-            encoding="utf-8",
-        )
-
-        summary_lines = [
-            "# gctrans crawl-only result",
-            "",
-            f"- Generated: {generated_at}",
-            f"- Selection mode: `{selection_mode}`",
-            f"- Official assetbundle entries: **{len(assetbundle.get('d', []))}**",
-            f"- Official novel assets: **{len(novel_assets)}**",
-            f"- Existing repository novel IDs: **{len(existing_ids)}**",
-            f"- Crawl candidates: **{len(candidate_ids)}**",
-            f"- Successful: **{len(items)}**",
-            f"- Failed: **{len(failed)}**",
-            "",
-        ]
-
-        if candidate_ids:
-            summary_lines += [
-                "## Candidate IDs",
-                "",
-                "`" + "`, `".join(candidate_ids) + "`",
-                "",
-            ]
-        if failed:
-            summary_lines += [
-                "## Failures",
-                "",
-            ]
-            for failure in failed:
-                summary_lines.append(
-                    f"- `{failure['novel_id']}`: {failure['error']}"
-                )
-            summary_lines.append("")
-
-        summary = "\n".join(summary_lines)
-        (OUTPUT_DIR / "SUMMARY.md").write_text(summary, encoding="utf-8")
-        print(summary)
-
-        if failed:
-            raise RuntimeError(
-                f"{len(failed)} of {len(candidate_ids)} candidate assets failed to crawl"
-            )
+def main(arguments=None):
+    try:
+        result = run(parser().parse_args(arguments))
+        observation=result["state"]["observation"]
+        unavailable=observation.get("status")=="UNKNOWN"
+        operation_status="OBSERVATION_UNAVAILABLE" if unavailable else "PARTIAL_ACQUISITION" if result["metrics"]["failed"] else "RAW_ACQUIRED" if args_acquired(result) else "METADATA_ONLY_PLAN"
+        print(json.dumps({"operation_status":operation_status,"reason":observation.get("reason"),"metadata":observation["status"],
+                          "raw_acquisition_status":result['raw_acquisition_status'],
+                          "metrics": result["metrics"], "deletion_candidates": result["deletion_candidates"],
+                          "coverage": result["sourceSnapshot"]["coverage"], "automatic_translation_deletes": 0}))
+        return 2 if unavailable or result["metrics"]["failed"] else 0
+    except ImportError as error:
+        name = (error.name or "").split(".")[0]
+        code = "SOURCE_UNITY_DECODER_REQUIRED" if name == "UnityPy" else "SOURCE_HTTP_CLIENT_REQUIRED" if name == "httpx" else "SOURCE_OPTIONAL_DEPENDENCY_REQUIRED"
+        print(json.dumps({"status": "UNAVAILABLE", "code": code, "raw_acquisition_status": "NOT_ACQUIRED"}))
+        return 2
+    except (ValueError, OSError) as error:
+        code = str(error)
+        print(json.dumps({"status": "REJECTED", "code": code if code.startswith(("SOURCE_", "PC_", "MASTER_", "FORCED_", "UI_")) else "SOURCE_SCAN_FAILED"}))
+        return 2
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

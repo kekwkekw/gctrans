@@ -1,0 +1,50 @@
+{
+  "$id": "urn:gc:ui:episode-title-fit:ng01-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "A bounded layout policy for a compiled algorithm. v1 preserves the accepted grid and permits no font, text, reflection, or native-call overrides.",
+  "properties": {
+    "base_size": {
+      "const": 35
+    },
+    "descending_sizes": {
+      "const": [
+        34,
+        33,
+        32,
+        31
+      ],
+      "type": "array"
+    },
+    "font_profile": {
+      "const": "RHR_Medium_GFSAFE_ADH"
+    },
+    "overflow_failure": {
+      "const": "restore-base"
+    },
+    "policy_id": {
+      "const": "episode-title.fit.v1"
+    },
+    "restore": {
+      "const": "owned-only"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scope_key": {
+      "const": "episode-list-title"
+    }
+  },
+  "required": [
+    "schema_version",
+    "policy_id",
+    "font_profile",
+    "base_size",
+    "descending_sizes",
+    "restore",
+    "overflow_failure",
+    "scope_key"
+  ],
+  "title": "Episode title fit policy — NG01_V1",
+  "type": "object"
+}

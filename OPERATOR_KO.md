@@ -1,0 +1,86 @@
+# NG11 로컬 공개 검토 후보 운용
+
+운영 후보는 source/, scripts/, tools/, tests/, contracts/, donor_recovery/reproduction/Common.props, candidate/GCMod.dll, translations/ko, staging/로 구성된다. 선택된 번역값과 등록 상태는 NG12 공개 baseline과 같다. 네트워크 resolve 보완의 DLL 식별과 표적 명령은 [NETWORK_PREPARE_FIX_KO.md](NETWORK_PREPARE_FIX_KO.md)를 참조한다. 후속 변경의 공개 반영 여부는 실제 Git ref와 별도 실행 보고로 확인한다.
+
+명령은 추출한 후보 루트에서 실행한다. Python 3와 .NET SDK 9가 외부 실행 입력이다. UI-only 교정/검사는 Unity raw decoder·Medium·게임 DLL·private source helper를 요구하지 않는다. DLL 재빌드와 실제 native에는 EXTERNAL_DEPENDENCIES_KO.md의 별도 입력이 필요하다.
+
+```powershell
+python -X utf8 tools/update/cli.py --help
+python -X utf8 tools/update/cli.py preflight --candidate-root . --report <outside-scratch>/preflight.json
+python -X utf8 tools/verify_staged_release.py translations/ko --report <outside-scratch>/staging.json
+```
+
+preflight는 artifact/entrypoint/layout, 명시 dependency/font custody, native 미실행을 분리한다. FOUND는 ABI/glyph/hook PASS가 아니다. 마지막 whole-package staging은 한 번 수행한다. 매 UI 교정에 과거 Novel 전체를 다시 읽는 일상 경로가 아니다.
+
+기존 literal/template_label KO 교정은 draft를 먼저 만든다.
+
+```powershell
+python -X utf8 tools/update/cli.py plan-ui-edit --package translations/ko --resource-id <existing-resource-id> --new-ko <review-proposal> --draft <outside-scratch>/draft.json --report <outside-scratch>/plan.json
+# 해당 교정의 내용을 검토한 뒤 draft의 decision을 명시 APPROVE/HOLD로 저장한다.
+python -X utf8 tools/update/cli.py apply-review --package translations/ko --review <outside-scratch>/review.json --state-root <outside-scratch>/authoring --report <outside-scratch>/apply.json
+```
+
+다음 교정의 --package에는 apply.json의 next_package를 사용한다. 같은 owned custody의 예상 base/CAS와 해당 JP/kind/role/binding/old-KO를 검사한다. 기존 대상의 KO 교정에는 새 PC UI locator를 요구하지 않는다. source·binding·활성 범위 변경은 기존 observed-source 계약을 유지한다. master_ref KO 사본, HOLD/KEEP_SOURCE/Known Residual 또는 disabled binding 자동 활성화는 금지다. PARTIAL_HOLDS/exit2이면 request_outcomes의 APPLIED와 HELD를 나눠 읽고 이미 성공한 교정을 반복하지 않는다.
+
+최초 외부 import는 Novel을 읽고 hash한다. 이후 next_package 연속 UI 교정에서 변경 없는 Novel의 app read/hash는 0이며, OS copy/link/stat 비용까지 0이라는 뜻은 아니다. 임의 mutable export를 trusted custody로 승격하지 않는다.
+
+UpdateCli는 source build와 bin 실행을 구분한다.
+
+```powershell
+dotnet build tools/UpdateCli/UpdateCli.csproj -c Release -p:NuGetAudit=false
+dotnet tools/UpdateCli/bin/Release/net9.0/UpdateCli.dll prepare-local --store <new-isolated-test-store> --package <next_package> --based-on NONE
+```
+
+prepare-local은 완전 후보와 pending_restart만 저장한다. current 선택·native Initialize·live 전달을 실행하지 않는다. 최초 테스트는 실제 BepInEx store와 다른 scratch를 사용한다.
+
+승인된 trial에서 기존 driver의 UiRequestsEnabled를 true로 opt-in한 뒤 UI-only live 요청은 다음과 같다.
+
+```powershell
+dotnet tools/UpdateCli/bin/Release/net9.0/UpdateCli.dll request-ui --store <approved-trial-store> --package <next_package> --based-on <current-content-id>
+```
+
+UI_REQUEST_PUBLISHED는 신호 저장 결과다. 실제 driver 수신 → PREPARED → main-thread COMMITTED → 자연 rebind 화면을 확인해야 live 표시 결과다. 같은 DLL에서 폐기 fixture 교정과 원래 KO 복구를 한 쌍으로 확인한다. signal은 request ID/candidate content ID/expected-current/ui_reload 계약이며 임의 path/URL/코드/native 명령을 받지 않는다.
+
+UI-only commit은 기존 Master/Names/Novel session/cache와 pending_restart를 유지한다. Choice 자연 종료/자기 restore 실패 보류, 단일 coordinator/current/previous/LKG 경계를 유지한다. Master/Names/Novel authority·locale/origin·font/code/DLL 변경은 RESTART_REQUIRED다. data updater가 DLL/font를 설치하지 않는다. Fit3 typed layout은 기존 property/schema/bounds 범위이며 현재 35→34→33→32→31을 변경하지 않았다.
+
+기본 staging 설정은 Enabled=false, UiRequestsEnabled=false, CheckUpdate=false, ko, XUnity OFF다. 실제 trial 권한은 현재 사용자가 채택한 2026-10-13 프로젝트 정책을 따른다. preflight나 파일 자체가 새로운 권한을 만들지는 않는다. LAUNCH_PROCEDURE_KO.md에 정확한 임시 write-set과 원복 도구가 있다.
+
+최종 반환본의 별도 추출 재현은 동봉된 작은 도구로 수행할 수 있다. game root 밖의 아직 없는 scratch만 지정한다. 이 명령은 새 설치나 native 시험을 시작하지 않는다.
+
+```powershell
+python -I -S -X utf8 tools/replay_extracted.py --archive <current-operational.zip> --scratch <new-outside-return-check> --dotnet <installed-dotnet-executable> --discarded-fixture-approved
+```
+
+ZIP 경로를 검증해 별도 추출하고, 추출본 entrypoint/help/import/preflight/whole-package staging을 실행한다. 폐기 fixture에만 기존 close KO 교정/복구의 명시 decision과 next_package 경로를 재현한다. 이후 SDK의 NuGet source를 비운 UpdateCli build → 같은 후보 DLL을 참조한 bin 실행 → isolated prepare-local을 수행한다. current/previous 생성과 native Initialize가 없고 pending_restart만 저장되는지 확인한다. 기록은 scratch/REPLAY_RESULTS.json, STAGING.json, PREPARE_LOCAL.json, fixture/*-apply.json이며 이 CPU 재현은 native PASS가 아니다. 최초 import/cold staging 비용과 이어지는 unchanged Novel app read/hash0, OS copy 비용을 구분한다.
+
+현재 운영 export는 실제 로컬 Git commit의 선택 blob으로 만들었다. public main에 release-manifest가 없으므로 원격에서 이 후보를 받을 수 없다. 기본 CheckUpdate OFF/UiRequestsEnabled OFF/Nextgen Enabled OFF를 유지한다. safe source 및 공급/ref 범위는 PUBLICATION_KO.md, native 및 residual은 SUPPORT_SCOPE_KO.md를 참조한다. helper의 game-root/Medium은 명시 외부 입력이다.
+
+source 증분 운용은 같은 private state/raw root를 계속 사용하는 로컬 명령이다. output만 run별로 나눈다. 아래 metadata-only 예시는 이미 보유한 known inventory를 사용하며 raw 취득·최신 PC server 관측·의미 수락을 만들지 않는다. direct script와 운영 CLI는 같은 checkout의 소스를 사용한다.
+
+```powershell
+python -X utf8 scripts/crawl_only.py --platform WebGL --lane Novel --inventory <saved-known-inventory-v1.json> --state-root <persistent-private-state> --raw-root <persistent-private-raw> --output <outside-run1>/scan.json
+python -X utf8 tools/update/cli.py scan -- --platform WebGL --lane Novel --inventory <saved-known-inventory-v2.json> --state-root <persistent-private-state> --raw-root <persistent-private-raw> --output <outside-run2>/scan.json
+python -X utf8 tools/update/cli.py diff --previous <outside-run1>/scan.json --current <outside-run2>/scan.json --report <outside-run2>/diff.json
+```
+
+scan envelope와 bare snapshot은 diff/apply가 같은 규칙으로 읽는다. PC locator가 없으면 `--platform PC` scan은 `PC_SOURCE_LOCATOR_REQUIRED`/관측 UNKNOWN/exit2와 지정 보고서를 만든다. 이것은 내부 import 실패나 raw 취득 성공이 아니다. metadata-only 계획은 raw 미취득이고, 부분 취득 실패는 다른 성공을 보존한 채 실패 항목을 다음 scan에서 재시도한다. baseline-only는 이전 이력 없음이며 이전 대비 no-change가 아니다. state가 사라지면 새로운 baseline이다. 첫 baseline만으로 기존 Novel 전체를 재취득하거나 검수 작업으로 만들지 않는다. 실제 제한된 raw 취득은 established locator/endpoint와 외부 입력을 갖춘 뒤 `--acquire`를 명시하는 별도 단계다.
+
+scan 옆 `novel-intake.json`은 모든 eligible reference의 catalog다. `actionable-intake.json`은 새/변경/실패/미처리 work만 담는다. raw 취득 성공과 scan 성공은 semantic 검수 완료가 아니다. pending/failed는 유지되고, collision/불완전 source는 해당 scope만 held다. 완료 work는 accepted return과 성공 apply가 대응할 때만 반복 공급을 멈춘다.
+
+```powershell
+python -X utf8 tools/update/cli.py bind-intake-wb --current-source <run/scan.json> --bound-scene <existing-WB-bound-scene.json> --scene-sha256 <exact-scene-sha256> --source-id <observed-source-id> --asset-key <observed-asset-key> --raw-root <persistent-private-raw> --report <run/wb-bind.json>
+# 기존 WB13~M4 intake/validator/review/accepted return을 실행한다. parser/locator를 새로 만들지 않는다.
+python -X utf8 tools/update/cli.py apply-review --package <authoring-next_package> --review <explicit-accepted-review.json> --current-source <run/scan.json> --state-root <owned-authoring-custody> --report <run/apply.json>
+python -X utf8 tools/update/cli.py intake-failed --state-root <persistent-private-state> --current-source <run/scan.json> --work-id <actionable-work-id> --reason <TYPED_FAILURE_REASON> --report <run/intake-failed.json>
+python -X utf8 tools/update/cli.py resume-intake-completion --state-root <owned-authoring-custody> --report <run/completion.json>
+```
+
+WB binding에는 실제 source-qualified/physical locator와 검증된 raw identity가 필요하다. accepted Novel return의 reviewed-change-set에 기존 intake link가 있어야 해당 work가 완료된다. 일반 UI 교정에서 관계없는 WB 전수 replay를 하지 않는다. 지원된 operation만 적용하고 나머지는 request_outcomes로 APPLIED/HELD/REJECTED를 보고한다.
+
+GitHub의 `crawl_only.yml`은 fresh state의 one-shot metadata snapshot이다. 지속 CI 증분은 구현하지 않았다. artifact 7일 보존은 durable source baseline을 대신하지 않는다. workflow 요약은 실제 scan.json의 status/coverage/plan을 사용하며 raw/PC 동등성/semantic 수락 PASS를 주장하지 않는다. `update_translation.yml`의 로컬 후보 정의는 retired manual/read-only 안내뿐이다. 원격 workflow의 enabled/disabled 상태 및 실제 dispatch는 별도이며 이번 작업에서 변경·실행하지 않는다.
+
+```powershell
+python -I -S -X utf8 tools/update/snapshot_summary.py --scan <run/scan.json> --summary <run/public-summary.md> --report <run/public-summary.json> --one-shot
+```
+
+`--one-shot`은 CI의 이전 run 이력 없음 표시다. local persistent state 결과의 요약에는 이 옵션을 붙이지 않는다. CI artifact는 유한한 enum/숫자 projection인 public-summary.json/md만 보관하고 실제 scan/raw/state/서명 URL·private source를 올리지 않는다.

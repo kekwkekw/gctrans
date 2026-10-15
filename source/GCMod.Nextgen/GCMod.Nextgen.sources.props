@@ -1,0 +1,10 @@
+<Project>
+  <!-- Optional verified-donor integration: compile these policies inside GCMod,
+       without shipping an additional addon DLL or a ParentPin chain. -->
+  <PropertyGroup>
+    <GCNextgenSourceRoot>$(MSBuildThisFileDirectory)</GCNextgenSourceRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(GCNextgenSourceRoot)*.cs" Link="Nextgen/%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,159 @@
+{
+  "$id": "urn:gc:ui:resources:ng01-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Design contract only. Translation values do not activate a binding. UTF-8 byte limits and cross-file references are checked by validate_examples.py.",
+  "properties": {
+    "locale": {
+      "const": "ko"
+    },
+    "resources": {
+      "items": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "required": [
+                  "master_ref"
+                ]
+              },
+              "required": [
+                "ko"
+              ]
+            },
+            "if": {
+              "properties": {
+                "kind": {
+                  "const": "master_ref"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "ko"
+                ]
+              },
+              "required": [
+                "master_ref"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "disposition": {
+                  "const": "translate"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "ko": {
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "disposition": {
+            "enum": [
+              "translate",
+              "keep_source",
+              "hold"
+            ]
+          },
+          "id": {
+            "maxLength": 160,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$",
+            "type": "string"
+          },
+          "jp": {
+            "maxLength": 16384,
+            "minLength": 1,
+            "pattern": "^[^\\u0000]*$",
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "literal",
+              "template_label",
+              "master_ref"
+            ]
+          },
+          "ko": {
+            "maxLength": 16384,
+            "pattern": "^[^\\u0000]*$",
+            "type": "string"
+          },
+          "markup_policy": {
+            "enum": [
+              "exact-tags",
+              "omit-cspace-v1"
+            ]
+          },
+          "master_ref": {
+            "additionalProperties": false,
+            "description": "Read the active Master snapshot by exact table/field/JP. No UI KO copy, path, code pin, expression, or guessed fallback.",
+            "properties": {
+              "exact_jp": {
+                "maxLength": 16384,
+                "minLength": 1,
+                "pattern": "^[^\\u0000]*$",
+                "type": "string"
+              },
+              "field": {
+                "maxLength": 128,
+                "minLength": 1,
+                "pattern": "^[A-Za-z_][A-Za-z0-9_]*(?:\\[\\])?$",
+                "type": "string"
+              },
+              "table": {
+                "maxLength": 128,
+                "minLength": 1,
+                "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "table",
+              "field",
+              "exact_jp"
+            ],
+            "type": "object"
+          },
+          "role": {
+            "maxLength": 160,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "role",
+          "kind",
+          "jp",
+          "disposition"
+        ],
+        "type": "object"
+      },
+      "maxItems": 20000,
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "locale",
+    "resources"
+  ],
+  "title": "GC UI resources — NG01_V1",
+  "type": "object"
+}

@@ -1,4 +1,7 @@
 {
+  "hash": "3a8cded545e5b91779e40abdf6fd574a",
+  "master": "4ab748939ef94994e784e03af4a4daa6",
+  "names": "66cb48419685c0e09ddc6a294b8cea5a",
   "novels": {
     "10004": "06c13f92c40f38941a00b27d478f5668",
     "10005": "5cec0753707af3207ed5adc7a751d918",
@@ -1854,8 +1857,5 @@
     "99900001": "fe5ae3ab12600f6ff83c74cc48891b11",
     "99900002": "26cd001ac7463083a622bf95461946b5",
     "99900003": "8fa7babf655a0b3b79fef7548a38b974"
-  },
-  "names": "66cb48419685c0e09ddc6a294b8cea5a",
-  "master": "32633a13e3c5efe358fae608df3f275f",
-  "hash": "4bdabdd3ffb3f364fef06eebc4ab1e0c"
+  }
 }

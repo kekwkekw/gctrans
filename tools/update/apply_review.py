@@ -1,0 +1,469 @@
+"""Offline reviewed apply with owned immutable authoring generations.
+
+Exports never lend trust. Inventory carries unchanged lazy Novel identity;
+touched payloads and runtime lazy consumption verify actual bytes.
+Authoring current is unrelated to RuntimeCoordinator selection.
+"""
+from __future__ import annotations
+import copy, os, re, shutil, stat, sys, uuid
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from build_manifests import build, previous_inventory, safe_path, encode, sha
+from contract_validation import read_json, validate_package, validate_shape, ContractError
+from verify_staged_release import verify
+from update.diff_review import ReviewConflict, apply_row, fingerprint, find_source, validate_binding_provenance
+from update.process_lock import ProcessFileLock
+
+CONTRACTS = Path(__file__).resolve().parents[2]/'contracts'
+HELD = {'HOLD','KEEP_SOURCE','KNOWN_RESIDUAL'}
+ARRAYS = ('rows','resource_rows','binding_rows','layout_rows','master_key_rows','novel_returns','register','unregister')
+
+class CustodyIntegrityError(ValueError):
+    """Abort the whole candidate when previously owned bytes lost integrity."""
+
+def obj(value, allowed, required=(), code='REVIEW_OPERATION_CONTRACT'):
+    if not isinstance(value,dict) or set(value)-set(allowed) or set(required)-set(value): raise ReviewConflict(code)
+
+def string(value):
+    if not isinstance(value,str) or not value or '\x00' in value: raise ReviewConflict('REVIEW_STRING_REQUIRED')
+
+def pin(value):
+    if not isinstance(value,str) or not re.fullmatch('[0-9a-f]{64}',value): raise ReviewConflict('REVIEW_SHA256_REQUIRED')
+
+def validate_review(review):
+    """Fail closed before capture/staging for unknown instructions and bad types."""
+    obj(review, {'schema','expected_base',*ARRAYS}, {'schema'}, 'REVIEW_SET_UNKNOWN_OR_MISSING_PROPERTY')
+    if review['schema']!='gc-ng03-reviewed-change-set-v1': raise ReviewConflict('REVIEW_SET_CONTRACT_REQUIRED')
+    if 'expected_base' in review: string(review['expected_base'])
+    for group in ARRAYS:
+        if group not in review: continue
+        if not isinstance(review[group],list): raise ReviewConflict('REVIEW_ARRAY_REQUIRED:'+group)
+        if group in {'register','unregister'}:
+            if any(not isinstance(i,str) or not re.fullmatch('[0-9]{1,16}',i) for i in review[group]): raise ReviewConflict('INVALID_REGISTRATION_OPERATION')
+            continue
+        for op in review[group]:
+            common={'review_id','decision','operation'}
+            if group=='novel_returns': allowed=common|{'workbench_root','implementation_sha256','m4_plan','reviewed_source_refs','old_ko','intake_work'}
+            elif group=='master_key_rows': allowed=common|{'target','source_basis','source_basis_sha256','old_ko_sha256','new_ko','all_uses_same_ko'}
+            elif group=='layout_rows': allowed=common|{'target','proposal','old_layout_sha256'}
+            else:
+                allowed=common|{'lane','locator','source_fingerprint'}
+                allowed|={'target','old_ko_sha256','new_ko','old_resource_sha256','source_basis','source_basis_sha256'} if group=='rows' else {'proposal','old_resource_sha256' if group=='resource_rows' else 'old_binding_sha256'}
+            obj(op,allowed,{'review_id'}); string(op['review_id'])
+            decision=op.get('decision','APPROVE' if group=='novel_returns' else None)
+            if not isinstance(decision,str) or decision not in HELD|{'APPROVE'}: raise ReviewConflict('EXPLICIT_REVIEW_DECISION_REQUIRED')
+            supported={'rows':{'set_ko'},'resource_rows':{'add_or_modify'},'binding_rows':{'add_or_modify','remove'},'layout_rows':{'replace_typed_policy'},'novel_returns':{'accepted_return'},'master_key_rows':{'set_runtime_key_ko'}}
+            if 'operation' in op and (not isinstance(op['operation'],str) or op['operation'] not in supported[group]): raise ReviewConflict('UNSUPPORTED_REVIEW_OPERATION:'+group)
+            if decision in HELD:
+                for name in ('lane','workbench_root','implementation_sha256','new_ko'):
+                    if name in op and not isinstance(op[name],str): raise ReviewConflict('REVIEW_STRING_REQUIRED')
+                for name in ('locator','target','proposal','m4_plan','reviewed_source_refs','old_ko','source_basis','intake_work'):
+                    if name in op and not isinstance(op[name],dict): raise ReviewConflict('REVIEW_OBJECT_REQUIRED:'+name)
+                for name in ('source_fingerprint','old_ko_sha256','old_resource_sha256','old_binding_sha256','old_layout_sha256','source_basis_sha256'):
+                    if name in op: pin(op[name])
+                continue
+            if group=='master_key_rows' or (group=='rows' and 'source_basis' in op):
+                obj(op,allowed,{'target','source_basis','source_basis_sha256','old_ko_sha256','new_ko'})
+                obj(op['target'],{'file','keys'} if group=='master_key_rows' else {'file','resource_id'},{'file','keys'} if group=='master_key_rows' else {'file','resource_id'})
+                string(op['target']['file']);pin(op['old_ko_sha256']);pin(op['source_basis_sha256'])
+                if not isinstance(op['new_ko'],str) or not isinstance(op['source_basis'],dict): raise ReviewConflict('REVIEW_PACKAGE_BASIS_REQUIRED')
+                if group=='master_key_rows':
+                    if op.get('all_uses_same_ko') is not True or not isinstance(op['target']['keys'],list) or len(op['target']['keys'])!=3 or any(not isinstance(k,str) for k in op['target']['keys']): raise ReviewConflict('MASTER_KEY_ALL_USES_APPROVAL_REQUIRED')
+                elif op.get('lane')!='ui' or op['source_basis'].get('kind')!='package_target' or any(k in op for k in ('locator','source_fingerprint','old_resource_sha256')): raise ReviewConflict('PACKAGE_TARGET_UI_KO_ONLY')
+                continue
+            if group=='novel_returns':
+                if 'intake_work' in op:
+                    obj(op['intake_work'],{'state_root','work_ids'},{'state_root','work_ids'});string(op['intake_work']['state_root'])
+                    if not isinstance(op['intake_work']['work_ids'],list) or not op['intake_work']['work_ids'] or any(not isinstance(k,str) for k in op['intake_work']['work_ids']): raise ReviewConflict('INTAKE_APPLY_LINK_REQUIRED')
+                for name in ('workbench_root','implementation_sha256'):
+                    if name in op: string(op[name])
+                for name in ('m4_plan','reviewed_source_refs','old_ko'):
+                    if name in op and not isinstance(op[name],dict): raise ReviewConflict('NOVEL_BRIDGE_INPUT_REQUIRED')
+                if 'implementation_sha256' in op: pin(op['implementation_sha256'])
+                if 'm4_plan' in op:
+                    obj(op['m4_plan'],{'path','sha256'},{'path','sha256'}); string(op['m4_plan']['path']); pin(op['m4_plan']['sha256'])
+                if 'old_ko' in op:
+                    for file, value in op['old_ko'].items(): string(file); pin(value)
+                continue  # Missing WB inputs are explicit per-return refusals.
+            if group=='layout_rows':
+                obj(op,allowed,{'target','proposal','old_layout_sha256'})
+                obj(op['target'],{'file','policy_id'},{'file','policy_id'})
+                string(op['target']['file']); string(op['target']['policy_id']); pin(op['old_layout_sha256'])
+                if not isinstance(op['proposal'],dict): raise ReviewConflict('TYPED_LAYOUT_OBJECT_REQUIRED')
+                continue
+            obj(op,allowed,{'lane','locator','source_fingerprint'})
+            if not isinstance(op['lane'],str) or op['lane'] not in {'master','ui'} or not isinstance(op['locator'],dict): raise ReviewConflict('REVIEW_LANE_LOCATOR_REQUIRED')
+            pin(op['source_fingerprint'])
+            if group=='rows':
+                obj(op,allowed,{'target','old_ko_sha256','new_ko'}); obj(op['target'],{'file','keys','resource_id'},{'file'})
+                string(op['target']['file']); pin(op['old_ko_sha256'])
+                if not isinstance(op['new_ko'],str): raise ReviewConflict('REVIEWED_KO_STRING_REQUIRED')
+                if 'keys' in op['target'] and (not isinstance(op['target']['keys'],list) or any(not isinstance(k,str) for k in op['target']['keys'])): raise ReviewConflict('EXACT_LEGACY_TARGET_KEYS_REQUIRED')
+                if 'resource_id' in op['target']: string(op['target']['resource_id'])
+                if 'old_resource_sha256' in op: pin(op['old_resource_sha256'])
+            else:
+                key='old_resource_sha256' if group=='resource_rows' else 'old_binding_sha256'
+                obj(op,allowed,{'proposal',key}); pin(op[key])
+                if not isinstance(op['proposal'],dict): raise ReviewConflict('REVIEW_PROPOSAL_OBJECT_REQUIRED')
+                schema=read_json(CONTRACTS/('ui-resources.schema.json' if group=='resource_rows' else 'ui-bindings.schema.json'))
+                validate_shape(schema['properties']['resources' if group=='resource_rows' else 'bindings']['items'],op['proposal'])
+    ids=review.get('register',[])+review.get('unregister',[])
+    if len(ids)!=len(set(ids)): raise ReviewConflict('INVALID_REGISTRATION_OPERATION')
+
+def writable(root):
+    for p in root.rglob('*'):
+        if p.is_file(): p.chmod(stat.S_IREAD|stat.S_IWRITE)
+
+def immutable(root):
+    for p in root.rglob('*'):
+        if p.is_file(): p.chmod(stat.S_IREAD)
+
+def discard(root):
+    def recover(function,path,error):
+        os.chmod(path,stat.S_IREAD|stat.S_IWRITE); function(path)
+    if root.exists(): shutil.rmtree(root,onerror=recover)
+
+def atomic_json(path,value):
+    path.parent.mkdir(parents=True,exist_ok=True); temp=path.with_name('.authoring-'+uuid.uuid4().hex+'.json')
+    try:
+        with temp.open('xb') as stream: stream.write(encode(value)); stream.flush(); os.fsync(stream.fileno())
+        os.replace(temp,path)
+    finally: temp.unlink(missing_ok=True)
+
+def exclusive_directory_publish(temporary,target):
+    """Publish our export directory without replacing any caller-owned path."""
+    if os.name=='nt':
+        os.rename(temporary,target)  # Windows rename refuses an existing target.
+    elif sys.platform.startswith('linux'):
+        import ctypes
+        libc=ctypes.CDLL(None,use_errno=True)
+        function=getattr(libc,'renameat2',None)
+        if function is None: raise ContractError('EXCLUSIVE_EXPORT_PUBLISH_UNSUPPORTED')
+        function.argtypes=[ctypes.c_int,ctypes.c_char_p,ctypes.c_int,ctypes.c_char_p,ctypes.c_uint]
+        function.restype=ctypes.c_int
+        if function(-100,os.fsencode(temporary),-100,os.fsencode(target),1):
+            error=ctypes.get_errno(); raise OSError(error,os.strerror(error),str(target))
+    else: raise ContractError('EXCLUSIVE_EXPORT_PUBLISH_UNSUPPORTED')
+
+def proof(state,target,entries,**extra):
+    atomic_json(state/'verification'/(target.name+'.json'),{'schema':'gc-ng04-owned-verification-v1',
+        'inventory_sha256':sha(encode([entries[p] for p in sorted(entries)])),
+        'custody':'OWNED_READ_ONLY_PAYLOADS_CONSUMPTION_HASH_REQUIRED',**extra})
+
+def _freeze_input(root,state):
+    packages=state/'verified-packages'; receipt=state/'verification'/(root.name+'.json')
+    if root.parent==packages and receipt.is_file():
+        value=read_json(receipt); entries,_=previous_inventory(root)
+        if value.get('schema') not in {'gc-ng03-owned-verification-v1','gc-ng04-owned-verification-v1'} or value.get('inventory_sha256')!=sha(encode([entries[p] for p in sorted(entries)])): raise ContractError('VERIFIED_CUSTODY_METADATA_CHANGED')
+        return root,{'mode':'verified_owned_immutable_inventory','novel_payload_reads':0,'novel_payload_hashes':0,'os_copied_files':0,
+                     'integrity_scope':'inherited inventory; touched payloads and runtime lazy consumption hash actual bytes'}
+    for p in [root,*root.rglob('*')]:
+        if p.is_symlink() or (hasattr(p,'is_junction') and p.is_junction()): raise ContractError('IMPORT_LINK_NOT_ALLOWED')
+    packages.mkdir(parents=True,exist_ok=True); temp=packages/('.owned-import-'+uuid.uuid4().hex); target=None
+    try:
+        shutil.copytree(root,temp,copy_function=shutil.copyfile); evidence=verify(temp); entries,_=previous_inventory(temp)
+        identity=sha(encode([entries[p] for p in sorted(entries)])); target=packages/(identity+'-'+uuid.uuid4().hex)
+        immutable(temp); os.replace(temp,target); proof(state,target,entries,initial_verification=evidence)
+    except BaseException:
+        if target is not None: discard(target)
+        raise
+    finally: discard(temp)
+    novels=sum(p.startswith('novels/') for p in entries)
+    return target,{'mode':'cold_external_import','novel_payload_reads':novels,'novel_payload_hashes':novels,'os_copied_files':len(entries)+2,'integrity_scope':'captured actual bytes; whole staging verification'}
+
+def freeze_input(root,state_root):
+    root,state=Path(root).resolve(),Path(state_root).resolve()
+    if state.is_relative_to(root): raise ContractError('OUTPUT_OR_STATE_CANNOT_MUTATE_INPUT_PACKAGE')
+    with ProcessFileLock(state/'authoring.writer.lock','AUTHORING_STATE_WRITER_BUSY'): return _freeze_input(root,state)
+
+def overlap_groups(scopes):
+    """Connected full-file operation groups; multi-file returns stay indivisible."""
+    unseen=set(scopes); groups=[]
+    while unseen:
+        group={unseen.pop()}; files=set().union(*(scopes[i] for i in group))
+        while True:
+            linked={i for i in unseen if files&scopes[i]}
+            if not linked: break
+            unseen-=linked; group|=linked; files|=set().union(*(scopes[i] for i in linked))
+        if len(group)>1: groups.append(sorted(group))
+    return groups
+
+def apply_review(package,review,current_source,output,state_root,*,fault=None,expected_base=None):
+    validate_review(review); package,state=Path(package).resolve(),Path(state_root).resolve(); output=Path(output).resolve() if output is not None else None
+    if state.is_relative_to(package) or (output and (output.is_relative_to(package) or output.is_relative_to(state))): raise ContractError('OUTPUT_OR_STATE_CANNOT_MUTATE_INPUT_PACKAGE')
+    if output and output.exists(): raise ContractError('OUTPUT_MUST_BE_NEW')
+    if any(Path(value).resolve()!=package for value in (expected_base,review.get('expected_base')) if value is not None): raise ContractError('EXPECTED_BASE_PACKAGE_MISMATCH')
+    with ProcessFileLock(state/'authoring.writer.lock','AUTHORING_STATE_WRITER_BUSY'):
+        return _apply_locked(package,review,current_source,output,state,fault)
+
+def resume_intake_completion(state_root):
+    """Resume only internal completion intents of the selected owned generation.
+
+    Neither a mutable export nor an arbitrary apply report lends custody.
+    """
+    state=Path(state_root).resolve();results=[]
+    with ProcessFileLock(state/'authoring.writer.lock','AUTHORING_STATE_WRITER_BUSY'):
+        head=read_json(state/'authoring-current.json');owned=Path(head['next_package']).resolve()
+        verified,_=_freeze_input(owned,state)
+        if verified!=owned: raise ContractError('INTAKE_COMPLETION_OWNED_GENERATION_REQUIRED')
+        from update.intake_work import complete_after_apply
+        selected_commits={};cursor=head
+        while cursor.get('commit_token'):
+            token=cursor['commit_token']
+            if token in selected_commits or not re.fullmatch('[0-9a-f]{32}',token): raise ContractError('AUTHORING_COMMIT_CHAIN_INVALID')
+            selected_commits[token]=cursor['next_package']
+            parent=cursor.get('previous_commit_token')
+            if not parent: break
+            if not isinstance(parent,str) or not re.fullmatch('[0-9a-f]{32}',parent): raise ContractError('AUTHORING_COMMIT_CHAIN_INVALID')
+            record=read_json(state/'authoring-selections'/(parent+'.json'))
+            if record.get('commit_token')!=parent: raise ContractError('AUTHORING_COMMIT_CHAIN_INVALID')
+            cursor=record
+        for path in sorted((state/'intake-completions').glob('*.json')):
+            intent=read_json(path)
+            selected_package=selected_commits.get(intent.get('commit_token'))
+            if intent.get('schema')!='gc-ng05-owned-completion-intent-v1' or intent.get('next_package')!=selected_package: continue
+            completed_package=Path(selected_package).resolve()
+            verified,_=_freeze_input(completed_package,state)
+            if verified!=completed_package: raise ContractError('INTAKE_COMPLETION_OWNED_GENERATION_REQUIRED')
+            batch=[]
+            for item in intent['items']:
+                try:
+                    result=complete_after_apply(item['link'],item['snapshot'],item['operation'],item['basis'],completed_package,item['returned'])
+                except (ValueError,OSError) as error: result={'status':'HELD_COMPLETION','reason':str(error),'apply_committed':True}
+                batch.append(result)
+            results.extend(batch)
+            if all(r.get('status') in {'COMPLETED','ALREADY_COMPLETED'} for r in batch): path.unlink()
+    return {'schema':'gc-ng05-intake-completion-resume-v1','results':results,'next_package':str(owned),'runtime_selection':False}
+
+def _apply_locked(package,review,current_source,output,state,fault):
+    owned,import_metrics=_freeze_input(package,state); current=state/'authoring-current.json'
+    if current.exists() and Path(read_json(current)['next_package']).resolve()!=owned: raise ContractError('AUTHORING_EXPECTED_BASE_CONFLICT')
+    baseline,_=previous_inventory(owned); staging=state/'verified-packages'/('.owned-apply-'+uuid.uuid4().hex)
+    generation=None; committed=False; export_temporary=None;commit_token=uuid.uuid4().hex
+    changed,docs,outcomes,temps=set(),{}, {},[]; payload_reads=[]; payload_hashes=[]; novel_identities={}; master_approved=[]; intake_validated={}; intake_completed=[]
+    requested=[(f'{g}:{i}',g,op) for g in ARRAYS for i,op in enumerate(review.get(g,[]))]
+    def result(key,group,op,status,reason,**extra):
+        if key in outcomes: raise ContractError('REVIEW_OPERATION_CONSUMED_TWICE')
+        outcomes[key]={'request_id':key,'review_id':op.get('review_id') if isinstance(op,dict) else group+':'+op,'operation':group,'status':status,'reason':reason,**extra}
+    def payload_hash(file,raw):
+        payload_hashes.append(file); return sha(raw)
+    def document(file):
+        if file not in docs:
+            raw=safe_path(staging,file).read_bytes(); payload_reads.append(file); desc=novel_identities.get(file) if file in changed else baseline.get(file)
+            if desc is None or len(raw)!=desc['size'] or payload_hash(file,raw)!=desc['sha256']: raise CustodyIntegrityError('OWNED_CONSUMPTION_IDENTITY_MISMATCH:'+file)
+            docs[file]=read_json(staging/file)
+            payload_reads.append(file)  # actual read_json reads the bytes again
+        return docs[file]
+    try:
+        # Missing optional source blocks only operations that consume it. A known
+        # package-target KO edit and already-held work require no fresh source.
+        # This never supplies a fake source snapshot or bypasses WB acceptance.
+        if current_source is None:
+            for key,group,op in requested:
+                if not isinstance(op,dict) or op.get('decision') in HELD:
+                    continue
+                observed = group in {'master_key_rows','resource_rows','binding_rows','novel_returns'} or (group=='rows' and 'source_basis' not in op)
+                if observed:
+                    result(key,group,op,'HELD','CURRENT_OBSERVED_SOURCE_REQUIRED')
+        # Preflight the whole declared Novel write-set before staging any bytes.
+        novels={key:op for key,g,op in requested if g=='novel_returns'}; scopes={}
+        for key,op in novels.items():
+            if key in outcomes: continue
+            if op.get('decision') in HELD: result(key,'novel_returns',op,'HELD',op['decision']); continue
+            try:
+                declared=op.get('old_ko')
+                if not isinstance(declared,dict) or not declared: raise ReviewConflict('NOVEL_BRIDGE_INPUT_REQUIRED')
+                for file in declared:
+                    safe_path(owned,file)
+                    if not re.fullmatch(r'novels/[0-9]+\.json',file): raise ReviewConflict('NOVEL_RETURN_TARGET')
+                scopes[key]=set(declared)
+            except (ReviewConflict,ContractError) as error: result(key,'novel_returns',op,'REJECTED',str(error))
+        for group in overlap_groups(scopes):
+            for key in group: result(key,'novel_returns',novels[key],'HELD','OVERLAPPING_NOVEL_RETURN',connected_requests=group)
+        master_requests={}
+        for key,group,op in requested:
+            if key in outcomes: continue
+            if group in {'rows','master_key_rows'} and op.get('target',{}).get('file')=='master.json' and op.get('decision')=='APPROVE': master_requests.setdefault(tuple(op['target'].get('keys',[])),[]).append((key,group,op))
+        for uses in master_requests.values():
+            if len(uses)>1 and any(group=='master_key_rows' for key,group,op in uses):
+                for key,group,op in uses: result(key,group,op,'HELD','MULTIPLE_MASTER_KEY_DECISIONS_REQUIRE_ONE_SCOPE_REVIEW')
+        shutil.copytree(owned,staging,copy_function=shutil.copyfile)
+        # These bytes are consumed by the builder/structural QA even for empty
+        # changes. Verify their inherited identities before metadata can be rebuilt.
+        for file in ('ui/resources.json','ui/bindings.json',*[p for p in baseline if p.startswith('layout/')]): document(file)
+        for key,group,op in requested:
+            if key in outcomes or group in {'novel_returns','register','unregister'}: continue
+            if op['decision'] in HELD: result(key,group,op,'HELD',op['decision']); continue
+            try:
+                if group=='master_key_rows':
+                    from update.operator_review import apply_master_key
+                    file='master.json';doc=document(file);before=copy.deepcopy(doc);applied=apply_master_key(doc,current_source,op)
+                    if applied:
+                        keys=op['target']['keys'];master_approved.append({'table':keys[0],'field':keys[1],'exact_jp':keys[2],'old_ko':before[keys[0]][keys[1]][keys[2]],'new_ko':op['new_ko']})
+                elif group=='rows':
+                    file=op['target']['file']; safe_path(staging,file)
+                    if file not in {'master.json','names.json','ui/resources.json'}: raise ReviewConflict('SUPPORTED_REVIEW_TARGET_REQUIRED')
+                    doc=document(file); before=copy.deepcopy(doc)
+                    if 'source_basis' in op:
+                        from update.operator_review import apply_package_ui
+                        applied=apply_package_ui(doc,document('ui/bindings.json'),op)
+                    else: applied=apply_row(doc,op,current_source)
+                    if applied and file=='master.json':
+                        keys=op['target']['keys']; parent=before
+                        for part in keys[:-1]: parent=parent[part]
+                        approval={'table':keys[0],'field':keys[1],'exact_jp':keys[-1],'old_ko':parent.get(keys[-1]),'new_ko':op['new_ko']}
+                        previous=next((p for p in master_approved if (p['table'],p['field'],p['exact_jp'])==(keys[0],keys[1],keys[-1])),None)
+                        if previous is None: master_approved.append(approval)
+                        else: previous['new_ko']=op['new_ko']  # each row's old-KO pin was independently checked
+                elif group=='resource_rows':
+                    source=find_source(current_source,op); proposal=copy.deepcopy(op['proposal'])
+                    if op['lane']!='ui' or proposal['id']!=source['locator'].get('resource') or proposal['jp']!=source['jp'] or proposal['role']!=source['locator'].get('role') or proposal['kind']!=source.get('structure',{}).get('kind'): raise ReviewConflict('RESOURCE_SOURCE_ROLE_MISMATCH')
+                    file='ui/resources.json'; doc=document(file); before=copy.deepcopy(doc); matches=[r for r in doc['resources'] if r['id']==proposal['id']]
+                    if len(matches)>1 or fingerprint(matches[0] if matches else None)!=op['old_resource_sha256']: raise ReviewConflict('CONCURRENT_RESOURCE_CHANGE')
+                    if matches and matches[0]['disposition'] in {'hold','keep_source','known_residual'} and proposal['disposition']=='translate': raise ReviewConflict('PROTECTED_RESOURCE_NOT_AUTOMATICALLY_ACTIVATED')
+                    if not matches or matches[0]!=proposal:
+                        if matches: doc['resources'].remove(matches[0])
+                        doc['resources'].append(proposal)
+                    applied=doc!=before
+                elif group=='binding_rows':
+                    source=find_source(current_source,op); proposal=copy.deepcopy(op['proposal'])
+                    if op['lane']!='ui' or proposal['resource_id']!=source['locator'].get('resource') or proposal['source_identity']['exact_jp']!=source['jp']: raise ReviewConflict('BINDING_SOURCE_TARGET_MISMATCH')
+                    resources=[r for r in document('ui/resources.json')['resources'] if r['id']==proposal['resource_id']]
+                    if len(resources)!=1: raise ReviewConflict('RESOURCE_TARGET_REQUIRED')
+                    validate_binding_provenance(source,proposal,resources[0])
+                    if resources[0]['disposition']!='translate' and proposal['enabled']: raise ReviewConflict('PROTECTED_RESOURCE_NOT_AUTOMATICALLY_ACTIVATED')
+                    file='ui/bindings.json'; doc=document(file); before=copy.deepcopy(doc); matches=[r for r in doc['bindings'] if r['id']==proposal['id']]
+                    if len(matches)>1 or fingerprint(matches[0] if matches else None)!=op['old_binding_sha256']: raise ReviewConflict('CONCURRENT_BINDING_CHANGE')
+                    if matches and not matches[0]['enabled'] and proposal['enabled']: raise ReviewConflict('PROTECTED_BINDING_NOT_AUTOMATICALLY_ACTIVATED')
+                    if op.get('operation')=='remove':
+                        if not matches: raise ReviewConflict('REMOVE_BINDING_TARGET_REQUIRED')
+                        doc['bindings'].remove(matches[0])
+                    elif not matches or matches[0]!=proposal:
+                        if matches: doc['bindings'].remove(matches[0])
+                        doc['bindings'].append(proposal)
+                    applied=doc!=before
+                else:
+                    file=op['target']['file']
+                    if file!='layout/episode-title.json' or op['target']['policy_id']!='episode-title.fit.v1': raise ReviewConflict('COMPILED_TYPED_LAYOUT_REQUIRED')
+                    doc=document(file)
+                    if fingerprint(doc)!=op['old_layout_sha256']: raise ReviewConflict('CONCURRENT_LAYOUT_CHANGE')
+                    validate_shape(read_json(CONTRACTS/'episode-title-fit.schema.json'),op['proposal'])
+                    # Existing schema fixes every value. Only valid byte formatting
+                    # may be canonicalized; no native/property permission is added.
+                    applied=safe_path(staging,file).read_bytes()!=encode(op['proposal']); docs[file]=copy.deepcopy(op['proposal'])
+                if applied: changed.add(file)
+                result(key,group,op,'APPLIED' if applied else 'NO_CHANGE','REVIEWED_CHANGE_APPLIED' if applied else 'ALREADY_SAME_VALUE')
+            except (ReviewConflict,ContractError,KeyError,TypeError) as error:
+                reason=str(error);narrow=group=='master_key_rows' or (group=='rows' and 'source_basis' in op)
+                status='HELD' if narrow and reason in {'STALE_PACKAGE_TARGET_SOURCE_OR_BINDING','CONCURRENT_KO_CHANGE','STALE_MASTER_KEY_PEERS_OR_CONTEXT','MASTER_KEY_SOURCE_COLLISION','MASTER_KEY_OBSERVED_PEERS_REQUIRED'} else 'REJECTED'
+                result(key,group,op,status,reason)
+        from update.novel_bridge import validate_accepted_return, current_source_references, NovelReviewConflict
+        qualified_current=current_source_references(current_source) if any(key not in outcomes for key in scopes) else {}
+        validated={}
+        for key in scopes:
+            if key in outcomes: continue
+            target=state/('wb-return-'+uuid.uuid4().hex); temps.append(target)
+            try:
+                if 'intake_work' in novels[key]:
+                    from update.intake_work import validate_apply_link
+                    intake_basis=validate_apply_link(novels[key]['intake_work'],current_source,novels[key])
+                returned=validate_accepted_return(novels[key],owned,qualified_current,target)
+                if not isinstance(returned,dict) or 'payloads' not in returned: raise ReviewConflict('NOVEL_VALIDATED_RETURN_SCOPE_MISMATCH')
+                payloads=returned['payloads']
+                if not isinstance(payloads,dict) or set(payloads)!=scopes[key] or any(not isinstance(raw,bytes) for raw in payloads.values()): raise ReviewConflict('NOVEL_VALIDATED_RETURN_SCOPE_MISMATCH')
+                for file in payloads: safe_path(staging,file)
+                validated[key]=payloads
+                if 'intake_work' in novels[key]: intake_validated[key]=(intake_basis,returned)
+            except (NovelReviewConflict,ReviewConflict,ContractError) as error:
+                details={}
+                raw_refs=current_source.get('qualified_sources',{})
+                if str(error)=='NOVEL_STALE_SOURCE_REVIEW' and any(refkey not in qualified_current and raw_refs.get(refkey)==ref and isinstance(ref,dict) and ref.get('source_id') is None and ref.get('asset_key') is None for refkey,ref in novels[key].get('reviewed_source_refs',{}).items()):
+                    details['source_eligibility_code']='QUALIFIED_SOURCE_IDENTITY_REQUIRED_FOR_CURRENT_INVENTORY'
+                result(key,'novel_returns',novels[key],'REJECTED',str(error),**details)
+        for group in overlap_groups({key:set(p) for key,p in validated.items()}):
+            for key in group: result(key,'novel_returns',novels[key],'HELD','OVERLAPPING_NOVEL_RETURN',connected_requests=group)
+        for key,payloads in validated.items():
+            if key in outcomes: continue
+            different=[]
+            for file,raw in payloads.items():
+                identity={'size':len(raw),'sha256':payload_hash(file,raw)}; novel_identities[file]=identity
+                if file not in baseline or len(raw)!=baseline[file]['size'] or identity['sha256']!=baseline[file]['sha256']:
+                    safe_path(staging,file).write_bytes(raw); changed.add(file); different.append(file)
+            result(key,'novel_returns',novels[key],'APPLIED' if different else 'NO_CHANGE','ACCEPTED_FULL_FILE_RETURN' if different else 'ALREADY_SAME_VALUE',files=sorted(payloads))
+        for file in changed&set(docs): safe_path(staging,file).write_bytes(encode(docs[file]))
+        if 'master.json' in changed:
+            from reconcile_master import verify_master_delta
+            master_guard=verify_master_delta(read_json(owned/'master.json'),docs['master.json'],approved_changes=master_approved,resources=document('ui/resources.json'),bindings=document('ui/bindings.json'))
+        else: master_guard={'status':'NOT_RUN_MASTER_UNCHANGED'}
+        semantic=None; register=[]; unregister=[]
+        for key,g,op in requested:
+            if g not in {'register','unregister'}: continue
+            if semantic is None: semantic=document('manifest.json')
+            if g=='unregister' and op not in semantic['novels']: result(key,g,op,'REJECTED','UNREGISTER_UNKNOWN_NOVEL'); continue
+            if g=='register' and 'novels/'+op+'.json' not in baseline and 'novels/'+op+'.json' not in changed: result(key,g,op,'REJECTED','REGISTER_REQUIRES_STORED_NOVEL'); continue
+            if g=='register' and op in semantic['novels']: result(key,g,op,'NO_CHANGE','ALREADY_REGISTERED'); continue
+            if g=='register': document('novels/'+op+'.json')  # explicit semantic consumption must match verified bytes
+            (register if g=='register' else unregister).append(op); result(key,g,op,'APPLIED','EXPLICIT_REGISTRATION_CHANGE')
+        if fault: fault('after_payload')
+        build(staging,modified=sorted(changed&set(baseline)),added=sorted(changed-set(baseline)),register=register,unregister=unregister)
+        if fault: fault('after_metadata')
+        qa=validate_package(staging,CONTRACTS); entries,release=previous_inventory(staging)
+        delta=sorted(p for p in entries if p not in baseline or entries[p]!=baseline[p])
+        for file in delta:
+            raw=safe_path(staging,file).read_bytes(); payload_reads.append(file)
+            if len(raw)!=entries[file]['size'] or payload_hash(file,raw)!=entries[file]['sha256']: raise ContractError('TOUCHED_QA_HASH_MISMATCH')
+        if {p.relative_to(staging).as_posix() for p in staging.rglob('*') if p.is_file()}!=set(entries)|{'ui/manifest.json','release-manifest.json'}: raise ContractError('COMPLETE_CANDIDATE_MEMBERSHIP_MISMATCH')
+        if set(outcomes)!={key for key,g,op in requested}: raise ContractError('REVIEW_OPERATION_NOT_CONSUMED')
+        if fault: fault('before_publish')
+        if delta:
+            generation=state/'verified-packages'/('generation-'+uuid.uuid4().hex); immutable(staging); os.replace(staging,generation)
+            proof(state,generation,entries,previous_package=str(owned),validated_payloads=delta,target_qa=qa); next_package=generation
+        else: next_package=owned
+        if fault: fault('after_generation')
+        if output:
+            output.parent.mkdir(parents=True,exist_ok=True)
+            export_temporary=output.with_name('.owned-export-'+uuid.uuid4().hex)
+            export_temporary.mkdir()  # exclusive allocation establishes our cleanup ownership
+            shutil.copytree(next_package,export_temporary,copy_function=shutil.copyfile,dirs_exist_ok=True)
+            if fault: fault('before_export_publish')
+            exclusive_directory_publish(export_temporary,output); export_temporary=None
+        if intake_validated:
+            # Durable intent precedes authoring CAS selection. A crash before
+            # selection cannot complete work; after selection it is resumable.
+            items=[]
+            for key,(basis,returned) in intake_validated.items():
+                if outcomes[key]['status'] not in {'APPLIED','NO_CHANGE'}: continue
+                items.append({'link':novels[key]['intake_work'],'snapshot':{'profile':current_source['profile']},
+                              'operation':{'review_id':novels[key]['review_id'],'m4_plan':novels[key]['m4_plan']},'basis':basis,
+                              'returned':{'accepted_return_verified':returned.get('accepted_return_verified'),'payloads':{p:None for p in returned['payloads']}}})
+            atomic_json(state/'intake-completions'/(uuid.uuid4().hex+'.json'),{'schema':'gc-ng05-owned-completion-intent-v1','next_package':str(next_package),'commit_token':commit_token,'items':items})
+        if fault: fault('before_authoring_select')
+        selection={'schema':'gc-ng04-authoring-reference-v1','next_package':str(next_package),'previous_package':str(owned),'revision':release['revision'],'commit_token':commit_token,
+                   'previous_commit_token':read_json(current).get('commit_token') if current.exists() else None,'runtime_selection':False}
+        atomic_json(state/'authoring-selections'/(commit_token+'.json'),selection)
+        atomic_json(current,selection); committed=True
+        for key,(basis,returned) in intake_validated.items():
+            if outcomes[key]['status'] not in {'APPLIED','NO_CHANGE'}: continue
+            from update.intake_work import complete_after_apply
+            try: intake_completed.append(complete_after_apply(novels[key]['intake_work'],current_source,novels[key],basis,next_package,returned))
+            except (ValueError,OSError) as error: intake_completed.append({'status':'HELD_COMPLETION','reason':str(error),'work_ids':sorted(basis),'apply_committed':True})
+        ordered=[outcomes[key] for key,g,op in requested]; rejected=[o for o in ordered if o['status']=='REJECTED']; held=[o for o in ordered if o['status']=='HELD']
+        status='PARTIAL_CONFLICTS' if rejected or any(o['reason']=='OVERLAPPING_NOVEL_RETURN' for o in held) else ('PARTIAL_HOLDS' if held and delta else 'HELD' if held else 'PASS' if delta else 'NO_CHANGE')
+        return {'schema':'gc-ng04-apply-result-v1','status':status,'output':str(output) if output else None,'next_package':str(next_package),'expected_base':str(owned),'verified_input':str(owned),
+                'changed_payloads':sorted(changed),'generated_and_payload_delta':delta,'request_outcomes':ordered,'requested_count':len(requested),'consumed_count':len(outcomes),
+                'rejected_rows':rejected,'held_rows':[o['review_id'] for o in held],'held_operations':held,'revision':release['revision'],'target_qa':'PASS','master_guard':master_guard,'import_metrics':import_metrics,
+                'apply_metrics':{'novel_payload_reads':sum(p.startswith('novels/') for p in payload_reads),'novel_payload_hashes':sum(p.startswith('novels/') for p in payload_hashes),
+                                 'unchanged_novel_payload_reads':sum(p.startswith('novels/') and p not in changed for p in payload_reads),'unchanged_novel_payload_hashes':sum(p.startswith('novels/') and p not in changed for p in payload_hashes),'os_copied_files':len(baseline)+2,'os_export_copied_files':len(entries)+2 if output else 0,
+                                 'os_copy_payload_bytes':sum(e['size'] for e in baseline.values()),'os_export_copy_payload_bytes':sum(e['size'] for e in entries.values()) if output else 0,
+                                 'os_copy_metadata_files':2,'os_hardlinks_created':0,'os_stat_calls':'NOT_INSTRUMENTED','os_copy_counter_scope':'completed copytree payload descriptors; two selection metadata files separate; not OS syscall counts',
+                                 'scope':'actual direct apply callsites; builder semantic I/O and existing WB validator I/O separately scoped; explicit registration reads are counted as unchanged byte payload consumption'},
+                'intake_completion':intake_completed,'native':'NOT_RUN','game':'NOT_RUN','semantic_approval':'ONLY_EXPLICIT_REVIEW_DECISIONS_AND_EXISTING_WB_ACCEPTANCE'}
+    finally:
+        discard(staging)
+        if export_temporary is not None: discard(export_temporary)
+        for temp in temps: discard(temp)
+        if not committed:
+            if generation is not None: discard(generation); (state/'verification'/(generation.name+'.json')).unlink(missing_ok=True)
+            # A successfully published complete export is externally visible.
+            # Never delete it by path after publication: another actor may have
+            # changed custody. A failed head selection leaves it unselected.

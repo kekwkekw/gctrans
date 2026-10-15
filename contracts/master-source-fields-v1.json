@@ -1,0 +1,410 @@
+{
+  "fields": [
+    {
+      "runtime_field": "name",
+      "table": "mActionPatterns"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mActiveSkillSideEffectFilters"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mActiveSkills"
+    },
+    {
+      "runtime_field": "ml_name1[]",
+      "table": "mActiveSkills"
+    },
+    {
+      "runtime_field": "ml_name2[]",
+      "table": "mActiveSkills"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mArtPieces"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mArtPieces"
+    },
+    {
+      "runtime_field": "ml_name|",
+      "table": "mAthenesRecordAreas"
+    },
+    {
+      "runtime_field": "name",
+      "table": "mAthenesRecordAreas"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mCurrencies"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mCurrencies"
+    },
+    {
+      "runtime_field": "ml_flavor_text[]",
+      "table": "mEquipments"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mEquipments"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mEventTutorialPopupDescriptions"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "mEventTutorialPopups"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "mEvents"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mFactors"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mFactors"
+    },
+    {
+      "runtime_field": "ml_ex_appeal_text[]",
+      "table": "mGachaAppeal"
+    },
+    {
+      "runtime_field": "message",
+      "table": "mGachaCampaignMessages"
+    },
+    {
+      "runtime_field": "ml_message|",
+      "table": "mGachaCampaignMessages"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mGachaMileages"
+    },
+    {
+      "runtime_field": "note",
+      "table": "mGachaNotes"
+    },
+    {
+      "runtime_field": "button_top_notice",
+      "table": "mGachas"
+    },
+    {
+      "runtime_field": "name",
+      "table": "mHomeLayouts"
+    },
+    {
+      "runtime_field": "ml_flavor_text[]",
+      "table": "mInspirations"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mInspirations"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "mIntermissionNovels"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mItems"
+    },
+    {
+      "runtime_field": "ml_flavor_text[]",
+      "table": "mItems"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mItems"
+    },
+    {
+      "runtime_field": "ml_flavor_text[]",
+      "table": "mLayers"
+    },
+    {
+      "runtime_field": "ml_get_message[]",
+      "table": "mLayers"
+    },
+    {
+      "runtime_field": "ml_illustrator_name[]",
+      "table": "mLayers"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mLayers"
+    },
+    {
+      "runtime_field": "ml_rare_get_message[]",
+      "table": "mLayers"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mMemories"
+    },
+    {
+      "runtime_field": "ml_word[]",
+      "table": "mNaviCharacterProfileWords"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mNovelKeyWords"
+    },
+    {
+      "runtime_field": "ml_keyword[]",
+      "table": "mNovelKeyWords"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "mNovels"
+    },
+    {
+      "runtime_field": "title",
+      "table": "mNovels"
+    },
+    {
+      "runtime_field": "description",
+      "table": "mPassiveSkillTriggers"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mPassiveSkills"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mPassiveSkills"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mProfileDecorations"
+    },
+    {
+      "runtime_field": "ml_flavor_text[]",
+      "table": "mProfileDecorations"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mProfileDecorations"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mQuestAreas"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mQuestEvaluates"
+    },
+    {
+      "runtime_field": "ml_button_text[]",
+      "table": "mQuestHints"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mQuestHints"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "mQuestHints"
+    },
+    {
+      "runtime_field": "flavor_text",
+      "table": "mQuestObjects"
+    },
+    {
+      "runtime_field": "name",
+      "table": "mQuestObjects"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mQuestStages"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mQuests"
+    },
+    {
+      "runtime_field": "name",
+      "table": "mRaidEventBosses"
+    },
+    {
+      "runtime_field": "message",
+      "table": "mRaidEventLiveMessages"
+    },
+    {
+      "runtime_field": "message",
+      "table": "mRaidEventSupportMessages"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mShopCategories"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mShopTabs"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mSkillEffectVisualConfigs"
+    },
+    {
+      "runtime_field": "ml_word[]",
+      "table": "mSubunitWords"
+    },
+    {
+      "runtime_field": "ml_flavor_text[]",
+      "table": "mSubunits"
+    },
+    {
+      "runtime_field": "ml_get_message[]",
+      "table": "mSubunits"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mSubunits"
+    },
+    {
+      "runtime_field": "ml_personality[]",
+      "table": "mSubunits"
+    },
+    {
+      "runtime_field": "ml_roots[]",
+      "table": "mSubunits"
+    },
+    {
+      "runtime_field": "description",
+      "table": "mTargetTypes"
+    },
+    {
+      "runtime_field": "ml_value[]",
+      "table": "mTextConfig"
+    },
+    {
+      "runtime_field": "ml_text[]",
+      "table": "mTinyHelps"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mTribes"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "mTutorialPopupDescriptions"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "mTutorialPopupDescriptions"
+    },
+    {
+      "runtime_field": "ml_content[]",
+      "table": "mUnitProfiles"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "mUnitProfiles"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "mUnitWords"
+    },
+    {
+      "runtime_field": "ml_word[]",
+      "table": "mUnitWords"
+    },
+    {
+      "runtime_field": "ml_flavor_text[]",
+      "table": "mUnits"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mUnits"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "mVirtueEffects"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "slim_mBoxGachaGroups"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "slim_mGachaGroups"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "slim_mGachaGroups"
+    },
+    {
+      "runtime_field": "ml_stepup_count_text[]",
+      "table": "slim_mGachaGroups"
+    },
+    {
+      "runtime_field": "ml_top_notice[]",
+      "table": "slim_mGachaGroups"
+    },
+    {
+      "runtime_field": "ml_desc[]",
+      "table": "slim_mLoadingTips"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "slim_mLoadingTips"
+    },
+    {
+      "runtime_field": "ml_word[]",
+      "table": "slim_mLoginBonusCharacterActions"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "slim_mLoginBonuses"
+    },
+    {
+      "runtime_field": "ml_type_name[]",
+      "table": "slim_mMissionTypes"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "slim_mMissions"
+    },
+    {
+      "runtime_field": "ml_hint[]",
+      "table": "slim_mMissions"
+    },
+    {
+      "runtime_field": "ml_title[]",
+      "table": "slim_mMissions"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "slim_mMuseumBlocks"
+    },
+    {
+      "runtime_field": "ml_open_message[]",
+      "table": "slim_mMuseumBlocks"
+    },
+    {
+      "runtime_field": "ml_word[]",
+      "table": "slim_mNaviCharacterBoxGachaWords"
+    },
+    {
+      "runtime_field": "ml_word[]",
+      "table": "slim_mNaviCharacterSpMissionWords"
+    },
+    {
+      "runtime_field": "ml_description[]",
+      "table": "slim_mShopProducts"
+    },
+    {
+      "runtime_field": "ml_name[]",
+      "table": "slim_mShopProducts"
+    }
+  ],
+  "schema": "gc-master-source-field-selectors-v1",
+  "source_contract": "MasterDataTranslator-field-grammar-v1"
+}
