@@ -1,10 +1,10 @@
 # NG11 공개 검토 후보 지원 범위
 
-이 후보는 NG09/NG10의 같은 GCMod.dll과 같은 수락 번역 JSON을 사용한다. H01/H02 또는 8개 모듈을 새로 만들거나 전체 native 수락을 생성하지 않는다. 실제 모델/reasoning은 NOT_EXPOSED이며 요청 설정은 GPT-6.1 Sol/xhigh다.
+이 후보는 수락 번역 JSON과 UI/native 소스를 유지하고 worker의 네트워크 SHA resolve만 수정해 GCMod.dll을 재빌드했다. 새 DLL SHA256은 `63c548758d06fb3194927db02458d0885dc1d8e3d5ac1cbfe7a0be311e4c5e43`이며 runtime pin이 아니다. 아래 NG09/NG10 native는 이전 DLL `69c16910…`의 역사 증거이며 새 DLL의 직접 실기 PASS가 아니다. 네트워크 표적 검사는 NETWORK_PREPARE_FIX_KO.md 및 별도 실행 보고를 따른다. H01/H02 또는 8개 모듈을 새로 만들거나 전체 native 수락을 생성하지 않는다. 실제 모델/reasoning은 NOT_EXPOSED이며 요청 설정은 GPT-6.1 Sol/xhigh다.
 
 | 축 | 근거와 범위 |
 |---|---|
-| NG09 직접 native | 같은 DLL에서 Annotation/standalone Dictionary 헤더·닫기/재열기, Sort9/Profile/Core/Choice4 표시, Fit3 자연 35→34·같은 셀35복구, 같은 DLL live 교정/복구 PASS. 기존 결과 ZIP/최종 DLL identity로 참조 |
+| NG09 직접 native | 당시 DLL에서 Annotation/standalone Dictionary 헤더·닫기/재열기, Sort9/Profile/Core/Choice4 표시, Fit3 자연 35→34·같은 셀35복구, 같은 DLL live 교정/복구 PASS. 기존 결과 ZIP/최종 DLL identity로 참조 |
 | NG10 직접 native | 새 Git export 묶음의 정상 startup·Core 닫기 대표·정상 종료·수정 helper 원복을 별도 보고. NG09 실기를 새 세션 증거로 사용하지 않음 |
 | NG11 실행 경계 | Python scanner/workflow/docs 수정. 해당 제품 CPU/mock과 최종 Git export 재현을 검사하며 C#·runtime JSON·원복 helper는 유지. 새 native/game는 NOT_RUN이고 기존 동일 DLL 증거와 구분 |
 | CPU/fault | 실제 Python helper 파일 IO 실패를 합성 scratch에 주입. GC query만 mock. 실제 게임 고의 손상/강제종료/전원차단 없음 |

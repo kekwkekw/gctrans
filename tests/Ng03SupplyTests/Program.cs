@@ -6,6 +6,12 @@ using System.Text.Json.Nodes;
 using GCMod.Nextgen;
 using GCMod.Services;
 
+if (args.Length > 0 && args[0] == "--actual-branch")
+{
+    if (args.Length != 4) throw new ArgumentException("--actual-branch ISOLATED_STORE EXPECTED_COMMIT REPORT");
+    await ActualBranchProbe.RunAsync(args[1], args[2], args[3]);
+    return;
+}
 var run = new SupplyTests(args[0], args.Length > 1 ? args[1] : null, args.Length > 2 ? args[2] : null);
 await run.RunAsync();
 
@@ -95,12 +101,12 @@ sealed class SupplyTests(string report, string? exportRoot, string? changedRoot)
         if (package != null) Assert((await runtime.StartAsync(await Write(package, name))).Committed, "fixture start failed");
         return (runtime, features, owner);
     }
-    async Task<UpdatePreparation> Supply(RuntimeCoordinator runtime, Dictionary<string, byte[]> package, string name, Action<Mock>? configure = null, CancellationToken ct = default)
+    async Task<UpdatePreparation> Supply(RuntimeCoordinator runtime, Dictionary<string, byte[]> package, string name, Action<Mock>? configure = null, CancellationToken ct = default, UpdateSource? source = null)
     {
         var mock = new Mock(package); configure?.Invoke(mock);
         using var client = new HttpClient(mock);
         var updater = new FixedRefDataUpdater(client, Path.Combine(scratch, name + "-downloads"));
-        var result = await updater.PrepareAsync(Source, runtime, ct);
+        var result = await updater.PrepareAsync(source ?? Source, runtime, ct);
         Assert(!Directory.Exists(Path.Combine(scratch, name + "-downloads")) || !Directory.EnumerateFileSystemEntries(Path.Combine(scratch, name + "-downloads")).Any(), "owned temporary left after success/failure/cancel");
         return result;
     }
@@ -109,6 +115,65 @@ sealed class SupplyTests(string report, string? exportRoot, string? changedRoot)
         Directory.CreateDirectory(scratch);
         string dllPath = typeof(FixedRefDataUpdater).Assembly.Location;
         string dllBefore = PackageLoader.Hash(await File.ReadAllBytesAsync(dllPath));
+        await Check("NG12_full_SHA_uses_small_Git_commit_not_changed_file_metadata", async () => {
+            var runtime = await Runtime("git-sha"); var mock = new Mock(Package()); using var client = new HttpClient(mock);
+            var result = await new FixedRefDataUpdater(client, Path.Combine(scratch,"git-sha-downloads"))
+                .PrepareAsync(Source with { Channel = Commit.ToUpperInvariant() },runtime.Coordinator);
+            Assert(result.Prepared != null && result.TransportCommit == Commit,"full SHA not prepared");
+            Assert(mock.Resolves == 1 && mock.Requests[0].AbsolutePath == "/repos/owner/repo/git/commits/"+Commit,"large REST commit endpoint used");
+            Assert(mock.Requests.Where(u=>u.Host=="raw.test").All(u=>u.AbsolutePath.Contains("/"+Commit+"/")),"payload ref not fixed");
+            runtime.Coordinator.Dispose();
+        });
+        await Check("NG12_branch_namespaced_ref_and_supported_tag_resolution", async () => {
+            foreach (var (channel,tag,missing,apiCount) in new[] {
+                ("feature/ui","",false,1),("refs/heads/feature/ui","",false,1),
+                ("refs/tags/v1","",false,1),("v1","",true,2),
+                ("refs/tags/v1","annotated",false,2),("v1","annotated",true,3) })
+            {
+                var runtime = await Runtime("ref-"+Guid.NewGuid().ToString("N"));
+                var mock = new Mock(Package()){TagMode=tag,BranchMissing=missing};using var client = new HttpClient(mock);
+                var result = await new FixedRefDataUpdater(client,Path.Combine(scratch,"refs-"+Guid.NewGuid().ToString("N")))
+                    .PrepareAsync(Source with { Channel=channel },runtime.Coordinator);
+                Assert(result.Prepared!=null && result.TransportCommit==Commit && mock.Resolves==apiCount,"branch/tag contract lost: "+channel+tag);
+                Assert(mock.Requests.Where(u=>u.Host=="raw.test").All(u=>u.AbsolutePath.Contains("/"+Commit+"/")),"tag/branch moving payload");
+                runtime.Coordinator.Dispose();
+            }
+        });
+        await Check("NG12_invalid_resolver_metadata_keeps_current_previous_pending_and_restart_LKG", async () => {
+            var runtime = await Runtime("resolver-lkg",Package("이전"));
+            var current = await Supply(runtime.Coordinator,Package("현재"),"resolver-current");
+            Assert(current.Prepared!=null && runtime.Coordinator.CommitUi(current.Prepared).Committed,"fixture current commit failed");
+            var pending = await runtime.Coordinator.PrepareAsync(await Write(Package("재시작 대기"),"resolver-pending"));
+            Assert(pending!=null && runtime.Coordinator.SavePendingStartup(pending),"fixture pending failed");
+            string storeRoot=Path.Combine(scratch,"resolver-lkg-store");
+            var records = new[]{"current.json","previous.json","pending_restart.json"}.ToDictionary(p=>p,p=>File.ReadAllBytes(Path.Combine(storeRoot,p)));
+            var selected=runtime.Coordinator.Selected!;
+            foreach(var (channel,fault,tag,expectedApiCalls) in new[] {
+                (Commit,"sha","",1),(Commit,"tree","",1),(new string('0',40),"notfound","",1),
+                ("main","bad-sha","",1),("main","ref","",1),("main","object","",1),
+                ("main","json","",1),("main","duplicate","",1),("main","oversize","",1),
+                ("main","chunked-large","",1),("main","forbidden","",1),("main","redirect-meta","",1),
+                ("main","final-meta-host","",1),("refs/tags/v1","","cycle",2),
+                ("refs/tags/v1","","deep",5),("refs/tags/v1","tag-id","annotated",2) })
+            {
+                var mock=new Mock(Package("잘못된 신규")){MetadataFault=fault,TagMode=tag};using var client=new HttpClient(mock);
+                var result=await new FixedRefDataUpdater(client,Path.Combine(scratch,"metadata-"+Guid.NewGuid().ToString("N")))
+                    .PrepareAsync(Source with { Channel=channel },runtime.Coordinator);
+                Assert(result.Prepared==null && result.Metrics.PayloadDownloads==0 && mock.Resolves==expectedApiCalls,"bad metadata accepted/fell through: "+fault+tag);
+                Assert(ReferenceEquals(selected,runtime.Coordinator.Selected),"metadata changed active selection");
+                Assert(records.All(row=>File.ReadAllBytes(Path.Combine(storeRoot,row.Key)).SequenceEqual(row.Value)),"metadata changed selection records");
+            }
+            foreach(string invalid in new[]{"../main","main/../other","/main","main/","main//x"}) {
+                var mock=new Mock(Package());using var client=new HttpClient(mock);
+                var result=await new FixedRefDataUpdater(client,Path.Combine(scratch,"channel-paths"))
+                    .PrepareAsync(Source with { Channel=invalid },runtime.Coordinator);
+                Assert(result.Prepared==null && mock.Requests.Count==0,"unsafe channel path reached transport");
+            }
+            var restarted=await new LocalImmutablePackageStore(storeRoot,new PackageLoader(Registry())).RecoverAsync();
+            Assert(restarted?.ContentId==selected.Identity,"current LKG failed after resolver rejection");
+            Assert(records.All(row=>File.ReadAllBytes(Path.Combine(storeRoot,row.Key)).SequenceEqual(row.Value)),"restart read changed selection");
+            runtime.Coordinator.Dispose();
+        });
         if (exportRoot != null && changedRoot != null)
         await Check("NG10_actual_Git_export_complete_then_UI_changed_only_fixed_ref", async () => {
             // Read the actual chosen exported package once to construct the mock server.
@@ -214,6 +279,9 @@ sealed class SupplyTests(string report, string? exportRoot, string? changedRoot)
         });
         await Check("U05_hash_size_malformed_JSON_failures_keep_current_LKG", async () => {
             var runtime = await Runtime("integrity", Package()); var old = runtime.Coordinator.Selected;
+            string root=Path.Combine(scratch,"integrity-store");
+            byte[]? Record(string name)=>File.Exists(Path.Combine(root,name))?File.ReadAllBytes(Path.Combine(root,name)):null;
+            var records=new[]{"current.json","previous.json","pending_restart.json"}.ToDictionary(n=>n,Record);
             foreach (string fault in new[] { "hash", "size", "json" }) {
                 var package = Package("교정");
                 if (fault == "json") {
@@ -225,6 +293,7 @@ sealed class SupplyTests(string report, string? exportRoot, string? changedRoot)
                 }
                 var result = await Supply(runtime.Coordinator, package, "integrity-" + fault, mock => { if (fault != "json") mock.Fault = fault; });
                 Assert(result.Prepared == null && ReferenceEquals(old, runtime.Coordinator.Selected), "bad payload changed current");
+                Assert(records.All(row=>(row.Value==null && Record(row.Key)==null)||row.Value!=null && Record(row.Key) is {} now && row.Value.SequenceEqual(now)),"bad payload changed persistent selection records");
             }
         });
         await Check("U05_parseable_legacy_shapes_and_registered_closure_reject_candidate_keep_LKG", async () => {
@@ -339,10 +408,37 @@ sealed class SupplyTests(string report, string? exportRoot, string? changedRoot)
     sealed class Mock(Dictionary<string,byte[]> package) : HttpMessageHandler
     {
         public List<Uri> Requests=[]; public int Resolves;public string? Fault;public bool Exhaust;public CancellationTokenSource? Cancel;int faultRequests;
+        public string? MetadataFault;public string TagMode="";public bool BranchMissing;
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,CancellationToken cancellationToken)
         {
             cancellationToken.ThrowIfCancellationRequested();var uri=request.RequestUri!;Requests.Add(uri);
-            if(uri.Host=="api.test") {Resolves++;return Task.FromResult(new HttpResponseMessage(HttpStatusCode.OK){RequestMessage=request,Content=new StringContent("{\"sha\":\""+(Resolves==1?Commit:new string('d',40))+"\"}")});}
+            if(uri.Host=="api.test") {
+                Resolves++;
+                HttpResponseMessage Response(HttpStatusCode status,string json) => new(status){RequestMessage=request,Content=new StringContent(json)};
+                string apiPath=Uri.UnescapeDataString(uri.AbsolutePath),json;
+                if(MetadataFault=="notfound" || BranchMissing && apiPath.Contains("/git/ref/heads/"))return Task.FromResult(Response(HttpStatusCode.NotFound,"{}"));
+                if(MetadataFault=="forbidden")return Task.FromResult(Response(HttpStatusCode.Forbidden,"{}"));
+                if(MetadataFault=="redirect-meta")return Task.FromResult(new HttpResponseMessage(HttpStatusCode.Found){RequestMessage=request,Headers={Location=new Uri("https://evil.test/meta")},Content=new StringContent("{}")});
+                if(apiPath.Contains("/git/commits/"))json=JsonSerializer.Serialize(new{sha=MetadataFault=="sha"?new string('d',40):Commit,tree=new{sha=MetadataFault=="tree"?"bad":new string('e',40)}});
+                else if(apiPath.Contains("/git/ref/")) {
+                    string reference="refs/"+apiPath[(apiPath.IndexOf("/git/ref/",StringComparison.Ordinal)+9)..];
+                    bool tag=reference.StartsWith("refs/tags/",StringComparison.Ordinal) && TagMode!="";
+                    json=JsonSerializer.Serialize(new{@ref=MetadataFault=="ref"?"refs/heads/other":reference,@object=new{type=MetadataFault=="object"?"tree":tag?"tag":"commit",sha=MetadataFault=="bad-sha"?new string('x',40):tag?new string('a',40):Resolves==1||reference.StartsWith("refs/tags/")?Commit:new string('d',40)}});
+                }
+                else if(apiPath.Contains("/git/tags/")) {
+                    string tagSha=apiPath.Split('/')[^1];
+                    string next=TagMode=="deep"?new string((char)(tagSha[0]+1),40):TagMode=="cycle"?tagSha:Commit;
+                    json=JsonSerializer.Serialize(new{sha=MetadataFault=="tag-id"?new string('f',40):tagSha,@object=new{type=TagMode is "cycle" or "deep"?"tag":"commit",sha=next}});
+                }
+                else return Task.FromResult(Response(HttpStatusCode.NotFound,"{}")); // No broad REST commits fallback.
+                if(MetadataFault=="json")json="{";
+                if(MetadataFault=="duplicate")json="{\"ref\":\"one\",\"ref\":\"two\"}";
+                if(MetadataFault is "oversize" or "chunked-large")json=new string(' ',1024*1024)+json;
+                var response=Response(HttpStatusCode.OK,json);
+                if(MetadataFault=="chunked-large")response.Content=new UnknownLengthContent(Encoding.UTF8.GetBytes(json));
+                if(MetadataFault=="final-meta-host")response.RequestMessage=new HttpRequestMessage(HttpMethod.Get,"https://evil.test/meta");
+                return Task.FromResult(response);
+            }
             string path=uri.AbsolutePath[(uri.AbsolutePath.IndexOf("/translations/ko/",StringComparison.Ordinal)+17)..];
             if(path=="ui/resources.json") {
                 if(Cancel!=null){Cancel.Cancel();throw new OperationCanceledException(cancellationToken);}
@@ -358,5 +454,10 @@ sealed class SupplyTests(string report, string? exportRoot, string? changedRoot)
             if(path=="ui/resources.json"&&Fault=="size")bytes=bytes.Concat(new byte[]{32}).ToArray();
             return Task.FromResult(new HttpResponseMessage(HttpStatusCode.OK){RequestMessage=request,Content=new ByteArrayContent(bytes)});
         }
+    }
+    sealed class UnknownLengthContent(byte[] bytes) : HttpContent
+    {
+        protected override bool TryComputeLength(out long length){length=0;return false;}
+        protected override Task SerializeToStreamAsync(Stream stream,TransportContext? context)=>stream.WriteAsync(bytes).AsTask();
     }
 }

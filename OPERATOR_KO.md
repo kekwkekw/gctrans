@@ -1,6 +1,6 @@
 # NG11 로컬 공개 검토 후보 운용
 
-이 ZIP은 source/, scripts/, tools/, tests/, contracts/, donor_recovery/reproduction/Common.props, candidate/GCMod.dll, translations/ko, staging/를 현재 Git tree에서 이미 조립한 후보다. 일상 명령에 과거 ZIP이나 patch를 다시 적용하지 않는다. 선택된 번역값과 등록 상태는 NG10과 같다. 공개 저장소에 반영한 결과는 아니다.
+운영 후보는 source/, scripts/, tools/, tests/, contracts/, donor_recovery/reproduction/Common.props, candidate/GCMod.dll, translations/ko, staging/로 구성된다. 선택된 번역값과 등록 상태는 NG12 공개 baseline과 같다. 네트워크 resolve 보완의 DLL 식별과 표적 명령은 [NETWORK_PREPARE_FIX_KO.md](NETWORK_PREPARE_FIX_KO.md)를 참조한다. 후속 변경의 공개 반영 여부는 실제 Git ref와 별도 실행 보고로 확인한다.
 
 명령은 추출한 후보 루트에서 실행한다. Python 3와 .NET SDK 9가 외부 실행 입력이다. UI-only 교정/검사는 Unity raw decoder·Medium·게임 DLL·private source helper를 요구하지 않는다. DLL 재빌드와 실제 native에는 EXTERNAL_DEPENDENCIES_KO.md의 별도 입력이 필요하다.
 

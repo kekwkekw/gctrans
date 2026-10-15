@@ -51,10 +51,7 @@ public sealed class FixedRefDataUpdater(HttpClient client, string temporaryRoot,
             ContractRules.Require(client.DefaultRequestHeaders.All(header => new[] { "User-Agent", "Accept", "Accept-Encoding" }.Contains(header.Key, StringComparer.OrdinalIgnoreCase)), "UPDATE_CLIENT_CREDENTIALS_UNSUPPORTED");
             var api = source.ApiBase ?? new Uri("https://api.github.com/");
             var content = source.ContentBase ?? new Uri("https://raw.githubusercontent.com/");
-            var resolveUri = new Uri(api, "repos/" + source.Repository + "/commits/" + Uri.EscapeDataString(source.Channel));
-            var resolved = await FetchAsync(resolveUri, 1024 * 1024, metrics, true, cancellationToken).ConfigureAwait(false);
-            using (var node = ContractRules.Parse(resolved)) commit = ContractRules.String(node.RootElement, "sha", 40);
-            ContractRules.Require(commit.Length == 40 && commit.All(c => c is >= '0' and <= '9' or >= 'a' and <= 'f'), "UPDATE_FIXED_COMMIT_REQUIRED");
+            commit = await ResolveCommitAsync(source, api, metrics, cancellationToken).ConfigureAwait(false);
             Uri FileUri(string path) => new(content, source.Repository + "/" + commit + "/" + source.PackagePath + "/" + path);
             var releaseBytes = await FetchAsync(FileUri("release-manifest.json"), 8 * 1024 * 1024, metrics, true, cancellationToken).ConfigureAwait(false);
             var release = ReleaseDescriptor.Parse(releaseBytes);
@@ -99,6 +96,62 @@ public sealed class FixedRefDataUpdater(HttpClient client, string temporaryRoot,
             if (entered) gate.Release();
         }
     }
+    // Git Data responses contain no changed-file patches. Keep the existing 1 MiB bound,
+    // transport checks and retry/timeout policy, then use exactly one immutable payload ref.
+    async Task<string> ResolveCommitAsync(UpdateSource source, Uri api, UpdateMetrics metrics, CancellationToken ct)
+    {
+        Uri GitUri(string path) => new(api, "repos/" + source.Repository + "/git/" + path);
+        async Task<byte[]> Read(string path) => await FetchAsync(GitUri(path), 1024 * 1024, metrics, true, ct).ConfigureAwait(false);
+        static bool IsSha(string value) => value.Length == 40 && value.All(c => c is >= '0' and <= '9' or >= 'a' and <= 'f');
+        static string Sha(System.Text.Json.JsonElement node)
+        {
+            string value = ContractRules.String(node, "sha", 40);
+            ContractRules.Require(IsSha(value), "UPDATE_FIXED_COMMIT_REQUIRED");
+            return value;
+        }
+        var channel = source.Channel;
+        if (IsSha(channel.ToLowerInvariant()))
+        {
+            string expected = channel.ToLowerInvariant();
+            using var node = ContractRules.Parse(await Read("commits/" + expected).ConfigureAwait(false));
+            string actual = Sha(node.RootElement);
+            ContractRules.Require(actual == expected, "UPDATE_COMMIT_ID_MISMATCH");
+            _ = Sha(node.RootElement.GetProperty("tree"));
+            return actual;
+        }
+        async Task<(string Type, string Sha)> Ref(string kind, string name)
+        {
+            string encoded = string.Join("/", name.Split('/').Select(Uri.EscapeDataString));
+            using var node = ContractRules.Parse(await Read("ref/" + kind + "/" + encoded).ConfigureAwait(false));
+            ContractRules.Require(ContractRules.String(node.RootElement, "ref", 256) == "refs/" + kind + "/" + name, "UPDATE_REF_MISMATCH");
+            var target = node.RootElement.GetProperty("object");
+            string type = ContractRules.String(target, "type", 16), sha = Sha(target);
+            ContractRules.Require(type == "commit" || kind == "tags" && type == "tag", "UPDATE_REF_OBJECT_TYPE");
+            return (type, sha);
+        }
+        (string Type, string Sha) resolved;
+        if (channel.StartsWith("refs/tags/", StringComparison.Ordinal)) resolved = await Ref("tags", channel[10..]).ConfigureAwait(false);
+        else if (channel.StartsWith("refs/heads/", StringComparison.Ordinal)) resolved = await Ref("heads", channel[11..]).ConfigureAwait(false);
+        else
+        {
+            try { resolved = await Ref("heads", channel).ConfigureAwait(false); }
+            // Only a genuinely missing branch permits tag lookup. Invalid/denied metadata
+            // must never fall through to a different authority or an unbounded endpoint.
+            catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.NotFound)
+            { resolved = await Ref("tags", channel).ConfigureAwait(false); }
+        }
+        var visited = new HashSet<string>(StringComparer.Ordinal);
+        for (int depth = 0; resolved.Type == "tag"; depth++)
+        {
+            ContractRules.Require(depth < 4 && visited.Add(resolved.Sha), "UPDATE_TAG_DEPTH_OR_CYCLE");
+            using var node = ContractRules.Parse(await Read("tags/" + resolved.Sha).ConfigureAwait(false));
+            ContractRules.Require(Sha(node.RootElement) == resolved.Sha, "UPDATE_TAG_ID_MISMATCH");
+            var target = node.RootElement.GetProperty("object");
+            resolved = (ContractRules.String(target, "type", 16), Sha(target));
+            ContractRules.Require(resolved.Type is "tag" or "commit", "UPDATE_TAG_OBJECT_TYPE");
+        }
+        return resolved.Sha;
+    }
     static void ValidateSource(UpdateSource source)
     {
         var parts = source.Repository.Split('/');
@@ -106,6 +159,7 @@ public sealed class FixedRefDataUpdater(HttpClient client, string temporaryRoot,
             && parts.All(x => x is not "." and not ".."), "UPDATE_REPOSITORY");
         ContractRules.Require(source.Channel.Length is > 0 and <= 128 && !source.Channel.Any(char.IsControl)
             && source.Channel.All(c => AsciiLetterOrDigit(c) || c is '-' or '_' or '.' or '/'), "UPDATE_CHANNEL");
+        ContractRules.Require(source.Channel.Split('/').All(part => part.Length > 0 && part is not "." and not ".."), "UPDATE_CHANNEL_PATH");
         ContractRules.SafePath(source.PackagePath);
         ContractRules.Require(source.PackagePath.Split('/').All(part=>part.All(c=>AsciiLetterOrDigit(c)||c is '-' or '_' or '.')), "UPDATE_PACKAGE_URL_PATH");
         foreach (var uri in new[] { source.ApiBase, source.ContentBase }.Where(x => x != null))
