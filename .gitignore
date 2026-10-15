@@ -51,3 +51,26 @@ scripts/util/__pycache__
 /scripts/agent/dist
 
 GalTransl
+# Nextgen local operational custody (never public source)
+**/bin/
+**/obj/
+**/__pycache__/
+*.pyc
+private_backup/
+GCMod.trial.cfg.proposal
+audit/
+source-state/
+private-source-cache/
+source-out/
+*.bundle
+*.assetbundle
+*.raw
+*.key
+!candidate/GCMod.dll
+
+# Local review/evidence and running trial state are outside public source.
+reports/
+local-handoff/
+trial-staging/
+INSTALL_RECEIPT.json
+CURRENT_INPUTS.json

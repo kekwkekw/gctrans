@@ -1,0 +1,42 @@
+{
+  "schema": "gc-ng05-local-operations-CPU-v1",
+  "status": "PASS",
+  "count": 6,
+  "failures": 0,
+  "results": [
+    {
+      "name": "prepare-local saves complete pending without current/native initialization",
+      "status": "PASS"
+    },
+    {
+      "name": "actual candidate CPU startup consumes local pending and actual legacy Master session",
+      "status": "PASS"
+    },
+    {
+      "name": "based-on conflict and invalid payload preserve current and previous",
+      "status": "PASS"
+    },
+    {
+      "name": "pending write failure is a failure and does not create current",
+      "status": "PASS"
+    },
+    {
+      "name": "UI next_package preparation preserves selection then restart selects complete same DLL package",
+      "status": "PASS"
+    },
+    {
+      "name": "corrupt current falls back to valid previous LKG without broken bootstrap",
+      "status": "PASS"
+    }
+  ],
+  "assembly_sha256": "0c281f2f77cf95974ce44d647cec9ed40ac437759b08c70dcac59037093e30c0",
+  "assembly_version": "7.0.0-ng05-offline-operator-ready",
+  "actual_candidate_DLL": true,
+  "actual_local_store": true,
+  "real_managed_TranslationSession": true,
+  "scheduler": "CPU_MOCK_MAIN_THREAD",
+  "native_initialize": "NOT_RUN",
+  "native_hook": "NOT_RUN",
+  "game": "NOT_RUN",
+  "installation": "NOT_PERFORMED"
+}

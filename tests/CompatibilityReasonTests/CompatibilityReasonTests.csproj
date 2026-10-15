@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><LangVersion>latest</LangVersion>
+    <NuGetAudit>false</NuGetAudit>
+  </PropertyGroup>
+  <Target Name="CheckCandidateRoot" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(CandidateRoot)' == ''" Text="Set -p:CandidateRoot to NG06 + NG07 + reference patch candidate root, outside the game installation." />
+  </Target>
+  <ItemGroup>
+    <ProjectReference Include="$(CandidateRoot)/source/GCMod.Nextgen/GCMod.Nextgen.csproj" AdditionalProperties="TargetFrameworks=net9.0" />
+  </ItemGroup>
+</Project>
