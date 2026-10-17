@@ -6,7 +6,7 @@ from pathlib import Path, PurePosixPath
 import argparse, hashlib, io, json, subprocess, tarfile
 
 PREFIXES=('source/','tools/','tests/','contracts/','donor_recovery/','staging/','translations/ko/','candidate/')
-ROOT_FILES={'.gitattributes','NuGet.Config','OPERATOR_KO.md','LAUNCH_PROCEDURE_KO.md',
+ROOT_FILES={'RETIRED_PIPELINES_KO.md','.gitattributes','NuGet.Config','OPERATOR_KO.md','LAUNCH_PROCEDURE_KO.md',
  'EXTERNAL_DEPENDENCIES_KO.md','REPRODUCE_KO.md','SUPPORT_SCOPE_KO.md','PUBLICATION_KO.md',
  'PROJECT_NATIVE_TEST_POLICY_KO.md','UPSTREAM_ATTRIBUTION_KO.md',
  'README.md','.gitignore','.github/workflows/crawl_only.yml',

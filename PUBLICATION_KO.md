@@ -1,3 +1,9 @@
+## 후속 퇴역 반영 (2026-10-17)
+
+아래 NG11 공개 검토에서 보존했던 구 직접 실행기·LLM·merge·Express/Vercel wrapper는 사용자의 후속 명시 지시에 따라 현행 tree에서 삭제한다. 정확한 삭제 15경로와 현행 source/CDN 의존성 보존은 [RETIRED_PIPELINES_KO.md](RETIRED_PIPELINES_KO.md)를 참조한다. 과거 원문·수락·검수 기록과 Git 이력은 수정하지 않는다. 새 번역 생성·raw 취득·game/native·개인 설치·XUnity 활성화는 이 작업에 없다.
+
+---
+
 # 로컬 공개 검토 후보와 공급 경로
 
 NG11은 `NG11_PUBLICATION_REVIEW_CANDIDATE / PUBLIC_WRITE_NOT_AUTHORIZED`다. 실제 local branch/commit/tree, observed remote base, 모든 변경 path와 공개/제외 목록은 동봉된 로컬 검토용 `PUBLICATION_PLAN.json`을 기준으로 읽는다. 이 문서는 공개 승인이나 영구 설치 권한을 만들지 않는다.

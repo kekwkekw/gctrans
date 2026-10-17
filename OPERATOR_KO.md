@@ -1,3 +1,15 @@
+## 현재 기준 — PR26 병합 후 안내 (2026-10-17)
+
+PR #26은 병합 완료다. 이 안내를 작성할 때 실제 main은 `fd84842efec881deebe7399c709e0a678937b57a`이며 tree는 `fee1131032c024efb50b6815421adf5738520609`다. 새로운 작업 시작 시에는 원격 main의 후속 변경을 다시 확인한다. 이 식별값은 runtime pin이 아니다.
+
+검증된 Stable 구성은 DLL `96114569fbe38f113d49ad5e9554801ad1e55c6f062335e5085de428316dce2a` + 완전 content `b1bedaac6c4d6efdab1680ab4f84e32f4912e7048319f51222de404d972cc56a` + `staging/accepted-master-profile.json`의 명시 수락 table 목록 + 실제 selected current/지속 PackageRoot다. 데이터 updater가 DLL·font·개인 cfg를 자동 설치하는 것은 아니다.
+
+아래 NG 단계·로컬 후보·82a8…/63c5…·public 미실행 설명은 당시 검토 이력이다. 그것을 현재 설치나 현재 main의 상태로 해석하지 않는다. 최신 복원 지원 범위는 379 binding/377 resource와 217/69/5/88의 구분을 유지하며 전체 native 무제한 PASS가 아니다. Museum PRO05/06는 아직 별도 미통합 기능이다. PRO04 외곽 괄호 교정은 현재 Novel preimage와 기존 proposal을 연결하는 별도 표시 변경이며, 원래 의미 수락 ledger를 소급 변경하지 않는다.
+
+기존 개인 Stable과 XUnity.AutoTranslator OFF를 보존한다. 2026-10-17 후속 사용자 지시는 구 파이프라인 퇴역과 기존 시나리오 표시 교정의 repository 수정·main 병합을 명시 허용했다. 이는 Museum·신규 번역의 의미 수락, 자동 설치, Release/tag 또는 XUnity 활성화의 포괄 허가가 아니다. 이번 퇴역 범위와 보존 경로는 [RETIRED_PIPELINES_KO.md](RETIRED_PIPELINES_KO.md)를 따른다.
+
+---
+
 최신 적용·복구 규칙은 [STABLE_QUALIFICATION_KO.md](STABLE_QUALIFICATION_KO.md)와 [조건부 개인 Stable 정책](PROJECT_STABLE_QUALIFICATION_POLICY_KO.md)을 따른다. 종합 검수 성공 후 개인 PC에서는 새 완전 구성을 유지하며, 실패 시에만 원래 구성을 복구한다. 아래의 무조건 trial 원복/미설치 문구는 이전 geometry 통합 회차 기록이고 현재 성공 경로를 되돌리는 지시가 아니다. prepare/live/source의 기존 경계는 그대로다.
 
 # main 통합 후보 운용
@@ -64,7 +76,7 @@ ZIP 경로를 검증해 별도 추출하고, 추출본 entrypoint/help/import/pr
 public main은 새 release-manifest와 번역 데이터를 제공한다. 재현 가능한 격리 공급 검사는 아래처럼 고정 commit을 사용한다. 기존 대형 commit metadata 오류는 수정됐고, prepare는 완전 package/pending만 준비하며 native Initialize나 현재 선택을 실행하지 않는다.
 
 ```powershell
-dotnet tools/UpdateCli/bin/Release/net9.0/UpdateCli.dll prepare --store <new-isolated-store> --repository kekwkekw/gctrans --channel 82a8b0f7ef2c2760fe7139707fda69030eb4571c
+dotnet tools/UpdateCli/bin/Release/net9.0/UpdateCli.dll prepare --store <new-isolated-store> --repository kekwkekw/gctrans --channel fd84842efec881deebe7399c709e0a678937b57a
 ```
 
 기본 Nextgen Enabled·CheckUpdate·UiRequestsEnabled OFF, XUnity OFF를 유지한다. 실제 운영 store는 BepInEx/config/GCMod.Nextgen.local이며 PackageRoot만 바꾸어 격리됐다고 해석하지 않는다. 영구 설치·기존 plugin/config/store 전환, 외부 Medium/Utility/interop 입력, 정상 종료·백업·원복 및 이후 업데이트 opt-in은 별도 설치 결정이다. main 통합이나 격리 pending 준비가 설치·전체 native 수락을 대신하지 않는다. 공개 전 계약 검토 이력은 PUBLICATION_KO.md, 현재 native/residual은 SUPPORT_SCOPE_KO.md를 참조한다.
