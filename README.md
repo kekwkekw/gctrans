@@ -1,3 +1,5 @@
+이번 후속 repository 시나리오 표시 교정의 적용 범위와 새 complete package는 [SCENARIO_DISPLAY_APPLY_KO.md](SCENARIO_DISPLAY_APPLY_KO.md)를 참조한다. 개인 Stable 설치·원래 수락 ledger는 이 Git 반영과 구분한다.
+
 ## 현재 기준 — PR26 병합 후 안내 (2026-10-17)
 
 PR #26은 병합 완료다. 이 안내를 작성할 때 실제 main은 `fd84842efec881deebe7399c709e0a678937b57a`이며 tree는 `fee1131032c024efb50b6815421adf5738520609`다. 새로운 작업 시작 시에는 원격 main의 후속 변경을 다시 확인한다. 이 식별값은 runtime pin이 아니다.
