@@ -1,3 +1,17 @@
+이번 후속 repository 시나리오 표시 교정의 적용 범위와 새 complete package는 [SCENARIO_DISPLAY_APPLY_KO.md](SCENARIO_DISPLAY_APPLY_KO.md)를 참조한다. 개인 Stable 설치·원래 수락 ledger는 이 Git 반영과 구분한다.
+
+## 현재 기준 — PR26 병합 후 안내 (2026-10-17)
+
+PR #26은 병합 완료다. 이 안내를 작성할 때 실제 main은 `fd84842efec881deebe7399c709e0a678937b57a`이며 tree는 `fee1131032c024efb50b6815421adf5738520609`다. 새로운 작업 시작 시에는 원격 main의 후속 변경을 다시 확인한다. 이 식별값은 runtime pin이 아니다.
+
+검증된 Stable 구성은 DLL `96114569fbe38f113d49ad5e9554801ad1e55c6f062335e5085de428316dce2a` + 완전 content `b1bedaac6c4d6efdab1680ab4f84e32f4912e7048319f51222de404d972cc56a` + `staging/accepted-master-profile.json`의 명시 수락 table 목록 + 실제 selected current/지속 PackageRoot다. 데이터 updater가 DLL·font·개인 cfg를 자동 설치하는 것은 아니다.
+
+아래 NG 단계·로컬 후보·82a8…/63c5…·public 미실행 설명은 당시 검토 이력이다. 그것을 현재 설치나 현재 main의 상태로 해석하지 않는다. 최신 복원 지원 범위는 379 binding/377 resource와 217/69/5/88의 구분을 유지하며 전체 native 무제한 PASS가 아니다. Museum PRO05/06는 아직 별도 미통합 기능이다. PRO04 외곽 괄호 교정은 현재 Novel preimage와 기존 proposal을 연결하는 별도 표시 변경이며, 원래 의미 수락 ledger를 소급 변경하지 않는다.
+
+기존 개인 Stable과 XUnity.AutoTranslator OFF를 보존한다. 2026-10-17 후속 사용자 지시는 구 파이프라인 퇴역과 기존 시나리오 표시 교정의 repository 수정·main 병합을 명시 허용했다. 이는 Museum·신규 번역의 의미 수락, 자동 설치, Release/tag 또는 XUnity 활성화의 포괄 허가가 아니다. 이번 퇴역 범위와 보존 경로는 [RETIRED_PIPELINES_KO.md](RETIRED_PIPELINES_KO.md)를 따른다.
+
+---
+
 최신 종합 안전 UI qualification은 [STABLE_QUALIFICATION_KO.md](STABLE_QUALIFICATION_KO.md)를 따른다. 실제 개인 Stable 전환은 전체 native 무제한 수락/공개 Release가 아니다. table load·field/sample·whole data identity·직접 최종 DLL·이전 source-scoped 증거·bounded 조건을 분리한다.
 
 # main 통합 후보 지원 범위
