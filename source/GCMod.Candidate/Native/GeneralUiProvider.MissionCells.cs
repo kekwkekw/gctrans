@@ -2,6 +2,7 @@
 using GCMod.Nextgen;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Il2CppInterop.Runtime;
 namespace GCMod.Candidate.Native;
 
@@ -46,4 +47,24 @@ public sealed partial class GeneralUiProvider
     }
     bool CurrentMissionCellCaption(Owner owner,UiBinding b,TextMeshProUGUI text,MissionCellCaptionIdentity captured)=>
         TryMissionCellCaption(owner,b,text,out var now)&&now==captured;
+    bool MissionSourceClipReady(Owner owner,UiBinding binding,TextMeshProUGUI text)
+    {
+        gate.Require();
+        if(!TryMissionCellCaption(owner,binding,text,out _)||text.text!=binding.SourceIdentity.ExactJp)return false;
+        var info=text.textInfo;
+        if(info?.characterInfo==null||info.characterCount<=0||info.characterCount>4096||info.characterCount>info.characterInfo.Length)return false;
+        var chars=info.characterInfo.Take(info.characterCount).Where(c=>c.isVisible).ToArray();
+        if(chars.Length==0||chars.Any(c=>!GlyphChannelVisible(text,c)))return false;
+        int depth=0,masks=0;
+        for(var t=text.transform;Alive(t);t=t.parent)
+        {
+            if(++depth>32)return false;
+            var mask=t.GetComponent<RectMask2D>();if(!Alive(mask)||!mask.enabled)continue;
+            var rect=t.GetComponent<RectTransform>();masks++;
+            if(!Alive(rect)||chars.Any(c=>GlyphCorners(c).Any(p=>!Within(rect.InverseTransformPoint(text.transform.TransformPoint(p)),rect.rect))))return false;
+        }
+        // A currently registered but offscreen recycled cell is not display-ready.
+        // No write means no failed KO ticket can poison its next visible model.
+        return masks>0;
+    }
 }

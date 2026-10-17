@@ -1,3 +1,5 @@
+최신 로컬 기준선은 [첫 홈 복원·종합 qualification](STABLE_QUALIFICATION_KO.md)이다. Header/Filter의 typed readiness, Mission source-mask pre-write, B01 current template/active cell/unit/index join을 후속 method별 reconcile에서 보존한다. PRO04–06은 자동 병합하지 않았다. 개인 Stable 유지가 이번 후보의 public main 병합을 뜻하지 않는다. 아래 이전 geometry/B46 회차의 미설치·무조건 원복 문구와 구분한다. 실제 merged main SHA/tree를 읽은 뒤 UI 의미 작업을 재개한다.
+
 # main 통합 및 UI 작업 재개 인계
 
 현재는 검증된 geometry 최종 Dev를 public main 위의 clean local snapshot으로 준비한 단계다. [업그레이드/rollback과 출격 전 scope](RESTORATION_MIGRATION_KO.md)를 현재 안내로 사용한다. 공개 push/PR/merge·영구 승격은 수행하지 않았다. 후속 작업은 이 local 후보를 이미 merged main으로 채택하지 말고 실제 병합이 완료된 뒤 원격 main SHA/tree를 다시 확인한다.

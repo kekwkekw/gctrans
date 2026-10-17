@@ -11,7 +11,8 @@ ROOT_FILES={'.gitattributes','NuGet.Config','OPERATOR_KO.md','LAUNCH_PROCEDURE_K
  'PROJECT_NATIVE_TEST_POLICY_KO.md','UPSTREAM_ATTRIBUTION_KO.md',
  'README.md','.gitignore','.github/workflows/crawl_only.yml',
  '.github/workflows/update_translation.yml','NETWORK_PREPARE_FIX_KO.md',
- 'COMPREHENSIVE_RESTORE_KO.md','RESTORATION_CLOSEOUT_KO.md','UI_PLAN_RESTART_HANDOFF_KO.md','GEOMETRY_RESTORATION_KO.md','RESTORATION_MIGRATION_KO.md'}
+ 'COMPREHENSIVE_RESTORE_KO.md','RESTORATION_CLOSEOUT_KO.md','UI_PLAN_RESTART_HANDOFF_KO.md','GEOMETRY_RESTORATION_KO.md','RESTORATION_MIGRATION_KO.md',
+ 'PROJECT_STABLE_QUALIFICATION_POLICY_KO.md','STABLE_QUALIFICATION_KO.md'}
 SCRIPTS={'scripts/__init__.py','scripts/crawl_only.py','scripts/crypto.py'}
 def run(repo,*args):return subprocess.check_output(['git','-C',str(repo),*args])
 def main():

@@ -93,6 +93,7 @@ public sealed partial class GeneralUiProvider
             if (popupCaption != null && PopupCaptionPreparationPolicy.UsesScopedStatus(binding)) policy = GeometryPolicy.ScopedPopupCaption;
             if(MissionCellCaptionPolicy.Supports(binding)) {
                 if(!TryMissionCellCaption(owner,binding,text,out _)||RenderedGeometryText(text)!=MeshSource(text,text.text)||text.m_havePropertiesChanged||text.m_isLayoutDirty)return false;
+                if(!MissionSourceClipReady(owner,binding,text))return false;
                 policy=GeometryPolicy.ScopedPopupCaption;
             }
             Gc.UnitScene.UnitProfileController? profileOwner = null;
@@ -134,7 +135,10 @@ public sealed partial class GeneralUiProvider
             }
             FilterResetGeometryIdentity? filterReset = null;
             if (TryFilterResetGeometry(owner.Value, binding, text, out filterReset, out var filterDriver, owner.Lifetime))
-            { contentDriver = filterDriver; policy = GeometryPolicy.NativeContentFit; }
+            {
+                if (!FilterResetGeometryPolicy.BaselineReady(text.rectTransform.rect.width, text.rectTransform.rect.height)) return false;
+                contentDriver = filterDriver; policy = GeometryPolicy.NativeContentFit;
+            }
             if (binding.Selector.SlotKey == "exchange_available_badge") policy = GeometryPolicy.BadgeIntrinsic;
             HeaderPowerGeometryIdentity? headerPower = null;
             if (TryHeaderPowerGeometry(owner.Value, binding, text, out headerPower, true, owner.Lifetime)) policy = GeometryPolicy.ScopedHeaderPower;

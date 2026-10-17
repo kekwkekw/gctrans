@@ -76,6 +76,7 @@ public sealed partial class GeneralUiProvider
         gate.Require(); captured = null;
         if (!Current(owner) || !Alive(text)) return false;
         var observation = ObserveCoreProducer(owner, text, binding);
+        TraceHeaderEntry(owner, "PRODUCER", text, binding, observation.ExactSourceOrOwnedDisplay);
         bool absentAllowed = binding.AdapterId == "ui4.static-caption.v1" && CoreDirect(owner.Value, text, binding.Selector.Segments);
         if (!CoreProducerPolicy.Matches(gate.CanAccess, binding.Producer, absentAllowed, null, () => observation))
         {
@@ -93,6 +94,8 @@ public sealed partial class GeneralUiProvider
         }
         ReportCoreProducer(owner, binding, observation, "PRODUCER_READY");
         captured = observation.Identity;
+        TrackHeaderProducer(owner, text, binding, captured);
+        TrackFilterCaption(owner, text, binding, captured);
         return true;
     }
     bool CoreProducerCurrent(Owner owner, TextMeshProUGUI text, UiBinding binding, CoreProducerIdentity? captured)

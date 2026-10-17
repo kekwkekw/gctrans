@@ -24,4 +24,8 @@ public static class FilterResetGeometryPolicy
         return FilterPreferredCaptionRole.Unavailable;
     }
     public static bool Supports(UiBinding binding) => Role(binding) != FilterPreferredCaptionRole.Unavailable;
+    // Newly enabled native fitters may still expose an unlaid-out 0x0 rect.
+    // Wait for a real source baseline; never admit zero by weakening settlement.
+    public static bool BaselineReady(float width, float height) =>
+        float.IsFinite(width) && float.IsFinite(height) && width > 0 && height > 0 && width <= 9999 && height <= 9999;
 }

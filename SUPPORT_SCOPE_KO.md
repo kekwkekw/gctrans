@@ -1,3 +1,5 @@
+최신 종합 안전 UI qualification은 [STABLE_QUALIFICATION_KO.md](STABLE_QUALIFICATION_KO.md)를 따른다. 실제 개인 Stable 전환은 전체 native 무제한 수락/공개 Release가 아니다. table load·field/sample·whole data identity·직접 최종 DLL·이전 source-scoped 증거·bounded 조건을 분리한다.
+
 # main 통합 후보 지원 범위
 
 현재 판정은 **RESTORATION_MAIN_INTEGRATION_CANDIDATE / PUBLIC_WRITE_NOT_AUTHORIZED**의 로컬 준비 범위다. [Geometry 복원](GEOMETRY_RESTORATION_KO.md)의 SelectAll/Shop 안내/캐시 탭 배지와 [4요소 전환](RESTORATION_MIGRATION_KO.md)을 현재 안내로 사용한다. 아래 종합 복원 r1/B46·NG09~NG12의 문서와 미복원은 revision별 역사이며 현재 두 geometry 역할이 다시 미복원됐다는 설명이 아니다. 전체 판정표의 현재 직접 sample·이전 scoped 재사용·보관·조건부는 구분한다.

@@ -1,3 +1,5 @@
+최신 적용·복구 규칙은 [STABLE_QUALIFICATION_KO.md](STABLE_QUALIFICATION_KO.md)와 [조건부 개인 Stable 정책](PROJECT_STABLE_QUALIFICATION_POLICY_KO.md)을 따른다. 종합 검수 성공 후 개인 PC에서는 새 완전 구성을 유지하며, 실패 시에만 원래 구성을 복구한다. 아래의 무조건 trial 원복/미설치 문구는 이전 geometry 통합 회차 기록이고 현재 성공 경로를 되돌리는 지시가 아니다. prepare/live/source의 기존 경계는 그대로다.
+
 # main 통합 후보 운용
 
 현재 종합 복원 후보의 적용 순서는 [RESTORATION_MIGRATION_KO.md](RESTORATION_MIGRATION_KO.md)를 우선한다. 구 r2/main loader는 새 producer JSON을 거부하며 LKG를 유지한다. 신 DLL·완전 JSON·명시62-table·actual selected content를 함께 준비하고, 시험 후에는 원래 cfg/store/선택을 먼저 복원한 뒤 구 DLL을 마지막에 복원한다. 아래 prepare/live/source 명령과 단일 coordinator 경계는 그대로다. 이 로컬 후보는 아직 merged main이나 영구 설치가 아니다.

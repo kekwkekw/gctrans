@@ -120,7 +120,7 @@ internal sealed partial class BattleNativeProvider
     void SkillSetup(NativeHookContext c){if(!Enabled||c.Instance is not Gc.Battle.UI.SkillInfo o||c.Args.Length!=2||c.Args[0] is not BU unit||c.Args[1] is not SK skill)return;
         int depth=0;for(var t=o.transform;Alive(t)&&depth++<16;t=t.parent){var q=t.GetComponent<Gc.Quest.QuestEnemySkillInfoView>();if(Alive(q)&&Ptr(q._skillInfo)==Ptr(o)){Queue(q,"Gc.Battle.UI.SkillInfo.Setup","QuestEnemySkillInfoView._skillInfo","B01",()=>Model(unit,skill),q);return;}
             var b=t.GetComponent<Gc.Battle.UI.CommandSkillInfo>();if(Alive(b)&&Ptr(b._skillInfo)==Ptr(o)){Queue(b,"Gc.Battle.UI.SkillInfo.Setup","CommandSkillInfo._skillInfo","B04",()=>Model(unit,skill),b);return;}}}
-    void Shared(NativeHookContext c){if(Enabled&&c.Instance is Gc.Battle.UI.Detail.SharedEnemyInfoView o)Queue(o,"Gc.Battle.UI.Detail.SharedEnemyInfoView.UpdateScrollView","current_shared_owner_active_cells",Surface(o),()=>Model(o._unit),o);}
+    void Shared(NativeHookContext c){if(Enabled&&c.Instance is Gc.Battle.UI.Detail.SharedEnemyInfoView o){WatchPreflight(o);Queue(o,"Gc.Battle.UI.Detail.SharedEnemyInfoView.UpdateScrollView","current_shared_owner_active_cells",Surface(o),()=>Model(o._unit),o);}}
     void Cell(NativeHookContext c){if(Enabled&&c.Instance is Gc.Battle.UI.Detail.UnitInfoScrollCell o&&c.Args.FirstOrDefault() is CD data)Queue(o,UnityNative.Class(o)+".Setup","current_active_cell_setup_argument",Surface(o),()=>JsonSerializer.Serialize(new{data=Ptr(data),unit=Model(data.Unit),cell=Ptr(data.CellView)}),o);}
     void Enemy(NativeHookContext c){if(Enabled&&c.Instance is Gc.Battle.UI.Detail.EnemyInfoView o)Queue(o,"Gc.Battle.UI.Detail.EnemyInfoView.Show","_sharedView","B05",()=>Model(o._sharedView?._unit),o._sharedView);}
     static Gc.Battle.UI.TopView? CurrentTop(Component c){int depth=0;for(var t=c.transform;Alive(t)&&depth++<16;t=t.parent){var v=t.GetComponent<Gc.Battle.UI.TopView>();if(Alive(v))return v;}return null;}
@@ -195,12 +195,12 @@ internal sealed partial class BattleNativeProvider
         if(result.Written)BattleReadback(binding,life,snapshot.Generations.Ui,target,output);
         return result.Written;
     }
-    public void Tick(){if(!gate.CanAccess||!ReconcileDisplay()||!Enabled)return;frame++;foreach(var pair in pending.ToArray()){var p=pair.Value;double age=(System.Diagnostics.Stopwatch.GetTimestamp()-p.Started)/(double)System.Diagnostics.Stopwatch.Frequency;
+    public void Tick(){if(!gate.CanAccess||!ReconcileDisplay()||!Enabled)return;frame++;TickPreflightReuse();foreach(var pair in pending.ToArray()){var p=pair.Value;double age=(System.Diagnostics.Stopwatch.GetTimestamp()-p.Started)/(double)System.Diagnostics.Stopwatch.Frequency;
         if(!Alive(p.Owner)||p.Owner.GetInstanceID()!=p.Instance||age>3||frame-p.Frame>120){pending.Remove(pair.Key);continue;}if(frame-p.Frame is 1 or 3 or 10 or 60)try{Apply(p);}catch{log.Record("BATTLE_CALLBACK_ISOLATED");}}
         foreach(var pair in readyCards.ToArray()){var card=pair.Value;double age=(System.Diagnostics.Stopwatch.GetTimestamp()-card.Started)/(double)System.Diagnostics.Stopwatch.Frequency;
             if(!Alive(card.Cell)||card.Cell.GetInstanceID()!=card.Instance||age>3||frame-card.Frame>120){readyCards.Remove(pair.Key);continue;}
             if(frame-card.Frame is 1 or 3 or 10 or 60)try{if(TryApplyCard(card))readyCards.Remove(pair.Key);}catch{readyCards.Remove(pair.Key);log.Record("BATTLE_COMPLETED_CARD_ISOLATED");}}}
-    public void Selected(){pending.Clear();readyCards.Clear();lifetimes.Clear();battleOutcomes.Clear();}
+    public void Selected(){pending.Clear();readyCards.Clear();lifetimes.Clear();battleOutcomes.Clear();preflightOwners.Clear();preflightReports.Clear();}
     public bool ReconcileDisplay(){if(!gate.CanAccess)return false;if(!Enabled)Selected();return true;}
     public bool RestoreOwned()=>true; // Text restoration is owned by the shared UiOwnershipService.
     public void Dispose(){Selected();}

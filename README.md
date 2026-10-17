@@ -1,3 +1,5 @@
+현재 checkout의 최신 개인 PC qualification과 적용/복구 범위는 [STABLE_QUALIFICATION_KO.md](STABLE_QUALIFICATION_KO.md)를 우선한다. 조건부 권한에 따른 로컬 Stable 유지와 공개 main 반영은 별개다. 아래 geometry/NG12 문구는 해당 이전 통합 시점의 기록이다.
+
 # 걸크리 PC 한국어화 main 통합 후보
 
 현재 checkout의 종합 복원은 **로컬 공개 검토 후보**다. SelectAll·Shop 안내·캐시 탭 배지의 검증된 geometry Dev를 유지한다. [복원 업그레이드·구 client 호환·rollback](RESTORATION_MIGRATION_KO.md)을 먼저 읽는다. 신 DLL+완전 producer JSON+명시 Master profile+실제 선택 content가 적용 단위다. 아래 PR #25/main 기록은 이미 병합된 이전 기준이며, 이 복원 후보까지 공개되거나 설치 Stable로 승격됐다는 뜻은 아니다.

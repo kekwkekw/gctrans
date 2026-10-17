@@ -1,3 +1,5 @@
+최신 실행은 [Stable qualification](STABLE_QUALIFICATION_KO.md)을 우선한다. 다음 본문은 geometry main 통합 후보 시점의 적용/rollback 이력이다. 최신 조건부 개인 Stable 권한과 실제 성공 후 유지 결과를 이전의 영구 승격 금지로 되돌리지 않는다. 공개 권한은 여전히 별도다.
+
 # 종합 복원 통합 후보: 적용과 되돌리기
 
 이 묶음은 검증된 geometry Dev의 **로컬 main 통합 후보**다. 공개 main에 병합되거나 개인 PC Stable로 영구 승격된 상태가 아니다. 기존 PR #25의 main 병합과 이번 복원 후보의 향후 병합을 구분한다. 공개 push/PR/merge/Release와 영구 설치 권한은 각각 별도다.
