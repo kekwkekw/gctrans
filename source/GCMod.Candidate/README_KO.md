@@ -1,4 +1,4 @@
-현재 운영 명령·경로·반환본 빌드는 [NG06_OPERATOR_KO.md](../../docs/NG06_OPERATOR_KO.md)를 따릅니다. 아래 NG02 설명은 최초 연결의 역사 기록이며 현재 PackageRoot는 GCMod.Nextgen.Candidate/translations/ko입니다. 반환 GCMod.dll은 NG05 빌드 bytes를 재사용합니다.
+현재 운영 명령·경로·반환본 빌드는 [docs/OPERATOR_KO.md](../../docs/OPERATOR_KO.md)를 따릅니다. 아래 NG02 설명은 최초 연결의 역사 기록이며 현재 PackageRoot는 GCMod.Nextgen.Candidate/translations/ko입니다. 반환 GCMod.dll은 NG05 빌드 bytes를 재사용합니다.
 
 # GCMod 단일 DLL NG02 후보
 

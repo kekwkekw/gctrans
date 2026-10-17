@@ -25,11 +25,11 @@ internal static class ActualBranchProbe
         using var trace = new TraceHandler(new HttpClientHandler { AllowAutoRedirect = false, UseCookies = false, UseDefaultCredentials = false });
         using var client = new HttpClient(trace) { Timeout = Timeout.InfiniteTimeSpan };
         var result = await new FixedRefDataUpdater(client, Path.Combine(storeRoot, "branch-downloads"))
-            .PrepareAsync(new("kekwkekw/gctrans", "ng12/publication-candidate"), coordinator);
+            .PrepareAsync(new("kekwkekw/gctrans", "main"), coordinator);
         bool recordsUnchanged = before.All(row => (row.Value == null && Record(row.Key) == null) ||
             row.Value != null && Record(row.Key) is { } now && row.Value.SequenceEqual(now));
         bool fixedUris = trace.Requests.All(u => u.Host == "api.github.com"
-            ? u.AbsolutePath == "/repos/kekwkekw/gctrans/git/ref/heads/ng12/publication-candidate"
+            ? u.AbsolutePath == "/repos/kekwkekw/gctrans/git/ref/heads/main"
             : u.Host == "raw.githubusercontent.com" && u.AbsolutePath.StartsWith("/kekwkekw/gctrans/" + expectedCommit + "/translations/ko/", StringComparison.Ordinal));
         bool passed = result.Prepared != null && result.Reason == "UPDATE_NO_CHANGE" && result.TransportCommit == expectedCommit
             && result.Prepared.Snapshot.Identity == selected.Identity && ReferenceEquals(selected, coordinator.Selected)

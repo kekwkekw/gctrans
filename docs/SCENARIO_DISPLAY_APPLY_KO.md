@@ -24,6 +24,6 @@ Museum3와 미실행 PRO06의 최신-main 구현은 별도 작업이다. Footer 
 
 ## 재현·보존 기록
 
-[WRAP_SCOPE.json](archive/display/20261017/WRAP_SCOPE.json)은 기존 proposal에서 추출한 정확한 dictionary ordinal bitset과 before/after Novel tree를 보존한다. source/KO 내용으로 후보를 다시 판정하는 규칙이 아니다. before tree가 다르면 현재 source와 대조 없이 이 ordinal을 재사용하지 않는다. 변경을 재조립할 때에는 현행 builder와 일본어 key·KO 내부 불변 검사를 사용한다.
+[WRAP_SCOPE.json](../archive/display/20261017/WRAP_SCOPE.json)은 기존 proposal에서 추출한 정확한 dictionary ordinal bitset과 before/after Novel tree를 보존한다. source/KO 내용으로 후보를 다시 판정하는 규칙이 아니다. before tree가 다르면 현재 source와 대조 없이 이 ordinal을 재사용하지 않는다. 변경을 재조립할 때에는 현행 builder와 일본어 key·KO 내부 불변 검사를 사용한다.
 
 원형 PRO04 plan SHA256: `f23bcbca432e03dd0f1f4fbad48831c52a90ec9f14c0057a349c84826797cea3`. 과거 raw index/game-native ID를 dictionary ordinal로 대체하지 않는다.
