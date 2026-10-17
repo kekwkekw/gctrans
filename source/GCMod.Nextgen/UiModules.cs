@@ -211,7 +211,12 @@ public sealed class UiModuleHost
             if (reason != null) return new(false, reason);
             if (!resolver.TryResolve(resource, out var text)) return new(false, resource.Kind == "master_ref" ? "MASTER_REF_UNAVAILABLE" : "RESOURCE_KEEPS_SOURCE");
             // Native execution always needs the explicit approved donor. Optional font-less fixtures cannot lower that requirement.
-            if (!descriptor.HostOnly && fonts == null || fonts != null && (context.FontDonor == null || !fonts.Supports(text, context.FontDonor)))
+            if (fonts != null && context.FontDonor != null && context.Target is IGeneralUiFontTarget fontTarget)
+            {
+                var coverage = fontTarget.CheckGeneralUiFont(text, context.FontDonor, fonts);
+                if (!coverage.Allowed) return new(false, coverage.Reason);
+            }
+            else if (!descriptor.HostOnly || fonts != null && (context.FontDonor == null || !fonts.Supports(text, context.FontDonor)))
                 return new(false, "APPROVED_FONT_GLYPHS_UNAVAILABLE");
             var result = ownership.TryWrite(context.Target, new(module.Name, binding.Id, binding.ActionGroup, selector.SlotKey,
                 snapshot.Generations.Ui, target), text);

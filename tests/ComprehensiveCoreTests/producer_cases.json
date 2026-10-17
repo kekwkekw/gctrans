@@ -1,0 +1,306 @@
+[
+  {
+    "name": "nonempty_key",
+    "valid": true,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6"
+    }
+  },
+  {
+    "name": "empty_key",
+    "valid": true,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": ""
+    }
+  },
+  {
+    "name": "wrong_family",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "other",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6"
+    }
+  },
+  {
+    "name": "wrong_adapter",
+    "valid": false,
+    "adapter": "battle.caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6"
+    }
+  },
+  {
+    "name": "wrong_source_kind",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "current-model",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6"
+    }
+  },
+  {
+    "name": "nonliteral_type",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 1,
+      "text_config_key": "OptionPopup_6"
+    }
+  },
+  {
+    "name": "bool_type",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": true,
+      "text_config_key": "OptionPopup_6"
+    }
+  },
+  {
+    "name": "unknown_property",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6",
+      "invoke": "Execute"
+    }
+  },
+  {
+    "name": "missing_metadata_key",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0
+    }
+  },
+  {
+    "name": "control_metadata",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "Option\nPopup"
+    }
+  },
+  {
+    "name": "typed_area",
+    "valid": true,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6",
+      "option_area": {
+        "field": "soundAndTextOptionArea",
+        "segments": [
+          "Inner_Frame",
+          "Text_Text"
+        ],
+        "indices": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "name": "unsupported_field",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6",
+      "option_area": {
+        "field": "privateMethod",
+        "segments": [
+          "Inner_Frame",
+          "Text_Text"
+        ],
+        "indices": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "name": "wrong_area_owner",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.headertopcontroller",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6",
+      "option_area": {
+        "field": "soundAndTextOptionArea",
+        "segments": [
+          "Inner_Frame",
+          "Text_Text"
+        ],
+        "indices": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "name": "different_lengths",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6",
+      "option_area": {
+        "field": "soundAndTextOptionArea",
+        "segments": [
+          "Inner_Frame",
+          "Text_Text"
+        ],
+        "indices": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "negative_index",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6",
+      "option_area": {
+        "field": "soundAndTextOptionArea",
+        "segments": [
+          "Inner_Frame",
+          "Text_Text"
+        ],
+        "indices": [
+          0,
+          -1
+        ]
+      }
+    }
+  },
+  {
+    "name": "huge_index",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6",
+      "option_area": {
+        "field": "soundAndTextOptionArea",
+        "segments": [
+          "Inner_Frame",
+          "Text_Text"
+        ],
+        "indices": [
+          0,
+          512
+        ]
+      }
+    }
+  },
+  {
+    "name": "parent_segment",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6",
+      "option_area": {
+        "field": "soundAndTextOptionArea",
+        "segments": [
+          "Inner_Frame",
+          ".."
+        ],
+        "indices": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "name": "unknown_area_property",
+    "valid": false,
+    "adapter": "ui4.static-caption.v1",
+    "source_kind": "static-asset",
+    "scope": "gc.option.optionpopup",
+    "producer": {
+      "family": "core-literal-v1",
+      "localizer_type": 0,
+      "text_config_key": "OptionPopup_6",
+      "option_area": {
+        "field": "soundAndTextOptionArea",
+        "segments": [
+          "Inner_Frame",
+          "Text_Text"
+        ],
+        "indices": [
+          0,
+          1
+        ],
+        "method": "Find"
+      }
+    }
+  }
+]

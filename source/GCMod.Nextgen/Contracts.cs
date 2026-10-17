@@ -13,7 +13,7 @@ public sealed record UiSelector(string ScopeKey, string SlotKey, ImmutableArray<
     string? Type = null, int? Domain = null, int? SourceValue = null, int? SourceId = null,
     bool? Selected = null, string? TemplateId = null, string? Lifetime = null, string? OverflowPolicy = null);
 public sealed record UiBinding(string Id, string ResourceId, string AdapterId, bool Enabled,
-    SourceIdentity SourceIdentity, UiSelector Selector, string? ActionGroup);
+    SourceIdentity SourceIdentity, UiSelector Selector, string? ActionGroup, CoreProducerContract? Producer = null);
 public sealed record PackageFile(string Path, string Kind, string Sha256, long Size);
 public sealed record ComponentGenerations(long Ui, long Master, long Names, long Novel);
 public sealed record EpisodeTitleLayoutPolicy(string PolicyId, string FontProfile, int BaseSize,

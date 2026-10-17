@@ -52,6 +52,32 @@ public static class UiGlyphChannelPolicy
         => materialIndex is >= 0 and <= 8 && currentFont && ownChannel && activeRenderer && !culled && float.IsFinite(alpha) && alpha > 0;
 }
 
+/// <summary>Only a caller's current typed footer-button proof selects the composite.
+/// Truncation, masks, glyph suppliers and controls remain separate mandatory checks.</summary>
+public static class GeneralUiGlyphBoundsPolicy
+{
+    public static bool Contains(bool currentTypedFooter, bool leafContained, bool buttonContained)
+        => currentTypedFooter ? buttonContained : leafContained;
+}
+
+/// <summary>Metric ink bounds inside an actual SDF quad. The caller must separately prove
+/// the supported material/style, current glyph supplier, masks and render channel.</summary>
+public static class UiGlyphInkBounds
+{
+    public static bool TryGet(float origin, float baseline, float scale, float bearingX, float bearingY,
+        float width, float height, float effect, float quadLeft, float quadBottom, float quadRight, float quadTop,
+        out (float Left, float Bottom, float Right, float Top) ink)
+    {
+        ink = default;
+        if (new[] { origin, baseline, scale, bearingX, bearingY, width, height, effect, quadLeft, quadBottom, quadRight, quadTop }
+            .Any(n => !float.IsFinite(n) || Math.Abs(n) > 99999) || scale <= 0 || width <= 0 || height <= 0 || effect < 0) return false;
+        ink = (origin + bearingX * scale - effect, baseline + (bearingY - height) * scale - effect,
+            origin + (bearingX + width) * scale + effect, baseline + bearingY * scale + effect);
+        return ink.Left >= quadLeft - .05f && ink.Right <= quadRight + .05f &&
+            ink.Bottom >= quadBottom - .05f && ink.Top <= quadTop + .05f;
+    }
+}
+
 /// <summary>Geometry failure stays held for an actual owner/UI epoch; scheduling clocks are not source authority.</summary>
 public sealed record UiGeometryHoldKey(string Binding, long Target, long OwnerGeneration, long UiGeneration);
 

@@ -12,7 +12,7 @@ using CD = Gc.Battle.UI.Detail.UnitInfoScrollCellData;
 namespace GCMod.Candidate.Native;
 
 /// <summary>UI18's completed B01–B07 producers. Native parameters and control delegates are read only.</summary>
-internal sealed class BattleNativeProvider
+internal sealed partial class BattleNativeProvider
 {
     readonly GameThreadGate gate; readonly NativeHookHub hub; readonly AdapterRegistry registry;
     readonly UiOwnershipService ownership; readonly NativeFontProvider fonts; readonly SafeDiagnostics log;
@@ -74,27 +74,43 @@ internal sealed class BattleNativeProvider
             var rules=snapshot.Bindings.Values.Where(b=>b.Enabled&&b.AdapterId=="battle.caption.v1"&&b.SourceIdentity.IdentityJson==JsonSerializer.Serialize(route.SourceId)
                 &&b.Selector.ScopeKey=="battle-"+route.Surface.ToLowerInvariant()&&b.Selector.SlotKey==route.Slot&&b.Selector.Segments.SequenceEqual(route.Segments,StringComparer.Ordinal)).ToArray();
             if(rules.Length!=1)continue; var binding=rules[0]; if(!registry.CanExecute(binding,false))continue;var resource=snapshot.Resources[binding.ResourceId];
-            var child=ExactChild(p.Owner.transform,route.Segments,p.Surface=="B05"); if(!Alive(child))continue;
-            var candidates=child!.GetComponents<TextMeshProUGUI>();if(candidates.Length!=1)continue;var text=candidates[0];
-            if(!text.enabled||!text.gameObject.activeInHierarchy||!resolver.TryResolve(resource,out var ko)||fonts.Current==null||!fonts.Service.Supports(ko,fonts.Current)||!fonts.Glyphs(text.font,ko))continue;
+            var child=CaptionChild(p,route,out var capturedAnchor,out string targetReason);
+            // O0 is deliberately pre-target route evidence, never an ownership/lifetime proof.
+            if(!Alive(child)){BattleOutcome(binding,0,snapshot.Generations.Ui,"ROUTE_"+targetReason);continue;}
+            if(capturedAnchor!=null)BattleOutcome(binding,0,snapshot.Generations.Ui,"ROUTE_"+targetReason);
+            var candidates=child!.GetComponents<TextMeshProUGUI>();if(candidates.Length!=1){BattleOutcome(binding,0,snapshot.Generations.Ui,"ROUTE_TMP_C"+Math.Min(candidates.Length,999));continue;}var text=candidates[0];
+            if(!text.enabled||!text.gameObject.activeInHierarchy){BattleOutcome(binding,0,snapshot.Generations.Ui,"ROUTE_TARGET_INACTIVE");continue;}
+            if(!resolver.TryResolve(resource,out var ko)){BattleOutcome(binding,0,snapshot.Generations.Ui,"RESOURCE_UNAVAILABLE");continue;}
             var lk=(Ptr(text),binding.Id);if(lifetimes.Count>=4096&&!lifetimes.ContainsKey(lk))continue; if(!lifetimes.TryGetValue(lk,out var lifetime)||lifetime.Model!=p.InitialModel){lifetime=(p.InitialModel,gate.NextLifetime());lifetimes[lk]=lifetime;}
             var identity=new PhysicalTargetIdentity((ulong)Ptr(text),text.GetInstanceID(),UnityNative.Class(text),lifetime.Lifetime);
+            bool CurrentCaption()
+            {
+                if(!Enabled||!Alive(p.Owner)||!Alive(text)||p.Owner.GetInstanceID()!=p.Instance||
+                    text.GetInstanceID()!=identity.InstanceId||!p.Owner.gameObject.activeInHierarchy||p.Model()!=p.InitialModel)return false;
+                var currentChild=CaptionChild(p,route,out var currentAnchor,out _);
+                return Ptr(currentChild)==Ptr(text.transform)&&currentAnchor==capturedAnchor;
+            }
+            if(!TryBattleFont(binding,lifetime.Lifetime,snapshot.Generations.Ui,text,ko,CurrentCaption))continue;
             var target=new UnityTextTarget(gate,text,()=>{
                 bool live=gate.CanAccess&&Alive(p.Owner)&&Alive(text)&&p.Owner.GetInstanceID()==p.Instance;
                 bool ownerActive=live&&p.Owner.gameObject.activeInHierarchy;
-                bool bound=ownerActive&&p.Model()==p.InitialModel&&Ptr(ExactChild(p.Owner.transform,route.Segments,p.Surface=="B05"))==Ptr(text.transform);
+                bool bound=ownerActive&&CurrentCaption();
                 bool current=bound&&text.gameObject.activeInHierarchy;
                 return new TextTargetState(identity,current?text.text??"":"",p.Instance,lifetime.Lifetime,binding.SourceIdentity.IdentityJson,resource.Jp,current,!live||ownerActive&&!bound);
             });
-            var state=target.ReadState();ownership.TryWrite(target,new("Battle",binding.Id,null,binding.Selector.SlotKey,snapshot.Generations.Ui,state),ko);
+            var state=target.ReadState();var result=ownership.TryWrite(target,new("Battle",binding.Id,null,binding.Selector.SlotKey,snapshot.Generations.Ui,state),ko);
+            BattleOutcome(binding,lifetime.Lifetime,snapshot.Generations.Ui,result.Reason);
+            if(result.Written)BattleReadback(binding,lifetime.Lifetime,snapshot.Generations.Ui,target,ko);
         }
     }
     static Transform? ExactChild(Transform root,IEnumerable<string> path,bool activeUnique)
+        =>ExactChild(root,path,activeUnique,out _,out _);
+    static Transform? ExactChild(Transform root,IEnumerable<string> path,bool activeUnique,out int failedDepth,out int matchCount)
     {
-        var current=root; foreach(var name in path){Transform? match=null;int count=0;
-            if(!Alive(current)||current.childCount>256)return null;
+        failedDepth=0;matchCount=0;var current=root; foreach(var name in path){Transform? match=null;int count=0;
+            if(!Alive(current)||current.childCount>256){matchCount=-1;return null;}
             for(int n=0;n<current.childCount;n++){var child=current.GetChild(n);if(child.name==name&&(!activeUnique||child.gameObject.activeInHierarchy)){match=child;count++;}}
-            if(count!=1)return null;current=match!;}return current;
+            matchCount=count;if(count!=1)return null;current=match!;failedDepth++;}return current;
     }
     static string Surface(Component c)
     {
@@ -104,7 +120,7 @@ internal sealed class BattleNativeProvider
     void SkillSetup(NativeHookContext c){if(!Enabled||c.Instance is not Gc.Battle.UI.SkillInfo o||c.Args.Length!=2||c.Args[0] is not BU unit||c.Args[1] is not SK skill)return;
         int depth=0;for(var t=o.transform;Alive(t)&&depth++<16;t=t.parent){var q=t.GetComponent<Gc.Quest.QuestEnemySkillInfoView>();if(Alive(q)&&Ptr(q._skillInfo)==Ptr(o)){Queue(q,"Gc.Battle.UI.SkillInfo.Setup","QuestEnemySkillInfoView._skillInfo","B01",()=>Model(unit,skill),q);return;}
             var b=t.GetComponent<Gc.Battle.UI.CommandSkillInfo>();if(Alive(b)&&Ptr(b._skillInfo)==Ptr(o)){Queue(b,"Gc.Battle.UI.SkillInfo.Setup","CommandSkillInfo._skillInfo","B04",()=>Model(unit,skill),b);return;}}}
-    void Shared(NativeHookContext c){if(Enabled&&c.Instance is Gc.Battle.UI.Detail.SharedEnemyInfoView o)Queue(o,"Gc.Battle.UI.Detail.SharedEnemyInfoView.UpdateScrollView","current_shared_owner_active_cells",Surface(o),()=>Model(o._unit),o);}
+    void Shared(NativeHookContext c){if(Enabled&&c.Instance is Gc.Battle.UI.Detail.SharedEnemyInfoView o){WatchPreflight(o);Queue(o,"Gc.Battle.UI.Detail.SharedEnemyInfoView.UpdateScrollView","current_shared_owner_active_cells",Surface(o),()=>Model(o._unit),o);}}
     void Cell(NativeHookContext c){if(Enabled&&c.Instance is Gc.Battle.UI.Detail.UnitInfoScrollCell o&&c.Args.FirstOrDefault() is CD data)Queue(o,UnityNative.Class(o)+".Setup","current_active_cell_setup_argument",Surface(o),()=>JsonSerializer.Serialize(new{data=Ptr(data),unit=Model(data.Unit),cell=Ptr(data.CellView)}),o);}
     void Enemy(NativeHookContext c){if(Enabled&&c.Instance is Gc.Battle.UI.Detail.EnemyInfoView o)Queue(o,"Gc.Battle.UI.Detail.EnemyInfoView.Show","_sharedView","B05",()=>Model(o._sharedView?._unit),o._sharedView);}
     static Gc.Battle.UI.TopView? CurrentTop(Component c){int depth=0;for(var t=c.transform;Alive(t)&&depth++<16;t=t.parent){var v=t.GetComponent<Gc.Battle.UI.TopView>();if(Alive(v))return v;}return null;}
@@ -158,8 +174,13 @@ internal sealed class BattleNativeProvider
             &&b.Selector.SlotKey=="skill-slot-"+slot+"-unusable-title"&&b.Selector.TemplateId=="preserve-native-numeric-suffix-v1"&&b.Selector.Segments.IsEmpty
             &&b.SourceIdentity.Kind=="native-template"&&b.SourceIdentity.IdentityJson==JsonSerializer.Serialize("UI17-TEMPLATE-SLOT-"+slot)).ToArray();
         if(bindings.Length!=1)return false;var binding=bindings[0];if(!registry.CanExecute(binding,false))return false;var resource=snapshot.Resources[binding.ResourceId];string source=card.Source;
-        if(!text!.enabled||!text.gameObject.activeInHierarchy||text.text!=source||!BattleCaptionPolicy.TryCostTitle(source,resource,activeMaster,out var output)||fonts.Current==null||!fonts.Service.Supports(output,fonts.Current)||!fonts.Glyphs(text.font,output))return false;
+        if(!text!.enabled||!text.gameObject.activeInHierarchy||text.text!=source||!BattleCaptionPolicy.TryCostTitle(source,resource,activeMaster,out var output))return false;
         var actorPtr=Ptr(actor);var skillPtr=Ptr(param.Skill);var parameterPtr=Ptr(param);long life=gate.NextLifetime();int instance=cell.GetInstanceID();
+        bool CurrentCard()=>Enabled&&Alive(cell)&&Alive(view)&&Alive(text)&&cell.GetInstanceID()==instance&&cell.gameObject.activeInHierarchy&&
+            view!._skillSets!=null&&slot<view._skillSets.Length&&Ptr(view._skillSets[slot])==Ptr(cell)&&
+            Ptr(Actor(view))==actorPtr&&Ptr(cell._button?.Param)==parameterPtr&&Ptr(cell._button?.Param?.Skill)==skillPtr&&
+            cell._button?.Param?.UnusableText==source&&Ptr(cell._button?._unusableText)==Ptr(text)&&text.text==source;
+        if(!TryBattleFont(binding,life,snapshot.Generations.Ui,text,output,CurrentCard))return false;
         var identity=new PhysicalTargetIdentity((ulong)Ptr(text),text.GetInstanceID(),UnityNative.Class(text),life);
         var target=new UnityTextTarget(gate,text,()=>{
             bool valid=gate.CanAccess&&Alive(cell)&&Alive(view)&&Alive(text)&&cell.GetInstanceID()==instance;
@@ -169,14 +190,17 @@ internal sealed class BattleNativeProvider
                 &&Ptr(Actor(view))==actorPtr&&Ptr(live)==parameterPtr&&Ptr(live?.Skill)==skillPtr&&live?.UnusableText==source&&Ptr(cell._button?._unusableText)==Ptr(text);
             bool current=bound&&text.gameObject.activeInHierarchy;
             return new TextTargetState(identity,current?text.text??"":"",instance,life,binding.SourceIdentity.IdentityJson,source,current,!valid||ownerActive&&!bound);});
-        return ownership.TryWrite(target,new("Battle",binding.Id,null,binding.Selector.SlotKey,snapshot.Generations.Ui,target.ReadState()),output).Written;
+        var result=ownership.TryWrite(target,new("Battle",binding.Id,null,binding.Selector.SlotKey,snapshot.Generations.Ui,target.ReadState()),output);
+        BattleOutcome(binding,life,snapshot.Generations.Ui,result.Reason);
+        if(result.Written)BattleReadback(binding,life,snapshot.Generations.Ui,target,output);
+        return result.Written;
     }
-    public void Tick(){if(!gate.CanAccess||!ReconcileDisplay()||!Enabled)return;frame++;foreach(var pair in pending.ToArray()){var p=pair.Value;double age=(System.Diagnostics.Stopwatch.GetTimestamp()-p.Started)/(double)System.Diagnostics.Stopwatch.Frequency;
+    public void Tick(){if(!gate.CanAccess||!ReconcileDisplay()||!Enabled)return;frame++;TickPreflightReuse();foreach(var pair in pending.ToArray()){var p=pair.Value;double age=(System.Diagnostics.Stopwatch.GetTimestamp()-p.Started)/(double)System.Diagnostics.Stopwatch.Frequency;
         if(!Alive(p.Owner)||p.Owner.GetInstanceID()!=p.Instance||age>3||frame-p.Frame>120){pending.Remove(pair.Key);continue;}if(frame-p.Frame is 1 or 3 or 10 or 60)try{Apply(p);}catch{log.Record("BATTLE_CALLBACK_ISOLATED");}}
         foreach(var pair in readyCards.ToArray()){var card=pair.Value;double age=(System.Diagnostics.Stopwatch.GetTimestamp()-card.Started)/(double)System.Diagnostics.Stopwatch.Frequency;
             if(!Alive(card.Cell)||card.Cell.GetInstanceID()!=card.Instance||age>3||frame-card.Frame>120){readyCards.Remove(pair.Key);continue;}
             if(frame-card.Frame is 1 or 3 or 10 or 60)try{if(TryApplyCard(card))readyCards.Remove(pair.Key);}catch{readyCards.Remove(pair.Key);log.Record("BATTLE_COMPLETED_CARD_ISOLATED");}}}
-    public void Selected(){pending.Clear();readyCards.Clear();lifetimes.Clear();}
+    public void Selected(){pending.Clear();readyCards.Clear();lifetimes.Clear();battleOutcomes.Clear();preflightOwners.Clear();preflightReports.Clear();}
     public bool ReconcileDisplay(){if(!gate.CanAccess)return false;if(!Enabled)Selected();return true;}
     public bool RestoreOwned()=>true; // Text restoration is owned by the shared UiOwnershipService.
     public void Dispose(){Selected();}

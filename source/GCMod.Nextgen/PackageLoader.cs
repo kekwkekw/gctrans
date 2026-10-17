@@ -203,7 +203,7 @@ public sealed class PackageLoader(IPackageFileSource source, AdapterRegistry reg
         ContractRules.Require(rows.ValueKind == JsonValueKind.Array && rows.GetArrayLength() is > 0 and <= 40000, "BINDING_COUNT_BOUND");
         foreach (var node in rows.EnumerateArray())
         {
-            ContractRules.Only(node, "id", "resource_id", "adapter_id", "enabled", "source_identity", "selector", "action_group");
+            ContractRules.Only(node, "id", "resource_id", "adapter_id", "enabled", "source_identity", "selector", "action_group", "producer");
             var id = ContractRules.String(node, "id", 160); var resourceId = ContractRules.String(node, "resource_id", 160);
             var adapter = ContractRules.String(node, "adapter_id", 128); var enabled = ContractRules.Bool(node, "enabled");
             var group = ContractRules.OptionalString(node, "action_group", 160);
@@ -218,7 +218,9 @@ public sealed class PackageLoader(IPackageFileSource source, AdapterRegistry reg
                 : selector.GroupId == null && selector.ScriptId == null && selector.BranchLabel == null, "CHOICE_SELECTOR_CONTRACT");
             ContractRules.Require(selector.SourceId == null || selector.Lifetime == "callback", "SORT_SOURCE_REQUIRES_CALLBACK");
             if (group != null) ContractRules.Require(registrySupportsCoMatch(adapter), "COMATCH_ADAPTER_CONTRACT");
-            output.Add(new(id, resourceId, adapter, enabled, new(kind, CanonicalIdentity(identity), jp), selector, group));
+            var producer = node.TryGetProperty("producer", out var producerNode)
+                ? CoreProducerPolicy.Parse(producerNode, adapter, kind, selector.ScopeKey) : null;
+            output.Add(new(id, resourceId, adapter, enabled, new(kind, CanonicalIdentity(identity), jp), selector, group, producer));
         }
         static bool registrySupportsCoMatch(string adapter) => adapter is "ui4.static-caption.v1" or "core.static-caption.v1";
     }
@@ -279,6 +281,7 @@ public sealed class PackageLoader(IPackageFileSource source, AdapterRegistry reg
             {
                 var r = resourceMap[b.ResourceId];
                 ContractRules.Require(a.AdapterId == b.AdapterId && a.Enabled == b.Enabled && SelectorEquals(a.Selector, b.Selector)
+                    && CoreProducerPolicy.SameContract(a.Producer, b.Producer)
                     && resource.Role == r.Role && resource.Jp == r.Jp && resource.Ko == r.Ko && resource.Kind == r.Kind
                     && resource.Disposition == r.Disposition && resource.MasterRef == r.MasterRef && resource.MarkupPolicy == r.MarkupPolicy, "CONFLICTING_COMATCH");
             }

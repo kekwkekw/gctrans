@@ -11415,8 +11415,8 @@
     {
       "kind": "bindings",
       "path": "ui/bindings.json",
-      "sha256": "0a8af00ce9645796a48d018825c67d166ce9aa35f5a06a6211974bad1da9602a",
-      "size": 303463
+      "sha256": "a0706ff4d879ad5011b3f6024d24e9f86bf5392fbc824d0c528b3c060cdfb742",
+      "size": 310036
     },
     {
       "kind": "resources",
@@ -11429,12 +11429,12 @@
   "legacy_manifest_builder_input": "current release/index; explicit add/modify/remove; optional initial bootstrap receipt",
   "locale": "ko",
   "profile": "NextgenCandidate",
-  "revision": "ng03-08891ecfc43a62f13c617450",
+  "revision": "ng03-609873e3da8298b2a33a770f",
   "schema_version": 2,
   "status": "OFFLINE_PARTIAL_NOT_ACCEPTED_REPLACEMENT",
   "ui_manifest": {
     "path": "ui/manifest.json",
-    "sha256": "7643c7b8e776d9a25c73c7f3c3f0d9ec97a8c358ed7c3e9c1d812d0bfab50401",
+    "sha256": "b1bedaac6c4d6efdab1680ab4f84e32f4912e7048319f51222de404d972cc56a",
     "size": 1028
   }
 }
