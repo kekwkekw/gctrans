@@ -1,5 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net9.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
-  <ItemGroup Condition="'$(CandidateAssembly)' == ''"><ProjectReference Include="../../source/GCMod.Nextgen/GCMod.Nextgen.csproj" /></ItemGroup>
-  <ItemGroup Condition="'$(CandidateAssembly)' != ''"><Reference Include="GCMod" HintPath="$(CandidateAssembly)" /></ItemGroup>
-</Project>
