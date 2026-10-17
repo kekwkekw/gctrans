@@ -16,6 +16,6 @@ jobs:
         run: |
           printf '%s\n' \
             'The legacy automatic translation writer is retired.' \
-            'Use OPERATOR_KO.md: persistent local scan, diff, actionable intake, existing WB review, explicit apply-review.' \
+            'Use docs/OPERATOR_KO.md: persistent local scan, diff, actionable intake, existing WB review, explicit apply-review.' \
             'This workflow only prints this notice. It does not collect, translate, merge, or publish files.' \
             >> "$GITHUB_STEP_SUMMARY"

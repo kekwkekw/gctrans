@@ -5,14 +5,10 @@ not runtime conditions, and no commit SHA is embedded into translation manifests
 from pathlib import Path, PurePosixPath
 import argparse, hashlib, io, json, subprocess, tarfile
 
-PREFIXES=('source/','tools/','tests/','contracts/','donor_recovery/','staging/','translations/ko/','candidate/')
-ROOT_FILES={'archive/display/20261017/WRAP_SCOPE.json','SCENARIO_DISPLAY_APPLY_KO.md','RETIRED_PIPELINES_KO.md','.gitattributes','NuGet.Config','OPERATOR_KO.md','LAUNCH_PROCEDURE_KO.md',
- 'EXTERNAL_DEPENDENCIES_KO.md','REPRODUCE_KO.md','SUPPORT_SCOPE_KO.md','PUBLICATION_KO.md',
- 'PROJECT_NATIVE_TEST_POLICY_KO.md','UPSTREAM_ATTRIBUTION_KO.md',
+PREFIXES=('source/','tools/','tests/','contracts/','donor_recovery/','staging/','translations/ko/','candidate/','docs/')
+ROOT_FILES={'archive/display/20261017/WRAP_SCOPE.json','.gitattributes','NuGet.Config',
  'README.md','.gitignore','.github/workflows/crawl_only.yml',
- '.github/workflows/update_translation.yml','NETWORK_PREPARE_FIX_KO.md',
- 'COMPREHENSIVE_RESTORE_KO.md','RESTORATION_CLOSEOUT_KO.md','UI_PLAN_RESTART_HANDOFF_KO.md','GEOMETRY_RESTORATION_KO.md','RESTORATION_MIGRATION_KO.md',
- 'PROJECT_STABLE_QUALIFICATION_POLICY_KO.md','STABLE_QUALIFICATION_KO.md'}
+ '.github/workflows/update_translation.yml'}
 SCRIPTS={'scripts/__init__.py','scripts/crawl_only.py','scripts/crypto.py'}
 def run(repo,*args):return subprocess.check_output(['git','-C',str(repo),*args])
 def main():
