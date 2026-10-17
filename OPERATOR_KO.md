@@ -1,6 +1,12 @@
-# NG11 로컬 공개 검토 후보 운용
+# main 통합 후보 운용
 
-운영 후보는 source/, scripts/, tools/, tests/, contracts/, donor_recovery/reproduction/Common.props, candidate/GCMod.dll, translations/ko, staging/로 구성된다. 선택된 번역값과 등록 상태는 NG12 공개 baseline과 같다. 네트워크 resolve 보완의 DLL 식별과 표적 명령은 [NETWORK_PREPARE_FIX_KO.md](NETWORK_PREPARE_FIX_KO.md)를 참조한다. 후속 변경의 공개 반영 여부는 실제 Git ref와 별도 실행 보고로 확인한다.
+현재 종합 복원 후보의 적용 순서는 [RESTORATION_MIGRATION_KO.md](RESTORATION_MIGRATION_KO.md)를 우선한다. 구 r2/main loader는 새 producer JSON을 거부하며 LKG를 유지한다. 신 DLL·완전 JSON·명시62-table·actual selected content를 함께 준비하고, 시험 후에는 원래 cfg/store/선택을 먼저 복원한 뒤 구 DLL을 마지막에 복원한다. 아래 prepare/live/source 명령과 단일 coordinator 경계는 그대로다. 이 로컬 후보는 아직 merged main이나 영구 설치가 아니다.
+
+이번 closeout의 실제 callback 역할·popup/미션 cell 보완·일관 DLL/data/profile 전환과 원복은 [RESTORATION_CLOSEOUT_KO.md](RESTORATION_CLOSEOUT_KO.md)를 함께 따른다. 실행 결과는 전달된 전체 scope 표와 DLL별 증거 수준으로 구분한다.
+
+현재 로컬 종합 복원 Dev 후보의 적용 profile·producer 차이와 인계는 [COMPREHENSIVE_RESTORE_KO.md](COMPREHENSIVE_RESTORE_KO.md)를 참조한다. 수락 Master 전체 profile과 과거 5-table smoke profile은 다르다. 이 로컬 후보가 public main이나 설치 Stable에 반영됐다는 뜻은 아니다.
+
+운영 후보는 source/, scripts/, tools/, tests/, contracts/, donor_recovery/reproduction/Common.props, candidate/GCMod.dll, translations/ko, staging/로 구성된다. PR #25는 main에 병합됐으며 수락 번역값과 등록 상태를 유지한다. 네트워크 resolve 보완의 DLL 식별과 표적 명령은 [NETWORK_PREPARE_FIX_KO.md](NETWORK_PREPARE_FIX_KO.md)를 참조한다. 병합 후 검증 기준 commit은 `82a8b0f7ef2c2760fe7139707fda69030eb4571c`이다.
 
 명령은 추출한 후보 루트에서 실행한다. Python 3와 .NET SDK 9가 외부 실행 입력이다. UI-only 교정/검사는 Unity raw decoder·Medium·게임 DLL·private source helper를 요구하지 않는다. DLL 재빌드와 실제 native에는 EXTERNAL_DEPENDENCIES_KO.md의 별도 입력이 필요하다.
 
@@ -53,7 +59,13 @@ python -I -S -X utf8 tools/replay_extracted.py --archive <current-operational.zi
 
 ZIP 경로를 검증해 별도 추출하고, 추출본 entrypoint/help/import/preflight/whole-package staging을 실행한다. 폐기 fixture에만 기존 close KO 교정/복구의 명시 decision과 next_package 경로를 재현한다. 이후 SDK의 NuGet source를 비운 UpdateCli build → 같은 후보 DLL을 참조한 bin 실행 → isolated prepare-local을 수행한다. current/previous 생성과 native Initialize가 없고 pending_restart만 저장되는지 확인한다. 기록은 scratch/REPLAY_RESULTS.json, STAGING.json, PREPARE_LOCAL.json, fixture/*-apply.json이며 이 CPU 재현은 native PASS가 아니다. 최초 import/cold staging 비용과 이어지는 unchanged Novel app read/hash0, OS copy 비용을 구분한다.
 
-현재 운영 export는 실제 로컬 Git commit의 선택 blob으로 만들었다. public main에 release-manifest가 없으므로 원격에서 이 후보를 받을 수 없다. 기본 CheckUpdate OFF/UiRequestsEnabled OFF/Nextgen Enabled OFF를 유지한다. safe source 및 공급/ref 범위는 PUBLICATION_KO.md, native 및 residual은 SUPPORT_SCOPE_KO.md를 참조한다. helper의 game-root/Medium은 명시 외부 입력이다.
+public main은 새 release-manifest와 번역 데이터를 제공한다. 재현 가능한 격리 공급 검사는 아래처럼 고정 commit을 사용한다. 기존 대형 commit metadata 오류는 수정됐고, prepare는 완전 package/pending만 준비하며 native Initialize나 현재 선택을 실행하지 않는다.
+
+```powershell
+dotnet tools/UpdateCli/bin/Release/net9.0/UpdateCli.dll prepare --store <new-isolated-store> --repository kekwkekw/gctrans --channel 82a8b0f7ef2c2760fe7139707fda69030eb4571c
+```
+
+기본 Nextgen Enabled·CheckUpdate·UiRequestsEnabled OFF, XUnity OFF를 유지한다. 실제 운영 store는 BepInEx/config/GCMod.Nextgen.local이며 PackageRoot만 바꾸어 격리됐다고 해석하지 않는다. 영구 설치·기존 plugin/config/store 전환, 외부 Medium/Utility/interop 입력, 정상 종료·백업·원복 및 이후 업데이트 opt-in은 별도 설치 결정이다. main 통합이나 격리 pending 준비가 설치·전체 native 수락을 대신하지 않는다. 공개 전 계약 검토 이력은 PUBLICATION_KO.md, 현재 native/residual은 SUPPORT_SCOPE_KO.md를 참조한다.
 
 source 증분 운용은 같은 private state/raw root를 계속 사용하는 로컬 명령이다. output만 run별로 나눈다. 아래 metadata-only 예시는 이미 보유한 known inventory를 사용하며 raw 취득·최신 PC server 관측·의미 수락을 만들지 않는다. direct script와 운영 CLI는 같은 checkout의 소스를 사용한다.
 
@@ -77,7 +89,7 @@ python -X utf8 tools/update/cli.py resume-intake-completion --state-root <owned-
 
 WB binding에는 실제 source-qualified/physical locator와 검증된 raw identity가 필요하다. accepted Novel return의 reviewed-change-set에 기존 intake link가 있어야 해당 work가 완료된다. 일반 UI 교정에서 관계없는 WB 전수 replay를 하지 않는다. 지원된 operation만 적용하고 나머지는 request_outcomes로 APPLIED/HELD/REJECTED를 보고한다.
 
-GitHub의 `crawl_only.yml`은 fresh state의 one-shot metadata snapshot이다. 지속 CI 증분은 구현하지 않았다. artifact 7일 보존은 durable source baseline을 대신하지 않는다. workflow 요약은 실제 scan.json의 status/coverage/plan을 사용하며 raw/PC 동등성/semantic 수락 PASS를 주장하지 않는다. `update_translation.yml`의 로컬 후보 정의는 retired manual/read-only 안내뿐이다. 원격 workflow의 enabled/disabled 상태 및 실제 dispatch는 별도이며 이번 작업에서 변경·실행하지 않는다.
+GitHub의 `crawl_only.yml`은 fresh state의 one-shot metadata snapshot이다. 지속 CI 증분은 구현하지 않았다. artifact 7일 보존은 durable source baseline을 대신하지 않는다. workflow 요약은 실제 scan.json의 status/coverage/plan을 사용하며 raw/PC 동등성/semantic 수락 PASS를 주장하지 않는다. main의 `update_translation.yml` 정의는 retired manual/read-only 안내뿐이다. 원격 workflow의 enabled/disabled 상태 및 실제 dispatch는 별도이며 이번 작업에서 변경·실행하지 않는다.
 
 ```powershell
 python -I -S -X utf8 tools/update/snapshot_summary.py --scan <run/scan.json> --summary <run/public-summary.md> --report <run/public-summary.json> --one-shot

@@ -149,6 +149,22 @@ def check_models(resources,bindings):
         if (b['source_identity']['kind']=='native-template')!=(r['kind']=='template_label'):
             raise ContractError('TEMPLATE_KIND_MISMATCH')
         s=b['selector']
+        producer=b.get('producer')
+        if producer is not None:
+            if (b['adapter_id'] not in {'core.static-caption.v1','ui4.static-caption.v1'}
+                    or b['source_identity']['kind']!='static-asset'
+                    or producer.get('family')!='core-literal-v1'):
+                raise ContractError('CORE_PRODUCER_ADAPTER')
+            if type(producer.get('localizer_type')) is not int or producer['localizer_type']!=0:
+                raise ContractError('CORE_LITERAL_TYPE')
+            key=producer.get('text_config_key')
+            if not isinstance(key,str) or len(key)>128 or any(ord(c)<32 or 127<=ord(c)<=159 for c in key):
+                raise ContractError('CORE_LITERAL_METADATA_KEY')
+            if 'option_area' in producer:
+                area=producer['option_area']
+                if s['scope_key']!='gc.option.optionpopup' or area.get('field') not in {'soundAndTextOptionArea','screenSizeOptionArea','downloadOptionArea'}:
+                    raise ContractError('OPTION_AREA_TYPED_FIELD')
+                if len(area['segments'])!=len(area['indices']):raise ContractError('OPTION_AREA_PATH_BOUND')
         if r.get('markup_policy')=='omit-cspace-v1' and (b['adapter_id']!='ui.caption.v1' or s.get('type')!='caption'):
             raise ContractError('UNSUPPORTED_MARKUP_ADAPTER')
         if 'source_id' in s and s.get('lifetime')!='callback':raise ContractError('SORT_SOURCE_REQUIRES_CALLBACK')
@@ -166,7 +182,7 @@ def check_models(resources,bindings):
             r=rmap[b['resource_id']]
             if b['adapter_id'] not in {'core.static-caption.v1','ui4.static-caption.v1'} or b['source_identity']['kind']!='static-asset':
                 raise ContractError('COMATCH_ADAPTER:'+gid)
-            shapes.add(json.dumps([b['adapter_id'],b['selector'],r['jp'],r.get('ko'),b['enabled'],
+            shapes.add(json.dumps([b['adapter_id'],b['selector'],b.get('producer'),r['jp'],r.get('ko'),b['enabled'],
                                    r['role'],r['kind'],r['disposition'],r.get('master_ref'),
                                    r.get('markup_policy','exact-tags')],sort_keys=True,ensure_ascii=False))
             identity.add(json.dumps(b['source_identity']['identity'],ensure_ascii=False))

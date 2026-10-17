@@ -20,21 +20,25 @@ public sealed class NativeHookHub:IDisposable {
  readonly Dictionary<MethodBase,List<Subscription>> subscribers=new();
  readonly Dictionary<MethodBase,NativeMethodObservation> observations=new();
  readonly HashSet<MethodBase> observedCallbacks=new();
+ readonly HashSet<string> requestedSignatures=new(StringComparer.Ordinal);
  readonly Harmony harmony=new("local.gc.nextgen.shared-hooks."+Guid.NewGuid().ToString("N")); readonly GameThreadGate gate; readonly SafeDiagnostics log;
  NativeMethodMap? aliases; bool disposed,uninstalled;
  public NativeHookHub(GameThreadGate gate,SafeDiagnostics log){this.gate=gate;this.log=log;}
  public IReadOnlyDictionary<MethodBase,NativeMethodObservation> Observations=>observations;
  public bool Subscribe(Type owner,string method,Type[] args,Action<NativeHookContext> callback,bool prefix=false,bool finalizer=false){
   gate.Require();if(disposed)return false;
-  try{var m=Find(owner,method,args);if(m==null)return false;
-   if(!subscribers.TryGetValue(m,out var list)){var o=Inspect(m);var assessment=new CompatibilityService().Assess(o.Signature,o);if(!assessment.Available){Diagnostic("UNAVAILABLE",owner,method,assessment.Reason);return false;}
+  string[] names=args.Select(x=>x.FullName??x.Name).ToArray();string identity=HookDiagnosticCodes.Identity(owner.FullName??owner.Name,method,names);
+  if(requestedSignatures.Add(identity))foreach(string code in HookDiagnosticCodes.Signature(owner.FullName??owner.Name,method,names))log.Record(code);
+  void Outcome(string status,string reason)=>log.Record(HookDiagnosticCodes.Outcome(owner.FullName??owner.Name,method,names,status,reason));
+  try{var m=Find(owner,method,args);if(m==null){Outcome("UNAVAILABLE","MANAGED_EXACT_SIGNATURE_MISSING");return false;}
+   if(!subscribers.TryGetValue(m,out var list)){var o=Inspect(m);var assessment=new CompatibilityService().Assess(o.Signature,o);if(!assessment.Available){Diagnostic("UNAVAILABLE",owner,method,assessment.Reason);Outcome("UNAVAILABLE",assessment.Reason);return false;}
     observations[m]=o;list=new();subscribers.Add(m,list);
     if(!dispatch.TryAdd(m,this)){subscribers.Remove(m);observations.Remove(m);log.Record("NATIVE_CALLBACK_ALREADY_OWNED_BY_ANOTHER_HUB");return false;}
     try{harmony.Patch(m,prefix:new HarmonyMethod(typeof(NativeHookHub).GetMethod(nameof(Before),BindingFlags.Static|BindingFlags.NonPublic)!),postfix:new HarmonyMethod(typeof(NativeHookHub).GetMethod(nameof(After),BindingFlags.Static|BindingFlags.NonPublic)!),finalizer:new HarmonyMethod(typeof(NativeHookHub).GetMethod(nameof(FinalizeCallback),BindingFlags.Static|BindingFlags.NonPublic)!));}
     catch{try{harmony.Unpatch(m,HarmonyPatchType.All,harmony.Id);}catch{log.Record("NATIVE_CALLBACK_FAILED_INSTALL_UNPATCH_DEFERRED");}subscribers.Remove(m);RemoveOwnedDispatch(m);observations.Remove(m);throw;}
    }
-   list.Add(new(callback,prefix,finalizer));Diagnostic("INSTALLED",owner,method,"OK");return true;
-  }catch(Exception ex){var reason=ex is InvalidDataException?ex.Message:ex.GetType().Name;Diagnostic("ISOLATED",owner,method,reason);return false;}
+   list.Add(new(callback,prefix,finalizer));Diagnostic("INSTALLED",owner,method,"OK");Outcome("INSTALLED","VALIDATED_SIGNATURE_AND_ABI");return true;
+  }catch(Exception ex){var reason=ex is InvalidDataException?ex.Message:ex.GetType().Name;Diagnostic("ISOLATED",owner,method,reason);Outcome("ISOLATED",reason);return false;}
  }
  void Diagnostic(string status,Type owner,string method,string reason){
   static string Symbol(string s,int limit)=>new(s.ToUpperInvariant().Select(c=>c is >= 'A' and <= 'Z' or >= '0' and <= '9'?c:'_').Take(limit).ToArray());

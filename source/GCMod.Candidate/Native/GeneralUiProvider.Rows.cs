@@ -49,6 +49,28 @@ public sealed partial class GeneralUiProvider
         });
     }
 
+    // Re-entering a cached Shop tab need not call cell.Setup or move the scroller.
+    // Reuse the existing bounded current-visible batch from the verified tab callback.
+    // No callback-local model is retained and no native producer is replayed.
+    void RearmCurrentExchangeRows(Gc.Shop.ShopTopController shop,Gc.Shop.ShopTopView view)
+    {
+        gate.Require();
+        if(!Alive(shop)||!Alive(view)||!Exact(shop,"Gc.Shop.ShopTopController")||!Exact(view,"Gc.Shop.ShopTopView")
+            ||Ptr(shop._view)!=Ptr(view)||!view.transform.IsChildOf(shop.transform))return;
+        var model=shop._viewData;var exchange=view._exchangeShopView;
+        if(Ptr(model)==0||Ptr(view._viewData)!=Ptr(model)||!Alive(exchange)||!Exact(exchange!,"Gc.Shop.ExchangeShopView")
+            ||!exchange!.gameObject.activeInHierarchy||!exchange.transform.IsChildOf(view.transform))return;
+        var scenes=shop.Controller?.createdScene;int selected=shop.Controller?.currentSubSceneIndex??-1;
+        if(scenes==null||scenes.Length>32||!ShopHeaderCurrentTabPolicy.SelectedPage(Ptr(shop),selected,scenes.Select(s=>Ptr(s)).ToArray()))return;
+        var tabs=model!._ShopDataList_k__BackingField;int tab=model._CurrentTabIndex_k__BackingField;
+        if(tabs==null||tabs.Count>32||tab<0||tab>=tabs.Count||Ptr(exchange._viewData)==0||Ptr(tabs[tab])!=Ptr(exchange._viewData))return;
+        var products=exchange._productView;
+        if(!Alive(products)||!Exact(products!,"Gc.Shop.ExchangeShopProductsView")||!products!.gameObject.activeInHierarchy
+            ||!products.transform.IsChildOf(exchange.transform))return;
+        var receipt=EnsureScrollReceipt(products);
+        if(receipt!=null){ArmScrollBatch(receipt);log.Record("GENERAL_CURRENT_TAB_VISIBILITY_BATCH_ARMED");}
+    }
+
     void TickRows()
     {
         gate.Require();

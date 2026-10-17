@@ -6537,6 +6537,26 @@
         "exact_jp": "VOICE",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:11281:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "OptionPopup_6",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Sound",
+            "Group_VOICE",
+            "Text_VOICE"
+          ],
+          "indices": [
+            0,
+            2,
+            2,
+            0
+          ]
+        }
       }
     },
     {
@@ -6662,6 +6682,26 @@
         "exact_jp": "即時表示",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:12389:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "OptionPopup_3",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Group_DisplaySpeed",
+            "CheckBox",
+            "Text_Color"
+          ],
+          "indices": [
+            1,
+            2,
+            1,
+            1
+          ]
+        }
       }
     },
     {
@@ -6782,6 +6822,28 @@
         "exact_jp": "ミュート",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:12947:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "OptionPopup_3",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Sound",
+            "Group_VOICE",
+            "CheckBox",
+            "Text_Color"
+          ],
+          "indices": [
+            0,
+            2,
+            2,
+            1,
+            2
+          ]
+        }
       }
     },
     {
@@ -6849,6 +6911,28 @@
         "exact_jp": "ミュート",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:13446:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "OptionPopup_3",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Sound",
+            "Group_BGM",
+            "CheckBox",
+            "Text_Color"
+          ],
+          "indices": [
+            0,
+            2,
+            0,
+            1,
+            2
+          ]
+        }
       }
     },
     {
@@ -6883,6 +6967,22 @@
         "exact_jp": "サウンド/テキスト全体",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:13744:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "OptionPopup_4",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Text_AllReset"
+          ],
+          "indices": [
+            3,
+            0
+          ]
+        }
       }
     },
     {
@@ -6918,6 +7018,24 @@
         "exact_jp": "一括ダウンロード",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:13796:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "",
+        "option_area": {
+          "field": "downloadOptionArea",
+          "segments": [
+            "BtPositiveM",
+            "Image_Textbtn02",
+            "Text_Textbtn02"
+          ],
+          "indices": [
+            1,
+            0,
+            1
+          ]
+        }
       }
     },
     {
@@ -6952,6 +7070,22 @@
         "exact_jp": "サウンド",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:13915:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "in_app_39",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Text_Text"
+          ],
+          "indices": [
+            0,
+            0
+          ]
+        }
       }
     },
     {
@@ -6989,6 +7123,28 @@
         "exact_jp": "リセット",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:13960:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "BtWhiteS",
+            "image_Textbtn01_s",
+            "Group_Text",
+            "Text_Textbtn01"
+          ],
+          "indices": [
+            3,
+            1,
+            0,
+            0,
+            1
+          ]
+        }
       }
     },
     {
@@ -7123,6 +7279,11 @@
         "exact_jp": "総合戦闘力",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:14785:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "Unit_deck_ui_13"
       }
     },
     {
@@ -7210,6 +7371,28 @@
         "exact_jp": "ミュート",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:15405:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "OptionPopup_3",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Sound",
+            "Group_MansVOICE",
+            "CheckBox",
+            "Text_Color"
+          ],
+          "indices": [
+            0,
+            2,
+            3,
+            1,
+            2
+          ]
+        }
       }
     },
     {
@@ -7270,6 +7453,24 @@
         "exact_jp": "表示速度",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:16715:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "OptionPopup_4",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Group_DisplaySpeed",
+            "Text_DisplaySpeed"
+          ],
+          "indices": [
+            1,
+            2,
+            0
+          ]
+        }
       }
     },
     {
@@ -7304,6 +7505,22 @@
         "exact_jp": "ストーリーのボイスダウンロード",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:16719:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "in_app_39",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Text_StoryVoice"
+          ],
+          "indices": [
+            2,
+            0
+          ]
+        }
       }
     },
     {
@@ -7341,6 +7558,28 @@
         "exact_jp": "ミュート",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:16907:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "OptionPopup_3",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Sound",
+            "Group_SE",
+            "CheckBox",
+            "Text_Color"
+          ],
+          "indices": [
+            0,
+            2,
+            1,
+            1,
+            2
+          ]
+        }
       }
     },
     {
@@ -7407,6 +7646,20 @@
         "exact_jp": "未取得のデータをまとめてダウンロードすることで、\r\n新規シナリオ再生時などで個別のダウンロードをする必要がなくなります。\r\n\r\n　※通信環境のよい場所で通信してください\r\n　※Wi-Fi環境でのダウンロードをおすすめします",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:17091:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "",
+        "option_area": {
+          "field": "downloadOptionArea",
+          "segments": [
+            "Text_Message"
+          ],
+          "indices": [
+            0
+          ]
+        }
       }
     },
     {
@@ -7466,6 +7719,22 @@
         "exact_jp": "テキスト",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:17307:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "in_app_39",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Text_Text"
+          ],
+          "indices": [
+            1,
+            1
+          ]
+        }
       }
     },
     {
@@ -7502,6 +7771,26 @@
         "exact_jp": "ストーリー中の男性ボイス",
         "identity": "973cf2d3082302794f7789baba17391128331f09010bfa5884bc21aaa9662369:resources.assets:17345:m_text",
         "kind": "static-asset"
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "OptionPopup_6",
+        "option_area": {
+          "field": "soundAndTextOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Sound",
+            "Group_MansVOICE",
+            "Text_VOICE"
+          ],
+          "indices": [
+            0,
+            2,
+            3,
+            0
+          ]
+        }
       }
     },
     {
@@ -8756,7 +9045,7 @@
     },
     {
       "adapter_id": "core.current-model.v1",
-      "enabled": false,
+      "enabled": true,
       "id": "binding.core.UI6-FILTER-CheckBox.f8b7e5a5947eed1b",
       "resource_id": "ui.core.UI6-FILTER-CheckBox.f8b7e5a5947eed1b",
       "selector": {
@@ -8802,7 +9091,7 @@
     },
     {
       "adapter_id": "core.current-model.v1",
-      "enabled": false,
+      "enabled": true,
       "id": "binding.core.UI6-SORT-UI4-M015.2281dac335ad852a",
       "resource_id": "ui.core.UI6-SORT-UI4-M015.2281dac335ad852a",
       "selector": {
@@ -8836,7 +9125,7 @@
     },
     {
       "adapter_id": "core.current-model.v1",
-      "enabled": false,
+      "enabled": true,
       "id": "binding.core.UI6-SORT-UI4-M019.9b33c915e0b400f3",
       "resource_id": "ui.core.UI6-SORT-UI4-M019.9b33c915e0b400f3",
       "selector": {
@@ -8853,13 +9142,13 @@
     },
     {
       "adapter_id": "core.current-model.v1",
-      "enabled": false,
+      "enabled": true,
       "id": "binding.core.UI6-UI4-M006-OWNED_CATEGORY_FRAME_TEXT.f7bdf2106ceccebd",
       "resource_id": "ui.core.UI6-UI4-M006-OWNED_CATEGORY_FRAME_TEXT.f7bdf2106ceccebd",
       "selector": {
         "lifetime": "owner",
         "scope_key": "gc.shop.shoptopview",
-        "slot_key": "shop_currency_section_title",
+        "slot_key": "shop_currency_frame_title",
         "type": "model"
       },
       "source_identity": {
@@ -8870,7 +9159,7 @@
     },
     {
       "adapter_id": "core.current-model.v1",
-      "enabled": false,
+      "enabled": true,
       "id": "binding.core.UI6-UI4-M006-OWNED_CATEGORY_SECTION_TITLE.e6ea1f95626fbc82",
       "resource_id": "ui.core.UI6-UI4-M006-OWNED_CATEGORY_SECTION_TITLE.e6ea1f95626fbc82",
       "selector": {

@@ -11,7 +11,7 @@ namespace GCMod.Candidate.Native;
 public sealed partial class GeneralUiProvider
 {
     // These are recovered, code-owned renderer policies. Data cannot request a property write.
-    enum GeometryPolicy { Exact, NaturalWidth, ProfileChange, DecorativeCluster, BadgeIntrinsic, ScopedModelLabel, ProfileOffLabel, NativeContentFit, ScopedPopupCaption }
+    enum GeometryPolicy { Exact, NaturalWidth, ProfileChange, DecorativeCluster, BadgeIntrinsic, ScopedModelLabel, ProfileOffLabel, NativeContentFit, ScopedPopupCaption, FooterComposite, ScopedHeaderPower, OptionCheckboxComposite, ScopedShopHeader, ScopedCharacterEnhance, ScopedShopHelp }
     sealed class GeometryTicket
     {
         public TextMeshProUGUI Text = null!;
@@ -29,6 +29,19 @@ public sealed partial class GeneralUiProvider
         public float LastSize = 30;
         public GeometryFloatTarget? SizeTarget;
         public bool Failed;
+        public bool RestoringText;
+        public FilterAutoSizeState? AutoSize;
+        public HeaderPowerGeometryIdentity? HeaderPower;
+        public CharacterEnhanceGeometryIdentity? CharacterEnhance;
+        public PopupCaptionIdentity? PopupCaption;
+        public ShopHelpIdentity? ShopHelp;
+        public RectTransform? ShopHelpRegion;
+        public ShopHeaderGeometryIdentity? ShopHeader;
+        public RectTransform? ShopHeaderContainer;
+        public CampaignCaptionIdentity? CampaignCaption;
+        public FilterResetGeometryIdentity? FilterReset;
+        public OptionCheckboxGeometryIdentity? OptionCheckbox;
+        public RectTransform? OptionCheckboxContainer;
         public long OwnerGeneration, UiGeneration;
         public int ProducerFrame;
         public Func<bool> OwnerCurrent = null!, SourceCurrent = null!, ControlsCurrent = null!;
@@ -40,6 +53,10 @@ public sealed partial class GeneralUiProvider
         public bool CallbackScopedWrite;
         public bool PrimaryHidden;
         public ContentFitDriver? ContentDriver;
+        public Component? FooterOwner;
+        public RectTransform? FooterContainer;
+        public int FooterContainerInstance;
+        public bool FooterLeafFits, FooterCompositeFits;
     }
     sealed record JpClusterSample(int Frame, int Scene, string BindingId, string Source, ClusterCapture Cluster);
     sealed record ContentFitDriver(int FitterInstance, int GroupInstance, int ContainerInstance,
@@ -68,9 +85,16 @@ public sealed partial class GeneralUiProvider
             return false;
         try
         {
-            var policy = binding.AdapterId == "common.model-label.v1" &&
-                binding.Selector.ScopeKey is "equipment-sort" or "current-filter" or "element-filter"
+            if (!PreparePopupCaption(owner, binding, text, out var popupCaption)) return false;
+            if (!PrepareCampaignCaption(owner, binding, text, out var campaignCaption)) return false;
+            var policy = (binding.AdapterId == "common.model-label.v1" &&
+                binding.Selector.ScopeKey is "equipment-sort" or "current-filter" or "element-filter") || Ui6ConsumerRoutePolicy.UsesScopedConsumerRenderer(binding)
                 ? GeometryPolicy.ScopedModelLabel : GeometryPolicy.Exact;
+            if (popupCaption != null && PopupCaptionPreparationPolicy.UsesScopedStatus(binding)) policy = GeometryPolicy.ScopedPopupCaption;
+            if(MissionCellCaptionPolicy.Supports(binding)) {
+                if(!TryMissionCellCaption(owner,binding,text,out _)||RenderedGeometryText(text)!=MeshSource(text,text.text)||text.m_havePropertiesChanged||text.m_isLayoutDirty)return false;
+                policy=GeometryPolicy.ScopedPopupCaption;
+            }
             Gc.UnitScene.UnitProfileController? profileOwner = null;
             if (binding.AdapterId == "ui.residual-caption.v1" && binding.Selector.SlotKey == "profile_change_button")
             {
@@ -95,13 +119,60 @@ public sealed partial class GeneralUiProvider
                 Alive(popup.closeButton) && Ptr(popup.closeButton.textMeshProUgui) == Ptr(text) && text.transform.IsChildOf(popup.closeButton.transform))
                 policy = GeometryPolicy.ScopedPopupCaption;
             ContentFitDriver? contentDriver = null;
+            if(MissionCellCaptionPolicy.Supports(binding)) {
+                contentDriver=CaptureContentFitDriver(text);
+                var missionCell=Parent<Gc.Mission.ContentScrollCell>(text);var missionView=Alive(missionCell)?missionCell!._content:null;
+                Component? nativeControl=Alive(missionView)?binding.Selector.SlotKey=="ui2-b04"?missionView!._receive:missionView!._transition:null;
+                if(contentDriver==null||!Alive(nativeControl)||!contentDriver.Container.IsChildOf(nativeControl!.transform))return false;
+                policy=GeometryPolicy.NativeContentFit;
+            }
             if (binding.AdapterId == "ui4.static-caption.v1" && binding.Selector.ScopeKey == "gc.option.optionpopup" &&
                 binding.Selector.SlotKey == "ui4-ui4-s020-26-0600c050")
             {
                 contentDriver = CaptureContentFitDriver(text);
                 if (contentDriver != null) policy = GeometryPolicy.NativeContentFit;
             }
+            FilterResetGeometryIdentity? filterReset = null;
+            if (TryFilterResetGeometry(owner.Value, binding, text, out filterReset, out var filterDriver, owner.Lifetime))
+            { contentDriver = filterDriver; policy = GeometryPolicy.NativeContentFit; }
             if (binding.Selector.SlotKey == "exchange_available_badge") policy = GeometryPolicy.BadgeIntrinsic;
+            HeaderPowerGeometryIdentity? headerPower = null;
+            if (TryHeaderPowerGeometry(owner.Value, binding, text, out headerPower, true, owner.Lifetime)) policy = GeometryPolicy.ScopedHeaderPower;
+            CharacterEnhanceGeometryIdentity? characterEnhance = null;
+            if (TryCharacterEnhanceGeometry(owner.Value, binding, text, out characterEnhance, true, owner.Lifetime)) policy = GeometryPolicy.ScopedCharacterEnhance;
+            ShopHelpIdentity? shopHelp = null; RectTransform? shopHelpRegion = null;
+            if (ShopHelpGeometryPolicy.Supports(binding))
+            {
+                if (!TryShopHelpGeometry(owner.Value,binding,text,out shopHelp,out shopHelpRegion)
+                    || !ShopHelpRegionProof(text,shopHelpRegion!,binding,owner.Lifetime,false)) return false;
+                policy=GeometryPolicy.ScopedShopHelp;
+            }
+            ShopHeaderGeometryIdentity? shopHeader = null; RectTransform? shopHeaderContainer = null;
+            if (TryShopHeaderGeometry(owner.Value, binding, text, out shopHeader, out shopHeaderContainer, true, owner.Lifetime))
+            {
+                if (!ShopHeaderContainerReady(shopHeaderContainer) || RenderedGeometryText(text) != MeshSource(text, text.text) || text.m_havePropertiesChanged || text.m_isLayoutDirty
+                    || GlyphFailure(text, visibleContainer: shopHeaderContainer, fullComposite: true, shopMaterial: true) != UiVisualFailure.None) return false;
+                policy = GeometryPolicy.ScopedShopHeader;
+            }
+            OptionCheckboxGeometryIdentity? optionCheckbox = null; RectTransform? optionCheckboxContainer = null;
+            if (TryOptionCheckboxGeometry(owner.Value, binding, text, out optionCheckbox, out optionCheckboxContainer, true, owner.Lifetime))
+            {
+                // The native checkbox owns this exact caption through explicit graphic membership
+                // or its verified declared direct-caption role. Preserve complete SDF quads inside the control.
+                if (RenderedGeometryText(text) != MeshSource(text, text.text) || text.m_havePropertiesChanged || text.m_isLayoutDirty) return false;
+                var checkboxBaseline = GlyphFailure(text, visibleContainer: optionCheckboxContainer, fullComposite: true);
+                RecordOptionCheckboxBaseline(binding, owner.Lifetime, checkboxBaseline);
+                if (checkboxBaseline != UiVisualFailure.None) return false;
+                policy = GeometryPolicy.OptionCheckboxComposite;
+            }
+            var footer = FooterContainer(owner.Value, binding, text);
+            if (footer != null)
+            {
+                // Accepted footer labels belong to the directly linked native button composite.
+                // The native leaf, button and controls are not resized or otherwise written.
+                if (!FooterBaseline(owner, binding, text, footer)) return false;
+                policy = GeometryPolicy.FooterComposite;
+            }
             ClusterCapture? cluster = null;
             if (policy == GeometryPolicy.DecorativeCluster)
             {
@@ -150,13 +221,18 @@ public sealed partial class GeneralUiProvider
             // Strict leaf/truncation/full-KO glyph checks remain in TickGeometry after write.
             // Original JP for this renderer already passed the scoped composite proof above.
             if (policy == GeometryPolicy.NaturalWidth && !HasNaturalWidthDriver(text)) return false;
+            var autoSize = CaptureFilterAutoSize(owner, binding, text);
             ticket = new GeometryTicket
             {
                 Text = text, Binding = binding, Instance = text.GetInstanceID(), Scene = text.gameObject.scene.handle,
                 PreparedFrame = frame, Policy = policy, Cluster = cluster,
                 Width = text.rectTransform.rect.width, Height = text.rectTransform.rect.height,
-                Display = GeometryDisplay(text, policy == GeometryPolicy.ProfileChange, AllowsNativeSelectionColor(policy)), Layout = GeometryLayout(text, policy),
+                Display = GeometryDisplay(text, policy == GeometryPolicy.ProfileChange || autoSize != null, AllowsNativeSelectionColor(policy)), Layout = GeometryLayout(text, policy),
+                AutoSize = autoSize,
                 ContentDriver = contentDriver,
+                ShopHelp = shopHelp, ShopHelpRegion = shopHelpRegion, PopupCaption = popupCaption, HeaderPower = headerPower, CharacterEnhance = characterEnhance, ShopHeader = shopHeader, ShopHeaderContainer = shopHeaderContainer, CampaignCaption = campaignCaption, FilterReset = filterReset, OptionCheckbox = optionCheckbox, OptionCheckboxContainer = optionCheckboxContainer,
+                FooterOwner = footer == null ? null : owner.Value, FooterContainer = footer,
+                FooterContainerInstance = footer == null ? 0 : footer.GetInstanceID(),
                 OwnerGeneration = owner.Lifetime, ProducerFrame = owner.Started, UiGeneration = host.Snapshot.Generations.Ui,
                 OwnerCurrent = () => Current(owner),
                 Profile = profileOwner, ProfileInstance = Alive(profileOwner) ? profileOwner!.GetInstanceID() : 0,
@@ -213,7 +289,14 @@ public sealed partial class GeneralUiProvider
                     FailGeometry(pair.Key, t, UiVisualFailure.TargetInactive, UiVisualField.Target);
                     continue;
                 }
-                if (t.Settled >= 2) continue; // Retained source/owner guard is cheap; no settled full-tree polling.
+                if (t.AutoSize != null)
+                {
+                    var currentAutoSize = ReadAutoSize(t.Text);
+                    if (!FilterOptionAutoSizePolicy.ConfigurationMatches(t.AutoSize.Configuration, currentAutoSize)
+                        || t.Settled >= 2 && !FilterOptionAutoSizePolicy.WithinRange(currentAutoSize))
+                    { FailGeometry(pair.Key, t, UiVisualFailure.DisplayChanged, UiVisualField.FontSize); continue; }
+                }
+                if (t.Settled >= 2) continue; // Retained source/owner/config guard is cheap; no settled full-tree polling.
                 if (!t.ControlsCurrent())
                 { FailGeometry(pair.Key, t, UiVisualFailure.ControlChanged, UiVisualField.Controls); continue; }
                 string expected = MeshSource(t.Text, t.WrittenText);
@@ -248,6 +331,7 @@ public sealed partial class GeneralUiProvider
                 }
                 if (t.Policy == GeometryPolicy.NativeContentFit)
                 {
+                    RecordFilterPreferredCurrent(t);
                     var driver = t.ContentDriver;
                     var currentDriver = CaptureContentFitDriver(t.Text);
                     bool sameDriver = driver != null && currentDriver != null && driver.SameAs(currentDriver);
@@ -258,11 +342,13 @@ public sealed partial class GeneralUiProvider
                     if (!sameDriver) fields |= UiVisualField.LayoutDriver;
                     else if (!natural) fields |= UiVisualField.OwnRect;
                 }
-                string displayNow = GeometryDisplay(t.Text, t.Policy == GeometryPolicy.ProfileChange, AllowsNativeSelectionColor(t.Policy));
-                bool display = displayNow == t.Display;
+                string displayNow = GeometryDisplay(t.Text, t.Policy == GeometryPolicy.ProfileChange || t.AutoSize != null, AllowsNativeSelectionColor(t.Policy));
+                bool nativeSizeCurrent = t.AutoSize == null || FilterOptionAutoSizePolicy.Matches(t.AutoSize.Configuration, ReadAutoSize(t.Text));
+                bool display = displayNow == t.Display && nativeSizeCurrent;
+                if (!nativeSizeCurrent) { failure |= UiVisualFailure.DisplayChanged; fields |= UiVisualField.FontSize; }
                 if (!display) { failure |= UiVisualFailure.DisplayChanged; fields |= ChangedDisplayFields(t.Display, displayNow); }
                 bool layoutStable = true;
-                if (t.Policy is GeometryPolicy.ScopedModelLabel or GeometryPolicy.ProfileOffLabel or GeometryPolicy.NativeContentFit or GeometryPolicy.ScopedPopupCaption)
+                if (t.Policy is GeometryPolicy.ScopedModelLabel or GeometryPolicy.ProfileOffLabel or GeometryPolicy.NativeContentFit or GeometryPolicy.ScopedPopupCaption or GeometryPolicy.FooterComposite or GeometryPolicy.ScopedHeaderPower or GeometryPolicy.OptionCheckboxComposite or GeometryPolicy.ScopedShopHeader or GeometryPolicy.ScopedCharacterEnhance or GeometryPolicy.ScopedShopHelp)
                 {
                     string motion = GeometryMotion(t.Text);
                     t.MotionStable = motion == t.PreviousMotion ? t.MotionStable + 1 : 0;
@@ -271,7 +357,25 @@ public sealed partial class GeneralUiProvider
                     if (!layoutStable) fields |= UiVisualField.AncestorMotion;
                 }
                 if (!geometry) { failure |= UiVisualFailure.LayoutChanged; if (fields == UiVisualField.None) fields |= UiVisualField.OwnRect; }
-                UiVisualFailure glyphFailure = GlyphFailure(t.Text, t, fonts.Medium);
+                if (t.Policy == GeometryPolicy.FooterComposite && !CurrentFooterContainer(t))
+                { FailGeometry(pair.Key, t, UiVisualFailure.OwnerRebound, UiVisualField.Parent); continue; }
+                if (t.Policy == GeometryPolicy.ScopedHeaderPower && !CurrentHeaderPowerGeometry(t))
+                { FailGeometry(pair.Key, t, UiVisualFailure.OwnerRebound, UiVisualField.Parent); continue; }
+                if (t.Policy == GeometryPolicy.OptionCheckboxComposite && !CurrentOptionCheckboxGeometry(t))
+                { FailGeometry(pair.Key, t, UiVisualFailure.OwnerRebound, UiVisualField.Parent); continue; }
+                if (t.Policy == GeometryPolicy.ScopedShopHeader && !CurrentShopHeaderGeometry(t))
+                { FailGeometry(pair.Key, t, UiVisualFailure.OwnerRebound, UiVisualField.Parent); continue; }
+                if (t.Policy == GeometryPolicy.ScopedCharacterEnhance && !CurrentCharacterEnhanceGeometry(t))
+                { FailGeometry(pair.Key, t, UiVisualFailure.OwnerRebound, UiVisualField.Parent); continue; }
+                if (t.Policy == GeometryPolicy.ScopedShopHelp && !CurrentShopHelpGeometry(t))
+                { FailGeometry(pair.Key,t,UiVisualFailure.OwnerRebound,UiVisualField.Parent); continue; }
+                if (t.Policy == GeometryPolicy.ScopedShopHelp && !ShopHelpRegionProof(t.Text,t.ShopHelpRegion!,t.Binding,t.OwnerGeneration,true))
+                { FailGeometry(pair.Key,t,UiVisualFailure.IntrinsicOverflow,UiVisualField.GlyphRect); continue; }
+                if (t.Policy == GeometryPolicy.ScopedShopHeader) RecordShopHeaderGeometry(t);
+                UiVisualFailure glyphFailure = GlyphFailure(t.Text, t, fonts.Medium,
+                    t.Policy == GeometryPolicy.FooterComposite ? t.FooterContainer : t.Policy == GeometryPolicy.OptionCheckboxComposite ? t.OptionCheckboxContainer : t.Policy == GeometryPolicy.ScopedShopHeader ? t.ShopHeaderContainer : t.Policy == GeometryPolicy.ScopedShopHelp ? t.ShopHelpRegion : null,
+                    t.Policy is GeometryPolicy.OptionCheckboxComposite or GeometryPolicy.ScopedShopHeader or GeometryPolicy.ScopedShopHelp,
+                    t.Policy == GeometryPolicy.ScopedShopHeader, t.Policy == GeometryPolicy.ScopedShopHelp);
                 // Recovered UI21 L3 post-KO contract: the selected native cluster may
                 // resize naturally, but its complete KO must still occupy one line.
                 if (t.Policy == GeometryPolicy.DecorativeCluster &&
@@ -321,6 +425,8 @@ public sealed partial class GeneralUiProvider
 
     void FailGeometry(PhysicalTargetIdentity identity, GeometryTicket t, UiVisualFailure failure, UiVisualField fields)
     {
+        if ((failure & UiVisualFailure.IntrinsicOverflow) != 0) RecordOptionCheckboxGeometry(t);
+        RecordFilterAutoSizeFailure(t);
         t.Failed = true; t.Failure = failure; t.ChangedFields = fields;
         var key = new UiGeometryHoldKey(t.Binding.Id, Ptr(t.Text), t.OwnerGeneration, t.UiGeneration);
         const UiVisualFailure identityBoundary = UiVisualFailure.OwnerRebound | UiVisualFailure.SourceChanged | UiVisualFailure.TargetInactive | UiVisualFailure.ControlChanged;
@@ -337,6 +443,7 @@ public sealed partial class GeneralUiProvider
         geometryRejected.RemoveWhere(key => key.OwnerGeneration == generation);
         foreach (var key in transientGeometryRejected.Keys.Where(k => k.OwnerGeneration == generation).ToArray()) transientGeometryRejected.Remove(key);
         geometryDiagnostics.ForgetOwner(generation);
+        ForgetPopupPreparation(generation);
     }
     bool RecordGeometry(GeometryTicket t, UiVisualPhase phase, UiVisualFailure failure = UiVisualFailure.None, UiVisualField fields = UiVisualField.None, uint detail = 0)
     {
@@ -354,6 +461,8 @@ public sealed partial class GeneralUiProvider
             int driver = t.ContentDriver == null ? 0 : (t.ContentDriver.HorizontalPreferred ? 1 : 0) | (t.ContentDriver.VerticalPreferred ? 2 : 0) |
                 (t.ContentDriver.GroupHorizontal ? 4 : 0) | (t.ContentDriver.GroupVertical ? 8 : 0);
             log.Record($"GEOD_{key}_O{t.OwnerGeneration}_BW{Metric(t.Width)}_BH{Metric(t.Height)}_DW{t.Width100-Metric(t.Width)}_DH{t.Height100-Metric(t.Height)}_D{driver:X}");
+            if (t.Policy == GeometryPolicy.FooterComposite)
+                log.Record($"GEOF_{key}_O{t.OwnerGeneration}_LEAF{(t.FooterLeafFits?1:0)}_BUTTON{(t.FooterCompositeFits?1:0)}");
         }
         return true;
     }
@@ -381,12 +490,28 @@ public sealed partial class GeneralUiProvider
         if (!geometryOwned.TryGetValue(identity, out var ticket)) return;
         RecordGeometry(ticket, UiVisualPhase.Failed, ticket.Failure, ticket.ChangedFields);
         bool sizeDone = RestoreGeometrySize(identity);
-        var result = ownership.RestoreTargetDetailed(identity);
+        var result = RestoreGeometryText(identity, ticket);
         if (sizeDone && result is not (RestoreOutcome.RetryableReadFailure or RestoreOutcome.RetryableWriteFailure))
         {
-            RecordGeometry(ticket, UiVisualPhase.Restored, ticket.Failure, ticket.ChangedFields);
+            RecordGeometryRestoreOutcome(ticket, result);
             geometryOwned.Remove(identity);
         }
+    }
+    RestoreOutcome RestoreGeometryText(PhysicalTargetIdentity identity, GeometryTicket? ticket)
+    {
+        if (ticket == null) return ownership.RestoreTargetDetailed(identity);
+        ticket.RestoringText = true;
+        try { return ownership.RestoreTargetDetailed(identity); }
+        finally { ticket.RestoringText = false; }
+    }
+    readonly HashSet<string> geometryReleaseReports = new(StringComparer.Ordinal);
+    void RecordGeometryRestoreOutcome(GeometryTicket ticket, RestoreOutcome result)
+    {
+        if (result == RestoreOutcome.Restored)
+        { RecordGeometry(ticket, UiVisualPhase.Restored, ticket.Failure, ticket.ChangedFields); return; }
+        string id = Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(ticket.Binding.Id)))[..12];
+        string code = $"GEOR_{id}_O{ticket.OwnerGeneration}_U{ticket.UiGeneration}_{result.ToString().ToUpperInvariant()}";
+        if (geometryReleaseReports.Count < 1024 && geometryReleaseReports.Add(code)) log.Record(code);
     }
     bool RestoreGeometrySize(PhysicalTargetIdentity identity)
     {
@@ -398,6 +523,12 @@ public sealed partial class GeneralUiProvider
     {
         gate.Require();
         if (!RestoreGeometrySize(identity)) return false;
+        if (geometryOwned.TryGetValue(identity, out var ticket))
+        {
+            var result = RestoreGeometryText(identity, ticket);
+            if (result is RestoreOutcome.RetryableReadFailure or RestoreOutcome.RetryableWriteFailure) return false;
+            RecordGeometryRestoreOutcome(ticket, result);
+        }
         geometryOwned.Remove(identity);
         return true;
     }
@@ -455,7 +586,7 @@ public sealed partial class GeneralUiProvider
         color = allowSelectionColor ? null : new[] { t.color.r, t.color.g, t.color.b, t.color.a },
         margin = new[] { t.margin.x, t.margin.y, t.margin.z, t.margin.w }
     });
-    static bool AllowsNativeSelectionColor(GeometryPolicy policy) => policy is GeometryPolicy.ScopedModelLabel or GeometryPolicy.ProfileOffLabel;
+    static bool AllowsNativeSelectionColor(GeometryPolicy policy) => policy is GeometryPolicy.ScopedModelLabel or GeometryPolicy.ProfileOffLabel or GeometryPolicy.FooterComposite;
     static ContentFitDriver? CaptureContentFitDriver(TextMeshProUGUI text)
     {
         if (!Alive(text) || !Alive(text.transform.parent)) return null;
@@ -522,7 +653,7 @@ public sealed partial class GeneralUiProvider
     {
         var parent = t.transform.parent;
         Require(Alive(parent) && parent.childCount <= 64, "GEOMETRY_SIBLING_BOUND");
-        if (policy is GeometryPolicy.ScopedModelLabel or GeometryPolicy.ProfileOffLabel or GeometryPolicy.NativeContentFit or GeometryPolicy.ScopedPopupCaption)
+        if (policy is GeometryPolicy.ScopedModelLabel or GeometryPolicy.ProfileOffLabel or GeometryPolicy.NativeContentFit or GeometryPolicy.ScopedPopupCaption or GeometryPolicy.FooterComposite or GeometryPolicy.ScopedHeaderPower or GeometryPolicy.OptionCheckboxComposite or GeometryPolicy.ScopedShopHeader or GeometryPolicy.ScopedCharacterEnhance or GeometryPolicy.ScopedShopHelp)
         {
             // Existing current-model labels preserve their own rect and layout drivers. Popup
             // ancestors and toggle highlight are game-owned animation, measured separately above.
@@ -534,7 +665,13 @@ public sealed partial class GeneralUiProvider
                     driver?.GroupHorizontal == true, driver?.GroupVertical == true),
                 ownPosition = policy == GeometryPolicy.NativeContentFit ? null : new[] { t.rectTransform.anchoredPosition.x, t.rectTransform.anchoredPosition.y },
                 contentDriver = driver == null ? null : new { driver.FitterInstance, driver.GroupInstance, driver.HorizontalPreferred, driver.VerticalPreferred, driver.GroupHorizontal, driver.GroupVertical },
-                container = driver == null ? null : NumericRectInvariant(driver.Container),
+                container = driver != null ? NumericRectInvariant(driver.Container) : policy == GeometryPolicy.FooterComposite
+                    ? NumericRectInvariant(Parent<InertButton>(t)!.GetComponent<RectTransform>()) : policy == GeometryPolicy.ScopedHeaderPower
+                    ? NumericRectInvariant(Parent<Gc.HeaderTopController>(t)!._powerButton.GetComponent<RectTransform>()) : policy == GeometryPolicy.OptionCheckboxComposite
+                    ? NumericRectInvariant(Parent<Gc.Option.OptionPopup>(t)!.soundAndTextOptionArea.messageSpeedOption.checkBox.GetComponent<RectTransform>()) : policy == GeometryPolicy.ScopedShopHeader
+                    ? NumericRectInvariant(ShopHeaderContainer(t)!) : policy == GeometryPolicy.ScopedCharacterEnhance
+                    ? NumericRectInvariant(CharacterEnhanceContainer(t)!) : policy == GeometryPolicy.ScopedShopHelp
+                    ? NumericRectInvariant(t.transform.parent.GetComponent<RectTransform>()) : null,
                 fitter = Alive(scopedFitter) ? new { instance = scopedFitter.GetInstanceID(), scopedFitter.enabled, h = (int)scopedFitter.horizontalFit, v = (int)scopedFitter.verticalFit } : null,
                 group = Alive(scopedGroup) ? new { instance = scopedGroup.GetInstanceID(), scopedGroup.enabled, scopedGroup.childControlWidth, scopedGroup.childControlHeight,
                     scopedGroup.childForceExpandWidth, scopedGroup.childForceExpandHeight, scopedGroup.spacing, scopedGroup.reverseArrangement,
@@ -636,7 +773,7 @@ public sealed partial class GeneralUiProvider
         if (!masks) { detail |= 32; return UiVisualFailure.MaskClipped; }
         detail |= 64; return UiVisualFailure.RenderChannelHidden;
     }
-    static UiVisualFailure GlyphFailure(TextMeshProUGUI t, GeometryTicket? diagnostic = null, TMP_FontAsset? approvedMedium = null)
+    static UiVisualFailure GlyphFailure(TextMeshProUGUI t, GeometryTicket? diagnostic = null, TMP_FontAsset? approvedMedium = null, RectTransform? visibleContainer = null, bool fullComposite = false, bool shopMaterial = false, bool shopHelpMaterial = false)
     {
         var info = t.textInfo;
         if (info?.characterInfo == null || info.characterCount <= 0 || info.characterCount > 4096 || info.characterCount > info.characterInfo.Length)
@@ -656,8 +793,17 @@ public sealed partial class GeneralUiProvider
                 { diagnostic.MaterialChannels |= 1 << index; if (!GlyphChannelVisible(t, c)) diagnostic.HiddenChannels |= 1 << index; }
             }
         }
-        if (chars.Length == 0 || chars.Any(c => GlyphCorners(c).Any(q => !Within(q, t.rectTransform.rect))))
-            return UiVisualFailure.IntrinsicOverflow;
+        bool insideLeaf = chars.Length > 0 && chars.All(c => GlyphCorners(c).All(q => Within(q, t.rectTransform.rect)));
+        if (fullComposite && chars.Any(c => shopHelpMaterial ? !ShopHelpPlainMaterial(t,c) : shopMaterial ? !ShopHeaderPlainMaterial(t, c) : !OptionCheckboxPlainMaterial(t, c))) return UiVisualFailure.DisplayChanged;
+        bool insideContainer = visibleContainer != null && chars.Length > 0 && chars.All(c => (fullComposite ? GlyphCorners(c) : FooterVisibleCorners(t,c)).All(q =>
+            Within(visibleContainer.InverseTransformPoint(t.transform.TransformPoint(q)), visibleContainer.rect)));
+        if (diagnostic?.Policy == GeometryPolicy.FooterComposite)
+        {
+            diagnostic.FooterLeafFits = insideLeaf;
+            diagnostic.FooterCompositeFits = insideContainer;
+        }
+        bool contained = fullComposite ? insideContainer : GeneralUiGlyphBoundsPolicy.Contains(visibleContainer != null, insideLeaf, insideContainer);
+        if (chars.Length == 0 || !contained) return UiVisualFailure.IntrinsicOverflow;
         if (approvedMedium != null && chars.Any(c => c.character is >= '\uAC00' and <= '\uD7A3' or >= '\u3130' and <= '\u318F' &&
                 (!Alive(c.fontAsset) || Ptr(c.fontAsset) != Ptr(approvedMedium)))) return UiVisualFailure.DisplayChanged;
         // A Medium fallback glyph is rendered by its own TMP_SubMeshUI. A culled/empty
