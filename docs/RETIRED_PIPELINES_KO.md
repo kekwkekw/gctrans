@@ -1,4 +1,14 @@
-# 구 번역 파이프라인 퇴역 — 현재 repository 범위
+# 번역 경로의 현재 사용 범위와 퇴역 이력
+
+## 현재 Novel 경로
+
+정상 Novel 작업은 `tools/update/cli.py novel`의 prepare → review → apply로 실행한다. 정책·현재 Knowledge·Names와 실제 명령은 [OPERATOR_KO.md](OPERATOR_KO.md)에 모았다. 이 경로는 private workbench를 요구하지 않는다.
+
+기존 `bind-intake-wb`와 `apply-review`의 WB Novel adapter는 이미 만들어진 산출물의 호환·재현용으로 보존한다. 과거 snapshot·receipt·원장을 현행 번역의 필수 중간 단계로 요구하지 않는다. 기존 private repository의 내용이나 설정은 이 변경에서 수정하지 않는다.
+
+## 2026-10-17 퇴역 기록
+
+아래의 승인·보존 설명은 당시 변경 범위다.
 
 기준: PR26 병합 `fd84842efec881deebe7399c709e0a678937b57a`. 2026-10-17 사용자가 퇴역과 기존 시나리오 표시 교정의 repository 수정·main 병합을 명시 허용했다. 이 문서는 그중 **퇴역** 범위를 기록한다. Desktop·설치 디렉터리를 조사하거나 삭제하지 않는다.
 

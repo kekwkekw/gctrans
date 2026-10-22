@@ -5,7 +5,7 @@ not runtime conditions, and no commit SHA is embedded into translation manifests
 from pathlib import Path, PurePosixPath
 import argparse, hashlib, io, json, subprocess, tarfile
 
-PREFIXES=('source/','tools/','tests/','contracts/','donor_recovery/','staging/','translations/ko/','candidate/','docs/')
+PREFIXES=('source/','tools/','tests/','contracts/','donor_recovery/','staging/','translations/ko/','translation/','candidate/','docs/')
 ROOT_FILES={'archive/display/20261017/WRAP_SCOPE.json','.gitattributes','NuGet.Config',
  'README.md','.gitignore','.github/workflows/crawl_only.yml',
  '.github/workflows/update_translation.yml'}
@@ -39,7 +39,7 @@ def main():
  assert len(members)==len(selected),'EXPORT_MEMBERSHIP_MISMATCH'
  result={'schema':'ng11-exact-Git-operating-export-v1','commit':commit,'tree':tree,'files':members,
   'exported_files':len(members),'excluded_tracked_paths':len(paths)-len(selected),
-  'rules':'Safe operating paths only; base legacy/WB/Knowledge retained in local Git, not duplicated/private bytes in RC.',
+  'rules':'Current operating paths and translation policy/knowledge only; historical legacy/WB/Knowledge retained in Git.',
   'publication':'NOT_PERFORMED','working_tree_bytes_used':False}
  (out/'GIT_EXPORT.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),'utf-8')
  print(json.dumps({'status':'PASS','commit':commit,'tree':tree,'files':len(members),'export':str(out)},ensure_ascii=False))

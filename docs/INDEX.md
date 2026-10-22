@@ -4,15 +4,23 @@
 
 ## 현재 작업 순서
 
-시나리오 교정은 PR27에서 완료했다. GitHub 문서/브랜치 정리 후 **로컬 Stable을 최신 main으로 업데이트 → GC_UI_EXPECTED_BASELINE 누적 자료 검증 → 누락/추가 UI 종합 조사 → 근거가 확보된 UI 구현** 순으로 진행한다. 예전 5-table/r2를 개발 또는 복구 기준으로 사용하지 않는다.
+Novel은 **업데이트 확인 → 로컬 초벌 → PRO 검수 → main 반영**으로 진행한다. 실제 명령과 현재 파일 위치는 [OPERATOR_KO.md](OPERATOR_KO.md)를 따른다. UI/Master는 같은 저장소 안의 별도 경로를 사용한다.
 
-현행 공급 ContentId `efb4e3d02f38822ce3e5f50ac01dbbc8d505387b9bf8903bdb9b0b424d61946a`와 DLL `96114569fbe38f113d49ad5e9554801ad1e55c6f062335e5085de428316dce2a`는 문서 이동으로 바뀌지 않는다. 실제 설치 상태는 파일·cfg·actual current·지속 PackageRoot를 확인한다. 기존 `b1bedaac…` 패키지의 PC 설치 기록을 새 main 설치로 바꿔 쓰지 않는다.
+| 현행 입력·기록 | 위치 |
+|---|---|
+| HOLD 정책 원본 | [translation/HOLD_POLICY.md](../translation/HOLD_POLICY.md) |
+| Knowledge | [translation/knowledge.jsonl](../translation/knowledge.jsonl) |
+| Names | [translations/ko/names.json](../translations/ko/names.json) |
+| 새 작업의 HOLD 기록 | [translation/holds.jsonl](../translation/holds.jsonl) |
+| 현재 package | [translations/ko/release-manifest.json](../translations/ko/release-manifest.json) |
+
+현재 Knowledge의 내용·상태·수량은 `python tools/translation_knowledge.py`로 확인한다. 실제 PC의 설치 상태는 해당 PC의 selected current·DLL·설정과 연결해 확인한다.
 
 ## 운용·재현·권한
 
 | 문서 | 용도 |
 |---|---|
-| [OPERATOR_KO.md](OPERATOR_KO.md) | 현재 CLI·prepare/restart/UI-only 경계 |
+| [OPERATOR_KO.md](OPERATOR_KO.md) | Novel 초벌·PRO·반영, UI/Master, package·restart 명령 |
 | [REPRODUCE_KO.md](REPRODUCE_KO.md) | 고정 Git export·표적 시험 |
 | [LAUNCH_PROCEDURE_KO.md](LAUNCH_PROCEDURE_KO.md) | 현재 상태 백업과 native trial/원복 |
 | [PROJECT_NATIVE_TEST_POLICY_KO.md](PROJECT_NATIVE_TEST_POLICY_KO.md) | 무소비 실기 상시 승인과 금지 범위 |

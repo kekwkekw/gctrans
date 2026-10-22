@@ -16,3 +16,4 @@
 /NuGet.Config -text
 /scripts/__init__.py -text
 /docs/** -text
+/translation/** -text

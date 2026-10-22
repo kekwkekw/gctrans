@@ -167,7 +167,7 @@ def publish_intake(result,args):
     atomic_json(args.output.with_name("actionable-intake.json"),actionable)
     result["actionable_intake"]={"path":"actionable-intake.json","new_work":actionable["new_work"],"actionable":len(actionable["actionable"]),"held":actionable["held"],"completed":actionable["completed"]}
     result["novel_intake"] = {"path": "novel-intake.json", "references": len(intake["references"]),
-                              "kind":"ELIGIBLE_REFERENCE_CATALOG_NOT_WORK_QUEUE", "status": "EXISTING_WB_INPUTS_REQUIRED" if intake["references"] else "NO_MATERIALIZED_NOVEL"}
+                              "kind":"ELIGIBLE_REFERENCE_CATALOG_NOT_WORK_QUEUE", "status": "READY_FOR_NOVEL_PREPARE" if intake["references"] else "NO_MATERIALIZED_NOVEL"}
 
 def args_acquired(result):
     return result["metrics"].get("materialized",0)>0

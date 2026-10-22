@@ -1,7 +1,7 @@
-"""Small wrapper around the existing WB13-WB20/M4 contracts.
+"""Source catalog and compatibility adapter for existing WB13-WB20/M4 returns.
 
-There is no new Novel row schema. Parser ordinals never become historical
-raw_index. A captured script is an intake obligation, not semantic acceptance.
+Ordinary translation uses novel_workflow. Existing WB return replay remains
+available for historical work; source acquisition alone is not semantic review.
 """
 from __future__ import annotations
 
@@ -55,17 +55,19 @@ def create_intake_references(snapshot: dict, destination: Path, *, raw_root=None
                            "raw_capture_locator": raw_capture_locator(snapshot["profile"], item, selected),
                            "source_qualified_locator": None,
                            "extractor": item["extractor"], "historical_raw_index": None,
-                           "old_source": "UNKNOWN_UNLESS_EXISTING_WB_PIN_SUPPLIED",
-                           "existing_entrypoints": ["wb.work_items_cli", "wb.source_scene_cli", "wb.source_pilot_cli", "wb.local_release_cli"],
-                           "status": "EXISTING_WB_INPUTS_REQUIRED",
+                           "old_source": "UNKNOWN_UNLESS_SOURCE_PAIR_SUPPLIED",
+                           "entrypoint": "python tools/update/cli.py novel prepare",
+                           "compatibility_entrypoints": ["wb.work_items_cli", "wb.source_scene_cli", "wb.source_pilot_cli", "wb.local_release_cli"],
+                           "status": "READY_FOR_NOVEL_PREPARE",
                            "raw_integrity": "VERIFIED_AT_THIS_INTAKE" if raw_root is not None else "VERIFY_AT_BYTE_CONSUMPTION_REQUIRED",
-                           "required_inputs": ["pinned before/current manifest and raw-script pair",
-                                               "WB07 explicit transform and physical mapping",
-                                               "WB13 work item and WB19 source scene/target-index receipt",
-                                               "WB20 current review return and M4 explicit local acceptance pins"],
+                           "required_inputs": ["current source snapshot and selected TextAsset bytes",
+                                               "current repository Names and Knowledge",
+                                               "translation/HOLD_POLICY.md",
+                                               "Codex draft followed by PRO-reviewed result"],
                            "automatic_semantic_approval": False})
     result = {"schema": "gc-ng03-novel-intake-references-v1", "kind":"ELIGIBLE_REFERENCE_CATALOG_NOT_ACTIONABLE_QUEUE", "source_snapshot_id": snapshot["snapshot_id"],
-              "references": references, "pipeline_rewritten": False, "automatic_registration": False}
+              "references": references, "translation_entrypoint": "tools/update/cli.py novel",
+              "automatic_registration": False}
     atomic_json(Path(destination), result)
     return result
 
