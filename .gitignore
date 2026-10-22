@@ -74,3 +74,6 @@ local-handoff/
 trial-staging/
 INSTALL_RECEIPT.json
 CURRENT_INPUTS.json
+
+# Local Novel source, draft and PRO handoff workspaces.
+/work/novels/

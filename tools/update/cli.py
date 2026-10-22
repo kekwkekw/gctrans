@@ -1,4 +1,4 @@
-"""Offline source scan, reviewed apply and small durable-state status."""
+"""Source updates, Novel draft/review/apply, and existing UI/Master operations."""
 from __future__ import annotations
 import argparse
 import json
@@ -11,12 +11,18 @@ from update.apply_review import apply_review, freeze_input
 from update.diff_review import compare, source_snapshot_input
 
 def main():
+    if sys.argv[1:2]==['novel']:
+        from novel_workflow import main as novel_main
+        extra=sys.argv[2:];extra=extra[1:] if extra[:1]==['--'] else extra
+        return novel_main(extra)
     if sys.argv[1:2]==['scan']:
         from update.source_scan import main as scan_main
         extra=sys.argv[2:];extra=extra[1:] if extra[:1]==['--'] else extra
         return scan_main(extra)
     parser=argparse.ArgumentParser(description=__doc__)
     actions=parser.add_subparsers(dest='command',required=True)
+    novel=actions.add_parser('novel',help='Prepare drafts, hand off PRO review, and apply reviewed Novel batches')
+    novel.add_argument('arguments',nargs=argparse.REMAINDER)
     apply=actions.add_parser('apply-review')
     for name in ('package','review','state-root'):apply.add_argument('--'+name,type=Path,required=True)
     apply.add_argument('--current-source',type=Path,help='Required for observed-source changes; existing package-target KO edits need none')

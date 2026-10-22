@@ -3,14 +3,14 @@
     {
       "kind": "legacy_manifest",
       "path": "manifest.json",
-      "sha256": "63d08ffae23343a12d1200627d391d4f01ded01ea557a9f82b38b862ced3ad6f",
+      "sha256": "32db25739b4a0070917556818e9d14059d71fa96406ba8c77a9826f540644eca",
       "size": 96128
     },
     {
       "kind": "names",
       "path": "names.json",
-      "sha256": "0aadbee044a93eea660c5009dad0b5f60b0abfe3eb56827d1c52436c59f74333",
-      "size": 45873
+      "sha256": "c40ad6e57f832aedab4c4c1df9d90d04773e89f05120409631b5c5a2ffc4edcb",
+      "size": 46653
     },
     {
       "kind": "novel",

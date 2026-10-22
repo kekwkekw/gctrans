@@ -1,3 +1,9 @@
+# 이전 루트 README 보관본
+
+이 문서 아래의 현재·후속 작업 표현은 당시의 기록이다. 지금 실행할 절차와 정본 위치는 [OPERATOR_KO.md](OPERATOR_KO.md), 전체 문서 안내는 [INDEX.md](INDEX.md)를 따른다.
+
+---
+
 이번 후속 repository 시나리오 표시 교정의 적용 범위와 새 complete package는 [SCENARIO_DISPLAY_APPLY_KO.md](SCENARIO_DISPLAY_APPLY_KO.md)를 참조한다. 개인 Stable 설치·원래 수락 ledger는 이 Git 반영과 구분한다.
 
 ## 현재 기준 — PR26 병합 후 안내 (2026-10-17)

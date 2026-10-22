@@ -1,16 +1,23 @@
 # 걸크리 PC 한국어화
 
-운용·정책·검수 문서는 **[docs/INDEX.md](docs/INDEX.md)** 한 곳에서 찾는다. 명령은 `docs/`가 아니라 저장소 루트에서 실행한다.
+현재 작업 절차는 **[docs/OPERATOR_KO.md](docs/OPERATOR_KO.md)**, 문서 전체와 과거 기록은 [docs/INDEX.md](docs/INDEX.md)에서 찾는다. 명령은 저장소 루트에서 실행한다.
 
-## 현재 상태
+## Novel 번역
 
-PR27에서 구형 번역 파이프라인 퇴역과 기존 대사 외곽 괄호 **18,366행** 적용을 완료했다. 이번 문서/브랜치 정리는 게임 코드·DLL·번역·manifest·수락 상태를 바꾸지 않는다.
+**업데이트 확인 → 로컬 Codex 초벌 → ChatGPT PRO 검수 → main 반영** 순서로 진행한다. 초벌·원문·검수 파일은 `work/novels/<batch>/`에서 관리하고 production 번역과 분리한다. 정상 Novel 경로는 public main의 도구로 실행되며 private workbench가 필요하지 않다.
 
-- [운용 절차](docs/OPERATOR_KO.md) · [재현](docs/REPRODUCE_KO.md) · [지원 범위](docs/SUPPORT_SCOPE_KO.md)
-- [개인 Stable 정책](docs/PROJECT_STABLE_QUALIFICATION_POLICY_KO.md) · [native 안전 범위](docs/PROJECT_NATIVE_TEST_POLICY_KO.md)
-- [완료된 시나리오 교정](docs/SCENARIO_DISPLAY_APPLY_KO.md) · [퇴역 파이프라인](docs/RETIRED_PIPELINES_KO.md)
-- [브랜치 정리와 역사 복구](docs/BRANCH_RETIREMENT_KO.md) · [이전 루트 README 원문](docs/README.md)
+- [현재 Knowledge](translation/knowledge.jsonl) · [현재 Names](translations/ko/names.json)
+- [동결한 HOLD 정책 원본](translation/HOLD_POLICY.md) · [새 작업의 HOLD 기록](translation/holds.jsonl)
+- 현재 Knowledge 요약: `python tools/translation_knowledge.py`
+- 번역 명령: `python tools/update/cli.py novel --help`
 
-Repository package는 `efb4e3d02f38822ce3e5f50ac01dbbc8d505387b9bf8903bdb9b0b424d61946a`, DLL은 `96114569fbe38f113d49ad5e9554801ad1e55c6f062335e5085de428316dce2a`다. 실제 PC의 Stable/current/지속 PackageRoot는 별도 확인 대상이다. Novel 변경은 **restart-required**이며 UI-only live 변경이 아니다.
+## UI와 runtime
 
-다음 작업은 최신 main을 로컬 Stable로 일관되게 전환한 뒤 누적 UI 기대 기준 전체와 현재 화면을 대조하는 것이다. Museum3는 Footer 미술관·Master MuseumBlocks와 다른 별도 미통합 기능이다. XUnity는 OFF를 유지한다.
+UI/Master는 기존 전용 도구와 검수 경로를 사용한다. 현재 package 정보는 [release-manifest.json](translations/ko/release-manifest.json)에 있으며, 실제 PC의 Stable/current/지속 PackageRoot는 별도로 확인한다. Novel·Names 변경은 재시작 대상이다. XUnity는 OFF를 유지한다.
+
+- [지원 범위](docs/SUPPORT_SCOPE_KO.md) · [외부 실행 입력](docs/EXTERNAL_DEPENDENCIES_KO.md)
+- [개인 Stable 정책](docs/PROJECT_STABLE_QUALIFICATION_POLICY_KO.md) · [적용·복구](docs/LAUNCH_PROCEDURE_KO.md)
+- [재현](docs/REPRODUCE_KO.md) · [퇴역한 경로](docs/RETIRED_PIPELINES_KO.md)
+- [이전 시나리오 표시 교정](docs/SCENARIO_DISPLAY_APPLY_KO.md) · [브랜치 역사](docs/BRANCH_RETIREMENT_KO.md)
+
+과거 수락 자료·Knowledge 원장·GCMod 6.1 호환 파일은 역사와 호환성 용도로 보존한다. 현재 Knowledge와 Names의 정본은 위에 연결된 두 파일이다.
