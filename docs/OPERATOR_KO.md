@@ -98,12 +98,26 @@ scan 옆 `novel-intake.json`은 모든 eligible reference의 catalog다. `action
 ```powershell
 python -X utf8 tools/update/cli.py bind-intake-wb --current-source <run/scan.json> --bound-scene <existing-WB-bound-scene.json> --scene-sha256 <exact-scene-sha256> --source-id <observed-source-id> --asset-key <observed-asset-key> --raw-root <persistent-private-raw> --report <run/wb-bind.json>
 # 기존 WB13~M4 intake/validator/review/accepted return을 실행한다. parser/locator를 새로 만들지 않는다.
-python -X utf8 tools/update/cli.py apply-review --package <authoring-next_package> --review <explicit-accepted-review.json> --current-source <run/scan.json> --state-root <owned-authoring-custody> --report <run/apply.json>
+python -X utf8 tools/update/cli.py apply-review --package <authoring-next_package> --review <explicit-accepted-review.json> --current-source <run/wb-bind.json> --state-root <owned-authoring-custody> --report <run/apply.json>
+```
+
+`bind-intake-wb`는 입력 `scan.json`을 덮어쓰지 않는다. 기존 WB19 physical locator를 결합한 새 snapshot이 `--report`의 `wb-bind.json`에 저장되므로, `apply-review --current-source`에는 이 결합 결과를 전달한다. 여러 scene을 같은 현재 snapshot에 결합할 때는 첫 결과를 다음 `bind-intake-wb --current-source`로 넘기고 출력 파일을 구분한다(예: `scan.json` → `wb-bind-01.json` → `wb-bind-02.json`). 마지막 누적 결과를 `apply-review`에 전달한다.
+
+`intake-failed`는 처리에 실패하여 해당 work가 여전히 actionable pending/failed로 남아 있을 때 사용하는 분기다. 성공한 apply로 completed가 된 work에는 이어서 호출하지 않는다. 이 명령은 source snapshot의 profile로 기존 intake state를 찾으므로, binding 전 실패에는 원래의 유효한 `scan.json`을, binding 후 실패에는 같은 profile의 마지막 유효 결합 결과를 사용할 수 있다.
+
+```powershell
 python -X utf8 tools/update/cli.py intake-failed --state-root <persistent-private-state> --current-source <run/scan.json> --work-id <actionable-work-id> --reason <TYPED_FAILURE_REASON> --report <run/intake-failed.json>
+```
+
+apply는 commit됐지만 intake 완료 기록만 `HELD_COMPLETION`으로 남은 경우에는 같은 authoring state에서 완료 기록을 재개한다. 이미 성공한 apply나 번역 검수를 다시 실행하지 않는다.
+
+```powershell
 python -X utf8 tools/update/cli.py resume-intake-completion --state-root <owned-authoring-custody> --report <run/completion.json>
 ```
 
 WB binding에는 실제 source-qualified/physical locator와 검증된 raw identity가 필요하다. accepted Novel return의 reviewed-change-set에 기존 intake link가 있어야 해당 work가 완료된다. 일반 UI 교정에서 관계없는 WB 전수 replay를 하지 않는다. 지원된 operation만 적용하고 나머지는 request_outcomes로 APPLIED/HELD/REJECTED를 보고한다.
+
+Novel bridge는 기존 WB20/M4의 현재 입력 재검증과 명시 수락을 거쳐 선택 Novel payload를 반환한다. `apply-review`는 이를 현재 `next_package` 기준으로 조립하고 현행 builder로 필요한 metadata를 갱신한다. 대상 metadata는 `manifest.json`, `legacy-components.json`, `ui/manifest.json`, `release-manifest.json`이다. `manifest.json`은 등록 항목의 의미 hash 등 기존 semantic 값에 변화가 있을 때 갱신하며, 미등록 Novel의 등록 상태는 그대로 보존한다. 옛 M4 complete tree나 manifest를 최신 package에 덮어쓰지 않는다. `ui/manifest.json`의 갱신은 package identity를 연결하는 metadata 변경이며 UI 번역의 새 의미 수락이 아니다. 실제 변경 경로와 hash는 최종 diff로 확인한다. Novel 변경은 완전 package와 재시작 경계를 따르며 `request-ui`로 적용하지 않는다.
 
 GitHub의 `crawl_only.yml`은 fresh state의 one-shot metadata snapshot이다. 지속 CI 증분은 구현하지 않았다. artifact 7일 보존은 durable source baseline을 대신하지 않는다. workflow 요약은 실제 scan.json의 status/coverage/plan을 사용하며 raw/PC 동등성/semantic 수락 PASS를 주장하지 않는다. main의 `update_translation.yml` 정의는 retired manual/read-only 안내뿐이다. 원격 workflow의 enabled/disabled 상태 및 실제 dispatch는 별도이며 이번 작업에서 변경·실행하지 않는다.
 
