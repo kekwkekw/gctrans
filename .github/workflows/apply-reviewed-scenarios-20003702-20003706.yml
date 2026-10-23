@@ -20,7 +20,7 @@ jobs:
       - name: Check out exact branch head
         uses: actions/checkout@v4
         with:
-          fetch-depth: 3
+          fetch-depth: 4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -38,7 +38,16 @@ jobs:
           set -euo pipefail
           expected_base='8cebfe3e51cd0659bdd8417f55796f9d9968484d'
           git merge-base --is-ancestor "$expected_base" HEAD
-          test "$(git rev-list --count "$expected_base"..HEAD)" -le 2
+          cat > "$RUNNER_TEMP/helper-paths.txt" <<'EOF'
+          .github/review-payloads/20003702.json
+          .github/review-payloads/20003703.json
+          .github/review-payloads/20003704.json
+          .github/review-payloads/20003705.json
+          .github/review-payloads/20003706.json
+          .github/workflows/apply-reviewed-scenarios-20003702-20003706.yml
+          EOF
+          git diff --name-only "$expected_base"...HEAD | sort > "$RUNNER_TEMP/actual-helper-paths.txt"
+          diff -u "$RUNNER_TEMP/helper-paths.txt" "$RUNNER_TEMP/actual-helper-paths.txt"
           cat > "$RUNNER_TEMP/payload.sha256" <<'EOF'
           754d5d85ffcaa9ee901e20589ba0b5fc78f7bb7db5b0c8e1eff65c417e9c14ca  .github/review-payloads/20003702.json
           81f18c13d4296adeea5c03b3c6c536cc44c8c470e84ae3f0e9a7ce387994ebcf  .github/review-payloads/20003703.json
@@ -109,6 +118,7 @@ jobs:
           set -euo pipefail
           python -X utf8 tools/verify_staged_release.py translations/ko --report "$RUNNER_TEMP/STAGING.json"
           python -X utf8 tools/update/cli.py preflight --candidate-root . --report "$RUNNER_TEMP/PREFLIGHT.json"
+          python -m pip install --disable-pip-version-check --no-input 'httpx==0.28.1'
           python -X utf8 -m unittest discover -s tests -p 'test_*.py' -v
           dotnet build tools/UpdateCli/UpdateCli.csproj -c Release -p:NuGetAudit=false
           dotnet tools/UpdateCli/bin/Release/net9.0/UpdateCli.dll prepare-local \
