@@ -160,6 +160,91 @@ class NovelWorkflowTests(unittest.TestCase):
         self.assertEqual(len(read_json(self.package / f"novels/{self.existing}.json")), 5)
         self.assertFalse((self.repo / "translation/holds.jsonl").exists())
 
+    def test_current_jp_key_input_freezes_keys_nulls_unknown_locators_and_preserves_order(self):
+        relative = f"novels/{self.existing}.json"
+        target = self.package / relative
+        ordered = {"Z題": "OLD_TITLE_KO", "A名前Ａ": "OLD_NAME_KO", "M<br>{PLAYER}": "OLD_TAG_KO"}
+        target.write_bytes(workflow.encode_novel_payload(ordered))
+        names = read_json(self.package / "names.json")
+        names["名前Ａ"] = "이름Ａ"
+        workflow.write_json(self.package / "names.json", names)
+        master = read_json(self.package / "master.json")
+        master.setdefault("mNovels", {}).setdefault("ml_title[]", {})["A名前Ａ"] = "표시 제목"
+        workflow.write_json(self.package / "master.json", master)
+        build(self.package, modified=[relative, "names.json", "master.json"])
+
+        result = workflow.prepare_batch(self.repo, self.batch, source_current_jp_keys=True,
+                                        source_ids=[self.existing], reason="legacy_retranslation")
+        self.assertEqual(result["rows"], 3)
+        snapshot_path = self.batch / "source" / f"{self.existing}.keys.json"
+        snapshot_raw = snapshot_path.read_bytes()
+        snapshot = read_json(snapshot_path)
+        self.assertEqual(snapshot["keys"], list(ordered))
+        self.assertEqual(snapshot["display_title"], "A名前Ａ")
+        self.assertEqual(snapshot["display_title_key_ordinal_1based"], 2)
+        self.assertFalse(any(value.encode("utf-8") in snapshot_raw for value in ordered.values()))
+        document = read_json(self.batch / "batch.json")
+        self.assertEqual(document["source_kind"], workflow.CURRENT_KEYS_KIND)
+        self.assertEqual(document["row_basis"], workflow.CURRENT_KEYS_ROW_BASIS)
+        self.assertEqual(document["sources"][0]["title"], "A名前Ａ")
+        self.assertEqual(document["sources"][0]["snapshot_sha256"], workflow.digest(snapshot_raw))
+        rows = read_json(self.batch / "draft.json")["rows"]
+        self.assertEqual([row["jp"] for row in rows], list(ordered))
+        for row in rows:
+            self.assertIsNone(row["speaker"])
+            self.assertIsNone(row["command"])
+            self.assertIsNone(row["physical_line_1based"])
+            self.assertIsNone(row["raw_field_bytes"])
+        context = read_json(self.batch / "context.json")
+        self.assertEqual(context["names"]["名前Ａ"], "이름Ａ")
+        self.assertIn("reference only", context["names_reference_basis"])
+
+        self.finish_fixture_review(held=True)
+        applied = workflow.apply_review(self.repo, self.batch, self.batch / "review.json")
+        self.assertEqual(applied["status"], "APPLIED_LOCAL")
+        self.assertEqual(list(read_json(target)), list(ordered))
+        target_raw = target.read_bytes()
+        self.assertLess(target_raw.index("Z題".encode()), target_raw.index("A名前Ａ".encode()))
+        self.assertLess(target_raw.index("A名前Ａ".encode()), target_raw.index("M<br>{PLAYER}".encode()))
+        hold = workflow._jsonl(self.repo / "translation/holds.jsonl")[0]
+        self.assertEqual(hold["source_snapshot_sha256"], workflow.digest(snapshot_raw))
+        self.assertNotIn("source_sha256", hold)
+        self.assertEqual(hold["physical_line_1based"], None)
+        self.assertEqual(workflow.apply_review(self.repo, self.batch, self.batch / "review.json")["changed_files"], [])
+
+    def test_current_jp_key_input_uses_neutral_display_title_without_unique_master_match(self):
+        relative = f"novels/{self.existing}.json"
+        target = self.package / relative
+        target.write_bytes(workflow.encode_novel_payload({"NO_MASTER_TITLE_A": "old A", "NO_MASTER_TITLE_B": "old B"}))
+        build(self.package, modified=[relative])
+        workflow.prepare_batch(self.repo, self.batch, source_current_jp_keys=True,
+                               source_ids=[self.existing], reason="legacy_retranslation")
+        snapshot = read_json(self.batch / "source" / f"{self.existing}.keys.json")
+        self.assertEqual(snapshot["display_title"], f"Novel {self.existing}")
+        self.assertEqual(snapshot["display_title_basis"], "neutral_source_id_no_unique_master_match")
+        self.assertIsNone(snapshot["display_title_key_ordinal_1based"])
+        self.assertEqual(read_json(self.batch / "batch.json")["sources"][0]["title"], f"Novel {self.existing}")
+
+    def test_current_jp_key_input_rejects_target_collision_but_not_normal_retry(self):
+        workflow.prepare_batch(self.repo, self.batch, source_current_jp_keys=True,
+                               source_ids=[self.existing], reason="legacy_retranslation")
+        self.finish_fixture_review()
+        target = self.package / f"novels/{self.existing}.json"
+        target.write_bytes(b'{"independent":"change"}\n')
+        with self.assertRaisesRegex(ValueError, "Target translation changed"):
+            workflow.check_review(self.repo, self.batch, self.batch / "review.json")
+
+    def test_current_jp_key_input_requires_explicit_unique_ids(self):
+        with self.assertRaisesRegex(ValueError, "requires --source-id"):
+            workflow.prepare_batch(self.repo, self.batch, source_current_jp_keys=True,
+                                   reason="legacy_retranslation")
+        with self.assertRaisesRegex(ValueError, "unique source ids"):
+            workflow.prepare_batch(self.repo, self.batch, source_current_jp_keys=True,
+                                   source_ids=[self.existing, self.existing], reason="legacy_retranslation")
+        with self.assertRaisesRegex(ValueError, "requires legacy_retranslation"):
+            workflow.prepare_batch(self.repo, self.batch, source_current_jp_keys=True,
+                                   source_ids=[self.existing])
+
     def test_duplicate_exact_jp_conflict_is_error_not_hold(self):
         self.prepare()
         review = self.finish_fixture_review()
