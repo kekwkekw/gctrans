@@ -1,0 +1,196 @@
+{
+  "apply_execution": {
+    "assembled_results_checked_on_final_checkout": true,
+    "batches": 422,
+    "holds": 16,
+    "isolated_workers": 4,
+    "rows": 114243,
+    "sources": 1499,
+    "status": "PASS"
+  },
+  "canonical_batches": 422,
+  "final_state_idempotency": {
+    "accept": {
+      "changed_files": [],
+      "executed_after_final_knowledge": true,
+      "game": "NOT_RUN",
+      "git_commit": "NOT_RUN",
+      "hold_rows": 0,
+      "package_check": "PASS",
+      "policy_sha256": "3aca17a2f12c76ca9c17d939a8f68e769b1eeefe54c8b52f6912d5f73f77922e",
+      "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+      "rows": 27,
+      "sources": 2,
+      "status": "APPLIED_LOCAL",
+      "variant_id": "full_draft_005_short_20001_99900003"
+    },
+    "hold": {
+      "changed_files": [],
+      "executed_after_final_knowledge": true,
+      "game": "NOT_RUN",
+      "git_commit": "NOT_RUN",
+      "hold_rows": 14,
+      "package_check": "PASS",
+      "policy_sha256": "3aca17a2f12c76ca9c17d939a8f68e769b1eeefe54c8b52f6912d5f73f77922e",
+      "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+      "rows": 288,
+      "sources": 3,
+      "status": "APPLIED_LOCAL",
+      "variant_id": "full_draft_289_story_40112073_40112083_40112093"
+    },
+    "knowledge": {
+      "changed_files": [],
+      "executed_after_final_knowledge": true,
+      "game": "NOT_RUN",
+      "git_commit": "NOT_RUN",
+      "hold_rows": 0,
+      "package_check": "PASS",
+      "policy_sha256": "3aca17a2f12c76ca9c17d939a8f68e769b1eeefe54c8b52f6912d5f73f77922e",
+      "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+      "rows": 360,
+      "sources": 4,
+      "status": "APPLIED_LOCAL",
+      "variant_id": "full_draft_086_event_22001405_22001502"
+    },
+    "patch": {
+      "changed_files": [],
+      "executed_after_final_knowledge": true,
+      "game": "NOT_RUN",
+      "git_commit": "NOT_RUN",
+      "hold_rows": 0,
+      "package_check": "PASS",
+      "policy_sha256": "3aca17a2f12c76ca9c17d939a8f68e769b1eeefe54c8b52f6912d5f73f77922e",
+      "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+      "rows": 98,
+      "sources": 4,
+      "status": "APPLIED_LOCAL",
+      "variant_id": "full_draft_009_story_11010402_11010405"
+    }
+  },
+  "fresh_contexts": 422,
+  "hold_rows": 16,
+  "holds": {
+    "10028": 2,
+    "40112073": 13,
+    "40112093": 1
+  },
+  "idempotency_categories": [
+    "accept",
+    "patch",
+    "hold",
+    "knowledge"
+  ],
+  "knowledge_batch_applied_last": true,
+  "knowledge_bytes_match_expected": true,
+  "knowledge_records": 3535,
+  "knowledge_serialization_adjustment": {
+    "after_knowledge_sha256": "f65e42392cd1f84240fe4680413c3c1962702f9907e9f93269b4e0592f3cb153",
+    "after_review_sha256": "dd18a34ddd45f11f1b0fd3ba7bcf0380205111428c735e0ee3adeb59d85afb9f",
+    "before_knowledge_sha256": "9ed1040f1bb382a4146bfb388b226b19cf3bb17e46ae706ef4cf902910e19feb",
+    "before_review_sha256": "7b967bae9cd3d69d98371c002ffff1f4adefa2d80e36031b250ac634cb24fdde",
+    "changed_files": [
+      {
+        "bytes": 2959301,
+        "path": "translation/knowledge.jsonl",
+        "sha256": "f65e42392cd1f84240fe4680413c3c1962702f9907e9f93269b4e0592f3cb153"
+      }
+    ],
+    "changed_record_key_orders": 2,
+    "expected_knowledge_sha256": "f65e42392cd1f84240fe4680413c3c1962702f9907e9f93269b4e0592f3cb153",
+    "reason": "Preserve supplied PRO proposal JSON object key order for expected Knowledge bytes",
+    "records": 3535,
+    "retry_changed_files": [],
+    "semantic_record_differences": 0,
+    "status": "PASS",
+    "variant_id": "full_draft_086_event_22001405_22001502"
+  },
+  "legacy_name_occurrences": {},
+  "main_base": "f80efdc427a7b5393b14a1f549b8188de51d5d95",
+  "migration_active_record_coverage": 3534,
+  "migration_original_record_coverage": 5647,
+  "names_unchanged": true,
+  "non_hold_blank_rows": 0,
+  "non_hold_kana_rows": 0,
+  "old_knowledge_layer_unchanged": true,
+  "oracle_source_mismatches": 0,
+  "original_checkout_unchanged": true,
+  "package": {
+    "bytes_verified": 40575909,
+    "files_verified": 1946,
+    "membership": "EXACT",
+    "native_runtime": "NOT_RUN_OFFLINE_STAGING_ONLY",
+    "runtime_names_novel_scope": "legacy-index metadata only; existing donor lazy behavior preserved",
+    "schema": "gc-ng01-offline-staging-gate-v1",
+    "status": "PASS",
+    "validation_scope": "all staged payload bytes; offline only"
+  },
+  "parallel_apply_plan": {
+    "existing_completed_batches": [
+      "full_draft_001_museum_10004_10057",
+      "full_draft_002_museum_11002_11044",
+      "full_draft_003_museum_12002_12012_19001_19021",
+      "full_draft_004_short_301001_314006",
+      "full_draft_005_short_20001_99900003",
+      "full_draft_006_story_11010102_11010105",
+      "full_draft_007_story_11010202_11010205",
+      "full_draft_008_story_11010302_11010305",
+      "full_draft_009_story_11010402_11010405",
+      "full_draft_010_story_11010502_11010505",
+      "full_draft_011_story_11010602_11010605",
+      "full_draft_012_story_11010702_11010705",
+      "full_draft_015_story_11011002_11011005",
+      "full_draft_016_story_11011102_11011105",
+      "full_draft_017_event_20000101_20000106",
+      "full_draft_018_event_20000201_20000206"
+    ],
+    "parallel_source_count": 1290,
+    "strategy": "Existing novel apply per batch in independent package copies; verified assembly followed by current-checkout checks; Knowledge last",
+    "worker_batch_counts": [
+      102,
+      101,
+      101,
+      101
+    ]
+  },
+  "pro_patch_rows": 3242,
+  "registered_novel_ids": 1896,
+  "registration_unchanged": true,
+  "regression_tests": {
+    "errors": 0,
+    "failures": 0,
+    "patterns": [
+      "test_novel_workflow.py",
+      "test_novel_cli_integration.py",
+      "test_translation_knowledge.py",
+      "test_frozen_hold_policy.py"
+    ],
+    "skipped": 0,
+    "status": "PASS",
+    "tests": 47
+  },
+  "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+  "reviewed_knowledge_changed_ids": [
+    "term:087454ba52d82447",
+    "term:current:nyumpha"
+  ],
+  "rows": 114243,
+  "sources": 1499,
+  "status": "PASS",
+  "term_canonical_bad_remaining": 0,
+  "term_canonical_occurrences": {
+    "イマージュ": 1089,
+    "エグゾティ": 128,
+    "オータムアートフェスティバル": 30,
+    "スパ・イヴェール・テピダリウム": 6,
+    "ソメイ屋": 13,
+    "ノワール": 83,
+    "ハルモニア": 32,
+    "プランタン": 61,
+    "夢幻美術館": 274,
+    "新藝術騎士団": 51,
+    "雨降小僧": 5,
+    "音精": 38
+  },
+  "term_match_basis": "Literal occurrences excluding HOLD; ノワール excludes the embedded surname ルノワール",
+  "unselected_package_payloads_unchanged": true
+}

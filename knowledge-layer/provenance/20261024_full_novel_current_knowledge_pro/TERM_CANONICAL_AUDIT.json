@@ -1,0 +1,77 @@
+{
+  "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+  "terms": {
+    "ノワール": {
+      "canonical_ko": "노와르",
+      "occurrences": 539,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "エグゾティ": {
+      "canonical_ko": "에그조티",
+      "occurrences": 126,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "プランタン": {
+      "canonical_ko": "프란탄",
+      "occurrences": 61,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "新藝術騎士団": {
+      "canonical_ko": "신예술기사단",
+      "occurrences": 51,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "夢幻美術館": {
+      "canonical_ko": "몽환 미술관",
+      "occurrences": 274,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "オータムアートフェスティバル": {
+      "canonical_ko": "오텀 아트 페스티벌",
+      "occurrences": 30,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "ハルモニア": {
+      "canonical_ko": "하르모니아",
+      "occurrences": 32,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "ソメイ屋": {
+      "canonical_ko": "소메이야",
+      "occurrences": 12,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "雨降小僧": {
+      "canonical_ko": "아메후리코죠",
+      "occurrences": 5,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "スパ・イヴェール・テピダリウム": {
+      "canonical_ko": "스파・이베르・테피다리움",
+      "occurrences": 6,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "音精": {
+      "canonical_ko": "음정령",
+      "occurrences": 36,
+      "bad_remaining": 0,
+      "examples": []
+    },
+    "イマージュ": {
+      "canonical_ko": "이마쥬",
+      "occurrences": 1013,
+      "bad_remaining": 0,
+      "examples": []
+    }
+  }
+}

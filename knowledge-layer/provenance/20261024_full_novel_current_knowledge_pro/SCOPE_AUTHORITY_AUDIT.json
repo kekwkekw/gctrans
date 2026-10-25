@@ -1,0 +1,47 @@
+{
+  "schema": "gctrans.scope_authority_audit.v1",
+  "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+  "status": "PASS",
+  "automatic_scoped_knowledge_global_promotions": 0,
+  "approved_global_knowledge_changes": [
+    {
+      "id": "term:087454ba52d82447",
+      "action": "update_existing",
+      "jp": "イマージュ",
+      "ko": "이마쥬"
+    },
+    {
+      "id": "term:current:nyumpha",
+      "action": "add_new",
+      "jp": "音精",
+      "ko": "음정령"
+    }
+  ],
+  "row_level_exact_proper_noun_decisions": 384,
+  "generic_scoped_knowledge_bulk_substitutions": 0,
+  "generic_terms_intentionally_not_globalized": [
+    "習作",
+    "絵画教室",
+    "三色団子",
+    "デッサン",
+    "星占い",
+    "司法取引",
+    "退団",
+    "市会議員",
+    "後夜祭",
+    "不幸体質",
+    "景品",
+    "切り札",
+    "擬態",
+    "真実の愛",
+    "浮世絵師",
+    "超法規的措置",
+    "牛のぬいぐるみ",
+    "ご利益",
+    "バニー服",
+    "妖怪画",
+    "切り絵",
+    "晴れ着"
+  ],
+  "note_ko": "정돈 Knowledge의 source scope를 자동 전역화하지 않았다. scope 밖 고유명사 수정은 exact JP와 동일 entity를 행별로 확인한 PRO 번역 결정이며, Knowledge 전역 승격은 별도 승인한 두 system term뿐이다."
+}

@@ -1,0 +1,4883 @@
+{
+  "schema": "gctrans.current_knowledge_review_batch_index.v1",
+  "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+  "canonical_batch_count": 422,
+  "knowledge_change_variant_id": "full_draft_086_event_22001405_22001502",
+  "batches": [
+    {
+      "variant_id": "full_draft_001_museum_10004_10057",
+      "source_ids": [
+        "10004",
+        "10005",
+        "10006",
+        "10007",
+        "10008",
+        "10009",
+        "10010",
+        "10011",
+        "10012",
+        "10013",
+        "10014",
+        "10015",
+        "10016",
+        "10017",
+        "10018",
+        "10019",
+        "10020",
+        "10021",
+        "10022",
+        "10023",
+        "10024",
+        "10025",
+        "10026",
+        "10027",
+        "10028",
+        "10029",
+        "10030",
+        "10031",
+        "10032",
+        "10033",
+        "10034",
+        "10035",
+        "10036",
+        "10037",
+        "10038",
+        "10039",
+        "10040",
+        "10041",
+        "10042",
+        "10043",
+        "10044",
+        "10045",
+        "10046",
+        "10047",
+        "10048",
+        "10049",
+        "10050",
+        "10051",
+        "10052",
+        "10053",
+        "10054",
+        "10055",
+        "10056",
+        "10057"
+      ],
+      "original_context_file": "contexts/full_draft_001_museum_10004_10057.context.json",
+      "clean_context_file": "contexts/full_draft_001_museum_10004_10057.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_002_museum_11002_11044",
+      "source_ids": [
+        "11002",
+        "11003",
+        "11004",
+        "11005",
+        "11006",
+        "11007",
+        "11008",
+        "11009",
+        "11010",
+        "11011",
+        "11012",
+        "11013",
+        "11014",
+        "11015",
+        "11016",
+        "11017",
+        "11018",
+        "11019",
+        "11020",
+        "11021",
+        "11022",
+        "11023",
+        "11024",
+        "11025",
+        "11026",
+        "11027",
+        "11028",
+        "11029",
+        "11030",
+        "11031",
+        "11032",
+        "11033",
+        "11034",
+        "11035",
+        "11036",
+        "11037",
+        "11038",
+        "11039",
+        "11040",
+        "11041",
+        "11042",
+        "11043",
+        "11044"
+      ],
+      "original_context_file": "contexts/full_draft_002_museum_11002_11044.context.json",
+      "clean_context_file": "contexts/full_draft_002_museum_11002_11044.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_003_museum_12002_12012_19001_19021",
+      "source_ids": [
+        "12002",
+        "12003",
+        "12004",
+        "12005",
+        "12006",
+        "12007",
+        "12008",
+        "12009",
+        "12010",
+        "12011",
+        "12012",
+        "19001",
+        "19002",
+        "19003",
+        "19004",
+        "19005",
+        "19006",
+        "19007",
+        "19008",
+        "19009",
+        "19010",
+        "19011",
+        "19012",
+        "19013",
+        "19014",
+        "19015",
+        "19016",
+        "19017",
+        "19018",
+        "19019",
+        "19020",
+        "19021"
+      ],
+      "original_context_file": "contexts/full_draft_003_museum_12002_12012_19001_19021.context.json",
+      "clean_context_file": "contexts/full_draft_003_museum_12002_12012_19001_19021.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_004_short_301001_314006",
+      "source_ids": [
+        "301001",
+        "301002",
+        "301003",
+        "301004",
+        "302001",
+        "302002",
+        "303001",
+        "303002",
+        "303003",
+        "303004",
+        "304001",
+        "304002",
+        "311001",
+        "311002",
+        "312001",
+        "312002",
+        "312003",
+        "312004",
+        "313001",
+        "313002",
+        "314001",
+        "314002",
+        "314003",
+        "314004",
+        "314005",
+        "314006"
+      ],
+      "original_context_file": "contexts/full_draft_004_short_301001_314006.context.json",
+      "clean_context_file": "contexts/full_draft_004_short_301001_314006.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_005_short_20001_99900003",
+      "source_ids": [
+        "20001",
+        "99900003"
+      ],
+      "original_context_file": "contexts/full_draft_005_short_20001_99900003.context.json",
+      "clean_context_file": "contexts/full_draft_005_short_20001_99900003.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_006_story_11010102_11010105",
+      "source_ids": [
+        "11010102",
+        "11010103",
+        "11010104",
+        "11010105"
+      ],
+      "original_context_file": "contexts/full_draft_006_story_11010102_11010105.context.json",
+      "clean_context_file": "contexts/full_draft_006_story_11010102_11010105.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_007_story_11010202_11010205",
+      "source_ids": [
+        "11010202",
+        "11010203",
+        "11010204",
+        "11010205"
+      ],
+      "original_context_file": "contexts/full_draft_007_story_11010202_11010205.context.json",
+      "clean_context_file": "contexts/full_draft_007_story_11010202_11010205.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_008_story_11010302_11010305",
+      "source_ids": [
+        "11010302",
+        "11010303",
+        "11010304",
+        "11010305"
+      ],
+      "original_context_file": "contexts/full_draft_008_story_11010302_11010305.context.json",
+      "clean_context_file": "contexts/full_draft_008_story_11010302_11010305.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_009_story_11010402_11010405",
+      "source_ids": [
+        "11010402",
+        "11010403",
+        "11010404",
+        "11010405"
+      ],
+      "original_context_file": "contexts/full_draft_009_story_11010402_11010405.context.json",
+      "clean_context_file": "contexts/full_draft_009_story_11010402_11010405.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_010_story_11010502_11010505",
+      "source_ids": [
+        "11010502",
+        "11010503",
+        "11010504",
+        "11010505"
+      ],
+      "original_context_file": "contexts/full_draft_010_story_11010502_11010505.context.json",
+      "clean_context_file": "contexts/full_draft_010_story_11010502_11010505.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_011_story_11010602_11010605",
+      "source_ids": [
+        "11010602",
+        "11010603",
+        "11010604",
+        "11010605"
+      ],
+      "original_context_file": "contexts/full_draft_011_story_11010602_11010605.context.json",
+      "clean_context_file": "contexts/full_draft_011_story_11010602_11010605.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_012_story_11010702_11010705",
+      "source_ids": [
+        "11010702",
+        "11010703",
+        "11010704",
+        "11010705"
+      ],
+      "original_context_file": "contexts/full_draft_012_story_11010702_11010705.context.json",
+      "clean_context_file": "contexts/full_draft_012_story_11010702_11010705.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_015_story_11011002_11011005",
+      "source_ids": [
+        "11011002",
+        "11011003",
+        "11011004",
+        "11011005"
+      ],
+      "original_context_file": "contexts/full_draft_015_story_11011002_11011005.context.json",
+      "clean_context_file": "contexts/full_draft_015_story_11011002_11011005.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_016_story_11011102_11011105",
+      "source_ids": [
+        "11011102",
+        "11011103",
+        "11011104",
+        "11011105"
+      ],
+      "original_context_file": "contexts/full_draft_016_story_11011102_11011105.context.json",
+      "clean_context_file": "contexts/full_draft_016_story_11011102_11011105.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_017_event_20000101_20000106",
+      "source_ids": [
+        "20000101",
+        "20000102",
+        "20000103",
+        "20000104",
+        "20000105",
+        "20000106"
+      ],
+      "original_context_file": "contexts/full_draft_017_event_20000101_20000106.context.json",
+      "clean_context_file": "contexts/full_draft_017_event_20000101_20000106.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_018_event_20000201_20000206",
+      "source_ids": [
+        "20000201",
+        "20000202",
+        "20000203",
+        "20000204",
+        "20000205",
+        "20000206"
+      ],
+      "original_context_file": "contexts/full_draft_018_event_20000201_20000206.context.json",
+      "clean_context_file": "contexts/full_draft_018_event_20000201_20000206.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_019_event_20000301_20000306",
+      "source_ids": [
+        "20000301",
+        "20000302",
+        "20000303",
+        "20000304",
+        "20000305",
+        "20000306"
+      ],
+      "original_context_file": "contexts/full_draft_019_event_20000301_20000306.context.json",
+      "clean_context_file": "contexts/full_draft_019_event_20000301_20000306.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_020_event_20000401_20000406",
+      "source_ids": [
+        "20000401",
+        "20000402",
+        "20000403",
+        "20000404",
+        "20000405",
+        "20000406"
+      ],
+      "original_context_file": "contexts/full_draft_020_event_20000401_20000406.context.json",
+      "clean_context_file": "contexts/full_draft_020_event_20000401_20000406.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_021_event_20000501_20000506",
+      "source_ids": [
+        "20000501",
+        "20000502",
+        "20000503",
+        "20000504",
+        "20000505",
+        "20000506"
+      ],
+      "original_context_file": "contexts/full_draft_021_event_20000501_20000506.context.json",
+      "clean_context_file": "contexts/full_draft_021_event_20000501_20000506.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_022_event_20000701_20000706",
+      "source_ids": [
+        "20000701",
+        "20000702",
+        "20000703",
+        "20000704",
+        "20000705",
+        "20000706"
+      ],
+      "original_context_file": "contexts/full_draft_022_event_20000701_20000706.context.json",
+      "clean_context_file": "contexts/full_draft_022_event_20000701_20000706.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_023_event_20000801_20000806",
+      "source_ids": [
+        "20000801",
+        "20000802",
+        "20000803",
+        "20000804",
+        "20000805",
+        "20000806"
+      ],
+      "original_context_file": "contexts/full_draft_023_event_20000801_20000806.context.json",
+      "clean_context_file": "contexts/full_draft_023_event_20000801_20000806.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_024_event_20001001_20001006",
+      "source_ids": [
+        "20001001",
+        "20001002",
+        "20001003",
+        "20001004",
+        "20001005",
+        "20001006"
+      ],
+      "original_context_file": "contexts/full_draft_024_event_20001001_20001006.context.json",
+      "clean_context_file": "contexts/full_draft_024_event_20001001_20001006.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_025_event_20001101_20001106",
+      "source_ids": [
+        "20001101",
+        "20001102",
+        "20001103",
+        "20001104",
+        "20001105",
+        "20001106"
+      ],
+      "original_context_file": "contexts/full_draft_025_event_20001101_20001106.context.json",
+      "clean_context_file": "contexts/full_draft_025_event_20001101_20001106.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_026_event_20001201_20001206",
+      "source_ids": [
+        "20001201",
+        "20001202",
+        "20001203",
+        "20001204",
+        "20001205",
+        "20001206"
+      ],
+      "original_context_file": "contexts/full_draft_026_event_20001201_20001206.context.json",
+      "clean_context_file": "contexts/full_draft_026_event_20001201_20001206.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_027_event_20001301_20001306",
+      "source_ids": [
+        "20001301",
+        "20001302",
+        "20001303",
+        "20001304",
+        "20001305",
+        "20001306"
+      ],
+      "original_context_file": "contexts/full_draft_027_event_20001301_20001306.context.json",
+      "clean_context_file": "contexts/full_draft_027_event_20001301_20001306.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_028_event_20001601_20001606",
+      "source_ids": [
+        "20001601",
+        "20001602",
+        "20001603",
+        "20001604",
+        "20001605",
+        "20001606"
+      ],
+      "original_context_file": "contexts/full_draft_028_event_20001601_20001606.context.json",
+      "clean_context_file": "contexts/full_draft_028_event_20001601_20001606.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_029_event_20001701_20001706",
+      "source_ids": [
+        "20001701",
+        "20001702",
+        "20001703",
+        "20001704",
+        "20001705",
+        "20001706"
+      ],
+      "original_context_file": "contexts/full_draft_029_event_20001701_20001706.context.json",
+      "clean_context_file": "contexts/full_draft_029_event_20001701_20001706.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_030_event_20001801_20001806",
+      "source_ids": [
+        "20001801",
+        "20001802",
+        "20001803",
+        "20001804",
+        "20001805",
+        "20001806"
+      ],
+      "original_context_file": "contexts/full_draft_030_event_20001801_20001806.context.json",
+      "clean_context_file": "contexts/full_draft_030_event_20001801_20001806.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_031_event_20001901_20001906",
+      "source_ids": [
+        "20001901",
+        "20001902",
+        "20001903",
+        "20001904",
+        "20001905",
+        "20001906"
+      ],
+      "original_context_file": "contexts/full_draft_031_event_20001901_20001906.context.json",
+      "clean_context_file": "contexts/full_draft_031_event_20001901_20001906.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_032_event_20002001_20002006",
+      "source_ids": [
+        "20002001",
+        "20002002",
+        "20002003",
+        "20002004",
+        "20002005",
+        "20002006"
+      ],
+      "original_context_file": "contexts/full_draft_032_event_20002001_20002006.context.json",
+      "clean_context_file": "contexts/full_draft_032_event_20002001_20002006.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_033_event_20002201_20002206",
+      "source_ids": [
+        "20002201",
+        "20002202",
+        "20002203",
+        "20002204",
+        "20002205",
+        "20002206"
+      ],
+      "original_context_file": "contexts/full_draft_033_event_20002201_20002206.context.json",
+      "clean_context_file": "contexts/full_draft_033_event_20002201_20002206.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_034_event_20002301_20002306",
+      "source_ids": [
+        "20002301",
+        "20002302",
+        "20002303",
+        "20002304",
+        "20002305",
+        "20002306"
+      ],
+      "original_context_file": "contexts/full_draft_034_event_20002301_20002306.context.json",
+      "clean_context_file": "contexts/full_draft_034_event_20002301_20002306.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_035_event_20002401_20002406",
+      "source_ids": [
+        "20002401",
+        "20002402",
+        "20002403",
+        "20002404",
+        "20002405",
+        "20002406"
+      ],
+      "original_context_file": "contexts/full_draft_035_event_20002401_20002406.context.json",
+      "clean_context_file": "contexts/full_draft_035_event_20002401_20002406.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_036_event_20002501_20002506",
+      "source_ids": [
+        "20002501",
+        "20002502",
+        "20002503",
+        "20002504",
+        "20002505",
+        "20002506"
+      ],
+      "original_context_file": "contexts/full_draft_036_event_20002501_20002506.context.json",
+      "clean_context_file": "contexts/full_draft_036_event_20002501_20002506.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_037_event_20002901_20002906",
+      "source_ids": [
+        "20002901",
+        "20002902",
+        "20002903",
+        "20002904",
+        "20002905",
+        "20002906"
+      ],
+      "original_context_file": "contexts/full_draft_037_event_20002901_20002906.context.json",
+      "clean_context_file": "contexts/full_draft_037_event_20002901_20002906.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_038_event_20003001_20003006",
+      "source_ids": [
+        "20003001",
+        "20003002",
+        "20003003",
+        "20003004",
+        "20003005",
+        "20003006"
+      ],
+      "original_context_file": "contexts/full_draft_038_event_20003001_20003006.context.json",
+      "clean_context_file": "contexts/full_draft_038_event_20003001_20003006.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_039_event_20003201_20003206",
+      "source_ids": [
+        "20003201",
+        "20003202",
+        "20003203",
+        "20003204",
+        "20003205",
+        "20003206"
+      ],
+      "original_context_file": "contexts/full_draft_039_event_20003201_20003206.context.json",
+      "clean_context_file": "contexts/full_draft_039_event_20003201_20003206.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_040_event_20003401_20003406",
+      "source_ids": [
+        "20003401",
+        "20003402",
+        "20003403",
+        "20003404",
+        "20003405",
+        "20003406"
+      ],
+      "original_context_file": "contexts/full_draft_040_event_20003401_20003406.context.json",
+      "clean_context_file": "contexts/full_draft_040_event_20003401_20003406.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_041_event_20003501_20003506",
+      "source_ids": [
+        "20003501",
+        "20003502",
+        "20003503",
+        "20003504",
+        "20003505",
+        "20003506"
+      ],
+      "original_context_file": "contexts/full_draft_041_event_20003501_20003506.context.json",
+      "clean_context_file": "contexts/full_draft_041_event_20003501_20003506.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_042_event_21000101_21000104",
+      "source_ids": [
+        "21000101",
+        "21000102",
+        "21000103",
+        "21000104"
+      ],
+      "original_context_file": "contexts/full_draft_042_event_21000101_21000104.context.json",
+      "clean_context_file": "contexts/full_draft_042_event_21000101_21000104.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_043_event_21000201_21000204",
+      "source_ids": [
+        "21000201",
+        "21000202",
+        "21000203",
+        "21000204"
+      ],
+      "original_context_file": "contexts/full_draft_043_event_21000201_21000204.context.json",
+      "clean_context_file": "contexts/full_draft_043_event_21000201_21000204.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_044_event_21000301_21000304",
+      "source_ids": [
+        "21000301",
+        "21000302",
+        "21000303",
+        "21000304"
+      ],
+      "original_context_file": "contexts/full_draft_044_event_21000301_21000304.context.json",
+      "clean_context_file": "contexts/full_draft_044_event_21000301_21000304.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_045_event_21000401_21000404",
+      "source_ids": [
+        "21000401",
+        "21000402",
+        "21000403",
+        "21000404"
+      ],
+      "original_context_file": "contexts/full_draft_045_event_21000401_21000404.context.json",
+      "clean_context_file": "contexts/full_draft_045_event_21000401_21000404.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_046_event_21000501_21000504",
+      "source_ids": [
+        "21000501",
+        "21000502",
+        "21000503",
+        "21000504"
+      ],
+      "original_context_file": "contexts/full_draft_046_event_21000501_21000504.context.json",
+      "clean_context_file": "contexts/full_draft_046_event_21000501_21000504.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_047_event_21000601_21000604",
+      "source_ids": [
+        "21000601",
+        "21000602",
+        "21000603",
+        "21000604"
+      ],
+      "original_context_file": "contexts/full_draft_047_event_21000601_21000604.context.json",
+      "clean_context_file": "contexts/full_draft_047_event_21000601_21000604.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_048_event_21000651_21000654",
+      "source_ids": [
+        "21000651",
+        "21000652",
+        "21000653",
+        "21000654"
+      ],
+      "original_context_file": "contexts/full_draft_048_event_21000651_21000654.context.json",
+      "clean_context_file": "contexts/full_draft_048_event_21000651_21000654.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_049_event_21000701_21000704",
+      "source_ids": [
+        "21000701",
+        "21000702",
+        "21000703",
+        "21000704"
+      ],
+      "original_context_file": "contexts/full_draft_049_event_21000701_21000704.context.json",
+      "clean_context_file": "contexts/full_draft_049_event_21000701_21000704.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_050_event_21000751_21000754",
+      "source_ids": [
+        "21000751",
+        "21000752",
+        "21000753",
+        "21000754"
+      ],
+      "original_context_file": "contexts/full_draft_050_event_21000751_21000754.context.json",
+      "clean_context_file": "contexts/full_draft_050_event_21000751_21000754.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_051_event_21000801_21000804",
+      "source_ids": [
+        "21000801",
+        "21000802",
+        "21000803",
+        "21000804"
+      ],
+      "original_context_file": "contexts/full_draft_051_event_21000801_21000804.context.json",
+      "clean_context_file": "contexts/full_draft_051_event_21000801_21000804.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_052_event_21000851_21000854",
+      "source_ids": [
+        "21000851",
+        "21000852",
+        "21000853",
+        "21000854"
+      ],
+      "original_context_file": "contexts/full_draft_052_event_21000851_21000854.context.json",
+      "clean_context_file": "contexts/full_draft_052_event_21000851_21000854.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_053_event_21000901_21000904",
+      "source_ids": [
+        "21000901",
+        "21000902",
+        "21000903",
+        "21000904"
+      ],
+      "original_context_file": "contexts/full_draft_053_event_21000901_21000904.context.json",
+      "clean_context_file": "contexts/full_draft_053_event_21000901_21000904.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_054_event_21000951_21000954",
+      "source_ids": [
+        "21000951",
+        "21000952",
+        "21000953",
+        "21000954"
+      ],
+      "original_context_file": "contexts/full_draft_054_event_21000951_21000954.context.json",
+      "clean_context_file": "contexts/full_draft_054_event_21000951_21000954.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_055_event_21001001_21001102",
+      "source_ids": [
+        "21001001",
+        "21001002",
+        "21001101",
+        "21001102"
+      ],
+      "original_context_file": "contexts/full_draft_055_event_21001001_21001102.context.json",
+      "clean_context_file": "contexts/full_draft_055_event_21001001_21001102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_056_event_21001201_21001302",
+      "source_ids": [
+        "21001201",
+        "21001202",
+        "21001301",
+        "21001302"
+      ],
+      "original_context_file": "contexts/full_draft_056_event_21001201_21001302.context.json",
+      "clean_context_file": "contexts/full_draft_056_event_21001201_21001302.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_057_event_21001401_21001502",
+      "source_ids": [
+        "21001401",
+        "21001402",
+        "21001501",
+        "21001502"
+      ],
+      "original_context_file": "contexts/full_draft_057_event_21001401_21001502.context.json",
+      "clean_context_file": "contexts/full_draft_057_event_21001401_21001502.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_058_event_21001601_21001702",
+      "source_ids": [
+        "21001601",
+        "21001602",
+        "21001701",
+        "21001702"
+      ],
+      "original_context_file": "contexts/full_draft_058_event_21001601_21001702.context.json",
+      "clean_context_file": "contexts/full_draft_058_event_21001601_21001702.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_059_event_21001801_21001902",
+      "source_ids": [
+        "21001801",
+        "21001802",
+        "21001901",
+        "21001902"
+      ],
+      "original_context_file": "contexts/full_draft_059_event_21001801_21001902.context.json",
+      "clean_context_file": "contexts/full_draft_059_event_21001801_21001902.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_060_event_21002001_21002102",
+      "source_ids": [
+        "21002101",
+        "21002102"
+      ],
+      "original_context_file": "contexts/full_draft_060_event_21002001_21002102.context.json",
+      "clean_context_file": "contexts/full_draft_060_event_21002001_21002102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_061_event_21002201_21002302",
+      "source_ids": [
+        "21002201",
+        "21002202",
+        "21002301",
+        "21002302"
+      ],
+      "original_context_file": "contexts/full_draft_061_event_21002201_21002302.context.json",
+      "clean_context_file": "contexts/full_draft_061_event_21002201_21002302.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_062_event_21002401_21002502",
+      "source_ids": [
+        "21002401",
+        "21002402",
+        "21002501",
+        "21002502"
+      ],
+      "original_context_file": "contexts/full_draft_062_event_21002401_21002502.context.json",
+      "clean_context_file": "contexts/full_draft_062_event_21002401_21002502.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_063_event_21002601_21002702",
+      "source_ids": [
+        "21002601",
+        "21002602",
+        "21002701",
+        "21002702"
+      ],
+      "original_context_file": "contexts/full_draft_063_event_21002601_21002702.context.json",
+      "clean_context_file": "contexts/full_draft_063_event_21002601_21002702.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_064_event_21002801_21002902",
+      "source_ids": [
+        "21002801",
+        "21002802",
+        "21002901",
+        "21002902"
+      ],
+      "original_context_file": "contexts/full_draft_064_event_21002801_21002902.context.json",
+      "clean_context_file": "contexts/full_draft_064_event_21002801_21002902.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_065_event_21003001_21003102",
+      "source_ids": [
+        "21003001",
+        "21003002",
+        "21003101",
+        "21003102"
+      ],
+      "original_context_file": "contexts/full_draft_065_event_21003001_21003102.context.json",
+      "clean_context_file": "contexts/full_draft_065_event_21003001_21003102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_066_event_21003301_21003402",
+      "source_ids": [
+        "21003301",
+        "21003302",
+        "21003401",
+        "21003402"
+      ],
+      "original_context_file": "contexts/full_draft_066_event_21003301_21003402.context.json",
+      "clean_context_file": "contexts/full_draft_066_event_21003301_21003402.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_067_event_21003601_21003902",
+      "source_ids": [
+        "21003601",
+        "21003602",
+        "21003901",
+        "21003902"
+      ],
+      "original_context_file": "contexts/full_draft_067_event_21003601_21003902.context.json",
+      "clean_context_file": "contexts/full_draft_067_event_21003601_21003902.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_068_event_21004001_21004102",
+      "source_ids": [
+        "21004001",
+        "21004002",
+        "21004101",
+        "21004102"
+      ],
+      "original_context_file": "contexts/full_draft_068_event_21004001_21004102.context.json",
+      "clean_context_file": "contexts/full_draft_068_event_21004001_21004102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_069_event_21004201_21004302",
+      "source_ids": [
+        "21004201",
+        "21004202",
+        "21004301",
+        "21004302"
+      ],
+      "original_context_file": "contexts/full_draft_069_event_21004201_21004302.context.json",
+      "clean_context_file": "contexts/full_draft_069_event_21004201_21004302.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_070_event_21004401_22000002",
+      "source_ids": [
+        "21004401",
+        "21004402",
+        "22000001",
+        "22000002"
+      ],
+      "original_context_file": "contexts/full_draft_070_event_21004401_22000002.context.json",
+      "clean_context_file": "contexts/full_draft_070_event_21004401_22000002.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_071_event_22000003_22000102",
+      "source_ids": [
+        "22000003",
+        "22000004",
+        "22000101",
+        "22000102"
+      ],
+      "original_context_file": "contexts/full_draft_071_event_22000003_22000102.context.json",
+      "clean_context_file": "contexts/full_draft_071_event_22000003_22000102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_072_event_22000103_22000106",
+      "source_ids": [
+        "22000103",
+        "22000104",
+        "22000105",
+        "22000106"
+      ],
+      "original_context_file": "contexts/full_draft_072_event_22000103_22000106.context.json",
+      "clean_context_file": "contexts/full_draft_072_event_22000103_22000106.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_073_event_22000201_22000204",
+      "source_ids": [
+        "22000201",
+        "22000202",
+        "22000203",
+        "22000204"
+      ],
+      "original_context_file": "contexts/full_draft_073_event_22000201_22000204.context.json",
+      "clean_context_file": "contexts/full_draft_073_event_22000201_22000204.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_074_event_22000205_22000402",
+      "source_ids": [
+        "22000205",
+        "22000206",
+        "22000401",
+        "22000402"
+      ],
+      "original_context_file": "contexts/full_draft_074_event_22000205_22000402.context.json",
+      "clean_context_file": "contexts/full_draft_074_event_22000205_22000402.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_075_event_22000403_22000406",
+      "source_ids": [
+        "22000403",
+        "22000404",
+        "22000405",
+        "22000406"
+      ],
+      "original_context_file": "contexts/full_draft_075_event_22000403_22000406.context.json",
+      "clean_context_file": "contexts/full_draft_075_event_22000403_22000406.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_076_event_22000501_22000504",
+      "source_ids": [
+        "22000501",
+        "22000502",
+        "22000503",
+        "22000504"
+      ],
+      "original_context_file": "contexts/full_draft_076_event_22000501_22000504.context.json",
+      "clean_context_file": "contexts/full_draft_076_event_22000501_22000504.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_077_event_22000505_22000702",
+      "source_ids": [
+        "22000505",
+        "22000506",
+        "22000701",
+        "22000702"
+      ],
+      "original_context_file": "contexts/full_draft_077_event_22000505_22000702.context.json",
+      "clean_context_file": "contexts/full_draft_077_event_22000505_22000702.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_078_event_22000703_22000706",
+      "source_ids": [
+        "22000703",
+        "22000704",
+        "22000705",
+        "22000706"
+      ],
+      "original_context_file": "contexts/full_draft_078_event_22000703_22000706.context.json",
+      "clean_context_file": "contexts/full_draft_078_event_22000703_22000706.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_079_event_22000801_22000804",
+      "source_ids": [
+        "22000801",
+        "22000802",
+        "22000803",
+        "22000804"
+      ],
+      "original_context_file": "contexts/full_draft_079_event_22000801_22000804.context.json",
+      "clean_context_file": "contexts/full_draft_079_event_22000801_22000804.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_080_event_22000805_22000902",
+      "source_ids": [
+        "22000805",
+        "22000806",
+        "22000901",
+        "22000902"
+      ],
+      "original_context_file": "contexts/full_draft_080_event_22000805_22000902.context.json",
+      "clean_context_file": "contexts/full_draft_080_event_22000805_22000902.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_081_event_22000903_22000906",
+      "source_ids": [
+        "22000903",
+        "22000904",
+        "22000905",
+        "22000906"
+      ],
+      "original_context_file": "contexts/full_draft_081_event_22000903_22000906.context.json",
+      "clean_context_file": "contexts/full_draft_081_event_22000903_22000906.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_082_event_22001201_22001204",
+      "source_ids": [
+        "22001201",
+        "22001202",
+        "22001203",
+        "22001204"
+      ],
+      "original_context_file": "contexts/full_draft_082_event_22001201_22001204.context.json",
+      "clean_context_file": "contexts/full_draft_082_event_22001201_22001204.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_083_event_22001205_22001302",
+      "source_ids": [
+        "22001205",
+        "22001206",
+        "22001301",
+        "22001302"
+      ],
+      "original_context_file": "contexts/full_draft_083_event_22001205_22001302.context.json",
+      "clean_context_file": "contexts/full_draft_083_event_22001205_22001302.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_084_event_22001303_22001306",
+      "source_ids": [
+        "22001303",
+        "22001304",
+        "22001305",
+        "22001306"
+      ],
+      "original_context_file": "contexts/full_draft_084_event_22001303_22001306.context.json",
+      "clean_context_file": "contexts/full_draft_084_event_22001303_22001306.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_085_event_22001401_22001404",
+      "source_ids": [
+        "22001401",
+        "22001402",
+        "22001403",
+        "22001404"
+      ],
+      "original_context_file": "contexts/full_draft_085_event_22001401_22001404.context.json",
+      "clean_context_file": "contexts/full_draft_085_event_22001401_22001404.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_086_event_22001405_22001502",
+      "source_ids": [
+        "22001405",
+        "22001406",
+        "22001501",
+        "22001502"
+      ],
+      "original_context_file": "contexts/full_draft_086_event_22001405_22001502.context.json",
+      "clean_context_file": "contexts/full_draft_086_event_22001405_22001502.context.json",
+      "contains_knowledge_change": true
+    },
+    {
+      "variant_id": "full_draft_087_event_22001503_22001506",
+      "source_ids": [
+        "22001503",
+        "22001504",
+        "22001505",
+        "22001506"
+      ],
+      "original_context_file": "contexts/full_draft_087_event_22001503_22001506.context.json",
+      "clean_context_file": "contexts/full_draft_087_event_22001503_22001506.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_088_event_22001701_22001704",
+      "source_ids": [
+        "22001701",
+        "22001702",
+        "22001703",
+        "22001704"
+      ],
+      "original_context_file": "contexts/full_draft_088_event_22001701_22001704.context.json",
+      "clean_context_file": "contexts/full_draft_088_event_22001701_22001704.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_089_event_22001705_22001802",
+      "source_ids": [
+        "22001705",
+        "22001706",
+        "22001801",
+        "22001802"
+      ],
+      "original_context_file": "contexts/full_draft_089_event_22001705_22001802.context.json",
+      "clean_context_file": "contexts/full_draft_089_event_22001705_22001802.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_090_event_22001803_22001806",
+      "source_ids": [
+        "22001803",
+        "22001804",
+        "22001805",
+        "22001806"
+      ],
+      "original_context_file": "contexts/full_draft_090_event_22001803_22001806.context.json",
+      "clean_context_file": "contexts/full_draft_090_event_22001803_22001806.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_091_event_22002001_22002004",
+      "source_ids": [
+        "22002001",
+        "22002002",
+        "22002003",
+        "22002004"
+      ],
+      "original_context_file": "contexts/full_draft_091_event_22002001_22002004.context.json",
+      "clean_context_file": "contexts/full_draft_091_event_22002001_22002004.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_092_event_22002005_22002102",
+      "source_ids": [
+        "22002005",
+        "22002006",
+        "22002101",
+        "22002102"
+      ],
+      "original_context_file": "contexts/full_draft_092_event_22002005_22002102.context.json",
+      "clean_context_file": "contexts/full_draft_092_event_22002005_22002102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_093_event_22002103_22002106",
+      "source_ids": [
+        "22002103",
+        "22002104",
+        "22002105",
+        "22002106"
+      ],
+      "original_context_file": "contexts/full_draft_093_event_22002103_22002106.context.json",
+      "clean_context_file": "contexts/full_draft_093_event_22002103_22002106.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_094_event_22002201_22002204",
+      "source_ids": [
+        "22002201",
+        "22002202",
+        "22002203",
+        "22002204"
+      ],
+      "original_context_file": "contexts/full_draft_094_event_22002201_22002204.context.json",
+      "clean_context_file": "contexts/full_draft_094_event_22002201_22002204.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_095_event_22002205_22002402",
+      "source_ids": [
+        "22002205",
+        "22002206",
+        "22002401",
+        "22002402"
+      ],
+      "original_context_file": "contexts/full_draft_095_event_22002205_22002402.context.json",
+      "clean_context_file": "contexts/full_draft_095_event_22002205_22002402.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_096_event_22002403_22002406",
+      "source_ids": [
+        "22002403",
+        "22002404",
+        "22002405",
+        "22002406"
+      ],
+      "original_context_file": "contexts/full_draft_096_event_22002403_22002406.context.json",
+      "clean_context_file": "contexts/full_draft_096_event_22002403_22002406.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_097_event_22002501_22002504",
+      "source_ids": [
+        "22002501",
+        "22002502",
+        "22002503",
+        "22002504"
+      ],
+      "original_context_file": "contexts/full_draft_097_event_22002501_22002504.context.json",
+      "clean_context_file": "contexts/full_draft_097_event_22002501_22002504.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_098_event_22002505_22002602",
+      "source_ids": [
+        "22002505",
+        "22002506",
+        "22002601",
+        "22002602"
+      ],
+      "original_context_file": "contexts/full_draft_098_event_22002505_22002602.context.json",
+      "clean_context_file": "contexts/full_draft_098_event_22002505_22002602.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_099_event_22002603_22002606",
+      "source_ids": [
+        "22002603",
+        "22002604",
+        "22002605",
+        "22002606"
+      ],
+      "original_context_file": "contexts/full_draft_099_event_22002603_22002606.context.json",
+      "clean_context_file": "contexts/full_draft_099_event_22002603_22002606.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_100_event_22002701_22002704",
+      "source_ids": [
+        "22002701",
+        "22002702",
+        "22002703",
+        "22002704"
+      ],
+      "original_context_file": "contexts/full_draft_100_event_22002701_22002704.context.json",
+      "clean_context_file": "contexts/full_draft_100_event_22002701_22002704.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_101_event_22002705_22002902",
+      "source_ids": [
+        "22002705",
+        "22002706",
+        "22002901",
+        "22002902"
+      ],
+      "original_context_file": "contexts/full_draft_101_event_22002705_22002902.context.json",
+      "clean_context_file": "contexts/full_draft_101_event_22002705_22002902.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_102_event_22002903_22002906",
+      "source_ids": [
+        "22002903",
+        "22002904",
+        "22002905",
+        "22002906"
+      ],
+      "original_context_file": "contexts/full_draft_102_event_22002903_22002906.context.json",
+      "clean_context_file": "contexts/full_draft_102_event_22002903_22002906.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_103_event_22003001_22003003",
+      "source_ids": [
+        "22003001",
+        "22003002",
+        "22003003"
+      ],
+      "original_context_file": "contexts/full_draft_103_event_22003001_22003003.context.json",
+      "clean_context_file": "contexts/full_draft_103_event_22003001_22003003.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_104_event_22003004_22003006",
+      "source_ids": [
+        "22003004",
+        "22003005",
+        "22003006"
+      ],
+      "original_context_file": "contexts/full_draft_104_event_22003004_22003006.context.json",
+      "clean_context_file": "contexts/full_draft_104_event_22003004_22003006.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_105_event_22003101_22003103",
+      "source_ids": [
+        "22003101",
+        "22003102",
+        "22003103"
+      ],
+      "original_context_file": "contexts/full_draft_105_event_22003101_22003103.context.json",
+      "clean_context_file": "contexts/full_draft_105_event_22003101_22003103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_106_event_22003104_22003106",
+      "source_ids": [
+        "22003104",
+        "22003105",
+        "22003106"
+      ],
+      "original_context_file": "contexts/full_draft_106_event_22003104_22003106.context.json",
+      "clean_context_file": "contexts/full_draft_106_event_22003104_22003106.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_107_event_22003201_22003203",
+      "source_ids": [
+        "22003201",
+        "22003202",
+        "22003203"
+      ],
+      "original_context_file": "contexts/full_draft_107_event_22003201_22003203.context.json",
+      "clean_context_file": "contexts/full_draft_107_event_22003201_22003203.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_108_event_22003204_22003206",
+      "source_ids": [
+        "22003204",
+        "22003205",
+        "22003206"
+      ],
+      "original_context_file": "contexts/full_draft_108_event_22003204_22003206.context.json",
+      "clean_context_file": "contexts/full_draft_108_event_22003204_22003206.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_109_event_22003401_22003402",
+      "source_ids": [
+        "22003401",
+        "22003402"
+      ],
+      "original_context_file": "contexts/full_draft_109_event_22003401_22003402.context.json",
+      "clean_context_file": "contexts/full_draft_109_event_22003401_22003402.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_110_event_22003403_22003404",
+      "source_ids": [
+        "22003403",
+        "22003404"
+      ],
+      "original_context_file": "contexts/full_draft_110_event_22003403_22003404.context.json",
+      "clean_context_file": "contexts/full_draft_110_event_22003403_22003404.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_111_event_22003405_22003406",
+      "source_ids": [
+        "22003405",
+        "22003406"
+      ],
+      "original_context_file": "contexts/full_draft_111_event_22003405_22003406.context.json",
+      "clean_context_file": "contexts/full_draft_111_event_22003405_22003406.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_112_event_23000101_23000102",
+      "source_ids": [
+        "23000101",
+        "23000102"
+      ],
+      "original_context_file": "contexts/full_draft_112_event_23000101_23000102.context.json",
+      "clean_context_file": "contexts/full_draft_112_event_23000101_23000102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_113_event_23000103_23000104",
+      "source_ids": [
+        "23000103",
+        "23000104"
+      ],
+      "original_context_file": "contexts/full_draft_113_event_23000103_23000104.context.json",
+      "clean_context_file": "contexts/full_draft_113_event_23000103_23000104.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_114_event_23000201_23000202",
+      "source_ids": [
+        "23000201",
+        "23000202"
+      ],
+      "original_context_file": "contexts/full_draft_114_event_23000201_23000202.context.json",
+      "clean_context_file": "contexts/full_draft_114_event_23000201_23000202.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_115_event_23000203_23000204",
+      "source_ids": [
+        "23000203",
+        "23000204"
+      ],
+      "original_context_file": "contexts/full_draft_115_event_23000203_23000204.context.json",
+      "clean_context_file": "contexts/full_draft_115_event_23000203_23000204.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_116_event_23000301_23000302",
+      "source_ids": [
+        "23000301",
+        "23000302"
+      ],
+      "original_context_file": "contexts/full_draft_116_event_23000301_23000302.context.json",
+      "clean_context_file": "contexts/full_draft_116_event_23000301_23000302.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_117_event_23000303_23000304",
+      "source_ids": [
+        "23000303",
+        "23000304"
+      ],
+      "original_context_file": "contexts/full_draft_117_event_23000303_23000304.context.json",
+      "clean_context_file": "contexts/full_draft_117_event_23000303_23000304.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_118_event_23000401_23000402",
+      "source_ids": [
+        "23000401",
+        "23000402"
+      ],
+      "original_context_file": "contexts/full_draft_118_event_23000401_23000402.context.json",
+      "clean_context_file": "contexts/full_draft_118_event_23000401_23000402.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_119_event_23000403_23000404",
+      "source_ids": [
+        "23000403",
+        "23000404"
+      ],
+      "original_context_file": "contexts/full_draft_119_event_23000403_23000404.context.json",
+      "clean_context_file": "contexts/full_draft_119_event_23000403_23000404.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_120_event_23000501_23000502",
+      "source_ids": [
+        "23000501",
+        "23000502"
+      ],
+      "original_context_file": "contexts/full_draft_120_event_23000501_23000502.context.json",
+      "clean_context_file": "contexts/full_draft_120_event_23000501_23000502.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_121_event_23000503_23000504",
+      "source_ids": [
+        "23000503",
+        "23000504"
+      ],
+      "original_context_file": "contexts/full_draft_121_event_23000503_23000504.context.json",
+      "clean_context_file": "contexts/full_draft_121_event_23000503_23000504.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_122_event_23000601_23000602",
+      "source_ids": [
+        "23000601",
+        "23000602"
+      ],
+      "original_context_file": "contexts/full_draft_122_event_23000601_23000602.context.json",
+      "clean_context_file": "contexts/full_draft_122_event_23000601_23000602.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_123_event_23000603_23000604",
+      "source_ids": [
+        "23000603",
+        "23000604"
+      ],
+      "original_context_file": "contexts/full_draft_123_event_23000603_23000604.context.json",
+      "clean_context_file": "contexts/full_draft_123_event_23000603_23000604.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_124_event_23000701_23000702",
+      "source_ids": [
+        "23000701",
+        "23000702"
+      ],
+      "original_context_file": "contexts/full_draft_124_event_23000701_23000702.context.json",
+      "clean_context_file": "contexts/full_draft_124_event_23000701_23000702.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_125_event_23000703_23000704",
+      "source_ids": [
+        "23000703",
+        "23000704"
+      ],
+      "original_context_file": "contexts/full_draft_125_event_23000703_23000704.context.json",
+      "clean_context_file": "contexts/full_draft_125_event_23000703_23000704.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_126_event_23000801_23000802",
+      "source_ids": [
+        "23000801",
+        "23000802"
+      ],
+      "original_context_file": "contexts/full_draft_126_event_23000801_23000802.context.json",
+      "clean_context_file": "contexts/full_draft_126_event_23000801_23000802.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_127_event_23000803_23000804",
+      "source_ids": [
+        "23000803",
+        "23000804"
+      ],
+      "original_context_file": "contexts/full_draft_127_event_23000803_23000804.context.json",
+      "clean_context_file": "contexts/full_draft_127_event_23000803_23000804.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_128_event_23000901_23000902",
+      "source_ids": [
+        "23000901",
+        "23000902"
+      ],
+      "original_context_file": "contexts/full_draft_128_event_23000901_23000902.context.json",
+      "clean_context_file": "contexts/full_draft_128_event_23000901_23000902.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_129_event_23000903_23000904",
+      "source_ids": [
+        "23000903",
+        "23000904"
+      ],
+      "original_context_file": "contexts/full_draft_129_event_23000903_23000904.context.json",
+      "clean_context_file": "contexts/full_draft_129_event_23000903_23000904.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_130_event_23001001_23001002",
+      "source_ids": [
+        "23001001",
+        "23001002"
+      ],
+      "original_context_file": "contexts/full_draft_130_event_23001001_23001002.context.json",
+      "clean_context_file": "contexts/full_draft_130_event_23001001_23001002.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_131_event_23001003_23001004",
+      "source_ids": [
+        "23001003",
+        "23001004"
+      ],
+      "original_context_file": "contexts/full_draft_131_event_23001003_23001004.context.json",
+      "clean_context_file": "contexts/full_draft_131_event_23001003_23001004.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_132_event_23001101_23001102",
+      "source_ids": [
+        "23001101",
+        "23001102"
+      ],
+      "original_context_file": "contexts/full_draft_132_event_23001101_23001102.context.json",
+      "clean_context_file": "contexts/full_draft_132_event_23001101_23001102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_133_event_23001103_23001104",
+      "source_ids": [
+        "23001103",
+        "23001104"
+      ],
+      "original_context_file": "contexts/full_draft_133_event_23001103_23001104.context.json",
+      "clean_context_file": "contexts/full_draft_133_event_23001103_23001104.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_134_event_23001201_23001202",
+      "source_ids": [
+        "23001201",
+        "23001202"
+      ],
+      "original_context_file": "contexts/full_draft_134_event_23001201_23001202.context.json",
+      "clean_context_file": "contexts/full_draft_134_event_23001201_23001202.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_135_event_23001203_23001204",
+      "source_ids": [
+        "23001203",
+        "23001204"
+      ],
+      "original_context_file": "contexts/full_draft_135_event_23001203_23001204.context.json",
+      "clean_context_file": "contexts/full_draft_135_event_23001203_23001204.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_136_event_29000101_29000103",
+      "source_ids": [
+        "29000101",
+        "29000102",
+        "29000103"
+      ],
+      "original_context_file": "contexts/full_draft_136_event_29000101_29000103.context.json",
+      "clean_context_file": "contexts/full_draft_136_event_29000101_29000103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_137_event_29000201_29000202",
+      "source_ids": [
+        "29000201",
+        "29000202"
+      ],
+      "original_context_file": "contexts/full_draft_137_event_29000201_29000202.context.json",
+      "clean_context_file": "contexts/full_draft_137_event_29000201_29000202.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_138_event_29000301_29000302",
+      "source_ids": [
+        "29000301",
+        "29000302"
+      ],
+      "original_context_file": "contexts/full_draft_138_event_29000301_29000302.context.json",
+      "clean_context_file": "contexts/full_draft_138_event_29000301_29000302.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_139_event_29000401_29000402",
+      "source_ids": [
+        "29000401",
+        "29000402"
+      ],
+      "original_context_file": "contexts/full_draft_139_event_29000401_29000402.context.json",
+      "clean_context_file": "contexts/full_draft_139_event_29000401_29000402.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_140_event_29000501_29000502",
+      "source_ids": [
+        "29000501",
+        "29000502"
+      ],
+      "original_context_file": "contexts/full_draft_140_event_29000501_29000502.context.json",
+      "clean_context_file": "contexts/full_draft_140_event_29000501_29000502.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_141_event_29000601_29000602",
+      "source_ids": [
+        "29000601",
+        "29000602"
+      ],
+      "original_context_file": "contexts/full_draft_141_event_29000601_29000602.context.json",
+      "clean_context_file": "contexts/full_draft_141_event_29000601_29000602.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_142_event_29000701_29000702",
+      "source_ids": [
+        "29000701",
+        "29000702"
+      ],
+      "original_context_file": "contexts/full_draft_142_event_29000701_29000702.context.json",
+      "clean_context_file": "contexts/full_draft_142_event_29000701_29000702.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_143_event_29000801_29000802",
+      "source_ids": [
+        "29000801",
+        "29000802"
+      ],
+      "original_context_file": "contexts/full_draft_143_event_29000801_29000802.context.json",
+      "clean_context_file": "contexts/full_draft_143_event_29000801_29000802.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_144_event_29000901_29000902",
+      "source_ids": [
+        "29000901",
+        "29000902"
+      ],
+      "original_context_file": "contexts/full_draft_144_event_29000901_29000902.context.json",
+      "clean_context_file": "contexts/full_draft_144_event_29000901_29000902.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_145_event_29001001_29001002",
+      "source_ids": [
+        "29001001",
+        "29001002"
+      ],
+      "original_context_file": "contexts/full_draft_145_event_29001001_29001002.context.json",
+      "clean_context_file": "contexts/full_draft_145_event_29001001_29001002.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_146_event_29001101_29001102",
+      "source_ids": [
+        "29001101",
+        "29001102"
+      ],
+      "original_context_file": "contexts/full_draft_146_event_29001101_29001102.context.json",
+      "clean_context_file": "contexts/full_draft_146_event_29001101_29001102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_155_story_40101001_40101012",
+      "source_ids": [
+        "40101001",
+        "40101011",
+        "40101012"
+      ],
+      "original_context_file": "contexts/full_draft_155_story_40101001_40101012.context.json",
+      "clean_context_file": "contexts/full_draft_155_story_40101001_40101012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_156_story_40101021_40101023",
+      "source_ids": [
+        "40101021",
+        "40101022",
+        "40101023"
+      ],
+      "original_context_file": "contexts/full_draft_156_story_40101021_40101023.context.json",
+      "clean_context_file": "contexts/full_draft_156_story_40101021_40101023.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_157_story_40101031_40101033",
+      "source_ids": [
+        "40101031",
+        "40101032",
+        "40101033"
+      ],
+      "original_context_file": "contexts/full_draft_157_story_40101031_40101033.context.json",
+      "clean_context_file": "contexts/full_draft_157_story_40101031_40101033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_158_story_40101041_40101043",
+      "source_ids": [
+        "40101041",
+        "40101042",
+        "40101043"
+      ],
+      "original_context_file": "contexts/full_draft_158_story_40101041_40101043.context.json",
+      "clean_context_file": "contexts/full_draft_158_story_40101041_40101043.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_159_story_40101051_40101053",
+      "source_ids": [
+        "40101051",
+        "40101052",
+        "40101053"
+      ],
+      "original_context_file": "contexts/full_draft_159_story_40101051_40101053.context.json",
+      "clean_context_file": "contexts/full_draft_159_story_40101051_40101053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_160_story_40101061_40101063",
+      "source_ids": [
+        "40101061",
+        "40101062",
+        "40101063"
+      ],
+      "original_context_file": "contexts/full_draft_160_story_40101061_40101063.context.json",
+      "clean_context_file": "contexts/full_draft_160_story_40101061_40101063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_161_story_40101071_40101073",
+      "source_ids": [
+        "40101071",
+        "40101072",
+        "40101073"
+      ],
+      "original_context_file": "contexts/full_draft_161_story_40101071_40101073.context.json",
+      "clean_context_file": "contexts/full_draft_161_story_40101071_40101073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_162_story_40101081_40101083",
+      "source_ids": [
+        "40101081",
+        "40101082",
+        "40101083"
+      ],
+      "original_context_file": "contexts/full_draft_162_story_40101081_40101083.context.json",
+      "clean_context_file": "contexts/full_draft_162_story_40101081_40101083.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_163_story_40101091_40101093",
+      "source_ids": [
+        "40101091",
+        "40101092",
+        "40101093"
+      ],
+      "original_context_file": "contexts/full_draft_163_story_40101091_40101093.context.json",
+      "clean_context_file": "contexts/full_draft_163_story_40101091_40101093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_164_story_40101101_40101103",
+      "source_ids": [
+        "40101101",
+        "40101102",
+        "40101103"
+      ],
+      "original_context_file": "contexts/full_draft_164_story_40101101_40101103.context.json",
+      "clean_context_file": "contexts/full_draft_164_story_40101101_40101103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_165_story_40101111_40101113",
+      "source_ids": [
+        "40101111",
+        "40101112",
+        "40101113"
+      ],
+      "original_context_file": "contexts/full_draft_165_story_40101111_40101113.context.json",
+      "clean_context_file": "contexts/full_draft_165_story_40101111_40101113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_166_story_40101121_40101123",
+      "source_ids": [
+        "40101121",
+        "40101122",
+        "40101123"
+      ],
+      "original_context_file": "contexts/full_draft_166_story_40101121_40101123.context.json",
+      "clean_context_file": "contexts/full_draft_166_story_40101121_40101123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_167_story_40101131_40101133",
+      "source_ids": [
+        "40101131",
+        "40101132",
+        "40101133"
+      ],
+      "original_context_file": "contexts/full_draft_167_story_40101131_40101133.context.json",
+      "clean_context_file": "contexts/full_draft_167_story_40101131_40101133.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_168_story_40102001",
+      "source_ids": [
+        "40102001"
+      ],
+      "original_context_file": "contexts/full_draft_168_story_40102001.context.json",
+      "clean_context_file": "contexts/full_draft_168_story_40102001.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_169_story_40102011_40102012",
+      "source_ids": [
+        "40102011",
+        "40102012"
+      ],
+      "original_context_file": "contexts/full_draft_169_story_40102011_40102012.context.json",
+      "clean_context_file": "contexts/full_draft_169_story_40102011_40102012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_170_story_40102021_40102023",
+      "source_ids": [
+        "40102021",
+        "40102022",
+        "40102023"
+      ],
+      "original_context_file": "contexts/full_draft_170_story_40102021_40102023.context.json",
+      "clean_context_file": "contexts/full_draft_170_story_40102021_40102023.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_171_story_40102031_40102033",
+      "source_ids": [
+        "40102031",
+        "40102032",
+        "40102033"
+      ],
+      "original_context_file": "contexts/full_draft_171_story_40102031_40102033.context.json",
+      "clean_context_file": "contexts/full_draft_171_story_40102031_40102033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_172_story_40102051_40102053",
+      "source_ids": [
+        "40102051",
+        "40102052",
+        "40102053"
+      ],
+      "original_context_file": "contexts/full_draft_172_story_40102051_40102053.context.json",
+      "clean_context_file": "contexts/full_draft_172_story_40102051_40102053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_173_story_40102061_40102063",
+      "source_ids": [
+        "40102061",
+        "40102062",
+        "40102063"
+      ],
+      "original_context_file": "contexts/full_draft_173_story_40102061_40102063.context.json",
+      "clean_context_file": "contexts/full_draft_173_story_40102061_40102063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_174_story_40102071_40102073",
+      "source_ids": [
+        "40102071",
+        "40102072",
+        "40102073"
+      ],
+      "original_context_file": "contexts/full_draft_174_story_40102071_40102073.context.json",
+      "clean_context_file": "contexts/full_draft_174_story_40102071_40102073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_175_story_40102081_40102083",
+      "source_ids": [
+        "40102081",
+        "40102082",
+        "40102083"
+      ],
+      "original_context_file": "contexts/full_draft_175_story_40102081_40102083.context.json",
+      "clean_context_file": "contexts/full_draft_175_story_40102081_40102083.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_176_story_40102091_40102093",
+      "source_ids": [
+        "40102091",
+        "40102092",
+        "40102093"
+      ],
+      "original_context_file": "contexts/full_draft_176_story_40102091_40102093.context.json",
+      "clean_context_file": "contexts/full_draft_176_story_40102091_40102093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_177_story_40102101_40102103",
+      "source_ids": [
+        "40102101",
+        "40102102",
+        "40102103"
+      ],
+      "original_context_file": "contexts/full_draft_177_story_40102101_40102103.context.json",
+      "clean_context_file": "contexts/full_draft_177_story_40102101_40102103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_178_story_40102111_40102113",
+      "source_ids": [
+        "40102111",
+        "40102112",
+        "40102113"
+      ],
+      "original_context_file": "contexts/full_draft_178_story_40102111_40102113.context.json",
+      "clean_context_file": "contexts/full_draft_178_story_40102111_40102113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_179_story_40102121_40102123",
+      "source_ids": [
+        "40102121",
+        "40102122",
+        "40102123"
+      ],
+      "original_context_file": "contexts/full_draft_179_story_40102121_40102123.context.json",
+      "clean_context_file": "contexts/full_draft_179_story_40102121_40102123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_180_story_40102131_40102133",
+      "source_ids": [
+        "40102131",
+        "40102132",
+        "40102133"
+      ],
+      "original_context_file": "contexts/full_draft_180_story_40102131_40102133.context.json",
+      "clean_context_file": "contexts/full_draft_180_story_40102131_40102133.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_181_story_40102141_40102143",
+      "source_ids": [
+        "40102141",
+        "40102142",
+        "40102143"
+      ],
+      "original_context_file": "contexts/full_draft_181_story_40102141_40102143.context.json",
+      "clean_context_file": "contexts/full_draft_181_story_40102141_40102143.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_182_story_40103001_40103012",
+      "source_ids": [
+        "40103001",
+        "40103011",
+        "40103012"
+      ],
+      "original_context_file": "contexts/full_draft_182_story_40103001_40103012.context.json",
+      "clean_context_file": "contexts/full_draft_182_story_40103001_40103012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_183_story_40103021_40103023",
+      "source_ids": [
+        "40103021",
+        "40103022",
+        "40103023"
+      ],
+      "original_context_file": "contexts/full_draft_183_story_40103021_40103023.context.json",
+      "clean_context_file": "contexts/full_draft_183_story_40103021_40103023.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_184_story_40103031_40103033",
+      "source_ids": [
+        "40103031",
+        "40103032",
+        "40103033"
+      ],
+      "original_context_file": "contexts/full_draft_184_story_40103031_40103033.context.json",
+      "clean_context_file": "contexts/full_draft_184_story_40103031_40103033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_185_story_40103041_40103043",
+      "source_ids": [
+        "40103041",
+        "40103042",
+        "40103043"
+      ],
+      "original_context_file": "contexts/full_draft_185_story_40103041_40103043.context.json",
+      "clean_context_file": "contexts/full_draft_185_story_40103041_40103043.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_186_story_40103051_40103053",
+      "source_ids": [
+        "40103051",
+        "40103052",
+        "40103053"
+      ],
+      "original_context_file": "contexts/full_draft_186_story_40103051_40103053.context.json",
+      "clean_context_file": "contexts/full_draft_186_story_40103051_40103053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_187_story_40103061_40103063",
+      "source_ids": [
+        "40103061",
+        "40103062",
+        "40103063"
+      ],
+      "original_context_file": "contexts/full_draft_187_story_40103061_40103063.context.json",
+      "clean_context_file": "contexts/full_draft_187_story_40103061_40103063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_188_story_40103071_40103073",
+      "source_ids": [
+        "40103071",
+        "40103072",
+        "40103073"
+      ],
+      "original_context_file": "contexts/full_draft_188_story_40103071_40103073.context.json",
+      "clean_context_file": "contexts/full_draft_188_story_40103071_40103073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_189_story_40103081_40103083",
+      "source_ids": [
+        "40103081",
+        "40103082",
+        "40103083"
+      ],
+      "original_context_file": "contexts/full_draft_189_story_40103081_40103083.context.json",
+      "clean_context_file": "contexts/full_draft_189_story_40103081_40103083.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_190_story_40103091_40103093",
+      "source_ids": [
+        "40103091",
+        "40103092",
+        "40103093"
+      ],
+      "original_context_file": "contexts/full_draft_190_story_40103091_40103093.context.json",
+      "clean_context_file": "contexts/full_draft_190_story_40103091_40103093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_191_story_40103101_40103103",
+      "source_ids": [
+        "40103101",
+        "40103102",
+        "40103103"
+      ],
+      "original_context_file": "contexts/full_draft_191_story_40103101_40103103.context.json",
+      "clean_context_file": "contexts/full_draft_191_story_40103101_40103103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_192_story_40103111_40103113",
+      "source_ids": [
+        "40103111",
+        "40103112",
+        "40103113"
+      ],
+      "original_context_file": "contexts/full_draft_192_story_40103111_40103113.context.json",
+      "clean_context_file": "contexts/full_draft_192_story_40103111_40103113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_193_story_40103121_40103123",
+      "source_ids": [
+        "40103121",
+        "40103122",
+        "40103123"
+      ],
+      "original_context_file": "contexts/full_draft_193_story_40103121_40103123.context.json",
+      "clean_context_file": "contexts/full_draft_193_story_40103121_40103123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_194_story_40103131_40103133",
+      "source_ids": [
+        "40103131",
+        "40103132",
+        "40103133"
+      ],
+      "original_context_file": "contexts/full_draft_194_story_40103131_40103133.context.json",
+      "clean_context_file": "contexts/full_draft_194_story_40103131_40103133.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_195_story_40104001_40104033",
+      "source_ids": [
+        "40104001",
+        "40104023",
+        "40104033"
+      ],
+      "original_context_file": "contexts/full_draft_195_story_40104001_40104033.context.json",
+      "clean_context_file": "contexts/full_draft_195_story_40104001_40104033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_196_story_40104041_40104043",
+      "source_ids": [
+        "40104041",
+        "40104042",
+        "40104043"
+      ],
+      "original_context_file": "contexts/full_draft_196_story_40104041_40104043.context.json",
+      "clean_context_file": "contexts/full_draft_196_story_40104041_40104043.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_197_story_40104051_40104053",
+      "source_ids": [
+        "40104051",
+        "40104052",
+        "40104053"
+      ],
+      "original_context_file": "contexts/full_draft_197_story_40104051_40104053.context.json",
+      "clean_context_file": "contexts/full_draft_197_story_40104051_40104053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_198_story_40104063",
+      "source_ids": [
+        "40104063"
+      ],
+      "original_context_file": "contexts/full_draft_198_story_40104063.context.json",
+      "clean_context_file": "contexts/full_draft_198_story_40104063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_199_story_40104071_40104073",
+      "source_ids": [
+        "40104071",
+        "40104072",
+        "40104073"
+      ],
+      "original_context_file": "contexts/full_draft_199_story_40104071_40104073.context.json",
+      "clean_context_file": "contexts/full_draft_199_story_40104071_40104073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_200_story_40104081_40104083",
+      "source_ids": [
+        "40104081",
+        "40104082",
+        "40104083"
+      ],
+      "original_context_file": "contexts/full_draft_200_story_40104081_40104083.context.json",
+      "clean_context_file": "contexts/full_draft_200_story_40104081_40104083.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_201_story_40104091_40104093",
+      "source_ids": [
+        "40104091",
+        "40104092",
+        "40104093"
+      ],
+      "original_context_file": "contexts/full_draft_201_story_40104091_40104093.context.json",
+      "clean_context_file": "contexts/full_draft_201_story_40104091_40104093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_202_story_40104101_40104103",
+      "source_ids": [
+        "40104101",
+        "40104102",
+        "40104103"
+      ],
+      "original_context_file": "contexts/full_draft_202_story_40104101_40104103.context.json",
+      "clean_context_file": "contexts/full_draft_202_story_40104101_40104103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_203_story_40104111_40104113",
+      "source_ids": [
+        "40104111",
+        "40104112",
+        "40104113"
+      ],
+      "original_context_file": "contexts/full_draft_203_story_40104111_40104113.context.json",
+      "clean_context_file": "contexts/full_draft_203_story_40104111_40104113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_204_story_40104121_40104123",
+      "source_ids": [
+        "40104121",
+        "40104122",
+        "40104123"
+      ],
+      "original_context_file": "contexts/full_draft_204_story_40104121_40104123.context.json",
+      "clean_context_file": "contexts/full_draft_204_story_40104121_40104123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_205_story_40104131_40104133",
+      "source_ids": [
+        "40104131",
+        "40104132",
+        "40104133"
+      ],
+      "original_context_file": "contexts/full_draft_205_story_40104131_40104133.context.json",
+      "clean_context_file": "contexts/full_draft_205_story_40104131_40104133.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_206_story_40105001_40105012",
+      "source_ids": [
+        "40105001",
+        "40105011",
+        "40105012"
+      ],
+      "original_context_file": "contexts/full_draft_206_story_40105001_40105012.context.json",
+      "clean_context_file": "contexts/full_draft_206_story_40105001_40105012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_207_story_40105021_40105023",
+      "source_ids": [
+        "40105021",
+        "40105022",
+        "40105023"
+      ],
+      "original_context_file": "contexts/full_draft_207_story_40105021_40105023.context.json",
+      "clean_context_file": "contexts/full_draft_207_story_40105021_40105023.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_208_story_40105031_40105033",
+      "source_ids": [
+        "40105031",
+        "40105032",
+        "40105033"
+      ],
+      "original_context_file": "contexts/full_draft_208_story_40105031_40105033.context.json",
+      "clean_context_file": "contexts/full_draft_208_story_40105031_40105033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_209_story_40105041_40105043",
+      "source_ids": [
+        "40105041",
+        "40105042",
+        "40105043"
+      ],
+      "original_context_file": "contexts/full_draft_209_story_40105041_40105043.context.json",
+      "clean_context_file": "contexts/full_draft_209_story_40105041_40105043.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_210_story_40105051_40105053",
+      "source_ids": [
+        "40105051",
+        "40105052",
+        "40105053"
+      ],
+      "original_context_file": "contexts/full_draft_210_story_40105051_40105053.context.json",
+      "clean_context_file": "contexts/full_draft_210_story_40105051_40105053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_211_story_40105061_40105063",
+      "source_ids": [
+        "40105061",
+        "40105062",
+        "40105063"
+      ],
+      "original_context_file": "contexts/full_draft_211_story_40105061_40105063.context.json",
+      "clean_context_file": "contexts/full_draft_211_story_40105061_40105063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_212_story_40105071_40105073",
+      "source_ids": [
+        "40105071",
+        "40105072",
+        "40105073"
+      ],
+      "original_context_file": "contexts/full_draft_212_story_40105071_40105073.context.json",
+      "clean_context_file": "contexts/full_draft_212_story_40105071_40105073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_213_story_40105081_40105083",
+      "source_ids": [
+        "40105081",
+        "40105082",
+        "40105083"
+      ],
+      "original_context_file": "contexts/full_draft_213_story_40105081_40105083.context.json",
+      "clean_context_file": "contexts/full_draft_213_story_40105081_40105083.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_214_story_40105091_40105093",
+      "source_ids": [
+        "40105091",
+        "40105092",
+        "40105093"
+      ],
+      "original_context_file": "contexts/full_draft_214_story_40105091_40105093.context.json",
+      "clean_context_file": "contexts/full_draft_214_story_40105091_40105093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_215_story_40105101_40105103",
+      "source_ids": [
+        "40105101",
+        "40105102",
+        "40105103"
+      ],
+      "original_context_file": "contexts/full_draft_215_story_40105101_40105103.context.json",
+      "clean_context_file": "contexts/full_draft_215_story_40105101_40105103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_216_story_40105111_40105113",
+      "source_ids": [
+        "40105111",
+        "40105112",
+        "40105113"
+      ],
+      "original_context_file": "contexts/full_draft_216_story_40105111_40105113.context.json",
+      "clean_context_file": "contexts/full_draft_216_story_40105111_40105113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_217_story_40105121_40105123",
+      "source_ids": [
+        "40105121",
+        "40105122",
+        "40105123"
+      ],
+      "original_context_file": "contexts/full_draft_217_story_40105121_40105123.context.json",
+      "clean_context_file": "contexts/full_draft_217_story_40105121_40105123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_218_story_40106001_40106033",
+      "source_ids": [
+        "40106001",
+        "40106023",
+        "40106033"
+      ],
+      "original_context_file": "contexts/full_draft_218_story_40106001_40106033.context.json",
+      "clean_context_file": "contexts/full_draft_218_story_40106001_40106033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_219_story_40106043_40106063",
+      "source_ids": [
+        "40106043",
+        "40106053",
+        "40106063"
+      ],
+      "original_context_file": "contexts/full_draft_219_story_40106043_40106063.context.json",
+      "clean_context_file": "contexts/full_draft_219_story_40106043_40106063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_220_story_40106073_40106093",
+      "source_ids": [
+        "40106073",
+        "40106083",
+        "40106093"
+      ],
+      "original_context_file": "contexts/full_draft_220_story_40106073_40106093.context.json",
+      "clean_context_file": "contexts/full_draft_220_story_40106073_40106093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_221_story_40106103_40106123",
+      "source_ids": [
+        "40106103",
+        "40106113",
+        "40106123"
+      ],
+      "original_context_file": "contexts/full_draft_221_story_40106103_40106123.context.json",
+      "clean_context_file": "contexts/full_draft_221_story_40106103_40106123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_222_story_40106133",
+      "source_ids": [
+        "40106133"
+      ],
+      "original_context_file": "contexts/full_draft_222_story_40106133.context.json",
+      "clean_context_file": "contexts/full_draft_222_story_40106133.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_223_story_40106141_40106143",
+      "source_ids": [
+        "40106141",
+        "40106142",
+        "40106143"
+      ],
+      "original_context_file": "contexts/full_draft_223_story_40106141_40106143.context.json",
+      "clean_context_file": "contexts/full_draft_223_story_40106141_40106143.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_224_story_40107001_40107012",
+      "source_ids": [
+        "40107001",
+        "40107011",
+        "40107012"
+      ],
+      "original_context_file": "contexts/full_draft_224_story_40107001_40107012.context.json",
+      "clean_context_file": "contexts/full_draft_224_story_40107001_40107012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_225_story_40107021_40107023",
+      "source_ids": [
+        "40107021",
+        "40107022",
+        "40107023"
+      ],
+      "original_context_file": "contexts/full_draft_225_story_40107021_40107023.context.json",
+      "clean_context_file": "contexts/full_draft_225_story_40107021_40107023.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_226_story_40107031_40107033",
+      "source_ids": [
+        "40107031",
+        "40107032",
+        "40107033"
+      ],
+      "original_context_file": "contexts/full_draft_226_story_40107031_40107033.context.json",
+      "clean_context_file": "contexts/full_draft_226_story_40107031_40107033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_227_story_40107041_40107043",
+      "source_ids": [
+        "40107041",
+        "40107042",
+        "40107043"
+      ],
+      "original_context_file": "contexts/full_draft_227_story_40107041_40107043.context.json",
+      "clean_context_file": "contexts/full_draft_227_story_40107041_40107043.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_228_story_40107051_40107053",
+      "source_ids": [
+        "40107051",
+        "40107052",
+        "40107053"
+      ],
+      "original_context_file": "contexts/full_draft_228_story_40107051_40107053.context.json",
+      "clean_context_file": "contexts/full_draft_228_story_40107051_40107053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_229_story_40107061_40107063",
+      "source_ids": [
+        "40107061",
+        "40107062",
+        "40107063"
+      ],
+      "original_context_file": "contexts/full_draft_229_story_40107061_40107063.context.json",
+      "clean_context_file": "contexts/full_draft_229_story_40107061_40107063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_230_story_40107071_40107073",
+      "source_ids": [
+        "40107071",
+        "40107072",
+        "40107073"
+      ],
+      "original_context_file": "contexts/full_draft_230_story_40107071_40107073.context.json",
+      "clean_context_file": "contexts/full_draft_230_story_40107071_40107073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_231_story_40107081_40107083",
+      "source_ids": [
+        "40107081",
+        "40107082",
+        "40107083"
+      ],
+      "original_context_file": "contexts/full_draft_231_story_40107081_40107083.context.json",
+      "clean_context_file": "contexts/full_draft_231_story_40107081_40107083.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_232_story_40107091_40107093",
+      "source_ids": [
+        "40107091",
+        "40107092",
+        "40107093"
+      ],
+      "original_context_file": "contexts/full_draft_232_story_40107091_40107093.context.json",
+      "clean_context_file": "contexts/full_draft_232_story_40107091_40107093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_233_story_40107101_40107103",
+      "source_ids": [
+        "40107101",
+        "40107102",
+        "40107103"
+      ],
+      "original_context_file": "contexts/full_draft_233_story_40107101_40107103.context.json",
+      "clean_context_file": "contexts/full_draft_233_story_40107101_40107103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_234_story_40107111_40107113",
+      "source_ids": [
+        "40107111",
+        "40107112",
+        "40107113"
+      ],
+      "original_context_file": "contexts/full_draft_234_story_40107111_40107113.context.json",
+      "clean_context_file": "contexts/full_draft_234_story_40107111_40107113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_235_story_40107121_40107123",
+      "source_ids": [
+        "40107121",
+        "40107122",
+        "40107123"
+      ],
+      "original_context_file": "contexts/full_draft_235_story_40107121_40107123.context.json",
+      "clean_context_file": "contexts/full_draft_235_story_40107121_40107123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_236_story_40107131_40107133",
+      "source_ids": [
+        "40107131",
+        "40107132",
+        "40107133"
+      ],
+      "original_context_file": "contexts/full_draft_236_story_40107131_40107133.context.json",
+      "clean_context_file": "contexts/full_draft_236_story_40107131_40107133.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_237_story_40108001",
+      "source_ids": [
+        "40108001"
+      ],
+      "original_context_file": "contexts/full_draft_237_story_40108001.context.json",
+      "clean_context_file": "contexts/full_draft_237_story_40108001.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_238_story_40108011_40108012",
+      "source_ids": [
+        "40108011",
+        "40108012"
+      ],
+      "original_context_file": "contexts/full_draft_238_story_40108011_40108012.context.json",
+      "clean_context_file": "contexts/full_draft_238_story_40108011_40108012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_239_story_40108021_40108022_40108023",
+      "source_ids": [
+        "40108021",
+        "40108022",
+        "40108023"
+      ],
+      "original_context_file": "contexts/full_draft_239_story_40108021_40108022_40108023.context.json",
+      "clean_context_file": "contexts/full_draft_239_story_40108021_40108022_40108023.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_240_story_40108031_40108032_40108033",
+      "source_ids": [
+        "40108031",
+        "40108032",
+        "40108033"
+      ],
+      "original_context_file": "contexts/full_draft_240_story_40108031_40108032_40108033.context.json",
+      "clean_context_file": "contexts/full_draft_240_story_40108031_40108032_40108033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_241_story_40108041_40108042_40108043",
+      "source_ids": [
+        "40108041",
+        "40108042",
+        "40108043"
+      ],
+      "original_context_file": "contexts/full_draft_241_story_40108041_40108042_40108043.context.json",
+      "clean_context_file": "contexts/full_draft_241_story_40108041_40108042_40108043.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_242_story_40108051_40108052_40108053",
+      "source_ids": [
+        "40108051",
+        "40108052",
+        "40108053"
+      ],
+      "original_context_file": "contexts/full_draft_242_story_40108051_40108052_40108053.context.json",
+      "clean_context_file": "contexts/full_draft_242_story_40108051_40108052_40108053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_243_story_40108061_40108062_40108063",
+      "source_ids": [
+        "40108061",
+        "40108062",
+        "40108063"
+      ],
+      "original_context_file": "contexts/full_draft_243_story_40108061_40108062_40108063.context.json",
+      "clean_context_file": "contexts/full_draft_243_story_40108061_40108062_40108063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_244_story_40108071_40108072_40108073",
+      "source_ids": [
+        "40108071",
+        "40108072",
+        "40108073"
+      ],
+      "original_context_file": "contexts/full_draft_244_story_40108071_40108072_40108073.context.json",
+      "clean_context_file": "contexts/full_draft_244_story_40108071_40108072_40108073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_245_story_40108101_40108102_40108103",
+      "source_ids": [
+        "40108101",
+        "40108102",
+        "40108103"
+      ],
+      "original_context_file": "contexts/full_draft_245_story_40108101_40108102_40108103.context.json",
+      "clean_context_file": "contexts/full_draft_245_story_40108101_40108102_40108103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_246_story_40108111_40108112_40108113",
+      "source_ids": [
+        "40108111",
+        "40108112",
+        "40108113"
+      ],
+      "original_context_file": "contexts/full_draft_246_story_40108111_40108112_40108113.context.json",
+      "clean_context_file": "contexts/full_draft_246_story_40108111_40108112_40108113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_247_story_40108121_40108122_40108123",
+      "source_ids": [
+        "40108121",
+        "40108122",
+        "40108123"
+      ],
+      "original_context_file": "contexts/full_draft_247_story_40108121_40108122_40108123.context.json",
+      "clean_context_file": "contexts/full_draft_247_story_40108121_40108122_40108123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_248_story_40109001",
+      "source_ids": [
+        "40109001"
+      ],
+      "original_context_file": "contexts/full_draft_248_story_40109001.context.json",
+      "clean_context_file": "contexts/full_draft_248_story_40109001.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_249_story_40109011_40109012",
+      "source_ids": [
+        "40109011",
+        "40109012"
+      ],
+      "original_context_file": "contexts/full_draft_249_story_40109011_40109012.context.json",
+      "clean_context_file": "contexts/full_draft_249_story_40109011_40109012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_250_story_40109021_40109022_40109023",
+      "source_ids": [
+        "40109021",
+        "40109022",
+        "40109023"
+      ],
+      "original_context_file": "contexts/full_draft_250_story_40109021_40109022_40109023.context.json",
+      "clean_context_file": "contexts/full_draft_250_story_40109021_40109022_40109023.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_251_story_40109031_40109032_40109033",
+      "source_ids": [
+        "40109031",
+        "40109032",
+        "40109033"
+      ],
+      "original_context_file": "contexts/full_draft_251_story_40109031_40109032_40109033.context.json",
+      "clean_context_file": "contexts/full_draft_251_story_40109031_40109032_40109033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_252_story_40109041_40109042_40109043",
+      "source_ids": [
+        "40109041",
+        "40109042",
+        "40109043"
+      ],
+      "original_context_file": "contexts/full_draft_252_story_40109041_40109042_40109043.context.json",
+      "clean_context_file": "contexts/full_draft_252_story_40109041_40109042_40109043.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_253_story_40109051_40109052_40109053",
+      "source_ids": [
+        "40109051",
+        "40109052",
+        "40109053"
+      ],
+      "original_context_file": "contexts/full_draft_253_story_40109051_40109052_40109053.context.json",
+      "clean_context_file": "contexts/full_draft_253_story_40109051_40109052_40109053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_254_story_40109061_40109062_40109063",
+      "source_ids": [
+        "40109061",
+        "40109062",
+        "40109063"
+      ],
+      "original_context_file": "contexts/full_draft_254_story_40109061_40109062_40109063.context.json",
+      "clean_context_file": "contexts/full_draft_254_story_40109061_40109062_40109063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_255_story_40109071_40109072_40109073",
+      "source_ids": [
+        "40109071",
+        "40109072",
+        "40109073"
+      ],
+      "original_context_file": "contexts/full_draft_255_story_40109071_40109072_40109073.context.json",
+      "clean_context_file": "contexts/full_draft_255_story_40109071_40109072_40109073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_256_story_40109081_40109082_40109083",
+      "source_ids": [
+        "40109081",
+        "40109082",
+        "40109083"
+      ],
+      "original_context_file": "contexts/full_draft_256_story_40109081_40109082_40109083.context.json",
+      "clean_context_file": "contexts/full_draft_256_story_40109081_40109082_40109083.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_257_story_40109091_40109092_40109093",
+      "source_ids": [
+        "40109091",
+        "40109092",
+        "40109093"
+      ],
+      "original_context_file": "contexts/full_draft_257_story_40109091_40109092_40109093.context.json",
+      "clean_context_file": "contexts/full_draft_257_story_40109091_40109092_40109093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_258_story_40109101_40109102_40109103",
+      "source_ids": [
+        "40109101",
+        "40109102",
+        "40109103"
+      ],
+      "original_context_file": "contexts/full_draft_258_story_40109101_40109102_40109103.context.json",
+      "clean_context_file": "contexts/full_draft_258_story_40109101_40109102_40109103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_259_story_40109111_40109112_40109113",
+      "source_ids": [
+        "40109111",
+        "40109112",
+        "40109113"
+      ],
+      "original_context_file": "contexts/full_draft_259_story_40109111_40109112_40109113.context.json",
+      "clean_context_file": "contexts/full_draft_259_story_40109111_40109112_40109113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_260_story_40109121_40109122_40109123",
+      "source_ids": [
+        "40109121",
+        "40109122",
+        "40109123"
+      ],
+      "original_context_file": "contexts/full_draft_260_story_40109121_40109122_40109123.context.json",
+      "clean_context_file": "contexts/full_draft_260_story_40109121_40109122_40109123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_261_story_40109131_40109132_40109133",
+      "source_ids": [
+        "40109131",
+        "40109132",
+        "40109133"
+      ],
+      "original_context_file": "contexts/full_draft_261_story_40109131_40109132_40109133.context.json",
+      "clean_context_file": "contexts/full_draft_261_story_40109131_40109132_40109133.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_262_story_40110001_40110011_40110012",
+      "source_ids": [
+        "40110001",
+        "40110011",
+        "40110012"
+      ],
+      "original_context_file": "contexts/full_draft_262_story_40110001_40110011_40110012.context.json",
+      "clean_context_file": "contexts/full_draft_262_story_40110001_40110011_40110012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_263_story_40110021_40110022_40110023",
+      "source_ids": [
+        "40110021",
+        "40110022",
+        "40110023"
+      ],
+      "original_context_file": "contexts/full_draft_263_story_40110021_40110022_40110023.context.json",
+      "clean_context_file": "contexts/full_draft_263_story_40110021_40110022_40110023.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_264_story_40110031_40110032_40110033",
+      "source_ids": [
+        "40110031",
+        "40110032",
+        "40110033"
+      ],
+      "original_context_file": "contexts/full_draft_264_story_40110031_40110032_40110033.context.json",
+      "clean_context_file": "contexts/full_draft_264_story_40110031_40110032_40110033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_265_story_40110041_40110042_40110043",
+      "source_ids": [
+        "40110041",
+        "40110042",
+        "40110043"
+      ],
+      "original_context_file": "contexts/full_draft_265_story_40110041_40110042_40110043.context.json",
+      "clean_context_file": "contexts/full_draft_265_story_40110041_40110042_40110043.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_266_story_40110051_40110052_40110053",
+      "source_ids": [
+        "40110051",
+        "40110052",
+        "40110053"
+      ],
+      "original_context_file": "contexts/full_draft_266_story_40110051_40110052_40110053.context.json",
+      "clean_context_file": "contexts/full_draft_266_story_40110051_40110052_40110053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_267_story_40110061_40110062_40110063",
+      "source_ids": [
+        "40110061",
+        "40110062",
+        "40110063"
+      ],
+      "original_context_file": "contexts/full_draft_267_story_40110061_40110062_40110063.context.json",
+      "clean_context_file": "contexts/full_draft_267_story_40110061_40110062_40110063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_268_story_40110071_40110072_40110073",
+      "source_ids": [
+        "40110071",
+        "40110072",
+        "40110073"
+      ],
+      "original_context_file": "contexts/full_draft_268_story_40110071_40110072_40110073.context.json",
+      "clean_context_file": "contexts/full_draft_268_story_40110071_40110072_40110073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_269_story_40110081_40110082_40110083",
+      "source_ids": [
+        "40110081",
+        "40110082",
+        "40110083"
+      ],
+      "original_context_file": "contexts/full_draft_269_story_40110081_40110082_40110083.context.json",
+      "clean_context_file": "contexts/full_draft_269_story_40110081_40110082_40110083.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_270_story_40110091_40110092_40110093",
+      "source_ids": [
+        "40110091",
+        "40110092",
+        "40110093"
+      ],
+      "original_context_file": "contexts/full_draft_270_story_40110091_40110092_40110093.context.json",
+      "clean_context_file": "contexts/full_draft_270_story_40110091_40110092_40110093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_271_story_40110101_40110102_40110103",
+      "source_ids": [
+        "40110101",
+        "40110102",
+        "40110103"
+      ],
+      "original_context_file": "contexts/full_draft_271_story_40110101_40110102_40110103.context.json",
+      "clean_context_file": "contexts/full_draft_271_story_40110101_40110102_40110103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_272_story_40110111_40110112_40110113",
+      "source_ids": [
+        "40110111",
+        "40110112",
+        "40110113"
+      ],
+      "original_context_file": "contexts/full_draft_272_story_40110111_40110112_40110113.context.json",
+      "clean_context_file": "contexts/full_draft_272_story_40110111_40110112_40110113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_273_story_40110121_40110122_40110123",
+      "source_ids": [
+        "40110121",
+        "40110122",
+        "40110123"
+      ],
+      "original_context_file": "contexts/full_draft_273_story_40110121_40110122_40110123.context.json",
+      "clean_context_file": "contexts/full_draft_273_story_40110121_40110122_40110123.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_274_story_40110131_40110132_40110133",
+      "source_ids": [
+        "40110131",
+        "40110132",
+        "40110133"
+      ],
+      "original_context_file": "contexts/full_draft_274_story_40110131_40110132_40110133.context.json",
+      "clean_context_file": "contexts/full_draft_274_story_40110131_40110132_40110133.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_275_story_40110141_40110142_40110143",
+      "source_ids": [
+        "40110141",
+        "40110142",
+        "40110143"
+      ],
+      "original_context_file": "contexts/full_draft_275_story_40110141_40110142_40110143.context.json",
+      "clean_context_file": "contexts/full_draft_275_story_40110141_40110142_40110143.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_276_story_40111001_40111011_40111012",
+      "source_ids": [
+        "40111001",
+        "40111011",
+        "40111012"
+      ],
+      "original_context_file": "contexts/full_draft_276_story_40111001_40111011_40111012.context.json",
+      "clean_context_file": "contexts/full_draft_276_story_40111001_40111011_40111012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_277_story_40111021_40111022_40111023",
+      "source_ids": [
+        "40111021",
+        "40111022",
+        "40111023"
+      ],
+      "original_context_file": "contexts/full_draft_277_story_40111021_40111022_40111023.context.json",
+      "clean_context_file": "contexts/full_draft_277_story_40111021_40111022_40111023.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_278_story_40111031_40111032_40111033",
+      "source_ids": [
+        "40111031",
+        "40111032",
+        "40111033"
+      ],
+      "original_context_file": "contexts/full_draft_278_story_40111031_40111032_40111033.context.json",
+      "clean_context_file": "contexts/full_draft_278_story_40111031_40111032_40111033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_279_story_40111041_40111042_40111043",
+      "source_ids": [
+        "40111041",
+        "40111042",
+        "40111043"
+      ],
+      "original_context_file": "contexts/full_draft_279_story_40111041_40111042_40111043.context.json",
+      "clean_context_file": "contexts/full_draft_279_story_40111041_40111042_40111043.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_280_story_40111051_40111052_40111053",
+      "source_ids": [
+        "40111051",
+        "40111052",
+        "40111053"
+      ],
+      "original_context_file": "contexts/full_draft_280_story_40111051_40111052_40111053.context.json",
+      "clean_context_file": "contexts/full_draft_280_story_40111051_40111052_40111053.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_281_story_40111061_40111062_40111063",
+      "source_ids": [
+        "40111061",
+        "40111062",
+        "40111063"
+      ],
+      "original_context_file": "contexts/full_draft_281_story_40111061_40111062_40111063.context.json",
+      "clean_context_file": "contexts/full_draft_281_story_40111061_40111062_40111063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_282_story_40111071_40111072_40111073",
+      "source_ids": [
+        "40111071",
+        "40111072",
+        "40111073"
+      ],
+      "original_context_file": "contexts/full_draft_282_story_40111071_40111072_40111073.context.json",
+      "clean_context_file": "contexts/full_draft_282_story_40111071_40111072_40111073.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_283_story_40111081_40111082_40111083",
+      "source_ids": [
+        "40111081",
+        "40111082",
+        "40111083"
+      ],
+      "original_context_file": "contexts/full_draft_283_story_40111081_40111082_40111083.context.json",
+      "clean_context_file": "contexts/full_draft_283_story_40111081_40111082_40111083.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_284_story_40111091_40111092_40111093",
+      "source_ids": [
+        "40111091",
+        "40111092",
+        "40111093"
+      ],
+      "original_context_file": "contexts/full_draft_284_story_40111091_40111092_40111093.context.json",
+      "clean_context_file": "contexts/full_draft_284_story_40111091_40111092_40111093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_285_story_40111101_40111102_40111103",
+      "source_ids": [
+        "40111101",
+        "40111102",
+        "40111103"
+      ],
+      "original_context_file": "contexts/full_draft_285_story_40111101_40111102_40111103.context.json",
+      "clean_context_file": "contexts/full_draft_285_story_40111101_40111102_40111103.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_286_story_40111111_40111112_40111113",
+      "source_ids": [
+        "40111111",
+        "40111112",
+        "40111113"
+      ],
+      "original_context_file": "contexts/full_draft_286_story_40111111_40111112_40111113.context.json",
+      "clean_context_file": "contexts/full_draft_286_story_40111111_40111112_40111113.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_287_story_40112001_40112023_40112033",
+      "source_ids": [
+        "40112001",
+        "40112023",
+        "40112033"
+      ],
+      "original_context_file": "contexts/full_draft_287_story_40112001_40112023_40112033.context.json",
+      "clean_context_file": "contexts/full_draft_287_story_40112001_40112023_40112033.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_288_story_40112043_40112053_40112063",
+      "source_ids": [
+        "40112043",
+        "40112053",
+        "40112063"
+      ],
+      "original_context_file": "contexts/full_draft_288_story_40112043_40112053_40112063.context.json",
+      "clean_context_file": "contexts/full_draft_288_story_40112043_40112053_40112063.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_289_story_40112073_40112083_40112093",
+      "source_ids": [
+        "40112073",
+        "40112083",
+        "40112093"
+      ],
+      "original_context_file": "contexts/full_draft_289_story_40112073_40112083_40112093.context.json",
+      "clean_context_file": "contexts/full_draft_289_story_40112073_40112083_40112093.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_290_story_40112103_40112111_40112112",
+      "source_ids": [
+        "40112103",
+        "40112111",
+        "40112112"
+      ],
+      "original_context_file": "contexts/full_draft_290_story_40112103_40112111_40112112.context.json",
+      "clean_context_file": "contexts/full_draft_290_story_40112103_40112111_40112112.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_291_story_40112113_40113001_40113011",
+      "source_ids": [
+        "40112113",
+        "40113001",
+        "40113011"
+      ],
+      "original_context_file": "contexts/full_draft_291_story_40112113_40113001_40113011.context.json",
+      "clean_context_file": "contexts/full_draft_291_story_40112113_40113001_40113011.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_292_story_40113012_40113021_40113022",
+      "source_ids": [
+        "40113012",
+        "40113021",
+        "40113022"
+      ],
+      "original_context_file": "contexts/full_draft_292_story_40113012_40113021_40113022.context.json",
+      "clean_context_file": "contexts/full_draft_292_story_40113012_40113021_40113022.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_293_story_40113023_40113031_40113032",
+      "source_ids": [
+        "40113023",
+        "40113031",
+        "40113032"
+      ],
+      "original_context_file": "contexts/full_draft_293_story_40113023_40113031_40113032.context.json",
+      "clean_context_file": "contexts/full_draft_293_story_40113023_40113031_40113032.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_294_story_40113033_40113041_40113042",
+      "source_ids": [
+        "40113033",
+        "40113041",
+        "40113042"
+      ],
+      "original_context_file": "contexts/full_draft_294_story_40113033_40113041_40113042.context.json",
+      "clean_context_file": "contexts/full_draft_294_story_40113033_40113041_40113042.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_295_story_40113043_40113051_40113052",
+      "source_ids": [
+        "40113043",
+        "40113051",
+        "40113052"
+      ],
+      "original_context_file": "contexts/full_draft_295_story_40113043_40113051_40113052.context.json",
+      "clean_context_file": "contexts/full_draft_295_story_40113043_40113051_40113052.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_296_story_40113053_40113061_40113062",
+      "source_ids": [
+        "40113053",
+        "40113061",
+        "40113062"
+      ],
+      "original_context_file": "contexts/full_draft_296_story_40113053_40113061_40113062.context.json",
+      "clean_context_file": "contexts/full_draft_296_story_40113053_40113061_40113062.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_297_story_40113063_40113071_40113072",
+      "source_ids": [
+        "40113063",
+        "40113071",
+        "40113072"
+      ],
+      "original_context_file": "contexts/full_draft_297_story_40113063_40113071_40113072.context.json",
+      "clean_context_file": "contexts/full_draft_297_story_40113063_40113071_40113072.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_298_story_40113073_40113081_40113082",
+      "source_ids": [
+        "40113073",
+        "40113081",
+        "40113082"
+      ],
+      "original_context_file": "contexts/full_draft_298_story_40113073_40113081_40113082.context.json",
+      "clean_context_file": "contexts/full_draft_298_story_40113073_40113081_40113082.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_299_story_40113083_40113091_40113092",
+      "source_ids": [
+        "40113083",
+        "40113091",
+        "40113092"
+      ],
+      "original_context_file": "contexts/full_draft_299_story_40113083_40113091_40113092.context.json",
+      "clean_context_file": "contexts/full_draft_299_story_40113083_40113091_40113092.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_300_story_40113093_40113101_40113102",
+      "source_ids": [
+        "40113093",
+        "40113101",
+        "40113102"
+      ],
+      "original_context_file": "contexts/full_draft_300_story_40113093_40113101_40113102.context.json",
+      "clean_context_file": "contexts/full_draft_300_story_40113093_40113101_40113102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_302_story_40113113_40113121_40113122",
+      "source_ids": [
+        "40113113",
+        "40113121",
+        "40113122"
+      ],
+      "original_context_file": "contexts/full_draft_302_story_40113113_40113121_40113122.context.json",
+      "clean_context_file": "contexts/full_draft_302_story_40113113_40113121_40113122.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_303_story_40113103_40113111_40113112",
+      "source_ids": [
+        "40113103",
+        "40113111",
+        "40113112"
+      ],
+      "original_context_file": "contexts/full_draft_303_story_40113103_40113111_40113112.context.json",
+      "clean_context_file": "contexts/full_draft_303_story_40113103_40113111_40113112.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_303_story_40113123_40114001_40114011",
+      "source_ids": [
+        "40113123",
+        "40114001",
+        "40114011"
+      ],
+      "original_context_file": "contexts/full_draft_303_story_40113123_40114001_40114011.context.json",
+      "clean_context_file": "contexts/full_draft_303_story_40113123_40114001_40114011.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_304_story_40114012_40114021_40114022",
+      "source_ids": [
+        "40114012",
+        "40114021",
+        "40114022"
+      ],
+      "original_context_file": "contexts/full_draft_304_story_40114012_40114021_40114022.context.json",
+      "clean_context_file": "contexts/full_draft_304_story_40114012_40114021_40114022.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_305_story_40114023_40114031_40114032",
+      "source_ids": [
+        "40114023",
+        "40114031",
+        "40114032"
+      ],
+      "original_context_file": "contexts/full_draft_305_story_40114023_40114031_40114032.context.json",
+      "clean_context_file": "contexts/full_draft_305_story_40114023_40114031_40114032.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_306_story_40114033_40114041_40114042",
+      "source_ids": [
+        "40114033",
+        "40114041",
+        "40114042"
+      ],
+      "original_context_file": "contexts/full_draft_306_story_40114033_40114041_40114042.context.json",
+      "clean_context_file": "contexts/full_draft_306_story_40114033_40114041_40114042.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_307_story_40114043_40114051_40114052",
+      "source_ids": [
+        "40114043",
+        "40114051",
+        "40114052"
+      ],
+      "original_context_file": "contexts/full_draft_307_story_40114043_40114051_40114052.context.json",
+      "clean_context_file": "contexts/full_draft_307_story_40114043_40114051_40114052.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_308_story_40114053_40114061_40114062",
+      "source_ids": [
+        "40114053",
+        "40114061",
+        "40114062"
+      ],
+      "original_context_file": "contexts/full_draft_308_story_40114053_40114061_40114062.context.json",
+      "clean_context_file": "contexts/full_draft_308_story_40114053_40114061_40114062.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_309_story_40114063_40114071_40114072",
+      "source_ids": [
+        "40114063",
+        "40114071",
+        "40114072"
+      ],
+      "original_context_file": "contexts/full_draft_309_story_40114063_40114071_40114072.context.json",
+      "clean_context_file": "contexts/full_draft_309_story_40114063_40114071_40114072.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_310_story_40114073_40114081_40114082",
+      "source_ids": [
+        "40114073",
+        "40114081",
+        "40114082"
+      ],
+      "original_context_file": "contexts/full_draft_310_story_40114073_40114081_40114082.context.json",
+      "clean_context_file": "contexts/full_draft_310_story_40114073_40114081_40114082.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_311_story_40114083_40114091_40114092",
+      "source_ids": [
+        "40114083",
+        "40114091",
+        "40114092"
+      ],
+      "original_context_file": "contexts/full_draft_311_story_40114083_40114091_40114092.context.json",
+      "clean_context_file": "contexts/full_draft_311_story_40114083_40114091_40114092.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_312_story_40114093_40115001_40115011",
+      "source_ids": [
+        "40114093",
+        "40115001",
+        "40115011"
+      ],
+      "original_context_file": "contexts/full_draft_312_story_40114093_40115001_40115011.context.json",
+      "clean_context_file": "contexts/full_draft_312_story_40114093_40115001_40115011.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_313_story_40115012_40115021_40115022",
+      "source_ids": [
+        "40115012",
+        "40115021",
+        "40115022"
+      ],
+      "original_context_file": "contexts/full_draft_313_story_40115012_40115021_40115022.context.json",
+      "clean_context_file": "contexts/full_draft_313_story_40115012_40115021_40115022.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_314_story_40115023_40115031_40115032",
+      "source_ids": [
+        "40115023",
+        "40115031",
+        "40115032"
+      ],
+      "original_context_file": "contexts/full_draft_314_story_40115023_40115031_40115032.context.json",
+      "clean_context_file": "contexts/full_draft_314_story_40115023_40115031_40115032.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_315_story_40115033_40115041_40115042",
+      "source_ids": [
+        "40115033",
+        "40115041",
+        "40115042"
+      ],
+      "original_context_file": "contexts/full_draft_315_story_40115033_40115041_40115042.context.json",
+      "clean_context_file": "contexts/full_draft_315_story_40115033_40115041_40115042.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_316_story_40115043_40115051_40115052",
+      "source_ids": [
+        "40115043",
+        "40115051",
+        "40115052"
+      ],
+      "original_context_file": "contexts/full_draft_316_story_40115043_40115051_40115052.context.json",
+      "clean_context_file": "contexts/full_draft_316_story_40115043_40115051_40115052.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_317_story_40115053_40115061_40115062",
+      "source_ids": [
+        "40115053",
+        "40115061",
+        "40115062"
+      ],
+      "original_context_file": "contexts/full_draft_317_story_40115053_40115061_40115062.context.json",
+      "clean_context_file": "contexts/full_draft_317_story_40115053_40115061_40115062.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_318_story_40115063_40115071_40115072",
+      "source_ids": [
+        "40115063",
+        "40115071",
+        "40115072"
+      ],
+      "original_context_file": "contexts/full_draft_318_story_40115063_40115071_40115072.context.json",
+      "clean_context_file": "contexts/full_draft_318_story_40115063_40115071_40115072.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_319_story_40115073_40115081_40115082",
+      "source_ids": [
+        "40115073",
+        "40115081",
+        "40115082"
+      ],
+      "original_context_file": "contexts/full_draft_319_story_40115073_40115081_40115082.context.json",
+      "clean_context_file": "contexts/full_draft_319_story_40115073_40115081_40115082.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_320_story_40115083_40115091_40115092",
+      "source_ids": [
+        "40115083",
+        "40115091",
+        "40115092"
+      ],
+      "original_context_file": "contexts/full_draft_320_story_40115083_40115091_40115092.context.json",
+      "clean_context_file": "contexts/full_draft_320_story_40115083_40115091_40115092.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_321_story_40115093_40115101_40115102",
+      "source_ids": [
+        "40115093",
+        "40115101",
+        "40115102"
+      ],
+      "original_context_file": "contexts/full_draft_321_story_40115093_40115101_40115102.context.json",
+      "clean_context_file": "contexts/full_draft_321_story_40115093_40115101_40115102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_322_story_40115103_40116001_40116011",
+      "source_ids": [
+        "40115103",
+        "40116001",
+        "40116011"
+      ],
+      "original_context_file": "contexts/full_draft_322_story_40115103_40116001_40116011.context.json",
+      "clean_context_file": "contexts/full_draft_322_story_40115103_40116001_40116011.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_323_story_40116012_40116021_40116022",
+      "source_ids": [
+        "40116012",
+        "40116021",
+        "40116022"
+      ],
+      "original_context_file": "contexts/full_draft_323_story_40116012_40116021_40116022.context.json",
+      "clean_context_file": "contexts/full_draft_323_story_40116012_40116021_40116022.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_324_story_40116023_40116031_40116032",
+      "source_ids": [
+        "40116023",
+        "40116031",
+        "40116032"
+      ],
+      "original_context_file": "contexts/full_draft_324_story_40116023_40116031_40116032.context.json",
+      "clean_context_file": "contexts/full_draft_324_story_40116023_40116031_40116032.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_325_story_40116033_40116041_40116042",
+      "source_ids": [
+        "40116033",
+        "40116041",
+        "40116042"
+      ],
+      "original_context_file": "contexts/full_draft_325_story_40116033_40116041_40116042.context.json",
+      "clean_context_file": "contexts/full_draft_325_story_40116033_40116041_40116042.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_326_story_40116043_40116051_40116052",
+      "source_ids": [
+        "40116043",
+        "40116051",
+        "40116052"
+      ],
+      "original_context_file": "contexts/full_draft_326_story_40116043_40116051_40116052.context.json",
+      "clean_context_file": "contexts/full_draft_326_story_40116043_40116051_40116052.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_327_story_40116053_40117001_40117011",
+      "source_ids": [
+        "40116053",
+        "40117001",
+        "40117011"
+      ],
+      "original_context_file": "contexts/full_draft_327_story_40116053_40117001_40117011.context.json",
+      "clean_context_file": "contexts/full_draft_327_story_40116053_40117001_40117011.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_328_story_40117012_40117021_40117022",
+      "source_ids": [
+        "40117012",
+        "40117021",
+        "40117022"
+      ],
+      "original_context_file": "contexts/full_draft_328_story_40117012_40117021_40117022.context.json",
+      "clean_context_file": "contexts/full_draft_328_story_40117012_40117021_40117022.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_329_story_40117023_40117031_40117032",
+      "source_ids": [
+        "40117023",
+        "40117031",
+        "40117032"
+      ],
+      "original_context_file": "contexts/full_draft_329_story_40117023_40117031_40117032.context.json",
+      "clean_context_file": "contexts/full_draft_329_story_40117023_40117031_40117032.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_330_story_40117033_40117041_40117042",
+      "source_ids": [
+        "40117033",
+        "40117041",
+        "40117042"
+      ],
+      "original_context_file": "contexts/full_draft_330_story_40117033_40117041_40117042.context.json",
+      "clean_context_file": "contexts/full_draft_330_story_40117033_40117041_40117042.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_331_story_40117043_40151011_40151012",
+      "source_ids": [
+        "40117043",
+        "40151011",
+        "40151012"
+      ],
+      "original_context_file": "contexts/full_draft_331_story_40117043_40151011_40151012.context.json",
+      "clean_context_file": "contexts/full_draft_331_story_40117043_40151011_40151012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_332_story_40151013_40152011_40152012",
+      "source_ids": [
+        "40151013",
+        "40152011",
+        "40152012"
+      ],
+      "original_context_file": "contexts/full_draft_332_story_40151013_40152011_40152012.context.json",
+      "clean_context_file": "contexts/full_draft_332_story_40151013_40152011_40152012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_333_story_40152013_40153011_40153012",
+      "source_ids": [
+        "40152013",
+        "40153011",
+        "40153012"
+      ],
+      "original_context_file": "contexts/full_draft_333_story_40152013_40153011_40153012.context.json",
+      "clean_context_file": "contexts/full_draft_333_story_40152013_40153011_40153012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_334_story_40153013_40154011_40154012",
+      "source_ids": [
+        "40153013",
+        "40154011",
+        "40154012"
+      ],
+      "original_context_file": "contexts/full_draft_334_story_40153013_40154011_40154012.context.json",
+      "clean_context_file": "contexts/full_draft_334_story_40153013_40154011_40154012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_335_story_40154013_40155011_40155012",
+      "source_ids": [
+        "40154013",
+        "40155011",
+        "40155012"
+      ],
+      "original_context_file": "contexts/full_draft_335_story_40154013_40155011_40155012.context.json",
+      "clean_context_file": "contexts/full_draft_335_story_40154013_40155011_40155012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_336_story_40155013_40156011_40156012",
+      "source_ids": [
+        "40155013",
+        "40156011",
+        "40156012"
+      ],
+      "original_context_file": "contexts/full_draft_336_story_40155013_40156011_40156012.context.json",
+      "clean_context_file": "contexts/full_draft_336_story_40155013_40156011_40156012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_337_story_40156013_40157011_40157012",
+      "source_ids": [
+        "40156013",
+        "40157011",
+        "40157012"
+      ],
+      "original_context_file": "contexts/full_draft_337_story_40156013_40157011_40157012.context.json",
+      "clean_context_file": "contexts/full_draft_337_story_40156013_40157011_40157012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_338_story_40157013_40158011_40158012",
+      "source_ids": [
+        "40157013",
+        "40158011",
+        "40158012"
+      ],
+      "original_context_file": "contexts/full_draft_338_story_40157013_40158011_40158012.context.json",
+      "clean_context_file": "contexts/full_draft_338_story_40157013_40158011_40158012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_339_story_40158013_40159011_40159012",
+      "source_ids": [
+        "40158013",
+        "40159011",
+        "40159012"
+      ],
+      "original_context_file": "contexts/full_draft_339_story_40158013_40159011_40159012.context.json",
+      "clean_context_file": "contexts/full_draft_339_story_40158013_40159011_40159012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_340_story_40159013_40160011_40160012",
+      "source_ids": [
+        "40159013",
+        "40160011",
+        "40160012"
+      ],
+      "original_context_file": "contexts/full_draft_340_story_40159013_40160011_40160012.context.json",
+      "clean_context_file": "contexts/full_draft_340_story_40159013_40160011_40160012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_341_story_40160013_40161011_40161012",
+      "source_ids": [
+        "40160013",
+        "40161011",
+        "40161012"
+      ],
+      "original_context_file": "contexts/full_draft_341_story_40160013_40161011_40161012.context.json",
+      "clean_context_file": "contexts/full_draft_341_story_40160013_40161011_40161012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_342_story_40161013_40162011_40162012",
+      "source_ids": [
+        "40161013",
+        "40162011",
+        "40162012"
+      ],
+      "original_context_file": "contexts/full_draft_342_story_40161013_40162011_40162012.context.json",
+      "clean_context_file": "contexts/full_draft_342_story_40161013_40162011_40162012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_343_story_40162013_40200011_40200012",
+      "source_ids": [
+        "40162013",
+        "40200011",
+        "40200012"
+      ],
+      "original_context_file": "contexts/full_draft_343_story_40162013_40200011_40200012.context.json",
+      "clean_context_file": "contexts/full_draft_343_story_40162013_40200011_40200012.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_344_story_40200013_40200021_40200022",
+      "source_ids": [
+        "40200013",
+        "40200021",
+        "40200022"
+      ],
+      "original_context_file": "contexts/full_draft_344_story_40200013_40200021_40200022.context.json",
+      "clean_context_file": "contexts/full_draft_344_story_40200013_40200021_40200022.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_345_story_40200023_40200031_40200032",
+      "source_ids": [
+        "40200023",
+        "40200031",
+        "40200032"
+      ],
+      "original_context_file": "contexts/full_draft_345_story_40200023_40200031_40200032.context.json",
+      "clean_context_file": "contexts/full_draft_345_story_40200023_40200031_40200032.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_346_story_40200033_40200041_40200042",
+      "source_ids": [
+        "40200033",
+        "40200041",
+        "40200042"
+      ],
+      "original_context_file": "contexts/full_draft_346_story_40200033_40200041_40200042.context.json",
+      "clean_context_file": "contexts/full_draft_346_story_40200033_40200041_40200042.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_347_story_40200043_40200051_40200052",
+      "source_ids": [
+        "40200043",
+        "40200051",
+        "40200052"
+      ],
+      "original_context_file": "contexts/full_draft_347_story_40200043_40200051_40200052.context.json",
+      "clean_context_file": "contexts/full_draft_347_story_40200043_40200051_40200052.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_348_story_40200053_40200061_40200062",
+      "source_ids": [
+        "40200053",
+        "40200061",
+        "40200062"
+      ],
+      "original_context_file": "contexts/full_draft_348_story_40200053_40200061_40200062.context.json",
+      "clean_context_file": "contexts/full_draft_348_story_40200053_40200061_40200062.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_349_story_40200063_40200071_40200072",
+      "source_ids": [
+        "40200063",
+        "40200071",
+        "40200072"
+      ],
+      "original_context_file": "contexts/full_draft_349_story_40200063_40200071_40200072.context.json",
+      "clean_context_file": "contexts/full_draft_349_story_40200063_40200071_40200072.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_350_story_40200073_40200081_40200082",
+      "source_ids": [
+        "40200073",
+        "40200081",
+        "40200082"
+      ],
+      "original_context_file": "contexts/full_draft_350_story_40200073_40200081_40200082.context.json",
+      "clean_context_file": "contexts/full_draft_350_story_40200073_40200081_40200082.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_351_story_40200083_40200091_40200092",
+      "source_ids": [
+        "40200083",
+        "40200091",
+        "40200092"
+      ],
+      "original_context_file": "contexts/full_draft_351_story_40200083_40200091_40200092.context.json",
+      "clean_context_file": "contexts/full_draft_351_story_40200083_40200091_40200092.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_352_story_40200093_40200101_40200102",
+      "source_ids": [
+        "40200093",
+        "40200101",
+        "40200102"
+      ],
+      "original_context_file": "contexts/full_draft_352_story_40200093_40200101_40200102.context.json",
+      "clean_context_file": "contexts/full_draft_352_story_40200093_40200101_40200102.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_353_story_40200103_40200111_40200112",
+      "source_ids": [
+        "40200103",
+        "40200111",
+        "40200112"
+      ],
+      "original_context_file": "contexts/full_draft_353_story_40200103_40200111_40200112.context.json",
+      "clean_context_file": "contexts/full_draft_353_story_40200103_40200111_40200112.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_354_story_40200113_40200121_40200122",
+      "source_ids": [
+        "40200113",
+        "40200121",
+        "40200122"
+      ],
+      "original_context_file": "contexts/full_draft_354_story_40200113_40200121_40200122.context.json",
+      "clean_context_file": "contexts/full_draft_354_story_40200113_40200121_40200122.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_355_story_40200123_40200131_40200132",
+      "source_ids": [
+        "40200123",
+        "40200131",
+        "40200132"
+      ],
+      "original_context_file": "contexts/full_draft_355_story_40200123_40200131_40200132.context.json",
+      "clean_context_file": "contexts/full_draft_355_story_40200123_40200131_40200132.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_356_story_40200133_40200141_40200142",
+      "source_ids": [
+        "40200133",
+        "40200141",
+        "40200142"
+      ],
+      "original_context_file": "contexts/full_draft_356_story_40200133_40200141_40200142.context.json",
+      "clean_context_file": "contexts/full_draft_356_story_40200133_40200141_40200142.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_357_story_40200143_40200151_40200152",
+      "source_ids": [
+        "40200143",
+        "40200151",
+        "40200152"
+      ],
+      "original_context_file": "contexts/full_draft_357_story_40200143_40200151_40200152.context.json",
+      "clean_context_file": "contexts/full_draft_357_story_40200143_40200151_40200152.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_358_story_40200153_40200161_40200162",
+      "source_ids": [
+        "40200153",
+        "40200161",
+        "40200162"
+      ],
+      "original_context_file": "contexts/full_draft_358_story_40200153_40200161_40200162.context.json",
+      "clean_context_file": "contexts/full_draft_358_story_40200153_40200161_40200162.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_359_story_40200163_40200171_40200172",
+      "source_ids": [
+        "40200163",
+        "40200171",
+        "40200172"
+      ],
+      "original_context_file": "contexts/full_draft_359_story_40200163_40200171_40200172.context.json",
+      "clean_context_file": "contexts/full_draft_359_story_40200163_40200171_40200172.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_360_story_40200173_40200181_40200182",
+      "source_ids": [
+        "40200173",
+        "40200181",
+        "40200182"
+      ],
+      "original_context_file": "contexts/full_draft_360_story_40200173_40200181_40200182.context.json",
+      "clean_context_file": "contexts/full_draft_360_story_40200173_40200181_40200182.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_361_story_40200183_40200191_40200192",
+      "source_ids": [
+        "40200183",
+        "40200191",
+        "40200192"
+      ],
+      "original_context_file": "contexts/full_draft_361_story_40200183_40200191_40200192.context.json",
+      "clean_context_file": "contexts/full_draft_361_story_40200183_40200191_40200192.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_362_story_40200193_40200201_40200202",
+      "source_ids": [
+        "40200193",
+        "40200201",
+        "40200202"
+      ],
+      "original_context_file": "contexts/full_draft_362_story_40200193_40200201_40200202.context.json",
+      "clean_context_file": "contexts/full_draft_362_story_40200193_40200201_40200202.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_363_story_40200203_40200211_40200212",
+      "source_ids": [
+        "40200203",
+        "40200211",
+        "40200212"
+      ],
+      "original_context_file": "contexts/full_draft_363_story_40200203_40200211_40200212.context.json",
+      "clean_context_file": "contexts/full_draft_363_story_40200203_40200211_40200212.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_364_story_40200213_40200221_40200222",
+      "source_ids": [
+        "40200213",
+        "40200221",
+        "40200222"
+      ],
+      "original_context_file": "contexts/full_draft_364_story_40200213_40200221_40200222.context.json",
+      "clean_context_file": "contexts/full_draft_364_story_40200213_40200221_40200222.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_365_story_40200223_40200231_40200232",
+      "source_ids": [
+        "40200223",
+        "40200231",
+        "40200232"
+      ],
+      "original_context_file": "contexts/full_draft_365_story_40200223_40200231_40200232.context.json",
+      "clean_context_file": "contexts/full_draft_365_story_40200223_40200231_40200232.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_366_story_40200233_40200241_40200242",
+      "source_ids": [
+        "40200233",
+        "40200241",
+        "40200242"
+      ],
+      "original_context_file": "contexts/full_draft_366_story_40200233_40200241_40200242.context.json",
+      "clean_context_file": "contexts/full_draft_366_story_40200233_40200241_40200242.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_367_story_40200243_40200251_40200252",
+      "source_ids": [
+        "40200243",
+        "40200251",
+        "40200252"
+      ],
+      "original_context_file": "contexts/full_draft_367_story_40200243_40200251_40200252.context.json",
+      "clean_context_file": "contexts/full_draft_367_story_40200243_40200251_40200252.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_368_story_40200253_40200261_40200262",
+      "source_ids": [
+        "40200253",
+        "40200261",
+        "40200262"
+      ],
+      "original_context_file": "contexts/full_draft_368_story_40200253_40200261_40200262.context.json",
+      "clean_context_file": "contexts/full_draft_368_story_40200253_40200261_40200262.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_369_story_40200263_40200271_40200272",
+      "source_ids": [
+        "40200263",
+        "40200271",
+        "40200272"
+      ],
+      "original_context_file": "contexts/full_draft_369_story_40200263_40200271_40200272.context.json",
+      "clean_context_file": "contexts/full_draft_369_story_40200263_40200271_40200272.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_370_story_40200273_40200281_40200282",
+      "source_ids": [
+        "40200273",
+        "40200281",
+        "40200282"
+      ],
+      "original_context_file": "contexts/full_draft_370_story_40200273_40200281_40200282.context.json",
+      "clean_context_file": "contexts/full_draft_370_story_40200273_40200281_40200282.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_371_story_40200283_40200291_40200292",
+      "source_ids": [
+        "40200283",
+        "40200291",
+        "40200292"
+      ],
+      "original_context_file": "contexts/full_draft_371_story_40200283_40200291_40200292.context.json",
+      "clean_context_file": "contexts/full_draft_371_story_40200283_40200291_40200292.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_372_story_40200293_40200301_40200302",
+      "source_ids": [
+        "40200293",
+        "40200301",
+        "40200302"
+      ],
+      "original_context_file": "contexts/full_draft_372_story_40200293_40200301_40200302.context.json",
+      "clean_context_file": "contexts/full_draft_372_story_40200293_40200301_40200302.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_373_story_40200303_40200311_40200312",
+      "source_ids": [
+        "40200303",
+        "40200311",
+        "40200312"
+      ],
+      "original_context_file": "contexts/full_draft_373_story_40200303_40200311_40200312.context.json",
+      "clean_context_file": "contexts/full_draft_373_story_40200303_40200311_40200312.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_374_story_40200313_40200321_40200322",
+      "source_ids": [
+        "40200313",
+        "40200321",
+        "40200322"
+      ],
+      "original_context_file": "contexts/full_draft_374_story_40200313_40200321_40200322.context.json",
+      "clean_context_file": "contexts/full_draft_374_story_40200313_40200321_40200322.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_375_story_40200323_40200331_40200332",
+      "source_ids": [
+        "40200323",
+        "40200331",
+        "40200332"
+      ],
+      "original_context_file": "contexts/full_draft_375_story_40200323_40200331_40200332.context.json",
+      "clean_context_file": "contexts/full_draft_375_story_40200323_40200331_40200332.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_376_story_40200333_40200341_40200342",
+      "source_ids": [
+        "40200333",
+        "40200341",
+        "40200342"
+      ],
+      "original_context_file": "contexts/full_draft_376_story_40200333_40200341_40200342.context.json",
+      "clean_context_file": "contexts/full_draft_376_story_40200333_40200341_40200342.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_377_story_40200343_40200351_40200352",
+      "source_ids": [
+        "40200343",
+        "40200351",
+        "40200352"
+      ],
+      "original_context_file": "contexts/full_draft_377_story_40200343_40200351_40200352.context.json",
+      "clean_context_file": "contexts/full_draft_377_story_40200343_40200351_40200352.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_378_story_40200353_40200361_40200362",
+      "source_ids": [
+        "40200353",
+        "40200361",
+        "40200362"
+      ],
+      "original_context_file": "contexts/full_draft_378_story_40200353_40200361_40200362.context.json",
+      "clean_context_file": "contexts/full_draft_378_story_40200353_40200361_40200362.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_379_story_40200363_40200371_40200372",
+      "source_ids": [
+        "40200363",
+        "40200371",
+        "40200372"
+      ],
+      "original_context_file": "contexts/full_draft_379_story_40200363_40200371_40200372.context.json",
+      "clean_context_file": "contexts/full_draft_379_story_40200363_40200371_40200372.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_380_story_40200373_40200381_40200382",
+      "source_ids": [
+        "40200373",
+        "40200381",
+        "40200382"
+      ],
+      "original_context_file": "contexts/full_draft_380_story_40200373_40200381_40200382.context.json",
+      "clean_context_file": "contexts/full_draft_380_story_40200373_40200381_40200382.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_381_story_40200383_40200391_40200392",
+      "source_ids": [
+        "40200383",
+        "40200391",
+        "40200392"
+      ],
+      "original_context_file": "contexts/full_draft_381_story_40200383_40200391_40200392.context.json",
+      "clean_context_file": "contexts/full_draft_381_story_40200383_40200391_40200392.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_382_story_40200393_40200401_40200402",
+      "source_ids": [
+        "40200393",
+        "40200401",
+        "40200402"
+      ],
+      "original_context_file": "contexts/full_draft_382_story_40200393_40200401_40200402.context.json",
+      "clean_context_file": "contexts/full_draft_382_story_40200393_40200401_40200402.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_383_story_40200403_40200411_40200412",
+      "source_ids": [
+        "40200403",
+        "40200411",
+        "40200412"
+      ],
+      "original_context_file": "contexts/full_draft_383_story_40200403_40200411_40200412.context.json",
+      "clean_context_file": "contexts/full_draft_383_story_40200403_40200411_40200412.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_384_story_40200413_40200431_40200432",
+      "source_ids": [
+        "40200413",
+        "40200431",
+        "40200432"
+      ],
+      "original_context_file": "contexts/full_draft_384_story_40200413_40200431_40200432.context.json",
+      "clean_context_file": "contexts/full_draft_384_story_40200413_40200431_40200432.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_385_story_40200433_40200443_40200451",
+      "source_ids": [
+        "40200433",
+        "40200443",
+        "40200451"
+      ],
+      "original_context_file": "contexts/full_draft_385_story_40200433_40200443_40200451.context.json",
+      "clean_context_file": "contexts/full_draft_385_story_40200433_40200443_40200451.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_386_story_40200452_40200453_40200461",
+      "source_ids": [
+        "40200452",
+        "40200453",
+        "40200461"
+      ],
+      "original_context_file": "contexts/full_draft_386_story_40200452_40200453_40200461.context.json",
+      "clean_context_file": "contexts/full_draft_386_story_40200452_40200453_40200461.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_387_story_40200462_40200463_40200471",
+      "source_ids": [
+        "40200462",
+        "40200463",
+        "40200471"
+      ],
+      "original_context_file": "contexts/full_draft_387_story_40200462_40200463_40200471.context.json",
+      "clean_context_file": "contexts/full_draft_387_story_40200462_40200463_40200471.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_388_story_40200472_40200473_40200481",
+      "source_ids": [
+        "40200472",
+        "40200473",
+        "40200481"
+      ],
+      "original_context_file": "contexts/full_draft_388_story_40200472_40200473_40200481.context.json",
+      "clean_context_file": "contexts/full_draft_388_story_40200472_40200473_40200481.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_389_story_40200482_40200483_40200493",
+      "source_ids": [
+        "40200482",
+        "40200483",
+        "40200493"
+      ],
+      "original_context_file": "contexts/full_draft_389_story_40200482_40200483_40200493.context.json",
+      "clean_context_file": "contexts/full_draft_389_story_40200482_40200483_40200493.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_390_story_40200501_40200502_40200503",
+      "source_ids": [
+        "40200501",
+        "40200502",
+        "40200503"
+      ],
+      "original_context_file": "contexts/full_draft_390_story_40200501_40200502_40200503.context.json",
+      "clean_context_file": "contexts/full_draft_390_story_40200501_40200502_40200503.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_391_story_40200511_40200512_40200513",
+      "source_ids": [
+        "40200511",
+        "40200512",
+        "40200513"
+      ],
+      "original_context_file": "contexts/full_draft_391_story_40200511_40200512_40200513.context.json",
+      "clean_context_file": "contexts/full_draft_391_story_40200511_40200512_40200513.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_392_story_40200521_40200522_40200523",
+      "source_ids": [
+        "40200521",
+        "40200522",
+        "40200523"
+      ],
+      "original_context_file": "contexts/full_draft_392_story_40200521_40200522_40200523.context.json",
+      "clean_context_file": "contexts/full_draft_392_story_40200521_40200522_40200523.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_393_story_40200531_40200532_40200533",
+      "source_ids": [
+        "40200531",
+        "40200532",
+        "40200533"
+      ],
+      "original_context_file": "contexts/full_draft_393_story_40200531_40200532_40200533.context.json",
+      "clean_context_file": "contexts/full_draft_393_story_40200531_40200532_40200533.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_394_story_40200541_40200542_40200543",
+      "source_ids": [
+        "40200541",
+        "40200542",
+        "40200543"
+      ],
+      "original_context_file": "contexts/full_draft_394_story_40200541_40200542_40200543.context.json",
+      "clean_context_file": "contexts/full_draft_394_story_40200541_40200542_40200543.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_395_story_40200551_40200552_40200553",
+      "source_ids": [
+        "40200551",
+        "40200552",
+        "40200553"
+      ],
+      "original_context_file": "contexts/full_draft_395_story_40200551_40200552_40200553.context.json",
+      "clean_context_file": "contexts/full_draft_395_story_40200551_40200552_40200553.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_396_story_40200561_40200562_40200563",
+      "source_ids": [
+        "40200561",
+        "40200562",
+        "40200563"
+      ],
+      "original_context_file": "contexts/full_draft_396_story_40200561_40200562_40200563.context.json",
+      "clean_context_file": "contexts/full_draft_396_story_40200561_40200562_40200563.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_397_story_40200571_40200572_40200573",
+      "source_ids": [
+        "40200571",
+        "40200572",
+        "40200573"
+      ],
+      "original_context_file": "contexts/full_draft_397_story_40200571_40200572_40200573.context.json",
+      "clean_context_file": "contexts/full_draft_397_story_40200571_40200572_40200573.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_398_story_40200581_40200582_40200583",
+      "source_ids": [
+        "40200581",
+        "40200582",
+        "40200583"
+      ],
+      "original_context_file": "contexts/full_draft_398_story_40200581_40200582_40200583.context.json",
+      "clean_context_file": "contexts/full_draft_398_story_40200581_40200582_40200583.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_399_story_40200591_40200592_40200593",
+      "source_ids": [
+        "40200591",
+        "40200592",
+        "40200593"
+      ],
+      "original_context_file": "contexts/full_draft_399_story_40200591_40200592_40200593.context.json",
+      "clean_context_file": "contexts/full_draft_399_story_40200591_40200592_40200593.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_400_story_40200601_40200602_40200603",
+      "source_ids": [
+        "40200601",
+        "40200602",
+        "40200603"
+      ],
+      "original_context_file": "contexts/full_draft_400_story_40200601_40200602_40200603.context.json",
+      "clean_context_file": "contexts/full_draft_400_story_40200601_40200602_40200603.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_401_story_40200611_40200612_40200613",
+      "source_ids": [
+        "40200611",
+        "40200612",
+        "40200613"
+      ],
+      "original_context_file": "contexts/full_draft_401_story_40200611_40200612_40200613.context.json",
+      "clean_context_file": "contexts/full_draft_401_story_40200611_40200612_40200613.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_402_story_40200621_40200622_40200623",
+      "source_ids": [
+        "40200621",
+        "40200622",
+        "40200623"
+      ],
+      "original_context_file": "contexts/full_draft_402_story_40200621_40200622_40200623.context.json",
+      "clean_context_file": "contexts/full_draft_402_story_40200621_40200622_40200623.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_403_story_40200631_40200632_40200633",
+      "source_ids": [
+        "40200631",
+        "40200632",
+        "40200633"
+      ],
+      "original_context_file": "contexts/full_draft_403_story_40200631_40200632_40200633.context.json",
+      "clean_context_file": "contexts/full_draft_403_story_40200631_40200632_40200633.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_404_story_40200641_40200642_40200643",
+      "source_ids": [
+        "40200641",
+        "40200642",
+        "40200643"
+      ],
+      "original_context_file": "contexts/full_draft_404_story_40200641_40200642_40200643.context.json",
+      "clean_context_file": "contexts/full_draft_404_story_40200641_40200642_40200643.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_405_story_40200651_40200652_40200653",
+      "source_ids": [
+        "40200651",
+        "40200652",
+        "40200653"
+      ],
+      "original_context_file": "contexts/full_draft_405_story_40200651_40200652_40200653.context.json",
+      "clean_context_file": "contexts/full_draft_405_story_40200651_40200652_40200653.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_406_story_40200661_40200662_40200663",
+      "source_ids": [
+        "40200661",
+        "40200662",
+        "40200663"
+      ],
+      "original_context_file": "contexts/full_draft_406_story_40200661_40200662_40200663.context.json",
+      "clean_context_file": "contexts/full_draft_406_story_40200661_40200662_40200663.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_407_story_40200671_40200672_40200673",
+      "source_ids": [
+        "40200671",
+        "40200672",
+        "40200673"
+      ],
+      "original_context_file": "contexts/full_draft_407_story_40200671_40200672_40200673.context.json",
+      "clean_context_file": "contexts/full_draft_407_story_40200671_40200672_40200673.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_408_story_40200681_40200682_40200683",
+      "source_ids": [
+        "40200681",
+        "40200682",
+        "40200683"
+      ],
+      "original_context_file": "contexts/full_draft_408_story_40200681_40200682_40200683.context.json",
+      "clean_context_file": "contexts/full_draft_408_story_40200681_40200682_40200683.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_409_story_40200691_40200692_40200693",
+      "source_ids": [
+        "40200691",
+        "40200692",
+        "40200693"
+      ],
+      "original_context_file": "contexts/full_draft_409_story_40200691_40200692_40200693.context.json",
+      "clean_context_file": "contexts/full_draft_409_story_40200691_40200692_40200693.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_410_story_40200701_40200702_40200703",
+      "source_ids": [
+        "40200701",
+        "40200702",
+        "40200703"
+      ],
+      "original_context_file": "contexts/full_draft_410_story_40200701_40200702_40200703.context.json",
+      "clean_context_file": "contexts/full_draft_410_story_40200701_40200702_40200703.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_411_story_40200713_40200721_40200722",
+      "source_ids": [
+        "40200713",
+        "40200721",
+        "40200722"
+      ],
+      "original_context_file": "contexts/full_draft_411_story_40200713_40200721_40200722.context.json",
+      "clean_context_file": "contexts/full_draft_411_story_40200713_40200721_40200722.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_412_story_40200723_40200731_40200732",
+      "source_ids": [
+        "40200723",
+        "40200731",
+        "40200732"
+      ],
+      "original_context_file": "contexts/full_draft_412_story_40200723_40200731_40200732.context.json",
+      "clean_context_file": "contexts/full_draft_412_story_40200723_40200731_40200732.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_413_story_40200733_40200743_40200751",
+      "source_ids": [
+        "40200733",
+        "40200743",
+        "40200751"
+      ],
+      "original_context_file": "contexts/full_draft_413_story_40200733_40200743_40200751.context.json",
+      "clean_context_file": "contexts/full_draft_413_story_40200733_40200743_40200751.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_414_story_40200752_40200753_40200761",
+      "source_ids": [
+        "40200752",
+        "40200753",
+        "40200761"
+      ],
+      "original_context_file": "contexts/full_draft_414_story_40200752_40200753_40200761.context.json",
+      "clean_context_file": "contexts/full_draft_414_story_40200752_40200753_40200761.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_415_story_40200762_40200763_40200771",
+      "source_ids": [
+        "40200762",
+        "40200763",
+        "40200771"
+      ],
+      "original_context_file": "contexts/full_draft_415_story_40200762_40200763_40200771.context.json",
+      "clean_context_file": "contexts/full_draft_415_story_40200762_40200763_40200771.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_416_story_40200772_40200773_40200781",
+      "source_ids": [
+        "40200772",
+        "40200773",
+        "40200781"
+      ],
+      "original_context_file": "contexts/full_draft_416_story_40200772_40200773_40200781.context.json",
+      "clean_context_file": "contexts/full_draft_416_story_40200772_40200773_40200781.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_417_story_40200782_40200783_40200791",
+      "source_ids": [
+        "40200782",
+        "40200783",
+        "40200791"
+      ],
+      "original_context_file": "contexts/full_draft_417_story_40200782_40200783_40200791.context.json",
+      "clean_context_file": "contexts/full_draft_417_story_40200782_40200783_40200791.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_418_story_40200792_40200793_40200803",
+      "source_ids": [
+        "40200792",
+        "40200793",
+        "40200803"
+      ],
+      "original_context_file": "contexts/full_draft_418_story_40200792_40200793_40200803.context.json",
+      "clean_context_file": "contexts/full_draft_418_story_40200792_40200793_40200803.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_419_story_40200811_40200812_40200813",
+      "source_ids": [
+        "40200811",
+        "40200812",
+        "40200813"
+      ],
+      "original_context_file": "contexts/full_draft_419_story_40200811_40200812_40200813.context.json",
+      "clean_context_file": "contexts/full_draft_419_story_40200811_40200812_40200813.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_420_story_40200821_40200822_40200823",
+      "source_ids": [
+        "40200821",
+        "40200822",
+        "40200823"
+      ],
+      "original_context_file": "contexts/full_draft_420_story_40200821_40200822_40200823.context.json",
+      "clean_context_file": "contexts/full_draft_420_story_40200821_40200822_40200823.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_421_story_40200831_40200832_40200833",
+      "source_ids": [
+        "40200831",
+        "40200832",
+        "40200833"
+      ],
+      "original_context_file": "contexts/full_draft_421_story_40200831_40200832_40200833.context.json",
+      "clean_context_file": "contexts/full_draft_421_story_40200831_40200832_40200833.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_422_story_40200851_40200852_40200853",
+      "source_ids": [
+        "40200851",
+        "40200852",
+        "40200853"
+      ],
+      "original_context_file": "contexts/full_draft_422_story_40200851_40200852_40200853.context.json",
+      "clean_context_file": "contexts/full_draft_422_story_40200851_40200852_40200853.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_423_story_40200861_40200862_40200863",
+      "source_ids": [
+        "40200861",
+        "40200862",
+        "40200863"
+      ],
+      "original_context_file": "contexts/full_draft_423_story_40200861_40200862_40200863.context.json",
+      "clean_context_file": "contexts/full_draft_423_story_40200861_40200862_40200863.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_424_story_40200871_40200872_40200873",
+      "source_ids": [
+        "40200871",
+        "40200872",
+        "40200873"
+      ],
+      "original_context_file": "contexts/full_draft_424_story_40200871_40200872_40200873.context.json",
+      "clean_context_file": "contexts/full_draft_424_story_40200871_40200872_40200873.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_425_story_40200881_40200882_40200883",
+      "source_ids": [
+        "40200881",
+        "40200882",
+        "40200883"
+      ],
+      "original_context_file": "contexts/full_draft_425_story_40200881_40200882_40200883.context.json",
+      "clean_context_file": "contexts/full_draft_425_story_40200881_40200882_40200883.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_426_story_40200891_40200892_40200893",
+      "source_ids": [
+        "40200891",
+        "40200892",
+        "40200893"
+      ],
+      "original_context_file": "contexts/full_draft_426_story_40200891_40200892_40200893.context.json",
+      "clean_context_file": "contexts/full_draft_426_story_40200891_40200892_40200893.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_427_story_40200901_40200902_40200903",
+      "source_ids": [
+        "40200901",
+        "40200902",
+        "40200903"
+      ],
+      "original_context_file": "contexts/full_draft_427_story_40200901_40200902_40200903.context.json",
+      "clean_context_file": "contexts/full_draft_427_story_40200901_40200902_40200903.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_428_story_40200911_40200912_40200913",
+      "source_ids": [
+        "40200911",
+        "40200912",
+        "40200913"
+      ],
+      "original_context_file": "contexts/full_draft_428_story_40200911_40200912_40200913.context.json",
+      "clean_context_file": "contexts/full_draft_428_story_40200911_40200912_40200913.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_429_story_40200921_40200922_40200923",
+      "source_ids": [
+        "40200921",
+        "40200922",
+        "40200923"
+      ],
+      "original_context_file": "contexts/full_draft_429_story_40200921_40200922_40200923.context.json",
+      "clean_context_file": "contexts/full_draft_429_story_40200921_40200922_40200923.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_430_story_40200931_40200932_40200933",
+      "source_ids": [
+        "40200931",
+        "40200932",
+        "40200933"
+      ],
+      "original_context_file": "contexts/full_draft_430_story_40200931_40200932_40200933.context.json",
+      "clean_context_file": "contexts/full_draft_430_story_40200931_40200932_40200933.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_431_story_40200951_40200952_40200953",
+      "source_ids": [
+        "40200951",
+        "40200952",
+        "40200953"
+      ],
+      "original_context_file": "contexts/full_draft_431_story_40200951_40200952_40200953.context.json",
+      "clean_context_file": "contexts/full_draft_431_story_40200951_40200952_40200953.context.json",
+      "contains_knowledge_change": false
+    },
+    {
+      "variant_id": "full_draft_432_story_40500106_99900003",
+      "source_ids": [
+        "40500106"
+      ],
+      "original_context_file": "contexts/full_draft_432_story_40500106_99900003.context.json",
+      "clean_context_file": "contexts/full_draft_432_story_40500106_99900003.context.json",
+      "contains_knowledge_change": false
+    }
+  ]
+}
