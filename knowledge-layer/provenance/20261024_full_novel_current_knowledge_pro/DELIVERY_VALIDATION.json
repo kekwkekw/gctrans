@@ -1,0 +1,20 @@
+{
+  "schema": "gctrans.current_knowledge_pro_delivery_validation.v1",
+  "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+  "status": "PASS",
+  "issues": [],
+  "sources": 1499,
+  "rows": 114243,
+  "changes": 3242,
+  "holds": 16,
+  "outcomes": {
+    "accept_variant": 1007,
+    "patch_variant": 489,
+    "hold": 3
+  },
+  "canonical_batches": 422,
+  "clean_contexts": 431,
+  "knowledge_changes": 2,
+  "expected_active_knowledge": 3535,
+  "duplicate_sources": 30
+}

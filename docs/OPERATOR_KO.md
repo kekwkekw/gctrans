@@ -67,6 +67,14 @@ python -X utf8 tools/update/cli.py novel prepare --repo . --batch work/novels/<b
 
 `sha256`을 추가하면 저장 원문의 정확한 bytes를 확인한다. 이 입력 방식은 자체적으로 게임 서버의 최신 여부를 확인하지 않는다. `--state-root`는 scan snapshot에서 시작한 작업의 완료 기록에 사용한다.
 
+현재 Novel 사전에 보존된 JP exact key를 특정 checkout 기준의 재번역 입력으로 사용할 때에는 다음처럼 `--source-current-jp-keys`를 사용한다. 이 경로는 fresh crawl이나 TextAsset을 확인했다는 뜻이 아니며 `--reason legacy_retranslation`과 명시적인 `--source-id`가 필요하다.
+
+```powershell
+python -X utf8 tools/update/cli.py novel prepare --repo . --batch work/novels/<batch> --source-current-jp-keys --source-id <source-id> --reason legacy_retranslation
+```
+
+각 대상 사전의 JP key는 현재 순서 그대로 `source/<id>.keys.json`에 고정된다. 기존 KO는 snapshot이나 초벌 입력에 포함하지 않는다. 현재 Master `mNovels.ml_title[]`의 JP와 파일 내 key가 유일하게 exact 일치하면 해당 key를 표시 제목으로 기록한다. 일치가 없거나 둘 이상이면 공식 제목을 추정하지 않고 `Novel <source-id>`를 중립 표시명으로 쓴다. 표시 제목 때문에 key 순서나 번역 대상은 바뀌지 않는다. 이 입력의 `message_index_0based`는 사전의 JP key 순번이며, 확인하지 않은 `speaker`, `command`, `physical_line_1based`, `raw_field_bytes`는 `null`이다. `batch.json`의 `source_kind`, `row_basis`, 기준 commit, 대상 경로·preimage hash를 통해 TextAsset 기반 입력과 구분한다. 적용 시 대상 사전의 동시 변경은 기존 preimage 검사로 거부하며, 성공한 재번역 뒤에는 고정 snapshot을 다시 읽으므로 정상 재실행이 source 변경으로 오인되지 않는다.
+
 ### 3. PRO 검수
 
 초벌이 끝나면 다음 명령으로 파일 검사를 하고 PRO 검수 파일을 만든다.

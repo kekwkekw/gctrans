@@ -23,6 +23,9 @@ from update.process_lock import ProcessFileLock
 
 POLICY_SHA256 = "3aca17a2f12c76ca9c17d939a8f68e769b1eeefe54c8b52f6912d5f73f77922e"
 SCHEMA = "gc-novel-batch-v1"
+CURRENT_KEYS_SCHEMA = "gc-novel-current-jp-keys-v1"
+CURRENT_KEYS_KIND = "current_novel_exact_keys"
+CURRENT_KEYS_ROW_BASIS = "current_runtime_dictionary_exact_key_ordinal_0based"
 FIELDS = {"title": 1, "message": 2, "msgvoicesync": 3}
 ROW_FIELDS = ("row_id", "source_id", "message_index_0based", "physical_line_1based",
               "command", "speaker", "jp", "raw_field_bytes")
@@ -45,6 +48,11 @@ def file_hash(path):
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(encode(value))
+
+
+def encode_novel_payload(value):
+    """Serialize a Novel mapping without reordering its exact JP keys."""
+    return (json.dumps(value, ensure_ascii=False, sort_keys=False, indent=2) + "\n").encode("utf-8")
 
 
 def source_id(value):
@@ -101,12 +109,105 @@ def _jsonl_bytes(rows):
     return b"".join((json.dumps(row, ensure_ascii=False, sort_keys=True, allow_nan=False) + "\n").encode("utf-8") for row in rows)
 
 
+def _current_key_snapshot(snapshot, raw, snapshot_path):
+    require(snapshot.get("schema") == CURRENT_KEYS_SCHEMA, "Invalid current Novel JP-key snapshot")
+    identity = source_id(snapshot.get("source_id"))
+    require(snapshot.get("source_kind") == CURRENT_KEYS_KIND, "Invalid current Novel source kind")
+    require(snapshot.get("row_basis") == CURRENT_KEYS_ROW_BASIS, "Invalid current Novel row basis")
+    require(isinstance(snapshot.get("basis_commit"), str) or snapshot.get("basis_commit") is None,
+            "Invalid current Novel basis commit")
+    require(isinstance(snapshot.get("target_path"), str) and snapshot["target_path"], "Missing current Novel target path")
+    require(snapshot["target_path"] == f"translations/ko/novels/{identity}.json", "Current Novel target path differs")
+    require(isinstance(snapshot.get("target_sha256_at_capture"), str) and re.fullmatch(r"[0-9a-f]{64}", snapshot["target_sha256_at_capture"]),
+            "Invalid current Novel target hash")
+    keys = snapshot.get("keys")
+    require(isinstance(keys, list) and keys and len(keys) == len(set(keys)), "Invalid or duplicate current Novel JP keys")
+    require(all(isinstance(key, str) and key and "\x00" not in key for key in keys), "Invalid current Novel JP key")
+    has_display_title = "display_title" in snapshot
+    if has_display_title:
+        title = snapshot["display_title"]
+        title_basis = snapshot.get("display_title_basis")
+        title_ordinal = snapshot.get("display_title_key_ordinal_1based")
+        require(isinstance(title, str) and title, "Invalid current Novel display title")
+        require(title_basis in {"master_mNovels_ml_title_exact_unique", "neutral_source_id_no_unique_master_match"},
+                "Invalid current Novel display title basis")
+        if title_basis == "master_mNovels_ml_title_exact_unique":
+            require(type(title_ordinal) is int and 1 <= title_ordinal <= len(keys) and keys[title_ordinal - 1] == title,
+                    "Current Novel display title ordinal differs")
+        else:
+            require(title == f"Novel {identity}" and title_ordinal is None, "Invalid neutral current Novel display title")
+    else:
+        # Compatibility for batches prepared before display-title provenance
+        # was recorded. Do not rewrite their immutable snapshots.
+        title, title_basis, title_ordinal = keys[0], "first_exact_key_display_only", 1
+    rows = [{"row_id": f"{identity}:{index}", "source_id": identity,
+             "message_index_0based": index, "physical_line_1based": None,
+             "command": None, "speaker": None, "jp": jp, "raw_field_bytes": None}
+            for index, jp in enumerate(keys)]
+    info = {"source_id": identity, "title": title,
+            "title_basis": title_basis, "source_kind": CURRENT_KEYS_KIND,
+            "row_basis": CURRENT_KEYS_ROW_BASIS, "basis_commit": snapshot["basis_commit"],
+            "target_path": snapshot["target_path"],
+            "target_sha256_at_capture": snapshot["target_sha256_at_capture"],
+            "snapshot_path": str(snapshot_path), "snapshot_sha256": digest(raw),
+            "snapshot_size": len(raw), "rows": rows}
+    if has_display_title:
+        info["title_key_ordinal_1based"] = title_ordinal
+    return info
+
+
+def _capture_current_keys(repo, identity, basis_commit, snapshot_path, master_titles):
+    identity = source_id(identity)
+    target_relative = f"translations/ko/novels/{identity}.json"
+    target = repo / target_relative
+    require(target.is_file(), f"Missing current Novel target: {identity}")
+    target_raw = target.read_bytes()
+    mapping = read_json(target)
+    require(target.read_bytes() == target_raw, f"Current Novel target changed while capturing: {identity}")
+    require(isinstance(mapping, dict) and mapping, f"Invalid current Novel target: {identity}")
+    keys = list(mapping)
+    title_matches = [(index + 1, key) for index, key in enumerate(keys) if key in master_titles]
+    if len(title_matches) == 1:
+        title_ordinal, display_title = title_matches[0]
+        display_title_basis = "master_mNovels_ml_title_exact_unique"
+    else:
+        title_ordinal, display_title = None, f"Novel {identity}"
+        display_title_basis = "neutral_source_id_no_unique_master_match"
+    snapshot = {"schema": CURRENT_KEYS_SCHEMA, "source_id": identity,
+                "source_kind": CURRENT_KEYS_KIND, "row_basis": CURRENT_KEYS_ROW_BASIS,
+                "basis_commit": basis_commit, "target_path": target_relative,
+                "target_sha256_at_capture": digest(target_raw), "display_title": display_title,
+                "display_title_basis": display_title_basis,
+                "display_title_key_ordinal_1based": title_ordinal, "keys": keys}
+    raw = encode(snapshot)
+    return _current_key_snapshot(snapshot, raw, snapshot_path), raw
+
+
 def _collect(input_spec):
     """Read selected original files again at every boundary, never a saved proof."""
     selected = input_spec["source_ids"]
     require(selected and len(selected) == len(set(selected)), "Select unique source ids")
     for item in selected:
         source_id(item)
+    if input_spec["kind"] == CURRENT_KEYS_KIND:
+        snapshots = input_spec.get("snapshots")
+        require(isinstance(snapshots, list), "Missing current Novel JP-key snapshots")
+        require(len(snapshots) == len(selected) and {item.get("source_id") for item in snapshots} == set(selected),
+                "Current Novel JP-key snapshot coverage differs")
+        output = []
+        for identity in selected:
+            matches = [item for item in snapshots if item.get("source_id") == identity]
+            require(len(matches) == 1, f"Missing or ambiguous current Novel snapshot {identity}")
+            item = matches[0]
+            path = Path(item["path"])
+            raw = path.read_bytes()
+            require(digest(raw) == item.get("sha256"), f"Current Novel JP-key snapshot changed: {identity}")
+            snapshot = read_json(path)
+            info = _current_key_snapshot(snapshot, raw, path)
+            require(info["source_id"] == identity, f"Current Novel JP-key snapshot identity changed: {identity}")
+            require(info["basis_commit"] == input_spec.get("basis_commit"), f"Current Novel basis commit changed: {identity}")
+            output.append((info, raw))
+        return output
     if input_spec["kind"] == "saved_textassets":
         path = Path(input_spec["path"])
         document = read_json(path)
@@ -155,16 +256,35 @@ def _collect(input_spec):
     return output
 
 
-def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, raw_root=None,
+def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, source_current_jp_keys=False, raw_root=None,
                   source_ids=(), register=(), state_root=None, reason="source_update", knowledge_max_chars=40000):
     """Create a local draft workspace; no translation or semantic verdict occurs."""
     from translation_knowledge import load_current, project
     repo, batch = Path(repo).resolve(), Path(batch).resolve()
-    require((source_manifest is None) != (source_snapshot is None), "Choose one source input")
+    choices = sum((source_manifest is not None, source_snapshot is not None, source_current_jp_keys is True))
+    require(choices == 1, "Choose one source input")
     require(not batch.exists(), "Batch folder already exists")
     require(not any(batch.is_relative_to(repo / p) for p in ("translations", "translation", ".git")), "Batch must be outside production files")
     policy = _policy(repo)
-    if source_manifest is not None:
+    head = subprocess.run(["git", "-C", str(repo), "rev-parse", "HEAD"], capture_output=True, text=True)
+    basis_commit = head.stdout.strip() if head.returncode == 0 else None
+    if source_current_jp_keys:
+        require(source_ids, "Current Novel JP-key input requires --source-id")
+        require(len(source_ids) == len(set(source_ids)), "Select unique source ids")
+        require(raw_root is None and state_root is None, "Current Novel JP-key input does not use raw-root or state-root")
+        require(reason == "legacy_retranslation", "Current Novel JP-key input requires legacy_retranslation reason")
+        master = read_json(repo / "translations/ko/master.json")
+        master_titles = master.get("mNovels", {}).get("ml_title[]")
+        require(isinstance(master_titles, dict), "Missing Master mNovels.ml_title[] display-title reference")
+        snapshot_items, captured = [], []
+        for identity in source_ids:
+            snapshot_path = (batch / "source" / (source_id(identity) + ".keys.json")).resolve()
+            info, raw = _capture_current_keys(repo, identity, basis_commit, snapshot_path, set(master_titles))
+            snapshot_items.append({"source_id": identity, "path": str(snapshot_path), "sha256": digest(raw)})
+            captured.append((info, raw))
+        spec = {"kind": CURRENT_KEYS_KIND, "source_ids": list(source_ids),
+                "basis_commit": basis_commit, "snapshots": snapshot_items, "state_root": None}
+    elif source_manifest is not None:
         path = Path(source_manifest).resolve()
         if not source_ids:
             source_ids = [row["source_id"] for row in read_json(path)["sources"]]
@@ -175,7 +295,8 @@ def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, ra
         spec = {"kind": "source_snapshot", "path": str(Path(source_snapshot).resolve()),
                 "raw_root": str(Path(raw_root).resolve()), "source_ids": list(source_ids),
                 "state_root": str(Path(state_root).resolve()) if state_root else None}
-    captured = _collect(spec)
+    if not source_current_jp_keys:
+        captured = _collect(spec)
     require(set(register) <= set(spec["source_ids"]), "Register only explicitly selected Novel ids")
     require(reason in {"source_update", "legacy_retranslation", "translation_correction"}, "Invalid work reason")
     require(type(knowledge_max_chars) is int and knowledge_max_chars > 0, "Knowledge context size must be positive")
@@ -184,14 +305,25 @@ def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, ra
     names = read_json(package / "names.json")
     rows = [row for info, _ in captured for row in info["rows"]]
     speakers = sorted({row["speaker"] for row in rows if row["speaker"]})
-    context = {"names": {name: names.get(name) for name in speakers},
+    mentioned_names = sorted(name for name in names if name and any(name in row["jp"] for row in rows)) if source_current_jp_keys else []
+    reference_names = sorted(set(speakers) | set(mentioned_names))
+    context = {"names": {name: names.get(name) for name in reference_names},
+               "names_reference_basis": ("exact current Names keys found in JP text; reference only, not speaker/entity attribution"
+                                         if source_current_jp_keys else "parsed exact speakers"),
                "knowledge": project(load_current(repo), speakers=speakers,
                                     source_ids=spec["source_ids"], jp_texts=[row["jp"] for row in rows], max_chars=knowledge_max_chars)}
-    head = subprocess.run(["git", "-C", str(repo), "rev-parse", "HEAD"], capture_output=True, text=True)
-    document = {"schema": SCHEMA, "reason": reason, "base_commit": head.stdout.strip() if head.returncode == 0 else None,
+    target_preimages = ({info["source_id"]: info["target_sha256_at_capture"] for info, _ in captured}
+                        if source_current_jp_keys else
+                        {identity: file_hash(package / f"novels/{identity}.json") for identity in spec["source_ids"]})
+    if source_current_jp_keys:
+        require(all(file_hash(repo / info["target_path"]) == target_preimages[info["source_id"]] for info, _ in captured),
+                "Current Novel target changed during prepare")
+    document = {"schema": SCHEMA, "reason": reason, "base_commit": basis_commit,
                 "policy_sha256": POLICY_SHA256, "source_input": spec,
+                "source_kind": spec["kind"],
+                "row_basis": CURRENT_KEYS_ROW_BASIS if source_current_jp_keys else "parsed_textasset_message_index_0based",
                 "sources": [info for info, _ in captured], "register": sorted(set(register)),
-                "target_preimages": {identity: file_hash(package / f"novels/{identity}.json") for identity in spec["source_ids"]},
+                "target_preimages": target_preimages,
                 "previous_registration": {identity: identity in manifest["novels"] for identity in spec["source_ids"]},
                 "context_sha256": digest(encode(context))}
     document_hash = digest(encode(document))
@@ -200,7 +332,8 @@ def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, ra
     batch.mkdir(parents=True)
     try:
         for info, raw in captured:
-            path = batch / "source" / (info["source_id"] + ".txt")
+            suffix = ".keys.json" if spec["kind"] == CURRENT_KEYS_KIND else ".txt"
+            path = batch / "source" / (info["source_id"] + suffix)
             path.parent.mkdir(exist_ok=True)
             path.write_bytes(raw)
         (batch / "HOLD_POLICY.md").write_bytes(policy)
@@ -210,8 +343,10 @@ def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, ra
         (batch / "TASK.md").write_text(
             "# Novel 번역 작업\n\n"
             "1. `HOLD_POLICY.md` 원본을 읽고 그 파일만 HOLD 정책으로 사용합니다.\n"
-            "2. `source/` 전체 장면과 `draft.json`의 JP/speaker를 읽습니다. JP와 행 식별 필드는 바꾸지 않습니다.\n"
-            "3. `context.json`의 적용 범위와 상태를 확인합니다. 현재 JP가 우선이며 Names는 exact speaker 표시값입니다.\n"
+            "2. `source/`의 고정 입력과 `draft.json`의 JP/행 식별자를 읽습니다. JP와 행 식별 필드는 바꾸지 않습니다. "
+            "JP-key 입력의 null speaker/command/physical locator는 실제 TextAsset을 확인하지 않았다는 뜻입니다.\n"
+            "3. `context.json`의 적용 범위와 상태를 확인합니다. 현재 JP가 우선이며 Names는 exact speaker 또는 "
+            "JP 문자열에서 찾은 참고 표시값입니다. 참고 표시는 실제 화자·entity 확정이 아닙니다.\n"
             "4. Codex는 각 행의 `hold`를 true/false로 판정합니다. HOLD 행은 `reason`을 적고 `ko`를 비워 둬도 됩니다. "
             "나머지 행의 `ko`를 번역하고 태그·변수·줄바꿈을 보존합니다. 지식 변경은 `changes`에 제안합니다.\n"
             "5. `novel review`가 구조를 검사하고 HOLD 표시문을 넣은 `review.json`을 생성합니다. "
@@ -254,7 +389,8 @@ def _load_batch(repo, batch):
     captured = _collect(document["source_input"])
     require([info for info, _ in captured] == document["sources"], "Selected source changed since draft preparation")
     for info, raw in captured:
-        require((batch / "source" / (info["source_id"] + ".txt")).read_bytes() == raw, "Batch source copy changed")
+        suffix = ".keys.json" if document["source_input"]["kind"] == CURRENT_KEYS_KIND else ".txt"
+        require((batch / "source" / (info["source_id"] + suffix)).read_bytes() == raw, "Batch source copy changed")
     return document
 
 
@@ -397,7 +533,7 @@ def _reviewed(repo, batch, review_path):
     manifest = read_json(package / "manifest.json")
     for identity, payload in payloads.items():
         current_hash = file_hash(package / f"novels/{identity}.json")
-        require(current_hash in (document["target_preimages"][identity], digest(encode(payload))), f"Target translation changed: {identity}")
+        require(current_hash in (document["target_preimages"][identity], digest(encode_novel_payload(payload))), f"Target translation changed: {identity}")
         current_registration = identity in manifest["novels"]
         desired_registration = document["previous_registration"][identity] or identity in document["register"]
         require(current_registration in (document["previous_registration"][identity], desired_registration), f"Target registration changed: {identity}")
@@ -475,7 +611,7 @@ def apply_review(repo, batch, review):
             added, modified = [], []
             for identity, payload in payloads.items():
                 relative = f"novels/{identity}.json"
-                raw = encode(payload)
+                raw = encode_novel_payload(payload)
                 if not (stage / relative).exists():
                     added.append(relative)
                 elif (stage / relative).read_bytes() != raw:
@@ -504,12 +640,22 @@ def apply_review(repo, batch, review):
                 updates[knowledge_path] = current_records_raw
             holds_path = repo / "translation/holds.jsonl"
             holds = [item for item in _jsonl(holds_path) if item.get("source_id") not in payloads]
-            source_hashes = {item["source_id"]: item["sha256"] for item in document["sources"]}
-            holds.extend({"source_id": row["source_id"], "row_id": row["row_id"],
+            source_info = {item["source_id"]: item for item in document["sources"]}
+            for row in rows:
+                if not row["hold"]:
+                    continue
+                item = source_info[row["source_id"]]
+                record = {"source_id": row["source_id"], "row_id": row["row_id"],
                           "message_index_0based": row["message_index_0based"], "physical_line_1based": row["physical_line_1based"],
-                          "source_sha256": source_hashes[row["source_id"]], "jp_sha256": digest(row["jp"].encode("utf-8")),
-                          "placeholder": row["ko"], "reason": row["reason"], "policy_sha256": POLICY_SHA256,
-                          "review_id": reviewed["review_id"]} for row in rows if row["hold"])
+                          "jp_sha256": digest(row["jp"].encode("utf-8")), "placeholder": row["ko"],
+                          "reason": row["reason"], "policy_sha256": POLICY_SHA256, "review_id": reviewed["review_id"]}
+                if item.get("source_kind") == CURRENT_KEYS_KIND:
+                    record["source_snapshot_sha256"] = item["snapshot_sha256"]
+                    record["source_kind"] = CURRENT_KEYS_KIND
+                    record["row_basis"] = CURRENT_KEYS_ROW_BASIS
+                else:
+                    record["source_sha256"] = item["sha256"]
+                holds.append(record)
             holds_raw = _jsonl_bytes(sorted(holds, key=lambda item: (item["source_id"], item["row_id"])))
             if (holds_path.read_bytes() if holds_path.exists() else b"") != holds_raw:
                 updates[holds_path] = holds_raw
@@ -536,7 +682,7 @@ def apply_review(repo, batch, review):
                 reviewed_sources = [{"source_id": item["source_id"], "asset_key": item["asset_key"],
                                      "textasset_sha256": item["sha256"], "extractor": item["extractor"]} for item in document["sources"]]
                 result["intake_completion"] = complete_novel_batch(Path(spec["state_root"]), snapshot, reviewed_sources,
-                    review_id=reviewed["review_id"], payloads={f"novels/{identity}.json": digest(encode(value)) for identity, value in payloads.items()})
+                    review_id=reviewed["review_id"], payloads={f"novels/{identity}.json": digest(encode_novel_payload(value)) for identity, value in payloads.items()})
             except (ValueError, OSError, KeyError) as error:
                 result["status"] = "APPLIED_LOCAL_COMPLETION_PENDING"
                 result["intake_completion"] = {"error": str(error), "retry": "Repeat the same apply; current reviewed payloads are checked again"}
@@ -562,6 +708,7 @@ def main(arguments=None):
     source = prepare.add_mutually_exclusive_group(required=True)
     source.add_argument("--source-manifest", type=Path)
     source.add_argument("--source-snapshot", type=Path)
+    source.add_argument("--source-current-jp-keys", action="store_true")
     prepare.add_argument("--raw-root", type=Path)
     prepare.add_argument("--state-root", type=Path)
     prepare.add_argument("--source-id", action="append", default=[])
@@ -572,7 +719,8 @@ def main(arguments=None):
     try:
         if args.command == "prepare":
             result = prepare_batch(args.repo, args.batch, source_manifest=args.source_manifest,
-                                   source_snapshot=args.source_snapshot, raw_root=args.raw_root, source_ids=args.source_id,
+                                   source_snapshot=args.source_snapshot, source_current_jp_keys=args.source_current_jp_keys,
+                                   raw_root=args.raw_root, source_ids=args.source_id,
                                    register=args.register, state_root=args.state_root, reason=args.reason, knowledge_max_chars=args.knowledge_max_chars)
         elif args.command == "review":
             result = prepare_review(args.repo, args.batch)

@@ -17,3 +17,5 @@
 /scripts/__init__.py -text
 /docs/** -text
 /translation/** -text
+/knowledge-layer/provenance/20261024_current_knowledge_cleanup/** -text
+/knowledge-layer/provenance/20261024_full_novel_current_knowledge_pro/** -text

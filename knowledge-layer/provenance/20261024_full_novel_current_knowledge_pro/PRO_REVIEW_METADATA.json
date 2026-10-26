@@ -1,0 +1,38 @@
+{
+  "schema": "gctrans.pro_review_metadata.v1",
+  "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+  "completed": true,
+  "basis": {
+    "draft_handoff": "GC_ChatGPT_PRO_Handoff_20261024.zip",
+    "knowledge_cleanup": "GC_CurrentKnowledge_Cleanup_20261024.zip",
+    "previous_pro_outputs_authority": "NONE; candidate issues were rechecked against JP/current Names/current Knowledge"
+  },
+  "counts": {
+    "sources": 1499,
+    "rows": 114243,
+    "changes": 3242,
+    "holds": 16,
+    "outcomes": {
+      "accept_variant": 1007,
+      "patch_variant": 489,
+      "hold": 3
+    },
+    "duplicate_sources": 30,
+    "canonical_batches": 422,
+    "clean_contexts": 431,
+    "knowledge_changes": 2,
+    "expected_active_knowledge": 3535
+  },
+  "category_counts": {
+    "イマージュ → 이마쥬": 753,
+    "기존 의미·고유명사·문법 후보 재검수": 164,
+    "Names 정본 교정": 723,
+    "音精 → 음정령": 15,
+    "대화 외곽 「」 복원": 1215,
+    "현행 고유명사 정본": 358,
+    "현행 인물 정본": 19,
+    "현행 호칭 정본": 9,
+    "개별 의미 교정": 5
+  },
+  "validation_status": "PASS"
+}

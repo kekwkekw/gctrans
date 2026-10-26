@@ -1,0 +1,10 @@
+{
+  "review_id": "GC-FULL-1499-CURRENT-KNOWLEDGE-PRO-20261024",
+  "inputs": {
+    "handoff_manifest": "499893afb024c635b45fd9fd04bf129d3dffb802f6f2c2884b9fc7c8b5ecde88",
+    "handoff_file_sums": "7266a7e593b8f69e9d2a4f81409ace59973d970ecb0db7339b0249549b45f8c4",
+    "cleaned_knowledge": "cf1908b411eb08eebb0d8dce25b429fcdde9d6aa559b87e4da5685b59fa69e58",
+    "hold_policy": "3aca17a2f12c76ca9c17d939a8f68e769b1eeefe54c8b52f6912d5f73f77922e",
+    "operator": "cc47d7e7bcefc2589ac69d3c5b3918e9f476f9a1c45cbca2f9601db2a5cd69cb"
+  }
+}
