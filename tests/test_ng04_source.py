@@ -16,7 +16,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.update import source_scan as source
-from tools.update.novel_bridge import create_intake_references, consume_intake_reference, current_source_references
+from tools.update.novel_intake import create_intake_references, consume_intake_reference, current_source_references
 
 OBSERVATIONS = {}
 

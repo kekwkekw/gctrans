@@ -1,4 +1,4 @@
-"""Documentation/branch migration regressions; no game, network or account access."""
+"""Current documentation/build layout regressions; no game, network or account access."""
 from pathlib import Path
 import ast
 import json
@@ -10,17 +10,13 @@ import tempfile
 import unittest
 from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = ('COMPREHENSIVE_RESTORE_KO.md','EXTERNAL_DEPENDENCIES_KO.md','GEOMETRY_RESTORATION_KO.md',
- 'LAUNCH_PROCEDURE_KO.md','NETWORK_PREPARE_FIX_KO.md','OPERATOR_KO.md','PROJECT_NATIVE_TEST_POLICY_KO.md',
- 'PROJECT_STABLE_QUALIFICATION_POLICY_KO.md','PUBLICATION_KO.md','README.md','REPRODUCE_KO.md',
- 'RESTORATION_CLOSEOUT_KO.md','RESTORATION_MIGRATION_KO.md','RETIRED_PIPELINES_KO.md',
- 'SCENARIO_DISPLAY_APPLY_KO.md','STABLE_QUALIFICATION_KO.md','SUPPORT_SCOPE_KO.md',
- 'UI_PLAN_RESTART_HANDOFF_KO.md','UI_REGRESSION_FIX_KO.md','UI_REGRESSION_R2_PROMOTION_KO.md',
- 'UPSTREAM_ATTRIBUTION_KO.md')
+DOCS = ('INDEX.md','EXTERNAL_DEPENDENCIES_KO.md','LAUNCH_PROCEDURE_KO.md','OPERATOR_KO.md',
+ 'PROJECT_NATIVE_TEST_POLICY_KO.md','PROJECT_STABLE_QUALIFICATION_POLICY_KO.md','PUBLICATION_KO.md',
+ 'REPRODUCE_KO.md','SUPPORT_SCOPE_KO.md','UPSTREAM_ATTRIBUTION_KO.md')
 class RepositoryLayoutTests(unittest.TestCase):
     def test_only_entrypoint_readme_in_root(self):
         self.assertEqual(['README.md'], sorted(p.name for p in ROOT.glob('*.md')))
-    def test_all_original_docs_preserved(self):
+    def test_current_operating_docs_preserved(self):
         self.assertTrue(all((ROOT/'docs'/p).is_file() for p in DOCS))
         self.assertTrue((ROOT/'docs/INDEX.md').is_file())
     def test_local_document_links_resolve(self):
@@ -44,15 +40,16 @@ class RepositoryLayoutTests(unittest.TestCase):
         self.assertIn('/git/ref/heads/main',src)
     def test_document_newlines_and_workflow_reference(self):
         self.assertIn('/docs/** -text',(ROOT/'.gitattributes').read_text())
-        text=(ROOT/'.github/workflows/update_translation.yml').read_text()
-        self.assertIn('Use docs/OPERATOR_KO.md',text)
+        text=(ROOT/'.github/workflows/crawl_only.yml').read_text()
         self.assertIn('contents: read',text)
-    def test_branch_custody_is_not_acceptance(self):
-        record=json.loads((ROOT/'docs/BRANCH_RETIREMENT.json').read_bytes())
-        self.assertFalse(record['release_or_runtime_approval'])
-        self.assertNotIn('main',{x['name'] for x in record['branches']})
-        self.assertEqual(len(record['branches']),len({x['name'] for x in record['branches']}))
-        self.assertTrue(all(re.fullmatch('[0-9a-f]{40}',x['head']) for x in record['branches']))
+        self.assertTrue((ROOT/'docs/OPERATOR_KO.md').is_file())
+    def test_current_build_input_and_license_are_present(self):
+        import hashlib
+        for name,digest in {
+            'source/build/Common.props':'58c8828d1331e79d26d4f0c727664bad7f1951c7748973940e00cc2a13e08d48',
+            'THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE':'606688d2ae1f70514f42b8e27b3b9a1201cce3263d1349754426c273ee4fb732',
+        }.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest)
+        self.assertIn('../build/Common.props',(ROOT/'source/GCMod.Candidate/GCMod.Candidate.csproj').read_text())
     def test_real_committed_export_has_moved_docs(self):
         # The caller uses a disposable clone/fixture. Never add/commit a user checkout.
         if not (ROOT/'.git').exists(): self.skipTest('A committed isolated checkout is required')
@@ -60,7 +57,10 @@ class RepositoryLayoutTests(unittest.TestCase):
             out=Path(tmp)/'export'
             p=subprocess.run([sys.executable,str(ROOT/'tools/export_git_rc.py'),'--repo',str(ROOT),'--ref','HEAD','--output',str(out)],capture_output=True,text=True)
             self.assertEqual(0,p.returncode,p.stderr+p.stdout)
-            for name in DOCS:self.assertEqual((ROOT/'docs'/name).read_bytes(),(out/'docs'/name).read_bytes())
+            names=subprocess.check_output(['git','-C',str(ROOT),'ls-tree','-r','--name-only','HEAD','--','docs/']).decode().splitlines()
+            for name in names:
+                expected=subprocess.check_output(['git','-C',str(ROOT),'show','HEAD:'+name])
+                self.assertEqual(expected,(out/name).read_bytes())
             self.assertFalse((out/'OPERATOR_KO.md').exists())
             self.assertTrue((out/'README.md').is_file())
             self.assertTrue((out/'scripts/__init__.py').is_file())

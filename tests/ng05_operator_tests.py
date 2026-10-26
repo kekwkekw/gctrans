@@ -1,7 +1,7 @@
 """NG05 product command/review/work boundaries. Semantic edits are disposable.
 
-WB completion tests here use an explicitly labelled transaction stub; the real
-unmodified WB replay is separate and cannot be replaced by these tests.
+Source work tests cover pending, retry, collision and eligibility restoration.
+PRO-reviewed completion is covered by the current Novel integration tests.
 """
 import copy,json,subprocess,sys,tempfile,unittest
 from pathlib import Path
@@ -12,8 +12,8 @@ from build_manifests import encode
 from update.diff_review import fingerprint,source_snapshot_input,compare,source_fingerprint,apply_row
 from update.apply_review import apply_review,freeze_input,validate_review
 from update.operator_review import plan_ui_edit,plan_master_key,apply_package_ui,apply_master_key
-from update.intake_work import reconcile,mark_failed,validate_apply_link,complete_after_apply
-from update.novel_bridge import create_intake_references
+from update.source_work import reconcile,mark_failed
+from update.novel_intake import create_intake_references
 from update.source_scan import SourceProfile,scan_inventory
 from ng04_apply_tests import small_package,ui_inputs,source,ActualIO
 
@@ -97,55 +97,13 @@ class OperatorTests(unittest.TestCase):
     def test_C01_first_pending_second_no_new_and_failed_retry(self):
         snapshot,first=self.queue();self.assertEqual(first['new_work'],1);key=first['actionable'][0]['work_id']
         _,second=self.queue();self.assertEqual(second['new_work'],0);self.assertEqual(len(second['actionable']),1)
-        mark_failed(self.area/'src',snapshot['profile'],key,'INTERRUPTED_WB');_,third=self.queue();self.assertEqual(third['actionable'][0]['status'],'failed');self.assertEqual(third['new_work'],0)
+        mark_failed(self.area/'src',snapshot['profile'],key,'DRAFT_INTERRUPTED');_,third=self.queue();self.assertEqual(third['actionable'][0]['status'],'failed');self.assertEqual(third['new_work'],0)
     def test_C02_collision_all_held_restored_and_repack_no_new(self):
         _,first=self.queue('repack1');_,second=self.queue('repack2');self.assertEqual(second['new_work'],0);self.assertEqual(second['repack_same_script'],1)
         _,collision=self.queue('repack2',extra=True);self.assertEqual(len(collision['actionable']),0);self.assertEqual(collision['held'],1)
         _,restored=self.queue('repack2');self.assertEqual(len(restored['actionable']),1)
-    def test_C03_completion_requires_WB_physical_and_published_apply(self):
-        snapshot,queue=self.queue();work=queue['actionable'][0];ref=work['reference'];locator={'raw_textasset_sha256':ref['textasset']['sha256'],'parser':'synthetic-WB-transaction-stub','transform':{},'position_mapping':{},'parser_view_sha256':'1'*64,'source_chain_digest':'2'*64};key=fingerprint(locator)
-        pin={'size':len(json.dumps(locator,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()),'sha256':key}
-        snapshot['qualified_sources']={key:dict(pin,source_id=ref['source_id'],asset_key=ref['asset_key'])};snapshot['qualified_locators']={key:locator}
-        from update.novel_bridge import bind_existing_wb_scene
-        from update.source_scan import digest
-        scene={'schema':'WB19_BOUND_SOURCE_QUALIFIED_SCENE_V1','rows':[{'source_locator':locator}]};scene_path=self.area/'synthetic-bound-scene.json';scene_path.write_bytes(encode(scene))
-        bound=bind_existing_wb_scene(snapshot,scene_path,digest(scene_path.read_bytes()),ref['source_id'],ref['asset_key'],self.area/'raw')
-        self.assertEqual(bound['qualified_sources'][key],snapshot['qualified_sources'][key])
-        link={'state_root':str(self.area/'src'),'work_ids':[work['work_id']]};op={'review_id':'EXPLICIT_CPU_TRANSACTION_STUB','reviewed_source_refs':{key:pin},'old_ko':{'novels/99999999.json':'3'*64},'m4_plan':{'path':'synthetic-not-WB','sha256':'4'*64}}
-        basis=validate_apply_link(link,snapshot,op)
-        self.assertRaisesRegex(ValueError,'ACCEPTANCE_REQUIRED',complete_after_apply,link,snapshot,op,basis,self.owned,{'accepted_return_verified':False})
-        complete_after_apply(link,snapshot,op,basis,self.owned,{'accepted_return_verified':True,'payloads':{'novels/99999999.json':b'{}'}})
-        _,again=self.queue();self.assertEqual(len(again['actionable']),0);self.assertEqual(again['completed'],1)
-        _,changed=self.queue('changed-script');self.assertEqual(changed['new_work'],1)
-    def test_C04_actual_apply_completion_fault_resume_and_aborted_intent(self):
-        from update.apply_review import resume_intake_completion
-        from update.source_scan import digest
-        source_id=next(iter(read_json(self.owned/'manifest.json')['novels']));snapshot,queue=self.queue(source_id=source_id)
-        work=queue['actionable'][0];ref=work['reference'];locator={'raw_textasset_sha256':ref['textasset']['sha256'],'parser':'EXPLICIT_SYNTHETIC_TRANSACTION_STUB','transform':{},'position_mapping':{},'parser_view_sha256':'1'*64,'source_chain_digest':'2'*64};key=fingerprint(locator)
-        pin={'size':len(json.dumps(locator,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()),'sha256':key}
-        snapshot['qualified_sources']={key:dict(pin,source_id=source_id,asset_key=ref['asset_key'])};snapshot['qualified_locators']={key:locator}
-        file='novels/'+source_id+'.json';raw=(self.owned/file).read_bytes()
-        op={'review_id':'APPLY-WB-TRANSACTION-STUB','decision':'APPROVE','operation':'accepted_return','workbench_root':'EXPLICIT_STUB_NOT_REAL_WB','implementation_sha256':'5'*64,'m4_plan':{'path':'STUB','sha256':'6'*64},'reviewed_source_refs':{key:pin},'old_ko':{file:digest(raw)},'intake_work':{'state_root':str(self.area/'src'),'work_ids':[work['work_id']]}}
-        review={'schema':'gc-ng03-reviewed-change-set-v1','novel_returns':[op]};returned={'payloads':{file:raw},'accepted_return_verified':True}
-        # NO_CHANGE return with abort before authoring CAS cannot complete work.
-        apply_review(self.owned,{'schema':'gc-ng03-reviewed-change-set-v1'},{},None,self.state)
-        def abort(point):
-            if point=='before_authoring_select':raise OSError('SYNTHETIC_ABORT')
-        with patch('update.novel_bridge.validate_accepted_return',return_value=returned):
-            self.assertRaisesRegex(OSError,'SYNTHETIC_ABORT',apply_review,self.owned,review,snapshot,None,self.state,fault=abort)
-        self.assertEqual(resume_intake_completion(self.state)['results'],[])
-        review['rows']=self.ui()['rows']
-        with patch('update.novel_bridge.validate_accepted_return',return_value=returned),patch('update.intake_work.complete_after_apply',side_effect=OSError('SYNTHETIC_LATE_STATE_WRITE_FAILURE')):
-            result=apply_review(self.owned,review,snapshot,None,self.state)
-        self.assertEqual(result['status'],'PASS');self.assertEqual(result['intake_completion'][0]['status'],'HELD_COMPLETION')
-        # An unrelated subsequent authoring generation cannot lose completion of
-        # the already committed WB apply; an aborted sibling cannot authorize it.
-        current=Path(result['next_package']);second=plan_ui_edit(current,self.resource['id'],'CPU later correction')['review'];second['rows'][0]['decision']='APPROVE'
-        apply_review(current,second,{},None,self.state)
-        self.assertEqual(resume_intake_completion(self.state)['results'][0]['status'],'COMPLETED')
-        _,again=self.queue(source_id=source_id);self.assertEqual(again['actionable'],[])
 
 if __name__=='__main__':
     result=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(OperatorTests))
-    report={'schema':'gc-ng05-operator-product-tests-v1','status':'PASS' if result.wasSuccessful() else 'FAIL','count':result.testsRun,'failures':len(result.failures)+len(result.errors),'semantic_changes':'DISPOSABLE_FIXTURES_ONLY','WB_queue_completion':'SYNTHETIC_TRANSACTION_STUB_NOT_REAL_WB','native':'NOT_RUN','game':'NOT_RUN'}
+    report={'schema':'gc-ng05-operator-product-tests-v1','status':'PASS' if result.wasSuccessful() else 'FAIL','count':result.testsRun,'failures':len(result.failures)+len(result.errors),'semantic_changes':'DISPOSABLE_FIXTURES_ONLY','source_work':'PENDING_RETRY_COLLISION_RESTORATION','native':'NOT_RUN','game':'NOT_RUN'}
     (ROOT/'tests/NG05_OPERATOR_TEST_RESULTS.json').write_bytes(encode(report));raise SystemExit(0 if result.wasSuccessful() else 1)

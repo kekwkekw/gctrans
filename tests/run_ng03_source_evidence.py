@@ -1,4 +1,4 @@
-"""Reproducible actual product CPU, local PC raw and existing M4 bridge evidence.
+"""Reproducible actual product CPU, local PC raw source evidence.
 
 External inputs are explicit, read-only. Raw/decoded/candidate outputs belong in
 private disposable scratch outside the exported candidate repository.
@@ -16,7 +16,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.update.source_scan import atomic_json, digest
-from tools.update.novel_bridge import wb_scene_source_references, validate_accepted_return
 
 
 def run(args):
@@ -31,7 +30,7 @@ def run(args):
         "actual_webgl_metadata": "NOT_RUN", "actual_webgl_bundle_acquisition": "NOT_RUN",
         "actual_pc_master": "NOT_RUN", "actual_pc_ui": {"status": "PARTIAL", "reason": "PC_UI_SUPPORTED_SOURCE_ADAPTER_REQUIRED"},
         "actual_pc_novel": {"status": "PARTIAL", "reason": "PC_SOURCE_LOCATOR_REQUIRED_FOR_REQUESTED_CURRENT_SOURCE"},
-        "existing_m4_bridge": "NOT_RUN", "native_hook_installation": "NOT_RUN", "game_validation": "NOT_RUN",
+ "native_hook_installation": "NOT_RUN", "game_validation": "NOT_RUN",
         "publications": "NOT_PERFORMED", "XUnity": "OFF", "game_actions": 0, "installation_writes": 0,
         "credential_material_in_export": False}
     if args.report.exists():
@@ -40,10 +39,6 @@ def run(args):
             report["actual_webgl_metadata"] = previous.get("actual_webgl_metadata", "NOT_RUN")
         if not args.pc_master:
             report["actual_pc_master"] = previous.get("actual_pc_master", "NOT_RUN")
-        if not args.workbench_root or not args.m4_plan:
-            report["existing_m4_bridge"] = previous.get("existing_m4_bridge", "NOT_RUN")
-            if "m4_negative_cases" in previous:
-                report["m4_negative_cases"] = previous["m4_negative_cases"]
     (args.report.parent / "NG03_SOURCE_TESTS.log").write_text(log.getvalue(), encoding="utf-8")
     if args.pc_master:
         from scripts.crawl_only import parser, run as scan
@@ -97,43 +92,6 @@ def run(args):
                 "jp_sha256": digest(row["jp"].encode("utf-8")), "master_input_sha256": digest(master_raw),
                 "target_context_unique": True, "discarded_cpu_probe": True,
                 "ko_files_changed": 0, "semantic_review_created": False}
-    if args.workbench_root and args.m4_plan:
-        raw = args.m4_plan.read_bytes()
-        plan = json.loads(raw)
-        refs, old = {}, {}
-        for job in plan["jobs"]:
-            argv = job["wb20_args"]
-            scene = json.loads(Path(argv[argv.index("--bound-scene") + 1]).read_bytes())
-            refs.update(wb_scene_source_references(scene))
-            relative = "novels/" + job["script_id"] + ".json"
-            old[relative] = digest((args.current_package / relative).read_bytes())
-        operation = {"workbench_root": str(args.workbench_root),
-                     "implementation_sha256": digest((args.workbench_root / "wb/local_release_cli.py").read_bytes()),
-                     "m4_plan": {"path": str(args.m4_plan), "sha256": digest(raw)},
-                     "reviewed_source_refs": refs, "old_ko": old}
-        try:
-            result = validate_accepted_return(operation, args.current_package, refs, output / "m4-positive")
-            report["existing_m4_bridge"] = {"status": "PASS_ACTUAL_EXISTING_WB20_M4_REPLAY",
-                "existing_jobs_replayed": result["wb_result"]["current_input_replays"], "qualified_sources": len(result["qualified_sources"]),
-                "returned_novel_files": len(result["touched"]), "returned_payload_sha256": {p: digest(b) for p, b in result["payloads"].items()},
-                "historical_raw_index_invented": False, "automatic_registration": False,
-                "new_acceptance_created": False, "return_files_applied_to_ng03": False}
-        except ValueError as error:
-            report["existing_m4_bridge"] = {"status": "PARTIAL", "reason": str(error)}
-        negatives = {}
-        changed_refs = dict(refs)
-        first = next(iter(changed_refs))
-        changed_refs[first] = {**changed_refs[first], "sha256": "0" * 64}
-        try:
-            validate_accepted_return(operation, args.current_package, changed_refs, output / "m4-stale-source")
-        except ValueError as error:
-            negatives["stale_source"] = str(error)
-        changed_operation = {**operation, "old_ko": {**old, next(iter(old)): "0" * 64}}
-        try:
-            validate_accepted_return(changed_operation, args.current_package, refs, output / "m4-stale-ko")
-        except ValueError as error:
-            negatives["concurrent_ko"] = str(error)
-        report["m4_negative_cases"] = negatives
     if args.observe_known_source:
         import httpx
         from tools.update.source_http import fetch_json
@@ -166,8 +124,6 @@ if __name__ == "__main__":
     p.add_argument("--report", type=Path, required=True)
     p.add_argument("--pc-master", type=Path)
     p.add_argument("--private-helper", type=Path)
-    p.add_argument("--workbench-root", type=Path)
-    p.add_argument("--m4-plan", type=Path)
     p.add_argument("--current-package", type=Path, default=ROOT / "translations/ko")
     p.add_argument("--observe-known-source", action="store_true")
     raise SystemExit(run(p.parse_args()))

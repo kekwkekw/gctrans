@@ -9,10 +9,9 @@
 /scripts/crypto.py -text
 /.gitignore -text
 /candidate/** -text
-/donor_recovery/** -text
+/THIRD_PARTY_LICENSES/** -text
 /*.md -text
 /.github/workflows/crawl_only.yml -text
-/.github/workflows/update_translation.yml -text
 /NuGet.Config -text
 /scripts/__init__.py -text
 /docs/** -text

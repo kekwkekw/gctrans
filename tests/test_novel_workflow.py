@@ -319,9 +319,9 @@ class NovelWorkflowTests(unittest.TestCase):
         self.prepare()
         self.finish_fixture_review()
         actual_build = workflow.build
-        record = {"id": "independent:term", "kind": "term", "status": "reviewing", "scope": "independent",
+        record = {"id": "independent:term", "kind": "term", "status": "approved", "scope": "global",
                   "source_ids": [], "content_available": True, "value": {"jp": "独立", "ko": "독립"},
-                  "origin": {"evidence": "SYNTHETIC_CONCURRENT_CHANGE"}}
+                  "origin": {"review_id": "SYNTHETIC_CONCURRENT_REVIEW", "source": "fixture"}}
         unregistered = next(path.stem for path in (self.package / "novels").glob("*.json")
                             if path.stem not in read_json(self.package / "manifest.json")["novels"])
         def concurrent(*args, **kwargs):
@@ -421,8 +421,8 @@ class NovelWorkflowTests(unittest.TestCase):
 
     def test_scanner_adapter_requires_exact_selected_current_textasset(self):
         from update.source_scan import SourceProfile, scan_inventory
-        from update.novel_bridge import create_intake_references
-        from update.intake_work import reconcile
+        from update.novel_intake import create_intake_references
+        from update.source_work import reconcile
         class Extractor:
             version = "SYNTHETIC_EXTRACTOR"
             def __call__(inner, raw, asset):

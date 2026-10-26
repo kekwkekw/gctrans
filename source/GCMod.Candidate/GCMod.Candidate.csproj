@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <!-- Build-only candidate. Never imports the donor's GameDir output/copy targets. -->
-  <Import Project="../../donor_recovery/reproduction/Common.props" />
+  <Import Project="../build/Common.props" />
   <PropertyGroup>
     <AssemblyName>GCMod</AssemblyName>
     <RootNamespace>GCMod</RootNamespace>

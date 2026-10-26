@@ -584,7 +584,7 @@ def _scan(profile, inventory, state_path, raw_root, fetch_asset, extractor, exis
     from .diff_review import compare
     comparison = compare(previous_snapshot, snapshot) if previous_snapshot else {
         "schema": "gc-ng03-lane-diff-v1", "changes": [],
-        "novel_bridge_refs": [r["bridge_ref"] for r in snapshot["novel"] if r["bridge_ref"]],
+        "novel_intake_refs": [r["bridge_ref"] for r in snapshot["novel"] if r["bridge_ref"]],
         "automatic_ko_delete": False, "automatic_semantic_approval": False}
     comparison["historical_baseline"] = "KNOWN_SAVED_SNAPSHOT" if previous_snapshot else "UNKNOWN_BASELINE_ONLY"
     atomic_json(snapshot_path, snapshot)

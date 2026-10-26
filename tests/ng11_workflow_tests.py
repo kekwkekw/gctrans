@@ -72,18 +72,8 @@ class WorkflowTests(unittest.TestCase):
         process = subprocess.run(command, cwd=self.area, capture_output=True, text=True, timeout=30)
         return process, json.loads((self.area / "summary.json").read_text(encoding="utf-8"))
 
-    def test_C02_retired_writer_is_manual_read_only_notice(self):
-        text = (ROOT / ".github/workflows/update_translation.yml").read_text(encoding="utf-8")
-        self.assertRegex(text, r"(?m)^  workflow_dispatch:\s*$")
-        self.assertRegex(text, r"(?m)^  contents: read\s*$")
-        events = re.search(r"(?ms)^on:\n(.*?)(?=^[^\s])", text).group(1)
-        self.assertEqual(re.findall(r"(?m)^  ([a-z_]+):", events), ["workflow_dispatch"])
-        for forbidden in ("schedule:", "cron:", "push:", "pull_request:", "contents: write", "secrets.",
-                          "actions/checkout", "scripts/run.py", "scripts/translate_script.py", "scripts/merge.py",
-                          "git add", "git commit", "git push", "github-push-action", "pip install"):
-            self.assertNotIn(forbidden, text)
-        self.assertIn("printf '%s\\n'", text)
-        self.assertEqual(len(re.findall(r"(?m)^\s*- name:", text)), 1)
+    def test_C02_retired_writer_is_absent(self):
+        self.assertFalse((ROOT / ".github/workflows/update_translation.yml").exists())
 
     def test_C03_snapshot_has_no_write_raw_or_ci_state_restore(self):
         text = (ROOT / ".github/workflows/crawl_only.yml").read_text(encoding="utf-8")

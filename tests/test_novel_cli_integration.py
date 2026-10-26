@@ -12,8 +12,8 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from contract_validation import read_json
-from update.intake_work import complete_novel_batch, paths, reconcile
-from update.novel_bridge import create_intake_references
+from update.source_work import complete_novel_batch, paths, reconcile
+from update.novel_intake import create_intake_references
 from update.source_scan import SourceProfile, scan_inventory
 
 
@@ -66,7 +66,7 @@ class NovelCompletionTests(unittest.TestCase):
         self.assertEqual(reference["status"], "READY_FOR_NOVEL_PREPARE")
         self.assertIn("translation/HOLD_POLICY.md", reference["required_inputs"])
         self.assertFalse(any("WB" in value for value in reference["required_inputs"]))
-        self.assertIn("wb.local_release_cli", reference["compatibility_entrypoints"])
+        self.assertNotIn("compatibility_entrypoints", reference)
 
     def test_success_completes_selected_source_and_preserves_other_work(self):
         before = read_json(self.state())
@@ -140,6 +140,13 @@ class NovelCliTests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stderr)
             for command in ("prepare", "review", "check", "apply"):
                 self.assertIn(command, result.stdout)
+
+    def test_retired_commands_are_rejected_by_cli_contract(self):
+        for command in ("bind-intake-wb", "intake-failed", "resume-intake-completion"):
+            with self.subTest(command=command):
+                result = self.command(command)
+                self.assertEqual(result.returncode, 2)
+                self.assertIn("invalid choice", result.stderr)
 
 
 if __name__ == "__main__":

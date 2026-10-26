@@ -8,7 +8,7 @@ from pathlib import Path
 from tools.update.source_scan import (SourceProfile, scan_inventory, digest, verified_blob, parse_source_ids,
     MasterTableExtractor, UnityTextExtractor, MASTER_ML_WORD_MAPPING_CONTRACT)
 from tools.update.source_http import fetch_bytes
-from tools.update.novel_bridge import create_intake_references, current_source_references
+from tools.update.novel_intake import create_intake_references, current_source_references
 
 
 def inventory(*values):

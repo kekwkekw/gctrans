@@ -1,4 +1,4 @@
-"""Knowledge migration, exact identity and reviewer changeset regression tests."""
+"""Current Knowledge validation, exact identity and reviewer changeset regression tests."""
 from copy import deepcopy
 import json
 from pathlib import Path
@@ -11,9 +11,9 @@ sys.path.insert(0, str(ROOT / "tools"))
 import translation_knowledge as knowledge
 
 
-def record(identity, *, jp="アルテ", status="reviewing", scope="scene-only", sources=None):
+def record(identity, *, jp="アルテ", status="reviewing", scope=None, sources=None):
     return {
-        "id": identity, "kind": "term", "status": status, "scope": scope,
+        "id": identity, "kind": "term", "status": status, "scope": {"source_ids": ["10010101"]} if scope is None else scope,
         "source_ids": ["10010101"] if sources is None else sources,
         "content_available": True,
         "value": {"source_text": jp, "translation": "아르테", "status": status},
@@ -21,52 +21,38 @@ def record(identity, *, jp="アルテ", status="reviewing", scope="scene-only", 
     }
 
 
-class MigrationTests(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        cls.seed = knowledge.consolidate_public(ROOT)
-        cls.by_id = {item["id"]: item for item in cls.seed}
+class CurrentKnowledgeTests(unittest.TestCase):
+    def test_current_records_are_approved_available_scoped_and_reviewed(self):
+        records = knowledge.load_current(ROOT)
+        self.assertEqual(len(records), 3535)
+        self.assertEqual(len({row["id"] for row in records}), len(records))
+        self.assertEqual(knowledge.validate_current(records), records)
 
-    def test_original_values_statuses_and_scopes_survive(self):
-        total = 0
-        directory = ROOT / "knowledge-layer/snapshots/r36/knowledge"
-        for ledger, (kind, id_field) in knowledge.LEDGERS.items():
-            with (directory / (ledger + ".jsonl")).open(encoding="utf-8") as stream:
-                for line in stream:
-                    if not line.strip():
-                        continue
-                    original = json.loads(line)
-                    migrated = self.by_id[original[id_field]]
-                    self.assertEqual(migrated["value"], original)
-                    self.assertEqual(migrated["status"], original["status"])
-                    self.assertEqual(migrated["scope"], original.get("scope"))
-                    self.assertEqual(migrated["kind"], kind)
-                    total += 1
-        self.assertEqual(total, 5571)
-
-    def test_missing_candidates_are_not_invented_or_promoted(self):
-        bosch = self.by_id["entity:post20260930:bosch"]
-        self.assertEqual(bosch["status"], "reviewing")
-        self.assertEqual(bosch["value"]["name_status"], "approved")
-        missing = [item for item in self.seed if not item["content_available"]]
-        self.assertEqual(len(missing), 71)
-        projection = knowledge.project(self.seed, speakers=["ボシュ"], source_ids=["20003602"])
-        self.assertTrue(projection["missing_value_ids"])
-        self.assertTrue(all(item["content_available"] for item in projection["records"]))
-        self.assertNotIn("H_BODY", json.dumps(projection, ensure_ascii=False))
-
-    def test_current_names_include_only_existing_approved_exact_sync(self):
-        baseline = json.loads((ROOT / "names-layer/accepted/4e/names/zh_Hans.json").read_text())
-        current = json.loads((ROOT / "translations/ko/names.json").read_text())
-        k02 = json.loads((ROOT / "knowledge-layer/provenance/20261001_postmerge_knowledge/K02_NAMES_CANONICAL_SYNC_16.json").read_text())
-        self.assertEqual(len(k02), 16)
-        for jp, ko in baseline.items():
+    def test_current_names_keep_exact_display_keys(self):
+        current = json.loads((ROOT / "translations/ko/names.json").read_text(encoding="utf-8"))
+        legacy = json.loads((ROOT / "names/zh_Hans.json").read_text(encoding="utf-8"))
+        for jp, ko in legacy.items():
             self.assertEqual(current[jp], ko)
-        for item in k02:
-            self.assertIs(item["user_approved"], True)
-            self.assertEqual(current[item["jp"]], item["ko"])
         self.assertIn("街の人Ａ", current)
         self.assertIn("街の人A", current)
+
+    def test_invalid_current_record_cannot_load(self):
+        cases = [{"status": "reviewing"}, {"content_available": False}, {"value": {}},
+                 {"value": {"status": "approved"}}, {"scope": "scene-only"},
+                 {"scope": {"source_ids": []}}, {"scope": {"source_ids": ["bad"]}},
+                 {"scope": {"source_ids": ["10010101", "10010101"]}},
+                 {"scope": {"source_ids": ["10010101"], "condition": "narrower"}},
+                 {"origin": {"review_id": " "}}, {"origin": {"path": "old.jsonl"}}]
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "translation").mkdir()
+            for changes in cases:
+                with self.subTest(changes=changes):
+                    invalid = record("term:invalid", status="approved")
+                    invalid.update(changes)
+                    (root / "translation/knowledge.jsonl").write_bytes(knowledge.dump_knowledge([invalid]))
+                    with self.assertRaises(ValueError):
+                        knowledge.load_current(root)
 
 
 class ProjectionAndChangesTests(unittest.TestCase):
@@ -102,9 +88,11 @@ class ProjectionAndChangesTests(unittest.TestCase):
             self.assertEqual(reference["records"], [approved])
             self.assertEqual(reference["effective_authority"][approved["id"]], "reference")
 
-    def test_historical_same_novel_id_does_not_prove_current_occurrence(self):
+    def test_missing_review_origin_cannot_be_current_authority(self):
         old = record("term:historical", status="approved")
-        old["origin"] = {"commit": knowledge.PUBLIC_BASE, "path": "historical.jsonl", "line": 1}
+        old["origin"] = {"source": "fixture:row"}
+        with self.assertRaisesRegex(ValueError, "review provenance"):
+            knowledge.validate_current([old])
         selected = knowledge.project([old], source_ids=["10010101"], jp_texts=["アルテ"])
         self.assertEqual(selected["records"][0]["status"], "approved")
         self.assertEqual(selected["effective_authority"][old["id"]], "reference")
@@ -184,11 +172,12 @@ class ProjectionAndChangesTests(unittest.TestCase):
         for scope in [None, "", "  ", [], {}, False, {"source_ids": []}]:
             with self.subTest(scope=scope):
                 value = record("term:new", status="approved", scope=scope)
+                value["scope"] = scope
                 change = {"kind": "knowledge", "id": value["id"], "old_sha256": None,
                           "value": value, "approved": True}
                 with self.assertRaisesRegex(ValueError, "scope"):
                     knowledge.apply_reviewed_changes([], {}, [change], review_id="review")
-        value = record("term:new", status="approved", scope="explicit scene")
+        value = record("term:new", status="approved", scope="global")
         value["origin"] = {}
         with self.assertRaisesRegex(ValueError, "provenance"):
             knowledge.apply_reviewed_changes([], {}, [{"kind": "knowledge", "id": value["id"], "old_sha256": None,
