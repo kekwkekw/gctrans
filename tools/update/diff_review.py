@@ -1,6 +1,6 @@
 """Lane-qualified source comparison and optimistic reviewed changes.
 
-Novel is represented only by references to the existing WB intake/return. No
+Novel is represented by current source intake references. No
 parser ordinal, universal Novel row, semantic approval or translation API lives here.
 """
 from __future__ import annotations
@@ -94,7 +94,7 @@ def compare(previous, current):
                         'source_fingerprint':source_fingerprint(current['profile'],lane,row),
                         'automatic_semantic_approval':False})
     return {'schema':'gc-ng03-lane-diff-v1','changes':changes,
-            'novel_bridge_refs':[row.get('bridge_ref') for row in current.get('novel',[]) if row.get('bridge_ref')],
+            'novel_intake_refs':[row.get('bridge_ref') for row in current.get('novel',[]) if row.get('bridge_ref')],
             'automatic_ko_delete':False,'automatic_semantic_approval':False}
 
 def find_source(snapshot, reviewed):

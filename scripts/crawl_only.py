@@ -18,7 +18,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 from tools.update.source_scan import (SourceProfile, UnityTextExtractor, MasterTableExtractor,
     atomic_json, digest, parse_source_ids, scan_inventory, normalize_inventory, MAX_ASSET_BYTES)
 from tools.update.source_http import fetch_bytes, fetch_json
-from tools.update.novel_bridge import create_intake_references
+from tools.update.novel_intake import create_intake_references
 from scripts.crypto import get_url_params, decrypt_master_text, private_helper
 
 BASE_URL = "https://cdn-r18.gc.dmmgames.com"
@@ -154,7 +154,7 @@ def run(args):
     result["external_observation_metrics"] = external_metrics
     publish_intake(result,args)
     if "lane_diff" in result:
-        result["lane_diff"]["novel_bridge_refs"] = [r["bridge_ref"] for r in result["sourceSnapshot"]["novel"] if r["bridge_ref"]]
+        result["lane_diff"]["novel_intake_refs"] = [r["bridge_ref"] for r in result["sourceSnapshot"]["novel"] if r["bridge_ref"]]
     atomic_json(args.output, result)
     return result
 
@@ -162,7 +162,7 @@ def run(args):
 def publish_intake(result,args):
     result['raw_acquisition_status']='PARTIAL_FAILED' if result['metrics']['failed'] else 'ACQUIRED_OR_REEXTRACTED' if result['metrics']['materialized'] else 'OWNED_METADATA_REUSE_NOT_BYTE_VERIFIED_THIS_SCAN' if result['metrics']['metadata_only_reuse'] else 'NOT_ACQUIRED'
     intake = create_intake_references(result["sourceSnapshot"], args.output.with_name("novel-intake.json"))
-    from tools.update.intake_work import reconcile
+    from tools.update.source_work import reconcile
     actionable=reconcile(result["sourceSnapshot"],intake,args.state_root)
     atomic_json(args.output.with_name("actionable-intake.json"),actionable)
     result["actionable_intake"]={"path":"actionable-intake.json","new_work":actionable["new_work"],"actionable":len(actionable["actionable"]),"held":actionable["held"],"completed":actionable["completed"]}

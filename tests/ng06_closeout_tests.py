@@ -27,14 +27,11 @@ class CloseoutTests(OperatorTests):
         binding = copy.deepcopy(read_json(self.owned/'ui/bindings.json')['bindings'][0])
         review.update(resource_rows=[dict(basis, review_id='missing-resource', decision='APPROVE', proposal=copy.deepcopy(other), old_resource_sha256=fingerprint(other))],
                       binding_rows=[dict(basis, review_id='missing-binding', decision='APPROVE', proposal=binding, old_binding_sha256=fingerprint(binding))],
-                      master_key_rows=[{'review_id':'missing-key','decision':'APPROVE','target':{'file':'master.json','keys':['t','f','jp']},'source_basis':{},'source_basis_sha256':fingerprint({}),'old_ko_sha256':fingerprint('ko'),'new_ko':'fixture','all_uses_same_ko':True}],
-                      novel_returns=[{'review_id':'missing-WB','decision':'APPROVE','workbench_root':str(self.area/'does-not-exist')}])
-        with patch('update.novel_bridge.validate_accepted_return') as wb:
-            result = apply_review(self.owned, review, None, None, self.state)
-            wb.assert_not_called()
+                      master_key_rows=[{'review_id':'missing-key','decision':'APPROVE','target':{'file':'master.json','keys':['t','f','jp']},'source_basis':{},'source_basis_sha256':fingerprint({}),'old_ko_sha256':fingerprint('ko'),'new_ko':'fixture','all_uses_same_ko':True}])
+        result = apply_review(self.owned, review, None, None, self.state)
         self.assertEqual(result['status'], 'PARTIAL_HOLDS')
         self.assertEqual(result['requested_count'], result['consumed_count'])
-        self.assertEqual(len(result['held_operations']), 5)
+        self.assertEqual(len(result['held_operations']), 4)
         self.assertTrue(all(o['reason'] == 'CURRENT_OBSERVED_SOURCE_REQUIRED' for o in result['held_operations']))
         current = Path(result['next_package'])
         actual = read_json(current/'ui/resources.json')['resources']
@@ -93,7 +90,7 @@ if __name__ == '__main__':
     result = unittest.TextTestRunner(verbosity=2).run(suite)
     report = {'schema':'gc-ng06-closeout-regression-v1','status':'PASS' if result.wasSuccessful() else 'FAIL',
               'count':result.testsRun,'failures':len(result.failures)+len(result.errors),
-              'semantic_changes':'DISPOSABLE_FIXTURES_ONLY','WB':'NOT_RUN_NO_SOURCE_NO_WB_BYPASS',
+              'semantic_changes':'DISPOSABLE_FIXTURES_ONLY','novel_workflow':'COVERED_BY_SEPARATE_NOVEL_TESTS',
               'native':'NOT_RUN','game':'NOT_RUN'}
     (ROOT/'tests/NG06_CLOSEOUT_TEST_RESULTS.json').write_bytes(encode(report))
     raise SystemExit(0 if result.wasSuccessful() else 1)

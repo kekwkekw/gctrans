@@ -30,16 +30,12 @@ class MasterReconciliationTests(unittest.TestCase):
         self.assertEqual(observed_scope(master), {'tables': 62, 'fields': 101, 'entries': 31566})
         self.assertFalse(verify_master_delta(master, master, resources=resources, bindings=bindings)['permanent_cardinality_gate'])
 
-    def test_actual_preservation_report_and_metadata(self):
+    def test_current_master_descriptor_matches_actual_payload(self):
         from build_manifests import previous_inventory
-        report = read_json(ROOT/'audit/NG04_MASTER_RESTORATION.json')
-        self.assertEqual(report['status'], 'PASS')
-        self.assertEqual(report['restored_entry_count'], 28530)
-        self.assertEqual(len(report['restored_term_changes']), 2)
-        self.assertEqual(report['non_target_inventory_changes'], [])
-        self.assertEqual(report['novel_inventory_and_registration'], 'UNCHANGED')
         entries, _ = previous_inventory(ROOT/'translations/ko')
-        self.assertEqual(entries['master.json']['sha256'], report['candidate_master_sha256'])
+        raw = (ROOT/'translations/ko/master.json').read_bytes()
+        self.assertEqual(entries['master.json']['sha256'], hashlib.sha256(raw).hexdigest())
+        self.assertEqual(entries['master.json']['size'], len(raw))
 
     def test_restore_retries_interrupted_payload_copy_with_stale_metadata(self):
         from build_manifests import build, encode, previous_inventory

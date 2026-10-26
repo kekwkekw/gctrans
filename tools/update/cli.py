@@ -39,19 +39,13 @@ def main():
     for field in ('table','runtime-field','jp','new-ko'):master.add_argument('--'+field,required=True)
     master.add_argument('--report',type=Path,required=True)
     master.add_argument('--draft',type=Path)
-    resume=actions.add_parser('resume-intake-completion');resume.add_argument('--state-root',type=Path,required=True);resume.add_argument('--report',type=Path,required=True)
-    bound=actions.add_parser('bind-intake-wb')
-    for name in ('current-source','bound-scene','raw-root','report'):bound.add_argument('--'+name,type=Path,required=True)
-    for name in ('scene-sha256','source-id','asset-key'):bound.add_argument('--'+name,required=True)
-    failed=actions.add_parser('intake-failed')
-    failed.add_argument('--state-root',type=Path,required=True);failed.add_argument('--current-source',type=Path,required=True);failed.add_argument('--work-id',required=True);failed.add_argument('--reason',required=True);failed.add_argument('--report',type=Path,required=True)
     scan=actions.add_parser('scan',help='Known WebGL source or explicit local PC profile; no URL guessing')
     scan.add_argument('arguments',nargs=argparse.REMAINDER)
     status=actions.add_parser('status');status.add_argument('--state-root',type=Path,required=True)
     capture=actions.add_parser('import');capture.add_argument('--package',type=Path,required=True);capture.add_argument('--state-root',type=Path,required=True)
     doctor=actions.add_parser('preflight');doctor.add_argument('--candidate-root',type=Path,required=True);doctor.add_argument('--dependency-root',type=Path);doctor.add_argument('--medium',type=Path);doctor.add_argument('--plugins',type=Path);doctor.add_argument('--report',type=Path,required=True)
     arguments=parser.parse_args()
-    if arguments.command in {'apply-review','diff','plan-ui-edit','plan-master-key','intake-failed','resume-intake-completion','bind-intake-wb'}:
+    if arguments.command in {'apply-review','diff','plan-ui-edit','plan-master-key'}:
         try:
             if arguments.command=='apply-review':
                 current=source_snapshot_input(read_json(arguments.current_source)) if arguments.current_source else None
@@ -66,17 +60,6 @@ def main():
             elif arguments.command=='plan-master-key':
                 from update.operator_review import plan_master_key
                 result=plan_master_key(arguments.package,source_snapshot_input(read_json(arguments.current_source)),[arguments.table,arguments.runtime_field,arguments.jp],arguments.new_ko)
-            elif arguments.command=='resume-intake-completion':
-                from update.apply_review import resume_intake_completion
-                result=resume_intake_completion(arguments.state_root)
-            elif arguments.command=='bind-intake-wb':
-                from update.novel_bridge import bind_existing_wb_scene
-                result=bind_existing_wb_scene(source_snapshot_input(read_json(arguments.current_source)),arguments.bound_scene,arguments.scene_sha256,arguments.source_id,arguments.asset_key,arguments.raw_root)
-            else:
-                from update.intake_work import mark_failed
-                current=source_snapshot_input(read_json(arguments.current_source))
-                mark_failed(arguments.state_root,current['profile'],arguments.work_id,arguments.reason)
-                result={'status':'FAILED_WORK_RETAINED_FOR_RETRY','work_id':arguments.work_id}
         except (ValueError,OSError,KeyError,TypeError,AttributeError) as error:
             code=str(error)
             if not code.replace('_','').replace(':','').isalnum():code='SOURCE_INPUT_INVALID' if arguments.command=='diff' else 'OPERATOR_REQUEST_INVALID'

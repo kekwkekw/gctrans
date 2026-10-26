@@ -1,7 +1,6 @@
 """Current translation knowledge, scoped lookup, and reviewed small changes.
 
-The public historical ledgers are data sources for the one-time consolidation.
-Ordinary translation reads only translation/knowledge.jsonl and runtime Names.
+Translation reads only translation/knowledge.jsonl and runtime Names.
 This module does not classify source content or define any HOLD conditions.
 """
 from __future__ import annotations
@@ -15,24 +14,11 @@ from pathlib import Path
 import re
 
 
-PUBLIC_BASE = "5d05dd5c03a5da8e69cfcf04380eaa33a9f841b0"
-LEDGERS = {
-    "entities": ("entity", "entity_id"),
-    "terms": ("term", "term_id"),
-    "character_profiles": ("profile", "profile_id"),
-    "character_profile_observations": ("profile_observation", "observation_id"),
-    "relationships": ("relationship", "relationship_id"),
-    "speech_address_rules": ("speech", "rule_id"),
-    "claim_guards": ("claim_guard", "guard_id"),
-    "claim_developments": ("claim_development", "development_id"),
-    "references": ("reference", "reference_id"),
-    "evidence_links": ("evidence_link", "link_id"),
-    "policy_evidence_links": ("preference_evidence", "link_id"),
-    "policies": ("editorial_preference", "policy_id"),
-    "conflicts": ("conflict", "conflict_id"),
-}
-KNOWLEDGE_KINDS = set(kind for kind, _ in LEDGERS.values()) | {
-    "contextual_term", "narration", "display_alignment", "candidate_gap",
+KNOWLEDGE_KINDS = {
+    "entity", "term", "profile", "profile_observation", "relationship", "speech",
+    "claim_guard", "claim_development", "reference", "evidence_link",
+    "preference_evidence", "editorial_preference", "conflict", "contextual_term",
+    "narration", "display_alignment", "candidate_gap",
 }
 STATES = {"approved", "reviewing", "conflict"}
 SURFACE_FIELDS = {
@@ -87,41 +73,8 @@ def _fields(value, keys):
     return result
 
 
-def _source_ids(value, evidence_sources):
-    """Retain observed scene membership; never invent an occurrence mapping."""
-    result = set()
-    if isinstance(value, dict):
-        for key, child in value.items():
-            if key in {"novel_id", "source_id"} and isinstance(child, str) and re.fullmatch(r"[0-9]+", child):
-                result.add(child)
-            elif key == "context_groups":
-                for group in _strings(child):
-                    match = re.fullmatch(r"[^:]+:([0-9]+)", group)
-                    if match:
-                        result.add(match[1])
-            elif key == "evidence_ids":
-                for evidence_id in _strings(child):
-                    result.update(evidence_sources.get(evidence_id, ()))
-            if isinstance(child, (dict, list)):
-                result.update(_source_ids(child, evidence_sources))
-    elif isinstance(value, list):
-        for child in value:
-            result.update(_source_ids(child, evidence_sources))
-    return result
 
 
-def _record(identity, kind, value, origin, *, source_ids=(), scope=None,
-            status=None, content_available=True):
-    return {
-        "id": identity,
-        "kind": kind,
-        "status": status if status is not None else value.get("status", "reviewing"),
-        "scope": deepcopy(value.get("scope", scope)),
-        "source_ids": sorted(set(source_ids)),
-        "content_available": content_available,
-        "value": deepcopy(value),
-        "origin": origin,
-    }
 
 
 def _validate_record(record):
@@ -182,8 +135,33 @@ def load_knowledge(path):
     return records
 
 
+def _validate_current_record(record):
+    _validate_record(record)
+    identity = record["id"]
+    if record["status"] != "approved" or record["content_available"] is not True:
+        raise ValueError("Current Knowledge needs approved, available content: " + identity)
+    if not _has_actual_value(record["value"]):
+        raise ValueError("Current Knowledge needs actual content: " + identity)
+    scope = record["scope"]
+    scoped = (isinstance(scope, dict) and set(scope) == {"source_ids"}
+              and isinstance(scope["source_ids"], list) and bool(scope["source_ids"])
+              and all(isinstance(s, str) and re.fullmatch(r"[0-9]+", s) for s in scope["source_ids"])
+              and len(scope["source_ids"]) == len(set(scope["source_ids"])))
+    if scope != "global" and not scoped:
+        raise ValueError("Current Knowledge needs an explicit current scope: " + identity)
+    review = record["origin"].get("review_id")
+    if not isinstance(review, str) or not review.strip():
+        raise ValueError("Current Knowledge needs review provenance: " + identity)
+
+
+def validate_current(records):
+    for record in records:
+        _validate_current_record(record)
+    return records
+
+
 def load_current(repo_root):
-    return load_knowledge(Path(repo_root) / "translation/knowledge.jsonl")
+    return validate_current(load_knowledge(Path(repo_root) / "translation/knowledge.jsonl"))
 
 
 def dump_knowledge(records):
@@ -197,67 +175,6 @@ def dump_knowledge(records):
                     for record in sorted(records, key=lambda record: record["id"]))).encode("utf-8")
 
 
-def consolidate_public(repo_root):
-    """One-time data consolidation, with original values/statuses/scopes intact."""
-    root = Path(repo_root)
-    base = Path("knowledge-layer/snapshots/r36/knowledge")
-    evidence_sources = {}
-    # Read only the locator fields for selection; do not copy the evidence corpus.
-    with (root / base / "evidence.jsonl").open(encoding="utf-8") as stream:
-        for line in stream:
-            row = _json(line)
-            if row.get("evidence_id") and isinstance(row.get("novel_id"), str):
-                evidence_sources.setdefault(row["evidence_id"], set()).add(row["novel_id"])
-    records = []
-    for filename, (kind, id_field) in LEDGERS.items():
-        relative = base / (filename + ".jsonl")
-        for number, line in enumerate((root / relative).read_text(encoding="utf-8").splitlines(), 1):
-            if not line.strip():
-                continue
-            value = _json(line)
-            records.append(_record(value[id_field], kind, value,
-                {"commit": PUBLIC_BASE, "path": relative.as_posix(), "line": number},
-                source_ids=_source_ids(value, evidence_sources)))
-
-    overlay = Path("knowledge-layer/provenance/20261001_postmerge_knowledge")
-    candidates = _json((root / overlay / "K01_CANDIDATE_ADJUDICATION_57.json").read_text())
-    groups = _json((root / overlay / "K01_CONSOLIDATION_GROUPS_4.json").read_text())
-    sync = _json((root / overlay / "K02_ENTITY_PROFILE_SYNC.json").read_text())
-    groups_by_id = {item["group_id"]: item for item in groups}
-
-    def add(identity, kind, value, filename, selector, *, available=True, status=None, scope=None, sources=()):
-        records.append(_record(identity, kind, value,
-            {"commit": PUBLIC_BASE, "path": (overlay / filename).as_posix(), "selector": selector},
-            source_ids=sources or _source_ids(value, evidence_sources),
-            scope=scope, status=status, content_available=available))
-
-    for item in candidates:
-        group = groups_by_id.get(item.get("consolidation_group"), {})
-        add("k01:" + item["id"], "candidate_gap", item, "K01_CANDIDATE_ADJUDICATION_57.json", item["id"],
-            available=False, status=item["knowledge_status_after_k01"], sources=_source_ids(group, evidence_sources))
-    for item in groups:
-        add("k01-group:" + item["group_id"], "candidate_gap", item, "K01_CONSOLIDATION_GROUPS_4.json", item["group_id"],
-            available=False, scope=[candidate["scope"] for candidate in candidates if candidate["id"] in item["members"]])
-    filename = "K02_ENTITY_PROFILE_SYNC.json"
-    for field, id_field, kind in [
-        ("new_entity_overlays", "entity_id", "entity"),
-        ("new_profile_overlays", "profile_id", "candidate_gap"),
-        ("existing_profile_extension_targets", "candidate_id", "candidate_gap"),
-        ("existing_entity_relation_extension_targets", "candidate_id", "candidate_gap"),
-        ("historical_display_sync", "entity_ref", "display_alignment"),
-    ]:
-        for item in sync[field]:
-            identity = item[id_field] if field.startswith("new_") else "k02:" + field + ":" + item[id_field]
-            related = [candidate for candidate in candidates if candidate.get("target_ref") == item.get(id_field)
-                       or candidate["id"] in item.get("sources", ()) or candidate["id"] == item.get("candidate_id")]
-            source_ids = set()
-            for candidate in related:
-                source_ids.update(_source_ids(groups_by_id.get(candidate.get("consolidation_group"), {}), evidence_sources))
-            add(identity, kind, item, filename, field + "/" + item[id_field],
-                available=kind != "candidate_gap", status=item.get("entity_fact_status", item.get("status", "reviewing")),
-                scope=[candidate["scope"] for candidate in related] or None, sources=source_ids)
-    dump_knowledge(records)  # Validate all ids before returning any data.
-    return records
 
 
 def project(records, *, speakers=(), source_ids=(), jp_texts=(), max_chars=40000):
@@ -379,7 +296,7 @@ def apply_reviewed_changes(records, names, changes, *, review_id=None):
             if "old_sha256" not in change or change["old_sha256"] != old_hash:
                 raise ValueError("Knowledge preimage changed: " + key)
             value = deepcopy(change.get("value"))
-            _validate_record(value)
+            _validate_current_record(value)
             if value["id"] != key or not value["content_available"] or not _meaningful_scope(value["scope"]) or not _has_actual_value(value["value"]):
                 raise ValueError("Reviewed knowledge needs actual content and explicit scope")
             if value["origin"].get("review_id") != review_id:
@@ -394,36 +311,13 @@ def apply_reviewed_changes(records, names, changes, *, review_id=None):
     return sorted(current.values(), key=lambda record: record["id"]), updated_names
 
 
-def synced_k02_names(repo_root):
-    """Reconcile only the sixteen existing approved exact display entries."""
-    root = Path(repo_root)
-    names = _json((root / "translations/ko/names.json").read_text(encoding="utf-8"))
-    legacy = _json((root / "names/zh_Hans.json").read_text(encoding="utf-8"))
-    changes = _json((root / "knowledge-layer/provenance/20261001_postmerge_knowledge/K02_NAMES_CANONICAL_SYNC_16.json").read_text(encoding="utf-8"))
-    added = []
-    for item in changes:
-        jp, ko = item["jp"], item["ko"]
-        if item.get("user_approved") is not True or item.get("canonical_written") is not True or item.get("canonical_source") != "names/zh_Hans.json" or legacy.get(jp) != ko:
-            raise ValueError("K02 approval/legacy value mismatch: " + jp)
-        if jp in names and names[jp] != ko:
-            raise ValueError("Current Names conflicts with K02: " + jp)
-        if jp not in names:
-            added.append(jp)
-            names[jp] = ko
-    return names, added
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", type=Path, default=Path(__file__).resolve().parents[1])
-    parser.add_argument("--initialize", action="store_true", help="One-time seed; refuses to overwrite existing current knowledge")
     args = parser.parse_args()
     path = args.repo / "translation/knowledge.jsonl"
-    if args.initialize:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        raw = dump_knowledge(consolidate_public(args.repo))
-        with path.open("xb") as stream:
-            stream.write(raw)
     records = load_current(args.repo)
     print(json.dumps({"path": str(path), "records": len(records),
         "available_values": sum(record["content_available"] for record in records),

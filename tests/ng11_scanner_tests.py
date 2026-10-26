@@ -212,8 +212,8 @@ class ScannerEntrypointTests(unittest.TestCase):
         sys.path.insert(0, str(ROOT))
         sys.path.insert(0, str(ROOT / "tools"))
         from tools.update.source_scan import SourceProfile, scan_inventory
-        from tools.update.novel_bridge import create_intake_references
-        from tools.update.intake_work import reconcile
+        from tools.update.novel_intake import create_intake_references
+        from tools.update.source_work import reconcile
         profile = SourceProfile("WebGL", "R18", "Novel", "vendor-d-n-h-s-v1")
         inventory = {"d": [{"n": f"notinit/novel_script/sts_{key}.dmm", "h": token, "s": 100}
                             for key, token in (("99990001", "one"), ("99990002", "two"))]}

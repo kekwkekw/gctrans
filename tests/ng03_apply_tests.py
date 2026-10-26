@@ -84,11 +84,17 @@ class ApplyTests(unittest.TestCase):
             return original(path)
         with patch.object(Path,'read_bytes',counted):result=apply_review(self.owned,self.review(),self.source,self.output(),self.state)
         self.assertEqual([],reads);self.assertEqual(0,result['apply_metrics']['unchanged_novel_payload_reads']);self.assertEqual('verified_owned_immutable_inventory',result['import_metrics']['mode'])
-    def test_stale_novel_return_preserves_independent_ui(self):
+    def test_retired_novel_return_rejected_before_staging_and_ui_still_applies(self):
         review=self.review();review['novel_returns']=[{'review_id':'STALE_NOVEL'}]
-        result=apply_review(self.owned,review,self.source,self.output(),self.state)
-        self.assertEqual('PARTIAL_CONFLICTS',result['status']);self.assertEqual(['ui/resources.json'],result['changed_payloads'])
-        self.assertEqual('NOVEL_BRIDGE_INPUT_REQUIRED',result['rejected_rows'][0]['reason'])
+        output=self.output()
+        with patch('update.apply_review._freeze_input') as capture:
+            with self.assertRaisesRegex(ReviewConflict,'REVIEW_SET_UNKNOWN_OR_MISSING_PROPERTY'):
+                apply_review(self.owned,review,self.source,output,self.state)
+            capture.assert_not_called()
+        self.assertFalse(output.exists())
+        self.assertFalse((self.state/'authoring-current.json').exists())
+        result=apply_review(self.owned,self.review(),self.source,self.output(),self.state)
+        self.assertEqual('PASS',result['status']);self.assertEqual(['ui/resources.json'],result['changed_payloads'])
     def test_reviewed_supported_binding_addition(self):
         bindings=read_json(self.owned/'ui/bindings.json')
         proposal=copy.deepcopy(next(row for row in bindings['bindings'] if row.get('enabled') and row['adapter_id']=='battle.caption.v1'))

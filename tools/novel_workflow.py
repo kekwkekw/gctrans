@@ -676,7 +676,7 @@ def apply_review(repo, batch, review):
         spec = document["source_input"]
         if spec.get("state_root"):
             from update.diff_review import source_snapshot_input
-            from update.intake_work import complete_novel_batch
+            from update.source_work import complete_novel_batch
             try:
                 snapshot = source_snapshot_input(read_json(Path(spec["path"])))
                 reviewed_sources = [{"source_id": item["source_id"], "asset_key": item["asset_key"],

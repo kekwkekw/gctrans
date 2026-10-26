@@ -1,7 +1,7 @@
-"""Actual product regressions; transaction stubs explicitly do not approve WB.
+"""Current UI/Master, registration and transaction regressions.
 
 Default runs portable fixtures and generates the full candidate continuous chain
-for the actual DLL CPU reader. Private WB replay is a separate explicit command.
+for the actual DLL CPU reader. Novel regressions use the current Novel workflow tests.
 """
 from __future__ import annotations
 import argparse, copy, hashlib, json, os, re, shutil, subprocess, sys, tempfile, time, unittest
@@ -214,77 +214,6 @@ class ApplyTests(unittest.TestCase):
             self.assertTrue(apply_row(doc,row,snap)); self.assertEqual('교정',doc[table][runtime]['原文'])
             sr['translation_target']['field']='unlisted[]'; row['source_fingerprint']=source_fingerprint(PROFILE,'master',sr)
             with self.assertRaisesRegex(ValueError,'UNSUPPORTED_MASTER_FIELD_MAPPING'): apply_row(doc,row,snap)
-    def test_B05_connected_overlap_independent_return_and_ui(self):
-        files=sorted(p.relative_to(self.owned).as_posix() for p in (self.owned/'novels').glob('*.json')); f1,f2,f3=files
-        reviews=[{'review_id':id,'old_ko':{file:sha((self.owned/file).read_bytes()) for file in scope}} for id,scope in [('A',[f1,f2]),('B',[f2]),('C',[f1]),('D',[f3])]]
-        payload=read_json(self.owned/f3); key=next(iter(payload)); payload[key]+=' [TRANSACTION FIXTURE]'; calls=[]
-        def stub(op,*unused): calls.append(op['review_id']); return {'payloads':{f3:encode(payload)}}
-        review=copy.deepcopy(self.review); review['novel_returns']=reviews
-        from update.apply_review import overlap_groups
-        events=[]; original_copytree=shutil.copytree
-        def preflight(scopes):
-            events.append(('write_set',sorted(scopes))); return overlap_groups(scopes)
-        def copytree(src,dst,*args,**kwargs):
-            if Path(dst).name.startswith('.owned-apply-'): events.append(('staging',None))
-            return original_copytree(src,dst,*args,**kwargs)
-        with patch('update.novel_bridge.validate_accepted_return',stub), patch('update.apply_review.overlap_groups',preflight), patch('update.apply_review.shutil.copytree',copytree): result=self.run_apply(review)
-        self.assertEqual(('write_set',['novel_returns:0','novel_returns:1','novel_returns:2','novel_returns:3']),events[0]); self.assertEqual('staging',events[1][0])
-        self.assertEqual(['D'],calls); self.assertEqual({'A','B','C'},set(result['held_rows'])); self.assertEqual(5,result['consumed_count']); final=Path(result['next_package'])
-        self.assertEqual((self.owned/f1).read_bytes(),(final/f1).read_bytes()); self.assertEqual(payload,read_json(final/f3)); self.assertIn('ui/resources.json',result['changed_payloads'])
-    def test_B07_scope_mismatch_rejects_whole_return(self):
-        files=sorted(p.relative_to(self.owned).as_posix() for p in (self.owned/'novels').glob('*.json')); review=copy.deepcopy(self.review)
-        review['novel_returns']=[{'review_id':'BAD','old_ko':{files[0]:sha((self.owned/files[0]).read_bytes())}}]
-        with patch('update.novel_bridge.validate_accepted_return',lambda *a:{'payloads':{files[0]:b'{}',files[1]:b'{}'}}): result=self.run_apply(review)
-        self.assertEqual('NOVEL_VALIDATED_RETURN_SCOPE_MISMATCH',result['rejected_rows'][0]['reason']); self.assertEqual(['ui/resources.json'],result['changed_payloads'])
-    def test_C01_apply_consumer_rejects_duplicate_and_ineligible_qualified_refs(self):
-        file=next((self.owned/'novels').glob('*.json')).relative_to(self.owned).as_posix(); ref={'sha256':'1'*64,'size':100}
-        operation={'review_id':'STALE-COLLIDING-NOVEL','workbench_root':'unused-before-source-gate','implementation_sha256':'0'*64,
-                   'm4_plan':{'path':'unused-before-source-gate','sha256':'0'*64},'reviewed_source_refs':{'qualified-locator':ref},'old_ko':{file:sha((self.owned/file).read_bytes())}}
-        for variant in ('duplicate','ineligible'):
-            src=copy.deepcopy(self.src); src['qualified_sources']={'qualified-locator':ref}
-            src['novel']=[{'source_id':'10011201','asset_key':'a','status':'COLLISION','current_eligible':False,'source_collision':True,'selected_textasset':None}]
-            if variant=='duplicate': src['novel'].append({**src['novel'][0],'asset_key':'b'})
-            review=copy.deepcopy(self.review); review['novel_returns']=[operation]
-            with patch('update.novel_bridge.subprocess.run') as worker:
-                result=apply_review(self.owned,review,src,self.area/('source-'+variant),self.state)
-            worker.assert_not_called(); self.assertEqual('NOVEL_STALE_SOURCE_REVIEW',result['rejected_rows'][0]['reason'])
-            self.assertEqual('QUALIFIED_SOURCE_IDENTITY_REQUIRED_FOR_CURRENT_INVENTORY',result['rejected_rows'][0]['source_eligibility_code'])
-            self.assertEqual(['ui/resources.json'],result['changed_payloads']); self.assertEqual((self.owned/file).read_bytes(),(Path(result['next_package'])/file).read_bytes())
-            (self.state/'authoring-current.json').unlink()  # independent disposable cases
-    def test_WB_missing_required_inputs_are_scoped_refusals(self):
-        file=next((self.owned/'novels').glob('*.json')).relative_to(self.owned).as_posix(); refs={'qualified':{'size':1,'sha256':'1'*64}}
-        repo=self.area/'fake-workbench'; implementation=repo/'wb/local_release_cli.py'; implementation.parent.mkdir(parents=True); implementation.write_bytes(b'fixture identity only; never executed')
-        op={'review_id':'MISSING','workbench_root':str(repo),'implementation_sha256':sha(implementation.read_bytes()),'m4_plan':{'path':str(self.area/'missing-plan.json'),'sha256':'0'*64},'reviewed_source_refs':refs,'old_ko':{file:sha((self.owned/file).read_bytes())}}
-        for variant,expected in [('implementation','NOVEL_WB_IMPLEMENTATION_INPUT_IO'),('plan','NOVEL_M4_PLAN_INPUT_IO'),('ko','NOVEL_CURRENT_KO_INPUT_IO')]:
-            operation=copy.deepcopy(op)
-            if variant=='implementation': operation['workbench_root']=str(self.area/'missing-workbench')
-            if variant=='ko': operation['old_ko']={'novels/999999991.json':'0'*64}
-            review=copy.deepcopy(self.review); review['novel_returns']=[operation]; current=copy.deepcopy(self.src); current['qualified_sources']=refs
-            with patch('update.novel_bridge.subprocess.run') as worker: result=apply_review(self.owned,review,current,self.area/('missing-'+variant),self.state)
-            worker.assert_not_called(); self.assertEqual(expected,result['rejected_rows'][0]['reason']); self.assertEqual(['ui/resources.json'],result['changed_payloads'])
-            (self.state/'authoring-current.json').unlink()
-    def test_WB_wrapper_relative_scene_uses_existing_workbench_base(self):
-        # Worker output is mocked solely to reach wrapper path consumption. This
-        # fixture does not test or create WB semantic approval.
-        from update.novel_bridge import validate_accepted_return, wb_scene_source_references
-        repo=self.area/'relative-workbench'; implementation=repo/'wb/local_release_cli.py'; implementation.parent.mkdir(parents=True); implementation.write_bytes(b'fixture identity only')
-        scene={'schema':'WB19_BOUND_SOURCE_QUALIFIED_SCENE_V1','rows':[{'source_locator':{name:{} for name in ('parser','transform','position_mapping','raw_textasset_sha256','parser_view_sha256','source_chain_digest')}}]}
-        scene_path=repo/'scenes/current.json'; scene_path.parent.mkdir(); scene_path.write_bytes(encode(scene)); refs=wb_scene_source_references(scene)
-        file=next((self.owned/'novels').glob('*.json')); relative=file.relative_to(self.owned).as_posix(); body=file.read_bytes(); output=self.area/'relative-wrapper-output'
-        plan=self.area/'relative-plan.json'; plan.write_bytes(encode({'schema':'M4_LOCAL_ACCEPTED_NOVEL_PLAN_V1','jobs':[{'script_id':file.stem,'wb20_args':['--bound-scene','scenes/current.json','--bound-scene-sha256',sha(scene_path.read_bytes())]}]}))
-        operation={'workbench_root':str(repo),'implementation_sha256':sha(implementation.read_bytes()),'m4_plan':{'path':str(plan),'sha256':sha(plan.read_bytes())},'reviewed_source_refs':refs,'old_ko':{relative:sha(body)}}
-        def worker(*unused,**kwargs):
-            self.assertEqual(repo,kwargs['cwd']); target=output/'runtime-return'/relative; target.parent.mkdir(parents=True); target.write_bytes(body)
-            return SimpleNamespace(returncode=0,stdout=json.dumps({'status':'EXISTING_WB20_M4_ACCEPTED_RUNTIME_RETURN_VERIFIED','payloads':{relative:{'sha256':sha(body),'size':len(body)}}}))
-        with patch('update.novel_bridge.subprocess.run',worker): returned=validate_accepted_return(operation,self.owned,refs,output)
-        self.assertEqual({relative:body},returned['payloads'])
-    def test_B06_single_multifile_scope_preserved(self):
-        files=sorted(p.relative_to(self.owned).as_posix() for p in (self.owned/'novels').glob('*.json'))[:2]; payloads={}
-        for file in files:
-            doc=read_json(self.owned/file); key=next(iter(doc)); doc[key]+=' [TRANSACTION FIXTURE]'; payloads[file]=encode(doc)
-        review={'schema':'gc-ng03-reviewed-change-set-v1','novel_returns':[{'review_id':'MULTI','old_ko':{file:sha((self.owned/file).read_bytes()) for file in files}}]}
-        with patch('update.novel_bridge.validate_accepted_return',lambda *a:{'payloads':payloads}): result=self.run_apply(review)
-        self.assertEqual(files,result['changed_payloads']); self.assertEqual(files,result['request_outcomes'][0]['files'])
     def test_explicit_registration_no_automatic_register(self):
         manifest=read_json(self.owned/'manifest.json'); id=next(p.stem for p in (self.owned/'novels').glob('*.json') if p.stem not in manifest['novels'])
         with ActualIO({(self.owned/'novels'/f'{id}.json').read_bytes()}) as io:
@@ -328,40 +257,15 @@ def writer(args):
         result=apply_review(package,read_json(review),read_json(snapshot),output,state,fault=fault); print(json.dumps(result)); return 0
     except ValueError as error: print(str(error)); return 2
 
-def real_wb(args):
-    """One explicit existing whole M4 plan through unmodified real validator."""
-    from update.novel_bridge import wb_scene_source_references, validate_accepted_return
-    plan=read_json(args.m4_plan); refs={}; old={}; package=ROOT/'translations/ko'
-    for job in plan['jobs']:
-        argv=job['wb20_args']; refs.update(wb_scene_source_references(read_json(Path(argv[argv.index('--bound-scene')+1]))))
-        file='novels/'+job['script_id']+'.json'; old[file]=sha((package/file).read_bytes())
-    operation={'review_id':'REAL-WB-M4','operation':'accepted_return','workbench_root':str(args.workbench_root),
-               'implementation_sha256':sha((args.workbench_root/'wb/local_release_cli.py').read_bytes()),
-               'm4_plan':{'path':str(args.m4_plan),'sha256':sha(args.m4_plan.read_bytes())},'reviewed_source_refs':refs,'old_ko':old}
-    resource,row=ui_inputs(package); review=correction(resource,row,resource['ko'],resource['ko']+' [REAL WB CPU fixture]'); review['novel_returns']=[operation]
-    current=source(row); current['qualified_sources']=refs
-    area=args.private_output/('actual-wb-'+next(tempfile._get_candidate_names())); area.mkdir(parents=True)
-    with patch('update.novel_bridge.validate_accepted_return',wraps=validate_accepted_return) as actual_validator:
-        result=apply_review(package,review,current,None,area/'state')
-    novel=next(o for o in result['request_outcomes'] if o['review_id']=='REAL-WB-M4')
-    report={'schema':'gc-ng04-real-wb-apply-evidence-v1','status':'PASS' if result['status']=='PASS' and novel['status'] in {'APPLIED','NO_CHANGE'} else 'FAIL',
-            'actual_validator_calls':actual_validator.call_count,'actual_WB_validation':'UNMODIFIED_EXISTING_WB20_M4_REPLAY',
-            'declared_files':sorted(old),'actual_files':novel.get('files'),'existing_jobs':len(plan['jobs']),'qualified_source_refs':len(refs),
-            'scope_preserved':novel.get('files')==sorted(old),'apply_result':result,'fixture_only':True,'candidate_payloads_edited':False,
-            'source_input':'explicit existing plan and bound scenes; no network/raw reacquisition','native':'NOT_RUN','game':'NOT_RUN'}
-    (ROOT/'audit/NG04_REAL_WB_APPLY.json').write_bytes(encode(report)); print(json.dumps(report,ensure_ascii=False)); return 0 if report['status']=='PASS' else 1
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(); parser.add_argument('--writer',nargs=5); parser.add_argument('--hold',type=Path); parser.add_argument('--skip-chain',action='store_true'); parser.add_argument('--chain-only',action='store_true')
-    parser.add_argument('--real-wb',action='store_true'); parser.add_argument('--workbench-root',type=Path); parser.add_argument('--m4-plan',type=Path); parser.add_argument('--private-output',type=Path); args=parser.parse_args()
+    args=parser.parse_args()
     if args.writer: raise SystemExit(writer(args))
-    if args.real_wb:
-        if not args.workbench_root or not args.m4_plan or not args.private_output: parser.error('real WB requires explicit workbench-root, m4-plan and private-output')
-        raise SystemExit(real_wb(args))
     result=None
     if not args.chain_only: result=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(ApplyTests))
     chain=None
     if not args.skip_chain and (result is None or result.wasSuccessful()): chain=generate_chain(ROOT/'tests/fixtures-ng04-chain',ROOT/'tests/NG04_CHAIN_FIXTURES.json')
     report={'schema':'gc-ng04-product-apply-tests-v1','status':'PASS' if result is None or result.wasSuccessful() else 'FAIL','count':result.testsRun if result else 0,'failures':len(result.failures)+len(result.errors) if result else 0,
-            'chain_fixture_report':'tests/NG04_CHAIN_FIXTURES.json' if chain else None,'transaction_stub_scope':'B05/B06 synthetic/B07 isolate composition after WB; wrapper relative-path fixture mocks worker only; WB acceptance NOT_RUN in these tests','native':'NOT_RUN','game':'NOT_RUN'}
+            'chain_fixture_report':'tests/NG04_CHAIN_FIXTURES.json' if chain else None,'transaction_stub_scope':'UI/Master/registration fixtures only; Novel uses the separate current workflow','native':'NOT_RUN','game':'NOT_RUN'}
     (ROOT/'tests/NG04_APPLY_TEST_RESULTS.json').write_bytes(encode(report)); raise SystemExit(0 if report['status']=='PASS' else 1)

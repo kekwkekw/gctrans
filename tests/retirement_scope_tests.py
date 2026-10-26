@@ -7,21 +7,23 @@ RETIRED = (
     "run_all.bat", "scripts/run.py", "scripts/update.py", "scripts/gpt.py",
     "scripts/translate_script.py", "scripts/merge.py", "scripts/utils.py",
     "scripts/parse.py", "scripts/requirements.txt", "app.js", "package.json",
-    "package-lock.json", "vercel.json", "项目GPT字典.txt", "!!!!!!!!!!!!!!!!!!!최근로그.txt",
+    "package-lock.json", "vercel.json",
+    "tools/update/novel_bridge.py", "tools/update/novel_bridge_worker.py",
+    "tools/update/intake_work.py", ".github/workflows/update_translation.yml", "项目GPT字典.txt", "!!!!!!!!!!!!!!!!!!!최근로그.txt",
 )
 class RetirementTests(unittest.TestCase):
     def test_retired_entries_absent(self):
         self.assertEqual([], [p for p in RETIRED if (ROOT/p).exists()])
     def test_current_source_and_cdn_entries_remain(self):
         for name in ("scripts/crawl_only.py", "scripts/crypto.py", "tools/update/cli.py",
-                     "tools/update/source_scan.py", "tools/update/novel_bridge.py",
+                     "tools/update/source_scan.py", "tools/update/novel_intake.py", "tools/update/source_work.py",
                      "tools/build_manifests.py", "staging/accepted-master-profile.json",
                      "translations/ko/manifest.json", "translations/ko/names.json",
                      "translations/ko/master.json", "candidate/GCMod.dll",
-                     ".github/workflows/crawl_only.yml", ".github/workflows/update_translation.yml"):
+                     ".github/workflows/crawl_only.yml"):
             self.assertTrue((ROOT/name).is_file(), name)
     def test_current_python_has_no_retired_import(self):
-        forbidden={"scripts.parse","scripts.utils","scripts.gpt","scripts.update","scripts.merge","scripts.run","scripts.translate_script"}
+        forbidden={"scripts.parse","scripts.utils","scripts.gpt","scripts.update","scripts.merge","scripts.run","scripts.translate_script","update.novel_bridge","update.novel_bridge_worker","update.intake_work"}
         for root in (ROOT/"scripts",ROOT/"tools"):
             for path in root.rglob("*.py"):
                 nodes=ast.walk(ast.parse(path.read_text(encoding="utf-8-sig")))

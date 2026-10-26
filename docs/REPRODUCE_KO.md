@@ -46,7 +46,7 @@ python -X utf8 -m scripts.crawl_only --platform PC --state-root <new-scratch/mod
 python -I -S -X utf8 tools/update/cli.py scan -- --platform PC --state-root <new-scratch/cli-state> --raw-root <new-scratch/cli-raw> --output <new-scratch/cli-scan.json>
 ```
 
-지속 source 명령과 scan→diff→actionable intake→기존 WB/review는 OPERATOR_KO.md를 참조한다. fresh state의 baseline-only/비교 이력 없음은 persistent state의 token 변경 plan과 구분한다. GitHub workflow invocation/static no-write/fresh 대 persistent fixture는 이번 실제 실행 보고에 기록하며 Actions dispatch/실제 CDN/raw 취득은 실행하지 않는다.
+지속 source 명령과 scan→diff→actionable intake→Novel prepare→Codex 초벌→PRO 검수→apply는 OPERATOR_KO.md를 참조한다. fresh state의 baseline-only/비교 이력 없음은 persistent state의 token 변경 plan과 구분한다. GitHub workflow invocation/static no-write/fresh 대 persistent fixture는 이번 실제 실행 보고에 기록하며 Actions dispatch/실제 CDN/raw 취득은 실행하지 않는다.
 
 NG10 수정 경계는 다음 대표 검사로 재현한다. helper fault는 dummy file과 GC query mock만 사용하며 실제 게임을 실행하지 않는다. Windows junction fixture를 만들 수 있는 scratch 파일 권한이 필요하다.
 
