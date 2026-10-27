@@ -2053,7 +2053,7 @@
       "id": "ui.core.UI4-S009.0e154b17af6878e9",
       "jp": "オプション",
       "kind": "literal",
-      "ko": "설정",
+      "ko": "옵션",
       "role": "static_caption"
     },
     {
@@ -3039,6 +3039,934 @@
       "kind": "literal",
       "ko": "용어 사전",
       "role": "keyword_dictionary_heading"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.pro05.museum.m01",
+      "jp": "ミュージアム",
+      "kind": "literal",
+      "ko": "미술관",
+      "role": "museum_title"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.pro05.museum.m02",
+      "jp": "ミュージアム情報",
+      "kind": "template_label",
+      "ko": "미술관 정보",
+      "role": "static_caption"
+    },
+    {
+      "disposition": "translate",
+      "id": "ui.pro05.museum.m03",
+      "jp": "ミュージアムレベル",
+      "kind": "template_label",
+      "ko": "미술관 레벨",
+      "role": "static_caption"
+    },
+    {
+      "id": "ui.next.adjacent.a01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "閉じる",
+      "ko": "닫기",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a02",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "美術品Lv合計",
+      "ko": "미술품 레벨 합계",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a03",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "学芸員配置状況",
+      "ko": "학예사 배치 현황",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a04",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "AP回復量",
+      "ko": "AP 회복량",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a05",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "感情資源",
+      "ko": "감정 자원",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a06",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "時間毎生産量",
+      "ko": "시간당 생산량",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a07",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "所持上限",
+      "ko": "보유 한도",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a08",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "藝晶石所持状況",
+      "ko": "예정석 보유 현황",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a09",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "イマージュ経験値アップアイテム",
+      "ko": "이마쥬 경험치 아이템",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a10",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "レアリティ",
+      "ko": "레어도",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a11",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "獲得場所検索",
+      "ko": "획득처 검색",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a12",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "足跡帳",
+      "ko": "방문 기록",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a13",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "館長情報",
+      "ko": "관장 정보",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a14",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "学芸員情報",
+      "ko": "학예사 정보",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a15",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "イベント実績",
+      "ko": "이벤트 기록",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a16",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "ランキング",
+      "ko": "랭킹",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a17",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "卓上調度品",
+      "ko": "탁상 장식품",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a18",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "配置",
+      "ko": "배치",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a19",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "イベント",
+      "ko": "이벤트",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a20",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "幕間",
+      "ko": "막간",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a21",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "ストーリー",
+      "ko": "스토리",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a22",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャラクター",
+      "ko": "캐릭터",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a23",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "パレット",
+      "ko": "팔레트",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a24",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "強化",
+      "ko": "강화",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a25",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "交流",
+      "ko": "교류",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a26",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "名簿",
+      "ko": "명부",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a27",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "ポテンシャルジェム",
+      "ko": "포텐셜 젬",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a28",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "レアリティ",
+      "ko": "레어도",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a29",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "獲得場所検索",
+      "ko": "획득처 검색",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a30",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "レベル",
+      "ko": "레벨",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a31",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "所持スタイル",
+      "ko": "보유 스타일",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a32",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "技法強化",
+      "ko": "기법 강화",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a33",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンペーン",
+      "ko": "캠페인",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a34",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンペーン",
+      "ko": "캠페인",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a35",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンペーン",
+      "ko": "캠페인",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a36",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "お知らせ",
+      "ko": "공지",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a37",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "贈り物",
+      "ko": "선물",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a38",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンペーン",
+      "ko": "캠페인",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a39",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンペーン",
+      "ko": "캠페인",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a40",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンペーン",
+      "ko": "캠페인",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a41",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "ガチャ詳細",
+      "ko": "가챠 상세",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a42",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "閉じる",
+      "ko": "닫기",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a43",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "レアリティ別提供割合",
+      "ko": "레어도별 제공 확률",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a44",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "レアリティ",
+      "ko": "레어도",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a45",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "提供割合",
+      "ko": "제공 확률",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a46",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "提供割合",
+      "ko": "제공 확률",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a47",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "顕性ポテンシャル",
+      "ko": "현성 포텐셜",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a48",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "顕性ポテンシャル",
+      "ko": "현성 포텐셜",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a49",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "注意事項",
+      "ko": "주의사항",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.adjacent.a50",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "注意事項",
+      "ko": "주의사항",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.element-sort.s0",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "レアリティ",
+      "ko": "레어도",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.element-sort.s1",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "所持数",
+      "ko": "보유 수",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.shop.dmm-row",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "DMMポイント",
+      "ko": "DMM 포인트",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.shop.silver-section",
+      "kind": "literal",
+      "role": "shop_currency_section_title",
+      "jp": "銀貨",
+      "ko": "은화",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.next.present.receive-cell",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "受け取る",
+      "ko": "수령",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r01.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "ユーザー名",
+      "ko": "사용자명",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r01.02",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "ランク",
+      "ko": "랭크",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r01.03",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "総合戦闘力",
+      "ko": "종합 전투력",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r01.04",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "来館者数",
+      "ko": "방문자 수",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r01.05",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "誕生日",
+      "ko": "생일",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r01.06",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "開始日",
+      "ko": "시작일",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r01.07",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "自己紹介",
+      "ko": "자기소개",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r02.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "プレビュー",
+      "ko": "미리 보기",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r03.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "<cspace=-0.15em>アテネスレコード</cspace>",
+      "ko": "<cspace=-0.15em>아테네스 레코드</cspace>",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r16.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "パレット",
+      "ko": "팔레트",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r16.02",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "強化",
+      "ko": "강화",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r16.03",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "交流",
+      "ko": "교류",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r16.04",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "名簿",
+      "ko": "명부",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "レベル",
+      "ko": "레벨",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.02",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "通常攻撃",
+      "ko": "일반 공격",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.03",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "体力",
+      "ko": "체력",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.04",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "攻撃",
+      "ko": "공격",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.05",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "防御",
+      "ko": "방어",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.06",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "精神",
+      "ko": "정신",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.07",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "器用",
+      "ko": "기교",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.08",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "敏捷",
+      "ko": "민첩",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.09",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "幸運",
+      "ko": "행운",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.10",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "熱情",
+      "ko": "열정",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.11",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "移動",
+      "ko": "이동",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r17.12",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "エレメント補正",
+      "ko": "엘리먼트 보정",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r18.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "藝術家一覧",
+      "ko": "예술가 목록",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r19.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンセル",
+      "ko": "취소",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r18.02",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "藝術家を選択してください",
+      "ko": "예술가를 선택해 주세요",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r10.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "編成コピー",
+      "ko": "편성 복사",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r11.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "おまかせ編成",
+      "ko": "자동 편성",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r12.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "チーム戦闘力",
+      "ko": "팀 전투력",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r09.01",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "画面モード",
+      "ko": "화면 모드",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r09.02",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "フルスクリーン",
+      "ko": "전체 화면",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r09.03",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "ウインドウ",
+      "ko": "창 모드",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r09.04",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "解像度",
+      "ko": "해상도",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.option-tab.1",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "画面",
+      "ko": "화면",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.option-tab.2",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "一括ダウンロード",
+      "ko": "일괄 다운로드",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.enhance-tab.0",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "レベルアップ",
+      "ko": "레벨업",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.enhance-tab.1",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "技法",
+      "ko": "기법",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.enhance-tab.2",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "ベースアップ",
+      "ko": "베이스업",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.enhance-tab.3",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "限界突破",
+      "ko": "한계 돌파",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r22.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "ソート",
+      "ko": "정렬",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r24.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンセル",
+      "ko": "취소",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r24.02",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "適用",
+      "ko": "적용",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r23.01",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "レアリティ",
+      "ko": "레어도",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r23.02",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "入手順",
+      "ko": "획득순",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r23.03",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "限界突破数",
+      "ko": "한계 돌파 횟수",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r20.01",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "属性",
+      "ko": "속성",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r21.01",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "芸相",
+      "ko": "예상",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r05.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "絞り込み",
+      "ko": "필터",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r06.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "おまかせ選択",
+      "ko": "자동 선택",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r06.02",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "まとめて交換",
+      "ko": "일괄 교환",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r06.03",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "消費",
+      "ko": "소모",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r13.01",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンペーン開催中",
+      "ko": "캠페인 진행 중",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r13.02",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンペーン開催中",
+      "ko": "캠페인 진행 중",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r13.03",
+      "kind": "template_label",
+      "role": "static_caption",
+      "jp": "キャンペーン開催中",
+      "ko": "캠페인 진행 중",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r15.01",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "飛行",
+      "ko": "비행",
+      "disposition": "translate"
+    },
+    {
+      "id": "ui.wave2.r15.02",
+      "kind": "literal",
+      "role": "static_caption",
+      "jp": "なし",
+      "ko": "없음",
+      "disposition": "translate"
     }
   ],
   "schema_version": 1

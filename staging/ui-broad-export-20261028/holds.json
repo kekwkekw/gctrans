@@ -1,0 +1,22 @@
+[
+  {
+    "family": "Athenes region card names",
+    "kind": "IMAGE_BAKED_LABEL",
+    "asset": "sprite_atlas/athenes_record_atlas.dmm",
+    "sprites": [
+      "BtArea01",
+      "BtArea02",
+      "BtArea03",
+      "BtArea04",
+      "BtArea05",
+      "BtArea06"
+    ],
+    "reason": "Text is part of image pixels; Master and UI text paths work. Requires a separately scoped image replacement; no runtime framework revived."
+  },
+  {
+    "family": "Map-level-up notification",
+    "kind": "NATIVE_STATE_NOT_RETRIGGERED",
+    "translation": "ADDED_AND_EXACT_TESTED",
+    "reason": "User screenshot proves visible text; re-trigger requires inventory-changing acquisition/limit-break. No such action performed."
+  }
+]

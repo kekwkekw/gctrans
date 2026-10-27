@@ -1,0 +1,731 @@
+[
+  {
+    "screen": "quest",
+    "jp": "メインクエスト",
+    "local_ui": "主线任务",
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "メインクエスト",
+        "ko": "主线任务"
+      },
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "メインクエスト",
+        "ko": "主线任务"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "メインクエスト",
+        "ko": "메인 퀘스트"
+      },
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "メインクエスト",
+        "ko": "메인 퀘스트"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "메인 퀘스트",
+    "final_ui_exact": "메인 퀘스트",
+    "native_result": "PASS: main/research/ended captions; event logo images remain",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "quest",
+    "jp": "リサーチクエスト",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "リサーチクエスト",
+        "ko": "研究任务"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "リサーチクエスト",
+        "ko": "리서치 퀘스트"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "리서치 퀘스트",
+    "final_ui_exact": "리서치 퀘스트",
+    "native_result": "PASS: main/research/ended captions; event logo images remain",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "quest",
+    "jp": "開催終了",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "개최 종료",
+    "final_ui_exact": "개최 종료",
+    "native_result": "PASS: main/research/ended captions; event logo images remain",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "enemy",
+    "jp": "強靭な空洞顔",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "강인한 공허의 얼굴",
+    "final_ui_exact": "강인한 공허의 얼굴",
+    "native_result": "PASS: strong hollow face, first clear, skip; no sortie",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "enemy",
+    "jp": "初回クリア",
+    "local_ui": "首次通关",
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "初回クリア",
+        "ko": "首次通关"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "初回クリア",
+        "ko": "첫 클리어"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "첫 클리어",
+    "final_ui_exact": "첫 클리어",
+    "native_result": "PASS: strong hollow face, first clear, skip; no sortie",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "enemy",
+    "jp": "スキップ",
+    "local_ui": "跳过",
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [
+      {
+        "disposition": "translate",
+        "id": "ui.captions.UI13-K023.5a94389318fabedd",
+        "jp": "スキップ",
+        "kind": "literal",
+        "ko": "건너뛰기",
+        "role": "skip_execute_button_caption"
+      },
+      {
+        "disposition": "translate",
+        "id": "ui.residuals.UI12-J035.5a94389318fabedd",
+        "jp": "スキップ",
+        "kind": "literal",
+        "ko": "건너뛰기",
+        "role": "skip_execute_button_caption"
+      }
+    ],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "건너뛰기",
+    "final_ui_exact": "건너뛰기",
+    "native_result": "PASS: strong hollow face, first clear, skip; no sortie",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "dungeon",
+    "jp": "シーズン27",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "final_ui_exact": null,
+    "native_result": "PASS: season 27, date until, current lap/floor, achievements, seeker boots",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "dungeon",
+    "jp": "2026/11/01 03:59 まで",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "local_format_key": "{0:yyyy/MM/dd HH:mm} まで",
+    "local_runtime_handling": "Exact/trim/outer-wrapper lookup only; no runtime date parser at pinned commit",
+    "korean_handling": "Bounded whole date label plus render-time lookup",
+    "final_ui_exact": null,
+    "native_result": "PASS: season 27, date until, current lap/floor, achievements, seeker boots",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_FORMAT_PRESENT"
+  },
+  {
+    "screen": "dungeon",
+    "jp": "実績",
+    "local_ui": "成就",
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "実績",
+        "ko": "成就"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "実績",
+        "ko": "업적"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "업적",
+    "final_ui_exact": "업적",
+    "native_result": "PASS: season 27, date until, current lap/floor, achievements, seeker boots",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "dungeon",
+    "jp": "現在：1周目フロア4",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "final_ui_exact": null,
+    "native_result": "PASS: season 27, date until, current lap/floor, achievements, seeker boots",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "dungeon",
+    "jp": "シーカーズブーツ",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mItems",
+        "field": "ml_name[]",
+        "jp": "シーカーズブーツ",
+        "ko": "探索者靴子"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mItems",
+        "field": "ml_name[]",
+        "jp": "シーカーズブーツ",
+        "ko": "시커즈 부츠"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "시커즈 부츠",
+    "final_ui_exact": "시커즈 부츠",
+    "native_result": "PASS: season 27, date until, current lap/floor, achievements, seeker boots",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "character",
+    "jp": "信愛",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mShopCategories",
+        "field": "ml_name[]",
+        "jp": "信愛",
+        "ko": "信爱"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mShopCategories",
+        "field": "ml_name[]",
+        "jp": "信愛",
+        "ko": "신애"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "신애",
+    "final_ui_exact": "신애",
+    "native_result": "PASS: affection, episode, favorite gift region including color tag",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "character",
+    "jp": "エピソード",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "エピソード",
+        "ko": "轶事"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "エピソード",
+        "ko": "에피소드"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "에피소드",
+    "final_ui_exact": "에피소드",
+    "native_result": "PASS: affection, episode, favorite gift region including color tag",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "character",
+    "jp": "好物：イヴェール地区",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "선호 선물: 이베르 지구",
+    "final_ui_exact": "선호 선물: 이베르 지구",
+    "native_result": "PASS: affection, episode, favorite gift region including color tag",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "museum",
+    "jp": "あと7日",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "final_ui_exact": null,
+    "native_result": "PASS: AP recovery and days remaining; update-until intentionally HOLD",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "museum",
+    "jp": "更新まで08:47",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "HOLD_UNTIL_FAMILY_ABSENT_FROM_LOCAL",
+    "reason": "This full label/prefix has no local Master/UI key or dedicated handler. User requested HOLD for absent until families.",
+    "final_ui_exact": null,
+    "native_result": "PASS: AP recovery and days remaining; update-until intentionally HOLD",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "museum",
+    "jp": "AP回復",
+    "local_ui": "恢复AP",
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "AP回復",
+        "ko": "AP恢复"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "AP回復",
+        "ko": "AP 회복"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "AP 회복",
+    "final_ui_exact": "AP 회복",
+    "native_result": "PASS: AP recovery and days remaining; update-until intentionally HOLD",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "workshop",
+    "jp": "1回 創作完了",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "final_ui_exact": null,
+    "native_result": "PASS: creation count, confirm, monthly-pass unlock; completion-until lookup tested but active countdown state unavailable (both workshops have completed output)",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "workshop",
+    "jp": "完成まで",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "完成まで",
+        "ko": "到完成为止"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "完成まで",
+        "ko": "완성까지"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "완성까지",
+    "final_ui_exact": "완성까지",
+    "native_result": "PASS: creation count, confirm, monthly-pass unlock; completion-until lookup tested but active countdown state unavailable (both workshops have completed output)",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "workshop",
+    "jp": "マンスリーパス3000購入で解放",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "월간 패스 3000 구매로 해제",
+    "final_ui_exact": "월간 패스 3000 구매로 해제",
+    "native_result": "PASS: creation count, confirm, monthly-pass unlock; completion-until lookup tested but active countdown state unavailable (both workshops have completed output)",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "workshop",
+    "jp": "確認",
+    "local_ui": "确认",
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "確認",
+        "ko": "确认"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "jp": "確認",
+        "ko": "확인"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "확인",
+    "final_ui_exact": "확인",
+    "native_result": "PASS: creation count, confirm, monthly-pass unlock; completion-until lookup tested but active countdown state unavailable (both workshops have completed output)",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "event",
+    "jp": "ボックスクエスト",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "박스 퀘스트",
+    "final_ui_exact": "박스 퀘스트",
+    "native_result": "PASS: box quest tab, date until, box ordinal; logo image remains",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "event",
+    "jp": "2026/11/06 12:59まで",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "local_format_key": "{0:yyyy/MM/dd HH:mm} まで",
+    "local_runtime_handling": "Exact/trim/outer-wrapper lookup only; no runtime date parser at pinned commit",
+    "korean_handling": "Bounded whole date label plus render-time lookup",
+    "final_ui_exact": null,
+    "native_result": "PASS: box quest tab, date until, box ordinal; logo image remains",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_FORMAT_PRESENT"
+  },
+  {
+    "screen": "event",
+    "jp": "ボックス：1箱目",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "final_ui_exact": null,
+    "native_result": "PASS: box quest tab, date until, box ordinal; logo image remains",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "box",
+    "jp": "ボックスガチャ",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "ボックスガチャ",
+        "ko": "箱式抽卡"
+      }
+    ],
+    "ko_master": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "jp": "ボックスガチャ",
+        "ko": "박스 가챠"
+      }
+    ],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "박스 가챠",
+    "final_ui_exact": "박스 가챠",
+    "native_result": "PASS: box gacha title, box/ordinal, 1/10 opening labels; opening-deadline intentionally HOLD",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_BASELINE_PRESENT_UI_PATH_MISSING"
+  },
+  {
+    "screen": "box",
+    "jp": "ボックス",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "ADD_EXACT_UI",
+    "ko": "박스",
+    "final_ui_exact": "박스",
+    "native_result": "PASS: box gacha title, box/ordinal, 1/10 opening labels; opening-deadline intentionally HOLD",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "box",
+    "jp": "1箱目",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "final_ui_exact": null,
+    "native_result": "PASS: box gacha title, box/ordinal, 1/10 opening labels; opening-deadline intentionally HOLD",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "box",
+    "jp": "開封期限：2026/11/08 12:59 まで",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "HOLD_UNTIL_FAMILY_ABSENT_FROM_LOCAL",
+    "reason": "This full label/prefix has no local Master/UI key or dedicated handler. User requested HOLD for absent until families.",
+    "final_ui_exact": null,
+    "native_result": "PASS: box gacha title, box/ordinal, 1/10 opening labels; opening-deadline intentionally HOLD",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "box",
+    "jp": "1回開封",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "final_ui_exact": null,
+    "native_result": "PASS: box gacha title, box/ordinal, 1/10 opening labels; opening-deadline intentionally HOLD",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  },
+  {
+    "screen": "box",
+    "jp": "10回開封",
+    "local_ui": null,
+    "ko_ui": null,
+    "local_master": [],
+    "ko_master": [],
+    "authoring": [],
+    "master_hold_match": false,
+    "review": "JP semantics and existing Korean terms checked; no Chinese translation used",
+    "action": "BOUNDED_DISPLAY_LABEL",
+    "reason": "Observed fixed numeric label; whole-string numeric-only match with values preserved. Date form is grounded in local format key.",
+    "final_ui_exact": null,
+    "native_result": "PASS: box gacha title, box/ordinal, 1/10 opening labels; opening-deadline intentionally HOLD",
+    "prior_master_hold3_match": false,
+    "prior_master_hold7_match": false,
+    "classification": "LOCAL_EXACT_ABSENT"
+  }
+]

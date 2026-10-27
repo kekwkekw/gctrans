@@ -1,0 +1,5132 @@
+[
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "バイオレットの味方全員に<help=offence>攻撃</help>[[side_effects_power_1]%]増加＜[[side_effects_turn_1]ターン]＞(重複可)・<help=move>移動</help>[[side_effects_power_2]]増加＜[[side_effects_turn_2]ターン]＞(重複可)・<help=passion>熱情</help>[[side_effects_power_3]]増加/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "バトル開始時、この技法の<help=cool_time>クールタイム</help>最大化/範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/熱情消費[[use_passion]]/攻撃対象が少ないほどダメージ上昇（最大[[side_effects_power_1]%]）/バイオレットの自身に<help=ignite>気炎</help>付与・<help=true_sight>真眼</help>付与/[[side_rate_3]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_3]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "命中対象の<help=will>精神</help>[[side_effects_power_1]%]減少＜[[side_effects_turn_1]ターン]＞(解除不可・重複可)/命中対象に確率で雷の<help=stamp>刻印</help>・<help=stagnation>停滞</help>付与＜[[side_effects_turn_2]ターン]＞"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]/<help=absorption>吸収</help>[[side_effects_power_1]%]/自身に吸収に応じて<help=offence>攻撃</help>増加（変換率[[side_effects_power_2]%]）＜[[side_effects_turn_2]ターン]＞（重複可）（バフ上限[[effect_attributes_2_5]]）/バイオレットの味方全員に<help=dexterity>器用</help>[[side_effects_power_3]%]増加＜[[side_effects_turn_3]ターン]＞(重複可)/"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]/「[[ml_name_1]]」召喚（最大[[side_effects_power_1]]）/バイオレットの味方全員に<help=will>精神</help>[[side_effects_power_2]%]増加＜[[side_effects_turn_2]ターン]＞(重複可)/[[Askill_name_20215002]]の<help=cool_time>クールタイム</help>[[side_effects_power_3]]短縮/"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]/カーマインの味方全員に<help=offence>攻撃</help>[[side_effects_power_1]%]増加＜[[side_effects_turn_1]ターン]＞(重複可)・<help=ignite>気炎</help>付与・<help=cool_time>クールタイム</help>[[side_effects_power_3]]短縮/"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]/味方全員に<help=cool_time>クールタイム</help>[[side_effects_power_1]]短縮/ビリジアンの味方全員に<help=will>精神</help>[[side_effects_power_2]%]増加＜[[side_effects_turn_2]ターン]＞(重複可)・<help=regeneration>再生</help>付与/[[Askill_name_20314002]]の<help=cool_time>クールタイム</help>[[side_effects_power_4]]短縮/"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]/攻撃対象が少ないほどダメージ上昇（最大[[side_effects_power_1]%]）/バイオレットの味方全員に<help=offence>攻撃</help>[[side_effects_power_2]%]増加＜[[side_effects_turn_2]ターン]＞(解除不可・重複可)・<help=cool_time>クールタイム</help>[[side_effects_power_3]]短縮/"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]/敵全体の<help=offence>攻撃</help>[[side_effects_power_1]%]減少＜[[side_effects_turn_1]ターン]＞(重複可)/バイオレットの味方全員に<help=critical>必殺</help>[[side_effects_power_2]]増加＜[[side_effects_turn_2]ターン]＞(重複可)/敵全体の<help=speed>速力</help>[[side_effects_power_3]%]減少＜[[side_effects_turn_3]ターン]＞/[[Askill_name_21015002]]の<help=cool_time>クールタイム</help>[[side_effects_power_4]]短縮/"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]/範囲内の味方に<help=thunderclap>迅雷</help>付与/自身に<help=cool_time>クールタイム</help>[[side_effects_power_2]]短縮/[[side_rate_3]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_3]]回）/"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]/自身に<help=passion>熱情</help>[[side_effects_power_1]]増加・<help=thunderclap>迅雷</help>付与・<help=Rejection>拒絶</help>付与/命中対象に<help=defence>防御</help>[[side_effects_power_3]%]減少＜[[side_effects_turn_3]ターン]＞/[[Askill_name_21015002]]の<help=cool_time>クールタイム</help>[[side_effects_power_4]]短縮/"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]/自身の<help=passion>熱情</help>[[side_effects_power_1]]増加/ビリジアンの味方全員の<help=offence>攻撃</help>[[side_effects_power_2]%]増加＜[[side_effects_turn_2]ターン]＞(重複可)/自身の<help=cool_time>クールタイム</help>[[side_effects_power_3]]短縮/"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]で範囲内の味方の<help=constitution>体力</help>回復(物理)/自身に<help=offence>攻撃</help>[[side_effects_power_1]%]増加＜[[side_effects_turn_1]ターン]＞(重複可)/対象に<help=passion>熱情</help>[[side_effects_power_2]]増加/[[side_rate_3]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_3]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]で範囲内の味方の<help=constitution>体力</help>回復(雷)/バイオレットの味方全員に入魂ゲージ[[side_effects_power_2]]増加/離脱した味方を<help=constitution>体力</help>[[side_effects_power_1]%]で<help=resurrection>蘇生</help>（最大4人）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "威力[[main_effects_power_1]%]で範囲内の味方の<help=constitution>体力</help>回復(雷)/ビリジアンの味方全員に<help=will>精神</help>[[side_effects_power_1]%]増加＜[[side_effects_turn_1]ターン]＞(重複可)・<help=wind_shield>風シールド</help>付与[[side_effects_power_2]]・<help=Protection>加護</help>付与"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "対象のビリジアンの味方に<help=offence>攻撃</help>[[side_effects_power_1]%]増加＜[[side_effects_turn_1]ターン]＞(解除不可・重複可)・入魂ゲージ[[side_effects_power_2]]増加・<help=ignite>気炎</help>付与・<help=concentration>集中</help>付与"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（炎<help=element>エレメント</help>）/<help=burn>火傷</help>状態ならダメージ[[side_effects_power_1]%]上昇/オブジェクト召喚を使用するたびにダメージ[[side_effects_power_2]%]上昇（上限[[effect_attributes_2_1]]回）/敵撃破時にこの技法の<help=cool_time>クールタイム</help>[[side_effects_power_3]]短縮"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（炎<help=element>エレメント</help>）/自身の<help=constitution>体力</help>[[side_effects_power_1]%]消費/自身の体力消費効果発動回数に応じてダメージ[[side_effects_power_2]%]上昇（上限[[effect_attributes_2]]回）/ボスエネミーにダメージ[[side_effects_power_3]%]上昇/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/雷弱点付与状態の敵にダメージ[[side_effects_power_1]%]上昇/命中対象に<help=will>精神</help>・<help=dexterity>器用</help>[[side_effects_power_2]%]減少＜[[side_effects_turn_2]ターン]＞/命中対象に<help=thunder_shield>雷シールド</help>解除/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "敵に防御無視の威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/カーマインの味方全員に<help=critical>必殺</help>[[side_effects_power_1]]増加＜[[side_effects_turn_1]ターン]＞・入魂ゲージ[[side_effects_power_2]]増加/カーマインの自身と近くの味方2人に<help=ignite>気炎</help>付与/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（水<help=element>エレメント</help>）/<help=move_position>位置移動（直線）</help>/命中対象に確率で<help=charm>誘惑</help>付与＜[[side_effects_turn_2]ターン]＞/[[side_rate_3]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_3]]回）/敵撃破時に入魂ゲージ100%以上ならば入魂発動"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（水<help=element>エレメント</help>）/熱情消費[[use_passion]]/自身の技法・絶技発動回数に応じてダメージ[[side_effects_power_1]%]上昇（上限[[effect_attributes_1_1]]回）/自身に<help=offence>攻撃</help>[[side_effects_power_2]%]増加＜[[side_effects_turn_2]ターン]＞・<help=critical>必殺</help>[[side_effects_power_3]]増加＜[[side_effects_turn_3]ターン]＞（解除不可・重複可）/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（水<help=element>エレメント</help>）/自身に<help=water_form>水フォーム</help>付与/「[[ml_name_2]]」召喚（最大[[side_effects_power_2]]）/命中対象に<help=agility>敏捷</help>[[side_effects_power_3]%]減少＜[[side_effects_turn_3]ターン]＞・<help=evasion>回避</help>[[side_effects_power_4]]減少＜[[side_effects_turn_4]ターン]＞/[[side_rate_5]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_5]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（炎<help=element>エレメント</help>）/[[side_rate_1]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_1]]回）/アイボリーの味方全員に<help=move>移動</help>[[side_effects_power_2]]増加＜[[side_effects_turn_2]ターン]＞/出現中、最も精神が高い敵1体の<help=will>精神</help>を減少する「[[ml_name_3]]」召喚（最大[[side_effects_power_3]]）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（炎<help=element>エレメント</help>）/熱情消費[[use_passion]]/自身の<help=constitution>体力</help>[[side_effects_power_1]%]消費/自身の体力消費効果発動回数に応じてダメージ[[side_effects_power_2]%]上昇（上限[[effect_attributes_2]]回）/命中対象に<help=will>精神</help>[[side_effects_power_3]%]減少＜[[side_effects_turn_3]ターン]＞/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）/自身に<help=thunder_shield>雷シールド</help>付与[[side_effects_power_5]]"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（炎<help=element>エレメント</help>）/熱情消費[[use_passion]]/自身の最大<help=constitution>体力</help>[[side_effects_power_1]%]減少＜[[side_effects_turn_1]ターン]＞/「[[ml_name_2]]」召喚（最大[[side_effects_power_2]]）/[[side_rate_3]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_3]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（炎<help=element>エレメント</help>）/系統：彫刻にダメージ[[side_effects_power_1]%]上昇/バイオレットの味方全員に<help=wind_shield>風シールド</help>付与[[side_effects_power_2]]/「[[ml_name_3]]」召喚（最大[[side_effects_power_3]]）/命中対象に確率で<help=burn>火傷</help>付与＜[[side_effects_turn_4]ターン]＞"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/<help=move_position_range>位置移動（範囲）</help>/熱情消費[[use_passion]]/系統：工芸にダメージ[[side_effects_power_2]%]上昇/ボスエネミーにダメージ[[side_effects_power_3]%]上昇/敵撃破時に[[side_rate_4]%]の確率で<help=re_action>再行動</help>（毎ターン1回まで）/敵撃破時に入魂ゲージ100%以上ならば入魂発動/<help=soul get>ソウル回収</help>"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/<help=stun>気絶</help>状態ならダメージ[[side_effects_power_1]%]上昇/自身が雷弱点を突いた回数に応じてダメージ[[side_effects_power_2]%]上昇（上限[[effect_attributes_2_1]]回）/バイオレットの味方全員に<help=agility>敏捷</help>[[side_effects_power_3]%]増加＜[[side_effects_turn_3]ターン]＞(重複可)・<help=critical>必殺</help>[[side_effects_power_4]]増加＜[[side_effects_turn_4]ターン]＞(重複可)"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/[[side_rate_1]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_1]]回）/自身に<help=move>移動</help>[[side_effects_power_2]]増加＜[[side_effects_turn_2]ターン]＞/命中対象に確率で雷<help=weakpoint>弱点</help>付与"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/命中対象を[[side_effects_power_1]]マス<help=tractor>引き寄せ</help>/自身に<help=thunder_shield>雷シールド</help>付与[[side_effects_power_2]]/自身に<help=true_sight>真眼</help>付与"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/攻撃対象が少ないほどダメージ上昇（最大[[side_effects_power_1]%]）/ボスエネミーにダメージ[[side_effects_power_2]%]上昇/命中対象に確率で<help=stun>気絶</help>付与＜[[side_effects_turn_3]ターン]＞/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）/技法（+[[effect_attributes_5_3]]）・絶技（+[[effect_attributes_5_4]]）の発動カウント合計（[[effect_attributes_5_2]]）で[[Askill_name_20113003]]に変化"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/攻撃対象が少ないほどダメージ上昇（最大[[side_effects_power_1]%]）/ボスエネミーにダメージ[[side_effects_power_2]%]上昇/自身と最も攻撃が高いカーマインの味方1人に<help=move>移動</help>[[side_effects_power_3]]増加＜[[side_effects_turn_3]ターン]＞・<help=true_sight>真眼</help>付与/[[side_rate_7]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_7]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/攻撃対象が少ないほどダメージ上昇（最大[[side_effects_power_1]%]）/自身と最も攻撃が高い味方1人に<help=ignite>気炎</help>付与/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/攻撃対象が少ないほどダメージ上昇（最大[[side_effects_power_1]%]）自身の技法・絶技発動回数に応じてダメージ[[side_effects_power_2]%]上昇（上限[[effect_attributes_2_1]]回）/敵撃破時に[[side_rate_3]%]の確率で<help=re_action>再行動</help>（毎ターン1回まで）/敵撃破時に入魂ゲージ100%以上ならば入魂発動"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/熱情消費[[use_passion]]/命中対象の<help=thunder_shield>雷シールド</help>解除/[[side_rate_2]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_2]]回）/「[[ml_name_3]]」召喚（最大[[side_effects_power_3]]）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/熱情消費[[use_passion]]/自身の技法・絶技発動回数に応じてダメージ[[side_effects_power_1]%]上昇（上限[[effect_attributes_1_1]]回）/命中対象に<help=will>精神</help>・<help=agility>敏捷</help>[[side_effects_power_2]%]減少＜[[side_effects_turn_2]ターン]＞/[[side_rate_3]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_3]]回）/敵撃破時に入魂ゲージ100%以上ならば入魂発動"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/自身の<help=constitution>体力</help>[[side_effects_power_1]%]消費/命中対象に<help=will>精神</help>・<help=agility>敏捷</help>[[side_effects_power_2]%]減少＜[[side_effects_turn_2]ターン]＞/命中対象に確率で<help=shock>感電</help>付与＜[[side_effects_turn_3]ターン]＞・<help=sleep>睡眠</help>付与＜[[side_effects_turn_4]ターン]＞/[[side_rate_5]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_5]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（風<help=element>エレメント</help>）/命中対象を[[side_effects_power_1]]マス<help=knock_back>弾き飛ばし</help>/ビリジアンの味方全員に<help=agility>敏捷</help>[[side_effects_power_2]%]増加＜[[side_effects_turn_2]ターン]＞(重複可)/[[side_rate_3]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_3]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（風<help=element>エレメント</help>）/攻撃対象が少ないほどダメージ上昇（最大[[side_effects_power_1]%]）/ボスエネミーにダメージ[[side_effects_power_2]%]上昇/自身と最も攻撃が高いカーマインの味方1人に<help=move>移動</help>[[side_effects_power_3]]増加＜[[side_effects_turn_3]ターン]＞・<help=true_sight>真眼</help>付与/[[side_rate_7]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_7]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（風<help=element>エレメント</help>）/熱情消費[[use_passion]]/最も体力割合が高い味方1人の<help=constitution>体力</help>[[side_effects_power_1]%]消費/自身の体力消費効果発動回数に応じてダメージ[[side_effects_power_2]%]上昇（上限[[effect_attributes_2]]回）/自身に<help=immovable>不動</help>・<help=Protection>加護</help>付与/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（風<help=element>エレメント</help>）/系統：工芸・芸道にダメージ[[side_effects_power_1]%]上昇/1ターン前に自身が技法か絶技使用していたら威力[[side_effects_power_2]%]上昇/自身に<help=critical>必殺</help>[[side_effects_power_3]]増加＜[[side_effects_turn_3]ターン]＞/敵撃破時に入魂ゲージ100%以上ならば入魂発動"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/アイボリーの味方全員に<help=offence>攻撃</help>[[side_effects_power_1]%]増加＜[[side_effects_turn_1]ターン]＞(重複可)/命中対象に確率で物理<help=weakpoint>弱点</help>付与/[[side_rate_3]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_3]]回）/敵撃破時に入魂ゲージ100%以上ならば入魂発動"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/命中対象を[[side_effects_power_1]]マス<help=knock_back>弾き飛ばし</help>/命中対象に確率で<help=stun>気絶</help>付与＜[[side_effects_turn_2]ターン]＞/自身に<help=move>移動</help>[[side_effects_power_3]]増加＜[[side_effects_turn_3]ターン]＞/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/熱情消費[[use_passion]]/<help=move_position>位置移動（直線）</help>/自身に<help=move>移動</help>[[side_effects_power_3]]増加＜[[side_effects_turn_3]ターン]＞・<help=critical>必殺</help>[[side_effects_power_4]]増加＜[[side_effects_turn_4]ターン]＞（解除不可・重複可）/[[side_rate_5]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_5]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/熱情消費[[use_passion]]/<help=move_position>位置移動（直線）</help>/自身に<help=move>移動</help>[[side_effects_power_3]]増加＜[[side_effects_turn_3]ターン]＞・<help=critical>必殺</help>[[side_effects_power_4]]増加＜[[side_effects_turn_4]ターン]＞（解除不可・重複可）/[[side_rate_5]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_5]]回）/敵撃破時に入魂ゲージ100%以上ならば入魂発動"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/熱情消費[[use_passion]]/ボスエネミーにダメージ[[side_effects_power_2]%]上昇/自身の残り体力割合が低いほどダメージ上昇（最大[[side_effects_power_3]%]）/自身に<help=move>移動</help>[[side_effects_power_4]]増加＜[[side_effects_turn_4]ターン]＞/[[side_rate_5]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_5]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/熱情消費[[use_passion]]/自身が物理弱点を突いた回数に応じてダメージ[[side_effects_power_2]%]上昇（上限[[effect_attributes_2_1]]回）/[[side_rate_3]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_3]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/熱情消費[[use_passion]]/自身の技法・絶技発動回数に応じてダメージ[[side_effects_power_1]%]上昇（上限[[effect_attributes_1_1]]回）/自身が物理弱点を突いた回数に応じてダメージ[[side_effects_power_2]%]上昇（上限[[effect_attributes_2_1]]回）/敵撃破時に[[side_rate_3]%]の確率で<help=re_action>再行動</help>（毎ターン1回まで）/敵撃破時に入魂ゲージ100%以上ならば入魂発動"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/系統：彫刻にダメージ[[side_effects_power_1]%]上昇/フォーム付与を使用するたびにダメージ[[side_effects_power_2]%]上昇（上限[[effect_attributes_2_1]]回）/自身と近くの味方1人に入魂ゲージ[[side_effects_power_3]]増加/[[side_rate_4]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_4]]回）"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に威力[[main_effects_power_1]%]の<help=physical_dmg>物理ダメージ</help>（物理<help=element>エレメント</help>）/自身に<help=passion>熱情</help>[[side_effects_power_1]]増加/命中対象に確率で<help=stun>気絶</help>付与＜[[side_effects_turn_2]ターン]＞/命中対象に<help=thunder_shield>雷シールド</help>解除"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_description[]",
+    "jp": "範囲内の敵に精神無視の威力[[main_effects_power_1]%]の<help=magical_dmg>特殊ダメージ</help>（雷<help=element>エレメント</help>）/<help=move_position_range>位置移動（範囲）</help>/[[side_rate_2]%]の確率で<help=re_action>再行動</help>（上限[[side_effects_power_2]]回）/敵撃破時に入魂ゲージ100%以上ならば入魂発動/自身に<help=critical>必殺</help>[[side_effects_power_4]]増加＜[[side_effects_turn_4]ターン]＞/最も攻撃が高い味方1人に<help=critical>必殺</help>[[side_effects_power_5]]増加＜[[side_effects_turn_5]ターン]＞"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "Appassionata"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "Love in letter"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "Moonlight"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "Pathetique"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "Symphony No.5"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "Symphony No.5:Ec"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "スーパーぶんまわし"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "ライフワーク"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "全力の一撃"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "夢幻の"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "妬心の一突き"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "嫉妬穿孔の"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "宵闇の"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "容赦なき鉄槌"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "揺るがしの砕棍"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "月光ステッキ"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "月明りの下の"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "月映の怒り"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "未来に続く"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "未知の高鳴り"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "泰斗の荒彫り"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "湧き上がる羨慕"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "猛烈なる最終宣告"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "綻ぶ花のように"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "自分を信じて"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "花装いの"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "華やかな祝福"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "虚飾献身の"
+  },
+  {
+    "table": "mEquipments",
+    "field": "ml_flavor_text[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】が着用しているカチューシャ。"
+  },
+  {
+    "table": "mEquipments",
+    "field": "ml_flavor_text[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】が着用しているパンプス。"
+  },
+  {
+    "table": "mEquipments",
+    "field": "ml_flavor_text[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】が着用しているベルト。"
+  },
+  {
+    "table": "mEquipments",
+    "field": "ml_flavor_text[]",
+    "jp": "雷光が如き葵の鬣が大気を切り裂く神馬のアンクレット。"
+  },
+  {
+    "table": "mEquipments",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノのカチューシャ"
+  },
+  {
+    "table": "mEquipments",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノのパンプス"
+  },
+  {
+    "table": "mEquipments",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノのベルト"
+  },
+  {
+    "table": "mGachaMileages",
+    "field": "ml_name[]",
+    "jp": "輝きを刻みながらピックアップガチャ ～サンソヴィーノ～"
+  },
+  {
+    "table": "mHomeLayouts",
+    "field": "name",
+    "jp": "Let's Make Art!"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノに経験値を与えることのできるアイテム。"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノのベースアップ強化に必要なアイテム。"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_flavor_text[]",
+    "jp": "サンソヴィーノに眠る秘められた才能を引き出すといわれる鏡。\n鏡面に映る己の姿に、大いなる発見をするという。"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_flavor_text[]",
+    "jp": "サンソヴィーノに眠る秘められた才能を引き出すといわれる鏡。\n鏡面に映る己の姿に、小さな発見をするという。"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_flavor_text[]",
+    "jp": "サンソヴィーノに眠る秘められた才能を引き出すといわれる鏡。\n鏡面に映る己の姿に、新鮮な発見をするという。"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_flavor_text[]",
+    "jp": "サンソヴィーノの心を激しく揺さぶる書物。その技術やセンスを\n飛躍させる哲学や技術について豊富に記されている。"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_flavor_text[]",
+    "jp": "サンソヴィーノの新たな才能を引き出すと言われているオーブ。\nその性質は謎に包まれており、目映い煌めきを放っている。"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_flavor_text[]",
+    "jp": "洗礼された上品な模様が施されているティーカップ。\n貴族の食卓には、その品格に見合った食器が並べられる。"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_name[]",
+    "jp": "【サンソヴィーノ】の藝術家の書"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノの命鏡・中"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノの命鏡・大"
+  },
+  {
+    "table": "mItems",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノの命鏡・小"
+  },
+  {
+    "table": "mLayers",
+    "field": "ml_flavor_text[]",
+    "jp": "いつもの制服からついにドレスアップ！\n姉のアンジェラが見繕った大切な衣装。"
+  },
+  {
+    "table": "mLayers",
+    "field": "ml_get_message[]",
+    "jp": "私にできることなら、どんなことでもお役に立ちたいんです。\nオータムアートフェスティバル、今年も必ず成功させましょうね！"
+  },
+  {
+    "table": "mLayers",
+    "field": "ml_name[]",
+    "jp": "夢幻の可能性"
+  },
+  {
+    "table": "mLayers",
+    "field": "ml_rare_get_message[]",
+    "jp": "館長様と美術館のためなら\n喜んで全力を尽くします！"
+  },
+  {
+    "table": "mNovelKeyWords",
+    "field": "ml_keyword[]",
+    "jp": "D・A"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "Trick and Trick"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "ほろ酔いでまたがられ"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "祭典の初日を終えて"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "自分のいたい場所"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "館長様のために"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "Trick and Trick"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "ほろ酔いでまたがられ"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "祭典の初日を終えて"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "自分のいたい場所"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "館長様のために"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "5ターン経過時敗北"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーに毎ターン拒絶を付与"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーに毎ターン雷シールド[[effects_power]](40%軽減)を付与"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーのアイボリー(赤)の防御+[[effects_power]%]"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーのビリジアン(青)の防御+[[effects_power]%]"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーの体力[[effects_power]%]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーの器用[[effects_power]%]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーの攻撃[[effects_power]%]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーの敏捷[[effects_power]%]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーの状態異常抵抗[[effects_power]]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーはセルリアン以外からの被ダメージを[[effects_power]%]軽減"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーは節、正、虚相以外からの被ダメージを[[effects_power]%]軽減"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーは被ダメージを大きく軽減"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーは被ダメージを軽減"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "エネミーは雷エレメント以外からの被ダメージを[[effects_power]%]軽減"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "クリティカル攻撃を[[effects_power]%]強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "スタイルが有利属性時、対象属性に対してのダメージ[[effects_power]%]上昇"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "ターン開始時、熱情[[effects_power]]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "バトル中に発生した味方のバフ効果[[effects_power]%]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "バトル開始時、自身に物理シールド付与/一定体力以下で自身に攻撃[[effects_power_2]%]増加（重複可）・精神[[effects_power_3]%]増加（重複可）・雷シールド付与"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "バトル開始時の熱情[[effects_power]]増加/物理エレメントの攻撃を[[effects_power_2]%]強化/技法または絶技で熱情消費時、自身の移動[[effects_power_3]]増加＜[[effects_turn_3]ターン]＞（重複可）・熱情[[effects_power_4]]増加・入魂ゲージ[[effects_power_5]]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "バトル開始時の熱情[[effects_power]]増加/雷エレメントの攻撃を[[effects_power_2]%]強化/技法または絶技で熱情消費時、自身の器用[[effects_power_3]%]増加（重複可）＜[[effects_turn_3]ターン]＞、熱情[[effects_power_4]]増加、敵全体の精神[[effects_power_5]%]減少（重複可）＜[[effects_turn_5]ターン]＞"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "ボスエネミーの行動回数[[effects_power]]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "与えられるダメージの上限を[[effects_power]]引き上げ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "与えるダメージ[[effects_power]%]上昇/幸運[[effects_power_2]]増加/技法の威力で体力回復時、味方全員の精神[[effects_power_3]%]増加＜[[effects_turn_3]ターン]＞・体力[[effects_power_4]]回復"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "位置移動攻撃発動時、自身の攻撃[[effects_power_1]%]増加（重複可）＜[[effects_turn_1]ターン]＞、自身に<help=ignite>気炎</help>付与"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "入魂ゲージ増加時に補正（増加量×[[effects_power]%]分）"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "受けるダメージを[[effects_power]%]軽減"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "受流し[[effects_power]%]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方が3人戦闘不能時敗北"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方のインスピレーションのダメージ[[effects_power]%]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方の入魂ゲージ獲得量[[effects_power]%]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方の器用[[effects_power]%]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方の回復量[[effects_power]%]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方の技法のダメージ[[effects_power]%]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方の敏捷[[effects_power]%]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方の移動[[effects_power]]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方の絶技のダメージ[[effects_power]%]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "味方の通常攻撃のダメージ[[effects_power]%]減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "命中[[effects_power]%]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "回避[[effects_power]%]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "必殺[[effects_power]%]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "技法または絶技でオブジェクト召喚時、自身の精神・器用[[effects_power_1]%]増加（重複可）＜[[effects_turn_1]ターン]＞"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "技法または絶技でバフ付与時、自身の攻撃・敏捷[[effects_power_1]%]増加（重複可）＜[[effects_turn_1]ターン]＞"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "技法または絶技でバフ付与時、自身の攻撃・防御[[effects_power_1]%]増加（重複可）＜[[effects_turn_1]ターン]＞"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "技法攻撃を[[effects_power]%]強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "技法発動時、自身の入魂ゲージ[[effects_power_1]]増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "攻撃を[[effects_power]%]強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "火傷無効/技法発動時に自身の攻撃[[effects_power_2]%]増加（重複可）＜[[effects_turn_2]ターン]＞<hidden=effects_power_3>/バトル開始時、[[Askill_name_21015001]]のクールタイムを0にする</hidden>"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "系統：工芸に対してダメージ[[effects_power]%]上昇/体力[[effects_power_2]%]増加/技法または絶技でオブジェクト召喚時、カーマインの味方全員の攻撃[[effects_power_3]%]増加（重複可）＜[[effects_turn_3]ターン]＞"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "系統：工芸に対してダメージ[[effects_power]%]上昇/幸運[[effects_power_2]]増加/技法または絶技でバフ付与時、自身に迅雷付与・味方全員の器用[[effects_power_4]%]増加＜[[effects_turn_4]ターン]＞"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "絶技が雷以外のイマージュ装備時、味方のパラメータ減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "絶技攻撃を[[effects_power]%]強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "通常攻撃を[[effects_power]%]強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_description[]",
+    "jp": "雷エレメントの攻撃を[[effects_power]%]強化/防御[[effects_power_2]%]増加/技法発動時、自身の攻撃[[effects_power_3]%]増加＜[[effects_turn_3]ターン]＞（重複可）・確率で自身の<help=cool_time>クールタイム</help>[[effects_power_4]]短縮"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "3人戦闘不能で敗北"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "5ターン経過で敗北"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "5ターン経過時敗北"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "インスピレーションのダメージ減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "インスピレーションダメージ弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "クリティカルダメージ増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "クリティカル強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "セルリアン以外ダメージ軽減"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "ターン開始時、熱情増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "ターン開始時熱情獲得"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "ダメージ上限引き上げ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "ダメージ上限緩和"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "ダメージ増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "バトル中バフ効果減少：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "バトル中バフ効果減少：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "バトル開始時、自身に物理シールド付与/一定体力以下で自身に攻撃増加（重複可）・精神増加（重複可）・雷シールド付与"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "バフ付与時、攻撃・敏捷増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "バフ付与時、攻撃・防御増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "バフ効果弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "与ダメージ上昇/幸運増加/回復技法発動時、味方精神増加・体力回復"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "位置移動攻撃発動時、攻撃増加・気炎付与"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "体力強化：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "体力強化：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "体力強化：Ⅲ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "入魂ゲージ増加量アップ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "入魂ゲージ増加量補正"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "入魂ゲージ獲得量弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "入魂ゲージ獲得量減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "初期熱情増加/物理属性強化/熱情消費時、移動・熱情・入魂ゲージ増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "初期熱情増加/雷属性強化/熱情消費時、器用・熱情増加・敵精神減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "受流しアップ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "受流し強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "召喚技法発動時、精神・器用増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "味方が3人戦闘不能時敗北"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "命中アップ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "命中強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "器用弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "器用強化：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "器用強化：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "器用強化：Ⅲ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "回復量弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "回復量減少：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "回復量減少：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "回避アップ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "回避強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "属性有利+"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "工芸特効/体力増加/召喚技法発動時、カーマイン味方の攻撃増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "工芸特効/幸運増加/バフ付与時、自身に迅雷・味方器用増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "必殺アップ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "必殺強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "技法のダメージ減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "技法ダメージ増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "技法ダメージ弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "技法攻撃強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "技法発動時、入魂ゲージ増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "攻撃強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "攻撃強化：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "攻撃強化：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "攻撃強化：Ⅲ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "敏捷弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "敏捷強化：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "敏捷強化：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "敏捷強化：Ⅲ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "有利属性特効"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "毎ターン拒絶付与"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "毎ターン雷シールド付与"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "火傷無効/技法発動時、攻撃増加/初期CT0"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "状態異常抵抗増加(7種)：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "状態異常抵抗増加(7種)：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "真髄：【夢幻の可能性】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "移動弱化：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "移動弱化：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "節、正、虚相以外ダメージ軽減"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "精粋：【夢幻の可能性】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "精髄：【夢幻の可能性】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "精髄：【嫉妬のオルタ】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "精髄：【小悪魔のくちづけ】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "精髄：【虚飾のオルタ】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "絶技が雷以外パラメータ弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "絶技のダメージ減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "絶技ダメージ増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "絶技ダメージ弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "絶技攻撃強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "至粋：【いつか満ちる月】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "至粋：【夢幻の可能性】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "至粋：【嫉妬のオルタ】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "至粋：【移ろう時の中で】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "至粋：【純真フィオリーレ】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "至粋：【虚飾のオルタ】"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "行動回数増加：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "行動回数増加：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "被ダメージ軽減"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "被ダメージ軽減：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "被ダメージ軽減：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "通常攻撃のダメージ減少"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "通常攻撃ダメージ増加"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "通常攻撃ダメージ弱化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "通常攻撃強化"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "雷以外ダメージ軽減：Ⅰ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "雷以外ダメージ軽減：Ⅱ"
+  },
+  {
+    "table": "mPassiveSkills",
+    "field": "ml_name[]",
+    "jp": "雷属性強化/防御増加/技法発動時、攻撃増加・CT短縮"
+  },
+  {
+    "table": "mProfileDecorations",
+    "field": "ml_flavor_text[]",
+    "jp": "サンソヴィーノを模した人形。\nルノワールが趣味の裁縫で作った。"
+  },
+  {
+    "table": "mProfileDecorations",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノ人形"
+  },
+  {
+    "table": "mQuestAreas",
+    "field": "ml_name[]",
+    "jp": "？？？"
+  },
+  {
+    "table": "mQuestObjects",
+    "field": "name",
+    "jp": "？？？"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE1"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE1 EASY"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE10"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE10 HYPER EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE10 VERY HARD"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE11"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE11 ULTRA EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE11 VERY HARD"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE12"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE12 EXTREME"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE12 ULTRA EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE13"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE13 EXTREME"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE14"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE14 EXTREME"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE15"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE15 EXTREME"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE16 SUPER EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE17 SUPER EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE18 HYPER EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE19 HYPER EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE2"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE2 NORMAL"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE20 ULTRA EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE21 ULTRA EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE3"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE3 HARD"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE3 NORMAL"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE4"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE4 NORMAL"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE4 VERY HARD"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE5"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE5 EXTREME"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE5 HARD"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE6"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE6 EXTREME"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE6 HARD"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE7"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE7 HARD"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE7 SUPER EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE8"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE8 SUPER EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE8 VERY HARD"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE9"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE9 HYPER EXT"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "BATTLE9 VERY HARD"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "EXTRA1"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "EXTRA2"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "EXTRA3"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "EXTRA4"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "EXTRA5"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "EXTRA6"
+  },
+  {
+    "table": "mQuestStages",
+    "field": "ml_name[]",
+    "jp": "EXTRA7"
+  },
+  {
+    "table": "mQuests",
+    "field": "ml_name[]",
+    "jp": "Summer Night Sparkle"
+  },
+  {
+    "table": "mRaidEventLiveMessages",
+    "field": "message",
+    "jp": "チューコ、参上しました。敵を一層してみせます。"
+  },
+  {
+    "table": "mSubunits",
+    "field": "ml_flavor_text[]",
+    "jp": "一見すると落ち着いた人妻風の美人だが、一国の宰相にも\n劣らぬ才知と大局感により、愛する芸術とその振興活動を\n支援し若き芸術家のパトロンとしても活動を続けている。\nなぜか愛する人に対するネトラセ願望が強く、果敢に実戦\nしてくるため、時折周囲を困惑させているとか。"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": " －"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "-"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "---"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "1 - 10"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "10001〜20000"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "1001〜5000"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "11 - 20"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "11〜15"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "11～20"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "16〜20"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "1〜1000"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "1〜5"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "1～10"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "20001〜50000"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "21 - 29"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "21〜25"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "21～29"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "26〜30"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "31〜35"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "36〜40"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "41〜45"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "46〜50"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "50001〜"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "5001〜10000"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "51〜"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "6〜10"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "<color=#ffee99>{0} {1} →</color> {2}"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "<size=24>Lv</size>{0:#,0}"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "<解除>"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "A"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "AP"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "AP1/2"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "AP・BP1/2"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "AUTO"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "B"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "BLUE"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "BP"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "BP1/2"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "C"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "D"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "DEX"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "E"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "GRAY"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "GREEN"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "HP"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "ID"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "Lv"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MAX"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MM/dd HH:mm"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MVP"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MlDictionaryTextConfigs.text_196"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MlDictionaryTextConfigs.text_201"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MlDictionaryTextConfigs.text_225"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MlDictionaryTextConfigs.text_226"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MlDictionaryTextConfigs.text_227"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MlDictionaryTextConfigs.text_228"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "MlDictionaryTextConfigs.text_586"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "NEW"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "NPC"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "OFF"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "ON"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "PURPLE"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "PvP"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "RED"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "S"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "SS"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "TextConfig.EnemyCard_Sorter_Level"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "YELLOW"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "[{0}]"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "{0:#,0}"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "{0:#,0}/{1:#,0}"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "{0:+0;-0}"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "{0} + {1}％"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "{0} / {1}"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "{0}/{1}"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "{0}Pt"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "{0}％"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "¥"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "¥{0:#,0}"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "×1.0"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "×1.5"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "×2.0"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "あと"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "で終了"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "・{{{0}}}"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "残り"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "＋{0}％"
+  },
+  {
+    "table": "mTextConfig",
+    "field": "ml_value[]",
+    "jp": "？？？？？？"
+  },
+  {
+    "table": "mTribes",
+    "field": "ml_name[]",
+    "jp": "？？？"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "きゅうり"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "人や物を傷付けること"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "優しくて頼れそうな人"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "学芸員と藝術家の両立"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "掃除、料理"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "素直に甘えられる姉"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "美術品の修復"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "美術館の風紀に厳しい"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "胸が成長しないこと"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "身を乗り出す"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_content[]",
+    "jp": "魚介のフリット"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_title[]",
+    "jp": "こっそり抱く夢"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_title[]",
+    "jp": "アンジェラ"
+  },
+  {
+    "table": "mUnitProfiles",
+    "field": "ml_title[]",
+    "jp": "意外な一面"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "あけましておめでとうございます、館長様！\n今年もよろしくお願いしますね。\nふふっ、館長様との新しい１年が楽しみです！"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "あの、これ……バレンタインのチョコです！\nちょっと不格好ですけど、味には自信があるので、\n召し上がっていただけますか……？"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "う～ん……はっ！\nうぅ、ちょっとうとうとしちゃってました……。\nぼーっとすると、気が抜けちゃいますね。"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "お疲れ様です、館長様！\nお仕事の準備は整っています。\nどうぞ、なんなりと申し付けください！"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "お誕生日おめでとうございます、館長様！\nふふっ、今日は特別なお祝いですね！\nしてほしいことがあれば、なんでも言ってください！"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "か、館長様？　どうかしましたか？\nそんなに見つめられると、照れてしまいます……。"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "このドレスは姉さんが選んでくれたんです。\nどれも似合うからって、\nたくさん試着させてもらって……。\nふふっ、甘やかされてますね、私。"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "この美術館もすっかり賑やかになりましたね。\nこれも館長様がいてくださるおかげです。\n今後ともよろしくお願いしますね、館長様！"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "できれば館長様のお手伝いをしたいのですが、\n年末は私も自分のお仕事で手一杯で……ううっ。\n一緒に修羅場を乗り切りましょうね、館長様……！"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "はぁ……少し会えないだけで、すぐ寂しくなって……。\nいけませんね、しっかりしなくちゃ……って……。\nか、館長様！？　い、今の、聞こえてましたか……？"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "ひゃうっ！？　か、館長様？\nだ、だめです、そういうことは……。\n後でお部屋に行くまで、我慢してくださいっ。"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "オータムアートフェスティバルの時期は、\n多くの来客が見込まれます。\n忙しくなるでしょうけど、\n一緒に頑張りましょうね、館長様っ！"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "クリスマスは皆さんで盛り上がれて、楽しいですね。\nでも……後で、お部屋に行ってもよろしいですか？\n館長様とふたりきりの時間も、楽しみたいので……。"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "ハロウィンは連日、子供たちが遊びに来てくれますね。\nかわいいなぁ……私もいつか館長様と……。\n……あ、い、いえっ、なんでもないです！"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "最近明るくなったって、姉さんに言われました。\nきっと美術館の運営が順調だからですね。\n毎日楽しくて仕方ないくらいですから。"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "皆さんと比べたら、\n私は力不足かもしれません……。\nでも、この愛する美術館を守るためなら、\n私も全力で戦う覚悟はあります！"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "私、気が付いたら館長様の話ばかりしてるみたいで、\nこの前姉さんにからかわれてしまいました……。\nううっ、お恥ずかしいです……。"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "館長様、一段落したらお茶にしませんか？\nお菓子は私が作ってきましたので、\nまたおいしいお茶を淹れていただけると嬉しいです♪"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "館長様って、意外と甘えたがりなんですか……？\nいえ、その……だったら嬉しいなって……。\n私も、好きな人はたくさん甘やかしたいほうですから。"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "館長様とこれまで過ごしてきた日々……。\n毎日が、私にとっての宝物です。\nこれからもそんな素敵な日々を、\nたくさん積み重ねていきたいですね。"
+  },
+  {
+    "table": "mUnitWords",
+    "field": "ml_word[]",
+    "jp": "館長様？　……ふふっ、うたた寝中ですか？\nたまにはゆっくりお休みください。\nその間にお仕事は進めておきますので。"
+  },
+  {
+    "table": "mUnits",
+    "field": "ml_flavor_text[]",
+    "jp": "夢幻美術館の所蔵品管理官兼館長のサポートをしている。\n多岐にわたる仕事を手際よくこなしている働き者で、より\n多くの人に美術品を楽しんでもらいたいと考えている。\n安心して美術館のことを任せられる頼もしさがあるが、\n少々頑張りすぎて無理をしてしまうところがある。"
+  },
+  {
+    "table": "mUnits",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノ"
+  },
+  {
+    "table": "slim_mBoxGachaGroups",
+    "field": "ml_name[]",
+    "jp": "藝術の夏キャンペーンガチャ 第2弾"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_description[]",
+    "jp": "ゴッホ生誕祭5ステップガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_description[]",
+    "jp": "ブグロー生誕祭5ステップガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_description[]",
+    "jp": "有償限定 ゴッホ生誕祭5ステップアップセレクトガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_description[]",
+    "jp": "有償限定 ブグロー生誕祭5ステップアップセレクトガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "アテネス水着コンテストガチャA"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "アテネス水着コンテストガチャB"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "アテネス藝術祭ガチャ ～ミケランジェロ～"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "アナザーサイド復刻ガチャ3"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "イマージュ復刻4ステップガチャ23"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "イマージュ復刻ピックアップガチャ23"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "カラー属性5ステップガチャ：ビリジアン"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "ゴッホ生誕祭5ステップガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "ブグロー生誕祭5ステップガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "ロックノードスタイル復刻ピックアップガチャ1"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "有償限定 アテネス水着コンテストガチャA"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "有償限定 アテネス水着コンテストガチャB"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "有償限定 アテネス藝術祭ガチャ ～ミケランジェロ～"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "有償限定 ゴッホ生誕祭5ステップアップセレクトガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "有償限定 ブグロー生誕祭5ステップアップセレクトガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "有償限定 輝きを刻みながらピックアップガチャ ～サンソヴィーノ～"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "有償限定 逆境ミラクルアタック！ガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "有償限定アナザーサイド復刻ガチャ3"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "有償限定ロックノードスタイル復刻ガチャ1"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "落涙が紡ぐ想い5ステップガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "落涙が紡ぐ想いピックアップガチャ"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "輝きを刻みながらピックアップガチャ ～サンソヴィーノ～"
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "jp": "逆境ミラクルアタック！ガチャ"
+  },
+  {
+    "table": "slim_mLoadingTips",
+    "field": "ml_desc[]",
+    "jp": "一見すると落ち着いた人妻風の美人だが、一国の宰相にも劣らぬ才知と大局感により、愛する芸術とその振興活動を支援し若き芸術家のパトロンとしても活動を続けている。なぜか愛する人に対するネトラセ願望が強く、果敢に実戦してくるため、時折周囲を困惑させているとか。"
+  },
+  {
+    "table": "slim_mLoginBonusCharacterActions",
+    "field": "ml_word[]",
+    "jp": "……明日も来るんだろうな？\nミケを待ちぼうけにさせたら、\n部屋まで殴り込みに行くからな。"
+  },
+  {
+    "table": "slim_mLoginBonuses",
+    "field": "ml_name[]",
+    "jp": "GAMES水着ジャック記念ログインボーナス"
+  },
+  {
+    "table": "slim_mLoginBonuses",
+    "field": "ml_name[]",
+    "jp": "孤高の矜持、怒りの鉄槌ログインボーナス"
+  },
+  {
+    "table": "slim_mLoginBonuses",
+    "field": "ml_name[]",
+    "jp": "藝術の夏キャンペーンログインボーナス 第2弾"
+  },
+  {
+    "table": "slim_mLoginBonuses",
+    "field": "ml_name[]",
+    "jp": "逆境ミラクルアタック！ログインボーナス"
+  },
+  {
+    "table": "slim_mLoginBonuses",
+    "field": "ml_name[]",
+    "jp": "館長争奪！？アテネス水着コンテストログインボーナス"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "AP1040消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "AP1400消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "AP200消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "AP30消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "AP340消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "AP520消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "AP750消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "AP90消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "BP104消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "BP140消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "BP20消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "BP34消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "BP3消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "BP52消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "BP75消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "BP9消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノのカチューシャLv10達成"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノのキャラストーリー1開放"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノのキャラストーリー2開放"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノのパンプスLv10達成"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノのベルトLv10達成"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの親愛度を10にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの親愛度を2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの親愛度を3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの親愛度を4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの親愛度を5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの親愛度を6にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの親愛度を7にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの親愛度を8にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの親愛度を9にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア10を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア1を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア2を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア3を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア4を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア5を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア6を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア7を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア8を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ダンジョンシーズン24フロア9を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "チューコを限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "チューコを限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "チューコを限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "チューコを限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "チューコを限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "創作10回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "創作14回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "創作19回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "創作1回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "創作25回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "創作2回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "創作4回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_description[]",
+    "jp": "創作7回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "AP1040消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "AP1400消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "AP200消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "AP30消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "AP340消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "AP520消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "AP750消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "AP90消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "BP104消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "BP140消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "BP20消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "BP34消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "BP3消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "BP52消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "BP75消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "BP9消費（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "アルテ【炎天のアタッカー】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノ【夢幻の可能性】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノのカチューシャLv10達成"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノのキャラストーリー1開放"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノのキャラストーリー2開放"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノのパンプスLv10達成"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノのベルトLv10達成"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノの親愛度を10にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノの親愛度を2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノの親愛度を3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノの親愛度を4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノの親愛度を5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノの親愛度を6にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノの親愛度を7にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノの親愛度を8にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "サンソヴィーノの親愛度を9にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "セッシュウ【浜に舞う紅華】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア10を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア1を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア2を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア3を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア4を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア5を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア6を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア7を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア8を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ダンジョンシーズン24フロア9を攻略"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "チューコを限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "チューコを限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "チューコを限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "チューコを限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "チューコを限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "マネ【水平線の向こうへ】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ミケランジェロ【憤怒のオルタ】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ラファエロ【Ride the Wave】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+1にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+2にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+3にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+4にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "ルノワール【夏空パラソル】を限界突破+5にしよう"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "創作10回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "創作14回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "創作19回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "創作1回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "創作25回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "創作2回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "創作4回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mMissions",
+    "field": "ml_title[]",
+    "jp": "創作7回完了（藝術の夏ミッション 第2弾）"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "……わ、悪くはありません。\nも、　もう一度、引いてみましょう。"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "あ、当たりが出たようで安心しました……。\n大切に使ってくださいね。"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "あ、空っぽになったみたい。\n焦らんでいいよ、次のボックスがあるから\n用意してくるね。ちょっと待ってて！"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "か、館長ですか。どうぞ、\nひ、引いていってください。\nいいものが当たるといいですね。"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "これって、すごくいいものだと思う！\nさすが館長さんだね！\nうちにも館長さんの強運分けてほしいなぁ。"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "ど、どうぞ。新しい箱です。\n館長の収集欲もなかなかですね。\nき、気持ちはわかります。"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "ほら、新しいボックスだよ。\nぼくが見ていてあげるから、\n存分に楽しんでいくといい！"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "も、もう中身がないようです。\n次を用意しますので、す、少し待っててください。"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "やぁ館長！\nきみのためにプレゼントを沢山用意したよ。\n好きなだけ引いていくといい。"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "やったね館長！　\nぼくという幸運の女神がいるおかげかな？"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "よいしょっと。館長さんお待たせ！\n次はなにが引けるかな？\nうち、ワクワクしてきたんよ！"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "全て引ききったみたいだけど、\nそう悲しむことはないよ。\nまだ次があるからね。"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "磨けば光る、いいものだね。\nどう使うかはきみ次第だ。"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "館長さん、いい感じだね！\nまだまだあるみたいだから、\nもう１回引いてみようよ！"
+  },
+  {
+    "table": "slim_mNaviCharacterBoxGachaWords",
+    "field": "ml_word[]",
+    "jp": "館長さん、待ってたよ！\nこれね、色んなものが入ってるらしいんよ。\nまずは１回引いてみる？"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム1"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム10"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム11"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム12"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム13"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム14"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム15"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム16"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム17"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム18"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム19"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム2"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム20"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム21"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム22"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム23"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム24"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム25"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム26"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム27"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム28"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム29"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム3"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム30"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム31"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム32"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム33"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム34"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム35"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム36"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム37"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム38"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム39"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム4"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム40"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム41"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム5"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム6"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム7"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム8"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "B43交換アイテム9"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム1"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム10"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム11"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム12"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム13"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム14"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム15"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム16"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム17"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム18"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム19"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム2"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム20"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム21"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム22"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム23"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム24"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム25"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム26"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム27"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム28"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム29"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム3"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム30"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム31"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム32"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム33"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム34"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム35"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム36"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム37"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム38"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム39"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム4"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム40"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム41"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム42"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム43"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム44"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム45"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム46"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム47"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム48"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム49"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム5"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム50"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム51"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム52"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム53"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム54"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム55"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム56"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム57"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム58"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム59"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム6"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム7"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム8"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "C33_交換アイテム9"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "“みんなを楽しい気持ちにさせたい”ということを第一に考えている、笑顔の絶えない無邪気で活発な女の子。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「幸運アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "“カワイイ”を探求する底抜けに明るい筋肉女子。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「奮起」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "★5特殊アクセサリ。\n雷光が如き葵の鬣が大気を切り裂く神馬のアンクレット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "「藝術は爆炎だ！」好戦的なスタイル。\n魔力のトーチで死の芸術を焼き払う！\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアルテ【咲き誇る爆炎】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "あまり感情を表に出さない、ミステリアスな少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「緑属性有利＋」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "いつもと違うお出かけスタイル。\n綴る恋文は、あなたのために♡\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はフェルメール【恋を綴る乙女】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "いつもと違う大人の魅力をアピール。\nだが、背中が開き過ぎかと心配している。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアングル【夏風に揺れる光彩】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "いつもどこからか見ている、ストーカー気質なレディ。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「影縫付与」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "いつもの活発で攻撃的な装いではない、\n淑やかな正装。飛ぶ鳩は平和の証。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアルテ【鳩と戯れる美少女】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "いつも無表情でマイペースなクールビューティー。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「紫属性有利＋」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "おとなしそうでかわいらしい、世話焼き好きな少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「精神アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "しっかり者で、いつも周りに幸せをもたらす少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「攻撃アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "とても純粋でまっすぐな、元気いっぱいの女の子。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「器用アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "とにかく傲慢な性格。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「火傷付与」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "まるで神の使いのような荘厳なスタイル。\n大理石から造られた武器が美しく輝く。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はミケランジェロ【天砕く使者】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "やや幼く見えるも利発そうな少女が描かれた姿絵。\n姿絵では確認できないが、かなり開放的な衣装を着ている。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "アグレッシブな女性司令官風の衣装。\n短鞭に加えて、騎馬と一体の攻撃を行う。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はドナテッロ【前進のハンドラー】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "オトナでシックな装いにすみれを添えて\n大砲をぶっ放し、遠くの敵も逃さず葬る！\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はマネ【砲煙のノワール】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの★5スタイル【夢幻の可能性】オーブ×1"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの命鏡・中×10をサンソヴィーノの命鏡・中×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの命鏡・中×10をサンソヴィーノの命鏡・大×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノの命鏡・小×6をサンソヴィーノの命鏡・中×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "サンソヴィーノを模した人形。\nルノワールが趣味の裁縫で作った。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "サンタの衣装を纏った特別スタイル。\nソリに乗って煌めく聖夜を駆け抜ける！\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はラファエロ【聖夜駆ける主役】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "シャンパンタワーを軽々と運び、\nご奉仕修行をするメイド水着スタイル。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はモリゾ【汗滴るメイド修行】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "トサカのような髪飾りと羽根のついた衣装が特徴的で、屋根の上に佇む姿はまるで巨大な鶏のよう。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「支援：迅雷」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "ビーチバレーのための水着スタイル。\n砂浜を駆け回り強烈なアタックで攻める！\n\n交換用アイテムはマイレージ報酬で獲得でき、使用期限は2026/08/27 12:59:59です。スタイル所持済の場合はアルテ【炎天のアタッカー】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "ボーイッシュで凛々しい剣士スタイル。\n主君に忠誠を誓い、身を粉にして尽くす。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はマネ【忠実なる美剣士】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "ラファエロファン大歓喜な狼の仮装。\n気高く吠える美しき立ち姿はまさに芸術。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はラファエロ【夜に吠える美獣】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "レンブラントのイマージュとして研究の補助を行う少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「再生」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "一見すると落ち着いた人妻風の美人だが、一国の宰相にも劣らぬ才知と大局感により、愛する芸術とその振興活動を支援し若き芸術家のパトロンとしても活動を続けている。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「追加行動」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "不老不死を与える仙桃を管理する美女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「精器魂・中」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "依頼を受ければ報酬分はしっかりと働く勇敢な女騎士。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「青属性有利＋」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "全てを包み込むような慈愛を感じる衣装。\nその微笑みは誰もが跪くほど美しい。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はラファエロ【慈愛を示す光明】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "冷たい氷のような雰囲気を纏う、儚げな美少女。\n\n交換用アイテムはマイレージ報酬などで獲得でき、使用期限は2026/08/25 12:59:59です。\n※ポテンシャルは「紫属性有利＋」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "冷酷で慈悲を知らない、残虐非道な性格。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「幻影付与/精神アップ小」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "初空に溶け込む色合いの振袖ドレス。\n大きな羽子板であらゆる厄を払う。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はレンブラント【蛇影に潜む光春】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "口数は少なくクールな性格だが、館長に好意的でいつでも力になりたいと考えている。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「白属性有利＋」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "可愛らしいお菓子屋店員スタイル。\nあなたのために最高のチョコレートを♡\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はゴッホ【愛重のショコラ】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "名探偵が怪盗に！？　妖怪・烏天狗の\n力を借りて、アテネスの夜を翔ける！\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はセキエン【今宵限りの名怪盗】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "名探偵にして迷探偵の一張羅。\n特殊な武器で敵の魔力を吸い込む。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はセキエン【浮世に放つ散弾銃】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "喧嘩っ早く口の悪い女剣士。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「攻精魂・中」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "器械技術を取り入れた戦闘的なスタイル。\n高貴なる者の責任を果たすための武装。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はフェルメール【光線のリアリズム】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "夜を警めるクラシカルな軍服スタイル。\n銃を複数召喚し、死の芸術を制する。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はレンブラント【夜を警める銃士】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "夜会のために着飾ったパーティードレス。\n大切な人と静謐な空間に酔いしれる。\n\n交換用アイテムはマイレージ報酬で獲得でき、使用期限は2026/08/17 12:59:59です。スタイル所持済の場合はミケランジェロ【陶酔に浸る夜会】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "大いなる自然の力を宿した戦闘スタイル。\n背後に控えるゴーレムが敵を木端微塵に。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はセザンヌ【生命息吹く筆触】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "大胆な肌見せで攻めるビキニスタイル。\nサンオイルを塗ってくれる人を募集中♪\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はドナテッロ【魅惑のサンガール】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "天真爛漫で自由奔放なイマージュ。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「工芸特攻」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "妖しげな雰囲気が漂う魔女の仮装。\n藝術魔法の威力が高まるかもしれない…？\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はロダン【悪戯っぽい魔法】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "孤独を感じさせない騒々しいサンタは\n聖夜を駆け巡る。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はボッティチェリ【降誕祭に祝福を】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "常に冷静沈着で、一定の調子で話す少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「幸運デバフ」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "常に周りを気にかける物腰の柔らかいおっとりした女性。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「絵画特攻」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "幼い外見に豊満な胸が目を引くアンバランス体型の少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「俊足付与/敏捷アップ小」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "幼き藝術家が寂しさと恐怖で流した涙で描かれたネズミの絵から生まれたイマージュ。\n\n交換用アイテムはマイレージ報酬で獲得でき、使用期限は2026/08/04 12:59:59です。\n※ポテンシャルは「芸道特攻」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "幼くかわいらしい見た目に反して、古風な口調の女性。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「感電付与」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "彫刻のように磨き抜かれた戦闘スタイル。\n杖を掲げると背後の鏡が悪を飲み込む。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はロダン【魂を映し出す大鏡】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "心を奪われる小悪魔的スタイル。\n矢を口元に寄せ溢れる想いをアピール♡\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はロダン【小悪魔のくちづけ】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "悪戯が大好きな少女で、人を驚かせ楽しむ悪癖があるが頭の皿が乾くと元気がなくなる意外にデリケートな体質。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「敏捷アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "慈愛を纏う神々しさあふれるスタイル。\n聖なる弓はハートを射止め敵を射抜く♡\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はラファエロ【心を射抜く聖弓士】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "戦う意志を高めた戦闘服。守りたいもの\nのために、タル爆弾で敵を吹き飛ばす。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はボッティチェリ【繊彩のエゴイスタ】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "挑発的で、絡み方がとにかくウザい自信家なお調子者。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「器用アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "救国の聖女をイメージした、民衆を鼓舞し\n戦う、凛々しくも美しい甲冑スタイル。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアングル【先導の聖女】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "新春に相応しい晴れやかな着物スタイル。\n描き初めのモチーフは異国文化で決まり♪\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はゴッホ【淡雪を溶かす陽光】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "新進気鋭の後輩画家が好む最先端の姿。\n流行に乗りやすいように武器も軽量化。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はマネ【革新的フレーバー】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "星々と街の光で輝くドレススタイル。\n夏の短夜はオトナな時間をご一緒に♪\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はゴッホ【星降る夜の誘惑】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "春の到来を感じる草花で彩られた衣装。\nレースから透けて見える肌色がえっち。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はブグロー【春に色めく妖精】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "東方に伝わる鬼の首魁をモチーフにした\n装い。厳めしさの中にキュートさが光る。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はセキエン【酔夢に溺れし鬼娘】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "槍と楯を備え攻防共に隙のないスタイル。\n死の芸術から人々を救う姿は女神のよう。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアングル【煌めき放つ形式美】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "様々な動植物の声に耳を傾け寄り添う、心優しい女の子。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「ソウル増幅大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "正義の信念に溢れた猪突猛進少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「不動付与/器用アップ小」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "正義の信念に溢れた生真面目な実直少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「追加行動」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "正義感が強くて真面目ながらも、いつも眠そうな少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「攻撃アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "死の芸術研究にふさわしい白衣スタイル。\n注射器型の矢は激痛を与える薬剤入り。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はレンブラント【討究の射手】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "泉の女神を思わせる洗練された無垢な姿。\n滴る水が服に張り付き優美な曲線を描く。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアングル【水壺が描く境界】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "海を全力で楽しむためのキュートな水着。\n浮き輪も創作意欲も膨らませ夏を満喫。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアルテ【忘れられない夏】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "涙を振り払い前へ突き進む戦闘スタイル。\n錫杖の音を響かせ、己の信じる路へ！\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はセッシュウ【幽玄に至る境地】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "涼しげで爽やかなマリンルック。\n水鉄砲を乱射し、夏の暑さを吹き飛ばす。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はレンブラント【涼を呼ぶ水沫】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "淑やかなレースと大胆なドレスで誘惑。\n狙った貴方のハートを射止める武装。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はフェルメール【想い編む麗人】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "漆黒の外衣に金装飾が光る洗練スタイル。\n内に秘めた青き炎を醜き死の芸術に放つ！\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はレンブラント【暗闇に揺れる蒼炎】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【光線のリアリズム】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【幸福クリエイター】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【幽玄に至る境地】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【心を射抜く聖弓士】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【暗闇に揺れる蒼炎】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【最強へ向かう矛先】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【永遠に枯れない花】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【浮世に放つ散弾銃】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【煌めき放つ形式美】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【生命息吹く筆触】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【神風を呼ぶ巨槌】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【繊彩のエゴイスタ】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【美少女画界の至宝】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【羽ばたきの創造主】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【薔薇色のヒロイン】のオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【革新的フレーバー】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名のオーブ×1を【魂を映し出す大鏡】のオーブのオーブ×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名の命鏡・中×1をサンソヴィーノの命鏡・中×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名の命鏡・大×1をサンソヴィーノの命鏡・大×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "無名の命鏡・小×1をサンソヴィーノの命鏡・小×1に交換"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "爽やかな印象のマリンビキニスタイル。\n海に向かい、藝術家としての覚悟を叫ぶ。\n\n交換用アイテムはマイレージ報酬で獲得でき、使用期限は2026/08/15 12:59:59です。スタイル所持済の場合はマネ【水平線の向こうへ】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "爽やかな空色のモノキニスタイル。\n海に行くなら救護バッグは欠かせない。\n\n交換用アイテムはマイレージ報酬で獲得でき、使用期限は2026/08/27 12:59:59です。スタイル所持済の場合はルノワール【夏空パラソル】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "物理面を強化した好戦スタイル。\n巨大ハンマーは彫刻家としての魔力体現。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はミケランジェロ【神風を呼ぶ巨槌】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "狐火に照らされた巫女服風スタイル。\n夏の宵を一緒に明るく照らそう。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はセキエン【舞い散る火の狐】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "独自の死生観を持ち、死とは“最高の安寧”であり、“人生を生き切って最後に与えられるご褒美”と考えて、他人にも“死は怖くない”“良いものである”と伝えようとするも、あまり理解されない残念美人。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「感電付与」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "王族然とした佇まいの女性。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「彫刻特攻」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "理想を形にした乙女モード全開スタイル。\nその多幸感で押し寄せる不運を跳ね返す。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はルノワール【幸福クリエイター】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "甘えん坊で寂しがりな、修道服姿の心優しい女の子。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「体力アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "異国への憧憬を反映した踊り子スタイル。\n水タバコの煙を纏い甘い香りで敵を魅了。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアングル【異国への憧憬】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "白衣の天使…もとい”拳士”スタイル。\n荒療治ならおまかせあれ！\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はモリゾ【白衣の拳士】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "真っ赤なドレスが華やかなスタイル。\n内に秘めた情熱を、刃に乗せて届ける。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/02 12:59:59です。スタイル所持済の場合はアングル【甘く苦い罪】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "真っ赤なドレスが華やかなスタイル。\n内に秘めた情熱を、刃に乗せて届ける。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアングル【甘く苦い罪】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "積極的な攻撃に特化したスタイルの衣装。\n浮世を憂い新しく芽吹く生命を守る姿。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はゴッホ【永遠に枯れない花】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "節制を重んじており、食べ物やお金の無駄、時間や衣服の乱れに厳しい。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「体器魂・中」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "給仕の姿の戦闘スタイル。自分が守る\nべき者たちの気持ちを知るための武装。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はフェルメール【愛を注ぐ女給】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "美しく磨き上げる奉仕のスタイル。\n沁みついた心の汚れもばっちり洗濯♡\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はブグロー【ランドリーメイド】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "美しさに裏付けられた絶対のプライドを持つ自信家。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「攻撃デバフ」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "美しすぎる天才怪盗に変身！\n人々のハートを華麗に盗んでいく。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はラファエロ【ラブファントム】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "美少女への探究心溢れる研究者の衣装。\n伸縮自在の指示棒で敵の弱点を指し示す。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はブグロー【美少女画界の至宝】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "美術館を住処に自由気ままに生きるワガママ猫娘。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「防敏魂・中」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "聖夜を照らす優しい灯火は彼女の優しさ。\n数多の子供達に祝福の光と贈り物を……。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はセザンヌ【夜空を照らす聖樹】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "背徳の暴食に身を焦がすイマージュ。\n\n交換用アイテムはマイレージ報酬などで獲得でき、使用期限は2026/08/25 12:59:59です。\n※ポテンシャルは「芸道特攻」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "臆病で引っ込み思案。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「精神アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "自分の生き方を貫く決意のスタイル。\n最強を目指す藝術家が真の力を解き放つ。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はモリゾ【最強へ向かう矛先】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "自己肯定感が低くも確かな実力を持つ藝術家が描かれた姿絵。\n夜空のような青のドレスと肌色のコントラストが美しい。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "興味のあるものはどこまでも追究するツンデレな女の子。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「精神アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "花束のような花嫁スタイル。\n取り囲む植物は花嫁の貞操を守る。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はセザンヌ【しあわせ色の花嫁】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "芸術祭のためにドレスアップ！\n盛大な花火と共に祭りの開幕を彩る。\n\n交換用アイテムはマイレージ報酬で獲得でき、使用期限は2026/08/17 12:59:59です。スタイル所持済の場合はアングル【開幕スターマイン】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "茶会のために着飾ったパーティードレス。\n大切な人と甘美な時間を味わい尽くす。\n\n交換用アイテムはマイレージ報酬で獲得でき、使用期限は2026/08/17 12:59:59です。スタイル所持済の場合はラファエロ【甘美に彩る茶会】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "薔薇の意匠の大剣を振るう好戦スタイル。\n宴の場に対応できる淑女のドレスアップ。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアルテ【薔薇色のヒロイン】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)2700個＋藝晶石(無償)1600個と無償分が通常比5倍に増量。おまけで開催中のロックノードスタイル復刻ピックアップガチャのガチャチケットがついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)4500個＋藝晶石(無償)1470個。おまけでアルテの専用アクセサリがついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)4500個＋藝晶石(無償)1470個。おまけでゴッホの★5専用アクセサリがついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)4500個＋藝晶石(無償)1470個。おまけでゴッホのオーブと専用「藝術家の書」がついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)4500個＋藝晶石(無償)1470個。おまけでサンソヴィーノの専用アクセサリがついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)4500個＋藝晶石(無償)1470個。おまけでブグローの★5専用アクセサリがついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)4500個＋藝晶石(無償)1470個。おまけでブグローのオーブと専用「藝術家の書」がついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)4500個＋藝晶石(無償)1470個。おまけでミケランジェロの専用アクセサリがついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)4500個＋藝晶石(無償)3675個と無償分が通常比5倍に増量。おまけで藝術の夏ガチャチケットがついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)9000個＋藝晶石(無償)3600個。おまけでアルテ【炎天のアタッカー】のオーブと専用「藝術家の書」がついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)9000個＋藝晶石(無償)3600個。おまけでセッシュウ【浜に舞う紅華】のオーブと専用「藝術家の書」がついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)9000個＋藝晶石(無償)3600個。おまけでマネ【水平線の向こうへ】のオーブと専用「藝術家の書」がついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)9000個＋藝晶石(無償)3600個。おまけでラファエロ【Ride the Wave】のオーブと専用「藝術家の書」がついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)9000個＋藝晶石(無償)3600個。おまけでルノワール【夏空パラソル】のオーブと専用「藝術家の書」がついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)9000個＋藝晶石(無償)9000個と無償分が通常比5倍に増量。おまけでアテネス藝術祭ガチャ ～ミケランジェロ～チケットがついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "藝晶石(有償)9000個＋藝晶石(無償)9000個と無償分が通常比5倍に増量。おまけで藝術の夏ガチャチケットがついたセット。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "街を散策するためのスタイル。\n手にしたカメラは一瞬の煌めきのため。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はブグロー【瞬間フォーカス】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "街を歩き回るためのスタイル。\n太陽のように輝く笑顔は街のシンボル。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はドナテッロ【全力☆リポーター】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "表向きは敬虔な聖職者で慎み深く装っているが、実は高飛車で自己顕示欲に溢れた腹黒お嬢さま。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「防御アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "見た目のミステリアスな雰囲気からは想像できないほど好奇心旺盛でフレンドリー。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/02 12:59:59です。\n※ポテンシャルは「不動付与/器用アップ小」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "見た目のミステリアスな雰囲気からは想像できないほど好奇心旺盛でフレンドリー。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「不動付与/器用アップ小」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "誰にでも慈愛を持って接する、包容力豊かな少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「精神アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "調和を愛し混沌を嫌う、ミステリアスな美少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/02 12:59:59です。\n※ポテンシャルは「芸道特攻」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "調和を愛し混沌を嫌う、ミステリアスな美少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「芸道特攻」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "豪華なプリーストスタイルの衣装。\n癒すよりも先に相手を倒すための姿。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はドナテッロ【羽ばたきの創造主】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "贅沢なフリルが目を引くドレススタイル。\n憂鬱な日は傘を開いて気分を晴れやかに♪\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/02 12:59:59です。スタイル所持済の場合はマネ【静淑のブロンシュ】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "贅沢なフリルが目を引くドレススタイル。\n憂鬱な日は傘を開いて気分を晴れやかに♪\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はマネ【静淑のブロンシュ】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "過去イベントの報酬メモリー「強敵、サンソヴィーノ現る。」1個"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "邪な気持ちを見通す瞳を持った、モノトーンを身に纏った凛々しいイマージュ。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「天啓」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "鍵と鎖を纏う緊縛スタイル。\nその鍵は開くものか、閉じるものなのか。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はロダン【絶望を切り開く鍵】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "霊的なものを見たり声を聞いたりできるが、それと同時に霊的なものに憑依されてしまう体質。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「精神デバフ」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "面倒見のよい、真面目でしっかり者な女の子。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「器用アップ大」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "風景を師とする水墨画家の少女が描かれた姿絵。\n各地を留学していただけあって、外交的な印象を受ける。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "食べることを至福とする、料理が大好きな女の子。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「赤属性有利＋」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "館長の手によりイマージュとなった彼女は、館長を愛するべき王として崇め、執着する。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「火傷付与」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "高飛車で負けず嫌いな、リーダー気質の少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「防御デバフ」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "魔の物集まる夜のお祭り衣装。\nお菓子を配りに街を練り歩く。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はミケランジェロ【幻像のハロウィン】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "魔書から呼び出した獅子と共に戦う！\n館長を振り向かせたい思いも表れた衣装。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はドナテッロ【聖夜駆ける金獅子】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "鮮やかな緋袴が美しい巫女装束。\nおみくじ箱を手に幸運を招く。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。スタイル所持済の場合はアルテ【開運招福の巫女様】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "黒ビキニが眩ゆいサーファースタイル。\n時代の波に乗り、名を轟かせていく。\n\n交換用アイテムはマイレージ報酬で獲得でき、使用期限は2026/08/15 12:59:59です。スタイル所持済の場合はラファエロ【Ride the Wave】のオーブx1を獲得。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "jp": "１日12時間は寝ているぬいぐるみ系少女。\n\n交換用アイテムはショップ商品のおまけで獲得でき、使用期限は2026/08/14 12:59:59です。\n※ポテンシャルは「忍耐付与/防御アップ小」を所持。"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "A.S.アルテ★5専用アクセサリセット"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "A.S.アルテメモリーパック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "A.S.ミケランジェロ★5専用アクセセット"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "Ride the Wave 獲得セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "Ride the Wave 限界突破パック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【クーポン対象】GAMES水着ジャック記念パック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【クーポン対象】GAMES水着ジャック記念パックDX"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【光線のリアリズム】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【幸福クリエイター】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【幽玄に至る境地】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【心を射抜く聖弓士】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【暗闇に揺れる蒼炎】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【最強へ向かう矛先】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【永遠に枯れない花】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【浮世に放つ散弾銃】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【煌めき放つ形式美】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【生命息吹く筆触】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【神風を呼ぶ巨槌】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【繊彩のエゴイスタ】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【美少女画界の至宝】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【羽ばたきの創造主】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【薔薇色のヒロイン】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【革新的フレーバー】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "【魂を映し出す大鏡】のオーブ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "アルテ【炎天のアタッカー】"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ゴッホの姿絵３"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ゴッホ生誕祭藝晶石"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ゴッホ生誕祭藝晶石DX"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ゴッホ限界突破パック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノLv25記念セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノLv50記念セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノLv75記念セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノの命鏡・中"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノの命鏡・大"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノの命鏡・小"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノ人形"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "サンソヴィーノ専用アクセサリパック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "セッシュウの姿絵"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "チューコ"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "チューコ 獲得セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ブグローの姿絵３"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ブグロー生誕祭藝晶石"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ブグロー生誕祭藝晶石DX"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ブグロー限界突破パック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ポテンシャルジェム【精神アップ大】"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "マネ【水平線の向こうへ】"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "メモリー「わだかまりを超え、絆は新たに描かれる」"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "メモリー「ミラクルコンビネーション」"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ラファエロ【Ride the Wave】"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "ルノワール【夏空パラソル】"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "夏空パラソル 獲得セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "夏空パラソル 限界突破パック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "憤怒のオルタ 獲得セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "新章への歩みメモリーパック5"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "水平線の向こうへ 獲得セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "水平線の向こうへ 限界突破パック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "水晶のペンデュラム・瑠璃"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "浜に舞う紅華 獲得セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "浜に舞う紅華 限界突破パック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "炎天のアタッカー 獲得セール"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "炎天のアタッカー 限界突破パック"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "生誕祭ゴッホ専用アクセセット"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "生誕祭ブグロー専用アクセセット"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "落涙が紡ぐ想いガチャチケット"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "藝術の夏イマージュしおりパック1"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "藝術の夏スタイルしおりパック1"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "藝術の夏メモリーパック1"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "藝術の夏メモリーパック2025 1"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "藝術の夏藝晶石ミッションパス1"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "錬成のビジュー【体力アップ中】"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "錬成のビジュー【精神アップ大】"
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_name[]",
+    "jp": "錬成のビジュー【防御アップ大】"
+  }
+]

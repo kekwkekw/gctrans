@@ -2,6 +2,8 @@
 
 이 문서 하나만 읽고 정상 Novel 번역·검수·반영 경로를 시작할 수 있어야 한다. 명령은 저장소 루트에서 실행한다.
 
+Master/UI와 GCMod LocalParity의 현행 수집·검수·배포 준비는 [LOCAL_PARITY_PIPELINE_KO.md](LOCAL_PARITY_PIPELINE_KO.md)를 따른다. 아래 Novel 운영 절차는 그대로 유지한다.
+
 현재 소스·번역의 기준은 작업을 시작할 때 확인한 public `main`이다. 실제 PC의 설치 상태, selected current, DLL, 설정과 font는 저장소 상태와 별도로 확인한다.
 
 ## 1. 정본과 우선순위

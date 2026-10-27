@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "ui_before": 2109,
+  "ui_after": 2150,
+  "reviewed_additions": 41,
+  "exporter_tests": 8,
+  "csharp_exact_pairs": 2150,
+  "csharp_positive_cases": 36,
+  "csharp_negative_cases": 14,
+  "deterministic_export": true,
+  "packages_verified": [
+    "public-update",
+    "local-complete"
+  ],
+  "installed_hashes_match": true,
+  "master_enabled_tables": "*",
+  "master_changed_this_batch": false,
+  "dll_changed_this_batch": false,
+  "novel_names_changed_this_batch": false,
+  "dll_sha256": "f0fe03405e81556ff2ad8e5899ae077dd7408d6fea0866ad15f8af6ffbd94230",
+  "ui_sha256": "64dd95ada88d081f4799032f93534facf970c659569b971b183b8ee10774faa1",
+  "master_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+  "local_ui_coverage_missing": []
+}

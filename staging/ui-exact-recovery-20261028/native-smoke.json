@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-28",
+  "session": "R6-ui48-recovery",
+  "ui_pairs_before": 835,
+  "ui_pairs_after": 883,
+  "added_reviewed_pairs": 48,
+  "prior_pairs_unchanged": true,
+  "option_translation": "옵션",
+  "runtime_source_and_dll_unchanged": true,
+  "runtime_bindings": 0,
+  "authoring_bindings": 501,
+  "enabled_tables": "*",
+  "master_names_novels_unchanged": true,
+  "ui_sha256": "c55215b056e6f61b20fd32dfa01ed3d562d405fe1d9e7c482cbae429b6a708e2",
+  "dll_sha256": "82ea103461785b7afd999fb48721682b6870b54adb4eeb61e187af4723c09f09",
+  "master_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+  "installed_matches_repository": true,
+  "ui_loaded_count_observed": 883,
+  "error_fatal_exception_count": 0,
+  "master_tables_rewritten_observed": 60,
+  "font_loaded": true,
+  "menu_gem_label": "예정석 보유 현황",
+  "gem_popup_title": "예정석 보유 현황",
+  "menu_option_label": "옵션",
+  "option_popup_title": "옵션",
+  "home_and_menu_badges": "캠페인; all three displayed badges KO and fit within badge",
+  "export_regression_tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "screenshots": [
+    "ui48-home-campaign.png",
+    "ui48-menu-restored.png",
+    "ui48-gem-status.png",
+    "ui48-option-title.png"
+  ],
+  "remaining_outside_48_observed": [
+    "有償",
+    "藝晶石購入"
+  ],
+  "scope": "All 48 reviewed in source/data; representative labels and popup titles checked Native. Not whole UI completion.",
+  "normal_game_close_requested": true,
+  "fatal_blockers": []
+}

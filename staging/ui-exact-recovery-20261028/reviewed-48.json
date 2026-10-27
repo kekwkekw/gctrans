@@ -1,0 +1,694 @@
+[
+  {
+    "jp": "<cspace=-0.15em>アテネスレコード</cspace>",
+    "ko": "<cspace=-0.15em>아테네스 레코드</cspace>",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "아테네스 고유명/레코드 유지; cspace 태그와 값 보존.",
+    "resource_ids": [
+      "ui.wave2.r03.01"
+    ],
+    "scopes": [
+      "gc.character.charactertopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "AP回復量",
+    "ko": "AP 회복량",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a04"
+    ],
+    "scopes": [
+      "gc.museum.museuminfopopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "おまかせ編成",
+    "ko": "자동 편성",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r11.01"
+    ],
+    "scopes": [
+      "gc.deck.decktopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "おまかせ選択",
+    "ko": "자동 선택",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r06.01"
+    ],
+    "scopes": [
+      "w2.shop-event"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "お知らせ",
+    "ko": "공지",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a36"
+    ],
+    "scopes": [
+      "gc.home.hometopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "まとめて交換",
+    "ko": "일괄 교환",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r06.02"
+    ],
+    "scopes": [
+      "w2.shop-event"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "イベント",
+    "ko": "이벤트",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a19"
+    ],
+    "scopes": [
+      "gc.novel.noveltopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "イベント実績",
+    "ko": "이벤트 기록",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "이벤트 성과/기록 화면 제목. 기존 이벤트 기록 용어 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a15"
+    ],
+    "scopes": [
+      "gc.profile.profiletopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "エレメント補正",
+    "ko": "엘리먼트 보정",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r17.12"
+    ],
+    "scopes": [
+      "gc.unitscene.unitdetailcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "オプション",
+    "ko": "옵션",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "사용자 지정 용어 옵션으로 메뉴와 팝업 제목을 통일.",
+    "resource_ids": [
+      "ui.chrome.UI11-C041.676f4d0b6f82b820",
+      "ui.core.UI4-S009.0e154b17af6878e9"
+    ],
+    "scopes": [
+      "gc.globalmenu.globalmenupopup",
+      "gc.option.optionpopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "held/conflict"
+  },
+  {
+    "jp": "ガチャ詳細",
+    "ko": "가챠 상세",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a41"
+    ],
+    "scopes": [
+      "gc.gacha.gachainformationpopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "キャラクター",
+    "ko": "캐릭터",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.captions.UI13-K005.5129b4658ff2919c",
+      "ui.next.adjacent.a22",
+      "ui.residuals.UI12-J011.5129b4658ff2919c"
+    ],
+    "scopes": [
+      "gc.novel.noveltopcontroller",
+      "unproven"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "キャンペーン",
+    "ko": "캠페인",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "하단 배지 고정 문구. 기존 한국어 캠페인과 의미 일치.",
+    "resource_ids": [
+      "ui.next.adjacent.a33",
+      "ui.next.adjacent.a34",
+      "ui.next.adjacent.a35",
+      "ui.next.adjacent.a38",
+      "ui.next.adjacent.a39",
+      "ui.next.adjacent.a40"
+    ],
+    "scopes": [
+      "gc.globalmenu.globalmenupopup",
+      "gc.home.hometopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "キャンペーン開催中",
+    "ko": "캠페인 진행 중",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r13.01",
+      "ui.wave2.r13.02",
+      "ui.wave2.r13.03"
+    ],
+    "scopes": [
+      "gc.quest.questtopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "ストーリー",
+    "ko": "스토리",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a21"
+    ],
+    "scopes": [
+      "gc.novel.noveltopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "パレット",
+    "ko": "팔레트",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a23",
+      "ui.residuals.UI12-J012.c3036bda275f80a2",
+      "ui.wave2.r16.01"
+    ],
+    "scopes": [
+      "gc.unitscene.unitdetailcontroller",
+      "gc.unitscene.unitenhancecontroller",
+      "unproven"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "プレビュー",
+    "ko": "미리 보기",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r02.01"
+    ],
+    "scopes": [
+      "gc.profile.userprofilecontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "ミュージアムレベル",
+    "ko": "미술관 레벨",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.pro05.museum.m03"
+    ],
+    "scopes": [
+      "gc.museum.museuminfopopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "ミュージアム情報",
+    "ko": "미술관 정보",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.pro05.museum.m02"
+    ],
+    "scopes": [
+      "gc.museum.museuminfopopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "ユーザー名",
+    "ko": "사용자명",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r01.01"
+    ],
+    "scopes": [
+      "gc.profile.userprofilecontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "ランキング",
+    "ko": "랭킹",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a16"
+    ],
+    "scopes": [
+      "gc.profile.profiletopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "ランク",
+    "ko": "랭크",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r01.02"
+    ],
+    "scopes": [
+      "gc.profile.userprofilecontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "レアリティ別提供割合",
+    "ko": "레어도별 제공 확률",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "가챠 확률 문맥의 레어도별 제공 확률.",
+    "resource_ids": [
+      "ui.next.adjacent.a43"
+    ],
+    "scopes": [
+      "gc.gacha.gachainformationpopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "卓上調度品",
+    "ko": "탁상 장식품",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "탁상 배치 장식품을 가리키는 범주명.",
+    "resource_ids": [
+      "ui.next.adjacent.a17"
+    ],
+    "scopes": [
+      "gc.profile.profiletopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "受け取る",
+    "ko": "수령",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "선물 항목의 수령 버튼. 동작을 실행하지 않는 표시 번역.",
+    "resource_ids": [
+      "ui.next.present.receive-cell"
+    ],
+    "scopes": [
+      "gc.presentscrollcell"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "学芸員情報",
+    "ko": "학예사 정보",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "학예사 정보. 관장 정보와 별도 제목.",
+    "resource_ids": [
+      "ui.next.adjacent.a14"
+    ],
+    "scopes": [
+      "gc.profile.profiletopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "学芸員配置状況",
+    "ko": "학예사 배치 현황",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "학예사 배치 현황. 학예사와 관장 용어를 구분.",
+    "resource_ids": [
+      "ui.next.adjacent.a03"
+    ],
+    "scopes": [
+      "gc.museum.museuminfopopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "幕間",
+    "ko": "막간",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a20"
+    ],
+    "scopes": [
+      "gc.novel.noveltopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "感情資源",
+    "ko": "감정 자원",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a05"
+    ],
+    "scopes": [
+      "gc.museum.museuminfopopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "所持上限",
+    "ko": "보유 한도",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a07"
+    ],
+    "scopes": [
+      "gc.museum.museuminfopopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "技法強化",
+    "ko": "기법 강화",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a32"
+    ],
+    "scopes": [
+      "gc.unitscene.skillenhancescrollcell"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "提供割合",
+    "ko": "제공 확률",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "가챠 제공 확률 표제; 비율 숫자를 변경하는 문구가 아님.",
+    "resource_ids": [
+      "ui.next.adjacent.a45",
+      "ui.next.adjacent.a46"
+    ],
+    "scopes": [
+      "gc.gacha.gachainformationpopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "時間毎生産量",
+    "ko": "시간당 생산량",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "시간 단위 생산량을 나타내는 시간당 생산량.",
+    "resource_ids": [
+      "ui.next.adjacent.a06"
+    ],
+    "scopes": [
+      "gc.museum.museuminfopopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "来館者数",
+    "ko": "방문자 수",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r01.04"
+    ],
+    "scopes": [
+      "gc.profile.userprofilecontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "注意事項",
+    "ko": "주의사항",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a49",
+      "ui.next.adjacent.a50"
+    ],
+    "scopes": [
+      "gc.gacha.gachainformationpopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "消費",
+    "ko": "소모",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r06.03"
+    ],
+    "scopes": [
+      "w2.shop-event"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "編成コピー",
+    "ko": "편성 복사",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r10.01"
+    ],
+    "scopes": [
+      "gc.deck.decktopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "美術品Lv合計",
+    "ko": "미술품 레벨 합계",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "Lv를 레벨로 표시한 합계 제목. 수치 없음.",
+    "resource_ids": [
+      "ui.next.adjacent.a02"
+    ],
+    "scopes": [
+      "gc.museum.museuminfopopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "自己紹介",
+    "ko": "자기소개",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r01.07"
+    ],
+    "scopes": [
+      "gc.profile.userprofilecontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "藝晶石所持状況",
+    "ko": "예정석 보유 현황",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "재화 藝晶石=예정석, 所持状況=보유 현황. 메뉴 버튼의 고정 제목.",
+    "resource_ids": [
+      "ui.next.adjacent.a08"
+    ],
+    "scopes": [
+      "gc.globalmenu.globalmenupopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "藝術家を選択してください",
+    "ko": "예술가를 선택해 주세요",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r18.02"
+    ],
+    "scopes": [
+      "gc.unitscene.unitselectpopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "藝術家一覧",
+    "ko": "예술가 목록",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.wave2.r18.01"
+    ],
+    "scopes": [
+      "gc.unitscene.unitselectpopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "贈り物",
+    "ko": "선물",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a37"
+    ],
+    "scopes": [
+      "gc.home.hometopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "足跡帳",
+    "ko": "방문 기록",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "미술관 방문 이력 화면 용도에 맞춘 방문 기록.",
+    "resource_ids": [
+      "ui.next.adjacent.a12"
+    ],
+    "scopes": [
+      "gc.profile.profiletopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "配置",
+    "ko": "배치",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "고정 UI 제목/버튼/표제의 원문 의미와 기존 한국어 용어를 대조; 번역 유지.",
+    "resource_ids": [
+      "ui.next.adjacent.a18"
+    ],
+    "scopes": [
+      "gc.profile.profiletopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "開始日",
+    "ko": "시작일",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "프로필 시작 날짜의 표제. 날짜 값은 포함하지 않음.",
+    "resource_ids": [
+      "ui.wave2.r01.06"
+    ],
+    "scopes": [
+      "gc.profile.userprofilecontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "顕性ポテンシャル",
+    "ko": "현성 포텐셜",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "Master 및 가챠 안내의 현성 포텐셜 용어와 일치.",
+    "resource_ids": [
+      "ui.next.adjacent.a47",
+      "ui.next.adjacent.a48"
+    ],
+    "scopes": [
+      "gc.gacha.gachainformationpopup"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  },
+  {
+    "jp": "館長情報",
+    "ko": "관장 정보",
+    "review": "CODEX_JP_MEANING_TERMINOLOGY_REVIEWED",
+    "note": "플레이어 관장 정보 제목.",
+    "resource_ids": [
+      "ui.next.adjacent.a13"
+    ],
+    "scopes": [
+      "gc.profile.profiletopcontroller"
+    ],
+    "runtime_requirement": "exact dictionary only; no selector adapter or dynamic parser",
+    "previous_omission": "kind filter"
+  }
+]

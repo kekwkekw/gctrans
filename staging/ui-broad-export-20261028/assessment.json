@@ -1,0 +1,560 @@
+[
+  {
+    "jp": "マップレベルアップ",
+    "local_ui": false,
+    "local_master_fields": [],
+    "korean_master_fields": [],
+    "ui_before": null,
+    "ui_after": "맵 레벨 상승",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING"
+  },
+  {
+    "jp": "イマージュの獲得・限界突破により以下のマップレベルがアップしました",
+    "local_ui": false,
+    "local_master_fields": [],
+    "korean_master_fields": [],
+    "ui_before": null,
+    "ui_after": "이마쥬 획득·한계 돌파로 아래 맵의 레벨이 상승했습니다",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING"
+  },
+  {
+    "jp": "アテネスレコード",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "ko": "아테네스 레코드"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "아테네스 레코드",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field.",
+    "evidence": "Before UI had only <cspace=-0.15em> decorated pair. Plain heading absent."
+  },
+  {
+    "jp": "マップレベル",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "ko": "맵 레벨"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "맵 레벨",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field."
+  },
+  {
+    "jp": "藝術家強化",
+    "local_ui": true,
+    "local_master_fields": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "ko": "예술가 강화"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "예술가 강화",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field."
+  },
+  {
+    "jp": "一括合成",
+    "local_ui": false,
+    "local_master_fields": [],
+    "korean_master_fields": [],
+    "ui_before": null,
+    "ui_after": "일괄 합성",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING"
+  },
+  {
+    "jp": "すれ違いバフ",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "ko": "스쳐 지나가기 버프"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "스쳐가기 버프",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field."
+  },
+  {
+    "jp": "装備中",
+    "local_ui": true,
+    "local_master_fields": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "ko": "장착 중"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "장착 중",
+    "master_hold3": false,
+    "cause": "UI_EXACT_NOT_EXPORTED",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field.",
+    "evidence": "Two translate/literal authoring records existed, both with disabled runtime bindings."
+  },
+  {
+    "jp": "イマージュ交流",
+    "local_ui": false,
+    "local_master_fields": [],
+    "korean_master_fields": [],
+    "ui_before": null,
+    "ui_after": "이마쥬 교류",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING"
+  },
+  {
+    "jp": "獲得演出",
+    "local_ui": false,
+    "local_master_fields": [],
+    "korean_master_fields": [],
+    "ui_before": null,
+    "ui_after": "획득 연출",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING"
+  },
+  {
+    "jp": "イマージュ図録",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mTutorialPopupDescriptions",
+        "field": "ml_title[]",
+        "ko": "이마쥬 도록"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "이마쥬 도록",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field."
+  },
+  {
+    "jp": "能力",
+    "local_ui": false,
+    "local_master_fields": [],
+    "korean_master_fields": [],
+    "ui_before": null,
+    "ui_after": "능력",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING"
+  },
+  {
+    "jp": "イマージュ一覧",
+    "local_ui": false,
+    "local_master_fields": [],
+    "korean_master_fields": [],
+    "ui_before": null,
+    "ui_after": "이마쥬 목록",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING"
+  },
+  {
+    "jp": "イマージュを選択してください",
+    "local_ui": true,
+    "local_master_fields": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "ko": "이마쥬를 선택해 주세요"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "이마쥬를 선택해 주세요",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field."
+  },
+  {
+    "jp": "イマージュ",
+    "local_ui": true,
+    "local_master_fields": [
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]"
+      },
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]"
+      },
+      {
+        "table": "slim_mLoadingTips",
+        "field": "ml_title[]"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mTextConfig",
+        "field": "ml_value[]",
+        "ko": "이마쥬"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]",
+        "ko": "이마쥬"
+      },
+      {
+        "table": "slim_mLoadingTips",
+        "field": "ml_title[]",
+        "ko": "이마쥬"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "이마쥬",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field."
+  },
+  {
+    "jp": "チュートリアル",
+    "local_ui": false,
+    "local_master_fields": [],
+    "korean_master_fields": [],
+    "ui_before": "튜토리얼",
+    "ui_after": "튜토리얼",
+    "master_hold3": false,
+    "cause": "EXACT_OR_PLAIN_UI_KEY_MISSING"
+  },
+  {
+    "jp": "プランタン地区",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|",
+        "ko": "프랭탕 지구"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name",
+        "ko": "프랭탕 지구"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name",
+        "ko": "프랭탕 지구"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]",
+        "ko": "프랭탕 지구"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "프랭탕 지구",
+    "master_hold3": false,
+    "cause": "IMAGE_BAKED_LABEL",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field.",
+    "evidence": "athenes_record_atlas/BtArea01..06 image pixels; detail title is translated; no runtime Master failure"
+  },
+  {
+    "jp": "エグゾティ地区",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|",
+        "ko": "에그조티 지구"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name",
+        "ko": "에그조티 지구"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name",
+        "ko": "에그조티 지구"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]",
+        "ko": "에그조티 지구"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "에그조티 지구",
+    "master_hold3": false,
+    "cause": "IMAGE_BAKED_LABEL",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field.",
+    "evidence": "athenes_record_atlas/BtArea01..06 image pixels; detail title is translated; no runtime Master failure"
+  },
+  {
+    "jp": "ノワール地区",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|",
+        "ko": "누아르 지구"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name",
+        "ko": "누아르 지구"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name",
+        "ko": "누아르 지구"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]",
+        "ko": "누아르 지구"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "누아르 지구",
+    "master_hold3": false,
+    "cause": "IMAGE_BAKED_LABEL",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field.",
+    "evidence": "athenes_record_atlas/BtArea01..06 image pixels; detail title is translated; no runtime Master failure"
+  },
+  {
+    "jp": "ヴォルカン地区",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|",
+        "ko": "볼칸 지구"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name",
+        "ko": "볼칸 지구"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name",
+        "ko": "볼칸 지구"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]",
+        "ko": "볼캉 지구"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "볼칸 지구",
+    "master_hold3": false,
+    "cause": "IMAGE_BAKED_LABEL",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field.",
+    "evidence": "athenes_record_atlas/BtArea01..06 image pixels; detail title is translated; no runtime Master failure"
+  },
+  {
+    "jp": "イヴェール地区",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|",
+        "ko": "이베르 지구"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name",
+        "ko": "이베르 지구"
+      },
+      {
+        "table": "mRaidEventBosses",
+        "field": "name",
+        "ko": "이베르 지구"
+      },
+      {
+        "table": "mNovelKeyWords",
+        "field": "ml_keyword[]",
+        "ko": "이베르 지구"
+      }
+    ],
+    "ui_before": "이베르 지구",
+    "ui_after": "이베르 지구",
+    "master_hold3": false,
+    "cause": "IMAGE_BAKED_LABEL",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field.",
+    "evidence": "athenes_record_atlas/BtArea01..06 image pixels; detail title is translated; no runtime Master failure"
+  },
+  {
+    "jp": "アテネス全域",
+    "local_ui": false,
+    "local_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name"
+      }
+    ],
+    "korean_master_fields": [
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "ml_name|",
+        "ko": "아테네스 전역"
+      },
+      {
+        "table": "mAthenesRecordAreas",
+        "field": "name",
+        "ko": "아테네스 전역"
+      }
+    ],
+    "ui_before": null,
+    "ui_after": "아테네스 전역",
+    "master_hold3": false,
+    "cause": "IMAGE_BAKED_LABEL",
+    "master_note": "Korean Master key exists and installed Master hash matches. Separate prefab/static labels do not read that Master field.",
+    "evidence": "athenes_record_atlas/BtArea01..06 image pixels; detail title is translated; no runtime Master failure"
+  }
+]
