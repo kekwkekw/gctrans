@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "rules": [
+    {
+      "jp": "あと{value}",
+      "ko": "{value} 남음",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "あと{value}",
+      "ko": "{value} 남음",
+      "value_kind": "clock"
+    },
+    {
+      "jp": "あと{value}日",
+      "ko": "{value}일 남음",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "あと{value}時間",
+      "ko": "{value}시간 남음",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "あと{value}回",
+      "ko": "{value}회 남음",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "レベル{value}",
+      "ko": "레벨{value}",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "レベル{value}\n",
+      "ko": "레벨{value}\n",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "更新まで{value}",
+      "ko": "갱신까지{value}",
+      "value_kind": "clock"
+    },
+    {
+      "jp": "スタイル({value}種)",
+      "ko": "스타일({value}종)",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "限界突破{value}で解放",
+      "ko": "한계돌파 {value}단계에서 해제",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "次のLvまで{value}",
+      "ko": "다음 Lv까지{value}",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "次の報酬まで：{value}点",
+      "ko": "다음 보상까지：{value}점",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "Lv{value}以上で解放",
+      "ko": "Lv{value} 이상 달성 시 해제",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "信頼度Lv{value}以上で解放",
+      "ko": "신뢰도 Lv{value} 이상 달성 시 해제",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "ステップ{value}",
+      "ko": "스텝{value}",
+      "value_kind": "integer"
+    },
+    {
+      "jp": "工房{value}",
+      "ko": "공방{value}",
+      "value_kind": "integer"
+    }
+  ]
+}

@@ -1,23 +1,22 @@
 # 외부 입력과 역할
 
-운영 후보에는 번역 JSON·GCMod 후보·safe source/tools/tests만 들어 있다. 이 문서의 FOUND/path는 metadata와 custody 역할이며 ABI/glyph/hook 성공을 뜻하지 않는다.
+현행 절차는 [LOCAL_PARITY_PIPELINE_KO.md](LOCAL_PARITY_PIPELINE_KO.md)를 따른다. 공개 경로에 개인 PC 주소·로그인 정보·private helper를 고정하지 않는다.
 
-| 입력 | 현재 명시 경로/역할 | 포함 |
+| 입력 | 용도 | 공개 package |
 |---|---|---|
-| DMM launcher | `<existing-DMM-launcher.ps1>`, 인자 없음, 현재 interactive girlscreation_r | private 본문 제외 |
-| Game root | `<existing-game-root>` | 게임 DLL 제외 |
-| BepInEx IL2CPP/core | `<game>/BepInEx/core`, read-only compile/runtime references | 제외 |
-| interop/map | `<game>/BepInEx/interop/Assembly-CSharp.dll`, `MethodAddressToToken.db` 및 기존 interop assemblies | 제외 |
-| Utility | `<game>/BepInEx/plugins/GCMod/Utility.dll`, AssetBundleLoader dependency | 제외, 기존 폴더 유지 |
-| 승인 Medium | `<approved-external-custody>/RHR_Medium_GFSAFE_ADH.bundle` | 제외 |
-| 보존 Medium custody | `<preserved-external-custody>/RHR_Medium_GFSAFE_ADH.bundle` | 제외 |
-| Python/.NET | Python3 및 .NET SDK9; candidate는 net6.0, UpdateCli는 net9.0 | 실행 환경 외부 |
-| source HTTP/decoder | known WebGL metadata는 httpx, 실제 Unity bundle 취득/추출은 UnityPy 및 lane별 별도 입력 | UI-only에 불필요 |
+| 기존 DMM 런처 | 사용자가 제공한 interactive girlscreation_r 실행 | 제외 |
+| 기존 game/BepInEx/core/interop | DLL 빌드와 게임 실행 참조 | 제외 |
+| 기존 Utility.dll | local AssetBundleLoader/알림 의존성 | 기본 update 제외 |
+| RHR_Medium_GFSAFE_ADH.bundle | 검증된 한국어 TMP font/fallback | 기본 update 제외 |
+| Python 3.12 이상 | crawler/export/review/package 도구 | 실행 환경 |
+| .NET 9 SDK | CPU lookup 검사; net6.0 candidate 빌드 | 실행 환경 |
+| httpx 0.27.2, UnityPy 1.10.18 | metadata HTTP와 Unity bundle 추출 | 개발 의존성 |
+| 기존 private helper | live WebGL 취득 인증 및 Master decode | 항상 제외 |
 
-staging/GCMod.cfg.template의 `GCMod/fonts/tsukuardgothic-std-medium`은 기존 code default와의 일치를 기록한다. 승인 Medium이 그 경로에 있다는 보증이 아니다. 실제 trial에서는 읽기 확인한 위 승인 custody를 Translation.Font.AssetBundlePath에 명시하고 원복한다. 상대 font 경로는 BepInEx/plugins 기준이며 PackageRoot 기준이 아니다. 새 폰트 생성/다운로드/검색은 하지 않는다.
+`python tools/local_release.py build --game <existing-game-root>`가 `candidate/GCMod.dll`을 만든다. 직접 빌드는 `dotnet build source/GCMod.Candidate/GCMod.Candidate.csproj -c Release -p:GameDir=<existing-game-root>`와 같다. build 자체는 설치본을 수정하지 않는다.
 
-현재 source build는 `dotnet build source/GCMod.Candidate/GCMod.Candidate.csproj -c Release -p:GameDependencyRoot=<existing-game-reference-root> -p:NuGetAudit=false`다. 출력은 source build 폴더이며 설치본으로 복사하는 target이 없다. build와 반환 candidate/DLL provenance를 구분한다. informational version명만으로 재빌드하지 않는다.
+폰트 기본 경로는 `GCMod/fonts/RHR_Medium_GFSAFE_ADH.bundle`이며 BepInEx/plugins 기준이다. 기본 공개 업데이트에는 font/Utility/게임/interop를 넣지 않는다. `pack --font ... --utility ...`는 사용자 개인 설치 묶음이며 공개 release로 올리지 않는다.
 
-scripts/crypto.py는 credential-free 경계만 제공한다. 실제 live WebGL signing/decryption에는 운영자의 별도 private helper가 필요할 수 있으나 UI 교정·mock source·CPU·metadata-only scan은 이를 요구하지 않는다. 실제 HTTP/Unity decoder 누락은 typed optional-dependency reason으로 구분하고 checkout 내부 module 누락을 외부 설치 요구로 숨기지 않는다. helper/키/private raw를 전달물에 넣지 않는다. 현재 최신 PC inventory/UI·Novel locator/Names authority 부족은 source coverage 축에 따로 기록하며 완료된 제품 경로의 blocker가 아니다.
+metadata-only scan과 CPU 검사는 private helper 없이 실행할 수 있다. 이미 보관된 raw의 UI prefab 재해석도 인증키를 요구하지 않는다. HTTP 인증과 Master 복호화에 필요한 helper/키를 Git, CI artifact, 설치 ZIP에 포함하지 않는다.
 
-실제 NG10 관측 경로와 launcher 실행 기록은 Git 밖 로컬 인계의 좁은 metadata에만 기록한다. 공개 source/config에 개인 custody를 고정하지 않는다. trial 활성 table 최소 합집합은 mUnitWords,mSubunitWords,mTextConfig,mNovelKeyWords,mNovels이며 기본 개인 설정은 원복한다. 전체62 table native PASS가 아니다. staging 기본 opt-in/CheckUpdate/UiRequestsEnabled는 OFF, locale ko, XUnity OFF다. `Nextgen.PackageRoot`는 후보의 `translations/ko` 폴더이며 같은 위치의 release-manifest와 ui/manifest를 가리킨다.
+LocalParity 설정은 `ko`, `offline`, Master `*`다. 과거 5/7-table smoke 목록과 Nextgen.PackageRoot/UiRequestsEnabled 설정은 현재 runtime 구성에 사용하지 않는다.

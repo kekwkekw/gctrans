@@ -459,6 +459,8 @@ def _scan(profile, inventory, state_path, raw_root, fetch_asset, extractor, exis
         reason = None
         if item["source_id"] in forced_ids:
             reason = "forced"
+        elif old['status'] == 'baseline_only' and profile.partition in ('UI', 'Master') and fetch_asset is not None:
+            reason = 'first_acquisition'
         elif collision_resolved:
             reason = "source_collision_resolved"
         elif old["status"] in ("failed", "pending") or (old["status"] == "collision" and not mat):
@@ -492,7 +494,7 @@ def _scan(profile, inventory, state_path, raw_root, fetch_asset, extractor, exis
             metrics["collision"] += 1
         elif old["status"] == "collision" and reason is None:
             metrics["collision"] += 1
-    if max_candidates and len(plan) > max_candidates:
+    if max_candidates and len(plan) > max_candidates and profile.partition != 'UI':
         # No acquisition and no advanced metadata on an exceeded operator limit.
         raise ValueError(f"SOURCE_CANDIDATE_LIMIT:{len(plan)}>{max_candidates}")
     previous_complete = state["last_complete_inventory"]
@@ -505,7 +507,13 @@ def _scan(profile, inventory, state_path, raw_root, fetch_asset, extractor, exis
     state["deletion_candidates"] = deletions
     # Save pending obligations before I/O, including interruption after metadata advance.
     atomic_json(state_path, state)
-    for item in plan:
+    # UI scope can span hundreds of prefabs. Persist all pending obligations,
+    # acquire a bounded batch, then resume on the next invocation.
+    acquire_plan = plan
+    if profile.partition == 'UI' and max_candidates:
+        acquire_plan = sorted(plan, key=lambda r: r['reason'] == 'failed_retry')[:max_candidates]
+        metrics['deferred'] = len(plan) - len(acquire_plan)
+    for item in acquire_plan:
         key, token = item["asset_key"], item["vendor_token"]
         asset = state["assets"][key]
         if cancelled():
@@ -550,7 +558,8 @@ def _scan(profile, inventory, state_path, raw_root, fetch_asset, extractor, exis
             for textasset in result["textassets"]:
                 script_ref = immutable_blob(raw_root, textasset["bytes"], "textassets", metrics)
                 all_refs.append({**script_ref, "name": textasset["name"], "path_id": textasset["path_id"], "container": textasset["container"]})
-            if not all_refs:
+            ui_prefab = profile.partition == "UI" and result.get("selection_contract") == "UI_PREFAB_TEXT_FIELDS_V1"
+            if not all_refs and not ui_prefab:
                 raise ValueError("SOURCE_TEXTASSET_REQUIRED")
             selected = result.get("selected")
             if selected is not None and (type(selected) is not int or not 0 <= selected < len(all_refs)):
@@ -562,6 +571,7 @@ def _scan(profile, inventory, state_path, raw_root, fetch_asset, extractor, exis
                    "textassets": all_refs, "selected_textasset": all_refs[selected] if selected is not None else None,
                    "selection_contract": result.get("selection_contract", "EXPLICIT_EXTRACTOR_SELECTION"),
                    "master": result.get("master", []), "ui": result.get("ui", []),
+                   "ui_diagnostics": result.get("ui_diagnostics", {}),
                    "decoded_bodies": [{"table": b["name"], **immutable_blob(raw_root, b["bytes"], "decoded-master", metrics)}
                                       for b in result.get("decoded_bodies", [])],
                    "master_field_coverage": result.get("master_field_coverage", []), "completed_at": now()}
@@ -570,7 +580,7 @@ def _scan(profile, inventory, state_path, raw_root, fetch_asset, extractor, exis
             asset["cache_validation"] = "RAW_ACQUIRED_OR_VERIFIED_AND_EXTRACTED"
             if item["source_collision"]:
                 asset.setdefault("collision_variants", {})[token] = mat
-            asset["status"] = "materialized" if not item["source_collision"] and (selected is not None or profile.partition == "Master") else "collision"
+            asset["status"] = "materialized" if not item["source_collision"] and (selected is not None or profile.partition == "Master" or ui_prefab) else "collision"
             asset.pop("error_code", None)
             metrics[asset["status"] if asset["status"] == "collision" else "materialized"] += 1
         except (OSError, ValueError, KeyError, TypeError, RuntimeError) as error:
@@ -609,7 +619,7 @@ def source_item_eligible(item):
 
 
 def _snapshot(profile, state, metrics):
-    rows, master, ui, field_coverage = [], [], [], []
+    rows, master, ui, field_coverage, ui_diagnostics = [], [], [], [], []
     current_keys = set(state.get("observation", {}).get("asset_keys", []))
     for key, value in sorted(state["assets"].items()):
         if key not in current_keys:
@@ -635,10 +645,12 @@ def _snapshot(profile, state, metrics):
             master.extend(mat["master"])
             ui.extend(mat["ui"])
             field_coverage.extend(mat.get("master_field_coverage", []))
+            if mat.get('ui_diagnostics'):
+                ui_diagnostics.append({'asset_key': key, **mat['ui_diagnostics']})
     observation = state.get("observation", {})
     snapshot = {"schema": "gc-ng03-source-snapshot-v1", "profile": asdict(profile),
                 "metadata": observation, "master": master, "ui": ui, "master_field_coverage": field_coverage,
-                "qualified_sources": {},
+                "qualified_sources": {}, "ui_diagnostics": ui_diagnostics,
                 "novel": rows if profile.partition == "Novel" else [],
                 "asset_materializations": rows, "coverage": {
                     "metadata": observation.get("status", "UNKNOWN"),

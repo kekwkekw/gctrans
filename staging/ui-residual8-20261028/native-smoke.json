@@ -1,0 +1,39 @@
+{
+  "upstream": "0cdcd9e84fffa438dfdac63176685a6c47a07318",
+  "ui_pairs_before": 883,
+  "ui_pairs_after": 919,
+  "added_keys": 36,
+  "dll_sha256": "57d67218a910cbdec6ba001ada467d25d6b65826578efb6b3db6ecad83c535d0",
+  "ui_sha256": "51e0113a6d8c2b3a894109814d506eb27eb86d22ad962ca71e05fc461180716b",
+  "master_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+  "enabled_tables": "*",
+  "master_tables_observed": 61,
+  "error_fatal_exception_count": 0,
+  "diagnostic_code_in_final": false,
+  "master_names_novels_authoring_unchanged": true,
+  "screenshots": [
+    "residual8-final-character.jpg",
+    "residual8-final-museum.jpg",
+    "residual8-final-workshop.jpg",
+    "residual8-final-quest.jpg",
+    "residual8-final-enemy.jpg",
+    "residual8-final-event.jpg",
+    "residual8-final-box.jpg",
+    "residual8-final-dungeon.jpg"
+  ],
+  "results": {
+    "quest": "PASS: main/research/ended captions; event logo images remain",
+    "enemy": "PASS: strong hollow face, first clear, skip; no sortie",
+    "dungeon": "PASS: season 27, date until, current lap/floor, achievements, seeker boots",
+    "character": "PASS: affection, episode, favorite gift region including color tag",
+    "museum": "PASS: AP recovery and days remaining; update-until intentionally HOLD",
+    "workshop": "PASS: creation count, confirm, monthly-pass unlock; completion-until lookup tested but active countdown state unavailable (both workshops have completed output)",
+    "event": "PASS: box quest tab, date until, box ordinal; logo image remains",
+    "box": "PASS: box gacha title, box/ordinal, 1/10 opening labels; opening-deadline intentionally HOLD"
+  },
+  "account_actions": "view only; no sortie, reward collection, gift, box opening or purchases",
+  "discarded_experiment": "SetText overload interception caused stack overflow 0xc00000fd; removed before final. Final uses one OnPreRenderCanvas prefix and completed eight-screen smoke.",
+  "user_followup_confirmation_20261028": {
+    "完成まで": "User visually confirmed Korean 완성까지"
+  }
+}

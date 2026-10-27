@@ -7,7 +7,7 @@ import argparse, hashlib, io, json, subprocess, tarfile
 
 PREFIXES=('source/','tools/','tests/','contracts/','THIRD_PARTY_LICENSES/','staging/','translations/ko/','translation/','candidate/','docs/')
 ROOT_FILES={'.gitattributes','NuGet.Config',
- 'README.md','.gitignore','.github/workflows/crawl_only.yml'}
+ 'README.md','.gitignore','.github/workflows/crawl_only.yml','.github/workflows/local_parity.yml'}
 SCRIPTS={'scripts/__init__.py','scripts/crawl_only.py','scripts/crypto.py'}
 def run(repo,*args):return subprocess.check_output(['git','-C',str(repo),*args])
 def main():

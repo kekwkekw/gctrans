@@ -1,0 +1,20 @@
+[
+  {
+    "jp_family": "更新までMM:SS",
+    "screen": "museum",
+    "reason": "No 更新まで in pinned local UI/Master; deferred under user until-family policy",
+    "previous_master_hold": false
+  },
+  {
+    "jp_family": "開封期限：YYYY/MM/DD HH:mm まで",
+    "screen": "box",
+    "reason": "No 開封期限 in pinned local UI/Master; generic {0}まで is not treated as permission for arbitrary prefixes",
+    "previous_master_hold": false
+  },
+  {
+    "jp_family": "吸血騎士とスキッピオは眠らない / 輝きを刻みながら",
+    "screen": "quest/event",
+    "reason": "Stylized image/logo artwork; exact text lookup cannot replace image pixels. Image assets unchanged.",
+    "previous_master_hold": false
+  }
+]

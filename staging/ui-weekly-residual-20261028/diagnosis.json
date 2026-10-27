@@ -1,0 +1,742 @@
+{
+  "schema": "gc-ui-literal-residual-review-v1",
+  "upstream": "0cdcd9e84fffa438dfdac63176685a6c47a07318",
+  "added_ui": 41,
+  "runtime_change": false,
+  "crawler_change": false,
+  "master_change": false,
+  "existing_master_hold_overlap": 0,
+  "literal_source_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+  "prefab_check": {
+    "assets": [
+      "common_prefab.dmm",
+      "common_single_prefab.dmm",
+      "prefab_adv.dmm",
+      "scene/scene_novel.dmm",
+      "scene/scene_quest.dmm"
+    ],
+    "text_rows": 2027,
+    "decode_failures": 0
+  },
+  "rows": [
+    {
+      "jp": "アテネス",
+      "ko": "아테네스",
+      "local_ui": null,
+      "local_master_key_locations": [
+        {
+          "table": "mNovelKeyWords",
+          "field": "ml_keyword[]"
+        }
+      ],
+      "korean_master": [
+        {
+          "table": "mNovelKeyWords",
+          "field": "ml_keyword[]",
+          "ko": "아테네스"
+        }
+      ],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 20743,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "イヴェール",
+      "ko": "이베르",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 20786,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "エグゾティ",
+      "ko": "에그조티",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 20789,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "スキップしてもよろしいでしょうか？",
+      "ko": "건너뛰시겠습니까?",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 20873,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "スキップしてもよろしいですか？\n\n※セリフウィンドウ長押しで\n高速表示となります。",
+      "ko": "건너뛰시겠습니까?\n\n※대사 창을 길게 누르면\n대사가 빠르게 표시됩니다.",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 20874,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "ノワール",
+      "ko": "누아르",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 20951,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "プランタン",
+      "ko": "프랭탕",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 20987,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "ヴォルカン",
+      "ko": "볼칸",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21097,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "信愛：アテネス全域",
+      "ko": "신애: 아테네스 전역",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21238,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "信愛：イヴェール地区",
+      "ko": "신애: 이베르 지구",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21239,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "信愛：エグゾティ地区",
+      "ko": "신애: 에그조티 지구",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21240,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "信愛：ノワール地区",
+      "ko": "신애: 누아르 지구",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21241,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "信愛：プランタン地区",
+      "ko": "신애: 프랭탕 지구",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21242,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "信愛：ヴォルカン地区",
+      "ko": "신애: 볼칸 지구",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21243,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "属性結晶：アイボリー",
+      "ko": "속성 결정: 아이보리",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21392,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "属性結晶：カーマイン",
+      "ko": "속성 결정: 카민",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21393,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "属性結晶：セルリアン",
+      "ko": "속성 결정: 세룰리안",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21394,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "属性結晶：バイオレット",
+      "ko": "속성 결정: 바이올렛",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21395,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "属性結晶：ビリジアン",
+      "ko": "속성 결정: 비리디안",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21396,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "強化素材：彫刻系",
+      "ko": "강화 재료: 조각 계통",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21429,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "強化素材：東方画系",
+      "ko": "강화 재료: 동방화 계통",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21430,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "強化素材：油彩画系",
+      "ko": "강화 재료: 유화 계통",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21431,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "強化素材：略画早指南",
+      "ko": "강화 재료: 약화조지남",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21432,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "強化素材：石膏像",
+      "ko": "강화 재료: 석고상",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21433,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "彫刻系",
+      "ko": "조각 계통",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21435,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "東方画系",
+      "ko": "동방화 계통",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21571,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "油彩画系",
+      "ko": "유화 계통",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21601,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "特殊用",
+      "ko": "특수용",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21639,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "略画早指南",
+      "ko": "약화조지남",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21659,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "石膏像",
+      "ko": "석고상",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21670,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "秘石",
+      "ko": "비석",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21676,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "秘石：特殊用",
+      "ko": "비석: 특수용",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21677,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "秘石：胴体用",
+      "ko": "비석: 몸통용",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21678,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "秘石：腕部用",
+      "ko": "비석: 팔용",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21679,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "秘石：頭部用",
+      "ko": "비석: 머리용",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21680,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "素材",
+      "ko": "재료",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21691,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "結晶",
+      "ko": "결정",
+      "local_ui": null,
+      "local_master_key_locations": [
+        {
+          "table": "mShopCategories",
+          "field": "ml_name[]"
+        }
+      ],
+      "korean_master": [
+        {
+          "table": "mShopCategories",
+          "field": "ml_name[]",
+          "ko": "결정"
+        }
+      ],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21700,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "胴体用",
+      "ko": "몸통용",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21734,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "腕部用",
+      "ko": "팔용",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21737,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "銀貨増",
+      "ko": "은화 증가",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21841,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    },
+    {
+      "jp": "頭部用",
+      "ko": "머리용",
+      "local_ui": null,
+      "local_master_key_locations": [],
+      "korean_master": [],
+      "before_ui": null,
+      "prefab_exact_present": false,
+      "existing_master_hold": false,
+      "evidence": {
+        "kind": "PC_CODE_LITERAL_FAMILY",
+        "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+        "literal_index": 21869,
+        "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+        "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "ライフワーク",
+    "ko": "라이프워크"
+  },
+  {
+    "table": "mActiveSkills",
+    "field": "ml_name1[]",
+    "jp": "泰斗の荒彫り",
+    "ko": "거장의 초벌 조각"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "Trick and Trick",
+    "ko": "장난에는 장난으로"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "ほろ酔いでまたがられ",
+    "ko": "살짝 취한 그녀가 올라타고"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "祭典の初日を終えて",
+    "ko": "축제 첫날을 마치고"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "自分のいたい場所",
+    "ko": "내가 있고 싶은 곳"
+  },
+  {
+    "table": "mNovels",
+    "field": "ml_title[]",
+    "jp": "館長様のために",
+    "ko": "관장님을 위해"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "Trick and Trick",
+    "ko": "장난에는 장난으로"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "ほろ酔いでまたがられ",
+    "ko": "살짝 취한 그녀가 올라타고"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "祭典の初日を終えて",
+    "ko": "축제 첫날을 마치고"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "自分のいたい場所",
+    "ko": "내가 있고 싶은 곳"
+  },
+  {
+    "table": "mNovels",
+    "field": "title",
+    "jp": "館長様のために",
+    "ko": "관장님을 위해"
+  }
+]
