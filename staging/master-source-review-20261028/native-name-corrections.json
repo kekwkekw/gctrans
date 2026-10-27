@@ -1,0 +1,377 @@
+[
+  {
+    "table": "mEvents",
+    "field": "ml_title[]",
+    "text_SHA256": "d22b269c3f8e850e8c6eda936d0685d10e1d260d39deb7f1224bd06337fab044",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "3335"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "輝きを刻みながら",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0016",
+    "ko": "빛을 새기며",
+    "method": "JP_DIRECT_REVIEW",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "빛을 새겨 나가며",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mGachaMileages",
+    "field": "ml_name[]",
+    "text_SHA256": "37183963bb820337764b1c0b65f1e0d89313c62c798d7861275c265472a6411b",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1182"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "輝きを刻みながらピックアップガチャ ～ロダン～",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0030",
+    "ko": "빛을 새기며 픽업 가챠 ～로댕～",
+    "method": "FINITE_NAME_OR_MISSION_TEMPLATE",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "빛을 새겨 나가며 픽업 가챠 ～로댕～",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mGachaNotes",
+    "field": "note",
+    "text_SHA256": "3904ff6a8f7a4e881117c0e77747439e31a84bb566e67ecaf0ca6db65cf10760",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1185"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "※ガチャの正式名称は『有償限定 輝きを刻みながらピックアップガチャ ～サンソヴィーノ～』です。<br>\n※ショップで入手可能な有償の藝晶石でのみ回せるガチャです。<br>\n※スタイルまたはイマージュが一定の確率で提供されます。<br>\n※スタイルが提供されない場合もございますので、予めご了承ください。<br>\n※マイレージ報酬は最後まで受け取ると再び最初にループします。<br>\n※ガチャを1回引くごとにマイレージ1点がおまけで獲得できます。<br>\n※本ガチャのマイレージは同時開催中の『輝きを刻みながらピックアップガチャ ～サンソヴィーノ～』のマイレージに加算されます。<br>\n※提供されたイマージュが持つ顕性ポテンシャルの候補はガチャ毎に異なる場合があります。<br>\n※顕性ポテンシャルは提供されたイマージュそれぞれで個別に抽選を行っています。<br>\n※ピックアップスタイル【夢幻の可能性】の美術大全ガチャへの追加予定はございません。<br>",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0051",
+    "ko": "※가챠의 정식 명칭은 『유료 한정 빛을 새기며 픽업 가챠 ～산 소비노～』입니다.<br>\n※상점에서 구입할 수 있는 유료 예정석으로만 이용할 수 있는 가챠입니다.<br>\n※스타일 또는 이마쥬가 일정 확률로 제공됩니다.<br>\n※스타일이 제공되지 않는 경우도 있으니 미리 양해해 주세요.<br>\n※마일리지 보상을 끝까지 받으면 다시 처음부터 반복됩니다.<br>\n※가챠를 1회 이용할 때마다 마일리지 1점을 추가로 획득합니다.<br>\n※본 가챠의 마일리지는 동시에 개최 중인 『빛을 새기며 픽업 가챠 ～산 소비노～』의 마일리지에 합산됩니다.<br>\n※제공된 이마쥬가 보유하는 현성 포텐셜의 후보는 가챠마다 다를 수 있습니다.<br>\n※현성 포텐셜은 제공된 이마쥬마다 개별적으로 추첨합니다.<br>\n※픽업 스타일 【몽환의 가능성】은 미술대전 가챠에 추가될 예정이 없습니다.<br>",
+    "method": "JP_REVIEWED_FINITE_NOTE_CLAUSES",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "※가챠의 정식 명칭은 『유료 한정 빛을 새겨 나가며 픽업 가챠 ～산 소비노～』입니다.<br>\n※상점에서 구입할 수 있는 유료 예정석으로만 이용할 수 있는 가챠입니다.<br>\n※스타일 또는 이마쥬가 일정 확률로 제공됩니다.<br>\n※스타일이 제공되지 않는 경우도 있으니 미리 양해해 주세요.<br>\n※마일리지 보상을 끝까지 받으면 다시 처음부터 반복됩니다.<br>\n※가챠를 1회 이용할 때마다 마일리지 1점을 추가로 획득합니다.<br>\n※본 가챠의 마일리지는 동시에 개최 중인 『빛을 새겨 나가며 픽업 가챠 ～산 소비노～』의 마일리지에 합산됩니다.<br>\n※제공된 이마쥬가 보유하는 현성 포텐셜의 후보는 가챠마다 다를 수 있습니다.<br>\n※현성 포텐셜은 제공된 이마쥬마다 개별적으로 추첨합니다.<br>\n※픽업 스타일 【몽환의 가능성】은 미술대전 가챠에 추가될 예정이 없습니다.<br>",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mGachaNotes",
+    "field": "note",
+    "text_SHA256": "eac566f1e533522122b5af7f8070758b245d9338e5efcac479846efbc3f33e93",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1183"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "※ガチャの正式名称は『有償限定 輝きを刻みながらピックアップガチャ ～ロダン～』です。<br>\n※ショップで入手可能な有償の藝晶石でのみ回せるガチャです。<br>\n※スタイルまたはイマージュが一定の確率で提供されます。<br>\n※スタイルが提供されない場合もございますので、予めご了承ください。<br>\n※マイレージ報酬は最後まで受け取ると再び最初にループします。<br>\n※ガチャを1回引くごとにマイレージ1点がおまけで獲得できます。<br>\n※本ガチャのマイレージは同時開催中の『輝きを刻みながらピックアップガチャ ～ロダン～』のマイレージに加算されます。<br>\n※提供されたイマージュが持つ顕性ポテンシャルの候補はガチャ毎に異なる場合があります。<br>\n※顕性ポテンシャルは提供されたイマージュそれぞれで個別に抽選を行っています。<br>\n※ピックアップスタイル【移ろう時の中で】は後日、美術大全ガチャに追加される予定です。<br>\n※ピックアップスタイル【移ろう時の中で】のオーブは、後日ショップにて【魂を映し出す大鏡】のオーブ×2と交換できるようになる予定です。<br>",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0052",
+    "ko": "※가챠의 정식 명칭은 『유상 한정 빛을 새기며 픽업 가챠 ～로댕～』입니다.<br>\n※상점에서 구입할 수 있는 유료 예정석으로만 이용할 수 있는 가챠입니다.<br>\n※스타일 또는 이마쥬가 일정 확률로 제공됩니다.<br>\n※스타일이 제공되지 않는 경우도 있으니 미리 양해해 주세요.<br>\n※마일리지 보상을 끝까지 받으면 다시 처음부터 반복됩니다.<br>\n※가챠를 1회 이용할 때마다 마일리지 1점을 추가로 획득합니다.<br>\n※본 가챠의 마일리지는 동시에 개최 중인 『빛을 새기며 픽업 가챠 ～로댕～』의 마일리지에 합산됩니다.<br>\n※제공된 이마쥬가 보유하는 현성 포텐셜의 후보는 가챠마다 다를 수 있습니다.<br>\n※현성 포텐셜은 제공된 이마쥬마다 개별적으로 추첨합니다.<br>\n※픽업 스타일 【흘러가는 시간 속에서】은 추후 미술대전 가챠에 추가될 예정입니다.<br>\n※픽업 스타일 【흘러가는 시간 속에서】의 오브는 추후 상점에서 【영혼을 비추는 큰 거울】의 오브×2와 교환할 수 있게 될 예정입니다.<br>",
+    "method": "JP_REVIEWED_FINITE_NOTE_CLAUSES",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "※가챠의 정식 명칭은 『유료 한정 빛을 새겨 나가며 픽업 가챠 ～로댕～』입니다.<br>\n※상점에서 구입할 수 있는 유료 예정석으로만 이용할 수 있는 가챠입니다.<br>\n※스타일 또는 이마쥬가 일정 확률로 제공됩니다.<br>\n※스타일이 제공되지 않는 경우도 있으니 미리 양해해 주세요.<br>\n※마일리지 보상을 끝까지 받으면 다시 처음부터 반복됩니다.<br>\n※가챠를 1회 이용할 때마다 마일리지 1점을 추가로 획득합니다.<br>\n※본 가챠의 마일리지는 동시에 개최 중인 『빛을 새겨 나가며 픽업 가챠 ～로댕～』의 마일리지에 합산됩니다.<br>\n※제공된 이마쥬가 보유하는 현성 포텐셜의 후보는 가챠마다 다를 수 있습니다.<br>\n※현성 포텐셜은 제공된 이마쥬마다 개별적으로 추첨합니다.<br>\n※픽업 스타일 【흘러가는 시간 속에서】은 추후 미술대전 가챠에 추가될 예정입니다.<br>\n※픽업 스타일 【흘러가는 시간 속에서】의 오브는 추후 상점에서 【영혼을 비추는 큰 거울】의 오브×2와 교환할 수 있게 될 예정입니다.<br>",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mGachaNotes",
+    "field": "note",
+    "text_SHA256": "707d58f5959295c287407dfe08b6edd8f29e5ffd37eec2b1de1add5c7aa30b99",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1184"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "※ガチャの正式名称は『輝きを刻みながらピックアップガチャ ～サンソヴィーノ～』です。<br>\n※スタイルまたはイマージュが一定の確率で提供されます。<br>\n※マイレージ報酬は最後まで受け取ると再び最初にループします。<br>\n※ガチャを1回引くごとにマイレージ1点がおまけで獲得できます。<br>\n※マイレージは『有償限定 輝きを刻みながらピックアップガチャ ～サンソヴィーノ～』以外の他のガチャのマイレージとは独立して管理されます。<br>\n※スタイルが提供されない場合もございますので、予めご了承ください。<br>\n※提供されたイマージュが持つ顕性ポテンシャルの候補はガチャ毎に異なる場合があります。<br>\n※顕性ポテンシャルは提供されたイマージュそれぞれで個別に抽選を行っています。<br>\n※ピックアップスタイル【夢幻の可能性】の美術大全ガチャへの追加予定はございません。<br>",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0054",
+    "ko": "※가챠의 정식 명칭은 『빛을 새기며 픽업 가챠 ～산 소비노～』입니다.<br>\n※스타일 또는 이마쥬가 일정 확률로 제공됩니다.<br>\n※마일리지 보상을 끝까지 받으면 다시 처음부터 반복됩니다.<br>\n※가챠를 1회 이용할 때마다 마일리지 1점을 추가로 획득합니다.<br>\n※마일리지는 『유료 한정 빛을 새기며 픽업 가챠 ～산 소비노～』 외의 다른 가챠 마일리지와 별도로 관리됩니다.<br>\n※스타일이 제공되지 않는 경우도 있으니 미리 양해해 주세요.<br>\n※제공된 이마쥬가 보유하는 현성 포텐셜의 후보는 가챠마다 다를 수 있습니다.<br>\n※현성 포텐셜은 제공된 이마쥬마다 개별적으로 추첨합니다.<br>\n※픽업 스타일 【몽환의 가능성】은 미술대전 가챠에 추가될 예정이 없습니다.<br>",
+    "method": "JP_REVIEWED_FINITE_NOTE_CLAUSES",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "※가챠의 정식 명칭은 『빛을 새겨 나가며 픽업 가챠 ～산 소비노～』입니다.<br>\n※스타일 또는 이마쥬가 일정 확률로 제공됩니다.<br>\n※마일리지 보상을 끝까지 받으면 다시 처음부터 반복됩니다.<br>\n※가챠를 1회 이용할 때마다 마일리지 1점을 추가로 획득합니다.<br>\n※마일리지는 『유료 한정 빛을 새겨 나가며 픽업 가챠 ～산 소비노～』 외의 다른 가챠 마일리지와 별도로 관리됩니다.<br>\n※스타일이 제공되지 않는 경우도 있으니 미리 양해해 주세요.<br>\n※제공된 이마쥬가 보유하는 현성 포텐셜의 후보는 가챠마다 다를 수 있습니다.<br>\n※현성 포텐셜은 제공된 이마쥬마다 개별적으로 추첨합니다.<br>\n※픽업 스타일 【몽환의 가능성】은 미술대전 가챠에 추가될 예정이 없습니다.<br>",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mGachaNotes",
+    "field": "note",
+    "text_SHA256": "ccaffcc5c54a133b6d451fabd1de9749702cedb57ec820a0de52a0e653911261",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1182"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "※ガチャの正式名称は『輝きを刻みながらピックアップガチャ ～ロダン～』です。<br>\n※スタイルまたはイマージュが一定の確率で提供されます。<br>\n※スタイルが提供されない場合もございますので、予めご了承ください。<br>\n※マイレージ報酬は最後まで受け取ると再び最初にループします。<br>\n※ガチャを1回引くごとにマイレージ1点がおまけで獲得できます。<br>\n※マイレージは『有償限定 輝きを刻みながらピックアップガチャ ～ロダン～』以外の他のガチャのマイレージとは独立して管理されます。<br>\n※提供されたイマージュが持つ顕性ポテンシャルの候補はガチャ毎に異なる場合があります。<br>\n※顕性ポテンシャルは提供されたイマージュそれぞれで個別に抽選を行っています。<br>\n※ピックアップスタイル【移ろう時の中で】は後日、美術大全ガチャに追加される予定です。<br>\n※ピックアップスタイル【移ろう時の中で】のオーブは、後日ショップにて【魂を映し出す大鏡】のオーブ×2と交換できるようになる予定です。<br>",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0055",
+    "ko": "※가챠의 정식 명칭은 『빛을 새기며 픽업 가챠 ～로댕～』입니다.<br>\n※스타일 또는 이마쥬가 일정 확률로 제공됩니다.<br>\n※스타일이 제공되지 않는 경우도 있으니 미리 양해해 주세요.<br>\n※마일리지 보상을 끝까지 받으면 다시 처음부터 반복됩니다.<br>\n※가챠를 1회 이용할 때마다 마일리지 1점을 추가로 획득합니다.<br>\n※마일리지는 『유상 한정 빛을 새기며 픽업 가챠 ～로댕～』 외의 다른 가챠 마일리지와 별도로 관리됩니다.<br>\n※제공된 이마쥬가 보유하는 현성 포텐셜의 후보는 가챠마다 다를 수 있습니다.<br>\n※현성 포텐셜은 제공된 이마쥬마다 개별적으로 추첨합니다.<br>\n※픽업 스타일 【흘러가는 시간 속에서】은 추후 미술대전 가챠에 추가될 예정입니다.<br>\n※픽업 스타일 【흘러가는 시간 속에서】의 오브는 추후 상점에서 【영혼을 비추는 큰 거울】의 오브×2와 교환할 수 있게 될 예정입니다.<br>",
+    "method": "JP_REVIEWED_FINITE_NOTE_CLAUSES",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "※가챠의 정식 명칭은 『빛을 새겨 나가며 픽업 가챠 ～로댕～』입니다.<br>\n※스타일 또는 이마쥬가 일정 확률로 제공됩니다.<br>\n※스타일이 제공되지 않는 경우도 있으니 미리 양해해 주세요.<br>\n※마일리지 보상을 끝까지 받으면 다시 처음부터 반복됩니다.<br>\n※가챠를 1회 이용할 때마다 마일리지 1점을 추가로 획득합니다.<br>\n※마일리지는 『유료 한정 빛을 새겨 나가며 픽업 가챠 ～로댕～』 외의 다른 가챠 마일리지와 별도로 관리됩니다.<br>\n※제공된 이마쥬가 보유하는 현성 포텐셜의 후보는 가챠마다 다를 수 있습니다.<br>\n※현성 포텐셜은 제공된 이마쥬마다 개별적으로 추첨합니다.<br>\n※픽업 스타일 【흘러가는 시간 속에서】은 추후 미술대전 가챠에 추가될 예정입니다.<br>\n※픽업 스타일 【흘러가는 시간 속에서】의 오브는 추후 상점에서 【영혼을 비추는 큰 거울】의 오브×2와 교환할 수 있게 될 예정입니다.<br>",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mItems",
+    "field": "ml_description[]",
+    "text_SHA256": "41c620ca4cbb35579419863ded321f03549cf41004c0bdbe28b3fd6af0692fbe",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1511130"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "イベント「輝きを刻みながら」のストーリー解放に必要なアイテム。",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0064",
+    "ko": "이벤트 「빛을 새기며」의 스토리 해방에 필요한 아이템.",
+    "method": "FINITE_ITEM_DESCRIPTION_TEMPLATE",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "이벤트 「빛을 새겨 나가며」의 스토리 해방에 필요한 아이템.",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mItems",
+    "field": "ml_description[]",
+    "text_SHA256": "e1f78276822570c74d868f5c1ad6ec55f6014d39a7ce344475ca561242691634",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1650166"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "イベント「輝きを刻みながら」のボックスガチャを引けるアイテム。",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0065",
+    "ko": "이벤트 「빛을 새기며」의 박스 가챠를 이용할 수 있는 아이템.",
+    "method": "FINITE_ITEM_DESCRIPTION_TEMPLATE",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "이벤트 「빛을 새겨 나가며」의 박스 가챠를 이용할 수 있는 아이템.",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mItems",
+    "field": "ml_description[]",
+    "text_SHA256": "8ad6e78657a45dc7f0cd593c9bedfce1f017730d7eafcee2cc5635363bbe4225",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1630258"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "輝きを刻みながらピックアップガチャ～ロダン～を1回、実行することができるアイテム。",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0076",
+    "ko": "빛을 새기며 픽업 가챠～로댕～를 1회 이용할 수 있는 아이템.",
+    "method": "FINITE_ITEM_DESCRIPTION_TEMPLATE",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "빛을 새겨 나가며 픽업 가챠～로댕～를 1회 이용할 수 있는 아이템.",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mItems",
+    "field": "ml_name[]",
+    "text_SHA256": "98bb595514455700c53d775353b9745939566fc0271e7327f3fb67b300289eb3",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1511130"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "ストーリーキー【輝きを刻みながら】",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0101",
+    "ko": "스토리 키【빛을 새기며】",
+    "method": "FINITE_NAME_OR_MISSION_TEMPLATE",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "스토리 키【빛을 새겨 나가며】",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mItems",
+    "field": "ml_name[]",
+    "text_SHA256": "8db2106e21940dd52307f95d8aca161ad0bdd9701fd2017dd08d88bd657df5b4",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1630258"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "輝きを刻みながらガチャ～ロダン～チケット",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0110",
+    "ko": "빛을 새기며 가챠～로댕～ 티켓",
+    "method": "FINITE_NAME_OR_MISSION_TEMPLATE",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "빛을 새겨 나가며 가챠～로댕～ 티켓",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "mQuests",
+    "field": "ml_name[]",
+    "text_SHA256": "d22b269c3f8e850e8c6eda936d0685d10e1d260d39deb7f1224bd06337fab044",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "735"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "輝きを刻みながら",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0016",
+    "ko": "빛을 새기며",
+    "method": "JP_DIRECT_REVIEW",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "빛을 새겨 나가며",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "text_SHA256": "0fde20c18ec9d91c1e23f26be21c37bfa3721a593f6d3033799ea58ba1944b03",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "8103"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "3rdアニバカウントダウン復刻3連ガチャ延長戦",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0248",
+    "ko": "3rd 애니버서리 카운트다운 복각 3 연속 가챠 연장전",
+    "method": "FINITE_NAME_OR_MISSION_TEMPLATE",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "3rd 애니버서리 카운트다운 복각 3연속 가챠 연장전",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "slim_mGachaGroups",
+    "field": "ml_name[]",
+    "text_SHA256": "37183963bb820337764b1c0b65f1e0d89313c62c798d7861275c265472a6411b",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "1182"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "輝きを刻みながらピックアップガチャ ～ロダン～",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0030",
+    "ko": "빛을 새기며 픽업 가챠 ～로댕～",
+    "method": "FINITE_NAME_OR_MISSION_TEMPLATE",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "빛을 새겨 나가며 픽업 가챠 ～로댕～",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  },
+  {
+    "table": "slim_mLoginBonuses",
+    "field": "ml_name[]",
+    "text_SHA256": "69ab4e8b67c4804a427f20c48218447bc295326948741b7dd7e466820f3df985",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "13335"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "輝きを刻みながらログインボーナス",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0289",
+    "ko": "빛을 새기며 로그인 보너스",
+    "method": "FINITE_NAME_OR_MISSION_TEMPLATE",
+    "status": "CODEX_SEMANTIC_REVIEWED",
+    "before_ko": "빛을 새겨 나가며 로그인 보너스",
+    "review_status": "CODEX_SEMANTIC_REVIEWED",
+    "review_reasons": [
+      "Native 가챠 표제와 정식 명칭 일치"
+    ]
+  }
+]

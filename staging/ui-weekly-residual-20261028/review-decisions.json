@@ -1,0 +1,907 @@
+{
+  "schema": "gc-local-parity-decisions-v1",
+  "rows": [
+    {
+      "id": "b892fb460b7ff655a85eae98fb6c62508d5012f493909757923e6ac5893d61f1",
+      "jp": "アテネス",
+      "action": "translate",
+      "ko": "아테네스",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 20743,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "cd6b6f17aef411dc16a4efc8f4dac6672ec96df2d43191e54738b08ddfa96c9e",
+      "jp": "イヴェール",
+      "action": "translate",
+      "ko": "이베르",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 20786,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "66145343177ad6b28a4f6e9ff1d40c40d3476d176c12b093027204b66ac586b5",
+      "jp": "エグゾティ",
+      "action": "translate",
+      "ko": "에그조티",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 20789,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "eb23049bc14856986d02833ae9b44668cb5d6d24b92ae9ed8984e9f6e9c52172",
+      "jp": "スキップしてもよろしいでしょうか？",
+      "action": "translate",
+      "ko": "건너뛰시겠습니까?",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 20873,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "2ee7b11aeaae94243fdd4e52ffee31b885aad026f60fadf56a917f508df90725",
+      "jp": "スキップしてもよろしいですか？\n\n※セリフウィンドウ長押しで\n高速表示となります。",
+      "action": "translate",
+      "ko": "건너뛰시겠습니까?\n\n※대사 창을 길게 누르면\n대사가 빠르게 표시됩니다.",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 20874,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "b23222c2d5ab2517559043d6d43ea09ef36d7d13b08402408cb79b793e3a2bd5",
+      "jp": "ノワール",
+      "action": "translate",
+      "ko": "누아르",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 20951,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "c29234fb54182029120e83997891cac2ac989ec78e3e5b4daff699ddd5780603",
+      "jp": "プランタン",
+      "action": "translate",
+      "ko": "프랭탕",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 20987,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "a4a4ef836670fababc061f0c5a25a715289b4a87e8c4ea783ed19ead9d0042f2",
+      "jp": "ヴォルカン",
+      "action": "translate",
+      "ko": "볼칸",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21097,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "9e459130f7686996780bac8446fdfeea9b5fe79b29f18aa6a9ff52d425fb7c6b",
+      "jp": "信愛：アテネス全域",
+      "action": "translate",
+      "ko": "신애: 아테네스 전역",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21238,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "23a1293125190c3b87afcd3184f14b52816f1d140cb516a8cd6fe2ec800cbe54",
+      "jp": "信愛：イヴェール地区",
+      "action": "translate",
+      "ko": "신애: 이베르 지구",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21239,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "49eac9be88b6e9954938d7500226e8ef9eabdb5999c560fbacc029bd80eba15d",
+      "jp": "信愛：エグゾティ地区",
+      "action": "translate",
+      "ko": "신애: 에그조티 지구",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21240,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "190f4844da86671fa1e856036c2a99520def69840437a95f019ec0198045ae3f",
+      "jp": "信愛：ノワール地区",
+      "action": "translate",
+      "ko": "신애: 누아르 지구",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21241,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "2296a0785b0e23680355e2a6fc7f474314675a4fce4e5bffec1eee0bd98fddf9",
+      "jp": "信愛：プランタン地区",
+      "action": "translate",
+      "ko": "신애: 프랭탕 지구",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21242,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "1ff9927c29a52b77455ecc701a8bd3f5a3bc1ef05fb67dc184bc09349cf7e4a7",
+      "jp": "信愛：ヴォルカン地区",
+      "action": "translate",
+      "ko": "신애: 볼칸 지구",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21243,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "1d7bd471d80ccc2d88c339c1f0d877362be2c973084512b5d0bc2a4c23109743",
+      "jp": "属性結晶：アイボリー",
+      "action": "translate",
+      "ko": "속성 결정: 아이보리",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21392,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "5517614449af63c05fac8a77bf6e25e878b71adcb3033cbc8cb4c8587876e4af",
+      "jp": "属性結晶：カーマイン",
+      "action": "translate",
+      "ko": "속성 결정: 카민",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21393,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "c8c68cdb97bb4d09dd86adf2e3a1f7fe866ec7c492ff1326781462f145c4bc40",
+      "jp": "属性結晶：セルリアン",
+      "action": "translate",
+      "ko": "속성 결정: 세룰리안",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21394,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "c2547806ffea8c0eb7838181d67dacc9f66e38a228cdefab3761dca79f2b202c",
+      "jp": "属性結晶：バイオレット",
+      "action": "translate",
+      "ko": "속성 결정: 바이올렛",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21395,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "2071784a37af7f564380d1b033f733619133416391804f112193e696b220bc33",
+      "jp": "属性結晶：ビリジアン",
+      "action": "translate",
+      "ko": "속성 결정: 비리디안",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21396,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "f4472fdd07360be3149adda302d17f1c47611b662c4f6e4ed3b49b5370af323c",
+      "jp": "強化素材：彫刻系",
+      "action": "translate",
+      "ko": "강화 재료: 조각 계통",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21429,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "5c99647967e66b4f204889ea73ba396932603df524394f99a7ea1e0468ae21f5",
+      "jp": "強化素材：東方画系",
+      "action": "translate",
+      "ko": "강화 재료: 동방화 계통",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21430,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "b669c6880f7c107ca24b6beade838e6377bc77ec98ea063db6b7484f8e8ccc50",
+      "jp": "強化素材：油彩画系",
+      "action": "translate",
+      "ko": "강화 재료: 유화 계통",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21431,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "337509e79e3a5735b62bee2d29b3cfece029cb7488a8eec44f057f0a92feeb2f",
+      "jp": "強化素材：略画早指南",
+      "action": "translate",
+      "ko": "강화 재료: 약화조지남",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21432,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "0b1894248de8c7e4978b5ac49cef8478f4b590aeb9660526ea0cc1963538d285",
+      "jp": "強化素材：石膏像",
+      "action": "translate",
+      "ko": "강화 재료: 석고상",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21433,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "2c1124798fe6e7c22952ad0bccc7d25ab17370fc9100f3c2267991a980f82fb7",
+      "jp": "彫刻系",
+      "action": "translate",
+      "ko": "조각 계통",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21435,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "32ebe23d5b939001ea13c7df4964328c2a6dfcc6efa7b2bb1713c3f3049701ee",
+      "jp": "東方画系",
+      "action": "translate",
+      "ko": "동방화 계통",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21571,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "0f7da50d9b3d06e187cc8fffb6dc30e9c7274057472c817c1a9100289125e6c4",
+      "jp": "油彩画系",
+      "action": "translate",
+      "ko": "유화 계통",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21601,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "b10e7fbae2f1f93685596783473c9b2d8eba124552cf1cf771f15951b9082da5",
+      "jp": "特殊用",
+      "action": "translate",
+      "ko": "특수용",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21639,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "f62bf82ffa935bfbb404eff3af84657e9d47f5032e9e4ba91836858444d1d014",
+      "jp": "略画早指南",
+      "action": "translate",
+      "ko": "약화조지남",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21659,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "1d2b01b418ddbd33bb0b99d9f87b92e3181f4c3f6475d12d8c2d726f137f161d",
+      "jp": "石膏像",
+      "action": "translate",
+      "ko": "석고상",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21670,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "d35637563275c70e90f398973152ece3235277e69403573418855221ed1ea8de",
+      "jp": "秘石",
+      "action": "translate",
+      "ko": "비석",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21676,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "18d7551858339313c237c3f63da2c6a0f095dc271ae1df9d27dd4c81e94222ad",
+      "jp": "秘石：特殊用",
+      "action": "translate",
+      "ko": "비석: 특수용",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21677,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "6bc71ffdbb0df7f3db61eb538fdcf1e0fa4cfef3ed34785423dc4fd46ab4ee98",
+      "jp": "秘石：胴体用",
+      "action": "translate",
+      "ko": "비석: 몸통용",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21678,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "2b2e2957b4bc4df6718688fb242f2f8007916629f709c76a430770e0c2f54b40",
+      "jp": "秘石：腕部用",
+      "action": "translate",
+      "ko": "비석: 팔용",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21679,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "ffeb0e6840148b6e091a00deaa9feae133761206d42343a8218ef06972b6f686",
+      "jp": "秘石：頭部用",
+      "action": "translate",
+      "ko": "비석: 머리용",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21680,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "8716a3a6df1cb9ad54572aff1b58079f78597a75f342ba04f160025094cd6e40",
+      "jp": "素材",
+      "action": "translate",
+      "ko": "재료",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21691,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "faca0f7291abb3a42749e2b7439bc98ff67892c918d14e80e2a5706c8bb5fc3e",
+      "jp": "結晶",
+      "action": "translate",
+      "ko": "결정",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21700,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "9ec294c30012b7d8a5b90ab1a0ceb9abaa12cfc4e72e83791f22cf736fcd253e",
+      "jp": "胴体用",
+      "action": "translate",
+      "ko": "몸통용",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21734,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "7ae1e4e764bfdbac24889b8015c57b3e682d3454a0135cb70a6d76001814dc24",
+      "jp": "腕部用",
+      "action": "translate",
+      "ko": "팔용",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21737,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "3b15712557628fdb83ca2d435586b61d51e6210f5997dbd91dd01e0a3017421d",
+      "jp": "銀貨増",
+      "action": "translate",
+      "ko": "은화 증가",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21841,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    },
+    {
+      "id": "079f90cb4ee6791f76d8d582c41dc77b186cc89abbe692c6b55aea00a5e8a916",
+      "jp": "頭部用",
+      "action": "translate",
+      "ko": "머리용",
+      "reviewer": "Codex JP-to-KO meaning and Korean terminology review 2026-10-28",
+      "evidence": {
+        "source": [
+          {
+            "source": "native_observation",
+            "evidence": {
+              "kind": "PC_CODE_LITERAL_FAMILY",
+              "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+              "literal_index": 21869,
+              "scope": "User screenshots: weekly category/region/body tabs, silver badge, full bottom labels, Novel skip dialog. Related finite sibling labels confirmed in installed PC literals; not all sibling screens were clicked.",
+              "text_origin": "Native code string constant; absent from selected scene/common/ADV prefab m_text/m_Text fields"
+            }
+          }
+        ],
+        "terminology": "지역명은 기존 mAthenesRecordAreas/UI, 속성명은 mTextConfig, 결정·비석·신애는 기존 Master/UI, 유화/동방화/조각 계통은 mQuestStages, 약화조지남은 mItems 명칭을 사용. 경고의 길게 누르기와 고속 표시 의미 및 줄바꿈 보존."
+      }
+    }
+  ]
+}

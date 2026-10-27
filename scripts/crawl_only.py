@@ -48,9 +48,15 @@ def parser():
     p.add_argument("--asset-key", help="Explicit existing locator for a selected PC cache asset")
     p.add_argument("--textasset-name", help="Exact name from an established adapter for multiple TextAssets")
     p.add_argument("--partial", action="store_true")
+    p.add_argument('--ui-scope', type=Path, default=ROOT / 'contracts/ui-source-scope-v1.json')
+    p.add_argument('--ui-max-objects', type=int, default=250000, help='Per-bundle limit; oversized assets remain explicit failures')
     p.add_argument("--integrity", action="store_true", help="Explicit byte verification; ordinary owned warm scan is metadata-only")
     p.add_argument("--master-field-scope", type=Path, default=ROOT / "contracts/master-source-fields-v1.json",
                    help="Finite table/runtime-field selector, no translation dictionary values")
+    p.add_argument("--master-coverage-baseline", type=Path,
+                   help="Local Master coverage keys only; never import its translated values")
+    p.add_argument("--master-baseline-ref", default="operator-supplied-local-master")
+    p.add_argument("--master-package", type=Path, default=ROOT / "translations/ko")
     return p
 
 
@@ -67,12 +73,6 @@ def run(args):
         publish_intake(result,args)
         atomic_json(args.output, result)
         return result
-    if args.lane == "UI" and not args.asset_key:
-        result = scan_inventory(profile, None, state_root=args.state_root, raw_root=args.raw_root,
-                                observation_error="UI_SUPPORTED_SOURCE_LOCATOR_REQUIRED")
-        publish_intake(result,args)
-        atomic_json(args.output, result)
-        return result
     extractor = None
     if args.acquire:
         if args.lane == "Master":
@@ -85,7 +85,16 @@ def run(args):
                 if not isinstance(selector, dict) or set(selector) != {"table", "runtime_field"}:
                     raise ValueError("MASTER_FIELD_SELECTOR")
                 tables.setdefault(selector["table"], []).append(selector["runtime_field"])
+            # Union coverage-authority and Korean fields; the historical selector
+            # list must not silently exclude a newly supported local Master field.
+            for path in (args.master_package / 'master.json', args.master_coverage_baseline):
+                if path and path.exists():
+                    for table, fields in json.loads(path.read_text(encoding='utf-8-sig')).items():
+                        tables[table] = sorted(set(tables.get(table, [])) | set(fields))
             extractor = MasterTableExtractor(decrypt_master_text, helper.ng03_helper_sha256, tables=tables)
+        elif args.lane == "UI":
+            from tools.update.ui_source import UiPrefabExtractor
+            extractor = UiPrefabExtractor(args.ui_max_objects)
         else:
             selections = {args.asset_key: args.textasset_name} if args.asset_key and args.textasset_name else None
             extractor = UnityTextExtractor(selections)
@@ -140,10 +149,8 @@ def run(args):
             if not args.acquire and not (args.state_root / (profile.key + ".json")).exists():
                 existing |= {i["source_id"] for i in normalize_inventory(inventory, args.lane)["items"]}
             if args.lane == "UI":
-                selected = [item for item in inventory.get("d", []) if item.get("n") == args.asset_key]
-                if not selected:
-                    raise ValueError("UI_SUPPORTED_SOURCE_LOCATOR_REQUIRED")
-                inventory = {"d": selected}
+                from tools.update.ui_source import select_inventory
+                inventory = select_inventory(inventory, json.loads(args.ui_scope.read_text(encoding='utf-8-sig')), args.asset_key)
             def fetch(item):
                 asset_path = ASSET_PATH + item["asset_key"]
                 return fetch_bytes(client, BASE_URL + asset_path, params=get_url_params(asset_path, item["vendor_token"]))
@@ -168,6 +175,15 @@ def publish_intake(result,args):
     result["actionable_intake"]={"path":"actionable-intake.json","new_work":actionable["new_work"],"actionable":len(actionable["actionable"]),"held":actionable["held"],"completed":actionable["completed"]}
     result["novel_intake"] = {"path": "novel-intake.json", "references": len(intake["references"]),
                               "kind":"ELIGIBLE_REFERENCE_CATALOG_NOT_WORK_QUEUE", "status": "READY_FOR_NOVEL_PREPARE" if intake["references"] else "NO_MATERIALIZED_NOVEL"}
+    if getattr(args, 'master_coverage_baseline', None):
+        if args.lane != 'Master':
+            raise ValueError('MASTER_COVERAGE_REQUIRES_MASTER_LANE')
+        from tools.update.master_coverage import plan
+        coverage = plan(args.master_coverage_baseline, args.master_package, result['sourceSnapshot'], args.master_baseline_ref)
+        target = args.output.with_name('master-coverage.json')
+        atomic_json(target, coverage)
+        result['master_coverage'] = {k: coverage[k] for k in ('status', 'baseline_keys', 'missing_count', 'observed_missing_count', 'local_only_missing_count')}
+        result['master_coverage']['path'] = target.name
 
 def args_acquired(result):
     return result["metrics"].get("materialized",0)>0

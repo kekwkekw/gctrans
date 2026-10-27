@@ -1,0 +1,5 @@
+{
+  "schema": "gc-ui-source-scope-v1",
+  "include": ["scene/*.dmm", "common*prefab.dmm", "prefab_*.dmm", "notinit/prefab_*/*.dmm"],
+  "note": "Known inventory only. Includes serialized TMP/legacy display fields, independent of legacy binding or active state. Image pixels and runtime-composed labels require separate evidence. Use --asset-key for a targeted run."
+}

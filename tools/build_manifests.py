@@ -26,6 +26,8 @@ def safe_path(root: Path, value: str):
     return target
 
 def component_kind(path):
+    if path == 'ui.json': return 'general_ui'
+    if path == 'ui.templates.json': return 'general_ui_templates'
     if path == 'master.json': return 'master'
     if path == 'names.json': return 'names'
     if path == 'manifest.json': return 'legacy_manifest'
@@ -70,7 +72,7 @@ def previous_inventory(root):
         raw_ui = (root/'ui/manifest.json').read_bytes()
         if not isinstance(binding, dict) or set(binding) != {'path','size','sha256'} or binding['path'] != 'ui/manifest.json' or binding['size'] != len(raw_ui) or binding['sha256'] != sha(raw_ui):
             raise ContractError('PREVIOUS_UI_DESCRIPTOR_MISMATCH')
-    expected_ui = {p:e for p,e in entries.items() if e['kind'] in {'resources','bindings','layout','master','legacy_index'}}
+    expected_ui = {p:e for p,e in entries.items() if e['kind'] in {'general_ui_templates','general_ui','resources','bindings','layout','master','legacy_index'}}
     if manifest.get('revision') != release.get('revision') or ui != expected_ui: raise ContractError('PREVIOUS_UI_RELEASE_DIVERGENCE')
     return entries, release
 
@@ -179,7 +181,7 @@ def build(root: Path, legacy_receipt: Path | None = None, changed=(), *, added=(
     indexed = [entries[p] for p in sorted(entries) if entries[p]['kind'] in {'names','legacy_manifest','novel'}]
     index_raw = encode({'schema_version':1,'files':indexed})
     entries['legacy-components.json'] = {'path':'legacy-components.json','kind':'legacy_index','sha256':sha(index_raw),'size':len(index_raw)}
-    files = [entries[p] for p in sorted(entries) if entries[p]['kind'] in {'resources','bindings','layout','master','legacy_index'}]
+    files = [entries[p] for p in sorted(entries) if entries[p]['kind'] in {'general_ui_templates','general_ui','resources','bindings','layout','master','legacy_index'}]
     revision = 'ng03-'+sha(encode(files))[:24]
     previous_ui = read_json(root/'ui/manifest.json') if (root/'ui/manifest.json').exists() else {}
     manifest = {'schema_version':1,'locale':'ko','origin':previous_ui.get('origin','local'),'revision':revision,'files':files}

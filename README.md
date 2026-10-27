@@ -15,6 +15,12 @@
 
 ## UI·runtime
 
+- Master/UI 수집→검수→반영→빌드·패키지·설치: [`docs/LOCAL_PARITY_PIPELINE_KO.md`](docs/LOCAL_PARITY_PIPELINE_KO.md). 여러 UI prefab 수집, 부분 실패 격리, 실제 runtime 동적 조회 확인을 지원한다.
+
+- UI 사전 생성·포함 범위: [`docs/UI_EXPORT_KO.md`](docs/UI_EXPORT_KO.md). 비활성 binding도 검수된 번역은 export하며 local UI 키 coverage를 검사한다.
+
+- 2026-10-27 현재 runtime: [`source/GCMod.Candidate/README_KO.md`](source/GCMod.Candidate/README_KO.md)의 **Korean LocalParity**. `gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318` 기반이며 `candidate/GCMod.dll`로 빌드한다. Master `*`, 독립 exact `ui.json`, 기존 Novel/Names direct hook을 사용한다.
+- 기존 Nextgen/store/live-switch/ownership 관련 문서와 Native 도구는 이전 후보의 기록이다. LocalParity의 적용·실행은 아래 LAUNCH 문서와 Candidate README를 우선한다. Novel authoring 절차는 그대로 유지한다.
 - 지원 범위: [`docs/SUPPORT_SCOPE_KO.md`](docs/SUPPORT_SCOPE_KO.md)
 - 외부 입력: [`docs/EXTERNAL_DEPENDENCIES_KO.md`](docs/EXTERNAL_DEPENDENCIES_KO.md)
 - 적용·복구: [`docs/LAUNCH_PROCEDURE_KO.md`](docs/LAUNCH_PROCEDURE_KO.md)

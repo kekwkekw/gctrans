@@ -1,18 +1,66 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <!-- Build-only candidate. Never imports the donor's GameDir output/copy targets. -->
-  <Import Project="../build/Common.props" />
   <PropertyGroup>
     <AssemblyName>GCMod</AssemblyName>
-    <RootNamespace>GCMod</RootNamespace>
-    <Product>GCMod NG05 offline operator-ready candidate</Product>
-    <Version>7.0.0</Version>
-    <InformationalVersion>7.0.0-ng05-offline-operator-ready</InformationalVersion>
-    <Nullable>disable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <GameDependencyRoot Condition="'$(GameDependencyRoot)' == ''">$(GC_GAME_DEPENDENCY_ROOT)</GameDependencyRoot>
+    <OutputPath>../../candidate/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GameDir Condition="'$(GameDir)' == ''">$(GameDependencyRoot)</GameDir>
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildProjectDirectory)=/_/GCMod.Candidate</PathMap>
   </PropertyGroup>
+
   <ItemGroup>
-    <Compile Include="Plugin.Candidate.cs;Config.Candidate.cs;NativeRuntimeBridge.cs;MyPluginInfo.cs;Legacy/**/*.cs;Native/**/*.cs" />
-    <Reference Include="Utility" HintPath="$(GameDependencyRoot)/BepInEx/plugins/GCMod/Utility.dll" Private="false" />
+    <!-- Core BepInEx -->
+    <Reference Include="BepInEx.Core">
+      <HintPath>$(GameDir)\BepInEx\core\BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>$(GameDir)\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(GameDir)\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(GameDir)\BepInEx\core\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>$(GameDir)\BepInEx\core\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+
+    <!-- Interop Game Assemblies -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(GameDir)\BepInEx\interop\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(GameDir)\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameDir)\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(GameDir)\BepInEx\interop\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(GameDir)\BepInEx\interop\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(GameDir)\BepInEx\interop\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+
+    <!-- Plugin Utility -->
+    <Reference Include="Utility">
+      <HintPath Condition="Exists('$(GameDir)\BepInEx\plugins\GCMod\Utility.dll')">$(GameDir)\BepInEx\plugins\GCMod\Utility.dll</HintPath>
+      <HintPath Condition="!Exists('$(GameDir)\BepInEx\plugins\GCMod\Utility.dll')">..\libs\Utility.dll</HintPath>
+    </Reference>
   </ItemGroup>
-  <Import Project="../GCMod.Nextgen/GCMod.Nextgen.sources.props" />
+  <ItemDefinitionGroup>
+    <Reference><Private>false</Private></Reference>
+  </ItemDefinitionGroup>
+  <Target Name="CheckGameReferences" BeforeTargets="PrepareForBuild">
+    <Error Condition="!Exists('$(GameDir)/BepInEx/interop/Assembly-CSharp.dll')" Text="Supply -p:GameDir pointing to existing game references. This project never installs files." />
+  </Target>
 </Project>
