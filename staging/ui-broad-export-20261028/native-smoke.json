@@ -1,0 +1,42 @@
+{
+  "upstream": "0cdcd9e84fffa438dfdac63176685a6c47a07318",
+  "ui_pairs": 2096,
+  "dll_sha256": "347b450e7855d69d68191d35b16878dac24b98e7917ef04c940e60fc9bbe175a",
+  "ui_sha256": "642bfd7b3b5b0cda173979f65ffbd4509f383cd19676b962407833a4aafd1088",
+  "master_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+  "enabled_tables": "*",
+  "master_tables_observed": 60,
+  "error_fatal_exception_count": 0,
+  "diagnostic_code_in_final": false,
+  "screenshots": [
+    "broad-ui-exchange.jpg",
+    "broad-ui-exchange-albane.jpg",
+    "broad-ui-enhance.jpg",
+    "broad-ui-limit.jpg",
+    "broad-ui-list.jpg",
+    "broad-ui-catalog.jpg",
+    "broad-ui-recollection.jpg",
+    "broad-ui-record-images.jpg",
+    "broad-ui-record-detail.jpg"
+  ],
+  "results": {
+    "exchange": "PASS: Korean item/count unlock, prerequisite episode title/suffix, acquisition effect, favorite region; Neit and Albane",
+    "enhance": "PASS: artist enhance, batch synthesis, remaining 87/2/23, 3 turns",
+    "limit": "PASS: equipped badge, Imajue label, short buff caption without clipping",
+    "list": "PASS: heading, selection prompt, equipped badges",
+    "catalog": "PASS: Imajue catalog, ability, 3 turns",
+    "recollection": "PASS: tutorial category; accepted story titles unchanged",
+    "record": "PASS: Athenes record heading, map level, Master-fed Printemps detail name",
+    "record_card_names": "HOLD_IMAGE: BtArea01..06 baked Japanese labels confirmed in sprite pixels",
+    "map_level_up_notification": "EXACT_LOOKUP_TESTED; spontaneous popup not retriggered because acquiring/limit-breaking Imajue changes account inventory"
+  },
+  "account_actions": "view only; no synthesis, limit break, item use, paid action, node unlock, episode unlock or acquisition",
+  "validation": {
+    "exporter_unit_tests": 8,
+    "exact_lookup_pairs": 2096,
+    "positive_lookup_cases": 36,
+    "negative_lookup_cases": 14,
+    "build_errors": 0,
+    "build_upstream_warnings": 8
+  }
+}

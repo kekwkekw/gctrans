@@ -1,0 +1,32 @@
+{
+  "schema": "gc-local-master-coverage-v1",
+  "baseline_ref": "kristina1Q/gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318",
+  "baseline_sha256": "3d29d51eb876a1b319077a7dfa6c533379b3a8bde182775270bd0d9da002aace",
+  "current_master_sha256": "3d506a77cd5ab0f2f0290f2e3e89fa74918770e35e8f551cb79fe2dba4bd2ac7",
+  "baseline_keys": 32592,
+  "current_keys": 32685,
+  "covered_keys": 32592,
+  "missing_count": 0,
+  "current_only_keys_preserved": 93,
+  "observed_missing_count": 0,
+  "local_only_missing_count": 0,
+  "new_source_candidates_count": 1431,
+  "status": "BASELINE_KEYS_PRESENT",
+  "semantic_review": "NOT_CLAIMED",
+  "draft_status": "CODEX_DRAFT_NOT_PRO_REVIEWED",
+  "baseline_repository": "https://github.com/kristina1Q/gc-mod-local",
+  "baseline_path": "translations/zh-Hans/master.json",
+  "upstream_master_blob": "07a747ba2e51a0a640343d2b43bdb5a603337efa",
+  "original_gap": 1026,
+  "previously_recovered": 12,
+  "draft_added": 1014,
+  "neutral_keep_source": 72,
+  "old_gap_reclassification": {
+    "A_LOCAL_COVERAGE": 817,
+    "A_present_after": 817,
+    "B_CURRENT_SOURCE": 1431,
+    "B_already_translated": 93,
+    "B_pending": 1338,
+    "C_HOLD": 0
+  }
+}

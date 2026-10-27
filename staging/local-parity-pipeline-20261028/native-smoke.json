@@ -1,0 +1,35 @@
+{
+  "status": "PASS_REPRESENTATIVE_NATIVE",
+  "dll_sha256": "f0fe03405e81556ff2ad8e5899ae077dd7408d6fea0866ad15f8af6ffbd94230",
+  "ui_sha256": "502ed298a0366eefbc639f2420d16121d56ba4d9dad455f449033bc934100329",
+  "ui_pairs_loaded": 2109,
+  "master_tables_rewrite_observed": 60,
+  "enabled_tables": "*",
+  "startup_error_count": 0,
+  "font_loaded": "RHR_Medium_GFSAFE_ADH",
+  "observed": [
+    "startup warning text Korean",
+    "Imajue selection header Korean",
+    "Imajue Master-backed stats and attack description Korean",
+    "new profile origin label Korean",
+    "general menu gem possession / option / campaign Korean",
+    "recollection tutorial and menu title Korean",
+    "Novel 99900001 Korean body and Sansovino speaker"
+  ],
+  "menu_title": "몽환미술관, 시동",
+  "entry_title_frame": "NOT_CAPTURED_THIS_RUN; data synchronization retained",
+  "actions": "Read-only menus and already available recollection replay; no purchases, synthesis, limit break, unlock, or material consumption",
+  "screenshots": [
+    "general-menu.jpg",
+    "novel-body.jpg",
+    "novel-speaker.jpg",
+    "profile-origin.jpg",
+    "recollection-menu.jpg"
+  ],
+  "limits": [
+    "337 selected UI assets are inventory scope; 3 cached assets decoded in this validation",
+    "13 new exacts are reviewed; only representative labels observed in Native",
+    "6 region-card image labels remain separate image work",
+    "map-level-up event was not retriggered"
+  ]
+}

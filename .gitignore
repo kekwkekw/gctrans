@@ -79,3 +79,7 @@ CURRENT_INPUTS.json
 
 # Local Novel source, draft and PRO handoff workspaces.
 /work/novels/
+/work/local-parity/
+/candidate/*.deps.json
+/candidate/*.pdb
+/translations/.local-parity-apply.lock

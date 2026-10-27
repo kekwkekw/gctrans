@@ -1,0 +1,127 @@
+[
+  {
+    "table": "mPassiveSkillTriggers",
+    "field": "description",
+    "text_SHA256": "c492bdd7cdde0ce1a77644c0129e085a68d6f92b77b1457f6cfe5089944f791b",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "3003"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "技法発動時",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0135",
+    "ko": null,
+    "method": null,
+    "status": "HOLD",
+    "reason": "INTERNAL_TRIGGER_DESCRIPTION_NO_DISPLAY_CONSUMER",
+    "evidence": {
+      "source_file": "mPassiveSkillTriggers.json",
+      "source_sha256": "ef7597cd95df11c07e0a6cb964a3630cadf3602599c5788ce3d1708946108be6",
+      "records": [
+        {
+          "description": "技法発動時",
+          "id": 3003,
+          "skill_types": "2",
+          "trigger_param": 0
+        }
+      ]
+    },
+    "hold_reason": "mPassiveSkillTriggers.description(id 3003)는 기법 발동 타이밍 정의. PassiveSkillEffectModel은 Trigger/TriggerParam/SkillTypes 등 효과 메타데이터를 보유하지만 Description 표시 연결은 이번 scoped 조사에서 확인되지 않음. 미사용이라고 단정하지 않고 HOLD."
+  },
+  {
+    "table": "mTargetTypes",
+    "field": "description",
+    "text_SHA256": "9f6c8c724a01f3d1168a60da75c610b25026a0a1d2ee36aac4e14cb3a14d9766",
+    "B_current_rows": 1,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "2701"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "攻撃のステータスが高いカーマインの味方1体",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0195",
+    "ko": null,
+    "method": null,
+    "status": "HOLD",
+    "reason": "INTERNAL_TARGET_FILTER_DESCRIPTION_NO_DISPLAY_CONSUMER",
+    "evidence": {
+      "source_file": "mTargetTypes.json",
+      "source_sha256": "c63e0da313bddc8f32a513e22ae24d4c5a858c192311b8bd056c0b940a0a3bd0",
+      "records": [
+        {
+          "description": "攻撃のステータスが高いカーマインの味方1体",
+          "filter_param": 1,
+          "filter_type": 1,
+          "id": 2701
+        }
+      ]
+    },
+    "hold_reason": "mTargetTypes.description(id 2701)는 target/filter/sort 조건을 설명하는 필드. 실제 대상 결정용 수치 필드는 있으나 Description을 표시하는 consumer가 확인되지 않아 HOLD. 단순 source 잔여로 제외한 것이 아님."
+  },
+  {
+    "table": "slim_mShopProducts",
+    "field": "ml_description[]",
+    "text_SHA256": "ec65b61f77f8dd4b3b63a46fae5f0f86a9d83c899609931b46d6598bba8a945d",
+    "B_current_rows": 2,
+    "B_presence": true,
+    "reported_presence_matches": true,
+    "actual_record_ids": [
+      "42110",
+      "42111"
+    ],
+    "classification": "B_PC_SOURCE_CANDIDATE",
+    "jp": "商品表示用のダミー（表示させるために必要で、オーブでは交換不可となりシステム側で制御）",
+    "already_in_current_ko": false,
+    "live_webgl_present": true,
+    "present_after_recovery": false,
+    "item": "N0439",
+    "ko": null,
+    "method": null,
+    "status": "HOLD",
+    "reason": "DEVELOPER_DUMMY_SHOP_DESCRIPTION_UI_EXPOSURE_UNCLEAR",
+    "evidence": {
+      "source_file": "slim_mShopProducts.json",
+      "source_sha256": "7c70c756b74b39494ecc8e3342b1b1bda9bb7f3b4321c414d062f3761fa07686",
+      "records": [
+        {
+          "end_time": "9999-12-31 23:59:59",
+          "id": 42110,
+          "m_shop_category_id": 401,
+          "ml_description": [
+            "商品表示用のダミー（表示させるために必要で、オーブでは交換不可となりシステム側で制御）",
+            ""
+          ],
+          "ml_name": [
+            "サンソヴィーノの命鏡・小",
+            ""
+          ],
+          "start_time": "2026-10-23 13:30:00"
+        },
+        {
+          "end_time": "9999-12-31 23:59:59",
+          "id": 42111,
+          "m_shop_category_id": 401,
+          "ml_description": [
+            "商品表示用のダミー（表示させるために必要で、オーブでは交換不可となりシステム側で制御）",
+            ""
+          ],
+          "ml_name": [
+            "サンソヴィーノの命鏡・中",
+            ""
+          ],
+          "start_time": "2026-10-23 13:30:00"
+        }
+      ]
+    },
+    "hold_reason": "ShopProduct의 description 자체가 상품 표시용 dummy이며 시스템에서 오브 교환을 제어한다고 설명하는 개발용 메모. ShopProductInfoViewData.ProductDescription 경로는 존재하지만 이 dummy 행이 실제 고객용 상세 화면에 노출되는지 불명확하여 HOLD."
+  }
+]

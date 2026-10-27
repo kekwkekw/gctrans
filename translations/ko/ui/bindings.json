@@ -10349,6 +10349,4050 @@
         ],
         "kind": "current-model"
       }
+    },
+    {
+      "adapter_id": "ui.caption.v1",
+      "enabled": true,
+      "id": "binding.pro05.museum.m01",
+      "resource_id": "ui.pro05.museum.m01",
+      "selector": {
+        "lifetime": "owner",
+        "scope_key": "gc.museum.museumtopcontroller",
+        "slot_key": "museum_title",
+        "type": "caption"
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "ミュージアム",
+        "identity": [
+          "runtime-current-subscene",
+          "Gc.Museum.MuseumTopController.HeaderSubSceneTitle",
+          "Gc.HeaderTopController._subSceneTitleText"
+        ]
+      }
+    },
+    {
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "id": "binding.pro05.museum.m02",
+      "resource_id": "ui.pro05.museum.m02",
+      "selector": {
+        "lifetime": "owner",
+        "scope_key": "gc.museum.museuminfopopup",
+        "slot_key": "museum_info_title",
+        "type": "static",
+        "segments": [
+          "PopupBase",
+          "TitleWindow",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "ミュージアム情報",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Museum.MuseumInfoPopup",
+          "PopupBase/TitleWindow/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "id": "binding.pro05.museum.m03",
+      "resource_id": "ui.pro05.museum.m03",
+      "selector": {
+        "lifetime": "owner",
+        "scope_key": "gc.museum.museuminfopopup",
+        "slot_key": "museum_level_caption",
+        "type": "static",
+        "segments": [
+          "AreaLeft",
+          "GroupTitle",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "ミュージアムレベル",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Museum.MuseumInfoPopup",
+          "AreaLeft/GroupTitle/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a01",
+      "resource_id": "ui.next.adjacent.a01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.museum.museuminfopopup",
+        "slot_key": "next_a01",
+        "lifetime": "owner",
+        "segments": [
+          "PopupBase",
+          "GC_ButtonSet",
+          "BtNormalM_close",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "閉じる",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Museum.MuseumInfoPopup",
+          "PopupBase/GC_ButtonSet/BtNormalM_close/Button_Frame/Text_Textbtn01",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a02",
+      "resource_id": "ui.next.adjacent.a02",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.museum.museuminfopopup",
+        "slot_key": "next_a02",
+        "lifetime": "owner",
+        "segments": [
+          "AreaLeft",
+          "GroupParam",
+          "GroupWorksLevel",
+          "Title",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "美術品Lv合計",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Museum.MuseumInfoPopup",
+          "AreaLeft/GroupParam/GroupWorksLevel/Title/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a03",
+      "resource_id": "ui.next.adjacent.a03",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.museum.museuminfopopup",
+        "slot_key": "next_a03",
+        "lifetime": "owner",
+        "segments": [
+          "AreaLeft",
+          "GroupParam",
+          "GroupCurator",
+          "Title",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "学芸員配置状況",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Museum.MuseumInfoPopup",
+          "AreaLeft/GroupParam/GroupCurator/Title/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a04",
+      "resource_id": "ui.next.adjacent.a04",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.museum.museuminfopopup",
+        "slot_key": "next_a04",
+        "lifetime": "owner",
+        "segments": [
+          "AreaLeft",
+          "GroupParam",
+          "GroupAp",
+          "Title",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "AP回復量",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Museum.MuseumInfoPopup",
+          "AreaLeft/GroupParam/GroupAp/Title/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a05",
+      "resource_id": "ui.next.adjacent.a05",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.museum.museuminfopopup",
+        "slot_key": "next_a05",
+        "lifetime": "owner",
+        "segments": [
+          "AreaRight",
+          "GroupTitle",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "感情資源",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Museum.MuseumInfoPopup",
+          "AreaRight/GroupTitle/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a06",
+      "resource_id": "ui.next.adjacent.a06",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.museum.museuminfopopup",
+        "slot_key": "next_a06",
+        "lifetime": "owner",
+        "segments": [
+          "AreaRight",
+          "GroupParam",
+          "Title",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "時間毎生産量",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Museum.MuseumInfoPopup",
+          "AreaRight/GroupParam/Title/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a07",
+      "resource_id": "ui.next.adjacent.a07",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.museum.museuminfopopup",
+        "slot_key": "next_a07",
+        "lifetime": "owner",
+        "segments": [
+          "AreaRight",
+          "GroupBonusLimit",
+          "Title",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "所持上限",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Museum.MuseumInfoPopup",
+          "AreaRight/GroupBonusLimit/Title/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a08",
+      "resource_id": "ui.next.adjacent.a08",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.globalmenu.globalmenupopup",
+        "slot_key": "next_a08",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "Frame_Content",
+          "BtNormalM_Stone",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "藝晶石所持状況",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.GlobalMenu.GlobalMenuPopup",
+          "Frame_Popup/Frame_Content/BtNormalM_Stone/Button_Frame/Text_Textbtn01",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a09",
+      "resource_id": "ui.next.adjacent.a09",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "gc.item.itemtopcontroller",
+        "slot_key": "next_a09",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "BG",
+          "Movable",
+          "ItemTopGroupEnhance",
+          "GroupSelectedItem",
+          "Items",
+          "Group_Item_Title",
+          "Image_Title",
+          "Text_IteｍType"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "イマージュ経験値アップアイテム",
+        "identity": [
+          "Gc.Item.ItemTabContentDefaultView._detailViewData",
+          "Gc.Item.ItemDetailViewData._ItemTypeName_k__BackingField",
+          "Gc.Item.ItemDetailView._itemTypeText"
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a10",
+      "resource_id": "ui.next.adjacent.a10",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.item.itemtopcontroller",
+        "slot_key": "next_a10",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "BG",
+          "Movable",
+          "ItemTopGroupEnhance",
+          "GroupSelectedItem",
+          "Items",
+          "Group_Item_Title",
+          "Rare",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "レアリティ",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Item.ItemTopController",
+          "Animation_Main/BG/Movable/ItemTopGroupEnhance/GroupSelectedItem/Items/Group_Item_Title/Rare/TitleS/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a11",
+      "resource_id": "ui.next.adjacent.a11",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.item.itemtopcontroller",
+        "slot_key": "next_a11",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "BG",
+          "Movable",
+          "ItemTopGroupEnhance",
+          "GroupSelectedItem",
+          "Buttons",
+          "BtSearch",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "獲得場所検索",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Item.ItemTopController",
+          "Animation_Main/BG/Movable/ItemTopGroupEnhance/GroupSelectedItem/Buttons/BtSearch/Button_Frame/Text_Textbtn01",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a12",
+      "resource_id": "ui.next.adjacent.a12",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.profiletopcontroller",
+        "slot_key": "next_a12",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Left",
+          "BtAccessLog",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "足跡帳",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Profile.ProfileTopController",
+          "Animation_Main/Group_Left/BtAccessLog/Button_Frame/Text_Textbtn01",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a13",
+      "resource_id": "ui.next.adjacent.a13",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.profiletopcontroller",
+        "slot_key": "next_a13",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "BtnArea",
+          "BtUserInfo",
+          "Image_Textbtn02",
+          "Text_Textbtn02"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "館長情報",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Profile.ProfileTopController",
+          "Animation_Main/Group_Right/BtnArea/BtUserInfo/Image_Textbtn02/Text_Textbtn02",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a14",
+      "resource_id": "ui.next.adjacent.a14",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.profiletopcontroller",
+        "slot_key": "next_a14",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "BtnArea",
+          "BtNaviChara",
+          "Image_Textbtn02",
+          "Text_Textbtn02"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "学芸員情報",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Profile.ProfileTopController",
+          "Animation_Main/Group_Right/BtnArea/BtNaviChara/Image_Textbtn02/Text_Textbtn02",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a15",
+      "resource_id": "ui.next.adjacent.a15",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.profiletopcontroller",
+        "slot_key": "next_a15",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "BtnArea",
+          "BtEventResult",
+          "Image_Textbtn02",
+          "Text_Textbtn02"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "イベント実績",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Profile.ProfileTopController",
+          "Animation_Main/Group_Right/BtnArea/BtEventResult/Image_Textbtn02/Text_Textbtn02",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a16",
+      "resource_id": "ui.next.adjacent.a16",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.profiletopcontroller",
+        "slot_key": "next_a16",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "BtnArea",
+          "BtRanking",
+          "Image_Textbtn02",
+          "Text_Textbtn02"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "ランキング",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Profile.ProfileTopController",
+          "Animation_Main/Group_Right/BtnArea/BtRanking/Image_Textbtn02/Text_Textbtn02",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a17",
+      "resource_id": "ui.next.adjacent.a17",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.profiletopcontroller",
+        "slot_key": "next_a17",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "ObjeBg",
+          "ObjeTitle",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "卓上調度品",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Profile.ProfileTopController",
+          "Animation_Main/Group_Right/ObjeBg/ObjeTitle/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a18",
+      "resource_id": "ui.next.adjacent.a18",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.profiletopcontroller",
+        "slot_key": "next_a18",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "ObjeBg",
+          "ObjeTitle",
+          "BtObjeSet",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "配置",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Profile.ProfileTopController",
+          "Animation_Main/Group_Right/ObjeBg/ObjeTitle/BtObjeSet/Text",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a19",
+      "resource_id": "ui.next.adjacent.a19",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.novel.noveltopcontroller",
+        "slot_key": "next_a19",
+        "lifetime": "owner",
+        "segments": [
+          "NovelTop",
+          "Event",
+          "TitleLabelEvent",
+          "TextLabel"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "イベント",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Novel.NovelTopController",
+          "NovelTop/Event/TitleLabelEvent/TextLabel",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a20",
+      "resource_id": "ui.next.adjacent.a20",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.novel.noveltopcontroller",
+        "slot_key": "next_a20",
+        "lifetime": "owner",
+        "segments": [
+          "NovelTop",
+          "Rest",
+          "TitleLabelRest",
+          "TextLabel"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "幕間",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Novel.NovelTopController",
+          "NovelTop/Rest/TitleLabelRest/TextLabel",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a21",
+      "resource_id": "ui.next.adjacent.a21",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.novel.noveltopcontroller",
+        "slot_key": "next_a21",
+        "lifetime": "owner",
+        "segments": [
+          "NovelTop",
+          "Story",
+          "TitleLabelStory",
+          "TextLabel"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "ストーリー",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Novel.NovelTopController",
+          "NovelTop/Story/TitleLabelStory/TextLabel",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a22",
+      "resource_id": "ui.next.adjacent.a22",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.novel.noveltopcontroller",
+        "slot_key": "next_a22",
+        "lifetime": "owner",
+        "segments": [
+          "NovelTop",
+          "Character",
+          "TitleLabelCharacter",
+          "TextLabel"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャラクター",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Novel.NovelTopController",
+          "NovelTop/Character/TitleLabelCharacter/TextLabel",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a23",
+      "resource_id": "ui.next.adjacent.a23",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitenhancecontroller",
+        "slot_key": "next_a23",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "UnitHeader",
+          "Tab",
+          "Frame_TabArea",
+          "TopTabController",
+          "GradientTabPageTurner",
+          "Tabs",
+          "ButtonTabStatus",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "パレット",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.UnitScene.UnitEnhanceController",
+          "Animation_Main/UnitHeader/Tab/Frame_TabArea/TopTabController/GradientTabPageTurner/Tabs/ButtonTabStatus/ImageOff/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a24",
+      "resource_id": "ui.next.adjacent.a24",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitenhancecontroller",
+        "slot_key": "next_a24",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "UnitHeader",
+          "Tab",
+          "Frame_TabArea",
+          "TopTabController",
+          "GradientTabPageTurner",
+          "Tabs",
+          "ButtonTabEnhance",
+          "ImageOn",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "強化",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.UnitScene.UnitEnhanceController",
+          "Animation_Main/UnitHeader/Tab/Frame_TabArea/TopTabController/GradientTabPageTurner/Tabs/ButtonTabEnhance/ImageOn/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a25",
+      "resource_id": "ui.next.adjacent.a25",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitenhancecontroller",
+        "slot_key": "next_a25",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "UnitHeader",
+          "Tab",
+          "Frame_TabArea",
+          "TopTabController",
+          "GradientTabPageTurner",
+          "Tabs",
+          "ButtonTabPresent",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "交流",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.UnitScene.UnitEnhanceController",
+          "Animation_Main/UnitHeader/Tab/Frame_TabArea/TopTabController/GradientTabPageTurner/Tabs/ButtonTabPresent/ImageOff/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a26",
+      "resource_id": "ui.next.adjacent.a26",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitenhancecontroller",
+        "slot_key": "next_a26",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "UnitHeader",
+          "Tab",
+          "Frame_TabArea",
+          "TopTabController",
+          "GradientTabPageTurner",
+          "Tabs",
+          "ButtonTabProfile",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "名簿",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.UnitScene.UnitEnhanceController",
+          "Animation_Main/UnitHeader/Tab/Frame_TabArea/TopTabController/GradientTabPageTurner/Tabs/ButtonTabProfile/ImageOff/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a27",
+      "resource_id": "ui.next.adjacent.a27",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "gc.item.itemtopcontroller",
+        "slot_key": "next_a27",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "BG",
+          "Movable",
+          "ItemTopGroupOther",
+          "GroupSelectedItem",
+          "Items",
+          "Group_Item_Title",
+          "Image_Title",
+          "Text_IteｍType"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "ポテンシャルジェム",
+        "identity": [
+          "Gc.Item.ItemTabContentDefaultView._detailViewData",
+          "Gc.Item.ItemDetailViewData._ItemTypeName_k__BackingField",
+          "Gc.Item.ItemDetailView._itemTypeText"
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a28",
+      "resource_id": "ui.next.adjacent.a28",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.item.itemtopcontroller",
+        "slot_key": "next_a28",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "BG",
+          "Movable",
+          "ItemTopGroupOther",
+          "GroupSelectedItem",
+          "Items",
+          "Group_Item_Title",
+          "Rare",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "レアリティ",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Item.ItemTopController",
+          "Animation_Main/BG/Movable/ItemTopGroupOther/GroupSelectedItem/Items/Group_Item_Title/Rare/TitleS/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a29",
+      "resource_id": "ui.next.adjacent.a29",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.item.itemtopcontroller",
+        "slot_key": "next_a29",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "BG",
+          "Movable",
+          "ItemTopGroupOther",
+          "GroupSelectedItem",
+          "Buttons",
+          "BtSearch",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "獲得場所検索",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Item.ItemTopController",
+          "Animation_Main/BG/Movable/ItemTopGroupOther/GroupSelectedItem/Buttons/BtSearch/Button_Frame/Text_Textbtn01",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a30",
+      "resource_id": "ui.next.adjacent.a30",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.skillenhancescrollcell",
+        "slot_key": "next_a30",
+        "lifetime": "owner",
+        "segments": [
+          "BaseObject",
+          "TableLv",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "レベル",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.UnitScene.SkillEnhanceScrollCell",
+          "BaseObject/TableLv/TitleS/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a31",
+      "resource_id": "ui.next.adjacent.a31",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.skillenhancescrollcell",
+        "slot_key": "next_a31",
+        "lifetime": "owner",
+        "segments": [
+          "BaseObject",
+          "StyleArea",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "所持スタイル",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.UnitScene.SkillEnhanceScrollCell",
+          "BaseObject/StyleArea/TitleS/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a32",
+      "resource_id": "ui.next.adjacent.a32",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.skillenhancescrollcell",
+        "slot_key": "next_a32",
+        "lifetime": "owner",
+        "segments": [
+          "AddObject",
+          "BtEnhance",
+          "image_Textbtn01_s",
+          "Group_Text",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "技法強化",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.UnitScene.SkillEnhanceScrollCell",
+          "AddObject/BtEnhance/image_Textbtn01_s/Group_Text/Text_Textbtn01",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a33",
+      "resource_id": "ui.next.adjacent.a33",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.globalmenu.globalmenupopup",
+        "slot_key": "next_a33",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "GroupFooter",
+          "BtFooterQuest",
+          "BadgeLimited",
+          "Badge",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンペーン",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.GlobalMenu.GlobalMenuPopup",
+          "Frame_Popup/GroupFooter/BtFooterQuest/BadgeLimited/Badge/Text",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a34",
+      "resource_id": "ui.next.adjacent.a34",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.globalmenu.globalmenupopup",
+        "slot_key": "next_a34",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "GroupFooter",
+          "BtFooterCharacter",
+          "BadgeLimited",
+          "Badge",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンペーン",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.GlobalMenu.GlobalMenuPopup",
+          "Frame_Popup/GroupFooter/BtFooterCharacter/BadgeLimited/Badge/Text",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a35",
+      "resource_id": "ui.next.adjacent.a35",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.globalmenu.globalmenupopup",
+        "slot_key": "next_a35",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "GroupFooter",
+          "BtFooterMuseum",
+          "BadgeLimited",
+          "Badge",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンペーン",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.GlobalMenu.GlobalMenuPopup",
+          "Frame_Popup/GroupFooter/BtFooterMuseum/BadgeLimited/Badge/Text",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a36",
+      "resource_id": "ui.next.adjacent.a36",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.home.hometopcontroller",
+        "slot_key": "next_a36",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Front",
+          "Frame_UI",
+          "Group_Left",
+          "SubButtonGroup",
+          "BtNews",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "お知らせ",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Home.HomeTopController",
+          "Frame_Front/Frame_UI/Group_Left/SubButtonGroup/BtNews/Text",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a37",
+      "resource_id": "ui.next.adjacent.a37",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.home.hometopcontroller",
+        "slot_key": "next_a37",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Front",
+          "Frame_UI",
+          "Group_Left",
+          "SubButtonGroup",
+          "BtPresent",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "贈り物",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Home.HomeTopController",
+          "Frame_Front/Frame_UI/Group_Left/SubButtonGroup/BtPresent/Text",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a38",
+      "resource_id": "ui.next.adjacent.a38",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.home.hometopcontroller",
+        "slot_key": "next_a38",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Front",
+          "Frame_UI",
+          "GroupFooter",
+          "BtFooterQuest",
+          "BadgeLimited",
+          "Badge",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンペーン",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Home.HomeTopController",
+          "Frame_Front/Frame_UI/GroupFooter/BtFooterQuest/BadgeLimited/Badge/Text",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a39",
+      "resource_id": "ui.next.adjacent.a39",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.home.hometopcontroller",
+        "slot_key": "next_a39",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Front",
+          "Frame_UI",
+          "GroupFooter",
+          "BtFooterCharacter",
+          "BadgeLimited",
+          "Badge",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンペーン",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Home.HomeTopController",
+          "Frame_Front/Frame_UI/GroupFooter/BtFooterCharacter/BadgeLimited/Badge/Text",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a40",
+      "resource_id": "ui.next.adjacent.a40",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.home.hometopcontroller",
+        "slot_key": "next_a40",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Front",
+          "Frame_UI",
+          "GroupFooter",
+          "BtFooterMuseum",
+          "BadgeLimited",
+          "Badge",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンペーン",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Home.HomeTopController",
+          "Frame_Front/Frame_UI/GroupFooter/BtFooterMuseum/BadgeLimited/Badge/Text",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a41",
+      "resource_id": "ui.next.adjacent.a41",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a41",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "TitleWindow",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "ガチャ詳細",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/TitleWindow/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a42",
+      "resource_id": "ui.next.adjacent.a42",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a42",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "GC_ButtonSet",
+          "BtNormalM_close",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "閉じる",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/GC_ButtonSet/BtNormalM_close/Button_Frame/Text_Textbtn01",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a43",
+      "resource_id": "ui.next.adjacent.a43",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a43",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "ContentsArea",
+          "TabArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "DifferentTabPageTurner(Clone)",
+          "HidablePageArea",
+          "MovablePageArea",
+          "Frame_TabPage",
+          "Contents",
+          "ScrollView",
+          "ScrollView",
+          "Container",
+          "GachaRarityRateScrollCell(Clone)",
+          "ListRateTop",
+          "SubTitle",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "レアリティ別提供割合",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/ContentsArea/TabArea/Tab_Template_002/Frame_TabArea/TopTabController/DifferentTabPageTurner(Clone)/HidablePageArea/MovablePageArea/Frame_TabPage/Contents/ScrollView/ScrollView/Container/GachaRarityRateScrollCell(Clone)/ListRateTop/SubTitle/TextTitle",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a44",
+      "resource_id": "ui.next.adjacent.a44",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a44",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "ContentsArea",
+          "TabArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "DifferentTabPageTurner(Clone)",
+          "HidablePageArea",
+          "MovablePageArea",
+          "Frame_TabPage",
+          "Contents",
+          "ScrollView",
+          "ScrollView",
+          "Container",
+          "GachaRarityRateScrollCell(Clone)",
+          "RateTable",
+          "Table",
+          "TableCell00",
+          "TextValue"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "レアリティ",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/ContentsArea/TabArea/Tab_Template_002/Frame_TabArea/TopTabController/DifferentTabPageTurner(Clone)/HidablePageArea/MovablePageArea/Frame_TabPage/Contents/ScrollView/ScrollView/Container/GachaRarityRateScrollCell(Clone)/RateTable/Table/TableCell00/TextValue",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a45",
+      "resource_id": "ui.next.adjacent.a45",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a45",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "ContentsArea",
+          "TabArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "Tabs",
+          "TabsLeft",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "提供割合",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/ContentsArea/TabArea/Tab_Template_002/Frame_TabArea/TopTabController/Tabs/TabsLeft/ImageOff/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a46",
+      "resource_id": "ui.next.adjacent.a46",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a46",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "ContentsArea",
+          "TabArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "Tabs",
+          "TabsLeft",
+          "ImageOn",
+          "LayoutGroup",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "提供割合",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/ContentsArea/TabArea/Tab_Template_002/Frame_TabArea/TopTabController/Tabs/TabsLeft/ImageOn/LayoutGroup/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a47",
+      "resource_id": "ui.next.adjacent.a47",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a47",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "ContentsArea",
+          "TabArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "Tabs",
+          "TabsCenter(Clone)",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "顕性ポテンシャル",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/ContentsArea/TabArea/Tab_Template_002/Frame_TabArea/TopTabController/Tabs/TabsCenter(Clone)/ImageOff/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a48",
+      "resource_id": "ui.next.adjacent.a48",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a48",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "ContentsArea",
+          "TabArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "Tabs",
+          "TabsCenter(Clone)",
+          "ImageOn",
+          "LayoutGroup",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "顕性ポテンシャル",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/ContentsArea/TabArea/Tab_Template_002/Frame_TabArea/TopTabController/Tabs/TabsCenter(Clone)/ImageOn/LayoutGroup/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a49",
+      "resource_id": "ui.next.adjacent.a49",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a49",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "ContentsArea",
+          "TabArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "Tabs",
+          "TabsRight",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "注意事項",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/ContentsArea/TabArea/Tab_Template_002/Frame_TabArea/TopTabController/Tabs/TabsRight/ImageOff/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.adjacent.a50",
+      "resource_id": "ui.next.adjacent.a50",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.gacha.gachainformationpopup",
+        "slot_key": "next_a50",
+        "lifetime": "owner",
+        "segments": [
+          "PopupWindow",
+          "PopupBase",
+          "ContentsArea",
+          "TabArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "Tabs",
+          "TabsRight",
+          "ImageOn",
+          "LayoutGroup",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "注意事項",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.Gacha.GachaInformationPopup",
+          "PopupWindow/PopupBase/ContentsArea/TabArea/Tab_Template_002/Frame_TabArea/TopTabController/Tabs/TabsRight/ImageOn/LayoutGroup/Text_Title",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.next.element-sort.s0",
+      "resource_id": "ui.next.element-sort.s0",
+      "adapter_id": "ui.caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "caption",
+        "scope_key": "item-default-sort",
+        "slot_key": "current-work-name",
+        "lifetime": "callback",
+        "source_id": 0
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "レアリティ",
+        "identity": [
+          "Gc.ItemDefaultSorter",
+          "Gc.Sorter<Gc.ElementData>._sortingWorkDictionary",
+          "Gc.ItemSortingWork",
+          0
+        ]
+      }
+    },
+    {
+      "id": "binding.next.element-sort.s1",
+      "resource_id": "ui.next.element-sort.s1",
+      "adapter_id": "ui.caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "caption",
+        "scope_key": "item-default-sort",
+        "slot_key": "current-work-name",
+        "lifetime": "callback",
+        "source_id": 1
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "所持数",
+        "identity": [
+          "Gc.ItemDefaultSorter",
+          "Gc.Sorter<Gc.ElementData>._sortingWorkDictionary",
+          "Gc.ItemSortingWork",
+          1
+        ]
+      }
+    },
+    {
+      "id": "binding.next.shop.dmm-row",
+      "resource_id": "ui.next.shop.dmm-row",
+      "adapter_id": "ui.caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "caption",
+        "scope_key": "gc.shop.shopshowcasescrollcell",
+        "slot_key": "current_currency_name",
+        "lifetime": "owner",
+        "domain": 0,
+        "source_value": 0,
+        "segments": [
+          "Area_Cost",
+          "Text_DmmPoint"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "DMMポイント",
+        "identity": [
+          "Gc.Shop.ShopShowcaseScrollCell._data",
+          "ConsumeItemViewData",
+          "ConsumeType=0;ConsumeItemId=0;Free=false;Subscription=false",
+          "Gc.ConsumeItemIconFrame._currencyNameText"
+        ]
+      }
+    },
+    {
+      "id": "binding.next.shop.silver-section",
+      "resource_id": "ui.next.shop.silver-section",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "gc.shop.shoptopview",
+        "slot_key": "shop_currency_section_title",
+        "lifetime": "owner"
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "銀貨",
+        "identity": "UI6-UI4-M006-OWNED_CATEGORY_SECTION_TITLE"
+      }
+    },
+    {
+      "id": "binding.next.present.receive-cell",
+      "resource_id": "ui.next.present.receive-cell",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.presentscrollcell",
+        "slot_key": "next_present_receive",
+        "lifetime": "owner",
+        "segments": [
+          "BtLineGroup",
+          "BtPositiveM",
+          "Image_Textbtn02",
+          "Text_Textbtn02"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "受け取る",
+        "identity": [
+          "runtime-raw-localizer-template",
+          "Gc.PresentScrollCell",
+          "BtLineGroup/BtPositiveM/Image_Textbtn02/Text_Textbtn02",
+          "Gc.Localizer.TextLocalizer.text",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r01.01",
+      "resource_id": "ui.wave2.r01.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.userprofilecontroller",
+        "slot_key": "wave2_r01_01",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "Window",
+          "TableUserName",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "ユーザー名",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Profile.UserProfileController",
+          "director",
+          "Animation_Main/Group_Right/Window/TableUserName/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r01.02",
+      "resource_id": "ui.wave2.r01.02",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.userprofilecontroller",
+        "slot_key": "wave2_r01_02",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "Window",
+          "TableUserRank",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "ランク",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Profile.UserProfileController",
+          "director",
+          "Animation_Main/Group_Right/Window/TableUserRank/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r01.03",
+      "resource_id": "ui.wave2.r01.03",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.userprofilecontroller",
+        "slot_key": "wave2_r01_03",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "Window",
+          "TableCombatPower",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "総合戦闘力",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Profile.UserProfileController",
+          "director",
+          "Animation_Main/Group_Right/Window/TableCombatPower/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r01.04",
+      "resource_id": "ui.wave2.r01.04",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.userprofilecontroller",
+        "slot_key": "wave2_r01_04",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "Window",
+          "TableVisitorValue",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "来館者数",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Profile.UserProfileController",
+          "director",
+          "Animation_Main/Group_Right/Window/TableVisitorValue/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r01.05",
+      "resource_id": "ui.wave2.r01.05",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.userprofilecontroller",
+        "slot_key": "wave2_r01_05",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "Window",
+          "TableBirthDay",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "誕生日",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Profile.UserProfileController",
+          "director",
+          "Animation_Main/Group_Right/Window/TableBirthDay/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r01.06",
+      "resource_id": "ui.wave2.r01.06",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.userprofilecontroller",
+        "slot_key": "wave2_r01_06",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "Window",
+          "TableStartDay",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "開始日",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Profile.UserProfileController",
+          "director",
+          "Animation_Main/Group_Right/Window/TableStartDay/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r01.07",
+      "resource_id": "ui.wave2.r01.07",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.userprofilecontroller",
+        "slot_key": "wave2_r01_07",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "Window",
+          "MessageArea",
+          "Title",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "自己紹介",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Profile.UserProfileController",
+          "director",
+          "Animation_Main/Group_Right/Window/MessageArea/Title/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r02.01",
+      "resource_id": "ui.wave2.r02.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.profile.userprofilecontroller",
+        "slot_key": "wave2_r02_01",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "BtPreview",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "プレビュー",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Profile.UserProfileController",
+          "director",
+          "Animation_Main/Group_Right/BtPreview/Button_Frame/Text_Textbtn01",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r03.01",
+      "resource_id": "ui.wave2.r03.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.character.charactertopcontroller",
+        "slot_key": "wave2_r03_01",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Frame_Character",
+          "BtAthenesRecord",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "<cspace=-0.15em>アテネスレコード</cspace>",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Character.CharacterTopController",
+          "character",
+          "Animation_Main/Frame_Character/BtAthenesRecord/Text",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r16.01",
+      "resource_id": "ui.wave2.r16.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r16_01",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "UnitHeader",
+          "Tab",
+          "Frame_TabArea",
+          "TopTabController",
+          "GradientTabPageTurner",
+          "Tabs",
+          "ButtonTabStatus",
+          "ImageOn",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "パレット",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-header",
+          "Animation_Main/UnitHeader/Tab/Frame_TabArea/TopTabController/GradientTabPageTurner/Tabs/ButtonTabStatus/ImageOn/Text_Title",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r16.02",
+      "resource_id": "ui.wave2.r16.02",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r16_02",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "UnitHeader",
+          "Tab",
+          "Frame_TabArea",
+          "TopTabController",
+          "GradientTabPageTurner",
+          "Tabs",
+          "ButtonTabEnhance",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "強化",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-header",
+          "Animation_Main/UnitHeader/Tab/Frame_TabArea/TopTabController/GradientTabPageTurner/Tabs/ButtonTabEnhance/ImageOff/Text_Title",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r16.03",
+      "resource_id": "ui.wave2.r16.03",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r16_03",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "UnitHeader",
+          "Tab",
+          "Frame_TabArea",
+          "TopTabController",
+          "GradientTabPageTurner",
+          "Tabs",
+          "ButtonTabPresent",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "交流",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-header",
+          "Animation_Main/UnitHeader/Tab/Frame_TabArea/TopTabController/GradientTabPageTurner/Tabs/ButtonTabPresent/ImageOff/Text_Title",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r16.04",
+      "resource_id": "ui.wave2.r16.04",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r16_04",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "UnitHeader",
+          "Tab",
+          "Frame_TabArea",
+          "TopTabController",
+          "GradientTabPageTurner",
+          "Tabs",
+          "ButtonTabProfile",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "名簿",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-header",
+          "Animation_Main/UnitHeader/Tab/Frame_TabArea/TopTabController/GradientTabPageTurner/Tabs/ButtonTabProfile/ImageOff/Text_Title",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.01",
+      "resource_id": "ui.wave2.r17.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_01",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Table",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "レベル",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Table/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.02",
+      "resource_id": "ui.wave2.r17.02",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_02",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "TableElement",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "通常攻撃",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/TableElement/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.03",
+      "resource_id": "ui.wave2.r17.03",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_03",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Status",
+          "TableHp",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "体力",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Status/TableHp/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.04",
+      "resource_id": "ui.wave2.r17.04",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_04",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Status",
+          "TableAtk",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "攻撃",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Status/TableAtk/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.05",
+      "resource_id": "ui.wave2.r17.05",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_05",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Status",
+          "TableDef",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "防御",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Status/TableDef/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.06",
+      "resource_id": "ui.wave2.r17.06",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_06",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Status",
+          "TableMnd",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "精神",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Status/TableMnd/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.07",
+      "resource_id": "ui.wave2.r17.07",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_07",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Status",
+          "TableDex",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "器用",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Status/TableDex/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.08",
+      "resource_id": "ui.wave2.r17.08",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_08",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Status",
+          "TableSpd",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "敏捷",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Status/TableSpd/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.09",
+      "resource_id": "ui.wave2.r17.09",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_09",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Status",
+          "TableLuk",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "幸運",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Status/TableLuk/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.10",
+      "resource_id": "ui.wave2.r17.10",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_10",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Status",
+          "TablePassion",
+          "TitleS",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "熱情",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Status/TablePassion/TitleS/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.11",
+      "resource_id": "ui.wave2.r17.11",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_11",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "Mov",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "移動",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/Mov/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r17.12",
+      "resource_id": "ui.wave2.r17.12",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitdetailcontroller",
+        "slot_key": "wave2_r17_12",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "Group_Right",
+          "UnitStatus",
+          "UnitStatusDetail",
+          "RadarChart",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "エレメント補正",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitDetailController",
+          "palette-stat",
+          "Animation_Main/Group_Right/UnitStatus/UnitStatusDetail/RadarChart/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r18.01",
+      "resource_id": "ui.wave2.r18.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitselectpopup",
+        "slot_key": "wave2_r18_01",
+        "lifetime": "owner",
+        "segments": [
+          "PopupBase",
+          "TitleWindow",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "藝術家一覧",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitSelectPopup",
+          "artist-selector",
+          "PopupBase/TitleWindow/Text_Title",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r19.01",
+      "resource_id": "ui.wave2.r19.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitselectpopup",
+        "slot_key": "wave2_r19_01",
+        "lifetime": "owner",
+        "segments": [
+          "PopupBase",
+          "GC_ButtonSet",
+          "BtNormalM_close",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンセル",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitSelectPopup",
+          "artist-selector",
+          "PopupBase/GC_ButtonSet/BtNormalM_close/Button_Frame/Text_Textbtn01",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r18.02",
+      "resource_id": "ui.wave2.r18.02",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.unitscene.unitselectpopup",
+        "slot_key": "wave2_r18_02",
+        "lifetime": "owner",
+        "segments": [
+          "PopupBase",
+          "Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "藝術家を選択してください",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.UnitScene.UnitSelectPopup",
+          "artist-selector",
+          "PopupBase/Text",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r10.01",
+      "resource_id": "ui.wave2.r10.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.deck.decktopcontroller",
+        "slot_key": "wave2_r10_01",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "FrameDeckPager",
+          "FrameHeader",
+          "BtWhiteS",
+          "image_Textbtn01_s",
+          "Group_Text",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "編成コピー",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Deck.DeckTopController",
+          "formation",
+          "Animation_Main/FrameDeckPager/FrameHeader/BtWhiteS/image_Textbtn01_s/Group_Text/Text_Textbtn01",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r11.01",
+      "resource_id": "ui.wave2.r11.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.deck.decktopcontroller",
+        "slot_key": "wave2_r11_01",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "FrameDeckPager",
+          "FrameBottom",
+          "Frame_DeckButtons",
+          "Button_RecommendDeck",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "おまかせ編成",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Deck.DeckTopController",
+          "formation",
+          "Animation_Main/FrameDeckPager/FrameBottom/Frame_DeckButtons/Button_RecommendDeck/Button_Frame/Text_Textbtn01",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r12.01",
+      "resource_id": "ui.wave2.r12.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.deck.decktopcontroller",
+        "slot_key": "wave2_r12_01",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "FrameDeckPager",
+          "FrameHeader",
+          "FrameCombatPower",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "チーム戦闘力",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Deck.DeckTopController",
+          "formation",
+          "Animation_Main/FrameDeckPager/FrameHeader/FrameCombatPower/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r09.01",
+      "resource_id": "ui.wave2.r09.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.option.optionpopup",
+        "slot_key": "wave2_r09_01",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "PopupBase",
+          "ContentsArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "DifferentTabPageTurner(Clone)",
+          "HidablePageArea",
+          "MovablePageArea",
+          "Contents",
+          "Frame_Tab_Inner",
+          "Window_ScreenSize",
+          "OptionPopupScreenSizeArea",
+          "Inner_Frame",
+          "Text_Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "static-asset",
+        "exact_jp": "画面モード",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Option.OptionPopup",
+          "option-panel",
+          "Frame_Popup/PopupBase/ContentsArea/Tab_Template_002/Frame_TabArea/TopTabController/DifferentTabPageTurner(Clone)/HidablePageArea/MovablePageArea/Contents/Frame_Tab_Inner/Window_ScreenSize/OptionPopupScreenSizeArea/Inner_Frame/Text_Text",
+          null,
+          "in_app_39"
+        ]
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "in_app_39",
+        "option_area": {
+          "field": "screenSizeOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Text_Text"
+          ],
+          "indices": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "binding.wave2.r09.02",
+      "resource_id": "ui.wave2.r09.02",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": false,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.option.optionpopup",
+        "slot_key": "wave2_r09_02",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "PopupBase",
+          "ContentsArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "DifferentTabPageTurner(Clone)",
+          "HidablePageArea",
+          "MovablePageArea",
+          "Contents",
+          "Frame_Tab_Inner",
+          "Window_ScreenSize",
+          "OptionPopupScreenSizeArea",
+          "Inner_Frame",
+          "ScreenMode",
+          "ToggleGroup1",
+          "Button_Radio1_Off",
+          "Text_Textbtn"
+        ]
+      },
+      "source_identity": {
+        "kind": "static-asset",
+        "exact_jp": "フルスクリーン",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Option.OptionPopup",
+          "option-panel",
+          "Frame_Popup/PopupBase/ContentsArea/Tab_Template_002/Frame_TabArea/TopTabController/DifferentTabPageTurner(Clone)/HidablePageArea/MovablePageArea/Contents/Frame_Tab_Inner/Window_ScreenSize/OptionPopupScreenSizeArea/Inner_Frame/ScreenMode/ToggleGroup1/Button_Radio1_Off/Text_Textbtn",
+          null,
+          ""
+        ]
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "",
+        "option_area": {
+          "field": "screenSizeOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "ScreenMode",
+            "ToggleGroup1",
+            "Button_Radio1_Off",
+            "Text_Textbtn"
+          ],
+          "indices": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "binding.wave2.r09.03",
+      "resource_id": "ui.wave2.r09.03",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": false,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.option.optionpopup",
+        "slot_key": "wave2_r09_03",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "PopupBase",
+          "ContentsArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "DifferentTabPageTurner(Clone)",
+          "HidablePageArea",
+          "MovablePageArea",
+          "Contents",
+          "Frame_Tab_Inner",
+          "Window_ScreenSize",
+          "OptionPopupScreenSizeArea",
+          "Inner_Frame",
+          "ScreenMode",
+          "ToggleGroup2",
+          "Button_Radio1_Off",
+          "Text_Textbtn"
+        ]
+      },
+      "source_identity": {
+        "kind": "static-asset",
+        "exact_jp": "ウインドウ",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Option.OptionPopup",
+          "option-panel",
+          "Frame_Popup/PopupBase/ContentsArea/Tab_Template_002/Frame_TabArea/TopTabController/DifferentTabPageTurner(Clone)/HidablePageArea/MovablePageArea/Contents/Frame_Tab_Inner/Window_ScreenSize/OptionPopupScreenSizeArea/Inner_Frame/ScreenMode/ToggleGroup2/Button_Radio1_Off/Text_Textbtn",
+          null,
+          ""
+        ]
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "",
+        "option_area": {
+          "field": "screenSizeOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "ScreenMode",
+            "ToggleGroup2",
+            "Button_Radio1_Off",
+            "Text_Textbtn"
+          ],
+          "indices": [
+            0,
+            2,
+            1,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "binding.wave2.r09.04",
+      "resource_id": "ui.wave2.r09.04",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.option.optionpopup",
+        "slot_key": "wave2_r09_04",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "PopupBase",
+          "ContentsArea",
+          "Tab_Template_002",
+          "Frame_TabArea",
+          "TopTabController",
+          "DifferentTabPageTurner(Clone)",
+          "HidablePageArea",
+          "MovablePageArea",
+          "Contents",
+          "Frame_Tab_Inner",
+          "Window_ScreenSize",
+          "OptionPopupScreenSizeArea",
+          "Inner_Frame",
+          "Text_Text"
+        ]
+      },
+      "source_identity": {
+        "kind": "static-asset",
+        "exact_jp": "解像度",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Option.OptionPopup",
+          "option-panel",
+          "Frame_Popup/PopupBase/ContentsArea/Tab_Template_002/Frame_TabArea/TopTabController/DifferentTabPageTurner(Clone)/HidablePageArea/MovablePageArea/Contents/Frame_Tab_Inner/Window_ScreenSize/OptionPopupScreenSizeArea/Inner_Frame/Text_Text",
+          null,
+          "in_app_39"
+        ]
+      },
+      "producer": {
+        "family": "core-literal-v1",
+        "localizer_type": 0,
+        "text_config_key": "in_app_39",
+        "option_area": {
+          "field": "screenSizeOptionArea",
+          "segments": [
+            "Inner_Frame",
+            "Text_Text"
+          ],
+          "indices": [
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "binding.wave2.option-tab.1.0",
+      "resource_id": "ui.wave2.option-tab.1",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.option-tab",
+        "slot_key": "wave2_option-tab_1_0",
+        "lifetime": "owner",
+        "segments": [
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "画面",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "option-tab",
+          "ImageOff/Text_Title",
+          1,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.option-tab.1.1",
+      "resource_id": "ui.wave2.option-tab.1",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.option-tab",
+        "slot_key": "wave2_option-tab_1_1",
+        "lifetime": "owner",
+        "segments": [
+          "ImageOn",
+          "LayoutGroup",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "画面",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "option-tab",
+          "ImageOn/LayoutGroup/Text_Title",
+          1,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.option-tab.2.0",
+      "resource_id": "ui.wave2.option-tab.2",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.option-tab",
+        "slot_key": "wave2_option-tab_2_0",
+        "lifetime": "owner",
+        "segments": [
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "一括ダウンロード",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "option-tab",
+          "ImageOff/Text_Title",
+          2,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.option-tab.2.1",
+      "resource_id": "ui.wave2.option-tab.2",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.option-tab",
+        "slot_key": "wave2_option-tab_2_1",
+        "lifetime": "owner",
+        "segments": [
+          "ImageOn",
+          "LayoutGroup",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "一括ダウンロード",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "option-tab",
+          "ImageOn/LayoutGroup/Text_Title",
+          2,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.enhance-tab.0.0",
+      "resource_id": "ui.wave2.enhance-tab.0",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.enhance-tab",
+        "slot_key": "wave2_enhance-tab_0_0",
+        "lifetime": "owner",
+        "segments": [
+          "Image_Unselect",
+          "Text_TabTitle_Unselect"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "レベルアップ",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "enhance-tab",
+          "Image_Unselect/Text_TabTitle_Unselect",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.enhance-tab.0.1",
+      "resource_id": "ui.wave2.enhance-tab.0",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.enhance-tab",
+        "slot_key": "wave2_enhance-tab_0_1",
+        "lifetime": "owner",
+        "segments": [
+          "Image_Select",
+          "LayoutGroup",
+          "Text_TabTitle_Select"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "レベルアップ",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "enhance-tab",
+          "Image_Select/LayoutGroup/Text_TabTitle_Select",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.enhance-tab.1.0",
+      "resource_id": "ui.wave2.enhance-tab.1",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.enhance-tab",
+        "slot_key": "wave2_enhance-tab_1_0",
+        "lifetime": "owner",
+        "segments": [
+          "Image_Unselect",
+          "Text_TabTitle_Unselect"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "技法",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "enhance-tab",
+          "Image_Unselect/Text_TabTitle_Unselect",
+          1,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.enhance-tab.1.1",
+      "resource_id": "ui.wave2.enhance-tab.1",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.enhance-tab",
+        "slot_key": "wave2_enhance-tab_1_1",
+        "lifetime": "owner",
+        "segments": [
+          "Image_Select",
+          "LayoutGroup",
+          "Text_TabTitle_Select"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "技法",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "enhance-tab",
+          "Image_Select/LayoutGroup/Text_TabTitle_Select",
+          1,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.enhance-tab.2.0",
+      "resource_id": "ui.wave2.enhance-tab.2",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.enhance-tab",
+        "slot_key": "wave2_enhance-tab_2_0",
+        "lifetime": "owner",
+        "segments": [
+          "Image_Unselect",
+          "Text_TabTitle_Unselect"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "ベースアップ",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "enhance-tab",
+          "Image_Unselect/Text_TabTitle_Unselect",
+          2,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.enhance-tab.2.1",
+      "resource_id": "ui.wave2.enhance-tab.2",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.enhance-tab",
+        "slot_key": "wave2_enhance-tab_2_1",
+        "lifetime": "owner",
+        "segments": [
+          "Image_Select",
+          "LayoutGroup",
+          "Text_TabTitle_Select"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "ベースアップ",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "enhance-tab",
+          "Image_Select/LayoutGroup/Text_TabTitle_Select",
+          2,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.enhance-tab.3.0",
+      "resource_id": "ui.wave2.enhance-tab.3",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.enhance-tab",
+        "slot_key": "wave2_enhance-tab_3_0",
+        "lifetime": "owner",
+        "segments": [
+          "Image_Unselect",
+          "Text_TabTitle_Unselect"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "限界突破",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "enhance-tab",
+          "Image_Unselect/Text_TabTitle_Unselect",
+          3,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.enhance-tab.3.1",
+      "resource_id": "ui.wave2.enhance-tab.3",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.enhance-tab",
+        "slot_key": "wave2_enhance-tab_3_1",
+        "lifetime": "owner",
+        "segments": [
+          "Image_Select",
+          "LayoutGroup",
+          "Text_TabTitle_Select"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "限界突破",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.LabelTab",
+          "enhance-tab",
+          "Image_Select/LayoutGroup/Text_TabTitle_Select",
+          3,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r22.01",
+      "resource_id": "ui.wave2.r22.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "w2.style-sort",
+        "slot_key": "wave2_r22_01",
+        "lifetime": "owner",
+        "segments": [
+          "FramePopup",
+          "PopupWindowM",
+          "PopupBase",
+          "TitleWindow",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "ソート",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.SortPopup",
+          "style-chrome",
+          "FramePopup/PopupWindowM/PopupBase/TitleWindow/Text_Title",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r24.01",
+      "resource_id": "ui.wave2.r24.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "w2.style-sort",
+        "slot_key": "wave2_r24_01",
+        "lifetime": "owner",
+        "segments": [
+          "FramePopup",
+          "PopupWindowM",
+          "PopupBase",
+          "GC_ButtonSet",
+          "BtNormalM_close",
+          "Button_Frame",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンセル",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.SortPopup",
+          "style-chrome",
+          "FramePopup/PopupWindowM/PopupBase/GC_ButtonSet/BtNormalM_close/Button_Frame/Text_Textbtn01",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r24.02",
+      "resource_id": "ui.wave2.r24.02",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "w2.style-sort",
+        "slot_key": "wave2_r24_02",
+        "lifetime": "owner",
+        "segments": [
+          "FramePopup",
+          "PopupWindowM",
+          "PopupBase",
+          "GC_ButtonSet",
+          "BtPositiveM",
+          "Image_Textbtn02",
+          "Text_Textbtn02"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "適用",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.SortPopup",
+          "style-chrome",
+          "FramePopup/PopupWindowM/PopupBase/GC_ButtonSet/BtPositiveM/Image_Textbtn02/Text_Textbtn02",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r23.01",
+      "resource_id": "ui.wave2.r23.01",
+      "adapter_id": "ui.caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "caption",
+        "scope_key": "w2.style-sort",
+        "slot_key": "wave2_r23_01",
+        "lifetime": "callback",
+        "segments": [
+          "FramePopup",
+          "PopupWindowM",
+          "PopupBase",
+          "ContentsArea",
+          "FrameContent",
+          "SmoothDebugPlace",
+          "ScrollViewStatus",
+          "Viewport",
+          "Content",
+          "SortGroup(Clone)",
+          "Frame_Sort",
+          "Button_Radio1",
+          "Text_Textbtn"
+        ],
+        "source_id": 0
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "レアリティ",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.SortPopup",
+          "style-work",
+          "FramePopup/PopupWindowM/PopupBase/ContentsArea/FrameContent/SmoothDebugPlace/ScrollViewStatus/Viewport/Content/SortGroup(Clone)/Frame_Sort/Button_Radio1/Text_Textbtn",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r23.02",
+      "resource_id": "ui.wave2.r23.02",
+      "adapter_id": "ui.caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "caption",
+        "scope_key": "w2.style-sort",
+        "slot_key": "wave2_r23_02",
+        "lifetime": "callback",
+        "segments": [
+          "FramePopup",
+          "PopupWindowM",
+          "PopupBase",
+          "ContentsArea",
+          "FrameContent",
+          "SmoothDebugPlace",
+          "ScrollViewStatus",
+          "Viewport",
+          "Content",
+          "SortGroup(Clone)",
+          "Frame_Sort",
+          "Button_Radio1(Clone)",
+          "Text_Textbtn"
+        ],
+        "source_id": 1
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "入手順",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.SortPopup",
+          "style-work",
+          "FramePopup/PopupWindowM/PopupBase/ContentsArea/FrameContent/SmoothDebugPlace/ScrollViewStatus/Viewport/Content/SortGroup(Clone)/Frame_Sort/Button_Radio1(Clone)/Text_Textbtn",
+          1,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r23.03",
+      "resource_id": "ui.wave2.r23.03",
+      "adapter_id": "ui.caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "caption",
+        "scope_key": "w2.style-sort",
+        "slot_key": "wave2_r23_03",
+        "lifetime": "callback",
+        "segments": [
+          "FramePopup",
+          "PopupWindowM",
+          "PopupBase",
+          "ContentsArea",
+          "FrameContent",
+          "SmoothDebugPlace",
+          "ScrollViewStatus",
+          "Viewport",
+          "Content",
+          "SortGroup(Clone)",
+          "Frame_Sort",
+          "Button_Radio1(Clone)",
+          "Text_Textbtn"
+        ],
+        "source_id": 2
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "限界突破数",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.SortPopup",
+          "style-work",
+          "FramePopup/PopupWindowM/PopupBase/ContentsArea/FrameContent/SmoothDebugPlace/ScrollViewStatus/Viewport/Content/SortGroup(Clone)/Frame_Sort/Button_Radio1(Clone)/Text_Textbtn",
+          2,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r20.01",
+      "resource_id": "ui.wave2.r20.01",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.style-filter",
+        "slot_key": "wave2_r20_01",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "PopupWindowM",
+          "PopupBase",
+          "ContentsArea",
+          "Frame_Content",
+          "ScrollView_Status",
+          "Viewport",
+          "Content",
+          "Origin_CheckboxWithColor(Clone)",
+          "Text_Title_Sort"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "属性",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.FilterPopup",
+          "style-filter",
+          "Frame_Popup/PopupWindowM/PopupBase/ContentsArea/Frame_Content/ScrollView_Status/Viewport/Content/Origin_CheckboxWithColor(Clone)/Text_Title_Sort",
+          3,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r21.01",
+      "resource_id": "ui.wave2.r21.01",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.style-filter",
+        "slot_key": "wave2_r21_01",
+        "lifetime": "owner",
+        "segments": [
+          "Frame_Popup",
+          "PopupWindowM",
+          "PopupBase",
+          "ContentsArea",
+          "Frame_Content",
+          "ScrollView_Status",
+          "Viewport",
+          "Content",
+          "Origin_CheckboxWithArtType(Clone)",
+          "Text_Title_Sort"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "芸相",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.FilterPopup",
+          "style-filter",
+          "Frame_Popup/PopupWindowM/PopupBase/ContentsArea/Frame_Content/ScrollView_Status/Viewport/Content/Origin_CheckboxWithArtType(Clone)/Text_Title_Sort",
+          21,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r05.01",
+      "resource_id": "ui.wave2.r05.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "w2.shop-filter",
+        "slot_key": "wave2_r05_01",
+        "lifetime": "owner",
+        "segments": [
+          "BtWhiteS",
+          "image_Textbtn01_s",
+          "Group_Text",
+          "Text_Textbtn01"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "絞り込み",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.SortAndOrderButtonSet",
+          "shop-filter",
+          "BtWhiteS/image_Textbtn01_s/Group_Text/Text_Textbtn01",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r06.01",
+      "resource_id": "ui.wave2.r06.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "w2.shop-event",
+        "slot_key": "wave2_r06_01",
+        "lifetime": "owner",
+        "segments": [
+          "BtCheckBoxM",
+          "ButtonOff",
+          "ImageOff",
+          "Text_Title"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "おまかせ選択",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.ExchangeMultipleButtonView",
+          "shop-event",
+          "BtCheckBoxM/ButtonOff/ImageOff/Text_Title",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r06.02",
+      "resource_id": "ui.wave2.r06.02",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "w2.shop-event",
+        "slot_key": "wave2_r06_02",
+        "lifetime": "owner",
+        "segments": [
+          "BtEchange",
+          "Image_Textbtn02",
+          "Text_Textbtn02"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "まとめて交換",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.ExchangeMultipleButtonView",
+          "shop-event",
+          "BtEchange/Image_Textbtn02/Text_Textbtn02",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r06.03",
+      "resource_id": "ui.wave2.r06.03",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "w2.shop-event",
+        "slot_key": "wave2_r06_03",
+        "lifetime": "owner",
+        "segments": [
+          "BtEchange",
+          "Image_Textbtn02",
+          "UseResource",
+          "Layout",
+          "TextTitle"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "消費",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.ExchangeMultipleButtonView",
+          "shop-event",
+          "BtEchange/Image_Textbtn02/UseResource/Layout/TextTitle",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r13.01",
+      "resource_id": "ui.wave2.r13.01",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.quest.questtopcontroller",
+        "slot_key": "wave2_r13_01",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "AreaLeft",
+          "GroupBt",
+          "AnimBt",
+          "BtDayQuest",
+          "Badge_Campaign",
+          "Text_Campaign"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンペーン開催中",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Quest.QuestTopController",
+          "quest-campaign",
+          "Animation_Main/AreaLeft/GroupBt/AnimBt/BtDayQuest/Badge_Campaign/Text_Campaign",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r13.02",
+      "resource_id": "ui.wave2.r13.02",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": true,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.quest.questtopcontroller",
+        "slot_key": "wave2_r13_02",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "AreaLeft",
+          "GroupBt",
+          "AnimBt",
+          "BtChallengeQuest",
+          "Badge_Campaign",
+          "Text_Campaign"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンペーン開催中",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Quest.QuestTopController",
+          "quest-campaign",
+          "Animation_Main/AreaLeft/GroupBt/AnimBt/BtChallengeQuest/Badge_Campaign/Text_Campaign",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r13.03",
+      "resource_id": "ui.wave2.r13.03",
+      "adapter_id": "ui4.static-caption.v1",
+      "enabled": false,
+      "selector": {
+        "type": "static",
+        "scope_key": "gc.quest.questtopcontroller",
+        "slot_key": "wave2_r13_03",
+        "lifetime": "owner",
+        "segments": [
+          "Animation_Main",
+          "AreaRight",
+          "Badge_Campaign",
+          "Text_Campaign"
+        ]
+      },
+      "source_identity": {
+        "kind": "native-template",
+        "exact_jp": "キャンペーン開催中",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Quest.QuestTopController",
+          "quest-campaign",
+          "Animation_Main/AreaRight/Badge_Campaign/Text_Campaign",
+          null,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r15.01",
+      "resource_id": "ui.wave2.r15.01",
+      "adapter_id": "core.current-model.v1",
+      "enabled": false,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.preflight",
+        "slot_key": "wave2_r15_01",
+        "lifetime": "owner",
+        "segments": [
+          "CharacterInfoWindow",
+          "Frame_Scroll_Template_001",
+          "ScrollView",
+          "Container",
+          "GroupEnemy(Clone)",
+          "GroupParameter",
+          "GroupMov",
+          "MovTypeWhite",
+          "TextType"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "飛行",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Battle.UI.Detail.SharedEnemyInfoView",
+          "preflight-value",
+          "CharacterInfoWindow/Frame_Scroll_Template_001/ScrollView/Container/GroupEnemy(Clone)/GroupParameter/GroupMov/MovTypeWhite/TextType",
+          0,
+          ""
+        ]
+      }
+    },
+    {
+      "id": "binding.wave2.r15.02",
+      "resource_id": "ui.wave2.r15.02",
+      "adapter_id": "core.current-model.v1",
+      "enabled": true,
+      "selector": {
+        "type": "model",
+        "scope_key": "w2.preflight",
+        "slot_key": "wave2_r15_02",
+        "lifetime": "owner",
+        "segments": [
+          "CharacterInfoWindow",
+          "Frame_Scroll_Template_001",
+          "ScrollView",
+          "Container",
+          "GroupEnemy(Clone)",
+          "GroupParameter",
+          "Weakpoint",
+          "TableElement",
+          "Frame",
+          "TextTitleEmpty"
+        ]
+      },
+      "source_identity": {
+        "kind": "current-model",
+        "exact_jp": "なし",
+        "identity": [
+          "wave2-current-runtime",
+          "Gc.Battle.UI.Detail.SharedEnemyInfoView",
+          "preflight-value",
+          "CharacterInfoWindow/Frame_Scroll_Template_001/ScrollView/Container/GroupEnemy(Clone)/GroupParameter/Weakpoint/TableElement/Frame/TextTitleEmpty",
+          1,
+          ""
+        ]
+      }
     }
   ],
   "schema_version": 1

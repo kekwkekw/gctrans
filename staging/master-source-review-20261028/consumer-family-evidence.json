@@ -1,0 +1,537 @@
+[
+  {
+    "type": "Gc.TinyHelpBalloon",
+    "properties": [
+      "UnityEngine.Canvas _frameCanvas",
+      "UnityEngine.CanvasGroup _frameCanvasGroup",
+      "System.Single _minWidth",
+      "System.Single _maxWidth",
+      "UnityEngine.Vector2 _boundaryMargin",
+      "UnityEngine.RectTransform _balloonRectTransform",
+      "UnityEngine.RectOffset _margin",
+      "TMPro.TextMeshProUGUI _helpText",
+      "DMM.OLG.Unity.Engine.RuntimeAnimationEventScriptDoTween _openAnim",
+      "DMM.OLG.Unity.Engine.RuntimeAnimationEventScriptDoTween _closeAnim",
+      "System.Boolean _isAnimationPlaying",
+      "UnityEngine.Vector3 _shownPosition",
+      "System.Boolean _IsShowing_k__BackingField",
+      "UnityEngine.Events.UnityAction _OnHideCompleted_k__BackingField",
+      "System.Boolean IsShowing",
+      "UnityEngine.Events.UnityAction OnHideCompleted"
+    ],
+    "methods": [
+      "System.Void Gc.TinyHelpBalloon::Init()",
+      "System.Void Gc.TinyHelpBalloon::UpdateView(System.String,UnityEngine.Rect)",
+      "Cysharp.Threading.Tasks.UniTask Gc.TinyHelpBalloon::Show()",
+      "System.Void Gc.TinyHelpBalloon::ShowImmediately()",
+      "Cysharp.Threading.Tasks.UniTask Gc.TinyHelpBalloon::Hide()",
+      "System.Void Gc.TinyHelpBalloon::HideImmediately()",
+      "System.Void Gc.TinyHelpBalloon::SetTextAndBoxSize(System.String,System.Single,System.Single)",
+      "System.Void Gc.TinyHelpBalloon::AdjustPosition(UnityEngine.Rect,UnityEngine.Vector2)",
+      "System.Boolean Gc.TinyHelpBalloon::CheckHideFromUpdate()",
+      "UnityEngine.Vector2 Gc.TinyHelpBalloon::GetScreenPointFromWorld(UnityEngine.Vector3)",
+      "System.Boolean Gc.TinyHelpBalloon::_Init_b__20_0(UniRx.Unit)",
+      "System.Boolean Gc.TinyHelpBalloon::_Init_b__20_1(UniRx.Unit)",
+      "System.Void Gc.TinyHelpBalloon::_Init_b__20_2(UniRx.Unit)",
+      "Cysharp.Threading.Tasks.UniTaskVoid Gc.TinyHelpBalloon::_Init_b__20_3()",
+      "System.Void Gc.TinyHelpBalloon::Method_Private_Void_byref___c__DisplayClass27_0_0(Gc.TinyHelpBalloon/__c__DisplayClass27_0&)",
+      "System.Void Gc.TinyHelpBalloon::Method_Private_Void_byref___c__DisplayClass27_0_PDM_0(Gc.TinyHelpBalloon/__c__DisplayClass27_0&)",
+      "System.Void Gc.TinyHelpBalloon::Method_Private_Void_byref___c__DisplayClass27_0_PDM_1(Gc.TinyHelpBalloon/__c__DisplayClass27_0&)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.LoadingTips",
+    "properties": [
+      "Gc.LoadingTipsMeterParts loadingTipsMeterParts",
+      "Gc.LoadingTipsMeterParts TipsMeterParts"
+    ],
+    "methods": [],
+    "fields": []
+  },
+  {
+    "type": "Gc.UnitWordMasterBase",
+    "properties": [
+      "System.Int32 id",
+      "System.Int32 scene_type",
+      "System.Int32 trigger",
+      "System.String motion",
+      "System.String expression",
+      "System.String sound_asset",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStringArray ml_word",
+      "System.Int32 word_key",
+      "System.Int32 is_random_voice",
+      "System.String start_time",
+      "System.String end_time",
+      "System.Int32 Id",
+      "System.Int32 SceneType",
+      "System.Int32 Trigger",
+      "System.String Motion",
+      "System.String Expression",
+      "System.String SoundAsset",
+      "System.String Word",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStringArray MlWord",
+      "System.Int32 WordKey",
+      "System.Int32 IsRandomVoice",
+      "System.String StartTime",
+      "System.String EndTime"
+    ],
+    "methods": [
+      "System.Boolean Gc.UnitWordMasterBase::IsSituationMatch(Gc.UnitWordMasterBase/Situation)",
+      "System.Boolean Gc.UnitWordMasterBase::Method_Private_Boolean_PDM_0()"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.MemoryDetailFrameData",
+    "properties": [
+      "System.String _No_k__BackingField",
+      "System.String _MemoryName_k__BackingField",
+      "System.Int32 _Rarity_k__BackingField",
+      "System.Int32 _Level_k__BackingField",
+      "System.String No",
+      "System.String MemoryName",
+      "System.Int32 Rarity",
+      "System.Int32 Level"
+    ],
+    "methods": [
+      "System.Void Gc.MemoryDetailFrameData::Setup(System.Int32,System.Int32)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.UnitProfileVoiceScrollCell",
+    "properties": [
+      "TMPro.TextMeshProUGUI _title",
+      "UnityEngine.UI.InertButton _play",
+      "Gc.UnitProfileVoiceScrollCellData _data"
+    ],
+    "methods": [
+      "System.Void Gc.UnitProfileVoiceScrollCell::Setup(Gc.UnitProfileVoiceScrollCellData)",
+      "System.Void Gc.UnitProfileVoiceScrollCell::Awake()",
+      "System.Void Gc.UnitProfileVoiceScrollCell::OnclickPlay()"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.UnitProfileVoiceScrollCellData",
+    "properties": [
+      "System.Boolean _IsAdultNoVoice_k__BackingField",
+      "System.String _Title_k__BackingField",
+      "System.String _OpenCondition_k__BackingField",
+      "Gc.SoundRequest _SoundRequest_k__BackingField",
+      "System.Boolean IsAdultNoVoice",
+      "System.String Title",
+      "System.String OpenCondition",
+      "Gc.SoundRequest SoundRequest",
+      "System.Boolean IsOpen"
+    ],
+    "methods": [],
+    "fields": []
+  },
+  {
+    "type": "Gc.Shop.ShopProductInfoView",
+    "properties": [
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1<Gc.ShopShowcaseProductView> _productViews",
+      "TMPro.TextMeshProUGUI _productNameText",
+      "TMPro.TextMeshProUGUI _productDescriptionText",
+      "Gc.RemainingPeriodLabel _periodLabelView",
+      "UnityEngine.GameObject _remainCountObj",
+      "TMPro.TextMeshProUGUI _remainCountText",
+      "UnityEngine.GameObject _remainArrowObj",
+      "TMPro.TextMeshProUGUI _afterRemainCountText",
+      "UnityEngine.GameObject _saleBadge"
+    ],
+    "methods": [
+      "System.Void Gc.Shop.ShopProductInfoView::Init()",
+      "System.Void Gc.Shop.ShopProductInfoView::Setup(Gc.Shop.ShopProductInfoViewData)",
+      "System.Void Gc.Shop.ShopProductInfoView::SetupRemainTime(Gc.Shop.ShopProductInfoViewData)",
+      "System.Void Gc.Shop.ShopProductInfoView::SetupProduct(Gc.Shop.ShopProductInfoViewData)",
+      "System.Void Gc.Shop.ShopProductInfoView::SetupRemainCount(Gc.Shop.ShopProductInfoViewData)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.Shop.ShopProductInfoViewData",
+    "properties": [
+      "Gc.ShopShowcaseProductViewData _ProductViewData_k__BackingField",
+      "System.Int32 _ProductId_k__BackingField",
+      "System.String _ProductName_k__BackingField",
+      "System.String _ProductDescription_k__BackingField",
+      "System.Int32 _ProductCount_k__BackingField",
+      "Il2CppSystem.Nullable`1<Il2CppSystem.DateTime> _EndDateTime_k__BackingField",
+      "System.Boolean _HasRemainingCount_k__BackingField",
+      "System.Int32 _RemainingCount_k__BackingField",
+      "Gc.ShopHelper/ResetInterval _ResetInterval_k__BackingField",
+      "System.Int32 _DiscountRemainingCount_k__BackingField",
+      "System.Int32 _Price_k__BackingField",
+      "System.Int32 _DisplayType_k__BackingField",
+      "System.Boolean _ForceHideEndDateTime_k__BackingField",
+      "System.Int32 _Sort_k__BackingField",
+      "Gc.MultipleExchangeData _MultipleExchangeData_k__BackingField",
+      "Gc.ShopShowcaseProductViewData ProductViewData",
+      "System.Int32 ProductId",
+      "System.String ProductName",
+      "System.String ProductDescription",
+      "System.Int32 ProductCount",
+      "Il2CppSystem.Nullable`1<Il2CppSystem.DateTime> EndDateTime",
+      "System.Boolean HasRemainingCount",
+      "System.Int32 RemainingCount",
+      "Gc.ShopHelper/ResetInterval ResetInterval",
+      "System.Int32 DiscountRemainingCount",
+      "System.Boolean IsDiscount",
+      "System.Int32 Price",
+      "System.Int32 DisplayType",
+      "System.Boolean ForceHideEndDateTime",
+      "System.Int32 Sort",
+      "Gc.MultipleExchangeData MultipleExchangeData",
+      "System.Int32 AfterRemainingCount"
+    ],
+    "methods": [
+      "Gc.Shop.ShopProductInfoViewData Gc.Shop.ShopProductInfoViewData::Create(Gc.ShopProductData,Il2CppSystem.Nullable`1<Gc.ShopHelper/SizeType>,System.Boolean,Gc.MultipleExchangeData)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.LoginBonus.LoginBonusViewBase",
+    "properties": [
+      "DMM.OLG.Unity.Engine.RuntimeAnimationEventScript _loginAnim",
+      "System.Boolean _enableAutoUpdate",
+      "Gc.LoginBonus.LoginBonusViewBase/ReceivedStep _currentReceivedStep",
+      "UnityEngine.Events.UnityAction`1<Gc.LoginBonus.LoginBonusViewBase/ReceivedStep> _onUpdateReceivedStep",
+      "UnityEngine.Events.UnityAction`2<Gc.Master.LoginBonusCharacterActionMaster/CharacterActionStep,Gc.Master.LoginBonusCharacterActionMaster> _onChangeMessage",
+      "System.Single _waitTime",
+      "System.Boolean _isForceUpdateRequested",
+      "UnityEngine.Transform _touchScreenFrontRoot",
+      "Il2CppSystem.Func`1<System.Boolean> _onNeedWait",
+      "Gc.LoginBonus.LoginBonusViewBase/ReceivedStep CurrentReceivedStep",
+      "System.Boolean IsOverrideScreenTouch"
+    ],
+    "methods": [
+      "System.Void Gc.LoginBonus.LoginBonusViewBase::InitImpl()",
+      "Cysharp.Threading.Tasks.UniTask Gc.LoginBonus.LoginBonusViewBase::Setup(Gc.LoginBonus.LoginBonusPopup/ReceivedInfo)",
+      "System.Void Gc.LoginBonus.LoginBonusViewBase::ChangeCharacterPosition(Gc.LoginBonus.LoginBonusSpineWidget,UnityEngine.CanvasGroup)",
+      "Gc.LoginBonus.LoginBonusViewBase/ReceivedStep Gc.LoginBonus.LoginBonusViewBase::UpdateReceivedStepImpl()",
+      "System.Single Gc.LoginBonus.LoginBonusViewBase::WaitIntervalSecond(Gc.LoginBonus.LoginBonusViewBase/ReceivedStep)",
+      "System.Boolean Gc.LoginBonus.LoginBonusViewBase::InterruptSkip()",
+      "System.Void Gc.LoginBonus.LoginBonusViewBase::Init(UnityEngine.Transform,UnityEngine.Events.UnityAction`1<Gc.LoginBonus.LoginBonusViewBase/ReceivedStep>,Il2CppSystem.Func`1<System.Boolean>,UnityEngine.Events.UnityAction`2<Gc.Master.LoginBonusCharacterActionMaster/CharacterActionStep,Gc.Master.LoginBonusCharacterActionMaster>)",
+      "Cysharp.Threading.Tasks.UniTask Gc.LoginBonus.LoginBonusViewBase::Show(UnityEngine.Events.UnityAction`1<System.Boolean>,Il2CppSystem.Threading.CancellationToken)",
+      "Cysharp.Threading.Tasks.UniTask Gc.LoginBonus.LoginBonusViewBase::Hide(System.Boolean)",
+      "System.Boolean Gc.LoginBonus.LoginBonusViewBase::ChangeReceivedStepIfNeed(System.Single)",
+      "System.Void Gc.LoginBonus.LoginBonusViewBase::RequestForceUpdate()",
+      "System.Void Gc.LoginBonus.LoginBonusViewBase::SetEnableAutoUpdate(System.Boolean)",
+      "System.Void Gc.LoginBonus.LoginBonusViewBase::MoveToTouchScreenFront(UnityEngine.Transform)",
+      "System.Void Gc.LoginBonus.LoginBonusViewBase::ChangeMessageMaster(Gc.Master.LoginBonusCharacterActionMaster/CharacterActionStep,Gc.Master.LoginBonusCharacterActionMaster)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.Item.ItemDetailViewData",
+    "properties": [
+      "Gc.ElementData _IconData_k__BackingField",
+      "System.String _ItemName_k__BackingField",
+      "System.String _ItemTypeName_k__BackingField",
+      "System.Int32 _ItemCount_k__BackingField",
+      "Gc.ItemType _ItemType_k__BackingField",
+      "System.String _Description_k__BackingField",
+      "System.String _FlavorText_k__BackingField",
+      "System.Int32 _Rarity_k__BackingField",
+      "System.Int32 _MaxLevel_k__BackingField",
+      "Il2CppSystem.Nullable`1<System.Int32> _LimitBreakLevel_k__BackingField",
+      "Il2CppSystem.DateTime _EndTime_k__BackingField",
+      "UnityEngine.Events.UnityAction _OnBonusDetailClicked_k__BackingField",
+      "Gc.ElementData IconData",
+      "System.String ItemName",
+      "System.String ItemTypeName",
+      "System.Int32 ItemCount",
+      "Gc.ItemType ItemType",
+      "System.String Description",
+      "System.String FlavorText",
+      "System.Int32 Rarity",
+      "System.Int32 MaxLevel",
+      "Il2CppSystem.Nullable`1<System.Int32> LimitBreakLevel",
+      "Il2CppSystem.DateTime EndTime",
+      "UnityEngine.Events.UnityAction OnBonusDetailClicked"
+    ],
+    "methods": [
+      "System.Void Gc.Item.ItemDetailViewData::Setup(Gc.IUserEquipment,UnityEngine.Events.UnityAction)",
+      "System.Void Gc.Item.ItemDetailViewData::Setup(Gc.IUserInspiration)",
+      "System.Void Gc.Item.ItemDetailViewData::Setup(Gc.Item.DecorationData)",
+      "System.Void Gc.Item.ItemDetailViewData::Setup(Gc.ElementData)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.Gacha.GachaInformationPopup",
+    "properties": [
+      "Il2CppSystem.Collections.Generic.List`1<System.String> TabNames",
+      "UnityEngine.UI.InertButton _closeButton",
+      "TMPro.TextMeshProUGUI _titleText",
+      "Gc.TabController _tabs",
+      "Gc.Gacha.GachaInformationScrollView _scrollView",
+      "Gc.Gacha.GachaRarityRateScrollCell _rarityRateCellPrefab",
+      "Gc.Gacha.GachaRateScrollCell _rateCellPrefab",
+      "Gc.Gacha.GachaFactorScrollCell _factorCellPrefab",
+      "Gc.Gacha.GachaAttentionScrollCell _attentionCellPrefab",
+      "Gc.Gacha.GachaInformationPopupData _data",
+      "System.Int32 _tabIndex",
+      "UnityEngine.Events.UnityAction _onClose"
+    ],
+    "methods": [
+      "System.Void Gc.Gacha.GachaInformationPopup::Create(Gc.Gacha.GachaInformationPopupData,UnityEngine.Events.UnityAction)",
+      "Il2CppSystem.Collections.IEnumerator Gc.Gacha.GachaInformationPopup::OnLoad()",
+      "System.Void Gc.Gacha.GachaInformationPopup::RefreshView(System.Boolean)",
+      "Il2CppSystem.Collections.Generic.IEnumerable`1<Gc.Gacha.GachaInfoScrollCellData> Gc.Gacha.GachaInformationPopup::EnumCellDatas()",
+      "System.Void Gc.Gacha.GachaInformationPopup::OnClickTab(System.Int32)",
+      "System.Void Gc.Gacha.GachaInformationPopup::OnClickStepTab(System.Int32)",
+      "System.Void Gc.Gacha.GachaInformationPopup::OnClickGuaranteesRadio(System.Int32)",
+      "System.Void Gc.Gacha.GachaInformationPopup::OnClickUnitType(System.Int32)",
+      "System.Void Gc.Gacha.GachaInformationPopup::Close(UnityEngine.Events.UnityAction)",
+      "System.Void Gc.Gacha.GachaInformationPopup::OnBackAction()",
+      "System.Void Gc.Gacha.GachaInformationPopup::OnOutSide()",
+      "System.Void Gc.Gacha.GachaInformationPopup::_OnLoad_b__14_0()",
+      "Il2CppSystem.Collections.IEnumerator Gc.Gacha.GachaInformationPopup::__n__0()"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.Gacha.GachaInformationPopupData",
+    "properties": [
+      "System.String _GachaName_k__BackingField",
+      "Gc.Gacha.GachaRarityRateScrollCellData _RarityRateScrollCellData_k__BackingField",
+      "Gc.Gacha.GachaRateScrollCellData _RateScrollCellData_k__BackingField",
+      "Il2CppSystem.Collections.Generic.List`1<Gc.Gacha.GachaFactorScrollCellData> _FactorScrollCellDatas_k__BackingField",
+      "Gc.Gacha.GachaAttentionScrollCellData _AttentionScrollCellData_k__BackingField",
+      "System.String GachaName",
+      "Gc.Gacha.GachaRarityRateScrollCellData RarityRateScrollCellData",
+      "Gc.Gacha.GachaRateScrollCellData RateScrollCellData",
+      "Il2CppSystem.Collections.Generic.List`1<Gc.Gacha.GachaFactorScrollCellData> FactorScrollCellDatas",
+      "Gc.Gacha.GachaAttentionScrollCellData AttentionScrollCellData"
+    ],
+    "methods": [
+      "Gc.Gacha.GachaInformationPopupData Gc.Gacha.GachaInformationPopupData::Create(System.String,System.Int32,System.Int32,System.Boolean)",
+      "Il2CppSystem.Collections.Generic.List`1<Gc.Master.GachaMaster> Gc.Gacha.GachaInformationPopupData::GetGachaMasters(Gc.Master.GachaGroupMaster,Gc.Master.GachaMaster)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.EventRaid.EventRaidLiveMessageLog",
+    "properties": [
+      "Gc.EventRaid.EventRaidLiveMessageLog/Message _leaderSection",
+      "Gc.EventRaid.EventRaidLiveMessageLog/Message _supportSection",
+      "UnityEngine.CanvasGroup _canvasGroup"
+    ],
+    "methods": [
+      "System.Void Gc.EventRaid.EventRaidLiveMessageLog::Init()",
+      "System.Void Gc.EventRaid.EventRaidLiveMessageLog::UpdateView(Gc.EventRaid.IEventRaidLiveMessageLogData)",
+      "System.Void Gc.EventRaid.EventRaidLiveMessageLog::Cleanup()",
+      "Cysharp.Threading.Tasks.UniTask Gc.EventRaid.EventRaidLiveMessageLog::CreateShowTween(Il2CppSystem.Threading.CancellationToken)",
+      "Cysharp.Threading.Tasks.UniTask Gc.EventRaid.EventRaidLiveMessageLog::CreateHideTween(Il2CppSystem.Threading.CancellationToken)",
+      "System.Void Gc.EventRaid.EventRaidLiveMessageLog::UpdateScoreView(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1<TMPro.TextMeshProUGUI>,System.Int32)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.EventRaid.SupportUnitBalloonView",
+    "properties": [
+      "TMPro.TextMeshProUGUI _messageText",
+      "UnityEngine.CanvasGroup _canvasGroup",
+      "UnityEngine.RectTransform _parent",
+      "Gc.EventRaid.BattleFrontUserUnit _owner"
+    ],
+    "methods": [
+      "System.Void Gc.EventRaid.SupportUnitBalloonView::Setup(Gc.EventRaid.BattleFrontUserUnit,UnityEngine.RectTransform,System.String)",
+      "System.Void Gc.EventRaid.SupportUnitBalloonView::DoUpdate()",
+      "System.Void Gc.EventRaid.SupportUnitBalloonView::SetVisible(System.Boolean)",
+      "System.Void Gc.EventRaid.SupportUnitBalloonView::SyncView()"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.SubUnit.SubUnitDetailProfileViewData",
+    "properties": [
+      "System.String _Personality_k__BackingField",
+      "System.String _Birthday_k__BackingField",
+      "System.String _Height_k__BackingField",
+      "System.String _ThreeSize_k__BackingField",
+      "System.String _IllustratorName_k__BackingField",
+      "System.String _RootsText_k__BackingField",
+      "System.String _FlavorText_k__BackingField",
+      "System.String _CvName_k__BackingField",
+      "System.String Personality",
+      "System.String Birthday",
+      "System.String Height",
+      "System.String ThreeSize",
+      "System.String IllustratorName",
+      "System.String RootsText",
+      "System.String FlavorText",
+      "System.String CvName"
+    ],
+    "methods": [
+      "Gc.SubUnit.SubUnitDetailProfileViewData Gc.SubUnit.SubUnitDetailProfileViewData::Create(System.Int32)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.Mission.ContentViewData",
+    "properties": [
+      "System.Boolean _IsInvalid_k__BackingField",
+      "System.Boolean _IsTransitionInvalid_k__BackingField",
+      "System.Int32 _MissionId_k__BackingField",
+      "System.Int32 _CurrentProgress_k__BackingField",
+      "System.Int32 _MaxProgress_k__BackingField",
+      "System.String _Title_k__BackingField",
+      "Il2CppSystem.DateTime _RewardAcceptLimitTime_k__BackingField",
+      "Gc.Mission.MissionStatus _MissionStatus_k__BackingField",
+      "Gc.Mission.MissionConditionType _MissionConditionType_k__BackingField",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1<Gc.ElementData> _Rewards_k__BackingField",
+      "System.Boolean IsInvalid",
+      "System.Boolean IsTransitionInvalid",
+      "System.Int32 MissionId",
+      "System.Int32 CurrentProgress",
+      "System.Int32 MaxProgress",
+      "System.String Title",
+      "Il2CppSystem.DateTime RewardAcceptLimitTime",
+      "Gc.Mission.MissionStatus MissionStatus",
+      "Gc.Mission.MissionConditionType MissionConditionType",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1<Gc.ElementData> Rewards",
+      "System.Boolean IsAchieved",
+      "System.Boolean IsReceived"
+    ],
+    "methods": [
+      "System.Int32 Gc.Mission.ContentViewData::GetPriority()"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.Mission.ContentView",
+    "properties": [
+      "TMPro.TextMeshProUGUI _title",
+      "TMPro.TextMeshProUGUI _progress",
+      "UnityEngine.RectTransform _progressBar",
+      "UnityEngine.RectTransform _progressBarBase",
+      "UnityEngine.UI.InertButton _receive",
+      "Gc.MissionTransitionButton _transition",
+      "Gc.MultiRewardIcon _multiRewardIcon",
+      "Il2CppSystem.Action`1<Gc.Mission.ContentViewData> _onClickReceive",
+      "Gc.Mission.ContentViewData _data"
+    ],
+    "methods": [
+      "System.Void Gc.Mission.ContentView::Initialize(Il2CppSystem.Action`1<Gc.Mission.ContentViewData>,Il2CppSystem.Action)",
+      "System.Void Gc.Mission.ContentView::UpdateView(Gc.Mission.ContentViewData)",
+      "System.Void Gc.Mission.ContentView::OnClickReceive()"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.Master.TargetTypeMaster",
+    "properties": [
+      "System.String Master",
+      "System.Int32 id",
+      "System.Int32 type_bits",
+      "System.Int32 sort_type",
+      "System.Int32 sort_param",
+      "System.Int32 filter_type",
+      "System.Int32 filter_param",
+      "System.Int32 target_num",
+      "System.Int32 ignore_range",
+      "System.String description",
+      "Gc.DataMap`1<Gc.Master.TargetTypeMaster> cache",
+      "Gc.DataMap`1<Gc.Master.TargetTypeMaster> Cache",
+      "System.Int32 Id",
+      "System.Int32 TypeBits",
+      "System.Int32 SortType",
+      "System.Int32 SortParam",
+      "System.Int32 FilterType",
+      "System.Int32 FilterParam",
+      "System.Int32 TargetNum",
+      "System.Int32 IgnoreRange",
+      "System.String Description"
+    ],
+    "methods": [],
+    "fields": []
+  },
+  {
+    "type": "Gc.Master.PassiveSkillTriggerMaster",
+    "properties": [
+      "System.String Master",
+      "System.Int32 id",
+      "System.Int32 timing_bits",
+      "System.Int32 condition_bits",
+      "System.Int32 damage_bits",
+      "System.Int32 trigger_param",
+      "System.String trigger_param2",
+      "System.String skill_types",
+      "System.String description",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1<System.Int32> _triggerParam2",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1<System.Int32> _skillTypes",
+      "Gc.DataMap`1<Gc.Master.PassiveSkillTriggerMaster> cache",
+      "Gc.DataMap`1<Gc.Master.PassiveSkillTriggerMaster> Cache",
+      "System.Int32 Id",
+      "System.Int32 TimingBits",
+      "System.Int32 ConditionBits",
+      "System.Int32 DamageBits",
+      "System.Int32 TriggerParam",
+      "System.String TriggerParam2",
+      "System.String SkillTypes",
+      "System.String Description",
+      "System.Boolean IsTiming",
+      "System.Boolean IsCondition",
+      "System.Boolean IsDamage"
+    ],
+    "methods": [
+      "System.Boolean Gc.Master.PassiveSkillTriggerMaster::IsTimingTrigger(Gc.Master.TriggerTimingType)",
+      "System.Boolean Gc.Master.PassiveSkillTriggerMaster::IsTimingAlwaysTrigger()",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1<System.Int32> Gc.Master.PassiveSkillTriggerMaster::GetTriggerParam2()",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1<System.Int32> Gc.Master.PassiveSkillTriggerMaster::GetSkillTypes()"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.UnitDetailPopup.LayerDetailPopupTabContentDescription",
+    "properties": [
+      "TMPro.TextMeshProUGUI _description"
+    ],
+    "methods": [
+      "System.Void Gc.UnitDetailPopup.LayerDetailPopupTabContentDescription::Setup(Gc.UnitDetailPopup.DescriptionViewData)"
+    ],
+    "fields": []
+  },
+  {
+    "type": "Gc.Quest.StageSelectNovelViewData",
+    "properties": [
+      "System.Boolean _IsOpen_k__BackingField",
+      "System.Boolean _CanOpen_k__BackingField",
+      "System.Boolean _CanMask_k__BackingField",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1<System.Boolean> _EvaluateClears_k__BackingField",
+      "System.Int32 _NovelId_k__BackingField",
+      "System.String _Title_k__BackingField",
+      "Gc.Quest.StageSelectCostViewData _Cost_k__BackingField",
+      "Gc.Quest.StageSelectNovelViewData/OpenItemData _OpenItem_k__BackingField",
+      "System.Boolean IsOpen",
+      "System.Boolean CanOpen",
+      "System.Boolean CanMask",
+      "Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1<System.Boolean> EvaluateClears",
+      "System.Int32 NovelId",
+      "System.String Title",
+      "Gc.Quest.StageSelectCostViewData Cost",
+      "Gc.Quest.StageSelectNovelViewData/OpenItemData OpenItem"
+    ],
+    "methods": [],
+    "fields": []
+  },
+  {
+    "type": "Gc.Battle.SkillEffectConfigModel",
+    "properties": [
+      "System.Int32 effectType",
+      "System.Int32 target",
+      "System.String name",
+      "System.Int32 imageIndex",
+      "System.Int32 effectId",
+      "System.String unitColor",
+      "System.Int32 durationType"
+    ],
+    "methods": [],
+    "fields": []
+  }
+]

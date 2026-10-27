@@ -1,0 +1,23 @@
+{
+  "baseline_commit": "0cdcd9e84fffa438dfdac63176685a6c47a07318",
+  "ui_until_keys": {
+    "まで": "为止",
+    "{0}まで": "{0}为止",
+    "{0:yyyy/MM/dd HH:mm} まで": "至{0:yyyy/MM/dd HH:mm}"
+  },
+  "absent_ui_prefixes": {
+    "更新まで": [],
+    "開封期限": []
+  },
+  "master_full_prefix_matches": {
+    "更新まで": [],
+    "開封期限": []
+  },
+  "completed_until": [
+    [
+      "mTutorialPopupDescriptions",
+      "ml_title[]",
+      "完成まで"
+    ]
+  ]
+}

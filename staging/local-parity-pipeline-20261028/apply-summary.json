@@ -1,0 +1,1873 @@
+{
+  "status": "REVIEW_APPLIED",
+  "added_master": 0,
+  "added_ui": 13,
+  "holds": [
+    {
+      "kind": "master",
+      "jp": "技法発動時",
+      "field": "description",
+      "table": "mPassiveSkillTriggers",
+      "id": "3e985611bbdaa631d482555361bc718cb10ef4d460fe9a3b77feda02f2c49a62",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "Master",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "field": "description",
+            "record": "3003",
+            "table": "mPassiveSkillTriggers"
+          },
+          "snapshot_id": "9b282b2ab2b5ec3b6a94e015b5fce72f835a5c5705a48407f4e34b2534b53ef0"
+        }
+      ],
+      "reason": "mPassiveSkillTriggers.description(id 3003)는 기법 발동 타이밍 정의. PassiveSkillEffectModel은 Trigger/TriggerParam/SkillTypes 등 효과 메타데이터를 보유하지만 Description 표시 연결은 이번 scoped 조사에서 확인되지 않음. 미사용이라고 단정하지 않고 HOLD.",
+      "review_evidence": {
+        "source_file": "mPassiveSkillTriggers.json",
+        "source_sha256": "ef7597cd95df11c07e0a6cb964a3630cadf3602599c5788ce3d1708946108be6",
+        "records": [
+          {
+            "description": "技法発動時",
+            "id": 3003,
+            "skill_types": "2",
+            "trigger_param": 0
+          }
+        ]
+      }
+    },
+    {
+      "kind": "master",
+      "jp": "攻撃のステータスが高いカーマインの味方1体",
+      "field": "description",
+      "table": "mTargetTypes",
+      "id": "7da3a248c57e0bcfd5b9d5f49c93aac5395677f0278b639c03fd87a968781015",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "Master",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "field": "description",
+            "record": "2701",
+            "table": "mTargetTypes"
+          },
+          "snapshot_id": "9b282b2ab2b5ec3b6a94e015b5fce72f835a5c5705a48407f4e34b2534b53ef0"
+        }
+      ],
+      "reason": "mTargetTypes.description(id 2701)는 target/filter/sort 조건을 설명하는 필드. 실제 대상 결정용 수치 필드는 있으나 Description을 표시하는 consumer가 확인되지 않아 HOLD. 단순 source 잔여로 제외한 것이 아님.",
+      "review_evidence": {
+        "source_file": "mTargetTypes.json",
+        "source_sha256": "c63e0da313bddc8f32a513e22ae24d4c5a858c192311b8bd056c0b940a0a3bd0",
+        "records": [
+          {
+            "description": "攻撃のステータスが高いカーマインの味方1体",
+            "filter_param": 1,
+            "filter_type": 1,
+            "id": 2701
+          }
+        ]
+      }
+    },
+    {
+      "kind": "master",
+      "jp": "商品表示用のダミー（表示させるために必要で、オーブでは交換不可となりシステム側で制御）",
+      "field": "ml_description[]",
+      "table": "slim_mShopProducts",
+      "id": "7ef92dfa0ab6e8e275be3ba29ada0a13ed8ec92bc2bac4c934ce1101f4688fe5",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "Master",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "field": "ml_description",
+            "record": "42110",
+            "table": "slim_mShopProducts"
+          },
+          "snapshot_id": "9b282b2ab2b5ec3b6a94e015b5fce72f835a5c5705a48407f4e34b2534b53ef0"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "Master",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "field": "ml_description",
+            "record": "42111",
+            "table": "slim_mShopProducts"
+          },
+          "snapshot_id": "9b282b2ab2b5ec3b6a94e015b5fce72f835a5c5705a48407f4e34b2534b53ef0"
+        }
+      ],
+      "reason": "ShopProduct의 description 자체가 상품 표시용 dummy이며 시스템에서 오브 교환을 제어한다고 설명하는 개발용 메모. ShopProductInfoViewData.ProductDescription 경로는 존재하지만 이 dummy 행이 실제 고객용 상세 화면에 노출되는지 불명확하여 HOLD.",
+      "review_evidence": {
+        "source_file": "slim_mShopProducts.json",
+        "source_sha256": "7c70c756b74b39494ecc8e3342b1b1bda9bb7f3b4321c414d062f3761fa07686",
+        "records": [
+          {
+            "end_time": "9999-12-31 23:59:59",
+            "id": 42110,
+            "m_shop_category_id": 401,
+            "ml_description": [
+              "商品表示用のダミー（表示させるために必要で、オーブでは交換不可となりシステム側で制御）",
+              ""
+            ],
+            "ml_name": [
+              "サンソヴィーノの命鏡・小",
+              ""
+            ],
+            "start_time": "2026-10-23 13:30:00"
+          },
+          {
+            "end_time": "9999-12-31 23:59:59",
+            "id": 42111,
+            "m_shop_category_id": 401,
+            "ml_description": [
+              "商品表示用のダミー（表示させるために必要で、オーブでは交換不可となりシステム側で制御）",
+              ""
+            ],
+            "ml_name": [
+              "サンソヴィーノの命鏡・中",
+              ""
+            ],
+            "start_time": "2026-10-23 13:30:00"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "<color=#99928A>好物：</color>テキストが入ります",
+      "id": "263e51efc0d9f1fd41b0c015f76d7cf71f2635d8e0c1661c48c23abc84b36475",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -1790381056956403750
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "TextFAvorite"
+        }
+      ],
+      "reason": "선호 지역 값 대신 텍스트가 들어간다는 명시적 designer placeholder. 실제 지역명 형식은 별도 검수·실기 완료.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -1790381056956403750
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "TextFAvorite"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "ADVタイトルADVタイトル",
+      "id": "628aa3c1becb3954c073de7984be90e58103f055e2e36f1cc88d8fc8f9dcfc59",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -5158546439564825229
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -1390911721093806271
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 8291738416965897864
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 8964416435415496116
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "TextTitle"
+        }
+      ],
+      "reason": "TextTitle에서 ADV 제목을 두 번 반복한 임시 제목. 실제 accepted Novel 제목과 연결되지 않음.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -5158546439564825229
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -1390911721093806271
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 8291738416965897864
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 8964416435415496116
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "TextTitle"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "CV：声優様のお名前が入ります。",
+      "id": "f3c47b1cc57cf9418e13ad2d887c788c0eb821d72c76a6a6d7d90f6c7c1812f7",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 4511463070690961548
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "TextCV"
+        }
+      ],
+      "reason": "TextCV의 성우 이름 입력 안내 placeholder이며 실제 성우 이름이 아님.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 4511463070690961548
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "TextCV"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "あ",
+      "id": "6f3f7999c95b9f415cb47282851fb40fcd09e61ac70177881c848985fd2e6709",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_database.dmm",
+            "container": "CAB-9119823f9c4c53365a27b46035d94c10",
+            "field": "m_text",
+            "path_id": 8245745048206605098
+          },
+          "snapshot_id": "1ce6064cec653556aff66adb988d0b781023df5314e88c12c08395ed085c592a"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "Text"
+        }
+      ],
+      "reason": "Text 오브젝트의 단일 가나. 독립 표시 의미 불명이며 한 글자 렌더링 보호 대상.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_database.dmm",
+              "container": "CAB-9119823f9c4c53365a27b46035d94c10",
+              "field": "m_text",
+              "path_id": 8245745048206605098
+            },
+            "snapshot_id": "1ce6064cec653556aff66adb988d0b781023df5314e88c12c08395ed085c592a"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "Text"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "ようごめい",
+      "id": "6c533f1db8b1bc3ea58123cbc27c30d80b8f35466afebb15d6b9d83d778920b2",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_database.dmm",
+            "container": "CAB-9119823f9c4c53365a27b46035d94c10",
+            "field": "m_text",
+            "path_id": 2384024561486142639
+          },
+          "snapshot_id": "1ce6064cec653556aff66adb988d0b781023df5314e88c12c08395ed085c592a"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "Text_Title2"
+        }
+      ],
+      "reason": "회상 사전 Text_Title2의 용어명 가나 샘플. 실제 항목명 대응 불명.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_database.dmm",
+              "container": "CAB-9119823f9c4c53365a27b46035d94c10",
+              "field": "m_text",
+              "path_id": 2384024561486142639
+            },
+            "snapshot_id": "1ce6064cec653556aff66adb988d0b781023df5314e88c12c08395ed085c592a"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "Text_Title2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "イマージュ名がはいります",
+      "id": "8bffa69d4c84d7e707e6733d609427e93607793d1928ee788bcf800270153803",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 357799451080802773
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 1953987837257488559
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "TextTitle"
+        }
+      ],
+      "reason": "TextTitle의 이마주 이름 입력 자리라는 명시적 placeholder.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 357799451080802773
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 1953987837257488559
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "TextTitle"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "エピソード名が入ります",
+      "id": "c361f505cd9a8dde84ffa8033e132f1942e25780ecd91a3e913e63ab698ec9b1",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -5959505330120112218
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -4765688704652204509
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 3310408938349857459
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 6489457508682920233
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "TextEpisode"
+        }
+      ],
+      "reason": "TextEpisode의 에피소드명 입력 자리라는 명시적 placeholder.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -5959505330120112218
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -4765688704652204509
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 3310408938349857459
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 6489457508682920233
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "TextEpisode"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "スキル名が入ります",
+      "id": "a42f4d228110058f117e1ff00668d6c07bcd91b3f482e2d9f5c2472a7e22f3b1",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 5511121287241738317
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "TextName"
+        }
+      ],
+      "reason": "TextName의 스킬명 입력 자리라는 명시적 placeholder.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 5511121287241738317
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "TextName"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "セカンドネーム最大30文字入ります。\n",
+      "id": "53652128ff4fc21632fcc4101a960b28e71f7ddc75458824f3326598d8923a7f",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -369795531284886375
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 2416454191434435363
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "Text_SecondName"
+        }
+      ],
+      "reason": "Text_SecondName의 최대 30자 자리 배치 시험문구. 실제 캐릭터 이명 아님.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -369795531284886375
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 2416454191434435363
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "Text_SecondName"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "タブタイトル",
+      "id": "c0231bcc7076f7c7cbc0df3f832030b01fb8527cd5e22d45596c786669670ab8",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 1360889591023847133
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 1408378934964468858
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "Text_TabTitle_Unselect"
+        },
+        {
+          "object_name": "Text_TabTitle_Select"
+        }
+      ],
+      "reason": "선택/비선택 Text_TabTitle의 일반 탭 제목 placeholder. 실제 탭 이름은 별도 공급됨.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 1360889591023847133
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 1408378934964468858
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "Text_TabTitle_Unselect"
+          },
+          {
+            "object_name": "Text_TabTitle_Select"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "ユニットネーム８９０\n（１２３４５６７８）",
+      "id": "4accf929c86de04e6f27a600c7372435a0e2d99596c29e7c3b38de329019f196",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 5739401917526789545
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "Text_UnitName"
+        }
+      ],
+      "reason": "Text_UnitName에서 숫자를 채운 길이 시험용 샘플 이름.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 5739401917526789545
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "Text_UnitName"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "内容が入るよ",
+      "id": "99aafa515bc668dbf30dfffdf3046c5770c6c22b7960e4e5faa1638248c02118",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -6442770135114328529
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -3824033051773057789
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -3754433611273603914
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -1693622445207570469
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 1043579221141480218
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 7335025445566410696
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "TextValue"
+        }
+      ],
+      "reason": "TextValue의 내용 입력 자리라는 명시적 placeholder.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -6442770135114328529
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -3824033051773057789
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -3754433611273603914
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -1693622445207570469
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 1043579221141480218
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 7335025445566410696
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "TextValue"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "可変テキスト",
+      "id": "d37a491fd39f5122ad79dd74584eefaa0e9124032d8cc040ce48aca9f1d2df99",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -9139759104483386561
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -4728007054041022600
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -284258907768306319
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 2714239180095933409
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 4828906664670922163
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 6365954923976281920
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_athenes_record.dmm",
+            "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+            "field": "m_text",
+            "path_id": -5021648391935611165
+          },
+          "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_athenes_record.dmm",
+            "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+            "field": "m_text",
+            "path_id": -4781817619589558832
+          },
+          "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_athenes_record.dmm",
+            "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+            "field": "m_text",
+            "path_id": -3950719497189837825
+          },
+          "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_athenes_record.dmm",
+            "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+            "field": "m_text",
+            "path_id": -214734351672064393
+          },
+          "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_athenes_record.dmm",
+            "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+            "field": "m_text",
+            "path_id": 2635835038515041450
+          },
+          "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_athenes_record.dmm",
+            "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+            "field": "m_text",
+            "path_id": 4287131944827803136
+          },
+          "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_athenes_record.dmm",
+            "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+            "field": "m_text",
+            "path_id": 5769963081697685098
+          },
+          "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_athenes_record.dmm",
+            "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+            "field": "m_text",
+            "path_id": 7160080392678442210
+          },
+          "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "Text"
+        }
+      ],
+      "reason": "Text의 가변 텍스트 자리 표기. 실제 완성 문구가 없음.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -9139759104483386561
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -4728007054041022600
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -284258907768306319
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 2714239180095933409
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 4828906664670922163
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 6365954923976281920
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_athenes_record.dmm",
+              "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+              "field": "m_text",
+              "path_id": -5021648391935611165
+            },
+            "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_athenes_record.dmm",
+              "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+              "field": "m_text",
+              "path_id": -4781817619589558832
+            },
+            "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_athenes_record.dmm",
+              "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+              "field": "m_text",
+              "path_id": -3950719497189837825
+            },
+            "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_athenes_record.dmm",
+              "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+              "field": "m_text",
+              "path_id": -214734351672064393
+            },
+            "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_athenes_record.dmm",
+              "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+              "field": "m_text",
+              "path_id": 2635835038515041450
+            },
+            "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_athenes_record.dmm",
+              "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+              "field": "m_text",
+              "path_id": 4287131944827803136
+            },
+            "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_athenes_record.dmm",
+              "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+              "field": "m_text",
+              "path_id": 5769963081697685098
+            },
+            "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_athenes_record.dmm",
+              "container": "CAB-d306b8c598e4bef1119848bf1a9a01bc",
+              "field": "m_text",
+              "path_id": 7160080392678442210
+            },
+            "snapshot_id": "d4dde62f39c99e12ff1e574b54c44958322aadb1137a6450718867371c6324f4"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "Text"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "範囲内の敵に<color=#F64873>300%</color>の物理ダメージを与え、範囲内の味方に<color=#F64873>50%</color>の確率で<color=#F64873>3ターン</color>「シールド」状態にする範囲内の敵に<color=#F64873>300%範囲内の敵に<color=#F64873>300%</color>の物理ダメージを与え、範囲内の味方に<color=#F64873>50%</color>の確率で<color=#F64873>3ターン</color>「シールド」状態にする範囲内の敵に<color=#F64873>300%",
+      "id": "e68c018be7f84ec9df3b2cdde419322d54f9c7fa12b17ea680e2ebd4fe94eae3",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -8535073103397371819
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        },
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": 1564801118275921233
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "Text"
+        }
+      ],
+      "reason": "Text에 같은 스킬 설명이 중간부터 중복되고 color 태그가 닫히지 않은 잘린 layout stress placeholder. 정상 완성 설명 exact는 별도 번역.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -8535073103397371819
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          },
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": 1564801118275921233
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "Text"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ui",
+      "jp": "説明が入ります。",
+      "id": "05de42e4a3b7dc32e1e5c95d0dbccccdba7ad58976d00c4fa07d9cb39459888e",
+      "evidence": [
+        {
+          "source": "crawler",
+          "profile": {
+            "channel": "R18",
+            "inventory_contract": "vendor-d-n-h-s-v1",
+            "partition": "UI",
+            "platform": "WebGL"
+          },
+          "locator": {
+            "asset_key": "scene/scene_sub_unit.dmm",
+            "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+            "field": "m_text",
+            "path_id": -3074776644837097015
+          },
+          "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+        }
+      ],
+      "contexts": [
+        {
+          "object_name": "TextDescription"
+        }
+      ],
+      "reason": "TextDescription의 설명 입력 자리라는 명시적 placeholder.",
+      "review_evidence": {
+        "source": [
+          {
+            "source": "crawler",
+            "profile": {
+              "channel": "R18",
+              "inventory_contract": "vendor-d-n-h-s-v1",
+              "partition": "UI",
+              "platform": "WebGL"
+            },
+            "locator": {
+              "asset_key": "scene/scene_sub_unit.dmm",
+              "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+              "field": "m_text",
+              "path_id": -3074776644837097015
+            },
+            "snapshot_id": "c5553f5f3c4fdbec96e51d430abb28da92e79231628641e6689096d6380fa7cd"
+          }
+        ],
+        "contexts": [
+          {
+            "object_name": "TextDescription"
+          }
+        ]
+      }
+    }
+  ],
+  "pending": [],
+  "warnings": [],
+  "removed": 0,
+  "master_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+  "ui_sha256": "502ed298a0366eefbc639f2420d16121d56ba4d9dad455f449033bc934100329",
+  "native": "NOT_RUN_BY_THIS_TOOL"
+}

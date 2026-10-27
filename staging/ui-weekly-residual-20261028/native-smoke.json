@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "date": "2026-10-28",
+  "ui_loaded": 2150,
+  "error_count": 0,
+  "log_sha256": "b8aa78b026dd1bf50beabffd9da3c2aaf8f42f75298fbc59b2ad7e33943a4237",
+  "translated_master_tables_seen": 60,
+  "summary_ko": "주간 신애·재료·결정·비석의 탭/대표 하단 설명, 지역/부위/재료명, 은화 증가 배지 모두 KO. 시나리오 건너뛰기 안내 KO 및 줄바꿈 정상. 기존 스테이지 제목·회상 목록·Novel 본문도 KO 유지.",
+  "screens": [
+    {
+      "file": "screenshots/weekly-materials.jpg",
+      "result": "PASS",
+      "observed": "재료/결정/비석 탭, 유화·동방화·약화조지남·조각·석고상 탭, 강화 재료: 약화조지남, 은화 증가"
+    },
+    {
+      "file": "screenshots/weekly-affinity.jpg",
+      "result": "PASS",
+      "observed": "프랭탕·에그조티·누아르·볼칸·이베르·아테네스 탭, 신애: 프랭탕 지구"
+    },
+    {
+      "file": "screenshots/weekly-secretstones.jpg",
+      "result": "PASS",
+      "observed": "머리용·팔용·몸통용·특수용, 비석: 머리용"
+    },
+    {
+      "file": "screenshots/weekly-crystals.jpg",
+      "result": "PASS",
+      "observed": "속성 결정: 아이보리; 기존 5속성 탭 KO 유지"
+    },
+    {
+      "file": "screenshots/novel-skip-confirm.jpg",
+      "result": "PASS",
+      "observed": "건너뛰시겠습니까? / 대사 창 길게 누르기 및 빠르게 표시 안내 KO, 줄바꿈과 영역 정상"
+    }
+  ],
+  "scope": "대표 family Native 확인. 41개 모든 형제 조합을 각각 클릭하지 않음. 전체 41개는 원문/용어 검수와 C# exact lookup 검증.",
+  "login_gate": "사용자가 명시적으로 선택한 왼쪽 로그인 보너스 상자를 개봉 후 진행. 전투/구매/강화/해금 없음.",
+  "runtime_changes": false,
+  "new_holds": 0
+}
