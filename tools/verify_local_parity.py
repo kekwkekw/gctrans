@@ -22,6 +22,7 @@ def main():
         for case in cases:
             subprocess.run([sys.executable,'-m','unittest','discover','-s','tests','-p',case],cwd=repo,env=env,check=True)
         subprocess.run(['dotnet','run','--project','tests/UiTextLookup','--','translations/ko/ui.json'],cwd=repo,env=env,check=True)
+        subprocess.run(['dotnet','run','--project','tests/TranslationCache'],cwd=repo,env=env,check=True)
     report={'status':'PASS','test_suites':cases,'package':verify_repo(repo),'native':'NOT_RUN_BY_THIS_TOOL','publication':'NOT_PERFORMED'}
     if a.output:
         a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

@@ -15,6 +15,8 @@
 
 ## UI·runtime
 
+- 데이터 자동 갱신 준비 및 Native 대기 범위: [docs/DATA_UPDATES_KO.md](docs/DATA_UPDATES_KO.md).
+
 - Master/UI 수집→검수→반영→빌드·패키지·설치: [`docs/LOCAL_PARITY_PIPELINE_KO.md`](docs/LOCAL_PARITY_PIPELINE_KO.md). 여러 UI prefab 수집, 부분 실패 격리, 실제 runtime 동적 조회 확인을 지원한다.
 
 - UI 사전 생성·포함 범위: [`docs/UI_EXPORT_KO.md`](docs/UI_EXPORT_KO.md). 비활성 binding도 검수된 번역은 export하며 local UI 키 coverage를 검사한다.

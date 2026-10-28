@@ -13,6 +13,7 @@ if (args.Length == 4 && args[1] == "--probe")
     return;
 }
 var cases=new Dictionary<string,string> {
+ ["第9章"]="제9장", ["第10章"]="제10장", ["第11章"]="제11장",
  ["メインクエスト"]="메인 퀘스트",
  ["  メインクエスト\n"]="  메인 퀘스트\n",
  ["<size=20><color=red>スキップ</color></size>"]="<size=20><color=red>건너뛰기</color></size>",
@@ -45,5 +46,12 @@ var negative=new[]{"更新まで08:47","開封期限：2026/11/08 12:59 まで",
  "日本語 22個で解放","日本語 の閲覧が必要","제목 の閲覧が必要という説明","덴푸라 22個で解放する","あと1000000000","3ターン終了","덴푸라 <b>22</b>個で解放"};
 foreach(var jp in negative)
  if(UiTextLookup.TryTranslate(ui,jp,out _))throw new Exception("Unexpected translation: "+jp);
+foreach(var jp in new[]{"第1000章", "第10章の話", "前第10章", "第十章", "あ", "雷"})
+ if(UiTextLookup.TryTranslate(ui,jp,out _))throw new Exception("Unexpected chapter/glyph translation: "+jp);
+var glossary = GlossaryIndex.Sort(new[]{"아테네스","산소비노","관장","공방","미술관"}, x=>x).ToArray();
+var sections = GlossaryIndex.Sections(glossary).ToArray();
+if (!glossary.SequenceEqual(new[]{"공방","관장","미술관","산소비노","아테네스"})
+    || !sections.SequenceEqual(new[]{("가",0),("마",2),("사",3),("아",4)}))
+ throw new Exception("Glossary ordering/index target mismatch");
 foreach(var c in ui)if(!UiTextLookup.TryTranslate(ui,c.Key,out var ko)||ko!=c.Value)throw new Exception("Exact regression: "+c.Key);
 Console.WriteLine($"PASS: {ui.Count} exact pairs; {cases.Count} wrappers/numeric/date labels; {negative.Length} negative/HOLD boundaries");

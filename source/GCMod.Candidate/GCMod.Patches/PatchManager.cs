@@ -20,6 +20,7 @@ public static class PatchManager
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(VisualPatch), (string)null));
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(UiPatch), (string)null));
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(ChoicePatch), (string)null));
+			Installed.Add(Harmony.CreateAndPatchAll(typeof(GlossaryPatch), (string)null));
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(ElementLabelPatch), (string)null));
 			MasterDataPatch.Install();
 		}
