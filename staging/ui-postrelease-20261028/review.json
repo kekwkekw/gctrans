@@ -204,13 +204,13 @@
     },
     {
       "jp": "フロア",
-      "ko": "<nobr>FLOOR</nobr>",
+      "ko": "<size=80%>FLOOR</size>",
       "before": "층",
       "local_ui": null,
       "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false,
-      "native_layout_note": "Standalone FLOOR wrapped its final R in the dungeon entry animation. Keep this exact label together using TMP nobr; no global font/layout change."
+      "native_layout_note": "Standalone FLOOR wrapped its final R in the dungeon entry animation. TMP nobr alone still wrapped at the narrow label width. Fit this exact label with TMP size=80%; no global font/layout change."
     },
     {
       "jp": "1日目",
