@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net9.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../source/GCMod.Candidate/GCMod.Patches/UiTextScope.cs" Link="UiTextScope.cs" />
+    <Compile Include="../../source/GCMod.Candidate/GCMod.Patches/UiTextLookup.cs" Link="UiTextLookup.cs" />
+  </ItemGroup>
+</Project>

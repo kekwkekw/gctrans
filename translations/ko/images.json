@@ -1,0 +1,59 @@
+{
+  "entries": [
+    {
+      "bytes": 42067,
+      "file": "images/a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd.png",
+      "height": 396,
+      "kind": "sprite",
+      "name": "BtArea01",
+      "sha256": "a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd",
+      "width": 396
+    },
+    {
+      "bytes": 42714,
+      "file": "images/28e84f2ca9c0238bc518ce9455f631654e1ca62f12afd2e0af23be8802648a68.png",
+      "height": 396,
+      "kind": "sprite",
+      "name": "BtArea02",
+      "sha256": "28e84f2ca9c0238bc518ce9455f631654e1ca62f12afd2e0af23be8802648a68",
+      "width": 396
+    },
+    {
+      "bytes": 41206,
+      "file": "images/d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4.png",
+      "height": 396,
+      "kind": "sprite",
+      "name": "BtArea03",
+      "sha256": "d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4",
+      "width": 396
+    },
+    {
+      "bytes": 40437,
+      "file": "images/f1e25ed4588868fb1e9ee5be4eede469f6ef1cb7b735cbf84791f7f3b6aa3716.png",
+      "height": 396,
+      "kind": "sprite",
+      "name": "BtArea04",
+      "sha256": "f1e25ed4588868fb1e9ee5be4eede469f6ef1cb7b735cbf84791f7f3b6aa3716",
+      "width": 396
+    },
+    {
+      "bytes": 40833,
+      "file": "images/694d69b25828abbbf79d2451c1b92183dbb858f88aae4d57066f5c5e46a14cda.png",
+      "height": 396,
+      "kind": "sprite",
+      "name": "BtArea05",
+      "sha256": "694d69b25828abbbf79d2451c1b92183dbb858f88aae4d57066f5c5e46a14cda",
+      "width": 396
+    },
+    {
+      "bytes": 44128,
+      "file": "images/44d22e6390d40cf0d46da39cf132aa18d95fd6fffa0a9482869306d80afc4b4e.png",
+      "height": 396,
+      "kind": "sprite",
+      "name": "BtArea06",
+      "sha256": "44d22e6390d40cf0d46da39cf132aa18d95fd6fffa0a9482869306d80afc4b4e",
+      "width": 396
+    }
+  ],
+  "schema": "gc-images-v1"
+}

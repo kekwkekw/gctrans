@@ -79,18 +79,11 @@ public static class UiPatch
 		return TryTranslate(original, out translated);
 	}
 
-	// Exclude editable controls, including inactive/prefab input text. No selector or ownership layer.
-	private static bool IsInputText(Component text)
-	{
-		return text == null || text.GetComponentInParent<TMP_InputField>(true) != null
-			|| text.GetComponentInParent<InputField>(true) != null;
-	}
-
 	[HarmonyPatch(typeof(TMP_Text), "text", MethodType.Setter)]
 	[HarmonyPrefix]
 	public static void SetTextPrefix(TMP_Text __instance, ref string value)
 	{
-		if (_isTranslating || value == null || value.Length <= 1 || !Config.Translation.Value || IsInputText(__instance))
+		if (_isTranslating || string.IsNullOrEmpty(value) || !Config.Translation.Value || UiTextScope.IsProtected(__instance))
 		{
 			return;
 		}
@@ -105,7 +98,7 @@ public static class UiPatch
 	[HarmonyPostfix]
 	public static void OnEnablePostfix(TextMeshProUGUI __instance)
 	{
-		if (_isTranslating || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null || !Config.Translation.Value || IsInputText(__instance))
+		if (_isTranslating || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null || !Config.Translation.Value || UiTextScope.IsProtected(__instance))
 		{
 			return;
 		}
@@ -114,7 +107,7 @@ public static class UiPatch
 		{
 			_isTranslating = true;
 			string current = ((TMP_Text)__instance).text;
-			if (!string.IsNullOrEmpty(current) && current.Length > 1 && TryTranslateDisplay(__instance, current, out string translated))
+			if (!string.IsNullOrEmpty(current) && TryTranslateDisplay(__instance, current, out string translated))
 			{
 				((TMP_Text)__instance).text = translated;
 			}
@@ -138,7 +131,7 @@ public static class UiPatch
 	[HarmonyPrefix]
 	public static void SetLegacyTextPrefix(Text __instance, ref string value)
 	{
-		if (_isTranslating || value == null || value.Length <= 1 || !Config.Translation.Value || IsInputText(__instance))
+		if (_isTranslating || string.IsNullOrEmpty(value) || !Config.Translation.Value || UiTextScope.IsProtected(__instance))
 		{
 			return;
 		}

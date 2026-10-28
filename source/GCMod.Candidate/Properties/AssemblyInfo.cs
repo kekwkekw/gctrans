@@ -3,11 +3,11 @@ using System.Reflection;
 
 [assembly: AssemblyCompany("Jitsu")]
 [assembly: AssemblyConfiguration("Release")]
-[assembly: AssemblyFileVersion("7.1.1.0")]
-[assembly: AssemblyInformationalVersion("7.1.1-ko-localparity+0cdcd9e84fffa438dfdac63176685a6c47a07318")]
+[assembly: AssemblyFileVersion("7.2.0.0")]
+[assembly: AssemblyInformationalVersion("7.2.0-ko-localparity+0cdcd9e84fffa438dfdac63176685a6c47a07318")]
 [assembly: AssemblyProduct("GCMod")]
 [assembly: AssemblyTitle("GCMod")]
-[assembly: AssemblyVersion("7.1.1.0")]
+[assembly: AssemblyVersion("7.2.0.0")]
 
 namespace System.Runtime.CompilerServices
 {

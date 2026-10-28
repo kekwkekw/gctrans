@@ -32,7 +32,9 @@ local UI 전체 키 목록으로 누락을 검사한다. 입력 필드 보호는
 UI 훅은 ui.json을 읽고 Master 존재 여부를 묻지 않는다. exact 조회를 우선하며,
 local의 앞뒤 공백 및 외곽 rich-text 태그 처리를 유지한다.
 TMP/legacy 입력 컨트롤의 하위 텍스트와 local의 self-write 재진입을 보호한다.
-단일 문자 제외는 local의 Novel 글자 렌더링 보호를 유지한 것이다.
+7.2.0은 일반 UI에서 한 글자 exact도 허용한다. EventText/EventMessageWindow/EventSelectObj의
+본문·루비·선택지 렌더러 하위와 실제 입력 컨트롤 하위는 길이와 무관하게 보호한다.
+따라서 미번역 본문이나 한국어에 남긴 한자도 일반 UI 사전으로 치환하지 않는다.
 
 기존 501개 authoring binding과 16개 동적 템플릿은 보존한다. 이 런타임의 binding 소비자는 없다.
 구조 예외는 실제 Native에서 필요한 경우에만 작은 별도 패치로 추가한다.
@@ -50,7 +52,8 @@ TMP/legacy 입력 컨트롤의 하위 텍스트와 local의 self-write 재진입
 2026-10-28 Native에서 장 번호, 사전 정·역순 색인 이동/설명 재사용, 선택지 뒤 관장·산소비노
 화자명과 분기 복귀를 확인했다. 이는 해당 대표 동작의 검증이며 게임 전체 완역 판정은 아니다.
 `ElementLabelPatch`는 `ElementTypeExtensions.ToName`의 속성 표시명만 번역한다.
-Master에 없는 단독 `雷`를 처리하며 일반 UI/Novel의 한 글자 보호는 유지한다.
+Master에 없는 속성명을 처리한다. 일반 UI의 火→화(요일)와 속성의 火→불은 문맥이 달라
+이 유한 enum hook을 유지한다. 일반 UI의 炎·雷는 exact 사전에서도 처리한다.
 공방 번호 1~3은 기존 검수 템플릿을 export에서 exact 3항목으로 펼친다.
 2026-10-28 실기 잔존 문구에는 `UiTextLookup`의 제한된 전체 문구 패턴을 추가했다.
 시즌/층수/박스 회차/창작 횟수/개봉 횟수/남은 일수와 날짜+まで를 처리한다.
@@ -71,3 +74,5 @@ upstream의 개발자 PC 고정 경로 Master 덤프만 제외했다.
 Novel 본문과 Names는 수정하지 않는다. 대응 없음/중복 JP 번역 충돌은 보고서에 HOLD로 남긴다.
 
 Master coverage 회복 파이프라인은 `tools/update/MASTER_COVERAGE_KO.md`를 참조한다.
+
+7.2.0 이미지 후보의 데이터 계약·지원 범위는 [IMAGE_UPDATES_KO.md](../../docs/IMAGE_UPDATES_KO.md)를 따른다.

@@ -17,6 +17,9 @@ public class Manifest
 	[JsonPropertyName("ui")]
 	public string Ui { get; set; }
 
+	[JsonPropertyName("images")]
+	public string Images { get; set; }
+
 	[JsonPropertyName("novels")]
 	public Dictionary<string, string> Novels { get; set; }
 }

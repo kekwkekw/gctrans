@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 import zipfile
+import hashlib
 from local_parity_fixture import fixture
 import local_release as release
 
@@ -36,6 +37,29 @@ class ReleaseTests(unittest.TestCase):
             dll=self.game/release.PLUGIN/'GCMod.dll';dll.write_bytes(b'user changed')
             with self.assertRaisesRegex(ValueError,'INSTALL_CHANGED'):release.rollback(self.game,self.backup)
             self.assertEqual(dll.read_bytes(),b'user changed')
+
+    def test_image_catalog_payload_and_novel_manifest_preserved(self):
+        from local_parity_fixture import ROOT, build
+        package=self.root/'translations/ko'
+        old=json.loads((package/'manifest.json').read_bytes())
+        source=ROOT/'translations/ko'
+        catalog=json.loads((source/'images.json').read_bytes())
+        # Use a real decodable PNG, including its exact content-addressed path.
+        catalog['entries']=catalog['entries'][:1]
+        row=catalog['entries'][0]
+        (package/'images').mkdir()
+        (package/row['file']).write_bytes((source/row['file']).read_bytes())
+        (package/'images.json').write_text(json.dumps(catalog),encoding='utf8')
+        build(package,added=['images.json',row['file']])
+        updated=json.loads((package/'manifest.json').read_bytes())
+        self.assertEqual(updated['names'],old['names'])
+        self.assertEqual(updated['novels'],old['novels'])
+        self.assertEqual(updated['images'],hashlib.sha256((package/'images.json').read_bytes()).hexdigest())
+        archive=self.root/'images.zip';release.pack(self.root,archive)
+        _,files=release.verify_archive(archive)
+        self.assertEqual(files[release.PLUGIN+'translations/ko/'+row['file']],(source/row['file']).read_bytes())
+        (package/row['file']).write_bytes(b'corrupt')
+        with self.assertRaisesRegex(ValueError,'IMAGE_PAYLOAD'):release.verify_repo(self.root)
 
     def test_partial_install_failure_restores_preimages(self):
         original=Path.write_bytes
