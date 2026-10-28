@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import sys
 import tempfile
 import unittest
@@ -18,9 +19,11 @@ def obj(kind, identity, tree=None, error=False):
 
 class UiSourceTests(unittest.TestCase):
     def test_default_scope_selects_multiple_scenes_and_common_not_voice_images(self):
-        scope={'schema':'gc-ui-source-scope-v1','include':['scene/*.dmm','common*prefab.dmm']}
-        inv={'d':[{'n':n} for n in ('scene/a.dmm','scene/b.dmm','common_prefab.dmm','notinit/voice/a.dmm','image/a.dmm')]}
-        self.assertEqual(len(select_inventory(inv,scope)['d']),3)
+        scope=json.loads((Path(__file__).resolve().parents[1]/'contracts/ui-source-scope-v1.json').read_text())
+        inv={'d':[{'n':n} for n in ('scene/a.dmm','scene/b.dmm','common_prefab.dmm',
+            'popup/popup_login_bonus_confirm.dmm','popup/popup_serial_code_input.dmm',
+            'notinit/voice/a.dmm','image/a.dmm')]}
+        self.assertEqual(len(select_inventory(inv,scope)['d']),5)
         self.assertEqual(select_inventory(inv,scope,'scene/b.dmm')['d'],[{'n':'scene/b.dmm'}])
 
     def test_large_bundle_and_partial_component_failure_keep_other_labels(self):
