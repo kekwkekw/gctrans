@@ -20,7 +20,7 @@ from export_local_ui import export
 from build_manifests import build
 
 PUBLISH = ('master.json', 'ui.json', 'ui/general-exact.reviewed.json', 'manifest.json', 'legacy-components.json', 'ui/manifest.json', 'release-manifest.json')
-GUARDED = tuple(dict.fromkeys(PUBLISH + ('names.json', 'ui/resources.json', 'ui/bindings.json', 'ui.templates.json', 'ui/local-coverage.json')))
+GUARDED = tuple(dict.fromkeys(PUBLISH + ('names.json', 'ui/resources.json', 'ui/bindings.json', 'ui.templates.json', 'ui/local-coverage.json', 'ui/detail-families.json')))
 
 
 def validate_translation(jp, ko):

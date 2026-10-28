@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'tools'))
@@ -14,6 +15,7 @@ def fixture(repo):
               'names.json': {'名前':'이름'}, 'novels/1.json': {'本文':'본문'},
               'ui/resources.json': {'resources':[]}, 'ui/bindings.json': {'bindings':[]},
               'ui/general-exact.reviewed.json': {},
+              'ui/detail-families.json': json.loads((ROOT/'translations/ko/ui/detail-families.json').read_bytes()),
               'ui/local-coverage.json': {'schema':'gc-local-ui-coverage-v1','keys':['既存'],'keep_source':[]},
               'ui.templates.json': {'rules':[{'jp':'工房{value}','ko':'공방{value}','value_kind':'integer'}]}}
     for name,value in values.items(): save(package/name,value)

@@ -45,6 +45,18 @@ Native 관측은 `--observations <json>`으로 추가할 수 있다. 형식은 `
 
 ## 3. 빌드·패키지·설치
 
+### PC 코드 상수와 상세 메뉴 보완
+
+prefab 범위에 포함되어도 코드가 나중에 넣는 필터 선택지·팝업 문구는 별도 후보가 필요하다. 다음 도구는 설치된 PC v39 메타데이터의 지정한 문자열 계열만 읽고, 원본 hash와 literal index를 남긴다. 전체 캐시 재색인이나 자동 번역은 하지 않는다.
+
+```powershell
+python tools/collect_ui_literals.py --metadata <game>/GC_Data/il2cpp_data/Metadata/global-metadata.dat --contains メモリー --contains スター --output work/local-parity/detail-literals.json
+```
+
+결과를 앞의 plan에 `--observations work/local-parity/detail-literals.json`으로 전달한다. `source_kind=pc_metadata_literals`는 실제 화면 관측과 구분하며 표시 여부·문맥을 검수한다. 입력창 편집 문자는 번역하지 않는다. 집무실처럼 Master와 같은 JP를 코드에서 직접 공급하는 경우는 해당 문구만 accepted Master 번역과 맞춰 UI에 추가한다.
+
+`ui/detail-families.json`은 확인된 메모리 4그룹×5세트, 유효한 생일 확인 날짜, 현재 Master의 메인 스테이지 범위 안내를 완성된 exact로 export한다. JP 및 이미 KO로 바뀐 Master 이름을 모두 처리하며 새 장이 Master에 들어오면 export 시 따라간다. 범용 부분 치환이나 DLL template engine은 추가하지 않는다. 한 글자 `炎`·`月`·`日`은 7.1.1의 표시 보호 경계로 별도 기록한다. 사전에 키가 있다고 표시 완료로 세지 않는다.
+
 ```powershell
 python tools/local_release.py build --game <game-directory>
 python tools/local_release.py verify

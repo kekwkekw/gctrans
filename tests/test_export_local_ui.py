@@ -10,6 +10,20 @@ from export_local_ui import export
 
 
 class ExactUiExportTests(unittest.TestCase):
+    def test_detail_labels_cover_mixed_master_output_and_finite_defaults(self):
+        payload, report = export(ROOT / 'translations/ko')
+        actual = json.loads(payload)
+        self.assertEqual(actual['グループ4'], '그룹4')
+        self.assertEqual(actual['設定4-5'], '세트4-5')
+        self.assertNotIn('設定5-1', actual)
+        self.assertEqual(actual['獲得数は메인 스테이지10-1〜10のクリアランクが対象です'],
+                         '획득 수량은 메인 스테이지10-1〜10의 클리어 랭크를 기준으로 합니다')
+        self.assertIn('02月29日で\n誕生日を設定します。\nよろしいですか？\n', actual)
+        self.assertNotIn('02月30日で\n誕生日を設定します。\nよろしいですか？\n', actual)
+        self.assertGreater(report['bounded_detail_exacts'], 390)
+        for row in json.loads((ROOT/'staging/ui-details-20261028/review.json').read_bytes())['rows']:
+            self.assertEqual(actual[row['jp']], row['ko'])
+
     def package(self, root, resources, reviewed=None):
         (root / 'ui').mkdir()
         values = {
