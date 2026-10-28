@@ -32,6 +32,8 @@
 
 ## UI·runtime
 
+- 7.2.0 이미지/한 글자 UI 후보: [docs/IMAGE_UPDATES_KO.md](docs/IMAGE_UPDATES_KO.md). 공개 설치본과 별도로 검증 중이다.
+
 - 데이터 자동 갱신 동작 및 Native 검증 결과: [docs/DATA_UPDATES_KO.md](docs/DATA_UPDATES_KO.md).
 
 - Master/UI 수집→검수→반영→빌드·패키지·설치: [`docs/LOCAL_PARITY_PIPELINE_KO.md`](docs/LOCAL_PARITY_PIPELINE_KO.md). 여러 UI prefab 수집, 부분 실패 격리, 실제 runtime 동적 조회 확인을 지원한다.

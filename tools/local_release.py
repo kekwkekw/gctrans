@@ -13,6 +13,7 @@ import zipfile
 
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from export_local_ui import export, read
+from image_data import validate_images
 from build_manifests import previous_inventory
 from update.process_lock import ProcessFileLock
 from update.source_scan import atomic_json
@@ -33,6 +34,10 @@ def verify_repo(repo):
     package=repo/'translations/ko';payload,info=export(package)
     if payload!=(package/'ui.json').read_bytes():raise ValueError('UI_EXPORT_STALE')
     previous_inventory(package)
+    if (package/'images.json').exists():
+        image_raw=(package/'images.json').read_bytes()
+        validate_images(image_raw,lambda path:(package/path).read_bytes())
+        if read(package/'manifest.json').get('images')!=digest(image_raw):raise ValueError('IMAGE_MANIFEST_HASH')
     manifest=read(package/'release-manifest.json')
     for row in manifest['files']+[manifest['ui_manifest']]:
         target=(package/row['path']).resolve()
@@ -54,6 +59,7 @@ def build_runtime(repo, game):
 
 
 def allowed(path):
+    if path == PLUGIN+'translations/ko/images.json' or re.fullmatch(re.escape(PLUGIN)+r'translations/ko/images/[0-9a-f]{64}\.png',path): return True
     if path in (CFG,PLUGIN+'GCMod.dll',PLUGIN+'Utility.dll',PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle','README_KO.txt','gc-mod-local-LICENSE.txt'):return True
     return bool(re.fullmatch(re.escape(PLUGIN)+r'translations/ko/(?:manifest|master|names|ui)\.json',path) or re.fullmatch(re.escape(PLUGIN)+r'translations/ko/novels/[0-9]+\.json',path))
 
@@ -66,6 +72,11 @@ def pack(repo, output, font=None, utility=None):
            'gc-mod-local-LICENSE.txt':(repo/'THIRD_PARTY_LICENSES/gc-mod-local-LICENSE.txt').read_bytes()}
     for p in [*(repo/'translations/ko'/n for n in CORE),*sorted((repo/'translations/ko/novels').glob('*.json'))]:
         files[PLUGIN+'translations/ko/'+p.relative_to(repo/'translations/ko').as_posix()]=p.read_bytes()
+    image_catalog=repo/'translations/ko/images.json'
+    if image_catalog.exists():
+        raw=image_catalog.read_bytes();files[PLUGIN+'translations/ko/images.json']=raw
+        for path in validate_images(raw,lambda name:(repo/'translations/ko'/name).read_bytes()):
+            files[PLUGIN+'translations/ko/'+path]=(repo/'translations/ko'/path).read_bytes()
     if font:
         files[PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle']=font.read_bytes();files[PLUGIN+'Utility.dll']=utility.read_bytes()
     kind='local-complete' if font else 'public-update'
@@ -110,6 +121,13 @@ def verify_archive(path):
             if not str(identity).isdigit() or PLUGIN+'translations/ko/novels/'+identity+'.json' not in files:
                 raise ValueError('REGISTERED_NOVEL_MISSING')
         if not required_cfg(cfg_read(files[CFG])):raise ValueError('ARCHIVE_CFG')
+        if PLUGIN+'translations/ko/images.json' in files:
+            image_raw=files[PLUGIN+'translations/ko/images.json']
+            expected=validate_images(image_raw,lambda name:files[PLUGIN+'translations/ko/'+name])
+            if json.loads(files[PLUGIN+'translations/ko/manifest.json']).get('images')!=digest(image_raw):raise ValueError('IMAGE_MANIFEST_HASH')
+            actual={p[len(PLUGIN+'translations/ko/'):] for p in files if p.startswith(PLUGIN+'translations/ko/images/')}
+            if actual!=expected:raise ValueError('IMAGE_ARCHIVE_MEMBERSHIP')
+        elif any(p.startswith(PLUGIN+'translations/ko/images/') for p in files):raise ValueError('IMAGE_CATALOG_MISSING')
         return receipt,files
 
 
