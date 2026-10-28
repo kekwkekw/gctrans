@@ -6,6 +6,8 @@ from unittest.mock import patch
 from local_parity_fixture import fixture, save, sha
 from update.local_parity import make_plan, apply_review, review_template, validate_translation, GUARDED
 from local_release import verify_repo
+from build_manifests import build
+from legacy_semantic import compute, root_hash
 
 
 class ReviewPipelineTests(unittest.TestCase):
@@ -24,7 +26,21 @@ class ReviewPipelineTests(unittest.TestCase):
         self.assertEqual(json.loads((self.p/'ui.json').read_bytes())['追加'],'추가')
         self.assertEqual(verify_repo(self.root)['status'],'PASS')
         self.assertEqual(protected,{p:sha(self.p/p) for p in protected})
+        manifest=json.loads((self.p/'manifest.json').read_bytes())
+        self.assertEqual(manifest['ui'],compute(json.loads((self.p/'ui.json').read_bytes())))
+        self.assertEqual(manifest['hash'],root_hash(manifest))
         with self.assertRaisesRegex(ValueError,'CHANGED_SINCE_PLAN'): apply_review(self.p,b,self.decision(b))
+
+    def test_novel_metadata_rebuild_preserves_ui_registration(self):
+        build(self.p,modified=['ui.json'])
+        before=json.loads((self.p/'manifest.json').read_bytes())
+        save(self.p/'novels/1.json',{'本文':'갱신된 본문'})
+        build(self.p,modified=['novels/1.json'])
+        after=json.loads((self.p/'manifest.json').read_bytes())
+        self.assertEqual(before['ui'],after['ui'])
+        self.assertEqual(before['names'],after['names'])
+        self.assertNotEqual(before['novels']['1'],after['novels']['1'])
+        self.assertEqual(after['hash'],root_hash(after))
 
     def test_partial_asset_does_not_block_good_rows_or_baseline(self):
         path=self.root/'scan.json';good={'asset_key':'scene/good.dmm','status':'MATERIALIZED','current_eligible':True,

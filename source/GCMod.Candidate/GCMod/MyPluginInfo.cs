@@ -6,5 +6,5 @@ public static class MyPluginInfo
 
 	public const string PLUGIN_NAME = "GCMod";
 
-	public const string PLUGIN_VERSION = "7.0.0";
+	public const string PLUGIN_VERSION = "7.1.0";
 }

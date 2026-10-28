@@ -3,8 +3,8 @@
     {
       "kind": "legacy_manifest",
       "path": "manifest.json",
-      "sha256": "81f28af83c233e18665f940beb672c5ef3d31a89f4da9215f0a1a00dc578c5b0",
-      "size": 98312
+      "sha256": "17ac81ab10127d25feb031c74e9786618c64aabfd6c8ee42c9794bc877041162",
+      "size": 98356
     },
     {
       "kind": "names",

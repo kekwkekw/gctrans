@@ -20,12 +20,13 @@ from update.source_scan import atomic_json
 PLUGIN='BepInEx/plugins/GCMod/'
 CFG='BepInEx/config/GCMod.cfg'
 CORE=('manifest.json','master.json','names.json','ui.json')
+OFFICIAL_CDN='https://raw.githubusercontent.com/kekwkekw/gctrans/main'
 def digest(raw):return hashlib.sha256(raw).hexdigest()
 def json_bytes(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode('utf-8')
 def cfg_read(raw):
     cfg=configparser.ConfigParser(interpolation=None);cfg.optionxform=str;cfg.read_string(raw.decode('utf-8-sig'));return cfg
 def required_cfg(cfg):
-    return cfg.get('Translation','Language')=='ko' and cfg.get('Translation','CDN')=='offline' and cfg.get('Translation','Enabled').lower()=='true' and cfg.get('Translation.MasterData','EnabledTables')=='*'
+    return cfg.get('Translation','Language')=='ko' and cfg.get('Translation','CDN') in ('offline',OFFICIAL_CDN) and cfg.get('Translation','Enabled').lower()=='true' and cfg.get('Translation.MasterData','EnabledTables')=='*'
 
 
 def verify_repo(repo):
@@ -39,7 +40,7 @@ def verify_repo(repo):
         raw=target.read_bytes()
         if digest(raw)!=row['sha256'] or len(raw)!=row['size']:raise ValueError('MANIFEST_MISMATCH:'+row['path'])
         if target.suffix=='.json':read(target)
-    if not required_cfg(cfg_read((repo/'candidate/GCMod.cfg').read_bytes())):raise ValueError('RUNTIME_CFG_REQUIRES_KO_OFFLINE_MASTER_ALL')
+    if not required_cfg(cfg_read((repo/'candidate/GCMod.cfg').read_bytes())):raise ValueError('RUNTIME_CFG_REQUIRES_KO_APPROVED_CDN_MASTER_ALL')
     if not (repo/'candidate/GCMod.dll').read_bytes().startswith(b'MZ'):raise ValueError('RUNTIME_DLL_REQUIRED')
     return dict(info,status='PASS',master_keys=sum(len(v) for fs in read(package/'master.json').values() for v in fs.values()),
                 novels=len(list((package/'novels').glob('*.json'))),native='NOT_RUN_OFFLINE')
@@ -68,7 +69,7 @@ def pack(repo, output, font=None, utility=None):
     if font:
         files[PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle']=font.read_bytes();files[PLUGIN+'Utility.dll']=utility.read_bytes()
     kind='local-complete' if font else 'public-update'
-    files['README_KO.txt']=('GCMod Korean LocalParity\n게임 종료 후 적용하세요. Language=ko / CDN=offline / EnabledTables=*\n'
+    files['README_KO.txt']=('GCMod Korean LocalParity\n게임 종료 후 적용하세요. Language=ko / EnabledTables=*\n기본 CDN은 공식 GitHub main입니다. 시작 시 manifest를 확인하고 변경된 번역 데이터를 갱신합니다. offline 설정도 지원합니다. DLL/폰트 변경은 별도 배포본 적용이 필요합니다.\n'
         +'기존 BepInEx IL2CPP 설치가 필요합니다.\n'
         +('로컬 폰트/Utility를 포함한 개인 설치본입니다. 공개 배포용으로 업로드하지 마세요.\n' if font else
           '공개 업데이트에는 게임/interop/Utility/폰트를 포함하지 않습니다. 기존 승인된 Utility.dll 및 한국어 폰트가 필요합니다.\n')

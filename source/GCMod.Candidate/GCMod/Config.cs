@@ -76,7 +76,7 @@ public static class Config
 		CustomTranslationPath = Plugin.ConfigFile.Bind<string>("Translation", "CustomPath", "", "自定义本地翻译文件夹路径（绝对路径）。留空则默认使用 BepInEx/plugins/GCMod/translations");
 		IsSkipCutin = Plugin.ConfigFile.Bind<bool>("Battle", "IsSkipCutin", false, "是否跳过大招动画（包括变身和释放动画）");
 		Translation = Plugin.ConfigFile.Bind<bool>("Translation", "Enabled", true, "是否开启游戏内翻译（剧情与主数据）");
-		TranslationCDN = Plugin.ConfigFile.Bind<string>("Translation", "CDN", "offline", "번역 저장소 루트 주소. 로컬 한국어 패키지는 offline을 사용합니다.");
+		TranslationCDN = Plugin.ConfigFile.Bind<string>("Translation", "CDN", "https://raw.githubusercontent.com/kekwkekw/gctrans/main", "시작 시 번역 manifest 확인 및 변경 데이터 갱신. offline으로 설정하면 네트워크를 사용하지 않습니다. DLL/폰트는 자동 갱신하지 않습니다.");
 		TranslationLanguage = Plugin.ConfigFile.Bind<string>("Translation", "Language", "ko", "번역 폴더의 locale. 한국어 패키지: ko");
 		AsyncMode = Plugin.ConfigFile.Bind<bool>("Translation", "AsyncMode", false, "异步请求剧情翻译；关闭时剧情与主数据入口最多等待 10 秒，超时保留原文并继续后台加载。主数据始终使用此等待上限");
 		if (!TomlTypeConverter.CanConvert(typeof(string[])))

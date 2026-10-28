@@ -10,6 +10,7 @@ internal static class UiTextLookup
 {
     private static readonly Regex Wrapper = new Regex(@"^(<[^>]+>)(.+?)(</[^>]+>)$", RegexOptions.Singleline);
     private static readonly (Regex Pattern, string Key)[] Counters = {
+        (new Regex(@"^第([0-9]{1,3})章$"), "第{0}章"),
         (new Regex(@"^シーズン([0-9]{1,3})$"), "シーズン{0}"),
         (new Regex(@"^現在[：:]\s*([0-9]{1,3})周目フロア([0-9]{1,3})$"), "現在：{0}周目フロア{1}"),
         (new Regex(@"^([0-9]{1,3})箱目$"), "{0}箱目"),
