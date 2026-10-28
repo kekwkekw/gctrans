@@ -126,7 +126,7 @@ public sealed class TranslationManager : IDisposable
 		string obj = WaitFor(translationSession.GetMasterForUseAsync(), "master")?.Translate(tableName, json, value) ?? json;
 		if ((object)obj != json)
 		{
-			Logger.Info("Master data translated: " + tableName);
+			Plugin.Log.LogDebug("Master data translated: " + tableName);
 		}
 		return obj;
 	}

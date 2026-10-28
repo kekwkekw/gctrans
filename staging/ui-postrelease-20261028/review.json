@@ -1,0 +1,278 @@
+{
+  "schema": "gc-ui-postrelease-review-v1",
+  "upstream_ref": "0cdcd9e84fffa438dfdac63176685a6c47a07318",
+  "reviewer": "Codex JP semantic and Korean terminology review",
+  "evidence": [
+    "Native screenshots supplied 2026-10-28",
+    "PC popup_login_bonus_confirm and popup_serial_code_input serialized UI fields",
+    "PC metadata reset-date and login-day producers",
+    "WebGL scene_shop and scene_dungeon_main serialized UI fields"
+  ],
+  "rows": [
+    {
+      "jp": "ログインボーナス確認",
+      "ko": "로그인 보너스 확인",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "ログインボーナス未開催",
+      "ko": "진행 중인 로그인 보너스가 없습니다",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "次の通算報酬まであと",
+      "ko": "다음 누적 보상까지",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "現在の通算ログイン日数",
+      "ko": "현재 누적 로그인 일수",
+      "before": "현재 누적 로그인 일수",
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "右の宝箱",
+      "ko": "오른쪽 보물상자",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "シリアルコード",
+      "ko": "시리얼 코드",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "シリアルコードを入力してください",
+      "ko": "시리얼 코드를 입력해 주세요",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "/12文字",
+      "ko": "/12자",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "送信",
+      "ko": "전송",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "半角英数字のみ入力できます。\n\r連続で入力に失敗すると不正操作防止のため、\n一定時間入力を行うことができません。",
+      "ko": "반각 영문과 숫자만 입력할 수 있습니다.\n\r연속으로 입력에 실패하면 부정행위 방지를 위해\n일정 시간 동안 입력할 수 없습니다.",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "リサーチショップ",
+      "ko": "리서치 상점",
+      "before": null,
+      "local_ui": null,
+      "local_master": [
+        {
+          "table": "mShopCategories",
+          "field": "ml_name[]",
+          "value": "研究商店"
+        },
+        {
+          "table": "mShopTabs",
+          "field": "ml_name[]",
+          "value": "研究商店"
+        }
+      ],
+      "ko_master": [
+        {
+          "table": "mShopCategories",
+          "field": "ml_name[]",
+          "value": "리서치 상점"
+        },
+        {
+          "table": "mShopTabs",
+          "field": "ml_name[]",
+          "value": "리서치 상점"
+        }
+      ],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "火・土・日曜日に開放",
+      "ko": "화·토·일요일에 개방",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "金・土・日曜日に開放",
+      "ko": "금·토·일요일에 개방",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "月・土・日曜日に開放",
+      "ko": "월·토·일요일에 개방",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "リセット：{0:MM/dd HH:mm}",
+      "ko": "초기화: {0:MM/dd HH:mm}",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "次回リセット：{0:yyyy/MM/dd HH:mm}",
+      "ko": "다음 초기화: {0:yyyy/MM/dd HH:mm}",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "{0}日目",
+      "ko": "{0}일차",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "/月",
+      "ko": "/월",
+      "before": "/월",
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "{0}/月",
+      "ko": "{0}/월",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "フロア",
+      "ko": "FLOOR",
+      "before": "층",
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "1日目",
+      "ko": "1일차",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "2日目",
+      "ko": "2일차",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "3日目",
+      "ko": "3일차",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "4日目",
+      "ko": "4일차",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "5日目",
+      "ko": "5일차",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "6日目",
+      "ko": "6일차",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "7日目",
+      "ko": "7일차",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    }
+  ]
+}
