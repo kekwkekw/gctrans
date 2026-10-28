@@ -51,7 +51,7 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "73db25f15f4cd182912b5e353f956ec36f66b085c396bc6f349da7c3947e1492",
+      "sha256": "08d927ca43640a6b6db2d642f05912924f3365bbe818470ed031f15d84292f0f",
       "size": 344821
     },
     {
@@ -63,8 +63,8 @@
     {
       "kind": "general_ui",
       "path": "ui.json",
-      "sha256": "2746d5da733187faa8de0cd5cf895f0da2599cb9c41971038ee13b06adee0d4b",
-      "size": 382327
+      "sha256": "14544f0ca28863bd0555bd07083a0f57f37afcabab30ec5caffaca717ce1311f",
+      "size": 382501
     },
     {
       "kind": "general_ui_templates",
@@ -87,6 +87,6 @@
   ],
   "locale": "ko",
   "origin": "local",
-  "revision": "ng03-0a8f900d5ea29d7ab878d8a9",
+  "revision": "ng03-cbd7bd290ae60c3a2d726cc1",
   "schema_version": 1
 }
