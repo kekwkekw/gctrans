@@ -15,7 +15,9 @@ internal static class GlossaryIndex
         foreach (char c in text ?? "")
         {
             if (c >= '\uac00' && c <= '\ud7a3')
-                return "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ"[(c - '\uac00') / 588].ToString();
+                // The shipped font lacks some compatibility-jamo glyphs. Use
+                // complete syllables for the same initial-consonant groups.
+                return "가까나다따라마바빠사싸아자짜차카타파하"[(c - '\uac00') / 588].ToString();
             if (char.IsLetterOrDigit(c)) return char.ToUpperInvariant(c).ToString();
         }
         return "#";
