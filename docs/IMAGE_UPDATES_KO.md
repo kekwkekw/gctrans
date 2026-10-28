@@ -44,3 +44,22 @@ Unity UI callback에서 새 Texture2D/Sprite를 만들고 컴포넌트 참조만
 4. 승인된 GitHub ref에 카탈로그·PNG·생성된 manifest를 함께 반영하고 게임을 재시작한다.
 
 Novel/Names/Knowledge/HOLD 정본은 이미지 작성 도구의 수정 대상이 아니다.
+
+## 2026-10-28 대표 실기
+
+- 새 DLL과 시험 CDN 설정만 설치했으며 UI/PNG는 수동 복사하지 않았다.
+- 시작 시 UI 5,379 exact 및 지역 PNG 6개 다운로드·해시 검증 후 여섯 카드 KO 표시 확인.
+- 프레임/투명 배경/캐릭터 합성, 상세 진입과 목록 복귀 확인.
+- 일반 UI의 月·日→월·일, 필터 炎·雷→불·번개 확인.
+- 사용자명 편집창에 시험 입력한 月은 그대로 표시. 취소 후 기존 사용자명 유지.
+- accepted Novel 10010109의 전(前)관장 한자 보존과 본문·화자 표시 확인.
+- 후속 UI exact 3개만 GitHub에 추가한 뒤 DLL·이미지 해시는 유지한 채 재시작하여 5,382개 사전 자동 갱신과 새 레어도/선택창 문구 KO 표시를 확인.
+- Master/Names/Novel/Knowledge/HOLD 내용 변경 없음. 게임 재화 소비 없음.
+
+이미지 hook 초기 시험에서 RawImage에 직접 선언되지 않은 OnEnable을 지정한 오류가 있었다.
+실제 MaskableGraphic.OnEnable에 연결하고 RawImage로 한정하여 수정 후 정상 시작을 확인했다.
+이번 교체 실기는 Sprite 6개에 한정하며 RawImage 교체 화면까지 검증했다는 뜻은 아니다.
+
+확장 조사: 시작 로고 `opening_logo_01`/`opening_logo_r_01`은 816×312 Sprite이고
+TitlePlatformImageChanger가 Unity UI Image를 사용한다. 회상 배너 표본 `nb0`는 340×128 Sprite다.
+한국어 이미지 제작과 각 대상의 실제 적용 확인은 다음 단계이며 이번 시험에서 로고를 바꾸지 않았다.
