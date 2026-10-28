@@ -127,6 +127,17 @@ def export(root):
             for day in range(1, calendar.monthrange(2000, month)[1] + 1):
                 add(spec['birthday_jp'].replace('{0:D2}', f'{month:02d}').replace('{1:D2}', f'{day:02d}'),
                     spec['birthday_ko'].replace('{0:D2}', f'{month:02d}').replace('{1:D2}', f'{day:02d}'))
+        if spec.get('profile_percentages'):
+            # Percentages are a finite domain; no runtime substring replacement.
+            for number in range(101):
+                add(f'上位{number}%', f'상위 {number}%')
+                add(f'{number}%以下', f'{number}% 이하')
+        if spec.get('equipment_exclusive_names'):
+            # The item/deck producer concatenates either the original or already
+            # translated unit name with 専用 after the Master hook has finished.
+            for jp, ko in master.get('mUnits', {}).get('ml_name[]', {}).items():
+                for name in {jp, ko}:
+                    add(name + '専用', ko + ' 전용')
         result.update(detail_pairs)
     coverage = read(root / 'ui/local-coverage.json') if (root / 'ui/local-coverage.json').exists() else None
     if coverage:
