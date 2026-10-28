@@ -45,7 +45,7 @@ var cases=new Dictionary<string,string> {
  ["次回リセット：2026/11/01 04:00"]="다음 초기화: 2026/11/01 04:00",
  ["<color=red>次回リセット：2027/02/01 04:00</color>"]="<color=red>다음 초기화: 2027/02/01 04:00</color>",
  ["1/月"]="1/월", ["15/月"]="15/월", ["/月"]="/월",
- ["フロア"]="<nobr>FLOOR</nobr>", ["フロアマップ"]="층 지도", ["次のフロアへ"]="다음 층으로",
+ ["フロア"]="<size=80%>FLOOR</size>", ["フロアマップ"]="층 지도", ["次のフロアへ"]="다음 층으로",
  ["イマージュの獲得・限界突破により以下のマップレベルがアップしました"]="이마쥬 획득·한계 돌파로 아래 맵의 레벨이 상승했습니다",
 };
 foreach(var c in cases)if(!UiTextLookup.TryTranslate(ui,c.Key,out var ko)||ko!=c.Value)throw new Exception("Lookup mismatch: "+c.Key+" -> "+ko);
