@@ -18,7 +18,7 @@ public sealed class ImageCatalog
     public static ImageCatalog Parse(string json)
     {
         var catalog = JsonSerializer.Deserialize<ImageCatalog>(json);
-        if (catalog?.Schema != "gc-images-v1" || catalog.Entries == null || catalog.Entries.Count > 128)
+        if (catalog?.Schema != "gc-images-v1" || catalog.Entries == null || catalog.Entries.Count > 256)
             throw new FormatException("Invalid image catalog");
         var keys = new HashSet<string>(StringComparer.Ordinal);
         long total = 0;
