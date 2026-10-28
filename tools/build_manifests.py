@@ -150,7 +150,7 @@ def build(root: Path, legacy_receipt: Path | None = None, changed=(), *, added=(
         if path.startswith('novels/') and Path(path).stem in semantic['novels']:
             raise ContractError('REGISTERED_NOVEL_REMOVE_REQUIRES_UNREGISTER')
     for path in add+modify:
-        if path in {'master.json','names.json'}:
+        if path in {'master.json','names.json','ui.json'}:
             value = legacy_hash(read_json(safe_path(root, path)))
             if semantic.get(path[:-5]) != value: semantic[path[:-5]] = value; semantic_changed = True
         elif path.startswith('novels/') and Path(path).stem in semantic['novels']:
