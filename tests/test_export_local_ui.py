@@ -16,6 +16,11 @@ class ExactUiExportTests(unittest.TestCase):
         self.assertEqual(actual['グループ4'], '그룹4')
         self.assertEqual(actual['設定4-5'], '세트4-5')
         self.assertNotIn('設定5-1', actual)
+        self.assertEqual(actual['上位65%'], '상위 65%')
+        self.assertEqual(actual['76%以下'], '76% 이하')
+        self.assertNotIn('上位101%', actual)
+        self.assertEqual(actual['모차르트専用'], '모차르트 전용')
+        self.assertEqual(actual['モーツァルト専用'], '모차르트 전용')
         self.assertEqual(actual['獲得数は메인 스테이지10-1〜10のクリアランクが対象です'],
                          '획득 수량은 메인 스테이지10-1〜10의 클리어 랭크를 기준으로 합니다')
         self.assertIn('02月29日で\n誕生日を設定します。\nよろしいですか？\n', actual)
