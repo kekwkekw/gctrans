@@ -21,6 +21,8 @@ internal static class UiTextLookup
         (new Regex(@"^あと([0-9]{1,9})$"), "あと{0}"),
         (new Regex(@"^あと([0-9]{1,3}:[0-9]{2}:[0-9]{2})$"), "あと{0}"),
         (new Regex(@"^([0-9]{1,3})ターン$"), "{0}ターン"),
+        (new Regex(@"^([0-9]{1,4})日目$"), "{0}日目"),
+        (new Regex(@"^([0-9]{1,6})/月$"), "{0}/月"),
     };
     private static readonly Regex ItemUnlock = new Regex(@"^([^<>\r\n]{1,80}) ([0-9]{1,5})個で解放$");
     private static readonly Regex EpisodeUnlock = new Regex(@"^([^<>\r\n]{1,120}) の閲覧が必要$");
@@ -40,6 +42,14 @@ internal static class UiTextLookup
     // Upstream ui.json contains this date format. Deliberately does not match
     // 更新まで or 開封期限 prefixes absent from the upstream coverage baseline.
     private static readonly Regex DateUntil = new Regex(@"^([0-9]{4}/[0-9]{1,2}/[0-9]{1,2} [0-9]{2}:[0-9]{2})[ 　]*まで$");
+    // Two observed Research UI producers; preserve the date verbatim. These
+    // formats do not authorize translating arbitrary date prefixes or prose.
+    private static readonly (Regex Pattern, string Key, string Token)[] ResetDates = {
+        (new Regex(@"^リセット[：:][ 　]*([0-9]{2}/[0-9]{2} [0-9]{2}:[0-9]{2})$"),
+            "リセット：{0:MM/dd HH:mm}", "{0:MM/dd HH:mm}"),
+        (new Regex(@"^次回リセット[：:][ 　]*([0-9]{4}/[0-9]{2}/[0-9]{2} [0-9]{2}:[0-9]{2})$"),
+            "次回リセット：{0:yyyy/MM/dd HH:mm}", "{0:yyyy/MM/dd HH:mm}"),
+    };
 
     public static bool TryTranslate(Dictionary<string, string> dictionary, string original, out string translated, int depth = 0)
     {
@@ -86,6 +96,13 @@ internal static class UiTextLookup
         if (date.Success && dictionary.TryGetValue("{0:yyyy/MM/dd HH:mm} まで", out string dateFormat))
         {
             translated = dateFormat.Replace("{0:yyyy/MM/dd HH:mm}", date.Groups[1].Value);
+            return true;
+        }
+        foreach (var rule in ResetDates)
+        {
+            Match reset = rule.Pattern.Match(original);
+            if (!reset.Success || !dictionary.TryGetValue(rule.Key, out string resetFormat)) continue;
+            translated = resetFormat.Replace(rule.Token, reset.Groups[1].Value);
             return true;
         }
         return false;
