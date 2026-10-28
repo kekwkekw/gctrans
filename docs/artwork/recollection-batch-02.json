@@ -1,0 +1,130 @@
+{
+  "schema": "gc-artwork-review-v1",
+  "generation": "built-in image_gen; original-pixel-preserving Pillow finish",
+  "scope": "recollection page 36, four additional banners",
+  "entries": [
+    {
+      "event_id": 3239,
+      "priority": 141,
+      "jp": "青の魂に捧ぐレクイエム",
+      "ko": "푸른 영혼에 바치는 레퀴엠",
+      "target": "ebs13239",
+      "source_cached": true,
+      "start_time": "2026-09-14 13:00:00",
+      "status": "OFFLINE_REVIEW_PASS_NATIVE_PENDING",
+      "source_sha256": "12f22cbd73e52a4758928652f5f1fcd829a3657a70ede93a934ca0cfa9786d3b",
+      "width": 340,
+      "height": 128,
+      "prompt": "Use case: text-localization. Edit target: the attached original Girls Creation event recollection banner, 340x128, displayed approximately 180x68 in game. Preserve full wide canvas, exact composition, character identity, pose, costumes, background, ornamental silver frame, corner transparency, all exterior margins. Change only the title lettering area. Replace the complete Japanese title in the left two-thirds with two lines: 푸른 영혼에 바치는 / 레퀴엠. Blue-and-white lettering with gold accents matching the original music-theme logo, bold strokes. Preserve the colorful musical magic circle and pink energy. The right silver-haired character must remain exact. Exact Korean text: \"푸른 영혼에 바치는 레퀴엠\". Ensure accurate Hangul and high readability at tiny thumbnail size; no new objects, no cropping, no extra margin, no watermarks, no mockup. Preserve original alpha. Output only the edited banner.",
+      "pixels": {
+        "name": "ebs13239",
+        "edit_box": [
+          6,
+          20,
+          225,
+          116
+        ],
+        "extra_edit_box": null,
+        "changed_pixels": 21321,
+        "outside_edit_box_unchanged": true,
+        "original_alpha_unchanged": true,
+        "source_sha256": "250e6d857eed817575bef3181aa401fe0d1d42b5686687c932cac2f1e79a916b",
+        "final_sha256": "94f6a10481d83383e171098f3357d67e2f83bc37b16ed1f1604cf1c31fa58d7c"
+      }
+    },
+    {
+      "event_id": 3611,
+      "priority": 142,
+      "jp": "【A.S.】魅了する最悪の強欲",
+      "ko": "【A.S.】매혹하는 최악의 탐욕",
+      "target": "ebs13611",
+      "source_cached": true,
+      "start_time": "2026-09-19 13:00:00",
+      "status": "OFFLINE_REVIEW_PASS_NATIVE_PENDING",
+      "source_sha256": "fda08fc9ca36639f89d4659610a9b35310aaa16e9816a410b5b2a8a99275d584",
+      "width": 340,
+      "height": 128,
+      "prompt": "Use case: text-localization. Edit target: the attached original Girls Creation event recollection banner, 340x128, displayed approximately 180x68 in game. Preserve full wide canvas, exact composition, character identity, pose, costumes, background, ornamental silver frame, corner transparency, all exterior margins. Change only the title lettering area. Keep the large English Another Side logo EXACTLY. Replace only its small Japanese subtitle beneath the English logo, with the Korean subtitle 매혹하는 최악의 탐욕, white bold clear Korean lettering outlined dark teal. Make the subtitle legible at thumbnail size, within left x15..212 y85..116 on 340x128 canvas. All other original pixels including character and Another Side remain unchanged. Exact Korean text: \"매혹하는 최악의 탐욕\". Ensure accurate Hangul and high readability at tiny thumbnail size; no new objects, no cropping, no extra margin, no watermarks, no mockup. Preserve original alpha. Output only the edited banner.",
+      "pixels": {
+        "name": "ebs13611",
+        "edit_box": [
+          35,
+          85,
+          195,
+          108
+        ],
+        "extra_edit_box": null,
+        "changed_pixels": 3862,
+        "outside_edit_box_unchanged": true,
+        "original_alpha_unchanged": true,
+        "source_sha256": "11c500865637baf37a297bf04766e2faa8ad587d6e3cbf892b3b296682db3339",
+        "final_sha256": "91a706739d5ab1339ee35e38b55588da1caf9b0d78a3a341e415930da2cdac13"
+      }
+    },
+    {
+      "event_id": 5016,
+      "priority": 143,
+      "jp": "【A.D.F.】想いによって生まれるものは",
+      "ko": "【A.D.F.】마음에서 태어나는 것은",
+      "target": "ebs15016",
+      "source_cached": true,
+      "start_time": "2026-09-22 13:00:00",
+      "status": "OFFLINE_REVIEW_PASS_NATIVE_PENDING",
+      "source_sha256": "079782f74cf11a6c5fd4881ea0b692e4c5be56903488dbc3ab5fe88d1c7f4af7",
+      "width": 340,
+      "height": 128,
+      "prompt": "Use case: text-localization. Edit target: the attached original Girls Creation event recollection banner, 340x128, displayed approximately 180x68 in game. Preserve full wide canvas, exact composition, character identity, pose, costumes, background, ornamental silver frame, corner transparency, all exterior margins. Change only the title lettering area. Keep the original English Athenes Defense Force series identity, but reflow it compactly in the upper-left to make the Korean episode subtitle 마음에서 태어나는 것은 clearly legible below it in the lower-left. Remove the tiny Japanese episode title. Keep edits within left x6..224 y28..120. White and pale-lavender bold Korean letters, dark blue outline. Preserve right character exact. Exact Korean text: \"마음에서 태어나는 것은\". Ensure accurate Hangul and high readability at tiny thumbnail size; no new objects, no cropping, no extra margin, no watermarks, no mockup. Preserve original alpha. Output only the edited banner.",
+      "pixels": {
+        "name": "ebs15016",
+        "edit_box": [
+          6,
+          28,
+          225,
+          120
+        ],
+        "extra_edit_box": null,
+        "changed_pixels": 20400,
+        "outside_edit_box_unchanged": true,
+        "original_alpha_unchanged": true,
+        "source_sha256": "b93fabec2fdd17905f360e2644bca719f4e8ed24265a2573bf5d4d1c5bdd6b6f",
+        "final_sha256": "fb8fa05aa5fb7982a61955dff334cb6061249b76b64ab3f85e60a79f6ae8e322"
+      }
+    },
+    {
+      "event_id": 3334,
+      "priority": 144,
+      "jp": "憧憬と不信のハロウィン",
+      "ko": "동경과 불신의 할로윈",
+      "target": "ebs13334",
+      "source_cached": true,
+      "start_time": "2026-09-30 13:30:00",
+      "status": "OFFLINE_REVIEW_PASS_NATIVE_PENDING",
+      "source_sha256": "20b7c66242b8e3c703e3b5b5b72eee8c2ff1a649fab500471b0c6b35429b22ee",
+      "width": 340,
+      "height": 128,
+      "prompt": "Use case: text-localization. Edit target: the attached original Girls Creation event recollection banner, 340x128, displayed approximately 180x68 in game. Preserve full wide canvas, exact composition, character identity, pose, costumes, background, ornamental silver frame, corner transparency, all exterior margins. Change only the title lettering area. Replace complete Japanese title in the left two-thirds with two lines 동경과 불신의 / 할로윈. Bright luminous green decorative Halloween lettering, strong dark purple outline, matching original bats, Halloween magic and original logo shape. Preserve the silver-haired right character exact. Exact Korean text: \"동경과 불신의 할로윈\". Ensure accurate Hangul and high readability at tiny thumbnail size; no new objects, no cropping, no extra margin, no watermarks, no mockup. Preserve original alpha. Output only the edited banner.",
+      "pixels": {
+        "name": "ebs13334",
+        "edit_box": [
+          6,
+          23,
+          236,
+          114
+        ],
+        "extra_edit_box": null,
+        "changed_pixels": 21232,
+        "outside_edit_box_unchanged": true,
+        "original_alpha_unchanged": true,
+        "source_sha256": "316f1e15df1890b8d3ebef955289ca551b504ab6c782b0b1653bdfeae0bc51b5",
+        "final_sha256": "4bb0e00c9340d2987cd72872e3ffb114d86b410dadcf2ea2fabb1c8f301087d3"
+      }
+    }
+  ],
+  "dll_baseline": "fe0114911f6d8bb965eba005c44805862a4c22fa2a5ef777d49b373f6a2e2c7b",
+  "dll_checks": [
+    "ImageCache CPU tests pass",
+    "title and home startup pass",
+    "recollection page 37 first visit and scene re-entry pass",
+    "no image replacement exception in baseline log"
+  ]
+}
