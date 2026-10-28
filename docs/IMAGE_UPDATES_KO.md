@@ -70,7 +70,10 @@ TitlePlatformImageChanger가 Unity UI Image를 사용한다. 회상 배너 표�
 시작 로고는 2030×775 RGBA 입력을 그림 변경이나 자르기 없이 premultiplied-alpha Lanczos로
 원본 816×312 규격에 맞춘다. `opening_logo_r_01`만 대상으로 하며 일반판 로고는 포함하지 않는다.
 `elg3335`의 「빛을 새기며」는 검수된 Master 제목과 같은 표기다. 선택한 602×240 시안의
-픽셀을 바꾸지 않고 x=20 위치에 배치하여 원본 Sprite.rect인 640×240 투명 캔버스를 복원한다.
+픽셀을 바꾸지 않고 x=20 위치에 배치하여 원본 텍스처의 640×240 투명 캔버스를 복원한다.
+이벤트 메인 `EventQuestView._logoImage`는 RawImage이므로 `kind: texture`로 등록한다.
+같은 번들에 Sprite도 존재하지만 실제 표시 컴포넌트의 유형을 대신 판단할 근거는 아니다.
+회상 목록의 캐릭터 포함 배너는 별도 자산이며 이 단독 로고 항목의 교체 대상이 아니다.
 추출기의 Sprite.image는 잘린 textureRect 크기를 반환할 수 있으므로, 대상 크기는 반드시
 원본 Sprite.rect로 확인하고 textureRectOffset에 해당하는 여백을 보존한다.
 
