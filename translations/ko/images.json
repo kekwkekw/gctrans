@@ -55,22 +55,58 @@
       "width": 396
     },
     {
-      "bytes": 187960,
-      "file": "images/915a742ccd14e8071f3a8f4c078ddd760a7ccde1e698cf06b68599a0ebd5028b.png",
+      "bytes": 140599,
+      "file": "images/ae485d4766f8efa56e1a675e89c350e1d26dcbe95350541dffe09263b9f3ec28.png",
       "height": 312,
       "kind": "sprite",
       "name": "opening_logo_r_01",
-      "sha256": "915a742ccd14e8071f3a8f4c078ddd760a7ccde1e698cf06b68599a0ebd5028b",
+      "sha256": "ae485d4766f8efa56e1a675e89c350e1d26dcbe95350541dffe09263b9f3ec28",
       "width": 816
     },
     {
-      "bytes": 230831,
-      "file": "images/7c53e5d8c0aacc1498b363ac17eba7a9716897a5f4b8c69f42803608696bc7e1.png",
+      "bytes": 237847,
+      "file": "images/af22a5af2d0d1237c4bb683fa59e9c00a34f1ba0897486f883095827645c32b2.png",
       "height": 240,
       "kind": "texture",
       "name": "elg3335",
-      "sha256": "7c53e5d8c0aacc1498b363ac17eba7a9716897a5f4b8c69f42803608696bc7e1",
+      "sha256": "af22a5af2d0d1237c4bb683fa59e9c00a34f1ba0897486f883095827645c32b2",
       "width": 640
+    },
+    {
+      "bytes": 88544,
+      "file": "images/a51cebe98f6618f5cc91647e97405acf4435b3f458d61b37e76516bc9cda9e2a.png",
+      "height": 128,
+      "kind": "texture",
+      "name": "ebs13240",
+      "sha256": "a51cebe98f6618f5cc91647e97405acf4435b3f458d61b37e76516bc9cda9e2a",
+      "width": 340
+    },
+    {
+      "bytes": 72631,
+      "file": "images/88b0dee465648af5da09d69088273ea7ca2d43860af45a3f814ccd455b512299.png",
+      "height": 128,
+      "kind": "texture",
+      "name": "ebs13612",
+      "sha256": "88b0dee465648af5da09d69088273ea7ca2d43860af45a3f814ccd455b512299",
+      "width": 340
+    },
+    {
+      "bytes": 87189,
+      "file": "images/197abde62ab357d549673c2a1b7d2fec5c0eacedbab64529a528f66c3515ce52.png",
+      "height": 128,
+      "kind": "texture",
+      "name": "ebs15017",
+      "sha256": "197abde62ab357d549673c2a1b7d2fec5c0eacedbab64529a528f66c3515ce52",
+      "width": 340
+    },
+    {
+      "bytes": 88369,
+      "file": "images/305cdaa50006a3fd3dc7b6c2bede37ffb4367355944269c714d2313c364ec7c0.png",
+      "height": 128,
+      "kind": "texture",
+      "name": "ebs13335",
+      "sha256": "305cdaa50006a3fd3dc7b6c2bede37ffb4367355944269c714d2313c364ec7c0",
+      "width": 340
     }
   ],
   "schema": "gc-images-v1"
