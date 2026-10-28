@@ -1,5 +1,22 @@
 # 걸크리 PC 한국어화
 
+## 설치 및 다운로드
+
+**[GCMod 7.1.0 전체 설치본](https://github.com/kekwkekw/gctrans/releases/tag/v7.1.0)**의
+`GCMod-7.1.0-ko-full-win-x64.zip`을 사용한다. 신규 사용자는 게임을 종료하고 ZIP의 내용물을
+`GC.exe`가 있는 폴더에 복사한 뒤 평소 사용하는 DMM 실행 경로로 시작한다.
+필요한 BepInEx·.NET 런타임·Utility·한국어 폰트·번역 데이터를 포함하며 Python이나 기존 패치는 필요하지 않다.
+최초 실행에는 인터넷 연결이 필요하다.
+
+기존 사용자는 **이전 패치 제거 후 전체 설치본으로 재설치**를 권장한다.
+설정과 다른 모드를 게임 폴더 밖에 백업한 뒤 `BepInEx/`, `dotnet/`, `winhttp.dll`,
+`doorstop_config.ini`, `.doorstop_version`만 제거한다. 게임 원본과 DMM 데이터는 제거하지 않는다.
+자세한 절차는 릴리스의 `INSTALL_KO.txt`를 따른다. GitHub의 자동 Source code ZIP은 설치 파일이 아니다.
+
+7.1.0은 시작 시 GitHub main의 번역 manifest를 확인하고, 변경된 UI·Master·Names와
+진입한 Novel을 로컬 캐시에 갱신한다. DLL·폰트는 자동 갱신하지 않으므로 6.1/7.0 사용자는
+7.1.0 설치가 필요하다. 이미지와 일부 미번역/HOLD가 남아 있으며 전체 완역은 아니다.
+
 현재 작업 절차의 단일 진입점은 **[docs/OPERATOR_KO.md](docs/OPERATOR_KO.md)**다. 명령은 저장소 루트에서 실행한다.
 
 ## 정상 Novel 흐름
@@ -15,7 +32,7 @@
 
 ## UI·runtime
 
-- 데이터 자동 갱신 준비 및 Native 대기 범위: [docs/DATA_UPDATES_KO.md](docs/DATA_UPDATES_KO.md).
+- 데이터 자동 갱신 동작 및 Native 검증 결과: [docs/DATA_UPDATES_KO.md](docs/DATA_UPDATES_KO.md).
 
 - Master/UI 수집→검수→반영→빌드·패키지·설치: [`docs/LOCAL_PARITY_PIPELINE_KO.md`](docs/LOCAL_PARITY_PIPELINE_KO.md). 여러 UI prefab 수집, 부분 실패 격리, 실제 runtime 동적 조회 확인을 지원한다.
 
