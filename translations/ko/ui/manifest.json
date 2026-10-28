@@ -1,6 +1,48 @@
 {
   "files": [
     {
+      "kind": "image_catalog",
+      "path": "images.json",
+      "sha256": "f1e4920a7ded1f7dc8899ddcafa047dfd710b8691577b88f533690302c424bba",
+      "size": 1921
+    },
+    {
+      "kind": "image_data",
+      "path": "images/28e84f2ca9c0238bc518ce9455f631654e1ca62f12afd2e0af23be8802648a68.png",
+      "sha256": "28e84f2ca9c0238bc518ce9455f631654e1ca62f12afd2e0af23be8802648a68",
+      "size": 42714
+    },
+    {
+      "kind": "image_data",
+      "path": "images/44d22e6390d40cf0d46da39cf132aa18d95fd6fffa0a9482869306d80afc4b4e.png",
+      "sha256": "44d22e6390d40cf0d46da39cf132aa18d95fd6fffa0a9482869306d80afc4b4e",
+      "size": 44128
+    },
+    {
+      "kind": "image_data",
+      "path": "images/694d69b25828abbbf79d2451c1b92183dbb858f88aae4d57066f5c5e46a14cda.png",
+      "sha256": "694d69b25828abbbf79d2451c1b92183dbb858f88aae4d57066f5c5e46a14cda",
+      "size": 40833
+    },
+    {
+      "kind": "image_data",
+      "path": "images/a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd.png",
+      "sha256": "a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd",
+      "size": 42067
+    },
+    {
+      "kind": "image_data",
+      "path": "images/d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4.png",
+      "sha256": "d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4",
+      "size": 41206
+    },
+    {
+      "kind": "image_data",
+      "path": "images/f1e25ed4588868fb1e9ee5be4eede469f6ef1cb7b735cbf84791f7f3b6aa3716.png",
+      "sha256": "f1e25ed4588868fb1e9ee5be4eede469f6ef1cb7b735cbf84791f7f3b6aa3716",
+      "size": 40437
+    },
+    {
       "kind": "layout",
       "path": "layout/episode-title.json",
       "sha256": "eb54246b7a40b554f3401acc332b9dafa06c7c57be1e3d5b4df956397c014242",
@@ -9,7 +51,7 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "d5ec93410930b652c233cedf158d79b5e2bea7be4bb203b1f9cff13a68c50fbb",
+      "sha256": "08d927ca43640a6b6db2d642f05912924f3365bbe818470ed031f15d84292f0f",
       "size": 344821
     },
     {
@@ -21,8 +63,8 @@
     {
       "kind": "general_ui",
       "path": "ui.json",
-      "sha256": "a02e482cc8facc583ec753ecbb87a5ff5cd333d2473b81a6391dbfc7f4a7cd09",
-      "size": 382292
+      "sha256": "14544f0ca28863bd0555bd07083a0f57f37afcabab30ec5caffaca717ce1311f",
+      "size": 382501
     },
     {
       "kind": "general_ui_templates",
@@ -45,6 +87,6 @@
   ],
   "locale": "ko",
   "origin": "local",
-  "revision": "ng03-3537b42b9c0df18fddffd25d",
+  "revision": "ng03-cbd7bd290ae60c3a2d726cc1",
   "schema_version": 1
 }
