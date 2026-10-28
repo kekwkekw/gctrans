@@ -1,0 +1,10 @@
+{
+  "schema": "gc-ui-detail-families-v1",
+  "memory_groups": [1, 2, 3, 4],
+  "memory_slots": [1, 2, 3, 4, 5],
+  "rank_jp": "獲得数は{0}〜{1}のクリアランクが対象です",
+  "rank_ko": "획득 수량은 {0}〜{1}의 클리어 랭크를 기준으로 합니다",
+  "birthday_jp": "{0:D2}月{1:D2}日で\n誕生日を設定します。\nよろしいですか？\n",
+  "birthday_ko": "생일을 {0:D2}월 {1:D2}일로\n설정합니다.\n확정하시겠습니까?\n",
+  "evidence": "PC v39 metadata complete formats; Native memory list has four groups and five slots; main-stage range follows accepted Master names. Birthday calendar includes Feb 29. Actual editable text remains protected by UiPatch."
+}
