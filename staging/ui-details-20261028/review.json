@@ -10,6 +10,51 @@
   "reviewer": "Codex JP meaning and Korean terminology review",
   "rows": [
     {
+      "jp": "総合戦闘力ランキング",
+      "ko": "종합 전투력 랭킹",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "毎日04:00に更新",
+      "ko": "매일 04:00에 갱신",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "上位100位まで表示",
+      "ko": "상위 100위까지 표시",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "無差別級",
+      "ko": "전체 등급",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "Rank内級順位",
+      "ko": "등급 내 순위",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
       "jp": "リリース順",
       "ko": "출시순",
       "before": null,

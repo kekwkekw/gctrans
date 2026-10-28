@@ -132,6 +132,20 @@ def export(root):
             for number in range(101):
                 add(f'上位{number}%', f'상위 {number}%')
                 add(f'{number}%以下', f'{number}% 이하')
+                add(f'上位{number}%以下', f'상위 {number}% 이하')
+                add(f'全体上位{number}%', f'전체 상위 {number}%')
+                add(f'Rank内上位{number}%', f'등급 내 상위 {number}%')
+        # The Native ranking filter exposes ten classes, and the table explicitly
+        # displays the top 100. Expand those observed domains, not arbitrary names.
+        for rank in spec.get('ranking_classes', []):
+            add(f'Rank{rank}級', f'랭크 {rank}등급')
+            add(f'Rank{rank}級内順位', f'랭크 {rank}등급 내 순위')
+            for number in range(101):
+                add(f'Rank{rank}級/上位{number}%', f'랭크 {rank}등급/상위 {number}%')
+                add(f'Rank{rank}級/上位{number}%以下', f'랭크 {rank}등급/상위 {number}% 이하')
+        if spec.get('ranking_classes'):
+            for number in range(1, 101):
+                add(f'{number}位', f'{number}위')
         if spec.get('equipment_exclusive_names'):
             # The item/deck producer concatenates either the original or already
             # translated unit name with 専用 after the Master hook has finished.
