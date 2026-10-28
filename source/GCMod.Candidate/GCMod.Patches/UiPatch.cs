@@ -79,11 +79,15 @@ public static class UiPatch
 		return TryTranslate(original, out translated);
 	}
 
-	// Exclude editable controls, including inactive/prefab input text. No selector or ownership layer.
+	// Translate only the assigned placeholder inside an input field. User input
+	// and other descendants stay protected, including inactive/prefab controls.
 	private static bool IsInputText(Component text)
 	{
-		return text == null || text.GetComponentInParent<TMP_InputField>(true) != null
-			|| text.GetComponentInParent<InputField>(true) != null;
+		if (text == null) return true;
+		var tmp = text.GetComponentInParent<TMP_InputField>(true);
+		if (tmp != null && (tmp.textComponent == text || tmp.placeholder != text)) return true;
+		var legacy = text.GetComponentInParent<InputField>(true);
+		return legacy != null && (legacy.textComponent == text || legacy.placeholder != text);
 	}
 
 	[HarmonyPatch(typeof(TMP_Text), "text", MethodType.Setter)]

@@ -12,7 +12,7 @@ python scripts/crawl_only.py --lane UI --acquire --output work/local-parity/ui-s
 ```
 
 - Master 범위는 기존 field selector, 현재 한국어 Master, 지정한 local Master의 `(table, field)` 합집합이다. local의 중국어 값은 한국어 생성 입력이 아니다.
-- UI는 `contracts/ui-source-scope-v1.json`에 따라 scene·공통 prefab·개별 prefab·동적 콘텐츠 prefab을 선택한다. 현재 저장 inventory에서는 337개가 선택된다. 이는 337개 전부를 해석·번역했다는 뜻이 아니다.
+- UI는 `contracts/ui-source-scope-v1.json`에 따라 scene·popup·공통 prefab·개별 prefab·동적 콘텐츠 prefab을 선택한다. 로그인 보너스·시리얼 입력 같은 별도 팝업도 포함한다. 선택 수량은 현재 inventory에 따라 달라지며, 선택되었다고 해석·번역이 완료된 것은 아니다.
 - `--asset-key scene/scene_sub_unit.dmm`로 좁혀 재현하거나 `--ui-scope <json>`으로 범위를 조정할 수 있다. PC는 기존처럼 `--platform PC --local-asset <file> --asset-key <known-key>`를 지정한다. WebGL 캐시를 PC 관측으로 재표기하지 않는다.
 - UI `--max-candidates 200`은 배치 크기다. 남은 항목을 pending으로 저장하며 같은 state/raw root와 명령으로 계속 수집한다. `0`은 명시적 무제한이다. Novel/Master의 기존 candidate 제한 동작은 유지한다.
 - UI 객체 제한 기본값은 asset당 250,000개다. 일부 component 해석 실패는 성공한 텍스트를 버리지 않고 `ui_diagnostics.failed_components`에 남긴다. 객체 제한 초과·손상 asset·충돌은 해당 asset만 미수집으로 기록한다.
