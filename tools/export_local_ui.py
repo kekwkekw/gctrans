@@ -1,5 +1,6 @@
 """Deterministic exact UI export. Authoring bindings are inputs, never runtime dependencies."""
 import argparse
+import calendar
 import json
 import re
 from collections import defaultdict
@@ -92,6 +93,41 @@ def export(root):
         if jp in result and result[jp] != ko:
             raise ValueError("Workshop exact conflict: " + jp)
         result[jp] = ko
+    # Complete, finite labels composed by the observed detail menus. Expand at
+    # authoring time so the installed 7.1.1 exact consumer needs no new parser.
+    detail = root / 'ui/detail-families.json'
+    detail_pairs = {}
+    if detail.exists():
+        spec = read(detail)
+        if spec.get('schema') != 'gc-ui-detail-families-v1':
+            raise ValueError('Detail family schema')
+        def add(jp, ko):
+            if jp in result and result[jp] != ko:
+                raise ValueError('Detail exact conflict: ' + jp)
+            detail_pairs[jp] = ko
+        for group in spec['memory_groups']:
+            add(f'グループ{group}', f'그룹{group}')
+            for slot in spec['memory_slots']:
+                add(f'設定{group}-{slot}', f'세트{group}-{slot}')
+        # Use the current Master stage names; no hardcoded chapter count or
+        # translating arbitrary strings that merely contain a stage name.
+        chapters = defaultdict(dict)
+        for jp, ko in master.get('mQuestStages', {}).get('ml_name[]', {}).items():
+            match = re.fullmatch(r'メインステージ([0-9]+)-([0-9]+)', jp)
+            if match:
+                chapters[int(match[1])][int(match[2])] = (jp, ko)
+        for stages in chapters.values():
+            first, last = min(stages), max(stages)
+            original = spec['rank_jp'].replace('{0}', stages[first][0]).replace('{1}', str(last))
+            korean = result.get(original, spec['rank_ko'].replace('{0}', stages[first][1]).replace('{1}', str(last)))
+            for name in set(stages[first]):
+                add(spec['rank_jp'].replace('{0}', name).replace('{1}', str(last)),
+                    korean)
+        for month in range(1, 13):
+            for day in range(1, calendar.monthrange(2000, month)[1] + 1):
+                add(spec['birthday_jp'].replace('{0:D2}', f'{month:02d}').replace('{1:D2}', f'{day:02d}'),
+                    spec['birthday_ko'].replace('{0:D2}', f'{month:02d}').replace('{1:D2}', f'{day:02d}'))
+        result.update(detail_pairs)
     coverage = read(root / 'ui/local-coverage.json') if (root / 'ui/local-coverage.json').exists() else None
     if coverage:
         if (coverage.get('schema') != 'gc-local-ui-coverage-v1'
@@ -105,6 +141,7 @@ def export(root):
     return payload, {"exact_pairs": len(result), "authoring_bindings_preserved": len(bindings),
                      "held_authoring_jp": sorted({r['jp'] for r in resources if r.get('disposition') not in ('translate','keep_jp') and r['jp'] not in result}), "review_resolved_authoring_jp": resolved,
                      "bounded_workshop_exacts": 3, "runtime_bindings": 0,
+                     "bounded_detail_exacts": len(detail_pairs),
                      "master_ui_source_pairs": master_pairs,
                      "authoring_pairs_without_live_binding": len({r['jp'] for r in resources if r['id'] not in live and r.get('disposition') == 'translate' and r.get('ko') and r['jp'] != r['ko']}),
                      "local_coverage_keys": len(coverage['keys']) if coverage else 0,

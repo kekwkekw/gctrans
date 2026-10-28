@@ -9,13 +9,13 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "28ab8884ec9e29990c667acf81e3311e7812f9a0f5aa78fadf02b0380acbe9bc",
+      "sha256": "f103f56f9ce29ee998f1664175913d31e68b8a2234e32ca59b86a510fd7309df",
       "size": 344821
     },
     {
       "kind": "legacy_manifest",
       "path": "manifest.json",
-      "sha256": "3c0fa958c43dc6ed297e97114862a32ff0d7c202548187374dcc7d5288635427",
+      "sha256": "2c035f489c6d94120bac3532a8c83347f54132a52597eea4bf760f02ecbe5a94",
       "size": 98356
     },
     {
@@ -11667,8 +11667,8 @@
     {
       "kind": "general_ui",
       "path": "ui.json",
-      "sha256": "bdcc409788b462636f2ba0a28b6a81104df39c239fb1e5b80b43e5e36b6fc2b1",
-      "size": 165791
+      "sha256": "ab4b1359b96f70cfe2aa4c6585db1534c24e6beccd80f28dbc477cefd670349f",
+      "size": 232649
     },
     {
       "kind": "general_ui_templates",
@@ -11693,12 +11693,12 @@
   "legacy_manifest_builder_input": "current release/index; explicit add/modify/remove; optional initial bootstrap receipt",
   "locale": "ko",
   "profile": "NextgenCandidate",
-  "revision": "ng03-0cf98e56d9c5d829f6ccb0ec",
+  "revision": "ng03-f1f03b180ba1d54b7b2265e9",
   "schema_version": 2,
   "status": "OFFLINE_PARTIAL_NOT_ACCEPTED_REPLACEMENT",
   "ui_manifest": {
     "path": "ui/manifest.json",
-    "sha256": "0c90adecd07e05e2c85c03f315edd75133aeefed06a90b2565e0600d96aa9c19",
+    "sha256": "7062a808e00a7dd606b7a7925aedd77d526310302fe794c8b2223c5155221acb",
     "size": 1389
   }
 }
