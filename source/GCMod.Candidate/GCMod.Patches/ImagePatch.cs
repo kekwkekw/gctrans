@@ -134,14 +134,18 @@ public static class ImagePatch
         catch (Exception ex) { Plugin.Log.LogWarning("Texture replacement skipped: " + ex.Message); }
     }
 
-    [HarmonyPatch(typeof(RawImage), "OnEnable")]
+    // RawImage inherits this callback; it has no declared OnEnable method in
+    // the game's IL2CPP interop assembly. Limit the shared callback to RawImage.
+    [HarmonyPatch(typeof(MaskableGraphic), "OnEnable")]
     [HarmonyPostfix]
-    public static void EnableTexture(RawImage __instance)
+    public static void EnableTexture(MaskableGraphic __instance)
     {
         if (__instance == null) return;
-        Texture original = __instance.texture, translated = original;
-        SetTexture(__instance, ref translated);
-        if (translated != original) __instance.texture = translated;
+        var raw = __instance.TryCast<RawImage>();
+        if (raw == null) return;
+        Texture original = raw.texture, translated = original;
+        SetTexture(raw, ref translated);
+        if (translated != original) raw.texture = translated;
     }
 
     public static void Clear()
