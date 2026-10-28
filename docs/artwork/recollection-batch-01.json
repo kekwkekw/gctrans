@@ -1,0 +1,171 @@
+{
+  "schema": "gc-artwork-review-v1",
+  "scope": "latest recollection page, first four banners",
+  "entries": [
+    {
+      "event_id": 3240,
+      "target": "ebs13240",
+      "jp": "猫とナースとモンスター",
+      "ko": "고양이와 간호사와 몬스터",
+      "width": 340,
+      "height": 128,
+      "kind": "texture",
+      "title_authority": "mEvents.ml_title[]",
+      "source_asset": "notinit/image_small_banner/ebs13240.dmm",
+      "source_bundle_sha256": "3375f70aec256bdc690e5852d18e613167ec66ba44c5a98edd5c49cef294326c",
+      "pixel_review": {
+        "name": "ebs13240",
+        "edit_box": [
+          6,
+          20,
+          225,
+          116
+        ],
+        "extra_edit_box": null,
+        "changed_pixels": 21157,
+        "outside_edit_box_unchanged": true,
+        "original_alpha_unchanged": true,
+        "source_sha256": "00d09f71f50ee8fbf71e5e7ff9f981dc2ab0bd8ac9ecee4380e47dac59b8de75",
+        "final_sha256": "a51cebe98f6618f5cc91647e97405acf4435b3f458d61b37e76516bc9cda9e2a"
+      },
+      "generator": "built-in image_gen",
+      "prompt": "Use case: text-localization. Edit target: the supplied original game recollection menu banner. It is a tiny informational thumbnail, native 340x128, displayed about 180x68; Korean title must read clearly at that small size. Preserve the full 340:128 composition, exact outer rectangular frame, all original character faces, expression, hair, clothing and character position, and background palette. Change only Japanese title lettering and its immediately underlying pixels. Retain the pink bubble-letter top line and colorful chunky green/orange/blue lower-line lettering, dark purple thick outline and bats/magic shapes. Exact Korean title is 고양이와 간호사와 몬스터. Use two balanced lines, main word 몬스터 larger; correct letters. Text exactly: \"고양이와 간호사와\n몬스터\". Keep source ornamental identity but prioritize simple bold correct Hangul, balanced spacing and contrast. Do not invent or remove characters or redesign artwork, do not put a large opaque text box over it, do not add captions or watermarks, do not crop. Output one complete localized banner with the same aspect ratio. Preserve transparent corner pixels outside the original silver frame.",
+      "status": "NATIVE_PASS",
+      "native_check": {
+        "date": "2026-10-29",
+        "screen": "recollection events page 37",
+        "display_approximately": [
+          180,
+          68
+        ],
+        "selection_and_page_revisit": "PASS"
+      }
+    },
+    {
+      "event_id": 3612,
+      "target": "ebs13612",
+      "jp": "【A.S.】高潔と金貨",
+      "ko": "【A.S.】고결함과 금화",
+      "width": 340,
+      "height": 128,
+      "kind": "texture",
+      "title_authority": "mEvents.ml_title[]",
+      "source_asset": "notinit/image_small_banner/ebs13612.dmm",
+      "source_bundle_sha256": "47a4e93ce3da57bf1c978246e3f67d6d818511038cbb420545f168ce5e08d3a0",
+      "pixel_review": {
+        "name": "ebs13612",
+        "edit_box": [
+          35,
+          87,
+          185,
+          108
+        ],
+        "extra_edit_box": null,
+        "changed_pixels": 3318,
+        "outside_edit_box_unchanged": true,
+        "original_alpha_unchanged": true,
+        "source_sha256": "80ef329f40311db736d3721f131b8552bef772373a2b1e72c3df205fedcac1d0",
+        "final_sha256": "88b0dee465648af5da09d69088273ea7ca2d43860af45a3f814ccd455b512299"
+      },
+      "generator": "built-in image_gen",
+      "prompt": "Use case: text-localization. Edit target: the supplied original game recollection menu banner. It is a tiny informational thumbnail, native 340x128, displayed about 180x68; Korean title must read clearly at that small size. Preserve the full 340:128 composition, exact outer rectangular frame, all original character faces, expression, hair, clothing and character position, and background palette. Change only Japanese title lettering and its immediately underlying pixels. Keep the existing large English gothic title Another Side exactly as it is. Change only the small Japanese subtitle 高潔と金貨 directly underneath to 고결함과 금화. Make subtitle ivory white with dark stroke and slightly larger than original tiny subtitle, readable at thumbnail size. Text exactly: \"Another Side\n고결함과 금화\". Keep source ornamental identity but prioritize simple bold correct Hangul, balanced spacing and contrast. Do not invent or remove characters or redesign artwork, do not put a large opaque text box over it, do not add captions or watermarks, do not crop. Output one complete localized banner with the same aspect ratio. Preserve transparent corner pixels outside the original silver frame.",
+      "status": "NATIVE_PASS",
+      "native_check": {
+        "date": "2026-10-29",
+        "screen": "recollection events page 37",
+        "display_approximately": [
+          180,
+          68
+        ],
+        "selection_and_page_revisit": "PASS"
+      }
+    },
+    {
+      "event_id": 5017,
+      "target": "ebs15017",
+      "jp": "吸血騎士スキッピオは眠らない【P.C.】",
+      "ko": "흡혈 기사 스키피오는 잠들지 않는다【P.C.】",
+      "width": 340,
+      "height": 128,
+      "kind": "texture",
+      "title_authority": "mEvents.ml_title[]",
+      "source_asset": "notinit/image_small_banner/ebs15017.dmm",
+      "source_bundle_sha256": "3b14b8bb1a5bb95c9600ba2d0a7811679bb142e41b6bf7ef4a8ebbfc9b4c322b",
+      "pixel_review": {
+        "name": "ebs15017",
+        "edit_box": [
+          6,
+          25,
+          225,
+          112
+        ],
+        "extra_edit_box": [
+          225,
+          55,
+          244,
+          99
+        ],
+        "changed_pixels": 20211,
+        "outside_edit_box_unchanged": true,
+        "original_alpha_unchanged": true,
+        "source_sha256": "3cb6e5e74b08e98e245580949ac5dc24c20783cfb41590b014a0783f4d056475",
+        "final_sha256": "197abde62ab357d549673c2a1b7d2fec5c0eacedbab64529a528f66c3515ce52"
+      },
+      "generator": "built-in image_gen",
+      "prompt": "Use case: text-localization. Edit target: the supplied original game recollection menu banner. It is a tiny informational thumbnail, native 340x128, displayed about 180x68; Korean title must read clearly at that small size. Preserve the full 340:128 composition, exact outer rectangular frame, all original character faces, expression, hair, clothing and character position, and background palette. Change only Japanese title lettering and its immediately underlying pixels. Keep blue and lavender gothic fantasy display style with dark purple outline. Exact Korean title 흡혈 기사 스키피오는 잠들지 않는다. Split into 2 well-balanced large lines, and keep small existing English Precious Connections below. Avoid ornate Korean strokes that make syllables unclear. Text exactly: \"흡혈 기사 스키피오는\n잠들지 않는다\nPrecious Connections\". Keep source ornamental identity but prioritize simple bold correct Hangul, balanced spacing and contrast. Do not invent or remove characters or redesign artwork, do not put a large opaque text box over it, do not add captions or watermarks, do not crop. Output one complete localized banner with the same aspect ratio. Preserve transparent corner pixels outside the original silver frame.",
+      "status": "NATIVE_PASS",
+      "native_check": {
+        "date": "2026-10-29",
+        "screen": "recollection events page 37",
+        "display_approximately": [
+          180,
+          68
+        ],
+        "selection_and_page_revisit": "PASS"
+      }
+    },
+    {
+      "event_id": 3335,
+      "target": "ebs13335",
+      "jp": "輝きを刻みながら",
+      "ko": "빛을 새기며",
+      "width": 340,
+      "height": 128,
+      "kind": "texture",
+      "title_authority": "mEvents.ml_title[]",
+      "source_asset": "notinit/image_small_banner/ebs13335.dmm",
+      "source_bundle_sha256": "4591b5d1822390f7762c098cc0a1d6929956bdb623fd38686255acabeec021a9",
+      "pixel_review": {
+        "name": "ebs13335",
+        "edit_box": [
+          6,
+          23,
+          226,
+          114
+        ],
+        "extra_edit_box": null,
+        "changed_pixels": 20318,
+        "outside_edit_box_unchanged": true,
+        "original_alpha_unchanged": true,
+        "source_sha256": "c897b0fcdcf8a06290003eef32d5daf9cf5bf25aa2177f51c2eacb3c502e5598",
+        "final_sha256": "305cdaa50006a3fd3dc7b6c2bede37ffb4367355944269c714d2313c364ec7c0"
+      },
+      "generator": "built-in image_gen",
+      "prompt": "Use case: text-localization. Edit target: the supplied original game recollection menu banner. It is a tiny informational thumbnail, native 340x128, displayed about 180x68; Korean title must read clearly at that small size. Preserve the full 340:128 composition, exact outer rectangular frame, all original character faces, expression, hair, clothing and character position, and background palette. Change only Japanese title lettering and its immediately underlying pixels. Retain the original ivory and gold ornate title plaque at left; replace Japanese only with exact Korean 빛을 새기며 in one large line, ivory fill/gold outline/dark brown contrast. Fit within plaque without covering the blue-haired character at right. Do not replace plaque with a larger differently shaped frame. Text exactly: \"빛을 새기며\". Keep source ornamental identity but prioritize simple bold correct Hangul, balanced spacing and contrast. Do not invent or remove characters or redesign artwork, do not put a large opaque text box over it, do not add captions or watermarks, do not crop. Output one complete localized banner with the same aspect ratio. Preserve transparent corner pixels outside the original silver frame.",
+      "status": "NATIVE_PASS",
+      "native_check": {
+        "date": "2026-10-29",
+        "screen": "recollection events page 37",
+        "display_approximately": [
+          180,
+          68
+        ],
+        "selection_and_page_revisit": "PASS"
+      }
+    }
+  ],
+  "runtime_requirement": {
+    "dll_sha256": "fe0114911f6d8bb965eba005c44805862a4c22fa2a5ef777d49b373f6a2e2c7b",
+    "reason": "Recreate cached Unity images destroyed by the game owner; reproduced on home to recollection transition."
+  }
+}

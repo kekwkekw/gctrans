@@ -48,7 +48,9 @@ public static class ImagePatch
 
     private static Texture2D Load(string key)
     {
-        if (Textures.TryGetValue(key, out var cached)) return cached;
+        // The game's image owner can explicitly destroy a replacement when
+        // leaving a scene. DontDestroyOnLoad does not prevent that disposal.
+        if (Textures.TryGetValue(key, out var cached) && cached != null) return cached;
         if (!Payloads.TryGetValue(key, out var bytes)) return null;
         // Called only at a Unity UI callback, never on the network worker.
         var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
@@ -75,7 +77,7 @@ public static class ImagePatch
         var rect = original.rect;
         string key = "sprite:" + original.name + ":" + (int)rect.width + "x" + (int)rect.height;
         string spriteKey = key + ":" + original.GetInstanceID();
-        if (Sprites.TryGetValue(spriteKey, out var cached)) return cached;
+        if (Sprites.TryGetValue(spriteKey, out var cached) && cached != null) return cached;
         var texture = Load(key);
         if (texture == null) return original;
         var pivot = original.pivot;
