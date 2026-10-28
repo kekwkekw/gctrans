@@ -10,6 +10,141 @@
   "reviewer": "Codex JP meaning and Korean terminology review",
   "rows": [
     {
+      "jp": "リリース順",
+      "ko": "출시순",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "はずす",
+      "ko": "해제",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "配置中：左",
+      "ko": "배치 중: 왼쪽",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "配置中：中央",
+      "ko": "배치 중: 중앙",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "配置中：右",
+      "ko": "배치 중: 오른쪽",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "Rank級",
+      "ko": "랭크 등급",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "Rank級内",
+      "ko": "등급 내",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "Rank級内順位",
+      "ko": "등급 내 순위",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "Rank級内上位",
+      "ko": "등급 내 상위",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "全体上位",
+      "ko": "전체 상위",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "上位",
+      "ko": "상위",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "Rank100級",
+      "ko": "랭크 100등급",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "Rank100級内順位",
+      "ko": "랭크 100등급 내 순위",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "Rank100級:Rank91-300",
+      "ko": "랭크 100등급: 랭크 91~300",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
+      "jp": "佐倉江美",
+      "ko": "사쿠라 에미",
+      "before": null,
+      "local_ui": null,
+      "local_master": [],
+      "ko_master": [],
+      "in_existing_master_hold": false
+    },
+    {
       "jp": "シナリオ",
       "ko": "시나리오",
       "before": null,
