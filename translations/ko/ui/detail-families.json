@@ -2,6 +2,8 @@
   "schema": "gc-ui-detail-families-v1",
   "memory_groups": [1, 2, 3, 4],
   "memory_slots": [1, 2, 3, 4, 5],
+  "profile_percentages": true,
+  "equipment_exclusive_names": true,
   "rank_jp": "獲得数は{0}〜{1}のクリアランクが対象です",
   "rank_ko": "획득 수량은 {0}〜{1}의 클리어 랭크를 기준으로 합니다",
   "birthday_jp": "{0:D2}月{1:D2}日で\n誕生日を設定します。\nよろしいですか？\n",
