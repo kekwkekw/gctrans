@@ -50,6 +50,9 @@ public sealed class TranslationCache
 			LoadAsync("ui", cancellationToken: token),
 			LoadAsync<Dictionary<string, Dictionary<string, Dictionary<string, string>>>>("master", cancellationToken: token))
 			.ConfigureAwait(false);
+		if (Online)
+			await ImageCache.PrepareAsync(_client, _cdn + "/translations/" + _language,
+				Path.Combine(_cacheDir, _language), _manifest?.Images, token).ConfigureAwait(false);
 	}
 
 	public TranslationCache(string cdn, string cacheDir, string language, HttpClient client, TimeSpan? retryDelay = null)
@@ -179,6 +182,7 @@ public sealed class TranslationCache
 			bool Hash(string h) => h != null && Regex.IsMatch(h, "^[0-9a-f]{32}$");
 			return manifest != null && Hash(manifest.Hash) && Hash(manifest.Names) &&
 				Hash(manifest.Master) && (manifest.Ui == null || Hash(manifest.Ui)) &&
+				(manifest.Images == null || Regex.IsMatch(manifest.Images, "^[0-9a-f]{64}$")) &&
 				manifest.Novels != null && manifest.Novels.All(p =>
 					Regex.IsMatch(p.Key, "^[0-9]{1,16}$") && Hash(p.Value)) &&
 				TranslationHash.Compute(JsonSerializer.Serialize(

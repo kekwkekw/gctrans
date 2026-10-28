@@ -18,7 +18,7 @@ Master 번역과 UI 번역은 독립적인 consumer다. Master에 같은 JP가 �
 
 `UiTextLookup`는 exact를 먼저 적용하고, 확인된 완성 문구의 숫자/시간 패턴만 처리한다. `한국어 item + 수량 + 個で解放`, `한국어 title + の閲覧が必要`는 실기에서 확인한 두 형식이다. 입력 컨트롤과 self-write 재진입 보호를 유지한다. 임의 문자열 부분 치환이나 범용 template parser는 없다. Dictionary 키 존재만으로 모든 formatted UI가 표시된다고 주장하지 않는다.
 
-아테네스 레코드의 여섯 지구 카드명은 `sprite_atlas/athenes_record_atlas.dmm`의 `BtArea01`~`BtArea06` 이미지에 포함된다. Master의 같은 지역명은 상세 화면에서 정상 번역된다. 이 이미지 이름은 Master/UI 사전 누락으로 세지 않으며 별도 이미지 교체 작업 대상으로 남긴다. 그림을 text exporter로 수정할 수 있다고 보고하지 않는다.
+아테네스 레코드의 여섯 지구 카드명은 `sprite_atlas/athenes_record_atlas.dmm`의 `BtArea01`~`BtArea06` 이미지에 포함된다. Master의 같은 지역명은 상세 화면에서 정상 번역된다. 이 이미지 이름은 Master/UI 사전 누락으로 세지 않으며 7.2.0 후보의 이미지 카탈로그로 별도 처리한다. [이미지 갱신](IMAGE_UPDATES_KO.md)을 참조한다. 그림을 text exporter로 수정할 수 있다고 보고하지 않는다.
 
 검증 명령:
 

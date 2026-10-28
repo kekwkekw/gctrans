@@ -7,7 +7,7 @@
 - EnhancePatch, UiPatch, TranslationPatch, VisualPatch, MasterDataPatch와 local lifecycle을 유지한다. 작은 Choice 표시·element 명칭 예외만 별도 적용한다. 상세 차이는 [runtime README](../source/GCMod.Candidate/README_KO.md)에 기록한다.
 - 검수된 Novel 1,939편과 Names direct hook, 한국어 TMP fallback을 유지한다. 본문 재번역이나 전편 의미 재검수는 수행하지 않았다.
 - 기존 3개 Master HOLD는 내부 trigger, target 조건, dummy 상품 설명의 실제 노출 여부가 불명확한 항목이다. `staging/master-source-review-20261028/new-holds.json`에 개별 근거가 있다.
-- 레코드 지구 카드 6개와 이벤트 로고는 이미지에 글자가 들어 있다. text exporter의 누락이 아니며 이미지 교체는 별도 작업이다.
+- 레코드 지구 카드 6개는 7.2.0 후보에서 PNG 교체를 실기 확인했다. 이벤트/시작 로고는 같은 Sprite 방식으로 확장할 수 있으나 아직 교체하지 않았다. [이미지 갱신 범위](IMAGE_UPDATES_KO.md)를 참조한다.
 - `更新まで`/`開封期限…まで`는 이전 요청의 보류 정책을 유지한다. 일반 날짜+まで와 完成まで는 별도 지원한다.
 - 맵 레벨 상승 알림의 exact는 테스트했으나 계정의 획득/한계 돌파를 실행해 재발동하지 않았다.
 

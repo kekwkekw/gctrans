@@ -55,7 +55,7 @@ python tools/collect_ui_literals.py --metadata <game>/GC_Data/il2cpp_data/Metada
 
 결과를 앞의 plan에 `--observations work/local-parity/detail-literals.json`으로 전달한다. `source_kind=pc_metadata_literals`는 실제 화면 관측과 구분하며 표시 여부·문맥을 검수한다. 입력창 편집 문자는 번역하지 않는다. 집무실처럼 Master와 같은 JP를 코드에서 직접 공급하는 경우는 해당 문구만 accepted Master 번역과 맞춰 UI에 추가한다.
 
-`ui/detail-families.json`은 확인된 메모리 4그룹×5세트, 유효한 생일 확인 날짜, 현재 Master의 메인 스테이지 범위 안내를 완성된 exact로 export한다. JP 및 이미 KO로 바뀐 Master 이름을 모두 처리하며 새 장이 Master에 들어오면 export 시 따라간다. 범용 부분 치환이나 DLL template engine은 추가하지 않는다. 한 글자 `炎`·`月`·`日`은 7.1.1의 표시 보호 경계로 별도 기록한다. 사전에 키가 있다고 표시 완료로 세지 않는다.
+`ui/detail-families.json`은 확인된 메모리 4그룹×5세트, 유효한 생일 확인 날짜, 현재 Master의 메인 스테이지 범위 안내를 완성된 exact로 export한다. JP 및 이미 KO로 바뀐 Master 이름을 모두 처리하며 새 장이 Master에 들어오면 export 시 따라간다. 범용 부분 치환이나 DLL template engine은 추가하지 않는다. 7.2.0 후보는 한 글자 `炎`·`雷`를 포함한 일반 UI exact를 허용하고 시나리오 렌더러와 사용자 입력을 보호한다. 사전에 키가 있다고 실기 표시 완료로 세지 않는다.
 
 ```powershell
 python tools/local_release.py build --game <game-directory>

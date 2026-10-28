@@ -1,6 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net9.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
   <ItemGroup>
+    <Compile Include="../../source/GCMod.Candidate/GCMod.Services/ImageCatalog.cs" Link="ImageCatalog.cs" />
+    <Compile Include="../../source/GCMod.Candidate/GCMod.Services/ImageCache.cs" Link="ImageCache.cs" />
     <Compile Include="../../source/GCMod.Candidate/GCMod.Services/TranslationCache.cs" Link="TranslationCache.cs" />
     <Compile Include="../../source/GCMod.Candidate/GCMod.Services/TranslationHash.cs" Link="TranslationHash.cs" />
     <Compile Include="../../source/GCMod.Candidate/GCMod.Services/TranslationPaths.cs" Link="TranslationPaths.cs" />
