@@ -53,6 +53,24 @@
       "name": "BtArea06",
       "sha256": "44d22e6390d40cf0d46da39cf132aa18d95fd6fffa0a9482869306d80afc4b4e",
       "width": 396
+    },
+    {
+      "bytes": 187960,
+      "file": "images/915a742ccd14e8071f3a8f4c078ddd760a7ccde1e698cf06b68599a0ebd5028b.png",
+      "height": 312,
+      "kind": "sprite",
+      "name": "opening_logo_r_01",
+      "sha256": "915a742ccd14e8071f3a8f4c078ddd760a7ccde1e698cf06b68599a0ebd5028b",
+      "width": 816
+    },
+    {
+      "bytes": 229972,
+      "file": "images/ccc2fa6dec01a523e1d7a68a1517b7d0f832976c456714ac884ea01bd7654b10.png",
+      "height": 240,
+      "kind": "sprite",
+      "name": "elg3335",
+      "sha256": "ccc2fa6dec01a523e1d7a68a1517b7d0f832976c456714ac884ea01bd7654b10",
+      "width": 602
     }
   ],
   "schema": "gc-images-v1"

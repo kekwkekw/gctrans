@@ -3,8 +3,8 @@
     {
       "kind": "image_catalog",
       "path": "images.json",
-      "sha256": "f1e4920a7ded1f7dc8899ddcafa047dfd710b8691577b88f533690302c424bba",
-      "size": 1921
+      "sha256": "a701a5fc61372ad95d2bb8ec058080ec2d56618f253e37d5903665296317df2e",
+      "size": 2553
     },
     {
       "kind": "image_data",
@@ -26,9 +26,21 @@
     },
     {
       "kind": "image_data",
+      "path": "images/915a742ccd14e8071f3a8f4c078ddd760a7ccde1e698cf06b68599a0ebd5028b.png",
+      "sha256": "915a742ccd14e8071f3a8f4c078ddd760a7ccde1e698cf06b68599a0ebd5028b",
+      "size": 187960
+    },
+    {
+      "kind": "image_data",
       "path": "images/a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd.png",
       "sha256": "a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd",
       "size": 42067
+    },
+    {
+      "kind": "image_data",
+      "path": "images/ccc2fa6dec01a523e1d7a68a1517b7d0f832976c456714ac884ea01bd7654b10.png",
+      "sha256": "ccc2fa6dec01a523e1d7a68a1517b7d0f832976c456714ac884ea01bd7654b10",
+      "size": 229972
     },
     {
       "kind": "image_data",
@@ -51,13 +63,13 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "08d927ca43640a6b6db2d642f05912924f3365bbe818470ed031f15d84292f0f",
+      "sha256": "38ffec98f9f9ff49053662f4fd7568901fc0f16f1cd6989f6b1f8867e66f0b3f",
       "size": 344821
     },
     {
       "kind": "legacy_manifest",
       "path": "manifest.json",
-      "sha256": "9efa1071c04adf5dc4a4fa6442df955482688e6702e619759ff13aaacf9a5b87",
+      "sha256": "0f1431771084da09efcd33267a6bcf884b4e459a850bc684a994a217bfa30e7b",
       "size": 98436
     },
     {
@@ -11735,12 +11747,12 @@
   "legacy_manifest_builder_input": "current release/index; explicit add/modify/remove; optional initial bootstrap receipt",
   "locale": "ko",
   "profile": "NextgenCandidate",
-  "revision": "ng03-cbd7bd290ae60c3a2d726cc1",
+  "revision": "ng03-79a869ecd8c34c283e895e3a",
   "schema_version": 2,
   "status": "OFFLINE_PARTIAL_NOT_ACCEPTED_REPLACEMENT",
   "ui_manifest": {
     "path": "ui/manifest.json",
-    "sha256": "d44f7372d8e4cc7451c9888cf9c74fa402b22d4b63a0b0afdee1d2af29b2ec67",
-    "size": 2993
+    "sha256": "52a8a6b3a53ebf0aea69b951d92ee21ab89aa049d6353d9c0cf41dd810b48f2c",
+    "size": 3471
   }
 }
