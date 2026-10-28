@@ -3,8 +3,8 @@
     {
       "kind": "image_catalog",
       "path": "images.json",
-      "sha256": "0254d571fc7377082e6a85359fb66f5cba5dfa2de88074741bed4f185bfa2e72",
-      "size": 5050
+      "sha256": "37d9cc3017e01c51c2ce79ba73b37d2b7b6991d50a3a09f0e11fefba31f50644",
+      "size": 4901
     },
     {
       "kind": "image_data",
@@ -111,7 +111,7 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "24d35ba414fd092f4ef625989953150606cabedb88b984bac31a95bacd8e39b9",
+      "sha256": "7c2c71d6de1a56bed65d470d25158c8d896fbca3da7a21a5ed0b0973d31415a5",
       "size": 344821
     },
     {
@@ -147,6 +147,6 @@
   ],
   "locale": "ko",
   "origin": "local",
-  "revision": "ng03-485b863d25ccd27b2470acbf",
+  "revision": "ng03-7646cdeaff921a2de713e984",
   "schema_version": 1
 }
