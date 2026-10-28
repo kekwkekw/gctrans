@@ -11,7 +11,7 @@
       "target": "ebs13239",
       "source_cached": true,
       "start_time": "2026-09-14 13:00:00",
-      "status": "OFFLINE_REVIEW_PASS_NATIVE_PENDING",
+      "status": "REPRESENTATIVE_NATIVE_PASS",
       "source_sha256": "12f22cbd73e52a4758928652f5f1fcd829a3657a70ede93a934ca0cfa9786d3b",
       "width": 340,
       "height": 128,
@@ -30,6 +30,12 @@
         "original_alpha_unchanged": true,
         "source_sha256": "250e6d857eed817575bef3181aa401fe0d1d42b5686687c932cac2f1e79a916b",
         "final_sha256": "94f6a10481d83383e171098f3357d67e2f83bc37b16ed1f1604cf1c31fa58d7c"
+      },
+      "native": {
+        "page": 36,
+        "render": true,
+        "selection": true,
+        "revisit": true
       }
     },
     {
@@ -40,7 +46,7 @@
       "target": "ebs13611",
       "source_cached": true,
       "start_time": "2026-09-19 13:00:00",
-      "status": "OFFLINE_REVIEW_PASS_NATIVE_PENDING",
+      "status": "REPRESENTATIVE_NATIVE_PASS",
       "source_sha256": "fda08fc9ca36639f89d4659610a9b35310aaa16e9816a410b5b2a8a99275d584",
       "width": 340,
       "height": 128,
@@ -59,6 +65,12 @@
         "original_alpha_unchanged": true,
         "source_sha256": "11c500865637baf37a297bf04766e2faa8ad587d6e3cbf892b3b296682db3339",
         "final_sha256": "91a706739d5ab1339ee35e38b55588da1caf9b0d78a3a341e415930da2cdac13"
+      },
+      "native": {
+        "page": 36,
+        "render": true,
+        "selection": true,
+        "revisit": true
       }
     },
     {
@@ -69,7 +81,7 @@
       "target": "ebs15016",
       "source_cached": true,
       "start_time": "2026-09-22 13:00:00",
-      "status": "OFFLINE_REVIEW_PASS_NATIVE_PENDING",
+      "status": "REPRESENTATIVE_NATIVE_PASS",
       "source_sha256": "079782f74cf11a6c5fd4881ea0b692e4c5be56903488dbc3ab5fe88d1c7f4af7",
       "width": 340,
       "height": 128,
@@ -88,6 +100,12 @@
         "original_alpha_unchanged": true,
         "source_sha256": "b93fabec2fdd17905f360e2644bca719f4e8ed24265a2573bf5d4d1c5bdd6b6f",
         "final_sha256": "fb8fa05aa5fb7982a61955dff334cb6061249b76b64ab3f85e60a79f6ae8e322"
+      },
+      "native": {
+        "page": 36,
+        "render": true,
+        "selection": true,
+        "revisit": true
       }
     },
     {
@@ -98,7 +116,7 @@
       "target": "ebs13334",
       "source_cached": true,
       "start_time": "2026-09-30 13:30:00",
-      "status": "OFFLINE_REVIEW_PASS_NATIVE_PENDING",
+      "status": "REPRESENTATIVE_NATIVE_PASS",
       "source_sha256": "20b7c66242b8e3c703e3b5b5b72eee8c2ff1a649fab500471b0c6b35429b22ee",
       "width": 340,
       "height": 128,
@@ -117,6 +135,12 @@
         "original_alpha_unchanged": true,
         "source_sha256": "316f1e15df1890b8d3ebef955289ca551b504ab6c782b0b1653bdfeae0bc51b5",
         "final_sha256": "4bb0e00c9340d2987cd72872e3ffb114d86b410dadcf2ea2fabb1c8f301087d3"
+      },
+      "native": {
+        "page": 36,
+        "render": true,
+        "selection": true,
+        "revisit": true
       }
     }
   ],
@@ -126,5 +150,12 @@
     "title and home startup pass",
     "recollection page 37 first visit and scene re-entry pass",
     "no image replacement exception in baseline log"
-  ]
+  ],
+  "delivery_test": {
+    "method": "GitHub branch update then restart; no DLL or local PNG copy",
+    "targets_before": 12,
+    "targets_after": 16,
+    "dll_unchanged": true,
+    "image_exceptions": 0
+  }
 }
