@@ -13,7 +13,11 @@ python tools/export_local_ui.py
 
 DLL은 기존 `candidate/GCMod.dll`에 생성된다. 빌드는 게임 설치 파일을 쓰지 않는다.
 
-한국어 기본값은 `ko`, CDN은 `offline`, Master는 `*`이다.
+7.1.0 후보의 한국어 기본값은 `ko`, CDN은 공식 GitHub main
+(`https://raw.githubusercontent.com/kekwkekw/gctrans/main`), Master는 `*`이다.
+기존 7.0.0 offline 설치본은 GitHub 변경만으로 업그레이드되지 않는다.
+새 DLL과 cfg를 한 번 적용한 뒤에만 데이터 자동 갱신이 가능하다.
+자세한 동작과 실기 결과는 [DATA_UPDATES_KO.md](../../docs/DATA_UPDATES_KO.md)를 참조한다.
 배포 cfg도 `candidate/GCMod.cfg`에 보관한다. `python tools/check_local_master.py`는
 cfg 비활성, Master 파일/테이블/필드/JP 키 부재를 별도 상태로 진단한다.
 `--config <실제 cfg> --package <실제 ko 폴더> --log <로그>`로 설치 상태를 읽을 수 있다.
@@ -35,6 +39,16 @@ TMP/legacy 입력 컨트롤의 하위 텍스트와 local의 self-write 재진입
 
 선택지 예외는 `ChoicePatch`다. `EventSelect.AddSelectMessage`의
 표시 문자열만 exact 조회로 번역하며 UnityAction/분기 콜백은 변경하지 않는다.
+선택지 표시 중 프레임이 원래 화자명을 복원하는 경우, TMP 렌더 직전에도
+`EventMessageParentFrame.MessageName`과 정확히 같은 컴포넌트에만 Names를 적용한다.
+이름 사전을 일반 UI나 Novel 본문에 합치지 않는다.
+`GlossaryPatch`는 용어 사전의 한국어 제목을 정렬하고 실제 목록 위치로 한글 색인을 만든다.
+색인은 초성별 그룹을 `가·나·다…`로 표시한다. 실기에서 일부 단독 자모가 네모로 표시되어
+동일 그룹의 완성형 음절을 사용하며 폰트나 전역 한 글자 번역 규칙은 바꾸지 않는다.
+한국어 제목에 중복 표시되는 일본어 읽기는 사전 상세에서만 숨긴다.
+장 번호는 `第9章` 같은 전체 문구에 한정해 검수된 `第{0}章` 형식을 사용한다.
+2026-10-28 Native에서 장 번호, 사전 정·역순 색인 이동/설명 재사용, 선택지 뒤 관장·산소비노
+화자명과 분기 복귀를 확인했다. 이는 해당 대표 동작의 검증이며 게임 전체 완역 판정은 아니다.
 `ElementLabelPatch`는 `ElementTypeExtensions.ToName`의 속성 표시명만 번역한다.
 Master에 없는 단독 `雷`를 처리하며 일반 UI/Novel의 한 글자 보호는 유지한다.
 공방 번호 1~3은 기존 검수 템플릿을 export에서 exact 3항목으로 펼친다.

@@ -21,6 +21,7 @@ public static class TranslationPaths
 		case "manifest":
 		case "names":
 		case "master":
+		case "ui":
 			return text + "/" + type + ".json";
 		case "novels":
 			if (id != null)
@@ -44,6 +45,8 @@ public static class TranslationPaths
 			return Path.Combine(path, "names.json");
 		case "master":
 			return Path.Combine(path, "master.json");
+		case "ui":
+			return Path.Combine(path, "ui.json");
 		case "novels":
 			if (id != null)
 			{

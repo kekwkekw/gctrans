@@ -12,7 +12,7 @@ BepInEx/plugins/GCMod/translations/ko/{manifest.json,master.json,names.json,ui.j
 BepInEx/config/GCMod.cfg
 ```
 
-`Language = ko`, `CDN = offline`, `EnabledTables = *`를 사용한다. 폰트 경로는 `GCMod/fonts/RHR_Medium_GFSAFE_ADH.bundle`이다. 기존 Nextgen local store는 이 runtime에서 사용하지 않는다. 게임 원본/core/interop 및 로그인 자료는 교체하지 않는다.
+`Language = ko`, `EnabledTables = *`를 사용한다. 7.1.0 후보의 CDN 기본값은 공식 GitHub main이며 `CDN = offline`으로 네트워크를 끌 수 있다. 기존 7.0.0 offline 설치본에는 새 DLL/cfg를 한 번 적용해야 한다. [데이터 갱신 안내](DATA_UPDATES_KO.md)를 참조한다. 폰트 경로는 `GCMod/fonts/RHR_Medium_GFSAFE_ADH.bundle`이다. 기존 Nextgen local store는 이 runtime에서 사용하지 않는다. 게임 원본/core/interop 및 로그인 자료는 교체하지 않는다.
 
 PowerShell 7에서 사용자가 제공한 기존 `dmm-ex-launcher-runtime-safe.ps1`을 인자 없이 실행한다. 개인 절대 경로는 로컬 인계 보고서에 기록하며 런처 본문이나 인증 자료는 동봉하지 않는다.
 

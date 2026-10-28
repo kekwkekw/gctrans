@@ -7,6 +7,7 @@ using HarmonyLib;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Gc;
 
 namespace GCMod.Patches;
 
@@ -61,6 +62,23 @@ public static class UiPatch
 		return found;
 	}
 
+	// Choice/frame switching may restore the original name through TMP.SetText.
+	// Only the frame's actual name field may consume Names; body glyphs never do.
+	private static bool TryTranslateDisplay(TMP_Text text, string original, out string translated)
+	{
+		translated = null;
+		if (Plugin.Trans != null && Plugin.Trans.Names.TryGetValue(original, out var name))
+		{
+			var frame = text.GetComponentInParent<EventMessageParentFrame>(true);
+			if (frame != null && frame.MessageName == text)
+			{
+				translated = name;
+				return true;
+			}
+		}
+		return TryTranslate(original, out translated);
+	}
+
 	// Exclude editable controls, including inactive/prefab input text. No selector or ownership layer.
 	private static bool IsInputText(Component text)
 	{
@@ -77,7 +95,7 @@ public static class UiPatch
 			return;
 		}
 
-		if (TryTranslate(value, out string translated))
+		if (TryTranslateDisplay(__instance, value, out string translated))
 		{
 			value = translated;
 		}
@@ -96,7 +114,7 @@ public static class UiPatch
 		{
 			_isTranslating = true;
 			string current = ((TMP_Text)__instance).text;
-			if (!string.IsNullOrEmpty(current) && current.Length > 1 && TryTranslate(current, out string translated))
+			if (!string.IsNullOrEmpty(current) && current.Length > 1 && TryTranslateDisplay(__instance, current, out string translated))
 			{
 				((TMP_Text)__instance).text = translated;
 			}
