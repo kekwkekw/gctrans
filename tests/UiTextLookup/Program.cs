@@ -51,7 +51,7 @@ foreach(var jp in new[]{"第1000章", "第10章の話", "前第10章", "第十�
 var glossary = GlossaryIndex.Sort(new[]{"아테네스","산소비노","관장","공방","미술관"}, x=>x).ToArray();
 var sections = GlossaryIndex.Sections(glossary).ToArray();
 if (!glossary.SequenceEqual(new[]{"공방","관장","미술관","산소비노","아테네스"})
-    || !sections.SequenceEqual(new[]{("ㄱ",0),("ㅁ",2),("ㅅ",3),("ㅇ",4)}))
+    || !sections.SequenceEqual(new[]{("가",0),("마",2),("사",3),("아",4)}))
  throw new Exception("Glossary ordering/index target mismatch");
 foreach(var c in ui)if(!UiTextLookup.TryTranslate(ui,c.Key,out var ko)||ko!=c.Value)throw new Exception("Exact regression: "+c.Key);
 Console.WriteLine($"PASS: {ui.Count} exact pairs; {cases.Count} wrappers/numeric/date labels; {negative.Length} negative/HOLD boundaries");
