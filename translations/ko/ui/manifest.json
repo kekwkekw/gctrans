@@ -3,8 +3,8 @@
     {
       "kind": "image_catalog",
       "path": "images.json",
-      "sha256": "a21b1d93f25ae56d07701411b5b2fe8189bc22c10627bb3b22d0dc10997f9487",
-      "size": 3802
+      "sha256": "0254d571fc7377082e6a85359fb66f5cba5dfa2de88074741bed4f185bfa2e72",
+      "size": 5050
     },
     {
       "kind": "image_data",
@@ -32,6 +32,12 @@
     },
     {
       "kind": "image_data",
+      "path": "images/4bb0e00c9340d2987cd72872e3ffb114d86b410dadcf2ea2fabb1c8f301087d3.png",
+      "sha256": "4bb0e00c9340d2987cd72872e3ffb114d86b410dadcf2ea2fabb1c8f301087d3",
+      "size": 93830
+    },
+    {
+      "kind": "image_data",
       "path": "images/694d69b25828abbbf79d2451c1b92183dbb858f88aae4d57066f5c5e46a14cda.png",
       "sha256": "694d69b25828abbbf79d2451c1b92183dbb858f88aae4d57066f5c5e46a14cda",
       "size": 40833
@@ -41,6 +47,18 @@
       "path": "images/88b0dee465648af5da09d69088273ea7ca2d43860af45a3f814ccd455b512299.png",
       "sha256": "88b0dee465648af5da09d69088273ea7ca2d43860af45a3f814ccd455b512299",
       "size": 72631
+    },
+    {
+      "kind": "image_data",
+      "path": "images/91a706739d5ab1339ee35e38b55588da1caf9b0d78a3a341e415930da2cdac13.png",
+      "sha256": "91a706739d5ab1339ee35e38b55588da1caf9b0d78a3a341e415930da2cdac13",
+      "size": 72191
+    },
+    {
+      "kind": "image_data",
+      "path": "images/94f6a10481d83383e171098f3357d67e2f83bc37b16ed1f1604cf1c31fa58d7c.png",
+      "sha256": "94f6a10481d83383e171098f3357d67e2f83bc37b16ed1f1604cf1c31fa58d7c",
+      "size": 91373
     },
     {
       "kind": "image_data",
@@ -79,6 +97,12 @@
       "size": 40437
     },
     {
+      "kind": "image_data",
+      "path": "images/fb8fa05aa5fb7982a61955dff334cb6061249b76b64ab3f85e60a79f6ae8e322.png",
+      "sha256": "fb8fa05aa5fb7982a61955dff334cb6061249b76b64ab3f85e60a79f6ae8e322",
+      "size": 86300
+    },
+    {
       "kind": "layout",
       "path": "layout/episode-title.json",
       "sha256": "eb54246b7a40b554f3401acc332b9dafa06c7c57be1e3d5b4df956397c014242",
@@ -87,7 +111,7 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "29a9d9b74242a025d42528d86e3036b7aa1ec6bca7ed06ce6ff051c39f714a74",
+      "sha256": "24d35ba414fd092f4ef625989953150606cabedb88b984bac31a95bacd8e39b9",
       "size": 344821
     },
     {
@@ -123,6 +147,6 @@
   ],
   "locale": "ko",
   "origin": "local",
-  "revision": "ng03-03c1bf01d40627c53362b31c",
+  "revision": "ng03-485b863d25ccd27b2470acbf",
   "schema_version": 1
 }
