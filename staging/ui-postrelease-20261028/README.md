@@ -20,4 +20,6 @@
 - 7.1.0 설치본의 DLL·GCMod.cfg·BepInEx.cfg를 변경하지 않고 main 데이터 자동 갱신을 확인했다. 로그인 확인/1~7일차, 시리얼 placeholder/주의문/전송, 리서치 개방 요일/상점 제목이 한국어로 표시됐다.
 - 7.1.1 DLL에서 초기화 날짜 2종과 상점 `잔여: 1/월` 표시를 확인했다. 시나리오 `99900001` 본문과 `Loaded local translation: ko/novels/99900001` Info 로그를 확인했다.
 - Master 성공 Info 로그는 60줄에서 0줄로 줄었다. BepInEx.cfg는 바꾸지 않았고 콘솔·시작·업데이트·시나리오·경고 로그를 유지했다.
-- FLOOR 연출 줄바꿈 보완의 최종 Native 확인은 다음 재시작에서 진행한다.
+- 최종 FLOOR 데이터도 공식 main에서 자동 갱신된 것을 해시로 확인했다. 던전 첫 진입 연출 `FLOOR 4`가 한 줄로 표시되고, `FLOOR 4/10`·`층 지도`·`현재: 1회차 4층`·`다음 층으로`가 정상임을 화면에서 확인했다. 자원 소비·전투·층 이동은 수행하지 않았다.
+- 최종 Native DLL SHA256: `db752b2eec18e118c834dbf9fee500e7da3d03aa300a9192b3a3ceb3ed18bcdf`. 최종 UI SHA256: `bdcc409788b462636f2ba0a28b6a81104df39c239fb1e5b80b43e5e36b6fc2b1`.
+- runtime/data commit `c11143f067feb2f1610f1d729c41127abf574324`의 [GitHub CI](https://github.com/kekwkekw/gctrans/actions/runs/40665090098)도 통과했다. 전체 설치 패키지는 기존 검증 로더·의존성 227개 파일을 그대로 사용하며 이번에는 초기 설치를 반복하지 않았다.
