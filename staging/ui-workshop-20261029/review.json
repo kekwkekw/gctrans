@@ -171,7 +171,7 @@
     "美術品名５６７８９０１２３４５６７８９０"
   ],
   "placeholder_reason": "Serialized design/input placeholders, replaced by live title/item/amount data or protected input; not visible untranslated gameplay text in supplied screens.",
-  "protected": "No Master/Names/Novel/Knowledge/HOLD/runtime DLL edits. Native pending.",
+  "protected": "No Master/Names/Novel/Knowledge/HOLD/runtime DLL edits. Representative Native results and remaining observation limits are recorded in native.json.",
   "native_fit_adjustment": {
     "jp": "創作中の残り時間",
     "ko": "남은 시간",
