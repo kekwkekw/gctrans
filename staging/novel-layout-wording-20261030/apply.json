@@ -727,5 +727,6 @@
     "03_overflow_reflow": 3283,
     "04_boundary_prevention": 9004
   },
-  "native": "PENDING"
+  "native": "REPRESENTATIVE_NATIVE_DISPLAY_PASS",
+  "delivery_registration": "delivery-registration.json"
 }
