@@ -16,7 +16,7 @@
     "選別": "선별",
     "時短": "시간 단축",
     "資源・道具設定": "자원·도구 설정",
-    "創作中の残り時間": "창작 완료까지 남은 시간",
+    "創作中の残り時間": "남은 시간",
     "完成": "완성",
     "待機中": "대기 중",
     "空き": "빈 슬롯",
@@ -171,5 +171,10 @@
     "美術品名５６７８９０１２３４５６７８９０"
   ],
   "placeholder_reason": "Serialized design/input placeholders, replaced by live title/item/amount data or protected input; not visible untranslated gameplay text in supplied screens.",
-  "protected": "No Master/Names/Novel/Knowledge/HOLD/runtime DLL edits. Native pending."
+  "protected": "No Master/Names/Novel/Knowledge/HOLD/runtime DLL edits. Native pending.",
+  "native_fit_adjustment": {
+    "jp": "創作中の残り時間",
+    "ko": "남은 시간",
+    "reason": "Native queue status label shares a narrow capsule with its duration; shorter label prevents overlap."
+  }
 }
