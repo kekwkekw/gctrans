@@ -1,0 +1,180 @@
+{
+  "status": "REPRESENTATIVE_NATIVE_DISPLAY_AND_CLICK_PASS",
+  "method": "Seven exact PRO final strings rendered through EventText Parse/Show in a real tutorial dialogue window, using a temporary display-only diagnostic plugin. Production font and GCMod runtime were unchanged.",
+  "limitation": "Representative rendering and two glossary interactions; not traversal of all 1690 original scenarios.",
+  "installed_gcmod_version": "7.2.1",
+  "installed_gcmod_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+  "font_size": 38,
+  "font_spacing": 0,
+  "proportional": false,
+  "cases": [
+    {
+      "row_id": "10010102:ae7962066ac3e1b4",
+      "decision": "APPROVE",
+      "line_cells": [
+        17,
+        29
+      ],
+      "rendered_rows": [
+        -487,
+        -422
+      ],
+      "max_x": 384,
+      "all_body_characters_active": true,
+      "visible_text_matches_approved_final": true,
+      "final_character": ".",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "10010301:42db7a03c1393859",
+      "decision": "APPROVE",
+      "line_cells": [
+        21,
+        14,
+        26
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 270,
+      "all_body_characters_active": true,
+      "visible_text_matches_approved_final": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "10010106:26587445cd4d033a",
+      "decision": "APPROVE",
+      "line_cells": [
+        31,
+        30,
+        29
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 460,
+      "all_body_characters_active": true,
+      "visible_text_matches_approved_final": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "10027:6be437597e403ff0",
+      "decision": "APPROVE",
+      "line_cells": [
+        33,
+        33
+      ],
+      "rendered_rows": [
+        -487,
+        -422
+      ],
+      "max_x": 536,
+      "all_body_characters_active": true,
+      "visible_text_matches_approved_final": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "20001506:851fddda0be01760",
+      "decision": "REVISE",
+      "line_cells": [
+        23,
+        13
+      ],
+      "rendered_rows": [
+        -487,
+        -422
+      ],
+      "max_x": 156,
+      "all_body_characters_active": true,
+      "visible_text_matches_approved_final": true,
+      "final_character": ".",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "21003201:725034f681df752e",
+      "decision": "REVISE",
+      "line_cells": [
+        26,
+        18,
+        32
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 498,
+      "all_body_characters_active": true,
+      "visible_text_matches_approved_final": true,
+      "final_character": ".",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "10010101:305d2c0f6081e4ee",
+      "decision": "APPROVE",
+      "line_cells": [
+        29,
+        34
+      ],
+      "rendered_rows": [
+        -487,
+        -422
+      ],
+      "max_x": 574,
+      "all_body_characters_active": true,
+      "visible_text_matches_approved_final": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    }
+  ],
+  "click_interactions": [
+    {
+      "row_id": "10010102:ae7962066ac3e1b4",
+      "click_id": 11,
+      "display": "아테네스 시경",
+      "glossary_popup_opened_and_closed": true
+    },
+    {
+      "row_id": "10010301:42db7a03c1393859",
+      "click_id": 24,
+      "display": "플라워맨",
+      "glossary_popup_opened_and_closed": true
+    }
+  ],
+  "github_delivery": {
+    "tested_commit": "3f6eff1f705feda999132d6d8d1608ebf9880338",
+    "manifest_fetched_automatically": true,
+    "novel_registration_count": 1939,
+    "novel_99900001_downloaded_and_matches_checkout": true,
+    "local_translation_file_copy": false
+  },
+  "measurements_sha256": "708d1c462d43c5e2509d0038585772acc0b20e28e0db4d31163b8fd5a96e61c6",
+  "log_sha256": "3d89a269968291fc308c614ff94d0b07469c6e5d27c38713051d83d0191a4b89",
+  "screenshots": {
+    "01-city-police-popup.png": "789ab3ab19df2e45c226a44f506e88d076906601a4afd3e388218ca31445f1c9",
+    "01-city-police.png": "28ea8701f903c2e1fe2eeea3af5bc4f76848d3fac2ccffe23451d1eab904b009",
+    "02-flowerman-popup.png": "cac6b9f41d5f6c2544f76cca9fcce9ccaa3abda1100a14ac0dc557a78c00cc90",
+    "02-flowerman.png": "222a443ac873b793ee9bee0be35fbd09f174c73cd059bd97abf62057d68ce1d9",
+    "03-longest-boundary.png": "001023a4e39906f264a83ee0cbf3bbeb0f8dabd89751ab5f49210920e1143769",
+    "04-u3000.png": "2f71455eb2a0e04404d6d193c7f32dae65b93a72b2c33dba731966f165d41f11",
+    "05-spacing.png": "82c1ad19af91dc564241950b36b2877e330043988980fc22a21db7b3a2487626",
+    "06-quotation.png": "fbc33cfb52a0aee28368d9561786eada6134e98e72fe011935019e1f9379c422",
+    "07-34cells.png": "44bb7998ddad5913da94519e7468b1b7e9cab089d4cbcdcfc3eab40f540e2e57"
+  },
+  "temporary_probe_cleanup": "REMOVED",
+  "installed_cdn_restored": "https://raw.githubusercontent.com/kekwkekw/gctrans/main"
+}
