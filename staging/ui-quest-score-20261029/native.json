@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-29",
+  "runtime_version": "7.2.1",
+  "dll_changed": false,
+  "dll_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+  "update_transport": "Existing 7.2.1 startup updater; operator changed CDN to fix/quest-score-ui-coverage; no local UI copy or DLL replacement.",
+  "data_revision": "76adb3f9abc829750943a7db16215bba91d795f8",
+  "ui_sha256": "89dac03cdcd6bcf1e6a472819c8710d39b3a964efc4685dac0ef4c4062870b81",
+  "installed_ui_sha256": "89dac03cdcd6bcf1e6a472819c8710d39b3a964efc4685dac0ef4c4062870b81",
+  "installed_ui_matches_repo": true,
+  "ui_counts": {
+    "before": 7837,
+    "after": 10522,
+    "added": 2685,
+    "removed": 0,
+    "existing_values_changed": 3,
+    "reviewed_pairs_including_finite_variants": 584
+  },
+  "initial_screenshot_sample": {
+    "exact_strings": 26,
+    "local_ui_present": 0,
+    "master_present": [
+      "スコアチャレンジ / mQuestStages.ml_name[]"
+    ],
+    "old_master_hold_matches": 0
+  },
+  "native_verified": [
+    "Score prebattle bonus names; all eight explanation popups opened individually and read in Korean.",
+    "Three target magnifiers in the prebattle list and three in the bonus popup opened individually; shared target list and potential detail read in Korean.",
+    "Level boost +0 to +5 to +10 and minus back to +0; CHALLENGE2 badge in Korean, levels and numbers retained.",
+    "Fixed S/I/P icons fit the target instruction after fullwidth spacing correction.",
+    "Quest rewards and score rewards; event ranking and TOP100; featured character tab and party bonus captions.",
+    "Battle Double/Slide options and AP/BP retreat confirmation.",
+    "Box current/numbered tabs and four-star memory caption; both sides of の can contain spaces.",
+    "Insufficient story key and locked chapter toasts.",
+    "Score result headers read in Korean on the first successful battle; two newly discovered result labels handled separately below.",
+    "Defeat guidance quest-list and strengthen buttons read in Korean; gacha button was already Korean.",
+    "Three-star skip unlock caption read as 시 해제 within the narrow button after shortening the Korean exact.",
+    "Follow-up: +90 badge and all three defeat guide textures shown in Korean through unchanged 7.2.1 startup update. 編成へ button also reobserved after the fix."
+  ],
+  "data_verified_not_reobserved_after_fix": [
+    "すれ違いバフ数 / 指定キャラクター編成: exacts observed on first clear result, added; two later attempts ended in defeat, so post-fix result display was not reobserved.",
+    "以下の報酬を受け取りました。: first-clear reward popup exact added; no later new score reward threshold reached.",
+    "Two defense-event reward messages: scoped scene_result source and language review only; no defense event run."
+  ],
+  "native_limits": [
+    "No claim of all-game UI completion or coverage beyond the explicit finite number domains.",
+    "Current prebattle HighScore bar had no visible magnifier and did not open from number/label clicks; actual result-screen magnifier was verified on the first clear."
+  ],
+  "account_actions": {
+    "score_battle_entries": 3,
+    "clears": 1,
+    "defeats": 2,
+    "advertised_ap_per_entry": 1,
+    "bp_spent": 0,
+    "premium_currency_spent": 0,
+    "boost_final": 0,
+    "note": "AP regenerates during testing; no net spend inferred from the changing counter."
+  },
+  "protected_inputs": "Master, Names, 1939 Novel JSONs, Knowledge, HOLD and DLL/source unchanged from base. Follow-up adds three image textures and one UI exact.",
+  "validation": [
+    "exporter --check PASS",
+    "UiTextLookup PASS: final exact dictionary / 56 wrappers-numeric-date / 24 negative-HOLD boundaries",
+    "package verify PASS",
+    "test_export_local_ui.py: 10 tests PASS"
+  ],
+  "release_state": "Review PR only; no main merge or new release.",
+  "followup_defeat_guides": {
+    "data_commit": "2cbe06b5",
+    "dll_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+    "ui_sha256": "a27dd5c1b90a09fbb6fc22c49c498f1409a570bbbfa6240f7896eb1d4e2ae315",
+    "image_catalog_sha256": "1cfef51188e5c686acc1f6aced9d15d9fb70c2b0c2d3b7dfab4cc2e81d7ca5c9",
+    "ui_count": 10522,
+    "image_count": 159,
+    "installed_hashes_match": true,
+    "local_translation_files_copied": false,
+    "transport": "Existing 7.2.1 startup updater from PR46 branch",
+    "status": "PASS",
+    "native_verified": [
+      "+90 badge: 초고난도!",
+      "BattleEnhance_1: Korean headline, 장비, 예술가; 이마쥬 spelling",
+      "BattleDeck_1: Korean headline/chart/side text; original chart arrows",
+      "BattleGacha_1: Korean headline, 스타일, 이마쥬 and retry sentence",
+      "강화로 / 편성으로 / 가챠로 / 퀘스트 목록"
+    ],
+    "image_replacement_logs": [
+      "texture:BattleEnhance_1:1460x736",
+      "texture:BattleDeck_1:1460x736",
+      "texture:BattleGacha_1:1460x736"
+    ],
+    "account_actions": {
+      "score_battle_entries": 1,
+      "defeats": 1,
+      "advertised_ap": 1,
+      "actual_ap_net_spend": "not inferred because AP regenerated",
+      "bp_spent": 0,
+      "coin_spent": 0,
+      "premium_currency_spent": 0,
+      "premium_before": 204482,
+      "premium_after": 204482,
+      "boost_final": 90
+    },
+    "log_errors": 0,
+    "evidence": {
+      "01-plus90-badge.png": "b5a6c7c363382fc1159e9f55a13d345e30dd1ba1681ceb2333bc6f0257c203ba",
+      "02-enhance.png": "b70993ee3f1a1747eab14aff19d73f005024079fd01ae59157c16018b5da87bb",
+      "03-deck.png": "e9dd8e1baaf1a0676f1318f5083b72159f88bea6793b73f80544944d823e9f69",
+      "04-gacha.png": "307994116b59980c392dd9de30f65ded9abf6b8b7373e55dadbe9a08c51536b6"
+    }
+  }
+}
