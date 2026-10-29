@@ -1,0 +1,100 @@
+{
+  "schema": "gc-workshop-native-v1",
+  "runtime_version": "7.2.1",
+  "runtime_changed": false,
+  "data_branch": "fix/workshop-ui-coverage",
+  "data_commit": "79018a2c",
+  "delivery": "existing installation startup fetch from GitHub branch; no local dictionary or DLL copy",
+  "ui_pairs": 10588,
+  "image_targets": 161,
+  "master_tables": "*",
+  "dll_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+  "premium_spent": 10,
+  "premium_authorization": "user explicitly allowed one immediate completion costing 10; no additional premium use",
+  "premium_balance_before": 204505,
+  "premium_balance_after": 204495,
+  "final_result_check": "Collected a naturally completed craft after correcting the sprite rect; no second instant completion.",
+  "checks": {
+    "craft_button": "PASS",
+    "craft_confirmation": "PASS",
+    "standalone_1_count": "PASS",
+    "counts_2_to_6": "DATA_ASSERTED_NOT_NATIVE",
+    "artist_selection_heading": "DATA_ONLY_QUEUE_ARTISTS_LOCKED",
+    "tool_selection_headings_tabs_warnings": "PASS",
+    "craft_history_title_result_time": "PASS",
+    "queue_state_labels": "PASS",
+    "remaining_time_label_fit": "PASS",
+    "complete_1_count": "PASS",
+    "result_sprite": "PASS_AFTER_RECT_CORRECTION",
+    "start_sprite": "HOOK_REPLACEMENT_LOGGED_VISUAL_PENDING"
+  },
+  "regression_finding": {
+    "sprite": "TitleAtelierResult",
+    "initial_mapping": [
+      315,
+      80
+    ],
+    "sprite_rect": [
+      316,
+      80
+    ],
+    "extracted_texture": [
+      315,
+      80
+    ],
+    "initial_native": "JP_REMAINED",
+    "correction": "316x80 transparent canvas and catalog key; runtime unchanged"
+  },
+  "canonical_paths_changed": [],
+  "runtime_log_evidence": [
+    "Updated translation: ko/ui hash=a5878e2871e4cafae061a65cf09a7c1c",
+    "[UiPatch] Loaded 10588 UI translations",
+    "Image data ready: 161 verified targets",
+    "[ImagePatch] Replaced sprite:TextAtelierStart:280x72",
+    "[ImagePatch] Replaced sprite:TitleAtelierResult:316x80"
+  ],
+  "archive": {
+    "name": "GCMod-7.2.1-workshop-preview-v3.zip",
+    "sha256": "bd21ae23143fb2b1ffe169bfa32940a7c13a6930053e27567a219c4d6f333bfe",
+    "verify": "PASS",
+    "kind": "public-update"
+  },
+  "screenshots": [
+    {
+      "file": "native-result-after.png",
+      "sha256": "8a533ebc0001a80a349af3d383b21bc197c831862fc510d1c08597f9f7f49adf"
+    },
+    {
+      "file": "native-status-after-fit.png",
+      "sha256": "da1f6926c326691b89711ce0a2adaf434e851bf45ee53858a2193e66740e7bc8"
+    },
+    {
+      "file": "native-complete-count.png",
+      "sha256": "9dfebebbd274630e7092c2cc7ef79065efc9df20b4f2323e5064eeb0cf819f6f"
+    },
+    {
+      "file": "native-confirm.png",
+      "sha256": "32b4391088d201c732060a3ef81e29051c447930a94d98dc0a217a92e1c06128"
+    },
+    {
+      "file": "native-craft.png",
+      "sha256": "129cca634d7cdcb1aaf09087d2dc0fb248e22a46d01bc776c5ae1db292745a11"
+    },
+    {
+      "file": "native-history.png",
+      "sha256": "328d71dcdd27978ca069f3d157b540ec467c6f4ebf436910933aaaed0a292ac1"
+    },
+    {
+      "file": "native-result-before.png",
+      "sha256": "91f3fe4efc73a08f839cd2d33624392ace61d1f4aab92b1b6529a5751a6637fc"
+    },
+    {
+      "file": "native-status-before-fit.png",
+      "sha256": "9a4709a6eeab5407e0f85e3e2324226297754e541b05cafaf63fd66a2371c9ab"
+    },
+    {
+      "file": "native-tools.png",
+      "sha256": "ca217bf47a8d8967db7978c4c13d9e38b20939a80a9ab07275f0ddb18f7f9eb3"
+    }
+  ]
+}
