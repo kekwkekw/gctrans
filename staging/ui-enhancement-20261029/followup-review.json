@@ -1,0 +1,1340 @@
+{
+  "dispositions": [
+    {
+      "jp": "1回の一括合成で選択可能な素材は最大{0}体までです。",
+      "reason": "Complete source format found; maximum bulk selection must be read from actual control before expansion.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "HOLD_DYNAMIC_DOMAIN"
+    },
+    {
+      "jp": "5ターン",
+      "reason": "Existing bounded turn counter",
+      "source": [
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": -8867002736689917420
+        }
+      ],
+      "status": "RUNTIME_COUNTER"
+    },
+    {
+      "jp": ">>>> 継承：ポテンシャルLv:{0} 継承後Lv.{1}, 継承率:{2}%",
+      "reason": "Debug log prefix and developer values",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "NON_DISPLAY_LOG"
+    },
+    {
+      "jp": ">>>> 継承：追加ポテンシャル:{0} Lv.{1}, 継承率:{2}%",
+      "reason": "Debug log prefix and developer values",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "NON_DISPLAY_LOG"
+    },
+    {
+      "jp": "MM/DD/HH:MMまで",
+      "reason": "MM/DD/HH:MM format placeholder, actual date is bounded runtime date",
+      "source": [
+        {
+          "asset_key": "popup/popup_exchange_layer_piece.dmm",
+          "container": "CAB-3641ba87fcd505f51dbb2ddb6122287e",
+          "field": "m_text",
+          "path_id": 1323084474090325330
+        },
+        {
+          "asset_key": "popup/popup_exchange_layer_piece.dmm",
+          "container": "CAB-3641ba87fcd505f51dbb2ddb6122287e",
+          "field": "m_text",
+          "path_id": 4814043191728703152
+        }
+      ],
+      "status": "PREFAB_PLACEHOLDER"
+    },
+    {
+      "jp": "onPurchase を上書きしました。",
+      "reason": "onPurchase callback diagnostic",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "NON_DISPLAY_LOG"
+    },
+    {
+      "jp": "〇〇に属する藝術家のスタイルを99種獲得",
+      "reason": "Placeholder circle and 99; actual requirement comes from Master",
+      "source": [
+        {
+          "asset_key": "popup/popup_athenes_record_have_layers_node_release.dmm",
+          "container": "CAB-da3c92b165141ade094e5e4a3e985c29",
+          "field": "m_text",
+          "path_id": -7611855350366351447
+        }
+      ],
+      "status": "PREFAB_PLACEHOLDER"
+    },
+    {
+      "jp": "あと000",
+      "reason": "Existing remaining-number counter",
+      "source": [
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": -5853842740398987070
+        },
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": -2697039131360269776
+        },
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": -1011708094047642338
+        },
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": 7870154940387595516
+        }
+      ],
+      "status": "RUNTIME_COUNTER"
+    },
+    {
+      "jp": "あと1000",
+      "reason": "Existing remaining-number counter",
+      "source": [
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": 653184719105963235
+        }
+      ],
+      "status": "RUNTIME_COUNTER"
+    },
+    {
+      "jp": "あと1000000",
+      "reason": "Existing remaining-number counter",
+      "source": [
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": 4379100631726527267
+        }
+      ],
+      "status": "RUNTIME_COUNTER"
+    },
+    {
+      "jp": "それから、藝晶石を使用して\n強化状態のリセットもできるよ。\n消費した命鏡は戻ってくるから安心してね。",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "に上書きします",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "アイテム名",
+      "reason": "Item-name label supplied by translated Master",
+      "source": [
+        {
+          "asset_key": "popup/popup_exchange_layer_piece.dmm",
+          "container": "CAB-3641ba87fcd505f51dbb2ddb6122287e",
+          "field": "m_text",
+          "path_id": 5667856549128476226
+        },
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": -1772443840837808895
+        },
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": 201229459637255467
+        }
+      ],
+      "status": "PREFAB_PLACEHOLDER"
+    },
+    {
+      "jp": "アイテム名がはいります。３４５\nアイテム名がはいります。３４５\n",
+      "reason": "Explicit item-name layout sample with repeated digits",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": -2738361932965006224
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": -1180742555815688225
+        }
+      ],
+      "status": "PREFAB_PLACEHOLDER"
+    },
+    {
+      "jp": "アイテム名称で最大２６文字はきついですね０１２４５６",
+      "reason": "Explicit 26-character layout sample",
+      "source": [
+        {
+          "asset_key": "popup/popup_exchange_layer_piece.dmm",
+          "container": "CAB-3641ba87fcd505f51dbb2ddb6122287e",
+          "field": "m_text",
+          "path_id": -3876099364970417905
+        },
+        {
+          "asset_key": "popup/popup_exchange_layer_piece.dmm",
+          "container": "CAB-3641ba87fcd505f51dbb2ddb6122287e",
+          "field": "m_text",
+          "path_id": -2582343229755706618
+        }
+      ],
+      "status": "PREFAB_PLACEHOLDER"
+    },
+    {
+      "jp": "クリア回数のカウントは毎日4時にリセット\nされるが、アイテム『探求のクロノメーター』\nを使用することでもリセットできるぞ。",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "ゲームデータの上書きがキャンセルされたため、\nゲームを再起動します。",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "サウンドとテキスト、<br>全ての設定を初期化しますか？<br><br>＊ ミュート状態もリセットされます",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "スキルノードの解放状況をリセットしました",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "ダンジョンリセットアイテム",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "パッシブ{0}を新たに抽選された効果で上書きします",
+      "reason": "Existing passive slot 1..3 family",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "FAMILY_EXPORTED"
+    },
+    {
+      "jp": "パッシブ{0}を新たに抽選された効果で上書きしますか？",
+      "reason": "Existing passive slot 1..3 family",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "FAMILY_EXPORTED"
+    },
+    {
+      "jp": "パッシブ効果抽選確認",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": -1394432218728975871
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "パッシブ１に効果が追加されました",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -2860508225568692935
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "ポテンシャル継承確率アップアイテム",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "メモリー名６７８９０１２３４５６７８９０",
+      "reason": "Memory-name layout sample with repeated digits",
+      "source": [
+        {
+          "asset_key": "popup/popup_memory_level_up_anim.dmm",
+          "container": "CAB-29921c7a6dc8647df27745dab60894fe",
+          "field": "m_text",
+          "path_id": 5629056833597439102
+        },
+        {
+          "asset_key": "popup/popup_memory_level_up_anim.dmm",
+          "container": "CAB-29921c7a6dc8647df27745dab60894fe",
+          "field": "m_text",
+          "path_id": 6184972411337710508
+        }
+      ],
+      "status": "PREFAB_PLACEHOLDER"
+    },
+    {
+      "jp": "リクエストボディが上書きされています。",
+      "reason": "Request body diagnostic",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "NON_DISPLAY_LOG"
+    },
+    {
+      "jp": "リセットに必要な",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "レベルアップ確認",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": 3842335910727550082
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "上書きせず結果を破棄する場合でも素材は消費されます",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -7515522234883380771
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "上書きキャンセル",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "与えるダメージ2.1%上昇",
+      "reason": "Serialized example effect; actual effect names/descriptions observed KO through Master; exact default display unconfirmed",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": -197408811681380161
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": 3531604250986198448
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -7880168201343269399
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -1265318425324633082
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": 3524400359877049363
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": 6740436961450768633
+        }
+      ],
+      "status": "HOLD_SOURCE_DEFAULT"
+    },
+    {
+      "jp": "以下のメモリーが強化されました",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_memory_level_up_anim.dmm",
+          "container": "CAB-29921c7a6dc8647df27745dab60894fe",
+          "field": "m_text",
+          "path_id": 3162426930200991686
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "以下の素材を消費してレベルアップを行いますか？",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": -7170686006125563012
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "個</color> 消費してスキルノードの解放状況をリセットしますか？",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "全報酬を獲得するとマイレージがリセットされ再度報酬が獲得できるようになります",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "内容が入るよ",
+      "reason": "Explicit content goes here placeholder",
+      "source": [
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": -8909116131121884471
+        }
+      ],
+      "status": "PREFAB_PLACEHOLDER"
+    },
+    {
+      "jp": "合成",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "抽選対象",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": 8605988420543253255
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "抽選結果",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": 4161601006321369260
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "抽選結果を破棄",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -7190261596583679272
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "抽選結果確認",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -1400372784003483016
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "探索報酬がリセットされました。",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "探索報酬リセットアイテム",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "未強化のためリセットできません",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "枠を超えてポテンシャルを継承しました\n獲得するポテンシャルを<color=#F64873>{0}つ</color>選択してください。",
+      "reason": "Potential slot selection 1..4",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "FAMILY_EXPORTED"
+    },
+    {
+      "jp": "毎日リセット",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "毎月1日リセット",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "毎週月曜リセット",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "消費素材",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": -2022908953722892921
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "現在の効果",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -727288726645724404
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "素材を消費して効果抽選を行いますか？",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": 3615607421858303813
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "継承が完了していない合成結果があります\n継承画面へ移動します",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "継承再開",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "継承率：{0}%",
+      "reason": "Integer probability 0..100",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "FAMILY_EXPORTED"
+    },
+    {
+      "jp": "継承確認",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "編成を上書きしました。",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "説明が入ります。",
+      "reason": "Explicit description goes here placeholder",
+      "source": [
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": -8614060176542710852
+        },
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": -5815062389805015857
+        },
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": 3345205919623082944
+        },
+        {
+          "asset_key": "popup/popup_sub_unit_select.dmm",
+          "container": "CAB-0b2fc2391837ca1f8baaa24b990c1212",
+          "field": "m_text",
+          "path_id": 4085430448298100055
+        }
+      ],
+      "status": "PREFAB_PLACEHOLDER"
+    },
+    {
+      "jp": "選択したアイテムを消費して継承を行います",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "選択したイマージュを消費して強化合成を行います",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "選択したイマージュを消費して継承を行います",
+      "reason": "Reviewed complete display text",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ],
+      "status": "TRANSLATED"
+    }
+  ],
+  "review": "JP meaning, Korean terminology and control semantics reviewed; local UI and both Master corpora checked. Confirmation/result families included.",
+  "rows": [
+    {
+      "before": null,
+      "jp": "それから、藝晶石を使用して\n強化状態のリセットもできるよ。\n消費した命鏡は戻ってくるから安心してね。",
+      "ko": "그리고 예정석을 사용해서\n강화 상태를 초기화할 수도 있어.\n사용한 명경은 돌아오니 안심해.",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "に上書きします",
+      "ko": "에 덮어씁니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "クリア回数のカウントは毎日4時にリセット\nされるが、アイテム『探求のクロノメーター』\nを使用することでもリセットできるぞ。",
+      "ko": "클리어 횟수는 매일 4시에 초기화되지만,\n아이템 ‘탐구의 크로노미터’를 사용해서\n초기화할 수도 있어.",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "ゲームデータの上書きがキャンセルされたため、\nゲームを再起動します。",
+      "ko": "게임 데이터 덮어쓰기가 취소되어\n게임을 다시 시작합니다.",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "サウンドとテキスト、<br>全ての設定を初期化しますか？<br><br>＊ ミュート状態もリセットされます",
+      "ko": "사운드와 텍스트의<br>모든 옵션을 초기화하시겠습니까?<br><br>＊ 음소거 상태도 초기화됩니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "スキルノードの解放状況をリセットしました",
+      "ko": "스킬 노드 해제 상태를 초기화했습니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "ダンジョンリセットアイテム",
+      "ko": "던전 초기화 아이템",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "パッシブ効果抽選確認",
+      "ko": "패시브 효과 추첨 확인",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": -1394432218728975871
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "パッシブ１に効果が追加されました",
+      "ko": "패시브1에 효과가 추가되었습니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -2860508225568692935
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "ポテンシャル継承確率アップアイテム",
+      "ko": "포텐셜 계승 확률 증가 아이템",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "リセットに必要な",
+      "ko": "초기화에 필요한",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "レベルアップ確認",
+      "ko": "레벨업 확인",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": 3842335910727550082
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "上書きせず結果を破棄する場合でも素材は消費されます",
+      "ko": "덮어쓰지 않고 결과를 버려도 소재는 소모됩니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -7515522234883380771
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "上書きキャンセル",
+      "ko": "덮어쓰기 취소",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "以下のメモリーが強化されました",
+      "ko": "아래 메모리가 강화되었습니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_memory_level_up_anim.dmm",
+          "container": "CAB-29921c7a6dc8647df27745dab60894fe",
+          "field": "m_text",
+          "path_id": 3162426930200991686
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "以下の素材を消費してレベルアップを行いますか？",
+      "ko": "아래 소재를 소모하여 레벨업하시겠습니까?",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": -7170686006125563012
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "個</color> 消費してスキルノードの解放状況をリセットしますか？",
+      "ko": "개</color>를 소모하여 스킬 노드 해제 상태를 초기화하시겠습니까?",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "全報酬を獲得するとマイレージがリセットされ再度報酬が獲得できるようになります",
+      "ko": "모든 보상을 획득하면 마일리지가 초기화되어 다시 보상을 획득할 수 있습니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "合成",
+      "ko": "합성",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "抽選対象",
+      "ko": "추첨 대상",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": 8605988420543253255
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "抽選結果",
+      "ko": "추첨 결과",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": 4161601006321369260
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "抽選結果を破棄",
+      "ko": "추첨 결과 버리기",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -7190261596583679272
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "抽選結果確認",
+      "ko": "추첨 결과 확인",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -1400372784003483016
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "探索報酬がリセットされました。",
+      "ko": "탐색 보상이 초기화되었습니다.",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "探索報酬リセットアイテム",
+      "ko": "탐색 보상 초기화 아이템",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "未強化のためリセットできません",
+      "ko": "강화하지 않아 초기화할 수 없습니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "毎日リセット",
+      "ko": "매일 초기화",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "毎月1日リセット",
+      "ko": "매월 1일 초기화",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "毎週月曜リセット",
+      "ko": "매주 월요일 초기화",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "消費素材",
+      "ko": "소비 소재",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": -2022908953722892921
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "現在の効果",
+      "ko": "현재 효과",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_result.dmm",
+          "container": "CAB-16a788364fa7e92ec5d0274af97c9578",
+          "field": "m_text",
+          "path_id": -727288726645724404
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "素材を消費して効果抽選を行いますか？",
+      "ko": "소재를 소모하여 효과를 추첨하시겠습니까?",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_confirm.dmm",
+          "container": "CAB-8d28efa44e05498d8dfadbefbe0bd8c5",
+          "field": "m_text",
+          "path_id": 3615607421858303813
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "継承が完了していない合成結果があります\n継承画面へ移動します",
+      "ko": "계승을 마치지 않은 합성 결과가 있습니다\n계승 화면으로 이동합니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "継承再開",
+      "ko": "계승 재개",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "継承確認",
+      "ko": "계승 확인",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "編成を上書きしました。",
+      "ko": "편성을 덮어썼습니다.",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "選択したアイテムを消費して継承を行います",
+      "ko": "선택한 아이템을 소모하여 계승합니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "選択したイマージュを消費して強化合成を行います",
+      "ko": "선택한 이마쥬를 소모하여 강화 합성합니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "選択したイマージュを消費して継承を行います",
+      "ko": "선택한 이마쥬를 소모하여 계승합니다",
+      "local_ui": null,
+      "master": [],
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": "★4 이상 확정",
+      "jp": "<cspace=-0.1e,>★4</cspace>以上確定",
+      "ko": "★4+ 확정",
+      "local_ui": null,
+      "master": [],
+      "source": "Native narrow label clipping"
+    },
+    {
+      "before": "★4 이상 확정",
+      "jp": "★4以上確定",
+      "ko": "★4+ 확정",
+      "local_ui": null,
+      "master": [],
+      "source": "Native narrow label clipping"
+    },
+    {
+      "before": "★4 이상 확정 시",
+      "jp": "★4以上確定時",
+      "ko": "★4+ 확정",
+      "local_ui": null,
+      "master": [],
+      "source": "Native narrow label clipping"
+    },
+    {
+      "before": null,
+      "jp": "スタイル所持技法CT-1",
+      "ko": "스타일 기법 CT-1",
+      "source": "Native limitbreak confirmation; PC literals スタイル所持技法 + CT-1. Serialized prefab has a different の/fullwidth-dash spelling."
+    },
+    {
+      "before": null,
+      "jp": "スタイル所持技法",
+      "ko": "스타일 보유 기법",
+      "source": "Native limitbreak confirmation; PC literals スタイル所持技法 + CT-1. Serialized prefab has a different の/fullwidth-dash spelling."
+    }
+  ]
+}

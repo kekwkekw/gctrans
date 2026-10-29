@@ -12,6 +12,8 @@ MASTER_UI_FIELDS = (
     ('mTextConfig', 'ml_value[]'),
     ('mTutorialPopupDescriptions', 'ml_title[]'),
     ('mAthenesRecordAreas', 'name'),
+    # Auto-deck and resonance prefabs also contain static copies of these labels.
+    ('mVirtueEffects', 'ml_name[]'),
 )
 
 
@@ -153,6 +155,29 @@ def export(root):
                 for name in {jp, ko}:
                     add(name + '専用', ko + ' 전용')
         result.update(detail_pairs)
+    # Review finite enhancement controls as families, including result/confirmation
+    # states. Expand complete strings offline for the existing exact consumer.
+    enhancement_pairs = {}
+    enhancement = root / 'ui/enhancement-families.json'
+    if enhancement.exists():
+        spec = read(enhancement)
+        if spec.get('schema') != 'gc-ui-enhancement-families-v1':
+            raise ValueError('Enhancement family schema')
+        for family in spec['families']:
+            values = family['values']
+            if (not values or len(values) > 1000 or len(set(values)) != len(values)
+                or any(type(v) is not int or v < 0 or v > 999 for v in values)
+                or family['jp'].count('{0}') != 1 or family['ko'].count('{0}') != 1):
+                raise ValueError('Enhancement family domain')
+            for value in values:
+                jp = family['jp'].replace('{0}', str(value))
+                ko = family['ko'].replace('{0}', str(value))
+                if jp in result and result[jp] != ko:
+                    raise ValueError('Enhancement exact conflict: ' + jp)
+                if jp in enhancement_pairs and enhancement_pairs[jp] != ko:
+                    raise ValueError('Enhancement family overlap: ' + jp)
+                enhancement_pairs[jp] = ko
+        result.update(enhancement_pairs)
     coverage = read(root / 'ui/local-coverage.json') if (root / 'ui/local-coverage.json').exists() else None
     if coverage:
         if (coverage.get('schema') != 'gc-local-ui-coverage-v1'
@@ -167,6 +192,7 @@ def export(root):
                      "held_authoring_jp": sorted({r['jp'] for r in resources if r.get('disposition') not in ('translate','keep_jp') and r['jp'] not in result}), "review_resolved_authoring_jp": resolved,
                      "bounded_workshop_exacts": 3, "runtime_bindings": 0,
                      "bounded_detail_exacts": len(detail_pairs),
+                     "bounded_enhancement_exacts": len(enhancement_pairs),
                      "master_ui_source_pairs": master_pairs,
                      "authoring_pairs_without_live_binding": len({r['jp'] for r in resources if r['id'] not in live and r.get('disposition') == 'translate' and r.get('ko') and r['jp'] != r['ko']}),
                      "local_coverage_keys": len(coverage['keys']) if coverage else 0,

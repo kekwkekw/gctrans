@@ -10,6 +10,19 @@ from export_local_ui import export
 
 
 class ExactUiExportTests(unittest.TestCase):
+    def test_enhancement_controls_include_results_and_static_master_labels(self):
+        ui = json.loads(export(ROOT / 'translations/ko')[0])
+        master = json.loads((ROOT / 'translations/ko/master.json').read_bytes())
+        for jp, ko in master['mVirtueEffects']['ml_name[]'].items():
+            self.assertEqual(ui[jp], ko)
+        self.assertEqual(ui['レベル2'], '레벨2')
+        self.assertEqual(ui['レベル20'], '레벨20')
+        self.assertEqual(ui['パッシブ3の効果ランクのみ抽選します'], '패시브3의 효과 랭크만 추첨합니다')
+        self.assertEqual(ui['限界突破2で解放'], '돌파 2회에 해제')
+        self.assertNotIn('パッシブ4の効果ランクのみ抽選します', ui)
+        self.assertNotIn('限界突破6で解放', ui)
+        self.assertEqual(ui['炎'], '염')
+
     def test_detail_labels_cover_mixed_master_output_and_finite_defaults(self):
         payload, report = export(ROOT / 'translations/ko')
         actual = json.loads(payload)

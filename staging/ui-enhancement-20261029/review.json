@@ -1,0 +1,1464 @@
+{
+  "review": "JP meaning, Korean accepted terminology, control meaning and numeric preservation reviewed. Upstream Chinese values are not translation authority.",
+  "rows": [
+    {
+      "before": null,
+      "jp": "1不足",
+      "ko": "1 부족",
+      "source": "User instruction / observed same-family label"
+    },
+    {
+      "before": null,
+      "jp": "<cspace=-0.1e,>★4</cspace>以上確定",
+      "ko": "★4+ 확정",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": -758874818361638323
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "<cspace=-0.1e,>★5</cspace>確定",
+      "ko": "★5 확정",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": -9145770978145100179
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "<cspace=-0.2em>アイテム</cspace>なし",
+      "ko": "아이템 없음",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": 4678599695123360731
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "<cspace=-0.2em>セット一覧",
+      "ko": "세트 목록",
+      "source": [
+        {
+          "asset_key": "scene/scene_deck.dmm",
+          "container": "CAB-c89f29f10cc769a31f369213a4dafd14",
+          "field": "m_text",
+          "path_id": 441735157301633306
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "<cspace=-0.2em>レベルブーストボーナス</cspace>",
+      "ko": "레벨 부스트 보너스",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "Lv3以上で解放",
+      "ko": "Lv3 이상에서 해제",
+      "source": [
+        {
+          "asset_key": "scene/scene_deck.dmm",
+          "container": "CAB-c89f29f10cc769a31f369213a4dafd14",
+          "field": "m_text",
+          "path_id": 1938092943387165336
+        },
+        {
+          "asset_key": "scene/scene_deck.dmm",
+          "container": "CAB-c89f29f10cc769a31f369213a4dafd14",
+          "field": "m_text",
+          "path_id": 2182120665507936618
+        },
+        {
+          "asset_key": "scene/scene_deck.dmm",
+          "container": "CAB-c89f29f10cc769a31f369213a4dafd14",
+          "field": "m_text",
+          "path_id": 5343915845343528430
+        },
+        {
+          "asset_key": "scene/scene_unit.dmm",
+          "container": "CAB-ef7a95434547463d222adb6faf441f4a",
+          "field": "m_text",
+          "path_id": 2105460837122683064
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": 3269368502304118551
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -8615034674145555121
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -6942297228839797150
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -2315575429895728445
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -1811020872532271903
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -1596149508765254111
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 3313003909562551754
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 4083739911609104997
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 5208464205225763674
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 7781389140517784496
+        },
+        {
+          "asset_key": "popup/popup_deck_unit_select.dmm",
+          "container": "CAB-eef5b6bc74cd4937db527beb7458a3a9",
+          "field": "m_text",
+          "path_id": -7961452247219430534
+        },
+        {
+          "asset_key": "popup/popup_deck_unit_select.dmm",
+          "container": "CAB-eef5b6bc74cd4937db527beb7458a3a9",
+          "field": "m_text",
+          "path_id": -2798474154287431823
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "★3命鏡",
+      "ko": "★3 명경",
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_base_up.dmm",
+          "container": "CAB-6daffe31ad9a48d58c0394f613723755",
+          "field": "m_text",
+          "path_id": 3574719413928016374
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "★4以上確定",
+      "ko": "★4+ 확정",
+      "source": "User instruction / observed same-family label"
+    },
+    {
+      "before": null,
+      "jp": "★4命鏡",
+      "ko": "★4 명경",
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_base_up.dmm",
+          "container": "CAB-6daffe31ad9a48d58c0394f613723755",
+          "field": "m_text",
+          "path_id": 2995615595489661684
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "★5命鏡",
+      "ko": "★5 명경",
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_base_up.dmm",
+          "container": "CAB-6daffe31ad9a48d58c0394f613723755",
+          "field": "m_text",
+          "path_id": -2734936019073603790
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "★5確定",
+      "ko": "★5 확정",
+      "source": "User instruction / observed same-family label"
+    },
+    {
+      "before": null,
+      "jp": "★不足",
+      "ko": "★ 부족",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "が不足しています",
+      "ko": "부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "が不足しています\n",
+      "ko": "부족합니다\n",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "に装備されています。\n付け替えを行いますか？",
+      "ko": "에 장착되어 있습니다.\n옮겨 장착하시겠습니까?",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "の\nパレット/選択中の編成に反映しますか？\n※他の藝術家のパレットに装備中の\nイマージュ/アクセサリ/インスピレーションは\n付け替えられます",
+      "ko": "의\n팔레트/선택한 편성에 적용하시겠습니까?\n※다른 예술가의 팔레트에 장착 중인\n이마쥬/액세서리/영감은\n옮겨 장착됩니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "を消費してアクセサリの限界突破を行います",
+      "ko": "을(를) 소모하여 액세서리를 한계 돌파합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "アイテムが不足しています。",
+      "ko": "아이템이 부족합니다.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "アイテムなし",
+      "ko": "아이템 없음",
+      "source": "User instruction / observed same-family label"
+    },
+    {
+      "before": null,
+      "jp": "アイテムを消費して限界突破します",
+      "ko": "아이템을 소모하여 한계 돌파합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "アイテム抽選",
+      "ko": "아이템 추첨",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": -8290536830509507088
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": 7264563179371941881
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "アクセサリ強化",
+      "ko": "액세서리 강화",
+      "source": [
+        {
+          "asset_key": "popup/popup_equipment_enhance.dmm",
+          "container": "CAB-8b842f990ab3583e86df66c1a4ffbb75",
+          "field": "m_text",
+          "path_id": -764222158999820890
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "アクセサリ限界突破アイテム",
+      "ko": "액세서리 한계 돌파 아이템",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "イマージュ限界突破アイテム",
+      "ko": "이마쥬 한계 돌파 아이템",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "イマージュ限界突破ボーナス",
+      "ko": "이마쥬 한계 돌파 보너스",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "インスピレーションは、バトル中に使用できる攻撃方法が増えるの。\n装備することでステータスも増加するよ。",
+      "ko": "영감은 전투 중에 사용할 수 있는 공격 방법을 늘려 줘.\n장착하면 능력치도 올라가.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "カスタムスタイルパッシブ2",
+      "ko": "커스텀 스타일 패시브2",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "カスタムスタイルパッシブ3",
+      "ko": "커스텀 스타일 패시브3",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "カスタムスタイルパッシブは設定できません",
+      "ko": "커스텀 스타일 패시브를 설정할 수 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "カラー属性やレアリティによっては、\n装備できないものもあるから注意してね。",
+      "ko": "컬러 속성이나 레어도에 따라\n장착할 수 없는 것도 있으니 주의해.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "シーカーズブーツが不足しています",
+      "ko": "시커즈 부츠가 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "スタイルと属性が違うため装備できません",
+      "ko": "스타일과 속성이 달라 장착할 수 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "スタイルのレアリティが不足しているため装備できません",
+      "ko": "스타일의 레어도가 부족하여 장착할 수 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "スタイルは同じスタイルのオーブを使って\n限界突破することができるの。",
+      "ko": "스타일은 같은 스타일의 오브를 사용하여\n한계 돌파할 수 있어.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "スタイルパッシブはありません",
+      "ko": "스타일 패시브가 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "スタイル所持の技法のCT－1\n",
+      "ko": "스타일 보유 기법의 CT－1\n",
+      "source": [
+        {
+          "asset_key": "popup/popup_layer_enhance.dmm",
+          "container": "CAB-06be4daf0de90e532941212e0c1cf029",
+          "field": "m_text",
+          "path_id": -1046774698771926158
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "スタイル限界突破ボーナス",
+      "ko": "스타일 한계 돌파 보너스",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "セット一覧",
+      "ko": "세트 목록",
+      "source": "User instruction / observed same-family label"
+    },
+    {
+      "before": null,
+      "jp": "チームの名前を入力してください。",
+      "ko": "팀 이름을 입력해 주세요.",
+      "source": [
+        {
+          "asset_key": "popup/popup_deck_name_input.dmm",
+          "container": "CAB-72099f155c52efc0c04d441ff73afa40",
+          "field": "m_text",
+          "path_id": 8901020840073682458
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "チーム名編集",
+      "ko": "팀 이름 편집",
+      "source": [
+        {
+          "asset_key": "popup/popup_deck_name_input.dmm",
+          "container": "CAB-72099f155c52efc0c04d441ff73afa40",
+          "field": "m_text",
+          "path_id": -1594561443326982295
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "パッシブ1",
+      "ko": "패시브1",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_list.dmm",
+          "container": "CAB-7b94f468a70bd77b83cbac380e0eb9b5",
+          "field": "m_text",
+          "path_id": -4762116513262003436
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_list.dmm",
+          "container": "CAB-7b94f468a70bd77b83cbac380e0eb9b5",
+          "field": "m_text",
+          "path_id": -4495149951356997114
+        },
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "パッシブ2",
+      "ko": "패시브2",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_list.dmm",
+          "container": "CAB-7b94f468a70bd77b83cbac380e0eb9b5",
+          "field": "m_text",
+          "path_id": -8250007545835480139
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_list.dmm",
+          "container": "CAB-7b94f468a70bd77b83cbac380e0eb9b5",
+          "field": "m_text",
+          "path_id": -2195855032014253822
+        },
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "パッシブ3",
+      "ko": "패시브3",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_list.dmm",
+          "container": "CAB-7b94f468a70bd77b83cbac380e0eb9b5",
+          "field": "m_text",
+          "path_id": -7333576534393997630
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_list.dmm",
+          "container": "CAB-7b94f468a70bd77b83cbac380e0eb9b5",
+          "field": "m_text",
+          "path_id": -6669037107445579986
+        },
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "パッシブ効果",
+      "ko": "패시브 효과",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_list.dmm",
+          "container": "CAB-7b94f468a70bd77b83cbac380e0eb9b5",
+          "field": "m_text",
+          "path_id": -2717641057786211053
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "パッシブ効果抽選",
+      "ko": "패시브 효과 추첨",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": -7323664506706359590
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "ベースアップすると該当パラメータが上昇します",
+      "ko": "베이스업을 하면 해당 능력치가 상승합니다",
+      "source": [
+        {
+          "asset_key": "popup/popup_unit_base_up.dmm",
+          "container": "CAB-6daffe31ad9a48d58c0394f613723755",
+          "field": "m_text",
+          "path_id": -5162670397607941621
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "ベースアップでは、基礎ステータスの底上げを\n行えるの。藝術家に対応した『命鏡』を使って\n強化することができるよ。",
+      "ko": "베이스업으로 기본 능력치를 높일 수 있어.\n예술가에 맞는 ‘명경’을 사용하여\n강화할 수 있어.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "ボックスの残り報酬が不足しています",
+      "ko": "박스의 남은 보상이 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "ポイント残高が不足しています",
+      "ko": "포인트 잔액이 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "ランク抽選",
+      "ko": "랭크 추첨",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": 364488779228002298
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": 2179410730189726885
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "ランダム抽選",
+      "ko": "무작위 추첨",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": 6714450031916234735
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": 7263635610285161032
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "レベルが最大のため強化できません",
+      "ko": "최대 레벨이므로 강화할 수 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "レベルを一定上げると特殊な効果を発揮するようになるの。\n同じ部位のアクセサリは同時に装備できないから注意してね。",
+      "ko": "레벨을 일정 이상 올리면 특별한 효과를 발휘하게 돼.\n같은 부위의 액세서리는 동시에 장착할 수 없으니 주의해.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "レベルアップでは、各種『藝術家の書』を使って\nレベルを上げることができるよ。",
+      "ko": "레벨업에서는 각종 ‘예술가의 서’를 사용하여\n레벨을 올릴 수 있어.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "レベルブースト5あたり",
+      "ko": "레벨 부스트 5당",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "レベルブースト量に応じて、クリア時の基本スコアから算出されるボーナススコアを獲得できます。",
+      "ko": "레벨 부스트 수치에 따라 클리어 시 기본 점수를 기준으로 산출되는 보너스 점수를 획득할 수 있습니다.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "レベル上限<color=#F64873>+10</color>",
+      "ko": "레벨 상한<color=#F64873>+10</color>",
+      "source": [
+        {
+          "asset_key": "popup/popup_limit_lv_bonus_detail.dmm",
+          "container": "CAB-05d278d0c0f8abcb05145039c9295591",
+          "field": "m_text",
+          "path_id": -4398400983630874827
+        },
+        {
+          "asset_key": "popup/popup_limit_lv_bonus_detail.dmm",
+          "container": "CAB-05d278d0c0f8abcb05145039c9295591",
+          "field": "m_text",
+          "path_id": -2561169665719605834
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "レベル上限を超えるためアイテムを使用できません",
+      "ko": "레벨 상한을 초과하므로 아이템을 사용할 수 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "一括合成確認",
+      "ko": "일괄 합성 확인",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "一括選択",
+      "ko": "일괄 선택",
+      "source": [
+        {
+          "asset_key": "popup/popup_equipmentbundle_disassembly_select.dmm",
+          "container": "CAB-f9d7ae7fb84179e22221527e10cef4af",
+          "field": "m_text",
+          "path_id": -9167113924858922453
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "与ダメージ補正",
+      "ko": "주는 피해 보정",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": -4774746158324929541
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -8250296830915354042
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -5207249522327090735
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -3770986528043109909
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -2422877625453043978
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -1392914527323119276
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 941648377015417184
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 1674306454876116680
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 2694460457928125038
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 7068361727921956367
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "交換に必要なアイテムが不足しています",
+      "ko": "교환에 필요한 아이템이 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "以下の素材を使用してレベルアップを行います",
+      "ko": "아래 소재를 사용하여 레벨업합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "以下の素材を使用して限界突破を行います",
+      "ko": "아래 소재를 사용하여 한계 돌파합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "信愛レベルが最大のためプレゼントできません",
+      "ko": "신애 레벨이 최대이므로 선물을 줄 수 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "初回はランダム抽選を行う必要があります",
+      "ko": "처음에는 무작위 추첨을 해야 합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "創作に必要なアイテムが不足しています",
+      "ko": "창작에 필요한 아이템이 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "効果ランクのみ抽選します",
+      "ko": "효과 랭크만 추첨합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "効果内容と効果ランクを抽選します",
+      "ko": "효과 내용과 효과 랭크를 추첨합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "同一アクセサリが不足しているか、ロック状態です",
+      "ko": "동일한 액세서리가 부족하거나 잠겨 있습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "同種の芸相が2つ以上となるようにチームを編成すると、芸相共鳴が発動します。\r\n芸相共鳴と同じ芸相を持つスタイルの体力、攻撃、防御、精神、器用、敏捷に増加補正がかかります。\r\nイマージュの芸相補完は、装備中のスタイルの芸相と一致した場合のみ、芸相1つ分としてカウントされます。",
+      "ko": "같은 예상이 2개 이상이 되도록 팀을 편성하면 예상 공명이 발동합니다.\r\n공명한 예상과 같은 예상을 가진 스타일의 체력, 공격, 방어, 정신, 기교, 민첩이 증가합니다.\r\n이마쥬의 예상 보완은 장착 중인 스타일의 예상과 일치할 때만 예상 1개로 계산됩니다.",
+      "source": [
+        {
+          "asset_key": "popup/popup_virtue_resonance.dmm",
+          "container": "CAB-daeadc73c529a0537451605b60c72f78",
+          "field": "m_text",
+          "path_id": 5377622729973491992
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "回数不足",
+      "ko": "횟수 부족",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "在庫不足により購入できませんでした。",
+      "ko": "재고가 부족하여 구매할 수 없습니다.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "対象となる芸相を所持したスタイルを編成することでボーナススコアを獲得できます。\n獲得できるボーナススコアには上限があります。",
+      "ko": "지정된 예상을 가진 스타일을 편성하면 보너스 점수를 획득할 수 있습니다.\n획득할 수 있는 보너스 점수에는 상한이 있습니다.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "強化に必要なアイテムが不足しています",
+      "ko": "강화에 필요한 아이템이 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "必要アイテムが不足しています",
+      "ko": "필요한 아이템이 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "必要銀貨",
+      "ko": "필요 은화",
+      "source": [
+        {
+          "asset_key": "popup/popup_equipment_enhance.dmm",
+          "container": "CAB-8b842f990ab3583e86df66c1a4ffbb75",
+          "field": "m_text",
+          "path_id": -1713057223468093602
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "所持銀貨",
+      "ko": "보유 은화",
+      "source": [
+        {
+          "asset_key": "popup/popup_equipment_enhance.dmm",
+          "container": "CAB-8b842f990ab3583e86df66c1a4ffbb75",
+          "field": "m_text",
+          "path_id": 580669316958184481
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "抽選に必要なアイテムが不足しています",
+      "ko": "추첨에 필요한 아이템이 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "抽選効果一覧",
+      "ko": "추첨 효과 목록",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": 3530533973070887962
+        },
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect_list.dmm",
+          "container": "CAB-7b94f468a70bd77b83cbac380e0eb9b5",
+          "field": "m_text",
+          "path_id": 8687741571608612755
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "抽選形式",
+      "ko": "추첨 방식",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": -3121877556991281211
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "指定<cspace=-0.2em>芸相</cspace>編成",
+      "ko": "지정<cspace=-0.2em>예상</cspace> 편성",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "指定芸相編成（",
+      "ko": "지정 예상 편성（",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "挑戦回数が不足しています",
+      "ko": "도전 횟수가 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "有償藝晶石が不足しています",
+      "ko": "유료 예정석이 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "残回数が不足しています。",
+      "ko": "남은 횟수가 부족합니다.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "潜性ポテンシャル",
+      "ko": "잠재 포텐셜",
+      "source": [
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -2780704651290822759
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 5787288450488141441
+        },
+        {
+          "asset_key": "popup/popup_factor_list.dmm",
+          "container": "CAB-eff282737cbc0327022b1f08d721e942",
+          "field": "m_text",
+          "path_id": 7764324362711562765
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "潜性ポテンシャルを所持していません",
+      "ko": "잠재 포텐셜을 보유하고 있지 않습니다",
+      "source": [
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 8962684493691276222
+        }
+      ]
+    },
+    {
+      "before": "불",
+      "jp": "炎",
+      "ko": "염",
+      "source": "User instruction / observed same-family label"
+    },
+    {
+      "before": null,
+      "jp": "発動中の効果",
+      "ko": "발동 중인 효과",
+      "source": [
+        {
+          "asset_key": "popup/popup_virtue_resonance.dmm",
+          "container": "CAB-daeadc73c529a0537451605b60c72f78",
+          "field": "m_text",
+          "path_id": 4656463310542296255
+        },
+        {
+          "asset_key": "popup/popup_virtue_resonance.dmm",
+          "container": "CAB-daeadc73c529a0537451605b60c72f78",
+          "field": "m_text",
+          "path_id": 5117780907582765905
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "発動中の効果はありません。",
+      "ko": "발동 중인 효과가 없습니다.",
+      "source": [
+        {
+          "asset_key": "popup/popup_virtue_resonance.dmm",
+          "container": "CAB-daeadc73c529a0537451605b60c72f78",
+          "field": "m_text",
+          "path_id": 800327029807269841
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "発現率：100%",
+      "ko": "발현율: 100%",
+      "source": [
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 4113442321213719608
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": 7931284020255804409
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "発現率：33%",
+      "ko": "발현율: 33%",
+      "source": [
+        {
+          "asset_key": "popup/popup_factor_list.dmm",
+          "container": "CAB-eff282737cbc0327022b1f08d721e942",
+          "field": "m_text",
+          "path_id": -8807554942294170560
+        },
+        {
+          "asset_key": "popup/popup_factor_list.dmm",
+          "container": "CAB-eff282737cbc0327022b1f08d721e942",
+          "field": "m_text",
+          "path_id": -8632403428461948959
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "素材が不足しています",
+      "ko": "소재가 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "素材を消費してアクセサリの強化を行います",
+      "ko": "소재를 소모하여 액세서리를 강화합니다",
+      "source": [
+        {
+          "asset_key": "popup/popup_equipment_enhance.dmm",
+          "container": "CAB-8b842f990ab3583e86df66c1a4ffbb75",
+          "field": "m_text",
+          "path_id": 2082683738328859144
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "絶技レベルや藝術家のレベル上限が上がったり、\n限界突破回数に応じたボーナス効果もあるよ。",
+      "ko": "절기 레벨이나 예술가의 레벨 상한이 오르고,\n한계 돌파 횟수에 따른 보너스 효과도 있어.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "編成に適用",
+      "ko": "편성에 적용",
+      "source": [
+        {
+          "asset_key": "popup/popup_memory_set_confirm.dmm",
+          "container": "CAB-66ec5a1fff25fa46d413711ff9da1a83",
+          "field": "m_text",
+          "path_id": 4094927939478602454
+        },
+        {
+          "asset_key": "popup/popup_memory_set_confirm.dmm",
+          "container": "CAB-66ec5a1fff25fa46d413711ff9da1a83",
+          "field": "m_text",
+          "path_id": 7226802407200320460
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "美術品をたくさん獲得すると、\nミュージアムレベルが上がって、生産される\n感情資源の量が増えていくんっすよ。",
+      "ko": "미술품을 많이 획득하면\n미술관 레벨이 오르고 생산되는\n감정 자원의 양도 늘어나요.",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "藝晶石が不足しています",
+      "ko": "예정석이 부족합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "藝術家詳細",
+      "ko": "예술가 상세",
+      "source": [
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -8307251279363730635
+        },
+        {
+          "asset_key": "popup/popup_layer_detail.dmm",
+          "container": "CAB-4780152d8a0909fc3f0a61e7438c7b65",
+          "field": "m_text",
+          "path_id": -5569768200728920654
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "表示できるポテンシャルがありません。",
+      "ko": "표시할 포텐셜이 없습니다.",
+      "source": [
+        {
+          "asset_key": "popup/popup_factor_list.dmm",
+          "container": "CAB-eff282737cbc0327022b1f08d721e942",
+          "field": "m_text",
+          "path_id": 4605357856713712933
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "追加素材",
+      "ko": "추가 소재",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": 5306527997025812584
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "追加素材を使用して一定ランク以上が確定した状態で\n\r効果内容と効果ランクを抽選します",
+      "ko": "추가 소재를 사용하여 일정 랭크 이상을 보장한 상태로\n\r효과 내용과 효과 랭크를 추첨합니다",
+      "source": [
+        {
+          "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
+          "container": "CAB-1f8726ba5af3271c6efad265b93190af",
+          "field": "m_text",
+          "path_id": -8560837459738815293
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "追加素材を使用して一定ランク以上が確定した状態で\n効果内容と効果ランクを抽選します",
+      "ko": "추가 소재를 사용하여 일정 랭크 이상을 보장한 상태로\n효과 내용과 효과 랭크를 추첨합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "選択したイマージュを消費して限界突破します",
+      "ko": "선택한 이마쥬를 소모하여 한계 돌파합니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "部位が重複するため装備できません",
+      "ko": "장착 부위가 겹쳐 장착할 수 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": "한계돌파 4단계에서 해제",
+      "jp": "限界突破4で解放",
+      "ko": "돌파 4회에 해제",
+      "source": "User instruction / observed same-family label"
+    },
+    {
+      "before": null,
+      "jp": "限界突破できないアクセサリです",
+      "ko": "한계 돌파할 수 없는 액세서리입니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "限界突破できません",
+      "ko": "한계 돌파할 수 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "限界突破数が最大のため限界突破できません",
+      "ko": "한계 돌파 횟수가 최대이므로 한계 돌파할 수 없습니다",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    },
+    {
+      "before": null,
+      "jp": "限界突破確認",
+      "ko": "한계 돌파 확인",
+      "source": [
+        {
+          "source": "PC_LITERAL"
+        }
+      ]
+    }
+  ],
+  "schema": "gc-ui-enhancement-review-v1"
+}
