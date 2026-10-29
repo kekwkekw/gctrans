@@ -1,0 +1,20 @@
+{
+  "registered_ids": [
+    "20003605",
+    "40112121",
+    "40118032"
+  ],
+  "reason": "Reviewed payloads were already bundled but absent from online Novel registration; register only these three approved files.",
+  "before_count": 1896,
+  "after_count": 1899,
+  "existing_registered_hashes_changed": 132,
+  "approved_files_with_current_manifest_hash": 135,
+  "holds_unchanged": true,
+  "package_verify": "PASS",
+  "metadata_after_sha256": {
+    "legacy-components.json": "54448e27810770fa1950feeaa39a0933ecacedbacef5a2f060298c13301bcef2",
+    "manifest.json": "3fa993a10814015bb7d9be678a80f1b6e3f42d64689c81c46124c2b7b3cee072",
+    "release-manifest.json": "b51e90ad152ea336e2ebe622fef61484a37c2c03d52382a5edd0827cfaa73f69",
+    "ui/manifest.json": "0b62af490b6c8848b8c02f9cbd4b58413be4a0d4d9cafd5de1ba733e90bc78ad"
+  }
+}

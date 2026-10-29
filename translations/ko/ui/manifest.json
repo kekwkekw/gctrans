@@ -981,7 +981,7 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "8c0d35027e453942da30992252dc210cfa1114723c80f53a370d4442f1ff833f",
+      "sha256": "54448e27810770fa1950feeaa39a0933ecacedbacef5a2f060298c13301bcef2",
       "size": 344821
     },
     {
@@ -1017,6 +1017,6 @@
   ],
   "locale": "ko",
   "origin": "local",
-  "revision": "ng03-95d7d74ad354acbf1262554e",
+  "revision": "ng03-54e1dc6b736165b2a05924ba",
   "schema_version": 1
 }
