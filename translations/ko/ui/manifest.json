@@ -3,7 +3,7 @@
     {
       "kind": "image_catalog",
       "path": "images.json",
-      "sha256": "7f82546155f73dc123e88228ef50561e6de2fc3a4625f164a369cc76b1d17c24",
+      "sha256": "d4571f0769b4f3b9061650fe58212d4d5a336990b9cb8a5e6bda5ddc51e4fa5a",
       "size": 48875
     },
     {
@@ -23,6 +23,12 @@
       "path": "images/01a72d415fdcb491d06e64d69cf630dac4095765170b024e0ce24dac98eabc22.png",
       "sha256": "01a72d415fdcb491d06e64d69cf630dac4095765170b024e0ce24dac98eabc22",
       "size": 91003
+    },
+    {
+      "kind": "image_data",
+      "path": "images/0301ca713babab31357dd5a02adbb0dfba2a2804c442b20bb96cb57649aaebb2.png",
+      "sha256": "0301ca713babab31357dd5a02adbb0dfba2a2804c442b20bb96cb57649aaebb2",
+      "size": 36502
     },
     {
       "kind": "image_data",
@@ -305,12 +311,6 @@
       "path": "images/52cd67f7e8a7cda602b23dd7a4c7ad2014c015e0b4a42f7bdd83a090cbdfe3bd.png",
       "sha256": "52cd67f7e8a7cda602b23dd7a4c7ad2014c015e0b4a42f7bdd83a090cbdfe3bd",
       "size": 90727
-    },
-    {
-      "kind": "image_data",
-      "path": "images/539b09266f372a4b3ff2f1018f63c50cb97d9e9f7c9e9a2bb685e16c8d140202.png",
-      "sha256": "539b09266f372a4b3ff2f1018f63c50cb97d9e9f7c9e9a2bb685e16c8d140202",
-      "size": 36499
     },
     {
       "kind": "image_data",
@@ -981,7 +981,7 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "367c74bf8c94f103fd42de13b6e44bbbb81484229162647fd5d1fb57d79ab871",
+      "sha256": "fdfc7bf13db5869d3c8489c93c79e6a61c4fb3e24c0cd2f70fcc39ca9954698d",
       "size": 344821
     },
     {
@@ -1017,6 +1017,6 @@
   ],
   "locale": "ko",
   "origin": "local",
-  "revision": "ng03-efafd7adcd2f12d2a1d95da3",
+  "revision": "ng03-139ac483b028d70dc3785050",
   "schema_version": 1
 }

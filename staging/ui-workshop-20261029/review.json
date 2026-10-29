@@ -95,12 +95,21 @@
     {
       "name": "TitleAtelierResult",
       "ko": "창작 결과",
-      "width": 315,
+      "width": 316,
       "height": 80,
       "source_sha256": "c3f7305360fbf8e50430cab2eb2b4a24c3d6c0608b63728d127ae380d2658985",
-      "sha256": "539b09266f372a4b3ff2f1018f63c50cb97d9e9f7c9e9a2bb685e16c8d140202",
+      "sha256": "0301ca713babab31357dd5a02adbb0dfba2a2804c442b20bb96cb57649aaebb2",
       "method": "built-in imagegen text-localization; premultiplied-alpha aspect-preserving size normalization",
-      "alpha_content_threshold": 4
+      "alpha_content_threshold": 4,
+      "source_sprite_rect": [
+        316,
+        80
+      ],
+      "source_extracted_png": [
+        315,
+        80
+      ],
+      "note": "Unity sprite.rect is authoritative; packed texture extraction trims a fractional edge to 315px. Native 315px mapping did not match. Corrected to 316x80."
     },
     {
       "name": "TextAtelierStart",
