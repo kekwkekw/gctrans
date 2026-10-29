@@ -5,10 +5,11 @@
 ## 포함 범위
 
 - `ui/resources.json`: `disposition=translate`이고 비어 있지 않은 JP/KO 쌍을 모두 포함한다. binding의 enabled, kind, role, 과거 owner 분류는 포함 조건이 아니다.
-- `master.json`: `mTextConfig.ml_value[]`, `mTutorialPopupDescriptions.ml_title[]`, `mAthenesRecordAreas.name`을 포함한다. 이 필드는 UI 문구/제목/지역 표시명이다. Novel 본문이나 임의 Master description 전체를 UI 사전으로 평탄화하지 않는다.
+- `master.json`: `mTextConfig.ml_value[]`, `mTutorialPopupDescriptions.ml_title[]`, `mAthenesRecordAreas.name`, `mVirtueEffects.ml_name[]`을 포함한다. 이 필드는 UI 문구/제목/지역명/예상 이름이다. 자동 편성·예상 공명의 static 복사본도 같은 한국어를 사용한다. Novel 본문이나 임의 Master description 전체를 UI 사전으로 평탄화하지 않는다.
 - `ui/general-exact.reviewed.json`: 실제 화면과 JP 의미를 검수한 명시적 exact 쌍이며 충돌 해소의 정본이다. 이 파일에 없는 다중 한국어 충돌은 실패한다.
 - 동일한 외곽 rich-text 태그를 가진 JP/KO는 장식을 벗긴 plain exact도 생성한다. 기존 exact는 유지하며 모호한 alias는 실패한다.
 - 공방 1~3은 검수된 정수 템플릿에서 offline exact로 생성한다.
+- `ui/enhancement-families.json`: 실기·PC producer에서 확인한 레벨, 슬롯, 부족 수량, 확률, 경감 수치의 유한 정수 집합을 exact로 생성한다. 허용 범위 밖의 값을 번역 완료로 세지 않는다. 빈 목록·중복·충돌·잘못된 변수는 실패한다.
 
 `ui/local-coverage.json`은 `gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318`의 UI **JP 키**만 기록한다. 중국어 번역을 가져오는 파일이 아니다. local의 일본어 키가 export에서 사라지면 실패한다. 숫자·기호·HP 등 언어 변환이 필요 없는 키만 keep_source로 허용한다. 새 upstream을 채택할 때 이 목록도 갱신하고 새 JP를 한국어로 검수한다.
 
@@ -28,3 +29,9 @@ dotnet run --project tests/UiTextLookup -- translations/ko/ui.json
 ```
 
 source가 실재한다는 사실, 한국어 검수, exporter 포함, Native 표시를 구분해 기록한다. 과거 HOLD나 비활성 binding만으로 문구를 누락시키지 않는다.
+
+## 강화·편성 후속 조사
+
+`scene/*.dmm`와 `popup/*.dmm`는 기존 수집 범위에 포함된다. 실제 메뉴를 열기 전 캐시에 없었던 asset의 `NOT_CACHED`는 조사 완료가 아니다. 해당 메뉴를 연 뒤 다시 취득하고, 정상 해석된 asset만 완료로 센다. 확인·결과·실패 토스트·필터 아래쪽은 별도 화면 상태로 기록한다. 코드가 조합하는 문구는 PC 상수와 실제 완성 문자열을 함께 확인한다.
+
+7.2.1의 편성 복사 확인문만 작은 전용 runtime 규칙을 사용한다. `編成の内容を<color=#...>팀명</color>に上書きします` 전체 형태에서 팀명과 색상 태그를 그대로 보존하고, `編成の内容を{0}に上書きします`의 검수 번역을 적용한다. 사용자 팀명을 사전에 수집하거나 부분 치환하지 않는다. 일반 exact 데이터 보완은 7.2.0에도 전달되지만 이 문장 처리는 7.2.1 DLL이 필요하다. Novel 렌더러와 실제 사용자 입력 보호는 유지한다.

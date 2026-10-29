@@ -1,0 +1,1437 @@
+{
+  "crawler": "Existing scene/*.dmm and popup/*.dmm acquisition already includes these assets; NOT_CACHED is uninspected, never PASS.",
+  "dispositions": [
+    {
+      "jp": "ポテンシャル忘却",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_factor_delete.dmm",
+          "container": "CAB-63bc5fac7eaca878e506685be0277c04",
+          "field": "m_text",
+          "path_id": -8725975264123936122
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "１行最大全角３０文字入ります。\n５行で最大全角１２８文字入ります。\n",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_factor_delete.dmm",
+          "container": "CAB-63bc5fac7eaca878e506685be0277c04",
+          "field": "m_text",
+          "path_id": -8382890849602637443
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "あと1000",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_factor_delete.dmm",
+          "container": "CAB-63bc5fac7eaca878e506685be0277c04",
+          "field": "m_text",
+          "path_id": -2740499232241401276
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 2872905453635554935
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 4615995724594121934
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -6468883945856161354
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 8790547624542791665
+        }
+      ],
+      "master": [],
+      "reason": "Existing runtime numeric counter",
+      "status": "EXISTING_COUNTER"
+    },
+    {
+      "jp": "因子名",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_factor_delete.dmm",
+          "container": "CAB-63bc5fac7eaca878e506685be0277c04",
+          "field": "m_text",
+          "path_id": 1717676787852737782
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "忘却する",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_factor_delete.dmm",
+          "container": "CAB-63bc5fac7eaca878e506685be0277c04",
+          "field": "m_text",
+          "path_id": 4108216986424942188
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "選択したポテンシャルを忘却します",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_factor_delete.dmm",
+          "container": "CAB-63bc5fac7eaca878e506685be0277c04",
+          "field": "m_text",
+          "path_id": 6694750211362821850
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "継承率",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_factor_delete.dmm",
+          "container": "CAB-63bc5fac7eaca878e506685be0277c04",
+          "field": "m_text",
+          "path_id": 7086274194441293480
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "あと1000000",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -9212219900409165494
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -3544929776031549594
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -3086579311980299594
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 1938461030341082526
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 3191260225397974489
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 4102391261767023294
+        }
+      ],
+      "master": [],
+      "reason": "Existing runtime numeric counter",
+      "status": "EXISTING_COUNTER"
+    },
+    {
+      "jp": "内容が入るよ",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -9047842394297781894
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -7460601753523246203
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -3363981665050016632
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -2383112830182746294
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 715938341154402909
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 968164924792749072
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 3741207021444092963
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 6775036538903501783
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -6442770135114328529
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -3824033051773057789
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -3754433611273603914
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -1693622445207570469
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 1043579221141480218
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 7335025445566410696
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "強化ポテンシャル",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -8743742182910978458
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -5195479777976565740
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 7041880519544906278
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "あと000",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -8694436432552635993
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -8097392162839994823
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -7718707824365561856
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -6044329876092966031
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -4449073619466605861
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -2659916860016705912
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -2633592386440546665
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -1014139946072018857
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -563898382794679874
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -485085582645495749
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 1264596136467991010
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 2861546121387557273
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 2930920910822216224
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 3292978281839899544
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 3808167393458584329
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 5120490391730764318
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 5134889843286093457
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 5544095023571798361
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 5891121207280114349
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 6343546267199374145
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 6586349066616426775
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 6788375091513186457
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 8659842933347315392
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 9182093252749524022
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -8772994745962847324
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -6273193459047063309
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -4540502500018681479
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -1600232653982522811
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -215513488215032664
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 6014429700070864053
+        }
+      ],
+      "master": [],
+      "reason": "Existing runtime numeric counter",
+      "status": "EXISTING_COUNTER"
+    },
+    {
+      "jp": "強化イマージュ",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -8044683775137894450
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -6805812603133118347
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 4904218489710775361
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 5281688053954227093
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "あと10000000",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -7959093012212434093
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -3823829136766591131
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -275803076103418023
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 6636125865407282232
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 7985109414409455941
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 8863267483768177421
+        }
+      ],
+      "master": [],
+      "reason": "Existing runtime numeric counter",
+      "status": "EXISTING_COUNTER"
+    },
+    {
+      "jp": "補正",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -6707331395185180780
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -468811059555639405
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 628344720141176842
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "消費アイテム",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -4760546887660871354
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -818071443699420314
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 882783629456263739
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "消費イマージュ",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -3088350694161187012
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 832902494839590355
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 1269571852184163568
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 4720920011318878327
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 5519292692754615007
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "素材として使用したアイテムは消失します",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -2104927352307377177
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "継承されるポテンシャルはありません",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -1756141768765764046
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 4285083765380089601
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 7017371507997024393
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "素材として使用したイマージュは消失します",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": -879966892750508654
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "確率アップアイテム",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 213728431839766212
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 3335191137422881352
+        },
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 8795121250717482991
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "選択したイマージュを消費して合成を行います",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 910052553743398880
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "〇〇確認",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 2656534478665442910
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "一括合成ではポテンシャルを継承できません",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 5326579053431874003
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "スター付きのイマージュが選択されています",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 5892626341483061063
+        }
+      ],
+      "master": [],
+      "reason": "Native/source UI exact",
+      "status": "TRANSLATED"
+    },
+    {
+      "jp": "アイテム名がはいります",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_enhance_check.dmm",
+          "container": "CAB-e6a4920ab41375ba585c1e2c08676184",
+          "field": "m_text",
+          "path_id": 7936169602077358957
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "項目名４５６７８９０",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_filter.dmm",
+          "container": "CAB-59014eeace5d0eb7286d4b79e2fa314a",
+          "field": "m_text",
+          "path_id": -9029495275745548511
+        },
+        {
+          "asset_key": "popup/popup_filter.dmm",
+          "container": "CAB-59014eeace5d0eb7286d4b79e2fa314a",
+          "field": "m_text",
+          "path_id": -6025026041620623712
+        },
+        {
+          "asset_key": "popup/popup_filter.dmm",
+          "container": "CAB-59014eeace5d0eb7286d4b79e2fa314a",
+          "field": "m_text",
+          "path_id": -4111977105951748371
+        },
+        {
+          "asset_key": "popup/popup_filter.dmm",
+          "container": "CAB-59014eeace5d0eb7286d4b79e2fa314a",
+          "field": "m_text",
+          "path_id": -3650118161261598376
+        },
+        {
+          "asset_key": "popup/popup_filter.dmm",
+          "container": "CAB-59014eeace5d0eb7286d4b79e2fa314a",
+          "field": "m_text",
+          "path_id": -2210319025384528897
+        },
+        {
+          "asset_key": "popup/popup_filter.dmm",
+          "container": "CAB-59014eeace5d0eb7286d4b79e2fa314a",
+          "field": "m_text",
+          "path_id": 2527168690542926908
+        },
+        {
+          "asset_key": "popup/popup_filter.dmm",
+          "container": "CAB-59014eeace5d0eb7286d4b79e2fa314a",
+          "field": "m_text",
+          "path_id": 2670775590729552249
+        },
+        {
+          "asset_key": "popup/popup_filter.dmm",
+          "container": "CAB-59014eeace5d0eb7286d4b79e2fa314a",
+          "field": "m_text",
+          "path_id": 5092625223005461487
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "アイテム名",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": -1772443840837808895
+        },
+        {
+          "asset_key": "popup/popup_unit_enhance_confirm.dmm",
+          "container": "CAB-db1214c36923b0dc7acb9c30e13a79d3",
+          "field": "m_text",
+          "path_id": 201229459637255467
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "可変テキスト",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -9139759104483386561
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -4728007054041022600
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -284258907768306319
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 2714239180095933409
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 4828906664670922163
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 6365954923976281920
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "範囲内の敵に<color=#F64873>300%</color>の物理ダメージを与え、範囲内の味方に<color=#F64873>50%</color>の確率で<color=#F64873>3ターン</color>「シールド」状態にする範囲内の敵に<color=#F64873>300%範囲内の敵に<color=#F64873>300%</color>の物理ダメージを与え、範囲内の味方に<color=#F64873>50%</color>の確率で<color=#F64873>3ターン</color>「シールド」状態にする範囲内の敵に<color=#F64873>300%",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -8535073103397371819
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 1564801118275921233
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "あと100000",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -8289160056859959994
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 142369659740503039
+        }
+      ],
+      "master": [],
+      "reason": "Existing runtime numeric counter",
+      "status": "EXISTING_COUNTER"
+    },
+    {
+      "jp": "エピソード名が入ります",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -5959505330120112218
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -4765688704652204509
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 3310408938349857459
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 6489457508682920233
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "ADVタイトルADVタイトル",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -5158546439564825229
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -1390911721093806271
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 8291738416965897864
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 8964416435415496116
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "説明が入ります。",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -3074776644837097015
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "<color=#99928A>好物：</color>テキストが入ります",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -1790381056956403750
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "5ターン",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -1090701438502070299
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 3911957536963690063
+        }
+      ],
+      "master": [],
+      "reason": "Existing runtime numeric counter",
+      "status": "EXISTING_COUNTER"
+    },
+    {
+      "jp": "セカンドネーム最大30文字入ります。\n",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": -369795531284886375
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 2416454191434435363
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "イマージュ名がはいります",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 357799451080802773
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 1953987837257488559
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "タブタイトル",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 1360889591023847133
+        },
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 1408378934964468858
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "CV：声優様のお名前が入ります。",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 4511463070690961548
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "スキル名が入ります",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 5511121287241738317
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "ユニットネーム８９０\n（１２３４５６７８）",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "scene/scene_sub_unit.dmm",
+          "container": "CAB-5288f6944b0090bcbd050b44d5b1212d",
+          "field": "m_text",
+          "path_id": 5739401917526789545
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "メモリー名６７８９０１２３４５６７８９０",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_memory_level_up_anim.dmm",
+          "container": "CAB-29921c7a6dc8647df27745dab60894fe",
+          "field": "m_text",
+          "path_id": 5629056833597439102
+        },
+        {
+          "asset_key": "popup/popup_memory_level_up_anim.dmm",
+          "container": "CAB-29921c7a6dc8647df27745dab60894fe",
+          "field": "m_text",
+          "path_id": 6184972411337710508
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    },
+    {
+      "jp": "効果テキストが入ります",
+      "local_master": [],
+      "local_ui": null,
+      "locations": [
+        {
+          "asset_key": "popup/popup_memory_skill_list.dmm",
+          "container": "CAB-6e9309be95310855a010f0f20c44d29c",
+          "field": "m_text",
+          "path_id": -456414977313735805
+        },
+        {
+          "asset_key": "popup/popup_memory_skill_list.dmm",
+          "container": "CAB-6e9309be95310855a010f0f20c44d29c",
+          "field": "m_text",
+          "path_id": 8755962031128692218
+        }
+      ],
+      "master": [],
+      "reason": "Explicit layout placeholder or malformed repeated mock description; not a live content assertion.",
+      "status": "AUTHORING_PLACEHOLDER"
+    }
+  ],
+  "families": [
+    {
+      "evidence": "Native filter has rarity 3/4/5 potential groups; whole PC literal.",
+      "jp": "★{0}ポテンシャル",
+      "ko": "★{0} 포텐셜",
+      "values": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "evidence": "Native item inheritance showed probability 60%; integer percent producer range 0..100; complete PC literal.",
+      "jp": "確率:{0}%",
+      "ko": "확률: {0}%",
+      "values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ]
+    }
+  ],
+  "pairs": {
+    "スター付きのイマージュが選択されています": "별표가 있는 이마쥬가 선택되어 있습니다",
+    "ポテンシャルなし": "포텐셜 없음",
+    "ポテンシャルを忘却しました": "포텐셜을 잊었습니다",
+    "ポテンシャル忘却": "포텐셜 망각",
+    "一括合成ではポテンシャルを継承できません": "일괄 합성으로는 포텐셜을 계승할 수 없습니다",
+    "強化イマージュ": "강화할 이마쥬",
+    "強化ポテンシャル": "강화할 포텐셜",
+    "忘却する": "잊기",
+    "消費アイテム": "소비 아이템",
+    "消費イマージュ": "소비 이마쥬",
+    "潜性ポテンシャルはありません": "잠재 포텐셜이 없습니다",
+    "確率アップアイテム": "확률 증가 아이템",
+    "素材として使用したアイテムは消失します": "소재로 사용한 아이템은 사라집니다",
+    "素材として使用したイマージュは消失します": "소재로 사용한 이마쥬는 사라집니다",
+    "継承されるポテンシャルはありません": "계승할 포텐셜이 없습니다",
+    "継承率": "계승률",
+    "補正": "보정",
+    "選択したイマージュを消費して合成を行います": "선택한 이마쥬를 소모하여 합성합니다",
+    "選択したポテンシャルを忘却します": "선택한 포텐셜을 잊습니다"
+  },
+  "root_cause": "Item inheritance and forget dialogs were not cached in the first local audit. They were downloaded by Native navigation; not missing Master coverage. Filter headings are PC-formatted labels. All selected pairs are absent in pinned local UI and both Master dictionaries.",
+  "schema": "gc-ui-native-followup-review-v1",
+  "status": "REVIEWED"
+}

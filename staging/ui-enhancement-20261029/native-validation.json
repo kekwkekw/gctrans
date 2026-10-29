@@ -1,0 +1,47 @@
+{
+  "schema": "gc-ui-enhancement-native-summary-v1",
+  "status": "REPRESENTATIVE_NATIVE_PASS",
+  "runtime": "7.2.1",
+  "tested_commit": "1a8403968faa413df5b6bed1d5f23681d867bfd0",
+  "dll_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+  "ui_sha256": "0d511dc272b6408ab803a6f631f8e272ac4ffb3b2c986cff72ba1c80efcc89ab",
+  "ui_exact_before": 5389,
+  "ui_exact_after": 7837,
+  "added_exact": 2448,
+  "removed_exact": 0,
+  "changed_exact": 3,
+  "protected_files_unchanged_except_authorized_dll": 1944,
+  "master_keys": 34020,
+  "novels": 1939,
+  "image_targets": 156,
+  "enabled_tables": "*",
+  "delivery": "Startup fetched manifest and ui.json from PR45 branch. Installed UI SHA256 equals repository. No local translation file copy. 7.2.1 DLL was installed separately for the approved deck-copy rule.",
+  "native_7_2_1": [
+    "Startup Korean notice and main logo; 156 image targets verified by loader",
+    "Deck copy chooser and confirmation: Korean sentence, original team name and color retained; copy cancelled",
+    "Equipment enhancement: confirmation, reduction 70 to 84, actual level 1 to 2 result",
+    "Equipment limitbreak: instructions, duplicate and alternative-item views; cancelled",
+    "Bulk equipment dismantling: confirmation and high-rarity/exclusive-item warnings; cancelled",
+    "Potential forget: title, body, inheritance probability; cancelled",
+    "Subunit filter: 炎 shown as 염; potential grade label shown in Korean",
+    "Item inheritance: confirmation, material warning, 60% probability; cancelled",
+    "Novel 99900001: Korean recall menu title, body, speaker 관장/산소비노, glossary-linked text and skip confirmation"
+  ],
+  "earlier_same_audit_7_2_0": [
+    "Auto-formation virtues and resonance explanation/table",
+    "Artist level-up, skill level 2/3, baseup confirmation/reset, limitbreak shortage and CT effect",
+    "Passive lottery modes, lock labels, three effects tabs, confirmation, actual draw result and discard warning",
+    "Subunit level-up result, bulk composition screen and limitbreak confirmation",
+    "Memory detail and save confirmation"
+  ],
+  "limits": [
+    "Not a claim that every game string or all material-consuming result variants are translated.",
+    "Memory enhancement could not run: current account reported no enhanceable memory; message verified Korean.",
+    "Bulk composition selection maximum remains HOLD_DYNAMIC_DOMAIN until the actual bound is observed.",
+    "Serialized 与えるダメージ2.1%上昇 example remains HOLD_SOURCE_DEFAULT; real Master effects already translate.",
+    "Event-recall image regression was not repeated for 7.2.1: image source/catalog and image runtime are unchanged from the previously verified 7.2.0 release."
+  ],
+  "runtime_change": "One anchored deck-copy confirmation rule preserves the entire colored user-name span. Existing Novel and user-input scope guards remain.",
+  "offline": "7 Python suites and UiTextLookup/UiTextScope/ImageCache/TranslationCache passed; Release build succeeded (8 existing warnings, 0 errors); package verified.",
+  "publication": "PR45 ready for review. Release candidate preparation only; main merge and public release require approval and have not been performed."
+}
