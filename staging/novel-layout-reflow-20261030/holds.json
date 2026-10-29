@@ -1,0 +1,88 @@
+{
+  "scope": "review-local holds; canonical translation/holds.jsonl unchanged",
+  "rows": [
+    {
+      "row_id": "10010102:ae7962066ac3e1b4",
+      "scenario_id": "10010102",
+      "entry_index": 53,
+      "source_path": "translations/ko/novels/10010102.json",
+      "source_file_sha256": "92c9a5e71b8343fb7c08d8a65ea07e8d68829b327c7e8069cd6f19bee251c3eb",
+      "jp_sha256": "ae7962066ac3e1b40109659a7ad43f88ec016e2b7c4ad401828e13cace5785a1",
+      "ko_current_sha256": "91ca4c182af3d4dc2d33c83c9a4c013804b75ca27efdb66100a0f142261de4c2",
+      "jp": "彼は<click=11>アテネス市警</click>のジャン刑事。<br>アルテが言うように、市民の安全を守る熱血漢だ。",
+      "ko_current": "그는 <click=11>아테네스 경찰청</click>의 쟝 형사. 아르테가 말한 것 처럼, 시민의 안전을 지키는 열혈남이다.",
+      "current_line_cells": [
+        51
+      ],
+      "estimated_native_rows": 2,
+      "protected_tags": [
+        "<click=11>",
+        "</click>"
+      ],
+      "priority": "B_BOUNDARY_PREVENTION",
+      "ko_draft": "그는 <click=11>아테네스 경찰청</click>의 쟝 형사. 아르테가 말한<br>것 처럼, 시민의 안전을 지키는 열혈남이다.",
+      "draft_kind": "REFLOW_ONLY",
+      "draft_line_cells": [
+        26,
+        24
+      ],
+      "ko_final": null,
+      "review_decision": "HOLD",
+      "review_notes": "context/names.json 및 현행 Knowledge에서 アテネス市警는 ‘아테네스 시경’, ジャン刑事는 ‘장 형사’입니다. 현재 보호 click 블록은 <click=11>아테네스 경찰청</click>으로 되어 있어 블록 자체 수정이 필요하므로, 보호 블록을 임의 변경하지 않고 HOLD합니다.",
+      "draft_notes": "어절·문장 내용 보존. 줄바꿈 경계의 공백/전각 들여쓰기와 <br> 위치만 조정. 자동 줄배치이므로 의미 단위로 자연스러운지 검수하세요. ruby/click 제어 태그와 내부 문자열 원형 유지. 태그를 수정하거나 분리하지 마세요.",
+      "context_previous": {
+        "jp": "「今回はまだ芸術犯罪って決まったわけじゃないんだがな」",
+        "ko": "「이번엔 아직 예술 범죄라고 정해진 게 아니지만」"
+      },
+      "context_next": {
+        "jp": "芸術犯罪を追ううちに顔見知りになり、<br>我々とはいつのまにか意気投合（？）した仲なのだが……。",
+        "ko": "예술 범죄를 쫓는 중에 알게 되어, 우리와 어느샌가 의기투합(?)한 사이인데……"
+      },
+      "native_tested_exact_draft": false,
+      "renderer_applicability": "Novel JSON 문자열 기준 후보. 각 행의 실제 EventText 표시 여부·재현은 전수 확인하지 않음.",
+      "mandatory_semantic_review": false
+    },
+    {
+      "row_id": "10010301:42db7a03c1393859",
+      "scenario_id": "10010301",
+      "entry_index": 48,
+      "source_path": "translations/ko/novels/10010301.json",
+      "source_file_sha256": "bf55b072e6a06aff075b5ce6f9ce44498179dd74f70ff1bae5c5967e030a3627",
+      "jp_sha256": "42db7a03c1393859276acef3633a13cb70d939882dedbbb5729d436b02f42f2f",
+      "ko_current_sha256": "f8195e9717fe86bf4eeda2f6564ad4ed4ef1f1439f4f2169f1c47806799f1025",
+      "jp": "「申し遅れたが、私は花の芸術家……<click=24>フラワーマン</click>と呼ばれている！　<br>　君たちも遠慮なくフラワーマンと呼んでくれたまえ！」",
+      "ko_current": "「말하는게 늦었는데, 나는 꽃의 예술가…… <click=24>플라워 맨</click>이라 불려지고있지!<br>그대들도 사양말고 플라워 맨이라 불러주게나!」",
+      "current_line_cells": [
+        39,
+        25
+      ],
+      "estimated_native_rows": 3,
+      "protected_tags": [
+        "<click=24>",
+        "</click>"
+      ],
+      "priority": "B_BOUNDARY_PREVENTION",
+      "ko_draft": "「말하는게 늦었는데, 나는 꽃의 예술가…… <click=24>플라워 맨</click>이라<br>불려지고있지! 그대들도 사양말고 플라워 맨이라 불러주게나!」",
+      "draft_kind": "REFLOW_ONLY",
+      "draft_line_cells": [
+        31,
+        33
+      ],
+      "ko_final": null,
+      "review_decision": "HOLD",
+      "review_notes": "context/names.json과 현행 Knowledge의 フラワーマン 정본은 ‘플라워맨’이지만, 현재 보호 click 블록은 <click=24>플라워 맨</click>입니다. 블록 자체 수정이 필요하므로 임의 변경하지 않고 HOLD합니다.",
+      "draft_notes": "어절·문장 내용 보존. 줄바꿈 경계의 공백/전각 들여쓰기와 <br> 위치만 조정. 자동 줄배치이므로 의미 단위로 자연스러운지 검수하세요. ruby/click 제어 태그와 내부 문자열 원형 유지. 태그를 수정하거나 분리하지 마세요.",
+      "context_previous": {
+        "jp": "「死の芸術家ね……そう呼ばれるのは好きではないな。<br>　むしろ生を与えているといっても過言ではないと思っている」",
+        "ko": "「죽음의 예술가라…… 그렇게 불리는건 좋아하지 않는걸.<br>오히려 생명을 전해주는거라 해도 과언이 아니라 생각하지」"
+      },
+      "context_next": {
+        "jp": "ヒマワリ怪人はそう叫ぶと闊達に笑い、<br>笑い声が広々とした部屋中に響き渡る。",
+        "ko": "해바라기 괴인은 그렇게 외치며 활달하게 웃자,<br>웃음 소리가 넓은 방안에 울려퍼진다."
+      },
+      "native_tested_exact_draft": false,
+      "renderer_applicability": "Novel JSON 문자열 기준 후보. 각 행의 실제 EventText 표시 여부·재현은 전수 확인하지 않음.",
+      "mandatory_semantic_review": false
+    }
+  ]
+}
