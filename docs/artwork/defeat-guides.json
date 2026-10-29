@@ -36,7 +36,50 @@
     }
   ],
   "mode": "built-in image_gen with text-region-only compositing",
-  "native_status": "PENDING",
+  "native": {
+    "account_actions": {
+      "actual_ap_net_spend": "not inferred because AP regenerated",
+      "advertised_ap": 1,
+      "boost_final": 90,
+      "bp_spent": 0,
+      "coin_spent": 0,
+      "defeats": 1,
+      "premium_after": 204482,
+      "premium_before": 204482,
+      "premium_currency_spent": 0,
+      "score_battle_entries": 1
+    },
+    "data_commit": "2cbe06b5",
+    "dll_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+    "evidence": {
+      "01-plus90-badge.png": "b5a6c7c363382fc1159e9f55a13d345e30dd1ba1681ceb2333bc6f0257c203ba",
+      "02-enhance.png": "b70993ee3f1a1747eab14aff19d73f005024079fd01ae59157c16018b5da87bb",
+      "03-deck.png": "e9dd8e1baaf1a0676f1318f5083b72159f88bea6793b73f80544944d823e9f69",
+      "04-gacha.png": "307994116b59980c392dd9de30f65ded9abf6b8b7373e55dadbe9a08c51536b6"
+    },
+    "image_catalog_sha256": "1cfef51188e5c686acc1f6aced9d15d9fb70c2b0c2d3b7dfab4cc2e81d7ca5c9",
+    "image_count": 159,
+    "image_replacement_logs": [
+      "texture:BattleEnhance_1:1460x736",
+      "texture:BattleDeck_1:1460x736",
+      "texture:BattleGacha_1:1460x736"
+    ],
+    "installed_hashes_match": true,
+    "local_translation_files_copied": false,
+    "log_errors": 0,
+    "native_verified": [
+      "+90 badge: 초고난도!",
+      "BattleEnhance_1: Korean headline, 장비, 예술가; 이마쥬 spelling",
+      "BattleDeck_1: Korean headline/chart/side text; original chart arrows",
+      "BattleGacha_1: Korean headline, 스타일, 이마쥬 and retry sentence",
+      "강화로 / 편성으로 / 가챠로 / 퀘스트 목록"
+    ],
+    "status": "PASS",
+    "transport": "Existing 7.2.1 startup updater from PR46 branch",
+    "ui_count": 10522,
+    "ui_sha256": "a27dd5c1b90a09fbb6fc22c49c498f1409a570bbbfa6240f7896eb1d4e2ae315"
+  },
+  "native_status": "PASS",
   "prompts": {
     "assets": [
       {
