@@ -2,8 +2,8 @@
 
 ## 설치 및 다운로드
 
-**[GCMod 7.1.0 전체 설치본](https://github.com/kekwkekw/gctrans/releases/tag/v7.1.0)**의
-`GCMod-7.1.0-ko-full-win-x64.zip`을 사용한다. 신규 사용자는 게임을 종료하고 ZIP의 내용물을
+**[GCMod 7.2.0 전체 설치본](https://github.com/kekwkekw/gctrans/releases/tag/v7.2.0)**의
+`GCMod-7.2.0-ko-full-win-x64.zip`을 사용한다. 신규 사용자는 게임을 종료하고 ZIP의 내용물을
 `GC.exe`가 있는 폴더에 복사한 뒤 평소 사용하는 DMM 실행 경로로 시작한다.
 필요한 BepInEx·.NET 런타임·Utility·한국어 폰트·번역 데이터를 포함하며 Python이나 기존 패치는 필요하지 않다.
 최초 실행에는 인터넷 연결이 필요하다.
@@ -13,9 +13,10 @@
 `doorstop_config.ini`, `.doorstop_version`만 제거한다. 게임 원본과 DMM 데이터는 제거하지 않는다.
 자세한 절차는 릴리스의 `INSTALL_KO.txt`를 따른다. GitHub의 자동 Source code ZIP은 설치 파일이 아니다.
 
-7.1.0은 시작 시 GitHub main의 번역 manifest를 확인하고, 변경된 UI·Master·Names와
-진입한 Novel을 로컬 캐시에 갱신한다. DLL·폰트는 자동 갱신하지 않으므로 6.1/7.0 사용자는
-7.1.0 설치가 필요하다. 이미지와 일부 미번역/HOLD가 남아 있으며 전체 완역은 아니다.
+7.2.0은 시작 시 GitHub main의 번역 manifest를 확인하고, 변경된 UI·Master·Names·지원 이미지와
+진입한 Novel을 로컬 캐시에 갱신한다. DLL·폰트는 자동 갱신하지 않으므로 이전 버전 사용자는
+7.2.0 설치가 필요하다. 시작/진행 이벤트 로고, 지역 카드 6개, 회상 배너 148개를 포함한다.
+다른 이미지와 일부 미번역/HOLD는 남아 있으며 전체 완역은 아니다.
 
 현재 작업 절차의 단일 진입점은 **[docs/OPERATOR_KO.md](docs/OPERATOR_KO.md)**다. 명령은 저장소 루트에서 실행한다.
 
@@ -32,7 +33,7 @@
 
 ## UI·runtime
 
-- 7.2.0 이미지/한 글자 UI 후보: [docs/IMAGE_UPDATES_KO.md](docs/IMAGE_UPDATES_KO.md). 공개 설치본과 별도로 검증 중이다.
+- 7.2.0 이미지/한 글자 UI 및 갱신 방식: [docs/IMAGE_UPDATES_KO.md](docs/IMAGE_UPDATES_KO.md).
 
 - 데이터 자동 갱신 동작 및 Native 검증 결과: [docs/DATA_UPDATES_KO.md](docs/DATA_UPDATES_KO.md).
 

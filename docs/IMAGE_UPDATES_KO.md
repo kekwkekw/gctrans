@@ -1,7 +1,7 @@
-# 이미지 데이터 갱신 (7.2.0 후보)
+# 이미지 데이터 갱신 (7.2.0)
 
 7.2.0 DLL을 한 번 설치해야 한다. 7.1.x DLL에는 이미지 교체 consumer가 없으므로
-이미지 파일만 GitHub에 추가해도 적용되지 않는다. 후보의 실기 결과와 공개 릴리스 상태는 별도로 구분한다.
+이미지 파일만 GitHub에 추가해도 적용되지 않는다. 설치 파일은 [7.2.0 릴리스](https://github.com/kekwkekw/gctrans/releases/tag/v7.2.0)를 따른다.
 
 ## 데이터와 표시 경로
 
@@ -25,7 +25,7 @@ Unity UI callback에서 새 Texture2D/Sprite를 만들고 컴포넌트 참조만
 
 - `UnityEngine.UI.Image`의 sprite/overrideSprite: 원본 rect 크기·pivot·border·pixelsPerUnit 유지.
 - `UnityEngine.UI.RawImage`의 texture: 전체 UV `(0,0,1,1)`만 지원.
-- PNG, 최대 4096×4096, 파일당 8 MiB, 카탈로그 최대 128항목/64 MiB.
+- PNG, 최대 4096×4096, 파일당 8 MiB, 카탈로그 최대 256항목/64 MiB.
 - Sprite atlas 안의 개별 Sprite는 지원한다. 전체 atlas 교체, UV 부분 영역 RawImage,
   custom shader/mesh, 영상, Spine/Live2D 등의 지원은 주장하지 않는다.
 
@@ -167,8 +167,18 @@ Codex 첫 번째 이벤트 시안을 사용한다. 앞선 두 번째 시안 선�
 1·6페이지 재진입과 37페이지 이벤트 선택도 정상이다. 시작 로고·진행 중 이벤트 로고·지역 카드
 6개도 재확인했다. 156개 대상 모두 교체 로그가 있고 해당 실행의 Error/Exception은 없었다.
 AP/BP/코인/예정석 소비는 0이다. 기존 Il2CppInterop 경고까지 없애거나 모든 게임 동작을
-검증했다는 뜻은 아니다. main 병합과 공개 릴리스는 별도 승인 단계다.
+검증했다는 뜻은 아니다. 이 검증 이후 사용자가 main 병합 및 공개 릴리스를 승인했다.
 
 생성한 update ZIP은 기존 의존성이 있는 설치용이며 기본 CDN은 공식 main이다.
-PR44 미병합 상태에서 새 이미지를 시험할 때는 이번 실기처럼 시험 ref를 사용한다.
-공개 배포는 main 병합 후 진행하며, 이 ZIP을 신규 사용자용 전체 설치본으로 취급하지 않는다.
+시험은 PR44의 ref에서 진행했으며, 공개 패키지는 main을 사용한다.
+이 update ZIP을 신규 사용자용 전체 설치본으로 취급하지 않는다. 신규 설치에는 로더·Utility·
+한국어 폰트까지 포함한 `GCMod-7.2.0-ko-full-win-x64.zip`을 사용한다.
+
+## 시작 화면 문구 보완
+
+접속 실패, 로그인 만료의 PC 문구, 캐시 삭제 안내와 진행 메시지, 유료 서비스 주의사항을
+reviewed exact 사전에 추가했다. 캐시 안내는 `MlDictionaryTextConfigInApps`의 원문,
+로그인 안내는 PC 코드 문자열, 주의사항은 공개 DMM 원문과 실제 TMP 표시 문자열을 대조했다.
+주의사항의 공백·개행도 실제 표시값에 맞춰 저장한다. 문구 수집용 임시 플러그인은 배포하지 않는다.
+추가 7개 항목은 UI 데이터 변경이며 DLL이나 Master/Novel 정본 변경을 요구하지 않는다.
+주어진 코드가 삽입되는 별도 오류 메시지까지 포괄하는 범용 치환은 추가하지 않았다.
