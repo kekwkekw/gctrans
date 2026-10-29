@@ -1,0 +1,117 @@
+{
+  "status": "REPRESENTATIVE_NATIVE_DISPLAY_PASS",
+  "method": "PRO final strings displayed through the existing EventText Parse/Show path in a real tutorial dialogue window using a temporary diagnostic plugin. Original font, 35-cell capacity and three line positions retained.",
+  "limitation": "Five final strings validated in the ordinary dialogue window; not a traversal of all 135 original scenes or the unapproved review groups.",
+  "installed_gcmod_version": "7.2.1",
+  "installed_gcmod_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+  "font_size": 38,
+  "font_spacing": 0,
+  "proportional": false,
+  "cases": [
+    {
+      "row_id": "40114071:4b3fa89eae0cc5c2",
+      "decision": "APPROVE",
+      "line_cells": [
+        32,
+        27,
+        30
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 498,
+      "all_body_characters_active": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "40200752:c87a85cb73a16f7b",
+      "decision": "APPROVE",
+      "line_cells": [
+        34,
+        30,
+        29
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 574,
+      "all_body_characters_active": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "10015:3b2ab7d3ff6f8e58",
+      "decision": "APPROVE",
+      "line_cells": [
+        34,
+        27,
+        33
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 574,
+      "all_body_characters_active": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "40200702:1bc9f504ca33a580",
+      "decision": "APPROVE",
+      "line_cells": [
+        28,
+        22,
+        29
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 384,
+      "all_body_characters_active": true,
+      "final_character": ".",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "22003405:bfa01c2967d67de0",
+      "decision": "REVISE",
+      "line_cells": [
+        32,
+        34,
+        34
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 574,
+      "all_body_characters_active": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    }
+  ],
+  "measurements_sha256": "69d95aeaf67855fdb75275ac29a4d647686ac60182d55c96c55aa7158964b60e",
+  "screenshots": {
+    "01-40114071.png": "5bd08f39b35d1598f916638577b9d1c3793b2fa3ac4aaea5ab95083afedfc12f",
+    "02-40200752.png": "f744f0aa95c09fd989597d7b3f599e0a83908cb275e16dd30ad738e2f2769eef",
+    "03-10015.png": "f605d5b82e114f8d64699f68739767867fd2db6afde8529175612918d54cf788",
+    "04-40200702-ruby.png": "e42f4f9395573eb8c42d7cfcebe343437698d4d6504d7bfb8aaf2ad714336df6",
+    "05-22003405-revised.png": "29438a0d64fb3c170250c4d85d78ad24d0d1b278e85f5745c8cddd02b55e978d"
+  },
+  "temporary_probe_cleanup": "REMOVED",
+  "installed_cdn_restored": "https://raw.githubusercontent.com/kekwkekw/gctrans/main"
+}
