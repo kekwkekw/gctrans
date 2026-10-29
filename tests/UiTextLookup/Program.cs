@@ -55,6 +55,26 @@ var negative=new[]{"更新まで08:47","開封期限：2026/11/08 12:59 まで",
  "日本語 22個で解放","日本語 の閲覧が必要","제목 の閲覧が必要という説明","덴푸라 22個で解放する","あと1000000000","3ターン終了","덴푸라 <b>22</b>個で解放"};
 foreach(var jp in negative)
  if(UiTextLookup.TryTranslate(ui,jp,out _))throw new Exception("Unexpected translation: "+jp);
+// The deck-copy sentence translates around, never inside, the user-owned name.
+// Even names present in ui.json (or containing template syntax) stay verbatim.
+foreach(var name in new[]{"Example team", "나의 편성", "メインクエスト", "{0}", new string('x',120)})
+foreach(var color in new[]{"#fb293d", "#ABCDEF80"})
+{
+    string span=$"<color={color}>{name}</color>";
+    if(!UiTextLookup.TryTranslate(ui,"編成の内容を"+span+"に上書きします",out var ko)
+       || ko!=span+"에 이 편성을 덮어씁니다")throw new Exception("Deck name changed: "+name);
+}
+foreach(var label in new[]{"編成の内容をExample teamに上書きします",
+ "編成の内容を<color=red>Team</color>に上書きします",
+ "編成の内容を<color=#fb293d><b>Team</b></color>に上書きします",
+ "編成の内容を<color=#fb293d>Team\nname</color>に上書きします",
+ "編成の内容を<color=#fb293d></color>に上書きします",
+ "編成の内容を<color=#fb293d>"+new string('x',121)+"</color>に上書きします",
+ "前編成の内容を<color=#fb293d>Team</color>に上書きします",
+ "編成の内容を<color=#fb293d>Team</color>に上書きしますか"})
+ if(UiTextLookup.TryTranslate(ui,label,out _))throw new Exception("Unexpected deck translation: "+label);
+if(UiTextLookup.TryTranslate(new Dictionary<string,string>(),"編成の内容を<color=#fb293d>Team</color>に上書きします",out _))
+ throw new Exception("Deck translation requires reviewed format");
 foreach(var jp in new[]{"第1000章", "第10章の話", "前第10章", "第十章", "あ"})
  if(UiTextLookup.TryTranslate(ui,jp,out _))throw new Exception("Unexpected chapter/glyph translation: "+jp);
 var glossary = GlossaryIndex.Sort(new[]{"아테네스","산소비노","관장","공방","미술관"}, x=>x).ToArray();

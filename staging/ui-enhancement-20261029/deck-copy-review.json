@@ -1,0 +1,25 @@
+{
+  "schema": "gc-ui-native-review-v1",
+  "scope": "Deck copy confirmation",
+  "pairs": {
+    "選択": "선택",
+    "コピー元": "복사 원본",
+    "上書き先": "덮어쓸 대상",
+    "編成の上書き先を選択してください": "편성을 덮어쓸 대상을 선택해 주세요",
+    "編成コピー確認": "편성 복사 확인",
+    "編成の内容を{0}に上書きします": "{0}에 이 편성을 덮어씁니다"
+  },
+  "source": [
+    "popup/popup_deck_copy.dmm",
+    "popup/popup_deck_copy_confirm.dmm",
+    "current PC literals"
+  ],
+  "runtime_exception": "One anchored deck-copy label. Preserve user team name and color tag verbatim, translate only the surrounding sentence. No user names added to dictionaries.",
+  "excluded": {
+    "チーム1": "user-name placeholder",
+    "チーム2": "user-name placeholder",
+    "に上書きします": "incomplete producer fragment",
+    "編成の内容を": "incomplete producer fragment"
+  },
+  "status": "REVIEWED_PENDING_NATIVE"
+}

@@ -26,6 +26,9 @@ internal static class UiTextLookup
     };
     private static readonly Regex ItemUnlock = new Regex(@"^([^<>\r\n]{1,80}) ([0-9]{1,5})個で解放$");
     private static readonly Regex EpisodeUnlock = new Regex(@"^([^<>\r\n]{1,120}) の閲覧が必要$");
+    // The deck-copy producer inserts a user-owned team name in one color tag.
+    // Preserve that entire span verbatim; never look up or translate the name.
+    private static readonly Regex DeckCopy = new Regex(@"\A編成の内容を(<color=#[0-9a-fA-F]{6}(?:[0-9a-fA-F]{2})?>[^<>\r\n]{1,120}</color>)に上書きします\z");
 
     // Native supplies an already translated item/title followed by a static JP
     // suffix. Only these two complete labels are supported; leave JP names alone.
@@ -78,6 +81,12 @@ internal static class UiTextLookup
             if (!match.Success || !dictionary.TryGetValue(rule.Key, out string format)) continue;
             translated = format;
             for (int i = 1; i < match.Groups.Count; i++) translated = translated.Replace("{" + (i - 1) + "}", match.Groups[i].Value);
+            return true;
+        }
+        Match deck = DeckCopy.Match(original);
+        if (deck.Success && dictionary.TryGetValue("編成の内容を{0}に上書きします", out string deckFormat))
+        {
+            translated = deckFormat.Replace("{0}", deck.Groups[1].Value);
             return true;
         }
         Match item = ItemUnlock.Match(original);
