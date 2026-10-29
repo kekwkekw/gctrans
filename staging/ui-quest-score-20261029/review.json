@@ -6242,6 +6242,12 @@
     },
     {
       "before": null,
+      "jp": "編成へ",
+      "ko": "편성으로",
+      "source": "Native score challenge defeat guidance button. Formation caption observed on the second of three guidance cards."
+    },
+    {
+      "before": null,
       "jp": "難易度<cspace=-0.2em>ボーナス</cspace>",
       "ko": "난이도<cspace=-0.2em> 보너스</cspace>",
       "source": [
