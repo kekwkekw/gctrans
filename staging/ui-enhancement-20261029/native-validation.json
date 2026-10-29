@@ -1,6 +1,6 @@
 {
   "schema": "gc-ui-enhancement-native-summary-v1",
-  "status": "REPRESENTATIVE_NATIVE_PASS_WORK_PAUSED_BY_USER",
+  "status": "REPRESENTATIVE_NATIVE_PASS",
   "runtime": "7.2.1",
   "tested_commit": "1a8403968faa413df5b6bed1d5f23681d867bfd0",
   "dll_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
@@ -39,9 +39,9 @@
     "Memory enhancement could not run: current account reported no enhanceable memory; message verified Korean.",
     "Bulk composition selection maximum remains HOLD_DYNAMIC_DOMAIN until the actual bound is observed.",
     "Serialized 与えるダメージ2.1%上昇 example remains HOLD_SOURCE_DEFAULT; real Master effects already translate.",
-    "Additional event-recall image regression was not run after the user requested pause; image source/catalog unchanged."
+    "Event-recall image regression was not repeated for 7.2.1: image source/catalog and image runtime are unchanged from the previously verified 7.2.0 release."
   ],
   "runtime_change": "One anchored deck-copy confirmation rule preserves the entire colored user-name span. Existing Novel and user-input scope guards remain.",
   "offline": "7 Python suites and UiTextLookup/UiTextScope/ImageCache/TranslationCache passed; Release build succeeded (8 existing warnings, 0 errors); package verified.",
-  "publication": "PR45 branch only. Main merge and public release not performed."
+  "publication": "PR45 ready for review. Release candidate preparation only; main merge and public release require approval and have not been performed."
 }
