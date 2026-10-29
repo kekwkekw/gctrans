@@ -1,0 +1,228 @@
+{
+  "badge": {
+    "jp": "超高難易度！",
+    "ko": "초고난도!",
+    "metadata_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+    "source": "PC global-metadata string literal index 21806; +90 screenshot"
+  },
+  "date": "2026-10-29",
+  "entries": [
+    {
+      "bytes": 1395797,
+      "file": "images/741c5b44943d33c8624ee2f79e87e3777ac1392f140799337929105ee77f702c.png",
+      "height": 736,
+      "kind": "texture",
+      "name": "BattleEnhance_1",
+      "sha256": "741c5b44943d33c8624ee2f79e87e3777ac1392f140799337929105ee77f702c",
+      "width": 1460
+    },
+    {
+      "bytes": 1333731,
+      "file": "images/5b2f98f69d1873e0d6666d10f976496088841846049f9dd68f9a9706d9902114.png",
+      "height": 736,
+      "kind": "texture",
+      "name": "BattleDeck_1",
+      "sha256": "5b2f98f69d1873e0d6666d10f976496088841846049f9dd68f9a9706d9902114",
+      "width": 1460
+    },
+    {
+      "bytes": 1394118,
+      "file": "images/558c2e09a79b8e5bc64ed58549c190edc74162dd09d8c5173c7055b46c7baa7f.png",
+      "height": 736,
+      "kind": "texture",
+      "name": "BattleGacha_1",
+      "sha256": "558c2e09a79b8e5bc64ed58549c190edc74162dd09d8c5173c7055b46c7baa7f",
+      "width": 1460
+    }
+  ],
+  "mode": "built-in image_gen with text-region-only compositing",
+  "native_status": "PENDING",
+  "prompts": {
+    "assets": [
+      {
+        "correction": "Text correction only. In this Korean game banner change EVERY occurrence of '이마주' to the correct terminology '이마쥬' (final syllable must be 쥬, ㅈ+ㅠ). Top first line must read exactly '레벨업과 이마쥬·기법,' Keep all other text, character art, faces, layout, canvas dimensions, outlines, colors and background exactly unchanged. Preserve existing transparency only; do not remove the background.",
+        "name": "battle_enhance_1",
+        "prompt": "Use case: text-localization. Edit target: the attached original game tutorial banner. Translate the baked Japanese text to Korean. Keep the original wide 1460 x 736 canvas, framing, layout, all character faces, bodies, costumes, equipment icons, ornamental graphics and background exactly aligned and unchanged. This is a replacement game texture, not a new illustration. Only text regions may change. Preserve the original transparent rounded corners. Bold rounded Korean display lettering matching the original cream/white fill, dark thick outline and white outer stroke; yellow emphasis where original yellow text occurs. No cropping, added borders, watermarks, or invented elements. Korean text must be correctly spelled and highly legible when reduced to about 975 x 492 pixels.\nReplace the two-line Japanese headline at upper left with exactly these two lines:\n\"레벨업과 이마쥬·기법,\"\n\"액세서리 강화로 전투력 UP!!\"\nHighlight \"전투력 UP!!\" in yellow. In the small yellow arrow at center replace 装備 with \"장비\". At lower right replace 藝術家を強化しよう!! with \"예술가를 강화하자!!\", keeping the yellow brush underline. Keep the existing large English LEVEL UP unchanged. Do not alter any artwork."
+      },
+      {
+        "correction": null,
+        "name": "battle_deck_1",
+        "prompt": "Use case: text-localization. Edit target: the attached original game tutorial banner. Translate the baked Japanese text to Korean. Keep the original wide 1460 x 736 canvas, framing, layout, all character faces, bodies, costumes, equipment icons, ornamental graphics and background exactly aligned and unchanged. This is a replacement game texture, not a new illustration. Only text regions may change. Preserve the original transparent rounded corners. Bold rounded Korean display lettering matching the original cream/white fill, dark thick outline and white outer stroke; yellow emphasis where original yellow text occurs. No cropping, added borders, watermarks, or invented elements. Korean text must be correctly spelled and highly legible when reduced to about 975 x 492 pixels.\nReplace the upper headline with \"적의 컬러 속성에 맞춰 편성하자!!\", highlighting \"컬러 속성\" yellow. Replace upper right heading カラー属性相関図 with \"컬러 속성 상성도\". Keep every color icon and ALL arrows in the chart unchanged. Replace the pink vertical text on far left with two short vertical Korean columns reading \"속성 통일도\" and \"효과적이야!\". In the lower-right explanation preserve the two light/dark circular icons in their original positions, replace と between them with \"와\"; after them use \"서로\"; next line use \"주는 피해가 증가!!\", yellow emphasis on 피해 and 증가. Thus the phrase means light and dark deal increased damage to each other. Replace the five small 戦闘力 labels on the embedded game panels with \"전투력\"; preserve all numbers, icons, portraits and unit images exactly. Do not alter any artwork."
+      },
+      {
+        "correction": "Text correction only. In this Korean game banner change EVERY occurrence of '이마주' to the correct terminology '이마쥬' (final syllable must be 쥬, ㅈ+ㅠ). Middle label must read exactly '이마쥬'. Bottom sentence must read exactly '새로운 스타일과 이마쥬를 편성해 재도전!!' Keep all other text, character art, faces, layout, canvas dimensions, outlines, colors and background exactly unchanged. Preserve existing transparency only; do not remove the background.",
+        "name": "battle_gacha_1",
+        "prompt": "Use case: text-localization. Edit target: the attached original game tutorial banner. Translate the baked Japanese text to Korean. Keep the original wide 1460 x 736 canvas, framing, layout, all character faces, bodies, costumes, equipment icons, ornamental graphics and background exactly aligned and unchanged. This is a replacement game texture, not a new illustration. Only text regions may change. Preserve the original transparent rounded corners. Bold rounded Korean display lettering matching the original cream/white fill, dark thick outline and white outer stroke; yellow emphasis where original yellow text occurs. No cropping, added borders, watermarks, or invented elements. Korean text must be correctly spelled and highly legible when reduced to about 975 x 492 pixels.\nReplace upper headline with \"가챠로 전투력을 강화하자!!\", yellow emphasis on \"전투력\" and \"강화\". Replace upper right label スタイル with \"스타일\". Replace middle-right イマージュ with \"이마쥬\". Preserve yellow brush underlines and diagonal divisions. Replace bottom headline with \"새로운 스타일과 이마쥬를 편성해 재도전!!\". Keep all three character portraits, hands, book, costumes and their positions unchanged. Do not alter any artwork."
+      }
+    ],
+    "mode": "built-in image_gen"
+  },
+  "proof": [
+    {
+      "alpha_unchanged": true,
+      "bytes": 1395797,
+      "edit_boxes": [
+        [
+          25,
+          28,
+          1003,
+          196
+        ],
+        [
+          667,
+          288,
+          785,
+          398
+        ],
+        [
+          1002,
+          464,
+          1439,
+          579
+        ]
+      ],
+      "name": "battle_enhance_1",
+      "outside_edit_region_changed_pixels": 0,
+      "preserved_boxes": [],
+      "sha256": "741c5b44943d33c8624ee2f79e87e3777ac1392f140799337929105ee77f702c",
+      "size": [
+        1460,
+        736
+      ]
+    },
+    {
+      "alpha_unchanged": true,
+      "bytes": 1333731,
+      "edit_boxes": [
+        [
+          25,
+          25,
+          1021,
+          134
+        ],
+        [
+          1087,
+          0,
+          1459,
+          97
+        ],
+        [
+          12,
+          272,
+          106,
+          491
+        ],
+        [
+          1017,
+          448,
+          1459,
+          598
+        ],
+        [
+          101,
+          487,
+          191,
+          533
+        ],
+        [
+          309,
+          426,
+          397,
+          475
+        ],
+        [
+          500,
+          476,
+          591,
+          523
+        ],
+        [
+          712,
+          414,
+          803,
+          462
+        ],
+        [
+          922,
+          464,
+          1002,
+          513
+        ]
+      ],
+      "name": "battle_deck_1",
+      "outside_edit_region_changed_pixels": 0,
+      "preserved_boxes": [],
+      "sha256": "5b2f98f69d1873e0d6666d10f976496088841846049f9dd68f9a9706d9902114",
+      "size": [
+        1460,
+        736
+      ]
+    },
+    {
+      "alpha_unchanged": true,
+      "bytes": 1394118,
+      "edit_boxes": [
+        [
+          9,
+          19,
+          963,
+          143
+        ],
+        [
+          1077,
+          78,
+          1303,
+          177
+        ],
+        [
+          887,
+          391,
+          1121,
+          483
+        ],
+        [
+          352,
+          497,
+          1457,
+          604
+        ]
+      ],
+      "name": "battle_gacha_1",
+      "outside_edit_region_changed_pixels": 0,
+      "preserved_boxes": [],
+      "sha256": "558c2e09a79b8e5bc64ed58549c190edc74162dd09d8c5173c7055b46c7baa7f",
+      "size": [
+        1460,
+        736
+      ]
+    }
+  ],
+  "runtime": "7.2.1 unchanged",
+  "sources": [
+    {
+      "asset": "image_tutorial/battle_enhance_1.dmm",
+      "bundle_sha256": "526061f53c63a57d0c8f0ae05bd90f7dd358085be762fd72b5494740df2e2e2b",
+      "height": 736,
+      "name": "BattleEnhance_1",
+      "png_sha256": "20867f7359341434e2e7448cfe37c2d9b37b616328f0483aef0195d5362c9781",
+      "width": 1460
+    },
+    {
+      "asset": "image_tutorial/battle_deck_1.dmm",
+      "bundle_sha256": "4f9b79c9b866857a2177cc728d5881cd683e6b1ff7310b039058337f49229238",
+      "height": 736,
+      "name": "BattleDeck_1",
+      "png_sha256": "031f0101b0d288cdeb77d24b33f110b0515f49a7f64ad2172b4e235b63b0b0be",
+      "width": 1460
+    },
+    {
+      "asset": "image_tutorial/battle_gacha_1.dmm",
+      "bundle_sha256": "e123413e8f3f8d155332f95b166cf7c92db2b9eb4bd6d70070db55284912272e",
+      "height": 736,
+      "name": "BattleGacha_1",
+      "png_sha256": "b4e06d9d38c3d048c0f787bef0de996079f16c67ea13ea13ccb7439ae96f7af6",
+      "width": 1460
+    }
+  ],
+  "terminology": "이마쥬 (user correction; all three occurrences)"
+}

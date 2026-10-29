@@ -1403,6 +1403,33 @@
       "name": "ebs13333",
       "sha256": "27c92568f9482c07cbaed9c367a522c2855d9e082d516e827a8e65d5ae599f4c",
       "width": 340
+    },
+    {
+      "bytes": 1333731,
+      "file": "images/5b2f98f69d1873e0d6666d10f976496088841846049f9dd68f9a9706d9902114.png",
+      "height": 736,
+      "kind": "texture",
+      "name": "BattleDeck_1",
+      "sha256": "5b2f98f69d1873e0d6666d10f976496088841846049f9dd68f9a9706d9902114",
+      "width": 1460
+    },
+    {
+      "bytes": 1395797,
+      "file": "images/741c5b44943d33c8624ee2f79e87e3777ac1392f140799337929105ee77f702c.png",
+      "height": 736,
+      "kind": "texture",
+      "name": "BattleEnhance_1",
+      "sha256": "741c5b44943d33c8624ee2f79e87e3777ac1392f140799337929105ee77f702c",
+      "width": 1460
+    },
+    {
+      "bytes": 1394118,
+      "file": "images/558c2e09a79b8e5bc64ed58549c190edc74162dd09d8c5173c7055b46c7baa7f.png",
+      "height": 736,
+      "kind": "texture",
+      "name": "BattleGacha_1",
+      "sha256": "558c2e09a79b8e5bc64ed58549c190edc74162dd09d8c5173c7055b46c7baa7f",
+      "width": 1460
     }
   ],
   "schema": "gc-images-v1"
