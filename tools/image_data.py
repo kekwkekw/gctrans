@@ -6,7 +6,7 @@ import struct
 
 def validate_images(catalog_raw, read):
     catalog = json.loads(catalog_raw)
-    if catalog.get('schema') != 'gc-images-v1' or not isinstance(catalog.get('entries'),list) or len(catalog['entries']) > 128:
+    if catalog.get('schema') != 'gc-images-v1' or not isinstance(catalog.get('entries'),list) or len(catalog['entries']) > 256:
         raise ValueError('IMAGE_CATALOG_SCHEMA')
     targets=set();paths=set();total=0
     for e in catalog['entries']:
