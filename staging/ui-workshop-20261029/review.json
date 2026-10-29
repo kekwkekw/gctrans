@@ -1,0 +1,166 @@
+{
+  "base": "3f9743e89276d191265082c9a991a35889bd417d",
+  "reviewed_exact": {
+    "創作開始": "창작 시작",
+    "創作結果": "창작 결과",
+    "選択中の藝術家": "선택 중인 예술가",
+    "創作履歴はありません。": "창작 이력이 없습니다.",
+    "創作時間": "창작 시간",
+    "創作道具選択": "창작 도구 선택",
+    "選択中の創作道具": "선택 중인 창작 도구",
+    "使用する創作道具を選択してください": "사용할 창작 도구를 선택해 주세요",
+    "該当する創作道具はありません。": "해당하는 창작 도구가 없습니다.",
+    "★のみの選別はイマージュ・美術品どちらかが創作されます": "★만 선별하면 이마쥬 또는 미술품이 창작됩니다",
+    "ポテンシャルはイマージュが創作されなかった場合でも消費されます": "이마쥬가 창작되지 않아도 포텐셜은 소모됩니다",
+    "すべて": "모두",
+    "選別": "선별",
+    "時短": "시간 단축",
+    "資源・道具設定": "자원·도구 설정",
+    "創作中の残り時間": "창작 완료까지 남은 시간",
+    "完成": "완성",
+    "待機中": "대기 중",
+    "空き": "빈 슬롯",
+    "マンスリーパスで\n枠数追加": "월간 패스로\n슬롯 추가",
+    "ライン開放期間確認": "공방 개방 기간 확인",
+    "解放終了日時": "개방 종료 일시",
+    "※カウント時間が切れた場合でも\n創作物は受け取り可能です。": "※남은 시간이 끝나도\n창작물은 받을 수 있습니다.",
+    "マンスリーパスの有効期限が切れ、創作回数が上限を超えています": "월간 패스가 만료되어 창작 횟수가 상한을 초과했습니다",
+    "一部の創作が完了したため、\n即時完成は中止されました。\n\n受け取り確認を実施してください。": "일부 창작이 완료되어\n즉시 완성이 중단되었습니다.\n\n수령 확인을 진행해 주세요.",
+    "創作は完了しています。": "창작이 완료되었습니다.",
+    "創作完了！": "창작 완료!"
+  },
+  "bounded_family_additions": [
+    {
+      "jp": "{0}回",
+      "ko": "{0}회",
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "evidence": "Native craft select/confirm 1..3 queue; PC monthly pass adds 3 slots; complete exact counters 1..6."
+    },
+    {
+      "jp": "{0}回　創作完了！",
+      "ko": "{0}회 창작 완료!",
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "evidence": "scene_atelier serialized 9回 U+3000 創作完了！; cover finite 1..9 complete sibling labels."
+    },
+    {
+      "jp": "あと{0}時間",
+      "ko": "{0}시간 남음",
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "evidence": "scene_atelier serialized あと8時間; hour remainder after day label, finite 1..24."
+    }
+  ],
+  "image_additions": [
+    {
+      "name": "TitleAtelierResult",
+      "ko": "창작 결과",
+      "width": 315,
+      "height": 80,
+      "source_sha256": "c3f7305360fbf8e50430cab2eb2b4a24c3d6c0608b63728d127ae380d2658985",
+      "sha256": "539b09266f372a4b3ff2f1018f63c50cb97d9e9f7c9e9a2bb685e16c8d140202",
+      "method": "built-in imagegen text-localization; premultiplied-alpha aspect-preserving size normalization",
+      "alpha_content_threshold": 4
+    },
+    {
+      "name": "TextAtelierStart",
+      "ko": "창작 시작!",
+      "width": 280,
+      "height": 72,
+      "source_sha256": "51728b3621d93069cfb3b3919a2577b70a6656ee74ea84c0d411f641ca735a2d",
+      "sha256": "c1a98e9ca617fa82fa890409132ce5681c581abaff685f16f9bc6d80613e19ac",
+      "method": "built-in imagegen text-localization; premultiplied-alpha aspect-preserving size normalization",
+      "alpha_content_threshold": 4
+    }
+  ],
+  "apply": {
+    "status": "REVIEW_APPLIED",
+    "added_master": 0,
+    "added_ui": 27,
+    "holds": [],
+    "pending": [],
+    "warnings": [],
+    "removed": 0,
+    "master_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+    "ui_sha256": "b53b421bfe8425b17c0771d081da2c3148e742b6a6612c414498a7a91ce31557",
+    "native": "NOT_RUN_BY_THIS_TOOL"
+  },
+  "export": {
+    "exact_pairs": 10588,
+    "authoring_bindings_preserved": 501,
+    "held_authoring_jp": [],
+    "review_resolved_authoring_jp": [
+      "技法",
+      "技法強化",
+      "水",
+      "調度品",
+      "限界突破",
+      "すれ違いバフ"
+    ],
+    "bounded_workshop_exacts": 3,
+    "runtime_bindings": 0,
+    "bounded_detail_exacts": 3121,
+    "bounded_enhancement_exacts": 4399,
+    "master_ui_source_pairs": 1122,
+    "authoring_pairs_without_live_binding": 61,
+    "local_coverage_keys": 1091,
+    "local_coverage_keep_source": 34,
+    "local_coverage_missing": []
+  },
+  "root_causes": {
+    "創作開始": "Both Masters contain only mUnitWords voice title/word; static button does not consume that table. Neither UI dictionary has exact.",
+    "選択中の藝術家": "Absent in both UI dictionaries and both Masters; serialized popup label.",
+    "3回": "{0}回 template key exists but existing runtime does not implement standalone count formatting. Export finite complete strings.",
+    "創作結果": "History heading is TMP; Native gold result heading is TitleAtelierResult sprite."
+  },
+  "excluded_prefab_placeholders": [
+    "タイトル",
+    "項目",
+    "テキスト入力",
+    "ポテンシャル名が入ります",
+    "効果テキストが入ります",
+    "美術品名５６７８９０１２３４５６７８９０"
+  ],
+  "placeholder_reason": "Serialized design/input placeholders, replaced by live title/item/amount data or protected input; not visible untranslated gameplay text in supplied screens.",
+  "protected": "No Master/Names/Novel/Knowledge/HOLD/runtime DLL edits. Native pending."
+}

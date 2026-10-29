@@ -1430,6 +1430,24 @@
       "name": "BattleGacha_1",
       "sha256": "558c2e09a79b8e5bc64ed58549c190edc74162dd09d8c5173c7055b46c7baa7f",
       "width": 1460
+    },
+    {
+      "bytes": 36499,
+      "file": "images/539b09266f372a4b3ff2f1018f63c50cb97d9e9f7c9e9a2bb685e16c8d140202.png",
+      "height": 80,
+      "kind": "sprite",
+      "name": "TitleAtelierResult",
+      "sha256": "539b09266f372a4b3ff2f1018f63c50cb97d9e9f7c9e9a2bb685e16c8d140202",
+      "width": 315
+    },
+    {
+      "bytes": 36109,
+      "file": "images/c1a98e9ca617fa82fa890409132ce5681c581abaff685f16f9bc6d80613e19ac.png",
+      "height": 72,
+      "kind": "sprite",
+      "name": "TextAtelierStart",
+      "sha256": "c1a98e9ca617fa82fa890409132ce5681c581abaff685f16f9bc6d80613e19ac",
+      "width": 280
     }
   ],
   "schema": "gc-images-v1"
