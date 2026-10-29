@@ -5223,7 +5223,7 @@
     {
       "before": null,
       "jp": "で解放",
-      "ko": "달성 시 해제",
+      "ko": "시 해제",
       "source": "Native quest skip lock caption beside three star images; standalone TextNote.m_text in scene/scene_result.dmm, path IDs -8720736468687215286 and -5597946491372036966. Whole-component exact only; no substring replacement."
     },
     {
