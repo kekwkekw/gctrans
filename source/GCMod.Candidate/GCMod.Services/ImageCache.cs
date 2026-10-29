@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -23,16 +24,21 @@ public static class ImageCache
                 json = System.Text.Encoding.UTF8.GetString(await Download(client, remoteRoot + "/images.json", 128 * 1024, token).ConfigureAwait(false));
             if (ImageCatalog.Hash(json) != expectedHash) throw new FormatException("Image catalog hash mismatch");
             var catalog = ImageCatalog.Parse(json);
-            foreach (var entry in catalog.Entries)
+            // Full recollection catalogs must fit the existing startup budget.
+            // Download at most four distinct payloads concurrently; publication
+            // still waits until every hash-verified file is present.
+            await Parallel.ForEachAsync(catalog.Entries.GroupBy(entry => entry.File),
+                new ParallelOptions { MaxDegreeOfParallelism = 4, CancellationToken = token }, async (targets, downloadToken) =>
             {
+                var entry = targets.First();
                 string path = Path.Combine(localRoot, entry.File.Replace('/', Path.DirectorySeparatorChar));
                 byte[] bytes = File.Exists(path) && new FileInfo(path).Length == entry.Bytes
-                    ? await File.ReadAllBytesAsync(path, token).ConfigureAwait(false) : null;
-                if (entry.Matches(bytes)) continue;
-                bytes = await Download(client, remoteRoot + "/" + entry.File, entry.Bytes, token).ConfigureAwait(false);
-                if (!entry.Matches(bytes)) throw new FormatException("Image content mismatch: " + entry.Name);
-                await Save(path, bytes, token).ConfigureAwait(false);
-            }
+                    ? await File.ReadAllBytesAsync(path, downloadToken).ConfigureAwait(false) : null;
+                if (targets.All(target => target.Matches(bytes))) return;
+                bytes = await Download(client, remoteRoot + "/" + entry.File, entry.Bytes, downloadToken).ConfigureAwait(false);
+                if (!targets.All(target => target.Matches(bytes))) throw new FormatException("Image content mismatch: " + entry.Name);
+                await Save(path, bytes, downloadToken).ConfigureAwait(false);
+            }).ConfigureAwait(false);
             await Save(catalogPath, System.Text.Encoding.UTF8.GetBytes(json), token).ConfigureAwait(false);
             Logger.Info("Image data ready: " + catalog.Entries.Count + " verified targets");
         }
