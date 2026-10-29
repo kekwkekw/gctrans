@@ -3,8 +3,8 @@
     {
       "kind": "image_catalog",
       "path": "images.json",
-      "sha256": "1cfef51188e5c686acc1f6aced9d15d9fb70c2b0c2d3b7dfab4cc2e81d7ca5c9",
-      "size": 48255
+      "sha256": "d4571f0769b4f3b9061650fe58212d4d5a336990b9cb8a5e6bda5ddc51e4fa5a",
+      "size": 48875
     },
     {
       "kind": "image_data",
@@ -23,6 +23,12 @@
       "path": "images/01a72d415fdcb491d06e64d69cf630dac4095765170b024e0ce24dac98eabc22.png",
       "sha256": "01a72d415fdcb491d06e64d69cf630dac4095765170b024e0ce24dac98eabc22",
       "size": 91003
+    },
+    {
+      "kind": "image_data",
+      "path": "images/0301ca713babab31357dd5a02adbb0dfba2a2804c442b20bb96cb57649aaebb2.png",
+      "sha256": "0301ca713babab31357dd5a02adbb0dfba2a2804c442b20bb96cb57649aaebb2",
+      "size": 36502
     },
     {
       "kind": "image_data",
@@ -746,6 +752,12 @@
     },
     {
       "kind": "image_data",
+      "path": "images/c1a98e9ca617fa82fa890409132ce5681c581abaff685f16f9bc6d80613e19ac.png",
+      "sha256": "c1a98e9ca617fa82fa890409132ce5681c581abaff685f16f9bc6d80613e19ac",
+      "size": 36109
+    },
+    {
+      "kind": "image_data",
       "path": "images/c36394203d193c8f3ae2642405993b5cdcc8baec53c5f33ae993e286c76b114f.png",
       "sha256": "c36394203d193c8f3ae2642405993b5cdcc8baec53c5f33ae993e286c76b114f",
       "size": 91813
@@ -969,7 +981,7 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "d5fa22a2a600da4506a724a938b54fb85df135cb74bec2758b4cc96f067a2e43",
+      "sha256": "a7832865908bb5f0f0b138620f740b64d4aeb665d937ed8a58c73654f58c3ac7",
       "size": 344821
     },
     {
@@ -981,8 +993,8 @@
     {
       "kind": "general_ui",
       "path": "ui.json",
-      "sha256": "a27dd5c1b90a09fbb6fc22c49c498f1409a570bbbfa6240f7896eb1d4e2ae315",
-      "size": 640884
+      "sha256": "3d49498f32e8e1fe4333307f8d20e964db4ce58e06594dfe2f42f1b264c97385",
+      "size": 644387
     },
     {
       "kind": "general_ui_templates",
@@ -1005,6 +1017,6 @@
   ],
   "locale": "ko",
   "origin": "local",
-  "revision": "ng03-1fe6adf5dfaa2788c869110b",
+  "revision": "ng03-f9a6b244a0d3702920a9941e",
   "schema_version": 1
 }
