@@ -5222,6 +5222,12 @@
     },
     {
       "before": null,
+      "jp": "で解放",
+      "ko": "달성 시 해제",
+      "source": "Native quest skip lock caption beside three star images; standalone TextNote.m_text in scene/scene_result.dmm, path IDs -8720736468687215286 and -5597946491372036966. Whole-component exact only; no substring replacement."
+    },
+    {
+      "before": null,
       "jp": "キャラクター説明",
       "ko": "캐릭터 설명",
       "source": [
@@ -5230,6 +5236,12 @@
           "source": "PC_LITERAL"
         }
       ]
+    },
+    {
+      "before": null,
+      "jp": "クエストリスト",
+      "ko": "퀘스트 목록",
+      "source": "Native score challenge defeat guidance button; PC v39 exact literal, metadata indexes 21420 / 20829 respectively."
     },
     {
       "before": null,
@@ -5965,6 +5977,12 @@
       "jp": "弱点エレメント攻撃(염)",
       "ko": "약점 엘리먼트 공격(염)",
       "source": "Native screenshot / scoped PC producer / finite whole-string family"
+    },
+    {
+      "before": null,
+      "jp": "強化へ",
+      "ko": "강화로",
+      "source": "Native score challenge defeat guidance button; PC v39 exact literal, metadata indexes 21420 / 20829 respectively."
     },
     {
       "before": null,
