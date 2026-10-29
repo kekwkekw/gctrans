@@ -10,7 +10,7 @@
     {
       "before": null,
       "jp": "<cspace=-0.1e,>★4</cspace>以上確定",
-      "ko": "★4 이상 확정",
+      "ko": "★4+ 확정",
       "source": [
         {
           "asset_key": "popup/popup_custom_passive_lottery_effect.dmm",
@@ -188,7 +188,7 @@
     {
       "before": null,
       "jp": "★4以上確定",
-      "ko": "★4 이상 확정",
+      "ko": "★4+ 확정",
       "source": "User instruction / observed same-family label"
     },
     {
