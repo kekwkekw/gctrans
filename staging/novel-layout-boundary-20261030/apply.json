@@ -1,5 +1,5 @@
 {
-  "status": "APPLIED_LOCAL",
+  "status": "APPLIED_VALIDATED",
   "base_commit": "e424cd8a75f828c0a3c1b6329fcbe9d2ce022083",
   "rows": 9006,
   "changed_values": 9006,
@@ -8518,5 +8518,7 @@
   "remaining_unapproved_layout_rows": 0,
   "cumulative_reviewed_layout_rows": 12463,
   "previous_review_local_holds_resolved": 2,
-  "native": "PENDING"
+  "native": "REPRESENTATIVE_NATIVE_DISPLAY_AND_CLICK_PASS",
+  "offline_suites": "PASS",
+  "native_evidence": "native.json"
 }
