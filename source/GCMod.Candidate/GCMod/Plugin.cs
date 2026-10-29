@@ -18,7 +18,7 @@ using Utility.Notifications;
 
 namespace GCMod;
 
-[BepInPlugin("GCMod", "GCMod", "7.2.0")]
+[BepInPlugin("GCMod", "GCMod", "7.2.1")]
 public class Plugin : BasePlugin
 {
 	private const int HttpTimeoutSeconds = 30;
@@ -52,7 +52,7 @@ public class Plugin : BasePlugin
 		}
 		Log = ((BasePlugin)this).Log;
 		ConfigFile = ((BasePlugin)this).Config;
-		Log.LogInfo("GCMod Korean LocalParity 7.2.0; upstream 0cdcd9e84fffa438dfdac63176685a6c47a07318");
+		Log.LogInfo("GCMod Korean LocalParity 7.2.1; upstream 0cdcd9e84fffa438dfdac63176685a6c47a07318");
 		Toast.Initialize();
 		GCMod.Config.Initialize();
 		Instance = (MonoBehaviour)(object)((BasePlugin)this).AddComponent<Hotkey>();
@@ -67,11 +67,11 @@ public class Plugin : BasePlugin
 			((BasePlugin)this).Unload();
 			throw;
 		}
-		Toast.Success("GCMod", "한국어 패치 로드 완료: LocalParity 7.2.0");
+		Toast.Success("GCMod", "한국어 패치 로드 완료: LocalParity 7.2.1");
 		if (GCMod.Config.CheckUpdate.Value)
 		{
 			_updateCheckCancellation = new CancellationTokenSource();
-			UpdateChecker.CheckAsync(_httpClient, "7.2.0", _updateCheckCancellation.Token);
+			UpdateChecker.CheckAsync(_httpClient, "7.2.1", _updateCheckCancellation.Token);
 		}
 	}
 
