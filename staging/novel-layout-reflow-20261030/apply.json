@@ -1,5 +1,5 @@
 {
-  "status": "APPLIED_LOCAL",
+  "status": "APPLIED_AND_REPRESENTATIVE_NATIVE_PASS",
   "base_commit": "b5941acf120715a8dea05f73369b30122a87434c",
   "rows": 3304,
   "changed_values": 3304,
@@ -6900,5 +6900,5 @@
   "remaining_unapproved_group": {
     "04_boundary_prevention": 9004
   },
-  "native": "PENDING"
+  "native": "REPRESENTATIVE_NATIVE_DISPLAY_AND_CLICK_PASS"
 }

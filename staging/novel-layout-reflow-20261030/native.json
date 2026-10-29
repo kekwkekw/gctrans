@@ -1,0 +1,168 @@
+{
+  "status": "REPRESENTATIVE_NATIVE_DISPLAY_AND_CLICK_PASS",
+  "method": "Seven PRO final strings rendered with the existing EventText Parse/Show path in a real tutorial dialogue window, using a temporary display-only diagnostic plugin. No font or runtime production changes.",
+  "limitation": "Representative rendering and one click glossary interaction; not traversal of all 1362 original scenes.",
+  "installed_gcmod_version": "7.2.1",
+  "installed_gcmod_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+  "font_size": 38,
+  "font_spacing": 0,
+  "proportional": false,
+  "cases": [
+    {
+      "row_id": "99900001:ee30a24ba46fac88",
+      "decision": "REVISE",
+      "line_cells": [
+        23,
+        29,
+        34
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 574,
+      "all_body_characters_active": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "10010101:92d26a32363e3db0",
+      "decision": "REVISE",
+      "line_cells": [
+        26,
+        16
+      ],
+      "rendered_rows": [
+        -487,
+        -422
+      ],
+      "max_x": 270,
+      "all_body_characters_active": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "22001505:7e51f1f9c856db73",
+      "decision": "REVISE",
+      "line_cells": [
+        30,
+        32,
+        23
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 498,
+      "all_body_characters_active": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "20002804:bac86b4a7e88d8c1",
+      "decision": "APPROVE",
+      "line_cells": [
+        18,
+        19,
+        16
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 4,
+      "all_body_characters_active": true,
+      "final_character": ".",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "40106101:03b86f9ca4aac6e5",
+      "decision": "APPROVE",
+      "line_cells": [
+        34,
+        34,
+        33
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 574,
+      "all_body_characters_active": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "40115012:51022568f40d013f",
+      "decision": "APPROVE",
+      "line_cells": [
+        34,
+        33,
+        34
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 574,
+      "all_body_characters_active": true,
+      "final_character": "』",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    },
+    {
+      "row_id": "10010806:97c8f6e421c992e1",
+      "decision": "REVISE",
+      "line_cells": [
+        34,
+        30,
+        33
+      ],
+      "rendered_rows": [
+        -552,
+        -487,
+        -422
+      ],
+      "max_x": 574,
+      "all_body_characters_active": true,
+      "final_character": "」",
+      "visual_last_line_visible": true,
+      "status": "DISPLAY_ONLY_PASS"
+    }
+  ],
+  "click_interaction": {
+    "row_id": "99900001:ee30a24ba46fac88",
+    "click_id": 7,
+    "display": "이마쥬",
+    "glossary_popup_opened_and_closed": true
+  },
+  "github_delivery": {
+    "tested_commit": "574b11549ffb537acf50de275a2e9610b9a1cf52",
+    "manifest_fetched_automatically": true,
+    "novel_registration_count": 1931,
+    "novel_99900001_downloaded_and_matches_checkout": true
+  },
+  "measurements_sha256": "a38bfdb8dc1da32c1c01d8c3495bd98e4ab60461f2660fd8522dfed84a5e49f1",
+  "screenshots": {
+    "01-click-3line.png": "c6e2ef0ebbdf2427619709e45c026e11fae2b70f014e674757a178c18e20ceaa",
+    "01-click-popup.png": "d9715f5378f49f8b9f105a1abe1e9d02373c3814ea763cc4626dcdd7833b4625",
+    "02-click-2line.png": "a455abe8d8ad71229d1af166f664de9111b37103194c8b9968fabb10db0bc4d0",
+    "03-ruby-u3000.png": "92e5b1129aaf4ed9b83090c4a4a50c0e4915c6b027ac846826451054d15f9cb7",
+    "04-emptyline-reflow.png": "11adb2a4f88b7391af198602c083bea8006be861eabcd17f8c182c475c546998",
+    "05-longest-101.png": "f357b814814b53a936c75f42c4ff4572a27b41d85ee1b84815fdf22b306f747c",
+    "06-u3000-101.png": "80cc54194a5af1b6f588bc5bb620fe6bd554b5b706333d7139058671a012ff9a",
+    "07-reviewed-wording.png": "5ba78e98639d7106359a61c5a3479b0b2bd774ccf7f9fccaebf14010b09fbc3b"
+  },
+  "temporary_probe_cleanup": "REMOVED",
+  "installed_cdn_restored": "https://raw.githubusercontent.com/kekwkekw/gctrans/main"
+}
