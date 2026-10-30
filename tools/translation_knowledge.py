@@ -234,19 +234,26 @@ def project(records, *, speakers=(), source_ids=(), jp_texts=(), max_chars=40000
         core = record["kind"] in {"entity", "profile", "term", "contextual_term", "editorial_preference"}
         score = 200 * context + 60 * speaker + 40 * surface + 20 * entity + 30 * core
         ranked.append((-score, record["id"], record, declared))
-    selected, omitted, authority, used = [], [], {}, 0
+    selected, omitted, authority, required_terms, used = [], [], {}, [], 0
     for _, identity, record, declared in sorted(ranked):
         size = len(json.dumps(record, ensure_ascii=False, separators=(",", ":")))
-        if used + size > max_chars:
+        global_scope = record["scope"] == "global"
+        current_review = isinstance(record["origin"].get("review_id"), str) and bool(record["origin"]["review_id"])
+        applicable = record["status"] == "approved" and current_review and (declared or global_scope)
+        # Actual term matches must not disappear behind optional scene references.
+        # This does not promote source-scoped records or historical evidence.
+        required = (applicable and record["kind"] == "term"
+                    and any(mentioned(s) for s in _fields(record["value"], SURFACE_FIELDS)))
+        if used + size > max_chars and not required:
             omitted.append(identity)
             continue
         selected.append(deepcopy(record))
         used += size
         # Original approved data remains approved. Scope is displayed beside it;
         # historical row acceptance is never synthesized into a new global rule.
-        global_scope = isinstance(record["scope"], str) and record["scope"].lower() == "global"
-        current_review = isinstance(record["origin"].get("review_id"), str) and bool(record["origin"]["review_id"])
-        authority[identity] = "approved_within_declared_scope" if record["status"] == "approved" and current_review and (declared or global_scope) else "reference"
+        authority[identity] = "approved_within_declared_scope" if applicable else "reference"
+        if required:
+            required_terms.append(identity)
     return {
         "records": selected,
         "effective_authority": authority,
@@ -256,7 +263,63 @@ def project(records, *, speakers=(), source_ids=(), jp_texts=(), max_chars=40000
         "selected_records": len(selected),
         "characters": used,
         "max_chars": max_chars,
+        "required_term_ids": required_terms,
+        "budget_exceeded": used > max_chars,
     }
+
+
+def translation_context(repo, *, jp_texts=(), speakers=(), source_ids=(), max_chars=40000):
+    """One current-only input for Novel, Master/UI and corpus review.
+
+    Provenance, legacy zh_Hans, archives and generated indexes are never inputs.
+    """
+    repo = Path(repo)
+    texts, speakers = list(jp_texts), set(speakers)
+    names = _json((repo / "translations/ko/names.json").read_text(encoding="utf-8-sig"))
+    return {
+        "names": {jp: ko for jp, ko in names.items()
+                  if jp in speakers or (jp and any(jp in text for text in texts))},
+        "knowledge": project(load_current(repo), jp_texts=texts, speakers=speakers,
+                             source_ids=source_ids, max_chars=max_chars),
+    }
+
+
+def change_history(before_records, before_names, after_records, after_names, *, review_id, changes):
+    """Minimal before/after receipt; caller publishes it with the canonical writes."""
+    before = {r["id"]: r for r in before_records}
+    after = {r["id"]: r for r in after_records}
+    entries = []
+    for kind, left, right in (("knowledge", before, after), ("name", before_names, after_names)):
+        for key in sorted(left.keys() | right.keys()):
+            if left.get(key) != right.get(key):
+                entries.append({"kind": kind, "key": key, "before": left.get(key), "after": right.get(key)})
+    if not entries:
+        return None
+    return {"schema": "gc-current-knowledge-change-v1", "review_id": review_id,
+            "changes": deepcopy(changes), "entries": entries,
+            "translation_input": False}
+
+
+def check_context(context, records, names, *, source_ids=(), jp_texts=(), changes=()):
+    """Check only used entries and new applicable terms, not unrelated updates."""
+    replacements = {c.get("id"): c.get("value") for c in changes
+                    if c.get("kind") == "knowledge" and c.get("approved") is True}
+    name_changes = {c.get("jp"): c.get("ko") for c in changes
+                    if c.get("kind") == "name" and c.get("approved") is True}
+    current = {r["id"]: r for r in records}
+    for jp, old in context["names"].items():
+        if names.get(jp) != old and not (jp in name_changes and names.get(jp) == name_changes[jp]):
+            raise ValueError("Used Names entry changed: " + jp)
+    for record in context["knowledge"]["records"]:
+        key = record["id"]
+        if current.get(key) != record and not (key in replacements and current.get(key) == replacements[key]):
+            raise ValueError("Used Knowledge entry changed: " + key)
+    if "required_term_ids" in context["knowledge"]:
+        now = project(records, source_ids=source_ids, jp_texts=jp_texts,
+                      max_chars=context["knowledge"]["max_chars"])
+        new = set(now["required_term_ids"]) - {r["id"] for r in context["knowledge"]["records"]} - set(replacements)
+        if new:
+            raise ValueError("New applicable terms since prepare; review affected context: " + repr(sorted(new)))
 
 
 def apply_reviewed_changes(records, names, changes, *, review_id=None):
@@ -293,6 +356,18 @@ def apply_reviewed_changes(records, names, changes, *, review_id=None):
         elif kind == "knowledge":
             old = current.get(key)
             old_hash = record_sha256(old) if old is not None else None
+            operation = change.get("operation", "upsert")
+            if operation not in {"upsert", "retire"}:
+                raise ValueError("Unknown Knowledge operation")
+            if operation == "retire":
+                if not isinstance(change.get("reason"), str) or not change["reason"].strip():
+                    raise ValueError("Knowledge retirement needs a reviewed reason")
+                if not re.fullmatch(r"[0-9a-f]{64}", change.get("old_sha256") or ""):
+                    raise ValueError("Knowledge retirement needs a preimage")
+                if old is not None and change["old_sha256"] != old_hash:
+                    raise ValueError("Knowledge preimage changed: " + key)
+                current.pop(key, None)
+                continue
             if "old_sha256" not in change or change["old_sha256"] != old_hash:
                 raise ValueError("Knowledge preimage changed: " + key)
             value = deepcopy(change.get("value"))

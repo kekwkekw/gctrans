@@ -10,6 +10,8 @@ from legacy_semantic import compute, root_hash
 
 
 def fixture(repo):
+    (repo/'translation').mkdir(parents=True)
+    (repo/'translation/knowledge.jsonl').write_bytes(b'')
     package = repo/'translations/ko'
     values = {'master.json': {'mTextConfig': {'ml_value[]': {'既存': '기존'}}},
               'names.json': {'名前':'이름'}, 'novels/1.json': {'本文':'본문'},

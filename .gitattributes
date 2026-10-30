@@ -18,3 +18,5 @@
 /translation/** -text
 /knowledge-layer/provenance/20261024_current_knowledge_cleanup/** -text
 /knowledge-layer/provenance/20261024_full_novel_current_knowledge_pro/** -text
+/knowledge-layer/provenance/corpus-changes/** -text
+/knowledge-layer/provenance/current-changes/** -text

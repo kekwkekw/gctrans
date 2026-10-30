@@ -18,6 +18,7 @@ from update.process_lock import ProcessFileLock
 from reconcile_master import flatten_master
 from export_local_ui import export
 from build_manifests import build
+from translation_knowledge import translation_context, check_context, load_current
 
 PUBLISH = ('master.json', 'ui.json', 'ui/general-exact.reviewed.json', 'manifest.json', 'legacy-components.json', 'ui/manifest.json', 'release-manifest.json')
 GUARDED = tuple(dict.fromkeys(PUBLISH + ('names.json', 'ui/resources.json', 'ui/bindings.json', 'ui.templates.json', 'ui/local-coverage.json', 'ui/detail-families.json')))
@@ -121,6 +122,7 @@ def make_plan(package, baseline, baseline_ref, scans=(), observations=(), probe_
         covered={r['jp'] for r in runtime_covered}
         rows=[r for r in rows if r['kind']!='ui' or r['jp'] not in covered]
     return {'schema':'gc-local-parity-review-v1','baseline_ref':baseline_ref,'baseline_sha256':sha(baseline),
+        'context': translation_context(package.parent.parent, jp_texts=[r['jp'] for r in rows]),
         'preimages':{p:sha(package/p) for p in GUARDED},'sources':sources,'rows':rows,
         'missing_master':sum(r['kind']=='master' for r in rows),'missing_ui':sum(r['kind']=='ui' for r in rows),
         'existing_master_source_equal':sum(jp==ko for (_,_,jp),ko in master.items()),
@@ -130,9 +132,12 @@ def make_plan(package, baseline, baseline_ref, scans=(), observations=(), probe_
 
 
 def review_template(batch):
-    return {'schema':'gc-local-parity-decisions-v1', 'rows':[
+    result = {'schema':'gc-local-parity-decisions-v1', 'rows':[
         {'id':r['id'], 'jp':r['jp'], 'action':'pending', 'ko':None, 'reviewer':'', 'evidence':'',
          'suggestions':r.get('existing_korean_suggestions', [])} for r in batch['rows']]}
+    if 'context' in batch:
+        result['knowledge_review'] = ''
+    return result
 
 
 def apply_review(package, batch, decisions):
@@ -147,6 +152,14 @@ def _apply_review(package, batch, decisions):
         raise ValueError('PACKAGE_PREIMAGES_REQUIRED')
     if any(sha(package/p)!=h for p,h in batch['preimages'].items()):
         raise ValueError('PACKAGE_CHANGED_SINCE_PLAN')
+    knowledge_review = decisions.get('knowledge_review')
+    def current_context():
+        if 'context' in batch:
+            if not isinstance(knowledge_review, str) or not knowledge_review.strip():
+                raise ValueError('KNOWLEDGE_REVIEW_FINDINGS_REQUIRED')
+            check_context(batch['context'], load_current(package.parent.parent), read(package/'names.json'),
+                          jp_texts=[r['jp'] for r in batch['rows']])
+    current_context()
     wanted={r['id']:r for r in batch['rows']}
     if len(wanted)!=len(batch['rows']) or any(row_id(r)!=r['id'] for r in wanted.values()):
         raise ValueError('BATCH_IDENTITY')
@@ -191,6 +204,7 @@ def _apply_review(package, batch, decisions):
         if payload!=(stage/'ui.json').read_bytes():(stage/'ui.json').write_bytes(payload);changed.append('ui.json')
         if changed:build(stage,modified=changed)
         if any(sha(package/p)!=h for p,h in batch['preimages'].items()):raise ValueError('PACKAGE_CHANGED_DURING_REVIEW')
+        current_context()
         backups={p:(package/p).read_bytes() for p in PUBLISH}
         try:
             for p in PUBLISH:
