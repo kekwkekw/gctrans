@@ -17,6 +17,7 @@ class ReviewPipelineTests(unittest.TestCase):
     def plan(self, scans=()): return make_plan(self.p,self.root/'baseline.json','pinned',scans)
     def decision(self,batch):
         d=review_template(batch);d['rows'][0].update(action='translate',ko='추가',reviewer='test',evidence='JP meaning and source field')
+        d['knowledge_review']='Synthetic fixture: no new candidates.'
         return d
 
     def test_apply_actual_export_and_manifest_preserves_novel_names(self):
@@ -50,6 +51,7 @@ class ReviewPipelineTests(unittest.TestCase):
                                                {'jp':'拒否','locator':{'asset_key':'scene/bad.dmm'}}]})
         b=self.plan([path]);self.assertEqual({r['jp'] for r in b['rows']},{'画面','追加'})
         d=review_template(b)
+        d['knowledge_review']='Synthetic fixture: no new candidates.'
         for r in d['rows']:
             if r['jp']=='追加': r.update(action='translate',ko='추가',reviewer='test',evidence='current field')
         result=apply_review(self.p,b,d)
@@ -77,6 +79,7 @@ class ReviewPipelineTests(unittest.TestCase):
 
     def test_hold_requires_evidence_and_pending_is_not_claimed_reviewed(self):
         b=self.plan();d=review_template(b)
+        d['knowledge_review']='Synthetic fixture: no new candidates.'
         d['rows'][0].update(action='hold',reason='designer placeholder')
         with self.assertRaisesRegex(ValueError,'HOLD_REASON'):apply_review(self.p,b,d)
         d['rows'][0]['evidence']='Object named DummyText with preview-only placeholder'

@@ -81,7 +81,8 @@ class NovelWorkflowTests(unittest.TestCase):
         self.complete_draft(held=held)
         workflow.prepare_review(self.repo, self.batch)
         review = read_json(self.batch / "review.json")
-        review.update(pro_review_complete=True, review_id="SYNTHETIC_FIXTURE_NOT_REAL_PRO")
+        review.update(pro_review_complete=True, review_id="SYNTHETIC_FIXTURE_NOT_REAL_PRO",
+                      knowledge_review="Synthetic fixture: no new candidates.")
         workflow.write_json(self.batch / "review.json", review)
         return review
 
@@ -297,7 +298,67 @@ class NovelWorkflowTests(unittest.TestCase):
         self.assertNotIn("名前A", read_json(self.package / "names.json"))
         self.assertEqual(load_current(self.repo), [record])
         self.assertTrue(any(item["path"] == "translation/knowledge.jsonl" for item in result["changed_files"]))
+        receipts = list((self.repo/'knowledge-layer/provenance/current-changes').glob('*.json'))
+        self.assertEqual(len(receipts), 1)
+        history = read_json(receipts[0])
+        self.assertFalse(history['translation_input'])
+        self.assertEqual(len(history['entries']), 2)
         self.assertEqual(workflow.apply_review(self.repo, self.batch, self.batch / "review.json")["changed_files"], [])
+
+    def test_new_layout_rules_and_legacy_batch_compatibility(self):
+        self.prepare()
+        review = self.finish_fixture_review()
+        review['rows'][1]['ko'] = review['rows'][1]['ko'].replace('<br>', ' ')
+        workflow.write_json(self.batch/'review.json', review)
+        workflow.check_review(self.repo, self.batch, self.batch/'review.json')
+
+        document = read_json(self.batch/'batch.json')
+        document.pop('text_rules')
+        workflow.write_json(self.batch/'batch.json', document)
+        review.pop('knowledge_review')
+        review['batch_sha256'] = workflow.file_hash(self.batch/'batch.json')
+        workflow.write_json(self.batch/'review.json', review)
+        with self.assertRaisesRegex(ValueError, 'Markup/variable/break mismatch'):
+            workflow.check_review(self.repo, self.batch, self.batch/'review.json')
+        review['rows'][1]['ko'] = '검증 ' + review['rows'][1]['jp']
+        workflow.write_json(self.batch/'review.json', review)
+        workflow.check_review(self.repo, self.batch, self.batch/'review.json')
+
+        workflow.apply_review(self.repo, self.batch, self.batch/'review.json')
+        self.assertEqual(workflow.apply_review(self.repo, self.batch, self.batch/'review.json')['changed_files'], [])
+
+    def test_new_novel_requires_knowledge_findings_even_with_zero_changes(self):
+        self.prepare()
+        self.complete_draft()
+        workflow.prepare_review(self.repo, self.batch)
+        review = read_json(self.batch/'review.json')
+        self.assertEqual(review['knowledge_review'], '')
+        self.assertEqual(review['changes'], [])
+        review.update(pro_review_complete=True, review_id='SYNTHETIC_FINDINGS_NOT_PRO')
+        for finding in (None, ''):
+            if finding is None:
+                review.pop('knowledge_review', None)
+            else:
+                review['knowledge_review'] = finding
+            workflow.write_json(self.batch/'review.json', review)
+            with self.assertRaisesRegex(ValueError, 'Knowledge review findings'):
+                workflow.check_review(self.repo, self.batch, self.batch/'review.json')
+        review['knowledge_review'] = 'Synthetic fixture: no new candidates after review.'
+        workflow.write_json(self.batch/'review.json', review)
+        workflow.check_review(self.repo, self.batch, self.batch/'review.json')
+
+    def test_source_tree_authoring_files_do_not_break_novel_apply(self):
+        self.prepare()
+        self.finish_fixture_review()
+        (self.package/'ui/general-exact.reviewed.json').write_bytes(b'{}')
+        result = workflow.apply_review(self.repo, self.batch, self.batch/'review.json')
+        self.assertEqual(result['package_check'], 'PASS')
+        self.assertEqual(verify(self.package, source_tree=True)['membership'], 'EXACT_RUNTIME_WITH_AUTHORING')
+        with self.assertRaisesRegex(ValueError, 'RELEASE_MEMBERSHIP_MISMATCH'):
+            verify(self.package)
+        (self.package/'unexpected.json').write_bytes(b'{}')
+        with self.assertRaisesRegex(ValueError, 'RELEASE_MEMBERSHIP_MISMATCH'):
+            verify(self.package, source_tree=True)
 
     def test_concurrent_unrelated_names_are_not_overwritten_during_staging(self):
         self.prepare()

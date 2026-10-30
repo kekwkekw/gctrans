@@ -10,7 +10,7 @@ import argparse, hashlib, json, sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from contract_validation import read_json, validate_package
 
-def verify(root:Path):
+def verify(root:Path, *, source_tree=False):
     root=root.resolve();release=read_json(root/'release-manifest.json')
     if release.get('profile')!='NextgenCandidate':raise ValueError('PROFILE_NOT_CANDIDATE')
     entries={};total=0
@@ -26,6 +26,9 @@ def verify(root:Path):
             raise ValueError('PAYLOAD_MISMATCH:'+path)
         entries[path]=entry
     actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
+    if source_tree:
+        actual -= {'ui/general-exact.reviewed.json', 'ui/local-coverage.json',
+                   'ui/detail-families.json', 'ui/enhancement-families.json'}
     expected=set(entries)|{'ui/manifest.json','release-manifest.json'}
     if actual!=expected:raise ValueError('RELEASE_MEMBERSHIP_MISMATCH:'+str(sorted(actual^expected)))
     manifest=read_json(root/'ui/manifest.json')
@@ -44,7 +47,8 @@ def verify(root:Path):
             raise ValueError('LEGACY_RELEASE_MANIFEST_DIVERGENCE')
     validate_package(root,Path(__file__).resolve().parents[1]/'contracts')
     return {'schema':'gc-ng01-offline-staging-gate-v1','status':'PASS','files_verified':len(entries),
-            'bytes_verified':total,'membership':'EXACT','validation_scope':'all staged payload bytes; offline only',
+            'bytes_verified':total,'membership':'EXACT_RUNTIME_WITH_AUTHORING' if source_tree else 'EXACT',
+            'validation_scope':'all staged payload bytes; offline only',
             'runtime_names_novel_scope':'legacy-index metadata only; existing donor lazy behavior preserved',
             'native_runtime':'NOT_RUN_OFFLINE_STAGING_ONLY'}
 
