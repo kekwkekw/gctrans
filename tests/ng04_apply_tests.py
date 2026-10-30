@@ -33,7 +33,8 @@ def small_package(destination):
     """Real UI/Master contract with three disposable Novel files, fresh manifests."""
     destination.mkdir(parents=True); baseline=ROOT/'translations/ko'; manifest=read_json(baseline/'manifest.json')
     registered=sorted(manifest['novels'])[:2]
-    unregistered=next(p.stem for p in (baseline/'novels').glob('*.json') if p.stem not in manifest['novels'])
+    # This fixture unregisters the third file itself; production may register every file.
+    unregistered=next(p.stem for p in sorted((baseline/'novels').glob('*.json')) if p.stem not in registered)
     files=['master.json','names.json','manifest.json','ui/resources.json','ui/bindings.json','layout/episode-title.json']+['novels/'+i+'.json' for i in registered+[unregistered]]
     for file in files:
         target=destination/file; target.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(baseline/file,target)

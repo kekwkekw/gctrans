@@ -1,0 +1,212 @@
+{
+  "batch_sha256": "5407ef03fa954cf7e797a5b2a21adf943dafb376ff5133d47d52633750d0f29c",
+  "knowledge": null,
+  "knowledge_review": "제공된 41개 선택 occurrence와 13개 exact-JP 비교 집합, current Names 3개 및 current Knowledge 12개, 9개 Novel 인접 dictionary 문맥을 실제 검수했다. 신규/수정/retire Knowledge 및 Names 변경은 승인하지 않는다(changes=[]). イマージュ→이마쥬는 이미 global 승인된 term:087454ba52d82447을 재사용한다. 나머지 11개 Knowledge는 cross-corpus 문맥에서 reference이며 legacy가 아니다. 이를 global로 승격하거나 중복이라고 폐기하지 않는다. ノワール/ヴォルカン의 표기 정책과 爆上がれ의 행사 제목 문맥은 해당 행의 hold 이유에 남긴다. 夢幻美術館 제목 띄어쓰기는 이번 exact-JP의 선택 위치만 교정하며 기존 entity/term scope는 유지한다. 같은 환영 인사의 존대/반말 차이를 전역 말투 규칙으로 만들지 않는다. Knowledge 정본 전체 3,535건의 신규성·중복·충돌을 전수 검증한 것은 아니며, 이번 자료에는 전체 원장이 없다. pro_review_complete는 이 41개 행의 의미검수 결정(보류 포함) 완료만 뜻한다. 구현 코드, 64개 회귀, package gate, 원본 script 화자, runtime 및 apply 실행을 검증하거나 승인하는 필드가 아니다.",
+  "review_id": "GC-CORPUS-REVIEW01-PRO-20261030-R1",
+  "rows": [
+    {
+      "field": "ml_name[]",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "c85ec13408e7e8deb87914db1866834f1c2bd47e2affbcce3551b1648ce69507",
+      "jp": "イマージュの書Ⅰ",
+      "kind": "master",
+      "ko_current": "이마쥬의 서Ⅰ",
+      "ko_final": "이마쥬의 서 Ⅰ",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_name[]",
+        "イマージュの書Ⅰ"
+      ],
+      "reason": "DISPLAY_CONSISTENCY: 같은 exact JP의 번호 포함 아이템명에 한해 본명과 등급 기호를 분리한 표기로 맞춘다. 같은 묶음의 slim_mShopProducts 표기를 채택하는 국소적 표시 결정이며 서Ⅰ을 오역으로 판정하거나 모든 로마 숫자 표기를 전역 변경하지 않는다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_name[]",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "73ed72a025f0ed1d2f0af41be5dcae3005370233fe327dd244e107f4a9511ecf",
+      "jp": "孤高のイマージュ、子分を求む",
+      "kind": "master",
+      "ko_current": "고고한 이마쥬, 부하를 구하다",
+      "ko_final": "고고한 이마쥬, 부하를 찾다",
+      "path": "master.json",
+      "pointer": [
+        "mQuestStages",
+        "ml_name[]",
+        "孤高のイマージュ、子分を求む"
+      ],
+      "reason": "TITLE_CONSISTENCY: 求む의 모집/탐색 의미와 제공된 근성 있는 상대를 찾는 인접 JP에 맞고, 같은 exact JP의 Novel 21002801 및 mNovels 두 제목과 일치시킨다. 구하다가 언제나 오역이라는 뜻은 아니다.",
+      "table": "mQuestStages"
+    },
+    {
+      "field": "ml_name[]",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "4bf243fb5ea55b8fa5d23d08974c83625a544798967e611f50aa7ef2f2ff6988",
+      "jp": "自画像のイマージュ",
+      "kind": "master",
+      "ko_current": "자화상의 이마쥬",
+      "ko_final": "자화상 이마쥬",
+      "path": "master.json",
+      "pointer": [
+        "mQuestStages",
+        "ml_name[]",
+        "自画像のイマージュ"
+      ],
+      "reason": "TITLE_CONSISTENCY: 같은 exact JP의 current Names 표시와 Novel 21003701, mNovels 두 제목이 자화상 이마쥬로 일치한다. 제공된 자화상 전시 문맥에서도 의미 손실 없이 해당 제목의 표시만 맞춘다. Names를 일반 명사 일괄 치환 규칙으로 확대하지 않는다.",
+      "table": "mQuestStages"
+    },
+    {
+      "field": "ml_name[]",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "7f3bc20ca4e55f87d0e67460b9eec68aea0f8dd6c59c4ce5ba3aa79ec20e9cb1",
+      "jp": "新顔のイマージュ",
+      "kind": "master",
+      "ko_current": "새로운 이마쥬",
+      "ko_final": "새 얼굴 이마쥬",
+      "path": "master.json",
+      "pointer": [
+        "mQuestStages",
+        "ml_name[]",
+        "新顔のイマージュ"
+      ],
+      "reason": "TITLE_CONSISTENCY: 新顔의 새 얼굴이라는 의미를 살리면서 동일 exact JP의 Novel 22000001과 mNovels 두 제목에 맞춘다. 새로운 이마쥬도 의미상 가능한 표현이므로 오류 일반화가 아닌 동일 제목 정합화다.",
+      "table": "mQuestStages"
+    },
+    {
+      "field": "ml_name[]",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "89a9f323c16c51c2e559b47cd4641ce8d48352a1091b93f909f35c210c095e55",
+      "jp": "夢幻美術館、始動",
+      "kind": "master",
+      "ko_current": "몽환미술관, 가동",
+      "ko_final": "몽환 미술관, 시동",
+      "path": "master.json",
+      "pointer": [
+        "mQuestStages",
+        "ml_name[]",
+        "夢幻美術館、始動"
+      ],
+      "reason": "TITLE_CONSISTENCY: 始動은 현행 Novel 99900001 및 mNovels의 시동을 채택하고 고유 시설명의 띄어쓰기를 몽환 미술관으로 정리한다. 해당 시설이 명시된 인접 JP와 current 참고 용어를 함께 대조한 선택 위치 교정이다. 네 제목 occurrence를 같은 배치에서 함께 교정하며 Knowledge scope는 바꾸지 않는다.",
+      "table": "mQuestStages"
+    },
+    {
+      "field": "ml_title[]",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "ce1211bbac573f4eaede31c330d94ecd43b47977e594e639c89bf2547b100126",
+      "jp": "夢幻美術館、始動",
+      "kind": "master",
+      "ko_current": "몽환미술관, 시동",
+      "ko_final": "몽환 미술관, 시동",
+      "path": "master.json",
+      "pointer": [
+        "mNovels",
+        "ml_title[]",
+        "夢幻美術館、始動"
+      ],
+      "reason": "TITLE_CONSISTENCY: 의미와 시동 표현은 보존하고 몽환 미술관의 띄어쓰기만 정리한다. Novel 99900001, mNovels.title 및 mQuestStages의 같은 JP 제목과 함께 변경한다. source-scoped Knowledge를 global로 승격하지 않는다.",
+      "table": "mNovels"
+    },
+    {
+      "field": "title",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "2037662c921825e5b1b950f0fa6b0d716eba01dc04e967f2a57591806fdff4bb",
+      "jp": "夢幻美術館、始動",
+      "kind": "master",
+      "ko_current": "몽환미술관, 시동",
+      "ko_final": "몽환 미술관, 시동",
+      "path": "master.json",
+      "pointer": [
+        "mNovels",
+        "title",
+        "夢幻美術館、始動"
+      ],
+      "reason": "TITLE_CONSISTENCY: 의미와 시동 표현은 보존하고 몽환 미술관의 띄어쓰기만 정리한다. Novel 99900001, mNovels.ml_title[] 및 mQuestStages의 같은 JP 제목과 함께 변경한다. source-scoped Knowledge를 global로 승격하지 않는다.",
+      "table": "mNovels"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "60f97f77196b56d042b76de57da5e7cff820def01bc6ba5dd3f4a978170f608c",
+      "jp": "★5の美術品かイマージュを100％の確率で創作できる選別創作道具。",
+      "kind": "master",
+      "ko_current": "★5 미술품 또는 이마쥬를100％ 확률로 창작할 수 있는 선별 창작 도구.",
+      "ko_final": "★5 미술품 또는 이마쥬를 100％의 확률로 창작할 수 있는 선별 창작 도구.",
+      "path": "master.json",
+      "pointer": [
+        "slim_mShopProducts",
+        "ml_description[]",
+        "★5の美術品かイマージュを100％の確率で創作できる選別創作道具。"
+      ],
+      "reason": "TYPO / DISPLAY_CONSISTENCY: 이마쥬를100％의 누락 공백을 바로잡고 동일 JP의 mItems 설명과 일치시킨다. ★5, 미술품 또는 이마쥬, 100％, 창작 가능 및 선별 창작 도구 의미는 그대로 유지한다. UI/Master 문장이므로 Novel 본문 34칸 제한을 적용하지 않는다.",
+      "table": "slim_mShopProducts"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "c1e8f2a7bc0ee7b92957ae20f89f5c95f0989c79aedd334a8901a437f0a72eb7",
+      "jp": "イマージュを100％の確率で創作できる選別創作道具。",
+      "kind": "master",
+      "ko_current": "이마쥬를100％ 확률로 창작할 수 있는 선별 창작 도구.",
+      "ko_final": "이마쥬를 100％의 확률로 창작할 수 있는 선별 창작 도구.",
+      "path": "master.json",
+      "pointer": [
+        "slim_mShopProducts",
+        "ml_description[]",
+        "イマージュを100％の確率で創作できる選別創作道具。"
+      ],
+      "reason": "TYPO / DISPLAY_CONSISTENCY: 이마쥬를100％의 누락 공백을 바로잡고 동일 JP의 mItems 설명과 일치시킨다. 100％, 창작 가능 및 선별 창작 도구 의미를 그대로 유지하며 전역 문자열 치환은 하지 않는다.",
+      "table": "slim_mShopProducts"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "44242bc64c678e34335713dc9b18a019432b16a75df9d0baa142ecbd37dce473",
+      "id": "33f6d7c95fc371f1b4b6644c76364a3cf5b7538e7186ec284e3f5c804b964d82",
+      "jp": "★5のイマージュを50％の確率で創作できる選別創作道具。",
+      "kind": "master",
+      "ko_current": "★5 이마쥬를50％ 확률로 창작할 수 있는 선별 창작 도구.",
+      "ko_final": "★5 이마쥬를 50％의 확률로 창작할 수 있는 선별 창작 도구.",
+      "path": "master.json",
+      "pointer": [
+        "slim_mShopProducts",
+        "ml_description[]",
+        "★5のイマージュを50％の確率で創作できる選別創作道具。"
+      ],
+      "reason": "TYPO / DISPLAY_CONSISTENCY: 이마쥬를50％의 누락 공백을 바로잡고 동일 JP의 mItems 설명과 일치시킨다. ★5와 50％를 비롯한 원문의 조건을 그대로 유지하며 전역 문자열 치환은 하지 않는다.",
+      "table": "slim_mShopProducts"
+    },
+    {
+      "dialogue": true,
+      "file_sha256": "c0fed39adb8b8006b16694380aa4f13dce14dc405e9bd797dced02d7cac94069",
+      "held": false,
+      "id": "8ea4e8dce695924c2da5e3dd387d55b1fb98373c6b419ef0864c17a751d9e8c2",
+      "jp": "「ようこそ、夢幻美術館へ！」",
+      "kind": "novel",
+      "ko_current": "「몽환 미술관에, 어서오세요!」",
+      "ko_final": "「몽환 미술관에, 어서 오세요!」",
+      "path": "novels/40500101.json",
+      "pointer": [
+        "「ようこそ、夢幻美術館へ！」"
+      ],
+      "reason": "TYPO / CONTEXTUAL_VARIANT: 어서오세요의 띄어쓰기만 어서 오세요로 고친다. 경어, 쉼표, 인용부호, 느낌표와 환영 의미를 유지한다. 인접 dictionary 문맥에는 응대 인사를 연습하는 장면이 있어 다른 작품의 반말 인사로 통일할 이유가 없다. 원본 script 화자를 확인했다고 주장하지 않는다.",
+      "source_id": "40500101"
+    },
+    {
+      "dialogue": false,
+      "file_sha256": "86b3c337c877d1009780ffb12794efbe52dcf8f11c1c32056fd999e06afe00d2",
+      "held": false,
+      "id": "5ca7c9a850c80126e3b9597e421ad34a2964d6a74ac8cf9880fd7b72ee1e6498",
+      "jp": "夢幻美術館、始動",
+      "kind": "novel",
+      "ko_current": "몽환미술관, 시동",
+      "ko_final": "몽환 미술관, 시동",
+      "path": "novels/99900001.json",
+      "pointer": [
+        "夢幻美術館、始動"
+      ],
+      "reason": "TITLE_CONSISTENCY: 원문의 시설과 개시 의미, 기존 시동 표현을 보존하고 시설명 띄어쓰기만 정리한다. 선택된 mNovels.title/ml_title[]와 mQuestStages의 같은 JP 제목도 이 배치에서 함께 맞춘다. 제목이므로 34 UTF-16칸 × 3줄 본문 제한 대상이 아니다.",
+      "source_id": "99900001"
+    }
+  ],
+  "schema": "gc-corpus-applied-v1",
+  "translation_input": false
+}

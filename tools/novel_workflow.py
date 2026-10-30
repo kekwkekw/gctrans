@@ -30,6 +30,10 @@ FIELDS = {"title": 1, "message": 2, "msgvoicesync": 3}
 ROW_FIELDS = ("row_id", "source_id", "message_index_0based", "physical_line_1based",
               "command", "speaker", "jp", "raw_field_bytes")
 META_FILES = {"manifest.json", "legacy-components.json", "ui/manifest.json", "release-manifest.json"}
+TEXT_RULES = "gc-novel-34x3-v1"
+BREAK = re.compile(r"<br\s*/?>|\r\n|\n|\r", re.I)
+TAG = re.compile(r"<[^>]*>")
+CONTROL = re.compile(r"<(ruby|click)(?:=[^>]*)?>.*?</\1>", re.S)
 
 
 def digest(raw):
@@ -259,7 +263,7 @@ def _collect(input_spec):
 def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, source_current_jp_keys=False, raw_root=None,
                   source_ids=(), register=(), state_root=None, reason="source_update", knowledge_max_chars=40000):
     """Create a local draft workspace; no translation or semantic verdict occurs."""
-    from translation_knowledge import load_current, project
+    from translation_knowledge import translation_context
     repo, batch = Path(repo).resolve(), Path(batch).resolve()
     choices = sum((source_manifest is not None, source_snapshot is not None, source_current_jp_keys is True))
     require(choices == 1, "Choose one source input")
@@ -305,20 +309,18 @@ def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, so
     names = read_json(package / "names.json")
     rows = [row for info, _ in captured for row in info["rows"]]
     speakers = sorted({row["speaker"] for row in rows if row["speaker"]})
-    mentioned_names = sorted(name for name in names if name and any(name in row["jp"] for row in rows)) if source_current_jp_keys else []
-    reference_names = sorted(set(speakers) | set(mentioned_names))
-    context = {"names": {name: names.get(name) for name in reference_names},
-               "names_reference_basis": ("exact current Names keys found in JP text; reference only, not speaker/entity attribution"
-                                         if source_current_jp_keys else "parsed exact speakers"),
-               "knowledge": project(load_current(repo), speakers=speakers,
-                                    source_ids=spec["source_ids"], jp_texts=[row["jp"] for row in rows], max_chars=knowledge_max_chars)}
+    context = translation_context(repo, speakers=speakers, source_ids=spec["source_ids"],
+                                  jp_texts=[row["jp"] for row in rows], max_chars=knowledge_max_chars)
+    # Preserve missing exact speakers as well, so later Names additions are noticed.
+    context["names"].update({name: names.get(name) for name in speakers})
+    context["names_reference_basis"] = "parsed speakers / exact current Names found in JP; reference only, not speaker/entity attribution"
     target_preimages = ({info["source_id"]: info["target_sha256_at_capture"] for info, _ in captured}
                         if source_current_jp_keys else
                         {identity: file_hash(package / f"novels/{identity}.json") for identity in spec["source_ids"]})
     if source_current_jp_keys:
         require(all(file_hash(repo / info["target_path"]) == target_preimages[info["source_id"]] for info, _ in captured),
                 "Current Novel target changed during prepare")
-    document = {"schema": SCHEMA, "reason": reason, "base_commit": basis_commit,
+    document = {"schema": SCHEMA, "reason": reason, "base_commit": basis_commit, "text_rules": TEXT_RULES,
                 "policy_sha256": POLICY_SHA256, "source_input": spec,
                 "source_kind": spec["kind"],
                 "row_basis": CURRENT_KEYS_ROW_BASIS if source_current_jp_keys else "parsed_textasset_message_index_0based",
@@ -348,13 +350,24 @@ def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, so
             "3. `context.json`의 적용 범위와 상태를 확인합니다. 현재 JP가 우선이며 Names는 exact speaker 또는 "
             "JP 문자열에서 찾은 참고 표시값입니다. 참고 표시는 실제 화자·entity 확정이 아닙니다.\n"
             "4. Codex는 각 행의 `hold`를 true/false로 판정합니다. HOLD 행은 `reason`을 적고 `ko`를 비워 둬도 됩니다. "
-            "나머지 행의 `ko`를 번역하고 태그·변수·줄바꿈을 보존합니다. 지식 변경은 `changes`에 제안합니다.\n"
+            "나머지 행의 `ko`를 번역하고 태그·변수는 보존합니다. KO의 <br>와 경계 공백은 아래 규칙에 따라 재배치합니다. "
+            "지식 변경은 `changes`에 제안합니다.\n"
             "5. `novel review`가 구조를 검사하고 HOLD 표시문을 넣은 `review.json`을 생성합니다. "
             "ChatGPT PRO는 이 파일과 원문·context·정책을 함께 검수합니다.\n"
             "6. PRO는 최종 KO와 HOLD 판정을 검수하고, 반영할 지식 변경만 승인합니다. "
+            "새 용어·호칭·관계와 기존 지식의 중복·충돌도 검토하고 `knowledge_review`에 결과를 적습니다. "
+            "신규 후보가 없으면 검토 후 없다고 적으며, 건수를 맞추려고 만들지 않습니다. "
             "검수가 끝나면 `review_id`를 기입하고 `pro_review_complete`를 true로 설정합니다.\n"
             "7. `novel apply`는 검수본을 검사해 현재 checkout에 반영합니다. Git commit/push와 게임 실행은 수행하지 않습니다.\n\n"
             "이 작업 폴더는 초벌과 검수용입니다. 모델 실행이나 실제 PRO 검수 완료를 코드가 자동 주장하지 않습니다.\n\n"
+            "## 대사 줄배치\n\n"
+            "본문은 최대 34 UTF-16칸 × 3줄입니다. 인용부호·문장부호·일반/전각 공백도 셉니다. "
+            "태그 문법은 제외하되 ruby/click 내부 표시문자는 셉니다. 짧은 문장을 늘릴 필요는 없습니다. "
+            "어절·고정 표현과 의미 단위에서 끊고, 조사만 다음 줄로 보내지 않습니다. "
+            "의미·주체·부정·시제·농담·말투를 삭제하거나 문자열을 잘라 길이를 맞추지 않습니다. "
+            "ruby/click 속성·ID를 보존하고 블록 내부에는 줄바꿈을 추가하지 않습니다. "
+            "기존 KO의 단순 재배치에서는 보호 블록 본문도 유지합니다. "
+            "제목은 대화창 34×3 제한 대상이 아닙니다. 규격 초과는 수정 대상이지 자동 콘텐츠 HOLD 판정이 아닙니다.\n\n"
             "## 선택적인 Names/Knowledge 변경안\n\n"
             "`changes`에 넣는 형식 예시입니다. 실제 대상의 JP·KO·ID·source_ids·근거로 바꿉니다. "
             "초벌은 `approved:false`로 제안하고, PRO가 검수한 항목만 true로 바꿉니다. "
@@ -367,7 +380,9 @@ def prepare_batch(repo, batch, *, source_manifest=None, source_snapshot=None, so
             '"value":{"jp":"原語","ko":"대응 표기"},'
             '"origin":{"review_id":"BATCH-REVIEW-ID","source":"source/99999999.txt의 해당 행"}}}\n```\n\n'
             "Knowledge의 `origin.review_id`는 최종 `review.json`의 `review_id`와 같아야 합니다. "
-            "실제 규칙 내용과 적용 범위, 별도의 원문 근거를 함께 기록합니다.\n",
+            "실제 규칙 내용과 적용 범위, 별도의 원문 근거를 함께 기록합니다. "
+            "기존 ID를 먼저 찾아 중복 등록을 피하고 장면별 관찰을 전역화하지 않습니다. "
+            "legacy·provenance를 current 대신 읽거나 과거 원장으로 current를 재생성하지 않습니다.\n",
             encoding="utf-8")
     except BaseException:
         shutil.rmtree(batch)
@@ -385,6 +400,7 @@ def _load_batch(repo, batch):
     require((batch / "HOLD_POLICY.md").read_bytes() == policy, "Batch HOLD_POLICY.md differs from frozen file")
     document = read_json(batch / "batch.json")
     require(document.get("schema") == SCHEMA and document.get("policy_sha256") == POLICY_SHA256, "Invalid batch or policy binding")
+    require(document.get("text_rules") in (None, TEXT_RULES), "Unknown Novel text rules")
     require(file_hash(batch / "context.json") == document["context_sha256"], "Batch Knowledge context changed")
     captured = _collect(document["source_input"])
     require([info for info, _ in captured] == document["sources"], "Selected source changed since draft preparation")
@@ -394,7 +410,7 @@ def _load_batch(repo, batch):
     return document
 
 
-def _structure(value):
+def _structure(value, *, allow_reflow=False):
     tokens, plain, index = [], [], 0
     start_pattern = re.compile(r"</?[A-Za-z][A-Za-z0-9_:-]*(?=[\s=/>]|$)")
     break_pattern = re.compile(r"\r\n|\r|\n|\\n")
@@ -412,12 +428,19 @@ def _structure(value):
                     break
                 end += 1
             require(end < len(value) and value[end] == ">" and quote is None, "Malformed markup")
-            tokens.append(("tag", value[index:end + 1]))
+            raw_tag = value[index:end + 1]
+            if not (allow_reflow and BREAK.fullmatch(raw_tag)):
+                tokens.append(("tag", raw_tag))
+            if allow_reflow:
+                # Keep raw text spans separate: removing markup must not join
+                # fragments such as {PLA<br>YER} into a valid placeholder.
+                plain.append("\n")
             index = end + 1
         else:
             line_break = break_pattern.match(value, index)
             if line_break:
-                tokens.append(("break", line_break.group()))
+                if not allow_reflow or line_break.group() == r"\n":
+                    tokens.append(("break", line_break.group()))
                 plain.append(line_break.group())
                 index = line_break.end()
             else:
@@ -432,10 +455,34 @@ def hold_placeholder(title, row):
     return f"[{title} - {row['message_index_0based'] + 1}행 HOLD]"
 
 
+def line_cells(text):
+    """The reviewed dialogue contract, not an estimate of pixel width."""
+    return [len(TAG.sub("", line).encode("utf-16-le")) // 2 for line in BREAK.split(text)]
+
+
+def check_text(jp, ko, *, dialogue=True, check_layout=True, previous_ko=None):
+    require(_structure(jp, allow_reflow=True) == _structure(ko, allow_reflow=True),
+            "Markup/variable/break mismatch")
+    require(not any(BREAK.search(m.group()) for m in CONTROL.finditer(ko)), "ruby/click block split")
+    if previous_ko is not None:
+        require([m.group() for m in CONTROL.finditer(previous_ko)] == [m.group() for m in CONTROL.finditer(ko)],
+                "ruby/click block changed; needs a separate explicit control review")
+    if dialogue and check_layout:
+        sizes = line_cells(ko)
+        require(len(sizes) <= 3 and max(sizes) <= 34, f"Novel layout exceeds 34 UTF-16 cells / 3 lines: {sizes}")
+
+
+def is_dialogue(row, source):
+    if row["command"] == "title":
+        return False
+    return not (source.get("title_basis") == "master_mNovels_ml_title_exact_unique" and row["jp"] == source["title"])
+
+
 def _checked_rows(document, supplied, *, draft=False):
     expected = [row for info in document["sources"] for row in info["rows"]]
     require(isinstance(supplied, list) and len(supplied) == len(expected), "Row coverage differs from source")
     titles = {info["source_id"]: info["title"] for info in document["sources"]}
+    sources = {info["source_id"]: info for info in document["sources"]}
     output = []
     for original, row in zip(expected, supplied):
         require(isinstance(row, dict) and set(row) == set(ROW_FIELDS) | {"hold", "reason", "ko"}, "Invalid draft/review row fields")
@@ -450,7 +497,13 @@ def _checked_rows(document, supplied, *, draft=False):
             checked["ko"] = placeholder
         else:
             require(row["ko"].strip(), f"Translation missing: {row['row_id']}")
-            require(_structure(row["jp"]) == _structure(row["ko"]), f"Markup/variable/break mismatch: {row['row_id']}")
+            if document.get("text_rules") == TEXT_RULES:
+                try:
+                    check_text(row["jp"], row["ko"], dialogue=is_dialogue(row, sources[row["source_id"]]), check_layout=not draft)
+                except ValueError as error:
+                    raise ValueError(f"{row['row_id']}: {error}") from error
+            else:
+                require(_structure(row["jp"]) == _structure(row["ko"]), f"Markup/variable/break mismatch: {row['row_id']}")
         output.append(checked)
     return output
 
@@ -468,6 +521,8 @@ def prepare_review(repo, batch):
               "draft_sha256": file_hash(batch / "draft.json"), "policy_sha256": POLICY_SHA256,
               "review_id": "", "pro_review_complete": False, "rows": rows,
               "changes": copy.deepcopy(draft["changes"]), "notes": ""}
+    if document.get("text_rules") == TEXT_RULES:
+        review["knowledge_review"] = ""
     write_json(path, review)
     return {"status": "PRO_REVIEW_READY", "review": str(path), "rows": len(rows), "hold_rows": sum(r["hold"] for r in rows), "semantic_review": "NOT_RUN"}
 
@@ -498,15 +553,12 @@ def _checked_changes(records, names, changes, review_id):
 
 
 def _context_current(repo, batch, records, names, changes):
+    from translation_knowledge import check_context
     context = read_json(batch / "context.json")
-    replacement_names = {change.get("jp"): change.get("ko") for change in changes if change.get("kind") == "name" and change.get("approved") is True}
-    replacement_records = {change.get("id"): change.get("value") for change in changes if change.get("kind") == "knowledge" and change.get("approved") is True}
-    for jp, old in context["names"].items():
-        require(names.get(jp) == old or (jp in replacement_names and names.get(jp) == replacement_names[jp]), f"Used Names entry changed: {jp}")
-    current = {record["id"]: record for record in records}
-    for record in context["knowledge"]["records"]:
-        identity = record["id"]
-        require(current.get(identity) == record or (identity in replacement_records and current.get(identity) == replacement_records[identity]), f"Used Knowledge entry changed: {identity}")
+    document = read_json(batch / "batch.json")
+    check_context(context, records, names, changes=changes,
+                  source_ids=[s["source_id"] for s in document["sources"]],
+                  jp_texts=[r["jp"] for s in document["sources"] for r in s["rows"]])
 
 
 def _reviewed(repo, batch, review_path):
@@ -517,6 +569,9 @@ def _reviewed(repo, batch, review_path):
     require(review.get("batch_sha256") == file_hash(batch / "batch.json") and review.get("draft_sha256") == file_hash(batch / "draft.json"), "Review no longer matches batch/draft")
     require(review.get("policy_sha256") == POLICY_SHA256, "Review policy binding changed")
     require(review.get("pro_review_complete") is True and isinstance(review.get("review_id"), str) and review["review_id"].strip(), "PRO final review is not complete")
+    if document.get("text_rules") == TEXT_RULES:
+        require(isinstance(review.get("knowledge_review"), str) and review["knowledge_review"].strip(),
+                "Record Knowledge review findings (including no new candidates)")
     rows = _checked_rows(document, review["rows"])
     package = repo / "translations/ko"
     records = load_current(repo)
@@ -589,16 +644,22 @@ def _publish(updates, previous):
 
 def apply_review(repo, batch, review):
     """Apply explicitly PRO-reviewed data to a local checkout, without Git writes."""
-    from translation_knowledge import dump_knowledge
+    from translation_knowledge import change_history, dump_knowledge, load_current
     from verify_staged_release import verify
     repo, batch, review = Path(repo).resolve(), Path(batch).resolve(), Path(review).resolve()
     with ProcessFileLock(repo / "work/novels/.apply.lock", "Novel apply is already running"):
         document, reviewed, rows, payloads, records, names = _reviewed(repo, batch, review)
         package = repo / "translations/ko"
+        history = change_history(load_current(repo), read_json(package / "names.json"), records, names,
+                                 review_id=reviewed["review_id"], changes=reviewed["changes"])
+        history_raw = encode(history) if history else None
+        history_path = (repo / "knowledge-layer/provenance/current-changes" / (digest(history_raw) + ".json")) if history else None
         package_members = {path.relative_to(package).as_posix() for path in package.rglob("*") if path.is_file()}
         guarded = {package / relative for relative in META_FILES | {"names.json"}}
         guarded.update(package / f"novels/{identity}.json" for identity in payloads)
         guarded.update(repo / relative for relative in ("translation/knowledge.jsonl", "translation/holds.jsonl"))
+        if history_path:
+            guarded.add(history_path)
         owned_paths = {part for path in guarded for part in (path, *path.parents) if part.is_relative_to(repo)}
         require(not any(path.is_symlink() or (hasattr(path, "is_junction") and path.is_junction()) for path in owned_paths),
                 "Output contains a filesystem link")
@@ -623,7 +684,7 @@ def apply_review(repo, batch, review):
                 (stage / "names.json").write_bytes(names_raw)
                 modified.append("names.json")
             build(stage, added=added, modified=modified, register=document["register"])
-            verification = verify(stage)
+            verification = verify(stage, source_tree=True)
             allowed = {f"novels/{identity}.json" for identity in payloads} | META_FILES | {"names.json"}
             updates = {}
             for path in stage.rglob("*"):
@@ -638,6 +699,9 @@ def apply_review(repo, batch, review):
             current_records_raw = dump_knowledge(records)
             if knowledge_path.read_bytes() != current_records_raw:
                 updates[knowledge_path] = current_records_raw
+            if history_path and preimages[history_path] != history_raw:
+                require(preimages[history_path] is None, "Knowledge history is immutable")
+                updates[history_path] = history_raw
             holds_path = repo / "translation/holds.jsonl"
             holds = [item for item in _jsonl(holds_path) if item.get("source_id") not in payloads]
             source_info = {item["source_id"]: item for item in document["sources"]}

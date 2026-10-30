@@ -78,6 +78,12 @@ record는 `approved`, `content_available: true`, 실제 내용, 명시적 scope�
 
 과거 원장에서 active Knowledge를 재생성하지 않는다. 정상 운영은 현재 `translation/knowledge.jsonl`만 읽는다.
 
+Novel과 Master/UI 배치는 같은 current-only 문맥 함수를 사용한다. 원문에 실제 등장하고 scope가 맞는 승인 용어는 선택적 참고자료의 크기 제한 때문에 빠지지 않는다. 다른 시나리오의 관찰은 계속 reference이며, corpus 통합을 이유로 전역 승격하지 않는다.
+
+새 배치의 `knowledge_review`에는 신규 후보·중복·충돌을 검토한 결과를 기록한다. 신규 후보가 없다는 결과도 유효하며 `changes: []`를 허용한다. 같은 지식의 갱신은 기존 ID를 재사용한다. 승인된 폐기에는 `operation: "retire"`, 기존 `old_sha256`, 사유가 필요하다. Novel apply는 실제 변경된 Names/Knowledge의 이전·이후 값을 `knowledge-layer/provenance/current-changes/`에 함께 저장한다. 이 경로는 정상 문맥에서 읽지 않는다.
+
+현재 corpus의 위치별 대조와 기존 번역 교정은 [CORPUS_WORKFLOW_KO.md](CORPUS_WORKFLOW_KO.md)를 따른다. 자동 병합이나 기존 Knowledge 전체 재정리는 하지 않는다.
+
 현재 요약은 다음으로 확인한다.
 
 ```powershell
@@ -156,7 +162,9 @@ Codex는 원문 전체, 동결 정책, 현재 Names와 current Knowledge를 읽�
 - `ko`
 - 필요한 Names/Knowledge 변경 제안
 
-JP·speaker·행 식별 필드는 바꾸지 않는다. 태그·변수·literal `\n`·`<br>`·보호 토큰을 exact하게 보존한다.
+JP·speaker·행 식별 필드는 바꾸지 않는다. 태그·변수·literal `\n`·보호 토큰을 exact하게 보존한다. 새 배치(`text_rules: gc-novel-34x3-v1`)는 KO의 `<br>`·실제 줄바꿈·경계 공백을 재배치할 수 있다. 대사 본문은 한 줄 최대 **34 UTF-16칸, 최대 3줄**이며 공백·문장부호·따옴표도 센다. 태그는 제외하고 ruby/click 안의 표시 문자는 포함한다. 제목에는 이 본문 제한을 적용하지 않는다.
+
+조사·어절·고정 용어를 부자연스럽게 나누거나, 제한에 맞추려고 의미를 삭제하지 않는다. ruby/click 블록 내부에는 줄바꿈을 넣지 않는다. 기존 KO의 제어 블록 내용 변경은 단순 줄 재배치와 구분해 명시적으로 검수한다. 초벌은 길이를 넘겨도 PRO 교정용으로 전달할 수 있고, 최종 check/apply에서 본문 규격을 확인한다. 길이 초과 자체를 HOLD 사유로 삼지 않는다. 규칙 표식이 없는 기존 배치는 원래의 exact 줄바꿈 계약을 유지한다.
 
 ### 4.5 PRO 검수 자료 준비
 
@@ -172,7 +180,7 @@ python -X utf8 tools/update/cli.py novel review --repo . --batch work/novels/<ba
 - 행별 HOLD와 표시문
 - 필요한 Names/Knowledge 변경
 
-완료한 `review.json`에는 실제 최종 행, `review_id`, `pro_review_complete: true`를 기록한다.
+완료한 `review.json`에는 실제 최종 행, `review_id`, `pro_review_complete: true`와 새 배치의 `knowledge_review`를 기록한다.
 
 HOLD 출력은 `[시나리오명 - N행 HOLD]` 형식이다. N은 제목을 포함한 번역 대상 행의 1부터 시작하는 순번이다. JP key는 유지한다.
 

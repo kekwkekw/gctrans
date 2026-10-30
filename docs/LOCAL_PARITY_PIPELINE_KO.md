@@ -1,5 +1,7 @@
 # Master·UI → LocalParity 배포 준비
 
+새 plan은 current Names/Knowledge 문맥을 포함한다. review의 `knowledge_review`에 신규 용어·중복·충돌 검토 결과를 적는다(신규 후보 없음도 허용). 이 경로의 소유 파일은 계속 Master/UI와 manifest뿐이다. Names/Knowledge 갱신이나 기존 번역값 교정은 [corpus 교정 절차](CORPUS_WORKFLOW_KO.md)에서 명시적으로 검수한다. 문맥 필드가 없는 기존 plan은 이전 계약으로 읽는다.
+
 Novel의 기존 운영 절차는 [OPERATOR_KO.md](OPERATOR_KO.md)를 유지한다. 아래 명령은 저장소 루트에서 실행한다. `work/local-parity`는 Git 제외 작업 폴더이며 크롤러 raw, state, 복호화 helper, 게임 참조 DLL은 공개 저장소에 넣지 않는다.
 
 ## 1. 수집
