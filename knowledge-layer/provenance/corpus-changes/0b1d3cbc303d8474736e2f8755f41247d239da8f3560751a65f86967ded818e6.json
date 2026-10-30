@@ -1,0 +1,585 @@
+{
+  "batch_sha256": "81d0cfaf75afe2a5b72e0d37049dac75ce69729890e3ba8527217e177209c310",
+  "knowledge": null,
+  "knowledge_review": "63개 선택 위치와 제공된 원문 Master·현재 Novel 발췌·current Knowledge를 대조했다. batch의 Knowledge는 46개(전역 승인 1, reference 45)이며 317개가 예산으로 제외되었다. 지명 직접 관련 9개는 모두 포함되어 있고, 별도 행사 용어 term:r34r:giant_robo 1개도 읽기 전용으로 검토했다. ノワール/プランタン은 원문 정의와 현재 장면에서 동일 지명임을 대조한 뒤, 선택된 exact 위치에 한해 노와르/프란탄을 채택하는 편집 결정을 했다. 이는 reference를 binding으로 취급하거나 기존 Knowledge scope를 global로 승격하는 결정이 아니다. ヴォルカン은 명시된 사용자 보류를 유지한다. 藝晶石은 원문 용어 설명의 이마쥬화 용도와 21000201의 JP를 대조하여 해당 행을 예정석으로 교정한다. 행사명은 제공된 축제 고조·폭발 문맥을 근거로 선택된 표제와 연결 설명을 정리한다. Names 변경, Knowledge 추가·수정·retire는 이번에 승인하지 않는다. 전체 active 3,535개 내용은 첨부되지 않았으므로 미선택·누락 record까지 중복 검색을 완료했다고 주장하지 않는다. 예정석과 행사명은 재사용 지식의 후속 후보가 될 수 있으나, 현재 정본 전체의 기존 ID·중복·적용 범위를 확인하기 전 새 record를 만들지 않는다. 기존 지명 entity/term/reference는 역할과 scope가 달라 단순 중복으로 폐기하지 않는다. 따라서 changes=[]는 검토 후 무변경 결정이며 신규 지식 검토 생략이 아니다.",
+  "review_id": "GC-CORPUS-PRO-02-20261030",
+  "rows": [
+    {
+      "field": "ml_name[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "b63f24243ce7d0bd78845e507dba7a38ed031b27216e56c2e455575bc6b14d9b",
+      "jp": "ストーリーキー【爆上がれ 夢幻美術館VS謎のクマロボ軍団】",
+      "kind": "master",
+      "ko_current": "스토리 키【폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단】",
+      "ko_final": "스토리 키【뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단】",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_name[]",
+        "ストーリーキー【爆上がれ 夢幻美術館VS謎のクマロボ軍団】"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_name[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "36e4d3db4f674519eabda99a17326d20c6b369754b7f6d0e85af8bb0b78474d0",
+      "jp": "ストーリーキー【復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団】",
+      "kind": "master",
+      "ko_current": "스토리 키【복각판 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단】",
+      "ko_final": "스토리 키【복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단】",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_name[]",
+        "ストーリーキー【復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団】"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "228681a0ccb0179d05287c58c602da7dbfbc3f961c2a438bb1e479cc1ca9def4",
+      "jp": "プランタン地区ゆかり★1信愛度アップ贈物。",
+      "kind": "master",
+      "ko_current": "프랭탕 지구와 인연이 있는 ★1 신애도 증가 선물.",
+      "ko_final": "프란탄 지구와 인연이 있는 ★1 신애도 증가 선물.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "プランタン地区ゆかり★1信愛度アップ贈物。"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: mNovelKeyWords id 8의 미술관 소재 중심 지구 정의와 10010101의 JP를 대조했다. 이번 선택된 지구명·축약 UI·선호 선물 표기에 current의 프란탄을 채택한다. 프랭탕 자체가 언어적으로 불가능하다는 판정은 아니며 외부 어원·발음 규범을 추정하지 않았다. 수치·기능 설명을 보존하고 current record의 scope는 변경하지 않는다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "504d6ac929707c77a13b18e987dd95dedbfc82928d90d9b9085303ddc8dd2010",
+      "jp": "ノワール地区ゆかり★1信愛度アップ贈物。",
+      "kind": "master",
+      "ko_current": "누아르 지구와 인연이 있는 ★1 신애도 증가 선물.",
+      "ko_final": "노와르 지구와 인연이 있는 ★1 신애도 증가 선물.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "ノワール地区ゆかり★1信愛度アップ贈物。"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: 원문 mNovelKeyWords id 20과 10010108/09의 JP에서 같은 지구임을 확인했다. 이번 선택 범위의 표기로 current에 이미 근거가 있는 노와르를 채택한다. 누아르 자체가 일반적으로 오역이라는 판정이나 scoped Knowledge 전역 승격은 아니다. ★1·신애도 증가·지역 연고를 보존한다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "a850d7c93e7b8252c64657ca4254cc7a5e1a96e6c2083be33450925d1889bd6e",
+      "jp": "イベント「爆上がれ 夢幻美術館VS謎のクマロボ軍団」のストーリー解放に必要なアイテム。",
+      "kind": "master",
+      "ko_current": "이벤트「폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단」 스토리 해금에 필요한 아이템.",
+      "ko_final": "이벤트「뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단」 스토리 해금에 필요한 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "イベント「爆上がれ 夢幻美術館VS謎のクマロボ軍団」のストーリー解放に必要なアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "b28d2820475d5b85d8779db792082bd562e7eb14ca947f9589f96c7fce582f9d",
+      "jp": "イベント「復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団」のストーリー解放に必要なアイテム。",
+      "kind": "master",
+      "ko_current": "이벤트「복각판 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단」 스토리 해금에 필요한 아이템.",
+      "ko_final": "이벤트「복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단」 스토리 해금에 필요한 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "イベント「復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団」のストーリー解放に必要なアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "636fe81447a01976be7f86d65661c4e68593cd813e63a522e69f79029b7fbaf6",
+      "jp": "爆上がれ 夢幻美術館VS謎のクマロボ軍団 前半戦ピックアップガチャを1回、実行することができるアイテム。",
+      "kind": "master",
+      "ko_current": "폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단 전반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "ko_final": "뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단 전반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "爆上がれ 夢幻美術館VS謎のクマロボ軍団 前半戦ピックアップガチャを1回、実行することができるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "efabcd9a1c6e8b0ac71eadaa1b8dbac096647cd8887141b0f1cfc61d37b6ac81",
+      "jp": "爆上がれ 夢幻美術館VS謎のクマロボ軍団 後半戦ピックアップガチャを1回、実行することができるアイテム。",
+      "kind": "master",
+      "ko_current": "폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단 후반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "ko_final": "뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단 후반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "爆上がれ 夢幻美術館VS謎のクマロボ軍団 後半戦ピックアップガチャを1回、実行することができるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "377bf726c09770609b0bc4ace97edde3ffa4e2e5457dc957445eba086d94e698",
+      "jp": "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 追加前半戦ピックアップガチャを1回、実行することができるアイテム。",
+      "kind": "master",
+      "ko_current": "복각판 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단 추가 전반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "ko_final": "복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단 추가 전반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 追加前半戦ピックアップガチャを1回、実行することができるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "00ca72a0a3bc180801e28c60bc6b3f5b5204db062bc426ed356cfb2e9648535e",
+      "jp": "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 後半戦ピックアップガチャを1回、実行することができるアイテム。",
+      "kind": "master",
+      "ko_current": "복각판 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단 후반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "ko_final": "복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단 후반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 後半戦ピックアップガチャを1回、実行することができるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "5036db2029d284223a72cd33dc03c7665c44dd3ea2df892ccdd81daf23f885c6",
+      "jp": "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 前半戦ピックアップガチャを1回、実行することができるアイテム。",
+      "kind": "master",
+      "ko_current": "복각판 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단 전반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "ko_final": "복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단 전반전 픽업 가챠를 1회 실행할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 前半戦ピックアップガチャを1回、実行することができるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "7ba3f62c807a061f6dba203dffe11393122de634b167fbcde0e8c268038fb3ec",
+      "jp": "ショップのキャラ交換で爆上がれ 夢幻美術館VS謎のクマロボ軍団 前半戦ピックアップガチャのピックアップスタイルと交換できるアイテム。",
+      "kind": "master",
+      "ko_current": "상점의 캐릭터 교환에서 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단 전반전 픽업 가챠의 픽업 스타일과 교환할 수 있는 아이템.",
+      "ko_final": "상점의 캐릭터 교환에서 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단 전반전 픽업 가챠의 픽업 스타일과 교환할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "ショップのキャラ交換で爆上がれ 夢幻美術館VS謎のクマロボ軍団 前半戦ピックアップガチャのピックアップスタイルと交換できるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "fc321969662e34a5653bcbdf037bbaaf20572dc8e0ee348194507e2888913401",
+      "jp": "ショップのキャラ交換で復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 追加前半戦ピックアップガチャのピックアップスタイルと交換できるアイテム。",
+      "kind": "master",
+      "ko_current": "상점의 캐릭터 교환에서 복각판 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단 추가 전반전 픽업 가챠의 픽업 스타일과 교환할 수 있는 아이템.",
+      "ko_final": "상점의 캐릭터 교환에서 복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단 추가 전반전 픽업 가챠의 픽업 스타일과 교환할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "ショップのキャラ交換で復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 追加前半戦ピックアップガチャのピックアップスタイルと交換できるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "9fa34f734893ff577a3e043a5a40aaf8d3d0212ec9ee44e765e9be8d5bd1740a",
+      "jp": "ショップのキャラ交換で復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 前半戦ピックアップガチャのピックアップスタイルと交換できるアイテム。",
+      "kind": "master",
+      "ko_current": "상점의 캐릭터 교환에서 복각판 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단 전반전 픽업 가챠의 픽업 스타일과 교환할 수 있는 아이템.",
+      "ko_final": "상점의 캐릭터 교환에서 복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단 전반전 픽업 가챠의 픽업 스타일과 교환할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "ショップのキャラ交換で復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団 前半戦ピックアップガチャのピックアップスタイルと交換できるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "d3f8b5c072445c0f1528059c3f0ff51667da74f0ee5ee90982e98c3f132177bc",
+      "jp": "獲得数に応じてイベント「爆上がれ 夢幻美術館VS謎のクマロボ軍団」の報酬と交換できるアイテム。",
+      "kind": "master",
+      "ko_current": "획득 수에 따라 이벤트「폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단」의 보상과 교환할 수 있는 아이템.",
+      "ko_final": "획득 수에 따라 이벤트「뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단」의 보상과 교환할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "獲得数に応じてイベント「爆上がれ 夢幻美術館VS謎のクマロボ軍団」の報酬と交換できるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "5464982afcbf2dbecf5e6f4fcff667488c620e46bf9f938e933a7586c49748ea",
+      "jp": "獲得数に応じてイベント「復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団」の報酬と交換できるアイテム。",
+      "kind": "master",
+      "ko_current": "획득 수에 따라 이벤트「복각판 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단」의 보상과 교환할 수 있는 아이템.",
+      "ko_final": "획득 수에 따라 이벤트「복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단」의 보상과 교환할 수 있는 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "獲得数に応じてイベント「復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団」の報酬と交換できるアイテム。"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. 아이템의 기능, 복각판·추가·전반전/후반전·1회·교환 조건과 괄호를 보존한다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_name|",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "d4c074d5fff1089b4548cbfda99ea573d7e9e2e84bd2cda81b56558ead8cb6fd",
+      "jp": "プランタン地区",
+      "kind": "master",
+      "ko_current": "프랭탕 지구",
+      "ko_final": "프란탄 지구",
+      "path": "master.json",
+      "pointer": [
+        "mAthenesRecordAreas",
+        "ml_name|",
+        "プランタン地区"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: mNovelKeyWords id 8의 미술관 소재 중심 지구 정의와 10010101의 JP를 대조했다. 이번 선택된 지구명·축약 UI·선호 선물 표기에 current의 프란탄을 채택한다. 프랭탕 자체가 언어적으로 불가능하다는 판정은 아니며 외부 어원·발음 규범을 추정하지 않았다. 수치·기능 설명을 보존하고 current record의 scope는 변경하지 않는다.",
+      "table": "mAthenesRecordAreas"
+    },
+    {
+      "field": "ml_name|",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "96d6612bccf4b4ca795c5b821a2cf40db922b24776063714583c40e1b894cd98",
+      "jp": "ノワール地区",
+      "kind": "master",
+      "ko_current": "누아르 지구",
+      "ko_final": "노와르 지구",
+      "path": "master.json",
+      "pointer": [
+        "mAthenesRecordAreas",
+        "ml_name|",
+        "ノワール地区"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: 원문 mNovelKeyWords id 20과 10010108/09의 JP에서 같은 지구임을 확인했다. 이번 선택 범위의 표기로 current에 이미 근거가 있는 노와르를 채택한다. 누아르 자체가 일반적으로 오역이라는 판정이나 scoped Knowledge 전역 승격은 아니다. 지역 기록 ml_name|의 선택 위치만 바꾼다.",
+      "table": "mAthenesRecordAreas"
+    },
+    {
+      "field": "name",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "7b84b7d53d3453bccd9fbcc8577f084dc07b73787bb03ec1eb78dbf0f9047cf4",
+      "jp": "プランタン地区",
+      "kind": "master",
+      "ko_current": "프랭탕 지구",
+      "ko_final": "프란탄 지구",
+      "path": "master.json",
+      "pointer": [
+        "mAthenesRecordAreas",
+        "name",
+        "プランタン地区"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: mNovelKeyWords id 8의 미술관 소재 중심 지구 정의와 10010101의 JP를 대조했다. 이번 선택된 지구명·축약 UI·선호 선물 표기에 current의 프란탄을 채택한다. 프랭탕 자체가 언어적으로 불가능하다는 판정은 아니며 외부 어원·발음 규범을 추정하지 않았다. 수치·기능 설명을 보존하고 current record의 scope는 변경하지 않는다.",
+      "table": "mAthenesRecordAreas"
+    },
+    {
+      "field": "name",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "110c90864e74269059dd3a2e1741ecef6dc9d7a5d22910675e23e78099225fa0",
+      "jp": "ノワール地区",
+      "kind": "master",
+      "ko_current": "누아르 지구",
+      "ko_final": "노와르 지구",
+      "path": "master.json",
+      "pointer": [
+        "mAthenesRecordAreas",
+        "name",
+        "ノワール地区"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: 원문 mNovelKeyWords id 20과 10010108/09의 JP에서 같은 지구임을 확인했다. 이번 선택 범위의 표기로 current에 이미 근거가 있는 노와르를 채택한다. 누아르 자체가 일반적으로 오역이라는 판정이나 scoped Knowledge 전역 승격은 아니다. 지역 기록 name의 선택 위치만 바꾼다.",
+      "table": "mAthenesRecordAreas"
+    },
+    {
+      "field": "ml_name[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "7acd333700c64be54ecc57b26c3390d8948f889103a178dd970aa973c891d624",
+      "jp": "混迷のノワール地区",
+      "kind": "master",
+      "ko_current": "혼미한 누아르 지구",
+      "ko_final": "혼란의 노와르 지구",
+      "path": "master.json",
+      "pointer": [
+        "mQuestStages",
+        "ml_name[]",
+        "混迷のノワール地区"
+      ],
+      "reason": "TITLE_ALIGNMENT: exact JP 混迷のノワール地区와 10010405의 지구 진입 문맥을 대조하여 선택된 제목 네 위치를 혼란의 노와르 지구로 맞춘다. 현재 Novel·mNovels 양 필드의 표시를 채택하는 명시적 편집 결정이며, 混迷를 모든 문맥에서 같은 말로 치환하거나 노와르 record의 scope를 확장하지 않는다.",
+      "table": "mQuestStages"
+    },
+    {
+      "field": "ml_name[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "034dcb11fa63869b8dc3d4fa2a35e64ba463c8f25771ebfafa51f95109667cd0",
+      "jp": "爆上がれ 夢幻美術館VS謎のクマロボ軍団",
+      "kind": "master",
+      "ko_current": "폭발적으로 올라라 몽환미술관VS수수께끼의 곰 로봇 군단",
+      "ko_final": "뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단",
+      "path": "master.json",
+      "pointer": [
+        "mQuests",
+        "ml_name[]",
+        "爆上がれ 夢幻美術館VS謎のクマロボ軍団"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. mEvents/mQuests의 동일 표제 핵심구와 몽환 미술관 띄어쓰기를 맞춘다.",
+      "table": "mQuests"
+    },
+    {
+      "field": "ml_name[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "cd7ae652b9cf3acfb7152d6aa09aed9ef0df8d48c6abfb4295e3a260b12e717a",
+      "jp": "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団",
+      "kind": "master",
+      "ko_current": "복각판 폭발적으로 올라라 몽환미술관VS수수께끼의 곰 로봇 군단",
+      "ko_final": "복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단",
+      "path": "master.json",
+      "pointer": [
+        "mQuests",
+        "ml_name[]",
+        "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. mEvents/mQuests의 동일 표제 핵심구와 몽환 미술관 띄어쓰기를 맞춘다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mQuests"
+    },
+    {
+      "field": "ml_keyword[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "b72d52b7456d242091ca03e6d0913b21019a78f05e923020f3be0f263eb18ea1",
+      "jp": "プランタン地区",
+      "kind": "master",
+      "ko_current": "프랭탕 지구",
+      "ko_final": "프란탄 지구",
+      "path": "master.json",
+      "pointer": [
+        "mNovelKeyWords",
+        "ml_keyword[]",
+        "プランタン地区"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: mNovelKeyWords id 8의 미술관 소재 중심 지구 정의와 10010101의 JP를 대조했다. 이번 선택된 지구명·축약 UI·선호 선물 표기에 current의 프란탄을 채택한다. 프랭탕 자체가 언어적으로 불가능하다는 판정은 아니며 외부 어원·발음 규범을 추정하지 않았다. 수치·기능 설명을 보존하고 current record의 scope는 변경하지 않는다.",
+      "table": "mNovelKeyWords"
+    },
+    {
+      "field": "ml_keyword[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "bfec4ad4b030da6e49dd479febcea84dcb5a54bfaf05ddf83d7d51a68a070235",
+      "jp": "ノワール地区",
+      "kind": "master",
+      "ko_current": "누아르 지구",
+      "ko_final": "노와르 지구",
+      "path": "master.json",
+      "pointer": [
+        "mNovelKeyWords",
+        "ml_keyword[]",
+        "ノワール地区"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: 원문 mNovelKeyWords id 20과 10010108/09의 JP에서 같은 지구임을 확인했다. 이번 선택 범위의 표기로 current에 이미 근거가 있는 노와르를 채택한다. 누아르 자체가 일반적으로 오역이라는 판정이나 scoped Knowledge 전역 승격은 아니다. 원문 용어 설명 id 20의 지역 이름과 대응시킨다.",
+      "table": "mNovelKeyWords"
+    },
+    {
+      "field": "ml_title[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "45c149ff01e07b6058be4b80fab5b46b6952c4082faf047beb734ba85269e4e3",
+      "jp": "爆上がれ 夢幻美術館VS謎のクマロボ軍団",
+      "kind": "master",
+      "ko_current": "폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단",
+      "ko_final": "뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단",
+      "path": "master.json",
+      "pointer": [
+        "mEvents",
+        "ml_title[]",
+        "爆上がれ 夢幻美術館VS謎のクマロボ軍団"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. mEvents/mQuests의 동일 표제 핵심구와 몽환 미술관 띄어쓰기를 맞춘다.",
+      "table": "mEvents"
+    },
+    {
+      "field": "ml_title[]",
+      "file_sha256": "2365ec1e88be5bcd1f5624f956dc2cb6ca672c99e9009015fe5688af78947956",
+      "id": "bcb5af7d1b9e628318fcd36b6ed793d0afcacdbdc477dca3fe7746dbe0138520",
+      "jp": "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団",
+      "kind": "master",
+      "ko_current": "복각판 폭발하라 몽환 미술관VS수수께끼의 곰 로봇 군단",
+      "ko_final": "복각판 뜨겁게 달아올라라 몽환 미술관VS수수께끼의 곰 로봇 군단",
+      "path": "master.json",
+      "pointer": [
+        "mEvents",
+        "ml_title[]",
+        "復刻版 爆上がれ 夢幻美術館VS謎のクマロボ軍団"
+      ],
+      "reason": "CONTEXTUAL_TITLE_ALIGNMENT: 제공된 22001601~06의 JP에 축제의 盛り上がる/盛り上げる와 실제 로봇 전투·폭발이 함께 나타난다. 爆上がれ를 단순 상승 명령이 아닌 강한 축제 고조의 구호로 읽어 뜨겁게 달아올라라를 채택한다. 폭발하라가 무조건 오역이라는 뜻은 아니며 이번 행사군의 명시적 편집 선택이다. mEvents/mQuests의 동일 표제 핵심구와 몽환 미술관 띄어쓰기를 맞춘다. 復刻版가 있는 이 항목은 원문 제목의 동일 핵심구와 연결 Master를 기준으로 같은 표현을 채택한다. 복각판의 미확보 script나 추가 에피소드 내용을 같다고 추정한 결정은 아니다.",
+      "table": "mEvents"
+    },
+    {
+      "dialogue": true,
+      "file_sha256": "a5705c83358ca0cf655062310d6ec57fcbf4cf10ff4ca4d0d22889155ac118fc",
+      "held": false,
+      "id": "580c198261dd935c97a301bb02dfdf71d08bd2551065eea6516f293dd4dcc211",
+      "jp": "「レンブラントは<click=20>ノワール地区</click>によくいるらしい。<br>　そう教えたら、テレサは連れらしき人と一緒にどこかへ行ったみたい」",
+      "kind": "novel",
+      "ko_current": "「렘브란트는 <click=20>노와르 지구</click>에 자주 있다고 알려 주니,<br>테레사는 일행인 듯한 사람과 함께 어딘가로 갔나 봐」",
+      "ko_final": "「렘브란트는 <click=20>노와르 지구</click>에 자주 있는 모양이야.<br>그렇게 알려 줬더니 테레사는 일행인 듯한 사람과<br>함께 어딘가로 갔나 봐」",
+      "path": "novels/10010108.json",
+      "pointer": [
+        "「レンブラントは<click=20>ノワール地区</click>によくいるらしい。<br>　そう教えたら、テレサは連れらしき人と一緒にどこかへ行ったみたい」"
+      ],
+      "reason": "EPISTEMIC_PRESERVATION: よくいるらしい의 추정·전언을 있는 모양이야로 살리고, 連れらしき/行ったみたい도 각각 일행인 듯한/갔나 봐로 유지한다. 실제 화자를 새로 확정하지 않는다. <click=20>노와르 지구</click>는 이전 KO와 바이트상 동일하게 보존하고 일반 본문만 3줄로 재배치한다.",
+      "source_id": "10010108"
+    },
+    {
+      "dialogue": true,
+      "file_sha256": "0be9a81ab04f5796ea4726073b2e62898027c5690ba02786fb43a6e026b70c3f",
+      "held": false,
+      "id": "90587d577810cf320224bfe7f4ddc571f15cda5fcd0cf17992d1129fdba457d8",
+      "jp": "ノワール地区は芸術都市の暗部だ。<br>表向きはカジノや芸術品オークションで賑わっているが、<br>一歩奥へと踏み込めばそこはマフィアやアウトローが牛耳る地域。",
+      "kind": "novel",
+      "ko_current": "노와르 지구는 예술도시의 어두운 부분이다.<br>겉으로는 카지노나 예술품 경매로 붐비지만, 한 걸음 뒤로<br>들어가면 그곳은 마피아나 무법자가 자리잡고 있는 지역이다.",
+      "ko_final": "노와르 지구는 예술 도시의 어두운 이면이다.<br>겉으로는 카지노와 예술품 경매로 붐비지만, 안쪽으로<br>한 발 들이면 마피아와 무법자들이 주름잡는 지역이다.",
+      "path": "novels/10010109.json",
+      "pointer": [
+        "ノワール地区は芸術都市の暗部だ。<br>表向きはカジノや芸術品オークションで賑わっているが、<br>一歩奥へと踏み込めばそこはマフィアやアウトローが牛耳る地域。"
+      ],
+      "reason": "SEMANTIC_DIRECTION_AND_CONTROL: 一歩奥へ는 뒤로 물러나는 것이 아니라 안쪽으로 들어가는 뜻이며, 牛耳る는 단순히 자리 잡은 것보다 지배·장악을 나타낸다. 안쪽으로 한 발 들이면/주름잡는 지역으로 교정한다. 도시의 어두운 이면·카지노·예술품 경매를 보존하며 주민 전원이 악인이라는 일반화는 하지 않는다. 서술문에도 34 UTF-16칸×3줄을 적용한다.",
+      "source_id": "10010109"
+    },
+    {
+      "dialogue": true,
+      "file_sha256": "23d85086945a1d9763ce966d8d0518ee50f54f8cfb48b30a33af2a56f6d2e598",
+      "held": false,
+      "id": "8d65a1893b220d36b83ea8ce0138a7881427c4bfa9b44347bc9b30ea505a4a86",
+      "jp": "「ええと……ここから藝晶石を使ってイマージュ化をおこなう……<br>　でしたよね？」",
+      "kind": "novel",
+      "ko_current": "「저기…… 여기서 예술 결정석을 이용해 이마쥬화를 한다……<br>　맞죠?」",
+      "ko_final": "「저기…… 여기서 예정석을 이용해 이마쥬화를 한다……<br>　맞죠?」",
+      "path": "novels/21000201.json",
+      "pointer": [
+        "「ええと……ここから藝晶石を使ってイマージュ化をおこなう……<br>　でしたよね？」"
+      ],
+      "reason": "TERM_IDENTITY_CONFIRMED: 원문 mNovelKeyWords id 26은 藝晶石을 예술의 힘이 깃들고 관장의 이마쥬화 비술에도 쓰이는 돌로 설명한다. 21000201의 현재 JP도 바로 그 용도로 藝晶石을 쓴다고 하므로 별개 재료명이 아니다. 해당 행의 예술 결정석만 현행 재화 표기 예정석으로 교정한다. 이마쥬·말투·질문·<br>·기존 경계 공백은 보존한다.",
+      "source_id": "21000201"
+    },
+    {
+      "dialogue": true,
+      "file_sha256": "6a8308297fac6d3773d2d42bb481dc70d6a8fe1d6a63fd7e1b2207a77b7aa89b",
+      "held": false,
+      "id": "34667fee56e6b28447646a7f5c53dd9fc59d34cd82e1142c6b2d04d073a8a8fe",
+      "jp": "「館長殿！　続報です！<br>　ノワールの倉庫街でそれらしき姿を見たと！」",
+      "kind": "novel",
+      "ko_current": "「관장 님! 속보입니다!<br>노와르 창고가에서 그럴듯한 모습을 보았답니다!」",
+      "ko_final": "「관장님! 추가 소식입니다!<br>노와르 창고 지대에서 찾던 사람으로 보이는 이를<br>봤답니다!」",
+      "path": "novels/40200742.json",
+      "pointer": [
+        "「館長殿！　続報です！<br>　ノワールの倉庫街でそれらしき姿を見たと！」"
+      ],
+      "reason": "SEMANTIC_REFERENCE: 続報는 추가 소식이고 それらしき姿는 찾던 대상으로 추정되는 모습이지 그럴듯한 모양새가 아니다. 추정 목격으로 교정하고 보고형 존대를 유지한다. 지시 대상을 쿠피도 또는 불심자로 명시 확정하지 않는다. 노와르 축약형은 이 source에 한정된 current term과도 일치한다.",
+      "source_id": "40200742"
+    },
+    {
+      "file_sha256": "3dcb596a5d9741beba8949cf6743672f286e048bb08ac671073f548fde0bdbc2",
+      "id": "db127358a709c43d9641e4166ae1216091a95aebdbf3b00b6a24ad129e38587c",
+      "jp": "ノワール",
+      "kind": "ui",
+      "ko_current": "누아르",
+      "ko_final": "노와르",
+      "path": "ui/general-exact.reviewed.json",
+      "pointer": [
+        "ノワール"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: 원문 mNovelKeyWords id 20과 10010108/09의 JP에서 같은 지구임을 확인했다. 이번 선택 범위의 표기로 current에 이미 근거가 있는 노와르를 채택한다. 누아르 자체가 일반적으로 오역이라는 판정이나 scoped Knowledge 전역 승격은 아니다. 이 exact UI 이름에 한해 노와르를 채택한다. ルノワール 또는 임의 부분 문자열에는 적용하지 않는다."
+    },
+    {
+      "file_sha256": "3dcb596a5d9741beba8949cf6743672f286e048bb08ac671073f548fde0bdbc2",
+      "id": "35efd9af96a7b82a27f13e6c94af0117fe3ec55a82a203a80c6706c542d09699",
+      "jp": "プランタン",
+      "kind": "ui",
+      "ko_current": "프랭탕",
+      "ko_final": "프란탄",
+      "path": "ui/general-exact.reviewed.json",
+      "pointer": [
+        "プランタン"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: mNovelKeyWords id 8의 미술관 소재 중심 지구 정의와 10010101의 JP를 대조했다. 이번 선택된 지구명·축약 UI·선호 선물 표기에 current의 프란탄을 채택한다. 프랭탕 자체가 언어적으로 불가능하다는 판정은 아니며 외부 어원·발음 규범을 추정하지 않았다. 수치·기능 설명을 보존하고 current record의 scope는 변경하지 않는다."
+    },
+    {
+      "file_sha256": "3dcb596a5d9741beba8949cf6743672f286e048bb08ac671073f548fde0bdbc2",
+      "id": "9da25def76822c374c34ae403513cb007a40dc083cc8d88a574d2d1ee7ee12f3",
+      "jp": "好物：ノワール地区",
+      "kind": "ui",
+      "ko_current": "선호 선물: 누아르 지구",
+      "ko_final": "선호 선물: 노와르 지구",
+      "path": "ui/general-exact.reviewed.json",
+      "pointer": [
+        "好物：ノワール地区"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: 원문 mNovelKeyWords id 20과 10010108/09의 JP에서 같은 지구임을 확인했다. 이번 선택 범위의 표기로 current에 이미 근거가 있는 노와르를 채택한다. 누아르 자체가 일반적으로 오역이라는 판정이나 scoped Knowledge 전역 승격은 아니다. 선호 선물이라는 기능 설명은 보존하고 해당 지명만 바꾼다."
+    },
+    {
+      "file_sha256": "3dcb596a5d9741beba8949cf6743672f286e048bb08ac671073f548fde0bdbc2",
+      "id": "8b884103f71fafd16d59ff472fa77b723d9f282d1720cf87e4a318e34a86976b",
+      "jp": "好物：プランタン地区",
+      "kind": "ui",
+      "ko_current": "선호 선물: 프랭탕 지구",
+      "ko_final": "선호 선물: 프란탄 지구",
+      "path": "ui/general-exact.reviewed.json",
+      "pointer": [
+        "好物：プランタン地区"
+      ],
+      "reason": "ENTITY_CHECKED_EDITORIAL_ALIGNMENT: mNovelKeyWords id 8의 미술관 소재 중심 지구 정의와 10010101의 JP를 대조했다. 이번 선택된 지구명·축약 UI·선호 선물 표기에 current의 프란탄을 채택한다. 프랭탕 자체가 언어적으로 불가능하다는 판정은 아니며 외부 어원·발음 규범을 추정하지 않았다. 수치·기능 설명을 보존하고 current record의 scope는 변경하지 않는다."
+    }
+  ],
+  "schema": "gc-corpus-applied-v1",
+  "translation_input": false
+}
