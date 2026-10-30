@@ -1,0 +1,42 @@
+{
+  "schema": "gc-character-dungeon-native-v1",
+  "runtime_version": "7.2.1",
+  "runtime_changed": false,
+  "dll_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+  "data_branch": "fix/character-dungeon-ui-residuals",
+  "data_commit": "bcf7e63df14f2baeb7edd67c24b9f51d535bd986",
+  "delivery": "Existing installation startup download from GitHub; no local dictionary or DLL copy",
+  "installed_ui_sha256": "1fbb0de6414fcf9b5cdaa54ea81dd36c95983a3ade2468c53a2ae3b189977d5c",
+  "ui_pairs": 11586,
+  "master_enabled_tables": "*",
+  "protected_files": "Master, Names, 1939 Novel files, images and runtime unchanged",
+  "checks": {
+    "character_selector_artist_tab": "PASS",
+    "character_selector_image_tab": "PASS",
+    "dungeon_history_title": "PASS",
+    "dungeon_history_explanation": "PASS",
+    "dungeon_counts_0_2_4_5_6_7_28_48_56_67_68": "PASS",
+    "empty_history_caption": "DATA_LOOKUP_PASS_NOT_NATIVE_ACCOUNT_HAS_HISTORY",
+    "finite_counter_export_0_to_999": "LOOKUP_ASSERTED_NOT_ALL_NATIVE"
+  },
+  "resources_spent": 0,
+  "premium_before": 204495,
+  "premium_after": 204495,
+  "screenshots": {
+    "character-select-artists.png": "fa92a142fa59af9ad4db936cd73fe75756d1aec169587c6fcce22538ccdb7459",
+    "character-select-images.png": "9e46d9dfaee85512ed077fe53bec9811cf801e29382f2f7da951e91ba951fa2c",
+    "dungeon-history-bottom.png": "a289f3c2a5ecad2b1eed9fc71753d5d92f44e421cdcf2525cb7763430d76cae5",
+    "dungeon-history-top.png": "9a8954e250831645716c960d4b8cfef79b285ff4be14f55b7257eb63c585c0ac"
+  },
+  "startup_evidence": [
+    "[Info   :   BepInEx] Loading [GCMod 7.2.1]",
+    "[Info   :     GCMod] Updated translation: ko/ui hash=c277628242b8374526cb0b1834619c81",
+    "[Info   :     GCMod] Image data ready: 161 verified targets",
+    "[Info   :     GCMod] [UiPatch] Loaded 11586 UI translations from C:\\Users\\user\\girlscreation_r\\BepInEx\\plugins\\GCMod\\translations\\ko\\ui.json",
+    "[Message:   BepInEx] Chainloader startup complete"
+  ],
+  "limitations": [
+    "0..999 is the supported exact export domain, not a game maximum. Counts above 999 are not added.",
+    "Serialized XXX/seasonX/debug placeholders were excluded, not treated as missing displayed strings."
+  ]
+}
