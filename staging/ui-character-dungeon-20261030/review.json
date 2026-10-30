@@ -1,0 +1,192 @@
+{
+  "base": "3705b58aa4f0ef0302e1579a6a7c9056b2ab6dd9",
+  "counter_family": {
+    "before_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "evidence": "Dungeon history Native screenshot: 0, 7, 56, 67回; mTextConfig and PC literal {0}回. Extend former workshop-only 1..6 export to finite 0..999 full labels. This is a supported export domain, not a claim that game counters cannot exceed 999.",
+    "jp": "{0}回",
+    "ko": "{0}회",
+    "values_max": 999,
+    "values_min": 0
+  },
+  "limits": "Counts outside the 0..999 exact export domain are not covered by this data-only change; no unbounded runtime parser is introduced.",
+  "rows": [
+    {
+      "jp": "キャラクターを選択してください",
+      "ko": "캐릭터를 선택해 주세요",
+      "source": [
+        {
+          "asset_key": "popup/popup_novel_character_select.dmm",
+          "container": "CAB-df91a48513820579134c50a4016f6dcd",
+          "field": "m_text",
+          "path_id": 493218143855946437
+        }
+      ]
+    },
+    {
+      "jp": "過去実績",
+      "ko": "지난 실적",
+      "source": [
+        {
+          "asset_key": "popup/popup_dungeon_history.dmm",
+          "container": "CAB-bc7bb016037fbd847b56bb16750d4b54",
+          "field": "m_text",
+          "path_id": 728477785920100491
+        }
+      ]
+    },
+    {
+      "jp": "過去6シーズン分の実績が記録されます",
+      "ko": "지난 6시즌의 실적이 기록됩니다",
+      "source": [
+        {
+          "asset_key": "popup/popup_dungeon_history.dmm",
+          "container": "CAB-bc7bb016037fbd847b56bb16750d4b54",
+          "field": "m_text",
+          "path_id": -3044718799439050539
+        }
+      ]
+    },
+    {
+      "jp": "表示できる過去実績がありません。",
+      "ko": "표시할 지난 실적이 없습니다.",
+      "source": [
+        {
+          "asset_key": "popup/popup_dungeon_history.dmm",
+          "container": "CAB-bc7bb016037fbd847b56bb16750d4b54",
+          "field": "m_text",
+          "path_id": -4087395989193745892
+        }
+      ]
+    }
+  ],
+  "runtime": "7.2.1 unchanged",
+  "scope": "Novel character selector and dungeon history. Fixed labels absent from Korean/local UI and Master; not in the existing Master HOLD set. No Novel/Names/Master edits.",
+  "screenshot_targets": [
+    {
+      "authoring": [],
+      "holds": [],
+      "jp": "キャラクターを選択してください",
+      "local_master": [],
+      "local_ui": null,
+      "master": [],
+      "ui": null
+    },
+    {
+      "authoring": [],
+      "holds": [],
+      "jp": "過去実績",
+      "local_master": [],
+      "local_ui": null,
+      "master": [],
+      "ui": null
+    },
+    {
+      "authoring": [],
+      "holds": [],
+      "jp": "過去6シーズン分の実績が記録されます",
+      "local_master": [],
+      "local_ui": null,
+      "master": [],
+      "ui": null
+    },
+    {
+      "authoring": [],
+      "holds": [],
+      "jp": "{0}回",
+      "local_master": [
+        {
+          "field": "ml_value[]",
+          "table": "mTextConfig",
+          "translation": "{0}次"
+        }
+      ],
+      "local_ui": "{0}次",
+      "master": [
+        {
+          "field": "ml_value[]",
+          "table": "mTextConfig",
+          "translation": "{0}회"
+        }
+      ],
+      "ui": "{0}회"
+    },
+    {
+      "authoring": [],
+      "holds": [],
+      "jp": "0回",
+      "local_master": [],
+      "local_ui": null,
+      "master": [],
+      "ui": null
+    },
+    {
+      "authoring": [],
+      "holds": [],
+      "jp": "5回",
+      "local_master": [],
+      "local_ui": null,
+      "master": [],
+      "ui": "5회"
+    },
+    {
+      "authoring": [],
+      "holds": [],
+      "jp": "7回",
+      "local_master": [],
+      "local_ui": null,
+      "master": [],
+      "ui": null
+    },
+    {
+      "authoring": [],
+      "holds": [],
+      "jp": "56回",
+      "local_master": [],
+      "local_ui": null,
+      "master": [],
+      "ui": null
+    },
+    {
+      "authoring": [],
+      "holds": [],
+      "jp": "67回",
+      "local_master": [],
+      "local_ui": null,
+      "master": [],
+      "ui": null
+    }
+  ],
+  "source_placeholders": [
+    {
+      "jp": " XXX<size=20>フロア</size>",
+      "reason": "Serialized example/placeholder, not a displayed caption. Actual season and numeric values are translated separately."
+    },
+    {
+      "jp": "XXX<size=20>回</size>",
+      "reason": "Serialized example/placeholder, not a displayed caption. Actual season and numeric values are translated separately."
+    },
+    {
+      "jp": "シーズンX",
+      "reason": "Serialized example/placeholder, not a displayed caption. Actual season and numeric values are translated separately."
+    },
+    {
+      "jp": "スタイル名または作品名が入ります\n",
+      "reason": "Serialized example/placeholder, not a displayed caption. Actual season and numeric values are translated separately."
+    },
+    {
+      "jp": "タイトル",
+      "reason": "Serialized example/placeholder, not a displayed caption. Actual season and numeric values are translated separately."
+    },
+    {
+      "jp": "可変テキスト",
+      "reason": "Serialized example/placeholder, not a displayed caption. Actual season and numeric values are translated separately."
+    }
+  ]
+}
