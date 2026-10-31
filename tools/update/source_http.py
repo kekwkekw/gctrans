@@ -3,6 +3,9 @@ import json
 import socket
 import ssl
 import time
+import hashlib
+import os
+from pathlib import Path
 from urllib.parse import urlsplit
 
 ALLOWED_HOST = "cdn-r18.gc.dmmgames.com"
@@ -90,3 +93,77 @@ def fetch_json(client, url, *, attempts=3, cancelled=lambda: False):
     if not isinstance(value, dict):
         raise ValueError("SOURCE_METADATA_SCHEMA")
     return value
+
+
+def fetch_file(client, url, destination, *, params=None, attempts=3, max_bytes=0,
+               cancelled=lambda: False, sleeper=time.sleep):
+    """Stream to a private file. Zero means unlimited; failed attempts survive.
+
+    The caller supplies a new destination for every invocation. No signed URL,
+    response body or exception text is written to the attempt receipts.
+    """
+    from .source_scan import atomic_json, check_private_root
+    parsed = urlsplit(url)
+    if parsed.scheme != 'https' or parsed.hostname != ALLOWED_HOST or parsed.port not in (None, 443) or parsed.username or parsed.password:
+        raise ValueError('SOURCE_HOST_REJECTED')
+    if type(attempts) is not int or not 1 <= attempts <= 3:
+        raise ValueError('SOURCE_RETRY_LIMIT')
+    if type(max_bytes) is not int or max_bytes < 0:
+        raise ValueError('SOURCE_RAW_SIZE')
+    destination = Path(destination)
+    check_private_root(destination.parent)
+    if destination.exists():
+        raise ValueError('SOURCE_DESTINATION_EXISTS')
+    for attempt in range(attempts):
+        part = destination.with_name(destination.name + f'.attempt-{attempt}.partial')
+        size, sha, status, retry = 0, hashlib.sha256(), None, False
+        code = 'SOURCE_HTTP_TRANSPORT'
+        try:
+            if cancelled():
+                raise ValueError('SOURCE_CANCELLED')
+            with part.open('xb') as output, client.stream('GET', url, params=params, follow_redirects=False) as response:
+                status = response.status_code
+                if status == 429 or 500 <= status < 600:
+                    retry = True
+                    raise ValueError('SOURCE_HTTP_RATE_LIMIT' if status == 429 else 'SOURCE_HTTP_SERVER_STATUS')
+                if 300 <= status < 400:
+                    raise ValueError('SOURCE_REDIRECT_REJECTED')
+                if status != 200:
+                    raise ValueError('SOURCE_HTTP_STATUS_REJECTED')
+                length = response.headers.get('content-length')
+                if length and (not length.isdigit() or (max_bytes and int(length) > max_bytes)):
+                    raise ValueError('SOURCE_HTTP_SIZE')
+                for chunk in response.iter_bytes(chunk_size=1024 * 1024):
+                    if cancelled():
+                        raise ValueError('SOURCE_CANCELLED')
+                    if max_bytes and size + len(chunk) > max_bytes:
+                        raise ValueError('SOURCE_HTTP_SIZE')
+                    output.write(chunk)
+                    sha.update(chunk)
+                    size += len(chunk)
+                # iter_bytes decodes content-encoding, so compare only identity bodies.
+                if length and not response.headers.get('content-encoding') and size != int(length):
+                    retry = True
+                    raise ValueError('SOURCE_HTTP_TRUNCATED')
+                output.flush()
+                os.fsync(output.fileno())
+            if not size:
+                raise ValueError('SOURCE_RAW_SIZE')
+            os.replace(part, destination)
+            return {'path': str(destination), 'size': size, 'sha256': sha.hexdigest()}
+        except (KeyboardInterrupt, SystemExit):
+            atomic_json(part.with_suffix('.json'), {'status': status, 'bytes': size, 'code': 'SOURCE_CANCELLED'})
+            raise
+        except Exception as error:
+            import httpx
+            if isinstance(error, (httpx.TransportError, TimeoutError)):
+                retry = True
+                code = 'SOURCE_HTTP_RETRIES_EXHAUSTED_' + transport_failure_code(error)
+            elif isinstance(error, ValueError) and str(error).startswith('SOURCE_'):
+                code = str(error)
+            elif isinstance(error, OSError):
+                code = 'SOURCE_FILE_IO_FAILED'
+            atomic_json(part.with_suffix('.json'), {'status': status, 'bytes': size, 'code': code})
+            if not retry or attempt + 1 == attempts:
+                raise ValueError(code) from None
+            sleeper(min(2 * (attempt + 1), 4))

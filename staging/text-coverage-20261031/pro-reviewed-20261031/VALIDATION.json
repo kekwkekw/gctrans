@@ -1,0 +1,61 @@
+{
+  "status": "PASS_RETURN_ARTIFACT_CHECKS",
+  "input_manifest_files_verified": 32,
+  "master_ui": {
+    "rows": 750,
+    "actions": {
+      "keep": 731,
+      "correct": 19
+    },
+    "by_kind_action": {
+      "master:correct": 8,
+      "master:keep": 353,
+      "ui:correct": 11,
+      "ui:keep": 378
+    },
+    "changes": 0,
+    "corrected_ids": [
+      "2bd07c3e16ef040c82e2e8877298e89cbae3c4c997089e8be5ce375a4f1bd714",
+      "b01b14103ba9e59587875dcfd4af4b32f96922bc196d911fda34bd0fec99b986",
+      "f9e69f439c053cebb29d66b64cb0f6fc6122959bf0175e809f263bfe40178c7a",
+      "0a05aad09c4d8b9a676ea5ff2d5cbe428f5b0bcfc5e744df1e58fa74add01676",
+      "d67bb7baec66dfb0c2d4dd72ce4fa1feab43f5da31d7b5b70a1a27ba20caf270",
+      "aea97287a75823ca474b482d7092f5feca07892f2d6ac691bf8b3662053df6b1",
+      "3e154aa988dc095a1e3d397d8d910751b5a6e6f32c3b30808068892c4b266e00",
+      "dac7ac2fabf1f945328635f7adf71d612f6ed835e3862f7df9e44d90f9bf545f",
+      "54f50247da705d486e70f2cf3de843facea07aa64ce93ba3d3371ff3787e9d33",
+      "01430290e3ceaecdff738349eaeb528a43a68b0ec1e74b2816f68496bd9fb3b4",
+      "ecb360cbdc0e91c6ef6d2980966d962164b07d1f5128878edc5414608cbc946a",
+      "51f37616efd88b883b1ffc6550aaafb6915e71635a60cad3690e9e920b055939",
+      "a5705208b47c8ec0f0df4f75e9ed6949177642b41129c62bc720411e3a905344",
+      "3fba6fc3fdde7aeff1f59fb96645f6adad5d7ac442bb51de0b1fe35fc8b39ab6",
+      "b2db170688715e2179c04b15a3a8d0d0634199f315d753962893fa5b067c6c66",
+      "a1b9552b4df863d246ebb5bb1cb4d1b8817e08e5eca3d066980d2374384de3c7",
+      "b4a4459d298e97e88ab476a770c3d68a49d514314d96a6f429e1434dbb19069c",
+      "551b056b66c4fd39a9f0cf3aabb1568aa08bf244de72a4bfac4c452434cf544d",
+      "1a98988be7195ea76fd4ee38ff5bed4fcf89e82f33898a9b929259d3a9f07ed5"
+    ],
+    "review_id": "GC-TEXT-MASTER-UI-750-PRO-20261031",
+    "batch_sha256_preserved": true
+  },
+  "novel_6": {
+    "rows": 19,
+    "protected_rows_exact": 13,
+    "target_rows_reviewed": 6,
+    "corrected_rows": [
+      "43:0"
+    ],
+    "hold_rows": 0,
+    "changes": 0,
+    "review_id": "GC-BATTLE-CHEER-6-PRO-20261031",
+    "identity_preserved": true,
+    "layout_pass": true
+  },
+  "not_run": [
+    "canonical apply",
+    "UI exporter",
+    "package/manifest build",
+    "Git writes",
+    "Native/game execution"
+  ]
+}

@@ -981,20 +981,20 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "1274a9366c7e53c901d23eba7237a166a6a3ce62681e220e8c49a948069d791d",
+      "sha256": "edabb1ee9b6bc8a74817ed42c370a36fabf09c35518ece354a59190cf2126a42",
       "size": 344822
     },
     {
       "kind": "legacy_manifest",
       "path": "manifest.json",
-      "sha256": "03fca3cbea11be3bbaf2aa73fc92ebd95dd945739912f1090cb516167a413a84",
+      "sha256": "10ac5a58e51dfe25fba53e002497795c853a2417874866500b2adc64de869987",
       "size": 100672
     },
     {
       "kind": "master",
       "path": "master.json",
-      "sha256": "133901a694f24d73995fe40580078693946186c8ef27ffaab07412b1c0568555",
-      "size": 7888412
+      "sha256": "b783c9abb49d503e6d81358d60d9932c9c6f525e62b4ce2249e0fbf397e4f549",
+      "size": 7911065
     },
     {
       "kind": "names",
@@ -6657,8 +6657,8 @@
     {
       "kind": "novel",
       "path": "novels/29000202.json",
-      "sha256": "56520d78e2e19b3e82c42f414d13f7e42fbb5bc8711f1d5f559a8aa802d96c5d",
-      "size": 25317
+      "sha256": "333dcbd04442720e0a7c9f8a0af7c7b2883fe2f53520affee8e68057b9e49bf6",
+      "size": 25814
     },
     {
       "kind": "novel",
@@ -12639,8 +12639,8 @@
     {
       "kind": "general_ui",
       "path": "ui.json",
-      "sha256": "0e7a573268094b917ea64fb2509809ee52a5f891bba5f4b06863626d9cc8f771",
-      "size": 666387
+      "sha256": "b358ee990b3666f5887dd242892df78876b397168ee8ef147d6167547478ff35",
+      "size": 726050
     },
     {
       "kind": "general_ui_templates",
@@ -12665,12 +12665,12 @@
   "legacy_manifest_builder_input": "current release/index; explicit add/modify/remove; optional initial bootstrap receipt",
   "locale": "ko",
   "profile": "NextgenCandidate",
-  "revision": "ng03-d3f98f85814ad4bb42156b3c",
+  "revision": "ng03-d50a7a4fecc427137fc57791",
   "schema_version": 2,
   "status": "OFFLINE_PARTIAL_NOT_ACCEPTED_REPLACEMENT",
   "ui_manifest": {
     "path": "ui/manifest.json",
-    "sha256": "a557c3fba5e2242c1ec8067e31dfe40ef41c7f8e511708b73aeb61860577d262",
+    "sha256": "6e697369302de185a17de81ef85899ff7f011d2829664db0b9df5aa451f878af",
     "size": 39892
   }
 }
