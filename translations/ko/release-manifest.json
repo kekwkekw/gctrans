@@ -3,7 +3,7 @@
     {
       "kind": "image_catalog",
       "path": "images.json",
-      "sha256": "d4571f0769b4f3b9061650fe58212d4d5a336990b9cb8a5e6bda5ddc51e4fa5a",
+      "sha256": "25e6f7200ef0032ebb6dca449ba2d782ede86b11b81b79e6e815f3129c5cb9fe",
       "size": 48875
     },
     {
@@ -65,6 +65,12 @@
       "path": "images/080345f892249ec4e6bd06ec2ae8664c25405755ac8836a84e38776a86eff7d0.png",
       "sha256": "080345f892249ec4e6bd06ec2ae8664c25405755ac8836a84e38776a86eff7d0",
       "size": 89959
+    },
+    {
+      "kind": "image_data",
+      "path": "images/0f1b16f43a70d6164261940be123257bc85b5c5c38edb9298d4990caab3e6bac.png",
+      "sha256": "0f1b16f43a70d6164261940be123257bc85b5c5c38edb9298d4990caab3e6bac",
+      "size": 41176
     },
     {
       "kind": "image_data",
@@ -524,6 +530,12 @@
     },
     {
       "kind": "image_data",
+      "path": "images/84d2774e210e0db2cd5c307a948f0bc792221581e38e7c4adff7bebffc1ab202.png",
+      "sha256": "84d2774e210e0db2cd5c307a948f0bc792221581e38e7c4adff7bebffc1ab202",
+      "size": 41193
+    },
+    {
+      "kind": "image_data",
       "path": "images/85beed2d08d2ab156ce6c030012293d3e57ce9b87825035857aa5cf3e7265a97.png",
       "sha256": "85beed2d08d2ab156ce6c030012293d3e57ce9b87825035857aa5cf3e7265a97",
       "size": 91396
@@ -629,12 +641,6 @@
       "path": "images/a1a2b23549c63024a6d6b480b573320f584c27a5421e12f55ca2fd1b410d4703.png",
       "sha256": "a1a2b23549c63024a6d6b480b573320f584c27a5421e12f55ca2fd1b410d4703",
       "size": 74500
-    },
-    {
-      "kind": "image_data",
-      "path": "images/a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd.png",
-      "sha256": "a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd",
-      "size": 42067
     },
     {
       "kind": "image_data",
@@ -848,12 +854,6 @@
     },
     {
       "kind": "image_data",
-      "path": "images/d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4.png",
-      "sha256": "d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4",
-      "size": 41206
-    },
-    {
-      "kind": "image_data",
       "path": "images/da1bf24d3887725a2b5994ee910f04ac893d979f8ece0ec4c036ea2c5953ea54.png",
       "sha256": "da1bf24d3887725a2b5994ee910f04ac893d979f8ece0ec4c036ea2c5953ea54",
       "size": 95639
@@ -981,19 +981,19 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "8ca4ec377ba9e1d8a05f02ebdda9bdc8505d7e22d90c95837d37bcd7eaa340fc",
+      "sha256": "1274a9366c7e53c901d23eba7237a166a6a3ce62681e220e8c49a948069d791d",
       "size": 344822
     },
     {
       "kind": "legacy_manifest",
       "path": "manifest.json",
-      "sha256": "128baab93d3704b0bd2146f7e06fc5fe216cafac0fdc073f8cbd9b0af228ba97",
+      "sha256": "03fca3cbea11be3bbaf2aa73fc92ebd95dd945739912f1090cb516167a413a84",
       "size": 100672
     },
     {
       "kind": "master",
       "path": "master.json",
-      "sha256": "1cb0b3e13663fb3f4e8c72321b90364aa6664b82230fb619047ac2ae530ebbfb",
+      "sha256": "133901a694f24d73995fe40580078693946186c8ef27ffaab07412b1c0568555",
       "size": 7888412
     },
     {
@@ -12665,12 +12665,12 @@
   "legacy_manifest_builder_input": "current release/index; explicit add/modify/remove; optional initial bootstrap receipt",
   "locale": "ko",
   "profile": "NextgenCandidate",
-  "revision": "ng03-073d62a16587c8607d5258c0",
+  "revision": "ng03-d3f98f85814ad4bb42156b3c",
   "schema_version": 2,
   "status": "OFFLINE_PARTIAL_NOT_ACCEPTED_REPLACEMENT",
   "ui_manifest": {
     "path": "ui/manifest.json",
-    "sha256": "b9ccfacd3515f8dfa64b0687a74b347ff50d13e5e54b7047050157b7705a9852",
+    "sha256": "a557c3fba5e2242c1ec8067e31dfe40ef41c7f8e511708b73aeb61860577d262",
     "size": 39892
   }
 }

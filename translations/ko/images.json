@@ -1,12 +1,12 @@
 {
   "entries": [
     {
-      "bytes": 42067,
-      "file": "images/a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd.png",
+      "bytes": 41193,
+      "file": "images/84d2774e210e0db2cd5c307a948f0bc792221581e38e7c4adff7bebffc1ab202.png",
       "height": 396,
       "kind": "sprite",
       "name": "BtArea01",
-      "sha256": "a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd",
+      "sha256": "84d2774e210e0db2cd5c307a948f0bc792221581e38e7c4adff7bebffc1ab202",
       "width": 396
     },
     {
@@ -19,12 +19,12 @@
       "width": 396
     },
     {
-      "bytes": 41206,
-      "file": "images/d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4.png",
+      "bytes": 41176,
+      "file": "images/0f1b16f43a70d6164261940be123257bc85b5c5c38edb9298d4990caab3e6bac.png",
       "height": 396,
       "kind": "sprite",
       "name": "BtArea03",
-      "sha256": "d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4",
+      "sha256": "0f1b16f43a70d6164261940be123257bc85b5c5c38edb9298d4990caab3e6bac",
       "width": 396
     },
     {

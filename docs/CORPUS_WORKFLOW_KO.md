@@ -71,6 +71,8 @@ Master 교정에서 일반 숫자 검사가 `NUMBER_MISMATCH`를 반환하면 �
 
 Novel과 Master/UI 모두 `translation_context()`로 current만 읽는다. 원문에 실제 등장하는 승인 용어 중 현재 scope가 맞는 항목은 문맥 크기 제한의 예외로 포함하고 초과 여부를 표시한다. 나머지는 기존 관련성·크기 제한을 유지한다. `omitted_ids`는 참고자료 생략 목록이며 신규 지식 누락이 없다는 증명이 아니다.
 
+사용자가 확정한 볼칸 지구 표기는 기존 term 한 건의 global 표기 정책으로 반영했다. 같은 지구의 축약형만 포함하며 다른 entity·관계 scope는 유지한다. [87개 정책 보류 해소와 캠페인 종료 기록](CORPUS_VOLCAN_CLOSURE_20261031_KO.md)을 참고한다.
+
 같은 지식의 수정은 기존 ID를 유지한다. 중복 record의 폐기만 필요한 경우 다음처럼 명시적으로 검수한다.
 
 ```json
