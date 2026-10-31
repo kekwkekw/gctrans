@@ -1,0 +1,305 @@
+{
+  "batch_sha256": "44949dbe20be5f89b780cafe91db62ef0e4579a881e6970c0ed268298f7c18dd",
+  "knowledge": {
+    "changes": [
+      {
+        "approved": true,
+        "id": "term:4cc609021faf8013",
+        "kind": "knowledge",
+        "old_sha256": "02ed410af9deeb24efd57fd8c77fde0b32f36f84e16b0184dad54903ac391ff7",
+        "operation": "upsert",
+        "value": {
+          "content_available": true,
+          "id": "term:4cc609021faf8013",
+          "kind": "term",
+          "origin": {
+            "basis_commit": "3c3b33c6aedd5784bcae07c5a23fbba2a4074903",
+            "prior_origin": {
+              "basis_commit": "8cebfe3e51cd0659bdd8417f55796f9d9968484d",
+              "review_id": "GC-KNOWLEDGE-CURRENT-STATE-PRO-20261024",
+              "source_map_ref": "knowledge-layer/provenance/20261024_current_knowledge_cleanup/ACTIVE_SOURCE_MAP.jsonl"
+            },
+            "review_id": "GC-CORPUS-VOLCAN-USER-POLICY-20261031",
+            "source_evidence": {
+              "definition": "mNovelKeyWords.ml_keyword[] / ヴォルカン地区",
+              "novel_10010104": "「ヴォルカンは陶芸家が多い地区ですね。<br>　なんでヴォルカンなんですかね？」",
+              "novel_10010107": "「ヴォルカンにいいカフェがあるんだ。そこで芸術の話でもしよう」",
+              "source_ids": [
+                "10010104",
+                "10010107"
+              ]
+            },
+            "user_policy": {
+              "authority": "Explicit user approval in the current Codex conversation",
+              "date": "2026-10-31",
+              "decision": "ヴォルカン地区 → 볼칸 지구; 동일 지구 축약형 ヴォルカン → 볼칸"
+            }
+          },
+          "scope": "global",
+          "source_ids": [
+            "10010104",
+            "10010107"
+          ],
+          "status": "approved",
+          "value": {
+            "abbreviation": {
+              "condition_ko": "동일한 볼칸 지구를 가리키는 문맥에 한한다. 다른 고유명·부분 문자열에는 적용하지 않는다.",
+              "source_text": "ヴォルカン",
+              "translation": "볼칸"
+            },
+            "categories": [
+              "story"
+            ],
+            "caution_ko": "도예가가 많다는 별도 설명은 10010104:54에 있다. 전역 승인은 이 지명의 표기에만 적용한다. 지구에 관한 사건·관계·말투는 전역화하지 않으며, 이 기록은 자동 문자열 치환 규칙이 아니다.",
+            "entity_ref": "entity:db578f0b24675327",
+            "jp_terms": [
+              "ヴォルカン地区",
+              "ヴォルカン"
+            ],
+            "match": "exact",
+            "source_text": "ヴォルカン地区",
+            "term_type": "location",
+            "translation": "볼칸 지구"
+          }
+        }
+      }
+    ],
+    "entries": [
+      {
+        "after": {
+          "content_available": true,
+          "id": "term:4cc609021faf8013",
+          "kind": "term",
+          "origin": {
+            "basis_commit": "3c3b33c6aedd5784bcae07c5a23fbba2a4074903",
+            "prior_origin": {
+              "basis_commit": "8cebfe3e51cd0659bdd8417f55796f9d9968484d",
+              "review_id": "GC-KNOWLEDGE-CURRENT-STATE-PRO-20261024",
+              "source_map_ref": "knowledge-layer/provenance/20261024_current_knowledge_cleanup/ACTIVE_SOURCE_MAP.jsonl"
+            },
+            "review_id": "GC-CORPUS-VOLCAN-USER-POLICY-20261031",
+            "source_evidence": {
+              "definition": "mNovelKeyWords.ml_keyword[] / ヴォルカン地区",
+              "novel_10010104": "「ヴォルカンは陶芸家が多い地区ですね。<br>　なんでヴォルカンなんですかね？」",
+              "novel_10010107": "「ヴォルカンにいいカフェがあるんだ。そこで芸術の話でもしよう」",
+              "source_ids": [
+                "10010104",
+                "10010107"
+              ]
+            },
+            "user_policy": {
+              "authority": "Explicit user approval in the current Codex conversation",
+              "date": "2026-10-31",
+              "decision": "ヴォルカン地区 → 볼칸 지구; 동일 지구 축약형 ヴォルカン → 볼칸"
+            }
+          },
+          "scope": "global",
+          "source_ids": [
+            "10010104",
+            "10010107"
+          ],
+          "status": "approved",
+          "value": {
+            "abbreviation": {
+              "condition_ko": "동일한 볼칸 지구를 가리키는 문맥에 한한다. 다른 고유명·부분 문자열에는 적용하지 않는다.",
+              "source_text": "ヴォルカン",
+              "translation": "볼칸"
+            },
+            "categories": [
+              "story"
+            ],
+            "caution_ko": "도예가가 많다는 별도 설명은 10010104:54에 있다. 전역 승인은 이 지명의 표기에만 적용한다. 지구에 관한 사건·관계·말투는 전역화하지 않으며, 이 기록은 자동 문자열 치환 규칙이 아니다.",
+            "entity_ref": "entity:db578f0b24675327",
+            "jp_terms": [
+              "ヴォルカン地区",
+              "ヴォルカン"
+            ],
+            "match": "exact",
+            "source_text": "ヴォルカン地区",
+            "term_type": "location",
+            "translation": "볼칸 지구"
+          }
+        },
+        "before": {
+          "content_available": true,
+          "id": "term:4cc609021faf8013",
+          "kind": "term",
+          "origin": {
+            "basis_commit": "8cebfe3e51cd0659bdd8417f55796f9d9968484d",
+            "review_id": "GC-KNOWLEDGE-CURRENT-STATE-PRO-20261024",
+            "source_map_ref": "knowledge-layer/provenance/20261024_current_knowledge_cleanup/ACTIVE_SOURCE_MAP.jsonl"
+          },
+          "scope": {
+            "source_ids": [
+              "10010104",
+              "10010107"
+            ]
+          },
+          "source_ids": [
+            "10010104",
+            "10010107"
+          ],
+          "status": "approved",
+          "value": {
+            "categories": [
+              "story"
+            ],
+            "caution_ko": "도예가가 많다는 별도 설명은 10010104:54에 있다.",
+            "entity_ref": "entity:db578f0b24675327",
+            "match": "exact",
+            "source_text": "ヴォルカン地区",
+            "term_type": "location",
+            "translation": "볼칸 지구"
+          }
+        },
+        "key": "term:4cc609021faf8013",
+        "kind": "knowledge"
+      }
+    ],
+    "review_id": "GC-CORPUS-VOLCAN-USER-POLICY-20261031",
+    "schema": "gc-current-knowledge-change-v1",
+    "translation_input": false
+  },
+  "knowledge_review": "이전 PRO가 확인한 동일 지구 식별과 2026-10-31 사용자의 볼칸 확정 결정을 적용한다. 별도 신규 PRO 재검수로 표시하지 않는다. 기존 canonical term 한 개만 같은 ID로 global 표기 정책을 갱신하며 다른 entity/relationship/reference scope는 보존한다.",
+  "review_id": "GC-CORPUS-VOLCAN-USER-POLICY-20261031",
+  "rows": [
+    {
+      "field": "ml_description[]",
+      "file_sha256": "1cb0b3e13663fb3f4e8c72321b90364aa6664b82230fb619047ac2ae530ebbfb",
+      "id": "e918a784b6f60ed4255050b85ebe1fae3a21958e956a4ba0f5c1279fa3c41f3c",
+      "jp": "ヴォルカン地区ゆかり★1信愛度アップ贈物。",
+      "kind": "master",
+      "ko_current": "볼캉 지구와 인연이 있는 ★1 신애도 증가 선물.",
+      "ko_final": "볼칸 지구와 인연이 있는 ★1 신애도 증가 선물.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "ヴォルカン地区ゆかり★1信愛度アップ贈物。"
+      ],
+      "reason": "USER_POLICY_RESOLVED: 동일 지구의 볼캉만 승인 표기 볼칸으로 교정. 수치·태그·문장 의미는 유지.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "1cb0b3e13663fb3f4e8c72321b90364aa6664b82230fb619047ac2ae530ebbfb",
+      "id": "6a20450ed43695cfa9ac07083ccac692021e5bd68dce38efb22a8333f6845a5d",
+      "jp": "ヴォルカン地区ゆかり★2信愛度アップ贈物。",
+      "kind": "master",
+      "ko_current": "볼캉 지구와 인연이 있는 ★2 신애도 증가 선물.",
+      "ko_final": "볼칸 지구와 인연이 있는 ★2 신애도 증가 선물.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "ヴォルカン地区ゆかり★2信愛度アップ贈物。"
+      ],
+      "reason": "USER_POLICY_RESOLVED: 동일 지구의 볼캉만 승인 표기 볼칸으로 교정. 수치·태그·문장 의미는 유지.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "1cb0b3e13663fb3f4e8c72321b90364aa6664b82230fb619047ac2ae530ebbfb",
+      "id": "2263551082c92e281721a9d896932567b470e8af19d2df30eabfce8d2e05cf91",
+      "jp": "ヴォルカン地区ゆかり★3信愛度アップ贈物。",
+      "kind": "master",
+      "ko_current": "볼캉 지구와 인연이 있는 ★3 신애도 증가 선물.",
+      "ko_final": "볼칸 지구와 인연이 있는 ★3 신애도 증가 선물.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "ヴォルカン地区ゆかり★3信愛度アップ贈物。"
+      ],
+      "reason": "USER_POLICY_RESOLVED: 동일 지구의 볼캉만 승인 표기 볼칸으로 교정. 수치·태그·문장 의미는 유지.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_description[]",
+      "file_sha256": "1cb0b3e13663fb3f4e8c72321b90364aa6664b82230fb619047ac2ae530ebbfb",
+      "id": "a654fdfc7c398e7ab80bbc5c023f83ed73a400b9043705fa5955fecdfdf4887d",
+      "jp": "ヴォルカン地区専用のアテネスレコードのスキルノード解放に必要なアイテム。",
+      "kind": "master",
+      "ko_current": "볼캉 지구 전용 아테네스 레코드의 스킬 노드 해방에 필요한 아이템.",
+      "ko_final": "볼칸 지구 전용 아테네스 레코드의 스킬 노드 해방에 필요한 아이템.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_description[]",
+        "ヴォルカン地区専用のアテネスレコードのスキルノード解放に必要なアイテム。"
+      ],
+      "reason": "USER_POLICY_RESOLVED: 동일 지구의 볼캉만 승인 표기 볼칸으로 교정. 수치·태그·문장 의미는 유지.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_flavor_text[]",
+      "file_sha256": "1cb0b3e13663fb3f4e8c72321b90364aa6664b82230fb619047ac2ae530ebbfb",
+      "id": "4223c6e27ab83ee5b6ffd1634dcaf2538c47b76201c09ef8c18aa50fc8743c0e",
+      "jp": "ヴォルカン地区の伝統的な家庭料理。\n陶器の型に具材を詰めて調理したもので、冷製で供される。",
+      "kind": "master",
+      "ko_current": "볼캉 지구의 전통적인 가정 요리.\n도자기 틀에 재료를 채워 조리한 것으로 차갑게 낸다.",
+      "ko_final": "볼칸 지구의 전통적인 가정 요리.\n도자기 틀에 재료를 채워 조리한 것으로 차갑게 낸다.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_flavor_text[]",
+        "ヴォルカン地区の伝統的な家庭料理。\n陶器の型に具材を詰めて調理したもので、冷製で供される。"
+      ],
+      "reason": "USER_POLICY_RESOLVED: 동일 지구의 볼캉만 승인 표기 볼칸으로 교정. 수치·태그·문장 의미는 유지.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_flavor_text[]",
+      "file_sha256": "1cb0b3e13663fb3f4e8c72321b90364aa6664b82230fb619047ac2ae530ebbfb",
+      "id": "0e75d282070376f762af5df36bdec9373e56f60bcafe20cbedd5a3ed0e1faf3c",
+      "jp": "ヴォルカン地区の伝統的な煮物料理。\n単純なごった煮に見えて、各店によるこだわりが光る。",
+      "kind": "master",
+      "ko_current": "볼캉 지구의 전통적인 조림 요리.\n단순히 뒤섞어 끓인 듯 보여도 가게마다 고집하는 맛이 빛난다.",
+      "ko_final": "볼칸 지구의 전통적인 조림 요리.\n단순히 뒤섞어 끓인 듯 보여도 가게마다 고집하는 맛이 빛난다.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_flavor_text[]",
+        "ヴォルカン地区の伝統的な煮物料理。\n単純なごった煮に見えて、各店によるこだわりが光る。"
+      ],
+      "reason": "USER_POLICY_RESOLVED: 동일 지구의 볼캉만 승인 표기 볼칸으로 교정. 수치·태그·문장 의미는 유지.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_flavor_text[]",
+      "file_sha256": "1cb0b3e13663fb3f4e8c72321b90364aa6664b82230fb619047ac2ae530ebbfb",
+      "id": "0485939cca73ed6b821807583cb6ff45b790ba046a07bf1c5fc3fb8b4690585b",
+      "jp": "ヴォルカン地区の伝統的な肉料理。\n調理には時間と手間がかかるものの、繊細な風味が人気の一品。",
+      "kind": "master",
+      "ko_current": "볼캉 지구의 전통적인 고기 요리.\n조리에 시간과 손이 많이 들지만 섬세한 풍미로 인기 있는 음식이다.",
+      "ko_final": "볼칸 지구의 전통적인 고기 요리.\n조리에 시간과 손이 많이 들지만 섬세한 풍미로 인기 있는 음식이다.",
+      "path": "master.json",
+      "pointer": [
+        "mItems",
+        "ml_flavor_text[]",
+        "ヴォルカン地区の伝統的な肉料理。\n調理には時間と手間がかかるものの、繊細な風味が人気の一品。"
+      ],
+      "reason": "USER_POLICY_RESOLVED: 동일 지구의 볼캉만 승인 표기 볼칸으로 교정. 수치·태그·문장 의미는 유지.",
+      "table": "mItems"
+    },
+    {
+      "field": "ml_keyword[]",
+      "file_sha256": "1cb0b3e13663fb3f4e8c72321b90364aa6664b82230fb619047ac2ae530ebbfb",
+      "id": "b1dc65b9f7e5d29546a997be0abd0b088f91466b6114d2e644f976dfc88b5e4c",
+      "jp": "ヴォルカン地区",
+      "kind": "master",
+      "ko_current": "볼캉 지구",
+      "ko_final": "볼칸 지구",
+      "path": "master.json",
+      "pointer": [
+        "mNovelKeyWords",
+        "ml_keyword[]",
+        "ヴォルカン地区"
+      ],
+      "reason": "USER_POLICY_RESOLVED: 동일 지구의 볼캉만 승인 표기 볼칸으로 교정. 수치·태그·문장 의미는 유지.",
+      "table": "mNovelKeyWords"
+    }
+  ],
+  "schema": "gc-corpus-applied-v1",
+  "translation_input": false
+}

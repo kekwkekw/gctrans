@@ -1,0 +1,512 @@
+{
+  "schema": "gc-corpus-policy-resolution-v1",
+  "review_id": "GC-CORPUS-VOLCAN-USER-POLICY-20261031",
+  "base_commit": "3c3b33c6aedd5784bcae07c5a23fbba2a4074903",
+  "translation_input": false,
+  "policy": "ヴォルカン地区 → 볼칸 지구; same-district ヴォルカン → 볼칸",
+  "prior_hold_count": 87,
+  "decisions": {
+    "correct": 8,
+    "keep": 79
+  },
+  "positions": [
+    {
+      "id": "e918a784b6f60ed4255050b85ebe1fae3a21958e956a4ba0f5c1279fa3c41f3c",
+      "previous_campaign": "round01/02",
+      "action": "correct"
+    },
+    {
+      "id": "6a20450ed43695cfa9ac07083ccac692021e5bd68dce38efb22a8333f6845a5d",
+      "previous_campaign": "full",
+      "action": "correct"
+    },
+    {
+      "id": "2263551082c92e281721a9d896932567b470e8af19d2df30eabfce8d2e05cf91",
+      "previous_campaign": "full",
+      "action": "correct"
+    },
+    {
+      "id": "a654fdfc7c398e7ab80bbc5c023f83ed73a400b9043705fa5955fecdfdf4887d",
+      "previous_campaign": "full",
+      "action": "correct"
+    },
+    {
+      "id": "4223c6e27ab83ee5b6ffd1634dcaf2538c47b76201c09ef8c18aa50fc8743c0e",
+      "previous_campaign": "full",
+      "action": "correct"
+    },
+    {
+      "id": "0e75d282070376f762af5df36bdec9373e56f60bcafe20cbedd5a3ed0e1faf3c",
+      "previous_campaign": "full",
+      "action": "correct"
+    },
+    {
+      "id": "0485939cca73ed6b821807583cb6ff45b790ba046a07bf1c5fc3fb8b4690585b",
+      "previous_campaign": "full",
+      "action": "correct"
+    },
+    {
+      "id": "a0bf96c46fcedfeb3401007a82aa96d07e5f443ea4761aa397bdc9ebaf34939a",
+      "previous_campaign": "round01/02",
+      "action": "keep"
+    },
+    {
+      "id": "64855f177f12e738d3b82efcfa27c4f403e5f2a4da951be501224a61d016b465",
+      "previous_campaign": "round01/02",
+      "action": "keep"
+    },
+    {
+      "id": "ed3fafb2884ed8df02f19d1c3b76ac2f4efa1022ad6e9c505a7276731b942e2a",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "61763ba36ac97a29f7755b6db7e9290cd4ed5ec66f293b55cc2fedf445be21fd",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "66b2ac51e3bf580d950adeae167b96cf62a1193077780ec972b0043529198324",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "6816623aab7a0b31703eb5d04190f599166291d1f2a824efa8be84454fe62da4",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "ce7ed9eea471b65fc7637021c8f81c03dab224ca6e67b4a172cc1ee91c65ac42",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "f6234e0e2437417b5b5558e224273fd89ca590987f625d97181b3f40a0d6def8",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "9fb8c6a35774c51d0604a2b5ba91f89166317aba202361acd30f8bfe629f5ddf",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "ad734061c5ea420f69179be2b2918b00b2ae65096d08af7b6295a755f0429822",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "0e8210f25f561e14f8e598e04962ee08bd35d426bb0130ab2f744c5f1762f1c6",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "641d631aba9f1c9847333c832f663d2678b3c13b6c95091ae5f2650488ef4eec",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "a08ce5298fe57f79ab456285d1ca359c8d3b1d08a94773ccab44a100b878f36a",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "dcb4a97433f7d66c59eb4b11f3479f052b77fc9fc63a5ae996a96e867cfcb26b",
+      "previous_campaign": "round01/02",
+      "action": "keep"
+    },
+    {
+      "id": "b1dc65b9f7e5d29546a997be0abd0b088f91466b6114d2e644f976dfc88b5e4c",
+      "previous_campaign": "round01/02",
+      "action": "correct"
+    },
+    {
+      "id": "48e80d54932e2c249dae4a453e286ee217f5c2c2d3f2509919952781dcfe9167",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "12617ecd44b4b500189fe09805d1ad83344804a741b1f88c9b20daa011c6a497",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "58e3768ce21c4de655f2d67ea73072e645a9c09d80431e85b5085973634a8335",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "062073a554aa7af369665847c754d8b2f0f13df4d05765e138325cde66273273",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "74d697117264ee9332e377b366c6802b2b706502596fcdd0335ba3675a19b07e",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "0b4a3f6e958144da39de6af75cee39cdfe905c96eb96e1d1f332899730388d33",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "625fccb86e9957a15881903d2e1d6e32207a5a1ee85a71b5e4dbab0862a5d054",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "90e5955e0269c908a6a2b2a66c36b3b49c739ef97643b76040c7fc8826fc8f06",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "6067ca0c51bd62feeea6eae22505649643dbe0007eeb33664f67cb07b1343518",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "92c43e35811b6327da9a64a1f0843c6a72a618b9105155033104dd7c08615171",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "7ca692d3b6b71b008e703525c329c7db302aae8cf62bfdd12ffb6e731b2572b0",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "883605e564b4a34a6a341e5f242a9a8d24996e8909224008556d474ad0e8afc6",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "b86d28238f2867f8883e45e184663c8f1424faa504a4518ba47a26463f40b54d",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "7af0d246ac5034b905d8970bcf9cb6f96ac901f339c80e326963e1acc6a543ca",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "4a41250312596c4649a0cc2bf1a6546ed88956a57d15139c60191f7ae15b331e",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "5b2c05294f77ba947aab1f6af6200cec1e81e15a8805e824ead5c745948089c6",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "002fc5d55c7cde2f4dfaacd4d125338a74874fe71c4fb046e2eb04aed801f5a9",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "386ad37606033645a81bcbef72591ff976b3849308de6bce024424a67503e73b",
+      "previous_campaign": "round01/02",
+      "action": "keep"
+    },
+    {
+      "id": "35ee15a98839d4cd61994b3349bb0f784c69e1a5c446b9e7a73d1e0a6bf095f9",
+      "previous_campaign": "round01/02",
+      "action": "keep"
+    },
+    {
+      "id": "79b91647775cbcb5183edc01b9254093dfaf69ccf212d075db42d388aecec961",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "666f09cd030f4db3336d94f73a0e4033d85a9523a0f05bb638691542d572cfc3",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "cda09ff019ddf0b96e49a380162115a30cb32c3299f0a429db50074d7c92ad98",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "27a95d86d228e913c2695d563cf6454be2fb46d4219edd338b1801b3d19e5358",
+      "previous_campaign": "round01/02",
+      "action": "keep"
+    },
+    {
+      "id": "93c3b3fae731ed1d5adef386415e22231b6c0e9a53ad25a70fdc6bd357c3c7e8",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "90ab4e52673f050276567e2d57e30fe38e30ee67910cc927f825f4f8c35104fc",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "ce94c89148ad3d319032bb57f5af5436827585c612d4832eca0c42dbeafbc6a1",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "ee159b6ed982f587c8a70c6ecfcfaa70f29d2df759e1eb2d98722b4c35d3079a",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "edee9eb6ab30b11547ba2e96001401f2a79418b16199df62eb69001b2239f6a6",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "3bf5fb785f95d64c1948df709ecc9826a24c9053252aa505fad84f2830365414",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "5cbca2539916074cb8235a75249ea2a688dd3f37e4e2e7768e013fa2e7fde1f5",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "312c77b31da1e8c0ecd1d93d816b2a25a13e9246c11294bf7d8de8127b523082",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "a168d02e744db362350de688e5c730cfef9fe1cfb6dbcb1e68155b37aef90211",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "b7b06e0e219452744583a539f694cb55651a8c311ecc310db63c4fb682775e91",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "87026f9e2c1e1908a3f999a9e89d561562a02c7d56dd77090ebe77bbd25f6aeb",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "9d222439d2097cdb4924f9fe9165e944825a6a3896a1a7913866c7edc86b4c62",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "bd524d2b55960986f504f109af0542ae15e6833b84460f418510cf6282e70dfb",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "adc667ae2c036d09e5cf7a15c48a6f20646c1f3c7c2c7e36ed5eb0a06364e4b2",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "a9042659d2767bc04a12766bc7f4a4163cb11aff3d5afd385cd2b71654ad1dc7",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "e68d8187a188a656af01b418a45462716642178488bcf5a1a6c01d005ebec73d",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "aadfdee75581e62f410cb64c3d9f6aa8ac6981c5afde98d29b2e7d4d1a1a9dea",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "cbb2163445ea2311738c8a59ff9b349acc99df61c4fb4de9a8a3a4ed0cd782b6",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "1b388e6425af816fb4380ca850cc110c3c8519b4b8f33bd88abe9e02be21c197",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "94974a8806882cce91319babe0b75905a1ae1d0a322d34edf34c7190b9815fbf",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "d7c6432de050a09e298ce477d918162a2bce1e1db4529283d474da0879a77a4f",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "502ab2e07301ece0a42248aed9ce2e575aa029a983bf6be354b1296f661df3e7",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "27d40e36f2203ca9e42f08ab3c9d82726bfb6dde763a3e0355b76eb90e1e3785",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "05c180e5cb4a4e1c9f41ca30a4579382e65d97bdff1fef301f513f374e177750",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "04bbd4ecb35d492b697c35102dd534f0a9ba669fda6d300104d027f83f433615",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "55e21fdfb9690050d8be6ed6dd719b3ce9019fd2035f08507a056b0a814c4bc8",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "8fae95b729c3829668741052b650c32a700c8737e0e3742490c14d791e5d1b71",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "a9aebe7631cde0ae0c641851efacba40eaeafa7bc265dff1683236c98ceaedd8",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "39a818bc518b280d39692dc31cca5e0ececb7f4b578248040dfeb4fef1fd7ff6",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "3a99d17a50105e97e5bf6af28510a97f249793f3aead4ce40ffa28f5f1912f8a",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "a70a25295310cec101920b4608e38eb3d0138b46ed7d55dde9afa85ec10229e8",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "602de6ac930014cb50c89c305d4a6a515b01000429d003075dd335525b20925e",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "51f2c4da42139be9aeaf14e5a93ec6329e4ed3e2ac04d2df0ab378dc325a2cd3",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "248e1c58d411bac2b0b20f819ada063b6dfee6e746d7bc0f1a081875b09e8c71",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "a34c41b08563c3ae6347c8ac5dcc9f8c37840044a2ac7bd5aedeee8b5db20ad1",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "0b6c728810e2f816a901b1151f0743cc70bafb25a0494b865b13ef0830b078cb",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "1c57374939ef9f5a62dc066e773a4414cb3f84f64313f815daead493a2e908af",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "ce886e178194cc0a954cd664aef4d8a287bd3afd75e9bc72f8ff8694048ff8ae",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "2b51ce3f28f4e33027b3172e923c4c31c5b98bcd07418e0742b7ee071470984f",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "67af4bb65009d7cbe63313e46dcf6b9fe712cddd6295895d4c48ecc7f93a5a0b",
+      "previous_campaign": "round01/02",
+      "action": "keep"
+    },
+    {
+      "id": "7166dddda8817718132112af9f8a2a222d59571817ab1b4fcffa43062d016d36",
+      "previous_campaign": "full",
+      "action": "keep"
+    },
+    {
+      "id": "9ee9aa0d8453b80b3c714b739389be541fefe0c34dd08486a2d490f7a20da112",
+      "previous_campaign": "round01/02",
+      "action": "keep"
+    }
+  ],
+  "source_sha256": {
+    "full_review": "1cf6a07b5331619a360105f1e0d972da11b6f6479e8e14158e54fff7e177fc91",
+    "previous_decisions": "71d2a81073a5ceffec34bb42bd5a4943af8c4ec923f5396aac5725079905e682",
+    "fresh_batch": "44949dbe20be5f89b780cafe91db62ef0e4579a881e6970c0ed268298f7c18dd",
+    "final_review": "210d2f807d045c5cbcf4f8271481a912569a77f413333a1cb3307ba8a9897098"
+  },
+  "status": "RESOLVED",
+  "remaining_policy_holds": 0,
+  "closure_scope": "87 previously held exact positions for the same Volcan district",
+  "corrections": 8,
+  "kept": 79,
+  "knowledge_changed_ids": [
+    "term:4cc609021faf8013"
+  ],
+  "knowledge_count": 3535,
+  "other_knowledge_unchanged": true,
+  "apply_receipt": "knowledge-layer/provenance/corpus-changes/2c6a1bc233ad62b36e4f101b0ba73459cc53083f229ed7ae512a73f38d8db6b9.json",
+  "verification": {
+    "package": {
+      "schema": "gc-ng01-offline-staging-gate-v1",
+      "status": "PASS",
+      "files_verified": 2110,
+      "bytes_verified": 60204646,
+      "membership": "EXACT_RUNTIME_WITH_AUTHORING",
+      "validation_scope": "all staged payload bytes; offline only",
+      "runtime_names_novel_scope": "legacy-index metadata only; existing donor lazy behavior preserved",
+      "native_runtime": "NOT_RUN_OFFLINE_STAGING_ONLY"
+    },
+    "next_prepare": {
+      "status": "PASS",
+      "prepared_sources": [
+        "10010104",
+        "10010107"
+      ],
+      "input": "existing JP-key snapshot, prepare only",
+      "new_knowledge_reused": "term:4cc609021faf8013",
+      "authority": "approved_within_declared_scope",
+      "text_rules": "gc-novel-34x3-v1",
+      "translation_apply": false
+    },
+    "native": {
+      "status": "PASS",
+      "runtime": "GCMod 7.2.1 unchanged DLL",
+      "data_supply": "temporary local package; no GitHub publication tested",
+      "master_ui": "mNovelKeyWords.ml_keyword[]: 볼칸 지구 in glossary list and detail",
+      "novel": "10010104: body 좋아, 볼칸 지구로 가자; dialogue log full and abbreviated place names",
+      "click": "10010104 dialogue log: click=16 볼칸 지구 opens corresponding Korean glossary popup",
+      "clipping_or_tag_leak_observed": false,
+      "runtime_errors": [],
+      "original_config_restored": true,
+      "original_config_sha256": "f476c405f0ee6ea907fdc458c0d7bc57cbe24e7d7fd96f55d1955acd0a12987f",
+      "game_closed_after_test": true,
+      "resources_spent": 0,
+      "limitations": [
+        "Representative views only; no all-87 native gate",
+        "Existing startup Il2CppInterop warnings remain; no runtime change in this batch",
+        "Click tested from actual scenario log, not by altering script or runtime"
+      ]
+    },
+    "ui_export_regenerated_identically": true
+  },
+  "historical_decisions": "Earlier hold records remain immutable; this document resolves them by occurrence ID.",
+  "publication": "This receipt records local verification, not a Git merge or release."
+}

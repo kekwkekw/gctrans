@@ -1,0 +1,170 @@
+{
+  "title_box": [
+    65,
+    258,
+    332,
+    305
+  ],
+  "font_sha256": "a76c8dabfcfae31d67c86207373155718979ddcfcc1ce62d3129dd36530a5bdf",
+  "pillow": "12.3.0",
+  "records": [
+    {
+      "name": "BtArea01",
+      "title": "프란탄 지구",
+      "source_sha256": "89bf783fba8d14babebd6b3107f165581abe6f6220092d3d2d66f25b17c78192",
+      "output_sha256": "84d2774e210e0db2cd5c307a948f0bc792221581e38e7c4adff7bebffc1ab202",
+      "unchanged_outside_title": true
+    },
+    {
+      "name": "BtArea02",
+      "title": "에그조티 지구",
+      "source_sha256": "11823e3a6683578d68b2cc79ef3b0ef3177ab4a864bc435315b873c01dd49e14",
+      "output_sha256": "28e84f2ca9c0238bc518ce9455f631654e1ca62f12afd2e0af23be8802648a68",
+      "unchanged_outside_title": true
+    },
+    {
+      "name": "BtArea03",
+      "title": "노와르 지구",
+      "source_sha256": "83cd154546ba5b6e6b3af13bd44e5bf259b1aa2c82daf902c15c53d1f96fd2bf",
+      "output_sha256": "0f1b16f43a70d6164261940be123257bc85b5c5c38edb9298d4990caab3e6bac",
+      "unchanged_outside_title": true
+    },
+    {
+      "name": "BtArea04",
+      "title": "볼칸 지구",
+      "source_sha256": "06ccaa668ca3c060609ed3558d087b4dd1d12d1a3ac86e544471ec3c13a1219b",
+      "output_sha256": "f1e25ed4588868fb1e9ee5be4eede469f6ef1cb7b735cbf84791f7f3b6aa3716",
+      "unchanged_outside_title": true
+    },
+    {
+      "name": "BtArea05",
+      "title": "이베르 지구",
+      "source_sha256": "6fd97f3085c887c168e8ae6aa786475aecd6af89223a012f8edb548c5c7532ea",
+      "output_sha256": "694d69b25828abbbf79d2451c1b92183dbb858f88aae4d57066f5c5e46a14cda",
+      "unchanged_outside_title": true
+    },
+    {
+      "name": "BtArea06",
+      "title": "아테네스 전역",
+      "source_sha256": "eaa21f446a39d44a1372fc99430e09eea62cf322a949c050cb5e444c7b2f8603",
+      "output_sha256": "44d22e6390d40cf0d46da39cf132aa18d95fd6fffa0a9482869306d80afc4b4e",
+      "unchanged_outside_title": true
+    }
+  ],
+  "schema": "gc-region-spelling-update-v1",
+  "date": "2026-10-31",
+  "policy": {
+    "BtArea01": "프란탄 지구",
+    "BtArea03": "노와르 지구",
+    "BtArea04": "볼칸 지구"
+  },
+  "changes": [
+    {
+      "name": "BtArea01",
+      "before": {
+        "bytes": 42067,
+        "file": "images/a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd.png",
+        "height": 396,
+        "kind": "sprite",
+        "name": "BtArea01",
+        "sha256": "a2fd2d0bcbcb152006da17dfb8f4bcabbda93d7d0bc72afbd633f2601bb894bd",
+        "width": 396
+      },
+      "after": {
+        "bytes": 41193,
+        "file": "images/84d2774e210e0db2cd5c307a948f0bc792221581e38e7c4adff7bebffc1ab202.png",
+        "height": 396,
+        "kind": "sprite",
+        "name": "BtArea01",
+        "sha256": "84d2774e210e0db2cd5c307a948f0bc792221581e38e7c4adff7bebffc1ab202",
+        "width": 396
+      },
+      "unchanged_outside_title": true
+    },
+    {
+      "name": "BtArea03",
+      "before": {
+        "bytes": 41206,
+        "file": "images/d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4.png",
+        "height": 396,
+        "kind": "sprite",
+        "name": "BtArea03",
+        "sha256": "d846b36e8843f1714d8af59a16f8c7714b18915b75b62dc1cef6b3c78b4c3bf4",
+        "width": 396
+      },
+      "after": {
+        "bytes": 41176,
+        "file": "images/0f1b16f43a70d6164261940be123257bc85b5c5c38edb9298d4990caab3e6bac.png",
+        "height": 396,
+        "kind": "sprite",
+        "name": "BtArea03",
+        "sha256": "0f1b16f43a70d6164261940be123257bc85b5c5c38edb9298d4990caab3e6bac",
+        "width": 396
+      },
+      "unchanged_outside_title": true
+    }
+  ],
+  "unchanged_region_targets": [
+    "BtArea02",
+    "BtArea04",
+    "BtArea05",
+    "BtArea06"
+  ],
+  "other_image_targets_unchanged": 155,
+  "total_targets": 161,
+  "protected_files_unchanged": 1945,
+  "method": "Existing deterministic Pillow generator, original sprites, identical font; only approved title box edited.",
+  "validation": {
+    "exact_pairs": 11586,
+    "authoring_bindings_preserved": 501,
+    "held_authoring_jp": [],
+    "review_resolved_authoring_jp": [
+      "水",
+      "調度品"
+    ],
+    "bounded_workshop_exacts": 3,
+    "runtime_bindings": 0,
+    "bounded_detail_exacts": 3121,
+    "bounded_enhancement_exacts": 5393,
+    "master_ui_source_pairs": 1122,
+    "authoring_pairs_without_live_binding": 61,
+    "local_coverage_keys": 1091,
+    "local_coverage_keep_source": 34,
+    "local_coverage_missing": [],
+    "status": "PASS",
+    "master_keys": 34020,
+    "novels": 1939,
+    "native": "NOT_RUN_OFFLINE"
+  },
+  "native": {
+    "status": "PASS_REPRESENTATIVE",
+    "dll": "7.2.1 unchanged",
+    "delivery": "Offline CustomPath isolated package; not a new remote delivery test",
+    "observations": [
+      "Six region cards readable with correct frame/alpha/character composite",
+      "BtArea01: 프란탄 지구; selection opens matching 프란탄 지구 detail",
+      "BtArea03: 노와르 지구; selection opens matching 노와르 지구 detail",
+      "BtArea04: 볼칸 지구 unchanged and correct",
+      "Returning from detail restores translated card list"
+    ],
+    "errors_in_session": 0,
+    "resources_spent": 0,
+    "game_closed": true,
+    "config_restored_sha256": "f476c405f0ee6ea907fdc458c0d7bc57cbe24e7d7fd96f55d1955acd0a12987f",
+    "screenshots": {
+      "01-region-cards.png": "17177fc8b37ac425f73884cfb53ea0f5162e00b77c2530dcd340e2f296c35126",
+      "02-printan-detail.png": "8113441f3c1712eeadf1a9f58bc5f5ffc1afc274abfd549044b43aaa35ba22ed",
+      "03-noir-detail.png": "62982e5bc94cdf1bb0db38929f768b9bb808212aaf159c192f45ff8d2742d7ed"
+    }
+  },
+  "package": {
+    "schema": "gc-ng01-offline-staging-gate-v1",
+    "status": "PASS",
+    "files_verified": 2110,
+    "bytes_verified": 60203742,
+    "membership": "EXACT_RUNTIME_WITH_AUTHORING",
+    "validation_scope": "all staged payload bytes; offline only",
+    "runtime_names_novel_scope": "legacy-index metadata only; existing donor lazy behavior preserved",
+    "native_runtime": "NOT_RUN_OFFLINE_STAGING_ONLY"
+  }
+}
