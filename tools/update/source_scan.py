@@ -10,6 +10,7 @@ import json
 import os
 import re
 import tempfile
+import time
 import uuid
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
@@ -51,7 +52,17 @@ def atomic_json(path: Path, value) -> None:
             stream.write(json_bytes(value))
             stream.flush()
             os.fsync(stream.fileno())
-        os.replace(temporary, path)
+        # Windows readers (including status inspection and antivirus) can hold
+        # a file without FILE_SHARE_DELETE. Keep the old complete JSON and the
+        # new temporary file intact while a short sharing conflict clears.
+        for attempt in range(6):
+            try:
+                os.replace(temporary, path)
+                break
+            except OSError as error:
+                if os.name != 'nt' or getattr(error, 'winerror', None) not in (5, 32, 33) or attempt == 5:
+                    raise
+                time.sleep(0.05 * (attempt + 1))
     finally:
         Path(temporary).unlink(missing_ok=True)
 
@@ -108,10 +119,10 @@ def parse_source_ids(raw: str) -> list[str]:
     return values
 
 
-def normalize_inventory(manifest: dict, partition: str = "Novel") -> dict:
+def normalize_inventory(manifest: dict, partition: str = "Novel", *, max_entries=MAX_INVENTORY_ENTRIES) -> dict:
     """Known d/n/h/s vendor contract; h is a token, never called raw SHA."""
     entries = manifest.get("d") if isinstance(manifest, dict) else None
-    if not isinstance(entries, list) or len(entries) > MAX_INVENTORY_ENTRIES:
+    if not isinstance(entries, list) or (max_entries is not None and len(entries) > max_entries):
         raise ValueError("SOURCE_INVENTORY_SCHEMA")
     result, collisions = [], {}
     keys = set()
@@ -130,7 +141,7 @@ def normalize_inventory(manifest: dict, partition: str = "Novel") -> dict:
         size = value.get("s")
         if size is not None and (type(size) is not int or size < 0):
             raise ValueError("SOURCE_SIZE")
-        source_id = match.group(1) if match else key
+        source_id = match.group(1) if match and partition != "All" else key
         if key in keys:
             collisions.setdefault(source_id, []).append(key)
         keys.add(key)

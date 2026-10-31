@@ -1,7 +1,8 @@
 """NG03 adapter for the existing crawl_only known WebGL/R18 endpoints.
 
 Default action observes metadata without mass acquisition. Incremental asset
-acquisition is explicit --acquire and bounded by the existing candidate limit.
+acquisition is explicit --acquire. Existing lanes keep their candidate limit;
+the opt-in All lane selects every asset with no default count or byte cap.
 PC uses only an explicitly named local asset; no URL substitution or search.
 """
 import argparse
@@ -36,16 +37,22 @@ def existing_novel_ids():
 def parser():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--platform", choices=("WebGL", "PC"), default="WebGL")
-    p.add_argument("--lane", choices=("Novel", "Master", "UI"), default="Novel")
+    p.add_argument("--lane", choices=("Novel", "Master", "UI", "All"), default="Novel")
     p.add_argument("--state-root", type=Path, default=ROOT / "source-state")
     p.add_argument("--raw-root", type=Path, default=ROOT / "private-source-cache")
     p.add_argument("--output", type=Path, default=ROOT / "source-out/scan.json")
     p.add_argument("--inventory", type=Path, help="Saved known inventory; offline replay")
     p.add_argument("--acquire", action="store_true")
     p.add_argument("--source-ids", default=os.environ.get("CRAWL_SOURCE_IDS", ""))
-    p.add_argument("--max-candidates", type=int, default=int(os.environ.get("CRAWL_MAX_CANDIDATES", "200")))
+    p.add_argument("--max-candidates", type=int, default=None, help='All: default 0 (unlimited); existing lanes: default 200')
+    p.add_argument('--asset-pattern', action='append', default=[], help='All lane optional glob; omitted selects every asset')
+    p.add_argument('--all-master-inventory', type=Path, help='All lane: saved master manifest alongside --inventory')
+    p.add_argument('--all-max-objects', type=int, default=0, help='All lane per-bundle object cap; 0 is unlimited')
+    p.add_argument('--all-workers', type=int, default=1, help='All lane concurrent asset workers (default 1)')
+    p.add_argument('--cancel-file', type=Path, help='All lane: stop cooperatively when this file exists; rerun to resume')
+    p.add_argument('--retry-extraction-failures', action='store_true', help='All lane: retry partial/unsupported extraction from retained raw')
     p.add_argument("--local-asset", type=Path)
-    p.add_argument("--asset-key", help="Explicit existing locator for a selected PC cache asset")
+    p.add_argument("--asset-key", help="Exact All-lane asset key or explicit PC cache asset locator")
     p.add_argument("--textasset-name", help="Exact name from an established adapter for multiple TextAssets")
     p.add_argument("--partial", action="store_true")
     p.add_argument('--ui-scope', type=Path, default=ROOT / 'contracts/ui-source-scope-v1.json')
@@ -61,6 +68,11 @@ def parser():
 
 
 def run(args):
+    if args.max_candidates is None:
+        args.max_candidates = int(os.environ.get('CRAWL_MAX_CANDIDATES', '0' if args.lane == 'All' else '200'))
+    if args.lane == 'All':
+        from tools.update.asset_source import run as run_all
+        return run_all(args)
     external_metrics = {"external_source_reads": 0, "external_source_read_bytes": 0,
                         "external_source_hash_calls": 0, "external_source_hash_bytes": 0}
     forced = parse_source_ids(args.source_ids)
@@ -191,6 +203,9 @@ def args_acquired(result):
 def main(arguments=None):
     try:
         result = run(parser().parse_args(arguments))
+        if result.get('profile', {}).get('partition') == 'All':
+            print(json.dumps({k: result[k] for k in ('status', 'inventory', 'raw_assets', 'raw_bytes', 'attempted_this_run', 'coverage')}))
+            return 2 if result['status'] in ('PARTIAL', 'CANCELLED') else 0
         observation=result["state"]["observation"]
         unavailable=observation.get("status")=="UNKNOWN"
         operation_status="OBSERVATION_UNAVAILABLE" if unavailable else "PARTIAL_ACQUISITION" if result["metrics"]["failed"] else "RAW_ACQUIRED" if args_acquired(result) else "METADATA_ONLY_PLAN"

@@ -1,0 +1,156 @@
+{
+  "schema": "gc-text-pro-application-v1",
+  "status": "VERIFIED_READY_FOR_MAIN",
+  "base_commit": "8f85a2390e4dc4e402d71948b25f447a48787e1c",
+  "import_verification": {
+    "input_manifest_files": 32,
+    "return_manifest_files": 8,
+    "input_zip_sha256": "e650b567cb6bd1a203ea7c5cb2121278a32efbe724aa0bbf757cab1347e41453",
+    "return_zip_sha256": "faf30bf3d08432f6d87074ac425ea65a52f21df55ac4705a158748bb8fb18bfb",
+    "master_ui_rows": 750,
+    "corrections": {
+      "master": 8,
+      "ui": 11
+    },
+    "novel_protected_exact": 13,
+    "novel_new_reviewed": 6,
+    "novel_corrected": [
+      "43:0"
+    ],
+    "current_knowledge_serialization_identical": true
+  },
+  "master_ui": {
+    "review_id": "GC-TEXT-MASTER-UI-750-PRO-20261031",
+    "batch_sha256": "9dcfca4163a80fc1dac47f5988907f8c970fdd5234d99551435253d9f984a4d1",
+    "approved": {
+      "master": 361,
+      "ui": 389
+    },
+    "corrections": {
+      "master": 8,
+      "ui": 11
+    },
+    "keep": 731,
+    "hold": 0,
+    "pending": 0,
+    "application": {
+      "status": "APPLIED_LOCAL",
+      "corrected_rows": 19,
+      "held": [],
+      "pending": [],
+      "changed_files": [
+        "translations/ko/master.json",
+        "translations/ko/ui/general-exact.reviewed.json",
+        "translations/ko/ui/manifest.json",
+        "translations/ko/release-manifest.json",
+        "translations/ko/legacy-components.json",
+        "translations/ko/manifest.json",
+        "translations/ko/ui.json",
+        "knowledge-layer/provenance/corpus-changes/5c53d4a35108b34e464fb898ff10c552d6ace6244068949abf4edeb980af4347.json"
+      ],
+      "git": "NOT_RUN",
+      "native": "NOT_RUN"
+    },
+    "original_main_values_unchanged": true,
+    "initial_candidate_evidence": "staging/text-coverage-20261031/accepted.json",
+    "final_decisions": "Master_UI_750/review.return.json"
+  },
+  "novel": {
+    "status": "READY_TO_APPLY",
+    "review_id": "GC-BATTLE-CHEER-6-PRO-20261031",
+    "sources": 10,
+    "rows": 19,
+    "hold_rows": 0,
+    "unique_jp_keys": 19,
+    "register": [
+      "11",
+      "21",
+      "22",
+      "31",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "policy_sha256": "3aca17a2f12c76ca9c17d939a8f68e769b1eeefe54c8b52f6912d5f73f77922e",
+    "review_basis": "Explicit supplied PRO final review; no identity authentication",
+    "game": "NOT_RUN",
+    "publication": "DEFERRED_CHAPTER_11_NATIVE",
+    "protected_rows_exact": 13,
+    "newly_reviewed_rows": 6,
+    "canonical_registered": false,
+    "runtime_preview": "Previous draft cache probe is historical, not final deployment evidence"
+  },
+  "novel_source_alias": {
+    "source_id": "29000202",
+    "added_keys": 1,
+    "existing_ko_exact_reused": true
+  },
+  "validation": {
+    "local_parity": "PASS",
+    "test_suites": [
+      "test_local_parity.py",
+      "test_local_release.py",
+      "test_ui_source.py",
+      "test_export_local_ui.py",
+      "test_master_coverage.py",
+      "test_ng04_source.py",
+      "test_all_asset_source.py",
+      "test_collect_ui_literals.py"
+    ],
+    "master_direct": {
+      "status": "PASS",
+      "fixture_count": 421,
+      "record_checks": 842,
+      "source": "current MasterDataTranslator.cs compiled directly",
+      "runtime_modified": false,
+      "native": "NOT_RUN"
+    },
+    "ui_lookup_candidates": 977,
+    "ui_lookup_matched": 427,
+    "ui_new_exact_verified": 389,
+    "battle_source_state_raw_indexes_verified": 50,
+    "package": {
+      "exact_pairs": 11975,
+      "authoring_bindings_preserved": 501,
+      "held_authoring_jp": [],
+      "review_resolved_authoring_jp": [
+        "水",
+        "調度品"
+      ],
+      "bounded_workshop_exacts": 3,
+      "runtime_bindings": 0,
+      "bounded_detail_exacts": 3121,
+      "bounded_enhancement_exacts": 5393,
+      "master_ui_source_pairs": 1122,
+      "authoring_pairs_without_live_binding": 61,
+      "local_coverage_keys": 1091,
+      "local_coverage_keep_source": 34,
+      "local_coverage_missing": [],
+      "status": "PASS",
+      "master_keys": 34381,
+      "novels": 1939,
+      "native": "NOT_RUN_OFFLINE"
+    },
+    "native": "NOT_RUN",
+    "corpus_consistency_tests": {
+      "status": "PASS",
+      "tests": 17
+    }
+  },
+  "protected_current_sha256": {
+    "translations/ko/names.json": "5d0ae25576d0e86aece77671a67c6cbe11a15ec828a4f736c49c2d28ff5252a2",
+    "translation/knowledge.jsonl": "8ea8c8ce64fdb94f682f73947599b2d5e1f29bedc480fa227e9a543f61f1c480",
+    "translation/holds.jsonl": "10725a70185a43cfdc93e94e6bd65c34488c5478162bf764194f651e2ed61aa7",
+    "candidate/GCMod.dll": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+    "candidate/GCMod.cfg": "79fb14337fd13c3645342414c145ddbd93842c12ff88de235fc5b0a8ef06471f"
+  },
+  "knowledge_current_changes": 0,
+  "names_changes": 0,
+  "runtime_changes": 0,
+  "game_installation_changes": 0,
+  "raw_and_failure_evidence": "Preserved in existing private-source-cache/source-state paths; no acquisition/extraction rerun",
+  "publication": "Main merge pending; battle remains deferred for Chapter 11 native verification"
+}
