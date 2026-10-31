@@ -1,0 +1,37 @@
+{
+  "schema": "gc-text-756-pro-return-v1",
+  "files": {
+    "Master_UI_750/CORRECTIONS.json": {
+      "sha256": "724f6a9b7a36300eef9cc8993bdee78a666a930e3ce3b5ebf26dc4a09f17ab8c",
+      "size": 50484
+    },
+    "Master_UI_750/REVIEW_REPORT_KO.md": {
+      "sha256": "9f6e7acf22bff61b7deca9c582897f4b68bfc40159ab009f951c66768cd61e4b",
+      "size": 3490
+    },
+    "Master_UI_750/review.return.json": {
+      "sha256": "be00da192668623696a7dba6fb899e8065f9229b9b23be90f6c6df3bd7a2dddc",
+      "size": 218013
+    },
+    "Novel_6/CORRECTIONS.json": {
+      "sha256": "f6105979d451637afadfe3b16c30e14dea1b2b2ac76ac6cb754357e44c495c49",
+      "size": 438
+    },
+    "Novel_6/REVIEW_REPORT_KO.md": {
+      "sha256": "6125599377210e6f8a001821e532c7a379c154f5409133cef6f0708f7d688681",
+      "size": 2078
+    },
+    "Novel_6/review.return.json": {
+      "sha256": "ca2ad866eb87ca81a02b8237041001eec3c39c7b5bb0274c13417d88a866a991",
+      "size": 11431
+    },
+    "README_KO.md": {
+      "sha256": "c572e521f7892ba825a2e1a9896794eeab7653b417ec3e94e915b364d54fa641",
+      "size": 370
+    },
+    "VALIDATION.json": {
+      "sha256": "55d46528723edc50c15406fced749d20b17dd95259ddabcbcb02a5bd5d694042",
+      "size": 2285
+    }
+  }
+}

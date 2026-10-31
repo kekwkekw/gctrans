@@ -1,0 +1,4510 @@
+{
+  "batch_sha256": "9dcfca4163a80fc1dac47f5988907f8c970fdd5234d99551435253d9f984a4d1",
+  "changes": [],
+  "knowledge_review": "신규 Master 361개와 UI 작성 원본 389개를 exact occurrence별로 검토했다. context의 current Names 41개와 Knowledge 45개(approved_within_declared_scope 2, reference 43)를 참고했고, 문맥 예산으로 생략된 current ID 303개가 있으므로 신규 지식 전수 누락 없음은 주장하지 않는다. 볼칸·노와르·프란탄·이마쥬·예정석·예상·영감 등 현재 프로젝트 용어와 각 record의 scope를 유지했으며, reference를 global 규칙으로 승격하거나 legacy/provenance를 번역 authority로 사용하지 않았다. 이번 750개에서 별도 Names/Knowledge 신규·수정·retire를 승인할 근거는 확인되지 않아 changes=[]를 유지한다.",
+  "pro_review_complete": true,
+  "review_id": "GC-TEXT-MASTER-UI-750-PRO-20261031",
+  "rows": [
+    {
+      "action": "keep",
+      "id": "e5a86169afa28312b7c8b928c1dae8f7898111d77981246e824fb82289e5d9ef",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "f9b9efd212f5161aad0413d63273c1663e9bc5409c189fc7c84c1a1800643c09",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fa7cd7de38f6eec9364920c974ee88c5623a4c2d3ab4d198eaeaa17a76e33309",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "61724b3d863af135e016c2f097bcd8530d6eedd7fc6eb8e563a1c1308b58c68a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "cb6f6831abe377c1ec066c60cff5eec96c3b1c0650eb925ce9916e960a742d44",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "618833d34c24cfabc35a006614fadf9986cb4be283d643a9bb59f215b92f08d3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d82c3addd94d7ad83d3badf0548ac7c650ca344ce1cfe97f14a232a83cfac419",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c9d95c386cce4ebfa5ed0b184c838ff668224557f47a75cd0a1af72ecb9e8aa7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "da98384d8a71cff9a3c1237ec4e63961dda5784cc2fdb77f0b7dd7c5d15fce88",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "0b08f8e057ce6fdd970510856cf3a5ad87d1766a4b2fde951dafae5f52f51c85",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3b010da85e898d2838584da2aceb138f12275242c2e5a7984965ce6425ca6130",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bfb4580539125477e4426419d0894fef20d6213093b39c983328f9874d7bc19d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "60495185a3b6451e408c2eda1a2a1eae82bc99b157b601d820ead80ed2f0e5ca",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bbcc6cab32e7d9949a27bc73c998ad3623a9feadb64f228f21ab2a06c110c47d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "707f6997a6ae62ddc3af3d8179e47e7d0d244a42fcbd0a2f8390cd245c6c7eb5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ffff0581309581b71758bc0a80b6e7345bbfa64a067041400bcbcfd6e4f379e1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7a9dbb65f517ae052429cbea1cadf2a99c1bb7b6d7db39d8a34be8d17f5da69b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7fc13f09de1d0c1bb5a7da3cb8e8bd6f4c830ed300caf6caa7281c4fdb83ec26",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b82dbf6f75612d4493c353e9f8dda6a5c0630766d9367375cf6b37ca31102ea0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d6e1f91f6a498304a10fce79c5f461f54cc8ce805a026f40cb840c6a5f778582",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "e1ca85b60d89cdced9d2dde6fa94ce42c544cc2a120b4f95ed5730609e379916",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "91dac5b952ec348032cb06091397df29385236b64761f50971890a140362221e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ab17e8003defa08c33353a65562491798645d6ba05ad4e77834a27f501e80373",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c99704247e9a6a9969eeec0e470d07cb4328c53bf79950e51994fc97a5b5b378",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "42463027f4329688e680d7793676cb160b1fc44ed51564fdcd588f1019c19a91",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4dcc6cd7a359841959f0c589835484803dc3b34417a62334a45d59c9725eac30",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1d69887ce99fd804967f5c03988525a386c3b83567adf5683df6b20854946077",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8e4081aa3fe6cc4437a5f82697bdb5651f2a37647e58d0d285a5f34cb8d32885",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "f1c70975558d289f893a159b2dcac876e5a84c9e2117d21e36eb0317eb248867",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1b70edb3dad10075f4298d6097ba214eafaccdc6df44e20a88735cace550a463",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5bc4c9b5e2f55b5d014b590dd80306323cc72902bb31a1ec0090d7c7fbb95af1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "32f1afb2935d8ba156f37702164917a98eac67927c8374021a8aa338e8474b86",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "64dae7011e80a5e7a5a1bc432e1783a6f620571c91f949e5c97a5a2c57d2ced4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5d1d32a698ed5a7f63421569972336ab8fbf82552b7fa7a67b0c7fb8df6f0f0c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6e3ba85950ce5f6cb96e579f4bf5c28669b0903186e3340e47f1378addbbc10e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "cbdb6cc4d583ff80dea30ca60e79f136e750c182b7505b43918d379b9250621d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5b55511f1545587eedcd63e4685e71ae61428c898c61d8b2f6633e1b82043cd3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "90ba8875ddd7fc707f974dcf503fdc6cda99cec8f3f6f799725fc45a3a7b7f3f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "0b9483ece82f5baa81ff069a430ff60ad662b95df9cd3db5a5d3c5148362a775",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "db70fc5dfd550e2c65393a873b38ca82a5822bcde9bddde9b42bf1bd53594a6e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "30252851d21176cbc3ea446a22612c866ad97f508588cad3dd9542ee3fdd2ef7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "a4a79508cbf893a110f47ae56b7bc71d68d1eaab5e843baedc79ac21ced6897e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fa26d7a72da02e2a1f5c6c7752a2bf91de271e664af3cac6387329356ee76313",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c678101d7abf3dedf9e2c901bc664b761c454fcc064099be372f6b24171420fc",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2b4c4a8ecc8af54eff04ed52153a2474dd0899783622b266984f1cf532afbeb8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1a0c4003b984258f42542b39784806408d20b8187b57e129143571c268c1600d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5deed2b7ff3887986e49f3d7ac2412da77e989b67c31b90bc46a2ce7fbec2eb7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "76a9f090cef1eb389049cc11fff24a50f907b0b4e3d2bc8ffdc66790b9eb5d68",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "74628a628501b78db52cfbd60501231eefd3424f61810298810d49f48038ab5c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ed59a3e8c67781c30d3d84e44007311db7461474d57a75c78e1845c239f346a3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "974c4d399bd0958eaab3da8a72a369b3cef2e363355d2d0b3d54daa874c54193",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 프로필 필드의 날짜·수치·개인 말투를 원문에 맞게 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6c41395ebdbe4ea01dcd426af45f87a0dfd47422089f9e4b0ed19573f426583c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "3f6c98e439252b3288cb460555715b384a584a16f945c814819dfa7489aae9da",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "a83a1633f82c3136358819093f2d845241f3ae6bcaec27688014e38c58e557ee",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "2c91b54840d34554438ec22a9015a7f1ec473b3b28d0971e20bf6f0fd9d84c19",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "46487184198e9b6d85adf2a5ef9c16893becec452c94004f2be42a22460fa072",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "88a7f40e38a0a412dfd51902a7a16f6c415d34b30ab07ad47f6209f1038cbcac",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "3bb22ce64eb8d05559c3b17c31d2266173bc5f3a4f487c706fa2253b6e3be0e1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "c94161f0b9248b0a9d91a74bce163180d3a7225a2136f86ad340a68ac207d4af",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "c2ea3d21160aa8205684c1de1d4954f4fb5677a00c717d1c56eb602709e2cd02",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "4e030e9a1e8761112a57caaa0943d13114c9c6c08ae6639bb8b1b983df64ec93",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "bcff0d986c8627afb843e8a0fd17596931d93a7db60946541a69f09a95a8fbd0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "3595e85f28668954f43ae5709d16030691c2d9d472b522b4b9688212b3459964",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "086993a365f18e1f5e1aa973493e608897ca0e50e78828d62a5cdfd06c6d71b2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "2fe1b5491ed013e9f49a7c5dadc4a746b9e4241ca316a560681788c197f20cd5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "fe6d84bc0c356ee3634cad20c9379023d5a8b671550ab72aef38fb1389de773f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "30751924573912de14d925a15b086e23fde35755361033076bd6f6bb07c55724",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "e5bcfe2b2ac5ac9b2c6940126f812ac21fd8eef201eb040f225289c384e2e0e5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "5a1fc6db43c3386bf4948db9ba0331fae38e63b27cd39924f855dab6c3c2ddde",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6975d4daf1ee375d4f0375769381aa9e677dbc20b3f90b1c1e88a7cba896de81",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "5691ea9a88933cd3ed867e4c6610e49c4afa2e6717e3824d1f89a9d222c49a09",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "1e652578570add7edbd5386905521ab29c34a645d186b3fce40bad6665e81fa1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "749382588129e22922bb0011d08ab38261ed174bc4cd33faf5e94dae7026bf11",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "4faccf1cf7aec59c34d7a3b2424b5afc30e21ebb161a379c3d16b43be43214b0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "ec05520753839bbcd2c3ed9faf7193e0286dc128a47e362c81e638a7d8dfcc04",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "535bcb66f8741d5874ca82ec08aa4c6253b00518819da74c8caa2203da8b830e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "f2fa8d0977481b7029343fdd221339d5f0282b175273699f104279440a935923",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6f6206c21ba068febb6a9486b6e378cda3bbf4a74d5f29f4173bf58a0a1709e9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "a535263fcc71a1a20db5fd886c4548e4035066adf7c844e6802cb4976c28a2ea",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "921c554aaa2cdd0a83438ce74d69a47545825df627a798b68e7bf0346f28b8d8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "e5ea729316ba9b3882b476a0d2d03cee730b22f3532efd1cb05374d606b992be",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "59d11da361d194519b0f6790612c5cdf95d3a8de61254602ec59d7c6f25b17a6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "d7117dcf6e4d52e5794f5f88466fdb307f4a84f98492330d3c8cf32267a46374",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "589906ce897ac991197585d19e7416fb0ab5bbc70a71787eddf5f54225fea736",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "7085271341aca1b2d881f8180fedaadb20b18edd7b93e991b1e4be3aa03a1412",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "8b9936efff0c7a8fa48323133a417f128d9f6a51b18e1734e9fc3e6947223803",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "af9d29627527133d2cbdb885e46c543435797c17049e7fa18324cf7c4af4685e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "61f94d63f4386b3f2c556067c349e48c850dcba1737157973eef53c4e738de90",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "39bf3964d4319366cb4c3f7b5895ff183239871a6c543be6919b6c141c5c8122",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "a228171ee9d7d70f76e8184ae8cd5b57bf6be5b4babd0747eede66f3307a38a2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "8496253ab29ab0dbde5d679616eca45c803d79b5f1513890275cabb1af60e112",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "36655320ac6ea66790194c3c48f36fbf1182434586c4a3515b0b8e0acb745988",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "2019033454f64e656970a9ca368a7aaaf07f9631b3ddfcc86298192f8cd52f75",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "aea586071f16bb79e7f8252508037b0150eeda6230bce40e6b5959d1bb85c29d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "159cadeaac646f65012e89cff6485c6e06f7808dc7f9dc724f403ac3ab4cd590",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "fecfc912544db731dffae214d64500670441d3dbfe4f8811443998ea53dd908d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "0219f189023de7987ec0993475a3f94a5cffff66867173752a314d871d8622a7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "0a33dd0d2eaab7f5bb54e16b23fa3aa59a569358157ee66ecf698a9880956662",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "89e70c4b97c8aa96e645a1bc210907a60575b63457e2281c21d1ea98bf57b82a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "628e0d854cb518d840f68ff7b52dfe8b3594e844f5d3cd0d980d480d6418fbd1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "240e04b0d096b07672daf56df6f13eaff6fd314bc88bf16ecfdcca424d7ed3e6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "a310ae3c2c3ebc54a3e24e0b47380d6ad5d5bd436b6d59b1fd87ccd75773b979",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "35cff98ba4366333945d3daaee436fe692ee05e23faf92ec23ebb7cced951263",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "c871e8e8e31f51853a3edba6b6af316c4ef8e2cb7fd6b2bce838158858487fcb",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "526081ce27ca0d7178f9f1d7f578a6f81914e5a0906b05eb81ba57224b9dc9b3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "66a35d6bc64adc348af280200d726a7d61fb35caeec0003573f598ed88861928",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "37a9fdd6869e3ea8890852de18286eda12a531e0a56bfcd1c93dd4d71b97eca9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "623625c94cbfdbb01ed164faef4032e788dabd95ea13aa26078a6e1bf59857e2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "4aa03db22e2ada507c48773a4ac49007aad1324c315c69bfa9fd99e28d81ddc3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "eecf28494aae75569669f15d61a85ded2024ba6461ad8f519359931714c0e146",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "5bb1cc5262304fd6356a184ce376e6bfa2fad49fcbdc0f2bdde2d8589288d932",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "fe555392ea7acd6f63fc7526df959342215585b2edbe5f9673c27068107ba061",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "57508e730ab18a2302888311d180c8d95eca333af999b97fb18dfc8bc514d46b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "157da77eeef433554ab3a291669e89f65c6d72aaeffd2be4dcae490ad4dc0888",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "9be8a87f4cc6bd081348b09dbdfd8724a3006fa2611f3565231e16d75193ae2b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "9aa8eed962ff07103c37d66c3ca5bdffd432f12ffc9f64b2354c7eb59855b120",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6e34e27b91243c8cc5c54600c23b29068b0920c858e55a0121dddce53b91e3f9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "d01b67cdeab109e2305245cc8001881e9fdfb56c32a4fd608779201e8e3d6b8b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "67275c032a0626eb81e37fb936cdf6ba2bb79af3cc4f1ef8218237965dcea237",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "0ac463a3796a342e2e5b0cd4564af4f4be5f0d2dd80a9ae6daee682609fe5a67",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "bd3865ab3c8c6746ae8d51368d7749ff66f306c37d46e1f5ca812b2e276fee97",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "4ddee1637178e8a803aa8987fbb805dbd15fabf09b1f67a5bbf7e3ba44acb3aa",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "3f4f6c15cc91c3b82daa06416be327ffdf091b7a3ff69ed92f2ee7c50ed201c0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "a720fc089df2536b82ab42f69da5966223548c92e501d1eba4e7434bf348b028",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "29245732678654e068d574a4f5642beed756c6e5a0b34b6e30b060c5ce9ad7a7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "453576ca9f6460e960dd3b455731591306f1f7e3499d8cdb6b98506c31ef9667",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "c61946b6f29b7d85d9cbfcddcf3ac31afb430f2fcad357a8910a4bf222006be7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "574ea68539c9d500bd6d984af42b9faf2a6af883c6d3d71ebdba443d6c3699e5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "0e80551c106d83fadd6ab13d8f251524b7d34470ea238bd855bc3ab56abdfd2d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "63d87f7ada16a25f7f3a93a8d13d0d696464360a24fe2367c43523dc71cf852f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "65efaf121b70b27240bdf9d5f8619d2111925128087e39d1d27a2adf9af8433f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "1b115bffa97f748b4871481ec2526582c7fdf1389039c7345286ea1fde6a7afe",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "7d899c57912cc24290ebd6820fa25763039455937454ad5def9c456aabca6820",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "d1636023fb335afbf637c7d8cf29a41b7246075da16718c671396144afd946ad",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "5b2aaa16a4becc639288d00262fc738712f0705af8338e6fbe18ddf97a62c196",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "b3c5bfdd9467f423d72b951e9fce47e420c82a5f0ff7767ee6f4e941b5acfdb0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "ac3b11b3061a15fb53106197c487b3ca7b57cd67f3d6080e940deed95260f280",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "69b1f0ac217812a335857a62b226e1f6852d52440ffdd8398e467dd759f400d6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "4064f1f1af4359d78c7fd5dc9823814fe7a53259855f33ff05775b3b2c4cd4d8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "bb11cfae3518f6bcb5f6b735974aebcf61246fc4d6a08e3dde39764f51de7dfc",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "5147c275d7455c8d9f57a1e136f5995c9834c0ed12df298fe78f3968ef829637",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "cfc2a0e31402722737dc2b23d3dd4b67e1a70569e0287fe4f17c54cb91a8e2f3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "818d366f0cb81c3f3fc31b7fbc1b9179551bbd4f0f93ee5ece96d2638861ff90",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6f716f493b98a78a3f9f04950e0095bafc232d102ab5b408e923c73c8dcc338e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6b99d7acfcb0e2eb3e992bb16a633531dcff783637e524a169ccfc7f55fdcde4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "14412bc922dcd6d72a42c7bd6875d70bd57c4aa7361167415b4b65529210ee90",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "51316949bab37356e62406daac253068e7c7afcf7d3e6004f37b34ef67560358",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "284caf27dd6a7a88a2ef5f185b0101c2875d7e993c69e90e3a9d11551a8c0172",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "e10c6127c34ecb96683374d8c6d99e364cb968139e6de8294d1356dcfe36af73",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "210ace3e23d181a3e81af8bd81788fa4342692cd25c902ed90db04cafc7fed71",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "75672132c01e75a5c2afe243efe3221c4c02a9aeb066c2dd5866c099566f5c46",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "a7172f4b787da550329219014b2f275f5d683d80086796b9d8442022e5fb29b6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6a352b3b7efbc3f54ca8e6813511e86cf49ee5d5bf0da6e407ba1c3dd1b9982e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "b7072133adc4d402de750fcc905802bc2d0a9e86a8dbe111646048d57692862b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "95d016f9b27a2952fe5e74357c28ac626ce7eddb127e8d33f77180dbad95334c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "0b5a645c8856936e8edc879a7dfe57f2f152439882ada2f72b6f86331d774790",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "75a6cc2d0fa8ab23ec1672c032f04d7bcf0b1bc358df646de88e02979fedd7b5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6f6499a86f626bb9e9ced421f9fd50523a369687cbc5e6ac7c524d2a18e182bd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "39091c5382f2dd1cec983e4670ed8062cf4f5dba5e63d986769d0604203971b2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "00a566596671fcff27e5fbc9a7ed378921bcff1d337a997e4ab46f0deb7a4bc3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "3cc0c4ba851184597a2c028612f27f0efa13cb0afbdc55354044659839ae22eb",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "125665973b794ebd1f12189fcf2334f6d6cffd441a33adfe6bdf2f4b3b706144",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "c8b43b0b8a36ca499093f9abeaace6827a8400e4e2c589c8b4803f1f8f61f04b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "30e2e20f9b5489a9e13150af489d5c1327336e3a1ad18758a64e6a00adfed106",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "16fde935c1dc4fda5176f21ad861aca28b897e98bb87a0a416b9dd3605e04c94",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "1ef1cc97e1d071f6d5f9bc2072aaa33df9527fc0bf23374fb2b0c14f2323a67c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "e2584755257c93bc676f0c7d8537d1f0090c7756a7b52442d362b84e8fc56300",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "878833638ef12919c3ed270a914f88714586ca7c77918450872ea196b0260bdf",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "e469aece76bc0ae7ae1ece4a89af98ff3617fe541f4991af4b8550882e352cb0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "ccc5d2efb14fc1156fae788a9ae40c52871f8ca56cd2964336cafc70ed3af5d0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "992ecd8e2c61c8a77d63a9967730dac8ef3b8e03bc69e419c8317b9f0d9789d9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "1c3ca03a76eb29e676fc7bee8596637a5db133479223c683059e3e8a1b01ebec",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "d4e7c61f3be6a5970d4e747d0afcc6b4d051930fb7b441ee180c9c24556113d7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "9617703b8bc4fd5848d5a033cd94357ec86db342e21fa044eecb0bc2e5abc807",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "246e2e735d8c36b1ccdd47c9cd78179feb94bc5a51dba2b110d11f6f8f63cb2a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "9a4dd903b6b1780e4bda777347d3b2c55331181f3efeba214b3f7640d13b2541",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "2180a79b3ac814be71aad0806fead612cee73cbe18e71356ca523dfeb6acd277",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "5e765221563de20b71c16920df0e83f42a2ee1bcaab24678e30f42b6baff0452",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "9167db9e147486ec68c16b3de2db325f334858586e82a19a9462d2c49c1de2ce",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "9291d8dd48ed6cd9ca24b0bbe5db9f8a153d56f0d9085deb7fba017b1871d8b3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6c91125dc4a7e415a52421b1aef53a73e88250afe55c3024340bef6cd9a072e9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "908eba0bae2bea16285504474530f2f2ea033eeef3440532c5112621a9d9b8f6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "a91444f07678d6d09c0fd81981cb71b997de9d42adcc2bea72a517031537e9fc",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "d5d266ea46757557a9dfd46740d55c92838f3ce63d64fecf2c6b9712cb5fca2d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "bad6a3da992c1fe295996facb67f9859807005504104ed86c1138f28cc7eab21",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6bea3b34ce7768f4e9b25da22bb07f828bb53e864bcb0ac6fa71e8862eeec736",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "1b1b54e4c631bd014bf847d04085e84d79cd6f3b255ee7c664d8911fe0998b09",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "52a0af3dd1932be5a9e725bc1db208e5b14ac640b7ebb977a6550e0c214cea4c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "1f492f81532461c7f3f1b336384a9160b53cdc8a18a99b3ee317715576149a00",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "9f58eb35e1a03f70ce51a5cbf80748850be0e2083e27881d631a8106a18f16f3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "934551b71aa486198f3a38a6d1143500ab30b30ce91355db833c5fc1054e041c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "cfb59b2b1e2475a965868d68891ba3757941662a823b4fb0bd56b39796d2d012",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "a4b9fa036863946c384ef25899a98fca842b59ec3671d38994c187571892cc35",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "b345e7e98d035d815ad65953c79d858e68bfabf26274fe36017b4459fad577fa",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "3f75709aa14b364a277e701eed9d9013f3d5e9cce1a776a52dc1e0dd43526517",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "af39b18fb8dd18c14d783df2370ee96725800f32a83d49b8c4f1f3697ba3f5d2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "cd8731a7677792dc575e007915c346150d24533bd12cd098163eaecbf10df8fa",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "ecc5fe4cb33fb7c90bfc0ec94812f99c180378524b213d5a8986262fe3ce3697",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "41040ecbce222ad893a8b995b122f237faf448128d30f7ec67c8a5af3dc10741",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "78b0234f0ac62d21f6913b636e264d1e30da0de7fe6d8d3332096a771fa27945",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "ac91b94055c2679bc89f2bcda38aa08572166e0f58f8552aaf54a48837b39874",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "8a21ec94b3a57f856dc9b9c7ce93ce5b71f58c2de4f6e917a555fddee7b83ada",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "337202b0a98cbbbce673f62366cde23e40ebca0c4fb599ef0213bc76e25f5452",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "aa4c11278a04e04de5df609d21db98911bb7bb1d847db0155dcaecb8dc32c2de",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "ee1a9c6aa967d457c14d58f0077905de335ec6733ad04ba1fe9c016f80f4ee5e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "170ac5785172ec7688c0e8bcc5e054f340e6833bdce1fad88cb5e900c0341cee",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "a9126fda5620e573d3d77b85911efe82b9c0bbe0892b0089860a954774efc698",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "c145f7acd08a39f8fcfbbf3297e0d53c9a196a98b0056acd6b8e14b1c95ca345",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "50dd002597fd9d8e3dcdd9b81541129b0ca8f5cc642399873fa55ff3ca25945b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "28b42181fec001fe1ac2d27c428f403d6c2524be3f005e1f622fa09dfb80f0ff",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "451f6a600729ba7751242a483130b2f43618858abe8df2c3d739deb3880cd400",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "c23b4221a1fbac4ed54174192ba157b23bd60a24b5db0ef769f05cd281f1fac8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "472f048e5bb9236c2af70a408cdaa5b1f8b7b5b73143c98d32ae5b978adff912",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "653a29f6e87ccacc58dfc1128c48c3d0087b1301771711cfdab7a78b09ae66a7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "ab1f77fe2ed4d2587ea1a2a329e8f1cb1be14cab4035a950c4e86a6ce4494b8c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "f8709463612dea33d90f2390b23be560eaed355bb28c38aae7301ded54d34db4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "a6c0ccae5dce4387984c696b3d3088eb0efe28c64de2efd08817fc474f7bd5f7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "672cb07866621f7417d3934458365c5f5b65d42f45cc7b312861646317396676",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "ccb0e6f406e0b681dbb10152870ebd7729cf6c65d3e988c4949dff68f5a51534",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "a22bfc2e71fabd6d5be8e585f1b8f3bfd807cb93c43bd127e5c7ab7bbc4c7158",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "f54f94e43133e1aeeda4ab6f705e9caa2dec2908759d04a44c0b2912fca77a2d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "25ddaef65e963da99a8c778555978c880c9a9ec93abe91d2f8b410aa19258363",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "3b63f023e0da6ba2b35a8b71c15e4ea75c33d491357696715ae7cdd5ae59d0a0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "e40964210fd07b8f5bcfad1f271622663cbc0c144bf08341c5cde90430c88b2a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "96e3641af1aaf523102d1a52a2ee2c10429f22ecc743aff35dabc59b89a48921",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "a1723661df5385d2be70f4b6317d930e664590040d7b692e3eeec2c8ba3bb588",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "92866ed6cbff1f5d218645fd416329c21d1b07b20f7bcb15c907573961afc51f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "3888c009b97d8ace8bf292528c2182af33e1b28c49d66112e346046e298c48c7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "08c21a1cf30697c31d99c6c63525510f3a54dd341938e367ea7951b02e0333ca",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "503ae7878d12ca02511655db10bd59b87cb803dec5eb4a7a5aa9183898a9c5d2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "090525b7363393ff3f4fe3418a44884b51a33d92fb7f5cab27bffc5505467e07",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "19645ed3db85c59e6c976016b197fde52410f1558c8c8d8f780806050a285042",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "00b374b97a642fc101b4733f3a4287b7fefe19de54371c6aeaf675aab01bc799",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "7bb2ee92a6fd58554d2d4663b7f187c001d67c1cd8386275fd9b5837d61afb87",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "fea5e8e3a28908f5e2f5e6bccc193d4f8e47c1cbc4b75cc0dc44f845e4867f8f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "2bf0f6b6631bff32f70116f83cc72a94b2edbd78c3c11e86141869476c86af4a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "2cfa26674ce107762e49d9c861d8871f56ca52d352ae582c5e472ffc10cc4dbf",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "0612c7e87158a9976f7ea733ed6f7cc8a1a29d12fed9535e0fd6222556089b5d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "53e3d19fa369e6953a3773768b6c489f8a59b6799018bc0a58b0939262d99e6f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "4d51a0211fb62a89408812f190b1eafb669639a05e1150efdafa00a93e9470b4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "45d6a7d7cb0f726b60527e2fcb2c3d0e344067d993def2e6dcf22b4ca74450cd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "correct",
+      "id": "2bd07c3e16ef040c82e2e8877298e89cbae3c4c997089e8be5ce375a4f1bd714",
+      "ko_final": "아군 3명이 전투 불능이 되면 패배",
+      "reason": "TYPO: 수량과 조건은 그대로 두고 한국어 수사 뒤 띄어쓰기를 교정."
+    },
+    {
+      "action": "keep",
+      "id": "c5a76f6104c23768f1ef8d047369cb840594862ed281b615962ae29516169ffd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "6d3b9e5d6a318c6089dd55ede71f89677ea093a17df93e947a3f978bd633548e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "d49fd2ee8d6df8c848244ae9d11853d068b20a547c8dfd4bf33299693852522f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "f8ebfe6d20e74f4bf0837993e03063bb13feebb436bfd57fb44c59e84c1dcb6c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "4fce28f83faf7bf140fb4e22bc7587e1b6a108b70dfb6b127c0716110a05bde8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "616467aae351441191964ba5c342c3c6a9e80de3b21770c046a37129d546f930",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "correct",
+      "id": "b01b14103ba9e59587875dcfd4af4b32f96922bc196d911fda34bd0fec99b986",
+      "ko_final": "적은 세룰리안 이외로부터 받는 피해를 [[effects_power]%] 경감",
+      "reason": "SEMANTIC_GRAMMAR: 以外から의 피해 출처 관계를 자연스럽고 정확하게 복원; 수치 토큰 보존."
+    },
+    {
+      "action": "correct",
+      "id": "f9e69f439c053cebb29d66b64cb0f6fc6122959bf0175e809f263bfe40178c7a",
+      "ko_final": "적은 절상・정상・허상 이외로부터 받는 피해를 [[effects_power]%] 경감",
+      "reason": "SEMANTIC_GRAMMAR: 以外から의 피해 출처 관계를 복원하고 속성·수치 토큰을 보존."
+    },
+    {
+      "action": "correct",
+      "id": "0a05aad09c4d8b9a676ea5ff2d5cbe428f5b0bcfc5e744df1e58fa74add01676",
+      "ko_final": "적은 번개 엘리먼트 이외로부터 받는 피해를 [[effects_power]%] 경감",
+      "reason": "SEMANTIC_GRAMMAR: 원문에 없는 공격을 덧붙이지 않고 피해 출처 관계와 수치 토큰을 보존."
+    },
+    {
+      "action": "correct",
+      "id": "d67bb7baec66dfb0c2d4dd72ce4fa1feab43f5da31d7b5b70a1a27ba20caf270",
+      "ko_final": "적이 받는 피해를 경감",
+      "reason": "GRAMMAR: 주제 조사 오류를 교정하여 피해 경감의 주체를 명확히 함."
+    },
+    {
+      "action": "correct",
+      "id": "aea97287a75823ca474b482d7092f5feca07892f2d6ac691bf8b3662053df6b1",
+      "ko_final": "적이 받는 피해를 크게 경감",
+      "reason": "GRAMMAR: 주제 조사 오류를 교정하고 大きく의 강도를 보존."
+    },
+    {
+      "action": "correct",
+      "id": "3e154aa988dc095a1e3d397d8d910751b5a6e6f32c3b30808068892c4b266e00",
+      "ko_final": "보스의 행동 횟수[[effects_power]] 증가",
+      "reason": "TERMINOLOGY_GRAMMAR: ボスエネミー를 자연스러운 보스로 정리하고 효과 수치 토큰을 보존."
+    },
+    {
+      "action": "keep",
+      "id": "5e1b9645ca9ac76a00d89b19649835c9eadbf662aaeb86aa7e77c729bc5bead1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "61dae92397d64b02b24752b0a0ea62fe34111ae5ce5c4aa9272e67f09479ceb3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "9e7411eaeba27c5861180f4488b257e41e9a2a4e5f325bb8ff7048166d7680ab",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "84075305cdc218419702df9edb4867233aab187f15818ab12d111638a601d77f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "12df09e1242bee07cbf41faa3212d774a7c61f5bffaf0b24ed2e254defc94673",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "2b135381e98955d23fba0ea69c0af24f8aa752bf4dc453289c155fbdbafe2a8c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "83dd445760dd7f5dd1bc2d3752f75f5afcd3280e4345f5d2f30e2131da8ff881",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "e287a269d349fb4c546a5a0981822793267d9418beed6b89871451b0a222f7e6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "5a4626ab9a8a410957e5dcf862e1305e531f7027d77a4136a2d07f670e211a7c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "ea83b910be88139a9d3b50902f43b3406a6f7f8425c11022f7f779c2453f1524",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "59e65574a2659d3721b1e271eb903b76de247282e1afbbb6b00512d25f63d192",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "5ec638c11968e02e2c1890d8cf5dcb3ff4785c3316f32b51d501e2bb63bf020a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "54488ba80da5d255bc0465c3adf021d793803a7c445f5da2dc88c706548164b2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "correct",
+      "id": "dac7ac2fabf1f945328635f7adf71d612f6ed835e3862f7df9e44d90f9bf545f",
+      "ko_final": "아군 3명이 전투 불능이 되면 패배",
+      "reason": "TYPO: 대응 설명에서도 동일 조건의 수사 뒤 띄어쓰기를 교정."
+    },
+    {
+      "action": "keep",
+      "id": "2bac3f1278b412d901bfec257db9dff96393c392a04c5f079109d5223389770e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 전투 조건·효과의 대상, 속성, 수치와 보호 토큰이 원문과 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "743bb2178c5f53cde992d2b6b448cb9301385f49a2c461b8dd90da936fabf722",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "3b64440b1adbf6612452fcf3f2825a67f8a02ef9c5b933ebe6bc3ad0864cbca4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "305ac9cced86d34e3096c1ba39b3758579c3253e888b24a594c8d9b5667f2e1d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "fcd877e3e419aba82044bfe5a62f56bcfa57df2504e95b9d420aa816a3bf3db2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "870819dd0cce8aaeeb677080028a044e98ab27cc1a7dfed7d84eea9e361d411d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "5ccf3833fb0b85bcf9cb7c9bdef0d3eacbf77386af85a49cb0b9ca9e696bdd58",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "3fd474fca9d3de5a21a7cd31864b3b1262c346b6ef073f3402ae0fa3d43ee4f8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "c69059b5a1f0ff6770ddf1cc698c5637acadce27ddda91058136c22f7823ad33",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "3bdc0fbf1ad8d87dd488e43bc62fc05ca87e492339f5db4957fa94d428780525",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "d410affe23c4cc1b50491c74174bd9cdc5cfd312244ad9fa5d805d033f1e9492",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "a5adcb72881c6ece0363c305d47fe4d114e4957a0f61fef830c3825e03a782cc",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "8405f7b1c780dfc8611470e2b76e7bec8fb19723697afb5a0979d082edd7c336",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "f18965206a6d99510f5a75ed31327aac2f4ab10b6fc423dcae5ef720d4182b48",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "36cf15b39cc32fc6452017d9f60c1fe582988bc01684494de96eb5a55a81192b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6f02ab92df91e6757c6cbf6bdfb2da128d8be497fbeb5af401cf50b6d33b0b35",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "b1d759fd023efb13c49d9ce463be4995ef82f66bd4c01dea139d78d5648c74ba",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "384241e5edb13ca4016ee5682f6e5d9b68355cf5f9132629dc2660cd2a2624aa",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "d44f8cb0a770330d03799582eed23024e6881bc061540f3c7e02287724d0f956",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "40a14758b9e48fc41b50cf37e722507aa37d9b175dd9c61e88c5b5b4dc3d52f8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "96aa78fc4293471f3d8640556fb5a845b440ef9942f9351517842a3f44f24623",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "b0bbabdf10f7a16e0b9b196907bd2ed29a438f98c690533e41c9b39990e23efd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "876a634dbf6809da6bb99bc92b73a883fe649c256c5a079cec7ca9e8425f090c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "326c918b72f49fce8bd0e9b3df4d45a51bb553a044e42d905ed13b229df81488",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "144b795249f42e8ad37d1a817fac028222a489a7c8f9ab7fe088e481a728757e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "67095b7a3a47566485a3fd95d50907f461b3f5662f475ee1da9fc7565c40eec4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "d1b48e82106b2127d6b36ca94e06de4e56bd044a153c09cd294ded90dc861fd6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "f464fe306ca065df2c61e681213dbc08096fb5b01129478202627241e8ebe2fd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "d03a24026ac89bd64d79021ab7026fb2561508f1e5425874e0d4c6311e2866e0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "8d66ca74acae84bbec98c60ef9280d966660529abae9b202783065e5c6b5990a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "2e670a9f96c668605d4d7a70b82a47325efda511537a1ebff592caba5b8a061a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "ff12226a0e194726f2986407c6dd50f52ca0792fe4311ab2a1ce6d82d9cd6ae3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "b70b48bbcb1fd5478067bc50fb137fefb59a10b9cf9ca6ff96bb4cafc057a38a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "55222ab7d566e85e6566d036da4e461f77f5b67243d6d466ae5b14bc7bfce2e3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "ac5e31a498173be6cd04b2c5e55674beff20e902930b82a230b6c525a5b5ee69",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6fd14b6557a4a92ac172fd3f5aa6cade81ed9cab8fe821d041a07c33f9810559",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "6f794dd4bad28255dcce298af17e62ea7bbb80d774ca3cabc328a47d39dbc2cf",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "7d154eac0dfe67586bc20832d2fb250eed0aaa724d76db738830e05b51a0464e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "60820836b235d15a8a759ce5d67cd1936b2e1eaf4d32e1d40c54bbe7f4738c91",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "cbed6290d2d5dfe15a27d38cea31f934a3ae3bf6534dfd5a976651fa8b03eeae",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "ad96a88997d4e3318924a3e62377d35614c6eb5632631d0cb93ada108e00f4f9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "2727d78afae023d216c0debfdd0d90975c7b7c26920c6028607ee0f57f4dc48e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "413d0e8e50412d7035942d6143e270f476049f30330f5b37f4896fbefd353b9b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "fa562149d5bf88b861b5c55f4bf0138b28b46eecd1759321c9b327428231259c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "4e98be79a639e38c302fd4fc9234d0cf86989dae5dcf724cc69927a35f92a848",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "ef693a3fc27583e593de26b870dfc1368d7e3ed83a5f974b779cfb2bf78afe8b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "8f138df790b628ea31628be24497b5d062e4c5b366a5b12f8ef2d0f3188258e1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "9fa376d5afcda58c28a65097202fe6dcb6ed86100ee68425f2039dd4995f8615",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "5ca70512852900a89f5dcfe3d46406961342acdbd7e6e347537a7b817a82f474",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "54c9289bf7064076465b3a0905400ecc692386a38fd3aee3ca591ec6c832b2ed",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "bcdd2c7d1e6005261746d62e5bffdf717233c4b046cbd50fe395618c459b32dc",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "62640b30a854dade52098de10c30ea276ddd2db62340007e98b9ec6006e5da92",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "badb82912740f9b1930e425812b8a811bfa8b6e0a59659be5ba79d8fb2534c0f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 적·보스 고유명의 조어·음역·수식 관계가 원문 및 제공된 current 표기와 부합함."
+    },
+    {
+      "action": "keep",
+      "id": "541461c4e58ac1407febff05b514b89a60c188d102bfff81fa5f7ed572ccebf6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "4874ddf35df23c35a112eced7e2ea840c79941e399c60be7c75a2386dc208642",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "064fec70c37c720985cb9a9603c909bc042b8a8c95971502009fb7ff1e105fcb",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "c693b667c9bace5aabb6abe149c217323b79c38c0d1d3a6a831712068e5c5d7f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "72b22de059078ed71c45239018d455ef94dc9ca14ba854d2ef6fb67a321a3d89",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "4453fc0aa97dfdc8b83105382279b43f7c2087304f46bc2cc782eb951a3a4b09",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "fdba5a129478f75943051dc74798fceef9f9aa8d69b8d63f01e00ba4c0c0f32e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "cb3c80c614ccea5668c0bb6328f76d07f4a97e2230d9622ec78f2d175dda6eda",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "37005e09324c72ec0ea353dc1697ed83a64902b61fa146e70b178b685c320315",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "670107d40ab7fa724439aca647723e2af021090cfcc8fbd3180603effe2ba6e0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "0db2e3b50f2594650f5c2e5c322d524e7728864289380616cb77bf86ef5427a4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "3046b42776f093c6f4c1013f889e0523364d970b16cd386ac2f50f3465fdf34f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "682cb25f0a889cb3de0ffd375c420174a765bd0b661dd54c9d1fbc3253c8572e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "676529c4bbdec43aa59429adf1d261970dd62e8b642e881fe551317c3908075a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "accbf57a1262dcc0a385149e864c05b6d5f0fbb7d3c0af88281b0607885cde75",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "42a3807b79d89f0ac5137fd059356367393f7e99a31ca2f5048f1d462fa4c771",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "e08ae318d360aa6c1dde3299e7a387323f374e5b15b166f180b3b945828d9e0f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "1411230a90dbc0edebc799b41f276e7888ce04272818f63418528e45f6cc621b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "107a53ac1a4cc09937c6f13fb908455c151d777f84c7d46a4a995ac6d118fc2d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "45e92f7573acc09d5d7a6a1d256b58835c919cb3d7b3219f5b5d75c6df646932",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "c298c3f9be0ed93d580bec75dc1019490d2013bb4d9ac2c20590a262b3115268",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "13fc711a2fd0d9f312b21da75d04d97ef7604b648e31ed4f178520bec01ec38a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "cea442ec9b770d5f92c910e400792b0ca5d2057cefc19979321dbd3d684c2321",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "3fb4d6d2e9751800d117098ca2ab31f19d7e52eec77df65d8233564cba3c90e0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "e876dc0381d9aaa9529c45edb219b677b1147e041d140592e414ee5a41ca5671",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "6d0e29f094fc198ac0e3fbe1bb8514eacf03a3d15067229c38a4e0d028a5a391",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "88a6c757251d37279ab8c69c0c8cc127873e8a10b29206eeb80626eeb5798c80",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "28f44863fc6f8948d315f3fa1e50ba499d13b9c6ead7f37ff8227ef23d8d5193",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "932efc31d0228ba68623e7d547d775171d01e0194ff8687d8adfaa9df8512593",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "fc0b6db5fcb47cb61d9b38ba89a7433d25f1ea91f7c49ff967b11dc1c95b8737",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "59dbeababf820ed321bb0e3f65e3c8bd386cdd22b31a5eb8c87ed4265d9b38ee",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "ca191a2f268c5d0860b22616067cdd5333bb9165f710aad6ce475e098c4669b9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "36ff7150e4e26f52e56bd5c7f599e02043d8f344b6ca246effe35b7d2571ec5f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "cc9baa431010f5fce521495f29470e1f7d623334e4218edb2e231b0571dac7be",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "5681f8724382a2c827502fe94990ae9b2fb77d51c6c7ebf8a6ddfb99843d4ec3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "e66e82efeb84850038f51736eddec1de9e3254555ab4e0706838cee399eca1ce",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "20aaa8a9992a47d5a445c1cbdd30e8d47edea9700d115a539cb15a0a62c78b4b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "fdd8cc9252681e3dd99a1a2b5111300b0561ca87fb2c231362d2edc394ee22c5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "603121a3458ef579d0dafcb657825d5ba60afe077413f0b72212dd938c20aa5a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "ebac7aa501113bc3f6d579d0db9c06cc1f4b4601fa8b010e4b80a611c08fdc36",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 해당 Master 필드의 고유명·표시 기능·수치가 원문 및 current 용어와 일치함."
+    },
+    {
+      "action": "keep",
+      "id": "99d9561a5a3e8e2b3a6355a2131069dc38c981bcbf8673db712e574dc37dfe63",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2da93660b59d9b6e72ef0d1f8b0f10c12e1bbc1b2d3e5aed2ee8895d8db87648",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "db007e26fc4d9d1bcdf19e45b967310fa4f061711dedf07b6ef5eab547211738",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "aa5d7d00d8f665d4ed72d7b86074622b78c3a1ea8f70e4d40740831c27797fd6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "cf86ede542483c105ab97b4b139a5566bf019b0130cf902ccc0f52bc63b161a1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1ab4e4b83fc94c9c89ac94e0e02f0f212b590658e22706d09519792d6afd1883",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "56a25efa3fd16e2d588e44162c2d8b2ae0aa559dee3a154bcbd7b0bad8e5c7d6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2de7a08fad356b85f8858891c7aa5362e66bb38b017e96e61d7764524b8b39ef",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ece3f2c0b566a326270ae815d31d39d096353bb5c218dae75f8ad215a16947d2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9ee9a0425cb90439358b45d5d53ba0e96b58ddbf236670c39aa2ef0b99efa0b2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ea7d30ec5dc5ad2026aced053e170a678c1529b1aa0004ad2641c0ed6d30ec70",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fe9d28aa32960979c3a1ccb5a414a0d0544cdbbb07a0c82d0afee1a0745f790c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5568ea6afe7567aff4c33dacf467c81a658e98717a6d667da38c784624adf3e3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "57627fd8a18b365deacca1441e202ac3b0a44fb3219c084e2af10ca879ddca04",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7b2ed8a0d2a58e829757be81c36cca6353e56f0d777c99323c6a0028d9688b1f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "26c341604c548cfaef27fdcb1e7cfb549a0720d3c733189d75ca79d9b5381413",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "dc2728358ef9f78ba7725df8a47c1990282a7798c16aa922ecbbc61f5ce5eb8b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "22f92febd746daff95b63e123103dc9be88971aaa63e566b544437eb9546d9a1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8b5fc18d62b3309d934217704275b166df9e4facf43ca601428e0ce535f20aa6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "57e92cec7aa896d7b32333ba7e4b11868339bfc6e8b7c563427810cb017d6fdf",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fa2a3f2126674608dcb188604584e7c9fbe123ee80777a9da286e248e636dce0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "14e1f49e4a6306ca0ec5f030ff2acc15107f552b51b5bc181f84bc862cbb906a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3c33a46c6d56c4bc9d51b270021b114df53d06b854beb20a485b228773e52d6b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "16d2901316f60d3e53e1f86c28ee5467ef16827dc5940c6981bf006d68c17372",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5210b2636778a79b05d628312efac5c5fd9d4f651af781164bfcffe730e74fa4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6567599802f75f2ed88d3593a5db6570f281d44a5bbf0ffcfaf1c531cae606a8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "eb96cb75023ba4a301e36ddea7a9fbf1351221cdebb35709b18a372d3d5481ad",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2d2730baac08577b2fdca2f21238030dec56e04017b470de8c1e7e7655ff75b2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "correct",
+      "id": "54f50247da705d486e70f2cf3de843facea07aa64ce93ba3d3371ff3787e9d33",
+      "ko_final": "<color=#F64873>시즌 NN</color>이 시작되었습니다!\n층의 가장 깊은 곳에 도전해 보세요",
+      "reason": "SEMANTIC_CORRECTION: フロアの最奥는 가장 깊은 층이 아니라 해당 층의 가장 깊은 곳을 뜻함; 태그·NN 보존."
+    },
+    {
+      "action": "keep",
+      "id": "7abebf1c03730cc4b30c398f875d0d19794dd490a482eec487361a0dc47615ad",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "0e3401a6aa573a62b1b4cb6a6640023580f4ceeaa41ec91e5a6b7a6cea03cfe8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "706491e9644ea4975dd9cf3c91d729e0c80204c738c61fb64a2fd2ca8391a8ed",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7c5b3f8f2d01efa78aadc56714e010ef63734d8a216ade628e787508265e4fb1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "34059e35bb17ebe57241f27b01e0f470c0671f1b68f39595f5903836be301449",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "07dc135339dbb32bda29c870d51d4fcd28a8b0d1c8fcacd98f7afa37e8dec2e2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7d3fb34a1dc6765eff8d9a9e411b48d43c05613b00c8e706864422d181871fd1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "45896be81b556b305dfee9338fdba508e007d8ba00da7b11836cd53fc0096f70",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ad745345ae94891abcf128365950e73652faab7d1c9993f24d885910720fd84e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7dbbe910f8828d5018e7e1a7f4687f6094da614a25f160dd915db417a2dad803",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "3b5495d2eaf18b6af97606f0b18f6ad2982a63ce38dba08f6c2a93b49ff1b1eb",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "4d642c9f24869c2fa0651a2bbad79bf1e595fbce3d36bcc77c5f05f890461b7a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "correct",
+      "id": "01430290e3ceaecdff738349eaeb528a43a68b0ec1e74b2816f68496bd9fb3b4",
+      "ko_final": "LvXX 달성 시 해금",
+      "reason": "UI_CONDITION: で를 장소 조사로 옮기지 않고 레벨 달성 조건으로 명시."
+    },
+    {
+      "action": "correct",
+      "id": "ecb360cbdc0e91c6ef6d2980966d962164b07d1f5128878edc5414608cbc946a",
+      "ko_final": "LvXX 이상 달성 시 해금",
+      "reason": "UI_CONDITION: 이상 레벨 달성이라는 해금 조건을 자연스럽게 명시."
+    },
+    {
+      "action": "keep",
+      "id": "363585f27f1793f8736ddf73e629a5f028395d790b87dfe0a555b15f1fd00660",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "19aba2b1b0aaa180cbcd0fec5448db12d54347c60a60855f63720f3f02fdb11a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "98413b5394aa685da8e48c0990bdbd2158935b66dae3832a27c0fc81c6c229e1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "66364f93e3147805f399639e58a045c8a0e8b2df841e26facb6d87047509bb12",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8a1c7a5b7dd4c4c077adddcefc75b478d6d60ab74ed8033275f2b6288c344b89",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8647caeb60b855adc6c89d47d471d853fb8dc7696368baaef3b3493503021454",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5fc9c4e7026f19722addc50278f9a428fb645640fc139462873708408cec3739",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2278aa137d30f5e4f2175cac75b574b9aa91b70eb4f1b5792e084c5e614c0234",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "114dc692e9a5d9fbcdebca456b66097ccde4ed4a8f06ddc13f26cdc28172101e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d11f4cf68a7af1b796ac400c7d5bfc0186c2ff8082c7763f3665d0ba7b3b2f09",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "93bd3710ec047de74ef3295c8b2c1931bd20af15a33405e3fa494ac24612bee8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c1e74d6b404bbd934fc5663899551a98501ad2db6aad3b84de2e34c3bd4e8186",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4e27eaef1c424c79b9807ffea3c8758cb1430afa4c1c106c3fcb03478c1ed96e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "78c9a4e08a100ca7dc5202c25d104e7a477f0703c2acf061a3f6f7dace7c2fcb",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "35491a83f23cb51d752ea9597d33378d0f5c819cd2c4f4f04cef7951c378bc5e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6032113422c448d6d52817e85406fbbb2e301f9e6588c559b0a551674baa3b02",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b48c51ab186da067adeb918d9b9c11a8367c9c94bffadc049350e1f9c2eb53b5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "65dde333351972baa29f3d3a9a3053209a0403e771560fded4834a101bcb43fd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "33a787f82df1eaeced9d848220beee4eb326b153ef6327d345a1d604ae2de32b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6ece4d2b7c10da76db5759d92d965216aadb67e9bf29c3e366104e8be6d1831d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "b908ed64316f22b35b66045a506fcf16576ba14f835b96a85cf3b4b8bc431e39",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c1ccba61ac96ed604d7f217615885314089d70f327d14b23c73dda822e011a02",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "e6884a021f27a1636f4a3af59c01eed45de5e33e6aecdb3da48e1aa2a0679254",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "df8545cd9600cfc8a0755416e890904c3878624d35f34cc99599abccba32455c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "04135c52fd44dc7dfe3581890bbc4527b556d3305a1850bbceffe3b8c50b37cd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fbf27bbc944a05ab377f0ba7a82ebd33a6998fae6ead530cb7b5ec1ba926d356",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "correct",
+      "id": "51f37616efd88b883b1ffc6550aaafb6915e71635a60cad3690e9e920b055939",
+      "ko_final": "N회 남음",
+      "reason": "UI_STATUS: あとN回는 앞으로 N회를 권장하는 문구가 아니라 남은 횟수 표시임."
+    },
+    {
+      "action": "keep",
+      "id": "8577a479e5a709ef1242ac18bc720741d8295f6fbc1471c78ed8bfc0eedc2f99",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6d7610d275e8ec8232e9ca9e339621eeaf3648c63677b2652de61cf61fcb43c9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "390a4ef0924ca330446ad4bf1160fd26d485b7d23f6383efa5e2fa5f9427c71a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6fd46b50478964e6108d9991415d8106e430dd59b1d0633c2f54147b9ccd27a6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9a47d5b0f851aee9e1a2659624cec25e813ad10026c4cacac933e396dfa51100",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "0276be252cb6ec3e813b5878841eb5606ff4695110b89d7b7e9af288f9264d09",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8d861c1e9eb73d68ca25e0ffff407a550de1196a8be3a163f1d1d6fe87952139",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9db646995d2de791983031e9eebc0c3e6240fd5aa35a000532e84d2e6065294e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "0a07ab8005772f4296ba95b491939a19b871c117e3b28d2a1dcd35c5b8846d68",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9e3da32f8c1ada46c5b2505d0e04b1ccf8337e20e5555bab231c7cb7b2c1735b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3a6fb89b12caded7dfad57c21a1e65d64b889ad2c2392e32fc0c09a2152e2306",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bdd6f0358b4f82b7668d59004505542ce3bec0193eab44f87919a685a674091f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "853cc2e20168fb53b740c13d60de8141d250e1831faae1786363203339adbf68",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bc08f8b52341fa34ad43dfb451dc041b98d475918b38a9a59cf1107ed3c0b29f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fc21638ee9da1630ce28f2b090f222de1b6b4310565af35afe247ba0cc189172",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6a036d90579616b19053792a738261abb0ae55011ee40a87358bb6368b270253",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d098b582f6757d2a62ab80aa85dd817b02e6178c57388544c071be68a019631b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "37b9ad08e0ca35493f0078c22948c9215c78d875d1f55692845a21321756274e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "48a97026a7163b55f5f00423f10e76f49c7797513876643c08dbc4eecd418e85",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b05e3629e1c3574b250e1e510c73b965dec4046868189bc213b5b4369df0b5cb",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7dcbb5b34ae48269daebdf6eab9f25c2ea05119f2bbfdaa263116e7eda423f03",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "57bc74c64e8c81abc83f1a7cebe9d1c8dae33bc480d5b7849b20f4e7c0ef70ed",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "643dcc15ff9f2430f8071f75a738697f5039b10967a21b7de831716ed17985ea",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d28a1ec26d985bc968ed7cc1904bf08cc83fa695a791b215c021249b5d3924e3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ed4268fc5975a67345e34ae9b66b8e51f4b84e794063a1be4c6b5bc52929e2dd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b71f0f1960910785c13e2e0bb3e19e30064dc4cc660ac7354dfd414a030d5e32",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "cbdc0a4b20d0da55baef77508c5dce194714091bc93b6451b320e64df8cb00a7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d72d412d507a135140ff536af6e9af364169925008ca06957151f4a46fa1339e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "62a450592616b0f6b284c927ee369867f6d62bed5e5ce17b5ee38407fc446c1a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3bd3ebbc225745217308bd1cb9b98151422e62441d1141230a6c378f85b3c97c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6c475c0e92722be07194e8b8f2716745a984e50208c456da5292206829bc92af",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "118979a3a7fd454fbccb77b71b0e0b7bed82a48dc5baf86ab5ff2bf992ab1f6a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fe1dab66824a1123c614114684f84aafe69394456b8691a720541a5d87e0d414",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1623dc47e89df9d061af3b9a55904370a630552fe188a153e54e15a0963262a8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "51e13b2a27b6debb295164f4c5831619462a469477f3d6d680c1a031084d77d2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "08860aa59ca8cdf081e8429e651cfe9629003f7444d0a39c3682659d52933425",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "067c843af70e51ac4b79ec30cbaa10889d2df01cfe0d44dd44437d761e3c381f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "efed47c71523f0ddcd11ac2636229b943f42dc65ede1519da5d2ddb2039434d3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "a841b3a9cc57454adce3fb5e580f87ee1821c64a429901f3fb43158f72be3d9b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c08164583ce1d218a73b46a61cf132c9ab830d8e4ca40b73518437e3b0e31ec1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "41673cded7e38846cea34f3303c8b42760334be77f8638b8106490ab142c8129",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fa034cc54301f0d3a0b350c5b8e083ce67c063c15dc606595608cf44aebd694b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d6f4794a7323968e63b77ee536ad8ed352977f7a3f61c1e66a856300f307bc3a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7bd3ba60aa59fa10f8d584121e2455a72fc9be994237b4fa0215459fce2d0b38",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "523e33ed1a055175ab9161a48c8688d220de75671e31194bc8eb41d1b097e66e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9160ccb34891a84ae585f1e7c2dd827f9230510a2b1ea1789f3e3d804121d776",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "234a3eea044ec771a229fabff3f4cb163bdf7180e63827ea73e23f212d22daa2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7d6ec13c58df72f81bc8ae9e1adf1868a1d2c79a9fa1b24ac239e31dfdc55f60",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7e0d68722337bf863e429bdabfa459f32e6c2d8351d377e3563c4932fefac118",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c163adb3abc848a993c8c38078a31d0a96425fc42274fdb6606c7f055ca0d32c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4b7bd15461c9292f277eba9c2b90cd6ad600aa3b7daf75dcdf3ef107bcafa0c2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3e5ef17c0edb67ac8a2b81e541545b6a664754d3715a383de0c2132c997b1428",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "470a48ed8b90e67d1714b33b1ee82ccb4a54e3116a898a058ead20c92cbbd883",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "29b5690a244023d5201f6ecf7f4548788c446e8a9c4586c413a67d256d5a88ea",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4199a73fe88433801bce84c5c82c52e7950ab89b7ff89a0d0a00cc5c7c48e138",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3a5382318436f780b9358864423e267540cb4e878bc3e015b1042feb292be6cb",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "aeffac44c9f384d1d0c9874e0cbde20e47872e72a80bc31cc9ddba8d0c438de1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b15709c1ddde3c59eacdd8f4a3621d2123f79e8d1db0358c7884252e97fe417c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4036f91c8fdcdb1ad1a0bbc00d5d9ebe2b0023f5669d1588d31756e5b1ee7c02",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "76c725cb4ff9ff613ba468a24b81ab165cad1ae9daf51a6b0c23ab3997e5b792",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7ef0c791a12837e60194f665d4b4c0e9624043d468d521e86906077b5266bb80",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "f622bc542bcce1976dd3d32c44508bc4c841680df1d09a4e2f557aaa04d344b7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3073e460c335119a2c3b65196821235209aaa9b33848f6cad70665df45c576c8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "a4378b7f91f1b181f3ebb323866c2d638494e8ae1e267405ffef614e5ec4bf3d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ec76aa3ecb581ec3ea4fb6a478674519845c49bb39e8b5b6188a277b2a9b496d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "68be06f1e5d09a2b6ace2ebfeca6a9cd5e3ab9fb292c2715806b3bb9bca531ef",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "68742fde1152e6b80d2a4c33fa823130294513fbdb5cb94a9f978cf167f86d3d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b5c4aee3e0cf11aec04b4a391a96329ee1508a36917ae197d78c31ae629dd4e1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1a29c299b987db12c76feb734a3795dc6c9124b7d7f512b353d1c8c0ddb2d804",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bf2481bf3d96425a29b3b692110e7940e0e0285f12c9384e55947f9f3a32b6bf",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ef351f8911982db5c18a3acf0cea899fd343514383ba9078a50eee95b7fcf806",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7d9eb48813b7eb369065ef3bd748d797f822d300176495a3638573ddd0320da3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "53a6db6ae73df53fc988a4ee8cb725627a33556bfa5468765f7020f0b401667d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9ef5c52c697ac1732df1b02f9f4727021a126fde63eb92824711eadd6d7872d5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "correct",
+      "id": "a5705208b47c8ec0f0df4f75e9ed6949177642b41129c62bc720411e3a905344",
+      "ko_final": "파티에 동일한 이마쥬가 이미 편성되어 있으면\n해당 이마쥬는 편성 중인 예술가에게서 해제되고 현재 설정이 적용됩니다.",
+      "reason": "SEMANTIC_SUBJECT: 해제되는 대상과 적용되는 설정의 주체를 명시해 원문의 조건·결과 관계를 복원."
+    },
+    {
+      "action": "keep",
+      "id": "a963c294238847e415447f0b8dfadc403523fa3e61dbe82e6716e158666a442a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "f8d5c9b7eab684ec2ad9f73b76c5ecb9ecb43de8f4226c78f58959ddb60b691c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2d9e9823f17592d0c62f7eff72887683643b2b095b525bcbddb1dd521f7594c2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "509dd9863a668b3df14e9675c426f7c42534822cac605f1a28d9b6a51ce69569",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ff436d52ea1c939f8f2756aa62fc71ecc0f65cab89106e2b8ff115aaca908360",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1bbde6e04d501850847079e06ee3499956f9de969e1517ff2c7bdca47d548c02",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "593a143a8920e3dd7447d59726fb6088539912216dcff0264d067fbf0b3ae579",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b8513ff19f789e39e7052b70a815397bd311117e556fc4957070d37d44dfc24a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bab3a72e25017dc128b97c89a56cc211660310cdaeee9248e0ec1fb68444d5d5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4343d28c26354deb8cdfa879a7826e187941823d7dd5bca89fff1a180423bdf5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "84133f3d6ff77760a52210f32becf7250cd38ca1347657a55fb0aa173c7be50c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "47717312a302b145a3fb0c0cd358f59beb5312889b42dc51ede3cc47ebb9179c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8fcbb9e6f6d00033c71dfc0d883ed9666c59676cbfd28b8da02ab25f452fdf39",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d1eaaf0e386c5d2b15d295c433f9f920cd7fea58c75893ce5e92143d01e3a316",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d5ddd3c5e809d74ff94f56f9855768b5d585bcc1c1431e321f7203b8bd2592a1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2c6d0a1e749f7f2fbf756fac333710a280c6988346ee6627d0e54aa9594deeaf",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "130ed2419f4f5e0fa1706b2e8d3ce2ebe288f52acf0fb86b65b0d4c4f766665d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "46edccaf28bf29cb6bbda35260b5fae4315359319cff41ce3c1a03105b38a131",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "88748d5b1caa5a79523570f9cc441f77a10783f8bc6f4e7d77c5299e63f8dd35",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "52028c60d7f18b2da6750e804fd014bc32bf05236b78c8d98c35ca84d708ddc0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2527fbbee362882e0fd3da6700f84d40e802f1503ca776c5755306f6c0f5749a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "94d825b2bf2077eda0ed5a7159de623f7f5396f993453ebd9fad06d4821cb2e3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "405822df4ff6248a90ea3bf5e382c7963142153b7f7ced8f163057636bde1b15",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "818005c05253288c9587a41378a08a3856c9c16023c05e2c77a8687f544b3afd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "349e25e01126db7f0de9169e8fdf103032de282fc8b7d5167980c1f21d95f59f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9128014ea71eb307f2369c11f46c4bee046c91a201c8b8d0899a75cc3323667f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bcfa33984dd9b972100b166790470baf65d614ad79ad6089fc1cec91df7cdf19",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bf4af41d0c8b7af21919a3424d84ab0434ea6d284bade3db3ace89ffcc88f74b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "311d8e60a2eb912cd2bffba0008bb95ddfd8661e9cb9a02ba287aeceb851ec56",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "47595ec373cc23794d69f7dceba4557de9ad8b2cff0b8ddaca1b2efc08b78e35",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3f571c6e00347852c5bfbbb0e8e4a969caf59dfc58c2d8ccc3bf87b535744aa2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c25e87ccfea73b518b183d9db2c52c002ba09d371d00bfebfdc1edfc24b4512b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "46bb181fac12aadbd8b496957cac48bdef4fb406fe9731d1801f5feb84f9612b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5f8de5e6197d07228c543c8cacfe77ae0adecdd03a4ed3e1b656864a8c57796e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "804d25bffa451f367b39142646699700072daa439f167b9e56a30e11c0f6a230",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d6120aca81bbeec04aa56e109e576714cbf50ec1915934606a5407b0375510a3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "c3ff5c13716ef7b80f721eafe4e0e18a558543157611d83001bf332b013fdf61",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "a21c40ed59bbb86512f9b062c8bf0f4c3217aec731e4fd9b7cea4a699d3378c2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "e1e7f7ade669e18f8dec5ab63b4eb00b8dc3042f2642601007daba09d3e826ad",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "d31933c3c1fdf33da9b4377be771a71e3a822b0cec1e1197f98fcc9ab02399a4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "b6a983ba0321d7227ecedc8f257466f25b40f2b95d35b4eb9b021a993a6a1d75",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "0a69a837a86f3f0f860fcfbc6062a7f24a93898032bdf54e5ca234bdb21399d2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "d2dd9f799f5e96c473a9ec7d5841bb52c5d6c21ca029bb109deeb1b4526b15ad",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "8feebf42d51aa703eead70e72420e4068ba42792179bbce6deaebf737a1e1cc2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c150feb92042b040d78891058e93d13764aee2ac0bd9b4ce31eb427fe87bd483",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "60fd1f019a6bb9c2280f5a5180387d44296163d9670653d4c4b6dee53bb8fa3e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "70e6cf5e5037bcfa349de499e55f269bd13c831fa7421bb4a46cedda0a6bd4b4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "48665e22fc2364768e2360adbccabeb24ed300fced68f5486daeb2a77febc2e3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6e51ff3bdc0a5f90ea089be3f04d5af6d4f2a2b186441ce4513ed44865114638",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1693606fd2f49256d9adcc84a28e5bddf988b6adc6c360d6cf67c8e293c5a289",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "acbf0de5fb4dcf4b00ae388d9a30a6821195dde04faa73b7eb5423c9c5e534df",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5a765ecbc4c658fcd2d7b6ea2cb5428365e80eaa3f085e0ef3178c47e9c7affa",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "94e8c1643ba5228e597272940100b5d0492117ccdd22973cf5e2e31bd1f09ae4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7665bf20646e94627dfc5fceae3ef9b1e6d96219c3036275ae1888fb6e9539d4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8c523ebf4b280a7816c018c0decaafe0569c32165a060a19f6aaacf17144574a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7ad333dd5001ae206af8523f5b799d8c7ee62b9de479da46956c947709b97fe5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "afb98a8839d93a5e3bada336764ae6ee7fe570246c40c279c7b5b4ff732d130e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "627e7ca48676ede0122c43667a29542b12e837c05d3a085db2db837f7f82872c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "618c05c8e2b1d67c36b9387bcef2b26272c0a2ef2ab24b0f6bea332257263bc7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1d94f3797e959e628297ae715acb7a70e57b5b631260f30da616e49ec6998a8a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "95c2ab4d9c49e7a3f85ffb58adf7b0b2d4d5adeeafddb8702220485483d8ff89",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "49a33f0c19b6d16a86b98d7e3f881f336d58f1307654509dac98f49c7eb3b224",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "911834c725727a9277a9738e5259f1bdb2f306bd76d8cb4fe8d55987f7d243e0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b1f4c35a0e1bef415a86f9b6374df7e12aa7cfa211e62f7107d66ecaf7d6a9a9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "165aad260ccba9315f3730e1b4607bddd5a19a239fde4c9e0d8288dca92bfffa",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "correct",
+      "id": "3fba6fc3fdde7aeff1f59fb96645f6adad5d7ac442bb51de0b1fe35fc8b39ab6",
+      "ko_final": "신애 Lv.XX 달성 시 해금",
+      "reason": "UI_CONDITION: 신애 레벨 달성 조건으로 교정; 표기와 수치 placeholder 보존."
+    },
+    {
+      "action": "correct",
+      "id": "b2db170688715e2179c04b15a3a8d0d0634199f315d753962893fa5b067c6c66",
+      "ko_final": "신애 레벨 XX 달성 시 해금",
+      "reason": "UI_CONDITION: 신애 레벨 달성 조건으로 교정; XX 보존."
+    },
+    {
+      "action": "correct",
+      "id": "a1b9552b4df863d246ebb5bb1cb4d1b8817e08e5eca3d066980d2374384de3c7",
+      "ko_final": "신애도 Lv10 이상 달성 시 해금",
+      "reason": "UI_CONDITION: 신애도 Lv10 이상 달성이라는 조건을 명확히 함."
+    },
+    {
+      "action": "correct",
+      "id": "b4a4459d298e97e88ab476a770c3d68a49d514314d96a6f429e1434dbb19069c",
+      "ko_final": "신애도 Lv10 이상 달성 시 해금",
+      "reason": "UI_CONDITION: 동일 기능의 開放을 프로젝트 UI 용어 해금으로 맞추고 달성 조건을 명확히 함."
+    },
+    {
+      "action": "keep",
+      "id": "a199d9db2413d3dde2e596b25a7a66240c21541d7079277c0dbb8e9ee1076652",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d6cc9d9fa5af3ea82580b9ceca3efeb1a84d4527b19c7496b0b48fed9320289e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "81b520c529eb61e321bf1824bee823b4920123049992380cd93cff55ca624459",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1722b105e3a850ecc2cf1c463d6d3e8eaa98e0aae3b25f9c1d9449777f63c6a8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "55afc195046c456630a1a4f7fcb26c801241019a862cd88f55b5c00c2b70c3ab",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "92c23f5120c147681ebd457aed2dde38611041d66fdc52f47a8719e83e290b78",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5db6e774e1eb98e10ef42d06e17555267019fdc73013eb20c421709bb3ffba39",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "e9b23df42d2d314f5cc8cdddffcbd35985dd4ee145945309dd6451cac2e40882",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7085a36c3e31b9d8e03cefa0fe4f0d915b0784360bb93ba16073cd08dca8de0d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "12731b9aeaeb1fa790de633f397a35bfa1a4cd789eaa4be65b45709d6449b69b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5d436843cb5e14084ec93def32328fc5276575fe256e556d8dc04ad7bfc4a598",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7ca03b68792d00df595e96b8595ae5312a0d087cc5add6eaea3a13f56e048426",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b02c9ef62883e2aff0bdcf1ac5f7e953c61e46c8ac42d4b78f606a4fb982f24c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3105c7bf9291ad3e812e539f1649796a94d79a27a9a6e41bc474e6a74abdee28",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d2b79646c08da5067fd7ca9087a85d68bdcedd5cb42d889b05b8df829f0f097d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1741613b1607f7f1963e9974c4cc97bea8f8c1cf024edd46e200478e00e5005a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "e2385c2b1a769754c445cb839775779d1b0f2958ac5dc89e94a6c57ba06247f9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b99ae10fccf54b3c6c3a0087d58575127bfabaf1afbbb5f791700706129ec374",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1621c33234eaa42f208c3ad836578c95840519bbffb6f0bd16adfda3e5f72594",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fd5aa962f997539600bffad356f8396e978337edf5b79eba229045a7a9c9b245",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ae516df2e9332d5dcfbcc59c9fca41e1881d3f95ce90881058cacf080f01ee86",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "cf12c4b48b2af2c93a9097eaf0cb56bb78eebfb9602201c35ea4fc5a8e2815d8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b94659800386dedebbd1ace0a5fca71a4458cd2e261a23ff39531f3a8eb72c66",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "56b045fec4a5e8953bf9bcf5119584abc530a127bc19afbcff6066205ce5dfe9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d54e5d0783ebd95a5b9cd4969dfbe301e966f48b62cc574cc4612e8273fcd36f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "04b29a7c69a8a72b2aac5950f715999181d80d4cc328f9d0f7dde0bf105b2092",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bd37fafdbffde1932585470a57f085d3625fa5061856c6c83d3336fcb17653a0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "f5e8378c1b92239318a56d8a804490add4358701523fb92717cf838dfb267b0f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b4d9f11ae4293cecab0d67451cde96ada4cac5f957f1ee1fd68bc445f2381423",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fbf73a3c52e2424381e9ac9f7fcdb00edd5494f2d7a374938c1a1702b931c6ec",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "34d5ec74f1e54fbe66b9af303d92e69e3296e7d73605f0fad98330f259100c3a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c54845cae24eaa644c11b3ec72a4c9336e3ace28cef7bfb81f2e34089dd5fd04",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "06d29fb95f971efdbb7086befe4f5dc6601cf73acd56ae27226491965f7d91e4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "a48151a4c76afb087af5883a3aea08125f4c329459ec33c0ffc94161aea0a2f9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3a7492efb4782f6fa2404ba63ed8be9ab103716c849fc74d3f36da3d2aeefb28",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "eef9af2cfd435f5f2b87a9dc3e84e5dd211e323599cbc65f97dfe3c62b93e962",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "22ff372fdc8a17679f6c6abd032e96fe4b9a47c2936cd1f419b50351b831c75f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "17fdc1d2ad8b43086a543d45857eb39797a17ca1d6bb41627a0b8549ad99beb3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "053de584253a06be989e71c2f7079f2f3afb23bfc6298dc8e5f12cee28d09f8e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c1329b001ab57876dcfabcec0e834036af728d5f4b905078a363455c91f1c731",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "a12265c2018ad6999e11ac14f16d91ae8e43be5fefaa77ce11593a1a23f6f8b5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7f37a52ad5766bbe1162ca984f5f6e665099d50b77678ead0cbaa8ab12718c0a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "09417aa7cc907c71bb4409a59ff3f27315e9ebae8e032527687946aa90b08151",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5d8b3d516229491afad6ee69fd4300e54a992d7905bba4f93c5d9bd86d4594d1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "0e4224be509338d7e1043c456373969956feabd90c01a70160ae5e56d65e3497",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "eea13de2dd94743b4e95a4d2b3c580006350d58d30a4fe78ffa00d605f753ea3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "43a9197f83af25a7ec742cf311361650a12501d03c7b023b2c304deaa4da8385",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "516c786634f0d60906e0bb01d96619e33fcec050649b9043cb8635c4560fc19b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "457e778992396238c6f3e6587380a4b880e0a80561bb9bf5b9b9f4065186481c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "98484911ace5ee87679a3325929f73043540b64b55181c85411a0b3ac1490dab",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "176773b00e26f707a9e6eab36f60ef4ca5c9088108082cfe8a446da793fddafd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "126d3a77e008ec474a3d9c0a037619a55afba32539e4c039e12c08bcba41a1d0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c018533293b4f94036b41c9d74d559f28d56a76c8e2eea1a91f05c02a2fd9fbf",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3eb19ad1bb3b73962c129bbf78d2355fb86b3bd6e8a8b069ec00f08a70d48580",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "77d98d6b1501522a4f1b30a9744f405d21c6b4cdec525a28edcc08c043e80d1f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7bb8468f2186cf1acee25abcab9adec610e03781eb4c3e30dbea312c2fc4c0fa",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "37e5fbc14e9dab70d4b5b1b4344694633031c30dba3c7810bd3b3cfd5613469d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5a7b901a090ebab317ce06d4cc104a1672c90d91f4c3db3695571ff4aa887d18",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9fb442f8c8b2ec22fa06a361fb7f7ec34ac1ac60857e26be4e9c4fde25d2a7b6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "a4ea1108176d7a1039d9262ed61106d94bb6219cb02fb2513dce2b2d11ff13d8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5652d8868cf1d9ac4fb5db49cb6f2d66fb0b5afb88dc33de2db7c6d2ce141ba1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2a22a177daeac832b4193cb4425a9e9801fb6f8295764a1039b2ce0bb34c11e9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "50486c08198e17aca41f00d59e7c3dc3498ab3aa94d103e66288fba84a1169a3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6f175dbd6e5c5a3fb8434059910dde76fb924a6cd7102dec6b7f763907971824",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9ed6ab6d078ec28ffbb952002844d6d5bc05029d2d1f1e428556979f558eec16",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "350d182c83befc912a8c1f22f09cf2c2da93ba9bd6100400b1ea7e468158bd7d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "correct",
+      "id": "551b056b66c4fd39a9f0cf3aabb1568aa08bf244de72a4bfac4c452434cf544d",
+      "ko_final": "월정액 패스 서비스 이용약관\r\n\r\n\r\n제1조 (총칙)\r\n\r\n1.본 월정액 패스 서비스 약관(이하 「본 월정액 패스 약관」)은 합동회사 EXNOA(이하 「당사」)가 제공하는 「걸즈 크리에이션 -소녀예술기담-」 월정액 패스 서비스(이하 「본 월정액 패스 서비스」)의 이용 조건, 이용 시 주의 사항 및 기타 필요한 사항 등을 본 월정액 패스 서비스를 이용하는 고객(이하 「이용자」)과 당사 사이에 정하는 것입니다. 이용자는 본 월정액 패스 약관에 동의한 후 본 월정액 패스 서비스를 이용해야 합니다.\r\n\r\n2.본 월정액 패스 약관 및 기타 약관·정책 등에는 본 월정액 패스 서비스의 이용 조건이 규정되어 있습니다. 기타 약관·정책 등은 명칭에 관계없이 본 월정액 패스 약관의 일부를 구성합니다.\r\n\r\n3.본 월정액 패스 약관은 모든 이용자에게 적용됩니다.\r\n\r\n4.본 월정액 패스 약관은 이용자가 본 월정액 패스 서비스를 사용한 시점부터 이용자가 본 월정액 패스 서비스를 해지하거나 이용약관이 종료될 때까지 효력이 발생합니다.\r\n\r\n5.당사와 이용자 사이에는 본 월정액 패스 약관에 별도로 정한 사항이 없는 한 당사가 별도로 정한 「걸즈 크리에이션 -소녀예술기담-」 이용약관도 함께 적용됩니다. 본 월정액 패스 약관과 걸즈 크리에이션 -소녀예술기담- 이용약관이 서로 모순되거나 충돌하는 경우에는 본 월정액 패스 약관에 별도로 정한 사항이 없는 한 본 월정액 패스 약관이 우선합니다.\r\n\r\n제2조 (제공 조건)\r\n\r\n이용자가 미성년자인 경우 보호자 또는 법정대리인의 동의 없이는 본 월정액 패스 서비스를 제공할 수 없습니다. 이용자가 미성년자인 경우에는 반드시 보호자 또는 법정대리인의 동의를 받아야 합니다. 미성년자가 본 월정액 패스 서비스를 이용하는 경우 당사는 보호자 또는 법정대리인의 동의가 있었던 것으로 간주합니다.\r\n\r\n제3조 (등록, 갱신 등)\r\n\r\n1.본 월정액 패스 서비스의 이용을 희망하는 자(이하 「등록 희망자」)는 본 월정액 패스 약관을 준수하는 데 동의한 후 당사가 정한 방법으로 본 월정액 패스 서비스 이용 등록을 신청할 수 있습니다. 등록 희망자는 당사가 요구하는 등록 절차에 따라 본인의 최신 정보를 정확하게 기재하거나 신고해야 합니다.\r\n\r\n2.당사는 제1항에 따라 등록을 신청한 등록 희망자(이하 「등록 신청자」)의 등록 가능 여부를 판단합니다. 등록 신청자는 당사가 등록을 인정한 시점에 이용자 등록을 완료한 것으로 합니다.\r\n\r\n3.전항에서 정한 등록 완료 시점에 당사와 이용자 사이에 월정액 패스 서비스 이용계약(이하 「본 계약」)이 성립하며, 이용자는 본 월정액 패스 약관에 따라 본 월정액 패스 서비스를 이용할 수 있게 됩니다.\r\n\r\n4.당사는 등록 신청자가 다음 각 호 중 어느 하나에 해당하는 경우 등록 및 재등록을 거절하거나 본 월정액 패스 서비스의 제공을 중단할 수 있으며, 그 이유를 공개할 의무를 일절 부담하지 않습니다. 당사가 등록 및 재등록을 거절하거나 본 월정액 패스 서비스의 제공을 중단함으로써 등록 신청자에게 손해 또는 불이익이 발생하더라도 당사는 일절 책임을 지지 않습니다.\r\n(1)등록 희망자가 제1항의 방법에 따르지 않고 등록을 신청한 경우\r\n(2)미성년자, 성년피후견인, 피보좌인 또는 피보조인에 해당하며 법정대리인, 후견인, 보좌인 또는 보조인의 동의 등을 받지 않은 사실이 확인된 경우\r\n(3)반사회적 세력 등(폭력단, 폭력단원, 우익 단체, 반사회적 세력 및 그 밖에 이에 준하는 자를 말하며, 이하 동일)에 해당하거나, 자금 제공 등을 통해 반사회적 세력 등의 유지·운영·경영에 협력 또는 관여하는 등 반사회적 세력 등과 어떠한 교류나 관여를 하고 있다고 당사가 판단한 경우\r\n(4)등록 희망자가 과거에 당사와의 계약(이용약관 및 본 월정액 패스 약관 포함)을 위반한 자 또는 그 관계자라고 판단한 경우\r\n(5)등록 희망자가 입력한 정보의 전부 또는 일부에 허위 정보, 부정확한 정보 또는 최신이 아닌 정보가 포함된 경우\r\n\r\n5.본 계약의 계약 기간은 당사가 별도로 정합니다.\r\n\r\n6.본 계약은 계약 기간이 지날 때마다 동일한 조건과 내용으로 동일한 기간 동안 자동 갱신되며, 이후에도 마찬가지로 적용됩니다.\r\n\r\n제4조 (요금 및 지불 방법)\r\n\r\n1.이용자는 본 월정액 패스 서비스 이용의 대가로 당사가 별도로 정한 계약 기간에 따른 소정의 요금(이하 「기본요금」)과, 당사가 선택 사항으로 이용자에게 유료 개별 서비스를 제공한 경우의 해당 요금을 당사가 지정한 지불 방법(이하 「지정 지불 방법」)으로 당사에 지불해야 합니다.\r\n\r\n2.본 계약이 전조 제6항에 따라 갱신된 경우에는 지정 지불 방법으로 기본요금이 자동 지불됩니다.\r\n\r\n3.본조 제1항의 요금 지불에 필요한 수수료 및 기타 비용은 해당 이용자가 부담합니다.\r\n\r\n4.플랫폼에서 구매할 수 있는 본 월정액 패스 서비스는 플랫폼을 통해 과금되며 플랫폼의 지불 약관이 적용됩니다. 이용자는 플랫폼의 지불 약관 전체를 읽고 이에 동의한 것으로 간주합니다.\r\n\r\n제5조 (해지)\r\n\r\n이용자가 본 계약의 해지를 희망하는 경우 본 계약이 갱신되기 24시간 전까지 다음 방법으로 해지해야 합니다. 해지한 경우에도 기본요금 등을 일할 계산하여 정산하지 않으며, 해지 후에도 이용 기간 만료일까지 본 월정액 패스 서비스를 이용할 수 있습니다.\r\n\r\n・DMM GAMES,FANZA GAMES\r\n\r\nDMM 또는 FANZA에 접속⇒월간 패스를 이용 중인 계정으로 로그인⇒상단 오른쪽 끝의 아이콘에서 마이 메뉴의 「서비스 이용 정보」 선택⇒DMM 또는 FANZA GAMES를 선택하고 해지 절차란의 「해지」 선택\r\n\r\n제6조 (서비스 내용의 변경, 종료)\r\n\r\n1.본 약관을 변경·개정할 경우 당사는 사전에 당사 웹사이트 등을 통해 본 약관을 변경·개정한다는 사실, 변경 후의 내용 및 효력 발생 시점을 공지합니다.\r\n\r\n2.당사는 다음 각 호 중 어느 하나에 해당하는 경우 이용자의 승낙 없이 본 약관의 내용을 변경할 수 있습니다(본 약관에 새로운 내용을 추가하는 경우 포함).\r\n(1)본 약관의 변경이 이용자의 일반적인 이익에 부합하는 경우.\r\n(2)본 약관의 변경이 계약 목적에 어긋나지 않으며, 변경의 필요성, 변경 후 내용의 타당성 및 기타 변경에 관한 사정에 비추어 합리적인 경우.\r\n\r\n3.본 약관 변경의 효력이 발생한 후 이용자가 본 서비스를 이용하면 이용자는 본 약관의 변경에 대해 취소할 수 없는 동의를 한 것으로 간주합니다.\r\n\r\n4.당사는 이용자에게 본 서비스 이용 개시와 관련한 추가 요금을 징수하지 않습니다. 다만 시장에 변화가 생긴 경우 본 서비스의 기본요금 및 이용 기간을 조정하며, 사전에 당사 앱 등을 통해 이용자에게 알립니다.\r\n\r\n제7조 (이용자의 책임)\r\n\r\n1.이용자는 본인의 책임하에 본 월정액 패스 서비스를 이용하며, 본 월정액 패스 서비스에서 행한 모든 행위 및 그 결과에 대한 모든 책임을 부담합니다.\r\n\r\n2.이용자의 본 월정액 패스 서비스 이용으로 인해(당사가 해당 이용에 관한 항의를 제삼자로부터 받은 경우 포함) 결과적으로 당사가 어떠한 손해(변호사 비용 부담 포함)를 입은 경우, 이용자는 당사의 청구에 따라 즉시 해당 손해를 배상해야 합니다.\r\n\r\n제8조 (보증의 부인 및 면책)\r\n\r\n본 월정액 패스 서비스 이용과 관련하여 이용자가 입은 손해 또는 손실에 대해 당사는 당사의 고의 또는 중대한 과실에 의한 경우를 제외하고 일절 책임을 지지 않습니다.\r\n\r\n제9조 준거법 및 관할 법원\r\n\r\n1.본 약관 및 서비스 이용계약의 준거법은 일본법으로 합니다.\r\n\r\n2.본 약관 또는 서비스 이용계약으로 인해 발생하거나 이와 관련하여 당사와 이용자 사이에 발생한 모든 분쟁에 대해서는 도쿄지방법원을 첫 심급의 전속적 합의 관할 법원으로 합니다.\r\n\r\n\r\n2023년 10월 24일 제정",
+      "reason": "LEGAL_CONDITION: 해지 기한을 갱신 시점으로부터 계산하는 표현이 아니라 갱신 24시간 전까지로 명확히 교정."
+    },
+    {
+      "action": "keep",
+      "id": "fb83824654b15d094e04dffafd64fd64a87ba59bb73dec9f76565f3b2eaefb09",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ce6eabc8896330253ddd2d120e181416a6a53ce3309dcb1cdc3bce6bf0dde3b7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "920a8fa6eb9e3527d5f4584c02f64d38a8a03a80c607f15e16a1f4674b98da8c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "792fee487019b672864e6129b695c2c8450d1f504db89ceecbdd9624b51883c6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ab8bbb39ab2cb3e7d6b2c21655969282386144e771565547930007cf606dbc87",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "580efbce0805091b54c8026763bc6916d775dfcf4e4a4ea873c4ecd3831d21b2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4faf9596be6d28c4b9b9a3724eec25475a9cf4f15dd9c756de60fd943e6ed5d3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "69c40beabda90ff646c2545096c69eebe8824e5831711fcc4de6459f456265c0",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "f8ac43cc65139a707454fa90d75289b174bb9cefb47ec2abbf2e9a6a73ef86a9",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "89206f44e253b9a96352317912c11376cd60d6c54ddd71556c20a6395148e0e6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c067ed464d8a4f6220ae6426f4c04ab472d32a3959f494c550dbe98b671e2683",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "cd442183afd1961cf035f88b54be3523def49eececdc8d853c64ce75f4afcfd7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3ea0d60f98cf0c444babbec2e253fa6471d880d3dffe2dad38f29a60acfe5089",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "32282d09a363c9c440b29ebfb6ba03a14d6abd9ebb566a660871701e457d4eb8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9c604b06bb9120f4607058cec9b79db9fdea97a3709879f8f5733645bd239822",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fb3bf2e5868208e1d9db47af26d4f469abd978a2fff2b9cc04fa847fdefb95d3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b6cc2809efbc4583fd64d54f57af9a1a4ee77428cab7351732e9de69fc830866",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4d05aca23a9107a5f19b881f287d1ed31c363917968550e437961e92f3e64e91",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "06a659947028fee37c5f36ef1a6acd9f8760697e1c2c84286ba83ae43047313e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5355790d504b769676beec5b3933aa40524a9799a8283b5379f7afaeaefe3dd1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ed15f22d11e25066944a99bbe045c99b8f518bb02ac777bdd551fd444260d4fd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c5477d54d9768f285f18263dfe295f0941ce234dad0c7c664af272584692f24f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "db2477eb70a97272578935fe6c956aa4908a686702c2f5fd55c97c0da2a3c979",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6ba05ae9b006d7b91a995e7237edcf502931b22fae921ebfb46040773eaababf",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "d44031f23205b4349a5a12a651e9fbb4592aa8799eb796c7b71d4064285d8de1",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "995caca73490dbdbed58fad279e90b48ef55f582590ee11c8de79a6fc981b89f",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "dbc9832df881fa3d4984ff79ba35b0f2347e37ea10e7da4d56ca760079d763ae",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "a1c07b045e6a1fb337402c243e652e48970f79b8352969754154e00eafd9fe36",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "70d16aa0514b68057705449986a11ddb142c4a8633a82de143513d27b5ebb722",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "193c3242b224be40f97d15bd979115618c888dcd71278665e0bd91bc7aa2894d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ba19a416a17f105df13214359981af3b11ff3967b3a07536c578f6f1d73ab2cf",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b7aa095f5e555a34717a958ee54e2070ab33b77c2163f08f7c8f9b77e48bbaaa",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4cbcf03cb6b04876b564a82547fb6ca01717cb7ec451922970664ae444038f50",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ed98397fa43df5ccfdddcc442b85b2fc01308052a0ae362257d12740e8b98d3b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "0e79f01fbe61890e6e28d61643196d2dcb996ef0096f6e4c43cf2f18d4727a00",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8ef7e179562ae6e68d9f391a8a8dc60342bc4903b34ffa386d78fb31e931b0d2",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "91aa6e651e0b774e6a607b7abc720fc04f4db52356a83b905f6009cb7b28c4ce",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "98e83880e303026f660da033c5bcfef4ef73cb95eb75d55617baea605903e43d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ed5916418d5e41100f5ab07727fee75b1e55d09cb01fcf4f25d98c1d500ffbbb",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "121ddb089b1496ecd4d1115a69fa3b2bdbf8f6912f94cec36dc2fe08a16f063e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "f9204ebab9c056ebc09af9b3c49ad1328e6a2a0dac3e76828dad433a1cc2bd0a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3850059fe5a9ab3b1a18f3c8f948699ddaa63cb9eedc600637b865437001224c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5a60ae232fe11f74e006847ac43d52d24805cbe260b280448096e49f71d9ce70",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d31f641c2c448769e68f369f42a9c6d0828d4e32c3951297fa9c86cd979af512",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "b53d274db182e8047d519584a6e05f74372d8c39eb32cd8d4c633941c9c70d7e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "correct",
+      "id": "1a98988be7195ea76fd4ee38ff5bed4fcf89e82f33898a9b929259d3a9f07ed5",
+      "ko_final": "예정석을 소비하여 베이스업 레벨을 초기화하고\n명경으로 환원하시겠습니까?",
+      "reason": "TERMINOLOGY: 還元은 명경으로 돌려받는 주체 표현보다 명경으로 환원하는 기능을 뜻함; 예정석·줄바꿈 보존."
+    },
+    {
+      "action": "keep",
+      "id": "99dea21f91e7e409ccb689111acf969541d487b7965924644db625b3a095a970",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1728a6ea9fc3d976fd61c70a4217082e9068a0e29ce6412b4e9f7d4c06dfedb4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7063e3043e353ce83cc61cf7812cc7ee1e17c2f89f0331381ca7d24b2ec2fb61",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2b58024f37d022b62dca8bde7c8e9815e2856a37bea41db1f2e5ea0bb8a52596",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c769f36c31bdc45c2c05516ce79b6b67cd6b1b6ddf164484d4dc7624f6204130",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8e71a0a74e0f7475f04870dec297bed095b3f7ffc5b7d90e4f29403f82c31186",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9cefcee3e4d08f778f1dde0f602f2852ec9e9101243aa6ac4fa7bbd0b988cc9b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "7d74127b016ef6150539d156362ce2c5b52c4e7fed8d776559a9fcc587bf9eec",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1010254d14ec9a617e44cf118e8c2168961d8caffe2000ca9cf6200dd447a3ac",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "6cb3e6a9b69949d10c4c24b6f75709334aad71e23744df56f9f0d2732eeb2c42",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fffe78713e5db8f7819e51624176fb9339a4d19b204c559f18b82c96987b9be8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "23d607a061d58df5130073b0c703a3bc2940eee49dc1f7b956089a303aaf3b61",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "450b4412414d1ab6b6a3676457cc0b61c5fa58c0fa83bd51e07584966bf46073",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "e3b73272b442c136bd0568e3a77b124bc321a6f49141126ab25257be972d21bd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "816366253ce6f6740464bc91c341d0b4a3ceb442969c8956b2efd57144e4215a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "b333a209992ce58786b4491cdc36169d971dd6f61a3135e775768f4dca80c842",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "1a0117d5cad9d649a591512c8c97301e8b4b16e874096b0dbdfadb43e5b6b82a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "1e1cd7754239b2a9c866e5a51ddc50d3b664e050d2ce3c5c136eba12a9b317ed",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "92db45e675909e66312b4228bab2ee98138dd7e441f025026a84172341ac6b95",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "d4cba7daa028fb43100862fd693b26d39fdf89ea96d159da33cbcc67e3e82de8",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "45977e758fd4e5773083d289daa8ea1f0b4be89103979468725dbe06c53b08c4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ab61a49766a7ed259e9eff62148e1ed6f642f7a8012e28aedd60ae69aac1f809",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "e9c3c297ed457af1f696276fbce7ab552faee9410bd96a66d397e17aa37cc4f4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "680a0d5c19b20474f478a01e8206de7ac01670d384d27aa8e8ca046f25bb0e0b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "df5f8f73175415c48cb619333f692ae7f126d22dde2766ba0c076396e706daa7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ef4bb9a7c15f0747bdc69add433408d79d8a9a7807aecd7660df75b04c5819f5",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "366a448d7845e4100a2252b7b271ec260351cdc5577aad2542534c14d5f9ac83",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3f933737d8890ace772b4162a3252a23d3b388f91ce68b4d7b3c9f3f8f3c2df3",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "802c9ef3fca4f7b481f8ac1a2a0803f4ec4ccae69f4de72e1a646232c6c9ca9d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "82e9e1240187ece4049201952deb6ee96f24a96155e4e37e539d11b585e88196",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "59e06b6be86b2e9afaebad00ea9fc2d1551c62857a2862156800075af9ba8817",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4102014733994b54460f0faf1a4365d1114483d1ca89591ef22b9eba7dc951be",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "312a6b922f6dfecfe8301560e4da4c5464a442f2b6f6b9de6b0d8cc01d1ec784",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c655c93f9cb0bb65d935d9a3090c78a88a5facfb1036b85dd8d35fc338fdffc4",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "311205196c1fdd0c02cef2b93aaca2dd1adff1d55d4e9082fb95db87da0ebf2d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 계정·결제·해지 안내의 주체, 조건, 기간과 재화 표기가 원문에 맞음."
+    },
+    {
+      "action": "keep",
+      "id": "492d340f2b3375780c49da551504c10f555b73145e4f23952f7820346a39c38a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "be3069cf2338eac0d7802bc53bca94f40122e5386917c73640b33566a1dac831",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9733504475e0f166e865acb1fd757aff1f9dd587b757fa2c3736e6bebb392c61",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "9d6e284b8ab13bb2c5fb2b3ef09187cf3b83410445d354241ece081711d2d8c7",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c277e83d7613323dab6778a487e8c2e83ee0398904728af6d7d9805582183396",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8c41747d80020c7eae5cc366efabeaabc73b392202ce45a9f0037aa3c0e5a1e6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "4fd044f1a7a97f0b8f7621c6ee234bccdf6ff9d5c4590ec8d3ff2d4cd1515e51",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5f8b04684117a396b28b054feb95575138d40343f94f814be5672c7192804003",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "e04cf9c7b26a4e44308d6eecc4188d8df30ff5775a0af64fe8409963f7b9fc20",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "8e1c16fefae850fbfa447881c77d8809c20cc3182cb06fcc530acd5834b26e81",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "a26216ddb07fa190934ab100b8454b5786ca1b81cd0e7a00a5b66477d7f1524a",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "ea088e0ad1b83336cc07b02d1dfca6a2f6a59086014e5847a13adf8b5ed3e2dd",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fbeaad532fc346361d39d662320304dfb893cd10a2b827fdaf79b021e1494dfe",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "58011c5fe37d575b704b700cbecd73e3b1ebee711e58fd530fa41dffc5124765",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "a21d2c301d66cc3ba235f8510e4cf96142298eedff6f2f37d4e20cd06bdbd31e",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "5d3373275acf2fe41432d59c413aefcb3c99f213948777e0b1ce90849a4a0139",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "e85027d4d6ff2106d7a8ee8e0d93b2459a67c263f82fe90d35b6d1729e354625",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "2797305a12e2ae83803f5e9e3cfecc9781cf562638d972f718b6c69c7d557cb6",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "e8ed57d140efe092fd7f494596079d700f4bb6d8f10d403646e334100be0aaaa",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "fc1048f505b4a9bb1e17e66699ffd52d668f754c6267eeeec39a1e299691d541",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "bab7ea9a9027bc5bf82fe14647cd064f83d7a5b887372f2c10fd81ba0b0b1909",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "c37160932c69d6a3ec5a5c42a8c68dd985d5afda0a8abf2cd8089cee30c972ba",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "04063e0c3528c9780400be90a473e8f47464d5e0f2f8d79c50a7ce3bf2e5a29d",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "71df94749055514e51748342b2e8bdaad3160db9f0440653d3953992343c0aef",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "36bc4de07bbd8c36a3abf586bdb96466443cdf08d187ce732c99870ea90e5082",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "3af8a45b3a46fba74519af89691077468a2ee2892c9e7ab89d96acfbd16d987b",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    },
+    {
+      "action": "keep",
+      "id": "f25c25082eedf2426004dfac25139eeba183b0de3a2a2174b6f47e70a0196f3c",
+      "ko_final": null,
+      "reason": "PRO_KEEP: 화면 기능에 맞는 자연스러운 번역이며 원문의 의미·수치·변수·태그 구조를 보존함."
+    }
+  ],
+  "schema": "gc-corpus-decisions-v1"
+}

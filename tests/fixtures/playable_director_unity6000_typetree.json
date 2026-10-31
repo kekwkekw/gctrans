@@ -1,0 +1,282 @@
+[
+  {
+    "m_Level": 0,
+    "m_Type": "PlayableDirector",
+    "m_Name": "Base",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 32768,
+    "m_Version": 3
+  },
+  {
+    "m_Level": 1,
+    "m_Type": "PPtr<GameObject>",
+    "m_Name": "m_GameObject",
+    "m_ByteSize": 12,
+    "m_MetaFlag": 65,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 2,
+    "m_Type": "int",
+    "m_Name": "m_FileID",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 65,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 2,
+    "m_Type": "SInt64",
+    "m_Name": "m_PathID",
+    "m_ByteSize": 8,
+    "m_MetaFlag": 65,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 1,
+    "m_Type": "UInt8",
+    "m_Name": "m_Enabled",
+    "m_ByteSize": 1,
+    "m_MetaFlag": 16641,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 1,
+    "m_Type": "PPtr<Object>",
+    "m_Name": "m_PlayableAsset",
+    "m_ByteSize": 12,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 2,
+    "m_Type": "int",
+    "m_Name": "m_FileID",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 8388609,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 2,
+    "m_Type": "SInt64",
+    "m_Name": "m_PathID",
+    "m_ByteSize": 8,
+    "m_MetaFlag": 8388609,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 1,
+    "m_Type": "int",
+    "m_Name": "m_InitialState",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 1,
+    "m_Type": "int",
+    "m_Name": "m_WrapMode",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 1,
+    "m_Type": "int",
+    "m_Name": "m_DirectorUpdateMode",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 1,
+    "m_Type": "double",
+    "m_Name": "m_InitialTime",
+    "m_ByteSize": 8,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 1,
+    "m_Type": "vector",
+    "m_Name": "m_SceneBindings",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 32768,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 2,
+    "m_Type": "Array",
+    "m_Name": "Array",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 16384,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 3,
+    "m_Type": "int",
+    "m_Name": "size",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 3,
+    "m_Type": "DirectorGenericBinding",
+    "m_Name": "data",
+    "m_ByteSize": 24,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 4,
+    "m_Type": "PPtr<Object>",
+    "m_Name": "key",
+    "m_ByteSize": 12,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 5,
+    "m_Type": "int",
+    "m_Name": "m_FileID",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 8388609,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 5,
+    "m_Type": "SInt64",
+    "m_Name": "m_PathID",
+    "m_ByteSize": 8,
+    "m_MetaFlag": 8388609,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 4,
+    "m_Type": "PPtr<Object>",
+    "m_Name": "value",
+    "m_ByteSize": 12,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 5,
+    "m_Type": "int",
+    "m_Name": "m_FileID",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 8388609,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 5,
+    "m_Type": "SInt64",
+    "m_Name": "m_PathID",
+    "m_ByteSize": 8,
+    "m_MetaFlag": 8388609,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 1,
+    "m_Type": "ExposedReferenceTable",
+    "m_Name": "m_ExposedReferences",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 32768,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 2,
+    "m_Type": "map",
+    "m_Name": "m_References",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 49152,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 3,
+    "m_Type": "Array",
+    "m_Name": "Array",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 32768,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 4,
+    "m_Type": "int",
+    "m_Name": "size",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 4,
+    "m_Type": "pair",
+    "m_Name": "data",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 32768,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 5,
+    "m_Type": "string",
+    "m_Name": "first",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 32768,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 6,
+    "m_Type": "string",
+    "m_Name": "id",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 49152,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 7,
+    "m_Type": "Array",
+    "m_Name": "Array",
+    "m_ByteSize": -1,
+    "m_MetaFlag": 16385,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 8,
+    "m_Type": "int",
+    "m_Name": "size",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 1,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 8,
+    "m_Type": "char",
+    "m_Name": "data",
+    "m_ByteSize": 1,
+    "m_MetaFlag": 1,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 5,
+    "m_Type": "PPtr<Object>",
+    "m_Name": "second",
+    "m_ByteSize": 12,
+    "m_MetaFlag": 0,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 6,
+    "m_Type": "int",
+    "m_Name": "m_FileID",
+    "m_ByteSize": 4,
+    "m_MetaFlag": 8388609,
+    "m_Version": 1
+  },
+  {
+    "m_Level": 6,
+    "m_Type": "SInt64",
+    "m_Name": "m_PathID",
+    "m_ByteSize": 8,
+    "m_MetaFlag": 8388609,
+    "m_Version": 1
+  }
+]

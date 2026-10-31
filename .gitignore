@@ -80,6 +80,7 @@ CURRENT_INPUTS.json
 # Local Novel source, draft and PRO handoff workspaces.
 /work/novels/
 /work/local-parity/
+/work/text-coverage-20261031/
 /work/corpus/
 /candidate/*.deps.json
 /candidate/*.pdb
