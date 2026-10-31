@@ -1,0 +1,6 @@
+{
+  "schema": "gc-ui-ap-families-v1",
+  "timer_minutes": [0, 720],
+  "ap_recovery_amounts": [0, 150],
+  "evidence": "User-authorized data-only expansion. Museum recovery text states one charge every 12 hours; source sample is hh:mm and supplied screenshots show both prefixes with 10:26. Generate zero-padded HH:mm through 12:00 inclusive. Reuse current update-time template, reviewed recovery-time sample and mTextConfig AP recovery format; no new Korean wording. Actual numeric AP toast and leading-zero timer display have not been observed in this task."
+}

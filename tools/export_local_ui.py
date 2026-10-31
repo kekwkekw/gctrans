@@ -178,6 +178,46 @@ def export(root):
                     raise ValueError('Enhancement family overlap: ' + jp)
                 enhancement_pairs[jp] = ko
         result.update(enhancement_pairs)
+    # Museum timers and AP recovery use a small, explicitly bounded exact set.
+    # Reuse current Korean wording; the installed DLL needs no new parser.
+    ap_pairs = {}
+    ap = root / 'ui/ap-families.json'
+    if ap.exists():
+        spec = read(ap)
+        def bounded_range(name, ceiling):
+            bounds = spec.get(name)
+            if (not isinstance(bounds, list) or len(bounds) != 2
+                or any(type(n) is not int for n in bounds)
+                or not 0 <= bounds[0] <= bounds[1] <= ceiling):
+                raise ValueError('AP family domain: ' + name)
+            return range(bounds[0], bounds[1] + 1)
+        if spec.get('schema') != 'gc-ui-ap-families-v1':
+            raise ValueError('AP family schema')
+        minutes = bounded_range('timer_minutes', 24 * 60)
+        amounts = bounded_range('ap_recovery_amounts', 999)
+        update = [r for r in rules if r.get('jp') == '更新まで{value}' and r.get('value_kind') == 'clock']
+        recovery_jp = '回数回復までhh:mm'
+        amount_jp = 'APを{0:#,0}回復しました。'
+        recovery_ko = reviewed.get(recovery_jp)
+        amount_ko = master.get('mTextConfig', {}).get('ml_value[]', {}).get(amount_jp)
+        if (len(update) != 1 or not isinstance(update[0].get('ko'), str)
+            or update[0]['ko'].count('{value}') != 1
+            or not isinstance(recovery_ko, str) or recovery_ko.count('hh:mm') != 1
+            or not isinstance(amount_ko, str) or amount_ko.count('{0:#,0}') != 1):
+            raise ValueError('AP family translation source')
+        def add_ap(jp, ko):
+            if jp in result and result[jp] != ko:
+                raise ValueError('AP exact conflict: ' + jp)
+            if jp in ap_pairs and ap_pairs[jp] != ko:
+                raise ValueError('AP family overlap: ' + jp)
+            ap_pairs[jp] = ko
+        for minute in minutes:
+            clock = f'{minute // 60:02d}:{minute % 60:02d}'
+            add_ap(update[0]['jp'].replace('{value}', clock), update[0]['ko'].replace('{value}', clock))
+            add_ap(recovery_jp.replace('hh:mm', clock), recovery_ko.replace('hh:mm', clock))
+        for amount in amounts:
+            add_ap(amount_jp.replace('{0:#,0}', str(amount)), amount_ko.replace('{0:#,0}', str(amount)))
+        result.update(ap_pairs)
     coverage = read(root / 'ui/local-coverage.json') if (root / 'ui/local-coverage.json').exists() else None
     if coverage:
         if (coverage.get('schema') != 'gc-local-ui-coverage-v1'
@@ -193,6 +233,7 @@ def export(root):
                      "bounded_workshop_exacts": 3, "runtime_bindings": 0,
                      "bounded_detail_exacts": len(detail_pairs),
                      "bounded_enhancement_exacts": len(enhancement_pairs),
+                     "bounded_ap_exacts": len(ap_pairs),
                      "master_ui_source_pairs": master_pairs,
                      "authoring_pairs_without_live_binding": len({r['jp'] for r in resources if r['id'] not in live and r.get('disposition') == 'translate' and r.get('ko') and r['jp'] != r['ko']}),
                      "local_coverage_keys": len(coverage['keys']) if coverage else 0,
