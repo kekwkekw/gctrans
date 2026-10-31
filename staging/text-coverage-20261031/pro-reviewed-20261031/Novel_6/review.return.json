@@ -1,0 +1,317 @@
+{
+  "batch_sha256": "d297cb60b4661e55a88cf78280b24b84cb064c3894be111d88445a174bb0e785",
+  "changes": [],
+  "draft_sha256": "cdece6c3979ea00e8a420481623da3d4d9cf2190689decb59ad6fa90d329dbcd",
+  "knowledge_review": "신규 시민 응원 6행을 current Names/Knowledge와 장면 원문으로 검토했다. 일반 화자 라벨에서 실제 인물·관계·호칭 규칙을 추정하지 않았고, 夢幻美術館 표기는 기존 몽환 미술관을 유지했다. 신규 세계관 사실·관계·용어 또는 기존 current와의 중복·충돌 후보는 확인되지 않았다. 이번 요청에서는 Names/Knowledge 변경을 승인하지 않으며 changes=[]를 유지한다.",
+  "notes": "신규 6행 의미검수 완료; 기존 13행은 과거 승인본 exact 재사용; 전투 native 검증은 NOT_RUN",
+  "policy_sha256": "3aca17a2f12c76ca9c17d939a8f68e769b1eeefe54c8b52f6912d5f73f77922e",
+  "pro_review_complete": true,
+  "review_id": "GC-BATTLE-CHEER-6-PRO-20261031",
+  "rows": [
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「許せない……。<br>　テレサを利用した報いは、絶対に受けさせるから……！」",
+      "ko": "용서할 수 없어……<br>테레사를 이용한 대가를, 반드시 받게할테니까……!",
+      "message_index_0based": 0,
+      "physical_line_1based": 15,
+      "raw_field_bytes": [
+        432,
+        541
+      ],
+      "reason": "",
+      "row_id": "11:0",
+      "source_id": "11",
+      "speaker": "ゴッホ"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「こんなに怒ったゴッホは初めて見ます……。<br>　もちろん、私も許すつもりはありませんが」",
+      "ko": "이렇게 화난 고흐는 처음 봐요……<br>물론, 저도 용서할 생각은 없지만요",
+      "message_index_0based": 1,
+      "physical_line_1based": 17,
+      "raw_field_bytes": [
+        600,
+        730
+      ],
+      "reason": "",
+      "row_id": "11:1",
+      "source_id": "11",
+      "speaker": "アルテ"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「これまで街のみんなを翻弄してきた分もあるからね。<br>　ぼくらも全力で行かせてもらうよ！」",
+      "ko": "지금까지 거리의 모두를 농락해 온 것도 있으니 말이지.<br>우리도 전력으로 가겠어!",
+      "message_index_0based": 2,
+      "physical_line_1based": 18,
+      "raw_field_bytes": [
+        766,
+        899
+      ],
+      "reason": "",
+      "row_id": "11:2",
+      "source_id": "11",
+      "speaker": "ラファエロ"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「やはり奴らは、ここに全てをかけているようだな。<br>　つまり、この美術館で決着をつけようとしているということ……」",
+      "ko": "역시 녀석들은, 여기에 전부 건 것 같군.<br>즉, 이 미술관에서 결착을 내려 하고 있다는 것……",
+      "message_index_0based": 0,
+      "physical_line_1based": 6,
+      "raw_field_bytes": [
+        153,
+        322
+      ],
+      "reason": "",
+      "row_id": "21:0",
+      "source_id": "21",
+      "speaker": "ミケランジェロ"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「ならば望み通り、ここで引導を渡してやるぞ……！」",
+      "ko": "그렇다면 바라는 대로, 여기서 저승길로 보내주지……!",
+      "message_index_0based": 1,
+      "physical_line_1based": 8,
+      "raw_field_bytes": [
+        393,
+        468
+      ],
+      "reason": "",
+      "row_id": "21:1",
+      "source_id": "21",
+      "speaker": "ミケランジェロ"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「アテネスの街のみんなが、<br>　こんなにも応援してくれているなんて……」",
+      "ko": "아테네스 거리의 모두가,<br>이렇게나 응원해주다니……",
+      "message_index_0based": 0,
+      "physical_line_1based": 7,
+      "raw_field_bytes": [
+        176,
+        282
+      ],
+      "reason": "",
+      "row_id": "22:0",
+      "source_id": "22",
+      "speaker": "セキエン"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「これは探偵冥利に尽きるというもの！<br>　期待に応えて、もうひと踏ん張りするとしよう！」",
+      "ko": "이건 탐정에게 과분할 정도로 고마운 일이지!<br>기대에 응해서, 조금 더 힘내도록 할까!",
+      "message_index_0based": 1,
+      "physical_line_1based": 9,
+      "raw_field_bytes": [
+        343,
+        473
+      ],
+      "reason": "",
+      "row_id": "22:1",
+      "source_id": "22",
+      "speaker": "セキエン"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「みんな、引き続き応援をお願いするよ！」",
+      "ko": "다들, 계속해서 응원을 부탁한다고!",
+      "message_index_0based": 2,
+      "physical_line_1based": 11,
+      "raw_field_bytes": [
+        534,
+        594
+      ],
+      "reason": "",
+      "row_id": "22:2",
+      "source_id": "22",
+      "speaker": "セキエン"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「グゥゥ……！<br>　ミチヅレニ……シテヤル……！！」",
+      "ko": "구우우……!<br>길동무로…… 만들어 주마……!!",
+      "message_index_0based": 0,
+      "physical_line_1based": 16,
+      "raw_field_bytes": [
+        498,
+        574
+      ],
+      "reason": "",
+      "row_id": "31:0",
+      "source_id": "31",
+      "speaker": "ヴィルジニア"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「やれるもんなら、やってみるといいっす！！<br>　返り討ちにしてやるっすよ！」",
+      "ko": "할 수 있다면, 해보시죠!!<br>역으로 처리해주겠슴다!",
+      "message_index_0based": 1,
+      "physical_line_1based": 21,
+      "raw_field_bytes": [
+        722,
+        834
+      ],
+      "reason": "",
+      "row_id": "31:1",
+      "source_id": "31",
+      "speaker": "マネ"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「そうですね。<br>　もう諦めたほうがいいですよ？」　",
+      "ko": "그렇네요.<br>이제 포기하는게 좋다고요?",
+      "message_index_0based": 2,
+      "physical_line_1based": 23,
+      "raw_field_bytes": [
+        893,
+        969
+      ],
+      "reason": "",
+      "row_id": "31:2",
+      "source_id": "31",
+      "speaker": "アルテ"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「私たちが負けるわけありませんし、<br>　例えあなたの意志を継ぐものが現れても、<br>　夢幻美術館が黙っている訳ありません」",
+      "ko": "저희가 질 리가 없고,<br>설령 당신의 뜻을 잇는 자가 나타나도,<br>몽환 미술관이 가만히 있을 리가 없어요",
+      "message_index_0based": 3,
+      "physical_line_1based": 24,
+      "raw_field_bytes": [
+        999,
+        1175
+      ],
+      "reason": "",
+      "row_id": "31:3",
+      "source_id": "31",
+      "speaker": "アルテ"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「うん……決着をつけるよ……！」",
+      "ko": "응…… 결착을 짓겠어……!",
+      "message_index_0based": 4,
+      "physical_line_1based": 26,
+      "raw_field_bytes": [
+        1243,
+        1291
+      ],
+      "reason": "",
+      "row_id": "31:4",
+      "source_id": "31",
+      "speaker": "ゴッホ"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「夢幻美術館、がんばれー！」",
+      "ko": "「몽환 미술관, 힘내라~!」",
+      "message_index_0based": 0,
+      "physical_line_1based": 7,
+      "raw_field_bytes": [
+        169,
+        211
+      ],
+      "reason": "PRO_KEEP: 기관명과 응원 어조, 늘임 표현이 원문에 자연스럽게 대응함.",
+      "row_id": "41:0",
+      "source_id": "41",
+      "speaker": "女の子"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「そこだー！<br>　こんなやつら、ぶちのめしてやれー！」",
+      "ko": "「거기다~!<br> 이런 놈들, 때려눕혀 버려~!」",
+      "message_index_0based": 0,
+      "physical_line_1based": 7,
+      "raw_field_bytes": [
+        167,
+        246
+      ],
+      "reason": "PRO_KEEP: 공격 지점을 가리키는 응원과 거친 격려의 강도를 자연스럽게 보존함.",
+      "row_id": "42:0",
+      "source_id": "42",
+      "speaker": "若者"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「負けるな！<br>　美術館のみんな！！<br>　俺たちはみんな、お前たちの味方だからなー！！」",
+      "ko": "「지지 마!<br> 미술관 여러분!!<br> 우린 모두 너희 편이니까~!!」",
+      "message_index_0based": 0,
+      "physical_line_1based": 7,
+      "raw_field_bytes": [
+        173,
+        301
+      ],
+      "reason": "PRO_CORRECTION: 美術館のみんな를 청중에게 직접 외치는 자연스러운 호칭인 미술관 여러분으로 교정; 응원 강도와 편이라는 의미 보존.",
+      "row_id": "43:0",
+      "source_id": "43",
+      "speaker": "おじさん"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「フレー！　フレー！　美術館！<br>　絶対負けるな夢幻美術館～！！」",
+      "ko": "「힘내라! 힘내라! 미술관!<br> 절대 지지 마라, 몽환 미술관~!!」",
+      "message_index_0based": 0,
+      "physical_line_1based": 7,
+      "raw_field_bytes": [
+        172,
+        269
+      ],
+      "reason": "PRO_KEEP: フレー의 반복 응원과 몽환 미술관을 향한 강한 격려를 자연스럽게 보존함.",
+      "row_id": "44:0",
+      "source_id": "44",
+      "speaker": "お姉さん"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「勝てるよ！<br>　あんたたちは、こんな奴らには絶対負けないって、<br>　あたしは知ってるよー！」",
+      "ko": "「이길 수 있어!<br> 너희가 이런 놈들한테 절대 안 질 거라는 건<br> 내가 잘 알고 있다고~!」",
+      "message_index_0based": 0,
+      "physical_line_1based": 7,
+      "raw_field_bytes": [
+        173,
+        310
+      ],
+      "reason": "PRO_KEEP: 승리를 확신하는 아줌마의 구어체와 절대 지지 않는다는 의미를 보존함.",
+      "row_id": "45:0",
+      "source_id": "45",
+      "speaker": "おばさん"
+    },
+    {
+      "command": "message",
+      "hold": false,
+      "jp": "「あんまり無茶をするんじゃないよ……！！<br>　絶対に無事に帰ってきておくれーっ！」",
+      "ko": "「너무 무리하지는 마……!!<br> 꼭 무사히 돌아오렴~!」",
+      "message_index_0based": 0,
+      "physical_line_1based": 7,
+      "raw_field_bytes": [
+        176,
+        297
+      ],
+      "reason": "PRO_KEEP: 무리하지 말라는 걱정과 반드시 무사 귀환하라는 간절한 응원을 자연스럽게 보존함.",
+      "row_id": "46:0",
+      "source_id": "46",
+      "speaker": "画材屋店主"
+    }
+  ],
+  "schema": "gc-novel-pro-review-v1"
+}

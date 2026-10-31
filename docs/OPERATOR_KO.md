@@ -249,3 +249,5 @@ GCMod 6.1 사용자를 위해 다음 public 경로를 유지한다.
 - historical receipt를 현재 번역 authority로 사용하는 경로
 
 역사 확인은 Git history와 필요한 최소 provenance로 수행한다. 현재 작업자는 이 문서와 실제 main의 CLI를 기준으로 판단한다. `.github/workflows/crawl_only.yml`은 선택적인 one-shot metadata 확인용이며 raw 취득이나 자동 번역 writer가 아니다.
+
+전 자산 취득·추출은 명시적 `--lane All`을 사용한다. 기본 Novel 경로와 별도 상태를 유지하며, raw/실패 보존과 Master/UI coverage 측정만 수행한다. 실행·중단·재개 방법은 [CRAWLER_ALL_ASSETS_KO.md](CRAWLER_ALL_ASSETS_KO.md)를 따른다.
