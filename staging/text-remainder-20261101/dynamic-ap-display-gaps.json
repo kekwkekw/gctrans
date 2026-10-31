@@ -1,0 +1,142 @@
+{
+  "schema": "gc-dynamic-ui-gap-audit-v1",
+  "base_commit": "7c344e2aedee34da8c81e50791f356878ac40679",
+  "date": "2026-11-01",
+  "scope": "Supplement to frozen exact-string remainder; no change to 920 exact remainder or 8-row PRO batch",
+  "screenshots": [
+    {
+      "file_name": "codex-clipboard-d4b27f65-a264-42b1-b57f-4c1ebda7fdbc.png",
+      "sha256": "fb592fad7815e530ed95e83be78f9e0e5ffb87220238dbdb245d919d426db19a",
+      "observed_jp": "更新まで10:26",
+      "evidence": "USER_PROVIDED_SCREENSHOT"
+    },
+    {
+      "file_name": "codex-clipboard-fe1fe620-9f6c-4c16-8b31-c234bd6e5cf2.png",
+      "sha256": "3913e54f1401b3c326c3db4b4369eee3c931320daf32c65648013cad8276f9d0",
+      "observed_jp": "回数回復まで10:26",
+      "evidence": "USER_PROVIDED_SCREENSHOT"
+    }
+  ],
+  "timer_gaps": [
+    {
+      "family": "更新まで{value}",
+      "observed_jp": "更新まで10:26",
+      "known_ko_template": "갱신까지{value}",
+      "source": "translations/ko/ui.templates.json",
+      "prior_status": "EXPLICITLY_DEFERRED_IN_SUPPORT_SCOPE_AND_NEGATIVE_REGRESSION",
+      "final_string_lookup": "UNMATCHED",
+      "in_frozen_exact_remainder": false
+    },
+    {
+      "family": "回数回復まで{clock}",
+      "observed_jp": "回数回復まで10:26",
+      "captured_jp": "回数回復までhh:mm",
+      "canonical_ko": "횟수 회복까지 hh:mm",
+      "source_asset": "popup/popup_museum_ap_recover.dmm",
+      "frozen_review_index": 581,
+      "source_record": "staging/text-coverage-20261031/accepted.json",
+      "prior_status": "CAPTURED_SAMPLE_TRANSLATED",
+      "final_string_lookup": "UNMATCHED",
+      "in_frozen_exact_remainder": false
+    }
+  ],
+  "numeric_ap_notice_candidate": {
+    "canonical_jp": "APを{0:#,0}回復しました。",
+    "canonical_ko": "AP를 {0:#,0} 회복했습니다.",
+    "final_string_probes": [
+      "APを107回復しました。",
+      "APを1,234回復しました。"
+    ],
+    "final_string_lookup": "UNMATCHED",
+    "native_status": "NOT_OBSERVED_IN_PROVIDED_SCREENSHOTS",
+    "call_path_status": "UNCONFIRMED_FORMAT_BEFORE_OR_AFTER_MASTER_TRANSLATION",
+    "classification": "LOOKUP_ONLY_FOLLOWUP_CANDIDATE"
+  },
+  "pc_literal_evidence": {
+    "metadata_version": 39,
+    "source_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+    "display_status": "SOURCE_ONLY_REQUIRES_MENU_CONTEXT_REVIEW",
+    "rows": [
+      {
+        "jp": "回数回復まで",
+        "evidence": "PC v39 code literal; metadata sha256=e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a; indexes=[21343]; source only, not a Native display observation"
+      },
+      {
+        "jp": "更新まで",
+        "evidence": "PC v39 code literal; metadata sha256=e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a; indexes=[21532]; source only, not a Native display observation"
+      }
+    ]
+  },
+  "lookup_probe": {
+    "schema": "gc-ui-lookup-probe-v1",
+    "ui_sha256": "b358ee990b3666f5887dd242892df78876b397168ee8ef147d6167547478ff35",
+    "rows": [
+      {
+        "jp": "更新まで10:26",
+        "matched": false,
+        "ko": null
+      },
+      {
+        "jp": "更新まで08:47",
+        "matched": false,
+        "ko": null
+      },
+      {
+        "jp": "回数回復まで10:26",
+        "matched": false,
+        "ko": null
+      },
+      {
+        "jp": "回数回復までhh:mm",
+        "matched": true,
+        "ko": "횟수 회복까지 hh:mm"
+      },
+      {
+        "jp": "APが全回復しました",
+        "matched": true,
+        "ko": "AP가 완전히 회복되었습니다"
+      },
+      {
+        "jp": "AP・BPが回復しました",
+        "matched": true,
+        "ko": "AP·BP가 회복되었습니다"
+      },
+      {
+        "jp": "APを{0:#,0}回復しました。",
+        "matched": true,
+        "ko": "AP를 {0:#,0} 회복했습니다."
+      },
+      {
+        "jp": "APを107回復しました。",
+        "matched": false,
+        "ko": null
+      },
+      {
+        "jp": "APを1,234回復しました。",
+        "matched": false,
+        "ko": null
+      }
+    ]
+  },
+  "probe_command": "dotnet run --project tests/UiTextLookup -- translations/ko/ui.json --probe work/text-coverage-20261031/ap-labels-20261101/probe-input.json work/text-coverage-20261031/ap-labels-20261101/probe-result.json",
+  "source_sha256": {
+    "translations/ko/ui.json": "b358ee990b3666f5887dd242892df78876b397168ee8ef147d6167547478ff35",
+    "translations/ko/master.json": "b783c9abb49d503e6d81358d60d9932c9c6f525e62b4ce2249e0fbf397e4f549",
+    "translations/ko/ui.templates.json": "34b05521bf22ddfd3ac5d13b1aa7ec14f0e3c17bbb0935265bd376b82a1c59bf",
+    "source/GCMod.Candidate/GCMod.Patches/UiTextLookup.cs": "aea1d64996ebc04eb6be4cd2be01bf787202629940aecd5e3e37c698957bec72",
+    "tests/UiTextLookup/Program.cs": "130aa16bfbac28a4bfa0810d9600078966d205a7f4addca336d71aab487664ef",
+    "docs/SUPPORT_SCOPE_KO.md": "b44affdc8225431687f0952e07ea379818b2204b13b6a3d82896847d0aeb7088",
+    "tools/export_local_ui.py": "4e14c5146ba0c29516d12354ff1e1089895665af3e219c70d4a1b87b8cd7db1b"
+  },
+  "verification": {
+    "probe_count": 9,
+    "probe_matches": 4,
+    "protected_files_byte_identical": 2204,
+    "prior_8_row_pro_zip_unchanged": true,
+    "canonical_changes": 0,
+    "knowledge_changes": 0,
+    "runtime_changes": 0,
+    "existing_raw_or_failure_evidence_changes": 0
+  },
+  "next_action": "Track two screenshot-confirmed timer families separately from exact coverage. Confirm numeric AP toast and its call path before treating it as a Native gap. Any dynamic-display implementation is deferred under the current runtime constraint."
+}
