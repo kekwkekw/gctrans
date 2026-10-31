@@ -59,6 +59,8 @@ python tools/collect_ui_literals.py --metadata <game>/GC_Data/il2cpp_data/Metada
 
 `ui/detail-families.json`은 확인된 메모리 4그룹×5세트, 유효한 생일 확인 날짜, 현재 Master의 메인 스테이지 범위 안내를 완성된 exact로 export한다. JP 및 이미 KO로 바뀐 Master 이름을 모두 처리하며 새 장이 Master에 들어오면 export 시 따라간다. 범용 부분 치환이나 DLL template engine은 추가하지 않는다. 7.2.0 후보는 한 글자 `炎`·`雷`를 포함한 일반 UI exact를 허용하고 시나리오 렌더러와 사용자 입력을 보호한다. 사전에 키가 있다고 실기 표시 완료로 세지 않는다.
 
+`ui/ap-families.json`은 AP 화면의 두 시간 문구 `00:00~12:00`과 AP 회복량 0~150을 같은 export에서 완성된 exact로 생성한다. 현재 `ui.templates.json`·검수된 UI 샘플·Master 서식의 한국어를 그대로 재사용하고, 다른 번역과 충돌하면 실패한다. 적용 후 기존 `build_manifests.py --modify ui.json`으로 데이터 manifest를 갱신한다. authoring 범위 설정은 게임이 읽는 파일이 아니며, 생성된 `ui.json`을 기존 DLL이 소비한다. [세부 근거와 한계](UI_AP_EXACT_20261101_KO.md)를 따른다.
+
 ```powershell
 python tools/local_release.py build --game <game-directory>
 python tools/local_release.py verify

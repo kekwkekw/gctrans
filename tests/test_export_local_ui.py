@@ -10,6 +10,38 @@ from export_local_ui import export
 
 
 class ExactUiExportTests(unittest.TestCase):
+    def test_ap_exact_domains_reuse_current_wording_and_stop_at_boundaries(self):
+        actual = json.loads(export(ROOT / 'translations/ko')[0])
+        expected = {
+            '更新まで00:00': '갱신까지00:00',
+            '更新まで08:47': '갱신까지08:47',
+            '更新まで12:00': '갱신까지12:00',
+            '回数回復まで00:00': '횟수 회복까지 00:00',
+            '回数回復まで10:26': '횟수 회복까지 10:26',
+            '回数回復まで12:00': '횟수 회복까지 12:00',
+            'APを0回復しました。': 'AP를 0 회복했습니다.',
+            'APを107回復しました。': 'AP를 107 회복했습니다.',
+            'APを150回復しました。': 'AP를 150 회복했습니다.',
+        }
+        for jp, ko in expected.items():
+            self.assertEqual(actual[jp], ko)
+        for jp in ['更新まで12:01', '回数回復まで12:01', '回数回復まで00:60',
+                   '更新まで8:47', 'APを151回復しました。', 'APを-1回復しました。',
+                   'APを007回復しました。', 'BPを107回復しました。']:
+            self.assertNotIn(jp, actual)
+
+    def test_ap_export_rejects_conflict_without_overwriting_reviewed_text(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.package(root, [], {'回数回復までhh:mm': '횟수 회복까지 hh:mm',
+                                    '更新まで08:47': '기존 번역'})
+            (root/'master.json').write_text(json.dumps({'mTextConfig': {'ml_value[]': {
+                'APを{0:#,0}回復しました。': 'AP를 {0:#,0} 회복했습니다.'}}}), encoding='utf-8')
+            (root/'ui.templates.json').write_bytes((ROOT/'translations/ko/ui.templates.json').read_bytes())
+            (root/'ui/ap-families.json').write_bytes((ROOT/'translations/ko/ui/ap-families.json').read_bytes())
+            with self.assertRaisesRegex(ValueError, 'AP exact conflict'):
+                export(root)
+
     def test_enhancement_controls_include_results_and_static_master_labels(self):
         ui = json.loads(export(ROOT / 'translations/ko')[0])
         master = json.loads((ROOT / 'translations/ko/master.json').read_bytes())

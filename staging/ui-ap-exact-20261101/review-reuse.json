@@ -1,0 +1,43 @@
+{
+  "schema": "gc-ui-bounded-translation-reuse-v1",
+  "basis": "USER_AUTHORIZED_EXISTING_TRANSLATION_REUSE",
+  "new_semantic_review_performed": false,
+  "new_korean_wording": false,
+  "sources": [
+    {
+      "path": "translations/ko/ui.templates.json",
+      "sha256": "34b05521bf22ddfd3ac5d13b1aa7ec14f0e3c17bbb0935265bd376b82a1c59bf"
+    },
+    {
+      "path": "translations/ko/ui/general-exact.reviewed.json",
+      "sha256": "2e40e7f373c3ce500bf05e75b63d6d37ae434e83bfd65eba8344b66b33193084"
+    },
+    {
+      "path": "translations/ko/master.json",
+      "sha256": "b783c9abb49d503e6d81358d60d9932c9c6f525e62b4ce2249e0fbf397e4f549"
+    }
+  ],
+  "families": [
+    {
+      "jp": "更新まで{value}",
+      "ko": "갱신까지{value}",
+      "source": "ui.templates.json rules clock"
+    },
+    {
+      "jp": "回数回復までhh:mm",
+      "ko": "횟수 회복까지 hh:mm",
+      "source": "ui/general-exact.reviewed.json; prior PRO-reviewed row ui:581"
+    },
+    {
+      "jp": "APを{0:#,0}回復しました。",
+      "ko": "AP를 {0:#,0} 회복했습니다.",
+      "source": "master.json mTextConfig.ml_value[]"
+    }
+  ],
+  "evidence_refs": [
+    "staging/text-remainder-20261101/dynamic-ap-display-gaps.json",
+    "translations/ko/ui/general-exact.reviewed.json: 12-hour recovery explanation"
+  ],
+  "metadata_source_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+  "native_after": "NOT_RUN"
+}

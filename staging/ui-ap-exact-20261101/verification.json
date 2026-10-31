@@ -1,0 +1,146 @@
+{
+  "schema": "gc-ui-ap-exact-verification-v1",
+  "base_commit": "7c344e2aedee34da8c81e50791f356878ac40679",
+  "status": "APPLIED_LOCAL_CANONICAL_DATA_ONLY",
+  "scope": {
+    "timer_prefixes": [
+      "更新まで",
+      "回数回復まで"
+    ],
+    "timer_start": "00:00",
+    "timer_end_inclusive": "12:00",
+    "timer_format": "HH:mm",
+    "timer_values_per_prefix": 721,
+    "ap_recovery_min": 0,
+    "ap_recovery_max_inclusive": 150
+  },
+  "changes": {
+    "timer_keys": 1442,
+    "ap_recovery_keys": 151,
+    "total_added": 1593,
+    "ui_before": 11975,
+    "ui_after": 13568,
+    "ui_bytes_before": 726050,
+    "ui_bytes_after": 809640,
+    "bytes_added": 83590,
+    "prior_values_unchanged": true,
+    "modified_package_paths": [
+      "translations/ko/legacy-components.json",
+      "translations/ko/manifest.json",
+      "translations/ko/release-manifest.json",
+      "translations/ko/ui.json",
+      "translations/ko/ui/manifest.json"
+    ]
+  },
+  "checks": {
+    "all_added_exact_lookup": {
+      "status": "PASS",
+      "rows": 1593
+    },
+    "negative_lookup": {
+      "status": "PASS",
+      "rows": 11,
+      "inputs": [
+        "更新まで12:01",
+        "回数回復まで12:01",
+        "更新まで00:60",
+        "回数回復まで8:47",
+        "APを151回復しました。",
+        "APを-1回復しました。",
+        "APを007回復しました。",
+        "APを1,234回復しました。",
+        "BPを107回復しました。",
+        "あと10:26",
+        "開封期限：2026/11/08 12:59 まで"
+      ]
+    },
+    "ui_lookup_regression": {
+      "status": "PASS",
+      "positive": 63,
+      "negative": 29
+    },
+    "export_regression": {
+      "status": "PASS",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0
+    },
+    "package": {
+      "exact_pairs": 13568,
+      "authoring_bindings_preserved": 501,
+      "held_authoring_jp": [],
+      "review_resolved_authoring_jp": [
+        "水",
+        "調度品"
+      ],
+      "bounded_workshop_exacts": 3,
+      "runtime_bindings": 0,
+      "bounded_detail_exacts": 3121,
+      "bounded_enhancement_exacts": 5393,
+      "bounded_ap_exacts": 1593,
+      "master_ui_source_pairs": 1122,
+      "authoring_pairs_without_live_binding": 61,
+      "local_coverage_keys": 1091,
+      "local_coverage_keep_source": 34,
+      "local_coverage_missing": [],
+      "status": "PASS",
+      "master_keys": 34381,
+      "novels": 1939,
+      "native": "NOT_RUN_OFFLINE"
+    },
+    "merge_preflight": {
+      "status": "PASS",
+      "python_suites": [
+        "test_local_parity.py",
+        "test_local_release.py",
+        "test_ui_source.py",
+        "test_export_local_ui.py",
+        "test_master_coverage.py",
+        "test_ng04_source.py",
+        "test_all_asset_source.py",
+        "test_collect_ui_literals.py"
+      ],
+      "python_tests": 67,
+      "dotnet_suites": [
+        "UiTextLookup",
+        "UiTextScope",
+        "ImageCache",
+        "TranslationCache"
+      ],
+      "initial_sandbox_attempt": "Windows hardlink permission error; complete unchanged suite passed outside sandbox"
+    }
+  },
+  "preservation": {
+    "unchanged_preexisting_protected_files": 2199,
+    "runtime_dll_sha256": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2",
+    "runtime_source_changes": 0,
+    "knowledge_changes": 0,
+    "master_changes": 0,
+    "novel_changes": 0,
+    "names_changes": 0,
+    "hold_changes": 0,
+    "raw_or_previous_failure_evidence_changes": 0,
+    "existing_8_row_pro_zip_unchanged": true,
+    "existing_8_row_pro_requires_batch_rebase": true,
+    "frozen_remainder_exact_rows_changed": 0
+  },
+  "deployment": {
+    "git_publication": "NOT_PERFORMED",
+    "game_installation": "UNCHANGED",
+    "native": "NOT_RUN"
+  },
+  "limitations": [
+    "Only zero-padded HH:mm from 00:00 through 12:00 is generated.",
+    "Numeric AP completion toast call path has not been observed; complete captured-format variants 0..150 are registered.",
+    "Old lookup failures are preserved as historical evidence."
+  ],
+  "after_sha256": {
+    "translations/ko/ui.json": "163012c66475874584bf67e5dc586264d5ce793155bd0e0ba093f87074c79b62",
+    "translations/ko/manifest.json": "8e7153f092ba9fe473f8ef825b2da78dd0735e8fe8ea6f8211faccc6489568c8",
+    "translations/ko/legacy-components.json": "01b011baa3281e4a20eb2e997c684b3289ba96264d1c5d11ac19502c2eedb476",
+    "translations/ko/ui/manifest.json": "ec0f8d330e8d232a59940b6c3cc9cd6f347d460f8d8cde09425ae4c125778094",
+    "translations/ko/release-manifest.json": "996638e78eac17b5856044f2eb2a97e0157d5b0334526b3820d13e877646c5ea",
+    "translations/ko/ui/ap-families.json": "736df7e132b4857b5dd117b99e3bcb37560b3595ee38feb00287cd297d3269e5"
+  },
+  "verification_phase": "LOCAL_VALIDATION_BEFORE_PUBLICATION"
+}
