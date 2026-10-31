@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageChops
 
-TITLES = ['프랭탕 지구', '에그조티 지구', '누아르 지구', '볼칸 지구', '이베르 지구', '아테네스 전역']
+TITLES = ['프란탄 지구', '에그조티 지구', '노와르 지구', '볼칸 지구', '이베르 지구', '아테네스 전역']
 BOX = (65, 258, 332, 305)
 
 def build(source, font, package, receipt):
