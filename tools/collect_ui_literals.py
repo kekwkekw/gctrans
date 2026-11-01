@@ -1,4 +1,4 @@
-"""Collect selected or all Japanese PC code literals for the existing UI review lane.
+"""Collect selected, Japanese-looking or all PC code literals for source review.
 
 This is source evidence, not proof of display or semantic approval. Never reads
 process memory, account data, or the metadata type/name tables.
@@ -11,11 +11,11 @@ import re
 import struct
 
 
-def collect(raw, contains=(), *, all_japanese=False):
-    if (not contains and not all_japanese
+def collect(raw, contains=(), *, all_japanese=False, all_literals=False):
+    if (not contains and not all_japanese and not all_literals
             or any(not isinstance(s, str) or not s.strip() for s in contains)):
         raise ValueError('EXPLICIT_LITERAL_SCOPE_REQUIRED')
-    if contains and all_japanese:
+    if sum((bool(contains), bool(all_japanese), bool(all_literals))) > 1:
         raise ValueError('AMBIGUOUS_LITERAL_SCOPE')
     if len(raw) < 32:
         raise ValueError('METADATA_HEADER')
@@ -33,12 +33,12 @@ def collect(raw, contains=(), *, all_japanese=False):
     japanese = re.compile(r'[\u3041-\u3096\u30a1-\u30fa\u3400-\u4dbf\u4e00-\u9fff]')
     for i, (a, b) in enumerate(zip(indexes, indexes[1:])):
         text = raw[start+a:start+b].decode('utf-8')
-        if (all_japanese and japanese.search(text)) or any(term in text for term in contains):
+        if all_literals or (all_japanese and japanese.search(text)) or any(term in text for term in contains):
             found.setdefault(text, []).append(i)
     digest = hashlib.sha256(raw).hexdigest()
     return {'schema': 'gc-native-ui-observations-v1', 'source_kind': 'pc_metadata_literals',
             'metadata_version': version, 'source_sha256': digest, 'contains': sorted(set(contains)),
-            'selection': 'all_japanese_literals' if all_japanese else 'selected_substrings',
+            'selection': 'all_literals' if all_literals else 'all_japanese_literals' if all_japanese else 'selected_substrings',
             'total_literal_entries': strings,
             'display_status': 'SOURCE_ONLY_REQUIRES_MENU_CONTEXT_REVIEW',
             'rows': [{'jp': text, 'evidence': f'PC v39 code literal; metadata sha256={digest}; '
@@ -51,9 +51,10 @@ def main():
     scope = p.add_mutually_exclusive_group(required=True)
     scope.add_argument('--contains', action='append', default=[], help='Explicit menu/family text; repeat as needed')
     scope.add_argument('--all-japanese', action='store_true', help='Collect all Japanese-looking literals, including diagnostics and fragments, for later review')
+    scope.add_argument('--all-literals', action='store_true', help='Collect every literal, including English, symbols and empty strings; no display or translation approval')
     p.add_argument('--output', type=Path, required=True)
     a = p.parse_args()
-    result = collect(a.metadata.read_bytes(), a.contains, all_japanese=a.all_japanese)
+    result = collect(a.metadata.read_bytes(), a.contains, all_japanese=a.all_japanese, all_literals=a.all_literals)
     a.output.parent.mkdir(parents=True, exist_ok=True)
     a.output.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print(json.dumps({'source_kind': result['source_kind'], 'candidates': len(result['rows']),

@@ -18,6 +18,17 @@ def metadata(texts):
 
 
 class LiteralCollectionTests(unittest.TestCase):
+    def test_all_literals_has_no_language_or_empty_string_gate(self):
+        raw = metadata(['AP', 'Confirm purchase?', '123', '', '回復', 'AP'])
+        result = collect(raw, all_literals=True)
+        self.assertEqual(result['selection'], 'all_literals')
+        self.assertEqual(result['total_literal_entries'], 6)
+        self.assertEqual({r['jp'] for r in result['rows']}, {'AP', 'Confirm purchase?', '123', '', '回復'})
+        self.assertIn('indexes=[0, 5]', next(r['evidence'] for r in result['rows'] if r['jp'] == 'AP'))
+        for kwargs in ({'all_literals': True, 'all_japanese': True}, {'all_literals': True, 'contains': ['AP']}):
+            with self.assertRaisesRegex(ValueError, 'AMBIGUOUS_LITERAL_SCOPE'):
+                collect(raw, **kwargs)
+
     def test_explicit_menu_scope_preserves_exact_source_and_deduplicates(self):
         raw = metadata(['メモリーセット一覧', '本文\n本文', 'メモリーセット一覧', 'スター付き'])
         result = collect(raw, ['メモリー', 'スター'])
