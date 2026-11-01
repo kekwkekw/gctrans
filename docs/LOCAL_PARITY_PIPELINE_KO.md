@@ -57,6 +57,16 @@ python tools/collect_ui_literals.py --metadata <game>/GC_Data/il2cpp_data/Metada
 
 결과를 앞의 plan에 `--observations work/local-parity/detail-literals.json`으로 전달한다. `source_kind=pc_metadata_literals`는 실제 화면 관측과 구분하며 표시 여부·문맥을 검수한다. 입력창 편집 문자는 번역하지 않는다. 집무실처럼 Master와 같은 JP를 코드에서 직접 공급하는 경우는 해당 문구만 accepted Master 번역과 맞춰 UI에 추가한다.
 
+전체 누락 점검에서는 키워드를 미리 아는 문구만 찾지 않도록 명시적인 전체 일본어 문자열 수집을 사용한다.
+
+```powershell
+python tools/collect_ui_literals.py --metadata <game>/GC_Data/il2cpp_data/Metadata/global-metadata.dat --all-japanese --output work/local-parity/pc-literal-inventory.json
+```
+
+이 옵션은 현재 v39의 문자열 상수 테이블에서 일본어로 보이는 문자(가나·한자)가 있는 모든 값을 수집한다. 개발 로그·문장 조각·Unicode/locale 문자열도 수집 단계에서 버리지 않는다. 원본 hash와 literal index를 보존한 뒤 기존 UI 조회, Master/Names/현재 Novel의 번역 재사용, 코드 소비 경로를 대조해 분류한다. `--contains`와 함께 쓸 수 없으며 선택 옵션 없는 암묵적 전체 수집은 허용하지 않는다. 전체 결과를 번역 승인본이나 실제 표시 확인으로 취급하지 않는다.
+
+coverage는 **asset의 Master/직렬화 UI**, **PC 코드 문자열**, **실행 중 조합된 최종 문구**, **이미지·외부/서버 공급 문자열**의 범위를 구분해 보고한다. 전체 asset 취득 완료나 수집 후보 누락 0은 실행 코드와 최종 화면 문구의 완전성을 뜻하지 않는다. 코드의 완성된 표시 문구는 사진이 없다는 이유만으로 제외하지 않고, 소비 경로를 근거로 검수 후보에 포함할 수 있다. 고정 문구는 기존 apply/export, 서식·조각은 최종값 지원 점검을 이어간다. [992개 분류 및 PRO 승인본 반영 사례](PC_UI_LITERAL_REVIEW_20261102_KO.md)를 참조한다.
+
 `ui/detail-families.json`은 확인된 메모리 4그룹×5세트, 유효한 생일 확인 날짜, 현재 Master의 메인 스테이지 범위 안내를 완성된 exact로 export한다. JP 및 이미 KO로 바뀐 Master 이름을 모두 처리하며 새 장이 Master에 들어오면 export 시 따라간다. 범용 부분 치환이나 DLL template engine은 추가하지 않는다. 7.2.0 후보는 한 글자 `炎`·`雷`를 포함한 일반 UI exact를 허용하고 시나리오 렌더러와 사용자 입력을 보호한다. 사전에 키가 있다고 실기 표시 완료로 세지 않는다.
 
 `ui/ap-families.json`은 AP 화면의 두 시간 문구 `00:00~12:00`과 AP 회복량 0~150을 같은 export에서 완성된 exact로 생성한다. 현재 `ui.templates.json`·검수된 UI 샘플·Master 서식의 한국어를 그대로 재사용하고, 다른 번역과 충돌하면 실패한다. 적용 후 기존 `build_manifests.py --modify ui.json`으로 데이터 manifest를 갱신한다. authoring 범위 설정은 게임이 읽는 파일이 아니며, 생성된 `ui.json`을 기존 DLL이 소비한다. [세부 근거와 한계](UI_AP_EXACT_20261101_KO.md)를 따른다.

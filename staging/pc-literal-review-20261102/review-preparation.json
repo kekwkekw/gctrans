@@ -1,0 +1,11 @@
+{
+  "status": "PREPARED_PRO_PENDING",
+  "static_rows": 421,
+  "format_rows": 130,
+  "review_zip": "GC_PC_UI_551row_PRO_20261102.zip",
+  "sha256": "28ec21ffc72f0bad68445d91084dacf778f550bf8e5900b2046c8e60fde02b66",
+  "bytes": 2296067,
+  "canonical_applied": false,
+  "knowledge_changed": false,
+  "dll_changed": false
+}
