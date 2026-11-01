@@ -62,7 +62,7 @@ GCMod 6.1 호환 CDN의 `names/`, `words/`, `novels/`와 `GCMod-cs파일백업/`
 
 ## 현재 범위와 한계
 
-2026-11-02 main 기준: Novel 사전 1,939개, Master exact 34,381개, UI exact 13,568개,
+2026-11-02 이 tree 기준: Novel 사전 1,939개, Master exact 34,381개, UI exact 13,988개,
 이미지 매핑 161개, current Knowledge 3,535개입니다. UI 수에는 유한 숫자·시간 범위에서 생성한
 exact도 포함합니다. 파일·키 수는 전편 신규 번역량이나 전수 의미검수·실기 완료 수가 아닙니다.
 

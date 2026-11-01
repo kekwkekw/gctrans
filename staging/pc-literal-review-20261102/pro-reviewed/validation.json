@@ -1,0 +1,69 @@
+{
+  "status": "RETURN_VALIDATED_AND_PREVIEW_PASS",
+  "input_zip_sha256": "28ec21ffc72f0bad68445d91084dacf778f550bf8e5900b2046c8e60fde02b66",
+  "return_zip_sha256": "71eae14e169a49411d3c5fcb3c3961a281cd85f23a574b3a6da295bc55cf83bd",
+  "return_files": {
+    "REVIEW_REPORT_KO.md": {
+      "sha256": "786f78256e5f47f77e70cfd5ce9ccc72165aa089988c860d507f2ccccffa3344",
+      "bytes": 7176
+    },
+    "formats.review.return.json": {
+      "sha256": "b06fe001034755f14e81e32c3a6633dea2e7965bfd3896c1350a7ae5726e3d12",
+      "bytes": 108363
+    },
+    "static.review.return.json": {
+      "sha256": "69e3815bb5e3b1bd95745984dc0bb81ebd3ee1763c63ec5b26fe76c55eb6bb59",
+      "bytes": 249447
+    }
+  },
+  "manifest_files_checked": 24,
+  "id_jp_order_and_metadata_preserved": true,
+  "decisions": {
+    "static": {
+      "translate": 419,
+      "hold": 2
+    },
+    "formats": {
+      "translate": 130
+    }
+  },
+  "corrections": {
+    "static": 39,
+    "formats": 52
+  },
+  "approved_token_number_placeholder_checks": 549,
+  "preimages_current": true,
+  "knowledge_context_current": true,
+  "warnings": [],
+  "preview_added_authoring": 419,
+  "preview_added_ui_keys": 420,
+  "preview_static_matches": 419,
+  "holds_not_matched": 2,
+  "previous_ui_values_unchanged": 13568,
+  "preview_package": {
+    "exact_pairs": 13988,
+    "authoring_bindings_preserved": 501,
+    "held_authoring_jp": [],
+    "review_resolved_authoring_jp": [
+      "水",
+      "調度品"
+    ],
+    "bounded_workshop_exacts": 3,
+    "runtime_bindings": 0,
+    "bounded_detail_exacts": 3121,
+    "bounded_enhancement_exacts": 5393,
+    "bounded_ap_exacts": 1593,
+    "master_ui_source_pairs": 1122,
+    "authoring_pairs_without_live_binding": 61,
+    "local_coverage_keys": 1091,
+    "local_coverage_keep_source": 34,
+    "local_coverage_missing": [],
+    "status": "PASS",
+    "master_keys": 34381,
+    "novels": 1939,
+    "native": "NOT_RUN_OFFLINE"
+  },
+  "formats_publication_allowed": false,
+  "canonical_applied": false,
+  "native": "NOT_RUN"
+}

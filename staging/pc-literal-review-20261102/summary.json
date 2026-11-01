@@ -1,0 +1,37 @@
+{
+  "base_commit": "e6730d5ce82165c54183c2f50f7d448311e71d45",
+  "source_sha256": "e311401192b2ef2fccd89fa73f70c38198149ae1c2df3c2b04eeeb714917f92a",
+  "total": 992,
+  "categories": {
+    "display_static": 421,
+    "display_format": 130,
+    "composition_fragment": 92,
+    "diagnostic_or_development": 315,
+    "library_unicode_or_locale": 29,
+    "outside_ui_hook": 4,
+    "context_needed": 1
+  },
+  "static_reuse": {
+    "none": 394,
+    "display_equivalent": 8,
+    "exact": 19
+  },
+  "format_reuse": {
+    "none": 126,
+    "display_equivalent": 4
+  },
+  "native_confirmed": 1,
+  "offline_referenced_literals": 992,
+  "offline_scan": {
+    "source_sha256": "fee9336f0b85173b3341f18d1268dd257817483c8298cbf462c06325a4db8470",
+    "scanned": 122842,
+    "method_groups": 122842,
+    "failures": [],
+    "capped": []
+  },
+  "reclassified_after_reference_check": 107,
+  "canonical_changes": 0,
+  "knowledge_changes": 0,
+  "dll_changes": 0,
+  "raw_and_previous_failure_evidence_preserved": true
+}

@@ -20,7 +20,7 @@
 
 ## 남은 작업과 완료 기록
 
-- 진행 중: [추출 텍스트 coverage](TEXT_COVERAGE_20261031_KO.md), [전투 Novel 후속 확인](BATTLE_NOVEL_FOLLOWUP_20261031_KO.md), [AP exact 범위와 미확인 구간](UI_AP_EXACT_20261101_KO.md).
+- 진행 중: [추출 텍스트 coverage](TEXT_COVERAGE_20261031_KO.md), [PC 코드 UI 승인본·서식 후속](PC_UI_LITERAL_REVIEW_20261102_KO.md), [전투 Novel 후속 확인](BATTLE_NOVEL_FOLLOWUP_20261031_KO.md), [AP exact 범위와 미확인 구간](UI_AP_EXACT_20261101_KO.md).
 - 완료 기록: [corpus·볼칸 정책 종료](CORPUS_VOLCAN_CLOSURE_20261031_KO.md), [10월 26일 정리](REPOSITORY_CLEANUP_20261026_KO.md), [11월 2일 정리](REPOSITORY_CLEANUP_20261102_KO.md).
 - 과거 원본 복구: [HISTORY_INDEX_KO.md](HISTORY_INDEX_KO.md). current와 provenance 구분은 [knowledge-layer 안내](../knowledge-layer/README.md)에 있다.
 
