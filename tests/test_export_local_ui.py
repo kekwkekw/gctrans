@@ -74,7 +74,7 @@ class ExactUiExportTests(unittest.TestCase):
         self.assertIn('02月29日で\n誕生日を設定します。\nよろしいですか？\n', actual)
         self.assertNotIn('02月30日で\n誕生日を設定します。\nよろしいですか？\n', actual)
         self.assertGreater(report['bounded_detail_exacts'], 390)
-        for row in json.loads((ROOT/'staging/ui-details-20261028/review.json').read_bytes())['rows']:
+        for row in json.loads((ROOT/'tests/fixtures/ui-details-reviewed.json').read_bytes())['rows']:
             self.assertEqual(actual[row['jp']], row['ko'])
 
     def package(self, root, resources, reviewed=None):
@@ -123,7 +123,7 @@ class ExactUiExportTests(unittest.TestCase):
             self.assertEqual(report['review_resolved_authoring_jp'], ['オプション'])
 
     def test_all_48_reviewed_captions_survive_repository_export(self):
-        rows = json.loads((ROOT / 'staging/ui-exact-recovery-20261028/reviewed-48.json').read_text(encoding='utf-8'))
+        rows = json.loads((ROOT / 'tests/fixtures/ui-exact-recovery-reviewed-48.json').read_text(encoding='utf-8'))
         payload, report = export(ROOT / 'translations/ko')
         actual = json.loads(payload)
         self.assertEqual(len(rows), 48)

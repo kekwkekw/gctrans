@@ -54,4 +54,4 @@ Master 연결은 `mBattleNovels.m_quest_stage_id=1111009 → mQuestStages.m_ques
 
 초기 후속 조사에서는 사전 기록한 정본·Knowledge·설치 DLL/metadata/config 등 14개 해시가 모두 같았다. PRO 반환 후에는 Master/UI 교정과 그 manifest 변경만 별도로 허용하고, current Knowledge·Names·HOLD·DLL·설치본 해시와 선택한 10개 asset의 state·raw·index 참조 50개를 다시 확인했다. 이전 `unapproved-cache/` 조회 결과는 교정 전의 기술 이력이며 최종 전투 화면 확인을 대신하지 않는다.
 
-반환 원본과 독립 적용 검증은 [PRO 검수 보존 폴더](../staging/text-coverage-20261031/pro-reviewed-20261031/)에 있다. 승인 19행은 staging에 보존했고 `translations/ko/novels/11.json` 등 10파일과 등록 manifest에는 추가하지 않았다. 다음 단계는 해금된 11장 전투에서 실제 호출·표시·이벤트 순서를 확인한 뒤, 기존 Novel check/apply 경로로 등록하는 것이다. 전체 Knowledge 재구축이나 runtime 변경은 필요하지 않다.
+반환 원본과 독립 적용 검증은 [PRO 검수 보존 폴더](../staging/text-coverage-20261031/pro-reviewed-20261031/APPLICATION_RECEIPT.json)에 있다. 승인 19행은 staging에 보존했고 `translations/ko/novels/11.json` 등 10파일과 등록 manifest에는 추가하지 않았다. 다음 단계는 해금된 11장 전투에서 실제 호출·표시·이벤트 순서를 확인한 뒤, 기존 Novel check/apply 경로로 등록하는 것이다. 전체 Knowledge 재구축이나 runtime 변경은 필요하지 않다.

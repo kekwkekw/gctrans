@@ -1,16 +1,23 @@
 # 현재 LocalParity 지원 범위
 
-2026-10-28 기준 runtime은 `gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318`에서 시작한 `source/GCMod.Candidate`다. 산출물은 `candidate/GCMod.dll`이다. 기존 Nextgen/Native provider/ownership/live-switch의 전체 PASS는 현재 runtime의 검증 근거가 아니다.
+2026-11-02 main `e6730d5c` 기준이다. 배포 runtime은 GCMod 7.2.1이며
+`gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318` 기반의 [GCMod.Candidate](../source/GCMod.Candidate/README_KO.md)를 사용한다.
+과거 Nextgen runtime의 검증 결과를 현재 게임 DLL의 PASS로 대체하지 않는다.
 
-- Master는 `EnabledTables=*`, `(table, field, exact JP)` 조회를 사용한다. 한국어 Master 34,020 keys는 pinned local 32,592 keys를 모두 포함한다. 보유 키 수와 실제 화면 표시 검증은 구분한다.
-- UI는 독립 `ui.json` 2,109개 exact와 실제 화면에서 확인한 제한된 숫자·날짜·해금 조건을 처리한다. Master 존재 여부로 UI를 차단하지 않는다. 501개 authoring binding은 보존하지만 runtime binding 소비자는 0개다.
-- EnhancePatch, UiPatch, TranslationPatch, VisualPatch, MasterDataPatch와 local lifecycle을 유지한다. 작은 Choice 표시·element 명칭 예외만 별도 적용한다. 상세 차이는 [runtime README](../source/GCMod.Candidate/README_KO.md)에 기록한다.
-- 검수된 Novel 1,939편과 Names direct hook, 한국어 TMP fallback을 유지한다. 본문 재번역이나 전편 의미 재검수는 수행하지 않았다.
-- 기존 3개 Master HOLD는 내부 trigger, target 조건, dummy 상품 설명의 실제 노출 여부가 불명확한 항목이다. `staging/master-source-review-20261028/new-holds.json`에 개별 근거가 있다.
-- 레코드 지구 카드 6개는 7.2.0 후보에서 PNG 교체를 실기 확인했다. 이벤트/시작 로고는 같은 Sprite 방식으로 확장할 수 있으나 아직 교체하지 않았다. [이미지 갱신 범위](IMAGE_UPDATES_KO.md)를 참조한다.
-- `更新まで`·`回数回復まで`는 2026-11-01 사용자 요청에 따라 `00:00~12:00`의 완성 문장을 사전 생성해 지원한다. AP 수치 회복 알림도 0~150을 사전 생성한다. DLL 규칙은 그대로이며 해당 범위 밖과 `開封期限…まで`는 계속 보류한다. [범위·검증 근거](UI_AP_EXACT_20261101_KO.md)를 따른다. 일반 날짜+まで와 完成まで는 별도 지원한다.
-- 맵 레벨 상승 알림의 exact는 테스트했으나 계정의 획득/한계 돌파를 실행해 재발동하지 않았다.
+- Master: `EnabledTables=*`, `(table, field, exact JP)` 조회. 현재 34,381 exact keys.
+- UI: 독립 exact 13,568개와 확인된 범위의 동적 문구. 수치에는 offline 생성한 유한 숫자·시간 exact가 포함된다. Master 존재 여부로 UI를 막지 않는다.
+- Novel: 등록 사전 1,939개와 Names direct hook. 사전 수가 전편 신규 번역·전수 의미검수 수라는 뜻은 아니다.
+- 이미지: `images.json`의 Sprite 매핑 161개. 지역 카드 6개, 시작·진행 이벤트 로고, 회상 배너와 패배 안내를 포함한다. [유형·크기·hash 제약](IMAGE_UPDATES_KO.md)을 따른다.
+- corpus·Knowledge: 위치별 검수와 현행 지식의 scope를 유지한다. [대규모 통합 정비와 볼칸 정책](CORPUS_VOLCAN_CLOSURE_20261031_KO.md)은 종료했으며 이후 변경은 증분 검수한다.
+- 한 글자 UI exact는 허용하되 Novel 렌더러와 사용자 입력을 보호한다. 편성 복사 확인문은 팀명을 보존하는 7.2.1의 작은 전용 규칙을 쓴다.
 
-실기 결과는 `staging/ui-broad-export-20261028/native-smoke.json` 등 해당 DLL·데이터의 개별 근거로 읽는다. 전체 게임 UI 완료나 62 table 전수 화면 PASS로 확대하지 않는다.
+## 남은 범위
 
-현행 crawler/검수/설치 절차는 [LOCAL_PARITY_PIPELINE_KO.md](LOCAL_PARITY_PIPELINE_KO.md)를 따른다. 수집 실패·이미지·개발 placeholder·미검수 pending을 구분하며, 일부 실패 때문에 정상 수집분의 번역 적용을 전부 막지 않는다.
+- 전 자산 crawler는 보완 중이다. 수집·해석 성공, 원문 후보, 의미검수 승인, runtime 표시 확인을 구분한다. [crawler 안내](CRAWLER_ALL_ASSETS_KO.md), [텍스트 coverage](TEXT_COVERAGE_20261031_KO.md)를 참조한다.
+- 전투 Novel 일부는 승인 문장이 있어도 아직 runtime 등록을 보류했다. [후속 검증과 정확한 상태](BATTLE_NOVEL_FOLLOWUP_20261031_KO.md)를 따른다.
+- 이전 Master의 내부 trigger·target·dummy 설명 3개 HOLD 근거는 [new-holds.json](../staging/master-source-review-20261028/new-holds.json)에 보존한다. 새 조사 없이 해소했다고 간주하지 않는다.
+- AP 시간 exact는 `00:00~12:00`, 회복 알림은 0~150 범위다. 범위 밖과 일부 개봉 기한 문구는 [AP 기록](UI_AP_EXACT_20261101_KO.md)에서 구분한다.
+- 미지원 이미지, 아직 발견하지 못한 UI, 계정 해금 조건 때문에 확인하지 못한 화면이 남아 있다. 34 UTF-16칸 규칙도 픽셀 단위 적합성 보증은 아니다.
+
+키·파일 수와 실제 화면 관측 수를 구분한다. 과거 개별 실기 결과는 [고정 기록](HISTORY_INDEX_KO.md)으로 보존하고,
+이번 저장소 정리로 새 Native PASS를 주장하지 않는다.

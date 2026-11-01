@@ -77,11 +77,8 @@ trial-staging/
 INSTALL_RECEIPT.json
 CURRENT_INPUTS.json
 
-# Local Novel source, draft and PRO handoff workspaces.
-/work/novels/
-/work/local-parity/
-/work/text-coverage-20261031/
-/work/corpus/
+# Local source, draft, review and evidence workspaces.
+/work/
 /candidate/*.deps.json
 /candidate/*.pdb
 /translations/.local-parity-apply.lock
