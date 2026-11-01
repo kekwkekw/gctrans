@@ -34,3 +34,23 @@ class LiteralCollectionTests(unittest.TestCase):
         for scope in ([], ['']):
             with self.assertRaises(ValueError):
                 collect(raw, scope)
+
+    def test_explicit_full_inventory_retains_diagnostics_fragments_and_source_indexes(self):
+        raw = metadata(['AP回復を実行しました', 'の', '[Debug]内部ログ', 'AP', '123',
+                        'AP回復を実行しました', '回数回復まで', 'English only'])
+        result = collect(raw, all_japanese=True)
+        self.assertEqual(result['selection'], 'all_japanese_literals')
+        self.assertEqual(result['total_literal_entries'], 8)
+        self.assertEqual({r['jp'] for r in result['rows']},
+                         {'AP回復を実行しました', 'の', '[Debug]内部ログ', '回数回復まで'})
+        ap = next(r for r in result['rows'] if r['jp'] == 'AP回復を実行しました')
+        self.assertIn('indexes=[0, 5]', ap['evidence'])
+        self.assertEqual(result['display_status'], 'SOURCE_ONLY_REQUIRES_MENU_CONTEXT_REVIEW')
+
+    def test_full_inventory_keeps_format_guards_and_rejects_mixed_selection(self):
+        raw = metadata(['AP回復を実行しました'])
+        with self.assertRaisesRegex(ValueError, 'AMBIGUOUS_LITERAL_SCOPE'):
+            collect(raw, ['AP'], all_japanese=True)
+        for broken in (raw[:31], raw[:-1], raw[:4]+struct.pack('<I', 38)+raw[8:]):
+            with self.assertRaises(ValueError):
+                collect(broken, all_japanese=True)
