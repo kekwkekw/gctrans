@@ -1,57 +1,74 @@
-# 걸크리 PC 한국어화
+# Girls' Creation 한국어 패치 · gctrans
 
-## 설치 및 다운로드
+**LLM 번역·의미검수·지식 관리를 실제 게임 배포로 연결하는 현지화 프로젝트입니다.**
+GCMod로 시나리오·UI·Master·지원 이미지를 표시하고, Codex 초벌과 ChatGPT PRO 검수 결과를
+원문·문맥·적용 범위에 맞춰 관리합니다. AI가 생성한 번역과 게임에 반영할 승인본을 구분합니다.
 
-**[GCMod 7.2.0 전체 설치본](https://github.com/kekwkekw/gctrans/releases/tag/v7.2.0)**의
-`GCMod-7.2.0-ko-full-win-x64.zip`을 사용한다. 신규 사용자는 게임을 종료하고 ZIP의 내용물을
-`GC.exe`가 있는 폴더에 복사한 뒤 평소 사용하는 DMM 실행 경로로 시작한다.
-필요한 BepInEx·.NET 런타임·Utility·한국어 폰트·번역 데이터를 포함하며 Python이나 기존 패치는 필요하지 않다.
-최초 실행에는 인터넷 연결이 필요하다.
+## 설치
 
-기존 사용자는 **이전 패치 제거 후 전체 설치본으로 재설치**를 권장한다.
-설정과 다른 모드를 게임 폴더 밖에 백업한 뒤 `BepInEx/`, `dotnet/`, `winhttp.dll`,
-`doorstop_config.ini`, `.doorstop_version`만 제거한다. 게임 원본과 DMM 데이터는 제거하지 않는다.
-자세한 절차는 릴리스의 `INSTALL_KO.txt`를 따른다. GitHub의 자동 Source code ZIP은 설치 파일이 아니다.
+**[GCMod 7.2.1 전체 설치본](https://github.com/kekwkekw/gctrans/releases/tag/v7.2.1)**에서
+`GCMod-7.2.1-ko-full-win-x64.zip`을 받으세요. GitHub의 Source code ZIP은 설치 파일이 아닙니다.
 
-7.2.0은 시작 시 GitHub main의 번역 manifest를 확인하고, 변경된 UI·Master·Names·지원 이미지와
-진입한 Novel을 로컬 캐시에 갱신한다. DLL·폰트는 자동 갱신하지 않으므로 이전 버전 사용자는
-7.2.0 설치가 필요하다. 시작/진행 이벤트 로고, 지역 카드 6개, 회상 배너 148개를 포함한다.
-다른 이미지와 일부 미번역/HOLD는 남아 있으며 전체 완역은 아니다.
+1. 게임을 종료합니다.
+2. 신규 사용자는 ZIP 내용물을 `GC.exe`가 있는 폴더에 복사합니다.
+3. 평소 사용하는 DMM 실행 경로로 게임을 시작합니다. 최초 실행에는 인터넷 연결이 필요합니다.
 
-현재 작업 절차의 단일 진입점은 **[docs/OPERATOR_KO.md](docs/OPERATOR_KO.md)**다. 명령은 저장소 루트에서 실행한다.
+BepInEx·.NET 런타임·Utility·한국어 폰트·번역 데이터를 포함하므로 Python이나 기존 패치는 필요하지 않습니다.
+기존 사용자는 이전 패치 제거 후 전체 설치본 재설치를 권장합니다. 설정과 다른 모드를 게임 폴더 밖에
+백업하고 `BepInEx/`, `dotnet/`, `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`만 제거합니다.
+게임 원본과 DMM 데이터는 보존하고, 상세 절차는 릴리스의 `INSTALL_KO.txt`를 따르세요.
 
-## 정상 Novel 흐름
+시작 시 GitHub main의 manifest를 확인해 변경된 Master·UI·Names·지원 이미지를 캐시에 갱신합니다.
+Novel은 해당 시나리오 진입 시 필요한 데이터를 로드합니다. **DLL·폰트는 자동 갱신 대상이 아닙니다.**
+상세 동작은 [데이터 갱신](docs/DATA_UPDATES_KO.md), 이미지 지원 범위는 [이미지 갱신](docs/IMAGE_UPDATES_KO.md)에 있습니다.
 
-> 업데이트 확인·원문 정리 → Codex 초벌 → ChatGPT PRO 의미검수 → Codex 적용·package 검증 → 승인된 main 반영
+## 작업 흐름
 
-- 현재 Names: [`translations/ko/names.json`](translations/ko/names.json)
-- 현재 Knowledge: [`translation/knowledge.jsonl`](translation/knowledge.jsonl)
-- HOLD 정책: [`translation/HOLD_POLICY.md`](translation/HOLD_POLICY.md)
-- 현재 package: [`translations/ko/release-manifest.json`](translations/ko/release-manifest.json)
+```text
+게임 원문 수집 → current Names·Knowledge로 문맥 준비
+             → Codex 초벌·지식 후보 → ChatGPT PRO 의미검수
+             → 승인 위치만 적용 → UI export·package 검사 → GitHub 배포
+```
 
-정상 Novel 경로는 public main의 도구만 사용하며 private workbench나 과거 Knowledge snapshot을 요구하지 않는다.
+Novel·Master·UI는 기존 파일 구조를 유지합니다. 통합 corpus는 서로 다른 위치의 번역을 함께
+조회·검수하는 도구이며, 같은 일본어를 무조건 같은 한국어로 치환하지 않습니다.
+Knowledge는 명시된 scope 안에서 사용하고, 과거 원장과 변경 이력은 정상 번역 입력에서 제외합니다.
+새 Novel 본문에는 34 UTF-16칸 × 최대 3줄과 태그·변수 보호 규칙을 적용합니다.
 
-## UI·runtime
+| 살펴볼 내용 | 진입점 |
+|---|---|
+| 전체 운영·역할·신규 Novel 번역 | [OPERATOR_KO.md](docs/OPERATOR_KO.md) |
+| corpus 교정·Knowledge 변경·줄배치 규칙 | [CORPUS_WORKFLOW_KO.md](docs/CORPUS_WORKFLOW_KO.md) |
+| Master/UI 수집·검수·적용 | [LOCAL_PARITY_PIPELINE_KO.md](docs/LOCAL_PARITY_PIPELINE_KO.md) |
+| 전 자산 crawler와 남은 범위 | [CRAWLER_ALL_ASSETS_KO.md](docs/CRAWLER_ALL_ASSETS_KO.md) |
+| 게임 runtime 구조·빌드 | [GCMod.Candidate](source/GCMod.Candidate/README_KO.md) |
+| 전체 문서·현재와 과거 자료 구분 | [문서 안내](docs/INDEX.md) |
 
-- 7.2.0 이미지/한 글자 UI 및 갱신 방식: [docs/IMAGE_UPDATES_KO.md](docs/IMAGE_UPDATES_KO.md).
+## 저장소 구조
 
-- 데이터 자동 갱신 동작 및 Native 검증 결과: [docs/DATA_UPDATES_KO.md](docs/DATA_UPDATES_KO.md).
+| 경로 | 역할 |
+|---|---|
+| `translations/ko/` | 게임이 읽는 Novel·Names·Master·UI·이미지 및 UI 작성 원본 |
+| `translation/` | current Knowledge, 콘텐츠 HOLD와 번역 정책 |
+| `tools/`, `scripts/`, `contracts/`, `tests/` | 수집·검수·반영·패키지 도구와 회귀 검사 |
+| `source/GCMod.Candidate/`, `candidate/` | GCMod runtime 소스와 DLL·cfg |
+| `knowledge-layer/provenance/` | 승인 변경의 이전·이후 값과 정책 해소 이력. 번역 입력 아님 |
+| `staging/` | 유지 중인 source coverage·HOLD·crawler 검수 근거와 설정 입력 |
+| `work/`, `source-state/`, `private-source-cache/`, `source-out/` | 로컬 작업·원문·캐시. 공개 저장소 밖에서 관리 |
 
-- Master/UI 수집→검수→반영→빌드·패키지·설치: [`docs/LOCAL_PARITY_PIPELINE_KO.md`](docs/LOCAL_PARITY_PIPELINE_KO.md). 여러 UI prefab 수집, 부분 실패 격리, 실제 runtime 동적 조회 확인을 지원한다.
+GCMod 6.1 호환 CDN의 `names/`, `words/`, `novels/`와 `GCMod-cs파일백업/`은 의도적으로 유지합니다.
+`source/GCMod.Nextgen/`에는 오프라인 authoring 도구가 참조하는 코드가 남아 있으며,
+현재 게임 DLL은 이를 포함하지 않습니다. [출처와 라이선스](docs/UPSTREAM_ATTRIBUTION_KO.md)를 확인하세요.
 
-- UI 사전 생성·포함 범위: [`docs/UI_EXPORT_KO.md`](docs/UI_EXPORT_KO.md). 비활성 binding도 검수된 번역은 export하며 local UI 키 coverage를 검사한다.
+## 현재 범위와 한계
 
-- 2026-10-27 현재 runtime: [`source/GCMod.Candidate/README_KO.md`](source/GCMod.Candidate/README_KO.md)의 **Korean LocalParity**. `gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318` 기반이며 `candidate/GCMod.dll`로 빌드한다. Master `*`, 독립 exact `ui.json`, 기존 Novel/Names direct hook을 사용한다.
-- 기존 Nextgen/store/live-switch/ownership 관련 문서와 Native 도구는 이전 후보의 기록이다. LocalParity의 적용·실행은 아래 LAUNCH 문서와 Candidate README를 우선한다. Novel authoring 절차는 그대로 유지한다.
-- 지원 범위: [`docs/SUPPORT_SCOPE_KO.md`](docs/SUPPORT_SCOPE_KO.md)
-- 외부 입력: [`docs/EXTERNAL_DEPENDENCIES_KO.md`](docs/EXTERNAL_DEPENDENCIES_KO.md)
-- 적용·복구: [`docs/LAUNCH_PROCEDURE_KO.md`](docs/LAUNCH_PROCEDURE_KO.md)
-- Stable 정책: [`docs/PROJECT_STABLE_QUALIFICATION_POLICY_KO.md`](docs/PROJECT_STABLE_QUALIFICATION_POLICY_KO.md)
-- native 시험 정책: [`docs/PROJECT_NATIVE_TEST_POLICY_KO.md`](docs/PROJECT_NATIVE_TEST_POLICY_KO.md)
-- 재현: [`docs/REPRODUCE_KO.md`](docs/REPRODUCE_KO.md)
-- 공개 경계: [`docs/PUBLICATION_KO.md`](docs/PUBLICATION_KO.md)
-- 출처·라이선스: [`docs/UPSTREAM_ATTRIBUTION_KO.md`](docs/UPSTREAM_ATTRIBUTION_KO.md)
+2026-11-02 main 기준: Novel 사전 1,939개, Master exact 34,381개, UI exact 13,568개,
+이미지 매핑 161개, current Knowledge 3,535개입니다. UI 수에는 유한 숫자·시간 범위에서 생성한
+exact도 포함합니다. 파일·키 수는 전편 신규 번역량이나 전수 의미검수·실기 완료 수가 아닙니다.
 
-## GCMod 6.1 호환
+통합 corpus 정비와 볼칸 표기 정책은 완료했고 이후 변경은 증분 검수합니다.
+**Crawler는 계속 보완 중**입니다. 전 자산 취득·추출 경로는 있으나 실패·격리·미검수 텍스트와
+전투 Novel의 runtime 확인 대상을 구분해 관리합니다. 전체 완역이나 모든 에셋의 추출 성공을 주장하지 않습니다.
 
-기존 6.1 사용자를 위해 `names/`, `words/`, `novels/`의 `zh_Hans.json` 경로와 `GCMod-cs파일백업/GCMod-6.1.0-updated/`를 유지한다. 현행 GCMod 7 정본은 `translations/ko/**`다.
+[지원 범위](docs/SUPPORT_SCOPE_KO.md) · [재현](docs/REPRODUCE_KO.md) ·
+[현재 자료와 과거 기록](docs/HISTORY_INDEX_KO.md) · [이번 저장소 정리](docs/REPOSITORY_CLEANUP_20261102_KO.md)

@@ -44,4 +44,4 @@ source가 실재한다는 사실, 한국어 검수, exporter 포함, Native 표�
 
 박스의 현재 번호·이후 구간, 도전 난이도·턴 수는 기존 offline 정수 family로 생성한다. 별 개수 뒤 `のメモリー`는 조사 중 `の` 앞뿐 아니라 뒤에도 공백이 있는 실제 문자열이 발견되어, 별 1~5개와 양쪽의 없음/반각/전각 공백을 완성 exact로 다룬다. 고정 S/I/P 이미지가 문장 안에 있는 대상 안내는 기존 배치에 맞는 공백을 번역문에 보존한다. `で解放`는 별 이미지 옆 독립 TextNote 컴포넌트의 전체 값으로만 번역하며 다른 문장 안에서는 치환하지 않는다.
 
-기록은 `staging/ui-quest-score-20261029/`에 둔다. 유한 범위 밖 숫자, 검증하지 않은 방어전 결과 화면, 이미지에 포함된 글자는 이번 실기 통과 범위로 세지 않는다. Names·Novel·Knowledge·기존 세 Master HOLD는 변경하지 않는다.
+당시 기록은 [정리 전 staging](https://github.com/kekwkekw/gctrans/tree/e6730d5ce82165c54183c2f50f7d448311e71d45/staging/ui-quest-score-20261029)에 보존한다. 유한 범위 밖 숫자, 검증하지 않은 방어전 결과 화면, 이미지에 포함된 글자는 이번 실기 통과 범위로 세지 않는다. Names·Novel·Knowledge·기존 세 Master HOLD는 변경하지 않는다.

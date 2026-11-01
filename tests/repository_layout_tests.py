@@ -49,7 +49,9 @@ class RepositoryLayoutTests(unittest.TestCase):
             'source/build/Common.props':'58c8828d1331e79d26d4f0c727664bad7f1951c7748973940e00cc2a13e08d48',
             'THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE':'606688d2ae1f70514f42b8e27b3b9a1201cce3263d1349754426c273ee4fb732',
         }.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest)
-        self.assertIn('../build/Common.props',(ROOT/'source/GCMod.Candidate/GCMod.Candidate.csproj').read_text())
+        candidate=(ROOT/'source/GCMod.Candidate/GCMod.Candidate.csproj').read_text()
+        self.assertIn('$(GC_GAME_DEPENDENCY_ROOT)',candidate)
+        self.assertIn('Name="CheckGameReferences"',candidate)
     def test_real_committed_export_has_moved_docs(self):
         # The caller uses a disposable clone/fixture. Never add/commit a user checkout.
         if not (ROOT/'.git').exists(): self.skipTest('A committed isolated checkout is required')
