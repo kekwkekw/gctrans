@@ -1,0 +1,146 @@
+{
+  "schema": "gc-full-text-resurvey-public-v1",
+  "base_commit": "8e7e88884493c7dffc7c29b9e84a868570dbc14a",
+  "collected_date": "2026-11-02",
+  "source_planes": [
+    {
+      "source": "WebGL_CURRENT",
+      "assets": 23616,
+      "text_values": 383632,
+      "occurrences": 4415457
+    },
+    {
+      "source": "PC_CACHE_OBSERVED",
+      "assets": 4358,
+      "text_values": 64298,
+      "occurrences": 1012827
+    },
+    {
+      "source": "PC_CORE_VERIFIED",
+      "assets": 9,
+      "text_values": 11771,
+      "occurrences": 72817
+    },
+    {
+      "source": "PC_SUPPLEMENT",
+      "assets": 4381,
+      "text_values": 1714,
+      "occurrences": 4670
+    },
+    {
+      "source": "PC_CODE",
+      "assets": 1,
+      "text_values": 21932,
+      "occurrences": 21932
+    },
+    {
+      "source": "PC_MASTER_GENERATIONS",
+      "assets": 3,
+      "text_values": 48552,
+      "occurrences": 864718
+    },
+    {
+      "source": "PC_STRUCTURED_TEXT",
+      "assets": 3,
+      "text_values": 1153,
+      "occurrences": 2275
+    },
+    {
+      "source": "PC_HISTORICAL_ARCHIVE",
+      "assets": 583,
+      "text_values": 61067,
+      "occurrences": 414446
+    }
+  ],
+  "findings": {
+    "current_previous_queue": {
+      "master:missing": 256,
+      "master:source_equal": 76,
+      "ui:no_lookup_match": 550,
+      "ui:lookup_match": 38
+    },
+    "changed_master_previous_items": [],
+    "pc_localization": {
+      "nonempty_rows": 153,
+      "unique_values": 141,
+      "unmatched_unique_values": 89,
+      "reuse_suggestion_rows": 9,
+      "unmatched_by_resource": {
+        "MlDictionaryTextConfigInApps": 57,
+        "MlDictionaryInApps": 32
+      },
+      "current_webgl_authority": false,
+      "native_display_verified": false
+    },
+    "extra_novel_choice_labels": 4,
+    "extra_choices_already_lookup_matched": 4,
+    "additional_pc_ui_source_candidates": 15,
+    "additional_pc_ui_source_groups": {
+      "PC_CACHE_OBSERVED": 3,
+      "PC_CORE_VERIFIED": 12
+    },
+    "non_japanese_code_display_consumer_candidates": 22,
+    "reference_is_not_argument_flow": true,
+    "unresolved_pc_core_objects": 469,
+    "pc_raw_sources_preserved": 8754,
+    "pc_raw_bytes_preserved": 4422194600,
+    "historical_extra_cache_assets": 583,
+    "archive_overlap_checks": 7503,
+    "archive_content_differences_excluding_cache_info": 0,
+    "publication_allowed": false
+  },
+  "gap_groups": [
+    {
+      "source": "PC_CACHE_OBSERVED",
+      "resolution": "IDENTIFIED_NON_TEXT_gc_wrapped_usm_video",
+      "count": 46
+    },
+    {
+      "source": "PC_CACHE_OBSERVED",
+      "resolution": "IDENTIFIED_NON_TEXT_spine_binary_version_header",
+      "count": 497
+    },
+    {
+      "source": "PC_CORE_VERIFIED",
+      "resolution": "UNRESOLVED",
+      "count": 469
+    },
+    {
+      "source": "WebGL_CURRENT",
+      "resolution": "IDENTIFIED_NON_TEXT_gc_wrapped_usm_video",
+      "count": 2420
+    }
+  ],
+  "collection_policy": "No language, known-field or count gate. Positive media identification; explicit unresolved evidence; no translation apply.",
+  "dynamic_policy": {
+    "semantic_approved_formats": 130,
+    "publication_allowed": false,
+    "source_lookup_is_not_composed_value_support": true
+  },
+  "verification": {
+    "protected_files": 2205,
+    "changed": [],
+    "ui_sha256": "45ca26ed691a1f7c0f9e1ec671961b976eff4f8b201cf7fe4aa65fe49aa24c15",
+    "master_sha256": "b783c9abb49d503e6d81358d60d9932c9c6f525e62b4ce2249e0fbf397e4f549",
+    "names_sha256": "5d0ae25576d0e86aece77671a67c6cbe11a15ec828a4f736c49c2d28ff5252a2",
+    "AP_fixed_notification": {
+      "jp": "AP回復を実行しました",
+      "matched": true,
+      "ko": "AP를 회복했습니다"
+    },
+    "python_regression_tests": 87,
+    "csharp_regression_projects": 4,
+    "native_game": "NOT_RUN",
+    "translation_applied": 0,
+    "runtime_or_knowledge_changed": 0
+  },
+  "private_evidence_manifest_sha256": "90286c10861d369bac3ce3ecf1e9c0154676594fcfcdd79e6ff1ed539e874e9c",
+  "private_evidence_root": "work/text-resurvey-20261102",
+  "report": "docs/FULL_TEXT_RESURVEY_20261102_KO.md",
+  "implementation_sha256": {
+    "tools/audit_text_sources.py": "1b9a4587149cdef4167bbaec270cb61125ba78daab63605a41eca18ed45a7662",
+    "tools/collect_ui_literals.py": "40b73748bfbe99190646accec8b3552bf3fc44812c600239e5defea75af88b93",
+    "tools/update/text_census.py": "c9d94ea0ccc517757d64892eb5b5dab0f3a5a1347f99f7d13615843c7c6c708c",
+    "tools/update/unity_schema_text.py": "2cd1f84ce4c1cf76295137bd4c8448311e6f011901e395b0be1f76d62661151d"
+  }
+}
