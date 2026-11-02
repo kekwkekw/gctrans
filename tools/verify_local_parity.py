@@ -17,7 +17,8 @@ def main():
     scratch=repo/'work/local-parity';scratch.mkdir(parents=True,exist_ok=True)
     cases=['test_local_parity.py','test_local_release.py','test_ui_source.py',
            'test_export_local_ui.py','test_master_coverage.py','test_ng04_source.py',
-           'test_all_asset_source.py', 'test_collect_ui_literals.py']
+           'test_all_asset_source.py', 'test_collect_ui_literals.py',
+           'test_text_census.py', 'test_unity_schema_text.py', 'test_audit_text_sources.py']
     with tempfile.TemporaryDirectory(dir=scratch) as temp:
         env={**os.environ,'TEMP':temp,'TMP':temp,'PYTHONUTF8':'1'}
         for case in cases:
