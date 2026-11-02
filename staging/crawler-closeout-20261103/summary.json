@@ -1,0 +1,85 @@
+{
+  "schema": "gc-crawler-closeout-public-v1",
+  "date": "2026-11-03",
+  "status": "COMPLETED_ORIGINAL_CRAWLER_SCOPE",
+  "payload_baseline_main": "e7c79817e669e9aaeb3dfe83b298c7e193d9a957",
+  "payload_baseline_pr": 58,
+  "cdn_verification_kst": "2026-11-03T01:15:06+09:00",
+  "scope": [
+    "all_asset_selection_acquisition_extraction",
+    "raw_and_failure_custody",
+    "existing_novel_and_current_legacy_boundaries",
+    "nontranslation_quarantine",
+    "broad_text_census_and_current_coverage_measurement"
+  ],
+  "known_limits_retained": true,
+  "all_objects_decoded_claim": false,
+  "registered_payload": {
+    "ui_keys": 14073,
+    "master_keys": 34388,
+    "novel_files": 1939,
+    "novel_dictionary_entries": 144815
+  },
+  "english_ui": {
+    "count": 3,
+    "status": "DEFERRED_BY_USER_KEEP_ENGLISH",
+    "translation_planned": false
+  },
+  "ui_unmatched_source_strings": {
+    "total": 1179,
+    "neutral_sample_technical_license": 940,
+    "user_keep_english": 3,
+    "conditional_followup": 236,
+    "conditional_reasons": {
+      "semantic_approved_formats": 133,
+      "composition_fragments": 92,
+      "outside_or_native_routes": 7,
+      "source_or_meaning_holds": 3,
+      "consumer_unconfirmed": 1
+    },
+    "not_untranslated_sentence_count": true
+  },
+  "master": {
+    "missing_targets": 249,
+    "missing_reasons": {
+      "runtime_managed": 59,
+      "internal_metadata": 3,
+      "keep_source": 100,
+      "credit_name_original": 56,
+      "placeholder": 31
+    },
+    "already_registered_source_equal": 76,
+    "source_equal_reasons": {
+      "keep_source": 72,
+      "source_conflict": 4
+    },
+    "credit_fields": 56,
+    "credit_names": 44,
+    "resolved_prior_rows": 7
+  },
+  "novel": {
+    "battle_unregistered_files": 10,
+    "battle_unregistered_rows": 19,
+    "already_registered_policy_hold_placeholders": 16
+  },
+  "dmm_additional_unverified_hints": {
+    "count": 61,
+    "status": "CONDITIONAL_BACKLOG",
+    "not_added_to_verified_ui_count": true
+  },
+  "pc_core_unresolved_objects": 469,
+  "historical_candidate_rows_separate": {
+    "ui_display": 185,
+    "master_locale_primary": 392
+  },
+  "new_translation_or_runtime_changes": false,
+  "prior_validation": {
+    "python_tests": 87,
+    "dotnet_projects": 4,
+    "pr58_ci": "PASS",
+    "new_native_validation": false
+  },
+  "prior_audit_summary_sha256": "c7ec607ef1af904be9300e1f4d74cc54c63320fd17e99a519a5c101c97e383f0",
+  "prior_audit_manifest_sha256": "0d307b8cbeda26da07ac7b20f2e3fa55103dcd680301032101144f9413317ca5",
+  "report": "docs/CRAWLER_CLOSEOUT_20261103_KO.md"
+}

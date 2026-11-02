@@ -6,9 +6,10 @@
 |---|---|
 | `GCMod.cfg.template`, `accepted-master-profile.*` | 기존 오프라인 도구·검사의 설정 입력. 현행 배포 cfg는 `candidate/GCMod.cfg` |
 | `master-local-coverage-20261027/`, `master-source-review-20261028/` | source coverage와 미확정 Master HOLD 근거. crawler 후속 판단에 사용 |
-| `text-coverage-20261031/`, `text-remainder-20261101/`, `ui-ap-exact-20261101/` | 진행 중인 crawler·텍스트 후속 조사, 미적용 전투 Novel 검수 및 AP 경계 기록 |
+| `text-coverage-20261031/`, `text-remainder-20261101/`, `ui-ap-exact-20261101/` | 완료한 crawler의 coverage·잔여 조사, 미적용 전투 Novel 검수 및 AP 경계 기록 |
 | `pc-literal-review-20261102/` | PC 코드 992개 분류·고정 문구 419행 적용 영수증·HOLD 2행·서식 130행 후속 상태. 전체 원본/검수 반환은 Git 제외 work에 보존 |
 | `text-resurvey-20261102/`, `text-resurvey-followup-20261102/` | 전체 텍스트 재조사·95행 검수 인계와 PRO 고정 92행 반영. 현행 결과는 followup의 `pro-reviewed/`, 루트 요약은 적용 전 기록 |
+| `crawler-closeout-20261103/` | crawler 완료 판정·영문 3종 사용자 보류·조건부 후속 집계. 이전 날짜의 조사 기록을 덮어쓰지 않는 최종 상태 |
 | `ui-broad-export-20261028/holds.json`, `ui-residual8-20261028/holds.json` | 이후 판정과 대조할 과거 HOLD 근거. 모든 항목이 현재도 미해결이라는 뜻은 아님 |
 
 완료된 Novel 줄배치·UI 캠페인의 전체 반환본·실기 보고는 [Git 이력](../docs/HISTORY_INDEX_KO.md)으로 보존한다.
