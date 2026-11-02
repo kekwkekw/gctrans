@@ -13,7 +13,7 @@
 
 ## 남은 범위
 
-- 전 자산 crawler는 보완 중이다. 수집·해석 성공, 원문 후보, 의미검수 승인, runtime 표시 확인을 구분한다. [crawler 안내](CRAWLER_ALL_ASSETS_KO.md), [텍스트 coverage](TEXT_COVERAGE_20261031_KO.md)를 참조한다.
+- 전 자산 crawler 보완 캠페인은 완료했다. 수집·해석 성공, 원문 후보, 의미검수 승인, runtime 표시 확인은 계속 구분한다. 영문 UI 3종은 사용자 선택으로 번역하지 않으며, 미해석·서식·실기 대기는 [종료 기록과 재개 조건](CRAWLER_CLOSEOUT_20261103_KO.md)에 보존한다. [crawler 사용법](CRAWLER_ALL_ASSETS_KO.md)은 이후 증분 수집에도 적용한다.
 - [전체 텍스트 재조사](FULL_TEXT_RESURVEY_20261102_KO.md) 후 [고정 UI 85·Master 7행을 반영](TEXT_RESURVEY_FOLLOWUP_20261102_KO.md)했다. CSV 141개 표시 문자열 중 136개가 조회되며 나머지는 서식 3·중립 표기 2다. 새 서식 3개는 기존 130개와 함께 의미 승인 상태로 보존하며 배포하지 않았다. PC 구조 미확정 객체 469개와 크레딧 독음 44명/56필드도 남아 있다.
 - 전투 Novel 일부는 승인 문장이 있어도 아직 runtime 등록을 보류했다. [후속 검증과 정확한 상태](BATTLE_NOVEL_FOLLOWUP_20261031_KO.md)를 따른다.
 - 이전 Master의 내부 trigger·target·dummy 설명 3개 HOLD 근거는 [new-holds.json](../staging/master-source-review-20261028/new-holds.json)에 보존한다. 새 조사 없이 해소했다고 간주하지 않는다.
