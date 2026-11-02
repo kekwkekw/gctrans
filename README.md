@@ -67,8 +67,10 @@ GCMod 6.1 호환 CDN의 `names/`, `words/`, `novels/`와 `GCMod-cs파일백업/`
 exact도 포함합니다. 파일·키 수는 전편 신규 번역량이나 전수 의미검수·실기 완료 수가 아닙니다.
 
 통합 corpus 정비와 볼칸 표기 정책은 완료했고 이후 변경은 증분 검수합니다.
-**Crawler는 계속 보완 중**입니다. 전 자산 취득·추출 경로는 있으나 실패·격리·미검수 텍스트와
-전투 Novel의 runtime 확인 대상을 구분해 관리합니다. 전체 완역이나 모든 에셋의 추출 성공을 주장하지 않습니다.
+**Crawler 보완 캠페인은 완료**했습니다. 전 자산 선택·취득·추출, raw·실패 근거 보존,
+텍스트 재조사와 coverage 측정을 갖췄습니다. 미해석 객체·서식·크레딧·전투 실기는
+[종료 기록과 재개 조건](docs/CRAWLER_CLOSEOUT_20261103_KO.md)에 남겼습니다.
+영문 UI 3종은 사용자 선택으로 번역하지 않습니다. 전체 완역이나 모든 에셋의 해석 성공을 뜻하지 않습니다.
 
 [지원 범위](docs/SUPPORT_SCOPE_KO.md) · [재현](docs/REPRODUCE_KO.md) ·
 [현재 자료와 과거 기록](docs/HISTORY_INDEX_KO.md) · [이번 저장소 정리](docs/REPOSITORY_CLEANUP_20261102_KO.md)

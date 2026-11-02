@@ -1,5 +1,9 @@
 # 전 자산 수집과 coverage 측정
 
+2026-11-03에 이번 보완 캠페인을 완료했다. 기존 Novel 경로와 current/legacy 경계를 유지한
+전 자산 수집·추출 및 텍스트 조사 도구를 이후 증분 작업에서 재사용한다.
+[완료 판정·잔여 분류·재개 조건](CRAWLER_CLOSEOUT_20261103_KO.md)을 따른다.
+
 `scripts/crawl_only.py --lane All`은 알려진 WebGL/R18의 assetbundle 및 master
 manifest 전체를 선택하는 명시적 조사 모드다. 기존 기본값 `Novel`, Novel intake,
 Master/UI의 기존 선택 계약과 재개 state는 그대로 유지한다. PC는 종전처럼
@@ -143,3 +147,16 @@ git -c core.whitespace=cr-at-eol diff --check
 합성 테스트 수치를 실제 CDN coverage라고 보고하지 않는다. 크롤러만 변경한
 작업에서 전체 Knowledge 재구축·번역 정본 갱신·DLL 배포·전체 Native 전수 검증을
 추가 gate로 만들지 않는다.
+
+## 전체 텍스트 재조사와 종료
+
+asset coverage에 더해 설치 PC 기본 리소스·현지화 CSV/XML·전체 코드 literal을
+[별도 조사 도구](FULL_TEXT_RESURVEY_20261102_KO.md)로 확인했다. 수집 단계에서는
+일본어 여부·기존 번역 필드 등록 여부로 문자열을 버리지 않으며, 미해석 객체의 단서는
+검증된 표시 문구와 구분한다. 원본 schema와 일치하고 byte round-trip을 통과한 복구만
+확정한다. 이후 승인된 고정 UI 85·Master 7행은 PR #58로 main에 반영했다.
+
+원래의 수집·보존·측정 목표는 완료했고, 잔여 번역이나 미지원 decoder의 완전 해소는
+별도 후속 범위다. 영문 UI 3종은 번역하지 않는 사용자 결정으로 남긴다.
+새 게임 업데이트, 실제 미번역 화면, 추가 schema/소비 경로 근거가 생기거나 사용자가
+재조사를 요청하면 기존 state와 원본을 재사용해 해당 범위만 재개한다.
