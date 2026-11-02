@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "return_validation": "PASS",
+  "preview_and_canonical_bytes_equal": true,
+  "ui_lookup": "85/85 expected KO",
+  "scope_regression": "PASS; input, Novel/choice/ruby ancestry unchanged",
+  "package": {
+    "exact_pairs": 14073,
+    "authoring_bindings_preserved": 501,
+    "held_authoring_jp": [],
+    "review_resolved_authoring_jp": [
+      "水",
+      "調度品"
+    ],
+    "bounded_workshop_exacts": 3,
+    "runtime_bindings": 0,
+    "bounded_detail_exacts": 3121,
+    "bounded_enhancement_exacts": 5393,
+    "bounded_ap_exacts": 1593,
+    "master_ui_source_pairs": 1122,
+    "authoring_pairs_without_live_binding": 61,
+    "local_coverage_keys": 1091,
+    "local_coverage_keep_source": 34,
+    "local_coverage_missing": [],
+    "status": "PASS",
+    "master_keys": 34388,
+    "novels": 1939,
+    "native": "NOT_RUN_OFFLINE"
+  },
+  "protected_files_unchanged": 2561,
+  "raw_and_failure_evidence_preserved": true,
+  "formats_not_published": 3,
+  "native": "NOT_RUN",
+  "installation": "NOT_PERFORMED",
+  "archive": {
+    "name": "GC_Text_Resurvey_92row_Update_20261103.zip",
+    "sha256": "9a25e881ace4490fc8622b809e3ac9f2dd0bf51f5f2e1717141d3bab1541150b",
+    "bytes": 33263751,
+    "files": 2110,
+    "membership_and_crc_verified": true,
+    "dll_identical_to_existing_candidate": true
+  },
+  "python_tests": 87,
+  "python_suites": 11,
+  "dotnet_suites": [
+    "UiTextLookup",
+    "UiTextScope",
+    "ImageCache",
+    "TranslationCache"
+  ],
+  "regression_log_sha256": "1c081bf743b43bc180ef2d4e981445448b18c74f0e5f6d1390317493891494e8",
+  "protected_hashes": {
+    "translation/knowledge.jsonl": "8ea8c8ce64fdb94f682f73947599b2d5e1f29bedc480fa227e9a543f61f1c480",
+    "translations/ko/names.json": "5d0ae25576d0e86aece77671a67c6cbe11a15ec828a4f736c49c2d28ff5252a2",
+    "candidate/GCMod.dll": "98548a5027cbbc1bd32805f4b6f0568d2c9781684fc8e6d7ff7b00afdad433a2"
+  }
+}
