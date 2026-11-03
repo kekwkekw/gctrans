@@ -1448,6 +1448,42 @@
       "name": "TextAtelierStart",
       "sha256": "c1a98e9ca617fa82fa890409132ce5681c581abaff685f16f9bc6d80613e19ac",
       "width": 280
+    },
+    {
+      "bytes": 9094,
+      "file": "images/94d28d9cab2fd7d774d362f98ea4ead2700adb8ab210a4b46ec067df1a220540.png",
+      "height": 52,
+      "kind": "sprite",
+      "name": "NyukonText",
+      "sha256": "94d28d9cab2fd7d774d362f98ea4ead2700adb8ab210a4b46ec067df1a220540",
+      "width": 227
+    },
+    {
+      "bytes": 7069,
+      "file": "images/f152cbadbf0fbcc3a653bec54901e53d8f5bd317f8269482de59c701131ff13e.png",
+      "height": 44,
+      "kind": "sprite",
+      "name": "TextFusionAcitve",
+      "sha256": "f152cbadbf0fbcc3a653bec54901e53d8f5bd317f8269482de59c701131ff13e",
+      "width": 84
+    },
+    {
+      "bytes": 3779,
+      "file": "images/c0480f88d35665a010cc1c16d804c6229c5d102088c54ba9e2cebd450c243376.png",
+      "height": 36,
+      "kind": "sprite",
+      "name": "TextRest",
+      "sha256": "c0480f88d35665a010cc1c16d804c6229c5d102088c54ba9e2cebd450c243376",
+      "width": 55
+    },
+    {
+      "bytes": 2276,
+      "file": "images/58612ff58ab6a5da2f042b36dd63507bc18556f0cc8ac97f727d898508b4ba23.png",
+      "height": 32,
+      "kind": "sprite",
+      "name": "TextTurn2",
+      "sha256": "58612ff58ab6a5da2f042b36dd63507bc18556f0cc8ac97f727d898508b4ba23",
+      "width": 90
     }
   ],
   "schema": "gc-images-v1"
