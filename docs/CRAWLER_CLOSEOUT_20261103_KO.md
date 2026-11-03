@@ -4,6 +4,11 @@
 기존 Novel/current 경계 유지, 비번역 결과 격리 및 텍스트 coverage 측정**을 완료했다.
 이후에는 새 근거가 생기는 범위에서 증분 수집·검수한다.
 
+후속 사용자 전투 화면에서 이미 수집·번역된 제목의 runtime 조합과 이미지 글자 누락을
+확인했다. **이 문서의 crawler 완료와 사전 coverage는 모든 화면의 번역 표시 완료를 뜻하지 않는다.**
+원인, 한정된 표시 경로 보완과 검증 상태는
+[전투 UI 표시 누락 보완](BATTLE_UI_DISPLAY_20261103_KO.md)에 기록한다.
+
 번역 기준선은 PR #58이 병합된 main `e7c79817e669e9aaeb3dfe83b298c7e193d9a957`이다.
 2026-11-03 01:15 KST에 실제 CDN의 manifest/UI/Master/Names를 읽어 기준선과 byte 단위
 일치를 확인했다. 이 종료 작업은 문서와 상태 기록만 바꾸며 번역·Knowledge·runtime·DLL·

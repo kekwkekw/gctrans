@@ -11,10 +11,13 @@ foreach (var pair in dictionary.Where(p=>p.Key.Length==1))
 foreach (var owner in new Component[] {new TMPro.TMP_InputField(),new UnityEngine.UI.InputField(),new EventText(),new EventMessageWindow(),new EventSelectObj()})
 {
     var nested = new Component { Parent=new Component { Parent=owner } };
-    foreach (var text in new[]{"月","日","雷","前","スキップ","전(前)관장","寝正月"})
+    foreach (var text in new[]{"月","日","雷","前","スキップ","전(前)관장","寝正月",
+        "必要熱情\r\n115\r\n(-14)","必要HP\n30%\n(-10%)","残りCT\n2"})
         if(Render(nested,text)!=text)throw new Exception("Protected display altered: "+text);
 }
 if(Render(new Component {Parent=new Component()},"閉じる")!="닫기")throw new Exception("Menu button blocked");
+if(Render(new Component {Parent=new Component()},"必要熱情\r\n115\r\n(-14)")!="필요 열정\r\n115\r\n(-14)")
+    throw new Exception("Battle command outside protected ancestry blocked");
 Console.WriteLine("PASS: 21 single-character keys; input, Novel/choice/ruby ancestry; unrelated menu controls");
 
 namespace UnityEngine

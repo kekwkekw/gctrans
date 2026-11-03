@@ -1,0 +1,117 @@
+{
+  "schema": "gc-battle-ui-images-v1",
+  "source_asset": "scene/scene_battle.dmm",
+  "source_raw_sha256": "c6bd2b9e6a850edf04b006faeced66b30b35618d56eed9a0ed4144e3a1cdd620",
+  "pc_cache_raw_sha256": [
+    "193799b28dd6d3303b492e8460a574f3bb3552e0e1ffc2bf203d0354da72906a",
+    "b9291b3ea53fb22f9329830b4bb0eaa8d48518fc5c870813dddcabc8e6ff5542"
+  ],
+  "before_targets": 161,
+  "after_targets": 165,
+  "previous_entries_unchanged": true,
+  "native": "NOT_RUN; no installed DLL/config/cache changes",
+  "visual_review": "JP/KO native-size and 2x sheet inspected; spelling/size/alpha checked; no live game layout claim",
+  "images": [
+    {
+      "name": "NyukonText",
+      "source_sha256": "9ffd7705875da6dd955014fdb19377291661b4760d0da4c07b90b59882ef1335",
+      "generated_sha256": "00afce03a5ca0f0466420d2e2b0ff82013bad5bb77c2ecc612d0dd9d9095675f",
+      "output_sha256": "94d28d9cab2fd7d774d362f98ea4ead2700adb8ab210a4b46ec067df1a220540",
+      "width": 227,
+      "height": 52,
+      "bytes": 9094,
+      "title_box": [
+        18,
+        0,
+        96,
+        38
+      ],
+      "unchanged_outside_title": true,
+      "source_alpha_preserved": false,
+      "prompt": "Use case: text-localization. Edit target: attached game UI sprite, original canvas 227×52 (wide aspect 4.365:1). Replace only the two cream Japanese calligraphic characters 入魂 at the LEFT with exactly Korean \"입혼\". Use elegant heavy Korean brush/serif lettering, same cream tone, same approximate 36px cap-height and original text footprint near x16..92 y4..37. Preserve the long olive brown gauge backing, its irregular notched outline, decorative curl at far left, thin cream bottom baseline and arrow to the right, all original layout and transparent exterior. Do not center the label across the bar. Do not add other words or frame. Output same complete sprite composition and aspect, not a mockup; actual transparent exterior. Legible at tiny game UI scale.",
+      "generation": "built-in image_gen; premultiplied-alpha resize and restricted composition",
+      "translation": "입혼",
+      "jp": "入魂",
+      "translation_basis": "Existing UI exact translation",
+      "sprite_path_id": 2818123805543144495,
+      "consumers": [
+        "CountNumber",
+        "UIBottomPrefab/UIStatusActiveL/GroupPlayerMain/FrameSub/CountNumber",
+        "UIStatusActiveL/GroupPlayerMain/FrameSub/CountNumber",
+        "UIBottomPrefab/UIStatusActiveR/GroupPlayerMain/FrameSub/CountNumber"
+      ],
+      "pc_cache_sprite_pixels_identical": true
+    },
+    {
+      "name": "TextFusionAcitve",
+      "source_sha256": "8beb17531f56f4bf2cc905d58377b0f925634003c5ba53065ae69333ce8da35e",
+      "generated_sha256": "76790f0790fa9c5a8a76a8f1b31060ab435744406c146b701e47a1023025acc7",
+      "output_sha256": "f152cbadbf0fbcc3a653bec54901e53d8f5bd317f8269482de59c701131ff13e",
+      "width": 84,
+      "height": 44,
+      "bytes": 7069,
+      "title_box": null,
+      "unchanged_outside_title": false,
+      "source_alpha_preserved": true,
+      "prompt": "Use case: text-localization. Edit target: attached 84×44 game battle UI badge. Replace the white Japanese text 発動 with exactly Korean \"발동\". Preserve warm golden orange glowing horizontal backing and original transparency/soft edges, composition and aspect ratio. Two bold brush/serif Korean syllables occupying same central footprint as original white calligraphy. Clean fully legible Korean at small game UI scale. No additional text, no extra margin, no presentation background. Return only the complete edited sprite with actual transparency.",
+      "generation": "built-in image_gen; premultiplied-alpha resize and restricted composition",
+      "translation": "발동",
+      "jp": "発動",
+      "translation_basis": "Existing reviewed UI 発動条件 → 발동 조건 / 発動中の効果 → 발동 중인 효과",
+      "sprite_path_id": -6673248169875046737,
+      "consumers": [
+        "UIBottomPrefab/UIStatusActiveL/FusionActive/Base/TextActiveAnim",
+        "UIStatusActiveL/FusionActive/Base/TextActive",
+        "UIBottomPrefab/UIStatusActiveR/FusionActive/Base/TextActive",
+        "UIBottomPrefab/UIStatusActiveR/FusionActive/Base/TextActiveAnim",
+        "UIBottomPrefab/UIStatusActiveL/FusionActive/Base/TextActive",
+        "UIStatusActiveL/FusionActive/Base/TextActiveAnim"
+      ],
+      "pc_cache_sprite_pixels_identical": true
+    },
+    {
+      "name": "TextRest",
+      "source_sha256": "17132502b72c43db2e292b723d52b31d3d2534f387ca339d89a8d22ba963765c",
+      "generated_sha256": "c03d41061e2146c344ae0b30c446d201e3e4e434c82290b453cc184bee80234e",
+      "output_sha256": "c0480f88d35665a010cc1c16d804c6229c5d102088c54ba9e2cebd450c243376",
+      "width": 55,
+      "height": 36,
+      "bytes": 3779,
+      "title_box": null,
+      "unchanged_outside_title": false,
+      "source_alpha_preserved": false,
+      "prompt": "Use case: text-localization. Edit target: attached tiny 55×36 game label. Replace Japanese 残り with exactly Korean \"남은\". Preserve original warm ivory heavy calligraphic serif style and subtle dark outline/shadow. Two legible Korean syllables filling same compact label footprint on a genuinely transparent background. No rectangle/backing/checkerboard, no other text or added margins. Original canvas aspect 55:36. Return only the isolated game sprite.",
+      "generation": "built-in image_gen; premultiplied-alpha resize and restricted composition",
+      "translation": "남은",
+      "jp": "残り",
+      "translation_basis": "Existing UI exact translation",
+      "sprite_path_id": 3484826148878427028,
+      "consumers": [
+        "UITopPrefab/UIScorePrefab/Turn/TextGroup/RestText"
+      ],
+      "pc_cache_sprite_pixels_identical": true
+    },
+    {
+      "name": "TextTurn2",
+      "source_sha256": "2711251596c2e36d55c3744f79aae0210cc30e08561531804f1a2cc145e581ce",
+      "generated_sha256": "470aad238c736049452a05863f160bb477d305fcb53cfed91e79e097a736bc58",
+      "output_sha256": "58612ff58ab6a5da2f042b36dd63507bc18556f0cc8ac97f727d898508b4ba23",
+      "width": 90,
+      "height": 32,
+      "bytes": 2276,
+      "title_box": null,
+      "unchanged_outside_title": false,
+      "source_alpha_preserved": false,
+      "prompt": "Use case: text-localization. Edit target: attached 90×32 game label. Replace Japanese ターン with exactly Korean \"턴\". Preserve original ivory brush/serif style, subtle dark outline/shadow and overall height. The single Korean syllable should be a natural width, LEFT aligned near original x5 and vertically aligned with original letters, remaining canvas right transparent; do NOT stretch a single syllable across the whole width. Genuinely transparent background, original canvas aspect 90:32, no rectangle/backing/checkerboard, no additional text or added margins. Return only the isolated game sprite.",
+      "generation": "built-in image_gen; premultiplied-alpha resize and restricted composition",
+      "translation": "턴",
+      "jp": "ターン",
+      "translation_basis": "Existing UI exact translation",
+      "sprite_path_id": -2900970149450018483,
+      "consumers": [
+        "UITopPrefab/UIScorePrefab/Turn/TextGroup/TurnText"
+      ],
+      "pc_cache_sprite_pixels_identical": true
+    }
+  ]
+}
