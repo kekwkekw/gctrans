@@ -18,7 +18,7 @@ using Utility.Notifications;
 
 namespace GCMod;
 
-[BepInPlugin("GCMod", "GCMod", "7.2.1")]
+[BepInPlugin("GCMod", "GCMod", "7.3.0")]
 public class Plugin : BasePlugin
 {
 	private const int HttpTimeoutSeconds = 30;
@@ -50,7 +50,7 @@ public class Plugin : BasePlugin
 		}
 		Log = ((BasePlugin)this).Log;
 		ConfigFile = ((BasePlugin)this).Config;
-		Log.LogInfo("GCMod Korean LocalParity 7.2.1; upstream 0cdcd9e84fffa438dfdac63176685a6c47a07318");
+		Log.LogInfo("GCMod Korean LocalParity 7.3.0; upstream 0cdcd9e84fffa438dfdac63176685a6c47a07318");
 		Toast.Initialize();
 		GCMod.Config.Initialize();
 		DialogueSettings.Initialize();
@@ -67,7 +67,7 @@ public class Plugin : BasePlugin
 			((BasePlugin)this).Unload();
 			throw;
 		}
-		Toast.Success("GCMod", "한국어 패치 로드 완료: LocalParity 7.2.1");
+		Toast.Success("GCMod", "한국어 패치 로드 완료: LocalParity 7.3.0");
 	}
 
 	private static void Initialize()
