@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net9.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
+  <ItemGroup><Compile Include="../../source/GCMod.Candidate/GCMod.Services/DialogueEditSession.cs" Link="DialogueEditSession.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="../../source/GCMod.Candidate/GCMod.Services/ValueOverride.cs" Link="ValueOverride.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="../../source/GCMod.Candidate/GCMod.Services/ConfigFileSnapshot.cs" Link="ConfigFileSnapshot.cs" /></ItemGroup>
+</Project>

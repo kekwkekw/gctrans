@@ -80,11 +80,15 @@ def pack(repo, output, font=None, utility=None):
     if font:
         files[PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle']=font.read_bytes();files[PLUGIN+'Utility.dll']=utility.read_bytes()
     kind='local-complete' if font else 'public-update'
-    files['README_KO.txt']=('GCMod Korean LocalParity\n게임 종료 후 적용하세요. Language=ko / EnabledTables=*\n기본 CDN은 공식 GitHub main입니다. 시작 시 manifest를 확인하고 변경된 번역 데이터를 갱신합니다. offline 설정도 지원합니다. DLL/폰트 변경은 별도 배포본 적용이 필요합니다.\n'
+    files['README_KO.txt']=('GCMod Korean LocalParity\n게임 종료 후 적용하세요. 신규 기본값: Language=ko / EnabledTables=*\n기본 CDN은 공식 GitHub main입니다. 시작 시 manifest를 확인하고 변경된 번역 데이터를 갱신합니다. offline 설정도 지원합니다. DLL/폰트 변경은 별도 배포본 적용이 필요합니다.\n'
         +'기존 BepInEx IL2CPP 설치가 필요합니다.\n'
         +('로컬 폰트/Utility를 포함한 개인 설치본입니다. 공개 배포용으로 업로드하지 마세요.\n' if font else
           '공개 업데이트에는 게임/interop/Utility/폰트를 포함하지 않습니다. 기존 승인된 Utility.dll 및 한국어 폰트가 필요합니다.\n')
-        +'설치: python tools/local_release.py install --archive <이 ZIP> --game <게임 경로> --backup <새 백업 폴더>\n').encode('utf-8')
+        +'설치: python tools/local_release.py install --archive <이 ZIP> --game <게임 경로> --backup <새 백업 폴더>\n'
+        +'기존 cfg는 그대로 보존하며 cfg가 없을 때만 기본값을 설치합니다. ZIP을 직접 덮어쓸 때도 기존 cfg를 덮어쓰지 마세요.\n'
+        +'한국어 기본 프로필로 전환할 때만 --apply-korean-profile을 추가하세요. 번역 활성화·언어·CDN·사용자 경로·비동기 로딩·Master·폰트 설정을 패키지 기본값으로 바꿉니다.\n'
+        +'GCMod 전용 단축키는 없습니다. 대화창 불투명도·가독성 보정·프레임 제한은 게임 옵션에서 미리보기 후 설정 저장을 눌러 적용합니다.\n'
+        +'cfg나 번역 파일을 직접 수정한 경우 게임을 재시작하세요. 시작 시 번역 데이터 자동 갱신은 유지됩니다.\n').encode('utf-8')
     receipt={'schema':'gc-local-parity-package-v1','kind':kind,'upstream':'0cdcd9e84fffa438dfdac63176685a6c47a07318',
         'files':{p:{'size':len(raw),'sha256':digest(raw)} for p,raw in sorted(files.items())},'verification':report}
     files['package.json']=json_bytes(receipt);output.parent.mkdir(parents=True,exist_ok=True)
@@ -146,35 +150,51 @@ def safe_target(root,relative):
     return path
 
 
-def install(archive,game,backup):
+def install(archive,game,backup,apply_korean_profile=False):
     with ProcessFileLock(safe_target(game, 'BepInEx/.gcmod-install.lock'), 'INSTALL_WRITER_BUSY'):
-        return _install(archive,game,backup)
+        return _install(archive,game,backup,apply_korean_profile)
 
 
-def _install(archive,game,backup):
+def _install(archive,game,backup,apply_korean_profile=False):
     safe_target(game, CFG)
     game_closed();game=game.resolve();backup=backup.resolve()
     if not (game/'GC.exe').is_file() or not (game/'BepInEx/core').is_dir():raise ValueError('EXISTING_GAME_BEPINEX_REQUIRED')
     if backup.exists() or backup.is_relative_to(game):raise ValueError('NEW_BACKUP_OUTSIDE_GAME_REQUIRED')
     receipt,files=verify_archive(archive)
-    for dep in (PLUGIN+'Utility.dll',PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle'):
-        if dep not in files and not safe_target(game,dep).is_file():raise ValueError('LOCAL_DEPENDENCY_REQUIRED:'+dep)
-    # Preserve unrelated user preferences; explicitly enable the complete Master profile.
     target=safe_target(game,CFG)
+    config_policy='new-defaults'
     if target.exists():
-        cfg=cfg_read(target.read_bytes());required=cfg_read(files[CFG])
-        for section in ('Translation','Translation.MasterData','Translation.Font'):
-            if not cfg.has_section(section):cfg.add_section(section)
-            for k,v in required[section].items():cfg[section][k]=v
-        out=io.StringIO();cfg.write(out);files[CFG]=out.getvalue().encode('utf-8')
+        existing=target.read_bytes()
+        if apply_korean_profile:
+            cfg=cfg_read(existing);required=cfg_read(files[CFG])
+            for section in ('Translation','Translation.MasterData','Translation.Font'):
+                if not cfg.has_section(section):cfg.add_section(section)
+                for k,v in required[section].items():cfg[section][k]=v
+            out=io.StringIO();cfg.write(out);files[CFG]=out.getvalue().encode('utf-8')
+            config_policy='apply-korean-profile'
+        else:
+            # Do not rewrite comments, unknown keys, custom paths or preferences.
+            # BepInEx binds missing entries to the runtime defaults at startup.
+            files[CFG]=existing
+            config_policy='preserve-existing'
+    cfg=cfg_read(files[CFG])
+    utility=PLUGIN+'Utility.dll'
+    if utility not in files and not safe_target(game,utility).is_file():raise ValueError('LOCAL_DEPENDENCY_REQUIRED:'+utility)
+    # Match Plugin.cs: relative font paths are rooted at BepInEx/plugins.
+    # This is a read-only prerequisite check, never an install destination.
+    font=Path(cfg.get('Translation.Font','AssetBundlePath',fallback='GCMod/fonts/RHR_Medium_GFSAFE_ADH.bundle'))
+    if not font.is_absolute():font=game/'BepInEx/plugins'/font
+    packaged_paths={(game/p).resolve() for p in files if p.startswith('BepInEx/')}
+    if font.resolve() not in packaged_paths and not font.is_file():raise ValueError('LOCAL_DEPENDENCY_REQUIRED:configured font')
     changes=[]
     for p,raw in sorted(files.items()):
         if not p.startswith('BepInEx/'):continue
+        if p==CFG and config_policy=='preserve-existing':continue
         target=safe_target(game,p);old=target.read_bytes() if target.exists() else None
         if old==raw:continue
         changes.append((p,raw,old))
     backup.mkdir(parents=True)
-    journal={'schema':'gc-local-parity-install-v1','game':str(game),'archive_sha256':digest(archive.read_bytes()),'status':'prepared','files':[]}
+    journal={'schema':'gc-local-parity-install-v1','game':str(game),'archive_sha256':digest(archive.read_bytes()),'config_policy':config_policy,'status':'prepared','files':[]}
     for p,raw,old in changes:
         if old is not None:
             dest=safe_target(backup,p);dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(old)
@@ -194,7 +214,7 @@ def _install(archive,game,backup):
             else:target.write_bytes(old)
         journal['status']='rolled_back';atomic_json(backup/'install.json', journal);raise
     journal['status']='installed';atomic_json(backup/'install.json', journal)
-    return {'status':'INSTALLED','changed_files':len(changes),'backup':str(backup),'native':'RESTART_AND_SMOKE_REQUIRED'}
+    return {'status':'INSTALLED','changed_files':len(changes),'config_policy':config_policy,'backup':str(backup),'native':'RESTART_AND_SMOKE_REQUIRED'}
 
 
 def rollback(game,backup):
@@ -230,6 +250,7 @@ def main():
     q=sub.add_parser('pack');q.add_argument('--repo',type=Path,default=Path(__file__).resolve().parents[1]);q.add_argument('--output',type=Path,required=True);q.add_argument('--font',type=Path);q.add_argument('--utility',type=Path)
     q=sub.add_parser('verify-archive');q.add_argument('--archive',type=Path,required=True)
     q=sub.add_parser('install');q.add_argument('--archive',type=Path,required=True);q.add_argument('--game',type=Path,required=True);q.add_argument('--backup',type=Path,required=True)
+    q.add_argument('--apply-korean-profile',action='store_true',help='Reset Translation/Master/Font settings to package defaults; otherwise preserve existing cfg bytes.')
     q=sub.add_parser('rollback');q.add_argument('--game',type=Path,required=True);q.add_argument('--backup',type=Path,required=True)
     a=p.parse_args()
     try:
@@ -237,7 +258,7 @@ def main():
         elif a.command=='build':result=build_runtime(a.repo,a.game)
         elif a.command=='pack':result=pack(a.repo,a.output,a.font,a.utility)
         elif a.command=='verify-archive':receipt,_=verify_archive(a.archive);result={'status':'PASS','kind':receipt['kind'],'files':len(receipt['files'])}
-        elif a.command=='install':result=install(a.archive,a.game,a.backup)
+        elif a.command=='install':result=install(a.archive,a.game,a.backup,a.apply_korean_profile)
         else:result=rollback(a.game,a.backup)
         print(json.dumps(result,ensure_ascii=False))
     except (ValueError,OSError,KeyError,configparser.Error,zipfile.BadZipFile,subprocess.CalledProcessError) as e:

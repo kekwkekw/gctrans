@@ -30,6 +30,15 @@ internal static class UiTextLookup
     // Preserve that entire span verbatim; never look up or translate the name.
     private static readonly Regex DeckCopy = new Regex(@"\A編成の内容を(<color=#[0-9a-fA-F]{6}(?:[0-9a-fA-F]{2})?>[^<>\r\n]{1,120}</color>)に上書きします\z");
 
+    // CommandView.ConvertToUnusableText joins a reviewed heading, Int32 values
+    // and Environment.NewLine. Match only its three complete numeric shapes;
+    // preserve the suffix verbatim instead of translating arbitrary text lines.
+    private static readonly Regex[] BattleUnusable = {
+        new Regex(@"\A(?<label>必要熱情)(?<suffix>(?<nl>\r?\n)[0-9]{1,10}\k<nl>\(-[0-9]{1,10}\))\z"),
+        new Regex(@"\A(?<label>必要HP)(?<suffix>(?<nl>\r?\n)[0-9]{1,10}%\k<nl>\(-[0-9]{1,10}%\))\z"),
+        new Regex(@"\A(?<label>残りCT)(?<suffix>\r?\n[0-9]{1,10})\z"),
+    };
+
     // Native supplies an already translated item/title followed by a static JP
     // suffix. Only these two complete labels are supported; leave JP names alone.
     private static bool IsKoreanLabel(string text)
@@ -73,6 +82,13 @@ internal static class UiTextLookup
         if (wrapper.Success && TryTranslate(dictionary, wrapper.Groups[2].Value, out string wrapped, depth + 1))
         {
             translated = wrapper.Groups[1].Value + wrapped + wrapper.Groups[3].Value;
+            return true;
+        }
+        foreach (Regex rule in BattleUnusable)
+        {
+            Match battle = rule.Match(original);
+            if (!battle.Success || !dictionary.TryGetValue(battle.Groups["label"].Value, out string heading)) continue;
+            translated = heading + battle.Groups["suffix"].Value;
             return true;
         }
         foreach (var rule in Counters)

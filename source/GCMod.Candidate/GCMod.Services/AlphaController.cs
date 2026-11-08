@@ -5,20 +5,9 @@ namespace GCMod.Services;
 
 public static class AlphaController
 {
-	private const float AlphaDelta = 0.1f;
-
 	public static float ClampAlpha(float value)
 	{
-		return Mathf.Clamp(Mathf.Round(value * 10f) / 10f, 0f, 1f);
-	}
-
-	public static float GetDelta(bool altPressed)
-	{
-		if (!altPressed)
-		{
-			return -0.1f;
-		}
-		return 0.1f;
+		return DialogueEditSession.Normalize(value);
 	}
 
 	public static void ApplyAlpha(float alpha, params Image[] images)
