@@ -60,6 +60,35 @@ var negative=new[]{"更新まで12:01","開封期限：2026/11/08 12:59 まで",
  "日本語 22個で解放","日本語 の閲覧が必要","제목 の閲覧が必要という説明","덴푸라 22個で解放する","あと1000000000","3ターン終了","덴푸라 <b>22</b>個で解放"};
 foreach(var jp in negative)
  if(UiTextLookup.TryTranslate(ui,jp,out _))throw new Exception("Unexpected translation: "+jp);
+// Native battle buttons contain a heading and numeric lines in one TMP string.
+// Check both platform newlines, screenshot values, HP percentages, and CT.
+var battleCases = new Dictionary<string,string>();
+foreach (var nl in new[]{"\n", "\r\n"})
+{
+    foreach (var (required, missing) in new[]{(115,14),(130,29),(120,19),(0,0),(int.MaxValue,1)})
+        battleCases.Add($"必要熱情{nl}{required}{nl}(-{missing})", $"필요 열정{nl}{required}{nl}(-{missing})");
+    battleCases.Add($"必要HP{nl}30%{nl}(-10%)", $"필요 HP{nl}30%{nl}(-10%)");
+    battleCases.Add($"残りCT{nl}2", $"남은 CT{nl}2");
+}
+foreach (var c in battleCases)
+{
+    foreach (var (before, after) in new[]{("", ""), ("<color=red>", "</color>"), (" ", "\n")})
+        if (!UiTextLookup.TryTranslate(ui,before+c.Key+after,out var ko) || ko!=before+c.Value+after)
+            throw new Exception("Battle numeric suffix changed: "+c.Key);
+    if (UiTextLookup.TryTranslate(new Dictionary<string,string>(),c.Key,out _))
+        throw new Exception("Battle heading requires reviewed dictionary entry");
+}
+var battleExact = new Dictionary<string,string>(ui) { ["必要熱情\n115\n(-14)"] = "exact override" };
+if (!UiTextLookup.TryTranslate(battleExact,"必要熱情\n115\n(-14)",out var battleOverride) || battleOverride!="exact override")
+    throw new Exception("Battle exact entry must take precedence");
+foreach (var jp in new[]{"必要熱情\n115", "必要熱情\n115\n(+14)", "必要熱情\n115\n(-14%)",
+    "必要熱情\n115\n(-14)の説明", "説明\n必要熱情\n115\n(-14)", "必要熱情\nスキップ\n(-14)",
+    "必要熱情\n<b>115</b>\n(-14)", "必要熱情\r\n115\n(-14)", "必要熱情\n-1\n(-14)",
+    "必要熱情\n１１５\n(-14)", "必要熱情\n10000000000\n(-14)", "必要HP\n30\n(-10)",
+    "必要HP\n30%\n(-10)", "必要HP\n30.5%\n(-10%)", "残りCT\n2ターン", "残りCT\n2\n3",
+    "残りCT\r2", "火傷状態\n1", "回数不足\n1", "メインクエスト\nスキップ"})
+    if (UiTextLookup.TryTranslate(ui,jp,out _)) throw new Exception("Unexpected battle/prose translation: "+jp);
+Console.WriteLine($"PASS: {battleCases.Count} battle labels with wrappers, dictionary/exact priority, and 20 rejection cases");
 // The deck-copy sentence translates around, never inside, the user-owned name.
 // Even names present in ui.json (or containing template syntax) stay verbatim.
 foreach(var name in new[]{"Example team", "나의 편성", "メインクエスト", "{0}", new string('x',120)})

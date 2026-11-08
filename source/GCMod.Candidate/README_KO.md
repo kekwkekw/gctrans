@@ -6,12 +6,28 @@
 UI, MasterData 훅을 사용한다. `GCMod.Nextgen.sources.props`를 import하지 않는다.
 기존 `source/GCMod.Nextgen`은 별도 authoring 도구의 소스 의존성으로 남으며 이 DLL에는 포함되지 않는다.
 
+게임 옵션에서 일반/CG 대화창 불투명도, 대화 글자 가독성 보정, 30/60 FPS를 조절한다.
+설정 저장 전에는 미리보기만 적용하고, 미저장 상태로 닫거나 탭 이동에서 폐기를 선택하면 저장값으로 돌아간다.
+홈의 프레임 제한은 화면 탭 하단, 시나리오의 프레임 제한은 대화창 설정 아래에 있다.
+CG 대화는 세 번째 줄까지 화면과 배경 안에 들어오도록 배치한다.
+GCMod 전용 단축키는 없다. cfg나 번역 파일을 직접 수정한 후에는 게임을 재시작한다.
+색·굵기·외곽선·자간과 30/60 외의 프레임 지정은 고급 cfg에서 관리한다.
+
+전투의 필요 열정·필요 HP·남은 CT 조합과 한글 Sprite 변경 범위는
+[전투 표시 보완 기록](../../docs/BATTLE_UI_DISPLAY_20261103_KO.md)을 참조한다.
+
 ```powershell
 dotnet build source/GCMod.Candidate/GCMod.Candidate.csproj -c Release -p:GameDependencyRoot=C:\path\to\girlscreation_r
 python tools/export_local_ui.py
 ```
 
 DLL은 기존 `candidate/GCMod.dll`에 생성된다. 빌드는 게임 설치 파일을 쓰지 않는다.
+
+기본 설치 도구는 기존 cfg를 bytes 그대로 보존하며, cfg가 없을 때만 배포 기본값을 적용한다.
+신규 기본값은 일반/CG 불투명도 0%, 가독성 보정 ON, 60 FPS, 자간 0이다.
+기존 cfg에 남은 제거 기능 키도 강제 삭제하지 않는다. 한국어 기본 프로필로 전환할 때만
+`tools/local_release.py install ... --apply-korean-profile`을 사용한다. 이 옵션의 번역·경로·폰트 재설정 범위와
+백업/복구 정책은 [설치 절차](../../docs/LOCAL_PARITY_PIPELINE_KO.md)를 따른다.
 
 7.1.0 후보의 한국어 기본값은 `ko`, CDN은 공식 GitHub main
 (`https://raw.githubusercontent.com/kekwkekw/gctrans/main`), Master는 `*`이다.

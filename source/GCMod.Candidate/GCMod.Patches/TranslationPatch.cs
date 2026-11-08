@@ -13,6 +13,7 @@ public static class TranslationPatch
 	[HarmonyPatch(typeof(ScriptObjectManager), "Create")]
 	public static void SetupTranslation(string prefix, string id)
 	{
+		TextStylePatch.Clear();
 		//IL_000a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0010: Expected O, but got Unknown
 		Plugin.Log.LogInfo($"Prefix: {prefix}, Id: {id}");
@@ -47,9 +48,6 @@ public static class TranslationPatch
 		{
 			message = value;
 		}
-		if (Config.ModifyText.Value)
-		{
-			__instance.fontSpacing = Config.CharacterSpacing.Value;
-		}
+		TextStylePatch.PrepareText(__instance);
 	}
 }
