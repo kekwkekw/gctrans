@@ -19,4 +19,7 @@
 
 metadata-only scan과 CPU 검사는 private helper 없이 실행할 수 있다. 이미 보관된 raw의 UI prefab 재해석도 인증키를 요구하지 않는다. HTTP 인증과 Master 복호화에 필요한 helper/키를 Git, CI artifact, 설치 ZIP에 포함하지 않는다.
 
-LocalParity 설정은 `ko`, `offline`, Master `*`다. 과거 5/7-table smoke 목록과 Nextgen.PackageRoot/UiRequestsEnabled 설정은 현재 runtime 구성에 사용하지 않는다.
+LocalParity 신규 기본 설정은 `ko`, 공식 GitHub main CDN, Master `*`다. `offline`도 지원한다.
+기본 업데이트는 기존 cfg를 보존하고, 명시적 `--apply-korean-profile`에만 패키지 번역 설정을 적용한다.
+사용자 지정 폰트는 cfg의 실제 경로를 읽기 확인하며 그 경로에 파일을 설치하지 않는다.
+과거 5/7-table smoke 목록과 Nextgen.PackageRoot/UiRequestsEnabled 설정은 현재 runtime 구성에 사용하지 않는다.

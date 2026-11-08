@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net9.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../source/GCMod.Candidate/GCMod.Patches/TextStylePatch.cs" Link="TextStylePatch.cs" />
+    <Compile Include="../../source/GCMod.Candidate/GCMod.Services/DialogueMaterialStyle.cs" Link="DialogueMaterialStyle.cs" />
+    <Compile Include="../../source/GCMod.Candidate/GCMod.Services/ValueOverride.cs" Link="ValueOverride.cs" />
+  </ItemGroup>
+</Project>

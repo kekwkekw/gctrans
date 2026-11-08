@@ -1,30 +1,37 @@
 using DMM.OLG.Unity.Extensions.Novel;
 using HarmonyLib;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using GCMod.Services;
 
 namespace GCMod.Patches;
 
 [HarmonyPatch]
 public static class VisualPatch
 {
-	private static class Defaults
+	private sealed class Backgrounds
 	{
-		public static readonly Color NameColor = new Color(0.957f, 0.957f, 0.914f);
+		public EventMessage Owner;
+		public readonly List<Image> Normal = new();
+		public readonly List<Image> Cg = new();
+	}
+	private static readonly Dictionary<int, Backgrounds> BackgroundOwners = new();
 
-		public const float FaceDilate = 0f;
-
-		public const float OutlineWidth = 0f;
-
-		public const float OutlineSoftness = 0f;
+	public static void ApplyBackgrounds(float normal, float cg)
+	{
+		var expired = new List<int>();
+		foreach (var pair in BackgroundOwners)
+		{
+			var frames = pair.Value;
+			if (frames.Owner == null) { expired.Add(pair.Key); continue; }
+			foreach (var image in frames.Normal) ApplyImageAlpha(image, AlphaController.ClampAlpha(normal));
+			foreach (var image in frames.Cg) ApplyImageAlpha(image, AlphaController.ClampAlpha(cg));
+		}
+		foreach (var id in expired) BackgroundOwners.Remove(id);
 	}
 
-	public static Image NormalFrame;
-
-	public static Image CgModeFrame;
-
-	public static Image BaseNameFrame;
+	public static void ClearBackgrounds() => BackgroundOwners.Clear();
 
 	private static void ApplyImageAlpha(Image image, float alpha)
 	{
@@ -39,81 +46,54 @@ public static class VisualPatch
 		}
 	}
 
-	public static void ApplyTextStyle(TextMeshProUGUI text, Color color)
-	{
-		//IL_0001: Unknown result type (might be due to invalid IL or missing references)
-		//IL_003c: Unknown result type (might be due to invalid IL or missing references)
-		((Graphic)text).color = color;
-		((TMP_Text)text).fontMaterial.EnableKeyword("OUTLINE_ON");
-		((TMP_Text)text).fontMaterial.SetFloat("_FaceDilate", Config.FaceDilate.Value);
-		((TMP_Text)text).fontMaterial.SetColor("_OutlineColor", Config.OutlineColor);
-		((TMP_Text)text).fontMaterial.SetFloat("_OutlineWidth", Config.OutlineWidth.Value);
-		((TMP_Text)text).fontMaterial.SetFloat("_OutlineSoftness", Config.OutlineSoftness.Value);
-	}
-
-	public static void ResetTextStyle(TextMeshProUGUI text, Color color)
-	{
-		//IL_0001: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0027: Unknown result type (might be due to invalid IL or missing references)
-		((Graphic)text).color = color;
-		((TMP_Text)text).fontMaterial.SetFloat("_FaceDilate", 0f);
-		((TMP_Text)text).fontMaterial.SetColor("_OutlineColor", Color.black);
-		((TMP_Text)text).fontMaterial.SetFloat("_OutlineWidth", 0f);
-		((TMP_Text)text).fontMaterial.SetFloat("_OutlineSoftness", 0f);
-		((TMP_Text)text).fontMaterial.DisableKeyword("OUTLINE_ON");
-	}
-
-	[HarmonyPostfix]
-	[HarmonyPatch(typeof(EventMessage), "SetName")]
-	public static void SetMessageNameFont(EventMessage __instance)
-	{
-		//IL_0023: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0012: Unknown result type (might be due to invalid IL or missing references)
-		if (Config.ModifyText.Value)
-		{
-			ApplyTextStyle(__instance.MessageName, Config.NameTextColor);
-		}
-		else
-		{
-			ResetTextStyle(__instance.MessageName, Defaults.NameColor);
-		}
-	}
-
-	[HarmonyPostfix]
-	[HarmonyPatch(typeof(EventText), "SetRuby")]
-	public static void SetMessageTextFont(GameObject go, EventText.Letter letter, ref TextMeshProUGUI text)
-	{
-		//IL_000e: Unknown result type (might be due to invalid IL or missing references)
-		if (Config.ModifyText.Value)
-		{
-			ApplyTextStyle(text, Config.MessageTextColor);
-		}
-	}
-
 	[HarmonyPostfix]
 	[HarmonyPatch(typeof(EventMessage), "Init")]
 	public static void SaveTextBackground(EventMessage __instance)
 	{
-		foreach (Image componentsInChild in ((Component)__instance).GetComponentsInChildren<Image>())
+		if (__instance == null) return;
+		var frames = new Backgrounds { Owner = __instance };
+		foreach (var image in __instance.GetComponentsInChildren<Image>(true))
 		{
-			if (((Object)componentsInChild).name == "Normal")
-			{
-				ApplyImageAlpha(componentsInChild, Config.NormalAlpha.Value);
-				NormalFrame = componentsInChild;
-			}
-			if (((Object)componentsInChild).name == "MessageWindow")
-			{
-				ApplyImageAlpha(componentsInChild, Config.CgModeAlpha.Value);
-				CgModeFrame = componentsInChild;
-			}
+			// The CG frame also owns a BaseName image. Classify by frame ancestry
+			// so changing normal opacity cannot change the CG speaker background.
+			string frame = FindFrame(image.transform, __instance.transform);
+			if (frame == "NormalFrame" && (image.name == "Normal" || image.name == "BaseName")) frames.Normal.Add(image);
+			else if (frame == "CgModeFrame" && (image.name == "MessageWindow" || image.name == "BaseName")) frames.Cg.Add(image);
 		}
-		foreach (Image componentsInChild2 in __instance.NameImage.GetComponentsInChildren<Image>())
+		bool first = !BackgroundOwners.TryGetValue(__instance.GetInstanceID(), out var prior)
+			|| prior.Normal.Count != frames.Normal.Count || prior.Cg.Count != frames.Cg.Count;
+		BackgroundOwners[__instance.GetInstanceID()] = frames;
+		if (first)
 		{
-			if (((Object)componentsInChild2).name == "BaseName")
-			{
-				ApplyImageAlpha(componentsInChild2, Config.NormalAlpha.Value);
-				BaseNameFrame = componentsInChild2;
-			}
+			Plugin.Log.LogInfo($"[Opacity] Bound message {__instance.GetInstanceID()}: normal={frames.Normal.Count}, cg={frames.Cg.Count}");
+			foreach (var image in frames.Normal) Plugin.Log.LogInfo("[Opacity] Normal target: " + ImagePath(image.transform));
+			foreach (var image in frames.Cg) Plugin.Log.LogInfo("[Opacity] CG target: " + ImagePath(image.transform));
 		}
+		DialogueSettings.Apply();
 	}
+
+	private static string FindFrame(Transform transform, Transform owner)
+	{
+		while (transform != null && transform != owner)
+		{
+			if (transform.name == "NormalFrame" || transform.name == "CgModeFrame") return transform.name;
+			transform = transform.parent;
+		}
+		return null;
+	}
+
+	private static string ImagePath(Transform transform)
+	{
+		var path = transform.name;
+		for (int i = 0; i < 8 && transform.parent != null; i++)
+		{ transform = transform.parent; path = transform.name + "/" + path; }
+		return path;
+	}
+
+	[HarmonyPostfix, HarmonyPatch(typeof(EventMessage), "OnEnable")]
+	public static void BackgroundEnabled(EventMessage __instance) => SaveTextBackground(__instance);
+	[HarmonyPostfix, HarmonyPatch(typeof(EventMessage), "ChangeParentFrameType")]
+	public static void ParentFrameChanged(EventMessage __instance) => SaveTextBackground(__instance);
+	[HarmonyPostfix, HarmonyPatch(typeof(EventMessage), "ChangeFrameType")]
+	public static void FrameChanged(EventMessage __instance) => SaveTextBackground(__instance);
 }
