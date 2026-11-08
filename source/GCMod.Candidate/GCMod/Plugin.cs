@@ -29,8 +29,6 @@ public class Plugin : BasePlugin
 
 	private static HttpClient _httpClient;
 
-	private static CancellationTokenSource _updateCheckCancellation;
-
 	public static ConfigFile ConfigFile;
 
 	public static ManualLogSource Log;
@@ -55,7 +53,9 @@ public class Plugin : BasePlugin
 		Log.LogInfo("GCMod Korean LocalParity 7.2.1; upstream 0cdcd9e84fffa438dfdac63176685a6c47a07318");
 		Toast.Initialize();
 		GCMod.Config.Initialize();
-		Instance = (MonoBehaviour)(object)((BasePlugin)this).AddComponent<Hotkey>();
+		DialogueSettings.Initialize();
+		Log.LogInfo("[SettingsUI] Integrated build16 (settings UI and battle labels)");
+		Instance = (MonoBehaviour)(object)((BasePlugin)this).AddComponent<DialogueSettingsUpdater>();
 		try
 		{
 			Initialize();
@@ -68,11 +68,6 @@ public class Plugin : BasePlugin
 			throw;
 		}
 		Toast.Success("GCMod", "한국어 패치 로드 완료: LocalParity 7.2.1");
-		if (GCMod.Config.CheckUpdate.Value)
-		{
-			_updateCheckCancellation = new CancellationTokenSource();
-			UpdateChecker.CheckAsync(_httpClient, "7.2.1", _updateCheckCancellation.Token);
-		}
 	}
 
 	private static void Initialize()
@@ -130,9 +125,6 @@ public class Plugin : BasePlugin
 		ImagePatch.Clear();
 		Trans?.Dispose();
 		MasterDataPatch.JsonRewriter = null;
-		_updateCheckCancellation?.Cancel();
-		_updateCheckCancellation?.Dispose();
-		_updateCheckCancellation = null;
 		_httpClient?.Dispose();
 		_httpClient = null;
 		if ((UnityEngine.Object)(object)Instance != (UnityEngine.Object)null)

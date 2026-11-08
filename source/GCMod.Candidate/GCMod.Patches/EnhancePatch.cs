@@ -1,5 +1,5 @@
 using Gc;
-using Gc.Battle.SkillWidget;
+using GCMod.Services;
 using HarmonyLib;
 
 namespace GCMod.Patches;
@@ -9,22 +9,6 @@ public static class EnhancePatch
 {
 	[HarmonyPostfix]
 	[HarmonyPatch(typeof(GcOptionData), "SetPowerSaving")]
-	public static void ChangeFrameRate()
-	{
-		int value = Config.FrameRate.Value;
-		if (value > 0)
-		{
-			GcOptionData.ChangeApplicationTargetFrameRate(value);
-		}
-	}
+	public static void ChangeFrameRate() => FrameRateSettings.NativeSettingsApplied();
 
-	[HarmonyPostfix]
-	[HarmonyPatch(typeof(CutInMoviePlayer), "PlayAsync")]
-	public static void SkipCutin(CutInMoviePlayer __instance)
-	{
-		if (Config.IsSkipCutin.Value)
-		{
-			__instance.Skip();
-		}
-	}
 }

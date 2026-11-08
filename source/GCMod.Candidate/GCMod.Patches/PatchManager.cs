@@ -18,6 +18,8 @@ public static class PatchManager
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(EnhancePatch), (string)null));
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(TranslationPatch), (string)null));
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(VisualPatch), (string)null));
+			Installed.Add(Harmony.CreateAndPatchAll(typeof(CgMessageLayoutPatch), (string)null));
+			Installed.Add(Harmony.CreateAndPatchAll(typeof(TextStylePatch), (string)null));
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(UiPatch), (string)null));
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(ImagePatch), (string)null));
 			Installed.Add(Harmony.CreateAndPatchAll(typeof(ChoicePatch), (string)null));
@@ -29,6 +31,17 @@ public static class PatchManager
 		{
 			Uninstall();
 			throw;
+		}
+		var settings = new Harmony("GCMod.SettingsUI");
+		try
+		{
+			settings.PatchAll(typeof(SettingsUiPatch));
+			Installed.Add(settings);
+		}
+		catch (System.Exception ex)
+		{
+			settings.UnpatchSelf();
+			Plugin.Log.LogError("[SettingsUI] Optional UI hooks disabled: " + ex);
 		}
 	}
 
@@ -43,6 +56,11 @@ public static class PatchManager
 			item.UnpatchSelf();
 		}
 		Installed.Clear();
+		SettingsUiPatch.Cleanup();
+		GCMod.Services.FrameRateSettings.RestoreNative();
+		TextStylePatch.Clear();
+		VisualPatch.ClearBackgrounds();
+		CgMessageLayoutPatch.Clear();
 		return true;
 	}
 

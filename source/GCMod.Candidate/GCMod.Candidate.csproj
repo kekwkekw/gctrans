@@ -47,9 +47,6 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>$(GameDir)\BepInEx\interop\Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>$(GameDir)\BepInEx\interop\UnityEngine.InputLegacyModule.dll</HintPath>
-    </Reference>
 
     <Reference Include="UnityEngine.ImageConversionModule">
       <HintPath>$(GameDir)\BepInEx\interop\UnityEngine.ImageConversionModule.dll</HintPath>

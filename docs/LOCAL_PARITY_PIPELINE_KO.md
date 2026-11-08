@@ -88,13 +88,29 @@ DLL은 `source/GCMod.Candidate`에서 `candidate/GCMod.dll`로 Release 빌드한
 python tools/local_release.py install --archive work/local-parity/update.zip --game <game-directory> --backup <new-backup-directory-outside-game>
 ```
 
-설치 전 archive membership·hash·등록된 Novel 존재를 확인하고, 원본 backup/journal을 만든다. 기존 일반 설정은 보존하고 한국어/offline/Master `*`/폰트 경로를 적용한다. 실행 중 게임에는 설치하지 않는다. 설치 실패는 기존 bytes로 복구한다.
+설치 전 archive membership·hash·등록된 Novel 존재를 확인하고, 변경 파일의 원본 backup/journal을 만든다.
+**기본 업데이트는 기존 cfg의 bytes를 그대로 보존한다.** 불투명도·F5·FPS뿐 아니라 번역 활성화·언어·CDN/offline·사용자 경로·비동기 로딩·Master 테이블·폰트 경로·주석·알 수 없는 키도 보존한다.
+cfg가 없을 때만 패키지 기본 cfg를 설치하고, 기존 cfg에 없는 항목은 게임 시작 시 BepInEx가 runtime 기본값으로 바인딩한다.
+실행 중 게임에는 설치하지 않는다. 설치 실패는 설치 도구가 변경한 파일을 기존 bytes로 복구한다.
+
+한국어 기본 프로필로 전환하려는 경우에만 위 install 명령에 `--apply-korean-profile`을 추가한다.
+이 옵션은 `Translation`, `Translation.MasterData`, `Translation.Font`의 패키지 키를 기본값으로 적용한다.
+CDN은 공식 main, 사용자 번역 경로는 빈 값, 비동기 로딩은 false, 언어는 ko, 번역 활성화는 true,
+Master는 `*`, 폰트는 패키지 기본 경로로 바뀐다. 해당 섹션의 알 수 없는 키와 일반·대화 설정값은 보존한다.
+명시적 프로필 전환에서는 cfg를 재직렬화하므로 주석·서식은 유지되지 않으며 원래 bytes는 백업에서 복구할 수 있다.
+
+공개 업데이트의 폰트 선행 조건은 적용 후 cfg의 실제 경로를 확인한다. 상대 경로는 BepInEx/plugins 기준이고,
+절대 경로도 허용하지만 해당 파일을 읽기 확인만 하며 사용자 경로에 파일을 설치하지 않는다.
+ZIP을 수동으로 적용할 때도 기존 cfg를 덮어쓰지 않는다.
 
 ```powershell
 python tools/local_release.py rollback --game <game-directory> --backup <same-backup-directory>
 ```
 
-설치 후 사용자가 파일을 변경했으면 rollback은 덮어쓰지 않고 충돌을 알린다. 실제 실행은 사용자가 제공한 기존 DMM 런처를 따른다. 시작 로그, 대표 Master/static UI, 시나리오 제목·본문·화자와 변경한 화면만 확인한다. 기존 `EnabledTables=*`를 좁은 smoke 목록으로 바꾸지 않는다.
+설치 도구가 변경한 파일을 사용자가 다시 변경했으면 rollback은 덮어쓰지 않고 충돌을 알린다.
+기본 업데이트에서 보존한 기존 cfg는 복구 대상에 포함되지 않아, 업데이트 후 사용자가 바꾼 설정도 유지된다.
+새 cfg 설치 또는 명시적 프로필 전환으로 cfg를 변경했다면 cfg도 복구·충돌 검사 대상이다.
+실제 실행은 사용자가 제공한 기존 DMM 런처를 따른다. 시작 로그, 대표 Master/static UI, 시나리오 제목·본문·화자와 변경한 화면만 확인한다. 기존 `EnabledTables=*`를 좁은 smoke 목록으로 바꾸지 않는다.
 
 ## 4. 커밋 준비
 
