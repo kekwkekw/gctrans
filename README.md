@@ -6,8 +6,8 @@ GCMod로 시나리오·UI·Master·지원 이미지를 표시하고, Codex 초�
 
 ## 설치
 
-**[GCMod 7.3.0 전체 설치본](https://github.com/kekwkekw/gctrans/releases/tag/v7.3.0)**에서
-`GCMod-7.3.0-ko-full-win-x64.zip`을 받으세요. GitHub의 Source code ZIP은 설치 파일이 아닙니다.
+**[GCMod 7.3.1 전체 설치본](https://github.com/kekwkekw/gctrans/releases/tag/v7.3.1)**에서
+`GCMod-7.3.1-ko-full-win-x64.zip`을 받으세요. GitHub의 Source code ZIP은 설치 파일이 아닙니다.
 
 1. 게임을 종료합니다.
 2. 신규 사용자는 ZIP 내용물을 `GC.exe`가 있는 폴더에 복사합니다.
@@ -23,6 +23,7 @@ BepInEx·.NET 런타임·Utility·한국어 폰트·번역 데이터를 포함�
 Novel은 해당 시나리오 진입 시 필요한 데이터를 로드합니다. **DLL·폰트는 자동 갱신 대상이 아닙니다.**
 상세 동작은 [데이터 갱신](docs/DATA_UPDATES_KO.md), 이미지 지원 범위는 [이미지 갱신](docs/IMAGE_UPDATES_KO.md)에 있습니다.
 
+7.3.1은 정상 시작 시 로드 완료 카드를 표시하지 않습니다. 패치 로드 오류가 발생하면 오류 카드가 표시됩니다.
 7.3.0은 게임 옵션에서 일반/CG 대화창 불투명도·가독성 보정·30/60 FPS를 조절합니다.
 미리보기 후 설정 저장을 누르면 유지되며, 미저장 변경을 폐기하면 저장값으로 돌아갑니다.
 GCMod 전용 단축키는 없습니다. cfg나 번역 파일을 직접 수정한 후에는 게임을 재시작하세요.
@@ -68,7 +69,7 @@ GCMod 6.1 호환 CDN의 `names/`, `words/`, `novels/`와 `GCMod-cs파일백업/`
 
 ## 현재 범위와 한계
 
-2026-11-09 이 tree 기준: Novel 사전 1,939개, Master exact 34,388개, UI exact 14,073개,
+2026-11-09 이 tree 기준: Novel 사전 1,939개, Master exact 34,388개, UI exact 14,075개,
 이미지 매핑 165개, current Knowledge 3,535개입니다. UI 수에는 유한 숫자·시간 범위에서 생성한
 exact도 포함합니다. 파일·키 수는 전편 신규 번역량이나 전수 의미검수·실기 완료 수가 아닙니다.
 
