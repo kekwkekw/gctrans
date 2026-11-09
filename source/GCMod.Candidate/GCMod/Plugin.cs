@@ -18,7 +18,7 @@ using Utility.Notifications;
 
 namespace GCMod;
 
-[BepInPlugin("GCMod", "GCMod", "7.3.0")]
+[BepInPlugin("GCMod", "GCMod", "7.3.1")]
 public class Plugin : BasePlugin
 {
 	private const int HttpTimeoutSeconds = 30;
@@ -55,7 +55,7 @@ public class Plugin : BasePlugin
 		{
 			Toast.Initialize();
 			ConfigFile = ((BasePlugin)this).Config;
-			Log.LogInfo("GCMod Korean LocalParity 7.3.0; upstream 0cdcd9e84fffa438dfdac63176685a6c47a07318");
+			Log.LogInfo("GCMod Korean LocalParity 7.3.1; upstream 0cdcd9e84fffa438dfdac63176685a6c47a07318");
 			GCMod.Config.Initialize();
 			DialogueSettings.Initialize();
 			Log.LogInfo("[SettingsUI] Integrated build16 (settings UI and battle labels)");
