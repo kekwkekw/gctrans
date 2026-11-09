@@ -28,6 +28,7 @@ public class Plugin : BasePlugin
 	private const int PooledConnectionIdleTimeoutMinutes = 2;
 
 	private static HttpClient _httpClient;
+	private static bool _loadFailureShown;
 
 	public static ConfigFile ConfigFile;
 
@@ -49,25 +50,51 @@ public class Plugin : BasePlugin
 		{
 		}
 		Log = ((BasePlugin)this).Log;
-		ConfigFile = ((BasePlugin)this).Config;
-		Log.LogInfo("GCMod Korean LocalParity 7.3.0; upstream 0cdcd9e84fffa438dfdac63176685a6c47a07318");
-		Toast.Initialize();
-		GCMod.Config.Initialize();
-		DialogueSettings.Initialize();
-		Log.LogInfo("[SettingsUI] Integrated build16 (settings UI and battle labels)");
-		Instance = (MonoBehaviour)(object)((BasePlugin)this).AddComponent<DialogueSettingsUpdater>();
+		_loadFailureShown = false;
 		try
 		{
+			Toast.Initialize();
+			ConfigFile = ((BasePlugin)this).Config;
+			Log.LogInfo("GCMod Korean LocalParity 7.3.0; upstream 0cdcd9e84fffa438dfdac63176685a6c47a07318");
+			GCMod.Config.Initialize();
+			DialogueSettings.Initialize();
+			Log.LogInfo("[SettingsUI] Integrated build16 (settings UI and battle labels)");
+			Instance = (MonoBehaviour)(object)((BasePlugin)this).AddComponent<DialogueSettingsUpdater>();
 			Initialize();
 			PatchManager.Initialize();
 			Trans.Initialize();
 		}
 		catch
 		{
-			((BasePlugin)this).Unload();
+			try
+			{
+				Unload();
+			}
+			catch (Exception cleanupError)
+			{
+				Log.LogWarning("Cleanup after GCMod load failure failed: " + cleanupError);
+			}
+			// Unload clears pending toasts, so queue the failure after cleanup.
+			_loadFailureShown = false;
+			NotifyLoadFailure();
 			throw;
 		}
-		Toast.Success("GCMod", "한국어 패치 로드 완료: LocalParity 7.3.0");
+	}
+
+	internal static void NotifyLoadFailure()
+	{
+		if (_loadFailureShown)
+		{
+			return;
+		}
+		try
+		{
+			_loadFailureShown = Toast.Error("GCMod", "한글 패치 로드 중 오류가 발생했습니다. BepInEx/LogOutput.log를 확인해 주세요.");
+		}
+		catch (Exception notificationError)
+		{
+			Log.LogWarning("Could not display the GCMod load failure notification: " + notificationError.Message);
+		}
 	}
 
 	private static void Initialize()
@@ -103,7 +130,10 @@ public class Plugin : BasePlugin
 			if (firstSession) { firstSession = false; return startupCache; }
 			return new TranslationCache(GCMod.Config.TranslationCDN.Value, transDir, GCMod.Config.TranslationLanguage.Value, _httpClient);
 		}, font);
-		UiPatch.Initialize(transDir, GCMod.Config.TranslationLanguage.Value);
+		if (!UiPatch.Initialize(transDir, GCMod.Config.TranslationLanguage.Value) && GCMod.Config.Translation.Value)
+		{
+			NotifyLoadFailure();
+		}
 		ImagePatch.Initialize(transDir, GCMod.Config.TranslationLanguage.Value);
 		MasterDataPatch.JsonRewriter = delegate(MasterAttribute attribute, string json)
 		{
