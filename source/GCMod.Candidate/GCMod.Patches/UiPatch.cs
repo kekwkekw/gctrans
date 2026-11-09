@@ -19,7 +19,7 @@ public static class UiPatch
 	[ThreadStatic]
 	private static bool _isTranslating;
 
-	public static void Initialize(string transDir, string language)
+	public static bool Initialize(string transDir, string language)
 	{
 		try
 		{
@@ -49,10 +49,12 @@ public static class UiPatch
 			}
 
 			_translations = dict;
+			return dict.Count > 0;
 		}
 		catch (Exception ex)
 		{
 			Plugin.Log.LogError($"[UiPatch] Failed to load UI translations: {ex}");
+			return false;
 		}
 	}
 

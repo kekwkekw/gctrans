@@ -53,6 +53,7 @@ public sealed class TranslationManager : IDisposable
 		}, delegate(Exception error)
 		{
 			Logger.Error("Font load failed: " + error.Message);
+			Plugin.NotifyLoadFailure();
 		});
 		_fontCoroutine = Plugin.Instance.StartCoroutine(BepInEx.Unity.IL2CPP.Utils.Collections.CollectionExtensions.WrapToIl2Cpp(_fontLoad));
 		LoadTranslationAsync();
