@@ -1005,13 +1005,13 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "d65328039da2a2679a58e1b961fc90c9d9a8537bda268cd689b661fc3e8a1816",
+      "sha256": "9bde6a7858226f305262fc43db20a85b9f3905bb29fdf6cb6290c5819969dee7",
       "size": 344822
     },
     {
       "kind": "legacy_manifest",
       "path": "manifest.json",
-      "sha256": "733f0619ed0d9850faa0b26d6ac3a95e952d57b7bed9db518b9198af0a07c0bf",
+      "sha256": "297abd1f28350b6546c1457aeefd39631c52ce5b0a0495360a94ba1a19a04fec",
       "size": 100672
     },
     {
@@ -5391,8 +5391,8 @@
     {
       "kind": "novel",
       "path": "novels/22001004.json",
-      "sha256": "0a48407a0d722d58d2f5276fab73633b40da6820cc84e6c11e68a97ae045fab9",
-      "size": 14103
+      "sha256": "06dae813111d72ef65b52c2fb0e72503f28fe765d3147cb09d305d78c8f9e143",
+      "size": 14500
     },
     {
       "kind": "novel",
@@ -5403,8 +5403,8 @@
     {
       "kind": "novel",
       "path": "novels/22001006.json",
-      "sha256": "694611100da86803cfbf394c16d8c44ae1d3eb3daaea65031a4db8b58bad4df7",
-      "size": 17109
+      "sha256": "7eefca441cb4ecbc76f8b82001258d69a2a9739b17a60ccb349d24ca23b432d0",
+      "size": 17402
     },
     {
       "kind": "novel",
@@ -9675,8 +9675,8 @@
     {
       "kind": "novel",
       "path": "novels/40112011.json",
-      "sha256": "97bca5387f33123c3f0f105753f7f5dfa8f84261d0de5d9ac2ef58bb94ef1a71",
-      "size": 14706
+      "sha256": "2ec511f16d7c292076766a03f7847f03e4af079795297995259c1c1830b914cb",
+      "size": 14705
     },
     {
       "kind": "novel",
@@ -9819,8 +9819,8 @@
     {
       "kind": "novel",
       "path": "novels/40112092.json",
-      "sha256": "46a56d268ac62f174fbf1b2fb71a4365f498e73b69d01267a6ddef227bb09d3c",
-      "size": 20425
+      "sha256": "ebad47c9b174bfbf899f1ac7b57274f105e12ccb2b0a28eac0fa077b53b81135",
+      "size": 20650
     },
     {
       "kind": "novel",
@@ -9867,20 +9867,20 @@
     {
       "kind": "novel",
       "path": "novels/40112121.json",
-      "sha256": "34f65295050616cd79deafcc4a696bd0e3101bdb6a79776f91fa68b9799f3282",
-      "size": 11409
+      "sha256": "92234652e095312466b397035861ce447e3e1bcf9d1dfff94b23068edad90101",
+      "size": 11656
     },
     {
       "kind": "novel",
       "path": "novels/40112122.json",
-      "sha256": "1faee5c064411952bafe4404a01f63fd7e2598221a98f76f86d538d9cbe246c0",
-      "size": 12882
+      "sha256": "bb96e7f5820c8297b64cc5dfd6f94a2d4281cd39bc0525c4a15c9618a8a1a50f",
+      "size": 12931
     },
     {
       "kind": "novel",
       "path": "novels/40112123.json",
-      "sha256": "c6f217bd85fc2413d148563ac50b3a7799a3f67eb82829dbde3f5175f540a67b",
-      "size": 22980
+      "sha256": "442940f776d57dc56281dc286cd546d53f04030c9def7d1b27a01a00210acd4d",
+      "size": 23100
     },
     {
       "kind": "novel",
@@ -12689,12 +12689,12 @@
   "legacy_manifest_builder_input": "current release/index; explicit add/modify/remove; optional initial bootstrap receipt",
   "locale": "ko",
   "profile": "NextgenCandidate",
-  "revision": "ng03-bf46cc05ec00a1e7bb9c2eab",
+  "revision": "ng03-fd1b87ba58fb24142c095adc",
   "schema_version": 2,
   "status": "OFFLINE_PARTIAL_NOT_ACCEPTED_REPLACEMENT",
   "ui_manifest": {
     "path": "ui/manifest.json",
-    "sha256": "b35de6f8038c4b11ef2f12c84b1970948031612cd1ec5f9228934de5d6b5743d",
+    "sha256": "86d345df66255ed2040bc8be3f8c0e933e975efcb9a18ecd62bf21b921e3fdf8",
     "size": 40840
   }
 }
