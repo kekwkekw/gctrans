@@ -3,7 +3,7 @@
     {
       "kind": "legacy_manifest",
       "path": "manifest.json",
-      "sha256": "0f9697733dc412bb6c524ec477c9dd4dc60b7dcdcf6badb814f4fdc1d3c875bb",
+      "sha256": "733f0619ed0d9850faa0b26d6ac3a95e952d57b7bed9db518b9198af0a07c0bf",
       "size": 100672
     },
     {
@@ -921,8 +921,8 @@
     {
       "kind": "novel",
       "path": "novels/10028.json",
-      "sha256": "43c6a2d250df33f0f4ef33bdbd2404a663a2406c961fab89f6dbc8c9db5f9cd4",
-      "size": 1133
+      "sha256": "a6a7d7b524f4511991dad1de8a07677c0f8089e52975cc931a808501512403f4",
+      "size": 1285
     },
     {
       "kind": "novel",
@@ -8811,8 +8811,8 @@
     {
       "kind": "novel",
       "path": "novels/40112093.json",
-      "sha256": "49ea972370c0634e4cd7e182937fc696a807bf1d02cb06f04ea7def8adc54b23",
-      "size": 22627
+      "sha256": "0b20c32456f2770b28287196f1df919c5321ebb1568da7457e258f77f367aa15",
+      "size": 22761
     },
     {
       "kind": "novel",
