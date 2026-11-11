@@ -5,7 +5,7 @@ import unittest
 from unittest.mock import patch
 import zipfile
 import hashlib
-from local_parity_fixture import fixture
+from translation_update_fixture import fixture
 import local_release as release
 
 
@@ -170,7 +170,7 @@ class ReleaseTests(unittest.TestCase):
             self.assertEqual(dll.read_bytes(),b'user changed')
 
     def test_image_catalog_payload_and_novel_manifest_preserved(self):
-        from local_parity_fixture import ROOT, build
+        from translation_update_fixture import ROOT, build
         package=self.root/'translations/ko'
         old=json.loads((package/'manifest.json').read_bytes())
         source=ROOT/'translations/ko'

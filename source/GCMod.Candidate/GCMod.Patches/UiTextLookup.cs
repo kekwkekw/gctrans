@@ -8,7 +8,6 @@ namespace GCMod.Patches;
 // no substring translation, hierarchy selectors, or general template parser.
 internal static class UiTextLookup
 {
-    private static readonly Regex Wrapper = new Regex(@"^(<[^>]+>)(.+?)(</[^>]+>)$", RegexOptions.Singleline);
     private static readonly (Regex Pattern, string Key)[] Counters = {
         (new Regex(@"^第([0-9]{1,3})章$"), "第{0}章"),
         (new Regex(@"^シーズン([0-9]{1,3})$"), "シーズン{0}"),
@@ -63,6 +62,23 @@ internal static class UiTextLookup
             "次回リセット：{0:yyyy/MM/dd HH:mm}", "{0:yyyy/MM/dd HH:mm}"),
     };
 
+    private static bool TryGetOuterTagBounds(string text, out int contentStart, out int closingStart, out int end)
+    {
+        contentStart = closingStart = 0;
+        end = text[^1] == '\n' ? text.Length - 1 : text.Length;
+        if (end < 8 || text[0] != '<' || text[end - 1] != '>') return false;
+
+        int openingEnd = text.IndexOf('>');
+        if (openingEnd < 2) return false;
+        contentStart = openingEnd + 1;
+
+        // A closing tag starts after the preceding '>' and leaves a nonempty body.
+        int suffixStart = Math.Max(contentStart + 1, text.LastIndexOf('>', end - 2) + 1);
+        if (suffixStart > end - 4) return false;
+        closingStart = text.IndexOf("</", suffixStart, StringComparison.Ordinal);
+        return closingStart >= 0 && closingStart + 3 < end;
+    }
+
     public static bool TryTranslate(Dictionary<string, string> dictionary, string original, out string translated, int depth = 0)
     {
         translated = null;
@@ -70,18 +86,20 @@ internal static class UiTextLookup
         if (dictionary.TryGetValue(original, out translated)) return true;
         if (original.Length > 200 || depth >= 8) return false;
 
-        // Restore upstream whitespace/outer rich-text handling, preserving both.
-        string trimmed = original.Trim();
-        if (trimmed.Length > 0 && trimmed.Length != original.Length && TryTranslate(dictionary, trimmed, out string inner, depth + 1))
+        var text = original.AsSpan();
+        var core = text.Trim();
+        if (!core.IsEmpty && core.Length != text.Length &&
+            TryTranslate(dictionary, core.ToString(), out var body, depth + 1))
         {
-            int start = original.IndexOf(trimmed, StringComparison.Ordinal);
-            translated = original.Substring(0, start) + inner + original.Substring(start + trimmed.Length);
+            int leading = text.Length - text.TrimStart().Length;
+            translated = string.Concat(text[..leading], body.AsSpan(), text[(leading + core.Length)..]);
             return true;
         }
-        Match wrapper = Wrapper.Match(original);
-        if (wrapper.Success && TryTranslate(dictionary, wrapper.Groups[2].Value, out string wrapped, depth + 1))
+
+        if (TryGetOuterTagBounds(original, out int contentStart, out int closingStart, out int end) &&
+            TryTranslate(dictionary, original[contentStart..closingStart], out var tagBody, depth + 1))
         {
-            translated = wrapper.Groups[1].Value + wrapped + wrapper.Groups[3].Value;
+            translated = string.Concat(text[..contentStart], tagBody.AsSpan(), text[closingStart..end]);
             return true;
         }
         foreach (Regex rule in BattleUnusable)

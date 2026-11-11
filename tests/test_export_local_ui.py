@@ -157,10 +157,6 @@ class ExactUiExportTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);self.package(root,rows)
             self.assertEqual(json.loads(export(root)[0])['アテネスレコード'],'아테네스 레코드')
-            (root/'ui/local-coverage.json').write_text(json.dumps({'schema':'gc-local-ui-coverage-v1','keys':['未登録'],'keep_source':[]}), encoding='utf-8')
-            with self.assertRaisesRegex(ValueError,'Local UI coverage missing'):export(root)
-            (root/'ui/local-coverage.json').write_text(json.dumps({'schema':'gc-local-ui-coverage-v1','keys':['未登録'],'keep_source':['未登録']}), encoding='utf-8')
-            with self.assertRaisesRegex(ValueError,'Invalid local UI coverage contract'):export(root)
 
     def test_explicit_hold_is_not_silently_activated(self):
         rows=[self.row('held','保留','보류')|{'disposition':'hold'}]

@@ -218,15 +218,6 @@ def export(root):
         for amount in amounts:
             add_ap(amount_jp.replace('{0:#,0}', str(amount)), amount_ko.replace('{0:#,0}', str(amount)))
         result.update(ap_pairs)
-    coverage = read(root / 'ui/local-coverage.json') if (root / 'ui/local-coverage.json').exists() else None
-    if coverage:
-        if (coverage.get('schema') != 'gc-local-ui-coverage-v1'
-            or len(set(coverage['keys'])) != len(coverage['keys'])
-            or not set(coverage['keep_source']).issubset(coverage['keys'])
-            or any(re.search(r'[\u3041-\u3096\u30a1-\u30fa\u3400-\u9fff]', k) for k in coverage['keep_source'])):
-            raise ValueError('Invalid local UI coverage contract')
-        missing = [jp for jp in coverage['keys'] if jp not in result and jp not in coverage['keep_source']]
-        if missing: raise ValueError('Local UI coverage missing: ' + repr(missing))
     payload = (json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2) + "\n").encode("utf-8")
     return payload, {"exact_pairs": len(result), "authoring_bindings_preserved": len(bindings),
                      "held_authoring_jp": sorted({r['jp'] for r in resources if r.get('disposition') not in ('translate','keep_jp') and r['jp'] not in result}), "review_resolved_authoring_jp": resolved,
@@ -235,10 +226,7 @@ def export(root):
                      "bounded_enhancement_exacts": len(enhancement_pairs),
                      "bounded_ap_exacts": len(ap_pairs),
                      "master_ui_source_pairs": master_pairs,
-                     "authoring_pairs_without_live_binding": len({r['jp'] for r in resources if r['id'] not in live and r.get('disposition') == 'translate' and r.get('ko') and r['jp'] != r['ko']}),
-                     "local_coverage_keys": len(coverage['keys']) if coverage else 0,
-                     "local_coverage_keep_source": len(coverage['keep_source']) if coverage else 0,
-                     "local_coverage_missing": [] if coverage else None}
+                     "authoring_pairs_without_live_binding": len({r['jp'] for r in resources if r['id'] not in live and r.get('disposition') == 'translate' and r.get('ko') and r['jp'] != r['ko']})}
 
 
 if __name__ == "__main__":

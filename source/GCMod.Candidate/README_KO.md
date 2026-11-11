@@ -1,6 +1,6 @@
-# GCMod Korean LocalParity
+# GCMod 한국어 패치
 
-런타임 기준: `kristina1Q/gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318`.
+런타임 소스와 배포는 gctrans에서 관리한다.
 
 `Plugin → TranslationManager / PatchManager` 구조와 Enhance, Translation, Visual,
 UI, MasterData 훅을 사용한다. `GCMod.Nextgen.sources.props`를 import하지 않는다.
@@ -27,7 +27,7 @@ DLL은 기존 `candidate/GCMod.dll`에 생성된다. 빌드는 게임 설치 파
 신규 기본값은 일반/CG 불투명도 0%, 가독성 보정 ON, 60 FPS, 자간 0이다.
 기존 cfg에 남은 제거 기능 키도 강제 삭제하지 않는다. 한국어 기본 프로필로 전환할 때만
 `tools/local_release.py install ... --apply-korean-profile`을 사용한다. 이 옵션의 번역·경로·폰트 재설정 범위와
-백업/복구 정책은 [설치 절차](../../docs/LOCAL_PARITY_PIPELINE_KO.md)를 따른다.
+백업/복구 정책은 [설치 절차](../../docs/TRANSLATION_PIPELINE_KO.md)를 따른다.
 
 7.1.0 후보의 한국어 기본값은 `ko`, CDN은 공식 GitHub main
 (`https://raw.githubusercontent.com/kekwkekw/gctrans/main`), Master는 `*`이다.

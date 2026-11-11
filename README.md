@@ -46,7 +46,7 @@ Knowledge는 명시된 scope 안에서 사용하고, 과거 원장과 변경 이
 |---|---|
 | 전체 운영·역할·신규 Novel 번역 | [OPERATOR_KO.md](docs/OPERATOR_KO.md) |
 | corpus 교정·Knowledge 변경·줄배치 규칙 | [CORPUS_WORKFLOW_KO.md](docs/CORPUS_WORKFLOW_KO.md) |
-| Master/UI 수집·검수·적용 | [LOCAL_PARITY_PIPELINE_KO.md](docs/LOCAL_PARITY_PIPELINE_KO.md) |
+| Master/UI 수집·검수·적용 | [TRANSLATION_PIPELINE_KO.md](docs/TRANSLATION_PIPELINE_KO.md) |
 | 전 자산 crawler와 남은 범위 | [CRAWLER_ALL_ASSETS_KO.md](docs/CRAWLER_ALL_ASSETS_KO.md) |
 | 게임 runtime 구조·빌드 | [GCMod.Candidate](source/GCMod.Candidate/README_KO.md) |
 | 전체 문서·현재와 과거 자료 구분 | [문서 안내](docs/INDEX.md) |
