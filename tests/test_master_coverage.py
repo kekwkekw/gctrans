@@ -1,11 +1,12 @@
 import json
+from hashlib import sha256
 from pathlib import Path
 import sys
 import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from update.master_coverage import plan, validate_draft, reviewed_master
+from update.master_coverage import apply_draft, apply_reviewed, plan, validate_draft, reviewed_master
 
 
 class CoverageTests(unittest.TestCase):
@@ -16,10 +17,36 @@ class CoverageTests(unittest.TestCase):
             baseline = root/'baseline.json'
             baseline.write_text(json.dumps({'t': {'f': {'JP': '中文'}, 'g': {'JP': '中文'}}}), encoding='utf-8')
             result = plan(baseline, root, {}, 'fixed-ref')
+            self.assertEqual(result['schema'], 'gc-master-coverage-v1')
+            self.assertEqual(result['baseline_only_missing_count'], 1)
+            self.assertEqual(result['missing'][0]['source'], 'BASELINE_COVERAGE_JP')
+            observed = {'master': [{'translation_target': {'table': 't', 'field': 'g'}, 'jp': 'JP'}]}
+            observed_result = plan(baseline, root, observed, 'fixed-ref')
+            self.assertEqual(observed_result['baseline_only_missing_count'], 0)
+            self.assertEqual(observed_result['observed_missing_count'], 1)
+            self.assertEqual(observed_result['missing'][0]['source'], 'CURRENT_SOURCE_AND_BASELINE')
             self.assertEqual(result['missing_count'], 1)
             self.assertEqual(result['missing'][0]['field'], 'g')
             self.assertIsNone(result['missing'][0]['ko'])
             self.assertNotIn('中文', json.dumps(result, ensure_ascii=False))
+
+    def test_apply_rejects_retired_plan_before_writing_master(self):
+        with tempfile.TemporaryDirectory() as directory:
+            package = Path(directory)
+            master = package / 'master.json'
+            original = b'{}'
+            master.write_bytes(original)
+            row = self.row('追加', '추가')
+            proposal = {
+                'schema': 'gc-local-master-coverage-v1',
+                'current_master_sha256': sha256(original).hexdigest(),
+                'missing': [row],
+            }
+            for apply, args in ((apply_draft, ()), (apply_reviewed, ([],))):
+                with self.subTest(apply=apply.__name__):
+                    with self.assertRaisesRegex(ValueError, 'MASTER_COVERAGE_PLAN_SCHEMA'):
+                        apply(package, proposal, [row], *args)
+                    self.assertEqual(master.read_bytes(), original)
 
     def row(self, jp='威力[[power]%]＜[[turn]ターン]＞', ko='위력[[power]%]＜[[turn]턴]＞'):
         return {'table': 't', 'field': 'f', 'jp': jp, 'ko': ko}

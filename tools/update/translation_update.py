@@ -70,7 +70,7 @@ def make_plan(package, baseline, baseline_ref, scans=(), observations=(), probe_
         if evidence not in entry['evidence']:
             entry['evidence'].append(evidence)
     for t,f,jp in flatten_master(read(baseline)):
-        add({'kind':'master','table':t,'field':f,'jp':jp}, {'source':'local_coverage','ref':baseline_ref})
+        add({'kind':'master','table':t,'field':f,'jp':jp}, {'source':'baseline_coverage','ref':baseline_ref})
     for path in scans:
         document = read(path); snap = document.get('sourceSnapshot', document)
         profile = snap.get('profile', {})

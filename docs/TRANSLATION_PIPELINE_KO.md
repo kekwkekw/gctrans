@@ -9,7 +9,7 @@ Novel의 기존 운영 절차는 [OPERATOR_KO.md](OPERATOR_KO.md)를 유지한�
 Python 3.12 이상, `httpx==0.27.2`, `UnityPy==1.10.18`과 기존 private helper가 필요하다. Master는 기존 복호화 경계를 사용한다. UI prefab 해석 자체에는 복호화 helper가 필요 없으며 HTTP 취득 인증에 기존 helper를 사용한다.
 
 ```powershell
-python scripts/crawl_only.py --lane Master --acquire --master-coverage-baseline <local-master.json> --master-baseline-ref <upstream-commit> --output work/translation-update/master-scan.json
+python scripts/crawl_only.py --lane Master --acquire --master-coverage-baseline <master-baseline.json> --master-baseline-ref <upstream-commit> --output work/translation-update/master-scan.json
 python scripts/crawl_only.py --lane UI --acquire --output work/translation-update/ui-scan.json
 ```
 
@@ -25,7 +25,7 @@ python scripts/crawl_only.py --lane UI --acquire --output work/translation-updat
 ## 2. 후보·검수·적용
 
 ```powershell
-python tools/update/translation_update.py plan --baseline <local-master.json> --baseline-ref <upstream-commit> --scan work/translation-update/master-scan.json --scan work/translation-update/ui-scan.json --probe-runtime --output work/translation-update/batch.json
+python tools/update/translation_update.py plan --baseline <master-baseline.json> --baseline-ref <upstream-commit> --scan work/translation-update/master-scan.json --scan work/translation-update/ui-scan.json --probe-runtime --output work/translation-update/batch.json
 python tools/update/translation_update.py review-template --batch work/translation-update/batch.json --output work/translation-update/review.json
 ```
 
