@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using BepInEx;
 using HarmonyLib;
@@ -23,37 +24,25 @@ public static class UiPatch
 	{
 		try
 		{
-			Dictionary<string, string> dict = new Dictionary<string, string>(StringComparer.Ordinal);
-
-			string uiPath = Path.Combine(transDir, language, "ui.json");
-
-			if (File.Exists(uiPath))
+			var path = Path.Combine(transDir, language, "ui.json");
+			if (!File.Exists(path))
 			{
-				string json = File.ReadAllText(uiPath);
-				Dictionary<string, string> loaded = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
-				if (loaded != null)
-				{
-					foreach (KeyValuePair<string, string> kvp in loaded)
-					{
-						if (!string.IsNullOrEmpty(kvp.Key) && !string.IsNullOrEmpty(kvp.Value) && kvp.Key != kvp.Value)
-						{
-							dict[kvp.Key] = kvp.Value;
-						}
-					}
-				}
-				Plugin.Log.LogInfo($"[UiPatch] Loaded {dict.Count} UI translations from {uiPath}");
-			}
-			else
-			{
-				Plugin.Log.LogWarning($"[UiPatch] ui.json not found at {uiPath}");
+				Plugin.Log.LogWarning($"UI dictionary unavailable: {path}");
+				_translations = new(StringComparer.Ordinal);
+				return false;
 			}
 
-			_translations = dict;
-			return dict.Count > 0;
+			var entries = JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(path));
+			_translations = entries?.Where(entry => entry.Key.Length != 0 && !string.IsNullOrEmpty(entry.Value) &&
+					!StringComparer.Ordinal.Equals(entry.Key, entry.Value))
+				.ToDictionary(entry => entry.Key, entry => entry.Value, StringComparer.Ordinal)
+				?? new(StringComparer.Ordinal);
+			Plugin.Log.LogInfo($"UI dictionary ready ({_translations.Count} entries): {path}");
+			return _translations.Count != 0;
 		}
 		catch (Exception ex)
 		{
-			Plugin.Log.LogError($"[UiPatch] Failed to load UI translations: {ex}");
+			Plugin.Log.LogError($"UI dictionary load error: {ex}");
 			return false;
 		}
 	}
@@ -105,14 +94,15 @@ public static class UiPatch
 			return;
 		}
 
+		_isTranslating = true;
 		try
 		{
-			_isTranslating = true;
-			string current = ((TMP_Text)__instance).text;
-			if (!string.IsNullOrEmpty(current) && TryTranslateDisplay(__instance, current, out string translated))
-			{
-				((TMP_Text)__instance).text = translated;
-			}
+			TMP_Text display = __instance;
+			var source = display.text;
+			if (string.IsNullOrEmpty(source)) return;
+			if (!TryTranslateDisplay(display, source, out var replacement)) return;
+
+			display.text = replacement;
 		}
 		catch
 		{

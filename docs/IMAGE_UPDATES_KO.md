@@ -43,7 +43,7 @@ Unity UI callback에서 새 Texture2D/Sprite를 만들고 컴포넌트 참조만
 1. PNG와 대상 매핑을 검수하고 `images.json`을 작성한다.
 2. 새 PNG는 `--add images/<hash>.png`, 카탈로그 변경은 `--modify images.json`으로
    `python tools/build_manifests.py translations/ko`에 전달한다. 최초 카탈로그는 `--add images.json`이다.
-3. `python tools/verify_local_parity.py`와 package build를 실행한다.
+3. `python tools/verify_translation_update.py`와 package build를 실행한다.
 4. 승인된 GitHub ref에 카탈로그·PNG·생성된 manifest를 함께 반영하고 게임을 재시작한다.
 
 Novel/Names/Knowledge/HOLD 정본은 이미지 작성 도구의 수정 대상이 아니다.

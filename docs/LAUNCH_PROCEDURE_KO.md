@@ -1,6 +1,6 @@
-# LocalParity 적용과 실행
+# GCMod 한국어 업데이트 적용과 실행
 
-현재 runtime은 [GCMod.Candidate/README_KO.md](../source/GCMod.Candidate/README_KO.md)의 local 기반 구현이다. 기존 Nextgen 전용 prepare/stage/restore/verify 도구는 이 패키지의 설치 도구가 아니다.
+현행 GCMod 한국어 런타임의 소스와 빌드 절차는 [GCMod.Candidate README](../source/GCMod.Candidate/README_KO.md)에 있다. 기존 Nextgen 전용 prepare/stage/restore/verify 도구는 이 패키지의 설치 도구가 아니다.
 
 게임을 정상 종료한 상태에서 기존 GCMod DLL과 cfg를 게임 폴더 밖에 백업하고, 중복 GCMod 본체가 로드되지 않게 한다. 현재 패키지의 배치는 다음과 같다.
 

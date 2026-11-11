@@ -6,7 +6,7 @@
 
 raw/cache/state/audit/native report, 개인 launcher 기록, cfg backup, font, 게임·Utility·interop DLL, credential과 private helper는 공개 tracking/export에 넣지 않는다. 로컬 인계 자료는 공개 문서와 분리하고 명령 예시는 매개변수 경로를 사용한다.
 
-현행 공급은 [LOCAL_PARITY_PIPELINE_KO.md](LOCAL_PARITY_PIPELINE_KO.md)의 `tools/local_release.py`를 사용한다. `translations/ko/release-manifest.json`은 authoring package의 파일·hash 검사 입력이다. DLL은 `source/GCMod.Candidate`에서 빌드하며 ZIP은 허용한 runtime 파일만 포함한다. 런타임은 공식 main의 manifest를 확인해 캐시를 갱신하고 독립 UI 사전을 읽는다. offline 모드도 지원한다.
+현행 공급은 [TRANSLATION_PIPELINE_KO.md](TRANSLATION_PIPELINE_KO.md)의 `tools/local_release.py`를 사용한다. `translations/ko/release-manifest.json`은 authoring package의 파일·hash 검사 입력이다. DLL은 `source/GCMod.Candidate`에서 빌드하며 ZIP은 허용한 runtime 파일만 포함한다. 런타임은 공식 main의 manifest를 확인해 캐시를 갱신하고 독립 UI 사전을 읽는다. offline 모드도 지원한다.
 
 설치는 게임 종료 상태에서 backup/journal과 함께 수행하며 다음 게임 시작부터 반영한다. UI live switching, coordinator, pending_restart/LKG runtime은 사용하지 않는다. 이전 Nextgen 공급 도구와 문서는 역사적 참고다. Novel 등록은 기존 명시 검수 범위에만 적용한다. 공개 source에는 익명화된 검증 요약을 넣을 수 있지만 개인 Native 로그·스크린샷·경로·raw는 제외한다.
 

@@ -61,8 +61,8 @@ def parser():
     p.add_argument("--master-field-scope", type=Path, default=ROOT / "contracts/master-source-fields-v1.json",
                    help="Finite table/runtime-field selector, no translation dictionary values")
     p.add_argument("--master-coverage-baseline", type=Path,
-                   help="Local Master coverage keys only; never import its translated values")
-    p.add_argument("--master-baseline-ref", default="operator-supplied-local-master")
+                   help="Use only the supplied Master baseline keys for coverage")
+    p.add_argument("--master-baseline-ref", default="operator-supplied-master-baseline")
     p.add_argument("--master-package", type=Path, default=ROOT / "translations/ko")
     return p
 
@@ -97,8 +97,7 @@ def run(args):
                 if not isinstance(selector, dict) or set(selector) != {"table", "runtime_field"}:
                     raise ValueError("MASTER_FIELD_SELECTOR")
                 tables.setdefault(selector["table"], []).append(selector["runtime_field"])
-            # Union coverage-authority and Korean fields; the historical selector
-            # list must not silently exclude a newly supported local Master field.
+            # Combine baseline and Korean Master fields with the selector list.
             for path in (args.master_package / 'master.json', args.master_coverage_baseline):
                 if path and path.exists():
                     for table, fields in json.loads(path.read_text(encoding='utf-8-sig')).items():
@@ -194,7 +193,7 @@ def publish_intake(result,args):
         coverage = plan(args.master_coverage_baseline, args.master_package, result['sourceSnapshot'], args.master_baseline_ref)
         target = args.output.with_name('master-coverage.json')
         atomic_json(target, coverage)
-        result['master_coverage'] = {k: coverage[k] for k in ('status', 'baseline_keys', 'missing_count', 'observed_missing_count', 'local_only_missing_count')}
+        result['master_coverage'] = {k: coverage[k] for k in ('status', 'baseline_keys', 'missing_count', 'observed_missing_count', 'baseline_only_missing_count')}
         result['master_coverage']['path'] = target.name
 
 def args_acquired(result):

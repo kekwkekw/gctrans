@@ -1,4 +1,4 @@
-"""Build/verify LocalParity archives and install or roll back with the game closed."""
+"""Build/verify GCMod update archives and install or roll back with the game closed."""
 import argparse
 import configparser
 import hashlib
@@ -22,6 +22,9 @@ PLUGIN='BepInEx/plugins/GCMod/'
 CFG='BepInEx/config/GCMod.cfg'
 CORE=('manifest.json','master.json','names.json','ui.json')
 OFFICIAL_CDN='https://raw.githubusercontent.com/kekwkekw/gctrans/main'
+PACKAGE_SCHEMA='gcmod-update-package-v1'
+INSTALL_SCHEMA='gcmod-update-install-v1'
+UPSTREAM_NOTICE='GCMod-upstream-LICENSE'
 def digest(raw):return hashlib.sha256(raw).hexdigest()
 def json_bytes(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode('utf-8')
 def cfg_read(raw):
@@ -60,7 +63,7 @@ def build_runtime(repo, game):
 
 def allowed(path):
     if path == PLUGIN+'translations/ko/images.json' or re.fullmatch(re.escape(PLUGIN)+r'translations/ko/images/[0-9a-f]{64}\.png',path): return True
-    if path in (CFG,PLUGIN+'GCMod.dll',PLUGIN+'Utility.dll',PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle','README_KO.txt','gc-mod-local-LICENSE.txt'):return True
+    if path in (CFG,PLUGIN+'GCMod.dll',PLUGIN+'Utility.dll',PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle','README_KO.txt',UPSTREAM_NOTICE):return True
     return bool(re.fullmatch(re.escape(PLUGIN)+r'translations/ko/(?:manifest|master|names|ui)\.json',path) or re.fullmatch(re.escape(PLUGIN)+r'translations/ko/novels/[0-9]+\.json',path))
 
 
@@ -69,7 +72,7 @@ def pack(repo, output, font=None, utility=None):
     if output.exists():raise ValueError('NEW_ARCHIVE_PATH_REQUIRED')
     if bool(font)!=bool(utility):raise ValueError('LOCAL_DEPENDENCIES_REQUIRE_FONT_AND_UTILITY')
     files={CFG:(repo/'candidate/GCMod.cfg').read_bytes(),PLUGIN+'GCMod.dll':(repo/'candidate/GCMod.dll').read_bytes(),
-           'gc-mod-local-LICENSE.txt':(repo/'THIRD_PARTY_LICENSES/gc-mod-local-LICENSE.txt').read_bytes()}
+           UPSTREAM_NOTICE:(repo/'THIRD_PARTY_LICENSES'/UPSTREAM_NOTICE).read_bytes()}
     for p in [*(repo/'translations/ko'/n for n in CORE),*sorted((repo/'translations/ko/novels').glob('*.json'))]:
         files[PLUGIN+'translations/ko/'+p.relative_to(repo/'translations/ko').as_posix()]=p.read_bytes()
     image_catalog=repo/'translations/ko/images.json'
@@ -80,7 +83,7 @@ def pack(repo, output, font=None, utility=None):
     if font:
         files[PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle']=font.read_bytes();files[PLUGIN+'Utility.dll']=utility.read_bytes()
     kind='local-complete' if font else 'public-update'
-    files['README_KO.txt']=('GCMod Korean LocalParity\n게임 종료 후 적용하세요. 신규 기본값: Language=ko / EnabledTables=*\n기본 CDN은 공식 GitHub main입니다. 시작 시 manifest를 확인하고 변경된 번역 데이터를 갱신합니다. offline 설정도 지원합니다. DLL/폰트 변경은 별도 배포본 적용이 필요합니다.\n'
+    files['README_KO.txt']=('GCMod Korean\n게임 종료 후 적용하세요. 신규 기본값: Language=ko / EnabledTables=*\n기본 CDN은 공식 GitHub main입니다. 시작 시 manifest를 확인하고 변경된 번역 데이터를 갱신합니다. offline 설정도 지원합니다. DLL/폰트 변경은 별도 배포본 적용이 필요합니다.\n'
         +'기존 BepInEx IL2CPP 설치가 필요합니다.\n'
         +('로컬 폰트/Utility를 포함한 개인 설치본입니다. 공개 배포용으로 업로드하지 마세요.\n' if font else
           '공개 업데이트에는 게임/interop/Utility/폰트를 포함하지 않습니다. 기존 승인된 Utility.dll 및 한국어 폰트가 필요합니다.\n')
@@ -89,7 +92,7 @@ def pack(repo, output, font=None, utility=None):
         +'한국어 기본 프로필로 전환할 때만 --apply-korean-profile을 추가하세요. 번역 활성화·언어·CDN·사용자 경로·비동기 로딩·Master·폰트 설정을 패키지 기본값으로 바꿉니다.\n'
         +'GCMod 전용 단축키는 없습니다. 대화창 불투명도·가독성 보정·프레임 제한은 게임 옵션에서 미리보기 후 설정 저장을 눌러 적용합니다.\n'
         +'cfg나 번역 파일을 직접 수정한 경우 게임을 재시작하세요. 시작 시 번역 데이터 자동 갱신은 유지됩니다.\n').encode('utf-8')
-    receipt={'schema':'gc-local-parity-package-v1','kind':kind,'upstream':'0cdcd9e84fffa438dfdac63176685a6c47a07318',
+    receipt={'schema':PACKAGE_SCHEMA,'kind':kind,
         'files':{p:{'size':len(raw),'sha256':digest(raw)} for p,raw in sorted(files.items())},'verification':report}
     files['package.json']=json_bytes(receipt);output.parent.mkdir(parents=True,exist_ok=True)
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
@@ -104,8 +107,10 @@ def verify_archive(path):
         names=archive.namelist()
         if len(set(names))!=len(names) or sum(i.file_size for i in archive.infolist())>512*1024*1024:raise ValueError('ARCHIVE_MEMBERSHIP_OR_SIZE')
         receipt=json.loads(archive.read('package.json'))
-        if receipt.get('schema')!='gc-local-parity-package-v1' or receipt.get('kind') not in ('public-update','local-complete'):raise ValueError('PACKAGE_SCHEMA')
+        if receipt.get('schema') != PACKAGE_SCHEMA or receipt.get('kind') not in ('public-update','local-complete'):raise ValueError('PACKAGE_SCHEMA')
         if set(names)!=set(receipt['files'])|{'package.json'}:raise ValueError('ARCHIVE_MEMBERSHIP')
+        if UPSTREAM_NOTICE not in names:
+            raise ValueError('PACKAGE_NOTICES')
         files={}
         for p,entry in receipt['files'].items():
             if not allowed(p):raise ValueError('ARCHIVE_PATH:'+p)
@@ -194,7 +199,7 @@ def _install(archive,game,backup,apply_korean_profile=False):
         if old==raw:continue
         changes.append((p,raw,old))
     backup.mkdir(parents=True)
-    journal={'schema':'gc-local-parity-install-v1','game':str(game),'archive_sha256':digest(archive.read_bytes()),'config_policy':config_policy,'status':'prepared','files':[]}
+    journal={'schema':INSTALL_SCHEMA,'game':str(game),'archive_sha256':digest(archive.read_bytes()),'config_policy':config_policy,'status':'prepared','files':[]}
     for p,raw,old in changes:
         if old is not None:
             dest=safe_target(backup,p);dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(old)
@@ -225,7 +230,7 @@ def rollback(game,backup):
 def _rollback(game,backup):
     safe_target(game, CFG)
     game_closed();game=game.resolve();backup=backup.resolve();j=read(backup/'install.json')
-    if j.get('status')!='installed' or j.get('schema')!='gc-local-parity-install-v1' or Path(j['game']).resolve()!=game:raise ValueError('ROLLBACK_RECEIPT')
+    if j.get('status')!='installed' or j.get('schema') != INSTALL_SCHEMA or Path(j['game']).resolve()!=game:raise ValueError('ROLLBACK_RECEIPT')
     for row in j['files']:
         if not allowed(row['path']) or not row['path'].startswith('BepInEx/'):raise ValueError('ROLLBACK_PATH')
         if digest(safe_target(game,row['path']).read_bytes())!=row['after']:raise ValueError('ROLLBACK_INSTALL_CHANGED')

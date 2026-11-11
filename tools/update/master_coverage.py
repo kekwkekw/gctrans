@@ -1,4 +1,4 @@
-"""Local Master keys are coverage authority only; never import its translated values."""
+"""Compare Master baseline keys without importing their translated values."""
 import argparse
 import hashlib
 import json
@@ -9,6 +9,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from reconcile_master import flatten_master
+
+
+PLAN_SCHEMA = 'gc-master-coverage-v1'
 
 
 def read(path):
@@ -38,23 +41,23 @@ def source_keys(snapshot):
 
 
 def plan(baseline, package, snapshot, baseline_ref):
-    # Values are deliberately discarded: Chinese translations are not draft inputs.
+    # Only the baseline keys are used to calculate coverage.
     authority = set(flatten_master(read(baseline)))
     current = flatten_master(read(package / 'master.json'))
     observed = source_keys(snapshot)
     missing = sorted(authority - current.keys())
-    return {'schema': 'gc-local-master-coverage-v1', 'baseline_ref': baseline_ref,
+    return {'schema': PLAN_SCHEMA, 'baseline_ref': baseline_ref,
             'baseline_sha256': sha(baseline), 'current_master_sha256': sha(package / 'master.json'),
             'baseline_keys': len(authority), 'current_keys': len(current),
             'covered_keys': len(authority & current.keys()), 'missing_count': len(missing),
             'current_only_keys_preserved': len(current.keys() - authority),
             'observed_missing_count': len(set(missing) & observed),
-            'local_only_missing_count': len(set(missing) - observed),
+            'baseline_only_missing_count': len(set(missing) - observed),
             'new_source_candidates_count': len(observed - authority),
             'status': 'COVERAGE_GAP' if missing else 'BASELINE_KEYS_PRESENT',
             'semantic_review': 'NOT_CLAIMED',
             'missing': [{'table': t, 'field': f, 'jp': jp,
-                         'source': 'CURRENT_SOURCE_AND_LOCAL' if (t, f, jp) in observed else 'LOCAL_COVERAGE_JP',
+                         'source': 'CURRENT_SOURCE_AND_BASELINE' if (t, f, jp) in observed else 'BASELINE_COVERAGE_JP',
                          'ko': None} for t, f, jp in missing],
             'new_source_candidates': [{'table': t, 'field': f, 'jp': jp}
                                       for t, f, jp in sorted(observed - authority)]}
@@ -89,7 +92,13 @@ def validate_draft(proposal, rows):
     return drafted
 
 
+def require_current_plan(proposal):
+    if not isinstance(proposal, dict) or proposal.get('schema') != PLAN_SCHEMA:
+        raise ValueError('MASTER_COVERAGE_PLAN_SCHEMA')
+
+
 def apply_draft(package, proposal, rows):
+    require_current_plan(proposal)
     # Draft application is explicitly requested by the operator; this never invents PRO approval.
     if sha(package / 'master.json') != proposal['current_master_sha256']:
         raise ValueError('MASTER_CHANGED_SINCE_PLAN')
@@ -143,6 +152,7 @@ def reviewed_master(master, proposal, additions, reviews):
 
 
 def apply_reviewed(package, proposal, additions, reviews):
+    require_current_plan(proposal)
     if sha(package / 'master.json') != proposal['current_master_sha256']:
         raise ValueError('MASTER_CHANGED_SINCE_PLAN')
     result, summary = reviewed_master(read(package / 'master.json'), proposal, additions, reviews)

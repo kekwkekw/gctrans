@@ -3,8 +3,8 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
-from local_parity_fixture import fixture, save, sha
-from update.local_parity import make_plan, apply_review, review_template, validate_translation, GUARDED
+from translation_update_fixture import fixture, save, sha
+from update.translation_update import make_plan, apply_review, review_template, validate_translation, GUARDED
 from local_release import verify_repo
 from build_manifests import build
 from legacy_semantic import compute, root_hash
@@ -32,6 +32,14 @@ class ReviewPipelineTests(unittest.TestCase):
         self.assertEqual(manifest['hash'],root_hash(manifest))
         with self.assertRaisesRegex(ValueError,'CHANGED_SINCE_PLAN'): apply_review(self.p,b,self.decision(b))
 
+    def test_rejects_retired_review_and_decision_schemas(self):
+        batch = self.plan()
+        decisions = self.decision(batch)
+        with self.assertRaisesRegex(ValueError, 'REVIEW_BATCH_SCHEMA'):
+            apply_review(self.p, dict(batch, schema='gc-local-parity-review-v1'), decisions)
+        with self.assertRaisesRegex(ValueError, 'DECISIONS_SCHEMA'):
+            apply_review(self.p, batch, dict(decisions, schema='gc-local-parity-decisions-v1'))
+
     def test_novel_metadata_rebuild_preserves_ui_registration(self):
         build(self.p,modified=['ui.json'])
         before=json.loads((self.p/'manifest.json').read_bytes())
@@ -58,11 +66,11 @@ class ReviewPipelineTests(unittest.TestCase):
         self.assertEqual(len(result['pending']),1);self.assertEqual(result['added_master'],1)
         self.assertEqual(len(b['sources'][0]['excluded_assets']),1)
 
-    def test_coverage_preimage_change_and_duplicate_review_fail_without_mutation(self):
+    def test_ui_preimage_change_and_duplicate_review_fail_without_mutation(self):
         b=self.plan();d=self.decision(b);d['rows']*=2
         before=sha(self.p/'master.json')
         with self.assertRaisesRegex(ValueError,'DUPLICATE_DECISION'):apply_review(self.p,b,d)
-        (self.p/'ui/local-coverage.json').write_text('{}')
+        (self.p/'ui/general-exact.reviewed.json').write_text('{}')
         with self.assertRaisesRegex(ValueError,'CHANGED_SINCE_PLAN'):apply_review(self.p,b,self.decision(b))
         self.assertEqual(before,sha(self.p/'master.json'))
 
@@ -73,7 +81,7 @@ class ReviewPipelineTests(unittest.TestCase):
         def fail(src,dst,*a,**kw):
             if Path(dst)==self.p/'ui.json':raise OSError('injected publication failure')
             return original(src,dst,*a,**kw)
-        with patch('update.local_parity.shutil.copyfile',side_effect=fail):
+        with patch('update.translation_update.shutil.copyfile',side_effect=fail):
             with self.assertRaises(OSError):apply_review(self.p,b,d)
         self.assertEqual(before,{p:(self.p/p).read_bytes() for p in GUARDED})
 

@@ -18,7 +18,7 @@ from novel_workflow import (META_FILES, _checked_changes, _publish, check_text,
 from translation_knowledge import (change_history, check_context, dump_knowledge,
                                    load_current, translation_context)
 from update.process_lock import ProcessFileLock
-from update.local_parity import GUARDED, validate_translation
+from update.translation_update import APPLY_LOCK, GUARDED, validate_translation
 
 ROOT = Path(__file__).resolve().parents[1]
 # Same bounded title alias as sync_novel_titles.py; never modify the exact JP key.
@@ -169,7 +169,7 @@ def apply(repo, batch, review):
     with ExitStack() as locks:
         # Cooperate with both existing publishers instead of adding another runtime/lock service.
         locks.enter_context(ProcessFileLock(repo/'work/novels/.apply.lock', 'NOVEL_WRITER_BUSY'))
-        locks.enter_context(ProcessFileLock(repo/'translations/.local-parity-apply.lock', 'PACKAGE_WRITER_BUSY'))
+        locks.enter_context(ProcessFileLock(repo/'translations'/APPLY_LOCK, 'PACKAGE_WRITER_BUSY'))
         return _apply(repo, batch, review)
 
 
