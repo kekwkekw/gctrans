@@ -13,7 +13,7 @@ python scripts/crawl_only.py --lane Master --acquire --master-coverage-baseline 
 python scripts/crawl_only.py --lane UI --acquire --output work/translation-update/ui-scan.json
 ```
 
-- Master 범위는 기존 field selector, 현재 한국어 Master, 지정한 local Master의 `(table, field)` 합집합이다. local의 중국어 값은 한국어 생성 입력이 아니다.
+- Master 범위는 기존 field selector, 현재 한국어 Master, 지정한 Master 기준본의 `(table, field)` 합집합이다. 기준본에서는 원문 키만 사용한다.
 - UI는 `contracts/ui-source-scope-v1.json`에 따라 scene·popup·공통 prefab·개별 prefab·동적 콘텐츠 prefab을 선택한다. 로그인 보너스·시리얼 입력 같은 별도 팝업도 포함한다. 선택 수량은 현재 inventory에 따라 달라지며, 선택되었다고 해석·번역이 완료된 것은 아니다.
 - `--asset-key scene/scene_sub_unit.dmm`로 좁혀 재현하거나 `--ui-scope <json>`으로 범위를 조정할 수 있다. PC는 기존처럼 `--platform PC --local-asset <file> --asset-key <known-key>`를 지정한다. WebGL 캐시를 PC 관측으로 재표기하지 않는다.
 - UI `--max-candidates 200`은 배치 크기다. 남은 항목을 pending으로 저장하며 같은 state/raw root와 명령으로 계속 수집한다. `0`은 명시적 무제한이다. Novel/Master의 기존 candidate 제한 동작은 유지한다.
@@ -43,7 +43,7 @@ apply는 임시 복사본에서 Master/UI 추가, 결정적 UI export, manifest 
 
 Native 관측은 `--observations <json>`으로 추가할 수 있다. 형식은 `{"schema":"gc-native-ui-observations-v1","rows":[{"jp":"실제 JP 전체 문구","evidence":"화면/문맥/관측 근거"}]}`다. 화면에 없는 문장을 관측했다고 기록하지 않는다.
 
-게임 코드의 문자열 상수는 prefab `m_text`/`m_Text` 수집에 포함되지 않는다. 주간 퀘스트 탭·하단 설명과 Novel 건너뛰기 안내가 이 경우였다. 이때는 화면에서 확인한 문구와, 설치된 PC 코드에서 정확한 원문을 확인한 같은 메뉴의 유한한 형제 문구를 observations로 전달할 수 있다. evidence에 화면 관측과 코드 원문 확인을 구분하고 근거·버전 hash를 남긴다. 검수 후 동일한 apply/export 경로로 exact 사전에 추가하며, 임의 부분 문자열 치환이나 Master 전체의 UI 복사를 도입하지 않는다. local coverage 누락 0은 이러한 게임 코드 문구까지 모두 번역했다는 뜻이 아니다.
+게임 코드의 문자열 상수는 prefab `m_text`/`m_Text` 수집에 포함되지 않는다. 주간 퀘스트 탭·하단 설명과 Novel 건너뛰기 안내가 이 경우였다. 이때는 화면에서 확인한 문구와, 설치된 PC 코드에서 정확한 원문을 확인한 같은 메뉴의 유한한 형제 문구를 observations로 전달할 수 있다. evidence에 화면 관측과 코드 원문 확인을 구분하고 근거·버전 hash를 남긴다. 검수 후 동일한 apply/export 경로로 exact 사전에 추가하며, 임의 부분 문자열 치환이나 Master 전체의 UI 복사를 도입하지 않는다.
 
 ## 3. 빌드·패키지·설치
 
@@ -78,7 +78,7 @@ python tools/local_release.py pack --output work/translation-update/update.zip
 python tools/local_release.py verify-archive --archive work/translation-update/update.zip
 ```
 
-DLL은 `source/GCMod.Candidate`에서 `candidate/GCMod.dll`로 Release 빌드한다. 기존 BepInEx/interop/Utility 참조가 필요하며 build는 게임을 수정하지 않는다. 게임 runtime은 local 구조와 검증된 작은 예외를 유지한다. 크롤러·검수·package 트랜잭션을 runtime에 넣지 않는다.
+DLL은 `source/GCMod.Candidate`에서 `candidate/GCMod.dll`로 Release 빌드한다. 기존 BepInEx/interop/Utility 참조가 필요하며 build는 게임을 수정하지 않는다. GCMod 한국어 런타임은 검수된 번역 데이터와 필요한 화면별 예외를 적용한다. 수집·검수·패키징은 별도 도구에서 수행한다.
 
 기본 archive는 DLL·cfg·한국어 runtime JSON만 공급하며 게임 본체/interop/Utility/폰트를 제외한다. 개인 설치 묶음이 필요할 때만 `--font <approved-bundle> --utility <Utility.dll>`을 함께 지정한다. 이 묶음은 공개 배포하지 않는다.
 

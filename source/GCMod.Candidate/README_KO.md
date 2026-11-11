@@ -38,16 +38,16 @@ DLL은 기존 `candidate/GCMod.dll`에 생성된다. 빌드는 게임 설치 파
 cfg 비활성, Master 파일/테이블/필드/JP 키 부재를 별도 상태로 진단한다.
 `--config <실제 cfg> --package <실제 ko 폴더> --log <로그>`로 설치 상태를 읽을 수 있다.
 로그의 `NOT_OBSERVED`는 미번역이나 table OFF의 증거가 아니며 해당 세션의 rewrite 미관측을 뜻한다.
-`translations/ko/{master.json,names.json,novels/}`를 local 소비자가 직접 읽는다.
+`translations/ko/{master.json,names.json,novels/}`를 GCMod 번역 런타임이 직접 읽는다.
 `ui.json`은 `ui/general-exact.reviewed.json`, 기존 resources의 `translate` 쌍,
 UI 전용 Master 필드에서 결정적으로 생성된다. binding 활성 여부와 kind/role로 번역을 제외하지 않는다.
 동일 JP의 한국어가 충돌하면 명시적 reviewed exact를 사용하며, 미검수 충돌은 export를 실패시킨다.
-local UI 전체 키 목록으로 누락을 검사한다. 입력 필드 보호는 runtime에서 유지한다.
+입력 필드 보호는 런타임에서 적용한다.
 입력 범위·우선순위·이미지 예외는 [UI_EXPORT_KO.md](../../docs/UI_EXPORT_KO.md)를 참조한다.
 `python tools/export_local_ui.py --check`로 산출물 일치를 확인한다.
 UI 훅은 ui.json을 읽고 Master 존재 여부를 묻지 않는다. exact 조회를 우선하며,
-local의 앞뒤 공백 및 외곽 rich-text 태그 처리를 유지한다.
-TMP/legacy 입력 컨트롤의 하위 텍스트와 local의 self-write 재진입을 보호한다.
+앞뒤 공백 및 외곽 rich-text 태그를 보존한다.
+TMP/legacy 입력 컨트롤 하위 텍스트를 보호하고, 자체 쓰기로 인한 재진입을 막는다.
 7.2.0은 일반 UI에서 한 글자 exact도 허용한다. EventText/EventMessageWindow/EventSelectObj의
 본문·루비·선택지 렌더러 하위와 실제 입력 컨트롤 하위는 길이와 무관하게 보호한다.
 따라서 미번역 본문이나 한국어에 남긴 한자도 일반 UI 사전으로 치환하지 않는다.
@@ -75,15 +75,14 @@ Master에 없는 속성명을 처리한다. 일반 UI의 火→화(요일)와 �
 시즌/층수/박스 회차/창작 횟수/개봉 횟수/남은 일수와 날짜+まで를 처리한다.
 추가 실기에서 확인한 남은 수량/시간, 턴 수와 한국어 item/title 뒤의 두 해금 조건도 전체 문구로 처리한다.
 숫자는 원문에서 보존하며, 문장 일부를 치환하는 범용 템플릿 엔진은 없다.
-local에 대응 형식이 없는 更新まで / 開封期限…まで는 의도적으로 매칭하지 않는다.
+현재 지원 형식에서 更新まで / 開封期限…まで는 제외한다.
 던전의 활성화 후 갱신은 기존 setter/OnEnable 훅을 우회하므로
 `TextMeshProUGUI.OnPreRenderCanvas` 직전에도 같은 입력 보호/사전 조회를 적용한다.
 별도 selector, ownership, generation 또는 Native/Nextgen 계층은 추가하지 않는다.
 회귀 검증: `dotnet run --project tests/UiTextLookup -- translations/ko/ui.json`.
 
-Master hook은 local 구현을 사용하며 후보의 추가 ABI hardening은 이식하지 않았다.
-upstream의 개발자 PC 고정 경로 Master 덤프만 제외했다.
-검증된 `RHR_Medium_GFSAFE_ADH.bundle`을 local의 TMP fallback 로더로 사용한다.
+Master hook은 설정에서 활성화한 테이블의 JSON에 한국어 Master 사전을 적용한다.
+GCMod는 `RHR_Medium_GFSAFE_ADH.bundle`의 글꼴을 TMP fallback 목록에 등록한다.
 
 제목 동기화는 `tools/sync_novel_titles.py --package translations/ko --source <raw-mNovels.json> --report <report.json>`.
 동일 script ID의 accepted Novel 값만 사용한다. 유일한 전각 숫자/공백 대응은 authoring 단계에서만 처리한다.

@@ -32,6 +32,14 @@ class ReviewPipelineTests(unittest.TestCase):
         self.assertEqual(manifest['hash'],root_hash(manifest))
         with self.assertRaisesRegex(ValueError,'CHANGED_SINCE_PLAN'): apply_review(self.p,b,self.decision(b))
 
+    def test_rejects_retired_review_and_decision_schemas(self):
+        batch = self.plan()
+        decisions = self.decision(batch)
+        with self.assertRaisesRegex(ValueError, 'REVIEW_BATCH_SCHEMA'):
+            apply_review(self.p, dict(batch, schema='gc-local-parity-review-v1'), decisions)
+        with self.assertRaisesRegex(ValueError, 'DECISIONS_SCHEMA'):
+            apply_review(self.p, batch, dict(decisions, schema='gc-local-parity-decisions-v1'))
+
     def test_novel_metadata_rebuild_preserves_ui_registration(self):
         build(self.p,modified=['ui.json'])
         before=json.loads((self.p/'manifest.json').read_bytes())

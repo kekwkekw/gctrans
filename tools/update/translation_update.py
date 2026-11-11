@@ -23,10 +23,7 @@ from translation_knowledge import translation_context, check_context, load_curre
 PUBLISH = ('master.json', 'ui.json', 'ui/general-exact.reviewed.json', 'manifest.json', 'legacy-components.json', 'ui/manifest.json', 'release-manifest.json')
 REVIEW_SCHEMA = 'gcmod-translation-review-v1'
 DECISIONS_SCHEMA = 'gcmod-translation-decisions-v1'
-LEGACY_REVIEW_SCHEMA = 'gc-local-parity-review-v1'
-LEGACY_DECISIONS_SCHEMA = 'gc-local-parity-decisions-v1'
-# Keep the shared lock path for older package writers.
-APPLY_LOCK = '.local-parity-apply.lock'
+APPLY_LOCK = '.translation-update-apply.lock'
 GUARDED = tuple(dict.fromkeys(PUBLISH + ('names.json', 'ui/resources.json', 'ui/bindings.json', 'ui.templates.json', 'ui/detail-families.json')))
 
 
@@ -148,18 +145,10 @@ def apply_review(package, batch, decisions):
 
 
 def _apply_review(package, batch, decisions):
-    schema = batch.get('schema')
-    if schema not in (REVIEW_SCHEMA, LEGACY_REVIEW_SCHEMA):
+    if batch.get('schema') != REVIEW_SCHEMA:
         raise ValueError('REVIEW_BATCH_SCHEMA')
     preimages = dict(batch.get('preimages', {}))
-    expected = set(GUARDED)
-    if schema == LEGACY_REVIEW_SCHEMA:
-        retired = 'ui/local-coverage.json'
-        if (package / retired).exists():
-            expected.add(retired)
-        else:
-            preimages.pop(retired, None)
-    if set(preimages) != expected:
+    if set(preimages) != set(GUARDED):
         raise ValueError('PACKAGE_PREIMAGES_REQUIRED')
     if any(sha(package/p)!=h for p,h in preimages.items()):
         raise ValueError('PACKAGE_CHANGED_SINCE_PLAN')
@@ -174,7 +163,7 @@ def _apply_review(package, batch, decisions):
     wanted={r['id']:r for r in batch['rows']}
     if len(wanted)!=len(batch['rows']) or any(row_id(r)!=r['id'] for r in wanted.values()):
         raise ValueError('BATCH_IDENTITY')
-    if decisions.get('schema') not in (DECISIONS_SCHEMA, LEGACY_DECISIONS_SCHEMA): raise ValueError('DECISIONS_SCHEMA')
+    if decisions.get('schema') != DECISIONS_SCHEMA: raise ValueError('DECISIONS_SCHEMA')
     if len({r['id'] for r in decisions['rows']}) != len(decisions['rows']): raise ValueError('DUPLICATE_DECISION')
     decisions={r['id']:r for r in decisions['rows']}
     if not decisions.keys() <= wanted.keys(): raise ValueError('UNKNOWN_DECISION_ID')

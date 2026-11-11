@@ -24,10 +24,7 @@ CORE=('manifest.json','master.json','names.json','ui.json')
 OFFICIAL_CDN='https://raw.githubusercontent.com/kekwkekw/gctrans/main'
 PACKAGE_SCHEMA='gcmod-update-package-v1'
 INSTALL_SCHEMA='gcmod-update-install-v1'
-LEGACY_PACKAGE_SCHEMA='gc-local-parity-package-v1'
-LEGACY_INSTALL_SCHEMA='gc-local-parity-install-v1'
 UPSTREAM_NOTICE='GCMod-upstream-LICENSE'
-LEGACY_LOCAL_NOTICE='gc-mod-local-LICENSE.txt'
 def digest(raw):return hashlib.sha256(raw).hexdigest()
 def json_bytes(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode('utf-8')
 def cfg_read(raw):
@@ -66,7 +63,7 @@ def build_runtime(repo, game):
 
 def allowed(path):
     if path == PLUGIN+'translations/ko/images.json' or re.fullmatch(re.escape(PLUGIN)+r'translations/ko/images/[0-9a-f]{64}\.png',path): return True
-    if path in (CFG,PLUGIN+'GCMod.dll',PLUGIN+'Utility.dll',PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle','README_KO.txt',UPSTREAM_NOTICE,LEGACY_LOCAL_NOTICE):return True
+    if path in (CFG,PLUGIN+'GCMod.dll',PLUGIN+'Utility.dll',PLUGIN+'fonts/RHR_Medium_GFSAFE_ADH.bundle','README_KO.txt',UPSTREAM_NOTICE):return True
     return bool(re.fullmatch(re.escape(PLUGIN)+r'translations/ko/(?:manifest|master|names|ui)\.json',path) or re.fullmatch(re.escape(PLUGIN)+r'translations/ko/novels/[0-9]+\.json',path))
 
 
@@ -110,9 +107,9 @@ def verify_archive(path):
         names=archive.namelist()
         if len(set(names))!=len(names) or sum(i.file_size for i in archive.infolist())>512*1024*1024:raise ValueError('ARCHIVE_MEMBERSHIP_OR_SIZE')
         receipt=json.loads(archive.read('package.json'))
-        if receipt.get('schema') not in (PACKAGE_SCHEMA, LEGACY_PACKAGE_SCHEMA) or receipt.get('kind') not in ('public-update','local-complete'):raise ValueError('PACKAGE_SCHEMA')
+        if receipt.get('schema') != PACKAGE_SCHEMA or receipt.get('kind') not in ('public-update','local-complete'):raise ValueError('PACKAGE_SCHEMA')
         if set(names)!=set(receipt['files'])|{'package.json'}:raise ValueError('ARCHIVE_MEMBERSHIP')
-        if receipt['schema']==PACKAGE_SCHEMA and (UPSTREAM_NOTICE not in names or LEGACY_LOCAL_NOTICE in names):
+        if UPSTREAM_NOTICE not in names:
             raise ValueError('PACKAGE_NOTICES')
         files={}
         for p,entry in receipt['files'].items():
@@ -233,7 +230,7 @@ def rollback(game,backup):
 def _rollback(game,backup):
     safe_target(game, CFG)
     game_closed();game=game.resolve();backup=backup.resolve();j=read(backup/'install.json')
-    if j.get('status')!='installed' or j.get('schema') not in (INSTALL_SCHEMA, LEGACY_INSTALL_SCHEMA) or Path(j['game']).resolve()!=game:raise ValueError('ROLLBACK_RECEIPT')
+    if j.get('status')!='installed' or j.get('schema') != INSTALL_SCHEMA or Path(j['game']).resolve()!=game:raise ValueError('ROLLBACK_RECEIPT')
     for row in j['files']:
         if not allowed(row['path']) or not row['path'].startswith('BepInEx/'):raise ValueError('ROLLBACK_PATH')
         if digest(safe_target(game,row['path']).read_bytes())!=row['after']:raise ValueError('ROLLBACK_INSTALL_CHANGED')
