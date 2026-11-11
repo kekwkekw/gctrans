@@ -20,7 +20,7 @@ python tools/update/master_coverage.py plan --baseline <master-baseline.json> --
 
 2026-10-28 후속 검수: B의 남은 1,338개를 다시 판단하여 1,335개를 번역하고 3개를 근거와 함께 HOLD했다. 기존 초벌 1,014개를 JP/Names/현재 용어와 대조하여 66개 값을 수정했다(62개 교정, 4개 원문 문제 HOLD). 앞서 추가한 12개도 확인했다. 당시 Master는 34,020키이며 기준본의 32,592키는 모두 존재했지만, 그중 4개는 추정 번역을 철회하여 JP를 유지한다. 따라서 키 존재와 번역 완료를 동일시하지 않는다. 신규분에는 현재 source의 표시용 필드 및 향후 공개될 레코드가 포함되며, 모든 레코드의 화면 노출을 관측했다고 주장하지 않는다.
 
-신규 HOLD는 내부 trigger/target 설명 2개와 개발용 dummy 상품 설명 1개다. 기존 HOLD는 葵의 의미 불명 2개와 같은 record의 색상 name/description 충돌 2개다. 레코드·원문 해시·판정은 `staging/master-source-review-20261028/`에 있다. 임시 상품 설명 `C…_交換アイテム…`/`R…交換アイテム…` 104개도 번역했으며, source 잔여라는 이유로 제외하지 않았다.
+신규 HOLD는 내부 trigger/target 설명 2개와 개발용 dummy 상품 설명 1개다. 기존 HOLD는 葵의 의미 불명 2개와 같은 record의 색상 name/description 충돌 2개다. 현재 7행의 레코드·원문 해시·판정은 [Master HOLD](../../staging/master-holds.json)에 있다. 당시 전체 검수 자료는 [고정 Git 이력](https://github.com/kekwkekw/gctrans/tree/5188bde0c7bec186c195ecb781a78d1bd8f03282/staging/master-source-review-20261028)에서 확인한다. 임시 상품 설명 `C…_交換アイテム…`/`R…交換アイテム…` 104개도 번역했으며, source 잔여라는 이유로 제외하지 않았다.
 
 기존 초벌 교정은 다음처럼 정확한 이전 값과 검수 처분을 명시한다.
 

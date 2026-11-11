@@ -11,7 +11,7 @@ import unittest
 from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ('INDEX.md','EXTERNAL_DEPENDENCIES_KO.md','LAUNCH_PROCEDURE_KO.md','OPERATOR_KO.md',
- 'PROJECT_NATIVE_TEST_POLICY_KO.md','PROJECT_STABLE_QUALIFICATION_POLICY_KO.md','PUBLICATION_KO.md',
+ 'HISTORY_INDEX_KO.md','SUPPORT_SCOPE_KO.md','PUBLICATION_KO.md',
  'REPRODUCE_KO.md','SUPPORT_SCOPE_KO.md','UPSTREAM_ATTRIBUTION_KO.md')
 class RepositoryLayoutTests(unittest.TestCase):
     def test_only_entrypoint_readme_in_root(self):
@@ -20,7 +20,7 @@ class RepositoryLayoutTests(unittest.TestCase):
         self.assertTrue(all((ROOT/'docs'/p).is_file() for p in DOCS))
         self.assertTrue((ROOT/'docs/INDEX.md').is_file())
     def test_local_document_links_resolve(self):
-        paths=[ROOT/'README.md',ROOT/'source/GCMod.Candidate/README_KO.md',*(ROOT/'docs').glob('*.md')]
+        paths=[ROOT/'README.md',ROOT/'source/GCMod.Candidate/README_KO.md',*(ROOT/'docs').glob('*.md'), ROOT/'staging/README.md', ROOT/'tools/update/MASTER_COVERAGE_KO.md']
         for p in paths:
             for target in re.findall(r'\]\(([^)\n]+)\)',p.read_text(encoding='utf-8-sig')):
                 parsed=urlsplit(target)
@@ -46,14 +46,14 @@ class RepositoryLayoutTests(unittest.TestCase):
         candidate=(ROOT/'source/GCMod.Candidate/GCMod.Candidate.csproj').read_text()
         self.assertIn('$(GC_GAME_DEPENDENCY_ROOT)',candidate)
         self.assertIn('Name="CheckGameReferences"',candidate)
-    def test_real_committed_export_has_moved_docs(self):
+    def test_real_committed_export_preserves_docs_and_staging(self):
         # The caller uses a disposable clone/fixture. Never add/commit a user checkout.
         if not (ROOT/'.git').exists(): self.skipTest('A committed isolated checkout is required')
         with tempfile.TemporaryDirectory(prefix='gc-doc-export-') as tmp:
             out=Path(tmp)/'export'
             p=subprocess.run([sys.executable,str(ROOT/'tools/export_git_rc.py'),'--repo',str(ROOT),'--ref','HEAD','--output',str(out)],capture_output=True,text=True)
             self.assertEqual(0,p.returncode,p.stderr+p.stdout)
-            names=subprocess.check_output(['git','-C',str(ROOT),'ls-tree','-r','--name-only','HEAD','--','docs/']).decode().splitlines()
+            names=subprocess.check_output(['git','-C',str(ROOT),'ls-tree','-r','--name-only','HEAD','--','docs/','staging/']).decode().splitlines()
             for name in names:
                 expected=subprocess.check_output(['git','-C',str(ROOT),'show','HEAD:'+name])
                 self.assertEqual(expected,(out/name).read_bytes())

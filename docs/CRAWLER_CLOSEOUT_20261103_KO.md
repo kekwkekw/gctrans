@@ -27,7 +27,7 @@
 | 기존 번역 절차와 경계 | Novel intake/apply, current Names/Knowledge와 legacy 경계 유지. 후속 번역은 PRO·preimage·기존 exporter로 별도 적용. 새 framework 도입 없음 |
 
 구현과 복구 세부 사항은 [crawler 사용법](CRAWLER_ALL_ASSETS_KO.md), 조사 범위와 실패 근거는
-[전체 텍스트 재조사](FULL_TEXT_RESURVEY_20261102_KO.md)에 있다. 현재 등록은 UI 14,073키,
+[전체 텍스트 재조사](https://github.com/kekwkekw/gctrans/blob/5188bde0c7bec186c195ecb781a78d1bd8f03282/docs/FULL_TEXT_RESURVEY_20261102_KO.md)에 있다. 현재 등록은 UI 14,073키,
 Master 34,388키, 일반 Novel 1,939파일·144,815 사전 항목이다. 파일·키·출현 행은 다른 단위다.
 
 ## 종료 시 남긴 상태
