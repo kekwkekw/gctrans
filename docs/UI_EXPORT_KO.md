@@ -1,4 +1,4 @@
-# LocalParity UI 사전 생성
+# UI 사전 생성
 
 `python tools/export_local_ui.py`는 한국어 authoring 데이터를 exact `translations/ko/ui.json`으로 내보낸다. `--check`는 생성 결과가 저장된 파일과 같은지 확인한다. 생성 뒤 `python tools/build_manifests.py translations/ko --modify ui.json`으로 package descriptor를 갱신한다.
 
@@ -11,7 +11,7 @@
 - 공방 1~3은 검수된 정수 템플릿에서 offline exact로 생성한다.
 - `ui/enhancement-families.json`: 실기·PC producer에서 확인한 레벨, 슬롯, 부족 수량, 확률, 경감 수치의 유한 정수 집합을 exact로 생성한다. 허용 범위 밖의 값을 번역 완료로 세지 않는다. 빈 목록·중복·충돌·잘못된 변수는 실패한다.
 
-`ui/local-coverage.json`은 `gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318`의 UI **JP 키**만 기록한다. 중국어 번역을 가져오는 파일이 아니다. local의 일본어 키가 export에서 사라지면 실패한다. 숫자·기호·HP 등 언어 변환이 필요 없는 키만 keep_source로 허용한다. 새 upstream을 채택할 때 이 목록도 갱신하고 새 JP를 한국어로 검수한다.
+`ui/local-coverage.json`은 7.x 이관 시 고정한 legacy UI **JP 키** coverage snapshot이다. 중국어 번역을 가져오는 파일이 아니며, 해당 키가 export에서 사라지면 실패한다. 숫자·기호·HP 등 언어 변환이 필요 없는 키만 keep_source로 허용한다. 파일명은 기존 검사 호환성 때문에 유지하지만 새 외부 upstream을 추적하는 입력으로 사용하지 않는다. 이후 증분 범위는 crawler·실제 source 조사와 reviewed exact 검수로 관리한다.
 
 Master 번역과 UI 번역은 독립적인 consumer다. Master에 같은 JP가 있어도 prefab/static label은 그 Master 레코드를 거치지 않을 수 있다. 이 때문에 UI 전용 필드를 **authoring 단계**에서 사전으로 복제한다. runtime에 Master lookup/reservation/ownership을 다시 넣지 않는다.
 
@@ -40,7 +40,7 @@ source가 실재한다는 사실, 한국어 검수, exporter 포함, Native 표�
 
 점수 도전은 준비 화면에서 끝내지 않는다. 보너스 목록의 여덟 설명, 준비 화면과 목록 안의 세 종류 대상 돋보기, 포텐셜 상세, 점수·퀘스트 보상, 레벨 부스트 +/−, 실제 전투의 결과 상세와 보상 수령 화면을 구분해 확인한다. 모든 버튼을 눌렀다는 사실과 각 화면의 한국어 표시를 따로 기록한다. 현재 7.2.1 DLL을 바꾸지 않고 이 경로의 누락을 UI 데이터로 보완할 수 있다.
 
-`gc-mod-local`의 UI 키가 모두 있다고 해서 현재 PC UI가 모두 수집됐다는 뜻은 아니다. `スコアチャレンジ`처럼 Master에 번역이 있어도 다른 static label은 UI exact가 필요하다. 이번 조사에서는 해당 popup/scene prefab과 현재 PC 상수를 좁게 대조하고, 실제 결과 화면에서만 확인된 문자열도 reviewed exact에 추가했다. 새 Master 권한 계층이나 부분 문자열 치환은 추가하지 않는다.
+이 legacy coverage 키가 모두 있다고 해서 현재 PC UI가 모두 수집됐다는 뜻은 아니다. `スコアチャレンジ`처럼 Master에 번역이 있어도 다른 static label은 UI exact가 필요하다. 이번 조사에서는 해당 popup/scene prefab과 현재 PC 상수를 좁게 대조하고, 실제 결과 화면에서만 확인된 문자열도 reviewed exact에 추가했다. 새 Master 권한 계층이나 부분 문자열 치환은 추가하지 않는다.
 
 박스의 현재 번호·이후 구간, 도전 난이도·턴 수는 기존 offline 정수 family로 생성한다. 별 개수 뒤 `のメモリー`는 조사 중 `の` 앞뿐 아니라 뒤에도 공백이 있는 실제 문자열이 발견되어, 별 1~5개와 양쪽의 없음/반각/전각 공백을 완성 exact로 다룬다. 고정 S/I/P 이미지가 문장 안에 있는 대상 안내는 기존 배치에 맞는 공백을 번역문에 보존한다. `で解放`는 별 이미지 옆 독립 TextNote 컴포넌트의 전체 값으로만 번역하며 다른 문장 안에서는 치환하지 않는다.
 
