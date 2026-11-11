@@ -1128,8 +1128,6 @@
     "＋{0}％",
     "ｘ{0}回スキップ"
   ],
-  "note": "JP key coverage only. Korean comes from reviewed Korean UI/Master. Neutral symbols/numeric keys need no language conversion.",
-  "schema": "gc-local-ui-coverage-v1",
-  "source_path": "translations/zh-Hans/ui.json",
-  "upstream": "0cdcd9e84fffa438dfdac63176685a6c47a07318"
+  "note": "Legacy 7.x migration JP-key coverage guard. Korean comes from reviewed Korean UI/Master. This file is not an external upstream tracker.",
+  "schema": "gc-local-ui-coverage-v1"
 }
