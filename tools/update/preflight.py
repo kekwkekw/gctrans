@@ -2,11 +2,12 @@
 from pathlib import Path
 import configparser
 from build_manifests import sha
+from local_release import CORE, OFFICIAL_CDN, PLUGIN
 
-PREFIX = 'GCMod.Nextgen.Candidate'
-FONT_DEFAULT = 'GCMod/fonts/tsukuardgothic-std-medium'
+FONT_DEFAULT = 'GCMod/fonts/RHR_Medium_GFSAFE_ADH.bundle'
 ENTRYPOINTS = ('tools/update/cli.py', 'scripts/crawl_only.py', 'scripts/__init__.py',
-               'scripts/crypto.py', 'tools/UpdateCli/Program.cs', 'tools/UpdateCli/UpdateCli.csproj')
+               'scripts/crypto.py', 'tools/local_release.py',
+               'source/GCMod.Candidate/GCMod.Candidate.csproj')
 
 def custody(role, path=None):
     row = {'role': role, 'path': str(path) if path is not None else None,
@@ -51,18 +52,18 @@ def plugin_inventory(path):
 
 def preflight(candidate_root, dependency_root=None, medium=None, plugins=None):
     root = Path(candidate_root).resolve()
-    config = configparser.ConfigParser(); config.optionxform = str
-    config.read(root/'staging/GCMod.cfg.template', encoding='utf-8')
-    relative = config.get('Nextgen', 'PackageRoot', fallback='')
-    manifest = root/'translations/ko/ui/manifest.json'
+    config = configparser.ConfigParser(interpolation=None)
+    config.optionxform = str
+    config.read(root/'candidate/GCMod.cfg', encoding='utf-8-sig')
+    package = root/'translations/ko'
+    manifest = package/'manifest.json'
     font_setting = config.get('Translation.Font', 'AssetBundlePath', fallback=FONT_DEFAULT)
-    checks = {'package_root_layout': relative == PREFIX+'/translations/ko' and manifest.is_file(),
+    checks = {'package_root_layout': all((package/name).is_file() for name in CORE),
               'entrypoints_present': all((root/p).is_file() for p in ENTRYPOINTS),
-              'opt_in_off': config.get('Nextgen', 'Enabled', fallback='').lower() == 'false',
-              'ui_request_opt_in_off': config.get('Nextgen', 'UiRequestsEnabled', fallback='false').lower() == 'false',
-              'check_update_off': config.get('Nextgen', 'CheckUpdate', fallback='').lower() == 'false',
+              'translation_enabled': config.get('Translation', 'Enabled', fallback='').lower() == 'true',
               'locale_ko': config.get('Translation', 'Language', fallback='') == 'ko',
-              'xunity_off': config.get('Staging', 'XUnityEnabled', fallback='').lower() == 'false',
+              'supported_cdn': config.get('Translation', 'CDN', fallback='') in ('offline', OFFICIAL_CDN),
+              'all_master_tables_enabled': config.get('Translation.MasterData', 'EnabledTables', fallback='') == '*',
               'font_setting_matches_code_default': font_setting == FONT_DEFAULT}
     dlls = sorted(p.relative_to(root).as_posix() for p in (root/'candidate').glob('*.dll'))
     checks['single_candidate_no_addon_mixture'] = dlls == ['candidate/GCMod.dll']
@@ -74,12 +75,12 @@ def preflight(candidate_root, dependency_root=None, medium=None, plugins=None):
     plugins_report = plugin_inventory(plugins)
     artifact_status = 'PASS' if all(checks.values()) else 'FAIL'
     missing = [d['role'] for d in dependencies+[font] if d['status'] != 'FOUND']
-    return {'schema': 'gc-ng06-read-only-preflight-v1',
+    return {'schema': 'gcmod-update-preflight-v1',
             'status': 'OFFLINE_ARTIFACT_PASS' if artifact_status == 'PASS' else 'ARTIFACT_FAIL',
             'artifact': {'status': artifact_status, 'checks': checks, 'entrypoints': list(ENTRYPOINTS),
                          'scope': 'layout and required source presence; full payload staging is separate'},
-            'checks': checks, 'projected_plugins_directory': PREFIX, 'PackageRoot': relative,
-            'manifest_source': 'translations/ko/ui/manifest.json',
+            'checks': checks, 'projected_plugins_directory': PLUGIN.rstrip('/'),
+            'manifest_source': 'translations/ko/manifest.json',
             'manifest_sha256': sha(manifest.read_bytes()) if manifest.is_file() else None,
             'dependencies': dependencies, 'dependency_axis': 'READ_ONLY_FILE_METADATA_ONLY',
             'font': font, 'font_setting': {'section': 'Translation.Font', 'key': 'AssetBundlePath',
@@ -92,5 +93,4 @@ def preflight(candidate_root, dependency_root=None, medium=None, plugins=None):
                              'glyph': 'NOT_RUN', 'hook': 'NOT_RUN'},
             'source_coverage': 'PARTIAL; latest PC inventory/UI/Novel locator and Names authority separate',
             'native_abi': 'NOT_RUN', 'native_hook': 'NOT_RUN', 'game': 'NOT_RUN',
-            'installation': 'NOT_PERFORMED', 'operational_config_writes': 0,
-            'xunity_note': 'Staging.XUnityEnabled is an operator assertion, not an XUnity setting writer'}
+            'installation': 'NOT_PERFORMED', 'operational_config_writes': 0}

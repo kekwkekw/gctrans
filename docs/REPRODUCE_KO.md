@@ -23,7 +23,6 @@ python tools/local_release.py verify
 ```
 
 `local_release.py verify`가 현행 source package의 inventory·해시·이미지·UI export를 확인한다.
-이전 `verify_staged_release.py` CLI는 authoring 파일이 포함된 현재 source tree에 직접 쓰지 않는다.
 더 넓은 Master/UI/crawler 및 CPU runtime 회귀가 필요할 때는 CI와 같은 명령을 사용한다.
 .NET 9 SDK와 `httpx==0.27.2`, `UnityPy==1.10.18`이 필요하다.
 

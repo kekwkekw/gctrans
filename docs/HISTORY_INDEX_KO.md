@@ -10,9 +10,11 @@ main의 Git 이력에서 원본을 가리킨다. Git history를 rewrite하거나
 | Novel 줄배치: wording, reflow, boundary | [wording](https://github.com/kekwkekw/gctrans/tree/e6730d5ce82165c54183c2f50f7d448311e71d45/staging/novel-layout-wording-20261030), [reflow](https://github.com/kekwkekw/gctrans/tree/e6730d5ce82165c54183c2f50f7d448311e71d45/staging/novel-layout-reflow-20261030), [boundary](https://github.com/kekwkekw/gctrans/tree/e6730d5ce82165c54183c2f50f7d448311e71d45/staging/novel-layout-boundary-20261030) |
 | 완료된 UI exact·강화·주간·공방·점수 도전 조사 | [당시 staging 전체](https://github.com/kekwkekw/gctrans/tree/e6730d5ce82165c54183c2f50f7d448311e71d45/staging) |
 | 과거 Nextgen 후보 재현 명령 | [당시 REPRODUCE](https://github.com/kekwkekw/gctrans/blob/e6730d5ce82165c54183c2f50f7d448311e71d45/docs/REPRODUCE_KO.md) |
+| GCMod 6.1 소스·MIT 고지와 CDN 데이터 | [소스](https://github.com/kekwkekw/gctrans/tree/ae8fc9c0d4875f36c3f3cb89bf219d7b12459046/GCMod-cs%ED%8C%8C%EC%9D%BC%EB%B0%B1%EC%97%85/GCMod-6.1.0-updated), [Names](https://github.com/kekwkekw/gctrans/tree/ae8fc9c0d4875f36c3f3cb89bf219d7b12459046/names), [Words](https://github.com/kekwkekw/gctrans/tree/ae8fc9c0d4875f36c3f3cb89bf219d7b12459046/words), [Novel](https://github.com/kekwkekw/gctrans/tree/ae8fc9c0d4875f36c3f3cb89bf219d7b12459046/novels) |
+| 지원 종료 직전 트리의 Nextgen 소스·도구·테스트 | [고정 커밋](https://github.com/kekwkekw/gctrans/tree/ae8fc9c0d4875f36c3f3cb89bf219d7b12459046) |
 | 처음 정리한 2026-10-26 기록 | [정리 보고](REPOSITORY_CLEANUP_20261026_KO.md) |
 
-파일 하나를 확인하거나 별도 폴더로 복구하려면 다음처럼 사용한다. 현재 checkout을 reset하지 않는다.
+6.1 자료는 지원 종료 직전 커밋에서 확인한다. Nextgen 재현은 당시 REPRODUCE가 가리키는 커밋을 별도 checkout에서 사용한다. 파일 하나를 확인하거나 별도 폴더로 복구할 때는 다음 명령을 사용한다.
 
 ```powershell
 git show e6730d5ce82165c54183c2f50f7d448311e71d45:staging/novel-layout-wording-20261030/apply.json

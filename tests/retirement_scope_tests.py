@@ -10,6 +10,8 @@ RETIRED = (
     "package-lock.json", "vercel.json",
     "tools/update/novel_bridge.py", "tools/update/novel_bridge_worker.py",
     "tools/update/intake_work.py", ".github/workflows/update_translation.yml", "项目GPT字典.txt", "!!!!!!!!!!!!!!!!!!!최근로그.txt",
+    "GCMod-cs파일백업", "names", "words", "novels", "source/GCMod.Nextgen",
+    "source/build/Common.props", "tools/UpdateCli", "tools/CompileAudit", "tools/verify_staged_release.py",
 )
 class RetirementTests(unittest.TestCase):
     def test_retired_entries_absent(self):
