@@ -11,7 +11,7 @@
 | [LOCAL_PARITY_PIPELINE_KO.md](LOCAL_PARITY_PIPELINE_KO.md) | Master/UI 수집·검수·적용·패키지·설치 |
 | [CRAWLER_ALL_ASSETS_KO.md](CRAWLER_ALL_ASSETS_KO.md) | 보완 완료한 전 자산 수집·추출·격리·재개 경로 |
 | [UI_EXPORT_KO.md](UI_EXPORT_KO.md) | UI authoring → exact export의 범위·충돌 처리 |
-| [GCMod.Candidate README](../source/GCMod.Candidate/README_KO.md) | 현행 local 기반 runtime·빌드 |
+| [GCMod.Candidate README](../source/GCMod.Candidate/README_KO.md) | 현행 7.x runtime·빌드 |
 | [DATA_UPDATES_KO.md](DATA_UPDATES_KO.md) / [IMAGE_UPDATES_KO.md](IMAGE_UPDATES_KO.md) | 번역·지원 이미지의 GitHub 갱신과 캐시 |
 | [SUPPORT_SCOPE_KO.md](SUPPORT_SCOPE_KO.md) | 지원 범위·미확인 대상 |
 | [EXTERNAL_DEPENDENCIES_KO.md](EXTERNAL_DEPENDENCIES_KO.md) / [LAUNCH_PROCEDURE_KO.md](LAUNCH_PROCEDURE_KO.md) | 외부 참조·실기 적용·복구 |
@@ -28,5 +28,5 @@
 ## 이전 Nextgen 후보 참고
 
 [Native 시험 정책](PROJECT_NATIVE_TEST_POLICY_KO.md)과 [Stable 판정 정책](PROJECT_STABLE_QUALIFICATION_POLICY_KO.md)은
-당시 후보 구조의 기록이다. 새 LocalParity 작업의 필수 gate로 확대하지 않는다.
+당시 후보 구조의 기록이다. 현행 7.x 작업의 필수 gate로 확대하지 않는다.
 현재 필요한 검사는 변경한 경로에 맞춰 [재현 안내](REPRODUCE_KO.md)에서 선택한다.
