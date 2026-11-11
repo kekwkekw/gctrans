@@ -60,7 +60,7 @@ Knowledge는 명시된 scope 안에서 사용하고, 과거 원장과 변경 이
 | `tools/`, `scripts/`, `contracts/`, `tests/` | 수집·검수·반영·패키지 도구와 회귀 검사 |
 | `source/GCMod.Candidate/`, `candidate/` | GCMod runtime 소스와 DLL·cfg |
 | `knowledge-layer/provenance/` | 승인 변경의 이전·이후 값과 정책 해소 이력. 번역 입력 아님 |
-| `staging/` | 유지 중인 source coverage·HOLD·crawler 검수 근거와 설정 입력 |
+| `staging/` | [미해결 검수·후속 근거](staging/README.md) |
 | `work/`, `source-state/`, `private-source-cache/`, `source-out/` | 로컬 작업·원문·캐시. 공개 저장소 밖에서 관리 |
 
 지원 런타임은 GCMod 7.x입니다. GCMod 6.1 지원을 종료했으며, 기존 설치에서 이 저장소의 6.1 CDN 경로를 사용했다면 GCMod 7.x로 업데이트해야 합니다. [과거 소스와 데이터](docs/HISTORY_INDEX_KO.md) · [출처와 라이선스](docs/UPSTREAM_ATTRIBUTION_KO.md)
@@ -78,4 +78,4 @@ exact도 포함합니다. 파일·키 수는 전편 신규 번역량이나 전�
 영문 UI 3종은 사용자 선택으로 번역하지 않습니다. 전체 완역이나 모든 에셋의 해석 성공을 뜻하지 않습니다.
 
 [지원 범위](docs/SUPPORT_SCOPE_KO.md) · [재현](docs/REPRODUCE_KO.md) ·
-[현재 자료와 과거 기록](docs/HISTORY_INDEX_KO.md) · [이번 저장소 정리](docs/REPOSITORY_CLEANUP_20261102_KO.md)
+[현재 자료와 과거 기록](docs/HISTORY_INDEX_KO.md)

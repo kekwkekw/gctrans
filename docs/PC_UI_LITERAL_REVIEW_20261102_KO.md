@@ -25,7 +25,7 @@ PC metadata 전체 literal은 21,952개이며 일본어로 보이는 문자를 �
 
 원문만 본 초기 분류를 확정하지 않고 기존 LibCpp2IL/Iced 오프라인 조사 경로를 재사용했다. 122,842개 method address 그룹을 읽어 992개 전부의 참조를 찾았으며 읽기 실패·크기 제한에 걸린 그룹은 0개다. 107개 항목을 참조 확인 후 재분류했다. 예를 들어 전투 조작 설명과 필터 안내는 표시 후보로 승격했고, 개발 배포 팝업·계산 로그만 참조하는 아이템명은 제외했다. 발견된 참조가 모든 분기의 실제 표시나 인자 데이터 흐름을 보증하지는 않는다.
 
-정확한 원문·분류 이유·전체 참조와 반환 원본은 private work에 남겨 두었다. 공개 ledger는 원문 hash·literal index·분류·적용 상태로 그 원본과 연결한다. 이 분류는 해당 PC snapshot의 결과이며 WebGL·legacy 또는 게임 전체 지원율로 바꾸어 표기하지 않는다.
+정확한 원문·분류 이유·전체 참조와 반환 원본은 private work에 남겨 두었다. [공개 분류 ledger](../staging/pc-literal-review-20261102/classification-ledger.json)는 원문 hash·literal index·분류·적용 상태로 그 원본과 연결한다. 이 분류는 해당 PC snapshot의 결과이며 WebGL·legacy 또는 게임 전체 지원율로 바꾸어 표기하지 않는다.
 
 ## AP 알림과 번역 재사용
 
@@ -43,6 +43,6 @@ AP 해금 설명의 `1日1回`는 사용자 화면의 12시간 충전/최대 2�
 
 PC 코드 1,567개 전체를 같은 `UiTextLookup`으로 재조회했다. 일치는 575→994개, 미일치는 992→573개이며 새 일치 419개는 승인 고정 문구와 정확히 같다. 기존 575개 조회 결과도 유지됐다. 남은 573개는 HOLD 2, 서식 130, 조각 92, 진단 315, 라이브러리 29, 조회 경로 밖 4, 문맥 미확정 1이다. 이는 미번역 화면 573개라는 뜻이 아니다.
 
-서식 반환은 `gc-pc-format-semantic-review-v1`, `publication_allowed=false`를 유지하고 apply에 전달하지 않았다. 대표 완성값 25개 중 17개가 기존처럼 조회되며, 이것은 전체 130개 서식의 지원율이 아니다. 예를 들어 `Lv3以上で解放`는 조회되지만 `Lv4以上で解放`는 되지 않는다. 후속 작업은 실제 포맷 인자·변환 순서를 확인하고, 기존 경로에서 근거 있는 유한 범위의 완성값을 생성할 수 있는지 판단하는 것이다. 특히 941의 줄 구분·지구 수·날짜 인자 역할은 실제 호출로 확인해야 한다.
+[미배포 서식 130행의 후속 자료](../staging/pc-literal-review-20261102/pro-reviewed/format-followup.json)는 `publication_allowed=false` 상태와 반환본 해시를 보존한다. 서식 반환은 apply에 전달하지 않았다. 대표 완성값 25개 중 17개가 기존처럼 조회되며, 이것은 전체 130개 서식의 지원율이 아니다. 예를 들어 `Lv3以上で解放`는 조회되지만 `Lv4以上で解放`는 되지 않는다. 후속 작업은 실제 포맷 인자·변환 순서를 확인하고, 기존 경로에서 근거 있는 유한 범위의 완성값을 생성할 수 있는지 판단하는 것이다. 특히 941의 줄 구분·지구 수·날짜 인자 역할은 실제 호출로 확인해야 한다.
 
-기존 8행 PRO ZIP, 11장 전투 19행의 실기 보류와 Novel HOLD는 유지했다. 게임 실행·설치·DLL 빌드·Knowledge 재구축은 하지 않았다. 적용 근거는 [application-receipt.json](../staging/pc-literal-review-20261102/pro-reviewed/application-receipt.json), 실측은 [coverage-after.json](../staging/pc-literal-review-20261102/pro-reviewed/coverage-after.json), 최종 검증은 [verification.json](../staging/pc-literal-review-20261102/pro-reviewed/verification.json)을 따른다. 원본 반환 세 파일과 ZIP은 Git 제외 `work/text-coverage-20261031/pc-literal-pro-apply-20261102/`에 보존했다.
+기존 8행 PRO ZIP, 11장 전투 19행의 실기 보류와 Novel HOLD는 유지했다. 게임 실행·설치·DLL 빌드·Knowledge 재구축은 하지 않았다. 적용 근거는 [application-receipt.json](https://github.com/kekwkekw/gctrans/blob/5188bde0c7bec186c195ecb781a78d1bd8f03282/staging/pc-literal-review-20261102/pro-reviewed/application-receipt.json), 실측은 [coverage-after.json](https://github.com/kekwkekw/gctrans/blob/5188bde0c7bec186c195ecb781a78d1bd8f03282/staging/pc-literal-review-20261102/pro-reviewed/coverage-after.json), 최종 검증은 [verification.json](https://github.com/kekwkekw/gctrans/blob/5188bde0c7bec186c195ecb781a78d1bd8f03282/staging/pc-literal-review-20261102/pro-reviewed/verification.json)을 따른다. 원본 반환 세 파일과 ZIP은 Git 제외 `work/text-coverage-20261031/pc-literal-pro-apply-20261102/`에 보존했다.

@@ -1,0 +1,38 @@
+{
+  "source_commit": "5188bde0c7bec186c195ecb781a78d1bd8f03282",
+  "source_path": "staging/text-resurvey-followup-20261102/pro-reviewed/decision-ledger.json",
+  "return_zip_sha256": "176775e4bea4c68947234187e260aebea32894e01b2a6eda3f508de287ff5114",
+  "publication_allowed": false,
+  "rows": [
+    {
+      "id": "498a88016b30f4972372d8582bdb77636939a87749dece67489d998a382ed999",
+      "kind": "format",
+      "candidate_index": "CSV-019",
+      "jp_sha256": "93aaeecbd931ec47fed4f29b79902e42cccf6fdc9cace7a92b2a115c54b370f4",
+      "ko_sha256": "a470e74c3185505addd35aaec130d007de7fdfe845a354d127adababfa0a6460",
+      "disposition": "SEMANTIC_APPROVED_NOT_PUBLISHED",
+      "publication_allowed": false,
+      "deployment_status": "FORMAT_ORDER_OR_BOUNDED_FINAL_STRING_SUPPORT_REQUIRED"
+    },
+    {
+      "id": "4d9b7d8092edb29cf0a9571b5b911710a69be1c04848c7098da6b38de95bbeca",
+      "kind": "format",
+      "candidate_index": "CSV-053",
+      "jp_sha256": "d2db42247808e26145518623a47bbe8b94deb2c5aac2df0b604a0fd48bca3000",
+      "ko_sha256": "044c5632a6f00092884e3d84f237a3bd88fc3b47bf4e8c3879fd403f1a7a9175",
+      "disposition": "SEMANTIC_APPROVED_NOT_PUBLISHED",
+      "publication_allowed": false,
+      "deployment_status": "FORMAT_ORDER_OR_BOUNDED_FINAL_STRING_SUPPORT_REQUIRED"
+    },
+    {
+      "id": "46b22bdd3dec63cb0a1b61cceaa571fd0eb4b6b6b55bd0eb7cf2d611b16cc1b4",
+      "kind": "format",
+      "candidate_index": "CSV-055",
+      "jp_sha256": "1d5655430cdeb933d438afcc5ede893efe58e130ee8c80adb5de60b619e659d0",
+      "ko_sha256": "b6ac6de930f023683e8d8094e7665eab584cb6e10b172e29fa8d76798f89dc95",
+      "disposition": "SEMANTIC_APPROVED_NOT_PUBLISHED",
+      "publication_allowed": false,
+      "deployment_status": "FORMAT_ORDER_OR_BOUNDED_FINAL_STRING_SUPPORT_REQUIRED"
+    }
+  ]
+}
