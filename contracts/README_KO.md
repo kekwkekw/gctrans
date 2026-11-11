@@ -28,6 +28,6 @@ python tools/semantic_diff.py BEFORE AFTER --mode trusted --old-descriptor befor
 python tools/semantic_diff.py EXTERNAL_BEFORE EXTERNAL_AFTER --mode cold_scan --report cold-diff.json
 ```
 
-changeset 형식은 `{"add":[],"modify":["ui/resources.json"],"remove":[]}`다. `--trust-immutable`는 현재 package가 검증·고정되었다는 caller의 선언이며 publisher 인증을 뜻하지 않는다. descriptor는 source tree 안에 넣지 않는다. 전체 미설치 staging은 `verify_staged_release.py`로 한 번 별도 검증한다. UI-only reload는 기존 Master/Names/Novel session을 유지하며 authority 변경은 기본 `RESTART_REQUIRED`다.
+changeset 형식은 `{"add":[],"modify":["ui/resources.json"],"remove":[]}`다. `--trust-immutable`는 현재 package가 검증·고정되었다는 caller의 선언이며 publisher 인증을 뜻하지 않는다. descriptor는 source tree 안에 넣지 않는다. 현행 Novel 반영과 검수 package 가져오기는 내부 검증기 `tools/authoring_package_validation.py`로 전체 파일 목록, 바이트, 스키마를 검사한다. 배포 ZIP 검증은 `tools/local_release.py verify-archive`를 사용한다.
 
 Fit3 layout은 현재 승인된35와34→33→32→31을 유지한다. `contract_validation.py`는 필요한 JSON Schema subset만 지원한다. 일반 Draft2020-12 준수를 주장하지 않으며 모르는 validation keyword는 거부한다. audit 출력은 relative POSIX 경로의 ordinal key와 안정된 record key로 정렬한다.

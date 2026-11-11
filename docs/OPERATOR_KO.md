@@ -205,9 +205,9 @@ python -X utf8 tools/update/cli.py novel apply --repo . --batch work/novels/<bat
 
 ```powershell
 python -X utf8 tools/update/cli.py preflight --candidate-root . --report <local-preflight.json>
-python -X utf8 tools/verify_staged_release.py translations/ko --report <local-staging.json>
-dotnet build tools/UpdateCli/UpdateCli.csproj -c Release -p:NuGetAudit=false
-dotnet tools/UpdateCli/bin/Release/net9.0/UpdateCli.dll prepare-local --store <isolated-store> --package <package-path> --based-on NONE
+python tools/local_release.py verify
+python tools/local_release.py pack --output work/translation-update/update.zip
+python tools/local_release.py verify-archive --archive work/translation-update/update.zip
 ```
 
 Codex는 적용 후 정확한 diff와 package를 확인한다. 대상 선정이나 PRO 검수 요청만으로 public commit·push·PR·merge 권한을 확대하지 않는다. 사용자가 특정 범위의 Git 반영까지 승인했다면 같은 범위에서 반복 승인 요구를 만들지 않는다.
@@ -224,18 +224,11 @@ python -X utf8 tools/update/cli.py apply-review --package translations/ko --revi
 
 지원 범위는 `docs/SUPPORT_SCOPE_KO.md`를 따른다.
 
-## 6. 게임 적용과 6.1 호환
+## 6. 게임 적용
 
 Novel·Names·Master 변경은 완전 package와 재시작 경계를 사용한다. 파일 검증과 실제 게임 화면 검증을 같은 결과로 기록하지 않는다. XUnity는 OFF를 유지한다.
 
-GCMod 6.1 사용자를 위해 다음 public 경로를 유지한다.
-
-- `names/zh_Hans.json`
-- `words/zh_Hans.json`
-- `novels/<id>/zh_Hans.json`
-- `GCMod-cs파일백업/GCMod-6.1.0-updated/`
-
-현행 GCMod 7 정본은 `translations/ko/**`다. 정상 GCMod 7 작업이 6.1 경로를 임의 삭제·이름 변경하지 않는다.
+현행 GCMod 7.x 정본은 `translations/ko/**`다. GCMod 6.1 지원은 종료했으며 과거 소스와 CDN 데이터는 [과거 기록](HISTORY_INDEX_KO.md)에서 확인할 수 있다.
 
 ## 7. 사용하지 않는 과거 경로
 

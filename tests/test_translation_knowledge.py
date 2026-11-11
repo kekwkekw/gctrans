@@ -30,9 +30,6 @@ class CurrentKnowledgeTests(unittest.TestCase):
 
     def test_current_names_keep_exact_display_keys(self):
         current = json.loads((ROOT / "translations/ko/names.json").read_text(encoding="utf-8"))
-        legacy = json.loads((ROOT / "names/zh_Hans.json").read_text(encoding="utf-8"))
-        for jp, ko in legacy.items():
-            self.assertEqual(current[jp], ko)
         self.assertIn("街の人Ａ", current)
         self.assertIn("街の人A", current)
 

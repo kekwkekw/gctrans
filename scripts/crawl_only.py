@@ -29,9 +29,7 @@ MASTER_MANIFEST = "/files/manifest/webgl/r18/master.json"
 
 
 def existing_novel_ids():
-    legacy = {p.parent.name for p in (ROOT / "novels").glob("*/zh_Hans.json") if p.parent.name.isdigit()}
-    ko = {p.stem for p in (ROOT / "translations/ko/novels").glob("*.json") if p.stem.isdigit()}
-    return legacy, ko, legacy | ko
+    return {p.stem for p in (ROOT / "translations/ko/novels").glob("*.json") if p.stem.isdigit()}
 
 
 def parser():
@@ -76,7 +74,7 @@ def run(args):
     external_metrics = {"external_source_reads": 0, "external_source_read_bytes": 0,
                         "external_source_hash_calls": 0, "external_source_hash_bytes": 0}
     forced = parse_source_ids(args.source_ids)
-    _, _, existing = existing_novel_ids()
+    existing = existing_novel_ids()
     profile = SourceProfile(args.platform, "R18", args.lane,
                             "vendor-d-n-h-s-v1" if args.platform == "WebGL" else "pc-explicit-local-cache-v1")
     if args.platform == "PC" and (not args.local_asset or not args.asset_key):
