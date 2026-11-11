@@ -645,7 +645,7 @@ def _publish(updates, previous):
 def apply_review(repo, batch, review):
     """Apply explicitly PRO-reviewed data to a local checkout, without Git writes."""
     from translation_knowledge import change_history, dump_knowledge, load_current
-    from verify_staged_release import verify
+    from authoring_package_validation import verify
     repo, batch, review = Path(repo).resolve(), Path(batch).resolve(), Path(review).resolve()
     with ProcessFileLock(repo / "work/novels/.apply.lock", "Novel apply is already running"):
         document, reviewed, rows, payloads, records, names = _reviewed(repo, batch, review)

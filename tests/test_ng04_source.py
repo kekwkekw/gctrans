@@ -15,6 +15,7 @@ from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from scripts import crawl_only
 from tools.update import source_scan as source
 from tools.update.novel_intake import create_intake_references, consume_intake_reference, current_source_references
 
@@ -43,6 +44,16 @@ class Ng04SourceTests(unittest.TestCase):
 
     def tearDown(self):
         self.temp.cleanup()
+
+    def test_existing_novel_ids_use_the_current_korean_package(self):
+        for relative in ("translations/ko/novels/10011201.json",
+                         "translations/ko/novels/nonnumeric.json",
+                         "novels/10011202/zh_Hans.json"):
+            path = self.root / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("{}", encoding="utf-8")
+        with patch.object(crawl_only, "ROOT", self.root):
+            self.assertEqual({"10011201"}, crawl_only.existing_novel_ids())
 
     def fetch(self, asset):
         self.fetched.append(asset["asset_key"])

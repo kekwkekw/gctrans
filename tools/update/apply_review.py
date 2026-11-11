@@ -10,7 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from build_manifests import build, previous_inventory, safe_path, encode, sha
 from contract_validation import read_json, validate_package, validate_shape, ContractError
-from verify_staged_release import verify
+from authoring_package_validation import verify
 from update.diff_review import ReviewConflict, apply_row, fingerprint, find_source, validate_binding_provenance
 from update.process_lock import ProcessFileLock
 
