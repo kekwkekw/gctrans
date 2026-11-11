@@ -1,4 +1,4 @@
-# LocalParity 적용과 실행
+# GCMod 한국어 업데이트 적용과 실행
 
 현재 runtime은 [GCMod.Candidate/README_KO.md](../source/GCMod.Candidate/README_KO.md)의 local 기반 구현이다. 기존 Nextgen 전용 prepare/stage/restore/verify 도구는 이 패키지의 설치 도구가 아니다.
 

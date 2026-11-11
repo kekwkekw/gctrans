@@ -1,16 +1,16 @@
-# Master·UI → LocalParity 배포 준비
+# Master·UI → GCMod 한국어 업데이트 배포 준비
 
 새 plan은 current Names/Knowledge 문맥을 포함한다. review의 `knowledge_review`에 신규 용어·중복·충돌 검토 결과를 적는다(신규 후보 없음도 허용). 이 경로의 소유 파일은 계속 Master/UI와 manifest뿐이다. Names/Knowledge 갱신이나 기존 번역값 교정은 [corpus 교정 절차](CORPUS_WORKFLOW_KO.md)에서 명시적으로 검수한다. 문맥 필드가 없는 기존 plan은 이전 계약으로 읽는다.
 
-Novel의 기존 운영 절차는 [OPERATOR_KO.md](OPERATOR_KO.md)를 유지한다. 아래 명령은 저장소 루트에서 실행한다. `work/local-parity`는 Git 제외 작업 폴더이며 크롤러 raw, state, 복호화 helper, 게임 참조 DLL은 공개 저장소에 넣지 않는다.
+Novel의 기존 운영 절차는 [OPERATOR_KO.md](OPERATOR_KO.md)를 유지한다. 아래 명령은 저장소 루트에서 실행한다. `work/translation-update`는 Git 제외 작업 폴더이며 크롤러 raw, state, 복호화 helper, 게임 참조 DLL은 공개 저장소에 넣지 않는다.
 
 ## 1. 수집
 
 Python 3.12 이상, `httpx==0.27.2`, `UnityPy==1.10.18`과 기존 private helper가 필요하다. Master는 기존 복호화 경계를 사용한다. UI prefab 해석 자체에는 복호화 helper가 필요 없으며 HTTP 취득 인증에 기존 helper를 사용한다.
 
 ```powershell
-python scripts/crawl_only.py --lane Master --acquire --master-coverage-baseline <local-master.json> --master-baseline-ref <upstream-commit> --output work/local-parity/master-scan.json
-python scripts/crawl_only.py --lane UI --acquire --output work/local-parity/ui-scan.json
+python scripts/crawl_only.py --lane Master --acquire --master-coverage-baseline <local-master.json> --master-baseline-ref <upstream-commit> --output work/translation-update/master-scan.json
+python scripts/crawl_only.py --lane UI --acquire --output work/translation-update/ui-scan.json
 ```
 
 - Master 범위는 기존 field selector, 현재 한국어 Master, 지정한 local Master의 `(table, field)` 합집합이다. local의 중국어 값은 한국어 생성 입력이 아니다.
@@ -25,8 +25,8 @@ python scripts/crawl_only.py --lane UI --acquire --output work/local-parity/ui-s
 ## 2. 후보·검수·적용
 
 ```powershell
-python tools/update/local_parity.py plan --baseline <local-master.json> --baseline-ref <upstream-commit> --scan work/local-parity/master-scan.json --scan work/local-parity/ui-scan.json --probe-runtime --output work/local-parity/batch.json
-python tools/update/local_parity.py review-template --batch work/local-parity/batch.json --output work/local-parity/review.json
+python tools/update/translation_update.py plan --baseline <local-master.json> --baseline-ref <upstream-commit> --scan work/translation-update/master-scan.json --scan work/translation-update/ui-scan.json --probe-runtime --output work/translation-update/batch.json
+python tools/update/translation_update.py review-template --batch work/translation-update/batch.json --output work/translation-update/review.json
 ```
 
 `--probe-runtime`은 .NET 9 SDK로 실제 `UiTextLookup.cs`를 실행한다. 이미 처리되는 `5ターン`, `あと1000` 같은 동적 문자열을 새 누락으로 세지 않는다. 이 옵션을 생략하면 exact 사전 대비 후보이므로 동적 중복 가능성을 보고 검수한다.
@@ -34,7 +34,7 @@ python tools/update/local_parity.py review-template --batch work/local-parity/ba
 review의 각 행은 `pending`, `translate`, `hold` 중 하나다. `translate`에는 `ko`, `reviewer`, 의미·용어 판단의 `evidence`를 적는다. 현재 Names/Knowledge와 JP를 사용하며 기존 한국어 exact는 제안으로만 제공한다. HOLD에는 구체적 `reason`과 `evidence`가 필요하다. 단순히 source에 남았다는 이유는 HOLD 근거가 아니다. 전 항목 처리 전에도 검수된 행만 먼저 적용할 수 있고, pending/HOLD는 적용 결과에 그대로 남는다.
 
 ```powershell
-python tools/update/local_parity.py apply --batch work/local-parity/batch.json --review work/local-parity/review.json --output work/local-parity/applied.json
+python tools/update/translation_update.py apply --batch work/translation-update/batch.json --review work/translation-update/review.json --output work/translation-update/applied.json
 ```
 
 apply는 임시 복사본에서 Master/UI 추가, 결정적 UI export, manifest 갱신을 끝낸 후 실제 package에 반영한다. 기존 번역 덮어쓰기·삭제는 하지 않는다. 실패 시 이전 bytes로 복구한다. 오래된 batch, 중복 결정, 숫자·보호 변수·태그 손실은 오류다. 전각/반각 숫자는 동등하게 비교하고 줄바꿈·일반 괄호 차이는 Native 확인 경고로 남긴다. 실제 의미검수를 자동 승인하지 않는다.
@@ -52,15 +52,15 @@ Native 관측은 `--observations <json>`으로 추가할 수 있다. 형식은 `
 prefab 범위에 포함되어도 코드가 나중에 넣는 필터 선택지·팝업 문구는 별도 후보가 필요하다. 다음 도구는 설치된 PC v39 메타데이터의 지정한 문자열 계열만 읽고, 원본 hash와 literal index를 남긴다. 전체 캐시 재색인이나 자동 번역은 하지 않는다.
 
 ```powershell
-python tools/collect_ui_literals.py --metadata <game>/GC_Data/il2cpp_data/Metadata/global-metadata.dat --contains メモリー --contains スター --output work/local-parity/detail-literals.json
+python tools/collect_ui_literals.py --metadata <game>/GC_Data/il2cpp_data/Metadata/global-metadata.dat --contains メモリー --contains スター --output work/translation-update/detail-literals.json
 ```
 
-결과를 앞의 plan에 `--observations work/local-parity/detail-literals.json`으로 전달한다. `source_kind=pc_metadata_literals`는 실제 화면 관측과 구분하며 표시 여부·문맥을 검수한다. 입력창 편집 문자는 번역하지 않는다. 집무실처럼 Master와 같은 JP를 코드에서 직접 공급하는 경우는 해당 문구만 accepted Master 번역과 맞춰 UI에 추가한다.
+결과를 앞의 plan에 `--observations work/translation-update/detail-literals.json`으로 전달한다. `source_kind=pc_metadata_literals`는 실제 화면 관측과 구분하며 표시 여부·문맥을 검수한다. 입력창 편집 문자는 번역하지 않는다. 집무실처럼 Master와 같은 JP를 코드에서 직접 공급하는 경우는 해당 문구만 accepted Master 번역과 맞춰 UI에 추가한다.
 
 전체 누락 점검에서는 키워드를 미리 아는 문구만 찾지 않도록 명시적인 전체 일본어 문자열 수집을 사용한다.
 
 ```powershell
-python tools/collect_ui_literals.py --metadata <game>/GC_Data/il2cpp_data/Metadata/global-metadata.dat --all-japanese --output work/local-parity/pc-literal-inventory.json
+python tools/collect_ui_literals.py --metadata <game>/GC_Data/il2cpp_data/Metadata/global-metadata.dat --all-japanese --output work/translation-update/pc-literal-inventory.json
 ```
 
 이 옵션은 현재 v39의 문자열 상수 테이블에서 일본어로 보이는 문자(가나·한자)가 있는 모든 값을 수집한다. 개발 로그·문장 조각·Unicode/locale 문자열도 수집 단계에서 버리지 않는다. 원본 hash와 literal index를 보존한 뒤 기존 UI 조회, Master/Names/현재 Novel의 번역 재사용, 코드 소비 경로를 대조해 분류한다. `--contains`와 함께 쓸 수 없으며 선택 옵션 없는 암묵적 전체 수집은 허용하지 않는다. 전체 결과를 번역 승인본이나 실제 표시 확인으로 취급하지 않는다.
@@ -74,8 +74,8 @@ coverage는 **asset의 Master/직렬화 UI**, **PC 코드 문자열**, **실행 
 ```powershell
 python tools/local_release.py build --game <game-directory>
 python tools/local_release.py verify
-python tools/local_release.py pack --output work/local-parity/update.zip
-python tools/local_release.py verify-archive --archive work/local-parity/update.zip
+python tools/local_release.py pack --output work/translation-update/update.zip
+python tools/local_release.py verify-archive --archive work/translation-update/update.zip
 ```
 
 DLL은 `source/GCMod.Candidate`에서 `candidate/GCMod.dll`로 Release 빌드한다. 기존 BepInEx/interop/Utility 참조가 필요하며 build는 게임을 수정하지 않는다. 게임 runtime은 local 구조와 검증된 작은 예외를 유지한다. 크롤러·검수·package 트랜잭션을 runtime에 넣지 않는다.
@@ -85,7 +85,7 @@ DLL은 `source/GCMod.Candidate`에서 `candidate/GCMod.dll`로 Release 빌드한
 게임 종료 후:
 
 ```powershell
-python tools/local_release.py install --archive work/local-parity/update.zip --game <game-directory> --backup <new-backup-directory-outside-game>
+python tools/local_release.py install --archive work/translation-update/update.zip --game <game-directory> --backup <new-backup-directory-outside-game>
 ```
 
 설치 전 archive membership·hash·등록된 Novel 존재를 확인하고, 변경 파일의 원본 backup/journal을 만든다.
@@ -114,6 +114,6 @@ python tools/local_release.py rollback --game <game-directory> --backup <same-ba
 
 ## 4. 커밋 준비
 
-`.github/workflows/local_parity.yml`은 CPU 회귀·package 검사만 한다. 게임 참조가 필요한 DLL 빌드와 Native는 로컬에서 별도 확인하며 CI가 Native PASS를 만들지 않는다. `tools/verify_local_parity.py`로 같은 검사를 실행할 수 있다.
+`.github/workflows/translation_update.yml`은 CPU 회귀·package 검사만 한다. 게임 참조가 필요한 DLL 빌드와 Native는 로컬에서 별도 확인하며 CI가 Native PASS를 만들지 않는다. `tools/verify_translation_update.py`로 같은 검사를 실행할 수 있다.
 
 검증된 source/data/DLL과 익명화된 요약만 stage한다. raw/state/helper/폰트/게임 DLL/로그/개인 경로는 제외한다. commit/push/PR/release는 이 도구들에서 수행하지 않는다. 실제 Git 상태와 Native 검증 범위를 최종 보고한다.

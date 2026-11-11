@@ -18,7 +18,6 @@ def fixture(repo):
               'ui/resources.json': {'resources':[]}, 'ui/bindings.json': {'bindings':[]},
               'ui/general-exact.reviewed.json': {},
               'ui/detail-families.json': json.loads((ROOT/'translations/ko/ui/detail-families.json').read_bytes()),
-              'ui/local-coverage.json': {'schema':'gc-local-ui-coverage-v1','keys':['既存'],'keep_source':[]},
               'ui.templates.json': {'rules':[{'jp':'工房{value}','ko':'공방{value}','value_kind':'integer'}]}}
     for name,value in values.items(): save(package/name,value)
     manifest = {'master':compute(values['master.json']), 'names':compute(values['names.json']),
@@ -31,6 +30,6 @@ def fixture(repo):
     build(package,receipt)
     (repo/'candidate').mkdir();(repo/'candidate/GCMod.cfg').write_bytes((ROOT/'candidate/GCMod.cfg').read_bytes())
     (repo/'candidate/GCMod.dll').write_bytes(b'MZ synthetic test DLL')
-    (repo/'THIRD_PARTY_LICENSES').mkdir();(repo/'THIRD_PARTY_LICENSES/gc-mod-local-LICENSE.txt').write_text('test license')
+    (repo/'THIRD_PARTY_LICENSES').mkdir();(repo/'THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE').write_bytes((ROOT/'THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE').read_bytes())
     save(repo/'baseline.json', {'mTextConfig':{'ml_value[]':{'既存':'ignored','追加':'ignored'}}})
     return package

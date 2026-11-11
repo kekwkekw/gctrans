@@ -12,9 +12,9 @@ sys.path[:0] = [str(ROOT/'tools'), str(ROOT/'tests')]
 import corpus_consistency as corpus
 import novel_workflow as novel
 import translation_knowledge as knowledge
-from local_parity_fixture import fixture, save
+from translation_update_fixture import fixture, save
 from test_translation_knowledge import record
-from update.local_parity import make_plan, review_template, apply_review
+from update.translation_update import make_plan, review_template, apply_review
 from update.process_lock import ProcessFileLock
 
 
