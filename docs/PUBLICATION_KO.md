@@ -2,7 +2,7 @@
 
 현행 운영 정본은 [OPERATOR_KO.md](OPERATOR_KO.md)다. 번역·검수·package 구조 검사를 마친 변경을 검토 가능한 branch와 PR로 만들며, main 병합은 사용자가 승인한 대상과 범위에 적용한다. tag, release asset, Pages/CDN 설정, Actions dispatch와 영구 로컬 설치는 각 요청의 범위에 따른다.
 
-`tools/export_git_rc.py --repo <local-repo> --output <new-scratch/export> --ref <commit>`는 고정 commit의 blob을 Git archive로 읽고 파일 membership과 bytes를 검증한다. 현행 source, tools, tests, contracts, staging, 번역 정책·Knowledge, 번역 package, 후보 DLL, 운영 문서와 upstream 라이선스를 포함한다. 빌드 설정은 `source/GCMod.Candidate/GCMod.Candidate.csproj`에 있으며 MIT 고지는 `THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE`에 보존한다. 과거 구현·검수 기록은 Git history에서 복구한다.
+`tools/export_git_rc.py --repo <local-repo> --output <new-scratch/export> --ref <commit>`는 고정 commit의 blob을 Git archive로 읽고 파일 membership과 bytes를 검증한다. 현행 source, tools, tests, contracts, staging의 공개 후속 근거, 번역 정책·Knowledge, 번역 package, 후보 DLL, 운영 문서와 upstream 라이선스를 포함한다. 빌드 설정은 `source/GCMod.Candidate/GCMod.Candidate.csproj`에 있으며 MIT 고지는 `THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE`에 보존한다. 과거 구현·검수 기록은 Git history에서 복구한다.
 
 raw/cache/state/audit/native report, 개인 launcher 기록, cfg backup, font, 게임·Utility·interop DLL, credential과 private helper는 공개 tracking/export에 넣지 않는다. 로컬 인계 자료는 공개 문서와 분리하고 명령 예시는 매개변수 경로를 사용한다.
 
@@ -12,4 +12,4 @@ raw/cache/state/audit/native report, 개인 launcher 기록, cfg backup, font, �
 
 `.github/workflows/crawl_only.yml`은 manual/read-only metadata snapshot이다. fresh baseline은 이전 대비 변경 없음과 다르며, 7일 CI artifact를 지속 baseline 정본으로 간주하지 않는다. 평소 증분은 같은 로컬 state/raw root를 유지한다. scan의 metadata 관측은 raw 취득·PC 동등성·의미 검수 승인을 대신하지 않는다.
 
-공급 bytes를 바꾸는 번역 변경과 저장소 정리를 구분해 diff 및 검증 결과에 명시한다. 저장소 정리에서는 `translation/`, `translations/ko/`, 후보 DLL과 `contracts/`의 파일 목록과 해시를 보존한다. `staging/`은 실행·검사 입력과 진행 중인 조사 근거를 유지하고, 완료된 중복 검수 자료만 고정 Git 이력으로 옮길 수 있다. 실제 검사 fixture를 옮길 때는 bytes와 호출 경로를 함께 확인한다. native·game 시험의 수행 여부와 기존 Known Residual은 별도로 보고한다.
+공급 bytes를 바꾸는 번역 변경과 저장소 정리를 구분해 diff 및 검증 결과에 명시한다. 저장소 정리에서는 `translation/`, `translations/ko/`, 후보 DLL과 `contracts/`의 파일 목록과 해시를 보존한다. `staging/`에는 미해결 검수와 조건부 후속의 공개 근거를 둔다. 완료된 검수·적용 자료의 원본은 [고정 Git 이력](HISTORY_INDEX_KO.md)에서 찾을 수 있다. 실제 검사 fixture를 옮길 때는 bytes와 호출 경로를 함께 확인한다. native·game 시험의 수행 여부와 기존 Known Residual은 별도로 보고한다.

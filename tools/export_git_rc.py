@@ -1,4 +1,4 @@
-"""Export the committed safe operating paths exactly; no overlays/private history.
+"""Export the selected commit's operating paths and public staging evidence exactly.
 Output must be a NEW folder outside the game. The commit/tree are provenance,
 not runtime conditions, and no commit SHA is embedded into translation manifests.
 """
@@ -38,7 +38,7 @@ def main():
  assert len(members)==len(selected),'EXPORT_MEMBERSHIP_MISMATCH'
  result={'schema':'ng11-exact-Git-operating-export-v1','commit':commit,'tree':tree,'files':members,
   'exported_files':len(members),'excluded_tracked_paths':len(paths)-len(selected),
-  'rules':'Current operating paths and translation policy/knowledge only; historical legacy/WB/Knowledge retained in Git.',
+  'rules':'Operating paths, translation policy/knowledge and public follow-up evidence from the selected commit. Completed campaign material is available in Git history.',
   'publication':'NOT_PERFORMED','working_tree_bytes_used':False}
  (out/'GIT_EXPORT.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),'utf-8')
  print(json.dumps({'status':'PASS','commit':commit,'tree':tree,'files':len(members),'export':str(out)},ensure_ascii=False))
