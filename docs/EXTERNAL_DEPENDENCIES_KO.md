@@ -6,7 +6,7 @@
 |---|---|---|
 | 기존 DMM 런처 | 사용자가 제공한 interactive girlscreation_r 실행 | 제외 |
 | 기존 game/BepInEx/core/interop | DLL 빌드와 게임 실행 참조 | 제외 |
-| 기존 Utility.dll | local AssetBundleLoader/알림 의존성 | 기본 update 제외 |
+| 기존 Utility.dll | Utility의 AssetBundleLoader와 알림 기능 | 기본 update 제외 |
 | RHR_Medium_GFSAFE_ADH.bundle | 검증된 한국어 TMP font/fallback | 기본 update 제외 |
 | Python 3.12 이상 | crawler/export/review/package 도구 | 실행 환경 |
 | .NET 9 SDK | CPU lookup 검사; net6.0 candidate 빌드 | 실행 환경 |

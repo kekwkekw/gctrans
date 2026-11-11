@@ -189,7 +189,7 @@ class CorpusTests(unittest.TestCase):
         review['rows'][0].update(action='correct', ko_final='새 본문', reason='fixture')
         original = (self.package/'novels/1.json').read_bytes()
         for path, code in ((self.repo/'work/novels/.apply.lock', 'NOVEL_WRITER_BUSY'),
-                           (self.repo/'translations/.local-parity-apply.lock', 'PACKAGE_WRITER_BUSY')):
+                           (self.repo/'translations/.translation-update-apply.lock', 'PACKAGE_WRITER_BUSY')):
             with ProcessFileLock(path):
                 with self.assertRaisesRegex(ValueError, code):
                     corpus.apply(self.repo, batch, review)
