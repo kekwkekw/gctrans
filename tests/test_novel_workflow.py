@@ -24,7 +24,7 @@ from build_manifests import build, encode
 from contract_validation import read_json
 from ng04_apply_tests import small_package
 from translation_knowledge import dump_knowledge, load_current
-from verify_staged_release import verify
+from authoring_package_validation import verify
 
 
 class NovelWorkflowTests(unittest.TestCase):

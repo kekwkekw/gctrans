@@ -33,11 +33,6 @@ class RepositoryLayoutTests(unittest.TestCase):
         values={n.targets[0].id:ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and isinstance(n.targets[0],ast.Name) and n.targets[0].id in {'PREFIXES','ROOT_FILES'}}
         self.assertIn('docs/',values['PREFIXES'])
         self.assertEqual({'README.md'},set(x for x in values['ROOT_FILES'] if x.endswith('.md')))
-    def test_actual_branch_probe_uses_current_main(self):
-        src=(ROOT/'tests/Ng03SupplyTests/ActualBranchProbe.cs').read_text()
-        self.assertNotIn('ng12/publication-candidate',src)
-        self.assertIn('new("kekwkekw/gctrans", "main")',src)
-        self.assertIn('/git/ref/heads/main',src)
     def test_document_newlines_and_workflow_reference(self):
         self.assertIn('/docs/** -text',(ROOT/'.gitattributes').read_text())
         text=(ROOT/'.github/workflows/crawl_only.yml').read_text()
@@ -46,7 +41,6 @@ class RepositoryLayoutTests(unittest.TestCase):
     def test_current_build_input_and_license_are_present(self):
         import hashlib
         for name,digest in {
-            'source/build/Common.props':'58c8828d1331e79d26d4f0c727664bad7f1951c7748973940e00cc2a13e08d48',
             'THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE':'606688d2ae1f70514f42b8e27b3b9a1201cce3263d1349754426c273ee4fb732',
         }.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest)
         candidate=(ROOT/'source/GCMod.Candidate/GCMod.Candidate.csproj').read_text()

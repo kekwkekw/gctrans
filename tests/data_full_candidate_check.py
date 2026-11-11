@@ -5,7 +5,7 @@ import sys,json
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from build_manifests import build,encode
 from semantic_diff import descriptor,diff
-from verify_staged_release import verify
+from authoring_package_validation import verify
 
 def run():
     tree=ROOT/'translations/ko';raw_read=Path.read_bytes;reads=[]

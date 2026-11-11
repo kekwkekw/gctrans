@@ -3,8 +3,7 @@
 런타임 소스와 배포는 gctrans에서 관리한다.
 
 `Plugin → TranslationManager / PatchManager` 구조와 Enhance, Translation, Visual,
-UI, MasterData 훅을 사용한다. `GCMod.Nextgen.sources.props`를 import하지 않는다.
-기존 `source/GCMod.Nextgen`은 별도 authoring 도구의 소스 의존성으로 남으며 이 DLL에는 포함되지 않는다.
+UI, MasterData 훅을 사용한다.
 
 게임 옵션에서 일반/CG 대화창 불투명도, 대화 글자 가독성 보정, 30/60 FPS를 조절한다.
 설정 저장 전에는 미리보기만 적용하고, 미저장 상태로 닫거나 탭 이동에서 폐기를 선택하면 저장값으로 돌아간다.

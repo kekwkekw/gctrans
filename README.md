@@ -63,9 +63,7 @@ Knowledge는 명시된 scope 안에서 사용하고, 과거 원장과 변경 이
 | `staging/` | 유지 중인 source coverage·HOLD·crawler 검수 근거와 설정 입력 |
 | `work/`, `source-state/`, `private-source-cache/`, `source-out/` | 로컬 작업·원문·캐시. 공개 저장소 밖에서 관리 |
 
-GCMod 6.1 호환 CDN의 `names/`, `words/`, `novels/`와 `GCMod-cs파일백업/`은 의도적으로 유지합니다.
-`source/GCMod.Nextgen/`에는 오프라인 authoring 도구가 참조하는 코드가 남아 있으며,
-현재 게임 DLL은 이를 포함하지 않습니다. [출처와 라이선스](docs/UPSTREAM_ATTRIBUTION_KO.md)를 확인하세요.
+지원 런타임은 GCMod 7.x입니다. GCMod 6.1 지원을 종료했으며, 기존 설치에서 이 저장소의 6.1 CDN 경로를 사용했다면 GCMod 7.x로 업데이트해야 합니다. [과거 소스와 데이터](docs/HISTORY_INDEX_KO.md) · [출처와 라이선스](docs/UPSTREAM_ATTRIBUTION_KO.md)
 
 ## 현재 범위와 한계
 
