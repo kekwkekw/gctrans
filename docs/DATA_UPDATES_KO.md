@@ -36,7 +36,7 @@ manifest와 payload의 버전이 다르거나 CDN이 오래된 응답을 주면 
 ```powershell
 python tools/export_local_ui.py
 python tools/build_manifests.py translations/ko --modify ui.json
-python tools/verify_local_parity.py --output work/local-parity/check.json
+python tools/verify_translation_update.py --output work/translation-update/check.json
 ```
 
 manifest에 ui 해시가 추가되며 root hash도 갱신된다. Novel 등록 map과 Names 해시는

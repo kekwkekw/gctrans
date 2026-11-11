@@ -21,7 +21,10 @@ from build_manifests import build
 from translation_knowledge import translation_context, check_context, load_current
 
 PUBLISH = ('master.json', 'ui.json', 'ui/general-exact.reviewed.json', 'manifest.json', 'legacy-components.json', 'ui/manifest.json', 'release-manifest.json')
-GUARDED = tuple(dict.fromkeys(PUBLISH + ('names.json', 'ui/resources.json', 'ui/bindings.json', 'ui.templates.json', 'ui/local-coverage.json', 'ui/detail-families.json')))
+REVIEW_SCHEMA = 'gcmod-translation-review-v1'
+DECISIONS_SCHEMA = 'gcmod-translation-decisions-v1'
+APPLY_LOCK = '.translation-update-apply.lock'
+GUARDED = tuple(dict.fromkeys(PUBLISH + ('names.json', 'ui/resources.json', 'ui/bindings.json', 'ui.templates.json', 'ui/detail-families.json')))
 
 
 def validate_translation(jp, ko):
@@ -67,11 +70,7 @@ def make_plan(package, baseline, baseline_ref, scans=(), observations=(), probe_
         if evidence not in entry['evidence']:
             entry['evidence'].append(evidence)
     for t,f,jp in flatten_master(read(baseline)):
-        add({'kind':'master','table':t,'field':f,'jp':jp}, {'source':'local_coverage','ref':baseline_ref})
-    ui_baseline = read(package/'ui/local-coverage.json')
-    for jp in ui_baseline['keys']:
-        if jp not in ui_baseline['keep_source']:
-            add({'kind':'ui','jp':jp}, {'source':'local_ui_coverage','ref':ui_baseline.get('upstream', baseline_ref)})
+        add({'kind':'master','table':t,'field':f,'jp':jp}, {'source':'baseline_coverage','ref':baseline_ref})
     for path in scans:
         document = read(path); snap = document.get('sourceSnapshot', document)
         profile = snap.get('profile', {})
@@ -121,7 +120,7 @@ def make_plan(package, baseline, baseline_ref, scans=(), observations=(), probe_
             runtime_covered=[r for r in probe['rows'] if r['matched']]
         covered={r['jp'] for r in runtime_covered}
         rows=[r for r in rows if r['kind']!='ui' or r['jp'] not in covered]
-    return {'schema':'gc-local-parity-review-v1','baseline_ref':baseline_ref,'baseline_sha256':sha(baseline),
+    return {'schema':REVIEW_SCHEMA,'baseline_ref':baseline_ref,'baseline_sha256':sha(baseline),
         'context': translation_context(package.parent.parent, jp_texts=[r['jp'] for r in rows]),
         'preimages':{p:sha(package/p) for p in GUARDED},'sources':sources,'rows':rows,
         'missing_master':sum(r['kind']=='master' for r in rows),'missing_ui':sum(r['kind']=='ui' for r in rows),
@@ -132,7 +131,7 @@ def make_plan(package, baseline, baseline_ref, scans=(), observations=(), probe_
 
 
 def review_template(batch):
-    result = {'schema':'gc-local-parity-decisions-v1', 'rows':[
+    result = {'schema':DECISIONS_SCHEMA, 'rows':[
         {'id':r['id'], 'jp':r['jp'], 'action':'pending', 'ko':None, 'reviewer':'', 'evidence':'',
          'suggestions':r.get('existing_korean_suggestions', [])} for r in batch['rows']]}
     if 'context' in batch:
@@ -141,16 +140,17 @@ def review_template(batch):
 
 
 def apply_review(package, batch, decisions):
-    with ProcessFileLock(package.parent/'.local-parity-apply.lock', 'PACKAGE_WRITER_BUSY'):
+    with ProcessFileLock(package.parent/APPLY_LOCK, 'PACKAGE_WRITER_BUSY'):
         return _apply_review(package, batch, decisions)
 
 
 def _apply_review(package, batch, decisions):
-    if batch.get('schema') != 'gc-local-parity-review-v1':
+    if batch.get('schema') != REVIEW_SCHEMA:
         raise ValueError('REVIEW_BATCH_SCHEMA')
-    if set(batch.get('preimages', {})) != set(GUARDED):
+    preimages = dict(batch.get('preimages', {}))
+    if set(preimages) != set(GUARDED):
         raise ValueError('PACKAGE_PREIMAGES_REQUIRED')
-    if any(sha(package/p)!=h for p,h in batch['preimages'].items()):
+    if any(sha(package/p)!=h for p,h in preimages.items()):
         raise ValueError('PACKAGE_CHANGED_SINCE_PLAN')
     knowledge_review = decisions.get('knowledge_review')
     def current_context():
@@ -163,7 +163,7 @@ def _apply_review(package, batch, decisions):
     wanted={r['id']:r for r in batch['rows']}
     if len(wanted)!=len(batch['rows']) or any(row_id(r)!=r['id'] for r in wanted.values()):
         raise ValueError('BATCH_IDENTITY')
-    if decisions.get('schema') != 'gc-local-parity-decisions-v1': raise ValueError('DECISIONS_SCHEMA')
+    if decisions.get('schema') != DECISIONS_SCHEMA: raise ValueError('DECISIONS_SCHEMA')
     if len({r['id'] for r in decisions['rows']}) != len(decisions['rows']): raise ValueError('DUPLICATE_DECISION')
     decisions={r['id']:r for r in decisions['rows']}
     if not decisions.keys() <= wanted.keys(): raise ValueError('UNKNOWN_DECISION_ID')
@@ -186,7 +186,7 @@ def _apply_review(package, batch, decisions):
             warnings.append({'id':key,'warning':warning})
         additions.append(dict(row,ko=decision['ko']))
     # Validate/export/build in a disposable copy before touching the real package.
-    with tempfile.TemporaryDirectory(prefix='local-parity-apply-',dir=package.parent) as temp:
+    with tempfile.TemporaryDirectory(prefix='translation-update-',dir=package.parent) as temp:
         stage=Path(temp)/'ko';shutil.copytree(package,stage)
         master=read(stage/'master.json'); reviewed=read(stage/'ui/general-exact.reviewed.json')
         for row in additions:
@@ -203,7 +203,7 @@ def _apply_review(package, batch, decisions):
         payload,_=export(stage)
         if payload!=(stage/'ui.json').read_bytes():(stage/'ui.json').write_bytes(payload);changed.append('ui.json')
         if changed:build(stage,modified=changed)
-        if any(sha(package/p)!=h for p,h in batch['preimages'].items()):raise ValueError('PACKAGE_CHANGED_DURING_REVIEW')
+        if any(sha(package/p)!=h for p,h in preimages.items()):raise ValueError('PACKAGE_CHANGED_DURING_REVIEW')
         current_context()
         backups={p:(package/p).read_bytes() for p in PUBLISH}
         try:

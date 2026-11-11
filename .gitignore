@@ -81,4 +81,4 @@ CURRENT_INPUTS.json
 /work/
 /candidate/*.deps.json
 /candidate/*.pdb
-/translations/.local-parity-apply.lock
+/translations/.translation-update-apply.lock

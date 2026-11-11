@@ -5,7 +5,7 @@ import unittest
 from unittest.mock import patch
 import zipfile
 import hashlib
-from local_parity_fixture import fixture
+from translation_update_fixture import fixture
 import local_release as release
 
 
@@ -170,7 +170,7 @@ class ReleaseTests(unittest.TestCase):
             self.assertEqual(dll.read_bytes(),b'user changed')
 
     def test_image_catalog_payload_and_novel_manifest_preserved(self):
-        from local_parity_fixture import ROOT, build
+        from translation_update_fixture import ROOT, build
         package=self.root/'translations/ko'
         old=json.loads((package/'manifest.json').read_bytes())
         source=ROOT/'translations/ko'
@@ -208,6 +208,37 @@ class ReleaseTests(unittest.TestCase):
         with patch.object(release,'game_closed'):
             with self.assertRaisesRegex(ValueError,'ARCHIVE_MEMBERSHIP'):release.install(self.archive,self.game,self.backup)
         self.assertFalse(self.backup.exists())
+
+    def test_rejects_retired_package_schema_and_requires_upstream_notice(self):
+        with zipfile.ZipFile(self.archive) as archive:
+            files = {name: archive.read(name) for name in archive.namelist() if name != 'package.json'}
+            receipt = json.loads(archive.read('package.json'))
+        for schema, missing_notice, error in (
+            ('gc-local-parity-package-v1', False, 'PACKAGE_SCHEMA'),
+            (release.PACKAGE_SCHEMA, True, 'PACKAGE_NOTICES'),
+        ):
+            with self.subTest(schema=schema, missing_notice=missing_notice):
+                candidate = dict(files)
+                if missing_notice:
+                    del candidate[release.UPSTREAM_NOTICE]
+                manifest = dict(receipt, schema=schema, files={name: receipt['files'][name] for name in candidate})
+                invalid = self.root / 'invalid.zip'
+                with zipfile.ZipFile(invalid, 'w') as archive:
+                    for name, raw in candidate.items():
+                        archive.writestr(name, raw)
+                    archive.writestr('package.json', json.dumps(manifest))
+                with self.assertRaisesRegex(ValueError, error):
+                    release.verify_archive(invalid)
+
+    def test_rejects_retired_install_journal(self):
+        self.backup.mkdir()
+        (self.backup / 'install.json').write_text(json.dumps({
+            'schema': 'gc-local-parity-install-v1', 'status': 'installed',
+            'game': str(self.game.resolve()), 'files': [],
+        }), encoding='utf-8')
+        with patch.object(release, 'game_closed'):
+            with self.assertRaisesRegex(ValueError, 'ROLLBACK_RECEIPT'):
+                release.rollback(self.game, self.backup)
 
     def test_stale_manifest_and_active_game_block(self):
         (self.root/'translations/ko/master.json').write_text('{}')
