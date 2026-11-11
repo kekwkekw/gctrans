@@ -32,7 +32,7 @@ python tools/verify_local_parity.py --output work/local-parity/check.json
 ```
 
 `verify_local_parity.py`는 게임 참조 DLL을 사용하는 빌드나 실제 Native 화면 확인을 하지 않는다.
-코드를 수정한 DLL 빌드·패키지·설치는 [LocalParity 절차](LOCAL_PARITY_PIPELINE_KO.md)를 따른다.
+코드를 수정한 DLL 빌드·패키지·설치는 [7.x 유지보수 절차](LOCAL_PARITY_PIPELINE_KO.md)를 따른다.
 
 ## 문서·정리 확인
 
@@ -46,4 +46,4 @@ Git export 시험은 현재 커밋의 파일을 확인한다. 미커밋 변경�
 `tools/export_git_rc.py`는 고정 commit의 운영 파일을 새 폴더로 export하며 개인 raw/cache를 포함하지 않는다.
 
 이전 Nextgen/NG08~NG11 공급·시험 명령은 [과거 기록](HISTORY_INDEX_KO.md)에서 확인한다.
-현행 게임 DLL에 포함되지 않는 이전 후보의 CPU 시험을 LocalParity 실기 검증으로 쓰지 않는다.
+현행 게임 DLL에 포함되지 않는 이전 후보의 CPU 시험을 현행 7.x 실기 검증으로 쓰지 않는다.
