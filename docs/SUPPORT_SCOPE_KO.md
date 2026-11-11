@@ -1,7 +1,6 @@
-# 현재 LocalParity 지원 범위
+# 현재 7.x 지원 범위
 
-2026-11-03 이 tree 기준이다(PR #57 기반 재조사 고정 문구 92행 승인본 포함). 배포 runtime은 GCMod 7.2.1이며
-`gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318` 기반의 [GCMod.Candidate](../source/GCMod.Candidate/README_KO.md)를 사용한다.
+2026-11-03 이 tree 기준이다(PR #57 기반 재조사 고정 문구 92행 승인본 포함). 배포 runtime은 현행 [GCMod.Candidate](../source/GCMod.Candidate/README_KO.md)를 사용한다.
 과거 Nextgen runtime의 검증 결과를 현재 게임 DLL의 PASS로 대체하지 않는다.
 
 - Master: `EnabledTables=*`, `(table, field, exact JP)` 조회. 현재 34,388 exact keys.
