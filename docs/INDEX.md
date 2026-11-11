@@ -20,13 +20,6 @@
 
 ## 남은 작업과 완료 기록
 
-- 조건부 후속: [추출 텍스트 coverage](TEXT_COVERAGE_20261031_KO.md), [PC 코드 UI 승인본·서식 후속](PC_UI_LITERAL_REVIEW_20261102_KO.md), [전투 Novel 후속 확인](BATTLE_NOVEL_FOLLOWUP_20261031_KO.md), [AP exact 범위와 미확인 구간](UI_AP_EXACT_20261101_KO.md).
-- 재조사: [전체 텍스트 조사와 추출 한계](FULL_TEXT_RESURVEY_20261102_KO.md), [95행 검수 결과·고정 92행 반영](TEXT_RESURVEY_FOLLOWUP_20261102_KO.md).
-- 완료 기록: [crawler 보완 종료·잔여와 재개 조건](CRAWLER_CLOSEOUT_20261103_KO.md), [corpus·볼칸 정책 종료](CORPUS_VOLCAN_CLOSURE_20261031_KO.md), [10월 26일 정리](REPOSITORY_CLEANUP_20261026_KO.md), [11월 2일 정리](REPOSITORY_CLEANUP_20261102_KO.md).
+- 조건부 후속은 [지원 범위](SUPPORT_SCOPE_KO.md), [PC 서식과 조합 문구](PC_UI_LITERAL_REVIEW_20261102_KO.md), [전투 Novel](BATTLE_NOVEL_FOLLOWUP_20261031_KO.md), [공개 근거](../staging/README.md)를 참고한다.
+- 완료 기록은 [crawler 보완 종료·재개 조건](CRAWLER_CLOSEOUT_20261103_KO.md)과 [corpus·볼칸 정책 종료](CORPUS_VOLCAN_CLOSURE_20261031_KO.md)에 있다.
 - 과거 원본 복구: [HISTORY_INDEX_KO.md](HISTORY_INDEX_KO.md). current와 provenance 구분은 [knowledge-layer 안내](../knowledge-layer/README.md)에 있다.
-
-## 이전 Nextgen 후보 참고
-
-[Native 시험 정책](PROJECT_NATIVE_TEST_POLICY_KO.md)과 [Stable 판정 정책](PROJECT_STABLE_QUALIFICATION_POLICY_KO.md)은
-당시 후보 구조의 기록이다. 새 GCMod 한국어 업데이트 작업의 필수 gate로 확대하지 않는다.
-현재 필요한 검사는 변경한 경로에 맞춰 [재현 안내](REPRODUCE_KO.md)에서 선택한다.

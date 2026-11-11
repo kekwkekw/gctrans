@@ -111,7 +111,7 @@ UnityPy 설치 파일은 바꾸지 않는다. 다른 유형/schema/오류, 잘�
 실패 3,889행, serialized object 244,675개의 해시는 보존됐다. 문자열 index도
 727개 모두 동일하여 **이 복구 자체의 신규 Master/UI 텍스트 기여는 0개**다.
 전체 취득 텍스트에서 별도로 검수한 750개 반영 결과는
-[텍스트 coverage 보고서](TEXT_COVERAGE_20261031_KO.md)에 있다.
+[텍스트 coverage 보고서](https://github.com/kekwkekw/gctrans/blob/5188bde0c7bec186c195ecb781a78d1bd8f03282/docs/TEXT_COVERAGE_20261031_KO.md)에 있다.
 
 `coverage.json`은 현재 `translations/ko/master.json`과 `ui.json`만 비교한다.
 Knowledge, legacy zh_Hans, archive/provenance를 번역 입력으로 읽지 않는다.
@@ -151,7 +151,7 @@ git -c core.whitespace=cr-at-eol diff --check
 ## 전체 텍스트 재조사와 종료
 
 asset coverage에 더해 설치 PC 기본 리소스·현지화 CSV/XML·전체 코드 literal을
-[별도 조사 도구](FULL_TEXT_RESURVEY_20261102_KO.md)로 확인했다. 수집 단계에서는
+[별도 조사 도구](https://github.com/kekwkekw/gctrans/blob/5188bde0c7bec186c195ecb781a78d1bd8f03282/docs/FULL_TEXT_RESURVEY_20261102_KO.md)로 확인했다. 수집 단계에서는
 일본어 여부·기존 번역 필드 등록 여부로 문자열을 버리지 않으며, 미해석 객체의 단서는
 검증된 표시 문구와 구분한다. 원본 schema와 일치하고 byte round-trip을 통과한 복구만
 확정한다. 이후 승인된 고정 UI 85·Master 7행은 PR #58로 main에 반영했다.
