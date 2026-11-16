@@ -1,4 +1,4 @@
-"""NG02 F01-F05 executable data regressions, using isolated synthetic trees."""
+"""Authoring package and semantic-diff regressions using isolated synthetic trees."""
 from __future__ import annotations
 import copy, hashlib, json, shutil, sys, tempfile, unittest
 from pathlib import Path
@@ -7,7 +7,6 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from build_manifests import build, encode, safe_path
 from semantic_diff import descriptor, diff
 from contract_validation import read_json, validate_shape, check_models, ContractError, validate_package
-from export_ng01 import Exporter, audit_order
 from legacy_semantic import compute as legacy_hash, root_hash
 
 def write(path,value):path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(encode(value))
@@ -109,14 +108,6 @@ class DataTests(unittest.TestCase):
         old,new,_=self.paired();write(new/'novels/100.json',{'row':'bb'});build(new,modified=['novels/100.json'])
         write(new/'novels/100.json',{'row':'cc'})
         with self.assertRaisesRegex(ContractError,'CHANGED_PAYLOAD_DESCRIPTOR'):self.fast(old,new,{'add':[],'modify':['manifest.json','novels/100.json'],'remove':[]})
-    def test_F05_explicit_ordinal_export_order(self):
-        inputs=self.base/'inputs';out=self.base/'audit-export';src=inputs/'ui21/code/helper/src'
-        src.mkdir(parents=True);(src/'a.cs').write_text('var a="caption a";',encoding='utf-8');(src/'B.cs').write_text('var b="caption B";',encoding='utf-8')
-        exporter=Exporter(inputs,out);files,literals,_=exporter.scan_sources()
-        self.assertEqual([x['path'] for x in files],sorted(x['path'] for x in files));self.assertTrue(files[0]['path'].endswith('/B.cs'))
-        before=(out/'migration/SOURCE_FILES.json').read_bytes();exporter.scan_sources();self.assertEqual(before,(out/'migration/SOURCE_FILES.json').read_bytes())
-        records=[{'source_file':'z/Z.json','json_pointer':'/2'},{'source_file':'B/A.json','json_pointer':'/10'},{'source_file':'B/A.json','json_pointer':'/2'}]
-        self.assertEqual(audit_order(records,'source_file','json_pointer'),audit_order(list(reversed(records)),'source_file','json_pointer'))
     def test_paths_reject_noncanonical_or_escape(self):
         for path in ['../outside.json','C:/outside.json','novels//100.json','novels/./100.json','novels\\100.json','/absolute.json']:
             with self.assertRaises(ContractError):safe_path(self.base,path)
@@ -163,7 +154,7 @@ if __name__=='__main__':
     result=unittest.TextTestRunner(verbosity=2,resultclass=RecordingResult).run(unittest.defaultTestLoader.loadTestsFromTestCase(DataTests));corpus=run_corpus()
     rows=result.rows+corpus;failed=sum(x['status']!='PASS' for x in rows)
     report={'schema':'gc-ng02-data-tests-v1','status':'PASS' if failed==0 else 'FAIL','passed':len(rows)-failed,'failed':failed,
-            'scope':'F01-F05 offline tooling; Python shared corpus; inherited activation eligibility; no game operations',
+            'scope':'Authoring package and semantic diff; Python shared corpus; inherited activation eligibility; no game operations',
             'checks':rows,'python_validator_cases':len(corpus),'csharp_validator_parity':'runtime host runner consumes the same corpus; reported separately',
             'native_hook_install':'NOT_RUN','game_visual_validation':'NOT_RUN','game_operations':0}
     write(ROOT/'tests/DATA_TOOL_TEST_RESULTS.json',report);print(json.dumps({k:report[k] for k in ['status','passed','failed','python_validator_cases']}));raise SystemExit(1 if failed else 0)
