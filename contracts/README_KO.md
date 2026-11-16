@@ -1,6 +1,6 @@
 # NG02 데이터 운용 계약
 
-현재 authoring 정본은 `translations/ko`다. KO, source, selector, layout 정책은 JSON으로 편집한다. resource/binding ID는 기존 값을 유지한다. `migration/MIGRATION_MAP.json`은 이관 근거이며 정상 빌드의 필수 입력이 아니다. 회수 source와 최초 exporter는 audit/bootstrap에 사용한다.
+현재 authoring 정본은 `translations/ko`다. KO, source, selector, layout 정책은 JSON으로 편집한다. resource/binding ID는 기존 값을 유지한다. 최초 이관 도구는 [과거 이관 기록](../docs/HISTORY_INDEX_KO.md)에서 확인하며 정상 빌드의 입력이 아니다.
 
 Story6/Battle108의 기존 legacy eligibility를 복원했으며 일반 UI172의 활성 결정은 유지했다. enabled는 지원된 writer의 적용 자격이다. 실제 hook 설치와 게임 화면 확인은 별도로 보고한다. Choice는 JSON의 group/script/branch/exact source를 사용하며 물리행이나 현재 option 개수를 영구 포맷으로 삼지 않는다.
 
@@ -30,4 +30,4 @@ python tools/semantic_diff.py EXTERNAL_BEFORE EXTERNAL_AFTER --mode cold_scan --
 
 changeset 형식은 `{"add":[],"modify":["ui/resources.json"],"remove":[]}`다. `--trust-immutable`는 현재 package가 검증·고정되었다는 caller의 선언이며 publisher 인증을 뜻하지 않는다. descriptor는 source tree 안에 넣지 않는다. 현행 Novel 반영과 검수 package 가져오기는 내부 검증기 `tools/authoring_package_validation.py`로 전체 파일 목록, 바이트, 스키마를 검사한다. 배포 ZIP 검증은 `tools/local_release.py verify-archive`를 사용한다.
 
-Fit3 layout은 현재 승인된35와34→33→32→31을 유지한다. `contract_validation.py`는 필요한 JSON Schema subset만 지원한다. 일반 Draft2020-12 준수를 주장하지 않으며 모르는 validation keyword는 거부한다. audit 출력은 relative POSIX 경로의 ordinal key와 안정된 record key로 정렬한다.
+Fit3 layout은 현재 승인된35와34→33→32→31을 유지한다. `contract_validation.py`는 필요한 JSON Schema subset만 지원한다. 일반 Draft2020-12 준수를 주장하지 않으며 모르는 validation keyword는 거부한다.
