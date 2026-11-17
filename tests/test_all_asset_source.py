@@ -40,6 +40,135 @@ class AllAssetsTests(unittest.TestCase):
     def tearDown(self):
         self.temp.cleanup()
 
+    def all_args(self, *extra):
+        return parser().parse_args(['--lane', 'All', '--state-root', str(self.root / 'state'),
+            '--raw-root', str(self.root / 'raw'), '--output', str(self.root / 'out/scan.json'), *extra])
+
+    @staticmethod
+    def catalogs():
+        return {name: {'d': [{'n': key, 'h': 'synthetic-token', 's': 12}]}
+                for name, key in [('assetbundle', 'notinit/novel_script/sts_00000001.dmm'),
+                                  ('master', 'master.dmm'),
+                                  ('advvoice', 'notinit/novelchara_main/hmn_00000001_voice.dmm')]}
+
+    def saved_catalog_args(self):
+        args = []
+        for name, flag in [('assetbundle', '--inventory'), ('master', '--all-master-inventory'),
+                           ('advvoice', '--all-advvoice-inventory')]:
+            path = self.root / (name + '.json')
+            atomic_json(path, self.catalogs()[name])
+            args.extend([flag, str(path)])
+        return args
+
+    def test_live_all_observes_three_catalogs_and_counts_voice_without_acquisition(self):
+        calls, catalogs = [], self.catalogs()
+        client_type = httpx.Client
+        def handler(request):
+            calls.append(request.url.path)
+            return httpx.Response(200, json=catalogs[Path(request.url.path).stem])
+        with patch('httpx.Client', side_effect=lambda **kw: client_type(transport=httpx.MockTransport(handler), **kw)):
+            result = run(self.all_args())
+        self.assertEqual(calls, ['/files/manifest/webgl/r18/' + name + '.json' for name in catalogs])
+        self.assertEqual(result['inventory']['entries'], 3)
+        self.assertTrue(result['inventory']['complete_selection'])
+        self.assertEqual(result['inventory']['manifest_coverage']['missing'], [])
+        self.assertEqual(result['manifest_results']['advvoice']['statuses'], {'PENDING': 1})
+        self.assertEqual(result['status'], 'METADATA_ONLY')
+        self.assertFalse(result['full_extraction_complete'])
+        self.assertFalse((self.root / 'out/novel-intake.json').exists())
+
+    def test_missing_or_invalid_voice_manifest_replaces_old_success_without_partial_fallback(self):
+        client_type = httpx.Client
+        for response in (httpx.Response(404), httpx.Response(200, content=b'not-json'),
+                         httpx.Response(200, json={'d': 'not-an-array'})):
+            with self.subTest(response=response.status_code, content=response.content[:15]):
+                atomic_json(self.root / 'out/scan.json', {'status': 'EXTRACTED', 'full_extraction_complete': True})
+                def handler(request):
+                    name = Path(request.url.path).stem
+                    return response if name == 'advvoice' else httpx.Response(200, json=self.catalogs()[name])
+                with patch('httpx.Client', side_effect=lambda **kw: client_type(transport=httpx.MockTransport(handler), **kw)):
+                    with self.assertRaises(ValueError):
+                        run(self.all_args())
+                report = read_json(self.root / 'out/scan.json')
+                self.assertEqual(report['status'], 'SOURCE_METADATA_OBSERVATION_FAILED')
+                self.assertFalse(report['full_extraction_complete'])
+                self.assertFalse((self.root / 'state/all-assets/WebGL/assets').exists())
+
+    def test_saved_three_catalog_replay_is_offline_and_filtered_selection_is_not_full(self):
+        with patch('tools.update.asset_source.fetch_file', side_effect=AssertionError('unexpected network')):
+            result = run(self.all_args(*self.saved_catalog_args(), '--asset-pattern', '*_voice.dmm'))
+        self.assertEqual(result['inventory']['entries'], 1)
+        self.assertTrue(result['inventory']['manifest_coverage']['complete'])
+        self.assertFalse(result['inventory']['complete_selection'])
+        self.assertFalse(result['full_extraction_complete'])
+        self.assertEqual(result['manifest_results']['assetbundle']['selected'], 0)
+        self.assertEqual(result['manifest_results']['advvoice']['selected'], 1)
+
+    def test_all_completion_requires_every_selected_asset_to_be_extracted(self):
+        def process(item, **kw):
+            return {**item, 'profile': {'platform': 'WebGL'},
+                    'status': 'EXTRACTED' if kw['acquire'] else 'PENDING'}
+        saved = self.saved_catalog_args()
+        with patch('scripts.crypto.private_helper', return_value=SimpleNamespace(ng03_helper_sha256='fixture')):
+            with patch('tools.update.asset_source.process_asset', side_effect=process):
+                limited = run(self.all_args(*saved, '--acquire', '--max-candidates', '1'))
+                complete = run(self.all_args(*saved, '--acquire'))
+        self.assertEqual(limited['status'], 'PARTIAL')
+        self.assertFalse(limited['full_extraction_complete'])
+        self.assertEqual(limited['manifest_results']['advvoice']['statuses'], {'PENDING': 1})
+        self.assertTrue(complete['full_extraction_complete'])
+        self.assertEqual(complete['manifest_results']['advvoice']['statuses'], {'EXTRACTED': 1})
+
+    def test_conflicting_catalog_keys_are_rejected_and_supplement_is_not_silently_ignored(self):
+        saved = self.saved_catalog_args()
+        atomic_json(self.root / 'advvoice.json', {'d': [{'n': 'master.dmm', 'h': 'different'}]})
+        with self.assertRaisesRegex(ValueError, 'SOURCE_INVENTORY_COLLISION'):
+            run(self.all_args(*saved))
+        with self.assertRaisesRegex(ValueError, 'SOURCE_ALL_MANIFEST_OPTIONS'):
+            run(self.all_args('--all-advvoice-inventory', str(self.root / 'advvoice.json')))
+
+    def test_textasset_media_payloads_and_serialized_fallback_are_quarantined(self):
+        samples = [('audio', 'voice.acb', b'@UTF' + 'synthetic 日本語'.encode()),
+                   ('audio', 'waves.bytes', b'AFS2' + bytes(20)),
+                   ('video', 'movie.usm', b'GC Movie\0' + bytes(20)),
+                   ('video', 'movie.bytes', b'CRID' + bytes(20)),
+                   ('font', 'font.ttf', b'\0\1\0\0' + bytes(20)),
+                   ('image', 'image.bytes', b'\x89PNG\r\n\x1a\n' + bytes(20)),
+                   ('spine', 'data.json', b'{"bones":[],"slots":[]}')]
+        for number, (category, name, body) in enumerate(samples):
+            with self.subTest(category=category, name=name):
+                obj = SimpleNamespace(type=SimpleNamespace(name='TextAsset'), path_id=1,
+                    assets_file=SimpleNamespace(name='synthetic-CAB'),
+                    read=lambda: SimpleNamespace(m_Name=name, m_Script=body), get_raw_data=lambda: b'serialized')
+                output = self.root / str(number)
+                with patch('UnityPy.load', return_value=SimpleNamespace(objects=[obj])):
+                    result = extract_asset(self.root / 'unused', {'asset_key': 'media.dmm', 'vendor_token': 'v'}, output)
+                self.assertEqual(result['status'], 'EXTRACTED')
+                record = json.loads((output / 'objects.jsonl').read_text())
+                self.assertEqual(record['category'], category)
+                self.assertEqual(record['content_classification']['disposition'], 'excluded')
+                self.assertEqual(len(record['exports']), 2)
+                self.assertTrue(all(ref['path'].startswith(category + '/') for ref in record['exports']))
+                self.assertEqual((output / 'strings.jsonl').read_text(), '')
+                self.assertEqual(next(output.rglob('*.bytes')).read_bytes(), body)
+
+    def test_textasset_extension_alone_does_not_quarantine_text_and_master_still_decodes(self):
+        for key, name, body in [('text.dmm', 'dialogue.acb', '表示する文章'.encode()),
+                                ('master.dmm', 'mText', b'@UTFsynthetic-encrypted-master')]:
+            with self.subTest(key=key):
+                obj = SimpleNamespace(type=SimpleNamespace(name='TextAsset'), path_id=1,
+                    assets_file=SimpleNamespace(name='synthetic-CAB'),
+                    read=lambda: SimpleNamespace(m_Name=name, m_Script=body), get_raw_data=lambda: b'serialized')
+                output = self.root / key
+                with patch('UnityPy.load', return_value=SimpleNamespace(objects=[obj])):
+                    result = extract_asset(self.root / 'unused', {'asset_key': key, 'vendor_token': 'v'}, output,
+                        decode_master=lambda raw: [{'id': 1, 'ml_name': ['表示する文章']}], known_master={'mText': {'ml_name[]'}})
+                self.assertEqual(result['status'], 'EXTRACTED')
+                record = json.loads((output / 'objects.jsonl').read_text())
+                self.assertEqual(record['category'], 'text')
+                self.assertIn('text/', record['exports'][0]['path'])
+                self.assertTrue((output / 'strings.jsonl').read_text())
+
     def playable_object(self, body, kind='PlayableDirector'):
         from UnityPy.helpers import TypeTreeHelper
         schema = read_json(Path(__file__).parent / 'fixtures/playable_director_unity6000_typetree.json')
@@ -190,7 +319,7 @@ class AllAssetsTests(unittest.TestCase):
         self.assertEqual(report['status'], 'PARTIAL')
         rows = [json.loads(line) for line in (self.root / 'extract/strings.jsonl').read_text('utf-8').splitlines()]
         self.assertEqual({r['kind'] for r in rows}, {'ui', 'typetree'})
-        self.assertTrue(list((self.root / 'extract/spine').glob('*.bytes')))
+        self.assertTrue(list((self.root / 'extract/spine').rglob('*.bytes')))
         self.assertNotIn('private payload', (self.root / 'extract/failures.jsonl').read_text())
         self.assertEqual(report['counts']['objects'], 3)
 
@@ -275,6 +404,9 @@ class AllAssetsTests(unittest.TestCase):
         self.assertEqual(result['status'], 'METADATA_ONLY')
         self.assertEqual(result['coverage']['asset_statuses'], {'PENDING': 1})
         self.assertEqual(result['raw_assets'], 0)
+        self.assertFalse(result['inventory']['complete_selection'])
+        self.assertEqual(result['inventory']['manifest_coverage']['missing'], ['master', 'advvoice'])
+        self.assertFalse(result['full_extraction_complete'])
         self.assertFalse((self.root / 'out' / 'novel-intake.json').exists())
         self.assertEqual(parser().parse_args([]).lane, 'Novel')
         args.integrity = True

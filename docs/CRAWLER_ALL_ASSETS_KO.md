@@ -4,8 +4,9 @@
 전 자산 수집·추출 및 텍스트 조사 도구를 이후 증분 작업에서 재사용한다.
 [완료 판정·잔여 분류·재개 조건](CRAWLER_CLOSEOUT_20261103_KO.md)을 따른다.
 
-`scripts/crawl_only.py --lane All`은 알려진 WebGL/R18의 assetbundle 및 master
-manifest 전체를 선택하는 명시적 조사 모드다. 기존 기본값 `Novel`, Novel intake,
+`scripts/crawl_only.py --lane All`(FULL 모드)은 알려진 WebGL/R18의
+`assetbundle.json`, `master.json`, `advvoice.json` 세 자산 목록 전체를 선택하는
+명시적 조사 모드다. 기존 기본값 `Novel`, Novel intake,
 Master/UI의 기존 선택 계약과 재개 state는 그대로 유지한다. PC는 종전처럼
 `--local-asset`와 `--asset-key`로 지정한 실제 로컬 자산만 읽으며 WebGL 결과를
 PC에서 관측한 결과로 바꾸지 않는다.
@@ -25,10 +26,11 @@ python -X utf8 scripts/crawl_only.py --lane All --acquire --max-candidates 0 --a
   --cancel-file source-state/all-assets/stop `
   --output source-out/all-assets/scan.json
 
-# 같은 inventory 시점으로 재현하려면 두 manifest를 함께 지정한다.
+# 같은 inventory 시점으로 재현하려면 세 manifest를 함께 지정한다.
 python -X utf8 scripts/crawl_only.py --lane All --acquire --max-candidates 0 `
   --inventory source-out/assetbundle-inventory.json `
   --all-master-inventory source-out/master-inventory.json `
+  --all-advvoice-inventory source-out/advvoice-inventory.json `
   --output source-out/all-assets/replay.json
 ```
 
@@ -38,6 +40,20 @@ All 기본 `--max-candidates 0`은 전체를 처리한다. 기존 lane 기본값
 `--asset-key`나 반복 가능한 `--asset-pattern`으로 임의 자산을 선택할 수 있다.
 All에서 `--source-ids`는 받지 않는다. 서로 다른 경로의 같은 Novel 번호를
 하나로 합치지 않고 자산 경로 전체를 식별자로 쓴다.
+
+라이브 관측은 세 목록 모두를 요구한다. 음성 목록 수신/형식 오류를 무시하고
+두 목록으로 진행하지 않는다. 관측 실패는 기존 성공 보고서를 대체하며 종료
+코드 2를 반환한다. 저장본 재생은 공급한 파일만 읽고 네트워크로 누락분을
+보충하지 않는다. 보조 목록 옵션은 WebGL의 `--inventory`와 함께 지정한다.
+한두 목록만 재생하는 기존 사용법은 유지하지만 전체 관측으로 표시하지 않는다.
+
+`inventory.manifest_coverage`에 필요한/읽은/누락 목록과 목록별 개수·해시를,
+`manifest_results`에 목록별 선택 수·미처리 수·현재 자산 상태를 기록한다.
+`full_extraction_complete=true`는 세 목록을 모두 읽고 필터/partial 없이 선택한
+모든 자산이 `EXTRACTED`일 때만 성립한다. metadata-only, 일부 목록 재생,
+`--asset-pattern` 선택 및 후보 수 제한으로 남은 pending은 전체 추출 완료가 아니다.
+상위 `status=EXTRACTED`는 선택한 범위의 완료를 뜻하므로 전체 완료 여부는
+`full_extraction_complete`와 함께 확인한다.
 
 All은 inventory 개수, metadata/raw byte 수, 경로 유형에 따른 제외가 없다.
 `--all-max-objects 0`도 무제한이다. 이 옵션들은 기존 lane의 기본 한도를 바꾸지
@@ -69,6 +85,11 @@ All은 inventory 개수, metadata/raw byte 수, 경로 유형에 따른 제외�
 decoder로 매번 반복하지 않는다. `--retry-extraction-failures`를 명시하거나
 추출기 버전이 달라지면 보존된 raw에서 다시 추출한다.
 
+2026-11-17의 미디어 분류 보완은 추출기 버전을 `all-assets-v2`로 올린다.
+이전 버전의 추출물은 보존하고 소유 raw를 재사용하여 새 attempt에 재추출한다.
+따라서 동일 버전에서의 재개와 달리, 구버전에서 처음 전환할 때는 새 추출물의
+디스크 공간이 필요하다. 다운로드한 번들을 일괄 재다운로드하는 변경은 아니다.
+
 Sprite가 외부 CAB/texture를 요구하면 같은 플랫폼·현재 inventory token에 맞는
 소유 raw의 객체 인덱스에서만 의존성을 찾고, raw 해시를 검증해 기존 UnityPy
 환경에 로드한다. 의존 객체는 중복 export/coverage 집계하지 않으며 사용한
@@ -87,6 +108,13 @@ Spine 경로/이름과 skeleton JSON 구조를 인식하여 `spine/`에 격리�
 오디오, 기타 구조 데이터도 별도 분류한다. 번들 raw와 serialized object는
 계속 남는다. Novel script bytes는 보존하지만 All에서 Novel intake를 생성하지
 않는다. Novel 번역은 기존 lane을 사용한다.
+
+Unity `TextAsset`도 기존 text census의 실제 내용 판별을 적용한다. CRI ACB(`@UTF`)
+및 AWB(`AFS2`)는 `audio/<형식>/`, 식별된 영상·폰트·이미지·Spine은 각각 해당
+폴더에 bytes와 serialized 보존본을 함께 둔다. 이 비텍스트 payload는 번역 문자열
+후보에 넣지 않는다. Master 복호화는 종전 경로를 유지하며 파일 확장자만으로
+일반 텍스트를 음성으로 제외하지 않는다. ACB 본체 보존 이후 개별 파형 변환이나
+음성인식은 별도 조사 작업이며 ALL 실행에 자동으로 붙이지 않는다.
 
 크기 0×0이고 픽셀/stream 데이터가 없는 동적 font atlas는
 `EMPTY_TEXTURE_NO_PIXELS`로 기록하고 serialized bytes만 보존한다.
@@ -160,3 +188,17 @@ asset coverage에 더해 설치 PC 기본 리소스·현지화 CSV/XML·전체 �
 별도 후속 범위다. 영문 UI 3종은 번역하지 않는 사용자 결정으로 남긴다.
 새 게임 업데이트, 실제 미번역 화면, 추가 schema/소비 경로 근거가 생기거나 사용자가
 재조사를 요청하면 기존 state와 원본을 재사용해 해당 범위만 재개한다.
+
+## 2026-11-17 목록 누락 최종 점검
+
+운영 WebGL R18 bootstrap 및 매니페스트와 설치 클라이언트의 JSON 경로 문자열을
+대조했다. 확인된 자산 목록은 위 세 종류다. `manifest.json` 자체는 서버 경로와
+버전 정보를 담는 설정이며 추가 자산 목록이 아니다. `resource_division`의
+`image_event`/`image_tutorial` 자산도 assetbundle 목록에 이미 포함되어 있었다.
+
+관측 시점에 assetbundle 23,615개, Master 1개, advvoice 1,135개로 중복 경로 없는
+24,751개였다. 세 목록에 선언된 의존 경로는 모두 이 합집합에 있었다. 기존
+23,616개 추출 이력은 assetbundle+master 범위의 기록으로 유지한다. 이번 점검은
+현재 알려진 배포 리소스 목록의 완전성을 다루며, 미공개 경로나 설치 실행파일
+전체의 수집을 보장하는 의미로 사용하지 않는다. Novel/Master/UI 모드는 이
+목록 확장과 미디어 분류 변경의 적용 대상이 아니다.
