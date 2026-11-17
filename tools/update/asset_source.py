@@ -23,10 +23,12 @@ from .source_scan import (SourceProfile, atomic_json, check_private_root, digest
                           json_bytes, normalize_inventory, now, NOVEL_PATTERN, safe_key)
 from .source_http import fetch_file
 from .ui_source import text_rows
+from .text_census import decode_textasset
 
 JAPANESE = re.compile(r'[\u3040-\u30ff\u3400-\u9fff]')
 SPINE = re.compile(r'(?:spine|skeleton|\.skel|\.atlas)', re.I)
-VERSION = 'all-assets-v1'
+VERSION = 'all-assets-v2'
+ALL_MANIFESTS = ('assetbundle', 'master', 'advvoice')
 PLAYABLE_SCHEMA_SHA256 = 'b541d09cbbcf3dcfb069f13d5c5cc4ba3b1fff92e801c28b8479b919c2ca9d0d'
 PLAYABLE_RECOVERY = 'unitypy-playable-python-v1'
 
@@ -41,6 +43,68 @@ def file_hash(path):
 
 def read_json(path):
     return json.loads(Path(path).read_text(encoding='utf-8-sig'))
+
+
+def load_inventories(args, state_root, client):
+    """Observe every known resource catalog, or replay only explicitly supplied files."""
+    supplemental = {'master': args.all_master_inventory, 'advvoice': args.all_advvoice_inventory}
+    if any(supplemental.values()) and (not args.inventory or args.platform != 'WebGL'):
+        raise ValueError('SOURCE_ALL_MANIFEST_OPTIONS')
+    manifests = {}
+    if args.platform == 'PC':
+        if not args.local_asset or not args.asset_key or not args.local_asset.is_file() or args.local_asset.is_symlink():
+            raise ValueError('SOURCE_PC_LOCATOR_REQUIRED')
+        manifests['local'] = {'d': [{'n': args.asset_key, 'h': file_hash(args.local_asset), 's': args.local_asset.stat().st_size}]}
+    elif args.inventory:
+        manifests['assetbundle'] = read_json(args.inventory)
+        for name, path in supplemental.items():
+            if path:
+                manifests[name] = read_json(path)
+    else:
+        for name in ALL_MANIFESTS:
+            path = state_root / 'inventories' / (name + '.' + uuid.uuid4().hex + '.json')
+            fetch_file(client, 'https://cdn-r18.gc.dmmgames.com/files/manifest/webgl/r18/' + name + '.json', path)
+            manifests[name] = read_json(path)
+    # Validate each catalog before concatenation; malformed/missing voice data
+    # must never turn into an apparently complete two-catalog observation.
+    for manifest in manifests.values():
+        normalize_inventory(manifest, 'All', max_entries=None)
+    return manifests
+
+
+def manifest_coverage(manifests, platform):
+    required = list(ALL_MANIFESTS) if platform == 'WebGL' else []
+    missing = [name for name in required if name not in manifests]
+    return {'required': required, 'loaded': list(manifests), 'missing': missing,
+            'complete': bool(required) and not missing,
+            'catalogs': {name: {'entries': len(data['d']), 'sha256': digest(json_bytes(data))}
+                         for name, data in manifests.items()}}
+
+
+def manifest_results(manifests, items, records):
+    selected = {item['asset_key'] for item in items}
+    by_key = {record['asset_key']: record for record in records}
+    result = {}
+    for name, data in manifests.items():
+        keys = {row['n'] for row in data['d']} & selected
+        statuses = Counter(by_key[key]['status'] for key in keys if key in by_key)
+        result[name] = {'entries': len(data['d']), 'selected': len(keys),
+                        'unprocessed': len(keys - by_key.keys()), 'statuses': dict(statuses)}
+    return result
+
+
+def media_category(reason):
+    if 'audio' in reason:
+        return 'audio'
+    if 'video' in reason:
+        return 'video'
+    if 'spine' in reason:
+        return 'spine'
+    if 'font' in reason:
+        return 'font'
+    if 'image' in reason:
+        return 'image'
+    return 'other'
 
 
 def write_row(stream, value):
@@ -319,7 +383,14 @@ def extract_asset(raw_path, item, output, *, decode_master=None, known_master=No
                     except (ValueError, UnicodeError):
                         pass
                     spine = bundle_spine or is_spine(name, decoded)
-                    if spine:
+                    disposition = None
+                    if item['asset_key'] != 'master.dmm':
+                        disposition, reason, _ = decode_textasset(body, name)
+                        record['content_classification'] = {'disposition': disposition, 'reason': reason}
+                    if disposition == 'excluded':
+                        category = record['category'] = media_category(reason)
+                        folder = check_private_root(folder_for(category) / reason)
+                    elif spine:
                         category = record['category'] = 'spine'
                         folder = folder_for(category)
                     export_bytes(body, '.bytes', folder)
@@ -333,6 +404,8 @@ def extract_asset(raw_path, item, output, *, decode_master=None, known_master=No
                         # Full decoded table is retained, including unknown fields,
                         # nested strings and language tails, outside coverage input.
                         counts['decoded_master_tables'] += 1
+                    elif disposition == 'excluded':
+                        counts['quarantined_' + category + '_textassets'] += 1
                     elif spine:
                         counts['quarantined_spine'] += 1
                     elif novel:
@@ -610,21 +683,17 @@ def run(args):
     records = []
     with ProcessFileLock(state_root / 'scan.lock'), httpx.Client(timeout=httpx.Timeout(90, connect=30), follow_redirects=False,
             headers={'User-Agent': 'gctrans-crawl-only/all-assets-v1'}) as client:
-        manifests = []
-        if args.platform == 'PC':
-            if not args.local_asset or not args.asset_key or not args.local_asset.is_file() or args.local_asset.is_symlink():
-                raise ValueError('SOURCE_PC_LOCATOR_REQUIRED')
-            manifests = [{'d': [{'n': args.asset_key, 'h': file_hash(args.local_asset), 's': args.local_asset.stat().st_size}]}]
-        elif args.inventory:
-            manifests.append(read_json(args.inventory))
-            if args.all_master_inventory:
-                manifests.append(read_json(args.all_master_inventory))
-        else:
-            for name in ('assetbundle', 'master'):
-                path = state_root / 'inventories' / (name + '.' + uuid.uuid4().hex + '.json')
-                fetch_file(client, 'https://cdn-r18.gc.dmmgames.com/files/manifest/webgl/r18/' + name + '.json', path)
-                manifests.append(read_json(path))
-        combined = {'d': [row for manifest in manifests for row in manifest['d']]}
+        # Replace an older success report before any new observation can fail.
+        atomic_json(args.output, {'status': 'OBSERVING', 'full_extraction_complete': False})
+        try:
+            manifests = load_inventories(args, state_root, client)
+        except (ValueError, OSError) as error:
+            atomic_json(args.output, {'status': 'SOURCE_METADATA_OBSERVATION_FAILED',
+                                     'code': safe_error(error, 'SOURCE_METADATA_OBSERVATION_FAILED'),
+                                     'full_extraction_complete': False})
+            raise
+        catalog_coverage = manifest_coverage(manifests, args.platform)
+        combined = {'d': [row for manifest in manifests.values() for row in manifest['d']]}
         normalized = normalize_inventory(combined, 'All', max_entries=None)
         if normalized['collisions']:
             atomic_json(args.output, {'status': 'SOURCE_INVENTORY_COLLISION', 'collisions': normalized['collisions']})
@@ -634,7 +703,7 @@ def run(args):
         dependency_loader = OwnedDependencies(state_root, raw_root, profile, current_tokens)
         if any(re.search(r'[?#%\x00-\x1f]', item['asset_key']) for item in items):
             raise ValueError('SOURCE_ASSET_PATH')
-        complete = not (args.asset_key or args.asset_pattern or args.partial or args.platform == 'PC')
+        complete = catalog_coverage['complete'] and not (args.asset_key or args.asset_pattern or args.partial)
         if args.asset_key:
             items = [i for i in items if i['asset_key'] == args.asset_key]
         if args.asset_pattern:
@@ -643,7 +712,7 @@ def run(args):
             raise ValueError('SOURCE_SELECTION_EMPTY')
         observation = {**inventory_report(items, raw_root, complete), 'sha256': normalized['sha256'],
                        'observed_at': now(), 'source': 'SAVED_INVENTORY' if args.inventory else 'LIVE_INVENTORY',
-                       'manifests': len(manifests)}
+                       'manifests': len(manifests), 'manifest_coverage': catalog_coverage}
         atomic_json(state_root / 'inventory.json', combined)
         atomic_json(args.output, {'status': 'OBSERVED', 'inventory': observation})
         atomic_json(args.output.with_name('progress.json'), {'processed': 0, 'selected': len(items), 'at': now()})
@@ -737,5 +806,7 @@ def run(args):
                   'raw_assets': sum('raw' in r for r in records),
                   'raw_bytes': sum(r.get('raw', {}).get('size', 0) for r in records),
                   'attempted_this_run': attempted, 'state_root': str(state_root), 'raw_root': str(raw_root)}
+        result['manifest_results'] = manifest_results(manifests, items, records)
+        result['full_extraction_complete'] = complete and result['status'] == 'EXTRACTED'
         atomic_json(args.output, result)
         return result
