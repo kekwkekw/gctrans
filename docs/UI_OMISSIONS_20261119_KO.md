@@ -43,7 +43,7 @@
 | `DifficultyDropdownItem.Setup` (`8E7BC0`) | `スコア倍率×{0:0.0}` 및 rich-text 권장 전투력+쉼표 숫자 | 배율·전투력 2종 |
 | `EventRewardPopup.UpdateText` (`576BA0`) | 수령 기간+날짜+`まで` | 유효 날짜만 처리 |
 | `RaidRewardListDefeatView.UpdateView` (`57C480`), `RaidRewardListPopup.UpdateTabContent` (`57C9E0`), `RaidRewardListScoreView.UpdateView` (`57D830`) | 같은 수령 기간 조합 | 같은 날짜 처리 적용 |
-| `EventRaidLiveMessageLogHelper.CreateMyScoreMessageLog` (`8EC1E0`), `CreateOtherScoreMessageLog` (`8EC480`) | 사용자 이름+조사+지구+조사 | 피드의 첫 줄에만 `이름 · 지구` |
+| `EventRaidLiveMessageLogHelper.CreateMyScoreMessageLog` (`8EC1E0`), `CreateOtherScoreMessageLog` (`8EC480`) | 사용자 이름+조사+지구+조사 | 피드의 첫 줄에만 `이름이/가 지구에서` |
 | `EventRaidLiveMessageLog.UpdateView` (`8ECF10`) | `TextLine1`에 첫 줄 전달 | 실제 ancestry와 줄 이름으로 제한 |
 
 일반 lookup에 완전 일치 패턴 6종을 추가하고, 점수 피드는 특정 컴포넌트 전용 처리로 뒀다. 임의의 일본어 조사 치환이나 전체 서식 번역 framework는 추가하지 않았다. 입력창·Novel·선택지 보호는 유지했다. 현재 ADF 5018의 Master 라이브 메시지 문구는 이미 번역되어 있어 추가 Master 누락은 없었다. 화면에 남는 일본어 플레이어 이름은 번역 누락으로 세지 않는다.
@@ -60,9 +60,19 @@
 
 ## 검증과 설치 상태
 
-* Release DLL 빌드 성공(오류 0, 기존 경고 6). 후보 SHA-256: `0e3bc006a7f187116086d3bef8a0327c27a8896d5df720deb4a146f5a5df2af9`.
+* 최초 표시 검증 DLL의 Release 빌드 성공(오류 0, 기존 경고 6). 당시 SHA-256: `0e3bc006a7f187116086d3bef8a0327c27a8896d5df720deb4a146f5a5df2af9`. 조사 복원 후 DLL은 아래 추가 수정 기록을 따른다.
 * 전체 기존 검증: Python 159개와 C# 4개 프로젝트 통과. 이후 가격 두 항목·배율 공백의 최종 데이터 변경과 보호 fixture 추가 후 `UiTextLookup`, `UiTextScope`, package verify를 다시 통과했다.
 * 최종 UI 14,078쌍, Master 34,388키, Novel 1,939파일. Master 변경은 Normal/Hard 2값뿐이다. 일반 UI authoring 변경은 서식 1개 재사용·가격 2개 추가·응원 3개 단축이다.
 * 실기: 상점·회상·ADF 난이도/인원수/배율/전투력/점수 피드/설명/특기 지구 4종/수령 기한 확인. 실제 전투·구매·편성 확정 없이 진행했다. native 로그에 오류·예외 없음.
 * 실기는 UI 14,076쌍 상태에서 수행했다. 이후 최종본에 추가한 가격 2개 및 배율의 공백 교정은 offline 검사까지 완료했다. 미노출 시즌 팝업·응원 배지·나머지 지구 3종의 실기까지 완료했다고 보지 않는다.
 * 게임을 종료하고 검증 전 DLL·설정 bytes를 각각 원본 SHA-256과 일치하도록 복원했다. 영구 설치·main 병합·릴리스·CDN 공개는 이 검증에 포함하지 않는다. 새 동적 처리를 사용하려면 향후 이 후보 DLL을 함께 업데이트해야 한다.
+
+## 표시 피드백 반영: 조사와 지구 디자인
+
+초기 점수 피드 구현은 일본어 조사 부분을 가운데점으로 축약했다. 번역된 조사를 유지하는 형태로 수정해 `화가가 아테네스 근교에서`, `관장이 프란탄 지구에서`로 표시한다. 한글 마지막 음절의 받침으로 이/가를 선택하며, 발음을 알 수 없는 일본어·영문·기호로 끝난 이름에는 `이(가)`를 사용한다. rich-text 태그는 조사 판단에서만 제외하고 실제 이름의 bytes는 보존한다. 해당 피드의 `TextLine1`에만 적용한다.
+
+지구 이미지는 프란탄·볼칸·이베르 3종을 유지하고 에그조티·노와르·전역·근교 4종을 같은 회갈색 글자 그라데이션, 밝은 테두리, 약한 그림자로 보정했다. 초기 4종은 밝은 글자/어두운 테두리가 섞여 있어 참조 스타일과 반대였다. 배경의 알파 그라데이션은 초기부터 원본과 같았으며, 수정 후에도 7종 모두 원본 알파와 정확히 일치한다. 글자 편집 영역 밖 RGBA도 원본과 같다. 내장 image_gen 참조 편집과 기존 크기/영역 정규화 경로를 사용했다. 이전 생성물과 원본은 로컬 및 Git 이력에 남겼다.
+
+조사 복원 10개 이름 사례(한글 받침 유무·일본어·영문·내부 구분자·rich text·이모지), 기존 UI lookup 회귀 및 Release 빌드를 통과했다. 수정된 점수 문장과 이미지 4종은 이번 추가 수정 후 실제 게임 화면에서 다시 확인하기 전 상태이며, 최초 실기 결과를 최신 표시 검증으로 확대하지 않는다. 이미지 179종 수와 Knowledge·Names·Novel·Master/UI 번역값은 직전 PR 수정본 그대로다.
+
+추가 수정 DLL SHA-256: `37d231370ae9de56d696837255dd500079b2e25145c17b0de3fa340198b2fe24`.

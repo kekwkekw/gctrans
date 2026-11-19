@@ -45,7 +45,16 @@ internal static class UiTextLookup
         if (string.IsNullOrEmpty(original) || !original.EndsWith(" で", StringComparison.Ordinal)) return false;
         int separator = original.LastIndexOf(" が ", StringComparison.Ordinal);
         if (separator <= 0 || separator + 3 >= original.Length - 2) return false;
-        translated = original.Substring(0, separator) + " · " + original.Substring(separator + 3, original.Length - separator - 5);
+        string name = original.Substring(0, separator);
+        string visibleName = Regex.Replace(name, @"<[^<>]*>", "").TrimEnd();
+        string particle = "이(가)";
+        if (visibleName.Length > 0)
+        {
+            char last = visibleName[^1];
+            if (last >= '\uac00' && last <= '\ud7a3')
+                particle = (last - '\uac00') % 28 == 0 ? "가" : "이";
+        }
+        translated = name + particle + " " + original.Substring(separator + 3, original.Length - separator - 5) + "에서";
         return true;
     }
 

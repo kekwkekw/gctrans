@@ -3,7 +3,7 @@
     {
       "kind": "image_catalog",
       "path": "images.json",
-      "sha256": "89aca509b203e0812438d71ed6f0aac1a0d3979d7de00066da7ac88ba98cc10e",
+      "sha256": "f1bf7023ffbc1ed357745233494d055db67f96462b5eef19acaba7ddd5b01668",
       "size": 54325
     },
     {
@@ -35,6 +35,12 @@
       "path": "images/0366d1596dba8e813831ea61aa7428dbf767477c2546ff43ede11e6b15759d6f.png",
       "sha256": "0366d1596dba8e813831ea61aa7428dbf767477c2546ff43ede11e6b15759d6f",
       "size": 85004
+    },
+    {
+      "kind": "image_data",
+      "path": "images/045cf5b94074f578539a906078676f0f89098e18b13d886a0e7dfc7ff3f1cdcd.png",
+      "sha256": "045cf5b94074f578539a906078676f0f89098e18b13d886a0e7dfc7ff3f1cdcd",
+      "size": 138720
     },
     {
       "kind": "image_data",
@@ -149,6 +155,12 @@
       "path": "images/21e8a5ef6d39affaabe16872bcf8b6faa6d75a360f728ba2e9764bbe4e646f86.png",
       "sha256": "21e8a5ef6d39affaabe16872bcf8b6faa6d75a360f728ba2e9764bbe4e646f86",
       "size": 89026
+    },
+    {
+      "kind": "image_data",
+      "path": "images/22edb4b4c77d038ca7724a911eb0ed6369cd4771a7924212426da1857495fc14.png",
+      "sha256": "22edb4b4c77d038ca7724a911eb0ed6369cd4771a7924212426da1857495fc14",
+      "size": 145442
     },
     {
       "kind": "image_data",
@@ -476,6 +488,12 @@
     },
     {
       "kind": "image_data",
+      "path": "images/6a822572666512b2113a4afe8a2e652bb017cbf53d6d5ed7c1eb38a7cc225e08.png",
+      "sha256": "6a822572666512b2113a4afe8a2e652bb017cbf53d6d5ed7c1eb38a7cc225e08",
+      "size": 162662
+    },
+    {
+      "kind": "image_data",
       "path": "images/6b7b14e26b95ea88258f085ef2c1e795fa60098d338345ed26b087f04c54f7fb.png",
       "sha256": "6b7b14e26b95ea88258f085ef2c1e795fa60098d338345ed26b087f04c54f7fb",
       "size": 91803
@@ -686,6 +704,12 @@
     },
     {
       "kind": "image_data",
+      "path": "images/a17c2c1ed4e93cad5f0aa6a523c53b40f9a5bdb020aadee3907c95d48ec1dae7.png",
+      "sha256": "a17c2c1ed4e93cad5f0aa6a523c53b40f9a5bdb020aadee3907c95d48ec1dae7",
+      "size": 112777
+    },
+    {
+      "kind": "image_data",
       "path": "images/a18c0cc9167fc62ed5ee822e4b5bbba7c975fe8f86c2d7bfd7cb7c7fd34f41c0.png",
       "sha256": "a18c0cc9167fc62ed5ee822e4b5bbba7c975fe8f86c2d7bfd7cb7c7fd34f41c0",
       "size": 92554
@@ -737,12 +761,6 @@
       "path": "images/add070bfae21419792d6db71009f1981a212c1c3fe219ecbb20e62be9b9dee2f.png",
       "sha256": "add070bfae21419792d6db71009f1981a212c1c3fe219ecbb20e62be9b9dee2f",
       "size": 93538
-    },
-    {
-      "kind": "image_data",
-      "path": "images/ae24748323d88e3b5d09a75af32403173f5a9a0b5162f1ca7d15d612870846b3.png",
-      "sha256": "ae24748323d88e3b5d09a75af32403173f5a9a0b5162f1ca7d15d612870846b3",
-      "size": 145371
     },
     {
       "kind": "image_data",
@@ -974,12 +992,6 @@
     },
     {
       "kind": "image_data",
-      "path": "images/ea9a93c6150c8644a89c97da8602809a9e220c354c6271a25388c1d7be2a0609.png",
-      "sha256": "ea9a93c6150c8644a89c97da8602809a9e220c354c6271a25388c1d7be2a0609",
-      "size": 109787
-    },
-    {
-      "kind": "image_data",
       "path": "images/edaede2d599af1149a81a1edde67ab452fb2af1a8964a77363f267ed06ba3633.png",
       "sha256": "edaede2d599af1149a81a1edde67ab452fb2af1a8964a77363f267ed06ba3633",
       "size": 90703
@@ -1025,18 +1037,6 @@
       "path": "images/f1e25ed4588868fb1e9ee5be4eede469f6ef1cb7b735cbf84791f7f3b6aa3716.png",
       "sha256": "f1e25ed4588868fb1e9ee5be4eede469f6ef1cb7b735cbf84791f7f3b6aa3716",
       "size": 40437
-    },
-    {
-      "kind": "image_data",
-      "path": "images/f28ac38d399157a98386b09e427b443cdd9f7561dc810bfea18b1f69b78980a8.png",
-      "sha256": "f28ac38d399157a98386b09e427b443cdd9f7561dc810bfea18b1f69b78980a8",
-      "size": 160925
-    },
-    {
-      "kind": "image_data",
-      "path": "images/f3255b037cbb3a0b4c7702ccb5deeaa404b294afdee59b7b9e1c6e8ba70e7805.png",
-      "sha256": "f3255b037cbb3a0b4c7702ccb5deeaa404b294afdee59b7b9e1c6e8ba70e7805",
-      "size": 139263
     },
     {
       "kind": "image_data",
@@ -1089,7 +1089,7 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "df9bcf6b6abfa9d5c53c735d1246695a05012bebde0cff260653bb97ead65ca0",
+      "sha256": "880d7578d3705f5e41db1f91ce69f8f6c5bd9dba6f84d00a569b0bb687e17981",
       "size": 344822
     },
     {
@@ -1125,6 +1125,6 @@
   ],
   "locale": "ko",
   "origin": "local",
-  "revision": "ng03-58b435e02fbe096b3d58c362",
+  "revision": "ng03-5c1efc862d7660b42a7f5507",
   "schema_version": 1
 }

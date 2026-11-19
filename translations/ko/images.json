@@ -1549,12 +1549,12 @@
       "width": 340
     },
     {
-      "bytes": 109787,
-      "file": "images/ea9a93c6150c8644a89c97da8602809a9e220c354c6271a25388c1d7be2a0609.png",
+      "bytes": 112777,
+      "file": "images/a17c2c1ed4e93cad5f0aa6a523c53b40f9a5bdb020aadee3907c95d48ec1dae7.png",
       "height": 128,
       "kind": "texture",
       "name": "erl0000",
-      "sha256": "ea9a93c6150c8644a89c97da8602809a9e220c354c6271a25388c1d7be2a0609",
+      "sha256": "a17c2c1ed4e93cad5f0aa6a523c53b40f9a5bdb020aadee3907c95d48ec1dae7",
       "width": 630
     },
     {
@@ -1567,21 +1567,21 @@
       "width": 630
     },
     {
-      "bytes": 139263,
-      "file": "images/f3255b037cbb3a0b4c7702ccb5deeaa404b294afdee59b7b9e1c6e8ba70e7805.png",
+      "bytes": 138720,
+      "file": "images/045cf5b94074f578539a906078676f0f89098e18b13d886a0e7dfc7ff3f1cdcd.png",
       "height": 128,
       "kind": "texture",
       "name": "erl0002",
-      "sha256": "f3255b037cbb3a0b4c7702ccb5deeaa404b294afdee59b7b9e1c6e8ba70e7805",
+      "sha256": "045cf5b94074f578539a906078676f0f89098e18b13d886a0e7dfc7ff3f1cdcd",
       "width": 630
     },
     {
-      "bytes": 145371,
-      "file": "images/ae24748323d88e3b5d09a75af32403173f5a9a0b5162f1ca7d15d612870846b3.png",
+      "bytes": 145442,
+      "file": "images/22edb4b4c77d038ca7724a911eb0ed6369cd4771a7924212426da1857495fc14.png",
       "height": 128,
       "kind": "texture",
       "name": "erl0003",
-      "sha256": "ae24748323d88e3b5d09a75af32403173f5a9a0b5162f1ca7d15d612870846b3",
+      "sha256": "22edb4b4c77d038ca7724a911eb0ed6369cd4771a7924212426da1857495fc14",
       "width": 630
     },
     {
@@ -1603,12 +1603,12 @@
       "width": 630
     },
     {
-      "bytes": 160925,
-      "file": "images/f28ac38d399157a98386b09e427b443cdd9f7561dc810bfea18b1f69b78980a8.png",
+      "bytes": 162662,
+      "file": "images/6a822572666512b2113a4afe8a2e652bb017cbf53d6d5ed7c1eb38a7cc225e08.png",
       "height": 128,
       "kind": "texture",
       "name": "erl9999",
-      "sha256": "f28ac38d399157a98386b09e427b443cdd9f7561dc810bfea18b1f69b78980a8",
+      "sha256": "6a822572666512b2113a4afe8a2e652bb017cbf53d6d5ed7c1eb38a7cc225e08",
       "width": 630
     }
   ],

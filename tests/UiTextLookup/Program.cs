@@ -74,10 +74,12 @@ foreach (var jp in new[]{"応援編成\n11/10", "応援編成\n1/10の話", "ス
     "受け取り期間 2026/11/26 24:59 まで", "受け取り期間 2026/11/26 12:59 までの話",
     "プレイヤー が アテネス近郊 で"})
     if (UiTextLookup.TryTranslate(ui,jp,out _)) throw new Exception("Unexpected ADF/date/prose translation: "+jp);
-foreach (var name in new[]{"葛萌", "生鶏伯伯", "が", "A が B", "<color=red>Team</color>"})
+foreach (var (name,particle) in new[]{("葛萌","이(가)"), ("生鶏伯伯","이(가)"), ("が","이(가)"),
+    ("A が B","이(가)"), ("<color=red>Team</color>","이(가)"), ("관장","이"), ("화가","가"),
+    ("<color=red>관장</color>","이"), ("<b>화가</b>","가"), ("화가😀","이(가)")})
 {
     if (!UiTextLookup.TryTranslateRaidScoreLine(name+" が 아테네스 근교 で",out var result)
-        || result!=name+" · 아테네스 근교") throw new Exception("Score-feed player name changed: "+name);
+        || result!=name+particle+" 아테네스 근교에서") throw new Exception("Score-feed name or particle changed: "+name);
 }
 foreach (var original in new[]{"名前 が 場所", " が 場所 で", "名前 が  で", "普通の文章です"})
     if (UiTextLookup.TryTranslateRaidScoreLine(original,out _)) throw new Exception("Unexpected feed translation: "+original);

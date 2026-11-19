@@ -259,15 +259,15 @@
       ],
       "generated_crop": [
         0,
-        139,
+        143,
         2170,
-        583
+        584
       ],
       "source_sha256": "9032e5a78842782e92a97d122b28c179cd1bc4e2c45b22ce5937d2f2ab8c27a3",
-      "generated_sha256": "71c62261feea43492edd24e418098cbfa57f0ef94f9b9b30f26bd4e979144517",
-      "sha256": "ea9a93c6150c8644a89c97da8602809a9e220c354c6271a25388c1d7be2a0609",
-      "bytes": 109787,
-      "prompt": "Use case: text-localization. Edit the attached wide game district label, 630×128. Replace ONLY the large Japanese district name on the left with exactly Korean \"아테네스 근교\". Preserve the original city artwork background, light translucent wash, full width, ornamental curl at far left and underline/arrow below text, colors, and exact layout. Korean title must be left aligned around x45..335 y38..84, same approximate 42px height, cream ivory fill with dark taupe thick outline. Keep all text left of x350. No extra words or background. Preserve original 630:128 aspect. Output the complete edited label.",
+      "generated_sha256": "6a9507e0fb092581917f6df95b52dbcb2e5f84f1599e45586415420fd22f90e6",
+      "sha256": "a17c2c1ed4e93cad5f0aa6a523c53b40f9a5bdb020aadee3907c95d48ec1dae7",
+      "bytes": 112777,
+      "prompt": "Use case: text-localization. Correct an inconsistent game district-title graphic. Input image 1 is the EDIT TARGET: original Japanese erl0000 label, 630x128. Input image 2 is STYLE REFERENCE ONLY: the accepted Korean 프란탄 지구 label. Replace the Japanese title in image 1 with exactly \"아테네스 근교\". Match image 2's lettering: dark muted gray-brown vertical gradient INSIDE the glyphs, bright cream/ivory thick outline around glyphs, fine dark outer edge and subtle shadow. The top-to-bottom tonal gradient must remain visible. The glyph interior must be dark like reference 2, NOT flat pale cream letters inside dark strokes. Match the same Korean serif/brush typeface, letter weight, approximately 42px title height and left alignment at x50, baseline y80; all letters should fit left of x348. Keep target image 1's own city/sky background, original opacity fade toward the right, ornamental curl and horizontal underline/arrow EXACTLY as they are. Do not copy background from image 2. Change only the Japanese lettering; no other Japanese, new text or decoration. Return the complete target label at its original 630x128 proportions, no extra border or letterboxing.",
       "outside_box_rgba_identical": true,
       "source_assets": [
         {
@@ -276,7 +276,10 @@
           "path_id": 3533125371664581610
         }
       ],
-      "native": "OFFLINE_IMAGE_REVIEW_ONLY"
+      "native": "AWAITING_USER_DISPLAY_CHECK_AFTER_STYLE_REVISION",
+      "supersedes_sha256": "ea9a93c6150c8644a89c97da8602809a9e220c354c6271a25388c1d7be2a0609",
+      "original_alpha_identical": true,
+      "style_reference": "erl0001; original dark gray-brown fill gradient, ivory outline and subtle shadow"
     },
     {
       "name": "erl0001",
@@ -309,7 +312,8 @@
           "path_id": 9049026391427105834
         }
       ],
-      "native": "DISPLAY_CONFIRMED"
+      "native": "DISPLAY_CONFIRMED",
+      "original_alpha_identical": true
     },
     {
       "name": "erl0002",
@@ -325,15 +329,15 @@
       ],
       "generated_crop": [
         0,
-        144,
+        142,
         2170,
-        581
+        584
       ],
       "source_sha256": "7c2ecec7de80d9f723789e88564b9fb4a70157a0a3d3ade706054f3e9a12fade",
-      "generated_sha256": "8d5d7e7f0a77b7672052844f8bfc3f98ee31b630730b57e9a7413ee8af2d8843",
-      "sha256": "f3255b037cbb3a0b4c7702ccb5deeaa404b294afdee59b7b9e1c6e8ba70e7805",
-      "bytes": 139263,
-      "prompt": "Use case: text-localization. Edit the attached wide game district label, 630×128. Replace ONLY the large Japanese district name on the left with exactly Korean \"에그조티 지구\". Preserve the original city artwork background, light translucent wash, full width, ornamental curl at far left and underline/arrow below text, colors, and exact layout. Korean title must be left aligned around x45..335 y38..84, same approximate 42px height, cream ivory fill with dark taupe thick outline. Keep all text left of x350. No extra words or background. Preserve original 630:128 aspect. Output the complete edited label.",
+      "generated_sha256": "9b5e895b442127a17f39f4f365659e24c9a73862645d80f84036658d4802732e",
+      "sha256": "045cf5b94074f578539a906078676f0f89098e18b13d886a0e7dfc7ff3f1cdcd",
+      "bytes": 138720,
+      "prompt": "Use case: text-localization. Correct an inconsistent game district-title graphic. Input image 1 is the EDIT TARGET: original Japanese erl0002 label, 630x128. Input image 2 is STYLE REFERENCE ONLY: the accepted Korean 프란탄 지구 label. Replace the Japanese title in image 1 with exactly \"에그조티 지구\". Match image 2's lettering: dark muted gray-brown vertical gradient INSIDE the glyphs, bright cream/ivory thick outline around glyphs, fine dark outer edge and subtle shadow. The top-to-bottom tonal gradient must remain visible. The glyph interior must be dark like reference 2, NOT flat pale cream letters inside dark strokes. Match the same Korean serif/brush typeface, letter weight, approximately 42px title height and left alignment at x50, baseline y80; all letters should fit left of x348. Keep target image 1's own city/sky background, original opacity fade toward the right, ornamental curl and horizontal underline/arrow EXACTLY as they are. Do not copy background from image 2. Change only the Japanese lettering; no other Japanese, new text or decoration. Return the complete target label at its original 630x128 proportions, no extra border or letterboxing.",
       "outside_box_rgba_identical": true,
       "source_assets": [
         {
@@ -342,7 +346,10 @@
           "path_id": 4653425018578241461
         }
       ],
-      "native": "DISPLAY_CONFIRMED"
+      "native": "AWAITING_USER_DISPLAY_CHECK_AFTER_STYLE_REVISION",
+      "supersedes_sha256": "f3255b037cbb3a0b4c7702ccb5deeaa404b294afdee59b7b9e1c6e8ba70e7805",
+      "original_alpha_identical": true,
+      "style_reference": "erl0001; original dark gray-brown fill gradient, ivory outline and subtle shadow"
     },
     {
       "name": "erl0003",
@@ -358,15 +365,15 @@
       ],
       "generated_crop": [
         0,
-        145,
+        143,
         2170,
-        580
+        583
       ],
       "source_sha256": "5824ddec6fe675f20852cd3c59ab4937560c2e2a1abeeb5a04eb80b32a30b102",
-      "generated_sha256": "5bc1643b24f1e706a1e1986648d00c440d8b3eb10e92f55836d8418ed7021502",
-      "sha256": "ae24748323d88e3b5d09a75af32403173f5a9a0b5162f1ca7d15d612870846b3",
-      "bytes": 145371,
-      "prompt": "Use case: text-localization. Edit the attached wide game district label, 630×128. Replace ONLY the large Japanese district name on the left with exactly Korean \"노와르 지구\". Preserve the original city artwork background, light translucent wash, full width, ornamental curl at far left and underline/arrow below text, colors, and exact layout. Korean title must be left aligned around x45..335 y38..84, same approximate 42px height, cream ivory fill with dark taupe thick outline. Keep all text left of x350. No extra words or background. Preserve original 630:128 aspect. Output the complete edited label.",
+      "generated_sha256": "0c472ecae4bbd0dc9775be7651c540f94758a6dd8c62199d2dc54cbc3abc35a1",
+      "sha256": "22edb4b4c77d038ca7724a911eb0ed6369cd4771a7924212426da1857495fc14",
+      "bytes": 145442,
+      "prompt": "Use case: text-localization. Correct an inconsistent game district-title graphic. Input image 1 is the EDIT TARGET: original Japanese erl0003 label, 630x128. Input image 2 is STYLE REFERENCE ONLY: the accepted Korean 프란탄 지구 label. Replace the Japanese title in image 1 with exactly \"노와르 지구\". Match image 2's lettering: dark muted gray-brown vertical gradient INSIDE the glyphs, bright cream/ivory thick outline around glyphs, fine dark outer edge and subtle shadow. The top-to-bottom tonal gradient must remain visible. The glyph interior must be dark like reference 2, NOT flat pale cream letters inside dark strokes. Match the same Korean serif/brush typeface, letter weight, approximately 42px title height and left alignment at x50, baseline y80; all letters should fit left of x348. Keep target image 1's own city/sky background, original opacity fade toward the right, ornamental curl and horizontal underline/arrow EXACTLY as they are. Do not copy background from image 2. Change only the Japanese lettering; no other Japanese, new text or decoration. Return the complete target label at its original 630x128 proportions, no extra border or letterboxing.",
       "outside_box_rgba_identical": true,
       "source_assets": [
         {
@@ -375,7 +382,10 @@
           "path_id": -1719510924829166583
         }
       ],
-      "native": "OFFLINE_IMAGE_REVIEW_ONLY"
+      "native": "AWAITING_USER_DISPLAY_CHECK_AFTER_STYLE_REVISION",
+      "supersedes_sha256": "ae24748323d88e3b5d09a75af32403173f5a9a0b5162f1ca7d15d612870846b3",
+      "original_alpha_identical": true,
+      "style_reference": "erl0001; original dark gray-brown fill gradient, ivory outline and subtle shadow"
     },
     {
       "name": "erl0004",
@@ -408,7 +418,8 @@
           "path_id": -7096458042815722864
         }
       ],
-      "native": "OFFLINE_IMAGE_REVIEW_ONLY"
+      "native": "OFFLINE_IMAGE_REVIEW_ONLY",
+      "original_alpha_identical": true
     },
     {
       "name": "erl0005",
@@ -441,7 +452,8 @@
           "path_id": 2235394450752053845
         }
       ],
-      "native": "DISPLAY_CONFIRMED"
+      "native": "DISPLAY_CONFIRMED",
+      "original_alpha_identical": true
     },
     {
       "name": "erl9999",
@@ -459,13 +471,13 @@
         0,
         142,
         2170,
-        583
+        584
       ],
       "source_sha256": "ea751e78ec40c78fe5178fe35187b751709671698fbebd92c5e203b1b23345e9",
-      "generated_sha256": "f7ae0f50ffdf19dd8a32e619b64bf06881cab300b9199db926ed37616dc0d010",
-      "sha256": "f28ac38d399157a98386b09e427b443cdd9f7561dc810bfea18b1f69b78980a8",
-      "bytes": 160925,
-      "prompt": "Use case: text-localization. Edit the attached wide game district label, 630×128. Replace ONLY the large Japanese district name on the left with exactly Korean \"아테네스 전역\". Preserve the original city artwork background, light translucent wash, full width, ornamental curl at far left and underline/arrow below text, colors, and exact layout. Korean title must be left aligned around x45..335 y38..84, same approximate 42px height, cream ivory fill with dark taupe thick outline. Keep all text left of x350. No extra words or background. Preserve original 630:128 aspect. Output the complete edited label.",
+      "generated_sha256": "169cb5b5327576a60b258b1a45ff5be3336930bfbd9f14c6633629d826bc9af5",
+      "sha256": "6a822572666512b2113a4afe8a2e652bb017cbf53d6d5ed7c1eb38a7cc225e08",
+      "bytes": 162662,
+      "prompt": "Use case: text-localization. Correct an inconsistent game district-title graphic. Input image 1 is the EDIT TARGET: original Japanese erl9999 label, 630x128. Input image 2 is STYLE REFERENCE ONLY: the accepted Korean 프란탄 지구 label. Replace the Japanese title in image 1 with exactly \"아테네스 전역\". Match image 2's lettering: dark muted gray-brown vertical gradient INSIDE the glyphs, bright cream/ivory thick outline around glyphs, fine dark outer edge and subtle shadow. The top-to-bottom tonal gradient must remain visible. The glyph interior must be dark like reference 2, NOT flat pale cream letters inside dark strokes. Match the same Korean serif/brush typeface, letter weight, approximately 42px title height and left alignment at x50, baseline y80; all letters should fit left of x348. Keep target image 1's own city/sky background, original opacity fade toward the right, ornamental curl and horizontal underline/arrow EXACTLY as they are. Do not copy background from image 2. Change only the Japanese lettering; no other Japanese, new text or decoration. Return the complete target label at its original 630x128 proportions, no extra border or letterboxing.",
       "outside_box_rgba_identical": true,
       "source_assets": [
         {
@@ -474,17 +486,42 @@
           "path_id": 7985080693351447453
         }
       ],
-      "native": "DISPLAY_CONFIRMED"
+      "native": "AWAITING_USER_DISPLAY_CHECK_AFTER_STYLE_REVISION",
+      "supersedes_sha256": "f28ac38d399157a98386b09e427b443cdd9f7561dc810bfea18b1f69b78980a8",
+      "original_alpha_identical": true,
+      "style_reference": "erl0001; original dark gray-brown fill gradient, ivory outline and subtle shadow"
     }
   ],
   "native": {
     "status": "PARTIAL_NATIVE_PASS",
-    "observed_new_targets": 11,
-    "offline_only_new_targets": 3,
+    "initial_display_confirmed_targets": 11,
+    "current_payload_display_confirmed_targets": 9,
+    "current_offline_only_targets": 5,
+    "revised_targets": [
+      "erl0000",
+      "erl0002",
+      "erl0003",
+      "erl9999"
+    ],
     "game_viewport": [
       1024,
       576
     ],
-    "note": "Shop 3, recollection page 38 all 4, current ADF specialty popup 4. Remaining 3 district/nearby labels were not presented by the current event. No purchases or battles. Original DLL/config restored byte-for-byte."
+    "note": "Initial shop 3, recollection 4 and specialty popup 4 were observed. Four labels were later restyled; the revised versions await user display confirmation. All seven district alpha channels exactly match their raw source."
+  },
+  "style_revision": {
+    "request": "Unify district gradients with accepted erl0001/erl0004/erl0005 lettering",
+    "changed": [
+      "erl0000",
+      "erl0002",
+      "erl0003",
+      "erl9999"
+    ],
+    "unchanged": [
+      "erl0001",
+      "erl0004",
+      "erl0005"
+    ],
+    "tool": "built-in image_gen reference edits; established crop/size/alpha normalization"
   }
 }
