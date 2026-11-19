@@ -19,6 +19,14 @@ class ReleaseTests(unittest.TestCase):
         self.backup=self.root/'backup'
     def tearDown(self):self.temp.cleanup()
 
+    def test_package_verification_rejects_reintroduced_english_master_translation(self):
+        target=self.root/'translations/ko/master.json'
+        data=json.loads(target.read_bytes())
+        data.setdefault('mActiveSkills',{}).setdefault('ml_name[]',{})['Moonlight']='월광'
+        target.write_text(json.dumps(data,ensure_ascii=False),encoding='utf-8')
+        with self.assertRaisesRegex(ValueError,'ENGLISH_ORIGINAL_MUST_BE_PRESERVED'):
+            release.verify_repo(self.root)
+
     def test_pack_deterministic_and_install_rollback_preserves_preferences(self):
         again=self.root/'again.zip';release.pack(self.root,again);self.assertEqual(self.archive.read_bytes(),again.read_bytes())
         cfg=self.game/release.CFG;cfg.parent.mkdir(parents=True,exist_ok=True)

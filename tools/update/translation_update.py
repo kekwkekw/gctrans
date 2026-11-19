@@ -19,6 +19,7 @@ from reconcile_master import flatten_master
 from export_local_ui import export
 from build_manifests import build
 from translation_knowledge import translation_context, check_context, load_current
+from source_text_policy import preserve_english_original
 
 PUBLISH = ('master.json', 'ui.json', 'ui/general-exact.reviewed.json', 'manifest.json', 'legacy-components.json', 'ui/manifest.json', 'release-manifest.json')
 REVIEW_SCHEMA = 'gcmod-translation-review-v1'
@@ -28,6 +29,8 @@ GUARDED = tuple(dict.fromkeys(PUBLISH + ('names.json', 'ui/resources.json', 'ui/
 
 
 def validate_translation(jp, ko):
+    if preserve_english_original(jp):
+        raise ValueError('ENGLISH_ORIGINAL_MUST_BE_PRESERVED')
     if not isinstance(ko, str) or not ko.strip() or jp == ko:
         raise ValueError('TRANSLATION_REQUIRED')
     if Counter(TOKENS.findall(jp)) != Counter(TOKENS.findall(ko)):
@@ -50,7 +53,7 @@ def row_id(row):
 def make_plan(package, baseline, baseline_ref, scans=(), observations=(), probe_runtime=False):
     master = flatten_master(read(package/'master.json'))
     ui = read(package/'ui.json')
-    candidates, sources = {}, []
+    candidates, sources, preserved = {}, [], {}
     ko_by_jp = {}
     for (_, _, jp), ko in master.items():
         if ko and ko != jp:
@@ -59,9 +62,14 @@ def make_plan(package, baseline, baseline_ref, scans=(), observations=(), probe_
         if not isinstance(row.get('jp'), str) or not row['jp'].strip():
             return
         key = identity(row)
+        if preserve_english_original(row['jp']):
+            entry = preserved.setdefault(key, dict(row, id=row_id(row), reason='PRESERVE_ENGLISH_ORIGINAL', evidence=[]))
+            if evidence not in entry['evidence']:
+                entry['evidence'].append(evidence)
+            return
         if row['kind'] == 'master' and key[1:] in master or row['kind'] == 'ui' and row['jp'] in ui:
             return
-        # Latin/numeric-only UI fields need no Japanese translation. Master keeps all keys.
+        # Keep the existing non-Japanese UI filter for numeric/sample fields.
         if row['kind'] == 'ui' and not re.search(r'[\u3040-\u30ff\u3400-\u9fff]', row['jp']):
             return
         entry = candidates.setdefault(key, dict(row, id=row_id(row), evidence=[]))
@@ -126,6 +134,7 @@ def make_plan(package, baseline, baseline_ref, scans=(), observations=(), probe_
         'missing_master':sum(r['kind']=='master' for r in rows),'missing_ui':sum(r['kind']=='ui' for r in rows),
         'existing_master_source_equal':sum(jp==ko for (_,_,jp),ko in master.items()),
         'runtime_covered':runtime_covered,
+        'preserved_originals':[preserved[k] for k in sorted(preserved)],
         'automatic_deletes':0,'semantic_review':'REQUIRED',
         'note':'Scope is supplied source/field selectors. Key coverage is not proof of whole-game translation.'}
 

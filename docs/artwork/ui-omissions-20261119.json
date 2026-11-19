@@ -1,0 +1,527 @@
+{
+  "schema": "gc-ui-images-20261119-v1",
+  "tool": "built-in image_gen with text-box-only composition",
+  "previous_targets": 165,
+  "new_targets": 179,
+  "records": [
+    {
+      "name": "sii10645",
+      "kind": "texture",
+      "width": 384,
+      "height": 180,
+      "ko": "AP 상한+120\nBP 상한+12",
+      "box": [
+        195,
+        100,
+        384,
+        175
+      ],
+      "generated_crop": [
+        0,
+        0,
+        1832,
+        859
+      ],
+      "source_sha256": "39e551a9ccc60f779338cbe4202c536f6f88eb6db56cc71522632d211fcd08a0",
+      "generated_sha256": "b603ac23bb63312994c32f4543fd5127cdb141b2e4b511c81038d60e8941fc0e",
+      "sha256": "a816731275307b7f8729c5b941bdb047ce544c38b2a458ea7b29121cbf68aa84",
+      "bytes": 87834,
+      "prompt": "Use case: text-localization. Edit target is the attached original game sprite. 384x180 transparent shop product icon. Change ONLY AP上限+120 and BP上限+12 at bottom-right to AP 상한+120 / BP 상한+12 on two lines. Preserve colorful crystal gems and two winged bottles, colors, numbers and existing transparency, text placement. Do not add backing.\nExact Korean text (verbatim): AP 상한+120\nBP 상한+12\nPreserve everything outside the original text area. No mockup, only the complete edited asset, preserve aspect ratio, colors, alpha and all character art. Do not draw a checkerboard background.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "image_shop.dmm",
+          "raw_sha256": "b38a29c7ba5ecb71f7ce4708f4682106bb80a79f4c248e88c76b21570f11f337",
+          "path_id": -5534566891639685157
+        },
+        {
+          "asset": "image_shop.dmm",
+          "raw_sha256": "3d4ae282aeef5aab6e547f9db3f6647dfe84fb2045db55afbf7ee052859899be",
+          "path_id": -5534566891639685157
+        }
+      ],
+      "native": "DISPLAY_CONFIRMED"
+    },
+    {
+      "name": "sii10646",
+      "kind": "texture",
+      "width": 384,
+      "height": 180,
+      "ko": "공방 3 해금",
+      "box": [
+        196,
+        108,
+        380,
+        173
+      ],
+      "generated_crop": [
+        0,
+        0,
+        1832,
+        858
+      ],
+      "source_sha256": "a340aa2a8756bcfec4c25704c2e0123260c2a65ac8f4b09f010692af66a61f8e",
+      "generated_sha256": "b4e73f842ec8f88a4e7178415538fdf8bc09bc76e57beb9375aa79e0ff6a1be6",
+      "sha256": "8c6b28d10022854a2911141a1bba347a7ab37fa302956f9961469e10d7905ba6",
+      "bytes": 81447,
+      "prompt": "Use case: text-localization. Edit target is the attached original game sprite. 384x180 transparent shop product icon. Replace ONLY bottom-right Japanese 工房３解放 with Korean 공방 3 해금. Preserve open chest, colorful gems, glints, numbers, existing transparency, compact pink text style.\nExact Korean text (verbatim): 공방 3 해금\nPreserve everything outside the original text area. No mockup, only the complete edited asset, preserve aspect ratio, colors, alpha and all character art. Do not draw a checkerboard background.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "image_shop.dmm",
+          "raw_sha256": "b38a29c7ba5ecb71f7ce4708f4682106bb80a79f4c248e88c76b21570f11f337",
+          "path_id": 4198443913226021751
+        },
+        {
+          "asset": "image_shop.dmm",
+          "raw_sha256": "3d4ae282aeef5aab6e547f9db3f6647dfe84fb2045db55afbf7ee052859899be",
+          "path_id": 4198443913226021751
+        }
+      ],
+      "native": "DISPLAY_CONFIRMED"
+    },
+    {
+      "name": "sfb3000",
+      "kind": "texture",
+      "width": 1000,
+      "height": 52,
+      "ko": "실속 있는 월간 패스3000 판매 중!",
+      "box": [
+        45,
+        0,
+        610,
+        52
+      ],
+      "generated_crop": [
+        0,
+        304,
+        2170,
+        418
+      ],
+      "source_sha256": "360987c9c2c6316bc5d30056683b54eeffd15156751ceae4fa2b20b417b6a305",
+      "generated_sha256": "8038ec10e76b90a67b6a09f705d6bc2d214b618b44d5747a5cd1de8bded1b750",
+      "sha256": "aea69c5a810f4cec2472b15c91572fbb07bd94be0bb0a3375eec411ea7dc3b32",
+      "bytes": 107642,
+      "prompt": "Use case: text-localization. Edit target is the attached original game sprite. Extremely wide and short 1000x52 game shop footer banner. Replace Japanese lettering in left 60% with exactly 실속 있는 월간 패스3000 판매 중! at readable game UI size. Preserve rounded gold border, diagonal patterned luminous background and colorful gems on right. Original 1000:52 composition. Do not create tall layout or add extra whitespace. Existing transparent outer rounded corners.\nExact Korean text (verbatim): 실속 있는 월간 패스3000 판매 중!\nPreserve everything outside the original text area. No mockup, only the complete edited asset, preserve aspect ratio, colors, alpha and all character art. Do not draw a checkerboard background.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_shop_footer_banner/sfb3000.dmm",
+          "raw_sha256": "911323ee4ff22f8203632659dda79436b5cf94d524d8e5f198421271e562295a",
+          "path_id": 704934447853268643
+        }
+      ],
+      "native": "DISPLAY_CONFIRMED"
+    },
+    {
+      "name": "ebs13241",
+      "kind": "texture",
+      "width": 340,
+      "height": 128,
+      "ko": "동료들과 함께 꾸미는\n후야제",
+      "box": [
+        10,
+        21,
+        214,
+        115
+      ],
+      "generated_crop": [
+        0,
+        0,
+        2043,
+        770
+      ],
+      "source_sha256": "1196e5e3f7e2ea35c8792ff334179b1b24914d8d234240807e429d211c3fa074",
+      "generated_sha256": "98ea881432327f05fafd95c4403340c412a6a9409e4d9c1a973957652c1b8dd4",
+      "sha256": "2936194999f0a0f595e968ee5b62667a65da21a652e790c3ca28184d02b3fdfa",
+      "bytes": 88344,
+      "prompt": "Use case: text-localization. Edit target is the attached original game sprite. 340x128 game event banner. Replace ONLY Japanese 仲間たちと彩る 後夜祭 title on left with Korean 동료들과 함께 꾸미는 above large 후야제. Preserve blonde character on right, fireworks, ornate gray frame and composition. Bold playful blue/gold title, clearly readable when reduced to 180x68. Keep title left of x215. No new badges.\nExact Korean text (verbatim): 동료들과 함께 꾸미는\n후야제\nPreserve everything outside the original text area. No mockup, only the complete edited asset, preserve aspect ratio, colors, alpha and all character art. Do not draw a checkerboard background.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_small_banner/ebs13241.dmm",
+          "raw_sha256": "e394de5b873c44aa70ba6437cfd11e95cdd3a6cef9c1b1dcd9533b679b3a0b63",
+          "path_id": -9120556791405552689
+        }
+      ],
+      "native": "DISPLAY_CONFIRMED"
+    },
+    {
+      "name": "ebs13613",
+      "kind": "texture",
+      "width": 340,
+      "height": 128,
+      "ko": "천재를 움직이는 것",
+      "box": [
+        13,
+        85,
+        211,
+        110
+      ],
+      "generated_crop": [
+        0,
+        0,
+        2043,
+        770
+      ],
+      "source_sha256": "6c874e0484f70879f074ea469f729048ccd28262eb86f1a633d04a30c651a713",
+      "generated_sha256": "e61876d7150287d9c36413a67d867c3221311bb46ec36cd9d2f0c8d3d6cdb0cc",
+      "sha256": "fe4647c6154f51ccbfba6b9bb30dddc998280c4667ccef588f5f9c061af97609",
+      "bytes": 68347,
+      "prompt": "Use case: text-localization. Edit target is the attached original game sprite. 340x128 game event banner. Keep large English Another Side title exactly. Replace ONLY tiny Japanese subtitle beneath English with Korean 천재를 움직이는 것. Preserve purple-haired woman at right, dark purple background, gray frame and English logo. Subtitle on left below logo, readable at 180x68. No translated English title.\nExact Korean text (verbatim): 천재를 움직이는 것\nPreserve everything outside the original text area. No mockup, only the complete edited asset, preserve aspect ratio, colors, alpha and all character art. Do not draw a checkerboard background.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_small_banner/ebs13613.dmm",
+          "raw_sha256": "7c133942d7e94b44f77b30d010286a39917c7b8f8a0ce394434a284cca6dee99",
+          "path_id": -5479460994780836977
+        }
+      ],
+      "native": "DISPLAY_CONFIRMED"
+    },
+    {
+      "name": "ebs13614",
+      "kind": "texture",
+      "width": 340,
+      "height": 128,
+      "ko": "허식을 뛰어넘는\n순수한 마음",
+      "box": [
+        11,
+        84,
+        219,
+        115
+      ],
+      "generated_crop": [
+        0,
+        0,
+        2043,
+        770
+      ],
+      "source_sha256": "7d5aad5521ade78d305742c31449cb4e321539d7e0cea782f2950cba93f07c22",
+      "generated_sha256": "59cf0033103e2ebe366d7c71cd463c07e63ea4af443e85eb5246ce5da4bcb28a",
+      "sha256": "96bd42c9b147b85293714d6fcb5b00609e76bfda51dcba30ea21f456e5515d7a",
+      "bytes": 68375,
+      "prompt": "Use case: text-localization. Edit target is the attached original game sprite. 340x128 game event banner. Keep large English Another Side title exactly. Replace ONLY Japanese subtitle below it with Korean 허식을 뛰어넘는 / 순수한 마음. Use two small readable centered lines beneath English on left if needed. Preserve black-haired red-eyed woman at right, lavender artwork and ornate gray frame.\nExact Korean text (verbatim): 허식을 뛰어넘는\n순수한 마음\nPreserve everything outside the original text area. No mockup, only the complete edited asset, preserve aspect ratio, colors, alpha and all character art. Do not draw a checkerboard background.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_small_banner/ebs13614.dmm",
+          "raw_sha256": "9d3749816d115247ebb014a7b3e15a1f40cf78d82d3cef85ae453e115affacc3",
+          "path_id": 8834771197796288508
+        }
+      ],
+      "native": "DISPLAY_CONFIRMED"
+    },
+    {
+      "name": "ebs15018",
+      "kind": "texture",
+      "width": 340,
+      "height": 128,
+      "ko": "망각의 저편에서,\n영원한 속죄를",
+      "box": [
+        8,
+        31,
+        224,
+        110
+      ],
+      "generated_crop": [
+        0,
+        0,
+        2043,
+        770
+      ],
+      "source_sha256": "c7b85d38afdffd7e621f74566a9d4df9497ff3963dd8b5ed9ba5d9e650428cd6",
+      "generated_sha256": "027e9864d165d52d1db87f3c1351ff8fe7781f460d6403e072f5554e60e2d16d",
+      "sha256": "94aed59306ea2656f2751b70d957120939d28dd3ba058d8dc241c022e6292267",
+      "bytes": 86563,
+      "prompt": "Use case: text-localization. Edit target is the attached original game sprite. 340x128 game event banner. Keep the English Athenes Defense Force logo. Replace tiny Japanese subtitle near logo with Korean 망각의 저편에서, / 영원한 속죄를, arranged legibly as compact lines near/below left logo. Preserve white-haired woman at right, ruined city artwork, ornate border and existing composition. No new English words.\nExact Korean text (verbatim): 망각의 저편에서,\n영원한 속죄를\nPreserve everything outside the original text area. No mockup, only the complete edited asset, preserve aspect ratio, colors, alpha and all character art. Do not draw a checkerboard background.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_small_banner/ebs15018.dmm",
+          "raw_sha256": "ac73b1537052a62b0a50e42555cc8997c5eefaf044cfe8cbcb8c79f8f6579ada",
+          "path_id": -7836391816924230769
+        }
+      ],
+      "native": "DISPLAY_CONFIRMED"
+    },
+    {
+      "name": "erl0000",
+      "kind": "texture",
+      "width": 630,
+      "height": 128,
+      "ko": "아테네스 근교",
+      "box": [
+        40,
+        31,
+        348,
+        88
+      ],
+      "generated_crop": [
+        0,
+        143,
+        2170,
+        584
+      ],
+      "source_sha256": "9032e5a78842782e92a97d122b28c179cd1bc4e2c45b22ce5937d2f2ab8c27a3",
+      "generated_sha256": "6a9507e0fb092581917f6df95b52dbcb2e5f84f1599e45586415420fd22f90e6",
+      "sha256": "a17c2c1ed4e93cad5f0aa6a523c53b40f9a5bdb020aadee3907c95d48ec1dae7",
+      "bytes": 112777,
+      "prompt": "Use case: text-localization. Correct an inconsistent game district-title graphic. Input image 1 is the EDIT TARGET: original Japanese erl0000 label, 630x128. Input image 2 is STYLE REFERENCE ONLY: the accepted Korean 프란탄 지구 label. Replace the Japanese title in image 1 with exactly \"아테네스 근교\". Match image 2's lettering: dark muted gray-brown vertical gradient INSIDE the glyphs, bright cream/ivory thick outline around glyphs, fine dark outer edge and subtle shadow. The top-to-bottom tonal gradient must remain visible. The glyph interior must be dark like reference 2, NOT flat pale cream letters inside dark strokes. Match the same Korean serif/brush typeface, letter weight, approximately 42px title height and left alignment at x50, baseline y80; all letters should fit left of x348. Keep target image 1's own city/sky background, original opacity fade toward the right, ornamental curl and horizontal underline/arrow EXACTLY as they are. Do not copy background from image 2. Change only the Japanese lettering; no other Japanese, new text or decoration. Return the complete target label at its original 630x128 proportions, no extra border or letterboxing.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_event_raid_label/erl0000.dmm",
+          "raw_sha256": "e1d4eef157522f357eece8c138c21566cccbb7935ca0d67502c31e26b1ff1dec",
+          "path_id": 3533125371664581610
+        }
+      ],
+      "native": "AWAITING_USER_DISPLAY_CHECK_AFTER_STYLE_REVISION",
+      "supersedes_sha256": "ea9a93c6150c8644a89c97da8602809a9e220c354c6271a25388c1d7be2a0609",
+      "original_alpha_identical": true,
+      "style_reference": "erl0001; original dark gray-brown fill gradient, ivory outline and subtle shadow"
+    },
+    {
+      "name": "erl0001",
+      "kind": "texture",
+      "width": 630,
+      "height": 128,
+      "ko": "프란탄 지구",
+      "box": [
+        40,
+        31,
+        348,
+        88
+      ],
+      "generated_crop": [
+        0,
+        142,
+        2170,
+        584
+      ],
+      "source_sha256": "4df0991f44b3f8b2c5ccf54a7eb41deb7ca9e6de83c109f8509803acf9d0735d",
+      "generated_sha256": "88da93fb3ca22143d3836c5d98c9e1c59da1d6d27074e90bd3f69d54c2af7811",
+      "sha256": "8d6d96e8cf0da03f77df9c1989ab03c2f5b7e8e9ab5658795511a83a42fa0a8f",
+      "bytes": 138023,
+      "prompt": "Use case: text-localization. Edit the attached wide game district label, 630×128. Replace ONLY the large Japanese district name on the left with exactly Korean \"프란탄 지구\". Preserve the original city artwork background, light translucent wash, full width, ornamental curl at far left and underline/arrow below text, colors, and exact layout. Korean title must be left aligned around x45..335 y38..84, same approximate 42px height, cream ivory fill with dark taupe thick outline. Keep all text left of x350. No extra words or background. Preserve original 630:128 aspect. Output the complete edited label.\nCorrection: Use case: text-localization correction. Correct ONLY the lettering of the attached generated district banner. Current typo 프란란 지구 MUST become exactly 프란탄 지구. Spell syllables 프 / 란 / 탄, then space, 지 / 구. Third syllable is 탄 (ㅌ + ㅏ + ㄴ), NOT 란. Keep the entire landscape, cream outlined lettering style, title position and underline unchanged. Output the same entire banner.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_event_raid_label/erl0001.dmm",
+          "raw_sha256": "3fce1704e4de3579a32f0b95fc0e984e025b862f8e3fe4e9a5ed66618e93367e",
+          "path_id": 9049026391427105834
+        }
+      ],
+      "native": "DISPLAY_CONFIRMED",
+      "original_alpha_identical": true
+    },
+    {
+      "name": "erl0002",
+      "kind": "texture",
+      "width": 630,
+      "height": 128,
+      "ko": "에그조티 지구",
+      "box": [
+        40,
+        31,
+        348,
+        88
+      ],
+      "generated_crop": [
+        0,
+        142,
+        2170,
+        584
+      ],
+      "source_sha256": "7c2ecec7de80d9f723789e88564b9fb4a70157a0a3d3ade706054f3e9a12fade",
+      "generated_sha256": "9b5e895b442127a17f39f4f365659e24c9a73862645d80f84036658d4802732e",
+      "sha256": "045cf5b94074f578539a906078676f0f89098e18b13d886a0e7dfc7ff3f1cdcd",
+      "bytes": 138720,
+      "prompt": "Use case: text-localization. Correct an inconsistent game district-title graphic. Input image 1 is the EDIT TARGET: original Japanese erl0002 label, 630x128. Input image 2 is STYLE REFERENCE ONLY: the accepted Korean 프란탄 지구 label. Replace the Japanese title in image 1 with exactly \"에그조티 지구\". Match image 2's lettering: dark muted gray-brown vertical gradient INSIDE the glyphs, bright cream/ivory thick outline around glyphs, fine dark outer edge and subtle shadow. The top-to-bottom tonal gradient must remain visible. The glyph interior must be dark like reference 2, NOT flat pale cream letters inside dark strokes. Match the same Korean serif/brush typeface, letter weight, approximately 42px title height and left alignment at x50, baseline y80; all letters should fit left of x348. Keep target image 1's own city/sky background, original opacity fade toward the right, ornamental curl and horizontal underline/arrow EXACTLY as they are. Do not copy background from image 2. Change only the Japanese lettering; no other Japanese, new text or decoration. Return the complete target label at its original 630x128 proportions, no extra border or letterboxing.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_event_raid_label/erl0002.dmm",
+          "raw_sha256": "0e4c75306fd0516266442d7c550df6b697fdbc51813386308053575e048be886",
+          "path_id": 4653425018578241461
+        }
+      ],
+      "native": "AWAITING_USER_DISPLAY_CHECK_AFTER_STYLE_REVISION",
+      "supersedes_sha256": "f3255b037cbb3a0b4c7702ccb5deeaa404b294afdee59b7b9e1c6e8ba70e7805",
+      "original_alpha_identical": true,
+      "style_reference": "erl0001; original dark gray-brown fill gradient, ivory outline and subtle shadow"
+    },
+    {
+      "name": "erl0003",
+      "kind": "texture",
+      "width": 630,
+      "height": 128,
+      "ko": "노와르 지구",
+      "box": [
+        40,
+        31,
+        348,
+        88
+      ],
+      "generated_crop": [
+        0,
+        143,
+        2170,
+        583
+      ],
+      "source_sha256": "5824ddec6fe675f20852cd3c59ab4937560c2e2a1abeeb5a04eb80b32a30b102",
+      "generated_sha256": "0c472ecae4bbd0dc9775be7651c540f94758a6dd8c62199d2dc54cbc3abc35a1",
+      "sha256": "22edb4b4c77d038ca7724a911eb0ed6369cd4771a7924212426da1857495fc14",
+      "bytes": 145442,
+      "prompt": "Use case: text-localization. Correct an inconsistent game district-title graphic. Input image 1 is the EDIT TARGET: original Japanese erl0003 label, 630x128. Input image 2 is STYLE REFERENCE ONLY: the accepted Korean 프란탄 지구 label. Replace the Japanese title in image 1 with exactly \"노와르 지구\". Match image 2's lettering: dark muted gray-brown vertical gradient INSIDE the glyphs, bright cream/ivory thick outline around glyphs, fine dark outer edge and subtle shadow. The top-to-bottom tonal gradient must remain visible. The glyph interior must be dark like reference 2, NOT flat pale cream letters inside dark strokes. Match the same Korean serif/brush typeface, letter weight, approximately 42px title height and left alignment at x50, baseline y80; all letters should fit left of x348. Keep target image 1's own city/sky background, original opacity fade toward the right, ornamental curl and horizontal underline/arrow EXACTLY as they are. Do not copy background from image 2. Change only the Japanese lettering; no other Japanese, new text or decoration. Return the complete target label at its original 630x128 proportions, no extra border or letterboxing.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_event_raid_label/erl0003.dmm",
+          "raw_sha256": "792cd6136e5d7e1bec41d0742a0eb769071dbdb808d701a0a28981e5f7a5f342",
+          "path_id": -1719510924829166583
+        }
+      ],
+      "native": "AWAITING_USER_DISPLAY_CHECK_AFTER_STYLE_REVISION",
+      "supersedes_sha256": "ae24748323d88e3b5d09a75af32403173f5a9a0b5162f1ca7d15d612870846b3",
+      "original_alpha_identical": true,
+      "style_reference": "erl0001; original dark gray-brown fill gradient, ivory outline and subtle shadow"
+    },
+    {
+      "name": "erl0004",
+      "kind": "texture",
+      "width": 630,
+      "height": 128,
+      "ko": "볼칸 지구",
+      "box": [
+        40,
+        31,
+        348,
+        88
+      ],
+      "generated_crop": [
+        0,
+        142,
+        2170,
+        584
+      ],
+      "source_sha256": "b9137baf330b373e88c4a72437d6ed4e63bad72e60102b3cdc413d1450b9919a",
+      "generated_sha256": "12120a88d7671ab400c92668f5a8c4c856d2583195127475c6e5f47d7af31f7c",
+      "sha256": "08040801246cfe0d3bc2f4a04b5dcf561ab42c94f682a8b57d757833f441f258",
+      "bytes": 141523,
+      "prompt": "Use case: text-localization. Edit the attached wide game district label, 630×128. Replace ONLY the large Japanese district name on the left with exactly Korean \"볼칸 지구\". Preserve the original city artwork background, light translucent wash, full width, ornamental curl at far left and underline/arrow below text, colors, and exact layout. Korean title must be left aligned around x45..335 y38..84, same approximate 42px height, cream ivory fill with dark taupe thick outline. Keep all text left of x350. No extra words or background. Preserve original 630:128 aspect. Output the complete edited label.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_event_raid_label/erl0004.dmm",
+          "raw_sha256": "ed815452c4bed8515d36b8c85b0fa92eaa35c16649b8f44092a7383b769d01a6",
+          "path_id": -7096458042815722864
+        }
+      ],
+      "native": "OFFLINE_IMAGE_REVIEW_ONLY",
+      "original_alpha_identical": true
+    },
+    {
+      "name": "erl0005",
+      "kind": "texture",
+      "width": 630,
+      "height": 128,
+      "ko": "이베르 지구",
+      "box": [
+        40,
+        31,
+        348,
+        88
+      ],
+      "generated_crop": [
+        0,
+        142,
+        2170,
+        583
+      ],
+      "source_sha256": "0a0493f7d980cbaea2a08eae4ee19b3577a6bc7900821a512ef6e39c163c4e6f",
+      "generated_sha256": "eac27e47a8c62a594998e5c8c9b5fa81fb2cf6d3a55cd158768b14a343cf8a55",
+      "sha256": "62eccd390b93d5eea62479c90ff9a5d6629da8126b0d66c1ebc7d7f1a9407030",
+      "bytes": 147649,
+      "prompt": "Use case: text-localization. Edit the attached wide game district label, 630×128. Replace ONLY the large Japanese district name on the left with exactly Korean \"이베르 지구\". Preserve the original city artwork background, light translucent wash, full width, ornamental curl at far left and underline/arrow below text, colors, and exact layout. Korean title must be left aligned around x45..335 y38..84, same approximate 42px height, cream ivory fill with dark taupe thick outline. Keep all text left of x350. No extra words or background. Preserve original 630:128 aspect. Output the complete edited label.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_event_raid_label/erl0005.dmm",
+          "raw_sha256": "51b5a324a95c51efc4f5cab8a480674a06dce8c194af170e5b7912c75aeb69f7",
+          "path_id": 2235394450752053845
+        }
+      ],
+      "native": "DISPLAY_CONFIRMED",
+      "original_alpha_identical": true
+    },
+    {
+      "name": "erl9999",
+      "kind": "texture",
+      "width": 630,
+      "height": 128,
+      "ko": "아테네스 전역",
+      "box": [
+        40,
+        31,
+        348,
+        88
+      ],
+      "generated_crop": [
+        0,
+        142,
+        2170,
+        584
+      ],
+      "source_sha256": "ea751e78ec40c78fe5178fe35187b751709671698fbebd92c5e203b1b23345e9",
+      "generated_sha256": "169cb5b5327576a60b258b1a45ff5be3336930bfbd9f14c6633629d826bc9af5",
+      "sha256": "6a822572666512b2113a4afe8a2e652bb017cbf53d6d5ed7c1eb38a7cc225e08",
+      "bytes": 162662,
+      "prompt": "Use case: text-localization. Correct an inconsistent game district-title graphic. Input image 1 is the EDIT TARGET: original Japanese erl9999 label, 630x128. Input image 2 is STYLE REFERENCE ONLY: the accepted Korean 프란탄 지구 label. Replace the Japanese title in image 1 with exactly \"아테네스 전역\". Match image 2's lettering: dark muted gray-brown vertical gradient INSIDE the glyphs, bright cream/ivory thick outline around glyphs, fine dark outer edge and subtle shadow. The top-to-bottom tonal gradient must remain visible. The glyph interior must be dark like reference 2, NOT flat pale cream letters inside dark strokes. Match the same Korean serif/brush typeface, letter weight, approximately 42px title height and left alignment at x50, baseline y80; all letters should fit left of x348. Keep target image 1's own city/sky background, original opacity fade toward the right, ornamental curl and horizontal underline/arrow EXACTLY as they are. Do not copy background from image 2. Change only the Japanese lettering; no other Japanese, new text or decoration. Return the complete target label at its original 630x128 proportions, no extra border or letterboxing.",
+      "outside_box_rgba_identical": true,
+      "source_assets": [
+        {
+          "asset": "notinit/image_event_raid_label/erl9999.dmm",
+          "raw_sha256": "2e5c7880ecb771766e807344615daa9d1ef7d9d9567890cd61575db300227da5",
+          "path_id": 7985080693351447453
+        }
+      ],
+      "native": "AWAITING_USER_DISPLAY_CHECK_AFTER_STYLE_REVISION",
+      "supersedes_sha256": "f28ac38d399157a98386b09e427b443cdd9f7561dc810bfea18b1f69b78980a8",
+      "original_alpha_identical": true,
+      "style_reference": "erl0001; original dark gray-brown fill gradient, ivory outline and subtle shadow"
+    }
+  ],
+  "native": {
+    "status": "PARTIAL_NATIVE_PASS",
+    "initial_display_confirmed_targets": 11,
+    "current_payload_display_confirmed_targets": 9,
+    "current_offline_only_targets": 5,
+    "revised_targets": [
+      "erl0000",
+      "erl0002",
+      "erl0003",
+      "erl9999"
+    ],
+    "game_viewport": [
+      1024,
+      576
+    ],
+    "note": "Initial shop 3, recollection 4 and specialty popup 4 were observed. Four labels were later restyled; the revised versions await user display confirmation. All seven district alpha channels exactly match their raw source."
+  },
+  "style_revision": {
+    "request": "Unify district gradients with accepted erl0001/erl0004/erl0005 lettering",
+    "changed": [
+      "erl0000",
+      "erl0002",
+      "erl0003",
+      "erl9999"
+    ],
+    "unchanged": [
+      "erl0001",
+      "erl0004",
+      "erl0005"
+    ],
+    "tool": "built-in image_gen reference edits; established crop/size/alpha normalization"
+  }
+}

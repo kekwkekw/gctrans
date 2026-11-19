@@ -51,6 +51,14 @@ var cases=new Dictionary<string,string> {
  ["回数回復まで00:00"]="횟수 회복까지 00:00", ["回数回復まで12:00"]="횟수 회복까지 12:00",
  ["<color=red>回数回復まで10:26</color>"]="<color=red>횟수 회복까지 10:26</color>",
  ["APを0回復しました。"]="AP를 0 회복했습니다.", ["APを150回復しました。"]="AP를 150 회복했습니다.",
+ ["応援編成\n0/10"]="응원 편성\n0/10", ["応援編成 9/10"]="응원 편성 9/10",
+ ["応援編成\r\n10/10"]="응원 편성\r\n10/10",
+ ["スコア倍率×7.0"]="점수 배율 ×7.0",
+ ["<color=#a29284>推奨戦闘力</color> 1,203,200"]="<color=#a29284>권장 전투력</color> 1,203,200",
+ ["受け取り期間 2026/11/26 12:59 まで"]="수령 기간 2026/11/26 12:59까지",
+ ["開催期間：11/01 04:00 ~ 12/01 03:59"]="개최 기간: 11/01 04:00 ~ 12/01 03:59",
+ ["<color=#F64873>시즌 28</color>を開始しました！\nフロアの最奥へ挑戦しよう"]="<color=#F64873>시즌 28</color>이 시작되었습니다!\n층의 가장 깊은 곳에 도전해 보세요",
+ ["<color=#F64873>シーズン28</color>を開始しました！\nフロアの最奥へ挑戦しよう"]="<color=#F64873>시즌 28</color>이 시작되었습니다!\n층의 가장 깊은 곳에 도전해 보세요",
 };
 foreach(var c in cases)if(!UiTextLookup.TryTranslate(ui,c.Key,out var ko)||ko!=c.Value)throw new Exception("Lookup mismatch: "+c.Key+" -> "+ko);
 var negative=new[]{"更新まで12:01","開封期限：2026/11/08 12:59 まで","文章2026/11/01 03:59まで","シーズン1234","現在：1周目フロア4の話","シーズン27.5","あと7日以内",
@@ -60,6 +68,21 @@ var negative=new[]{"更新まで12:01","開封期限：2026/11/08 12:59 まで",
  "日本語 22個で解放","日本語 の閲覧が必要","제목 の閲覧が必要という説明","덴푸라 22個で解放する","あと1000000000","3ターン終了","덴푸라 <b>22</b>個で解放"};
 foreach(var jp in negative)
  if(UiTextLookup.TryTranslate(ui,jp,out _))throw new Exception("Unexpected translation: "+jp);
+foreach (var jp in new[]{"応援編成\n11/10", "応援編成\n1/10の話", "スコア倍率×7.05", "スコア倍率×<b>7.0</b>",
+    "<color=#a29284>推奨戦闘力</color> 1,20,300", "受け取り期間 2026/02/30 12:59 まで",
+    "受け取り期間 2026/11/26 24:59 まで", "受け取り期間 2026/11/26 12:59 までの話",
+    "プレイヤー が アテネス近郊 で", "Normal", "Hard", "Very Hard", "VeryHard", "Nightmare",
+    "RANK", "RANK7", "2nd", "3rd", "BATTLE3 HARD", "<color=red>Normal</color>"})
+    if (UiTextLookup.TryTranslate(ui,jp,out _)) throw new Exception("Unexpected ADF/date/prose translation: "+jp);
+foreach (var (name,particle) in new[]{("葛萌","이(가)"), ("生鶏伯伯","이(가)"), ("が","이(가)"),
+    ("A が B","이(가)"), ("<color=red>Team</color>","이(가)"), ("관장","이"), ("화가","가"),
+    ("<color=red>관장</color>","이"), ("<b>화가</b>","가"), ("화가😀","이(가)")})
+{
+    if (!UiTextLookup.TryTranslateRaidScoreLine(name+" が 아테네스 근교 で",out var result)
+        || result!=name+particle+" 아테네스 근교에서") throw new Exception("Score-feed name or particle changed: "+name);
+}
+foreach (var original in new[]{"名前 が 場所", " が 場所 で", "名前 が  で", "普通の文章です"})
+    if (UiTextLookup.TryTranslateRaidScoreLine(original,out _)) throw new Exception("Unexpected feed translation: "+original);
 // Native battle buttons contain a heading and numeric lines in one TMP string.
 // Check both platform newlines, screenshot values, HP percentages, and CT.
 var battleCases = new Dictionary<string,string>();

@@ -6505,7 +6505,7 @@
     },
     {
       "adapter_id": "ui4.static-caption.v1",
-      "enabled": true,
+      "enabled": false,
       "id": "binding.core.UI4-S001.591601e94010bdff",
       "resource_id": "ui.core.UI4-S001.591601e94010bdff",
       "selector": {

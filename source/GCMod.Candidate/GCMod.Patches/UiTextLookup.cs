@@ -29,6 +29,35 @@ internal static class UiTextLookup
     // Preserve that entire span verbatim; never look up or translate the name.
     private static readonly Regex DeckCopy = new Regex(@"\A編成の内容を(<color=#[0-9a-fA-F]{6}(?:[0-9a-fA-F]{2})?>[^<>\r\n]{1,120}</color>)に上書きします\z");
 
+    // Final values observed in Dungeon and ADF. Match only these complete labels.
+    private static readonly Regex SupportCount = new(@"\A応援編成(?<separator>\r?\n| )(?<count>[0-9]{1,2})/(?<total>[0-9]{1,2})\z");
+    private static readonly Regex ScoreMultiplier = new(@"\Aスコア倍率×(?<value>[0-9]{1,3}\.[0-9])\z");
+    private static readonly Regex RecommendedPower = new(@"\A<color=#a29284>推奨戦闘力</color> (?<value>[0-9]{1,3}(?:,[0-9]{3}){0,3})\z");
+    private static readonly Regex ReceiptDeadline = new(@"\A受け取り期間 (?<date>[0-9]{4}/[0-9]{2}/[0-9]{2} [0-9]{2}:[0-9]{2}) まで\z");
+    private static readonly Regex SeasonNotice = new(@"\A<color=#F64873>(?:シーズン|시즌) ?(?<number>[0-9]{1,3})</color>を開始しました！(?<newline>\r?\n)フロアの最奥へ挑戦しよう\z");
+    private static readonly Regex SeasonSchedule = new(@"\A開催期間：(?<dates>[0-9]{2}/[0-9]{2} [0-9]{2}:[0-9]{2} ~ [0-9]{2}/[0-9]{2} [0-9]{2}:[0-9]{2})\z");
+
+    // Only the ADF score-feed caller may use this. Both fields are supplied by
+    // the game; never dictionary-translate the player-owned name.
+    internal static bool TryTranslateRaidScoreLine(string original, out string translated)
+    {
+        translated = null;
+        if (string.IsNullOrEmpty(original) || !original.EndsWith(" で", StringComparison.Ordinal)) return false;
+        int separator = original.LastIndexOf(" が ", StringComparison.Ordinal);
+        if (separator <= 0 || separator + 3 >= original.Length - 2) return false;
+        string name = original.Substring(0, separator);
+        string visibleName = Regex.Replace(name, @"<[^<>]*>", "").TrimEnd();
+        string particle = "이(가)";
+        if (visibleName.Length > 0)
+        {
+            char last = visibleName[^1];
+            if (last >= '\uac00' && last <= '\ud7a3')
+                particle = (last - '\uac00') % 28 == 0 ? "가" : "이";
+        }
+        translated = name + particle + " " + original.Substring(separator + 3, original.Length - separator - 5) + "에서";
+        return true;
+    }
+
     // CommandView.ConvertToUnusableText joins a reviewed heading, Int32 values
     // and Environment.NewLine. Match only its three complete numeric shapes;
     // preserve the suffix verbatim instead of translating arbitrary text lines.
@@ -85,6 +114,47 @@ internal static class UiTextLookup
         if (string.IsNullOrEmpty(original)) return false;
         if (dictionary.TryGetValue(original, out translated)) return true;
         if (original.Length > 200 || depth >= 8) return false;
+
+        Match support = SupportCount.Match(original);
+        if (support.Success && int.Parse(support.Groups["count"].Value) <= int.Parse(support.Groups["total"].Value)
+            && dictionary.TryGetValue("応援編成", out string supportLabel))
+        {
+            translated = supportLabel + support.Groups["separator"].Value + support.Groups["count"].Value + "/" + support.Groups["total"].Value;
+            return true;
+        }
+        Match multiplier = ScoreMultiplier.Match(original);
+        if (multiplier.Success && dictionary.TryGetValue("スコア倍率×{0:0.0}", out string multiplierFormat))
+        {
+            translated = multiplierFormat.Replace("{0:0.0}", multiplier.Groups["value"].Value);
+            return true;
+        }
+        Match power = RecommendedPower.Match(original);
+        if (power.Success && dictionary.TryGetValue("推奨戦闘力", out string powerLabel))
+        {
+            translated = "<color=#a29284>" + powerLabel + "</color> " + power.Groups["value"].Value;
+            return true;
+        }
+        Match deadline = ReceiptDeadline.Match(original);
+        if (deadline.Success && DateTime.TryParseExact(deadline.Groups["date"].Value, "yyyy/MM/dd HH:mm",
+            System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out _)
+            && dictionary.TryGetValue("受け取り期間 2023/12/31 23:59 まで", out string deadlineExample))
+        {
+            translated = deadlineExample.Replace("2023/12/31 23:59", deadline.Groups["date"].Value);
+            return true;
+        }
+        Match season = SeasonNotice.Match(original);
+        if (season.Success && dictionary.TryGetValue("<color=#F64873>シーズンNN</color>を開始しました！\nフロアの最奥へ挑戦しよう", out string seasonExample))
+        {
+            translated = seasonExample.Replace("시즌 NN", "시즌 " + season.Groups["number"].Value)
+                .Replace("\r\n", "\n").Replace("\n", season.Groups["newline"].Value);
+            return true;
+        }
+        Match schedule = SeasonSchedule.Match(original);
+        if (schedule.Success && dictionary.TryGetValue("開催期間", out string periodLabel))
+        {
+            translated = periodLabel + ": " + schedule.Groups["dates"].Value;
+            return true;
+        }
 
         var text = original.AsSpan();
         var core = text.Trim();

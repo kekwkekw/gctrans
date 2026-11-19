@@ -4,6 +4,7 @@ import hashlib
 import json
 from collections import defaultdict
 from pathlib import Path
+from source_text_policy import preserve_english_original
 
 
 def read(path):
@@ -32,7 +33,7 @@ def sync(package, raw_path):
     if not isinstance(rows, list):
         raise ValueError("Expected mNovels source rows")
     proposals = defaultdict(lambda: defaultdict(list))
-    holds, matched, aliases = [], set(), []
+    holds, matched, aliases, preserved = [], set(), [], []
     novel_hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
                     for p in sorted((package / "novels").glob("*.json"))}
     for row in rows:
@@ -52,6 +53,9 @@ def sync(package, raw_path):
         if isinstance(ml, list) and ml:
             keys.add(ml[0])  # local translates the JP slot, not every locale slot.
         for jp in sorted(keys - {""}):
+            if preserve_english_original(jp):
+                preserved.append({'id':novel_id,'jp':jp,'reason':'PRESERVE_ENGLISH_ORIGINAL'})
+                continue
             ko = novel.get(jp)
             if ko is None:
                 # Master uses ASCII episode digits where Novel uses full-width digits.
@@ -91,7 +95,8 @@ def sync(package, raw_path):
             "source_rows": len(rows), "novels_preserved": len(novel_hashes),
             "matched_novel_ids": len(matched), "synced_unique_jp": len(synced),
             "synced_field_keys": len(synced) * 2, "changed_field_keys": len(changes),
-            "changes": changes, "holds": holds, "synced": synced, "width_aliases": aliases}
+            "changes": changes, "holds": holds, "synced": synced, "width_aliases": aliases,
+            "preserved_originals": preserved}
 
 
 if __name__ == "__main__":

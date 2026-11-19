@@ -2001,11 +2001,11 @@
       "role": "static_caption"
     },
     {
-      "disposition": "translate",
+      "disposition": "keep_source",
       "id": "ui.core.UI4-S001.591601e94010bdff",
       "jp": "VOICE",
       "kind": "literal",
-      "ko": "음성",
+      "ko": "VOICE",
       "role": "static_caption"
     },
     {
@@ -2129,11 +2129,11 @@
       "role": "static_caption"
     },
     {
-      "disposition": "translate",
+      "disposition": "keep_source",
       "id": "ui.core.UI4-S024.c82f449b9360b18a",
       "jp": "RANK",
       "kind": "literal",
-      "ko": "랭크",
+      "ko": "RANK",
       "role": "static_caption"
     },
     {
@@ -2185,11 +2185,11 @@
       "role": "static_caption"
     },
     {
-      "disposition": "translate",
+      "disposition": "keep_source",
       "id": "ui.core.UI4-S032.eb5faa1a6cb253eb",
       "jp": "OK",
       "kind": "literal",
-      "ko": "확인",
+      "ko": "OK",
       "role": "static_caption"
     },
     {
@@ -2513,11 +2513,11 @@
       "role": "static_caption"
     },
     {
-      "disposition": "translate",
+      "disposition": "keep_source",
       "id": "ui.core.UI4-S077.9575c8d002763baf",
       "jp": "OK",
       "kind": "literal",
-      "ko": "확인",
+      "ko": "OK",
       "role": "static_caption"
     },
     {
