@@ -24,6 +24,12 @@ python scripts/crawl_only.py --lane UI --acquire --output work/translation-updat
 
 ## 2. 후보·검수·적용
 
+### 영문 원문 유지
+
+원문 전체가 영문 표기이면 대소문자·공백·문장부호·변수까지 원문 그대로 유지한다. 숫자·서식·rich-text 태그가 동반된 영어와 영문 표기 고유명사도 포함하며, 일본어 혼합 문장은 기존 번역 대상이다. `Normal → NORMAL` 같은 영문 정규화도 치환 대상에서 제외한다. 이 기준은 `tools/source_text_policy.py`를 plan/apply/UI export/Novel 제목의 Master 동기화/package verify에서 공유한다.
+
+plan은 해당 원문·근거를 `preserved_originals`로 남기고 apply는 오래된 검수본의 영어 치환도 거부한다. exporter는 과거 Master·resources·reviewed 및 생성된 영어 치환을 제외한다. Master는 원문과 같은 값을 저장해 기존 DLL의 치환 목록에서 제외하며, package verify/pack은 영어 치환 재유입을 검사한다. UI resources의 원문 유지 표시는 기존 `keep_source`를 사용한다. 이는 raw 삭제·의미검수 보류·새 runtime 언어 판별기가 아니다. [96개 적용 및 재유입 방지 근거](UI_ENGLISH_AUDIT_20261119.md)를 따른다.
+
 ```powershell
 python tools/update/translation_update.py plan --baseline <master-baseline.json> --baseline-ref <upstream-commit> --scan work/translation-update/master-scan.json --scan work/translation-update/ui-scan.json --probe-runtime --output work/translation-update/batch.json
 python tools/update/translation_update.py review-template --batch work/translation-update/batch.json --output work/translation-update/review.json

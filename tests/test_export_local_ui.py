@@ -7,9 +7,47 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 from export_local_ui import export
+from source_text_policy import preserve_english_original
 
 
 class ExactUiExportTests(unittest.TestCase):
+    def test_all_96_user_decisions_remain_original_after_repository_export(self):
+        receipt=json.loads((ROOT/'docs/english-original-preservation-20261119.json').read_bytes())
+        master=json.loads((ROOT/'translations/ko/master.json').read_bytes())
+        actual=json.loads(export(ROOT/'translations/ko')[0])
+        self.assertEqual(len(receipt['records']),96)
+        self.assertEqual(sum(len(r['master']) for r in receipt['records']),101)
+        for row in receipt['records']:
+            for target in row['master']:
+                self.assertEqual(master[target['table']][target['field']][row['original']],row['original'])
+            self.assertNotIn(row['original'],actual)
+
+    def test_complete_english_original_policy_keeps_mixed_japanese_translatable(self):
+        for source in ['Normal', 'Hard', 'VeryHard', '2nd', 'RANK{0}', 'BATTLE3 HARD',
+                       'Appassionata', '<color=red>Normal</color>', 'Ｎｏｒｍａｌ']:
+            self.assertTrue(preserve_english_original(source), source)
+        for source in ['ランク', 'ヴォルカン地区 Hard', 'メインクエスト(NORMAL)',
+                       'APを{0}回復しました。', '{0}', '123', '<color=red>{0}</color>']:
+            self.assertFalse(preserve_english_original(source), source)
+
+    def test_old_english_pairs_cannot_return_through_master_resources_or_reviewed(self):
+        rows=[self.row('rank','RANK','랭크'), self.row('ok','OK','확인'),
+              self.row('japanese','ランク','랭크')]
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            self.package(root,rows,{'VOICE':'음성','<color=red>Normal</color>':'<color=red>보통</color>'})
+            (root/'master.json').write_text(json.dumps({'mTextConfig':{'ml_value[]':{
+                'Normal':'NORMAL','OK':'승인','RANK{0}':'랭크 {0}',
+                'メインクエスト(NORMAL)':'메인 퀘스트(NORMAL)'}}}),encoding='utf-8')
+            first,report=export(root)
+            actual=json.loads(first)
+            for source in ['Normal','OK','RANK{0}','RANK','VOICE','<color=red>Normal</color>']:
+                self.assertNotIn(source,actual)
+            self.assertEqual(actual['ランク'],'랭크')
+            self.assertEqual(actual['メインクエスト(NORMAL)'],'메인 퀘스트(NORMAL)')
+            self.assertIn('Normal',report['preserved_english_originals'])
+            self.assertEqual(export(root)[0],first)
+
     def test_ap_exact_domains_reuse_current_wording_and_stop_at_boundaries(self):
         actual = json.loads(export(ROOT / 'translations/ko')[0])
         expected = {

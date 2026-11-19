@@ -4,10 +4,11 @@ import tempfile
 import unittest
 from unittest.mock import patch
 from translation_update_fixture import fixture, save, sha
-from update.translation_update import make_plan, apply_review, review_template, validate_translation, GUARDED
+from update.translation_update import make_plan, apply_review, review_template, validate_translation, GUARDED, row_id
 from local_release import verify_repo
 from build_manifests import build
 from legacy_semantic import compute, root_hash
+from sync_novel_titles import sync
 
 
 class ReviewPipelineTests(unittest.TestCase):
@@ -19,6 +20,51 @@ class ReviewPipelineTests(unittest.TestCase):
         d=review_template(batch);d['rows'][0].update(action='translate',ko='추가',reviewer='test',evidence='JP meaning and source field')
         d['knowledge_review']='Synthetic fixture: no new candidates.'
         return d
+
+    def test_english_master_and_ui_sources_are_preserved_with_evidence_in_plan(self):
+        baseline=self.root/'baseline.json'
+        data=json.loads(baseline.read_bytes())
+        data.setdefault('mTextConfig',{}).setdefault('ml_value[]',{}).update({'Normal':'보통','BATTLE3 HARD':'전투 3 어려움'})
+        save(baseline,data)
+        observations=self.root/'observations.json'
+        save(observations,{'schema':'gc-native-ui-observations-v1','rows':[
+            {'jp':'RANK{0}','evidence':'visible English label'},
+            {'jp':'メインクエスト(NORMAL)','evidence':'mixed Japanese caption'}]})
+        batch=make_plan(self.p,baseline,'pinned',observations=[observations])
+        self.assertTrue({'Normal','BATTLE3 HARD','RANK{0}'} <= {r['jp'] for r in batch['preserved_originals']})
+        self.assertIn('メインクエスト(NORMAL)',{r['jp'] for r in batch['rows']})
+        self.assertTrue(all(r['evidence'] for r in batch['preserved_originals']))
+
+    def test_old_review_cannot_apply_english_translation_or_case_normalization(self):
+        for kind,source,target in [('master','Normal','NORMAL'),('ui','VOICE','음성')]:
+            batch=self.plan()
+            row={'kind':kind,'jp':source}
+            if kind=='master':row.update(table='mTextConfig',field='ml_value[]')
+            row['id']=row_id(row);batch['rows']=[row]
+            # Exercise the old-batch path; the language check still runs in apply.
+            batch.pop('context',None)
+            decision=review_template(batch)
+            decision['rows'][0].update(action='translate',ko=target,reviewer='old review',evidence='historical approval')
+            before={p:(self.p/p).read_bytes() for p in GUARDED}
+            with self.assertRaisesRegex(ValueError,'ENGLISH_ORIGINAL_MUST_BE_PRESERVED'):
+                apply_review(self.p,batch,decision)
+            self.assertEqual(before,{p:(self.p/p).read_bytes() for p in GUARDED})
+
+    def test_title_sync_preserves_english_master_title_and_novel_bytes(self):
+        save(self.p/'novels/1.json',{'Trick and Trick':'장난에는 장난으로','題名':'제목'})
+        master=json.loads((self.p/'master.json').read_bytes())
+        master['mNovels']={'title':{'Trick and Trick':'Trick and Trick'},'ml_title[]':{'Trick and Trick':'Trick and Trick'}}
+        save(self.p/'master.json',master)
+        source=self.root/'novel-metadata.json'
+        save(source,[{'novel_script_id':'novel_1','title':'Trick and Trick'},
+                     {'novel_script_id':'novel_1','title':'題名'}])
+        before=sha(self.p/'novels/1.json')
+        result=sync(self.p,source)
+        actual=json.loads((self.p/'master.json').read_bytes())['mNovels']
+        self.assertEqual(actual['title']['Trick and Trick'],'Trick and Trick')
+        self.assertEqual(actual['title']['題名'],'제목')
+        self.assertEqual(sha(self.p/'novels/1.json'),before)
+        self.assertEqual(result['preserved_originals'][0]['jp'],'Trick and Trick')
 
     def test_apply_actual_export_and_manifest_preserves_novel_names(self):
         protected={p:sha(self.p/p) for p in ('names.json','novels/1.json')}

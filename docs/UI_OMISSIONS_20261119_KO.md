@@ -56,7 +56,7 @@
 
 [영어 표기 조사 전체 목록](UI_ENGLISH_AUDIT_20261119.md)에 UI 23쌍과 Master 94쌍을 기록했다. 이는 ASCII 원문에 영문자가 있고 한국어 번역이 들어간 정본의 고유 쌍을 조사한 수이며, 전체 화면에서 관찰한 개수나 번역 오류 수가 아니다. 일본어·영어 혼합 문장, 이미지 로고, 아직 수집되지 않은 새 콘텐츠는 이 수에 포함하지 않는다.
 
-추가로 선택할 만한 원문 유지 후보는 `Very Hard`, `AUTO/MAX/NEW/ON/OFF/RANK`, 스테이지 이름의 `BATTLE…/CHALLENGE…/EXTRA…`다. 반면 색상·확인 버튼·능력치·스킬/의상 이름 번역은 일반적인 현지화로 볼 수 있어 일괄 오류 판정하지 않았다. 이번에는 요청한 Normal/Hard 외의 영어 표기를 임의로 되돌리지 않았다. ADF의 `VeryHard`와 Master의 `Very Hard`는 서로 다른 원문 키이며, 전자는 현재 화면에서 이미 영어로 표시된다.
+이후 사용자가 영어 원문 전체의 무치환 기준을 확정했다. Normal/Hard 대문자 정규화를 철회하고 고유 원문 96개(Master 101곳, UI 26개)를 원문 유지로 적용했다. 상세 수량과 기존 규칙·재유입 방지는 [현재 영어 정책](UI_ENGLISH_AUDIT_20261119.md)을 따른다. ADF의 `VeryHard`와 Master의 `Very Hard`도 각각 원문 그대로 유지한다.
 
 ## 검증과 설치 상태
 
@@ -76,3 +76,9 @@
 조사 복원 10개 이름 사례(한글 받침 유무·일본어·영문·내부 구분자·rich text·이모지), 기존 UI lookup 회귀 및 Release 빌드를 통과했다. 수정된 점수 문장과 이미지 4종은 이번 추가 수정 후 실제 게임 화면에서 다시 확인하기 전 상태이며, 최초 실기 결과를 최신 표시 검증으로 확대하지 않는다. 이미지 179종 수와 Knowledge·Names·Novel·Master/UI 번역값은 직전 PR 수정본 그대로다.
 
 추가 수정 DLL SHA-256: `37d231370ae9de56d696837255dd500079b2e25145c17b0de3fa340198b2fe24`.
+
+## 영문 원문 유지 최종 반영
+
+영문 표기의 현재 결정은 위 초기 NORMAL/HARD 변경보다 우선한다. 원문 전체가 영문이면 그대로 유지하며 새 대문자 표기로 통일하지 않는다. Master 영어 원문 94종의 101곳을 source-equal로 바꾸고 UI 영어 치환 26개를 제외했다. 최종 UI는 14,052쌍이며 Master 키 수 34,388개와 Novel 1,939파일은 유지한다. 이 영어 정책 수정의 DLL SHA-256은 앞서 조사 복원 DLL과 같은 `37d231370ae9de56d696837255dd500079b2e25145c17b0de3fa340198b2fe24`다.
+
+운영 기록의 영문 유지 결정과 UI 후보 제외는 이미 있었지만 Master·export의 공통 정책은 없었다. 공통 authoring 정책을 plan/apply/export/제목 동기화/package verify에 적용했다. 원문·이전 번역·위치와 결정은 [96개 적용 영수증](english-original-preservation-20261119.json), 재유입 방지와 전체 목록은 [영문 정책 보고서](UI_ENGLISH_AUDIT_20261119.md)에 기록한다. Knowledge·Names·Novel 본문과 이미지 bytes는 보존했다. main 병합·공개 릴리스는 별도 승인 대기다.

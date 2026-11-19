@@ -59,7 +59,6 @@ var cases=new Dictionary<string,string> {
  ["開催期間：11/01 04:00 ~ 12/01 03:59"]="개최 기간: 11/01 04:00 ~ 12/01 03:59",
  ["<color=#F64873>시즌 28</color>を開始しました！\nフロアの最奥へ挑戦しよう"]="<color=#F64873>시즌 28</color>이 시작되었습니다!\n층의 가장 깊은 곳에 도전해 보세요",
  ["<color=#F64873>シーズン28</color>を開始しました！\nフロアの最奥へ挑戦しよう"]="<color=#F64873>시즌 28</color>이 시작되었습니다!\n층의 가장 깊은 곳에 도전해 보세요",
- ["Normal"]="NORMAL", ["Hard"]="HARD",
 };
 foreach(var c in cases)if(!UiTextLookup.TryTranslate(ui,c.Key,out var ko)||ko!=c.Value)throw new Exception("Lookup mismatch: "+c.Key+" -> "+ko);
 var negative=new[]{"更新まで12:01","開封期限：2026/11/08 12:59 まで","文章2026/11/01 03:59まで","シーズン1234","現在：1周目フロア4の話","シーズン27.5","あと7日以内",
@@ -72,7 +71,8 @@ foreach(var jp in negative)
 foreach (var jp in new[]{"応援編成\n11/10", "応援編成\n1/10の話", "スコア倍率×7.05", "スコア倍率×<b>7.0</b>",
     "<color=#a29284>推奨戦闘力</color> 1,20,300", "受け取り期間 2026/02/30 12:59 まで",
     "受け取り期間 2026/11/26 24:59 まで", "受け取り期間 2026/11/26 12:59 までの話",
-    "プレイヤー が アテネス近郊 で"})
+    "プレイヤー が アテネス近郊 で", "Normal", "Hard", "Very Hard", "VeryHard", "Nightmare",
+    "RANK", "RANK7", "2nd", "3rd", "BATTLE3 HARD", "<color=red>Normal</color>"})
     if (UiTextLookup.TryTranslate(ui,jp,out _)) throw new Exception("Unexpected ADF/date/prose translation: "+jp);
 foreach (var (name,particle) in new[]{("葛萌","이(가)"), ("生鶏伯伯","이(가)"), ("が","이(가)"),
     ("A が B","이(가)"), ("<color=red>Team</color>","이(가)"), ("관장","이"), ("화가","가"),

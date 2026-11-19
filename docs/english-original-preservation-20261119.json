@@ -1,0 +1,1420 @@
+{
+  "schema": "gc-english-original-preservation-v1",
+  "decision": "USER_APPROVED_KEEP_ORIGINAL",
+  "previous_commit": "402196266d3a1b817d733c6f9701ffb5190f1393",
+  "unique_originals": 96,
+  "master_unique_originals": 94,
+  "master_fields_set_source_equal": 101,
+  "ui_pairs_removed": 26,
+  "ui_before": 14078,
+  "ui_after": 14052,
+  "master_keys": 34388,
+  "ui_authoring_keep_source": [
+    {
+      "id": "ui.core.UI4-S001.591601e94010bdff",
+      "jp": "VOICE",
+      "before_ko": "음성",
+      "before_disposition": "translate"
+    },
+    {
+      "id": "ui.core.UI4-S024.c82f449b9360b18a",
+      "jp": "RANK",
+      "before_ko": "랭크",
+      "before_disposition": "translate"
+    },
+    {
+      "id": "ui.core.UI4-S032.eb5faa1a6cb253eb",
+      "jp": "OK",
+      "before_ko": "확인",
+      "before_disposition": "translate"
+    },
+    {
+      "id": "ui.core.UI4-S077.9575c8d002763baf",
+      "jp": "OK",
+      "before_ko": "확인",
+      "before_disposition": "translate"
+    }
+  ],
+  "bindings_disabled": [
+    "binding.core.UI4-S001.591601e94010bdff"
+  ],
+  "reviewed_pairs_removed": {
+    "VOICE": "음성"
+  },
+  "dll_changed": false,
+  "protected_components": "Knowledge, Names, Novel payloads and image bytes unchanged",
+  "records": [
+    {
+      "original": "2nd",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "2위",
+          "after": "2nd"
+        }
+      ],
+      "ui_before": "2위",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "3rd",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "3위",
+          "after": "3rd"
+        }
+      ],
+      "ui_before": "3위",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "ALL",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "전체",
+          "after": "ALL"
+        }
+      ],
+      "ui_before": "전체",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "AUTO",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "자동",
+          "after": "AUTO"
+        }
+      ],
+      "ui_before": "자동",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Appassionata",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mActiveSkills",
+          "field": "ml_name1[]",
+          "before": "열정",
+          "after": "Appassionata"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE1",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 1",
+          "after": "BATTLE1"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE1 EASY",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 1 쉬움",
+          "after": "BATTLE1 EASY"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE10",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 10",
+          "after": "BATTLE10"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE10 HYPER EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 10 하이퍼 익스트림",
+          "after": "BATTLE10 HYPER EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE10 VERY HARD",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 10 매우 어려움",
+          "after": "BATTLE10 VERY HARD"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE11",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 11",
+          "after": "BATTLE11"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE11 ULTRA EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 11 울트라 익스트림",
+          "after": "BATTLE11 ULTRA EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE11 VERY HARD",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 11 매우 어려움",
+          "after": "BATTLE11 VERY HARD"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE12",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 12",
+          "after": "BATTLE12"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE12 EXTREME",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 12 익스트림",
+          "after": "BATTLE12 EXTREME"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE12 ULTRA EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 12 울트라 익스트림",
+          "after": "BATTLE12 ULTRA EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE13",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 13",
+          "after": "BATTLE13"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE13 EXTREME",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 13 익스트림",
+          "after": "BATTLE13 EXTREME"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE14",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 14",
+          "after": "BATTLE14"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE14 EXTREME",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 14 익스트림",
+          "after": "BATTLE14 EXTREME"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE15",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 15",
+          "after": "BATTLE15"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE15 EXTREME",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 15 익스트림",
+          "after": "BATTLE15 EXTREME"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE16 SUPER EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 16 슈퍼 익스트림",
+          "after": "BATTLE16 SUPER EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE17 SUPER EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 17 슈퍼 익스트림",
+          "after": "BATTLE17 SUPER EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE18 HYPER EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 18 하이퍼 익스트림",
+          "after": "BATTLE18 HYPER EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE19 HYPER EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 19 하이퍼 익스트림",
+          "after": "BATTLE19 HYPER EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE2",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 2",
+          "after": "BATTLE2"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE2 NORMAL",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 2 보통",
+          "after": "BATTLE2 NORMAL"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE20 ULTRA EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 20 울트라 익스트림",
+          "after": "BATTLE20 ULTRA EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE21 ULTRA EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 21 울트라 익스트림",
+          "after": "BATTLE21 ULTRA EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE3",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 3",
+          "after": "BATTLE3"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE3 HARD",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 3 어려움",
+          "after": "BATTLE3 HARD"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE3 NORMAL",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 3 보통",
+          "after": "BATTLE3 NORMAL"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE4",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 4",
+          "after": "BATTLE4"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE4 NORMAL",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 4 보통",
+          "after": "BATTLE4 NORMAL"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE4 VERY HARD",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 4 매우 어려움",
+          "after": "BATTLE4 VERY HARD"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE5",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 5",
+          "after": "BATTLE5"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE5 EXTREME",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 5 익스트림",
+          "after": "BATTLE5 EXTREME"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE5 HARD",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 5 어려움",
+          "after": "BATTLE5 HARD"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE6",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 6",
+          "after": "BATTLE6"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE6 EXTREME",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 6 익스트림",
+          "after": "BATTLE6 EXTREME"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE6 HARD",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 6 어려움",
+          "after": "BATTLE6 HARD"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE7",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 7",
+          "after": "BATTLE7"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE7 HARD",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 7 어려움",
+          "after": "BATTLE7 HARD"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE7 SUPER EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 7 슈퍼 익스트림",
+          "after": "BATTLE7 SUPER EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE8",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 8",
+          "after": "BATTLE8"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE8 SUPER EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 8 슈퍼 익스트림",
+          "after": "BATTLE8 SUPER EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE8 VERY HARD",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 8 매우 어려움",
+          "after": "BATTLE8 VERY HARD"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE9",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 9",
+          "after": "BATTLE9"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE9 HYPER EXT",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 9 하이퍼 익스트림",
+          "after": "BATTLE9 HYPER EXT"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BATTLE9 VERY HARD",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "전투 9 매우 어려움",
+          "after": "BATTLE9 VERY HARD"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "BLUE",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "파랑",
+          "after": "BLUE"
+        }
+      ],
+      "ui_before": "파랑",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Boss",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "보스",
+          "after": "Boss"
+        }
+      ],
+      "ui_before": "보스",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "CHALLENGE1",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "도전1",
+          "after": "CHALLENGE1"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "CHALLENGE2",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "도전2",
+          "after": "CHALLENGE2"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "CHALLENGE3",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "도전3",
+          "after": "CHALLENGE3"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "DEX",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "기교",
+          "after": "DEX"
+        }
+      ],
+      "ui_before": "기교",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "EXTRA1",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "엑스트라 1",
+          "after": "EXTRA1"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "EXTRA2",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "엑스트라 2",
+          "after": "EXTRA2"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "EXTRA3",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "엑스트라 3",
+          "after": "EXTRA3"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "EXTRA4",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "엑스트라 4",
+          "after": "EXTRA4"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "EXTRA5",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "엑스트라 5",
+          "after": "EXTRA5"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "EXTRA6",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "엑스트라 6",
+          "after": "EXTRA6"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "EXTRA7",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuestStages",
+          "field": "ml_name[]",
+          "before": "엑스트라 7",
+          "after": "EXTRA7"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "Florist Life",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mLayers",
+          "field": "ml_name[]",
+          "before": "플로리스트 라이프",
+          "after": "Florist Life"
+        },
+        {
+          "table": "slim_mLoadingTips",
+          "field": "ml_title[]",
+          "before": "플로리스트 라이프",
+          "after": "Florist Life"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "GRAY",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "회색",
+          "after": "GRAY"
+        }
+      ],
+      "ui_before": "회색",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "GREEN",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "초록",
+          "after": "GREEN"
+        }
+      ],
+      "ui_before": "초록",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "HEART TRICK",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mLayers",
+          "field": "ml_name[]",
+          "before": "하트 트릭",
+          "after": "HEART TRICK"
+        },
+        {
+          "table": "slim_mLoadingTips",
+          "field": "ml_title[]",
+          "before": "하트 트릭",
+          "after": "HEART TRICK"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "Hard",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "HARD",
+          "after": "Hard"
+        }
+      ],
+      "ui_before": "HARD",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Let's Make Art!",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mHomeLayouts",
+          "field": "name",
+          "before": "예술을 만들자!",
+          "after": "Let's Make Art!"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "Love in letter",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mActiveSkills",
+          "field": "ml_name1[]",
+          "before": "편지에 담은 사랑",
+          "after": "Love in letter"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "MAX",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "최대",
+          "after": "MAX"
+        }
+      ],
+      "ui_before": "최대",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Moonlight",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mActiveSkills",
+          "field": "ml_name1[]",
+          "before": "월광",
+          "after": "Moonlight"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "NEW",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "신규",
+          "after": "NEW"
+        }
+      ],
+      "ui_before": "신규",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Normal",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "NORMAL",
+          "after": "Normal"
+        }
+      ],
+      "ui_before": "NORMAL",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "OFF",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "끄기",
+          "after": "OFF"
+        }
+      ],
+      "ui_before": "끄기",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "OK",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "확인",
+          "after": "OK"
+        }
+      ],
+      "ui_before": "확인",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "ON",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "켜기",
+          "after": "ON"
+        }
+      ],
+      "ui_before": "켜기",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "PURPLE",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "보라",
+          "after": "PURPLE"
+        }
+      ],
+      "ui_before": "보라",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Parts",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "파츠",
+          "after": "Parts"
+        }
+      ],
+      "ui_before": "파츠",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Pathetique",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mActiveSkills",
+          "field": "ml_name1[]",
+          "before": "비창",
+          "after": "Pathetique"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "Quest",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "퀘스트",
+          "after": "Quest"
+        }
+      ],
+      "ui_before": "퀘스트",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "RANK",
+      "decision": "keep_source",
+      "master": [],
+      "ui_before": "랭크",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "RANK{0}",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "랭크 {0}",
+          "after": "RANK{0}"
+        }
+      ],
+      "ui_before": "랭크 {0}",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "RED",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "빨강",
+          "after": "RED"
+        }
+      ],
+      "ui_before": "빨강",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Ride the Wave",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mLayers",
+          "field": "ml_name[]",
+          "before": "파도를 타고",
+          "after": "Ride the Wave"
+        },
+        {
+          "table": "slim_mLoadingTips",
+          "field": "ml_title[]",
+          "before": "파도를 타고",
+          "after": "Ride the Wave"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "Stage",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "스테이지",
+          "after": "Stage"
+        }
+      ],
+      "ui_before": "스테이지",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Summer Night Sparkle",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mQuests",
+          "field": "ml_name[]",
+          "before": "서머 나이트 스파클",
+          "after": "Summer Night Sparkle"
+        },
+        {
+          "table": "mEvents",
+          "field": "ml_title[]",
+          "before": "서머 나이트 스파클",
+          "after": "Summer Night Sparkle"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "Symphony No.5",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mActiveSkills",
+          "field": "ml_name1[]",
+          "before": "교향곡 5번",
+          "after": "Symphony No.5"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "Symphony No.5:Ec",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mActiveSkills",
+          "field": "ml_name1[]",
+          "before": "교향곡 5번:Ec",
+          "after": "Symphony No.5:Ec"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "Trick and Trick",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mNovels",
+          "field": "ml_title[]",
+          "before": "장난에는 장난으로",
+          "after": "Trick and Trick"
+        },
+        {
+          "table": "mNovels",
+          "field": "title",
+          "before": "장난에는 장난으로",
+          "after": "Trick and Trick"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "Trick or Arrest",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mLayers",
+          "field": "ml_name[]",
+          "before": "트릭 오어 어레스트",
+          "after": "Trick or Arrest"
+        },
+        {
+          "table": "slim_mLoadingTips",
+          "field": "ml_title[]",
+          "before": "트릭 오어 어레스트",
+          "after": "Trick or Arrest"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "VOICE",
+      "decision": "keep_source",
+      "master": [],
+      "ui_before": "음성",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Very Hard",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "매우 어려움",
+          "after": "Very Hard"
+        }
+      ],
+      "ui_before": "매우 어려움",
+      "ui_after": "not_exported"
+    },
+    {
+      "original": "Wedding Gong",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mLayers",
+          "field": "ml_name[]",
+          "before": "웨딩 징",
+          "after": "Wedding Gong"
+        },
+        {
+          "table": "slim_mLoadingTips",
+          "field": "ml_title[]",
+          "before": "웨딩 징",
+          "after": "Wedding Gong"
+        }
+      ],
+      "ui_before": null,
+      "ui_after": null
+    },
+    {
+      "original": "YELLOW",
+      "decision": "keep_source",
+      "master": [
+        {
+          "table": "mTextConfig",
+          "field": "ml_value[]",
+          "before": "노랑",
+          "after": "YELLOW"
+        }
+      ],
+      "ui_before": "노랑",
+      "ui_after": "not_exported"
+    }
+  ]
+}

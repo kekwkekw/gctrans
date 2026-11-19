@@ -5,6 +5,7 @@ import json
 import re
 from collections import defaultdict
 from pathlib import Path
+from source_text_policy import preserve_english_original
 
 # These fields supply UI labels. This is an authoring-time export, not a runtime
 # Master lookup/reservation and not a scan of arbitrary Master descriptions.
@@ -35,9 +36,13 @@ def export(root):
     live = {b["resource_id"] for b in bindings if b.get("enabled")}
     groups = defaultdict(list)
     master_pairs = 0
+    preserved_english = set()
     master = read(root / 'master.json')
     for table, field in MASTER_UI_FIELDS:
         for jp, ko in master.get(table, {}).get(field, {}).items():
+            if preserve_english_original(jp):
+                preserved_english.add(jp)
+                continue
             if isinstance(ko, str) and ko.strip() and jp != ko:
                 groups[jp].append({'id': table + '.' + field, 'jp': jp, 'ko': ko,
                                    'disposition': 'translate', 'source': 'master_ui'})
@@ -47,6 +52,9 @@ def export(root):
             groups[r["jp"]].append(r)
     result, resolved = {}, []
     for jp, rows in sorted(groups.items()):
+        if preserve_english_original(jp):
+            preserved_english.add(jp)
+            continue
         # Runtime binding activation/kind/role were legacy routing decisions.
         # A reviewed JP/KO text pair is useful without any such runtime binding.
         eligible = [r for r in rows if r.get("disposition") == "translate"
@@ -61,6 +69,9 @@ def export(root):
         else:
             result[jp] = eligible[0]["ko"]
     for jp, ko in sorted(reviewed.items()):
+        if preserve_english_original(jp):
+            preserved_english.add(jp)
+            continue
         if not isinstance(jp, str) or not jp or not isinstance(ko, str) or not ko.strip() or jp == ko:
             raise ValueError("Invalid reviewed UI pair: " + repr(jp))
         if jp in result and result[jp] != ko:
@@ -218,9 +229,15 @@ def export(root):
         for amount in amounts:
             add_ap(amount_jp.replace('{0:#,0}', str(amount)), amount_ko.replace('{0:#,0}', str(amount)))
         result.update(ap_pairs)
+    # Also cover aliases and generated families added after the source merge.
+    for jp in list(result):
+        if preserve_english_original(jp):
+            preserved_english.add(jp)
+            del result[jp]
     payload = (json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2) + "\n").encode("utf-8")
     return payload, {"exact_pairs": len(result), "authoring_bindings_preserved": len(bindings),
-                     "held_authoring_jp": sorted({r['jp'] for r in resources if r.get('disposition') not in ('translate','keep_jp') and r['jp'] not in result}), "review_resolved_authoring_jp": resolved,
+                     "held_authoring_jp": sorted({r['jp'] for r in resources if r.get('disposition') not in ('translate','keep_jp') and r['jp'] not in result and not preserve_english_original(r['jp'])}), "review_resolved_authoring_jp": resolved,
+                     "preserved_english_originals": sorted(preserved_english),
                      "bounded_workshop_exacts": 3, "runtime_bindings": 0,
                      "bounded_detail_exacts": len(detail_pairs),
                      "bounded_enhancement_exacts": len(enhancement_pairs),

@@ -17,6 +17,7 @@ from image_data import validate_images
 from build_manifests import previous_inventory
 from update.process_lock import ProcessFileLock
 from update.source_scan import atomic_json
+from source_text_policy import validate_master_originals
 
 PLUGIN='BepInEx/plugins/GCMod/'
 CFG='BepInEx/config/GCMod.cfg'
@@ -34,7 +35,9 @@ def required_cfg(cfg):
 
 
 def verify_repo(repo):
-    package=repo/'translations/ko';payload,info=export(package)
+    package=repo/'translations/ko'
+    validate_master_originals(read(package/'master.json'))
+    payload,info=export(package)
     if payload!=(package/'ui.json').read_bytes():raise ValueError('UI_EXPORT_STALE')
     previous_inventory(package)
     if (package/'images.json').exists():
