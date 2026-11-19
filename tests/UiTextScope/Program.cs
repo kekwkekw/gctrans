@@ -12,7 +12,8 @@ foreach (var owner in new Component[] {new TMPro.TMP_InputField(),new UnityEngin
 {
     var nested = new Component { Parent=new Component { Parent=owner } };
     foreach (var text in new[]{"月","日","雷","前","スキップ","전(前)관장","寝正月",
-        "必要熱情\r\n115\r\n(-14)","必要HP\n30%\n(-10%)","残りCT\n2"})
+        "必要熱情\r\n115\r\n(-14)","必要HP\n30%\n(-10%)","残りCT\n2",
+        "応援編成\n0/10","スコア倍率×7.0","受け取り期間 2026/11/26 12:59 まで"})
         if(Render(nested,text)!=text)throw new Exception("Protected display altered: "+text);
 }
 if(Render(new Component {Parent=new Component()},"閉じる")!="닫기")throw new Exception("Menu button blocked");

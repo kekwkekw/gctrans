@@ -67,7 +67,11 @@ public static class UiPatch
 				return true;
 			}
 		}
-		return TryTranslate(original, out translated);
+        if (TryTranslate(original, out translated)) return true;
+        if (text.transform.parent != null && text.transform.parent.name == "TextLine1"
+            && text.GetComponentInParent<Gc.EventRaid.EventRaidLiveMessageLog>(true) != null)
+            return UiTextLookup.TryTranslateRaidScoreLine(original, out translated);
+        return false;
 	}
 
 	[HarmonyPatch(typeof(TMP_Text), "text", MethodType.Setter)]
