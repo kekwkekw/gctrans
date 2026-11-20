@@ -8,6 +8,8 @@ raw/cache/state/audit/native report, 개인 launcher 기록, cfg backup, font, �
 
 현행 공급은 [TRANSLATION_PIPELINE_KO.md](TRANSLATION_PIPELINE_KO.md)의 `tools/local_release.py`를 사용한다. `translations/ko/release-manifest.json`은 authoring package의 파일·hash 검사 입력이다. DLL은 `source/GCMod.Candidate`에서 빌드하며 ZIP은 허용한 runtime 파일만 포함한다. 런타임은 공식 main의 manifest를 확인해 캐시를 갱신하고 독립 UI 사전을 읽는다. offline 모드도 지원한다.
 
+전체 설치본과 소스·고지 묶음은 `tools/assemble_release.py`로 조립한다. 과거 full에서 로더·런타임·Utility·폰트를 재사용하는 것과 고지 폴더를 통째로 계승하는 것은 별개다. 구성 요소별 현행 목록의 고지만 선택하고 원본 MIT 고지 bytes를 검사하며, 퇴역한 고지 파일이나 귀속 문구가 결과물에 재유입되면 실패한다. source export와 update ZIP의 검사만으로 full·sources-notices 검사를 대신하지 않는다.
+
 설치는 게임 종료 상태에서 backup/journal과 함께 수행하며 다음 게임 시작부터 반영한다. UI live switching, coordinator, pending_restart/LKG runtime은 사용하지 않는다. 이전 공급 도구는 [과거 기록](HISTORY_INDEX_KO.md)에 있다. Novel 등록은 기존 명시 검수 범위에만 적용한다. 공개 source에는 익명화된 검증 요약을 넣을 수 있지만 개인 Native 로그·스크린샷·경로·raw는 제외한다.
 
 `.github/workflows/crawl_only.yml`은 manual/read-only metadata snapshot이다. fresh baseline은 이전 대비 변경 없음과 다르며, 7일 CI artifact를 지속 baseline 정본으로 간주하지 않는다. 평소 증분은 같은 로컬 state/raw root를 유지한다. scan의 metadata 관측은 raw 취득·PC 동등성·의미 검수 승인을 대신하지 않는다.
