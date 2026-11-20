@@ -7,6 +7,36 @@ import zipfile
 import hashlib
 from translation_update_fixture import fixture
 import local_release as release
+import assemble_release as full_release
+
+
+class DistributionNoticeTests(unittest.TestCase):
+    def notices(self,prefix):
+        files={prefix+name:b'dependency notice' for name in full_release.NOTICE_NAMES}
+        files[prefix+'GCMod-upstream-MIT.txt']=(Path(__file__).resolve().parents[1]/'THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE').read_bytes()
+        files['THIRD_PARTY_NOTICES_GCMod.txt']=b'GCMod upstream: Jitsu; separate component notices are retained.'
+        return files
+
+    def test_full_and_source_bundles_keep_only_current_component_notices(self):
+        for prefix in ('GCMod-licenses/','licenses/'):
+            files=self.notices(prefix)
+            contaminated={**files,prefix+'gc-mod-local-MIT.txt':b'obsolete notice'}
+            selected={name:raw for name,raw in contaminated.items() if not name.startswith(prefix) or full_release.approved_notice(name,prefix)}
+            self.assertEqual(files,selected)
+            full_release.verify_notices(selected,prefix)
+
+    def test_full_and_source_bundles_reject_a_retired_notice_added_after_selection(self):
+        for prefix in ('GCMod-licenses/','licenses/'):
+            files=self.notices(prefix);files['gc-mod-local-LICENSE.txt']=b'obsolete notice'
+            with self.assertRaisesRegex(ValueError,'RETIRED_DISTRIBUTION_NOTICE'):
+                full_release.verify_notices(files,prefix)
+
+    def test_full_and_source_bundles_reject_stale_attribution_text(self):
+        for prefix in ('GCMod-licenses/','licenses/'):
+            for text in (b'gc-mod-local copyright',b'Copyright 2026 kristina1Q'):
+                files=self.notices(prefix);files['THIRD_PARTY_NOTICES_GCMod.txt']=text
+                with self.assertRaisesRegex(ValueError,'RETIRED_DISTRIBUTION_ATTRIBUTION'):
+                    full_release.verify_notices(files,prefix)
 
 
 class ReleaseTests(unittest.TestCase):
