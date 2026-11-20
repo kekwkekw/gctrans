@@ -1,0 +1,32 @@
+{
+  "schema": "gc-user-final-image-v1",
+  "date": "2026-11-20",
+  "target": {
+    "kind": "texture",
+    "name": "sfb3000",
+    "width": 1000,
+    "height": 52
+  },
+  "selection": "User supplied and explicitly selected the final PNG for publication and main merge",
+  "source_filename": "월간_패스_3000_최종_RGBA_1000x52.png",
+  "display_copy": "알뜰한 월간 패스 3000 판매중!",
+  "file": "images/37f254599f166ec356c644439bf68b2f9d943e567d4c3751a156a7253baaeadb.png",
+  "sha256": "37f254599f166ec356c644439bf68b2f9d943e567d4c3751a156a7253baaeadb",
+  "bytes": 117926,
+  "replaces_sha256": "aea69c5a810f4cec2472b15c91572fbb07bd94be0bb0a3375eec411ea7dc3b32",
+  "input_processing": "Copied byte-for-byte; no redraw, re-encoding, resizing or recoloring",
+  "format_verification": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "bit_depth": 8,
+    "png_color_type": 6,
+    "interlaced": false,
+    "decode_and_png_integrity": "PASS",
+    "alpha_extrema": [0, 255],
+    "fully_transparent_pixels": 32,
+    "partial_alpha_pixels": 32,
+    "original_alpha_identical": true
+  },
+  "native": "USER_WILL_VERIFY_AFTER_MAIN_MERGE",
+  "runtime_dll": "UNCHANGED"
+}

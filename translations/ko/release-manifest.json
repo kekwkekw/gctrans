@@ -3,7 +3,7 @@
     {
       "kind": "image_catalog",
       "path": "images.json",
-      "sha256": "f1bf7023ffbc1ed357745233494d055db67f96462b5eef19acaba7ddd5b01668",
+      "sha256": "5019ff68973a467c9bb4207383b0c28fd6699ad0ee0909751c8587892011fcc4",
       "size": 54325
     },
     {
@@ -245,6 +245,12 @@
       "path": "images/37ad6e25e2283a5535569afd4d023a33f4f005bf8d35bf725f33f43de943e7fb.png",
       "sha256": "37ad6e25e2283a5535569afd4d023a33f4f005bf8d35bf725f33f43de943e7fb",
       "size": 92708
+    },
+    {
+      "kind": "image_data",
+      "path": "images/37f254599f166ec356c644439bf68b2f9d943e567d4c3751a156a7253baaeadb.png",
+      "sha256": "37f254599f166ec356c644439bf68b2f9d943e567d4c3751a156a7253baaeadb",
+      "size": 117926
     },
     {
       "kind": "image_data",
@@ -776,12 +782,6 @@
     },
     {
       "kind": "image_data",
-      "path": "images/aea69c5a810f4cec2472b15c91572fbb07bd94be0bb0a3375eec411ea7dc3b32.png",
-      "sha256": "aea69c5a810f4cec2472b15c91572fbb07bd94be0bb0a3375eec411ea7dc3b32",
-      "size": 107642
-    },
-    {
-      "kind": "image_data",
       "path": "images/af22a5af2d0d1237c4bb683fa59e9c00a34f1ba0897486f883095827645c32b2.png",
       "sha256": "af22a5af2d0d1237c4bb683fa59e9c00a34f1ba0897486f883095827645c32b2",
       "size": 237847
@@ -1089,13 +1089,13 @@
     {
       "kind": "legacy_index",
       "path": "legacy-components.json",
-      "sha256": "6c468a08d9bc5702f7ad001ce1c497c875a6756892e09b63f1346906f255f5a7",
+      "sha256": "1013e0ca62789a64f87ddb2d354259491d8b5c1b1cd9eef54fd396ed83ffa771",
       "size": 344822
     },
     {
       "kind": "legacy_manifest",
       "path": "manifest.json",
-      "sha256": "af831c0d2cf36763f8d7de1912af8a174898ae0fe4a82700927b8ac29574796e",
+      "sha256": "8e2a0d1d793ada8e31d6938a962d304c68026a1a702f73c6aa50d3bb19e28df6",
       "size": 100672
     },
     {
@@ -12773,12 +12773,12 @@
   "legacy_manifest_builder_input": "current release/index; explicit add/modify/remove; optional initial bootstrap receipt",
   "locale": "ko",
   "profile": "NextgenCandidate",
-  "revision": "ng03-ee6a09e28ff668fbfbc0eb8f",
+  "revision": "ng03-af2b0348548e99d4d23f018b",
   "schema_version": 2,
   "status": "OFFLINE_PARTIAL_NOT_ACCEPTED_REPLACEMENT",
   "ui_manifest": {
     "path": "ui/manifest.json",
-    "sha256": "b6108ebac8e7d2893fee6991035d71e9400925a509b8b3507dba42dd0552d107",
+    "sha256": "254bfeddad08f7cd30f4972e03882ca7d7160f3b9e4dd3c54d5d776d893d290f",
     "size": 44180
   }
 }
