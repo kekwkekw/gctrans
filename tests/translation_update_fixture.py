@@ -4,7 +4,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'tools'))
 from update.master_coverage import save, sha
-from export_local_ui import export
+from export_ui import export
 from build_manifests import build
 from legacy_semantic import compute, root_hash
 

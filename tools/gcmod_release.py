@@ -12,7 +12,7 @@ import sys
 import zipfile
 
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from export_local_ui import export, read
+from export_ui import export, read
 from image_data import validate_images
 from build_manifests import previous_inventory
 from update.process_lock import ProcessFileLock
@@ -90,7 +90,7 @@ def pack(repo, output, font=None, utility=None):
         +'기존 BepInEx IL2CPP 설치가 필요합니다.\n'
         +('로컬 폰트/Utility를 포함한 개인 설치본입니다. 공개 배포용으로 업로드하지 마세요.\n' if font else
           '공개 업데이트에는 게임/interop/Utility/폰트를 포함하지 않습니다. 기존 승인된 Utility.dll 및 한국어 폰트가 필요합니다.\n')
-        +'설치: python tools/local_release.py install --archive <이 ZIP> --game <게임 경로> --backup <새 백업 폴더>\n'
+        +'설치: python tools/gcmod_release.py install --archive <이 ZIP> --game <게임 경로> --backup <새 백업 폴더>\n'
         +'기존 cfg는 그대로 보존하며 cfg가 없을 때만 기본값을 설치합니다. ZIP을 직접 덮어쓸 때도 기존 cfg를 덮어쓰지 마세요.\n'
         +'한국어 기본 프로필로 전환할 때만 --apply-korean-profile을 추가하세요. 번역 활성화·언어·CDN·사용자 경로·비동기 로딩·Master·폰트 설정을 패키지 기본값으로 바꿉니다.\n'
         +'GCMod 전용 단축키는 없습니다. 대화창 불투명도·가독성 보정·프레임 제한은 게임 옵션에서 미리보기 후 설정 저장을 눌러 적용합니다.\n'

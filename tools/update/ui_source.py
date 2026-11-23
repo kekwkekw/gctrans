@@ -37,7 +37,7 @@ class UiPrefabExtractor:
         if not 1 <= max_objects <= 1000000:
             raise ValueError('UI_OBJECT_LIMIT_RANGE')
         self.max_objects = max_objects
-        self.version = f'local-parity-ui-prefab-v2:UnityPy-{UnityPy.__version__}:limit-{max_objects}'
+        self.version = f'ui-prefab-v2:UnityPy-{UnityPy.__version__}:limit-{max_objects}'
 
     def __call__(self, raw, asset):
         import UnityPy

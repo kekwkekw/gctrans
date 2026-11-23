@@ -51,7 +51,7 @@ def sync(package, raw_path):
         keys = {row.get("title", "")}
         ml = row.get("ml_title")
         if isinstance(ml, list) and ml:
-            keys.add(ml[0])  # local translates the JP slot, not every locale slot.
+            keys.add(ml[0])  # MasterData translates the JP slot, not every locale slot.
         for jp in sorted(keys - {""}):
             if preserve_english_original(jp):
                 preserved.append({'id':novel_id,'jp':jp,'reason':'PRESERVE_ENGLISH_ORIGINAL'})

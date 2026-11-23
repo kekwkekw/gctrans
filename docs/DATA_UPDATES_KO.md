@@ -1,7 +1,7 @@
 # 7.1.0 번역 데이터 갱신
 
 상태: **PR #38 대표 Native 동작 및 UI/Novel 갱신 확인, main 병합 완료**.
-설치 파일과 안내는 [7.1.0 릴리스](https://github.com/kekwkekw/gctrans/releases/tag/v7.1.0)에 있다.
+설치 파일과 안내는 [최신 릴리스](https://github.com/kekwkekw/gctrans/releases/latest)에 있다.
 
 기존 7.0.0 전체 설치본은 CDN=offline이며, 파일이 있으면 원격 조회 없이 읽는다.
 GitHub만 수정해 그 DLL에 새로운 기능을 전달할 수 없다. 7.1.0 DLL과 cfg를 한 번
@@ -34,7 +34,7 @@ manifest와 payload의 버전이 다르거나 CDN이 오래된 응답을 주면 
 변경 목록을 manifest builder에 전달한다.
 
 ```powershell
-python tools/export_local_ui.py
+python tools/export_ui.py
 python tools/build_manifests.py translations/ko --modify ui.json
 python tools/verify_translation_update.py --output work/translation-update/check.json
 ```

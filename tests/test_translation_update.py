@@ -5,7 +5,7 @@ import unittest
 from unittest.mock import patch
 from translation_update_fixture import fixture, save, sha
 from update.translation_update import make_plan, apply_review, review_template, validate_translation, GUARDED, row_id
-from local_release import verify_repo
+from gcmod_release import verify_repo
 from build_manifests import build
 from legacy_semantic import compute, root_hash
 from sync_novel_titles import sync
@@ -82,9 +82,9 @@ class ReviewPipelineTests(unittest.TestCase):
         batch = self.plan()
         decisions = self.decision(batch)
         with self.assertRaisesRegex(ValueError, 'REVIEW_BATCH_SCHEMA'):
-            apply_review(self.p, dict(batch, schema='gc-local-parity-review-v1'), decisions)
+            apply_review(self.p, dict(batch, schema='gc-obsolete-review-v0'), decisions)
         with self.assertRaisesRegex(ValueError, 'DECISIONS_SCHEMA'):
-            apply_review(self.p, batch, dict(decisions, schema='gc-local-parity-decisions-v1'))
+            apply_review(self.p, batch, dict(decisions, schema='gc-obsolete-decisions-v0'))
 
     def test_novel_metadata_rebuild_preserves_ui_registration(self):
         build(self.p,modified=['ui.json'])

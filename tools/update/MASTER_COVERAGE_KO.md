@@ -2,7 +2,7 @@
 
 Master 원문은 `scripts/crawl_only.py --lane Master`로 취득한다. `--lane UI`는 지정 prefab/TextAsset을 읽는 별도 경로이며 Master corpus 갱신을 대신하지 않는다.
 
-현재 검수에서는 입력 기준본의 `(table, field, exact JP)`를 비교하고 기존 한국어 전용 키를 보존한다. 2026-10-27 회복 작업에서는 `kristina1Q/gc-mod-local@0cdcd9e84fffa438dfdac63176685a6c47a07318`의 `translations/zh-Hans/master.json`에서 원문 키 32,592개를 사용했다.
+현재 검수에서는 입력 기준본의 `(table, field, exact JP)`를 비교하고 기존 한국어 전용 키를 보존한다. 2026-10-27 초기 회복 작업에서는 고정된 기준 Master 목록에서 원문 키 32,592개를 비교 입력으로 사용했다.
 
 ```powershell
 python scripts/crawl_only.py --lane Master --platform WebGL --acquire --master-coverage-baseline <master-baseline.json> --master-baseline-ref <source-ref> --output <work/scan.json>
@@ -16,7 +16,7 @@ python tools/update/master_coverage.py plan --baseline <master-baseline.json> --
 
 `BASELINE_KEYS_PRESENT`는 입력 기준본의 키가 모두 존재한다는 뜻이다. 전체 의미 검수 완료나 현재 게임 전체 번역 완료를 뜻하지 않는다. 신규 초벌은 `CODEX_DRAFT_NOT_PRO_REVIEWED`로 표시한다.
 
-2026-10-27 회복: 최초 HEAD의 누락 1,026개 중 이전 작업의 12개와 1,014개 추가로 키 누락 0개를 만들었다. 당시 총 32,685키였고, 1,014개 중 72개는 중립 원문 유지였다. 기존 2,248 gap은 A(local 존재) 817개, B(PC source 존재/local 없음) 1,431개로 재분류했다. `STATIC_SOURCE_RESIDUAL`은 번역 불필요 판정으로 사용하지 않는다.
+2026-10-27 회복: 최초 HEAD의 누락 1,026개 중 이전 작업의 12개와 1,014개 추가로 키 누락 0개를 만들었다. 당시 총 32,685키였고, 1,014개 중 72개는 중립 원문 유지였다. 기존 2,248 gap은 A(기준 목록 존재) 817개, B(PC 원문 존재/기준 목록 없음) 1,431개로 재분류했다. `STATIC_SOURCE_RESIDUAL`은 번역 불필요 판정으로 사용하지 않는다.
 
 2026-10-28 후속 검수: B의 남은 1,338개를 다시 판단하여 1,335개를 번역하고 3개를 근거와 함께 HOLD했다. 기존 초벌 1,014개를 JP/Names/현재 용어와 대조하여 66개 값을 수정했다(62개 교정, 4개 원문 문제 HOLD). 앞서 추가한 12개도 확인했다. 당시 Master는 34,020키이며 기준본의 32,592키는 모두 존재했지만, 그중 4개는 추정 번역을 철회하여 JP를 유지한다. 따라서 키 존재와 번역 완료를 동일시하지 않는다. 신규분에는 현재 source의 표시용 필드 및 향후 공개될 레코드가 포함되며, 모든 레코드의 화면 노출을 관측했다고 주장하지 않는다.
 

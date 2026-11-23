@@ -18,11 +18,11 @@ python -m unittest discover -s tests -p test_novel_cli_integration.py
 ## UI export·package
 
 ```powershell
-python tools/export_local_ui.py --check
-python tools/local_release.py verify
+python tools/export_ui.py --check
+python tools/gcmod_release.py verify
 ```
 
-`local_release.py verify`가 현행 source package의 inventory·해시·이미지·UI export를 확인한다.
+`gcmod_release.py verify`가 현행 source package의 inventory·해시·이미지·UI export를 확인한다.
 더 넓은 Master/UI/crawler 및 CPU runtime 회귀가 필요할 때는 CI와 같은 명령을 사용한다.
 .NET 9 SDK와 `httpx==0.27.2`, `UnityPy==1.10.18`이 필요하다.
 

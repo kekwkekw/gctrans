@@ -1,6 +1,5 @@
 {
   "schema": "gc-ui-detail-review-v1",
-  "upstream_ref": "0cdcd9e84fffa438dfdac63176685a6c47a07318",
   "evidence": [
     "User screenshots 2026-10-28",
     "PC Unity prefab display fields",
@@ -13,8 +12,6 @@
       "jp": "総合戦闘力ランキング",
       "ko": "종합 전투력 랭킹",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -22,8 +19,6 @@
       "jp": "毎日04:00に更新",
       "ko": "매일 04:00에 갱신",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -31,8 +26,6 @@
       "jp": "上位100位まで表示",
       "ko": "상위 100위까지 표시",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -40,8 +33,6 @@
       "jp": "無差別級",
       "ko": "전체 등급",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -49,8 +40,6 @@
       "jp": "Rank内級順位",
       "ko": "등급 내 순위",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -58,8 +47,6 @@
       "jp": "リリース順",
       "ko": "출시순",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -67,8 +54,6 @@
       "jp": "はずす",
       "ko": "해제",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -76,8 +61,6 @@
       "jp": "配置中：左",
       "ko": "배치 중: 왼쪽",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -85,8 +68,6 @@
       "jp": "配置中：中央",
       "ko": "배치 중: 중앙",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -94,8 +75,6 @@
       "jp": "配置中：右",
       "ko": "배치 중: 오른쪽",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -103,8 +82,6 @@
       "jp": "Rank級",
       "ko": "랭크 등급",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -112,8 +89,6 @@
       "jp": "Rank級内",
       "ko": "등급 내",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -121,8 +96,6 @@
       "jp": "Rank級内順位",
       "ko": "등급 내 순위",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -130,8 +103,6 @@
       "jp": "Rank級内上位",
       "ko": "등급 내 상위",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -139,8 +110,6 @@
       "jp": "全体上位",
       "ko": "전체 상위",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -148,8 +117,6 @@
       "jp": "上位",
       "ko": "상위",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -157,8 +124,6 @@
       "jp": "Rank100級",
       "ko": "랭크 100등급",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -166,8 +131,6 @@
       "jp": "Rank100級内順位",
       "ko": "랭크 100등급 내 순위",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -175,8 +138,6 @@
       "jp": "Rank100級:Rank91-300",
       "ko": "랭크 100등급: 랭크 91~300",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -184,8 +145,6 @@
       "jp": "佐倉江美",
       "ko": "사쿠라 에미",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -193,8 +152,6 @@
       "jp": "シナリオ",
       "ko": "시나리오",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -202,8 +159,6 @@
       "jp": "11月27日",
       "ko": "11월 27일",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -211,8 +166,6 @@
       "jp": "ユーザー名編集",
       "ko": "사용자명 편집",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -220,8 +173,6 @@
       "jp": "ユーザー名を入力してください",
       "ko": "사용자명을 입력해 주세요",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -229,8 +180,6 @@
       "jp": "ユーザー名は後から変更することができます。",
       "ko": "사용자명은 나중에 변경할 수 있습니다.",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -238,8 +187,6 @@
       "jp": "ユーザー名を入力してください\nユーザー名は後から変更することができます。",
       "ko": "사용자명을 입력해 주세요\n사용자명은 나중에 변경할 수 있습니다.",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -247,8 +194,6 @@
       "jp": "個人情報や公序良俗に反する内容は、記載しないでください。",
       "ko": "개인정보나 미풍양속에 어긋나는 내용은 기재하지 마세요.",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -256,8 +201,6 @@
       "jp": "個人情報や公序良俗に反する内容は記入しないでください",
       "ko": "개인정보나 미풍양속에 어긋나는 내용은 기재하지 마세요",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -265,14 +208,6 @@
       "jp": "メイン",
       "ko": "메인",
       "before": null,
-      "local_ui": null,
-      "local_master": [
-        {
-          "table": "slim_mMissionTypes",
-          "field": "ml_type_name[]",
-          "ko": "主线"
-        }
-      ],
       "ko_master": [
         {
           "table": "slim_mMissionTypes",
@@ -286,8 +221,6 @@
       "jp": "個人情報や公序良俗に反する内容は、記載しないでください\r\n",
       "ko": "개인정보나 미풍양속에 어긋나는 내용은 기재하지 마세요\r\n",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -295,8 +228,6 @@
       "jp": "誕生日設定",
       "ko": "생일 설정",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -304,8 +235,6 @@
       "jp": "一度確定すると後で変更することができません",
       "ko": "한 번 확정하면 나중에 변경할 수 없습니다",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -313,8 +242,6 @@
       "jp": "誕生日を入力してください。\n<size=26>誕生日に特別なボイスを聞くことができます</size>",
       "ko": "생일을 입력해 주세요.\n<size=26>생일에는 특별한 음성을 들을 수 있습니다</size>",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -322,8 +249,6 @@
       "jp": "自己紹介コメント編集",
       "ko": "자기소개 편집",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -331,8 +256,6 @@
       "jp": "コメントを入力してください。",
       "ko": "자기소개를 입력해 주세요.",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -340,8 +263,6 @@
       "jp": "入力禁止文字が含まれています。",
       "ko": "입력할 수 없는 문자가 포함되어 있습니다.",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -349,8 +270,6 @@
       "jp": "/128文字",
       "ko": "/128자",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -358,8 +277,6 @@
       "jp": "スター付き",
       "ko": "별표 있음",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -367,8 +284,6 @@
       "jp": "スター無し",
       "ko": "별표 없음",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -376,8 +291,6 @@
       "jp": "回復系アイテム",
       "ko": "회복 아이템",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -385,8 +298,6 @@
       "jp": "チケット系アイテム",
       "ko": "티켓 아이템",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -394,8 +305,6 @@
       "jp": "アクセサリ強化アイテム",
       "ko": "액세서리 강화 아이템",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -403,8 +312,6 @@
       "jp": "汎用交換アイテム",
       "ko": "범용 교환 아이템",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -412,8 +319,6 @@
       "jp": "メモリーセット一覧",
       "ko": "메모리 세트 목록",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -421,8 +326,6 @@
       "jp": "グループ名を入力してください。",
       "ko": "그룹명을 입력해 주세요.",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -430,8 +333,6 @@
       "jp": "保存確認",
       "ko": "저장 확인",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -439,8 +340,6 @@
       "jp": "適用確認",
       "ko": "적용 확인",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -448,8 +347,6 @@
       "jp": "上書き確認",
       "ko": "덮어쓰기 확인",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -457,8 +354,6 @@
       "jp": "グループ名編集",
       "ko": "그룹명 편집",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -466,8 +361,6 @@
       "jp": "メモリーセット名を入力してください。",
       "ko": "메모리 세트명을 입력해 주세요.",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -475,8 +368,6 @@
       "jp": "メモリーセット名編集",
       "ko": "메모리 세트명 편집",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -484,8 +375,6 @@
       "jp": "メモリーセットを<color=#f64873>編成に適用</color>します",
       "ko": "메모리 세트를 <color=#f64873>편성에 적용</color>합니다",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -493,8 +382,6 @@
       "jp": "メモリーセットを上書きしました",
       "ko": "메모리 세트를 덮어썼습니다",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -502,8 +389,6 @@
       "jp": "メモリーセットを保存しました",
       "ko": "메모리 세트를 저장했습니다",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -511,8 +396,6 @@
       "jp": "元のメモリーセット",
       "ko": "기존 메모리 세트",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -520,8 +403,6 @@
       "jp": "適用するメモリーセット",
       "ko": "적용할 메모리 세트",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -529,8 +410,6 @@
       "jp": "編成の内容を<color=#f64873>メモリーセットに上書き</color>します",
       "ko": "편성 내용을 <color=#f64873>메모리 세트에 덮어씁니다</color>",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -538,8 +417,6 @@
       "jp": "編成の内容を<color=#f64873>メモリーセットに保存</color>します",
       "ko": "편성 내용을 <color=#f64873>메모리 세트에 저장</color>합니다",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -547,8 +424,6 @@
       "jp": "メモリーレアリティ",
       "ko": "메모리 레어도",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -556,8 +431,6 @@
       "jp": "上書きするメモリー",
       "ko": "덮어쓸 메모리",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -565,8 +438,6 @@
       "jp": "保存するメモリー",
       "ko": "저장할 메모리",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -574,8 +445,6 @@
       "jp": "★3メイン効果",
       "ko": "★3 메인 효과",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -583,8 +452,6 @@
       "jp": "★4メイン効果",
       "ko": "★4 메인 효과",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -592,8 +459,6 @@
       "jp": "★5メイン効果",
       "ko": "★5 메인 효과",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -601,8 +466,6 @@
       "jp": "操作中のメモリーの変更を破棄しますか？",
       "ko": "편집 중인 메모리의 변경 사항을 버리시겠습니까?",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -610,8 +473,6 @@
       "jp": "現在設定中のメモリー",
       "ko": "현재 설정된 메모리",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -619,8 +480,6 @@
       "jp": "強化可能なメモリーはありません",
       "ko": "강화할 수 있는 메모리가 없습니다",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -628,8 +487,6 @@
       "jp": "該当メモリーを未獲得です",
       "ko": "해당 메모리를 아직 획득하지 않았습니다",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -637,8 +494,6 @@
       "jp": "該当メモリー獲得で解放",
       "ko": "해당 메모리 획득 시 해제",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -646,8 +501,6 @@
       "jp": "構成要素",
       "ko": "구성 요소",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -655,8 +508,6 @@
       "jp": "スタイル名",
       "ko": "스타일명",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -664,8 +515,6 @@
       "jp": "イマージュ名",
       "ko": "이마쥬명",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -673,8 +522,6 @@
       "jp": "効果",
       "ko": "효과",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -682,8 +529,6 @@
       "jp": "絶技エレメント",
       "ko": "절기 엘리먼트",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -691,8 +536,6 @@
       "jp": "効果射程",
       "ko": "효과 사거리",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -700,8 +543,6 @@
       "jp": "近距離",
       "ko": "근거리",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -709,8 +550,6 @@
       "jp": "遠距離",
       "ko": "원거리",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -718,8 +557,6 @@
       "jp": "単体",
       "ko": "단일",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -727,8 +564,6 @@
       "jp": "複数",
       "ko": "다수",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -736,8 +571,6 @@
       "jp": "設定が変更されています。<br>未反映のままモーダルを移動しても<br>よろしいですか？",
       "ko": "설정이 변경되었습니다.<br>적용하지 않고 다른 창으로<br>이동하시겠습니까?",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -745,8 +578,6 @@
       "jp": "設定が変更されています。<br>未反映のままモーダルを閉じても<br>よろしいですか？",
       "ko": "설정이 변경되었습니다.<br>적용하지 않고 창을<br>닫으시겠습니까?",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -754,8 +585,6 @@
       "jp": "設定を保存しました",
       "ko": "설정을 저장했습니다",
       "before": null,
-      "local_ui": null,
-      "local_master": [],
       "ko_master": [],
       "in_existing_master_hold": false
     },
@@ -763,14 +592,6 @@
       "jp": "夢幻美術館の所蔵品管理官兼館長のサポートをしている。\n多岐にわたる仕事を手際よくこなしている働き者で、より\n多くの人に美術品を楽しんでもらいたいと考えている。\n安心して美術館のことを任せられる頼もしさがあるが、\n少々頑張りすぎて無理をしてしまうところがある。",
       "ko": "몽환 미술관의 소장품 관리관이자 관장의 보좌역을 맡고 있다.\n다양한 업무를 능숙하게 처리하는 성실한 사람으로, 더\n많은 사람이 미술품을 즐길 수 있기를 바라고 있다.\n안심하고 미술관 일을 맡길 수 있는 든든함이 있지만,\n조금 지나치게 열심히 하다가 무리하는 면도 있다.",
       "before": null,
-      "local_ui": null,
-      "local_master": [
-        {
-          "table": "mUnits",
-          "field": "ml_flavor_text[]",
-          "ko": "负责梦幻美术馆的藏品管理并协助馆长的工作。\n是个能利落处理繁重杂务的勤劳之人，由衷希望\n能让更多人领略到美术品的魅力与乐趣。\n虽有着让人能放心将美术馆托付给她的可靠，\n却偶尔也会因为太过拼命而勉强自己。"
-        }
-      ],
       "ko_master": [
         {
           "table": "mUnits",
@@ -784,19 +605,6 @@
       "jp": "サンソヴィーノ",
       "ko": "산소비노",
       "before": null,
-      "local_ui": null,
-      "local_master": [
-        {
-          "table": "mNovelKeyWords",
-          "field": "ml_keyword[]",
-          "ko": "桑索维诺"
-        },
-        {
-          "table": "mUnits",
-          "field": "ml_name[]",
-          "ko": "桑索维诺"
-        }
-      ],
       "ko_master": [
         {
           "table": "mUnits",

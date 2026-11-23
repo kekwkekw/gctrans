@@ -12,7 +12,7 @@ import tempfile
 
 from build_manifests import build, encode
 from contract_validation import read_json
-from export_local_ui import export
+from export_ui import export
 from novel_workflow import (META_FILES, _checked_changes, _publish, check_text,
                             encode_novel_payload, file_hash, require)
 from translation_knowledge import (change_history, check_context, dump_knowledge,

@@ -13,7 +13,7 @@ RETIRED = (
     "GCMod-cs파일백업", "names", "words", "novels", "source/GCMod.Nextgen",
     "source/build/Common.props", "tools/UpdateCli", "tools/CompileAudit", "tools/verify_staged_release.py",
     "staging/GCMod.cfg.template", "staging/accepted-master-profile.cfg.fragment",
-    "staging/accepted-master-profile.json", "staging/master-local-coverage-20261027",
+    "staging/accepted-master-profile.json",
     "staging/master-source-review-20261028", "staging/text-remainder-20261101",
     "staging/text-resurvey-20261102", "staging/text-resurvey-followup-20261102",
     "staging/ui-ap-exact-20261101", "staging/ui-broad-export-20261028",

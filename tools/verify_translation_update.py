@@ -6,7 +6,7 @@ import os
 import subprocess
 import sys
 import tempfile
-from local_release import verify_repo
+from gcmod_release import verify_repo
 
 
 def main():
@@ -15,8 +15,8 @@ def main():
     p.add_argument('--output',type=Path)
     a=p.parse_args();repo=a.repo.resolve()
     scratch=repo/'work/translation-update';scratch.mkdir(parents=True,exist_ok=True)
-    cases=['test_translation_update.py','test_local_release.py','test_ui_source.py',
-           'test_export_local_ui.py','test_master_coverage.py','test_ng04_source.py',
+    cases=['test_translation_update.py','test_gcmod_release.py','test_ui_source.py',
+           'test_export_ui.py','test_master_coverage.py','test_ng04_source.py',
            'test_all_asset_source.py', 'test_collect_ui_literals.py',
            'test_text_census.py', 'test_unity_schema_text.py', 'test_audit_text_sources.py',
            'test_novel_workflow.py', 'test_translation_knowledge.py',

@@ -6,7 +6,7 @@ from unittest.mock import patch
 import zipfile
 import hashlib
 from translation_update_fixture import fixture
-import local_release as release
+import gcmod_release as release
 import assemble_release as full_release
 
 
@@ -14,29 +14,33 @@ class DistributionNoticeTests(unittest.TestCase):
     def notices(self,prefix):
         files={prefix+name:b'dependency notice' for name in full_release.NOTICE_NAMES}
         files[prefix+'GCMod-upstream-MIT.txt']=(Path(__file__).resolve().parents[1]/'THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE').read_bytes()
-        files['THIRD_PARTY_NOTICES_GCMod.txt']=b'GCMod upstream: Jitsu; separate component notices are retained.'
+        files['THIRD_PARTY_NOTICES_GCMod.txt']=b'Original GCMod copyright (c) 2024 Jitsu; MIT. GCMod-upstream-MIT.txt.\n'
         return files
 
     def test_full_and_source_bundles_keep_only_current_component_notices(self):
         for prefix in ('GCMod-licenses/','licenses/'):
             files=self.notices(prefix)
-            contaminated={**files,prefix+'gc-mod-local-MIT.txt':b'obsolete notice'}
+            contaminated={**files,prefix+'unapproved-third-party-MIT.txt':b'obsolete notice'}
             selected={name:raw for name,raw in contaminated.items() if not name.startswith(prefix) or full_release.approved_notice(name,prefix)}
             self.assertEqual(files,selected)
             full_release.verify_notices(selected,prefix)
 
-    def test_full_and_source_bundles_reject_a_retired_notice_added_after_selection(self):
+    def test_full_and_source_bundles_reject_unapproved_notice_added_after_selection(self):
         for prefix in ('GCMod-licenses/','licenses/'):
-            files=self.notices(prefix);files['gc-mod-local-LICENSE.txt']=b'obsolete notice'
-            with self.assertRaisesRegex(ValueError,'RETIRED_DISTRIBUTION_NOTICE'):
+            files=self.notices(prefix);files['unapproved-third-party-LICENSE.txt']=b'obsolete notice'
+            with self.assertRaisesRegex(ValueError,'UNAPPROVED_DISTRIBUTION_NOTICE'):
                 full_release.verify_notices(files,prefix)
 
-    def test_full_and_source_bundles_reject_stale_attribution_text(self):
+    def test_full_and_source_bundles_reject_unapproved_attribution_text(self):
         for prefix in ('GCMod-licenses/','licenses/'):
-            for text in (b'gc-mod-local copyright',b'Copyright 2026 kristina1Q'):
+            base=b'Original GCMod copyright (c) 2024 Jitsu; MIT. GCMod-upstream-MIT.txt.\n'
+            for text in (base+b'Unapproved third-party copyright 2026\n',base+b'Copyright 2026 UnlistedAuthor\n'):
                 files=self.notices(prefix);files['THIRD_PARTY_NOTICES_GCMod.txt']=text
-                with self.assertRaisesRegex(ValueError,'RETIRED_DISTRIBUTION_ATTRIBUTION'):
+                with self.assertRaisesRegex(ValueError,'UNAPPROVED_DISTRIBUTION_ATTRIBUTION'):
                     full_release.verify_notices(files,prefix)
+            files=self.notices(prefix);files['THIRD_PARTY_NOTICES_GCMod.txt']=b'No upstream line\n'
+            with self.assertRaisesRegex(ValueError,'UPSTREAM_ATTRIBUTION_MISSING'):
+                full_release.verify_notices(files,prefix)
 
 
 class ReleaseTests(unittest.TestCase):
@@ -252,7 +256,7 @@ class ReleaseTests(unittest.TestCase):
             files = {name: archive.read(name) for name in archive.namelist() if name != 'package.json'}
             receipt = json.loads(archive.read('package.json'))
         for schema, missing_notice, error in (
-            ('gc-local-parity-package-v1', False, 'PACKAGE_SCHEMA'),
+            ('gc-obsolete-package-v0', False, 'PACKAGE_SCHEMA'),
             (release.PACKAGE_SCHEMA, True, 'PACKAGE_NOTICES'),
         ):
             with self.subTest(schema=schema, missing_notice=missing_notice):
@@ -271,7 +275,7 @@ class ReleaseTests(unittest.TestCase):
     def test_rejects_retired_install_journal(self):
         self.backup.mkdir()
         (self.backup / 'install.json').write_text(json.dumps({
-            'schema': 'gc-local-parity-install-v1', 'status': 'installed',
+            'schema': 'gc-obsolete-install-v0', 'status': 'installed',
             'game': str(self.game.resolve()), 'files': [],
         }), encoding='utf-8')
         with patch.object(release, 'game_closed'):

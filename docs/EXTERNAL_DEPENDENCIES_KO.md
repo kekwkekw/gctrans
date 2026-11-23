@@ -13,7 +13,7 @@
 | httpx 0.27.2, UnityPy 1.10.18 | metadata HTTP와 Unity bundle 추출 | 개발 의존성 |
 | 기존 private helper | live WebGL 취득 인증 및 Master decode | 항상 제외 |
 
-`python tools/local_release.py build --game <existing-game-root>`가 `candidate/GCMod.dll`을 만든다. 직접 빌드는 `dotnet build source/GCMod.Candidate/GCMod.Candidate.csproj -c Release -p:GameDir=<existing-game-root>`와 같다. build 자체는 설치본을 수정하지 않는다.
+`python tools/gcmod_release.py build --game <existing-game-root>`가 `candidate/GCMod.dll`을 만든다. 직접 빌드는 `dotnet build source/GCMod.Candidate/GCMod.Candidate.csproj -c Release -p:GameDir=<existing-game-root>`와 같다. build 자체는 설치본을 수정하지 않는다.
 
 폰트 기본 경로는 `GCMod/fonts/RHR_Medium_GFSAFE_ADH.bundle`이며 BepInEx/plugins 기준이다. 기본 공개 업데이트에는 font/Utility/게임/interop를 넣지 않는다. `pack --font ... --utility ...`는 사용자 개인 설치 묶음이며 공개 release로 올리지 않는다.
 

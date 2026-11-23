@@ -38,7 +38,7 @@ class CoverageTests(unittest.TestCase):
             master.write_bytes(original)
             row = self.row('追加', '추가')
             proposal = {
-                'schema': 'gc-local-master-coverage-v1',
+                'schema': 'gc-obsolete-master-coverage-v0',
                 'current_master_sha256': sha256(original).hexdigest(),
                 'missing': [row],
             }

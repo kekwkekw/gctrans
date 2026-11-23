@@ -205,9 +205,9 @@ python -X utf8 tools/update/cli.py novel apply --repo . --batch work/novels/<bat
 
 ```powershell
 python -X utf8 tools/update/cli.py preflight --candidate-root . --report <local-preflight.json>
-python tools/local_release.py verify
-python tools/local_release.py pack --output work/translation-update/update.zip
-python tools/local_release.py verify-archive --archive work/translation-update/update.zip
+python tools/gcmod_release.py verify
+python tools/gcmod_release.py pack --output work/translation-update/update.zip
+python tools/gcmod_release.py verify-archive --archive work/translation-update/update.zip
 ```
 
 Codex는 적용 후 정확한 diff와 package를 확인한다. 대상 선정이나 PRO 검수 요청만으로 public commit·push·PR·merge 권한을 확대하지 않는다. 사용자가 특정 범위의 Git 반영까지 승인했다면 같은 범위에서 반복 승인 요구를 만들지 않는다.

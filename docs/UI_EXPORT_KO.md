@@ -1,6 +1,6 @@
 # GCMod 한국어 업데이트 UI 사전 생성
 
-`python tools/export_local_ui.py`는 한국어 authoring 데이터를 exact `translations/ko/ui.json`으로 내보낸다. `--check`는 생성 결과가 저장된 파일과 같은지 확인한다. 생성 뒤 `python tools/build_manifests.py translations/ko --modify ui.json`으로 package descriptor를 갱신한다.
+`python tools/export_ui.py`는 한국어 authoring 데이터를 exact `translations/ko/ui.json`으로 내보낸다. `--check`는 생성 결과가 저장된 파일과 같은지 확인한다. 생성 뒤 `python tools/build_manifests.py translations/ko --modify ui.json`으로 package descriptor를 갱신한다.
 
 ## 포함 범위
 
@@ -23,7 +23,7 @@ Master 번역과 UI 번역은 독립적인 consumer다. Master에 같은 JP가 �
 검증 명령:
 
 ```powershell
-python -m unittest discover -s tests -p test_export_local_ui.py
+python -m unittest discover -s tests -p test_export_ui.py
 dotnet run --project tests/UiTextLookup -- translations/ko/ui.json
 ```
 

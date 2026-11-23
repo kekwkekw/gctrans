@@ -2,11 +2,11 @@
 from pathlib import Path
 import configparser
 from build_manifests import sha
-from local_release import CORE, OFFICIAL_CDN, PLUGIN
+from gcmod_release import CORE, OFFICIAL_CDN, PLUGIN
 
 FONT_DEFAULT = 'GCMod/fonts/RHR_Medium_GFSAFE_ADH.bundle'
 ENTRYPOINTS = ('tools/update/cli.py', 'scripts/crawl_only.py', 'scripts/__init__.py',
-               'scripts/crypto.py', 'tools/local_release.py',
+               'scripts/crypto.py', 'tools/gcmod_release.py',
                'source/GCMod.Candidate/GCMod.Candidate.csproj')
 
 def custody(role, path=None):

@@ -17,7 +17,7 @@ GCMod 전용 단축키는 없다. cfg나 번역 파일을 직접 수정한 후�
 
 ```powershell
 dotnet build source/GCMod.Candidate/GCMod.Candidate.csproj -c Release -p:GameDependencyRoot=C:\path\to\girlscreation_r
-python tools/export_local_ui.py
+python tools/export_ui.py
 ```
 
 DLL은 기존 `candidate/GCMod.dll`에 생성된다. 빌드는 게임 설치 파일을 쓰지 않는다.
@@ -25,7 +25,7 @@ DLL은 기존 `candidate/GCMod.dll`에 생성된다. 빌드는 게임 설치 파
 기본 설치 도구는 기존 cfg를 bytes 그대로 보존하며, cfg가 없을 때만 배포 기본값을 적용한다.
 신규 기본값은 일반/CG 불투명도 0%, 가독성 보정 ON, 60 FPS, 자간 0이다.
 기존 cfg에 남은 제거 기능 키도 강제 삭제하지 않는다. 한국어 기본 프로필로 전환할 때만
-`tools/local_release.py install ... --apply-korean-profile`을 사용한다. 이 옵션의 번역·경로·폰트 재설정 범위와
+`tools/gcmod_release.py install ... --apply-korean-profile`을 사용한다. 이 옵션의 번역·경로·폰트 재설정 범위와
 백업/복구 정책은 [설치 절차](../../docs/TRANSLATION_PIPELINE_KO.md)를 따른다.
 
 7.1.0 후보의 한국어 기본값은 `ko`, CDN은 공식 GitHub main
@@ -33,7 +33,7 @@ DLL은 기존 `candidate/GCMod.dll`에 생성된다. 빌드는 게임 설치 파
 기존 7.0.0 offline 설치본은 GitHub 변경만으로 업그레이드되지 않는다.
 새 DLL과 cfg를 한 번 적용한 뒤에만 데이터 자동 갱신이 가능하다.
 자세한 동작과 실기 결과는 [DATA_UPDATES_KO.md](../../docs/DATA_UPDATES_KO.md)를 참조한다.
-배포 cfg도 `candidate/GCMod.cfg`에 보관한다. `python tools/check_local_master.py`는
+배포 cfg도 `candidate/GCMod.cfg`에 보관한다. `python tools/check_master.py`는
 cfg 비활성, Master 파일/테이블/필드/JP 키 부재를 별도 상태로 진단한다.
 `--config <실제 cfg> --package <실제 ko 폴더> --log <로그>`로 설치 상태를 읽을 수 있다.
 로그의 `NOT_OBSERVED`는 미번역이나 table OFF의 증거가 아니며 해당 세션의 rewrite 미관측을 뜻한다.
@@ -43,7 +43,7 @@ UI 전용 Master 필드에서 결정적으로 생성된다. binding 활성 여�
 동일 JP의 한국어가 충돌하면 명시적 reviewed exact를 사용하며, 미검수 충돌은 export를 실패시킨다.
 입력 필드 보호는 런타임에서 적용한다.
 입력 범위·우선순위·이미지 예외는 [UI_EXPORT_KO.md](../../docs/UI_EXPORT_KO.md)를 참조한다.
-`python tools/export_local_ui.py --check`로 산출물 일치를 확인한다.
+`python tools/export_ui.py --check`로 산출물 일치를 확인한다.
 UI 훅은 ui.json을 읽고 Master 존재 여부를 묻지 않는다. exact 조회를 우선하며,
 앞뒤 공백 및 외곽 rich-text 태그를 보존한다.
 TMP/legacy 입력 컨트롤 하위 텍스트를 보호하고, 자체 쓰기로 인한 재진입을 막는다.

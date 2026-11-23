@@ -6,7 +6,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
-from export_local_ui import export
+from export_ui import export
 from source_text_policy import preserve_english_original
 
 

@@ -255,7 +255,7 @@ if __name__ == "__main__":
     target = args.package / "ui.json"
     if args.check:
         if target.read_bytes() != payload:
-            raise SystemExit("ui.json differs; rerun tools/export_local_ui.py")
+            raise SystemExit("ui.json differs; rerun tools/export_ui.py")
     else:
         target.write_bytes(payload)
     print(json.dumps(report, ensure_ascii=False))

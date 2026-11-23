@@ -16,7 +16,7 @@ from update.master_coverage import read, save, sha, TOKENS, NUMBERS
 from update.source_scan import source_item_eligible
 from update.process_lock import ProcessFileLock
 from reconcile_master import flatten_master
-from export_local_ui import export
+from export_ui import export
 from build_manifests import build
 from translation_knowledge import translation_context, check_context, load_current
 from source_text_policy import preserve_english_original

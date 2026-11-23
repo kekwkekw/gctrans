@@ -1,8 +1,8 @@
-"""Rebuild GCMod 7.3.2 full/source bundles from verified 7.2.1 dependencies.
+"""Rebuild GCMod 7.3.2 full/source bundles from verified baseline dependencies.
 
-The update ZIP is produced by tools/local_release.py. Loader, Utility, font,
-dependency sources are reused byte-for-byte from official 7.2.1. Notices are
-selected by the current component list rather than inherited as a directory.
+The update ZIP is produced by tools/gcmod_release.py. Loader, Utility, font,
+and dependency sources are reused byte-for-byte from the verified baseline.
+Notices are selected strictly by the current component allowlist.
 """
 import argparse,hashlib,json,zipfile
 from pathlib import Path,PurePosixPath
@@ -10,7 +10,7 @@ from pathlib import Path,PurePosixPath
 VERSION='7.3.2'
 BASE_FULL='44a496317f8d4a1fb51b505e07fc7a2ab4f26a7e7f1e83e20c40b75145ad06cc'
 BASE_SOURCES='a07dc14c6f10101db4932a52d9f75ab72ec8d36ea09c635bc3e4d0bdb674e277'
-UPDATE='0156f6e9d24dc60b98d7f75957b594e52e9f818fc68f940d9417562de4bdf53f'
+GCMOD_DLL_SHA='37402bf49a4d34821d1b7278148066f09fe6582504f3e7654454fe13102aeaf7'
 P='BepInEx/plugins/GCMod/'
 DEPS={P+'Utility.dll':'a842b1c9393285e687379101081d6a43a076da5f3440c754b2a56c0fe1bcf4f0',
       P+'fonts/RHR_Medium_GFSAFE_ADH.bundle':'b2087a14149d7d2de92c675e0ce6c04c722fcb53f227c5427e288d00eacffe80'}
@@ -24,6 +24,14 @@ NOTICE_NAMES=frozenset({
     'SemanticVersioning-LICENSE.txt','UnityDoorstop-LICENSE.txt','dotnet-LICENSE.txt',
     'dotnet-PATENTS.txt','dotnet-THIRD-PARTY-NOTICES.txt'})
 UPSTREAM_MIT_SHA='606688d2ae1f70514f42b8e27b3b9a1201cce3263d1349754426c273ee4fb732'
+APPROVED_ROOT_NOTICES=frozenset({'GCMod-upstream-LICENSE','THIRD_PARTY_NOTICES_GCMod.txt'})
+APPROVED_COPYRIGHT_LINES=frozenset({
+    'Original GCMod copyright (c) 2024 Jitsu; MIT. GCMod-upstream-MIT.txt.',
+    'License copies including copyright notices are in GCMod-licenses/, named by component.',
+    'Resource Han Rounded KR Medium 0.990, source copyright 2018\u20132019 Cyano Hao;',
+    "Source Han Sans copyright 2014, 2015, 2018 Adobe, reserved name 'Source'.",
+})
+NOTICE_MARKERS=('license','mit','notice','copying','patent')
 
 def approved_notice(path,prefix):
     return path.startswith(prefix) and path[len(prefix):] in NOTICE_NAMES
@@ -33,11 +41,20 @@ def verify_notices(files,prefix):
         raise ValueError('DISTRIBUTION_NOTICE_MEMBERSHIP')
     if sha(files[prefix+'GCMod-upstream-MIT.txt'])!=UPSTREAM_MIT_SHA:
         raise ValueError('UPSTREAM_NOTICE_BYTES')
-    if any('gc-mod-local' in name.casefold() for name in files):
-        raise ValueError('RETIRED_DISTRIBUTION_NOTICE')
-    notice=files.get('THIRD_PARTY_NOTICES_GCMod.txt',b'').lower()
-    if b'gc-mod-local' in notice or b'kristina1q' in notice:
-        raise ValueError('RETIRED_DISTRIBUTION_ATTRIBUTION')
+    for name in files:
+        if name.startswith(prefix) or name in APPROVED_ROOT_NOTICES or name.startswith(('BepInEx/','dotnet/')):
+            continue
+        base=PurePosixPath(name).name.casefold()
+        if any(m in base for m in NOTICE_MARKERS):
+            raise ValueError('UNAPPROVED_DISTRIBUTION_NOTICE')
+    raw=files.get('THIRD_PARTY_NOTICES_GCMod.txt')
+    if not raw:
+        raise ValueError('MISSING_DISTRIBUTION_ATTRIBUTION')
+    lines=[line.strip() for line in raw.decode('utf-8').splitlines()]
+    if 'Original GCMod copyright (c) 2024 Jitsu; MIT. GCMod-upstream-MIT.txt.' not in lines:
+        raise ValueError('UPSTREAM_ATTRIBUTION_MISSING')
+    if any('copyright' in line.casefold() and line not in APPROVED_COPYRIGHT_LINES for line in lines):
+        raise ValueError('UNAPPROVED_DISTRIBUTION_ATTRIBUTION')
 def sha(raw):return hashlib.sha256(raw).hexdigest()
 def jb(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode('utf-8')
 def safe(name):
@@ -56,10 +73,13 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     for name in ['baseline-full','baseline-sources','update','gcmod-source','docs','output']:ap.add_argument('--'+name,type=Path,required=True)
     ap.add_argument('--commit',required=True)
-    ap.add_argument('--packaging-commit');a=ap.parse_args()
+    ap.add_argument('--packaging-commit')
+    ap.add_argument('--update-sha256');a=ap.parse_args()
     assert sha(a.baseline_full.read_bytes())==BASE_FULL
     assert sha(a.baseline_sources.read_bytes())==BASE_SOURCES
-    assert sha(a.update.read_bytes())==UPDATE
+    update_sha=sha(a.update.read_bytes())
+    if a.update_sha256:
+        assert update_sha==a.update_sha256
     assert len(a.commit)==40 and all(c in '0123456789abcdef' for c in a.commit)
     if a.packaging_commit:
         assert len(a.packaging_commit)==40 and all(c in '0123456789abcdef' for c in a.packaging_commit)
@@ -89,6 +109,7 @@ def main():
     assert not any(n.startswith(('BepInEx/interop/','BepInEx/cache/','BepInEx/unity-libs/','GC_Data/')) or
                    n in {'GC.exe','GameAssembly.dll','UnityPlayer.dll'} for n in files)
     assert sorted(n for n in files if n.startswith('BepInEx/plugins/') and n.endswith('.dll'))==[P+'GCMod.dll',P+'Utility.dll']
+    assert sha(files[P+'GCMod.dll'])==GCMOD_DLL_SHA
     assert len(json.loads(files[P+'translations/ko/ui.json']))==14052
     assert len(json.loads(files[P+'translations/ko/images.json'])['entries'])==179
     assert len([n for n in files if n.startswith(P+'translations/ko/novels/')])==1939
@@ -111,7 +132,7 @@ def main():
     archive(full,files);archive(src,sources)
     report=dict(status='PASS',version=VERSION,source_commit=a.commit,packaging_commit=a.packaging_commit,full_files=len(files),
         unchanged_dependency_and_notice_files=len(baseline_hashes),direct_upgrade_from='7.2.1',
-        baseline_full_sha256=BASE_FULL,update_sha256=UPDATE,
+        baseline_full_sha256=BASE_FULL,update_sha256=update_sha,
         full=dict(name=full.name,size=full.stat().st_size,sha256=sha(full.read_bytes())),
         sources=dict(name=src.name,size=src.stat().st_size,sha256=sha(src.read_bytes())),
         game_executables_interop_cache_credentials='EXCLUDED',cold_start_native='NOT_RUN')

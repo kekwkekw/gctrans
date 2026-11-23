@@ -78,10 +78,10 @@ coverage는 **asset의 Master/직렬화 UI**, **PC 코드 문자열**, **실행 
 `ui/ap-families.json`은 AP 화면의 두 시간 문구 `00:00~12:00`과 AP 회복량 0~150을 같은 export에서 완성된 exact로 생성한다. 현재 `ui.templates.json`·검수된 UI 샘플·Master 서식의 한국어를 그대로 재사용하고, 다른 번역과 충돌하면 실패한다. 적용 후 기존 `build_manifests.py --modify ui.json`으로 데이터 manifest를 갱신한다. authoring 범위 설정은 게임이 읽는 파일이 아니며, 생성된 `ui.json`을 기존 DLL이 소비한다. [세부 근거와 한계](https://github.com/kekwkekw/gctrans/blob/5188bde0c7bec186c195ecb781a78d1bd8f03282/docs/UI_AP_EXACT_20261101_KO.md)를 따른다.
 
 ```powershell
-python tools/local_release.py build --game <game-directory>
-python tools/local_release.py verify
-python tools/local_release.py pack --output work/translation-update/update.zip
-python tools/local_release.py verify-archive --archive work/translation-update/update.zip
+python tools/gcmod_release.py build --game <game-directory>
+python tools/gcmod_release.py verify
+python tools/gcmod_release.py pack --output work/translation-update/update.zip
+python tools/gcmod_release.py verify-archive --archive work/translation-update/update.zip
 ```
 
 DLL은 `source/GCMod.Candidate`에서 `candidate/GCMod.dll`로 Release 빌드한다. 기존 BepInEx/interop/Utility 참조가 필요하며 build는 게임을 수정하지 않는다. GCMod 한국어 런타임은 검수된 번역 데이터와 필요한 화면별 예외를 적용한다. 수집·검수·패키징은 별도 도구에서 수행한다.
@@ -91,7 +91,7 @@ DLL은 `source/GCMod.Candidate`에서 `candidate/GCMod.dll`로 Release 빌드한
 게임 종료 후:
 
 ```powershell
-python tools/local_release.py install --archive work/translation-update/update.zip --game <game-directory> --backup <new-backup-directory-outside-game>
+python tools/gcmod_release.py install --archive work/translation-update/update.zip --game <game-directory> --backup <new-backup-directory-outside-game>
 ```
 
 설치 전 archive membership·hash·등록된 Novel 존재를 확인하고, 변경 파일의 원본 backup/journal을 만든다.
@@ -110,7 +110,7 @@ Master는 `*`, 폰트는 패키지 기본 경로로 바뀐다. 해당 섹션의 
 ZIP을 수동으로 적용할 때도 기존 cfg를 덮어쓰지 않는다.
 
 ```powershell
-python tools/local_release.py rollback --game <game-directory> --backup <same-backup-directory>
+python tools/gcmod_release.py rollback --game <game-directory> --backup <same-backup-directory>
 ```
 
 설치 도구가 변경한 파일을 사용자가 다시 변경했으면 rollback은 덮어쓰지 않고 충돌을 알린다.

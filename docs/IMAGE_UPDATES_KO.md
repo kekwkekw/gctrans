@@ -1,7 +1,7 @@
 # 이미지 데이터 갱신 (7.2.0)
 
 7.2.0 DLL을 한 번 설치해야 한다. 7.1.x DLL에는 이미지 교체 consumer가 없으므로
-이미지 파일만 GitHub에 추가해도 적용되지 않는다. 설치 파일은 [7.2.0 릴리스](https://github.com/kekwkekw/gctrans/releases/tag/v7.2.0)를 따른다.
+이미지 파일만 GitHub에 추가해도 적용되지 않는다. 설치 파일은 [최신 릴리스](https://github.com/kekwkekw/gctrans/releases/latest)를 따른다.
 
 ## 데이터와 표시 경로
 
