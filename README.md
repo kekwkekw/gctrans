@@ -83,3 +83,9 @@ exact도 포함합니다. 파일·키 수는 전편 신규 번역량이나 전�
 
 [지원 범위](docs/SUPPORT_SCOPE_KO.md) · [재현](docs/REPRODUCE_KO.md) ·
 [현재 자료와 과거 기록](docs/HISTORY_INDEX_KO.md)
+
+## 라이선스
+
+Copyright (c) 2026 kekwkekw. 이 저장소의 자체 코드·도구·스크립트 및 독자 작성 번역 데이터는 **AGPL-3.0-only**로 제공합니다. [LICENSE](LICENSE)를 참고하세요.
+게임 원문·고유 명칭 및 가공 UI 이미지의 원작 권리는 각 게임 권리자에게 있으며, 이 저장소의 오픈소스 라이선스로 재허가하지 않습니다.
+원본 GCMod (MIT, Copyright 2024 Jitsu) 등 외부 구성요소의 저작권과 라이선스는 [THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE](THIRD_PARTY_LICENSES/GCMod-upstream-LICENSE) 및 [출처와 라이선스](docs/UPSTREAM_ATTRIBUTION_KO.md)에 보존합니다.

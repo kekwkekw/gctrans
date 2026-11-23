@@ -10,6 +10,7 @@
 /.gitignore -text
 /candidate/** -text
 /THIRD_PARTY_LICENSES/** -text
+/LICENSE -text
 /*.md -text
 /.github/workflows/crawl_only.yml -text
 /NuGet.Config -text

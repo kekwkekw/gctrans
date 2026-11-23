@@ -6,7 +6,7 @@ from pathlib import Path, PurePosixPath
 import argparse, hashlib, io, json, subprocess, tarfile
 
 PREFIXES=('source/','tools/','tests/','contracts/','THIRD_PARTY_LICENSES/','staging/','translations/ko/','translation/','candidate/','docs/')
-ROOT_FILES={'.gitattributes','NuGet.Config',
+ROOT_FILES={'.gitattributes','LICENSE','NuGet.Config',
  'README.md','.gitignore','.github/workflows/crawl_only.yml','.github/workflows/translation_update.yml'}
 SCRIPTS={'scripts/__init__.py','scripts/crawl_only.py','scripts/crypto.py'}
 def run(repo,*args):return subprocess.check_output(['git','-C',str(repo),*args])
