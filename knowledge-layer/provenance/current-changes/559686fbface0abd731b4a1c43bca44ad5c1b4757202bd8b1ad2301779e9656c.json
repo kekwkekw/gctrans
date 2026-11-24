@@ -1,0 +1,191 @@
+{
+  "changes": [
+    {
+      "approved": true,
+      "jp": "イズリントン",
+      "kind": "name",
+      "ko": "이즐링턴",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "イズリントン＆キングスクロス",
+      "kind": "name",
+      "ko": "이즐링턴 & 킹스크로스",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "カティ＆ロダン",
+      "kind": "name",
+      "ko": "카티 & 로댕",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "カフェの店員",
+      "kind": "name",
+      "ko": "카페 점원",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "キングスクロス",
+      "kind": "name",
+      "ko": "킹스크로스",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "ケーキ屋の店主",
+      "kind": "name",
+      "ko": "케이크 가게 주인",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "パディントン",
+      "kind": "name",
+      "ko": "패딩턴",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "ホテルの支配人",
+      "kind": "name",
+      "ko": "호텔 지배인",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "モリゾ＆モリゾ（オルタ）",
+      "kind": "name",
+      "ko": "모리조 & 모리조(얼터)",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "モリゾ（オルタ）",
+      "kind": "name",
+      "ko": "모리조(얼터)",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "ルノワール（オルタ）",
+      "kind": "name",
+      "ko": "르누아르(얼터)",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "レストランの店主",
+      "kind": "name",
+      "ko": "레스토랑 주인",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "怪しい似顔絵師",
+      "kind": "name",
+      "ko": "수상한 초상화가",
+      "old_ko": null
+    },
+    {
+      "approved": true,
+      "jp": "文具店の店員",
+      "kind": "name",
+      "ko": "문구점 점원",
+      "old_ko": null
+    }
+  ],
+  "entries": [
+    {
+      "after": "이즐링턴",
+      "before": null,
+      "key": "イズリントン",
+      "kind": "name"
+    },
+    {
+      "after": "이즐링턴 & 킹스크로스",
+      "before": null,
+      "key": "イズリントン＆キングスクロス",
+      "kind": "name"
+    },
+    {
+      "after": "카티 & 로댕",
+      "before": null,
+      "key": "カティ＆ロダン",
+      "kind": "name"
+    },
+    {
+      "after": "카페 점원",
+      "before": null,
+      "key": "カフェの店員",
+      "kind": "name"
+    },
+    {
+      "after": "킹스크로스",
+      "before": null,
+      "key": "キングスクロス",
+      "kind": "name"
+    },
+    {
+      "after": "케이크 가게 주인",
+      "before": null,
+      "key": "ケーキ屋の店主",
+      "kind": "name"
+    },
+    {
+      "after": "패딩턴",
+      "before": null,
+      "key": "パディントン",
+      "kind": "name"
+    },
+    {
+      "after": "호텔 지배인",
+      "before": null,
+      "key": "ホテルの支配人",
+      "kind": "name"
+    },
+    {
+      "after": "모리조 & 모리조(얼터)",
+      "before": null,
+      "key": "モリゾ＆モリゾ（オルタ）",
+      "kind": "name"
+    },
+    {
+      "after": "모리조(얼터)",
+      "before": null,
+      "key": "モリゾ（オルタ）",
+      "kind": "name"
+    },
+    {
+      "after": "르누아르(얼터)",
+      "before": null,
+      "key": "ルノワール（オルタ）",
+      "kind": "name"
+    },
+    {
+      "after": "레스토랑 주인",
+      "before": null,
+      "key": "レストランの店主",
+      "kind": "name"
+    },
+    {
+      "after": "수상한 초상화가",
+      "before": null,
+      "key": "怪しい似顔絵師",
+      "kind": "name"
+    },
+    {
+      "after": "문구점 점원",
+      "before": null,
+      "key": "文具店の店員",
+      "kind": "name"
+    }
+  ],
+  "review_id": "GC-20261124-PRO-REVIEW-R2",
+  "schema": "gc-current-knowledge-change-v1",
+  "translation_input": false
+}

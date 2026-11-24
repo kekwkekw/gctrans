@@ -351,6 +351,7 @@ class NovelWorkflowTests(unittest.TestCase):
         self.prepare()
         self.finish_fixture_review()
         (self.package/'ui/general-exact.reviewed.json').write_bytes(b'{}')
+        (self.package/'ui/ap-families.json').write_bytes(b'{}')
         result = workflow.apply_review(self.repo, self.batch, self.batch/'review.json')
         self.assertEqual(result['package_check'], 'PASS')
         self.assertEqual(verify(self.package, source_tree=True)['membership'], 'EXACT_RUNTIME_WITH_AUTHORING')
