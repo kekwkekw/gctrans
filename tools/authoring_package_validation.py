@@ -21,7 +21,8 @@ def verify(root:Path, *, source_tree=False):
     actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
     if source_tree:
         actual -= {'ui/general-exact.reviewed.json',
-                   'ui/detail-families.json', 'ui/enhancement-families.json'}
+                   'ui/detail-families.json', 'ui/enhancement-families.json',
+                   'ui/ap-families.json'}
     expected=set(entries)|{'ui/manifest.json','release-manifest.json'}
     if actual!=expected:raise ValueError('RELEASE_MEMBERSHIP_MISMATCH:'+str(sorted(actual^expected)))
     manifest=read_json(root/'ui/manifest.json')
